@@ -1,0 +1,24 @@
+{
+  "steps": 635,
+  "decisions": 52,
+  "scenes": [
+    "quay",
+    "hall",
+    "inn",
+    "ridge",
+    "bridge",
+    "workshop",
+    "workshop-shot",
+    "arena",
+    "levee",
+    "storm",
+    "dawn"
+  ],
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "errors": [],
+  "actualInput": true,
+  "humanPlaytest": false
+}

@@ -1,0 +1,9 @@
+
+Running 4 tests using 1 worker
+
+  ok 1 tests\twelfth-life.spec.ts:6:25 › Twelfth Life actual biography 0, companion preserved and posthumous epilogue distinct (1.3m)
+  ok 2 tests\twelfth-life.spec.ts:6:25 › Twelfth Life actual biography 1, companion preserved and posthumous epilogue distinct (1.3m)
+  ok 3 tests\twelfth-life.spec.ts:11:1 › Twelfth Life downloads late Sun resources unvisited, offline at root and subpath (879ms)
+  ok 4 tests\twelfth-life.spec.ts:14:1 › Twelfth Life sealed books, late responsibility reply and deceased teacher fit seven sizes (3.3s)
+
+  4 passed (2.7m)

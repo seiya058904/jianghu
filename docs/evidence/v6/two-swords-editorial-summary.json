@@ -1,0 +1,122 @@
+{
+  "status": "V2_INTERNAL_EDITORIAL_VERIFIED_NOT_WHOLE_GOAL_COMPLETE",
+  "version": "two-swords-2.0.0",
+  "prefix": "jianghu:chronicle:two-swords:v2:",
+  "frozenV1": "two-swords-v1.html",
+  "sourceBeats": 334,
+  "options": 50,
+  "decisionsPerRoute": 24,
+  "sampledPaths": 512,
+  "exhaustive": false,
+  "longestPassiveGap": 15,
+  "editorialRecords": 31,
+  "recordPurposes": {
+    "1": 4,
+    "2": 23,
+    "3": 4
+  },
+  "newOrEditedImages": 0,
+  "unitFullPass": 157,
+  "build": "PASS",
+  "browserInitial": {
+    "passed": 11,
+    "failed": 1,
+    "reason": "Old edition renamed with suffix old draft; prior offline test still looked up the current-edition button title. Product cold downloads had passed4cases. Corrected exact archived button selector and reran this failed case."
+  },
+  "browserFinal": {
+    "passed": 4,
+    "includes": "2 unchanged146-asset root/sub byte+decode cases, corrected V1 frozen migration after HTTP-cache clear on root/sub, V2 real old-auto/manual-slot preservation and archive link"
+  },
+  "distinctWorkBrowserCasesPassed": 13,
+  "assetBrowserCasesPassed": 2,
+  "actualFullRoutes": [
+    {
+      "actualBrowserInputs": true,
+      "externalHuman": false,
+      "beats": 224,
+      "choices": 24,
+      "ending": "ss_mountain_lesson",
+      "scenes": [
+        "ss_ridge",
+        "ss_mountain",
+        "ss_hall",
+        "ss_ancestral",
+        "ss_cottage",
+        "ss_lateshen",
+        "ss_founding",
+        "ss_tea",
+        "ss_duel",
+        "ss_librain",
+        "ss_library",
+        "ss_corridor",
+        "ss_fire",
+        "ss_afterfire",
+        "ss_cart",
+        "ss_newwork",
+        "ss_mountainwork",
+        "ss_thirtyyears",
+        "ss_twoschools",
+        "ss_guiboard",
+        "ss_afterward"
+      ],
+      "errors": []
+    },
+    {
+      "actualBrowserInputs": true,
+      "externalHuman": false,
+      "beats": 224,
+      "choices": 24,
+      "ending": "ss_library_lesson",
+      "scenes": [
+        "ss_ridge",
+        "ss_mountain",
+        "ss_hall",
+        "ss_ancestral",
+        "ss_cottage",
+        "ss_lateshen",
+        "ss_founding",
+        "ss_tea",
+        "ss_duel",
+        "ss_librain",
+        "ss_library",
+        "ss_corridor",
+        "ss_fire",
+        "ss_afterfire",
+        "ss_cart",
+        "ss_newwork",
+        "ss_librarywork",
+        "ss_thirtyyears",
+        "ss_twoschools",
+        "ss_guiboard",
+        "ss_afterward"
+      ],
+      "errors": []
+    }
+  ],
+  "offlineOwnership": {
+    "registeredWorks": 31,
+    "frozenMigrationChunks": 6,
+    "wrongPrimaryOwners": 0
+  },
+  "assetUsage": {
+    "sources": 34,
+    "samplesPerSource": 168,
+    "pairedInkSources": 33,
+    "unvisitedDeclaredBeats": 0
+  },
+  "hashes": {
+    "story/two-swords.ink": "5dae0750fd4692cc6182cd9002b8ac147c8fa3d5e1185d3d62b5a577d80ea8c6",
+    "src/generated/two-swords.json": "2f32bd44f0909fdc786fa47c2458eba6f4c44e55c99d9e8bbbcb789850243064",
+    "story/two-swords-v1.ink": "8a33ed47785dd6e6068287221c331f4722976788c490600bde60a2efe770c652",
+    "src/generated/two-swords-v1.json": "6a52c1423e46511aa23d17e0471ce855bb0f5f2f5450612b9e50299e3070c475",
+    "宋世江湖.md": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393",
+    "src/generated/campaign-v5-1.0.0.json": "b0c071f9cf69c22817edf712d92cd9002c9373e92905e721cb7a1a29755c63ec",
+    "src/generated/campaign-v6.json": "8c199458e449d3fde8710eabe1c9594b0392d2066f1601f5181297128dee48b6"
+  },
+  "limits": [
+    "Bounded sampling covers declared beats/options, not every combinatorial path.",
+    "Internal three-purpose rewrite and rubric answers are not external literary acceptance or human reading-time evidence.",
+    "Young Ah Tang dedicated identity, other major identities/ages and active martial staging remain incomplete.",
+    "Main root switch, remaining cores and whole V6 final delivery remain unfinished."
+  ]
+}

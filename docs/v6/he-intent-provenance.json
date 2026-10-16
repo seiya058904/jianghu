@@ -1,0 +1,8 @@
+{
+  "tool": "built-in image_gen",
+  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-fd867422-60b0-40e5-808e-1c4a3885c372.png",
+  "prompt": "Use case: visual novel expression and gesture edit. Preserve EXACT reference character identity, facial anatomy, age, gender, costume colors/materials, hair, and fine naturalistic watercolor/ink rendering. Same42-year-old male carpenter He Mao. Firm intent speaking expression, furrowed brows, raising the existing wooden carpenter square to indicate a measurement while mallet held safely down at waist. Keep same stocky build, face, moustache, ochre cloth headscarf, gray workshirt and worn brown apron. No magic, no weapon conversion. Meaningful expression and gesture change, same portrait framing as reference, one character only, no other person. True transparent alpha background, no colored panel, no scenery, no floor, no cast shadow rectangle. No signature, no text, no watermark.",
+  "reference": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v5/he.webp",
+  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/he-intent.webp",
+  "review": "Reviewed against seen original: identity, costume, age/gender and anatomy preserved; state is suitable for reuse across scenes. Qiao final variant has empty resting hands and right wrist supported. Mapped only to v6 actors; original v5 presentation preserved. Final browser screenshot review pending."
+}

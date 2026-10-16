@@ -1,0 +1,36 @@
+✔ Taihua reproduces erased V2 Shen commitment; draft keeps it until explicitly kept or cancelled in all24 named paths (294.2843ms)
+✔ Deferred brother diagram is delivered on the actual next morning before first elder bout, independently of initial promise (129.8566ms)
+✔ 24 arm/load/future paths carry actual first-leg cost without inventing refused rotation or healthy injured brother (257.4298ms)
+✔ Asked-after-night Xie question is actually revisited before Huo bout; no invented prior request (72.6971ms)
+✖ 512 sampled Taihua draft routes reach every authored beat,63 options and3 endings with canonical victories unchanged (5515.8711ms)
+✔ Published Taihua versions, author modules and canon stay byte-identical; draft cannot consume a published save (15.9984ms)
+✔ Sima private practice asks about the actual patient or rushed bout, never invents a rush on patient path (25.4526ms)
+✔ Guidance is an actual repeat-or-record action with distinct home rehearsal; neither consumes the missed peer session (97.9621ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 7
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6726.8129
+
+✖ failing tests:
+
+test at tests\taihua-editorial-draft.test.ts:31:1
+✖ 512 sampled Taihua draft routes reach every authored beat,63 options and3 endings with canonical victories unchanged (5515.8711ms)
+  AssertionError [ERR_ASSERTION]: gap19
+      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/taihua-editorial-draft.test.ts:33:157)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

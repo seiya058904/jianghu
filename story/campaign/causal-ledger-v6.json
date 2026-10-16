@@ -1,0 +1,464 @@
+{
+  "scope": "Main campaign only. Thirty manually selected semantic decisions; independent chronicles do not inflate this minimum.",
+  "method": "Replay the stated route policy twice, changing only the named decision. Subsequent available choices follow the same policy. Conditional availability may itself change as a consequence. Inspect non-ending text in the stated later scene, not just final titles or variables.",
+  "excluded": "Pure acknowledgement or callback-only candidates are not counted: ask_fair/ask_task, bread, repair/practice, Rong dinner tone, two medicine courtesy variants, and asking Qiao's preference. A three-option or four-option node counts once; conditional choice-frame IDs and conditional option availability never create extra decisions.",
+  "records": [
+    {
+      "id": "M01",
+      "anchor": "press_again",
+      "preferred": [
+        "load_shoulder",
+        "bridge_jump"
+      ],
+      "other": "press_again",
+      "point": "c_hall_exchange",
+      "laterA": "v6_storm",
+      "laterB": "v6_storm",
+      "a": "石墩把绳的力接住",
+      "b": "伤处先替你松了力",
+      "weight": "high",
+      "effect": "馆内以伤换碰袖所添的一处伤，在两处既有劳损的临界上下文中使终章有准备的接人失败；不靠结局标题证明。"
+    },
+    {
+      "id": "M02",
+      "anchor": "wrist_rest",
+      "preferred": [
+        "route_land"
+      ],
+      "other": "wrist_private",
+      "point": "c_hall_wrist",
+      "laterA": "v6_levee",
+      "laterB": "v6_levee",
+      "a": "还没坏到拿不住轻物",
+      "b": "这一下不能再商量",
+      "weight": "normal",
+      "effect": "砚生先休与先藏伤，改变后来的身体可用程度及医者是否必须强制换下。"
+    },
+    {
+      "id": "M03",
+      "anchor": "warn_water",
+      "preferred": [
+        "route_land"
+      ],
+      "other": "prepare_water",
+      "point": "c_inn_rain",
+      "laterA": "v6_levee",
+      "laterB": "v6_levee",
+      "a": "我把棚往内挪了两丈",
+      "b": "幸亏昨晚多留了两根长绳",
+      "weight": "normal",
+      "effect": "向主事报水情推动移棚；优先备物则临场有绳但没有同一份事前移棚成果。"
+    },
+    {
+      "id": "M04",
+      "anchor": "v6_air_books",
+      "preferred": [
+        "route_land"
+      ],
+      "other": "v6_delegate_books",
+      "point": "c6_v6_books",
+      "laterA": "v6_storm",
+      "laterB": "v6_storm",
+      "a": "夹在中间的也没粘",
+      "b": "没有副本的那一包，我陪你重抄",
+      "weight": "normal",
+      "effect": "错过对练护卷或按时赴约，改变旧页保存与两门后续补抄劳动，而非只变友好台词。"
+    },
+    {
+      "id": "M05",
+      "anchor": "route_land",
+      "preferred": [
+        "route_land"
+      ],
+      "other": "route_water",
+      "point": "c6_v6_separate",
+      "laterA": "v6_workshop",
+      "laterB": "v6_workshop",
+      "a": "听说你们桥边耽搁",
+      "b": "整夜没见你们灯",
+      "weight": "high",
+      "effect": "三条中段线作为一个决策点：陆路护药断桥、水路识流夜航、留守栏旗工钱；重逢必须承认未亲历的另一队经历。留守第三向另有全程与伤手回归。"
+    },
+    {
+      "id": "M06",
+      "anchor": "v6_walk_handover",
+      "preferred": [
+        "route_land"
+      ],
+      "other": "v6_name_own_shift",
+      "point": "c6_v6_roles_anchor",
+      "laterA": "v6_storm",
+      "laterB": "v6_storm",
+      "a": "程阿笠接上后船",
+      "b": "后船没接上人，我折回换班",
+      "weight": "normal",
+      "effect": "少练一轮实走交班，或只报自身一班，后来一趟接送船能否腾出来不同；不冒充海天九席擂台排名。"
+    },
+    {
+      "id": "M07",
+      "anchor": "v6_rehearse_exit",
+      "preferred": [
+        "route_land"
+      ],
+      "other": "v6_leave_rested",
+      "point": "c6_v6_roles_after",
+      "laterA": "v6_levee",
+      "laterB": "v6_levee",
+      "a": "出发前练过的两声接在一起",
+      "b": "回头多走的这一段",
+      "weight": "normal",
+      "effect": "出发前牺牲歇脚练复报，后来可以直接确认末队已出；未练则须回跑复问，实付脚程。"
+    },
+    {
+      "id": "M08",
+      "anchor": "load_shoulder",
+      "preferred": [
+        "load_shoulder",
+        "bridge_jump",
+        "duel_risk"
+      ],
+      "other": "load_unload",
+      "point": "c_ridge_load",
+      "laterA": "v6_storm",
+      "laterB": "v6_storm",
+      "a": "伤处先替你松了力",
+      "b": "石墩把绳的力接住",
+      "weight": "high",
+      "effect": "肩抬抢时添的劳损在三伤边界使终章失败；卸货过坑虽慢，留下承重能力。"
+    },
+    {
+      "id": "M09",
+      "anchor": "toll_share",
+      "preferred": [
+        "route_land"
+      ],
+      "other": "toll_road",
+      "point": "c_ridge_toll",
+      "laterA": "v6_bridge",
+      "laterB": "v6_bridge",
+      "a": "这会儿扁担也借你",
+      "b": "守住这头，我去叫车停",
+      "weight": "normal",
+      "effect": "坡口实际帮车获得借用受力扁担的互助；未帮则由不同人分管桥头与叫停，不伪称同一份人情已建立。"
+    },
+    {
+      "id": "M10",
+      "anchor": "bridge_jump",
+      "preferred": [
+        "load_shoulder",
+        "bridge_jump",
+        "duel_risk"
+      ],
+      "other": "bridge_expert",
+      "point": "c_bridge_arrive",
+      "laterA": "v6_storm",
+      "laterB": "v6_storm",
+      "a": "伤处先替你松了力",
+      "b": "石墩把绳的力接住",
+      "weight": "high",
+      "effect": "抢踩桥梁的肋伤是终章伤势阈值中的独立贡献；交给何铆掌绳可保住后来的身体余量。"
+    },
+    {
+      "id": "M11",
+      "anchor": "grain_work",
+      "preferred": [
+        "route_land"
+      ],
+      "other": "grain_terms",
+      "point": "c_workshop_rong",
+      "laterA": "v6_levee",
+      "laterB": "v6_levee",
+      "a": "昨天搬米的人我都叫来了",
+      "b": "数和用途都写在这儿",
+      "weight": "normal",
+      "effect": "实做搬运建立可接应的熟手，或先立数量用途取得明确物资授权；灾时实际可调动的协助方式不同。"
+    },
+    {
+      "id": "M12",
+      "anchor": "v6_wage_public",
+      "preferred": [
+        "route_land"
+      ],
+      "other": "v6_roof_first",
+      "point": "c6_v6_contract",
+      "laterA": "v6_dawn",
+      "laterB": "v6_dawn",
+      "a": "把不能开的那班划掉",
+      "b": "你不肯认的那班没有写你名字",
+      "weight": "normal",
+      "effect": "公开缺口形成停班与重招期限；守本馆底价则明确少接一班，未承诺的工作不能算到玩家头上。"
+    },
+    {
+      "id": "M13",
+      "anchor": "v6_share_shift",
+      "preferred": [
+        "route_land"
+      ],
+      "other": "v6_cover_shift",
+      "point": "c6_v6_contract_cost",
+      "laterA": "v6_dawn",
+      "laterB": "v6_dawn",
+      "a": "只认的一班做稳了",
+      "b": "月底回执签完",
+      "weight": "high",
+      "effect": "承接临时第二班须真正多守一个月、减少练剑并错过原定镖队；重伤线另请付薪替工、留下欠款，八类结局均保留承诺。"
+    },
+    {
+      "id": "M14",
+      "anchor": "v6_qiao_apply",
+      "preferred": [
+        "route_land"
+      ],
+      "other": "v6_qiao_wait",
+      "point": "c6_v6_contract_sign",
+      "laterA": "v6_wind",
+      "laterB": "v6_wind",
+      "a": "高秉给我排了两趟",
+      "b": "今日不接报路的工钱",
+      "weight": "normal",
+      "effect": "让砚生自己约试，后来能领报路工钱；先休满则今日仍待试，玩家先前顶下的工日不自动到期。"
+    },
+    {
+      "id": "M15",
+      "anchor": "v6_inspect_stock",
+      "preferred": [
+        "route_land"
+      ],
+      "other": "v6_keep_evening",
+      "point": "c6_v6_grain_inventory",
+      "laterA": "v6_levee",
+      "laterB": "v6_levee",
+      "a": "横梯搭上",
+      "b": "你们绕了两条巷才到干地",
+      "weight": "high",
+      "effect": "查实借到好梯可从高窗接出老人；保住对练则需绕巷，程阿笠因此少赶一趟接送船。"
+    },
+    {
+      "id": "M16",
+      "anchor": "v6_sign_witness",
+      "preferred": [
+        "route_land"
+      ],
+      "other": "v6_split_rumor",
+      "point": "c6_v6_evidence",
+      "laterA": "v6_storm",
+      "laterB": "v6_storm",
+      "a": "你签过的私试照原样留了",
+      "b": "你们俩明日都得早到一刻",
+      "weight": "normal",
+      "effect": "牺牲热身作亲见证据，或保热身留下双方次日补核；不让祖辈传闻侵入正式战绩。"
+    },
+    {
+      "id": "M17",
+      "anchor": "v6_clear_gate",
+      "preferred": [
+        "route_land"
+      ],
+      "other": "v6_stage_rope",
+      "point": "c6_v6_wind",
+      "laterA": "v6_levee",
+      "laterB": "v6_levee",
+      "a": "接出来的人能直接过东口",
+      "b": "药箱和绳都到手了",
+      "weight": "normal",
+      "effect": "先清车获得空道但药仍待补；先备物则药绳到手，却须分队绕车，各有具体时序代价。"
+    },
+    {
+      "id": "M18",
+      "anchor": "v6_assign_people",
+      "preferred": [
+        "route_land"
+      ],
+      "other": "v6_run_myself",
+      "point": "c6_v6_wind_people",
+      "laterA": "v6_storm",
+      "laterB": "v6_storm",
+      "a": "没把往返的人重算",
+      "b": "往返的人重记了一次",
+      "weight": "normal",
+      "effect": "留出口的双份名单可由高秉接手；先跑药棚的干布及时用上，但临时改核名需多对一轮。"
+    },
+    {
+      "id": "M19",
+      "anchor": "stop_public",
+      "preferred": [
+        "route_land"
+      ],
+      "other": "go_direct",
+      "point": "c_arena_pair_result",
+      "laterA": "v6_levee",
+      "laterB": "v6_levee",
+      "a": "停试令已报全，东出口放开了",
+      "b": "东出口还有人争刚才算不算输",
+      "weight": "normal",
+      "effect": "公开停试可带走程序争执；自己先赶救援时，另有人须留下补报，不能当成全场已经知道。"
+    },
+    {
+      "id": "M20",
+      "anchor": "final_prepare",
+      "preferred": [
+        "route_land"
+      ],
+      "other": "final_hurry",
+      "point": "c_levee_split",
+      "laterA": "v6_storm",
+      "laterB": "v6_storm",
+      "a": "石墩把绳的力接住",
+      "b": "手臂先替你松了力",
+      "weight": "high",
+      "effect": "固定岸绳与徒手抢时产生真实接人成功/撤回等大船的不同过程；无伤路径不虚构旧伤。"
+    },
+    {
+      "id": "M21",
+      "anchor": "end_honor",
+      "preferred": [
+        "end_honor"
+      ],
+      "other": "end_rescue",
+      "point": "c_storm_choice",
+      "laterA": "v6_dawn",
+      "laterB": "v6_dawn",
+      "a": "容既白把棍尾重新包好",
+      "b": "何铆把船坞钥匙放在桌上",
+      "weight": "high",
+      "effect": "守自己的试艺承诺、现场接人、领队或回馆是同一处四向决策；有不同投入与后日生活，不把四选项重复计数。"
+    },
+    {
+      "id": "M22",
+      "anchor": "balance_load",
+      "preferred": [
+        "route_water"
+      ],
+      "other": "load_more",
+      "point": "c_water_load",
+      "laterA": "v6_workshop",
+      "laterB": "v6_workshop",
+      "a": "药箱是干的，村里能用到最后一包",
+      "b": "有箱角沾了水，药没全坏",
+      "weight": "normal",
+      "effect": "装船平衡与多载抢时影响真正送到的药与箱底修补，并非只改装载标签。"
+    },
+    {
+      "id": "M23",
+      "anchor": "night_angle",
+      "preferred": [
+        "route_water",
+        "press_again",
+        "duel_risk"
+      ],
+      "other": "night_pull",
+      "point": "c_night_moor",
+      "laterA": "v6_storm",
+      "laterB": "v6_storm",
+      "a": "石墩把绳的力接住",
+      "b": "伤处先替你松了力",
+      "weight": "high",
+      "effect": "夜航硬拉绳留下的腕伤，与先前和试艺伤势叠加后改变终章；正确绳角或依口令放绳都能避开这一处新伤。"
+    },
+    {
+      "id": "M24",
+      "anchor": "v6_separate_queue",
+      "preferred": [
+        "route_stay"
+      ],
+      "other": "v6_advance_wage",
+      "point": "c6_v6_stay_lines",
+      "laterA": "v6_contract",
+      "laterB": "v6_contract",
+      "a": "谁没垫过",
+      "b": "还有你垫的这笔",
+      "weight": "normal",
+      "effect": "清出领钱队与先垫馆中路费，改变馆款是否先被占用、后日是否必须核对归还的收据。此项回归主要核对已垫款有归还、未垫款没有虚构还款。"
+    },
+    {
+      "id": "M25",
+      "anchor": "v6_lower_flag",
+      "preferred": [
+        "route_stay"
+      ],
+      "other": "v6_tie_flag",
+      "point": "c6_v6_stay_pay",
+      "laterA": "v6_wind",
+      "laterB": "v6_wind",
+      "a": "我报旗。木杆先查，再上",
+      "b": "我的手不能爬",
+      "weight": "high",
+      "effect": "早先放下裂杆或勉强攀最低档，改变任耕伤手、送伤者的能力以及第九章旗手分工。"
+    },
+    {
+      "id": "M26",
+      "anchor": "v6_write_names",
+      "preferred": [
+        "route_stay"
+      ],
+      "other": "v6_speak_first",
+      "point": "c6_v6_stay_return",
+      "laterA": "v6_contract",
+      "laterB": "v6_contract",
+      "a": "先划掉重复的",
+      "b": "午前还发不完",
+      "weight": "normal",
+      "effect": "留原稿便于去重核款；挨户交代带回家中急用信息，却须等当事人来核，不能替他签字。"
+    },
+    {
+      "id": "M27",
+      "anchor": "arena_read",
+      "preferred": [
+        "end_honor"
+      ],
+      "other": "arena_rush",
+      "point": "c_arena_open",
+      "laterA": "v6_dawn",
+      "laterB": "v6_dawn",
+      "a": "容既白把棍尾重新包好",
+      "b": "何铆把船坞钥匙放在桌上",
+      "weight": "high",
+      "effect": "先看棍路才有可信转侧机会；急冲使该后手不可用，后日不能凭守名愿望冒领正式胜场。"
+    },
+    {
+      "id": "M28",
+      "anchor": "duel_turn",
+      "preferred": [
+        "end_honor"
+      ],
+      "other": "duel_three",
+      "point": "c_arena_press",
+      "laterA": "v6_dawn",
+      "laterB": "v6_dawn",
+      "a": "容既白把棍尾重新包好",
+      "b": "何铆把船坞钥匙放在桌上",
+      "weight": "high",
+      "effect": "看准后的绕侧胜、稳接后的不同战果、以伤换碰肩分别保留真实较艺结果；后日与名望目标必须受这一场约束。"
+    },
+    {
+      "id": "M29",
+      "anchor": "qiao_team",
+      "preferred": [
+        "aftermath_road"
+      ],
+      "other": "qiao_single",
+      "point": "c_workshop_qiao",
+      "laterA": "v6_afterhall",
+      "laterB": "v6_dawn",
+      "a": "再出门的包袱比来时轻",
+      "b": "你要走的那条路，不在砚生今日的包袱里",
+      "weight": "high",
+      "effect": "事先愿共同做配合而非各自单打，影响后日能否同路；分开有自己的具体行装与回信，不只改结局名。"
+    },
+    {
+      "id": "M30",
+      "anchor": "aftermath_road",
+      "preferred": [
+        "aftermath_road"
+      ],
+      "other": "aftermath_teach",
+      "point": "c_storm_resolution",
+      "laterA": "v6_afterhall",
+      "laterB": "v6_afterhall",
+      "a": "再出门的包袱比来时轻",
+      "b": "包小满把水盆端到门边",
+      "weight": "normal",
+      "effect": "这是明确的未来职业与生活选择，后续进入不同完整场景；因选择发生较晚，不冒充早期高权重伏笔。"
+    }
+  ]
+}

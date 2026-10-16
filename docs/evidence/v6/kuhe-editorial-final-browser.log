@@ -1,0 +1,16 @@
+
+Running 11 tests using 1 worker
+
+  ok  1 tests\art-manifest.spec.ts:8:107 › Asset manifest: every raster has exact built bytes and browser decode on root (2.2s)
+  ok  2 tests\art-manifest.spec.ts:8:107 › Asset manifest: every raster has exact built bytes and browser decode on subpath (2.1s)
+  ok  3 tests\kuhe-editorial-integrity.spec.ts:8:107 › Kuhe three editions root: exact old raw exports, import rejection, independent current pending choice (651ms)
+  ok  4 tests\kuhe-editorial-integrity.spec.ts:8:107 › Kuhe three editions subpath: exact old raw exports, import rejection, independent current pending choice (586ms)
+  ok  5 tests\kuhe-editorial-integrity.spec.ts:11:1 › Kuhe current, second edition and original cover links remain usable at seven sizes (1.7s)
+  ok  6 tests\kuhe-editorial.spec.ts:9:25 › Kuhe V3 real full route 0, identity changes and personal aftermath (59.3s)
+  ok  7 tests\kuhe-editorial.spec.ts:9:25 › Kuhe V3 real full route 1, identity changes and personal aftermath (1.0m)
+  ok  8 tests\kuhe-editorial.spec.ts:12:1 › Kuhe archive preserves pending auto, manual, previous and dark settings, while v3 rejects v2 imports (413ms)
+  ok  9 tests\kuhe-editorial.spec.ts:15:1 › Kuhe new wounded/empty states and CG decode offline at root and subpath (1.4s)
+  ok 10 tests\kuhe-editorial.spec.ts:18:1 › Kuhe three identities, short elder, locking close-up and choices remain usable at seven sizes (4.1s)
+  ok 11 tests\kuhe-editorial.spec.ts:21:1 › Kuhe new CG failure retains reusable valley and live dialogue (210ms)
+
+  11 passed (2.2m)

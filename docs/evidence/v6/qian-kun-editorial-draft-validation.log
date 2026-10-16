@@ -1,0 +1,42 @@
+✔ north Heng V2: identical narrative/inputs/world, exact frozen V1 restores and wrong-version rejection (3260.3333ms)
+✔ qian-kun Heng V2: identical narrative/inputs/world, exact frozen V1 restores and wrong-version rejection (2024.4526ms)
+✔ Heng is one explicit identity with two ages and three actual files per age, also in the older Notes interview (4566.0595ms)
+✔ Both plain tea CGs last two frames and every focused camera clears on the next frame (29.0744ms)
+✔ Notes accepts either exact released edition of each book, mixed V1/V2, and rejects wrong families/versions (0.5106ms)
+✔ North V3 production keeps exact reviewed authors and frozen V2 bytes, with reusable tea and identity cameras (48.4059ms)
+✔ North Notes accepts North V1/V2/V3 and either Qian Kun edition, rejecting forged families and future namespaces (0.712ms)
+✔ North V3 reproduces late three-month explanation, then returns to school before age-64 trial on all letter and pupil paths (92.6858ms)
+✔ North V3 departures keep introduction distinct from a promised visit and preserve real handoff costs (37.1121ms)
+✔ North V3 tea is a dated memory, chair already owned, relic stays hung and later pupils are distinct (24.3829ms)
+✔ North V3 keeps fixed four battles, three teachers, old ranks and both personal endings with exact replay (90.8739ms)
+✔ North V3 sampled alternatives cover all beats and choices with bounded passive reading (6085.9443ms)
+✔ North V3 preserves all 17 published and canon baselines byte-for-byte (3.1169ms)
+✔ North V3 actual Yuan visit occurs only after a confirmed date, in his school with a return journey (24.1814ms)
+✔ North V3 six earlier actions return as specific work and costs under both endings (37.4629ms)
+✔ North V3 preparation precedes the actual garden and three round snapshots keep their declared changes (292.6282ms)
+✔ Qian Kun draft reproduces duplicate letter and clears one physical envelope, sleeve-rule defeat remains (57.1339ms)
+✔ Qian Kun draft searches the old book before either departure, with no already-promised Zhou appointment (95.5589ms)
+✔ Qian Kun draft remembered old bouts leave the boat and do not teleport Ye to the school (15.3635ms)
+✔ Qian Kun draft both legal personal afterlives preserve ages, fixed fights, bounded rumor and exact replay (94.2209ms)
+✔ Qian Kun draft two strong early choices retain their independent later costs under all personal endings (119.8172ms)
+✔ Qian Kun draft 512 samples visit every declared beat and option and keep age aliases separate (5798.3167ms)
+✔ Qian Kun draft leaves all twenty published, companion and canon paths byte-identical (4.0117ms)
+✔ Qian Kun draft three-day promise has an actual school return before learning slow, independent of ending (39.0594ms)
+✔ Qian Kun draft boat footing choices change actual trial and later teaching, never fixed fall or shore results (84.0105ms)
+✔ Qian Kun draft learning methods, mountain handoff and rumor evidence return as concrete work on either personal path (45.614ms)
+✔ Qian Kun draft all three round snapshots compile and reach both endings, with retained real before/after records (246.9421ms)
+✔ Qian Kun two lives keep martial/life contrast, fixed ages, battles and bounded sword rumor (103.3226ms)
+✔ Qian Kun a single youth letter practice changes thirty years later waiting and late life reminders, not martial talent (30.3283ms)
+✔ Qian Kun accepting the head post changes later real teaching delay and time paid without fixing his accounting weakness (23.1786ms)
+✔ Qian Kun phase changes and personal aftermath preserve different duties (20.0015ms)
+✔ Qian Kun sampled routes cover every authored beat and option (4714.4931ms)
+✔ North Notes requires one valid ending from each exact work and never treats another valid ending as completion (0.6526ms)
+✔ North Notes keeps three separated dates, real alternate questions and four discoverable teaching notes (350.766ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10089.024

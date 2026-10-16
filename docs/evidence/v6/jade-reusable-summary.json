@@ -1,0 +1,195 @@
+{
+  "status": "JADE_TWO_CGS_AND_SCOPED_CAMERAS_VERIFIED_NOT_FINAL_CORE_ART_ACCEPTANCE",
+  "newFinalGameAssets": 2,
+  "builtInGenerationCalls": 3,
+  "initialUnregisteredOutputs": 1,
+  "newIndependentIdentities": 0,
+  "prefixesAndVersionsUnchanged": true,
+  "nodeFullPass": 161,
+  "build": "PASS",
+  "workBrowserCasesPassed": 15,
+  "actualFullRoutes": [
+    {
+      "actualBrowserInputs": true,
+      "externalHuman": false,
+      "beats": 203,
+      "choices": 28,
+      "ending": "jd_storework",
+      "scenes": [
+        "jd_pickle",
+        "jd_luroom",
+        "jd_archive",
+        "jd_inner",
+        "jd_council",
+        "jd_cutting",
+        "jd_first",
+        "jd_road",
+        "jd_fourth",
+        "jd_sixth",
+        "jd_seventh",
+        "jd_roadside",
+        "jd_eighth",
+        "jd_ninth",
+        "jd_muster",
+        "jd_grainnight",
+        "jd_grainfight",
+        "jd_grainafter",
+        "jd_return",
+        "jd_work",
+        "jd_pickle_late",
+        "jd_inner_late",
+        "jd_after"
+      ],
+      "secondVolumeDoesNotUnlockFirst": true,
+      "errors": []
+    },
+    {
+      "actualBrowserInputs": true,
+      "externalHuman": false,
+      "beats": 189,
+      "choices": 28,
+      "ending": "jd_archivework",
+      "scenes": [
+        "jd_pickle",
+        "jd_luroom",
+        "jd_archive",
+        "jd_inner",
+        "jd_council",
+        "jd_cutting",
+        "jd_first",
+        "jd_road",
+        "jd_returnarchive",
+        "jd_sixth",
+        "jd_seventh",
+        "jd_roadside",
+        "jd_eighth",
+        "jd_ninth",
+        "jd_muster",
+        "jd_recordsnight",
+        "jd_ninthfire",
+        "jd_ninthafter",
+        "jd_return",
+        "jd_work",
+        "jd_pickle_late",
+        "jd_inner_late",
+        "jd_after"
+      ],
+      "secondVolumeDoesNotUnlockFirst": true,
+      "errors": []
+    },
+    {
+      "actualBrowserInputs": true,
+      "externalHuman": false,
+      "beats": 160,
+      "choices": 21,
+      "ending": "jt_unmarked_life",
+      "viewpoint": "Shen",
+      "scenes": [
+        "jt_vault",
+        "jt_wall",
+        "jt_market",
+        "jt_auction",
+        "jt_sidehall",
+        "jt_road",
+        "jt_bridge",
+        "jt_temple",
+        "jt_lodging",
+        "jt_temple_reveal",
+        "jt_workshop",
+        "jt_exchange",
+        "jt_mountainpass",
+        "jt_afterpass",
+        "jt_pawn",
+        "jt_hidden"
+      ],
+      "errors": []
+    },
+    {
+      "actualBrowserInputs": true,
+      "externalHuman": false,
+      "beats": 156,
+      "choices": 21,
+      "ending": "jt_private_account",
+      "viewpoint": "Jiang then Shen aftermath",
+      "scenes": [
+        "jt_vault",
+        "jt_wall",
+        "jt_market",
+        "jt_auction",
+        "jt_kitchen",
+        "jt_sidehall",
+        "jt_road",
+        "jt_bridge",
+        "jt_temple",
+        "jt_lodging",
+        "jt_temple_reveal",
+        "jt_workshop",
+        "jt_exchange",
+        "jt_mountainpass",
+        "jt_afterpass",
+        "jt_pawn",
+        "jt_hidden"
+      ],
+      "errors": []
+    }
+  ],
+  "assetBrowserCasesPassed": 2,
+  "coreGroupsStillWithoutCG": [
+    "north + qian-kun"
+  ],
+  "productionCounts": {
+    "speakingNPC": 302,
+    "registeredDedicatedUsed": 27,
+    "independentDedicatedUsed": 27,
+    "charactersWithThreeImagesAtSameAppearance": 18,
+    "registeredArchetypesUsed": 12,
+    "distinctBackgroundFiles": 30,
+    "distinctCGFiles": 18,
+    "referencedBytes": 22974424
+  },
+  "frozenBeforePresentation": {
+    "story/jade-thieves-before-cg.ink": "6a2233e94f3eacb30a383c0e1e31ce4730be0925a5f2a51308fd07161c0aa785",
+    "src/generated/jade-thieves-before-cg.json": "00a25968d52f761abab6e3e5dcec337c08f0fc26d1e4cb2aa4bee7f740827d2e",
+    "story/jade-before-cg.ink": "0c44a624a652ff467ea6314dd67c1eed30091c2cb40420252bb55c53d0c7d09a",
+    "src/generated/jade-before-cg.json": "25132ce9ac800d2420099b6ee1a704f8c8808ca2174ad0ba54031ea3a036bd54"
+  },
+  "currentContentSHA256": {
+    "jade-thieves": "2a82781050ff0fcf2aefb4f91fb9c3a0d3180b38b308509e7ae994479ff4721f",
+    "jade": "333c337a3a24483353b623343b06aea2a0b0e0e7488fed2fc630b6d486b43593"
+  },
+  "scopeEvidence": "docs/evidence/v6/jade-reusable-snapshot-scope.json",
+  "originalCanonSHA256": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393",
+  "assetRecord": "docs/evidence/v6/jade-reusable-art-assets.json",
+  "promptMode": "built-in image_gen; no CLI or API-key path",
+  "manualViewedScreenshots": [
+    "jade-reusable-jt_empty_box_1-360.png",
+    "jade-reusable-jd_seventh_2-800.png",
+    "jade-reusable-jt_revealed_13-360.png"
+  ],
+  "sampling": {
+    "pathsPerWork": 256,
+    "exhaustive": false,
+    "sourceBeats": [
+      265,
+      296
+    ],
+    "choiceOptions": [
+      43,
+      66
+    ],
+    "oldSnapshotRestores": "Two representative routes; observed changed-beat set checked against256-path declared coverage"
+  },
+  "offline": {
+    "registeredWorks": 31,
+    "frozenMigrationChunks": 8,
+    "wrongPrimaryOwners": 0,
+    "coldPrimaryAndFrozenEvictionCases": 4,
+    "HTTPcacheClearedFrozenRestore": "Both books on root and subpath"
+  },
+  "remaining": [
+    "Genuine/counterfeit physical-state art and other required auction/temple/shop/grain-fight/broken-jade scenes are incomplete.",
+    "Important dedicated identities, active combat poses and three full literary rounds are still incomplete.",
+    "The new object CGs do not complete N10 or all-core art.",
+    "Other cores and both medium novellas, final main/root/product gates, external human reading and final delivery remain open."
+  ]
+}

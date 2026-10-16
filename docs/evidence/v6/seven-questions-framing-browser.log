@@ -1,0 +1,14 @@
+[WebServer] (node:14444) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:9820) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:21852) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\seven-questions.spec.ts:20:1 › Seven Questions work download includes an unvisited final chapter offline on root and subpath (1.2s)
+  ok 2 tests\seven-questions.spec.ts:27:1 › Seven Questions two locations and injury branches fit seven sizes at 24px (3.8s)
+  ok 3 tests\seven-questions.spec.ts:37:1 › Seven Questions long location choices remain clickable at seven viewport sizes (2.0s)
+
+  3 passed (8.8s)

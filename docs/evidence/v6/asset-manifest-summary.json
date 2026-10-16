@@ -1,0 +1,38 @@
+{
+  "status": "NAMED_MANIFEST_AND_TECHNICAL_TRACEABILITY_VERIFIED_NOT_FINAL_ART_ACCEPTANCE",
+  "counts": {
+    "rasterFiles": 155,
+    "v6RasterFiles": 108,
+    "withRetainedPromptRecords": 110,
+    "withoutRetainedPromptRecords": 45,
+    "observedRuntimeFiles": 154,
+    "registeredFiles": 155,
+    "byteMismatchFiles": 0,
+    "bytesOnDisk": 27320013
+  },
+  "sampledWorks": 36,
+  "samplePathsPerWork": 168,
+  "inkSourcesCompared": 35,
+  "compiledOnlySource": "tide-v5",
+  "inkUnvisitedBeats": 0,
+  "browserRootFiles": 155,
+  "browserSubpathFiles": 155,
+  "browserTestPass": 2,
+  "relativeOnlyOriginalSourceRecords": 9,
+  "missingAbsoluteOriginalSourceFiles": 0,
+  "assetFingerprint": "472d6e3ef3fb3b22de1e2e8c1957d8e7d09defe1e8cc0c4758febc8a1b89e8f9",
+  "manifestSHA256": "e3defe2043d631053e4ba39a501bf838b5d2338fcfdc3531f2c37eca93cb2c2d",
+  "originalCanonSHA256": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393",
+  "newOrEditedImages": 7,
+  "scope": "155 final game rasters,36sources with35paired Ink; Heng2ages/3states and1shared tea CG. Rejected2working WebPs remain outside public/art and are not counted as final assets. Technical traceability is not all-scene acceptance.",
+  "checks": [
+    "All155 source and built image bytes match the manifest and root/subpath HTTP bytes.",
+    "All155 decode in Chrome at expected width/height.",
+    "Every manifest provenance-input SHA matches its current file.",
+    "Every sampled source compiled SHA matches the current content.",
+    "Markdown has exactly155 distinct asset rows."
+  ],
+  "remaining": "All-core special action/CG, identities, per-scene visual review, remaining editorial, final root switch and delivery gates remain.",
+  "retainedPromptWithoutSourceFilename": 5,
+  "absoluteOriginalSourceRecordsVerified": 96
+}

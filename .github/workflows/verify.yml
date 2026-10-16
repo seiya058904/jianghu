@@ -1,0 +1,99 @@
+name: Verify
+
+# Reproducibility gate for auditors: regenerates the Ink/JSON story artifacts
+# from the authoring sources, type-checks, bundles the site, and runs the full
+# unit and narrative-contract suite. Green here means the checked-in tree is
+# self-consistent, not that the V6 acceptance matrix has passed.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  unit:
+    name: Build and unit suite
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build (story compile, tsc --noEmit, vite build, offline manifests)
+        run: npm run build
+
+      - name: Unit and narrative-contract tests
+        run: npm test
+
+      - name: Report frozen baselines this checkout does not carry
+        if: always()
+        run: |
+          f=docs/evidence/v6/frozen-baselines-missing.json
+          if [ -f "$f" ]; then
+            {
+              echo '### Frozen baselines absent in this checkout'
+              echo
+              echo 'Editorial byte-integrity entries pointing at these paths were **skipped, not failed**.'
+              echo 'They are asserted in full in the author checkout, which carries the canon text and'
+              echo '`docs/archives/`. Consequence: archival byte integrity is only **partly** verified here.'
+              echo 'See `docs/PUBLISHING.md` and `AGENTS.md` §8.'
+              echo
+              echo '```json'
+              cat "$f"
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo 'All frozen baselines present — every integrity entry was asserted.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+  story-content-audit:
+    name: Content audit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build story artifacts audited against
+        run: npm run story:build
+
+      - name: Production content audit (counts are evidence, not a pass gate)
+        run: node --experimental-strip-types scripts/audit-production-v6.mjs > audit-production-v6.json
+
+      - name: Summarise audit counts
+        run: |
+          node -e '
+            const fs = require("fs");
+            const d = JSON.parse(fs.readFileSync("audit-production-v6.json", "utf8"));
+            const rows = Object.entries(d.works).map(([k, v]) =>
+              `${k}\t${v.version}\tbeats=${v.sourceBeats}\tchoices=${v.choiceOptions}\tendings=${(v.endings||[]).length}\tcgs=${(v.storyCGs||[]).length}`
+            );
+            console.log(rows.join("\n"));
+            console.log("---");
+            console.log("works:", rows.length);
+            console.log("ownershipConflicts:", d.ownershipConflicts, "simultaneousCollisions:", d.simultaneousCollisions);
+          ' | tee -a "$GITHUB_STEP_SUMMARY"

@@ -1,0 +1,8 @@
+
+Running 3 tests using 1 worker
+
+  ok 1 tests\taihua-v2-upgrade.spec.ts:7:1 › Taihua v2 leaves real v1 auto, manual, previous and settings untouched; old link restores original stage and two-ending counter (656ms)
+  ok 2 tests\taihua-v2-upgrade.spec.ts:10:1 › Taihua three late choices and Mu scene fit seven viewports with keyboard and decoded imagery (3.3s)
+  ok 3 tests\taihua-v2-upgrade.spec.ts:13:1 › Taihua unvisited guidance assets restore offline at root and subpath with v1 cache kept separate (1.7s)
+
+  3 passed (7.0s)

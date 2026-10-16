@@ -1,0 +1,16 @@
+[
+  {
+    "work": "two-swords-v1",
+    "beats": 327,
+    "options": 50,
+    "sampledPaths": 512,
+    "exhaustive": false
+  },
+  {
+    "work": "seven-questions",
+    "beats": 382,
+    "options": 62,
+    "sampledPaths": 512,
+    "exhaustive": false
+  }
+]

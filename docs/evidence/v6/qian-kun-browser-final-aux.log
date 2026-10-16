@@ -1,0 +1,12 @@
+[WebServer] (node:38668) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:34060) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\qian-kun.spec.ts:18:1 › Notes direct URL, synthetic start and import/load cannot bypass missing readings or replace preserved saves (12.4s)
+  ok 2 tests\qian-kun.spec.ts:22:1 › Qian Kun and Notes download unseen chapters offline at root and subpath (1.6s)
+  ok 3 tests\qian-kun.spec.ts:25:1 › both covers, linked volumes and long final choices remain readable at seven sizes (3.3s)
+
+  3 passed (18.2s)

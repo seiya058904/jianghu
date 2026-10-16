@@ -1,0 +1,42 @@
+{
+  "status": "THREE_INTERNAL_ROUNDS_DRAFT_READY_FOR_VERSIONED_STAGE_INTEGRATION",
+  "baseline": "6d08464",
+  "records": 38,
+  "rounds": {
+    "structureAndCanon": 17,
+    "characterAndRhythm": 12,
+    "alternativeRouteAndIntegrationRecheck": 9
+  },
+  "currentDraft": {
+    "status": "THREE_INTERNAL_ROUNDS_DRAFT_NOT_PUBLISHED",
+    "editorialRecords": 38,
+    "beats": 447,
+    "options": 60,
+    "sampledPaths": 512,
+    "exhaustive": false,
+    "endings": [
+      "qs_records",
+      "qs_heirs"
+    ],
+    "longestPassiveGap": 16,
+    "compilerWarnings": [],
+    "limits": "No production-direction application or browser entry. Three internal rounds drafted; production direction, browser, external literary feedback and project acceptance remain open."
+  },
+  "specificUnitPass": 6,
+  "settlementCombinations": 8,
+  "homeLessonCombinations": 16,
+  "terminalWitnessCombinations": 4,
+  "newOrEditedImages": 0,
+  "publishedV2": "UNCHANGED; original known issues remain until the versioned replacement is connected",
+  "browser": "NOT_RUN; no browser entry for this draft",
+  "next": [
+    "Promote reviewed four-module source; apply existing stage direction and inspect anchors after beat shifts.",
+    "Freeze exact released V2 Ink/JSON and retain V2 namespace/page while adding independent V3.",
+    "Run full suite/build, both real UI routes, existing archives, new archive SW gate, offline, raw-slot export and seven-size visual checks."
+  ],
+  "limits": [
+    "Three internal editorial passes are not external literary approval or measured human playtime.",
+    "No rendered/direction validation or project acceptance claimed."
+  ],
+  "subsequentDelivery": "This file records the pre-integration d2fa219 draft stage. Current V3 delivery and preserved V2 addresses are documented in qingshi-editorial-summary.json and docs/v6/QINGSHI_V3_EDITORIAL.md."
+}

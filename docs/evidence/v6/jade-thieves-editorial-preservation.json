@@ -1,0 +1,15 @@
+{
+  "baseline": "d07746a",
+  "frozen": {
+    "story\\jade-thieves-author.mjs": "bfb661fc0d8317ef6df6b47f780aacc749bfb466d63e1b11e7ca87f5b0f39f3e",
+    "story\\jade-thieves-vault.mjs": "d7e55b6d0703853c4ae2d699d69ef84e5730210f3965d7e14b3cb845105e3d71",
+    "story\\jade-thieves-flight.mjs": "95ecdb479e5a75e97c6ea73d89ba3a2d35f334ffebfd6014300cffaee7b23bf5",
+    "story\\jade-thieves-temple.mjs": "50cdaf80e5cb838e17a98f9689ca31bddf5d5c1dcbc63e13460c730b814c4439",
+    "story\\jade-thieves-aftermath.mjs": "36ca1415430e620fdee0e8bcf4eef6f2f32dac218334403425d005d996fe9976",
+    "story/jade-thieves.ink": "3e988b8d281273df6bbb07fbbdae6acdbe0b984963c0f0caf3d7402b1136da2c",
+    "src/generated/jade-thieves.json": "2a82781050ff0fcf2aefb4f91fb9c3a0d3180b38b308509e7ae994479ff4721f",
+    "story/jade.ink": "06d5e0c466125d18fe34a2b12f4ebf30e3f8c42b4119e0cf91e93b111461e62c",
+    "src/generated/jade.json": "333c337a3a24483353b623343b06aea2a0b0e0e7488fed2fc630b6d486b43593",
+    "宋世江湖.md": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393"
+  }
+}

@@ -1,0 +1,86 @@
+[WebServer] (node:35652) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 15 tests using 1 worker
+
+(node:21808) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\campaign-v6-ending-staging.spec.ts:10:1 › all eight old ending entrances migrate and the entire closing dialogue still plays in production (14.6s)
+  x   2 tests\campaign-v6-ending-staging.spec.ts:13:64 › old harbor final auto migrates, keeps raw slots and shows appropriate view at seven sizes (864ms)
+(node:33828) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  3 tests\campaign-v6-ending-staging.spec.ts:13:64 › old name final auto migrates, keeps raw slots and shows appropriate view at seven sizes (2.1s)
+  ok  4 tests\campaign-v6-ending-staging.spec.ts:13:64 › old together5 final auto migrates, keeps raw slots and shows appropriate view at seven sizes (2.0s)
+  ok  5 tests\campaign-v6-ending-staging.spec.ts:13:64 › old teacher final auto migrates, keeps raw slots and shows appropriate view at seven sizes (1.9s)
+  x   6 tests\campaign-v6-ending-staging.spec.ts:13:64 › old captain final auto migrates, keeps raw slots and shows appropriate view at seven sizes (322ms)
+(node:25940) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  7 tests\campaign-v6-ending-staging.spec.ts:13:64 › old apart final auto migrates, keeps raw slots and shows appropriate view at seven sizes (2.0s)
+  x   8 tests\campaign-v6-ending-staging.spec.ts:13:64 › old scar final auto migrates, keeps raw slots and shows appropriate view at seven sizes (826ms)
+(node:24980) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  9 tests\campaign-v6-ending-staging.spec.ts:13:64 › old lost final auto migrates, keeps raw slots and shows appropriate view at seven sizes (2.1s)
+  ok 10 tests\campaign-v6-ending-staging.spec.ts:25:1 › frozen-source migration and new ending views continue offline at root and subpath (1.1s)
+  ok 11 tests\campaign-v6-storage.spec.ts:9:1 › all eight current main ending final sentences also restore as exact production text (1.8s)
+  ok 12 tests\campaign-v6-storage.spec.ts:12:1 › current main pending manual slot and exported file restore; frozen-v5 import cannot replace it (382ms)
+  ok 13 tests\campaign-v6-storage.spec.ts:17:1 › current main corrupt auto remains exportable and is backed up before restart (278ms)
+  ok 14 tests\campaign-v6-storage.spec.ts:20:1 › current main unvisited timber CG decodes offline and continues at root and subpath (922ms)
+  ok 15 tests\v6-compat.spec.ts:4:1 › frozen v5 entry resumes actual old pending choice on root and subpath (832ms)
+
+
+  1) tests\campaign-v6-ending-staging.spec.ts:13:64 › old harbor final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      17 |   await page.setViewportSize({width,height});await page.goto('/tide-v6.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);await expect(page.locator('#dialogue-visible')).toHaveText(current.frame.text);await decoded(page);await expect(page.locator('.play-stage')).toHaveAttribute('data-cg',current.frame.stage.cg??'');
+      18 |   const actual=await page.evaluate(prefix=>JSON.parse(localStorage.getItem(prefix+'auto')!),prefix);expect(actual.commands).toEqual(current.commands);expect(actual.presentation).toEqual(JSON.parse(JSON.stringify(current.save().presentation)));expect(await page.evaluate(prefix=>['slot1','previous'].map(k=>localStorage.getItem(prefix+k)),prefix)).toEqual([raw,raw]);expect(await page.evaluate(({prefix,raw})=>Object.keys(localStorage).filter(k=>k.startsWith(prefix+'draft-')&&localStorage.getItem(k)===raw).length,{prefix,raw})).toBe(1);
+    > 19 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);for(const text of ['收好这一程','再试另一种回应','回到封面']){const box=await page.getByRole('button',{name:text,exact:true}).boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy()}
+         |                                                                                                                                                                                                                                                                                                                  ^
+      20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
+      21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
+      22 |  }
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:19:306
+
+    Error Context: test-results\campaign-v6-ending-staging-b6d8b-opriate-view-at-seven-sizes\error-context.md
+
+  2) tests\campaign-v6-ending-staging.spec.ts:13:64 › old captain final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      17 |   await page.setViewportSize({width,height});await page.goto('/tide-v6.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);await expect(page.locator('#dialogue-visible')).toHaveText(current.frame.text);await decoded(page);await expect(page.locator('.play-stage')).toHaveAttribute('data-cg',current.frame.stage.cg??'');
+      18 |   const actual=await page.evaluate(prefix=>JSON.parse(localStorage.getItem(prefix+'auto')!),prefix);expect(actual.commands).toEqual(current.commands);expect(actual.presentation).toEqual(JSON.parse(JSON.stringify(current.save().presentation)));expect(await page.evaluate(prefix=>['slot1','previous'].map(k=>localStorage.getItem(prefix+k)),prefix)).toEqual([raw,raw]);expect(await page.evaluate(({prefix,raw})=>Object.keys(localStorage).filter(k=>k.startsWith(prefix+'draft-')&&localStorage.getItem(k)===raw).length,{prefix,raw})).toBe(1);
+    > 19 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);for(const text of ['收好这一程','再试另一种回应','回到封面']){const box=await page.getByRole('button',{name:text,exact:true}).boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy()}
+         |                                                                                                                                                                                                                                                                                                                  ^
+      20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
+      21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
+      22 |  }
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:19:306
+
+    Error Context: test-results\campaign-v6-ending-staging-79847-opriate-view-at-seven-sizes\error-context.md
+
+  3) tests\campaign-v6-ending-staging.spec.ts:13:64 › old scar final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      17 |   await page.setViewportSize({width,height});await page.goto('/tide-v6.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);await expect(page.locator('#dialogue-visible')).toHaveText(current.frame.text);await decoded(page);await expect(page.locator('.play-stage')).toHaveAttribute('data-cg',current.frame.stage.cg??'');
+      18 |   const actual=await page.evaluate(prefix=>JSON.parse(localStorage.getItem(prefix+'auto')!),prefix);expect(actual.commands).toEqual(current.commands);expect(actual.presentation).toEqual(JSON.parse(JSON.stringify(current.save().presentation)));expect(await page.evaluate(prefix=>['slot1','previous'].map(k=>localStorage.getItem(prefix+k)),prefix)).toEqual([raw,raw]);expect(await page.evaluate(({prefix,raw})=>Object.keys(localStorage).filter(k=>k.startsWith(prefix+'draft-')&&localStorage.getItem(k)===raw).length,{prefix,raw})).toBe(1);
+    > 19 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);for(const text of ['收好这一程','再试另一种回应','回到封面']){const box=await page.getByRole('button',{name:text,exact:true}).boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy()}
+         |                                                                                                                                                                                                                                                                                                                  ^
+      20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
+      21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
+      22 |  }
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:19:306
+
+    Error Context: test-results\campaign-v6-ending-staging-f8737-opriate-view-at-seven-sizes\error-context.md
+
+  3 failed
+    tests\campaign-v6-ending-staging.spec.ts:13:64 › old harbor final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+    tests\campaign-v6-ending-staging.spec.ts:13:64 › old captain final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+    tests\campaign-v6-ending-staging.spec.ts:13:64 › old scar final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+  12 passed (34.7s)

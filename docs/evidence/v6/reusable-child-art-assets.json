@@ -1,0 +1,34 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "file": "public/art/v6/npc-child-boy.webp",
+      "prompt": "Use case: illustration-story. Asset type: reusable transparent character sprite for a grounded Song-era Chinese wuxia visual novel. Primary request: exactly one ordinary Chinese boy visibly around twelve years old, in a calm attentive everyday standing pose. This is a generic child template, not a named hero or a depiction of any plot event. Age must be unambiguous: youthful round cheeks, small chin and nose, slim narrow child shoulders, slender child arms and naturally small hands, no adult facial structure, beard, muscles or glamour styling. Simple dark hair tied with a plain cloth tie, a few loose strands. Fully clothed in a plain faded blue-grey crossed-collar cotton tunic, modest off-white inner collar, simple dark cloth waist sash and loose plain trousers. No uniform insignia, no hat, no jewellery. Empty hands naturally relaxed together near the lower waist, both hands and elbows completely inside frame; quiet closed-mouth neutral curious expression. Three-quarter length, complete hair top to mid-thigh, front torso slightly turned, wide comfortable transparent margins. Scene/backdrop: truly transparent RGBA, no painted background, vignette, floor, colored rectangle, cast shadow or backdrop. Style: naturalistic hand-painted ink and muted watercolour game portrait with readable face, restrained cloth folds and soft natural diffuse light, matching traditional Chinese historical visual-novel portraits; no photo, anime, chibi or exaggerated cartoon. Composition: 1024x1536 vertical. Avoid: text, logos, signatures, weapons, tools, rope, boats, books, injuries, mud, scars, swimming, fear, tears, heroic gestures, halos, magic, dramatic lighting or story-specific symbols. Preserve an ordinary, reusable identity and neutral pose suitable for conversations, learning or village life without baking meaning into the picture.",
+      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-1ff3e381-9af0-47fc-985b-596ca209ff42.png",
+      "processing": "Resize1024x1536 to512x768 and WebP conversion only; alpha preserved. Original PNG retained.",
+      "use": "Generic preteen boy; no specific identity, event or emotion. V2 An child appearance only; not a dedicated multi-age identity.",
+      "sourceAlphaRange": [
+        0,
+        254
+      ],
+      "dimensions": [
+        512,
+        768
+      ],
+      "bytes": 63412,
+      "sha256": "23d7d269dfcb059f615d4f4934c3d7a07ae2c8ecf1ec52ed0ed6473b35f54631",
+      "rawProjectCopy": "docs/archives/reusable-child-source/generated-child.png",
+      "sourceSHA256": "afa6a8a26646caefce127acda4af95de91496bdbd3696ef0ccdaf47e66a78d8c"
+    }
+  ],
+  "frozen": {
+    "story/sea-tide-before-child.ink": "2066c6503891ee14ea4281e08d877e8495fa7d2d3832a6fe41e5b64b7dc6cbb9",
+    "src/generated/sea-tide-before-child.json": "d5e375e49654f92d5a5c0c4f50c696c18149543f3afcbb5ff2ca7660ecee24f5"
+  },
+  "framing": {
+    "look": "childV2",
+    "size": "auto 85%",
+    "position": "center bottom",
+    "olderChildLookPreserved": "child -> v5/npc-youth-blue.webp"
+  }
+}

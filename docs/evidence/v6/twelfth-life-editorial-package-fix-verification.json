@@ -1,0 +1,7 @@
+{
+  "allBuiltJSByteIdentical": true,
+  "jsFiles": 57,
+  "migration": "./assets/twelfth-life-before-cg-Bs4lCK0J.js",
+  "includedOnlyInV2NotV3": true,
+  "limits": "Manifest membership and exact JS equivalence; actual cold cache restoration verified separately."
+}

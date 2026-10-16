@@ -1,0 +1,28 @@
+[
+  {
+    "side": 0,
+    "changed": [
+      "st_outer_years_1",
+      "st_outer_years_2",
+      "st_outer_years_3",
+      "st_outer_years_4",
+      "st_outer_years_5",
+      "st_outer_years_6"
+    ],
+    "ending": "st_next_step",
+    "frames": 156
+  },
+  {
+    "side": 1,
+    "changed": [
+      "st_outer_years_1",
+      "st_outer_years_2",
+      "st_outer_years_3",
+      "st_outer_years_4",
+      "st_outer_years_5",
+      "st_outer_years_7"
+    ],
+    "ending": "st_next_watch",
+    "frames": 156
+  }
+]

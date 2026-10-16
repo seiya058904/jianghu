@@ -1,0 +1,22 @@
+// One resource registry shared by runtime validation, staging, gallery and offline bundles.
+export const cgs:Record<string,{file:string;title:string;work:string}>={
+ plainTea:{file:'v6/cg-plain-tea.webp',title:'一桌茶',work:'北枪与乾坤 · 双卷'},
+ emptyBox:{file:'v6/cg-empty-box.webp',title:'匣中',work:'山河璧 · 密库双贼'},
+ grainMeasure:{file:'v6/cg-grain-measure.webp',title:'粮与木斗',work:'山河璧 · 十三文'},
+ rigging:{file:'v6/cg-rigging.webp',title:'绳与帆',work:'海路两世 · 双册'},
+ workingBooks:{file:'v6/cg-working-books.webp',title:'案头书卷',work:'一剑两脉 · 双册'},
+ royalLetters:{file:'v6/cg-royal-letters.webp',title:'案头来信',work:'第十二席 · 赵承晏'},
+ rescue:{file:'v5/cg-rescue.webp',title:'断雨桥 · 接住这一头',work:'潮生有约'},
+ storm:{file:'v5/cg-storm.webp',title:'回水口 · 绳的另一头',work:'潮生有约'},
+ dawn:{file:'v5/cg-dawn.webp',title:'青蒲渡 · 天亮以后',work:'潮生有约'},
+ quiet:{file:'v5/cg-quiet.webp',title:'岸上的位置',work:'潮生有约'},
+ nightCompany:{file:'v6/cg-taihua-night.webp',title:'灯下同伴',work:'太华试序'},
+ mountainInquiry:{file:'v6/cg-taihua-six.webp',title:'后岭问剑',work:'太华试序'},
+ oldKnife:{file:'v6/cg-qingshi-old-knife.webp',title:'箱底旧物',work:'青石五友'},
+ oldPillars:{file:'v6/cg-kuhe-old.webp',title:'来路上的三位旧人',work:'枯河谷'},
+ longmenNight:{file:'v6/cg-longmen-night.webp',title:'灯下两位来客',work:'龙门问刀'},
+ woodenInquiry:{file:'v6/cg-longmen-nine.webp',title:'秋棚试剑',work:'龙门秋会'},
+ lakeRest:{file:'v6/cg-dongting-shoulder.webp',title:'湖舟歇息',work:'照水刀·问席'},
+ notice:{file:'v6/cg-twelfth-name.webp',title:'榜前',work:'第十二席'},
+ timber:{file:'v6/cg-main-flag.webp',title:'木料与手',work:'潮生有约 V6'},
+};

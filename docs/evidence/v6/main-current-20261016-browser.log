@@ -1,0 +1,21 @@
+[WebServer] (node:35932) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 10 tests using 2 workers
+
+(node:50508) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:37736) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\campaign-v6.spec.ts:9:55 › v6 preview actual browser complete harbor (2.6m)
+  ok  2 tests\campaign-v6.spec.ts:9:55 › v6 preview actual browser complete name (2.6m)
+  ok  3 tests\campaign-v6.spec.ts:9:55 › v6 preview actual browser complete teacher (2.6m)
+  ok  4 tests\campaign-v6.spec.ts:9:55 › v6 preview actual browser complete together5 (2.6m)
+  ok  6 tests\campaign-v6.spec.ts:9:55 › v6 preview actual browser complete apart (2.6m)
+  ok  5 tests\campaign-v6.spec.ts:9:55 › v6 preview actual browser complete captain (2.6m)
+  ok  7 tests\campaign-v6.spec.ts:9:55 › v6 preview actual browser complete scar (2.6m)
+  ok  8 tests\campaign-v6.spec.ts:9:55 › v6 preview actual browser complete lost (2.6m)
+  ok 10 tests\v6-compat.spec.ts:4:1 › frozen v5 entry resumes actual old pending choice on root and subpath (831ms)
+  ok  9 tests\campaign-v6.spec.ts:9:55 › v6 preview actual browser complete stay (2.4m)
+
+  10 passed (12.9m)

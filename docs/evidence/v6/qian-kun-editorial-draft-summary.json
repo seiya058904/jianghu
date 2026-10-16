@@ -1,0 +1,78 @@
+{
+  "status": "THREE_INTERNAL_ROUNDS_DRAFT_VERIFIED_NOT_INTEGRATED",
+  "baseline": "16de888",
+  "content": {
+    "status": "THREE_INTERNAL_ROUNDS_DRAFT_NOT_INTEGRATED",
+    "declared": 318,
+    "visited": 318,
+    "options": 50,
+    "decisions": 25,
+    "samples": 512,
+    "exhaustive": false,
+    "longestPassiveGap": 17,
+    "gameArtChanges": 0
+  },
+  "rounds": {
+    "records": [
+      14,
+      12,
+      21
+    ],
+    "totalRecords": 47,
+    "helperPathRecords": 2,
+    "substantiveAndRevisions": 45,
+    "snapshots": 21
+  },
+  "validation": {
+    "finalFocusedTests": 34,
+    "newDraftTests": 11,
+    "publishedFamilyRegressionTests": 23,
+    "fullRepositorySuiteRerun": false,
+    "allFirstAndAllSecondPlayedInRuntime": true,
+    "exactSaveReplay": true,
+    "rejectCurrentV2Import": true,
+    "letterHeadEndingCombinations": 8,
+    "boatRopeEndingCombinations": 8,
+    "departureWaitMethodCombinations": 4,
+    "threeDayReturnAlternatives": true,
+    "allThreeRoundInksCompileAndReachBothEnds": true
+  },
+  "preservation": {
+    "protectedPaths": 20,
+    "allSHAExact": true,
+    "trackedProductSourceChanges": 0,
+    "gameImageChanges": 0
+  },
+  "evidence": {
+    "finalLog": "docs/evidence/v6/qian-kun-editorial-draft-validation.log",
+    "logSHA256": "b4eaa9a2c2dc34b48942c89e4f6242d38960ea89baf8987d0b4904489390074e",
+    "draftInkSHA256": "6dc13c3a88985e2577d86c4ce029dcc9dcecd355fdbb78467d65d0df148b3d5a"
+  },
+  "validationHistory": [
+    {
+      "scope": "First round draft",
+      "passed": 6,
+      "failed": 1,
+      "cause": "Test expected incorrect receipt phrase; actual line was sent and reply returned.",
+      "resolution": "Corrected expectation to actual full phrase."
+    },
+    {
+      "scope": "First third-round run after added sea decision",
+      "passed": 5,
+      "failed": 2,
+      "cause": "Old 24-decision/48-option expectations after adding one real two-option decision.",
+      "resolution": "Assert 25/50 and verify boat/rope/ending combinations."
+    },
+    {
+      "scope": "Internal full all-second transcript reread",
+      "cause": "Day two after day nine; old footpoint map contradicted earlier removal; incomplete current bill-delivery assignment.",
+      "resolution": "Corrected chronology and current task; map retains this ship/this moment with source context; regression assertions added. Prior green was not treated as causal proof."
+    }
+  ],
+  "limits": [
+    "No browser entry for the draft, no new browser or rendered-art claim.",
+    "Published Qian Kun V2/V1, North V3/V2/V1, Notes and canon unchanged.",
+    "512 samples are not all 2^25 paths; internal review is not external literary consensus or human timing.",
+    "Versioned integration, full route/offline/browser validation, other literary work, identity/age/action art and full goal acceptance remain OPEN."
+  ]
+}

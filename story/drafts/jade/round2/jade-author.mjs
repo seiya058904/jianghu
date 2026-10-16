@@ -1,0 +1,10 @@
+import {writeFileSync} from 'node:fs';
+import {createWriter} from '../../chronicle-writer.mjs';
+import {writeBuy} from './jade-buy.mjs';
+import {writeStores} from './jade-stores.mjs';
+import {writeGrain} from './jade-grain.mjs';
+import {writeNight} from './jade-night.mjs';
+import {writeAfter} from './jade-after.mjs';
+const w=createWriter('jd_');writeBuy(w);writeStores(w);writeGrain(w);writeNight(w);writeAfter(w);
+const vars={jd_asked_origin:false,jd_letter_care:false,jd_full_names:false,jd_sent_sources:false,jd_sima_archive:false,jd_admitted_pickle:false,jd_surface:false,jd_route_check:false,jd_report_empty:false,jd_later_work:0,jd_next_with_relief:false,jd_family_list:false,jd_paid_shift:false,jd_tools_check:false,jd_use_record:false,jd_clans_plain:false,jd_prep_water:false,jd_post:0,jd_grain_work:0,jd_people_lane:false,jd_grain_after:0,jd_records_work:0,jd_notes_kept:false,jd_records_after:0,jd_credit_shared:false,jd_qiao_work:false,jd_career:0,jd_wedding_kept:false,jd_best_letter:false,jd_kept_breaks:false};
+writeFileSync('story/drafts/jade/jade-editorial.ink','// Source: 宋世江湖24156–28497; second volume, fixed nine stores and separate seventh/ninth nights.\n'+Object.entries(vars).map(([key,value])=>`VAR ${key} = ${value}`).join('\n')+'\n-> cat\n'+w.render());

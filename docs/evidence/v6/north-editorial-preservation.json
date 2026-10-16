@@ -1,0 +1,22 @@
+{
+  "baseline": "58be6a8",
+  "frozen": {
+    "story/north-author.mjs": "8fae80ef9d57491819ffb2a7a1ff35e592917d0c890c51937909195ff82f5729",
+    "story/north-yard.mjs": "5774c4f85ea2df7930981659d96c438c27135740f4de7fdb44427f6a39a00e32",
+    "story/north-road.mjs": "288f5a376b40127b50213b1519e635e54f808591b3504a4127959cd48f65073f",
+    "story/north-rain.mjs": "46085b814643bb39de9cfc6e94054182c9df214eda60f0344d22eadc14065add",
+    "story/north-duels.mjs": "1eb4a73d9bc44b29506b67791a85e4d191b133f35a5b76d15291200eaf43a522",
+    "story/north-after.mjs": "4f050801a2e24884138c3f1350616aafb69017979906b16b404be6a2892097eb",
+    "story/north.ink": "a50ac78446e7ebd3b942a40576b11618f50f63d7828933f6991112dd773b3a1a",
+    "src/generated/north.json": "2456c8b3e365837492c039c457e7bc46e6933f89df6dd57e955de4b05254ac67",
+    "story/north-v1.ink": "427d81d50c479a510e393c51d5e74e5cadcf2552a6019eb47db075eec255c2bb",
+    "src/generated/north-v1.json": "dff07857f0bdec586e07b3f0bf9fd709e00308be8288d77e00476915ecca4a02",
+    "story/qian-kun.ink": "d09b130fd52464b7de215271f4b0ff7ef559f4ef6408fd23a458bee6cbfea527",
+    "src/generated/qian-kun.json": "9ace994454860592868502a7ef806b78124f22ba6bae69e70d9855a10a80fc12",
+    "story/qian-kun-v1.ink": "c883e603fa56b9b8641c8accb42eb9f0d6026deb97e6ea375b4bd7f3eca39540",
+    "src/generated/qian-kun-v1.json": "13d7ea5815b8b5015635fe799e5858b2e70721647720db03dc02ab4c7de810df",
+    "story/north-notes.ink": "5a4c2c9683b96025394ea6e7e647489fc2146c796a8f1c0506502e21700926c1",
+    "src/generated/north-notes.json": "d7024c9015d1287f57a4d2b9d52bfc40a38edfc70995c4146d5066e71f15d7a6",
+    "宋世江湖.md": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393"
+  }
+}

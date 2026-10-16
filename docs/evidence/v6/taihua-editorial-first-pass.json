@@ -1,0 +1,228 @@
+{
+  "status": "FIRST_CAUSALITY_DRAFT_UNPUBLISHED_NOT_THREE_ROUNDS",
+  "baseline": "397bdd2",
+  "canonRead": "Prior complete2022–6057 recorded in TAIHUA_V2_ADAPTATION_BRIEF; current targeted2022–2175,2518–2606,3250–3460,5626–5820,5960–6057",
+  "frozen": {
+    "宋世江湖.md": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393",
+    "story/taihua.ink": "c2467279f9c0c429900fb190d8c7972a713173d3c118be4b0ed36f27fba4bdbd",
+    "src/generated/taihua.json": "fd05ba04a02970c12bf905b6ddee379035f0b91b2c76bd82aaf4cc0b801be482",
+    "story/taihua-v1.ink": "f61de7f912d58bb7a82e83b85164e8cfe371b8bf7a2babcdd578f226fa45e9fd",
+    "src/generated/taihua-v1.json": "59e7f5e688ba05c396434b3426eb18ba8894fe2d7578dc8e15eaaa8a5ec24e98",
+    "story/taihua-author.mjs": "ec3ca4ac5aa0c14cd5a10994c3f2f58103c0a1c45c6b2e4d1ad37bc152979484",
+    "story/taihua-observation.mjs": "092087b6d0b42c7c0d3090ac5085b27f066699f84f42f286ea929f0b83cecf54",
+    "story/taihua-elders.mjs": "6cf79098338a6ea58b4a562f8064b52c9fdb64fd1d3f183f0e0096f99f812242"
+  },
+  "changes": [
+    {
+      "id": "T01",
+      "round": 1,
+      "focus": "structure-causality-and-commitment",
+      "file": "taihua-author.mjs",
+      "reason": "已互相答应的私约不会因输后暂不肯听拆招自动消失。",
+      "before": "iff('rematch and respect_shen',`th_shen|你约的复手，我记得。回山前先来一回，不占你的正式序次。\ny|也不拿第五第六堵你。\nth_shen~amused|堵不住。你已经试过。`,`th_shen|你没欠我一场私打。正式的账，三年后再说。",
+      "after": "iff('rematch',`th_shen|你约的复手，我记得。回山前先说来不来，不占你的正式序次。\ny|{respect_shen:也不拿第五第六堵你。|上回说暂时不想听，不等于把先前的约算没了。}\nth_shen~intent|{respect_shen:堵不住。你已经试过。|那就当面说。我今日也有自己要找的人。}`,`th_shen|你没欠我一场私打。正式的账，三年后再说。"
+    },
+    {
+      "id": "T02",
+      "round": 1,
+      "focus": "structure-causality-and-commitment",
+      "file": "taihua-author.mjs",
+      "reason": "先回山支当面取消既存约，没约支不凭空欠约。",
+      "before": "['letter','先陪师兄回山，把不懂的留作自己的课业，并写明回信之期。','future = 2',`y|这次不留下。我想先练清自己看见的，也该把师兄带回去。\nth_shen~calm|不来就写不来。别等三年才让人猜。",
+      "after": "['letter','先陪师兄回山，把不懂的留作自己的课业，并写明回信之期。','future = 2',`y|这次不留下。我想先练清自己看见的，也该把师兄带回去。\nth_shen~calm|{rematch:那今晨这一次取消，我另找人。改约也写清，别把先约过的略掉。|不来就写不来。别等三年才让人猜。}"
+    },
+    {
+      "id": "T03",
+      "round": 1,
+      "focus": "structure-causality-and-commitment",
+      "file": "taihua-author.mjs",
+      "reason": "问张支即使输后不肯听，也需为早先真正答应的约承担改约成本。",
+      "before": "n|{rematch and respect_shen:你当面将原约改去问张。沈没说无妨，只答自己先走；那半息今天不拆了，你得在信里把改约也说清。|你没另约成沈这一回，也不拿一句同辈再见替她许下今天会等。}",
+      "after": "n|{rematch:你当面将原约改去问张。沈没说无妨，只答自己先走；那半息今天不拆了，你得在信里把改约也说清。|你没另约成沈这一回，也不拿一句同辈再见替她许下今天会等。}"
+    },
+    {
+      "id": "T04",
+      "round": 1,
+      "focus": "structure-causality-and-commitment",
+      "file": "taihua-author.mjs",
+      "reason": "延期复盘在约定次晨实际补画交付，保留收行李的时间冲突，而非结尾再延期。",
+      "before": "part('last_pack','th_guest','th_bro',`n|你推开屋门，师兄已把衣物扎好。那副借来的护腕，正压在最上头。\nth_bro|还我？还是再借一程？`);",
+      "after": "part('last_pack','th_guest','th_bro',`n|你推开屋门，师兄已把衣物扎好。那副借来的护腕，正压在最上头。\nth_bro|还我？还是再借一程？`);\niff('not kept_promise',`n|昨晚答应今晨交的图还没画完。你坐到床沿，先画沈引开中路、自己脚底落空的位置，再请师兄挪鞋来对。门外喊收行李，你把没标清的那只脚补上，才将纸交给他。\nth_bro~intent|这里同你刚才讲的不一样。\ny|是。我把想走的画成已经走到了，改这里。`);"
+    },
+    {
+      "id": "T05",
+      "round": 1,
+      "focus": "structure-causality-and-commitment",
+      "file": "taihua-author.mjs",
+      "reason": "口述支不强生一张未画过的图；是否原先许诺与是否实际复盘分别判断。",
+      "before": "iff('promise and kept_promise',`y|先还。答应讲的讲了，答应一起回去的也要做。\nth_bro~amused|谁答应让你背了？你先把门槛边的箱子抬开。`,`y|先还。这张图也给你。没画完的，不装作已经讲清了。\nth_bro~calm|那回去接着讲。我等的是你说真话，不是等你赢着回来。`);",
+      "after": "iff('kept_promise',`y|先还。{promise:答应讲的讲了。|输了那场，我也从头讲过了。}一起回去的事，还得把行李交清。\nth_bro~amused|谁答应让你背了？你先把门槛边的箱子抬开。`,`y|先还。图放你手边。刚才改的那一脚，回去再真走给你看。\nth_bro~calm|纸我收着。先把今日的行李交清。`);"
+    },
+    {
+      "id": "T06",
+      "round": 1,
+      "focus": "structure-causality-and-commitment",
+      "file": "taihua-author.mjs",
+      "reason": "选择前交代真正接班的人和交接处；累积伤肩支选项明示已知风险，不暗造拒绝换手。",
+      "before": "choose('ending',[\n ['carry','接过重箱，只把药包留给师兄。'",
+      "after": "say(`n|同门答应在第一处宽石阶接箱。你先说自己能抬到哪里，师兄只提药包，伤膝不替你接重的。`);\nchoose('ending',[\n ['carry','{strain and not measured:右肩已经发紧，仍接重箱抬到第一处交接再换人。|先接重箱到第一处交接，只把药包留给师兄。}'"
+    },
+    {
+      "id": "T07",
+      "round": 1,
+      "focus": "structure-causality-and-commitment",
+      "file": "taihua-author.mjs",
+      "reason": "重箱支承诺有限一段、仍可能过载；不写成玩家先选了整路独扛。",
+      "before": "y|这段我抬。下山再换，别一次把以后全说完。\nth_bro~calm|好。累了就放，别拿我的伤证明你不累。\nn|你把箱带松了一格，给途中能卸下留了余地。",
+      "after": "y|我先到宽石阶。同门在那里接，不让你拿伤腿替我换。\nth_bro~calm|累了就原地放，别非要撑到他说好的地方。\nn|你把箱带松了一格。{strain and not measured:右肩仍紧，这一段也得用它承重。|箱子提起，肩背暂时还能稳住。}"
+    },
+    {
+      "id": "T08",
+      "round": 1,
+      "focus": "structure-causality-and-commitment",
+      "file": "taihua-author.mjs",
+      "reason": "共享支与重箱支真实区别是起点接班与第一站接班，非有无健康帮手的含混差异。",
+      "before": "y|我们两个人一条好腿，也别逞两个人的脸。我去叫人。",
+      "after": "y|让同门从屋门就接。我去认石阶，不等走到宽处才换。"
+    },
+    {
+      "id": "T09",
+      "round": 1,
+      "focus": "structure-causality-and-commitment",
+      "file": "taihua-author.mjs",
+      "reason": "共享立即卸下重物并做别的任务；师兄伤膝不被当搬箱轮换者。",
+      "before": "n|门外有人应声，你们约好到哪段石阶换手。",
+      "after": "n|门外同门应声进屋，先接住重箱。你空出手开门，沿石阶查看哪处能落箱，再回来扶师兄过门槛。"
+    },
+    {
+      "id": "T10",
+      "round": 1,
+      "focus": "structure-causality-and-commitment",
+      "file": "taihua-author.mjs",
+      "reason": "代价来自已选择的一段承重；放下也不抹消此前负荷。兄长坐着观察，不以伤膝陪练步法。",
+      "before": "function shoulderAftermath(){iff('strain and not measured and carried',`n|右肩的紧在山路上变成刺痛。回山后，你有一个月不能抬剑；抬重箱时没肯换人，仍得自己付这份代价。\nth_bro~sharp|练步子，我陪。别再说已经没事了。\ny|没好。那今天就只练步子。`,`n|石阶转弯处，你照约定停下来换手。师兄拎着自己的药包，你们没有再争谁该把一路的重量全扛走。`)}",
+      "after": "function shoulderAftermath(){iff('strain and not measured and carried',`n|还没到交接的宽石阶，右肩的紧已变成刺痛。你就地放箱，叫同门来接；这次没有再撑，前一段承重却已经压在两场急用的肩上。回山后，你有一个月不能抬剑。\nth_bro~sharp|我坐着看，你练脚下。两个人的伤都别假装好了。\ny|没好。那今天不抬剑。`,`n|{carried:到第一处宽石阶，同门接过重箱。|同门从屋门接去的重箱先到宽石阶，你过去查看下一段。}师兄拎着自己的药包，慢慢走来，没有拿伤膝替谁接班。`)}"
+    },
+    {
+      "id": "T11",
+      "round": 1,
+      "focus": "structure-causality-and-commitment",
+      "file": "taihua-author.mjs",
+      "reason": "仍留半日但不肯拆沈招的支线须明确改约，再由司马自主接手，而非删去旧约。",
+      "before": "stage('th_leavepractice','th_sima');\nsay(`n|沈照微没有来复手。你没另约过，或还没准备好听她拆招，便不能拿一句“再来”替她答应。",
+      "after": "iff('rematch',`th_shen~intent|你今天不拆那半息了？\ny|先同司马摆那半步。早先约了你，是我改；不让你等在这里。\nth_shen|好。我找明澄，三年后的正式场仍记着。`,`n|你先前没另约沈照微，也不临到散席就叫她把半日腾给你。`);\nstage('th_leavepractice','th_sima');\nsay(`n|沈照微没有来复手。{rematch:你们已当面改约，她去找自己的对手。|你没有另约，她今日已有自己的事。}"
+    },
+    {
+      "id": "T12",
+      "round": 1,
+      "focus": "structure-causality-and-commitment",
+      "file": "taihua-author.mjs",
+      "reason": "改约当面对话正确出场沈，随后现有stage切司马；不把已离去的人留作全程陪练。",
+      "before": "out.push('- else:');\niff('rematch',`th_shen~intent|你今天不拆那半息了？",
+      "after": "out.push('- else:');\nstage('th_leavepractice','th_shen');\niff('rematch',`th_shen~intent|你今天不拆那半息了？"
+    },
+    {
+      "id": "T13",
+      "round": 1,
+      "focus": "structure-causality-and-commitment",
+      "file": "taihua-author.mjs",
+      "reason": "早先请求夜后讲第三剑的人实际得到一次有限当面复问；不把已答应的等待丢给另一个53招话题。",
+      "before": "th_xie|那就好。真要记，我自己打。`);\nchoose('huo_open',[",
+      "after": "th_xie|那就好。真要记，我自己打。`);\niff('not xie_room',`th_xie~intent|你要问第三剑？先站远点。\nn|他把剑停在尚未伸足的地方，用空手指给你看明澄已贴近的位置。你原想追问怎样补赢，见他还在重摆，便只按自己看见的距离问了一回。\nth_xie|我还没想好怎么接。不是叫你把这一停记成我已经懂了。`);\nchoose('huo_open',["
+    },
+    {
+      "id": "T14",
+      "round": 1,
+      "focus": "causality-recheck",
+      "file": "taihua-author.mjs",
+      "reason": "复读发现末日交图已迟于青序结束时许诺的次晨；撤下末日补图，下一条移到正序首日上午兑现。",
+      "before": "iff('not kept_promise',`n|昨晚答应今晨交的图还没画完。你坐到床沿，先画沈引开中路、自己脚底落空的位置，再请师兄挪鞋来对。门外喊收行李，你把没标清的那只脚补上，才将纸交给他。\nth_bro~intent|这里同你刚才讲的不一样。\ny|是。我把想走的画成已经走到了，改这里。`);",
+      "after": ""
+    },
+    {
+      "id": "T15",
+      "round": 1,
+      "focus": "causality-recheck",
+      "file": "taihua-elders.mjs",
+      "reason": "正序首日开始前客舍补画，属于真正次晨；不宣称错过必须亲见的较艺，只少路上闲谈。",
+      "before": "part('old_watch','th_oldfirst','th_shen,th_xie,th_ming',`n|青序热闹过，次日正序。",
+      "after": "part('old_watch','th_guest','th_bro',`n|青序结束的次晨，正序还未叫名。你到客舍门口取纸，师兄已将鞋挪在床前。`);\n w.iff('not kept_promise',`n|昨晚答应今晨交的图还没画完。你坐到床沿，先画沈引开中路、自己脚底落空的位置，再请师兄挪鞋来对。外头报正序入席，你把没标清的那只脚补上，才将纸交给他。\nth_bro~intent|这里同你刚才讲的不一样。\ny|是。我把想走的画成已经走到了，改这里。\nn|出门时同门已排到前头。你赶去入席，没有再找人讲路上没看见的热闹。`);\n w.stage('th_oldfirst','th_shen,th_xie,th_ming');say(`n|青序热闹过，次日正序。"
+    },
+    {
+      "id": "T16",
+      "round": 1,
+      "focus": "causality-recheck",
+      "file": "taihua-author.mjs",
+      "reason": "末日提及已完成的次晨补图，不把多日前的修改写成刚才。",
+      "before": "y|先还。图放你手边。刚才改的那一脚，回去再真走给你看。",
+      "after": "y|先还。那张补过的图收好，回去再把改的那一脚真走给你看。"
+    },
+    {
+      "id": "T17",
+      "round": 1,
+      "focus": "causality-recheck",
+      "file": "taihua-author.mjs",
+      "reason": "已改约去找明澄的人不又被同段断言先行下山。",
+      "before": "n|司马承一把箱子挪到墙根，留出刚好两个人的地方。沈照微已先行下山，告别时约的是三年后的正式场。",
+      "after": "n|司马承一把箱子挪到墙根，留出刚好两个人的地方。{rematch:沈照微去找明澄，不在这里等你；三年后的正式场仍是另一回事。|沈照微已先行下山，告别时约的是三年后的正式场。}"
+    },
+    {
+      "id": "T18",
+      "round": 1,
+      "focus": "causality-recheck",
+      "file": "taihua-author.mjs",
+      "reason": "共享支上句已改，不保留失去所答对象的腿数玩笑，转为眼前的过门动作。",
+      "before": "th_bro~amused|你两条，我一条。账别算得这样亏。",
+      "after": "th_bro~amused|我先跨门槛，你别只顾看石阶，把门替我关了。"
+    },
+    {
+      "id": "T19",
+      "round": 1,
+      "focus": "causality-recheck",
+      "file": "taihua-author.mjs",
+      "reason": "司马复手若正式场选择耐守，不强记成玩家曾主动抢半步。",
+      "before": "y|好。先拆我对你时抢的那半步。",
+      "after": "y|好。{measured:先拆你带我转出去时，我哪只脚没能收回。|先拆我对你时抢的那半步。}"
+    },
+    {
+      "id": "T20",
+      "round": 1,
+      "focus": "causality-recheck",
+      "file": "taihua-author.mjs",
+      "reason": "将交接背景并入入屋的已有动作拍，减去临选择前单独一拍说明，避免无选择段徒增。",
+      "before": "say(`n|同门答应在第一处宽石阶接箱。你先说自己能抬到哪里，师兄只提药包，伤膝不替你接重的。`);\n",
+      "after": ""
+    },
+    {
+      "id": "T21",
+      "round": 1,
+      "focus": "causality-recheck",
+      "file": "taihua-author.mjs",
+      "reason": "实际交接安排在入屋便可见，与下一句还护腕共用一拍；保留选择前的必要信息。",
+      "before": "n|你推开屋门，师兄已把衣物扎好。那副借来的护腕，正压在最上头。",
+      "after": "n|你推开屋门，师兄已把衣物扎好，护腕压在最上头。同门答应在第一处宽石阶接箱；师兄只提药包，伤膝不替你接重的。"
+    },
+    {
+      "id": "T22",
+      "round": 1,
+      "focus": "interactive-guidance-and-rhythm",
+      "file": "taihua-author.mjs",
+      "reason": "抽样发现指导路线末尾19拍无选择；将一炷香改为真走第二次或先画准落脚，两种当场行动和回山复验不同。移到独立结尾节点，保留旧伤与霍原题，不删掉代价来缩短文本。",
+      "before": "stage('th_guidanceyard','th_zhang');\nsay(`n|一炷香，张没问你第五，先叫你把纸上那只脚真放到地上。你一转，原想用来回身的地方，恰被自己前一步挤住。\nth_zhang~intent|图上能挪，脚下先得让得出。\nn|你少走一点，不是凭空偷到穆那半寸，是终于看见自己的回身原先被哪里占了。`);\niff('ask_limit',`n|正式场后你向他比过三处，这一回他还记得你那一下。先前真站过的半步，如今才有了能接着问的一点。\ny|那时以为手还能去，没想到脚已经把自己封住。\nth_zhang|今日看见这里。下次不一定同一处。`,`n|你没在第六十四手后当场试过，张从最普通的回身问。纸上三处空白，先补一处，另两处他不替你猜全。\ny|原来先问自己站不站得进去。\nth_zhang|还得真试。问明白不等于已经能走。`);\nsay(`n|香尽，张还有自己的事，准时收问。你没有多求两招，也没有从这一炷香拿回一场同辈复手。`);\nstage('th_steps','th_bro');shoulderAftermath();\nstage('th_home','th_bro');\nsay(`n|回山后，第一封给同辈的信写明自己那半日不在，另画了试给张看的回身。司马回信不肯照图先判你进步，只约再见时真接一次。\nth_bro~amused|有人肯问，也有人不肯凭一张图夸你。挺好。\ny|你先看这一脚。别因我问过前辈就替我让。`);\niff('huo_question',`n|第七日，霍要的那页也寄出，仍是追沈时的起手，不拿张刚指过的回身替换他要看的那一面。你将没能同沈复手的事另写清，没有因收过一次指点便把未赴的约从信里抹去。`);\nend('th_guidance','得到一炷香，错过同辈一场。你带回的不是一招越级的剑，而是一处可以由自己反复验证的回身；下一次见面，仍要将脚真放到别人来手之前。');\n",
+      "after": "go('guidance_trial');\npart('guidance_trial','th_guidanceyard','th_zhang',`n|一炷香，张没问你第五，先叫你把纸上那只脚真放到地上。你一转，原想用来回身的地方，恰被自己前一步挤住。\nth_zhang~intent|图上能挪，脚下先得让得出。\nn|张让你停在将转未转的地方。香还在烧，你得先选怎样用这一小段工夫。`);\nchoose('guidance_continue',[\n ['guidance_repeat','请张仍站原处，自己退回起手，再真走一次。','guidance_repeated = true',`y|您别替我让。我从前一步重走。\nn|你少进一点，再回身，脚后终于空出原先挤住的地方；手却还追旧图里的落点。\nth_zhang|脚有路了。手还要自己找，今日不替你接完。`],\n ['guidance_mark','先把脚下两处位置画准，不急着连第二次，留下能回山验证的图。','guidance_repeated = false',`y|我先认清是哪一步挤住，不连着走给您看好看。\nn|你将两脚落处画到纸边，请张只认自己刚才真实站过的位置。第二次没走，不在旁边写已经会了。\nth_zhang|带回去，照这个先试。纸上留得出，脚下还不算。`],\n]);\npart('guidance_continue','th_guidanceyard','th_zhang',`n|你收起纸，不再把穆那一剑添到自己的动作后头。`);\niff('ask_limit',`n|正式场后你向他比过三处，这一回他还记得你那一下。先前真站过的半步，如今才有了能接着问的一点。\ny|那时以为手还能去，没想到脚已经把自己封住。\nth_zhang|今日看见这里。下次不一定同一处。`,`n|你没在第六十四手后当场试过，张从最普通的回身问。纸上三处空白，先补一处，另两处他不替你猜全。\ny|原来先问自己站不站得进去。\nth_zhang|还得真试。问明白不等于已经能走。`);\nsay(`n|香尽，张还有自己的事，准时收问。你没有多求两招，也没有从这一炷香拿回一场同辈复手。`);\nstage('th_steps','th_bro');shoulderAftermath();\nstage('th_home','th_bro');\nsay(`n|回山后，第一封给同辈的信写明自己那半日不在，另画了试给张看的回身。司马回信不肯照图先判你进步，只约再见时真接一次。\nth_bro~amused|有人肯问，也有人不肯凭一张图夸你。挺好。\ny|{guidance_repeated:刚才真走的那回，手还在追旧落点。你先看这里。|第二次还没走，图在这里。我先试，你看哪只脚又挤住。}`);\niff('huo_question',`n|第七日，霍要的那页也寄出，仍是追沈时的起手，不拿张刚指过的回身替换他要看的那一面。你将没能同沈复手的事另写清，没有因收过一次指点便把未赴的约从信里抹去。`);\nend('th_guidance','得到一炷香，错过同辈一场。你带回的不是一招越级的剑，而是一处可以由自己反复验证的回身；下一次见面，仍要将脚真放到别人来手之前。');\n",
+      "afterIsComposite": true,
+      "afterNote": "The branch divert and detached final knots are shown together; the letter branch remains between them in the actual file."
+    },
+    {
+      "id": "T23",
+      "round": 1,
+      "focus": "causality-and-rhythm-recheck",
+      "file": "taihua-author.mjs",
+      "reason": "已当面对沈改约且说明她另找人，不再加一拍旁白重复；保留改约、司马接手和伤情成本，补入守约对白后的最长被动段回到18。",
+      "before": "say(`n|沈照微没有来复手。{rematch:你们已当面改约，她去找自己的对手。|你没有另约，她今日已有自己的事。}\nth_sima~amused|我可以。不过先说好，还是不记场。",
+      "after": "say(`th_sima~amused|我可以。不过先说好，还是不记场。"
+    }
+  ],
+  "newImages": 0,
+  "limits": "No published entry replaced. Literary character/rhythm and alternative-route rounds, production direction and browser delivery remain open."
+}

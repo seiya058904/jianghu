@@ -1,0 +1,86 @@
+{
+  "status": "INTERNAL_THIRD_ROUND_UNPUBLISHED",
+  "changes": [
+    {
+      "id": "Q30",
+      "round": 3,
+      "focus": "alternative-route-and-distant-payoff",
+      "file": "qingshi-career.mjs",
+      "reason": "识字私约不能被后来未记删招理由覆盖成未选的木条私约；四组合分别兑现。",
+      "before": "iff('qs_song_word == 1 and qs_kept_reasons',`n|你带来的练法里，宋礼教你的那几个字还留着。抄本写了为什么删，也写原先是谁教。赵家收一份，另一份带回给学生。`,`n|你取一根木条，把宋礼当年舍不得换剑的事走给小辈看。先试怎样收，才谈重不重；他们看得到一件没靠传闻变轻的事。`);",
+      "after": "iff('qs_song_word == 1 and qs_kept_reasons',`n|你带来的练法里，宋礼教你的那几个字还留着。抄本写了为什么删，也写原先是谁教。赵家收一份，另一份带回给学生。`);\n iff('qs_song_word == 1 and not qs_kept_reasons',`n|你没有备齐删招的理由，抄页上还留着宋礼教过的三个字。你请小辈逐个念，自己用木条走给他们看，字与动作对上再往下讲。`);\n iff('qs_song_word == 2 and qs_kept_reasons',`n|你先取木条，照当年约的试轻重和收回。小辈试完，你才打开记过删招理由的抄本，指给他看这一条为什么要改。`);\n iff('qs_song_word == 2 and not qs_kept_reasons',`n|你取一根木条，把宋礼当年舍不得换剑的事走给小辈看。先试怎样收，才谈重不重；他们看得到一件没靠传闻变轻的事。`);"
+    },
+    {
+      "id": "Q31",
+      "round": 3,
+      "focus": "alternative-route-and-distant-payoff",
+      "file": "qingshi-youth.mjs",
+      "reason": "明日复手的初场承诺不能只说不做；在20岁明确回忆那次次日，不混成当晚已过一日。",
+      "before": "iff('qs_zhao_word == 1',",
+      "after": "iff('qs_honest_start',`n|想起十七岁那次，第二日你真去找过陈虎。他把拳放慢，让你看先前打中的三下为何没推得动他，回头还问肋下疼不疼。`,`n|十七岁那次嘴硬之后，陈虎第二日没叫你再试拳，扛粮时替你换了小袋。你没再说大袋也扛得动，直到能抬起胳膊才找他。`);\n iff('qs_zhao_word == 1',"
+    },
+    {
+      "id": "Q32",
+      "round": 3,
+      "focus": "alternative-route-and-distant-payoff",
+      "file": "qingshi-last.mjs",
+      "reason": "第一日多顶一轮的补歇应在后日交班有实际结果，而非仅一句次日得留空。",
+      "before": "iff('qs_exit_drill and qs_army_drill',",
+      "after": "iff('qs_counted',`n|第一日排过的轮换表又送来。伤了还能传话的人另站一班，副将没有把他们填回抬栓那栏。`,`n|第一日多顶一轮的两人，白日总算补过歇。少了他们那半班，搬栓先慢了一趟；此刻他们回班，替正要抬箱的人接了传话。`);\n iff('qs_exit_drill and qs_army_drill',"
+    },
+    {
+      "id": "Q33",
+      "round": 3,
+      "focus": "alternative-route-and-distant-payoff",
+      "file": "qingshi-last.mjs",
+      "reason": "叫名字或纸页交接应影响身后确认证据，不只是当场不同口气。",
+      "before": "part('after_report','qs_after','qs_vice','n|送灵的差事有人接，城里仍要把每个名字核完。');",
+      "after": "part('after_report','qs_after','qs_vice','n|送灵的差事有人接，城里仍要把每个名字核完。');\n iff('qs_names_left',`n|副将把城头听过的五个名字复诵一遍，记录的人逐字写。他听见小七被写作小齐，又叫住人改过。`,`n|包里的旧页找出来了。副将请识字军士念，念完五个名字，再核背面的接课人和门后差事，才交给送灵的人。`);"
+    },
+    {
+      "id": "Q34",
+      "round": 3,
+      "focus": "alternative-route-and-distant-payoff",
+      "file": "qingshi-last.mjs",
+      "reason": "阿满是否确实应过口令影响私下记述，不改固定守住。",
+      "before": "say(`n|灵柩在石门村和青石镇停过。",
+      "after": "iff('qs_final_call',`n|阿满记得门后有人回了那一声在。写到最后，他只肯替自己听见的这一声落笔。`,`n|阿满记下的是木栓落下的重响。有人问许公最后喊了什么，他说那时没有再喊，不肯添一句传得好听的话。`);\n say(`n|灵柩在石门村和青石镇停过。"
+    },
+    {
+      "id": "Q35",
+      "round": 3,
+      "focus": "alternative-route-recheck",
+      "file": "qingshi-last.mjs",
+      "reason": "复读后发现传令路线的阿满未必在木障，不能保证他亲闻；用实际门后当值者报来，不抹掉随后守时间的刀前对话。",
+      "before": "iff('qs_final_call',`n|阿满记得门后有人回了那一声在。写到最后，他只肯替自己听见的这一声落笔。`,`n|阿满记下的是木栓落下的重响。有人问许公最后喊了什么，他说那时没有再喊，不肯添一句传得好听的话。`);",
+      "after": "iff('qs_final_call',`n|门后当值的军士来报，那一声在是他回的。记录的人请他再说一遍，把谁喊、谁应分作两行。`,`n|值守木障的人只报木栓落下的重响。这一段有没有传话，他没有听清，不肯替刀前的人补一句遗言。`);"
+    },
+    {
+      "id": "Q36",
+      "round": 3,
+      "focus": "full-route-rhythm-recheck",
+      "file": "qingshi-last.mjs",
+      "reason": "先按信息顺序调整：让两处接应有具体回报后，再用原有核全军伤亡/先定送灵选择。复测最长仍23拍，精确定位实际在车后至回乡；本条不冒称缩短最长段，最长段由Q37的新回乡取舍降到16拍。",
+      "before": " choose('after_report',[\n  ['qs_epilogue_roll','先逐队听完伤亡与接应，再定送灵的人。','qs_epilogue_roll = true',`y|谁没回到这里，先报；谁还在伤帐，别写成已经走了。\nn|你听完最后一队，才请能走的人接护送。名册上留了还要核问的空处。`],\n  ['qs_epilogue_escort','先把送灵的人路排定，自己留下与伤者逐一核册。','qs_epilogue_roll = false',`y|先替许公走一段。我留下，伤帐这头还有几户不知道往哪里报。\nn|你把送灵的名单交出，自己走到伤帐。半刀没有被匆忙当作一件领完就走的战利品。`],\n ]);\n part('after_report','qs_after','qs_vice','n|送灵的差事有人接，城里仍要把每个名字核完。');\n iff('qs_names_left',`n|副将把城头听过的五个名字复诵一遍，记录的人逐字写。他听见小七被写作小齐，又叫住人改过。`,`n|包里的旧页找出来了。副将请识字军士念，念完五个名字，再核背面的接课人和门后差事，才交给送灵的人。`);\n iff('qs_last_duty == 1',`n|阿满走的是传令那条路。`, `n|阿满留在第二道木障，等第一道人退来。`);\n iff('(qs_exit_drill and qs_army_drill) or (qs_last_duty == 2 and qs_runner_return)',`n|两处接应都认到了活人。阿满和这一小队三个军士活着熬到黄昏。他后来能说出自己在哪一处等过，不把没去过的地方也写进见证。\nqs_vice|回去把你认得的路画上。许公留下的那一页，别替他抄成一路无伤。`,`n|回报迟到一处，旧班名下没人应。阿满腿伤，被同伴拖过第二木障，同行三人死了两人。那张图带回来时边角浸了血，活着的人仍得替写错的交接逐一补名。\nqs_vice|这两个人也写上。不是只记许公一个人替城守住了全部。`);\n",
+      "after": " go('casualty_review');\n part('casualty_review','qs_after','qs_vice','n|送灵之前，两处木障的接应先来报。还有别队未核完，你把这几人的去处留在册边。');\n iff('qs_names_left',`n|副将把城头听过的五个名字复诵一遍，记录的人逐字写。他听见小七被写作小齐，又叫住人改过。`,`n|包里的旧页找出来了。副将请识字军士念，念完五个名字，再核背面的接课人和门后差事，才交给送灵的人。`);\n iff('qs_last_duty == 1',`n|阿满走的是传令那条路。`, `n|阿满留在第二道木障，等第一道人退来。`);\n iff('(qs_exit_drill and qs_army_drill) or (qs_last_duty == 2 and qs_runner_return)',`n|两处接应都认到了活人。阿满和这一小队三个军士活着熬到黄昏。他后来能说出自己在哪一处等过，不把没去过的地方也写进见证。\nqs_vice|回去把你认得的路画上。许公留下的那一页，别替他抄成一路无伤。`,`n|回报迟到一处，旧班名下没人应。阿满腿伤，被同伴拖过第二木障，同行三人死了两人。那张图带回来时边角浸了血，活着的人仍得替写错的交接逐一补名。\nqs_vice|这两个人也写上。不是只记许公一个人替城守住了全部。`);\n choose('after_report',[\n  ['qs_epilogue_roll','先逐队听完伤亡与接应，再定送灵的人。','qs_epilogue_roll = true',`y|谁没回到这里，先报；谁还在伤帐，别写成已经走了。\nn|你听完最后一队，才请能走的人接护送。名册上留了还要核问的空处。`],\n  ['qs_epilogue_escort','先把送灵的人路排定，自己留下与伤者逐一核册。','qs_epilogue_roll = false',`y|先替许公走一段。我留下，伤帐这头还有几户不知道往哪里报。\nn|你把送灵的名单交出，自己走到伤帐。半刀没有被匆忙当作一件领完就走的战利品。`],\n ]);\n part('after_report','qs_after','qs_vice','n|送灵的差事有人接，城里仍要把每个名字核完。');\n"
+    },
+    {
+      "id": "Q37",
+      "round": 3,
+      "focus": "measured-life-scene-pacing",
+      "file": "qingshi-career.mjs + qingshi-author.mjs + qingshi-last.mjs",
+      "reason": "实测23拍出现在carriage_9至army76_3，不在后日。七十回乡加入半日核账/试收手的实际取舍与交军中名单/接栓的后效，新增1决定2选项；不以合并对白掩盖读量。",
+      "before": "home70回响连续播放至army76；无qs_home_lesson变量。",
+      "after": " choose('home_visit',[\n  ['qs_home_accounts','先陪邻里核工钱，练法的抄页请同行带走。','qs_home_lesson = 1',`y|先把账条拿来。缺哪一笔，今日去问；课页先替我带回。\nqs_zhaodaughter|认不出的别猜。我去请写这张条的人来。\nn|她把人叫到门边，你们把漏写的那趟脚钱补上。半日留给了纸上的数，木条课只来得及约下回。`],\n  ['qs_home_practice','先在门外试一回收手，账条请熟悉的账房当面核。','qs_home_lesson = 2',`y|愿意试的到棚下。我只看这一回怎样收；工钱得请账房来，不能拿上课顶掉。\nqs_zhaodaughter|愿去的人自己去。我不替谁应，账条也留着给你看。\nn|你带几人试了半日，亲自核工钱的事便赶不上。账房对完的条子送到时，你还得问清是哪一笔补过。`],\n ]);\n part('home_visit','qs_home70','qs_zhaodaughter',`n|半日之后，你把要带回的抄页收拢。还有几句旧约，不能只留一句这回来过。`);\n iff('qs_home_lesson == 1',`n|回乡核过脚钱的抄页还在行囊。你让轮值的人照名报差，漏掉的那一趟单独添行，再去核是谁真走过。`,`n|回乡那半日试收手的课还在抄页上。你先让换班的人接住木栓，等对面应声才松开，纸上的班次随后再核。`);\n"
+    },
+    {
+      "id": "Q38",
+      "round": 3,
+      "focus": "new-choice-integration-recheck",
+      "file": "qingshi-career.mjs",
+      "reason": "新增半日选择后，原木条与核账回响会让未选活动也做满半日。核账支只约木条；试手支账由账房核并另约识字课。",
+      "before": " iff('qs_song_word == 1 and qs_kept_reasons',`n|你带来的练法里，宋礼教你的那几个字还留着。抄本写了为什么删，也写原先是谁教。赵家收一份，另一份带回给学生。`);\n iff('qs_song_word == 1 and not qs_kept_reasons',`n|你没有备齐删招的理由，抄页上还留着宋礼教过的三个字。你请小辈逐个念，自己用木条走给他们看，字与动作对上再往下讲。`);\n iff('qs_song_word == 2 and qs_kept_reasons',`n|你先取木条，照当年约的试轻重和收回。小辈试完，你才打开记过删招理由的抄本，指给他看这一条为什么要改。`);\n iff('qs_song_word == 2 and not qs_kept_reasons',`n|你取一根木条，把宋礼当年舍不得换剑的事走给小辈看。先试怎样收，才谈重不重；他们看得到一件没靠传闻变轻的事。`);\n iff('qs_zhao_word == 1',`qs_zhaodaughter|小时候见你来，就知道爹要晚。今日也让我家里人知道你还坐在这儿吃饭。\nn|她叫人捎一句你今晚住哪里。你当年替人带过的口信，如今有人替你把同一件小事做完。`,`qs_zhaodaughter|娘还留着那几张工钱条，说你认不出的字，宋叔叔就多教一回。\nn|她叫小辈把工钱条拿来，给你留半日。你接过纸，先让他们自己念，念到八十文时又问一遍。`);\n",
+      "after": " iff('qs_song_word == 1 and qs_kept_reasons',`n|你带来的练法里，宋礼教你的那几个字还留着。抄本写了为什么删，也写原先是谁教。赵家收一份，另一份带回给学生。`);\n iff('qs_song_word == 1 and not qs_kept_reasons',`n|你没有备齐删招的理由，抄页上还留着宋礼教过的三个字。你请小辈逐个念，自己用木条走给他们看，字与动作对上再往下讲。`);\n iff('qs_song_word == 2 and qs_kept_reasons and qs_home_lesson == 2',`n|你先取木条，照当年约的试轻重和收回。小辈试完，你才打开记过删招理由的抄本，指给他看这一条为什么要改。`);\n iff('qs_song_word == 2 and not qs_kept_reasons and qs_home_lesson == 2',`n|你取一根木条，把宋礼当年舍不得换剑的事走给小辈看。先试怎样收，才谈重不重；他们看得到一件没靠传闻变轻的事。`);\n iff('qs_song_word == 2 and qs_home_lesson == 1',`n|木条留在门槛边。你把下次试收手的时辰写在抄页上，今日没有再开一堂课；账房正在等你核完最后一笔。`);\n iff('qs_zhao_word == 1',`qs_zhaodaughter|小时候见你来，就知道爹要晚。今日也让我家里人知道你还坐在这儿吃饭。\nn|她叫人捎一句你今晚住哪里。你当年替人带过的口信，如今有人替你把同一件小事做完。`);\n iff('qs_zhao_word == 2',`qs_zhaodaughter|娘还留着那几张工钱条，说你认不出的字，宋叔叔就多教一回。`);\n iff('qs_zhao_word == 2 and qs_home_lesson == 1',`n|她把核过的工钱条留下，让小辈自己念。念到八十文时你又问一遍，先前漏写的那一趟已经添在下头。`);\n iff('qs_zhao_word == 2 and qs_home_lesson == 2',`qs_zhaodaughter|账房来过了，这一笔补在这里。认字那堂课先留着，下次让他自己念。\nn|你核过账房添字的地方，另约好时辰，没有把试过木条算作认完了这张工钱条。`);\n"
+    }
+  ]
+}

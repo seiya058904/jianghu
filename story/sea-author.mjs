@@ -1,0 +1,11 @@
+import {writeFileSync} from 'node:fs';
+import {createWriter} from './chronicle-writer.mjs';
+import {writeCrossing} from './sea-crossing.mjs';
+import {writeAsking} from './sea-asking.mjs';
+import {writeTeaching} from './sea-teaching.mjs';
+import {writeLegacy} from './sea-legacy.mjs';
+const w=createWriter('sr_');writeCrossing(w);writeAsking(w);writeTeaching(w);writeLegacy(w);
+const flags=['far_question','line_shared','port_space','local_practice','loss_question','illness_plain','name_first','more_questions','repeat_plain','zhao_honest','teaching_daily','class_return','rule_demonstrate','old_visit','pages_plain'];
+const numbers=['old_read','canghe_answer','first_mainland','zhao_request','own_answer','gate_answer','legacy'];
+const vars={...Object.fromEntries(flags.map(k=>[`sr_${k}`,false])),...Object.fromEntries(numbers.map(k=>[`sr_${k}`,0]))};
+writeFileSync('story/sea.ink','// Source: 宋世江湖6362–7787. Lu and Luo are separate people, two centuries apart.\n'+Object.entries(vars).map(([k,v])=>`VAR ${k} = ${v}`).join('\n')+'\n-> old_first\n'+w.render());

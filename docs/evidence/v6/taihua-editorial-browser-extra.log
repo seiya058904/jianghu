@@ -1,0 +1,14 @@
+
+Running 7 tests using 1 worker
+
+(node:36892) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\art-manifest.spec.ts:8:107 › Asset manifest: every raster has exact built bytes and browser decode on root (2.6s)
+  ok 2 tests\art-manifest.spec.ts:8:107 › Asset manifest: every raster has exact built bytes and browser decode on subpath (2.4s)
+  ok 3 tests\taihua-editorial-cold-offline.spec.ts:8:1 › Taihua V2 cold chunk and shared night illustration are explicitly restored; fresh offline pages resume V2 and V3 at root and subpath (1.5s)
+  ok 4 tests\taihua-editorial-integrity.spec.ts:8:107 › Taihua three editions root: exact old raw exports, import rejection, independent current pending choice (628ms)
+  ok 5 tests\taihua-editorial-integrity.spec.ts:8:107 › Taihua three editions subpath: exact old raw exports, import rejection, independent current pending choice (599ms)
+  ok 6 tests\taihua-editorial-integrity.spec.ts:11:1 › Taihua current, second edition and original cover links remain usable at seven sizes (1.7s)
+  ok 7 tests\taihua-editorial-integrity.spec.ts:17:1 › Taihua short lesson pending action: two replies, two themes, seven sizes, real pointer or keyboard, reload and no stale CG (11.9s)
+
+  7 passed (22.4s)

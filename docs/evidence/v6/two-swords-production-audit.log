@@ -1,0 +1,134 @@
+{
+  "counts": {
+    "speakingNPC": 116,
+    "registeredDedicatedUsed": 20,
+    "independentDedicatedUsed": 20,
+    "charactersWithThreeImagesAtSameAppearance": 16,
+    "registeredArchetypesUsed": 12,
+    "distinctBackgroundFiles": 28,
+    "distinctCGFiles": 10,
+    "referencedBytes": 18815714
+  },
+  "ownershipConflicts": 0,
+  "simultaneousCollisions": 0,
+  "works": {
+    "tide-v6": {
+      "version": "tide-promise-2.0.0",
+      "sourceBeats": 1325,
+      "visitedBeats": 1325,
+      "unvisited": [],
+      "choiceOptions": 182,
+      "endings": [
+        "harbor",
+        "name",
+        "together5",
+        "teacher",
+        "captain",
+        "apart",
+        "scar",
+        "lost"
+      ],
+      "longestPassiveGap": 28,
+      "sampledRuns": 168,
+      "exhaustive": false
+    },
+    "kuhe": {
+      "version": "kuhe-1.0.0",
+      "sourceBeats": 299,
+      "visitedBeats": 299,
+      "unvisited": [],
+      "choiceOptions": 40,
+      "endings": [
+        "kh_care",
+        "kh_record"
+      ],
+      "longestPassiveGap": 15,
+      "sampledRuns": 168,
+      "exhaustive": false
+    },
+    "qingshi": {
+      "version": "qingshi-1.0.0",
+      "sourceBeats": 414,
+      "visitedBeats": 414,
+      "unvisited": [],
+      "choiceOptions": 58,
+      "endings": [
+        "qs_records",
+        "qs_heirs"
+      ],
+      "longestPassiveGap": 18,
+      "sampledRuns": 168,
+      "exhaustive": false
+    },
+    "two-swords": {
+      "version": "two-swords-1.0.0",
+      "sourceBeats": 327,
+      "visitedBeats": 327,
+      "unvisited": [],
+      "choiceOptions": 50,
+      "endings": [
+        "ss_mountain_lesson",
+        "ss_library_lesson"
+      ],
+      "longestPassiveGap": 15,
+      "sampledRuns": 168,
+      "exhaustive": false
+    },
+    "taihua": {
+      "version": "taihua-1.0.0",
+      "sourceBeats": 309,
+      "visitedBeats": 309,
+      "unvisited": [],
+      "choiceOptions": 36,
+      "endings": [
+        "th_company",
+        "th_letter"
+      ],
+      "longestPassiveGap": 16,
+      "sampledRuns": 168,
+      "exhaustive": false
+    },
+    "longmen": {
+      "version": "longmen-1.0.0",
+      "sourceBeats": 271,
+      "visitedBeats": 271,
+      "unvisited": [],
+      "choiceOptions": 42,
+      "endings": [
+        "lm_travel",
+        "lm_home"
+      ],
+      "longestPassiveGap": 15,
+      "sampledRuns": 168,
+      "exhaustive": false
+    },
+    "dongting": {
+      "version": "dongting-1.0.0",
+      "sourceBeats": 155,
+      "visitedBeats": 155,
+      "unvisited": [],
+      "choiceOptions": 22,
+      "endings": [
+        "dt_company",
+        "dt_cargo"
+      ],
+      "longestPassiveGap": 13,
+      "sampledRuns": 168,
+      "exhaustive": false
+    },
+    "twelfth": {
+      "version": "twelfth-1.0.0",
+      "sourceBeats": 236,
+      "visitedBeats": 236,
+      "unvisited": [],
+      "choiceOptions": 36,
+      "endings": [
+        "qw_school",
+        "qw_palace"
+      ],
+      "longestPassiveGap": 11,
+      "sampledRuns": 168,
+      "exhaustive": false
+    }
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "round": 3,
+  "focus": "alternate routes, disclosed knowledge and delayed costs",
+  "records": [
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "跨视角明说密令需复用既有条件输出，不改变共享writer。",
+      "before": " const {part,view,choose,iff,say,stage}=w;",
+      "after": " const {part,view,choose,iff,say,stage,out}=w;"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "先核后约/先约再核在错船与等更上分别兑现，不能只改选项句子。",
+      "before": " w.fact('jt_roles');",
+      "after": " w.fact('jt_roles');\n iff('jt_truth_patience',`n|你们核过来路才另约，已错过原本能赶的那班船。庙外叫更时，没人再催走，今夜要在这里把话问完。`,`n|约定的时辰先到了，查问却还没齐。你在庙里等过一遍更，听见另一人带着湿鞋进门，才把门边的灯拨亮；他确实来了，没有拿留过一句话就算来过。`);"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "缩短同声说理，为下一场真正说出命令原话留空间。",
+      "before": "要我动手的，我没照做。后面不会因为我说不杀，就替我们换一个肯放人的上面。",
+      "after": "要我动手的，我没照做。话只算我自己的，他们不会就此收刀。"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "明说支由两个主视角各说自己的密令原话、听对方回应；保距离支只约叫醒，不偷听全部秘密。",
+      "before": " part('not_fighting','jt_temple_reveal','',`n|最后谁也没有出手。两边都回不去，玉又不能永远抱着跑。沈说做一块假的，江问她会不会，她答不会，但认识一个会的人。`);",
+      "after": " part('not_fighting','jt_temple_reveal','',`n|最后谁也没有出手。玉还放在两人之间。`);\n out.push('{\\n- jt_temple_word == 2:');\n view('jt_temple_reveal',`y|得璧。绝旁知者。就这六个字。\njt_jiang~uneasy|我那封是璧归门，同行非本门者，不留。\nn|他把手从剑柄上放下来，仍没让剑离开膝边。`,\n `y|璧归门。同行非本门者，不留。我的原话。\njt_shen~intent|得璧。绝旁知者。我的只有六个字。\nn|她把刃背转向自己，短刃仍压在掌下。`);\n out.push('- else:');say(`n|你们没再追问信上的字句，只约明早出门时先叫醒另一人。兵器各收在够得着的位置，这一夜仍分坐两边。`);out.push('}');\n say(`n|两边都回不去，玉又不能永远抱着跑。沈说做一块假的，江问她会不会，她答不会，但认识一个会的人。`);"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "破庙分饼/先算路费在下一程吃住中回响，旧铜钱不因回响被花掉。",
+      "before": " choose('craftsman',[",
+      "after": " iff('jt_bread_shared',`n|出庙时江买来两块软饼，照先前一人一半放好。沈没动贴身那枚旧钱，从另一小袋付了水钱。`,`n|出庙前你们重算路费，昨夜省下的住钱添了药。饼只买一块，分开仍嫌硬，江笑说下一回再换软的。`);\n choose('craftsman',["
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "见匠方法落实为磨盘半夜/多一夜柴钱与两支订钱，均保留数月工期。",
+      "before": " choose('making',[",
+      "after": " iff('jt_waited_craft',`n|你们早来的一程赶上老人试料。沈守着灯，江帮着转了半夜磨盘；等试片裂开才知这半夜还不算开工。`,`n|为核旧识晚来的一程，错过老人这炉试料。你们另付一夜柴钱等下一炉，订钱也在这时交下；核过手艺没有替你们省掉等工期的日子。`);\n choose('making',["
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-aftermath.mjs",
+      "reason": "热饭/先结钱之后先接实际结款场，再到半年山道，不把余款跳没。",
+      "before": " choose('half_year',[",
+      "after": " choose('settled_road',["
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-aftermath.mjs",
+      "reason": "热饭支次晨确实清余款并误早车；先结支少热屋但真赶车，均不拖欠工钱半年。",
+      "before": " part('half_year','jt_mountainpass','',`n|假璧被抢走的半年以后",
+      "after": " part('settled_road','jt_exchange','',`n|天亮，城门那班车已经走了。`);\n iff('jt_ordinary_day',`n|昨夜那顿热饭吃到店家收灯。今早你们先把老匠余款与送箱的后话交清，没赶上早车，步行半日才到下一处镇口。`,`n|昨夜先结清余款，移到城门旁一间漏风的便宜屋。江早起去占车位，沈裹紧披衣等他，赶上这班车，脚底少磨了半日。`);\n w.go('half_year');\n part('half_year','jt_mountainpass','',`n|假璧被抢走的半年以后"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-aftermath.mjs",
+      "reason": "清车行动之后留一次近身应对操作，再接固定回救。",
+      "before": " choose('turn_back',[",
+      "after": " choose('close_press',["
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-aftermath.mjs",
+      "reason": "新增具体兵器距离/侧位操作与身体代价，两个方法都通向原典固定回救与中刀，不以选项改正史。",
+      "before": " part('turn_back','jt_mountainpass','',`n|打到石角",
+      "after": " part('close_press','jt_mountainpass','',`n|长刀从外圈横过来，沈的短刃够不到握刀的手。江刚把剑送出，另一人便从剑尾贴进，石壁不容两人并排退。`);\n choose('turn_back',[\n  ['jt_open_inside','沈贴内侧挑腕，让江沿她让出的外圈压住第二人，再退石角。','jt_close_press = 1',`n|沈不拿短刃硬格刀身，肩贴近一步才挑到腕侧。刀口偏了，震回来的力却压得她手指发麻。\nn|江借让出的外圈逼住第二人，两人退到石角。沈换一次握法，没把刚才接住一刀当成手已不疼。`],\n  ['jt_keep_blade_range','江先用剑尖逼长刀退半步，沈收进剑尾内侧，贴石角换位。','jt_close_press = 2',`n|江把剑尖留在对方前腕前，不与长刀比沉。对方退的半步刚够沈收进来，江的旧肩却被第二人的短兵顶住。\nn|他让开剑尾才抽得出剑，衣下牵疼了一线。沈接住贴身的人，把他换到外侧，两人都没再回到原先站位。`],\n ]);\n part('turn_back','jt_mountainpass','',`n|打到石角"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-aftermath.mjs",
+      "reason": "近身选项各回收手麻/旧肩，固定致命后刀不是临时取消玩家成功。",
+      "before": " view('jt_mountainpass',`jt_jiang~uneasy|亏。",
+      "after": " iff('jt_close_press == 1',`n|沈刚才发麻的手握不住他的衣带，换到另一只手才拖得动半步。江压开第一刀时腕上仍有余力，后一道却已绕进背侧。`,`n|江刚才被顶疼的肩没能再撑一次长格，回身只够把第一刀带偏。沈借未麻的手抓住他衣带，人仍倒了下去。`);\n view('jt_mountainpass',`jt_jiang~uneasy|亏。"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-author.mjs",
+      "reason": "新近身操作独立变量，既有变量不改义。",
+      "before": "jt_cart_call:0,jt_last_action:0",
+      "after": "jt_cart_call:0,jt_close_press:0,jt_last_action:0"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-aftermath.mjs",
+      "reason": "清车/喊石角在固定死后的脱围按各自行动回响。",
+      "before": " part('gone','jt_afterpass','',`n|江十七死了。沈玉娘没能再把他拖起。那句也还行没有替他换回下一口气。\nn|从这里起，你是带着木箱独行的沈玉娘。江的那条路已经停下。你没有回内廷领功，等取回真璧的人也没等到你。\nn|赶车人从低处把散开的车包扔回山口，喊声将外侧追兵引开片刻。沈沿石后的窄缝拖着木箱退，回身时江已不会再应她。她靠这片刻出了包围，没有把他的那条路也带出来。\nn|旧铜钱仍放在贴身衣内。木箱里的玉压着肩，江已不在，没再有人问里面那件东西还在不在。`);\n",
+      "after": " part('gone','jt_afterpass','',`n|江十七死了。沈玉娘没能再把他拖起。那句也还行没有替他换回下一口气。\nn|从这里起，你是带着木箱独行的沈玉娘。江的那条路已经停下。你没有回内廷领功，等取回真璧的人也没等到你。\nn|旧铜钱仍放在贴身衣内。木箱里的玉压着肩，江已不在，没再有人问里面那件东西还在不在。`);\n iff('jt_cart_call == 1',`n|先前放走的最后一辆车已转到低处。赶车人从那里把散包扔回山口，喊声引开外侧追兵片刻；沈沿石后的窄缝拖着木箱退，没能把江也拖出。`,`n|赶车人记得你们喊过的石角，带慢的人下去后又从低处喊了一声。他抛起散包，引开外侧追兵片刻；沈沿石后的窄缝拖着木箱退，木箱过去了，江没再应她。`);\n say(`n|她靠这片刻出了包围，没有把他的那条路也带出来。`);\n"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-aftermath.mjs",
+      "reason": "找工/清欠项到后日劳作、赊欠和时间回收。",
+      "before": " choose('box',[",
+      "after": " iff('jt_last_trade',`n|养过那次伤，沈去洗药筛，头两日手酸得抬不起。药铺只按做完的活结钱，她隔日再去，才攒到下一包药；没有因识旧物便有人肯预付一月工钱。`,`n|当钱先清急药与欠饭，药铺那一笔没有赊下。等伤渐好，饭铺肯再留两日饭，她先去帮着择菜偿这两日，才腾得出一夜另记旧账。`);\n choose('box',["
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-aftermath.mjs",
+      "reason": "留账/收笔各改变可见账页。",
+      "before": " part('box','jt_hidden','',`n|多年以后",
+      "after": " part('box','jt_hidden','',`n|沈把药钱记完，抽出那页放了许久的账纸。`);\n iff('jt_kept_ordinary',`n|她把仍能交付的两笔欠账留在正面，托人送出的那笔另画一小点。谁肯收、谁已搬走，都没有用一个还字省掉。`,`n|她收回写了一半的说明，药钱另记新纸。旧页没有续上江未说过的结尾，折起时仍露着一行没写完的字。`);\n say(`n|多年以后"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-vault.mjs",
+      "reason": "假吵明指推空盒，不误读为推同伴进守卫刀口。",
+      "before": "n|另一人接得比你快，向盒边一推。",
+      "after": "n|另一人接得比你快，抬脚把空盒推向门后。"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-aftermath.mjs",
+      "reason": "交叉复读发现公共首句先说车已走，却有早结支赶上该车；换成两支都成立的天亮换岗。",
+      "before": "天亮，城门那班车已经走了。",
+      "after": "天亮，城门换过一班守卫。"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "分饼发生在第三个月前，不能把早先少住一宿误记成昨夜。",
+      "before": "出庙前你们重算路费，昨夜省下的住钱添了药。饼只买一块，分开仍嫌硬，江笑说下一回再换软的。",
+      "after": "出庙前你们重算路费。先前少住一宿省下的钱已经添过药，今日饼只买一块，分开仍嫌硬，江笑说下一回再换软的。"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-aftermath.mjs",
+      "reason": "拍卖撞肩已过数月，未设长期旧伤；这里是当次右肩受顶，不凭空复发慢性伤。",
+      "before": "江的旧肩却被第二人的短兵顶住。",
+      "after": "江的右肩却被第二人的短兵顶住。"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "保距离支不读彼此原话，但两人当面确认各自组织也不放对方，支持临终你那边要杀我的已知事实。",
+      "before": " say(`n|两边都回不去，玉又不能永远抱着跑。",
+      "after": " say(`n|江问内廷的人会不会放他，沈问盗门会不会放她。两人都摇头。明早醒来，谁也没有等到一封撤令的信。\nn|两边都回不去，玉又不能永远抱着跑。"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "正文改后继续查见闻发现旧fact仍提前公开两道密令，新增无泄露fact，旧版fact原样保留。",
+      "before": "w.fact('jt_roles')",
+      "after": "w.fact('jt_roles_v2')"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "旧场景副题身份与命令已明也会先泄露；新增独立场景副题各自带来的命令，不改旧版副题。",
+      "before": "'jt_temple_reveal'",
+      "after": "'jt2_temple_reveal'"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "tool": "built-in image_gen",
+  "rawDirectory": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/",
+  "packaging": "Sprites resized proportionally from1024x1536 to560x840; WebP quality88. Alpha preserved. CG1536x1024. Originals retained. No pixel painting or background removal outside image_gen.",
+  "assets": [
+    {
+      "file": "public/art/v6/kh-kong.webp",
+      "raw": "exec-1e9c55ac-c8f4-4466-81cd-09f8c5fb4a2f.png",
+      "bytes": 51604,
+      "prompt": "Transparent character sprite for grounded painterly semi-realistic Chinese historical wuxia game. One very old, exceptionally thin Chinese Buddhist monk, shaved head, sparse long white brows, clean shaven face, deeply lined angular face, compassionate but firm attentive dark eyes, narrow shoulders. Worn simple pale grey-white monk robe washed almost white, ordinary cloth belt, bare feet. Calm standing front three-quarter pose, empty relaxed hands below waist, complete head, both hands and feet within frame. Distinct identity, not a generic golden glowing sage. Restrained fabric textures, soft neutral daylight, entire body visible, upright but slender and aged, no martial action. This is a stable reusable elder monk identity for arrivals, ordinary conversation and observation across scenes. No weapon, jewelry, staff, beads, insignia, symbols, scars, injuries, writing, scenery, floor, frame, vignette, drop shadow plate or watermark. Genuine transparent background, clean alpha. Portrait 1024x1536."
+    },
+    {
+      "file": "public/art/v6/kh-xuan.webp",
+      "raw": "exec-fe1c1fa8-986b-4030-b71a-805677afda8e.png",
+      "bytes": 63108,
+      "prompt": "Transparent character sprite for grounded painterly semi-realistic Chinese historical wuxia game. One very old Chinese male Taoist martial elder, long white hair gathered in a plain small knot with a few loose strands, long narrow white beard, high long forehead, strong aquiline nose, narrow serious watchful eyes, tall slender slightly aged upright build. Plain weathered medium grey long robe over dark charcoal inner robe and plain cloth belt, simple cloth shoes. Holds a completely ordinary thin pale bamboo walking stick vertically in his RIGHT hand, left hand relaxed empty at his side. Whole body, entire head, both hands, feet and stick tip visible, front three-quarter view. Calm steady neutral expression, no glowing sage effect, not smiling. Stable reusable identity for travel, waiting and conversation, no specific plot symbolism. Soft natural neutral light, detailed cloth folds, muted palette, Chinese period game painting not anime or photography. No weapon ornament, jewelry, insignia, writing, scenery, floor, frame, vignette or watermark. Genuine transparent background with clean alpha, 1024x1536 portrait."
+    },
+    {
+      "file": "public/art/v6/kh-gui.webp",
+      "raw": "exec-9b7e40c8-ed25-49d5-9cb4-ddc8856ec7fa.png",
+      "bytes": 76990,
+      "prompt": "Transparent character sprite for grounded painterly semi-realistic Chinese historical wuxia game. One very old short Chinese male martial elder, noticeably short stature, slight hunch of upper back, compact frail aged build, broad rounded deeply creased face, wide nose, very short white moustache and white chin stubble, sparse wispy white hair tied in a small practical knot. Plain faded warm brown and muted moss-green cross collar robe, grey inner robe, cloth belt and cloth shoes. Empty hands held loosely in front of his low waist, relaxed neutral resting pose, standing three-quarter view, entire head hands feet within frame. Gentle observant eyes, quiet dignity and frailty without comedy. Stable distinct reusable identity for ordinary conversation, waiting and quiet arrival, no plot-specific gesture. Detailed painterly realistic textures, soft neutral daylight, no special effects, not anime or photography. No staff, weapons, beads, badges, symbols, writing, injuries, scars, scenery, floor, frame, vignette or watermark. Genuine transparent background, clean alpha, portrait 1024x1536."
+    },
+    {
+      "file": "public/art/v6/kh-wusheng.webp",
+      "raw": "exec-558116ff-9cfb-49ad-96cc-f86cb4d9f72c.png",
+      "bytes": 67564,
+      "prompt": "Transparent character sprite for grounded painterly semi-realistic Chinese historical wuxia game. A Chinese-speaking western frontier traveler of ambiguous origin, male appearing early-to-mid forties with actual age unknown, not tall, lean compact wiry build, black hair with a few white strands tied simply back, weathered narrow unsmiling face, very short dark stubble, calm intensely alert dark eyes, no evil supernatural features. Worn dark charcoal asymmetric layered frontier travel clothes with simple overlapping wrap coat, plain dark waist sash, trousers and dusty practical boots, period appropriate modest materials and no cultural emblems. In his RIGHT hand he holds a VERY NARROW STRAIGHT single-edged blackened-steel knife with plain grip, narrow blade approximately two fingers wide, hanging safely downward beside his leg; no swing or strike, empty left hand relaxed. Whole body, entire head both hands feet and knife tip visible. Stable reusable neutral identity for travel, arrival, conversation or waiting. Restrained painterly semi-realistic wuxia game art, soft neutral light, subtle fabric details, not anime or photography. No blood, injuries, scars, corpse, glowing eyes, magic, trophies, jewelry, badges, writing, scenery, floor, frame, vignette or watermark. Genuine transparent background and clean alpha. Portrait1024x1536."
+    },
+    {
+      "file": "public/art/v6/kh-kong-wounded.webp",
+      "raw": "exec-1d451f00-c047-40d8-8822-812a7de78973.png",
+      "reference": "kh-kong original PNG",
+      "bytes": 53060,
+      "prompt": "Edit the referenced elder monk sprite, preserving exactly his identity, age, shaved head, face, body proportions, faded pale robe and bare feet, full-body framing and transparent background. Only change the pose and limited injury state: he has one long shallow diagonal cut across the FRONT chest area of the robe, a little muted dark red staining in the torn fabric, NO exposed flesh or open wound. One hand is loosely raised just in front of the chest and the other lowered, face quietly strained yet still focused and composed, no crying or grimace. Slightly turned torso so the right shoulder is partly obscured by robe folds, not an exposed injury diagram. The pose must remain useful for the injured portion of a scene, not a unique death or victory moment. No bandages applied, no new props, no blood spray, no puddle, no corpse, no glowing effects, no text or scenery. Do not add cuts to limbs, do not cut his head or hands out of frame. Preserve genuine clean alpha transparency."
+    },
+    {
+      "file": "public/art/v6/kh-xuan-empty.webp",
+      "raw": "exec-93642118-82b0-4c67-bc15-9f5861f91833.png",
+      "reference": "kh-xuan original PNG",
+      "bytes": 61122,
+      "prompt": "Edit the referenced white-haired grey-robed elder sprite. Preserve exactly the face, long white hair and beard, age, robe layers and colors, proportions, shoes, lighting and painterly style. Remove the bamboo walking stick completely. Both hands are empty: RIGHT palm gently open at waist height in a stable ready-to-move posture, LEFT hand loosely relaxed beside body. No kung-fu spectacle, unique gesture, martial strike or aggressive face; this should also be useful for ordinary instruction and conversation when he is not carrying the staff. Keep the entire head hands feet in frame. Do not add wounds, weapon, glowing effects, decorations, text, scenery, floor or shadow plate. Preserve genuine clean alpha transparent background."
+    },
+    {
+      "file": "public/art/v6/kh-gui-wounded.webp",
+      "raw": "exec-de5ed429-d206-4168-b44a-ea4d259db46d.png",
+      "reference": "kh-gui original PNG",
+      "bytes": 88938,
+      "prompt": "Edit the referenced short, slightly stooped brown-and-moss robed old martial elder. Preserve exactly his face, age, white hair, short facial hair, short stature, robe identity and full-body framing. Change only to an injured standing-rest state: he bends a little more at the waist, one hand pressing folded robe over LEFT lower abdomen, a small subdued dark red blood stain on that portion of the robe; other hand half lowered for balance. Face tired, seriously focused, not smiling and not screaming. Keep blood contained to fabric with no exposed flesh, no open wound, no blade embedded, no severed part, no blood spray/pool or dramatic death. This is a reusable wounded state, not an image of the locking-blade event. No new props, helpers, weapons, writing, special effects or scenery. Preserve genuine transparent background with clean alpha, all hands and feet within frame."
+    },
+    {
+      "file": "public/art/v6/cg-kuhe-old.webp",
+      "raw": "exec-1d08f39e-4fb6-45e5-babe-5f9ea5a577d5.png",
+      "references": ["kh-kong original PNG", "kh-xuan original PNG", "kh-gui original PNG"],
+      "bytes": 416168,
+      "prompt": "Create a landscape1536x1024 painterly semi-realistic Chinese wuxia visual-novel illustration, matching the three referenced identities precisely. Reference1 is the very thin bald barefoot old monk in faded almost-white simple robes. Reference2 is the tall slender long-white-haired and long-bearded old man in plain grey robes holding his ordinary thin bamboo staff. Reference3 is the SHORT slightly hunched broad-faced old man in warm brown and moss-green robes. Show all three together in a quiet rocky valley rest area in soft overcast afternoon light. Monk stands at left, grey elder stands at right holding his simple staff, short elder sits naturally on a LOW flat stone between them, making all three face/robe identities and the height/build differences readable. They are uninjured and calm, resting before further activity, looking toward the same off-camera arrival route. They are not posing as heroic statues and do not glow. No martial action, no significant symbolic gesture or exchanged object, no younger disciples needed in this resting scene. Wide eye-level three-person composition with visible stone ground and quiet distant valley walls, no named location or unique architecture. This image should be reusable for their gathering, quiet waiting and recollections by changing only dialogue. Preserve the exact three reference faces, clothes and ages. No weapons beyond the plain bamboo stick, blood, injury, dead bodies, magical effects, text, symbols, banners, temple emblems, UI, frame or watermark. Grounded natural colors and readable faces, not anime, not photographic."
+    }
+  ]
+}

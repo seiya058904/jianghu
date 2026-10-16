@@ -1,0 +1,13 @@
+{
+  "actualInputs": true,
+  "humanPlaytest": false,
+  "ending": "qw_school",
+  "looks": [
+    "age44",
+    "age52",
+    "age58"
+  ],
+  "beats": 167,
+  "decisions": 18,
+  "errors": []
+}

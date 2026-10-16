@@ -1,0 +1,36 @@
+[
+  {
+    "side": 0,
+    "changed": [
+      "ss_token_4",
+      "ss_token_5",
+      "ss_token_6",
+      "ss_token_7",
+      "ss_open_boxes_1",
+      "ss_open_boxes_2",
+      "ss_open_boxes_3",
+      "ss_open_boxes_4",
+      "ss_open_boxes_5",
+      "ss_open_boxes_6"
+    ],
+    "ending": "ss_mountain_lesson",
+    "frames": 221
+  },
+  {
+    "side": 1,
+    "changed": [
+      "ss_token_4",
+      "ss_token_5",
+      "ss_token_6",
+      "ss_token_8",
+      "ss_open_boxes_1",
+      "ss_open_boxes_2",
+      "ss_open_boxes_3",
+      "ss_open_boxes_4",
+      "ss_open_boxes_5",
+      "ss_open_boxes_7"
+    ],
+    "ending": "ss_library_lesson",
+    "frames": 220
+  }
+]

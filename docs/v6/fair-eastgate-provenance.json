@@ -1,0 +1,7 @@
+{
+  "tool": "built-in image_gen",
+  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-216445bf-acb8-470b-b916-2f743e328cee.png",
+  "prompt": "Use case: historical-scene. Illustrated production environment for Chinese wuxia visual novel Jianghu. East entrance to a small riverside local martial fair as wind arrives before a flood. Timber gateway, cloth flags tugging sideways, open canvas stalls, two empty small wooden handcarts safely on dry dirt at the side, distant cloudy water beyond trees. No flood yet, no violence, no people. The narrow gate and clear side path must read clearly. Wide landscape3:2, naturalistic watercolor and fine ink with restrained earthy hues, detailed believable wood, stone and cloth, deep atmospheric space, lower third calm for dialogue UI. No people, no silhouettes, no text, no calligraphy, no logos, no UI, no watermark, no magical elements.",
+  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/fair-eastgate.webp",
+  "review": "Visually reviewed: age, identity or generic type, anatomy and meaningful pose/environment differences checked; mapped to matching production metadata. Independent NPC ownership and same-stage collisions audited. Browser final screenshot review remains pending."
+}

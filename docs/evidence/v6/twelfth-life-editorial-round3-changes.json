@@ -1,0 +1,97 @@
+{
+  "status": "THIRD_INTERNAL_ROUND_DRAFT",
+  "changes": [
+    {
+      "id": "R25",
+      "round": 3,
+      "focus": "alternative-actions-and-late-responsibility",
+      "file": "twelfth-life-defeat.mjs",
+      "reason": "留手处先让玩家作具体回应，再由薛自己起真拳；两种操作都通向固定140余真负，不是看完后才选态度。",
+      "before": "n|前二十招，他仍留手。你停，说再这样现在认输。薛脸涨红，终于沉下肩。\nqw_xue~sharp|得罪了。",
+      "after": "n|前二十招，他仍留手。你停，说再这样现在认输。薛脸涨红，仍没立刻抬拳。`);\nchoose('xue_true_fight',[\n ['rl_name_xue_gap','指出刚才肋下那处，他已到近前，自己确实没接住；请他照真能打到的地方来。','rl_xue_gap = true',`y|刚才这里是空的。您到得比我早，我没有接住。\nn|你没有再伸手替他摆拳，只把自己那一掌重起。他看了妻一眼，收回原来故意让出的半步。`],\n ['rl_reset_xue_line','退回开场线，请他自己重新起手，不替他规定哪一掌该进；这一场若继续便真接。','rl_xue_gap = false',`y|从这里再来。我按自己会的接，您不必照我说的出拳。\nn|你退回原线，把刚才追得太近的脚收好。薛站了片刻，自己先跨过那半步。`],\n]);\npart('xue_true_fight','rl_public','qw_xue,rl_xuewife',`qw_xue~sharp|得罪了。"
+    },
+    {
+      "id": "R26",
+      "round": 3,
+      "focus": "alternative-actions-and-late-responsibility",
+      "file": "twelfth-life-defeat.mjs",
+      "reason": "分别兑现认空处与重起守线的身体判断；都不是说过便能解决高手真进的距离。",
+      "before": "n|真正来拳压住你，百余后呼吸已乱。一百四十余招，你败，清清楚楚。没有自愿演一场输：他真打到了你接不住的地方。",
+      "after": "n|{rl_xue_gap:你指过的肋下再空出来时，他的掌已经压进，先逼走了你原想补的那只手。|你从原线起守，他却在你要退时跟进；方才收好的后脚被迫再退，下一步先挤住了。}真正来拳压住你，百余后呼吸已乱。一百四十余招，你败，清清楚楚。没有自愿演一场输：他真打到了你接不住的地方。"
+    },
+    {
+      "id": "R27",
+      "round": 3,
+      "focus": "alternative-actions-and-late-responsibility",
+      "file": "twelfth-life-defeat.mjs",
+      "reason": "王妃换药时仍记刚才真正受的这一场，不让操作差异只回响在邻一句。",
+      "before": "n|伤重回来，陆换药，问十二、输了，听你应嗯，说正常。你恼她不慰，又被叫下次别找十一，十二尚未赢。",
+      "after": "n|伤重回来，陆换药。{rl_xue_gap:你指肋下，说那一掌真进来时，自己的手先赶不到了。|你指腿侧，说后脚又退那一步时，两脚先挤住了。}她听完，问十二、输了，听你应嗯，说正常。你恼她不慰，又被叫下次别找十一，十二尚未赢。"
+    },
+    {
+      "id": "R28",
+      "round": 3,
+      "focus": "alternative-actions-and-late-responsibility",
+      "file": "twelfth-life-seat.mjs",
+      "reason": "回练场等信者实际收到落定消息再回榜房，留门外者也不在未定时先读到结果。",
+      "before": "part('four_three','rl_board','rl_gu',`n|后来才知首轮三票你、三票周、一票空，争一整日。次日空席老人改票，四比三。",
+      "after": "part('four_three','rl_board','rl_gu',`n|{rl_rank_wait:你等到次日，顾才来叫你同去看新榜。|顾说落定再来的信送到，你收刀，将练场的事交清，才随他回榜房。}\nn|后来才知首轮三票你、三票周、一票空，争一整日。次日空席老人改票，四比三。"
+    },
+    {
+      "id": "R29",
+      "round": 3,
+      "focus": "alternative-actions-and-late-responsibility",
+      "file": "twelfth-life-after.mjs",
+      "reason": "病榻选择后来在兄长收匣时以不同具体记忆回收，不用一种主题句覆盖两种相处。",
+      "before": "n|你忽然不能接上方才那一长串。病榻那夜他忘记的愿望，今天也没拿来同你换一句不许再痴。",
+      "after": "n|你忽然不能接上方才那一长串。{rl_brother_night:兄长拿着榜纸，问还收着当年找回的玉佩没有。你答收着。他便将这张也仔细折好。|兄长看纸许久，问你当年讲的站步，如今还得每日站么。你说仍得站，他点头，才将匣往自己身边移。}"
+    },
+    {
+      "id": "R30",
+      "round": 3,
+      "focus": "alternative-actions-and-late-responsibility",
+      "file": "twelfth-life-after.mjs",
+      "reason": "最初问具体脚位/不求夸奖，回到老师死后的个人练习；死者不返场指点。",
+      "before": "n|你走，自己停下。陆看见，不催你今日一定练得像给老师争回一场榜。",
+      "after": "n|你走，自己停下。{rl_child_step:你把后脚挪回那一点，想起十二岁请孙真碰的那一下；眼前仍得自己重新站。|你将后半套慢慢做完，想起十二岁请孙先别夸的那回；今日没人等着夸，仍要练下去。}陆在门边等你收完，才将水递来。"
+    },
+    {
+      "id": "R31",
+      "round": 3,
+      "focus": "alternative-actions-and-late-responsibility",
+      "file": "twelfth-life-after.mjs",
+      "reason": "早年为陪练留空间的两种动作，晚年带人看会先以不同方式让对方能问，而非只要求后辈懂王爷。",
+      "before": "n|年轻人问陈什么榜。你答哪张正式榜都没进过，仍是教自己最合适的一个。",
+      "after": "n|年轻人问陈什么榜。你答哪张正式榜都没进过，仍是教自己最合适的一个。{rl_boy_space:他要行礼应是，你先把座位挪开，叫他坐着问，不必急着顺你的话。|你停住准备再解释的那一句，让他把尚不懂说完；当年送陪练少年回场时咽过的话，这回仍咽住。}"
+    },
+    {
+      "id": "R32",
+      "round": 3,
+      "focus": "alternative-actions-and-late-responsibility",
+      "file": "twelfth-life-teacher.mjs",
+      "reason": "晚年书面经过仍留着有早场保存动作，不虚称给另一分支自动保留一张自述。",
+      "before": "n|你写一夜，脸仍红，倒终于能喘匀了说是被骗。",
+      "after": "n|你写一夜，脸仍红，倒终于能喘匀了说是被骗。陆将经过折进空信封，只记买书二十两，没把神功另放回名家那箱。"
+    },
+    {
+      "id": "R33",
+      "round": 3,
+      "focus": "timeline-recheck",
+      "file": "twelfth-life-defeat.mjs",
+      "reason": "复读原典30820–31002，税事后换药是另一生活切面，不能把先前公开战的新伤搬到数月后；撤下该处操作回收，下一条移回战当日。",
+      "before": "n|伤重回来，陆换药。{rl_xue_gap:你指肋下，说那一掌真进来时，自己的手先赶不到了。|你指腿侧，说后脚又退那一步时，两脚先挤住了。}她听完，问十二、输了，听你应嗯，说正常。你恼她不慰，又被叫下次别找十一，十二尚未赢。",
+      "after": "n|伤重回来，陆换药，问十二、输了，听你应嗯，说正常。你恼她不慰，又被叫下次别找十一，十二尚未赢。"
+    },
+    {
+      "id": "R34",
+      "round": 3,
+      "focus": "timeline-recheck",
+      "file": "twelfth-life-defeat.mjs",
+      "reason": "新操作的伤处在公开战当日实际说给陆，继而第二/第三日馆照开、三个月后税事；不混淆两次受伤。",
+      "before": "part('ordinary_days','rl_veranda','rl_gu,rl_lu',`n|第二日、第三日，薛馆照开。",
+      "after": "part('ordinary_days','rl_veranda','rl_gu,rl_lu',`n|当日回府换药，陆问哪里最疼。{rl_xue_gap:你指肋下，说那一掌真进来时，自己的手先赶不到了。|你指腿侧，说后脚又退那一步时，两脚先挤住了。}她让你先把衣角抬稳，顾将问帖收进空匣。\nn|第二日、第三日，薛馆照开。"
+    }
+  ],
+  "newOrEditedArtFiles": 0,
+  "canonRecheck": "30820–31002 read continuously for post-tax guards and later injury/wife sequence"
+}

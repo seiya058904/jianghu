@@ -1,0 +1,81 @@
+[WebServer] (node:20716) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 10 tests using 1 worker
+
+(node:7828) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\offline-work-pack.spec.ts:8:134 › download seven-questions pack restores uncached story data on root (497ms)
+  ok  2 tests\offline-work-pack.spec.ts:8:134 › download seven-questions pack restores uncached story data on subpath (466ms)
+  x   3 tests\offline-work-pack.spec.ts:8:134 › download seven-questions-v1 pack restores uncached story data on root (5.4s)
+(node:45476) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   4 tests\offline-work-pack.spec.ts:8:134 › download seven-questions-v1 pack restores uncached story data on subpath (5.3s)
+(node:22108) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  5 tests\seven-editorial-archive.spec.ts:8:1 › Seven editorial V2 and frozen V1 keep independent pending saves and exact old export (652ms)
+  ok  6 tests\seven-questions.spec.ts:6:26 › Seven Questions V2 actual complete route 0: separate witnessed locations and independent save (1.1m)
+  ok  7 tests\seven-questions.spec.ts:6:26 › Seven Questions V2 actual complete route 1: separate witnessed locations and independent save (1.0m)
+  ok  8 tests\seven-questions.spec.ts:20:1 › Seven Questions work download includes an unvisited final chapter offline on root and subpath (934ms)
+  ok  9 tests\seven-questions.spec.ts:27:1 › Seven Questions two locations and injury branches fit seven sizes at 24px (3.5s)
+  ok 10 tests\seven-questions.spec.ts:37:1 › Seven Questions long location choices remain clickable at seven viewport sizes (1.4s)
+
+
+  1) tests\offline-work-pack.spec.ts:8:134 › download seven-questions-v1 pack restores uncached story data on root
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('dialog')
+    Expected substring: "离线资源已备好"
+    Received string:    "演出设置关闭正在下载《一剑两脉 · 门外七问旧稿》的离线资源……对白字号18 字号20 字号22 字号24 字号纸与夜色纸本夜读文字出现速度正常舒缓立即显示动作与转场减弱动态效果先看他落脚，再决定你出哪一剑。点击对白或按 Enter / 空格推进；文字出现时先显示全文。Tab 切换按钮，Esc 关闭面板。自动与已读快进在回复处停止；系统减弱动态效果时立即显示全文。无需声音即可完整游玩。本篇离线游玩下载本篇所有场景和画像，断网后也能走尚未游玩的分支。其他作品按需下载。下载《一剑两脉 · 门外七问旧稿》离线资源"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByRole('dialog') with timeout 5000ms
+      - waiting for getByRole('dialog')
+        14 × locator resolved to <dialog open="" aria-labelledby="dialog-title">…</dialog>
+           - unexpected value "演出设置关闭正在下载《一剑两脉 · 门外七问旧稿》的离线资源……对白字号18 字号20 字号22 字号24 字号纸与夜色纸本夜读文字出现速度正常舒缓立即显示动作与转场减弱动态效果先看他落脚，再决定你出哪一剑。点击对白或按 Enter / 空格推进；文字出现时先显示全文。Tab 切换按钮，Esc 关闭面板。自动与已读快进在回复处停止；系统减弱动态效果时立即显示全文。无需声音即可完整游玩。本篇离线游玩下载本篇所有场景和画像，断网后也能走尚未游玩的分支。其他作品按需下载。下载《一剑两脉 · 门外七问旧稿》离线资源"
+
+
+      13 |  // The explicit work download must refill it; a seen-page cache is no proof.
+      14 |  for(const name of expected){const url=new URL('assets/'+name,root).href;await expect.poll(()=>page.evaluate(async url=>Boolean(await caches.match(url)),url)).toBe(true);await page.evaluate(async url=>{for(const key of await caches.keys())await(await caches.open(key)).delete(url)},url);expect(await page.evaluate(async url=>Boolean(await caches.match(url)),url)).toBe(false)}
+    > 15 |  await page.getByRole('button',{name:'设置',exact:true}).click();await page.getByRole('button',{name:`下载《${work.title}》离线资源`,exact:true}).click();await expect(page.getByRole('dialog')).toContainText('离线资源已备好');await page.keyboard.press('Escape');for(const name of expected)expect(await page.evaluate(async url=>Boolean(await caches.match(url)),new URL('assets/'+name,root).href),`${slug}: requested data chunk is absent`).toBe(true);
+         |                                                                                                                                                                                        ^
+      16 |  const cdp=await context.newCDPSession(page);await cdp.send('Network.clearBrowserCache');await cdp.detach();const fresh=await context.newPage();await fresh.addInitScript(prefix=>localStorage.setItem(prefix+'settings',JSON.stringify({speed:0,reduced:true})),work.prefix);await page.close();await context.setOffline(true);await fresh.goto(root+work.file);await fresh.getByRole('button',{name:work.start,exact:true}).click();const data=JSON.parse(readFileSync('src/generated/'+source+'.json','utf8')),s=new VNRuntime(data,work.version);await expect(fresh.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await expect(fresh.locator('#dialogue-visible')).toHaveText(s.frame.text);if(s.frame.choices.length){await fresh.locator(`[data-choice="${s.frame.choices[0].id}"]`).click();s.choose(s.frame.choices[0].id)}else{await fresh.locator('#advance-button').click();s.advance()}await expect(fresh.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await context.close();
+      17 | });
+      18 |
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\offline-work-pack.spec.ts:15:184
+
+    Error Context: test-results\offline-work-pack-download-40741-uncached-story-data-on-root\error-context.md
+
+  2) tests\offline-work-pack.spec.ts:8:134 › download seven-questions-v1 pack restores uncached story data on subpath
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('dialog')
+    Expected substring: "离线资源已备好"
+    Received string:    "演出设置关闭正在下载《一剑两脉 · 门外七问旧稿》的离线资源……对白字号18 字号20 字号22 字号24 字号纸与夜色纸本夜读文字出现速度正常舒缓立即显示动作与转场减弱动态效果先看他落脚，再决定你出哪一剑。点击对白或按 Enter / 空格推进；文字出现时先显示全文。Tab 切换按钮，Esc 关闭面板。自动与已读快进在回复处停止；系统减弱动态效果时立即显示全文。无需声音即可完整游玩。本篇离线游玩下载本篇所有场景和画像，断网后也能走尚未游玩的分支。其他作品按需下载。下载《一剑两脉 · 门外七问旧稿》离线资源"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByRole('dialog') with timeout 5000ms
+      - waiting for getByRole('dialog')
+        14 × locator resolved to <dialog open="" aria-labelledby="dialog-title">…</dialog>
+           - unexpected value "演出设置关闭正在下载《一剑两脉 · 门外七问旧稿》的离线资源……对白字号18 字号20 字号22 字号24 字号纸与夜色纸本夜读文字出现速度正常舒缓立即显示动作与转场减弱动态效果先看他落脚，再决定你出哪一剑。点击对白或按 Enter / 空格推进；文字出现时先显示全文。Tab 切换按钮，Esc 关闭面板。自动与已读快进在回复处停止；系统减弱动态效果时立即显示全文。无需声音即可完整游玩。本篇离线游玩下载本篇所有场景和画像，断网后也能走尚未游玩的分支。其他作品按需下载。下载《一剑两脉 · 门外七问旧稿》离线资源"
+
+
+      13 |  // The explicit work download must refill it; a seen-page cache is no proof.
+      14 |  for(const name of expected){const url=new URL('assets/'+name,root).href;await expect.poll(()=>page.evaluate(async url=>Boolean(await caches.match(url)),url)).toBe(true);await page.evaluate(async url=>{for(const key of await caches.keys())await(await caches.open(key)).delete(url)},url);expect(await page.evaluate(async url=>Boolean(await caches.match(url)),url)).toBe(false)}
+    > 15 |  await page.getByRole('button',{name:'设置',exact:true}).click();await page.getByRole('button',{name:`下载《${work.title}》离线资源`,exact:true}).click();await expect(page.getByRole('dialog')).toContainText('离线资源已备好');await page.keyboard.press('Escape');for(const name of expected)expect(await page.evaluate(async url=>Boolean(await caches.match(url)),new URL('assets/'+name,root).href),`${slug}: requested data chunk is absent`).toBe(true);
+         |                                                                                                                                                                                        ^
+      16 |  const cdp=await context.newCDPSession(page);await cdp.send('Network.clearBrowserCache');await cdp.detach();const fresh=await context.newPage();await fresh.addInitScript(prefix=>localStorage.setItem(prefix+'settings',JSON.stringify({speed:0,reduced:true})),work.prefix);await page.close();await context.setOffline(true);await fresh.goto(root+work.file);await fresh.getByRole('button',{name:work.start,exact:true}).click();const data=JSON.parse(readFileSync('src/generated/'+source+'.json','utf8')),s=new VNRuntime(data,work.version);await expect(fresh.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await expect(fresh.locator('#dialogue-visible')).toHaveText(s.frame.text);if(s.frame.choices.length){await fresh.locator(`[data-choice="${s.frame.choices[0].id}"]`).click();s.choose(s.frame.choices[0].id)}else{await fresh.locator('#advance-button').click();s.advance()}await expect(fresh.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await context.close();
+      17 | });
+      18 |
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\offline-work-pack.spec.ts:15:184
+
+    Error Context: test-results\offline-work-pack-download-25632-ached-story-data-on-subpath\error-context.md
+
+  2 failed
+    tests\offline-work-pack.spec.ts:8:134 › download seven-questions-v1 pack restores uncached story data on root
+    tests\offline-work-pack.spec.ts:8:134 › download seven-questions-v1 pack restores uncached story data on subpath
+  8 passed (2.4m)

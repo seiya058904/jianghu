@@ -1,0 +1,45 @@
+{
+  "count": 8,
+  "rows": [
+    {
+      "cover": true,
+      "traffic": true,
+      "family": true
+    },
+    {
+      "cover": true,
+      "traffic": true,
+      "family": false
+    },
+    {
+      "cover": true,
+      "traffic": false,
+      "family": true
+    },
+    {
+      "cover": true,
+      "traffic": false,
+      "family": false
+    },
+    {
+      "cover": false,
+      "traffic": true,
+      "family": true
+    },
+    {
+      "cover": false,
+      "traffic": true,
+      "family": false
+    },
+    {
+      "cover": false,
+      "traffic": false,
+      "family": true
+    },
+    {
+      "cover": false,
+      "traffic": false,
+      "family": false
+    }
+  ]
+}

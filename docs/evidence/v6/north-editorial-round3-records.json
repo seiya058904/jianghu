@@ -1,0 +1,111 @@
+{
+  "round": 3,
+  "focus": "later practical consequences and travel continuity",
+  "records": [
+    {
+      "round": 3,
+      "file": "story/drafts/north/north-road.mjs",
+      "reason": "两个接信行动先分流，回馆支不在楚师院中瞬移演完。",
+      "before": " choose('last_chu',[",
+      "after": " choose('yuan_reply_route',["
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/north/north-road.mjs",
+      "reason": "拜访先由阿原同意，另有出行与停练成本。",
+      "before": "回馆时亲看他教一班，把能替的活先替，再讲自己在外面的败。",
+      "after": "写信约阿原旁听他的夜班，等他回定日子再回馆，少练几日自己的长枪。"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/north/north-road.mjs",
+      "reason": "当前场景只发生约定，亲见另起六合馆场。",
+      "before": "n|你在门边听，原想补一句，先让他把话说完。学生走到真不会的地方，你才站进去接，发现那半步不是你当年留的样子。\nn|你没叫全班改回去，约阿原散课后真试一次。",
+      "after": "n|信里只问他哪晚方便，没有替全馆订日子。阿原回定下月一晚，叫你别赶头班，夜里这班脚慢，正好看仔细。"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/north/north-road.mjs",
+      "reason": "实际旁听发生在六合馆，阿原仍决定班次；回楚师处和后来五十岁另有时间边界。",
+      "before": " part('last_chu','nq_chuyard'",
+      "after": " w.out.push('\\n=== yuan_reply_route ===','{\\n- nq_yuan_reply:\\n  -> last_chu\\n- else:\\n  -> yuan_visit\\n}');\n part('yuan_visit','nq_school','nq_yuan',`n|下月依回信的日子返馆。路上加旁听，你少练了几日自己的长枪；夜班开到一半，才知道阿原叫你晚来不是客气。\nnq_yuan|这一队先别换。你等他们自己说卡在哪儿。\nn|你在门边原想补一句，先忍住。学生走到真不会的地方，你才站进去接，发现那半步不是你当年留的样子。\ny|散课后，你拿枪，我试试这一步。\nnq_yuan~amused|行。先帮我把架子收了，别又站着等我。\nn|这一夜练的是他的课。回楚师处以后，你才把停下的长枪接回，没把两个地方算成一日。`);\n go('last_chu');\n part('last_chu','nq_chuyard'"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/north/north-road.mjs",
+      "reason": "早年复盘方式决定此处能用的记录与多一晚重记，未改公开败局。",
+      "before": " choose('thirty_six',[",
+      "after": " iff('nq_loss_trace',`n|你把当年在楚院重走脱手那几步的方法再用一次，先在地上标自己最后还能退的脚位。标过才知，这回比枪脱手早了两招。`,`n|你先照楚院的习惯并排记招数，写满一页仍说不出哪一步已没法退。第二晚只好另铺一张，改从脚位重记。`);\n choose('thirty_six',["
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/north/north-rain.mjs",
+      "reason": "十八岁让人试或只记谱的方式在返馆成为教学材料与真实延误。",
+      "before": " choose('sixty_four',[",
+      "after": " iff('nq_other_foot',`nq_yuan|你当年拉我试左脚，我那张走坏的谱还在。拿给他看？\nn|少年看见纸上四次改过的脚位，才敢指自己的旧错。你留下多接两轮，让他走到不靠照搬阿原也能回枪。`,`nq_yuan|你那张反回枪的谱，他照着又拧了腕。\nn|你原拟午后动身，只得把纸摊平，逐个问清脚放哪儿。讲完已晚，山里的下一次问枪要顺延一日。`);\n choose('sixty_four',["
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/north/north-rain.mjs",
+      "reason": "初见的劳动选择延续到三月日常，不以道德评分代替柴与热水。",
+      "before": " choose('return_school',[",
+      "after": " iff('nq_wood_share',`n|离枪时也有一日大雨。你想起初见时把湿柴剔开，先垫高明日要用的干柴，晚间仍有一锅热水。老人自己端走一盆，叫你也洗洗手上的灰。`,`n|离枪时也有一日大雨。你照旧先挪开椅边木屑，回头才见门边一捆柴已浸湿。晚间把能烧的挑出来，多熬半个时辰，才给两人烧够热水。`);\n choose('return_school',["
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/north/north-rain.mjs",
+      "reason": "三月首周的应对方式在三年试枪后回响；均仍败，改变的是重学方法与多耗一轮。",
+      "before": " go('two_firsts');",
+      "after": " iff('nq_spear_listen',`n|这三年里，站位一换便失掉旧样子的毛病，你早已记过。今日回去不追那一步，重新量老人还站着的距离，头一轮仍被压下，傍晚才接得回。`,`n|你一度想记住逼退一步时手腕的样子，第二日照样却连五十招也撑不住。老人换到院子的另一头，你才把那页照抄的手势折掉，从新距离试。`);\n go('two_firsts');"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/north/north-duels.mjs",
+      "reason": "清和问艺的观察方式影响赴顾园前如何准备，不能因此改164败或308败。",
+      "before": " go('gu_garden');",
+      "after": " iff('nq_qinghe_place',`n|赴旧园前，你没再对着袖上的一寸想赢法，先把清和准你走进的距离重试。枪到原处时自己停住，留下一条不必急着抢的路。`,`n|赴旧园前，你还想从那一寸破袖接出后半枪。试到晚饭时，才认清那日清和是为看枪而晚退；你收起旧图，次晨重新画双方脚位。`);\n go('gu_garden');"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/north/north-after.mjs",
+      "reason": "顾园记录与旁观复试成为晚年两种实际教学行动，不只两句态度。",
+      "before": " go('one_more_spear');",
+      "after": " iff('nq_gu_notes',`n|你又取出顾园那页，叫年轻人先别念输赢，试试等一记没有来的第七剑。你自己持练枪站在旁边，看他第一次先动，和当年的你一样。`,`n|柳当年用细枝比的路，你还留着旁注。你叫年轻人坐旁边看，自己慢走换手；他指早了，你再走一遍，等他看准，不替他先报答案。`);\n go('one_more_spear');"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/north/north-rain.mjs",
+      "reason": "同一泛用立绘槽可以复用，叙事不让六十一岁的晚辈一直少年。",
+      "before": "n|七十多一日，六合年轻弟子来问。",
+      "after": "n|七十多一日，六合又换过几班弟子，眼前这一位新进门不久，来问自己的回枪。"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/north/north-rain.mjs",
+      "reason": "用眼前动作呈现无神迹，删掉对不存在特效的说明。",
+      "before": "n|你完全没听懂。眼前没有天光，没有旧枪自己飞起来，只有一只照旧酸的手与下一次还要真做的动作。",
+      "after": "n|你完全没听懂。手掌还酸，杆上汗印未干；老人把脚挪开半步，等你再刺。"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/north/north-duels.mjs + north-after.mjs",
+      "reason": "赴园准备先发生，顾园人物登场放到真正园景，避免先抵园又倒回准备。",
+      "before": "n|再后来，金陵城外旧园。顾长风总谱第九，你第十一；两人都入化多年。他年长十余岁，早练、早见、也早输过很多场。柳成章与几位够资格的旧人，在园边等真枪真剑。`);",
+      "after": "part('gu_garden','nq_garden','nq_gu,nq_liu',`n|再后来，金陵城外旧园。顾长风总谱第九，你第十一；两人都入化多年。他年长十余岁，早练、早见、也早输过很多场。柳成章与几位够资格的旧人，在园边等真枪真剑。\nnq_gu~intent|真枪？"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/north/north-rain.mjs",
+      "reason": "保留十年起点，压掉对时序修订的说明腔。",
+      "before": "从六十一初来算起，这样的来去还会走到七十一，十年不是同一段院中闭关。",
+      "after": "从六十一初来算起，这样的来去还会走到七十一；十年里有去有回，旧馆和山中两头都要过日子。"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/north/north-after.mjs",
+      "reason": "共同枪房后续之后结尾回收已经完成的探访，不再倒跳到路上。",
+      "before": "回程的年轻人会说三个人的名字，也会说自己没亲眼见过哪一段。",
+      "after": "这一趟回来，年轻人已会说三个人的名字，也会说自己没亲眼见过哪一段。"
+    }
+  ]
+}

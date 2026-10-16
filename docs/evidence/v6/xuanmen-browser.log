@@ -1,0 +1,13 @@
+[WebServer] (node:47612) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:45248) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\xuanmen.spec.ts:6:25 › Xuanmen actual full historical route 0 and restore (24.0s)
+  ok 2 tests\xuanmen.spec.ts:6:25 › Xuanmen actual full historical route 1 and restore (24.3s)
+  ok 3 tests\xuanmen.spec.ts:9:1 › Xuanmen pack loads unvisited elder scene offline from root and subpath (757ms)
+  ok 4 tests\xuanmen.spec.ts:12:1 › Xuanmen two-actor choice fits seven viewports at 24px and keyboard remains usable (1.1s)
+
+  4 passed (51.1s)

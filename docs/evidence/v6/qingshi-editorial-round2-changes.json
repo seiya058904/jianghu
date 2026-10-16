@@ -1,0 +1,113 @@
+{
+  "status": "INTERNAL_SECOND_ROUND_UNPUBLISHED",
+  "changes": [
+    {
+      "id": "Q18",
+      "round": 2,
+      "focus": "character-voice-and-scene-rhythm",
+      "file": "qingshi-youth.mjs",
+      "reason": "宋礼以白天卖布/暂用旧剑说自己的窘迫，不像编者列修行道理。",
+      "before": "qs_song|总比一边卖布一边嫌自己来不及强。",
+      "after": "qs_song|白天还得卖布。这柄先用着，攒够钱再说，不能连练也停了。"
+    },
+    {
+      "id": "Q19",
+      "round": 2,
+      "focus": "character-voice-and-scene-rhythm",
+      "file": "qingshi-youth.mjs",
+      "reason": "当场教字展示宋礼会纠错，不用旁白否定天生先生。",
+      "before": "n|宋礼在碎纸上写了三个大字，没把你第一次肯学就夸成天生能做先生。",
+      "after": "n|宋礼在碎纸上写了三个大字。你念错第二个，他拿指头敲着那一笔，等你重新念。"
+    },
+    {
+      "id": "Q20",
+      "round": 2,
+      "focus": "character-voice-and-scene-rhythm",
+      "file": "qingshi-youth.mjs",
+      "reason": "核工钱承诺不无端引出替朋友打赢商号的全能假设。",
+      "before": "y|我和宋礼学认字，你把工钱条也拿来。不是靠我替你打赢商号才拿得到。",
+      "after": "y|我和宋礼学认字，你把工钱条也拿来。算不拢的先圈着，明日一块去问。"
+    },
+    {
+      "id": "Q21",
+      "round": 2,
+      "focus": "character-voice-and-scene-rhythm",
+      "file": "qingshi-youth.mjs",
+      "reason": "给赵实物回应，不以旁白写选择意义。",
+      "before": "n|他说得很认真。你第一次觉得矮墙上谈的事，有一件明早便得用。",
+      "after": "n|赵大春从米包底下抽出半张工钱条，压在你碗边。吃完饭便得认，等不到将来开馆。"
+    },
+    {
+      "id": "Q22",
+      "round": 2,
+      "focus": "character-voice-and-scene-rhythm",
+      "file": "qingshi-career.mjs",
+      "reason": "遗孀去问陆的行动已表达距离，不再替她解释玩家是否被允许。",
+      "before": "n|她把带来的干衣放在床尾，去问陆慎行什么时候能领东西。你没有被赶出去，却也没再得到一个替她家决定事情的机会。",
+      "after": "n|她把带来的干衣放在床尾，转过去问陆慎行什么时候能领东西。你叫她一声，她停住，仍等你回答刚才那句。"
+    },
+    {
+      "id": "Q23",
+      "round": 2,
+      "focus": "character-voice-and-scene-rhythm",
+      "file": "qingshi-career.mjs",
+      "reason": "进公门先做带路认人的劳务，不把腰牌写成抽象主题。",
+      "before": "qs_lu~intent|进来以后先学问路。不是有了腰牌，下一回便挡得住杜百川。",
+      "after": "qs_lu~intent|先跟人带路、认人。等能当差再发腰牌，别拿它先去找杜百川。"
+    },
+    {
+      "id": "Q24",
+      "round": 2,
+      "focus": "character-voice-and-scene-rhythm",
+      "file": "qingshi-career.mjs",
+      "reason": "孟的指点落在现场巷口，不只一声像捕人。",
+      "before": "qs_meng~calm|这回像个捕人。",
+      "after": "qs_meng~calm|侧门再去一个。别等人出来才认哪个同僚守那里。"
+    },
+    {
+      "id": "Q25",
+      "round": 2,
+      "focus": "character-voice-and-scene-rhythm",
+      "file": "qingshi-career.mjs",
+      "reason": "王爷真实追问车夫缺页，兼有职位语气。",
+      "before": "qs_wang~intent|照办。别只给本王一份没有后半页的好消息。",
+      "after": "qs_wang~intent|后车也具名报来。那一页本王也看。"
+    },
+    {
+      "id": "Q26",
+      "round": 2,
+      "focus": "character-voice-and-scene-rhythm",
+      "file": "qingshi-career.mjs",
+      "reason": "当面拿纸和讲工钱，减少传承主题旁白。",
+      "before": "n|她请你留半日给小辈认账，不是教打。你拿过纸，那句又不只有武功没有再只停在魏的遗言里。",
+      "after": "n|她叫小辈把工钱条拿来，给你留半日。你接过纸，先让他们自己念，念到八十文时又问一遍。"
+    },
+    {
+      "id": "Q27",
+      "round": 2,
+      "focus": "character-voice-and-scene-rhythm",
+      "file": "qingshi-last.mjs",
+      "reason": "阿满走错回程有具体动作与反馈，不贴不识字的教育标签。",
+      "before": "n|第一回他报错一人。你让他重走，没有把腿快当作字不识也能不问的本事。",
+      "after": "n|第一回他报错一人，跑回来还以为差事做完。你让他带着那人回来，见着站在面前的另一个伍长，他才低头再走。"
+    },
+    {
+      "id": "Q28",
+      "round": 2,
+      "focus": "character-voice-and-scene-rhythm",
+      "file": "qingshi-last.mjs",
+      "reason": "右肩换位用箱子去向表达，不叠加抽象承诺句。",
+      "before": "n|你接受换位，没有用一声还能撑把他又留给你一只重箱的打算撑回去。",
+      "after": "n|你把重箱推到年轻军士脚边，左手接过图。副将删掉原先那一行，换了个实在能搬栓的人名。"
+    },
+    {
+      "id": "Q29",
+      "round": 2,
+      "focus": "character-voice-and-scene-rhythm",
+      "file": "qingshi-last.mjs",
+      "reason": "传承结尾落实新卒与木栓，不把旧人未复活再总结一遍。",
+      "before": "end('qs_heirs','军中又有新卒问什么时候才能上手。阿满先让他把第二道门走一回。旧人没活回来，课却在别人的脚下接下去；下课以后，有人仍来把五个名字念全。')",
+      "after": "end('qs_heirs','军中又有新卒问什么时候才能上手。阿满先松开第二道门的木栓，让他来接。对面的人还没应，他便不放手。下课后，两人坐在门槛上，把旧页里的五个名字念完。')"
+    }
+  ]
+}

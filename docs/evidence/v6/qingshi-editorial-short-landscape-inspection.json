@@ -1,0 +1,38 @@
+{
+  "rects": {
+    "#choices-panel": {
+      "top": 109.34375,
+      "bottom": 213.375,
+      "height": 104.03125,
+      "client": 104,
+      "scroll": 124,
+      "overflow": "auto"
+    },
+    "#dialogue-panel": {
+      "top": 218.375,
+      "bottom": 353,
+      "height": 134.625,
+      "client": 133,
+      "scroll": 133,
+      "overflow": "hidden"
+    },
+    "[data-choice=\"qs_home_accounts\"]": {
+      "top": 138.734375,
+      "bottom": 182.734375,
+      "height": 44,
+      "client": 42,
+      "scroll": 42,
+      "overflow": "visible"
+    },
+    "[data-choice=\"qs_home_practice\"]": {
+      "top": 186.734375,
+      "bottom": 230.734375,
+      "height": 44,
+      "client": 42,
+      "scroll": 42,
+      "overflow": "visible"
+    }
+  },
+  "afterPointerClick": "qs_home70_16",
+  "choiceScrollIsSeparateFromDialogue": true
+}

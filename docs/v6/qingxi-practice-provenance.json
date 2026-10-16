@@ -1,0 +1,9 @@
+{
+  "tool": "built-in image_gen",
+  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-de0a87d8-383b-436b-a058-ff6d57a8a613.png",
+  "prompt": "Use case: historical-scene. Illustrated production environment for Chinese wuxia visual novel Jianghu. An unostentatious practice courtyard at a minor royal country residence near Qingxi. Whitewashed low walls, plain timber veranda, one wooden training dao on an empty bench, broad dry stone ground and modest old pine. Dignified but functional and quiet, no palace throne or imperial gold. Wide landscape3:2, naturalistic watercolor and fine ink with restrained earthy hues, detailed believable wood, stone and cloth, deep atmospheric space, lower third calm for dialogue UI. No people, no silhouettes, no text, no calligraphy, no logos, no UI, no watermark, no magical elements.",
+  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/docs/v6/art-candidates/qingxi-practice.webp",
+  "review": "REJECTED: unwanted tiny signature-like marks remain in lower left corner. Not referenced by game scenes, not counted toward environment minimum.",
+  "initialOutput": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/qingxi-practice.webp",
+  "archiveReason": "Rejected candidate preserved for traceability outside public so it is not shipped with the game."
+}

@@ -1,0 +1,331 @@
+{
+  "status": "COMPLETED_BROWSER_RUN_FRAMES_WITH_HISTORICAL_BYTES_RETAINED",
+  "rows": [
+    {
+      "file": "docs/evidence/v6/jade-editorial-first-volume-current-choice-1366.png",
+      "sha256": "a38d49c2f6cf48c948f53cc66bfab71583af0fd9d9e8516cda9ab51be79a0d9c",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-choice-1366.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-editorial-first-volume-current-choice-1440.png",
+      "sha256": "40cfcc63d811dbd42a446f1199f52976bd4463fb1171cc0616a422f498b0a77c",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-choice-1440.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-current-choice-1920.png",
+      "sha256": "4aa58d621992a34828ee8b5034c749b5ef253f13efcfeae24592bd82f0d6e05f",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-choice-1920.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-current-choice-360.png",
+      "sha256": "9121735455400fbd090026b1aee1194cd395dc52225ee1ff59ca1068fb6b2aee",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-choice-360.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-editorial-first-volume-current-choice-390.png",
+      "sha256": "da511ebd160895c4ca402cf77a2a4383f1b79b12b98fd8c8dcc7a3e0b03216de",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-choice-390.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-editorial-first-volume-current-choice-412.png",
+      "sha256": "f774def70d00e202a8455ed75cbe6b3564f803c32a80248af172fb0816816acf",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-choice-412.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-current-choice-800.png",
+      "sha256": "f48f4a97e641a887e6b9635855e581a6a79b454496b50a4596748c6b517d3a6c",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-choice-800.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-current-death-1440.png",
+      "sha256": "bbf8f6913a23b2bce838708370bd600e23763b01b5273c81b4c0f3753a95ad4a",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-death-1440.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-current-death-360.png",
+      "sha256": "53ee022d7bc3e89692f0afe8d4749cb6d02c81664b7f2fbb5771e18dcc4487dc",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-death-360.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-editorial-first-volume-current-death-800.png",
+      "sha256": "534d12265677f2ed26b10f14911a892f109201a5d695f3696152827fb36f57b8",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-death-800.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-current-ending-0.png",
+      "sha256": "d4f308f1adc61475b422cca9588b74b32614e6450a60a6c8057586e1b4489b4d",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-ending-0.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-current-ending-1.png",
+      "sha256": "939047157fe53c0e9de1abce25a3ed499c8058f013c6461d24c975e34659deb1",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-ending-1.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-editorial-first-volume-current-jt_afterpass-0.png",
+      "sha256": "e9a56904aa7185ca60e32b1584d91c5e97a2e4c898ec8a747089ac991c97d757",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-jt_afterpass-0.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-current-jt_afterpass-1.png",
+      "sha256": "fdb3068d1c8836a38ccb3dacc9b000cf56837c35db81a581a583896b3d947498",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-jt_afterpass-1.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-current-jt_auction-0.png",
+      "sha256": "a37b98125a6e8b442ab93cac42848ffe09d194870ac5c0efe424328f6ad4a5ad",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-jt_auction-0.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-current-jt_auction-1.png",
+      "sha256": "15a7f38151dc8fd89d852b9ac6d5c0a80d1c0118c930a37fdd9e18834ef15622",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-jt_auction-1.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-editorial-first-volume-current-jt_mountainpass-0.png",
+      "sha256": "346136cc1faddf98336d8387d721c24dbe38cfcaa815f672df3bd1ca3e2c831d",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-jt_mountainpass-0.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-current-jt_mountainpass-1.png",
+      "sha256": "6a0d3298e3cf868992f112ed6ecd6c21f35e4ccc8a0d20d3469a0fc63d8c3bab",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-jt_mountainpass-1.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-editorial-first-volume-current-jt_pawn-0.png",
+      "sha256": "65fd9d9dc6729851b5634eaa347337d0d5207c504a9641bb0606aaefe697f176",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-jt_pawn-0.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-current-jt_pawn-1.png",
+      "sha256": "3a7b93086fc2ea48adbfb51664c29dd973348551829724c00f64994ec001fa17",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-jt_pawn-1.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-current-jt_vault-0.png",
+      "sha256": "6caa53d4e04a5e87231bdbb6d1083f6c28fa6a19d5ba1646b027b6ccc01069b9",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-jt_vault-0.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-current-jt_vault-1.png",
+      "sha256": "3e34b8f8601ae790c19a82e1cc65c0d90ad8ac9cef7e5ef632e7eea781764ddd",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-current-jt_vault-1.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-editorial-first-volume-archive-v1-choice-1366.png",
+      "sha256": "a38d49c2f6cf48c948f53cc66bfab71583af0fd9d9e8516cda9ab51be79a0d9c",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-choice-1366.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-archive-v1-choice-1440.png",
+      "sha256": "8b1936f27316f702687001aa6dc9ad310eb15314b9b4ce9fae79c1bbf107ba31",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-choice-1440.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-editorial-first-volume-archive-v1-choice-1920.png",
+      "sha256": "27a2e54dec533fc22fedf37d2653694810b3cfe442212e765318fb4468a9cba3",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-choice-1920.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-archive-v1-choice-360.png",
+      "sha256": "9121735455400fbd090026b1aee1194cd395dc52225ee1ff59ca1068fb6b2aee",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-choice-360.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-editorial-first-volume-archive-v1-choice-390.png",
+      "sha256": "15e37b25ccefef2898588b6209b9bf8d09eca004e837fcbc57dce0ffabe345b6",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-choice-390.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-archive-v1-choice-412.png",
+      "sha256": "68806c17602e7af57746be64e9c68d6bfe38383a365ca27d0e77831c4477decb",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-choice-412.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-archive-v1-choice-800.png",
+      "sha256": "f48f4a97e641a887e6b9635855e581a6a79b454496b50a4596748c6b517d3a6c",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-choice-800.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-editorial-first-volume-archive-v1-death-1440.png",
+      "sha256": "bbf8f6913a23b2bce838708370bd600e23763b01b5273c81b4c0f3753a95ad4a",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-death-1440.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-archive-v1-death-360.png",
+      "sha256": "53ee022d7bc3e89692f0afe8d4749cb6d02c81664b7f2fbb5771e18dcc4487dc",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-death-360.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-editorial-first-volume-archive-v1-death-800.png",
+      "sha256": "534d12265677f2ed26b10f14911a892f109201a5d695f3696152827fb36f57b8",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-death-800.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-archive-v1-ending-0.png",
+      "sha256": "d4f308f1adc61475b422cca9588b74b32614e6450a60a6c8057586e1b4489b4d",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-ending-0.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-editorial-first-volume-archive-v1-ending-1.png",
+      "sha256": "939047157fe53c0e9de1abce25a3ed499c8058f013c6461d24c975e34659deb1",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-ending-1.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-archive-v1-jt_afterpass-0.png",
+      "sha256": "e1b6967a2d28eccfcbd354c73d1fbb8807cf74d5aadac31c9ad22a040b166071",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-jt_afterpass-0.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-archive-v1-jt_afterpass-1.png",
+      "sha256": "fdb3068d1c8836a38ccb3dacc9b000cf56837c35db81a581a583896b3d947498",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-jt_afterpass-1.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-editorial-first-volume-archive-v1-jt_auction-0.png",
+      "sha256": "a37b98125a6e8b442ab93cac42848ffe09d194870ac5c0efe424328f6ad4a5ad",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-jt_auction-0.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-editorial-first-volume-archive-v1-jt_auction-1.png",
+      "sha256": "cf80b25f5bde3bd5f29539cde3ce8d3ee27df4b8fb90f7cb2ee65a56f840c8bb",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-jt_auction-1.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-archive-v1-jt_mountainpass-0.png",
+      "sha256": "6b9503736551486656a3211202e90ab5bb38549186acc1312815eec26afca848",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-jt_mountainpass-0.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-archive-v1-jt_mountainpass-1.png",
+      "sha256": "58ba12f88469301fff0e8a247b63982aaae35dfe2e3e0d91c2b43f259c522f80",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-jt_mountainpass-1.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-archive-v1-jt_pawn-0.png",
+      "sha256": "fae85f62a09cba02695d3d8076354f762ccb84b28c851b4f251fa7af881b71f5",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-jt_pawn-0.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-archive-v1-jt_pawn-1.png",
+      "sha256": "3a7b93086fc2ea48adbfb51664c29dd973348551829724c00f64994ec001fa17",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-jt_pawn-1.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-archive-v1-jt_temple_reveal-0.png",
+      "sha256": "fe1fcfb1badc8aac734d91a8ca7afa9a3b242975f2e9da33ef9b5646b6ce2350",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-jt_temple_reveal-0.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-editorial-first-volume-archive-v1-jt_temple_reveal-1.png",
+      "sha256": "9e8253a0269ec1591218710b80cae6af58cffd40ccc604e02464b7cdb87a8baa",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-jt_temple_reveal-1.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-editorial-first-volume-archive-v1-jt_vault-0.png",
+      "sha256": "6caa53d4e04a5e87231bdbb6d1083f6c28fa6a19d5ba1646b027b6ccc01069b9",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-jt_vault-0.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-editorial-first-volume-archive-v1-jt_vault-1.png",
+      "sha256": "8cac8a8fe91ed5e5ef0a2d639b349451c04612bf761272c2a11ec2bac70c7327",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-archive-v1-jt_vault-1.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-retained-art-jade-missing.png",
+      "sha256": "b0b7ed05c5a0facdb4ea821ad803f9d69c6a354d00a2bc1c9e68072b681fcfeb",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-retained-art-jade-missing.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-retained-art-jade-night.png",
+      "sha256": "564f11471cf76dc0469d59806c2e9a9e408bf4bb3d4ca6a9d6b64af92c78ac61",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-retained-art-jade-night.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-editorial-first-volume-retained-art-jade-thieves-missing.png",
+      "sha256": "752408327d43b738c6f6104437b96c833a362475b9836dba70f5ccb67f2914fe",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-retained-art-jade-thieves-missing.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-retained-art-jade-thieves-night.png",
+      "sha256": "f716f4695e5b1c0641a12bb144f4e089004896c77e8594c430dc6890872c2184",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-retained-art-jade-thieves-night.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-retained-art-jd_seventh_2-1440.png",
+      "sha256": "a2e6f426e8a4957f6688e6fbc39f45a18b2358bbcf70c412a9ee8142c61c70aa",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-retained-art-jd_seventh_2-1440.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-retained-art-jd_seventh_2-360.png",
+      "sha256": "20c38423af4da42af6cb7fca1c5149c3acd9991c0e6e43339e118a9708f0d5fd",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-retained-art-jd_seventh_2-360.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-retained-art-jd_seventh_2-800.png",
+      "sha256": "deb48d3005bcf617ae667c7fe103caa23eb9bca2806a83dee6689e50d342f9b2",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-retained-art-jd_seventh_2-800.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-retained-art-jd_seventh_4-1440.png",
+      "sha256": "b48022de1b03f000be8f23e60035bc44963664bf21255a9600ab002de4350b16",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-retained-art-jd_seventh_4-1440.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-retained-art-jd_seventh_4-360.png",
+      "sha256": "efde717cbcc792a273bdc824624b3885e581e2d9edff89db1a4aea8ec9fdcf3b",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-retained-art-jd_seventh_4-360.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-retained-art-jd_seventh_4-800.png",
+      "sha256": "4e366d4b4a106314e0890d9d4506fe9bcd14b5894e2ad14928470525db11542b",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-retained-art-jd_seventh_4-800.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-retained-art-jt_empty_box_1-1440.png",
+      "sha256": "9327fe7def806f08665649dd60abbeaec1ebad2b20d7570d4e69e7aa9ea0d95c",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-retained-art-jt_empty_box_1-1440.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-retained-art-jt_empty_box_1-360.png",
+      "sha256": "6177453fc67f2ae73628b9001e64f3b74f4203c3afe57485eea839aa00b13605",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-retained-art-jt_empty_box_1-360.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-retained-art-jt_empty_box_1-800.png",
+      "sha256": "3c761e6c28bcbf9a45b5604450763dfbe3140a55278bd85669a8c3c16404c57b",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-retained-art-jt_empty_box_1-800.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-retained-art-jt_revealed_13-1440.png",
+      "sha256": "b737440e1e7063b298d4782ca6df095e56a3246d63ba8321057459f5083971df",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-retained-art-jt_revealed_13-1440.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-retained-art-jt_revealed_13-360.png",
+      "sha256": "1cf21fb1802b4159ef160dcec8a3f01c54c1b48e9ec9171c70fe2c47eef1941f",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-retained-art-jt_revealed_13-360.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-retained-art-jt_revealed_13-800.png",
+      "sha256": "a4fdff72e9fd7af130d874291a741a99b5855958187703d7053d4cf9dde261b2",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-retained-art-jt_revealed_13-800.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-retained-art-jt_revealed_8-1440.png",
+      "sha256": "74f7c6980b646fda28c958911fc3be4f9301a8fae92a55576f116013d6667760",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-retained-art-jt_revealed_8-1440.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-retained-art-jt_revealed_8-360.png",
+      "sha256": "7c07b8427170754d83ebdccd0415b6c70864e1e1cd6a944e692d1a210bccae11",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-retained-art-jt_revealed_8-360.png"
+    },
+    {
+      "file": "docs/evidence/v6/jade-thieves-editorial-retained-art-jt_revealed_8-800.png",
+      "sha256": "ffdc8066416ff94f212b37b9bb182c6a41b0de2733dca1beee15131315f43b77",
+      "originalOutput": "docs/evidence/v6/jade-thieves-editorial-retained-art-jt_revealed_8-800.png"
+    }
+  ],
+  "limits": "Source proof was rerun; unchanged frames reuse exact existing bytes. This is not an art acceptance."
+}

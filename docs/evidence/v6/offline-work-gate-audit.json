@@ -1,0 +1,446 @@
+{
+  "scope": "Actual message listener with in-memory fetch/cache adapters; real offline browser tests remain separate",
+  "registeredWorks": 44,
+  "rows": [
+    {
+      "scope": "http://localhost/",
+      "work": "kuhe",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "kuhe-v2",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "kuhe-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "qingshi",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "qingshi-v2",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "qingshi-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "two-swords",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "two-swords-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "seven-questions",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "seven-questions-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "jade-thieves",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "jade-thieves-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "jade",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "jade-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "sea",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "sea-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "sea-tide",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "sea-tide-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "north",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "north-v2",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "north-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "qian-kun",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "qian-kun-v2",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "qian-kun-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "north-notes",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "dead-ranking",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "luhua",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "twelfth-life",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "twelfth-life-v2",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "twelfth-life-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "luoyang",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "bamboo",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "xuanmen",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "white-stone",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "beyond-ranking",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "taihua",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "taihua-v2",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "taihua-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "longmen",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "longmen-v2",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "longmen-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "dongting",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "twelfth",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/",
+      "work": "tide-v6",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "kuhe",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "kuhe-v2",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "kuhe-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "qingshi",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "qingshi-v2",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "qingshi-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "two-swords",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "two-swords-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "seven-questions",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "seven-questions-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "jade-thieves",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "jade-thieves-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "jade",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "jade-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "sea",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "sea-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "sea-tide",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "sea-tide-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "north",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "north-v2",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "north-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "qian-kun",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "qian-kun-v2",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "qian-kun-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "north-notes",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "dead-ranking",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "luhua",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "twelfth-life",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "twelfth-life-v2",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "twelfth-life-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "luoyang",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "bamboo",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "xuanmen",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "white-stone",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "beyond-ranking",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "taihua",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "taihua-v2",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "taihua-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "longmen",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "longmen-v2",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "longmen-v1",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "dongting",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "twelfth",
+      "replyOK": true
+    },
+    {
+      "scope": "http://localhost/Jianghu/",
+      "work": "tide-v6",
+      "replyOK": true
+    }
+  ]
+}

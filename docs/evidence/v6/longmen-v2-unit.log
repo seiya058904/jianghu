@@ -1,0 +1,12 @@
+✔ Longmen v1 exact bytes and version identity remain available beside expanded v2 (173.791ms)
+✔ V2 preserves all fixed bouts and adds He-only private canon without leaking it into the apprentice (28.9466ms)
+✔ Four choices of what to observe produce different next-morning physical failures from one changed input (39.4585ms)
+✔ Sampled v2 branches cover every authored beat and choice, and both real story CGs enter and leave (3216.554ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3568.95

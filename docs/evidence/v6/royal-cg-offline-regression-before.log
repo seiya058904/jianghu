@@ -1,0 +1,32 @@
+[WebServer] (node:35584) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:31940) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 tests\offline-work-pack.spec.ts:6:134 › download kuhe-v1 pack restores uncached story data on root (338ms)
+
+
+  1) tests\offline-work-pack.spec.ts:6:134 › download kuhe-v1 pack restores uncached story data on root
+
+    Error: kuhe-v1: requested data chunk is absent
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      11 |  // The explicit work download must refill it; a seen-page cache is no proof.
+      12 |  for(const name of expected){const url=new URL('assets/'+name,root).href;await expect.poll(()=>page.evaluate(async url=>Boolean(await caches.match(url)),url)).toBe(true);await page.evaluate(async url=>{for(const key of await caches.keys())await(await caches.open(key)).delete(url)},url);expect(await page.evaluate(async url=>Boolean(await caches.match(url)),url)).toBe(false)}
+    > 13 |  await page.getByRole('button',{name:'设置',exact:true}).click();await page.getByRole('button',{name:`下载《${work.title}》离线资源`,exact:true}).click();await expect(page.getByRole('dialog')).toContainText('离线资源已备好');await page.keyboard.press('Escape');for(const name of expected)expect(await page.evaluate(async url=>Boolean(await caches.match(url)),new URL('assets/'+name,root).href),`${slug}: requested data chunk is absent`).toBe(true);
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                     ^
+      14 |  const cdp=await context.newCDPSession(page);await cdp.send('Network.clearBrowserCache');await cdp.detach();const fresh=await context.newPage();await fresh.addInitScript(prefix=>localStorage.setItem(prefix+'settings',JSON.stringify({speed:0,reduced:true})),work.prefix);await page.close();await context.setOffline(true);await fresh.goto(root+work.file);await fresh.getByRole('button',{name:work.start,exact:true}).click();const data=JSON.parse(readFileSync('src/generated/'+slug+'.json','utf8')),s=new VNRuntime(data,work.version);await expect(fresh.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await expect(fresh.locator('#dialogue-visible')).toHaveText(s.frame.text);if(s.frame.choices.length){await fresh.locator(`[data-choice="${s.frame.choices[0].id}"]`).click();s.choose(s.frame.choices[0].id)}else{await fresh.locator('#advance-button').click();s.advance()}await expect(fresh.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await context.close();
+      15 | });
+      16 |
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\offline-work-pack.spec.ts:13:421
+
+    Error Context: test-results\offline-work-pack-download-a3769-uncached-story-data-on-root\error-context.md
+
+  1 failed
+    tests\offline-work-pack.spec.ts:6:134 › download kuhe-v1 pack restores uncached story data on root

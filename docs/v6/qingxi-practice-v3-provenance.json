@@ -1,0 +1,10 @@
+{
+  "tool": "built-in image_gen",
+  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-5cc6b328-aa1c-4251-b951-67500da0420c.png",
+  "prompt": "Edit this courtyard illustration. Replace the ENTIRE LOWER LEFT QUARTER of the image with a seamless continuation of the ordinary worn gray stone paving seen in lower center. Every tiny dark calligraphic squiggle or artist mark in the bottom left must be gone. That region should be ONLY irregular natural gray flagstones, seams, tiny grass, with no ink strokes resembling writing. Preserve the rest of courtyard, bench, wooden practice dao, pine, daylight and camera exactly. No signatures, no initials, no words, no writing anywhere. Wide landscape3:2.",
+  "reference": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/qingxi-practice-v2.webp",
+  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/docs/v6/art-candidates/qingxi-practice-v3.webp",
+  "review": "REJECTED FOR GAME USE: tiny signature-like corner marks remain after repair. No more generation attempted; existing generic courtyard reused for Qingxi practice scenes.",
+  "initialOutput": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/qingxi-practice-v3.webp",
+  "archiveReason": "Rejected candidate preserved for traceability outside public so it is not shipped with the game."
+}

@@ -1,0 +1,1828 @@
+
+> jianghu@1.0.0 test
+> npm run story:build && node --experimental-strip-types --test tests/runtime.test.ts tests/vn-runtime.test.ts tests/campaign.test.ts tests/v6-compat.test.ts tests/taihua.test.ts tests/taihua-v2.test.ts tests/taihua-v1.test.ts tests/campaign-v6.test.ts tests/campaign-v6-ending-staging.test.ts tests/longmen.test.ts tests/longmen-v2.test.ts tests/longmen-editorial.test.ts tests/dongting.test.ts tests/twelfth.test.ts tests/kuhe.test.ts tests/kuhe-v2.test.ts tests/kuhe-editorial.test.ts tests/qingshi.test.ts tests/qingshi-v2.test.ts tests/qingshi-editorial.test.ts tests/two-swords.test.ts tests/seven-questions.test.ts tests/jade-thieves.test.ts tests/jade-thieves-editorial.test.ts tests/jade.test.ts tests/jade-editorial.test.ts tests/sea.test.ts tests/sea-v1.test.ts tests/sea-editorial.test.ts tests/sea-tide.test.ts tests/sea-tide-v1.test.ts tests/sea-tide-editorial.test.ts tests/child-reuse.test.ts tests/north.test.ts tests/north-editorial.test.ts tests/qian-kun.test.ts tests/qian-kun-editorial.test.ts tests/dead-ranking.test.ts tests/luhua.test.ts tests/twelfth-life.test.ts tests/twelfth-life-v2.test.ts tests/twelfth-life-editorial.test.ts tests/royal-letters-cg.test.ts tests/swords-art.test.ts tests/sea-rigging.test.ts tests/jade-reusable.test.ts tests/heng-art.test.ts tests/default-entry.test.ts tests/offline-work-gate.test.ts tests/luoyang-bamboo.test.ts tests/xuanmen.test.ts tests/white-stone.test.ts tests/beyond-ranking.test.ts
+
+
+> jianghu@1.0.0 story:build
+> node scripts/compile-story.mjs
+
+Authored 22 chapter files; 1006 unique source beats.
+Taihua authored: 465 beats
+V6 preview: 1325 source beats; three midroutes and independent after-scenes.
+Ink main: 16805 source characters; 0 warnings
+Dialogue metadata: { beats: 108, choices: 28, endings: 3 }
+Ink duel: 12041 source characters; 0 warnings
+Campaign metadata: { beats: 1006, choices: 135, endings: 8 }
+Ink campaign: 122888 source characters; 0 warnings
+Taihua metadata: { beats: 465, choices: 63, endings: 3 }
+Ink taihua: 62670 source characters; 0 warnings
+V6 preview metadata: { beats: 1325, choices: 182, endings: 8 }
+Ink campaign-v6: 186345 source characters; 0 warnings
+Longmen metadata: { beats: 356, choices: 50, endings: 2 }
+Ink longmen: 47614 source characters; 0 warnings
+Dongting metadata: { beats: 155, choices: 22, endings: 2 }
+Ink dongting: 21908 source characters; 0 warnings
+Twelfth metadata: { beats: 236, choices: 36, endings: 2 }
+Ink twelfth: 31623 source characters; 0 warnings
+Kuhe metadata: { beats: 326, choices: 40, endings: 2 }
+Ink kuhe: 43200 source characters; 0 warnings
+Qingshi metadata: { beats: 447, choices: 60, endings: 2 }
+Ink qingshi: 61540 source characters; 0 warnings
+Two Swords metadata: { beats: 334, choices: 50, endings: 2 }
+Ink two-swords: 46835 source characters; 0 warnings
+Seven Questions metadata: { beats: 382, choices: 62, endings: 2 }
+Ink seven-questions: 54934 source characters; 0 warnings
+Jade Thieves metadata: { beats: 320, choices: 45, endings: 2 }
+Ink jade-thieves: 43671 source characters; 0 warnings
+Jade metadata: { beats: 322, choices: 68, endings: 2 }
+Ink jade: 49923 source characters; 0 warnings
+Sea metadata: { beats: 257, choices: 46, endings: 2 }
+Ink sea: 38305 source characters; 0 warnings
+Sea Tide metadata: { beats: 239, choices: 42, endings: 2 }
+Ink sea-tide: 35281 source characters; 0 warnings
+North metadata: { beats: 342, choices: 62, endings: 2 }
+Ink north: 50266 source characters; 0 warnings
+qian-kun metadata: { beats: 318, choices: 50, endings: 2 }
+Ink qian-kun: 46146 source characters; 0 warnings
+north-notes metadata: { beats: 69, choices: 12, endings: 2 }
+Ink north-notes: 9617 source characters; 0 warnings
+dead-ranking metadata: { beats: 325, choices: 66, endings: 2 }
+Ink dead-ranking: 50246 source characters; 0 warnings
+luhua metadata: { beats: 256, choices: 50, endings: 2 }
+Ink luhua: 38722 source characters; 0 warnings
+twelfth-life metadata: { beats: 393, choices: 68, endings: 2 }
+Ink twelfth-life: 56281 source characters; 0 warnings
+luoyang metadata: { beats: 76, choices: 18, endings: 2 }
+Ink luoyang: 12387 source characters; 0 warnings
+bamboo metadata: { beats: 86, choices: 14, endings: 2 }
+Ink bamboo: 12490 source characters; 0 warnings
+xuanmen metadata: { beats: 114, choices: 22, endings: 2 }
+Ink xuanmen: 16119 source characters; 0 warnings
+white-stone metadata: { beats: 132, choices: 26, endings: 2 }
+Ink white-stone: 19335 source characters; 0 warnings
+beyond-ranking metadata: { beats: 98, choices: 18, endings: 2 }
+Ink beyond-ranking: 14443 source characters; 0 warnings
+TAP version 13
+# Subtest: Ning ten preserve source order, private scales, uncertain survival and unplayed bouts
+ok 1 - Ning ten preserve source order, private scales, uncertain survival and unplayed bouts
+  ---
+  duration_ms: 275.5859
+  type: 'test'
+  ...
+# Subtest: Two independent early inputs change later copying labour and source-checking without inventing a third palm
+ok 2 - Two independent early inputs change later copying labour and source-checking without inventing a third palm
+  ---
+  duration_ms: 25.7926
+  type: 'test'
+  ...
+# Subtest: Two exact historical works must each have a legal ending; wrong prefix, one-sided unlock, garbage and storage failure stay closed
+ok 3 - Two exact historical works must each have a legal ending; wrong prefix, one-sided unlock, garbage and storage failure stay closed
+  ---
+  duration_ms: 0.7471
+  type: 'test'
+  ...
+# Subtest: All 512 finite binary paths cover all beats and choices with valid distinct images
+ok 4 - All 512 finite binary paths cover all beats and choices with valid distinct images
+  ---
+  duration_ms: 3265.0748
+  type: 'test'
+  ...
+# Subtest: Ending direction retains exact pre-change V6 and frozen V5 bytes
+ok 5 - Ending direction retains exact pre-change V6 and frozen V5 bytes
+  ---
+  duration_ms: 6.73
+  type: 'test'
+  ...
+# Subtest: Every affected ending beat in nine complete routes migrates only presentation while keeping every word, option and command
+ok 6 - Every affected ending beat in nine complete routes migrates only presentation while keeping every word, option and command
+  ---
+  duration_ms: 17674.2885
+  type: 'test'
+  ...
+# Subtest: Frozen validation rejects forged stage/runtime/commands, wrong versions and non-cosmetic changes
+ok 7 - Frozen validation rejects forged stage/runtime/commands, wrong versions and non-cosmetic changes
+  ---
+  duration_ms: 859.3617
+  type: 'test'
+  ...
+# Subtest: Ending views reflect the actual people and work without generating outcome-specific illustrations
+ok 8 - Ending views reflect the actual people and work without generating outcome-specific illustrations
+  ---
+  duration_ms: 594.7124
+  type: 'test'
+  ...
+# Subtest: v6 preview preserves eight reachable ending families while all three chapter-seven/nine/ten paths and independent after-scenes run
+ok 9 - v6 preview preserves eight reachable ending families while all three chapter-seven/nine/ten paths and independent after-scenes run
+  ---
+  duration_ms: 2178.328
+  type: 'test'
+  ...
+# Subtest: v6 preview samples route variants without a dead end and reports genuinely unvisited source nodes
+ok 10 - v6 preview samples route variants without a dead end and reports genuinely unvisited source nodes
+  ---
+  duration_ms: 11409.2727
+  type: 'test'
+  ...
+# Subtest: five distinct canon incidents change later practical outcomes while holding the other choices fixed
+ok 11 - five distinct canon incidents change later practical outcomes while holding the other choices fixed
+  ---
+  duration_ms: 450.2255
+  type: 'test'
+  ...
+# Subtest: early injuries accumulate across chapters: each single contribution can change a prepared rescue into the scar outcome
+ok 12 - early injuries accumulate across chapters: each single contribution can change a prepared rescue into the scar outcome
+  ---
+  duration_ms: 512.7239
+  type: 'test'
+  ...
+# Subtest: the promised extra month survives every ending family instead of disappearing when the player leaves the harbor
+ok 13 - the promised extra month survives every ending family instead of disappearing when the player leaves the harbor
+  ---
+  duration_ms: 652.2809
+  type: 'test'
+  ...
+# Subtest: thirty manually reviewed main decisions retain exclusive later consequences, including ten delayed high-weight decisions
+ok 14 - thirty manually reviewed main decisions retain exclusive later consequences, including ten delayed high-weight decisions
+  ---
+  duration_ms: 4814.8785
+  type: 'test'
+  ...
+# Subtest: eight distinct complete endings, both middle routes and genuine later callbacks
+ok 15 - eight distinct complete endings, both middle routes and genuine later callbacks
+  ---
+  duration_ms: 1703.8707
+  type: 'test'
+  ...
+# Subtest: choice, actor-entry, CG and ending snapshots replay exactly; wrong story/tampering rejected
+ok 16 - choice, actor-entry, CG and ending snapshots replay exactly; wrong story/tampering rejected
+  ---
+  duration_ms: 5561.1548
+  type: 'test'
+  ...
+# Subtest: seeded route variations terminate with legal stages; report measured source coverage
+ok 17 - seeded route variations terminate with legal stages; report measured source coverage
+  ---
+  duration_ms: 6835.184
+  type: 'test'
+  ...
+# Subtest: Child portrait changes only trusted childhood presentations; both full old V2 paths retain every word, choice, world and restorable snapshot
+ok 18 - Child portrait changes only trusted childhood presentations; both full old V2 paths retain every word, choice, world and restorable snapshot
+  ---
+  duration_ms: 4427.8176
+  type: 'test'
+  ...
+# Subtest: Child update cannot accept forged stage, world, commands, wrong edition or missing frozen authority
+ok 19 - Child update cannot accept forged stage, world, commands, wrong edition or missing frozen authority
+  ---
+  duration_ms: 22.6951
+  type: 'test'
+  ...
+# Subtest: Generic child remains a youth-template variant; archived child and all later age images stay unchanged
+ok 20 - Generic child remains a youth-template variant; archived child and all later age images stay unchanged
+  ---
+  duration_ms: 24.2137
+  type: 'test'
+  ...
+# Subtest: Child source, final bytes and trusted pre-update files match retained provenance
+ok 21 - Child source, final bytes and trusted pre-update files match retained provenance
+  ---
+  duration_ms: 6.6923
+  type: 'test'
+  ...
+# Subtest: Dead Ranking complete paths preserve actual three bouts, old case, separate real records and long aftermath
+ok 22 - Dead Ranking complete paths preserve actual three bouts, old case, separate real records and long aftermath
+  ---
+  duration_ms: 444.6657
+  type: 'test'
+  ...
+# Subtest: Dead Ranking masked bout reconstructions do not reveal the three actors before they are found
+ok 23 - Dead Ranking masked bout reconstructions do not reveal the three actors before they are found
+  ---
+  duration_ms: 33.8545
+  type: 'test'
+  ...
+# Subtest: Dead Ranking one early interview choice changes public cost and later witness participation without erasing a defeat
+ok 24 - Dead Ranking one early interview choice changes public cost and later witness participation without erasing a defeat
+  ---
+  duration_ms: 119.6001
+  type: 'test'
+  ...
+# Subtest: Dead Ranking one disclosure decision changes the joint arrival, repair time and consent while all three still own their acts
+ok 25 - Dead Ranking one disclosure decision changes the joint arrival, repair time and consent while all three still own their acts
+  ---
+  duration_ms: 72.8968
+  type: 'test'
+  ...
+# Subtest: Dead Ranking optional Wudeng eyes have distinct inner acts, return to Zhou, and keep late people out of deceased scenes
+ok 26 - Dead Ranking optional Wudeng eyes have distinct inner acts, return to Zhou, and keep late people out of deceased scenes
+  ---
+  duration_ms: 102.1968
+  type: 'test'
+  ...
+# Subtest: Dead Ranking sampled paths cover every authored beat and both courtroom/career branches
+ok 27 - Dead Ranking sampled paths cover every authored beat and both courtroom/career branches
+  ---
+  duration_ms: 15458.9247
+  type: 'test'
+  ...
+# Subtest: Default roots and explicit index select real V6 content, chapters, saved-progress namespace and offline pack
+ok 28 - Default roots and explicit index select real V6 content, chapters, saved-progress namespace and offline pack
+  ---
+  duration_ms: 127.041
+  type: 'test'
+  ...
+# Subtest: Qian Kun current and both archives select exact independent content and namespaces on root and subpath
+ok 29 - Qian Kun current and both archives select exact independent content and namespaces on root and subpath
+  ---
+  duration_ms: 62.7509
+  type: 'test'
+  ...
+# Subtest: North V3, frozen V2 and V1 select exact independent data and namespaces under root and subpath
+ok 30 - North V3, frozen V2 and V1 select exact independent data and namespaces under root and subpath
+  ---
+  duration_ms: 22.8302
+  type: 'test'
+  ...
+# Subtest: Frozen V5/Half Step and both current/frozen chronicle entries keep independent content, version and prefix
+ok 31 - Frozen V5/Half Step and both current/frozen chronicle entries keep independent content, version and prefix
+  ---
+  duration_ms: 30.5154
+  type: 'test'
+  ...
+# Subtest: Dongting two life outcomes retain the 106/79 bouts, 4–3 recusal and Chen’s independent later seat
+ok 32 - Dongting two life outcomes retain the 106/79 bouts, 4–3 recusal and Chen’s independent later seat
+  ---
+  duration_ms: 181.3186
+  type: 'test'
+  ...
+# Subtest: Dongting early spare rope and rest materially change a later rescue injury
+ok 33 - Dongting early spare rope and rest materially change a later rescue injury
+  ---
+  duration_ms: 129.0725
+  type: 'test'
+  ...
+# Subtest: Dongting reaches every authored branch in a bounded sample; acting cast excludes merely mentioned elders
+ok 34 - Dongting reaches every authored branch in a bounded sample; acting cast excludes merely mentioned elders
+  ---
+  duration_ms: 2117.0905
+  type: 'test'
+  ...
+# Subtest: north Heng V2: identical narrative/inputs/world, exact frozen V1 restores and wrong-version rejection
+ok 35 - north Heng V2: identical narrative/inputs/world, exact frozen V1 restores and wrong-version rejection
+  ---
+  duration_ms: 6825.6675
+  type: 'test'
+  ...
+# Subtest: qian-kun Heng V2: identical narrative/inputs/world, exact frozen V1 restores and wrong-version rejection
+ok 36 - qian-kun Heng V2: identical narrative/inputs/world, exact frozen V1 restores and wrong-version rejection
+  ---
+  duration_ms: 3807.8314
+  type: 'test'
+  ...
+# Subtest: Heng is one explicit identity with two ages and three actual files per age, also in the older Notes interview
+ok 37 - Heng is one explicit identity with two ages and three actual files per age, also in the older Notes interview
+  ---
+  duration_ms: 10434.6347
+  type: 'test'
+  ...
+# Subtest: Both plain tea CGs last two frames and every focused camera clears on the next frame
+ok 38 - Both plain tea CGs last two frames and every focused camera clears on the next frame
+  ---
+  duration_ms: 109.2509
+  type: 'test'
+  ...
+# Subtest: Notes accepts either exact released edition of each book, mixed V1/V2, and rejects wrong families/versions
+ok 39 - Notes accepts either exact released edition of each book, mixed V1/V2, and rejects wrong families/versions
+  ---
+  duration_ms: 0.824
+  type: 'test'
+  ...
+# Subtest: Jade second-volume draft reproduces false unvisited report and preserves actual fourth/fifth eyewitnesses under either report and post
+ok 40 - Jade second-volume draft reproduces false unvisited report and preserves actual fourth/fifth eyewitnesses under either report and post
+  ---
+  duration_ms: 381.3469
+  type: 'test'
+  ...
+# Subtest: Jade second-volume draft no longer jumps twenty days forward then back into the same night
+ok 41 - Jade second-volume draft no longer jumps twenty days forward then back into the same night
+  ---
+  duration_ms: 134.7811
+  type: 'test'
+  ...
+# Subtest: Jade second-volume draft either initial Sima presentation reaches one formal quarter-hour and one old-file request
+ok 42 - Jade second-volume draft either initial Sima presentation reaches one formal quarter-hour and one old-file request
+  ---
+  duration_ms: 39.7348
+  type: 'test'
+  ...
+# Subtest: Jade second-volume draft surface copy costs three permitted days and paper; early incision cannot recover a complete first surface
+ok 43 - Jade second-volume draft surface copy costs three permitted days and paper; early incision cannot recover a complete first surface
+  ---
+  duration_ms: 58.0318
+  type: 'test'
+  ...
+# Subtest: Jade second-volume draft paid job or real contact remains Qiao own actual decision after reunion
+ok 44 - Jade second-volume draft paid job or real contact remains Qiao own actual decision after reunion
+  ---
+  duration_ms: 103.3145
+  type: 'test'
+  ...
+# Subtest: Jade second-volume draft fixed nine stores, separate nights, final breakage and two ordinary careers stay playable and restore exactly
+ok 45 - Jade second-volume draft fixed nine stores, separate nights, final breakage and two ordinary careers stay playable and restore exactly
+  ---
+  duration_ms: 228.0886
+  type: 'test'
+  ...
+# Subtest: Jade second-volume draft 512 sampled alternatives cover all declared beats and choices with bounded gaps
+ok 46 - Jade second-volume draft 512 sampled alternatives cover all declared beats and choices with bounded gaps
+  ---
+  duration_ms: 9868.2878
+  type: 'test'
+  ...
+# Subtest: Jade second-volume draft leaves original six authors, both current books, before-CG source and canon byte-identical
+ok 47 - Jade second-volume draft leaves original six authors, both current books, before-CG source and canon byte-identical
+  ---
+  duration_ms: 27.8174
+  type: 'test'
+  ...
+# Subtest: Jade second-volume draft new grain fire responses separate damp half-load from burnt straw and missing basket; fixed battle remains intact
+ok 48 - Jade second-volume draft new grain fire responses separate damp half-load from burnt straw and missing basket; fixed battle remains intact
+  ---
+  duration_ms: 185.333
+  type: 'test'
+  ...
+# Subtest: Jade second-volume draft four middle tasks have distinct later practical burdens
+ok 49 - Jade second-volume draft four middle tasks have distinct later practical burdens
+  ---
+  duration_ms: 64.5325
+  type: 'test'
+  ...
+# Subtest: Jade second-volume draft archive source, packet method and preparation choices have later returns without omniscient reports
+ok 50 - Jade second-volume draft archive source, packet method and preparation choices have later returns without omniscient reports
+  ---
+  duration_ms: 322.617
+  type: 'test'
+  ...
+# Subtest: Jade second-volume draft wedding promise and later objects stay with their owners under all gift and presentation actions
+ok 51 - Jade second-volume draft wedding promise and later objects stay with their owners under all gift and presentation actions
+  ---
+  duration_ms: 171.8674
+  type: 'test'
+  ...
+# Subtest: Jade second-volume draft exposes real present compensation and pending balance rather than spending future pay twice
+ok 52 - Jade second-volume draft exposes real present compensation and pending balance rather than spending future pay twice
+  ---
+  duration_ms: 63.7911
+  type: 'test'
+  ...
+# Subtest: Jade second-volume V2 retains grain CG entrance/exit and next-frame camera; only frozen V1 owns the old migration
+ok 53 - Jade second-volume V2 retains grain CG entrance/exit and next-frame camera; only frozen V1 owns the old migration
+  ---
+  duration_ms: 19.9401
+  type: 'test'
+  ...
+# Subtest: jade-thieves reusable art: all sampled old snapshots preserve narrative/world and restore only verified staging
+ok 54 - jade-thieves reusable art: all sampled old snapshots preserve narrative/world and restore only verified staging
+  ---
+  duration_ms: 11904.3577
+  type: 'test'
+  ...
+# Subtest: jade reusable art: all sampled old snapshots preserve narrative/world and restore only verified staging
+ok 55 - jade reusable art: all sampled old snapshots preserve narrative/world and restore only verified staging
+  ---
+  duration_ms: 15151.465
+  type: 'test'
+  ...
+# Subtest: Jade reusable CGs exit before replies; both first-book viewpoints and next-frame cameras remain distinct
+ok 56 - Jade reusable CGs exit before replies; both first-book viewpoints and next-frame cameras remain distinct
+  ---
+  duration_ms: 35.0336
+  type: 'test'
+  ...
+# Subtest: Jade staging migration rejects forged stage/world/commands/version and requires the exact frozen source
+ok 57 - Jade staging migration rejects forged stage/world/commands/version and requires the exact frozen source
+  ---
+  duration_ms: 90.6305
+  type: 'test'
+  ...
+# Subtest: Jade draft reproduces premature order reveal then leaves actual disclosure to the player
+ok 58 - Jade draft reproduces premature order reveal then leaves actual disclosure to the player
+  ---
+  duration_ms: 267.1042
+  type: 'test'
+  ...
+# Subtest: Jade draft auction observation and rescue priorities each produce their actual later action
+ok 59 - Jade draft auction observation and rescue priorities each produce their actual later action
+  ---
+  duration_ms: 256.841
+  type: 'test'
+  ...
+# Subtest: Jade draft sleeve actions name both bodies under either viewpoint and retain different wet-clothes treatment costs
+ok 60 - Jade draft sleeve actions name both bodies under either viewpoint and retain different wet-clothes treatment costs
+  ---
+  duration_ms: 139.037
+  type: 'test'
+  ...
+# Subtest: Jade draft early naming and package actions keep distinct shared-life and resource returns
+ok 61 - Jade draft early naming and package actions keep distinct shared-life and resource returns
+  ---
+  duration_ms: 177.4293
+  type: 'test'
+  ...
+# Subtest: Jade draft repayment alternatives do not re-owe already settled craftsman wages; time and escape stay concrete
+ok 62 - Jade draft repayment alternatives do not re-owe already settled craftsman wages; time and escape stay concrete
+  ---
+  duration_ms: 238.2179
+  type: 'test'
+  ...
+# Subtest: Jade draft two viewpoints and both private futures preserve fixed death, ordinary true jade and final objects; saves replay exactly
+ok 63 - Jade draft two viewpoints and both private futures preserve fixed death, ordinary true jade and final objects; saves replay exactly
+  ---
+  duration_ms: 215.5535
+  type: 'test'
+  ...
+# Subtest: Jade draft 768 sampled alternatives cover all declared beats/options and keep bounded passive gaps
+ok 64 - Jade draft 768 sampled alternatives cover all declared beats/options and keep bounded passive gaps
+  ---
+  duration_ms: 13834.2477
+  type: 'test'
+  ...
+# Subtest: Jade draft leaves published first/second volume, canon and original authors exact
+ok 65 - Jade draft leaves published first/second volume, canon and original authors exact
+  ---
+  duration_ms: 27.3617
+  type: 'test'
+  ...
+# Subtest: Jade draft exact orders are actually spoken only after disclosure in both viewpoints
+ok 66 - Jade draft exact orders are actually spoken only after disclosure in both viewpoints
+  ---
+  duration_ms: 115.8846
+  type: 'test'
+  ...
+# Subtest: Jade draft hot meal and early settlement both pay the craftsman, with distinct night and travel costs
+ok 67 - Jade draft hot meal and early settlement both pay the craftsman, with distinct night and travel costs
+  ---
+  duration_ms: 131.2338
+  type: 'test'
+  ...
+# Subtest: Jade draft close-range actions retain positions and injury echoes without avoiding Jiang death
+ok 68 - Jade draft close-range actions retain positions and injury echoes without avoiding Jiang death
+  ---
+  duration_ms: 311.9774
+  type: 'test'
+  ...
+# Subtest: Jade draft later work and final paper actions survive either private future
+ok 69 - Jade draft later work and final paper actions survive either private future
+  ---
+  duration_ms: 138.6023
+  type: 'test'
+  ...
+# Subtest: Jade draft both settlement routes keep chronology coherent and held-order route learns threats without reading the other letter
+ok 70 - Jade draft both settlement routes keep chronology coherent and held-order route learns threats without reading the other letter
+  ---
+  duration_ms: 13.2112
+  type: 'test'
+  ...
+# Subtest: Jade revised fact and scene subtitle do not reveal either order before the chosen disclosure; frozen metadata stays available
+ok 71 - Jade revised fact and scene subtitle do not reveal either order before the chosen disclosure; frozen metadata stays available
+  ---
+  duration_ms: 22.8566
+  type: 'test'
+  ...
+# Subtest: Jade V2 preserves exact empty-box timing, two new portrait anchors, old version prefix and narrow migration boundary
+ok 72 - Jade V2 preserves exact empty-box timing, two new portrait anchors, old version prefix and narrow migration boundary
+  ---
+  duration_ms: 27.5198
+  type: 'test'
+  ...
+# Subtest: Jade first volume has two complete viewpoints with fixed empty box, mutual rescues, Jiang death and genuine-object journey
+ok 73 - Jade first volume has two complete viewpoints with fixed empty box, mutual rescues, Jiang death and genuine-object journey
+  ---
+  duration_ms: 256.9738
+  type: 'test'
+  ...
+# Subtest: Jade each viewpoint keeps the other hidden order and identity until the temple, including knowledge descriptions
+ok 74 - Jade each viewpoint keeps the other hidden order and identity until the temple, including knowledge descriptions
+  ---
+  duration_ms: 39.0432
+  type: 'test'
+  ...
+# Subtest: Jade one early solo/cooperative decision changes actual auction escape space and cost; informed deception requires a checked door
+ok 75 - Jade one early solo/cooperative decision changes actual auction escape space and cost; informed deception requires a checked door
+  ---
+  duration_ms: 133.9117
+  type: 'test'
+  ...
+# Subtest: Jade counterfeit exposure changes a secondary person’s later injury and study delay, not Jiang’s canon death
+ok 76 - Jade counterfeit exposure changes a secondary person’s later injury and study delay, not Jiang’s canon death
+  ---
+  duration_ms: 102.4996
+  type: 'test'
+  ...
+# Subtest: Jade first volume sampled alternatives reach every authored beat and all three escape choices without long passive stretches
+ok 77 - Jade first volume sampled alternatives reach every authored beat and all three escape choices without long passive stretches
+  ---
+  duration_ms: 11032.7837
+  type: 'test'
+  ...
+# Subtest: Jade full second-volume paths keep thirteen coins, nine actual store outcomes, fixed breakage and ordinary Lu career
+ok 78 - Jade full second-volume paths keep thirteen coins, nine actual store outcomes, fixed breakage and ordinary Lu career
+  ---
+  duration_ms: 298.5235
+  type: 'test'
+  ...
+# Subtest: Jade single surface decision has an explicit three-day private cost and changes witnessed middle scenes
+ok 79 - Jade single surface decision has an explicit three-day private cost and changes witnessed middle scenes
+  ---
+  duration_ms: 41.2903
+  type: 'test'
+  ...
+# Subtest: Jade seventh grain defence and ninth broken-object event remain different witnessed locations
+ok 80 - Jade seventh grain defence and ninth broken-object event remain different witnessed locations
+  ---
+  duration_ms: 45.7758
+  type: 'test'
+  ...
+# Subtest: Jade the early absent-family question changes reunion and winter-money cost in either later post
+ok 81 - Jade the early absent-family question changes reunion and winter-money cost in either later post
+  ---
+  duration_ms: 272.9879
+  type: 'test'
+  ...
+# Subtest: Jade personal notes have distinct private costs, and He ages only in the late scene
+ok 82 - Jade personal notes have distinct private costs, and He ages only in the late scene
+  ---
+  duration_ms: 83.5737
+  type: 'test'
+  ...
+# Subtest: Jade sampled branches cover all authored beats and options with bounded reading gaps
+ok 83 - Jade sampled branches cover all authored beats and options with bounded reading gaps
+  ---
+  duration_ms: 9262.2525
+  type: 'test'
+  ...
+# Subtest: Kuhe V3 64 combinations preserve canonical history while fixing rescue, light wound and voluntary-return contradictions
+ok 84 - Kuhe V3 64 combinations preserve canonical history while fixing rescue, light wound and voluntary-return contradictions
+  ---
+  duration_ms: 3232.2897
+  type: 'test'
+  ...
+# Subtest: Kuhe V3 single-input record, cloth and wrist changes are paid in later passages without reassigning fixed fates
+ok 85 - Kuhe V3 single-input record, cloth and wrist changes are paid in later passages without reassigning fixed fates
+  ---
+  duration_ms: 121.0617
+  type: 'test'
+  ...
+# Subtest: Kuhe V3 512 sampled paths reach every directed beat and retain staged injuries, CG exits and deaths
+ok 86 - Kuhe V3 512 sampled paths reach every directed beat and retain staged injuries, CG exits and deaths
+  ---
+  duration_ms: 9615.8739
+  type: 'test'
+  ...
+# Subtest: Kuhe V2 bytes and namespace stay frozen and cannot import into rewritten V3
+ok 87 - Kuhe V2 bytes and namespace stay frozen and cannot import into rewritten V3
+  ---
+  duration_ms: 22.2547
+  type: 'test'
+  ...
+# Subtest: Kuhe exact v1 bytes, prefixes and old pending saves survive the art edition
+ok 88 - Kuhe exact v1 bytes, prefixes and old pending saves survive the art edition
+  ---
+  duration_ms: 769.5037
+  type: 'test'
+  ...
+# Subtest: New art preserves both full texts and commands while wound, weapon and death state changes are chronological
+ok 89 - New art preserves both full texts and commands while wound, weapon and death state changes are chronological
+  ---
+  duration_ms: 117.0712
+  type: 'test'
+  ...
+# Subtest: 512 sampled art-edition paths keep all beats, choices and real identity/state files reachable
+ok 90 - 512 sampled art-edition paths keep all beats, choices and real identity/state files reachable
+  ---
+  duration_ms: 8897.5719
+  type: 'test'
+  ...
+# Subtest: Kuhe full two personal endings preserve the staged battle, deaths, injuries and seven-day aftermath
+ok 91 - Kuhe full two personal endings preserve the staged battle, deaths, injuries and seven-day aftermath
+  ---
+  duration_ms: 202.8726
+  type: 'test'
+  ...
+# Subtest: Kuhe paired early preparation changes later physical route and one-month work capacity, without rewriting canon
+ok 92 - Kuhe paired early preparation changes later physical route and one-month work capacity, without rewriting canon
+  ---
+  duration_ms: 42.3069
+  type: 'test'
+  ...
+# Subtest: Kuhe trust and agreed work position echo in a different scene; rescue and pages yield concrete different lives
+ok 93 - Kuhe trust and agreed work position echo in a different scene; rescue and pages yield concrete different lives
+  ---
+  duration_ms: 74.3977
+  type: 'test'
+  ...
+# Subtest: Kuhe sampled branches reach all authored nodes, two endings and stable visible identities
+ok 94 - Kuhe sampled branches reach all authored nodes, two endings and stable visible identities
+  ---
+  duration_ms: 8493.7004
+  type: 'test'
+  ...
+# Subtest: Longmen V3 removes the specific private-quote implication; all actual He/Zhang private statements remain in private POV
+ok 95 - Longmen V3 removes the specific private-quote implication; all actual He/Zhang private statements remain in private POV
+  ---
+  duration_ms: 158.6798
+  type: 'test'
+  ...
+# Subtest: Thirty-two read/try/duty/arm combinations repay only the deferred trial on day4 without magically healing the strained arm
+ok 96 - Thirty-two read/try/duty/arm combinations repay only the deferred trial on day4 without magically healing the strained arm
+  ---
+  duration_ms: 718.5178
+  type: 'test'
+  ...
+# Subtest: Longmen retained V2 authors, compiled version and canon remain byte-identical; V3 cannot consume V2
+ok 97 - Longmen retained V2 authors, compiled version and canon remain byte-identical; V3 cannot consume V2
+  ---
+  duration_ms: 24.4087
+  type: 'test'
+  ...
+# Subtest: 512 sampled current routes reach all authored beats,50 options and both endings; all four morning questions and fixed victories remain reachable
+ok 98 - 512 sampled current routes reach all authored beats,50 options and both endings; all four morning questions and fixed victories remain reachable
+  ---
+  duration_ms: 9695.4632
+  type: 'test'
+  ...
+# Subtest: Sixteen early-route/practice/future/morning combinations have real letter, lesson and handoff duties five years later
+ok 99 - Sixteen early-route/practice/future/morning combinations have real letter, lesson and handoff duties five years later
+  ---
+  duration_ms: 303.7477
+  type: 'test'
+  ...
+# Subtest: V3 day4 scene appears only for deferred practice, CGs exit and private POV never becomes apprentice knowledge; all three prefixes stay independent
+ok 100 - V3 day4 scene appears only for deferred practice, CGs exit and private POV never becomes apprentice knowledge; all three prefixes stay independent
+  ---
+  duration_ms: 45.4318
+  type: 'test'
+  ...
+# Subtest: Longmen v1 exact bytes and version identity remain available beside expanded v2
+ok 101 - Longmen v1 exact bytes and version identity remain available beside expanded v2
+  ---
+  duration_ms: 612.5128
+  type: 'test'
+  ...
+# Subtest: V2 preserves all fixed bouts and adds He-only private canon without leaking it into the apprentice
+ok 102 - V2 preserves all fixed bouts and adds He-only private canon without leaking it into the apprentice
+  ---
+  duration_ms: 81.3138
+  type: 'test'
+  ...
+# Subtest: Four choices of what to observe produce different next-morning physical failures from one changed input
+ok 103 - Four choices of what to observe produce different next-morning physical failures from one changed input
+  ---
+  duration_ms: 126.6548
+  type: 'test'
+  ...
+# Subtest: Sampled v2 branches cover every authored beat and choice, and both real story CGs enter and leave
+ok 104 - Sampled v2 branches cover every authored beat and choice, and both real story CGs enter and leave
+  ---
+  duration_ms: 9421.8615
+  type: 'test'
+  ...
+# Subtest: Longmen two endings preserve fixed bouts, sourced recollection and the five-year jump
+ok 105 - Longmen two endings preserve fixed bouts, sourced recollection and the five-year jump
+  ---
+  duration_ms: 196.0305
+  type: 'test'
+  ...
+# Subtest: Longmen paired spectator duty changes what was witnessed; early overwork and lifting carries a later limit
+ok 106 - Longmen paired spectator duty changes what was witnessed; early overwork and lifting carries a later limit
+  ---
+  duration_ms: 57.5524
+  type: 'test'
+  ...
+# Subtest: Longmen sampled paths cover authored nodes without inventing a hidden conversation for the apprentice
+ok 107 - Longmen sampled paths cover authored nodes without inventing a hidden conversation for the apprentice
+  ---
+  duration_ms: 2048.3886
+  type: 'test'
+  ...
+# Subtest: Longmen playable Qinghe recollection explicitly switches age and viewpoint while all three cane results stay fixed
+ok 108 - Longmen playable Qinghe recollection explicitly switches age and viewpoint while all three cane results stay fixed
+  ---
+  duration_ms: 22.9156
+  type: 'test'
+  ...
+# Subtest: Longmen early school and outsider paths have different partners and later work or trust costs from one changed input
+ok 109 - Longmen early school and outsider paths have different partners and later work or trust costs from one changed input
+  ---
+  duration_ms: 48.3412
+  type: 'test'
+  ...
+# Subtest: Luhua full-life routes retain ages, distinct true bouts, affiliations and limited South career
+ok 110 - Luhua full-life routes retain ages, distinct true bouts, affiliations and limited South career
+  ---
+  duration_ms: 199.3194
+  type: 'test'
+  ...
+# Subtest: Luhua one pre-raid retreat choice changes help, injury, apprenticeship and later craft without rewriting victories
+ok 111 - Luhua one pre-raid retreat choice changes help, injury, apprenticeship and later craft without rewriting victories
+  ---
+  duration_ms: 69.9349
+  type: 'test'
+  ...
+# Subtest: Luhua one sea teaching choice changes independent relief, return cost and later practice but keeps both final wins
+ok 112 - Luhua one sea teaching choice changes independent relief, return cost and later practice but keeps both final wins
+  ---
+  duration_ms: 51.8617
+  type: 'test'
+  ...
+# Subtest: Luhua identity reveal, age looks, deceased master and two late-life duties have actual stage boundaries
+ok 113 - Luhua identity reveal, age looks, deceased master and two late-life duties have actual stage boundaries
+  ---
+  duration_ms: 43.61
+  type: 'test'
+  ...
+# Subtest: Luhua sampled paths visit every authored beat and choice, with bounded passive runs
+ok 114 - Luhua sampled paths visit every authored beat and choice, with bounded passive runs
+  ---
+  duration_ms: 9042.3942
+  type: 'test'
+  ...
+# Subtest: Luoyang fixed five-year chronology, real three exchanges, simultaneous stop and no imaginary injuries hold on both routes
+ok 115 - Luoyang fixed five-year chronology, real three exchanges, simultaneous stop and no imaginary injuries hold on both routes
+  ---
+  duration_ms: 94.2395
+  type: 'test'
+  ...
+# Subtest: Bamboo keeps Yan inside the closed invite-only night and Liu opinions dated instead of universal power scores
+ok 116 - Bamboo keeps Yan inside the closed invite-only night and Liu opinions dated instead of universal power scores
+  ---
+  duration_ms: 48.6979
+  type: 'test'
+  ...
+# Subtest: Bamboo only opens from a legal actual V6 main ending family; wrong prefix, wrong work, malformed data and read failures stay closed
+ok 117 - Bamboo only opens from a legal actual V6 main ending family; wrong prefix, wrong work, malformed data and read failures stay closed
+  ---
+  duration_ms: 0.5343
+  type: 'test'
+  ...
+# Subtest: All binary paths of both short works are exercised, not merely a seeded sample
+ok 118 - All binary paths of both short works are exercised, not merely a seeded sample
+  ---
+  duration_ms: 3338.0082
+  type: 'test'
+  ...
+# Subtest: North V3 production keeps exact reviewed authors and frozen V2 bytes, with reusable tea and identity cameras
+ok 119 - North V3 production keeps exact reviewed authors and frozen V2 bytes, with reusable tea and identity cameras
+  ---
+  duration_ms: 102.3322
+  type: 'test'
+  ...
+# Subtest: North Notes accepts North V1/V2/V3 and Qian Kun V1/V2/V3, rejecting forged families and future namespaces
+ok 120 - North Notes accepts North V1/V2/V3 and Qian Kun V1/V2/V3, rejecting forged families and future namespaces
+  ---
+  duration_ms: 1.0157
+  type: 'test'
+  ...
+# Subtest: North V3 reproduces late three-month explanation, then returns to school before age-64 trial on all letter and pupil paths
+ok 121 - North V3 reproduces late three-month explanation, then returns to school before age-64 trial on all letter and pupil paths
+  ---
+  duration_ms: 202.5288
+  type: 'test'
+  ...
+# Subtest: North V3 departures keep introduction distinct from a promised visit and preserve real handoff costs
+ok 122 - North V3 departures keep introduction distinct from a promised visit and preserve real handoff costs
+  ---
+  duration_ms: 48.7526
+  type: 'test'
+  ...
+# Subtest: North V3 tea is a dated memory, chair already owned, relic stays hung and later pupils are distinct
+ok 123 - North V3 tea is a dated memory, chair already owned, relic stays hung and later pupils are distinct
+  ---
+  duration_ms: 22.6884
+  type: 'test'
+  ...
+# Subtest: North V3 keeps fixed four battles, three teachers, old ranks and both personal endings with exact replay
+ok 124 - North V3 keeps fixed four battles, three teachers, old ranks and both personal endings with exact replay
+  ---
+  duration_ms: 139.6816
+  type: 'test'
+  ...
+# Subtest: North V3 sampled alternatives cover all beats and choices with bounded passive reading
+ok 125 - North V3 sampled alternatives cover all beats and choices with bounded passive reading
+  ---
+  duration_ms: 11565.1629
+  type: 'test'
+  ...
+# Subtest: North V3 preserves all 17 published and canon baselines byte-for-byte
+ok 126 - North V3 preserves all 17 published and canon baselines byte-for-byte
+  ---
+  duration_ms: 6.4273
+  type: 'test'
+  ...
+# Subtest: North V3 actual Yuan visit occurs only after a confirmed date, in his school with a return journey
+ok 127 - North V3 actual Yuan visit occurs only after a confirmed date, in his school with a return journey
+  ---
+  duration_ms: 36.2296
+  type: 'test'
+  ...
+# Subtest: North V3 six earlier actions return as specific work and costs under both endings
+ok 128 - North V3 six earlier actions return as specific work and costs under both endings
+  ---
+  duration_ms: 121.3901
+  type: 'test'
+  ...
+# Subtest: North V3 preparation precedes the actual garden and three round snapshots keep their declared changes
+ok 129 - North V3 preparation precedes the actual garden and three round snapshots keep their declared changes
+  ---
+  duration_ms: 592.364
+  type: 'test'
+  ...
+# Subtest: North full careers keep three teachers, old ranks, four battles and unfinished realm on both personal paths
+ok 130 - North full careers keep three teachers, old ranks, four battles and unfinished realm on both personal paths
+  ---
+  duration_ms: 225.8632
+  type: 'test'
+  ...
+# Subtest: North a single departure choice changes the old school and friend costs twelve years later
+ok 131 - North a single departure choice changes the old school and friend costs twelve years later
+  ---
+  duration_ms: 47.8683
+  type: 'test'
+  ...
+# Subtest: North one relearning letter changes later appointments, two-day costs and pupil trust without losing the spear
+ok 132 - North one relearning letter changes later appointments, two-day costs and pupil trust without losing the spear
+  ---
+  duration_ms: 48.764
+  type: 'test'
+  ...
+# Subtest: North mender identity is not presented before the reveal; old tea and aged friend do not share the wrong time
+ok 133 - North mender identity is not presented before the reveal; old tea and aged friend do not share the wrong time
+  ---
+  duration_ms: 83.5776
+  type: 'test'
+  ...
+# Subtest: North sampled routes cover all authored beats and choices with bounded passive reading
+ok 134 - North sampled routes cover all authored beats and choices with bounded passive reading
+  ---
+  duration_ms: 10720.3444
+  type: 'test'
+  ...
+# Subtest: Every registered work can complete the actual service-worker download message at root and subpath; unknown work is ignored
+ok 135 - Every registered work can complete the actual service-worker download message at root and subpath; unknown work is ignored
+  ---
+  duration_ms: 136.8531
+  type: 'test'
+  ...
+# Subtest: Qian Kun V3 exact reviewed author sources retain reusable tea, identity ages and untouched former-book bytes
+ok 136 - Qian Kun V3 exact reviewed author sources retain reusable tea, identity ages and untouched former-book bytes
+  ---
+  duration_ms: 96.5438
+  type: 'test'
+  ...
+# Subtest: Both books accept all nine declared edition pairs for Notes, but no wrong family or invented fourth version
+ok 137 - Both books accept all nine declared edition pairs for Notes, but no wrong family or invented fourth version
+  ---
+  duration_ms: 3.1835
+  type: 'test'
+  ...
+# Subtest: Qian Kun V3 reproduces duplicate letter and clears one physical envelope, sleeve-rule defeat remains
+ok 138 - Qian Kun V3 reproduces duplicate letter and clears one physical envelope, sleeve-rule defeat remains
+  ---
+  duration_ms: 52.6667
+  type: 'test'
+  ...
+# Subtest: Qian Kun V3 searches the old book before either departure, with no already-promised Zhou appointment
+ok 139 - Qian Kun V3 searches the old book before either departure, with no already-promised Zhou appointment
+  ---
+  duration_ms: 123.7628
+  type: 'test'
+  ...
+# Subtest: Qian Kun V3 remembered old bouts leave the boat and do not teleport Ye to the school
+ok 140 - Qian Kun V3 remembered old bouts leave the boat and do not teleport Ye to the school
+  ---
+  duration_ms: 21.0682
+  type: 'test'
+  ...
+# Subtest: Qian Kun V3 both legal personal afterlives preserve ages, fixed fights, bounded rumor and exact replay
+ok 141 - Qian Kun V3 both legal personal afterlives preserve ages, fixed fights, bounded rumor and exact replay
+  ---
+  duration_ms: 150.5156
+  type: 'test'
+  ...
+# Subtest: Qian Kun V3 two strong early choices retain their independent later costs under all personal endings
+ok 142 - Qian Kun V3 two strong early choices retain their independent later costs under all personal endings
+  ---
+  duration_ms: 210.9999
+  type: 'test'
+  ...
+# Subtest: Qian Kun V3 512 samples visit every declared beat and option and keep age aliases separate
+ok 143 - Qian Kun V3 512 samples visit every declared beat and option and keep age aliases separate
+  ---
+  duration_ms: 10978.3483
+  type: 'test'
+  ...
+# Subtest: Qian Kun V3 leaves all twenty published, companion and canon paths byte-identical
+ok 144 - Qian Kun V3 leaves all twenty published, companion and canon paths byte-identical
+  ---
+  duration_ms: 6.7084
+  type: 'test'
+  ...
+# Subtest: Qian Kun V3 three-day promise has an actual school return before learning slow, independent of ending
+ok 145 - Qian Kun V3 three-day promise has an actual school return before learning slow, independent of ending
+  ---
+  duration_ms: 74.0703
+  type: 'test'
+  ...
+# Subtest: Qian Kun V3 boat footing choices change actual trial and later teaching, never fixed fall or shore results
+ok 146 - Qian Kun V3 boat footing choices change actual trial and later teaching, never fixed fall or shore results
+  ---
+  duration_ms: 135.2264
+  type: 'test'
+  ...
+# Subtest: Qian Kun V3 learning methods, mountain handoff and rumor evidence return as concrete work on either personal path
+ok 147 - Qian Kun V3 learning methods, mountain handoff and rumor evidence return as concrete work on either personal path
+  ---
+  duration_ms: 91.3422
+  type: 'test'
+  ...
+# Subtest: Qian Kun V3 all three round snapshots compile and reach both endings, with retained real before/after records
+ok 148 - Qian Kun V3 all three round snapshots compile and reach both endings, with retained real before/after records
+  ---
+  duration_ms: 471.6302
+  type: 'test'
+  ...
+# Subtest: Qian Kun two lives keep martial/life contrast, fixed ages, battles and bounded sword rumor
+ok 149 - Qian Kun two lives keep martial/life contrast, fixed ages, battles and bounded sword rumor
+  ---
+  duration_ms: 236.8594
+  type: 'test'
+  ...
+# Subtest: Qian Kun a single youth letter practice changes thirty years later waiting and late life reminders, not martial talent
+ok 150 - Qian Kun a single youth letter practice changes thirty years later waiting and late life reminders, not martial talent
+  ---
+  duration_ms: 39.3258
+  type: 'test'
+  ...
+# Subtest: Qian Kun accepting the head post changes later real teaching delay and time paid without fixing his accounting weakness
+ok 151 - Qian Kun accepting the head post changes later real teaching delay and time paid without fixing his accounting weakness
+  ---
+  duration_ms: 61.4234
+  type: 'test'
+  ...
+# Subtest: Qian Kun phase changes and personal aftermath preserve different duties
+ok 152 - Qian Kun phase changes and personal aftermath preserve different duties
+  ---
+  duration_ms: 35.9145
+  type: 'test'
+  ...
+# Subtest: Qian Kun sampled routes cover every authored beat and option
+ok 153 - Qian Kun sampled routes cover every authored beat and option
+  ---
+  duration_ms: 8932.626
+  type: 'test'
+  ...
+# Subtest: North Notes requires one valid ending from each exact work and never treats another valid ending as completion
+ok 154 - North Notes requires one valid ending from each exact work and never treats another valid ending as completion
+  ---
+  duration_ms: 0.7735
+  type: 'test'
+  ...
+# Subtest: North Notes keeps three separated dates, real alternate questions and four discoverable teaching notes
+ok 155 - North Notes keeps three separated dates, real alternate questions and four discoverable teaching notes
+  ---
+  duration_ms: 566.8543
+  type: 'test'
+  ...
+# Subtest: Qingshi V3 corrects released V2 Han-family contradictions across letters and both life paths
+ok 156 - Qingshi V3 corrects released V2 Han-family contradictions across letters and both life paths
+  ---
+  duration_ms: 342.9507
+  type: 'test'
+  ...
+# Subtest: Released Qingshi V2 bytes stay at frozen addresses; V3 rejects old saves and canon remains unchanged
+ok 157 - Released Qingshi V2 bytes stay at frozen addresses; V3 rejects old saves and canon remains unchanged
+  ---
+  duration_ms: 36.1886
+  type: 'test'
+  ...
+# Subtest: Qingshi V3 512 sampled lives retain all draft beats,60 choices,two personal endings and fixed four deaths/age92 sacrifice
+ok 158 - Qingshi V3 512 sampled lives retain all draft beats,60 choices,two personal endings and fixed four deaths/age92 sacrifice
+  ---
+  duration_ms: 14753.6194
+  type: 'test'
+  ...
+# Subtest: Eight real carriage choices produce truthful four-cell settlements with no invented medicine bill on the uninjured path
+ok 159 - Eight real carriage choices produce truthful four-cell settlements with no invented medicine bill on the uninjured path
+  ---
+  duration_ms: 219.1041
+  type: 'test'
+  ...
+# Subtest: Sixteen Song/private-lesson combinations retain chosen promises and do not claim a second half-day of the deferred lesson
+ok 160 - Sixteen Song/private-lesson combinations retain chosen promises and do not claim a second half-day of the deferred lesson
+  ---
+  duration_ms: 420.542
+  type: 'test'
+  ...
+# Subtest: Only a positioned witness reports the terminal call; runner never claims unwalked posts as his own route
+ok 161 - Only a positioned witness reports the terminal call; runner never claims unwalked posts as his own route
+  ---
+  duration_ms: 103.4219
+  type: 'test'
+  ...
+# Subtest: Qingshi V3 keeps all three age files, knife CG before breaking, closeup exit and posthumous withdrawal; V2 remains independent
+ok 162 - Qingshi V3 keeps all three age files, knife CG before breaking, closeup exit and posthumous withdrawal; V2 remains independent
+  ---
+  duration_ms: 67.781
+  type: 'test'
+  ...
+# Subtest: Qingshi v1 archive bytes and independently addressable saves remain frozen
+ok 163 - Qingshi v1 archive bytes and independently addressable saves remain frozen
+  ---
+  duration_ms: 3.1446
+  type: 'test'
+  ...
+# Subtest: Qingshi v2 512 sampled lives visit every authored beat and keep the knife insert before its break
+ok 164 - Qingshi v2 512 sampled lives visit every authored beat and keep the knife insert before its break
+  ---
+  duration_ms: 13735.6798
+  type: 'test'
+  ...
+# Subtest: Qingshi both lives keep all words and inputs, old knife CG and elder closeup restore without resurrecting anyone
+ok 165 - Qingshi both lives keep all words and inputs, old knife CG and elder closeup restore without resurrecting anyone
+  ---
+  duration_ms: 1400.7615
+  type: 'test'
+  ...
+# Subtest: Qingshi complete canonical life and two personal aftermaths retain four deaths, three teachers, lifespan and defence
+ok 166 - Qingshi complete canonical life and two personal aftermaths retain four deaths, three teachers, lifespan and defence
+  ---
+  duration_ms: 264.0253
+  type: 'test'
+  ...
+# Subtest: Qingshi a single early retreat drill changes later carriage cost and an unnamed defending squad’s lives
+ok 167 - Qingshi a single early retreat drill changes later carriage cost and an unnamed defending squad’s lives
+  ---
+  duration_ms: 58.7063
+  type: 'test'
+  ...
+# Subtest: Qingshi family truth and all four youthful commitments have concrete later scene echoes
+ok 168 - Qingshi family truth and all four youthful commitments have concrete later scene echoes
+  ---
+  duration_ms: 183.0402
+  type: 'test'
+  ...
+# Subtest: Qingshi sampled alternatives cover authored nodes with bounded reading gaps and stable age labels
+ok 169 - Qingshi sampled alternatives cover authored nodes with bounded reading gaps and stable age labels
+  ---
+  duration_ms: 13864.6102
+  type: 'test'
+  ...
+# Subtest: Qingshi protagonist uses three actual age files only at matching years and leaves all posthumous stages
+ok 170 - Qingshi protagonist uses three actual age files only at matching years and leaves all posthumous stages
+  ---
+  duration_ms: 32.289
+  type: 'test'
+  ...
+# Subtest: Royal CG preserves exact earlier v2 bytes without changing the work version or words
+ok 171 - Royal CG preserves exact earlier v2 bytes without changing the work version or words
+  ---
+  duration_ms: 530.6315
+  type: 'test'
+  ...
+# Subtest: Two-frame letter illustration exits before choices and later firm expression remains a real separate state
+ok 172 - Two-frame letter illustration exits before choices and later firm expression remains a real separate state
+  ---
+  duration_ms: 41.5344
+  type: 'test'
+  ...
+# Subtest: CG compatibility does not accept forged raw data or an unrelated edition and scope
+ok 173 - CG compatibility does not accept forged raw data or an unrelated edition and scope
+  ---
+  duration_ms: 110.1594
+  type: 'test'
+  ...
+# Subtest: 512 sampled lives keep all beats, choices and the actual illustration reachable
+ok 174 - 512 sampled lives keep all beats, choices and the actual illustration reachable
+  ---
+  duration_ms: 12728.2581
+  type: 'test'
+  ...
+# {
+#   states: 4079,
+#   edges: 4142,
+#   scenes: 20,
+#   choiceIds: 32,
+#   endings: { public: 384, quiet: 768, common: 32, leave: 768 }
+# }
+# Subtest: complete routes, native Ink save/load at every choice, unique consequences
+ok 175 - complete routes, native Ink save/load at every choice, unique consequences
+  ---
+  duration_ms: 467.7674
+  type: 'test'
+  ...
+# Subtest: schema, size, unsafe state, impossible choices rejected without altering existing session
+ok 176 - schema, size, unsafe state, impossible choices rejected without altering existing session
+  ---
+  duration_ms: 7.2633
+  type: 'test'
+  ...
+# Subtest: all reachable state combinations terminate; conditions and all declared nodes/choices covered
+ok 177 - all reachable state combinations terminate; conditions and all declared nodes/choices covered
+  ---
+  duration_ms: 10860.93
+  type: 'test'
+  ...
+# Subtest: Sea V2 seven consequential binary dimensions keep fixed history, 23 decisions and isolated original-era cast across 128 combinations
+ok 178 - Sea V2 seven consequential binary dimensions keep fixed history, 23 decisions and isolated original-era cast across 128 combinations
+  ---
+  duration_ms: 4941.2337
+  type: 'test'
+  ...
+# Subtest: Sea V2 shared cargo work has a shown initial time cost and later assistance, while self-managed goods keep the earlier visit but pay for a porter
+ok 179 - Sea V2 shared cargo work has a shown initial time cost and later assistance, while self-managed goods keep the earlier visit but pay for a porter
+  ---
+  duration_ms: 28.5569
+  type: 'test'
+  ...
+# Subtest: Sea V2 local practice and disarm experiments get distinct later feedback, with no altered fixed enlightenment
+ok 180 - Sea V2 local practice and disarm experiments get distinct later feedback, with no altered fixed enlightenment
+  ---
+  duration_ms: 89.5797
+  type: 'test'
+  ...
+# Subtest: Sea V2 return promise and assigned work actually get called back at the school; late document handling affects later use
+ok 181 - Sea V2 return promise and assigned work actually get called back at the school; late document handling affects later use
+  ---
+  duration_ms: 38.5749
+  type: 'test'
+  ...
+# Subtest: Sea V2 reuses the ordinary rigging CG and puts both closeups on Canghe actual questions, clearing the next beat
+ok 182 - Sea V2 reuses the ordinary rigging CG and puts both closeups on Canghe actual questions, clearing the next beat
+  ---
+  duration_ms: 20.6476
+  type: 'test'
+  ...
+# Subtest: Sea V1 bytes and pre-CG migration remain available; V1 commands cannot be relabelled and accepted as V2
+ok 183 - Sea V1 bytes and pre-CG migration remain available; V1 commands cannot be relabelled and accepted as V2
+  ---
+  duration_ms: 27.7414
+  type: 'test'
+  ...
+# Subtest: Sea default, archive and sequel load separate real content, version and save namespaces
+ok 184 - Sea default, archive and sequel load separate real content, version and save namespaces
+  ---
+  duration_ms: 15.8043
+  type: 'test'
+  ...
+# Subtest: sea-v1 rigging: unchanged words/choices/world and strict old-save replay at every changed snapshot
+ok 185 - sea-v1 rigging: unchanged words/choices/world and strict old-save replay at every changed snapshot
+  ---
+  duration_ms: 445.3881
+  type: 'test'
+  ...
+# Subtest: sea-tide-v1 rigging: unchanged words/choices/world and strict old-save replay at every changed snapshot
+ok 186 - sea-tide-v1 rigging: unchanged words/choices/world and strict old-save replay at every changed snapshot
+  ---
+  duration_ms: 300.8322
+  type: 'test'
+  ...
+# Subtest: Rigging detail exits after two frames; closeup is one frame and does not remain on the next person
+ok 187 - Rigging detail exits after two frames; closeup is one frame and does not remain on the next person
+  ---
+  duration_ms: 15.7793
+  type: 'test'
+  ...
+# Subtest: Rigging migration rejects forged stage, world, commands and wrong edition
+ok 188 - Rigging migration rejects forged stage, world, commands and wrong edition
+  ---
+  duration_ms: 51.5442
+  type: 'test'
+  ...
+# Subtest: Both rigging contexts and each alternative closeup are reachable without new text or choices
+ok 189 - Both rigging contexts and each alternative closeup are reachable without new text or choices
+  ---
+  duration_ms: 14256.3621
+  type: 'test'
+  ...
+# Subtest: Sea Tide V2 256 combinations of eight dimensions preserve public history and 21 decisions
+ok 190 - Sea Tide V2 256 combinations of eight dimensions preserve public history and 21 decisions
+  ---
+  duration_ms: 9100.796
+  type: 'test'
+  ...
+# Subtest: Sea Tide V2 fixes the V1 fictitious overnight bill for a prepared handoff and retains the actual failed-handoff costs
+ok 191 - Sea Tide V2 fixes the V1 fictitious overnight bill for a prepared handoff and retains the actual failed-handoff costs
+  ---
+  duration_ms: 123.2772
+  type: 'test'
+  ...
+# Subtest: Sea Tide V2 childhood knot does not decide adult injury, and both learned tide styles remain constrained by the fixed mast
+ok 192 - Sea Tide V2 childhood knot does not decide adult injury, and both learned tide styles remain constrained by the fixed mast
+  ---
+  duration_ms: 104.0159
+  type: 'test'
+  ...
+# Subtest: Sea Tide V2 late recall uses only the actual selected nine-hand question and the repaired peer relationship
+ok 193 - Sea Tide V2 late recall uses only the actual selected nine-hand question and the repaired peer relationship
+  ---
+  duration_ms: 57.3544
+  type: 'test'
+  ...
+# Subtest: Sea Tide V2 both childhood gestures return in both late duties at a late pier with the late portrait
+ok 194 - Sea Tide V2 both childhood gestures return in both late duties at a late pier with the late portrait
+  ---
+  duration_ms: 91.5405
+  type: 'test'
+  ...
+# Subtest: Sea Tide V1 bytes, older raw staging and the unchanged Sea V2/canon remain protected
+ok 195 - Sea Tide V1 bytes, older raw staging and the unchanged Sea V2/canon remain protected
+  ---
+  duration_ms: 23.7783
+  type: 'test'
+  ...
+# Subtest: Sea Tide current and V1 archive load distinct content and namespaces while first-volume Sea stays V2
+ok 196 - Sea Tide current and V1 archive load distinct content and namespaces while first-volume Sea stays V2
+  ---
+  duration_ms: 14.1781
+  type: 'test'
+  ...
+# Subtest: Sea Tide full lives preserve entry, rescue, forties nine hands, failed seat and sixty-three appointment
+ok 197 - Sea Tide full lives preserve entry, rescue, forties nine hands, failed seat and sixty-three appointment
+  ---
+  duration_ms: 153.6063
+  type: 'test'
+  ...
+# Subtest: Sea Tide a single sustained-practice change alters wrist injury and two months of work cost twelve years later
+ok 198 - Sea Tide a single sustained-practice change alters wrist injury and two months of work cost twelve years later
+  ---
+  duration_ms: 33.8151
+  type: 'test'
+  ...
+# Subtest: Sea Tide post preparation changes the seventh ship handoff and real waiting cost without changing seven versus nine
+ok 199 - Sea Tide post preparation changes the seventh ship handoff and real waiting cost without changing seven versus nine
+  ---
+  duration_ms: 76.0644
+  type: 'test'
+  ...
+# Subtest: Sea Tide two duties lead to sustained different personal aftermath and appropriate portrait phase/framing
+ok 200 - Sea Tide two duties lead to sustained different personal aftermath and appropriate portrait phase/framing
+  ---
+  duration_ms: 29.9824
+  type: 'test'
+  ...
+# Subtest: Sea Tide sampled routes visit all authored beats and choices with bounded reading gaps
+ok 201 - Sea Tide sampled routes visit all authored beats and choices with bounded reading gaps
+  ---
+  duration_ms: 7353.9374
+  type: 'test'
+  ...
+# Subtest: Sea Tide full lives preserve entry, rescue, forties nine hands, failed seat and sixty-three appointment
+ok 202 - Sea Tide full lives preserve entry, rescue, forties nine hands, failed seat and sixty-three appointment
+  ---
+  duration_ms: 181.0876
+  type: 'test'
+  ...
+# Subtest: Sea Tide a single sustained-practice change alters wrist injury and two months of work cost twelve years later
+ok 203 - Sea Tide a single sustained-practice change alters wrist injury and two months of work cost twelve years later
+  ---
+  duration_ms: 34.4119
+  type: 'test'
+  ...
+# Subtest: Sea Tide post preparation changes the seventh ship handoff and real waiting cost without changing seven versus nine
+ok 204 - Sea Tide post preparation changes the seventh ship handoff and real waiting cost without changing seven versus nine
+  ---
+  duration_ms: 41.1065
+  type: 'test'
+  ...
+# Subtest: Sea Tide two duties lead to sustained different personal aftermath and appropriate portrait phase/framing
+ok 205 - Sea Tide two duties lead to sustained different personal aftermath and appropriate portrait phase/framing
+  ---
+  duration_ms: 49.5322
+  type: 'test'
+  ...
+# Subtest: Sea Tide sampled routes visit all authored beats and choices with bounded reading gaps
+ok 206 - Sea Tide sampled routes visit all authored beats and choices with bounded reading gaps
+  ---
+  duration_ms: 8160.5183
+  type: 'test'
+  ...
+# Subtest: Sea keeps separate protagonists, fixed defeats, ordinary pupils, realm and posthumous succession on both full routes
+ok 207 - Sea keeps separate protagonists, fixed defeats, ordinary pupils, realm and posthumous succession on both full routes
+  ---
+  duration_ms: 217.7876
+  type: 'test'
+  ...
+# Subtest: Sea one early cooperation change pays off five years later with a different illness transfer cost
+ok 208 - Sea one early cooperation change pays off five years later with a different illness transfer cost
+  ---
+  duration_ms: 36.031
+  type: 'test'
+  ...
+# Subtest: Sea teaching styles change actual later cover duties and time costs without changing the fixed enlightenment
+ok 209 - Sea teaching styles change actual later cover duties and time costs without changing the fixed enlightenment
+  ---
+  duration_ms: 55.756
+  type: 'test'
+  ...
+# Subtest: Sea personal aftermath changes sustained late activity and keeps disputed Lu pages uncertain
+ok 210 - Sea personal aftermath changes sustained late activity and keeps disputed Lu pages uncertain
+  ---
+  duration_ms: 39.5204
+  type: 'test'
+  ...
+# Subtest: Sea sampled branches visit every authored beat with bounded reading gaps
+ok 211 - Sea sampled branches visit every authored beat with bounded reading gaps
+  ---
+  duration_ms: 7652.2038
+  type: 'test'
+  ...
+# Subtest: Sea keeps separate protagonists, fixed defeats, ordinary pupils, realm and posthumous succession on both full routes
+ok 212 - Sea keeps separate protagonists, fixed defeats, ordinary pupils, realm and posthumous succession on both full routes
+  ---
+  duration_ms: 174.772
+  type: 'test'
+  ...
+# Subtest: Sea one early cooperation change pays off five years later with a different illness transfer cost
+ok 213 - Sea one early cooperation change pays off five years later with a different illness transfer cost
+  ---
+  duration_ms: 40.4818
+  type: 'test'
+  ...
+# Subtest: Sea teaching styles change actual later cover duties and time costs without changing the fixed enlightenment
+ok 214 - Sea teaching styles change actual later cover duties and time costs without changing the fixed enlightenment
+  ---
+  duration_ms: 45.77
+  type: 'test'
+  ...
+# Subtest: Sea personal aftermath changes sustained late activity and keeps disputed Lu pages uncertain
+ok 215 - Sea personal aftermath changes sustained late activity and keeps disputed Lu pages uncertain
+  ---
+  duration_ms: 37.1455
+  type: 'test'
+  ...
+# Subtest: Sea sampled branches visit every authored beat with bounded reading gaps
+ok 216 - Sea sampled branches visit every authored beat with bounded reading gaps
+  ---
+  duration_ms: 9051.2387
+  type: 'test'
+  ...
+# Subtest: Seven Questions V2 chronology keeps east duel before slow-team reunion for either viewpoint
+ok 217 - Seven Questions V2 chronology keeps east duel before slow-team reunion for either viewpoint
+  ---
+  duration_ms: 235.9964
+  type: 'test'
+  ...
+# Subtest: Seven Questions recovered questions, waiting for notes and paid handover have distinct delayed consequences
+ok 218 - Seven Questions recovered questions, waiting for notes and paid handover have distinct delayed consequences
+  ---
+  duration_ms: 1043.9567
+  type: 'test'
+  ...
+# Subtest: Seven Questions frozen V1 remains exact and both old routes restore only in their own edition
+ok 219 - Seven Questions frozen V1 remains exact and both old routes restore only in their own edition
+  ---
+  duration_ms: 6666.2003
+  type: 'test'
+  ...
+# Subtest: Seven Questions full two routes retain canon losses, fourteen houses, distinct perpetrators and actual disposition
+ok 220 - Seven Questions full two routes retain canon losses, fourteen houses, distinct perpetrators and actual disposition
+  ---
+  duration_ms: 103.904
+  type: 'test'
+  ...
+# Subtest: Seven Questions single half-day preparation changes health in each route while fixed deaths remain fixed
+ok 221 - Seven Questions single half-day preparation changes health in each route while fixed deaths remain fixed
+  ---
+  duration_ms: 115.5217
+  type: 'test'
+  ...
+# Subtest: Seven Questions route choice changes witnessed action and uses reports for the other location
+ok 222 - Seven Questions route choice changes witnessed action and uses reports for the other location
+  ---
+  duration_ms: 88.98
+  type: 'test'
+  ...
+# Subtest: Seven Questions early joint witness and shared testing change later introduction and remaining verification work
+ok 223 - Seven Questions early joint witness and shared testing change later introduction and remaining verification work
+  ---
+  duration_ms: 104.2604
+  type: 'test'
+  ...
+# Subtest: Seven Questions sampled paths cover all authored beats and options without passive exposition stretches
+ok 224 - Seven Questions sampled paths cover all authored beats and options without passive exposition stretches
+  ---
+  duration_ms: 8614.503
+  type: 'test'
+  ...
+# Subtest: two-swords-v1: exact previous bytes, all words/commands/variables and narrow presentation-only compatibility
+ok 225 - two-swords-v1: exact previous bytes, all words/commands/variables and narrow presentation-only compatibility
+  ---
+  duration_ms: 1009.7388
+  type: 'test'
+  ...
+# Subtest: seven-questions: exact previous bytes, all words/commands/variables and narrow presentation-only compatibility
+ok 226 - seven-questions: exact previous bytes, all words/commands/variables and narrow presentation-only compatibility
+  ---
+  duration_ms: 823.1871
+  type: 'test'
+  ...
+# Subtest: Book CGs last two frames and camera is strictly per frame, not a sticky age/look change
+ok 227 - Book CGs last two frames and camera is strictly per frame, not a sticky age/look change
+  ---
+  duration_ms: 118.9042
+  type: 'test'
+  ...
+# Subtest: Changed-art restore still rejects forged camera, variables, command truncation and mismatched versions
+ok 228 - Changed-art restore still rejects forged camera, variables, command truncation and mismatched versions
+  ---
+  duration_ms: 283.4102
+  type: 'test'
+  ...
+# Subtest: Same-age Xie expressions use three actual independent files and both CGs remain reachable in broad sampling
+ok 229 - Same-age Xie expressions use three actual independent files and both CGs remain reachable in broad sampling
+  ---
+  duration_ms: 15260.8497
+  type: 'test'
+  ...
+# Subtest: Taihua frozen v1 bytes, both old routes and save identity survive the expanded edition
+ok 230 - Taihua frozen v1 bytes, both old routes and save identity survive the expanded edition
+  ---
+  duration_ms: 565.18
+  type: 'test'
+  ...
+# Subtest: Taihua two actual endings replay choices, preserve canon, and fulfil different plans
+ok 231 - Taihua two actual endings replay choices, preserve canon, and fulfil different plans
+  ---
+  duration_ms: 1259.2195
+  type: 'test'
+  ...
+# Subtest: Taihua seeded branch sample reaches all authored beats without loops or missing actors
+ok 232 - Taihua seeded branch sample reaches all authored beats without loops or missing actors
+  ---
+  duration_ms: 11164.4653
+  type: 'test'
+  ...
+# Subtest: early physical overreach plus late heavy lifting carries a delayed cost; prior private agreement changes the actual practice partner
+ok 233 - early physical overreach plus late heavy lifting carries a delayed cost; prior private agreement changes the actual practice partner
+  ---
+  duration_ms: 43.3047
+  type: 'test'
+  ...
+# Subtest: returning early does not erase shoulder damage, and an unmade promise is never invented later
+ok 234 - returning early does not erase shoulder damage, and an unmade promise is never invented later
+  ---
+  duration_ms: 43.269
+  type: 'test'
+  ...
+# Subtest: Taihua concrete observation and three-layer escalation preserve each actual combat result
+ok 235 - Taihua concrete observation and three-layer escalation preserve each actual combat result
+  ---
+  duration_ms: 39.1412
+  type: 'test'
+  ...
+# Subtest: Taihua third outcome receives limited actual instruction, misses peers and respects earlier unasked questions
+ok 236 - Taihua third outcome receives limited actual instruction, misses peers and respects earlier unasked questions
+  ---
+  duration_ms: 476.4487
+  type: 'test'
+  ...
+# Subtest: Taihua Mu keeps a distinct expanded look, leaves after returning upstage and does not change frozen defaults
+ok 237 - Taihua Mu keeps a distinct expanded look, leaves after returning upstage and does not change frozen defaults
+  ---
+  duration_ms: 19.7207
+  type: 'test'
+  ...
+# Subtest: Taihua reproduces erased V2 Shen commitment; draft keeps it until explicitly kept or cancelled in all24 named paths
+ok 238 - Taihua reproduces erased V2 Shen commitment; draft keeps it until explicitly kept or cancelled in all24 named paths
+  ---
+  duration_ms: 916.3185
+  type: 'test'
+  ...
+# Subtest: Deferred brother diagram is delivered on the actual next morning before first elder bout, independently of initial promise
+ok 239 - Deferred brother diagram is delivered on the actual next morning before first elder bout, independently of initial promise
+  ---
+  duration_ms: 437.6779
+  type: 'test'
+  ...
+# Subtest: 24 arm/load/future paths carry actual first-leg cost without inventing refused rotation or healthy injured brother
+ok 240 - 24 arm/load/future paths carry actual first-leg cost without inventing refused rotation or healthy injured brother
+  ---
+  duration_ms: 831.7428
+  type: 'test'
+  ...
+# Subtest: Asked-after-night Xie question is actually revisited before Huo bout; no invented prior request
+ok 241 - Asked-after-night Xie question is actually revisited before Huo bout; no invented prior request
+  ---
+  duration_ms: 138.1325
+  type: 'test'
+  ...
+# Subtest: 512 sampled Taihua draft routes reach every authored beat,63 options and3 endings with canonical victories unchanged
+ok 242 - 512 sampled Taihua draft routes reach every authored beat,63 options and3 endings with canonical victories unchanged
+  ---
+  duration_ms: 11330.1405
+  type: 'test'
+  ...
+# Subtest: Published Taihua versions, author modules and canon stay byte-identical; draft cannot consume a published save
+ok 243 - Published Taihua versions, author modules and canon stay byte-identical; draft cannot consume a published save
+  ---
+  duration_ms: 25.2314
+  type: 'test'
+  ...
+# Subtest: Sima private practice asks about the actual patient or rushed bout, never invents a rush on patient path
+ok 244 - Sima private practice asks about the actual patient or rushed bout, never invents a rush on patient path
+  ---
+  duration_ms: 33.0896
+  type: 'test'
+  ...
+# Subtest: Guidance is an actual repeat-or-record action with distinct home rehearsal; neither consumes the missed peer session
+ok 245 - Guidance is an actual repeat-or-record action with distinct home rehearsal; neither consumes the missed peer session
+  ---
+  duration_ms: 135.0518
+  type: 'test'
+  ...
+# Subtest: Reserved Zhang instruction is explicitly cancelled only when promised and another future chosen; soup joke depends on actual tray action
+ok 246 - Reserved Zhang instruction is explicitly cancelled only when promised and another future chosen; soup joke depends on actual tray action
+  ---
+  duration_ms: 212.2641
+  type: 'test'
+  ...
+# Subtest: Three late routes respect original Shen appointment and injured shoulder, including repeat-vs-mark guidance home work
+ok 247 - Three late routes respect original Shen appointment and injured shoulder, including repeat-vs-mark guidance home work
+  ---
+  duration_ms: 71.1748
+  type: 'test'
+  ...
+# Subtest: V3 CG starts at actual night bowl/doorway after quarrel, exits before falling leaf; V2 remains frozen
+ok 248 - V3 CG starts at actual night bowl/doorway after quarrel, exits before falling leaf; V2 remains frozen
+  ---
+  duration_ms: 15.759
+  type: 'test'
+  ...
+# Subtest: Royal draft: both palace replies reach Chen actual public-defeat plan; old second reply skipped the plan
+ok 249 - Royal draft: both palace replies reach Chen actual public-defeat plan; old second reply skipped the plan
+  ---
+  duration_ms: 453.3088
+  type: 'test'
+  ...
+# Subtest: Royal draft seal stays shut until the three-year term; both cataloguing choices retain their real training and missed-fair costs
+ok 250 - Royal draft seal stays shut until the three-year term; both cataloguing choices retain their real training and missed-fair costs
+  ---
+  duration_ms: 289.6538
+  type: 'test'
+  ...
+# Subtest: Royal draft anonymous candidate actually replies; invitation does not force date or invent official rematch
+ok 251 - Royal draft anonymous candidate actually replies; invitation does not force date or invent official rematch
+  ---
+  duration_ms: 63.9914
+  type: 'test'
+  ...
+# Subtest: Royal draft court handoff and family/process choices keep distinct late burdens without erasing fixed duties
+ok 252 - Royal draft court handoff and family/process choices keep distinct late burdens without erasing fixed duties
+  ---
+  duration_ms: 264.1742
+  type: 'test'
+  ...
+# Subtest: Royal draft late paths actually watch first bout then leave next, or stay writing while next bout begins; death and book POV remain fixed
+ok 253 - Royal draft late paths actually watch first bout then leave next, or stay writing while next bout begins; death and book POV remain fixed
+  ---
+  duration_ms: 142.8507
+  type: 'test'
+  ...
+# Subtest: 512 sampled Royal draft paths cover every authored beat,68 options and2 endings with fixed biography/results intact
+ok 254 - 512 sampled Royal draft paths cover every authored beat,68 options and2 endings with fixed biography/results intact
+  ---
+  duration_ms: 11650.5826
+  type: 'test'
+  ...
+# Subtest: Published Royal V2/V1, companion, author modules and canon stay byte-identical; draft rejects published save
+ok 255 - Published Royal V2/V1, companion, author modules and canon stay byte-identical; draft rejects published save
+  ---
+  duration_ms: 33.9056
+  type: 'test'
+  ...
+# Subtest: Royal actual Xue response chooses named gap or reset line and returns in same-day treatment; all16 combinations keep the same true defeat
+ok 256 - Royal actual Xue response chooses named gap or reset line and returns in same-day treatment; all16 combinations keep the same true defeat
+  ---
+  duration_ms: 320.4708
+  type: 'test'
+  ...
+# Subtest: Royal early boy/child and brother-night acts have specific late recall; returning from practice receives actual board notice
+ok 257 - Royal early boy/child and brother-night acts have specific late recall; returning from practice receives actual board notice
+  ---
+  duration_ms: 144.9292
+  type: 'test'
+  ...
+# Subtest: Royal draft preserves monotonic Lu appearances and all five existing sprite files; no legacy Lu substitution
+ok 258 - Royal draft preserves monotonic Lu appearances and all five existing sprite files; no legacy Lu substitution
+  ---
+  duration_ms: 940.2274
+  type: 'test'
+  ...
+# Subtest: Royal V3 actual CG exits, age aliases and before-CG migration remain isolated at V2 archive
+ok 259 - Royal V3 actual CG exits, age aliases and before-CG migration remain isolated at V2 archive
+  ---
+  duration_ms: 22.764
+  type: 'test'
+  ...
+# Subtest: Royal life frozen v1 bytes remain available
+ok 260 - Royal life frozen v1 bytes remain available
+  ---
+  duration_ms: 3.318
+  type: 'test'
+  ...
+# Subtest: Royal life both personal outcomes keep words and commands while sorting letters moves home and aging is monotonic
+ok 261 - Royal life both personal outcomes keep words and commands while sorting letters moves home and aging is monotonic
+  ---
+  duration_ms: 1616.7371
+  type: 'test'
+  ...
+# Subtest: 512 sampled Royal life alternatives reach every beat and all five actual Lu sprite files
+ok 262 - 512 sampled Royal life alternatives reach every beat and all five actual Lu sprite files
+  ---
+  duration_ms: 10127.5785
+  type: 'test'
+  ...
+# Subtest: Twelfth Life full routes preserve the whole biography, actual failures, four court years and sole formal seat
+ok 263 - Twelfth Life full routes preserve the whole biography, actual failures, four court years and sole formal seat
+  ---
+  duration_ms: 238.4496
+  type: 'test'
+  ...
+# Subtest: Twelfth Life one seal-books decision has delayed training and marital consequences with costs on either side
+ok 264 - Twelfth Life one seal-books decision has delayed training and marital consequences with costs on either side
+  ---
+  duration_ms: 55.9877
+  type: 'test'
+  ...
+# Subtest: Twelfth Life one court handoff decision changes a later actual night, family time and repair without deleting political duties
+ok 265 - Twelfth Life one court handoff decision changes a later actual night, family time and repair without deleting political duties
+  ---
+  duration_ms: 58.3134
+  type: 'test'
+  ...
+# Subtest: Twelfth Life family consent changes later witness participation, dead teacher leaves, posthumous epilogue has no Zhao choices
+ok 266 - Twelfth Life family consent changes later witness participation, dead teacher leaves, posthumous epilogue has no Zhao choices
+  ---
+  duration_ms: 75.7638
+  type: 'test'
+  ...
+# Subtest: Twelfth Life sampled routes cover all authored beats, eight chapter starts and bounded passive reading
+ok 267 - Twelfth Life sampled routes cover all authored beats, eight chapter starts and bounded passive reading
+  ---
+  duration_ms: 10617.9804
+  type: 'test'
+  ...
+# Subtest: Twelfth two personal careers preserve Xue’s real win, candidate status, injury record, 4–3 and one edition for four years
+ok 268 - Twelfth two personal careers preserve Xue’s real win, candidate status, injury record, 4–3 and one edition for four years
+  ---
+  duration_ms: 176.513
+  type: 'test'
+  ...
+# Subtest: Twelfth middle-career duty changes the later school; physical overreach survives as a lesson rather than a magic recovery
+ok 269 - Twelfth middle-career duty changes the later school; physical overreach survives as a lesson rather than a magic recovery
+  ---
+  duration_ms: 34.2623
+  type: 'test'
+  ...
+# Subtest: Twelfth three age appearances are deterministic, survive replay and reject forged or unknown looks
+ok 270 - Twelfth three age appearances are deterministic, survive replay and reject forged or unknown looks
+  ---
+  duration_ms: 43.2762
+  type: 'test'
+  ...
+# Subtest: Twelfth sampled paths cover the authored branches and only actual speaking characters count
+ok 271 - Twelfth sampled paths cover the authored branches and only actual speaking characters count
+  ---
+  duration_ms: 2697.3785
+  type: 'test'
+  ...
+# Subtest: Two Swords V2 keeps V1 bytes and storage separate, and restores every frame on both old routes
+ok 272 - Two Swords V2 keeps V1 bytes and storage separate, and restores every frame on both old routes
+  ---
+  duration_ms: 4913.9374
+  type: 'test'
+  ...
+# Subtest: Two Swords V2 letter, classroom method and divided records have distinct delayed consequences
+ok 273 - Two Swords V2 letter, classroom method and divided records have distinct delayed consequences
+  ---
+  duration_ms: 44.1164
+  type: 'test'
+  ...
+# Subtest: Two Swords separates three viewpoints, fixed losses and both personal careers
+ok 274 - Two Swords separates three viewpoints, fixed losses and both personal careers
+  ---
+  duration_ms: 71.5303
+  type: 'test'
+  ...
+# Subtest: Two Swords one early passage choice changes later rescue injury without changing canon destruction
+ok 275 - Two Swords one early passage choice changes later rescue injury without changing canon destruction
+  ---
+  duration_ms: 42.5034
+  type: 'test'
+  ...
+# Subtest: Two Swords choosing a career changes middle teacher, later correspondence and final duty
+ok 276 - Two Swords choosing a career changes middle teacher, later correspondence and final duty
+  ---
+  duration_ms: 27.9041
+  type: 'test'
+  ...
+# Subtest: Two Swords sampled alternatives cover every authored beat and choice with bounded reading gaps
+ok 277 - Two Swords sampled alternatives cover every authored beat and choice with bounded reading gaps
+  ---
+  duration_ms: 6852.6065
+  type: 'test'
+  ...
+# Subtest: frozen v5 content matches the pre-v6 baseline bytes
+ok 278 - frozen v5 content matches the pre-v6 baseline bytes
+  ---
+  duration_ms: 1.7306
+  type: 'test'
+  ...
+# Subtest: all eight frozen v5 endings and pending choices restore with identical world and stage
+ok 279 - all eight frozen v5 endings and pending choices restore with identical world and stage
+  ---
+  duration_ms: 11479.6988
+  type: 'test'
+  ...
+# Subtest: complete three routes; every beat restores current dialogue, cast, choices and read-only history
+ok 280 - complete three routes; every beat restores current dialogue, cast, choices and read-only history
+  ---
+  duration_ms: 881.0675
+  type: 'test'
+  ...
+# Subtest: save damage, forged runtime/presentation, illegal advances and repeated choices are rejected
+ok 281 - save damage, forged runtime/presentation, illegal advances and repeated choices are rejected
+  ---
+  duration_ms: 6.037
+  type: 'test'
+  ...
+# Subtest: draft name correction migrates every beat with identical world variables and presentation
+ok 282 - draft name correction migrates every beat with identical world variables and presentation
+  ---
+  duration_ms: 1510.3276
+  type: 'test'
+  ...
+# Subtest: tiny authored scene exercises character entry/exit and fails unknown metadata/loops
+ok 283 - tiny authored scene exercises character entry/exit and fails unknown metadata/loops
+  ---
+  duration_ms: 63.8002
+  type: 'test'
+  ...
+# Subtest: static metadata catches duplicate IDs, unknown commands and missing endings
+ok 284 - static metadata catches duplicate IDs, unknown commands and missing endings
+  ---
+  duration_ms: 110.1194
+  type: 'test'
+  ...
+# Subtest: all reachable states close; immediate replies differ; conditional replies and script coverage
+ok 285 - all reachable states close; immediate replies differ; conditional replies and script coverage
+  ---
+  duration_ms: 8038.3709
+  type: 'test'
+  ...
+# Subtest: White Stone preserves distinct eras, snow loss, old-person inquiry, uncopyable teacher and two fixed crowns
+ok 286 - White Stone preserves distinct eras, snow loss, old-person inquiry, uncopyable teacher and two fixed crowns
+  ---
+  duration_ms: 115.3284
+  type: 'test'
+  ...
+# Subtest: Admitting the missing step and letting the second person see failure have independent later recalls
+ok 287 - Admitting the missing step and letting the second person see failure have independent later recalls
+  ---
+  duration_ms: 83.3696
+  type: 'test'
+  ...
+# Subtest: All 8192 finite binary paths cover every authored beat, option and ending, with valid distinct stage files
+ok 288 - All 8192 finite binary paths cover every authored beat, option and ending, with valid distinct stage files
+  ---
+  duration_ms: 29267.4678
+  type: 'test'
+  ...
+# Subtest: Xuanmen keeps nine duties, simultaneous stop, disciple-first breakthrough and mortal narrator boundaries
+ok 289 - Xuanmen keeps nine duties, simultaneous stop, disciple-first breakthrough and mortal narrator boundaries
+  ---
+  duration_ms: 141.3826
+  type: 'test'
+  ...
+# Subtest: One input changes the later handover and a second independently changes medicine staffing, without changing the duel
+ok 290 - One input changes the later handover and a second independently changes medicine staffing, without changing the duel
+  ---
+  duration_ms: 26.4014
+  type: 'test'
+  ...
+# Subtest: All 2048 finite binary paths reach both ends and every declared beat, with real asset files and distinct simultaneous faces
+ok 291 - All 2048 finite binary paths reach both ends and every declared beat, with real asset files and distinct simultaneous faces
+  ---
+  duration_ms: 30470.2397
+  type: 'test'
+  ...
+1..291
+# tests 291
+# suites 0
+# pass 291
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 62848.1779
+EXIT=0

@@ -1,0 +1,10 @@
+[WebServer] (node:45764) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:31448) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\heng-art.spec.ts:16:1 › Heng two ages, actual expressions, unrevealed name and both CGs render at seven sizes (21.3s)
+
+  1 passed (22.1s)

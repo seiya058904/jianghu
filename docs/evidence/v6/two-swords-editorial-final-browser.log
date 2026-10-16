@@ -1,0 +1,13 @@
+[WebServer] (node:8760) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:45200) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\art-manifest.spec.ts:8:107 › Asset manifest: every raster has exact built bytes and browser decode on root (2.2s)
+  ok 2 tests\art-manifest.spec.ts:8:107 › Asset manifest: every raster has exact built bytes and browser decode on subpath (2.0s)
+  ok 3 tests\swords-art.spec.ts:30:25 › Swords art two-swords-v1: frozen-source migration and new images survive a fresh offline page (1.1s)
+  ok 4 tests\two-swords.spec.ts:6:1 › Two Swords V2 opening preserves V1 raw auto and slot and links to the playable old edition (297ms)
+
+  4 passed (6.6s)

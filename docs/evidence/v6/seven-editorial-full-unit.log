@@ -1,0 +1,481 @@
+
+> jianghu@1.0.0 test
+> npm run story:build && node --experimental-strip-types --test tests/runtime.test.ts tests/vn-runtime.test.ts tests/campaign.test.ts tests/v6-compat.test.ts tests/taihua.test.ts tests/taihua-v1.test.ts tests/campaign-v6.test.ts tests/campaign-v6-ending-staging.test.ts tests/longmen.test.ts tests/longmen-v2.test.ts tests/dongting.test.ts tests/twelfth.test.ts tests/kuhe.test.ts tests/kuhe-v2.test.ts tests/qingshi.test.ts tests/qingshi-v2.test.ts tests/two-swords.test.ts tests/seven-questions.test.ts tests/jade-thieves.test.ts tests/jade.test.ts tests/sea.test.ts tests/sea-tide.test.ts tests/north.test.ts tests/qian-kun.test.ts tests/dead-ranking.test.ts tests/luhua.test.ts tests/twelfth-life.test.ts tests/twelfth-life-v2.test.ts tests/royal-letters-cg.test.ts tests/luoyang-bamboo.test.ts tests/xuanmen.test.ts tests/white-stone.test.ts tests/beyond-ranking.test.ts
+
+
+> jianghu@1.0.0 story:build
+> node scripts/compile-story.mjs
+
+Authored 22 chapter files; 1006 unique source beats.
+Taihua authored: 440 beats
+V6 preview: 1325 source beats; three midroutes and independent after-scenes.
+Ink main: 16805 source characters; 0 warnings
+Dialogue metadata: { beats: 108, choices: 28, endings: 3 }
+Ink duel: 12041 source characters; 0 warnings
+Campaign metadata: { beats: 1006, choices: 135, endings: 8 }
+Ink campaign: 122888 source characters; 0 warnings
+Taihua metadata: { beats: 440, choices: 61, endings: 3 }
+Ink taihua: 58376 source characters; 0 warnings
+V6 preview metadata: { beats: 1325, choices: 182, endings: 8 }
+Ink campaign-v6: 186345 source characters; 0 warnings
+Longmen metadata: { beats: 339, choices: 50, endings: 2 }
+Ink longmen: 44865 source characters; 0 warnings
+Dongting metadata: { beats: 155, choices: 22, endings: 2 }
+Ink dongting: 21908 source characters; 0 warnings
+Twelfth metadata: { beats: 236, choices: 36, endings: 2 }
+Ink twelfth: 31623 source characters; 0 warnings
+Kuhe metadata: { beats: 299, choices: 40, endings: 2 }
+Ink kuhe: 39496 source characters; 0 warnings
+Qingshi metadata: { beats: 414, choices: 58, endings: 2 }
+Ink qingshi: 55880 source characters; 0 warnings
+Two Swords metadata: { beats: 327, choices: 50, endings: 2 }
+Ink two-swords: 45526 source characters; 0 warnings
+Seven Questions metadata: { beats: 382, choices: 62, endings: 2 }
+Ink seven-questions: 54864 source characters; 0 warnings
+Jade Thieves metadata: { beats: 265, choices: 43, endings: 2 }
+Ink jade-thieves: 36071 source characters; 0 warnings
+Jade metadata: { beats: 296, choices: 66, endings: 2 }
+Ink jade: 45796 source characters; 0 warnings
+Sea metadata: { beats: 228, choices: 46, endings: 2 }
+Ink sea: 34532 source characters; 0 warnings
+Sea Tide metadata: { beats: 211, choices: 42, endings: 2 }
+Ink sea-tide: 31017 source characters; 0 warnings
+North metadata: { beats: 309, choices: 62, endings: 2 }
+Ink north: 45309 source characters; 0 warnings
+qian-kun metadata: { beats: 256, choices: 48, endings: 2 }
+Ink qian-kun: 36926 source characters; 0 warnings
+north-notes metadata: { beats: 69, choices: 12, endings: 2 }
+Ink north-notes: 9617 source characters; 0 warnings
+dead-ranking metadata: { beats: 325, choices: 66, endings: 2 }
+Ink dead-ranking: 50246 source characters; 0 warnings
+luhua metadata: { beats: 256, choices: 50, endings: 2 }
+Ink luhua: 38722 source characters; 0 warnings
+twelfth-life metadata: { beats: 375, choices: 66, endings: 2 }
+Ink twelfth-life: 53355 source characters; 0 warnings
+luoyang metadata: { beats: 76, choices: 18, endings: 2 }
+Ink luoyang: 12387 source characters; 0 warnings
+bamboo metadata: { beats: 86, choices: 14, endings: 2 }
+Ink bamboo: 12490 source characters; 0 warnings
+xuanmen metadata: { beats: 114, choices: 22, endings: 2 }
+Ink xuanmen: 16119 source characters; 0 warnings
+white-stone metadata: { beats: 132, choices: 26, endings: 2 }
+Ink white-stone: 19335 source characters; 0 warnings
+beyond-ranking metadata: { beats: 98, choices: 18, endings: 2 }
+Ink beyond-ranking: 14443 source characters; 0 warnings
+✔ Ning ten preserve source order, private scales, uncertain survival and unplayed bouts (77.4138ms)
+✔ Two independent early inputs change later copying labour and source-checking without inventing a third palm (23.3203ms)
+✔ Two exact historical works must each have a legal ending; wrong prefix, one-sided unlock, garbage and storage failure stay closed (0.5425ms)
+✔ All 512 finite binary paths cover all beats and choices with valid distinct images (2824.1259ms)
+✔ Ending direction retains exact pre-change V6 and frozen V5 bytes (2.5154ms)
+✔ Every affected ending beat in nine complete routes migrates only presentation while keeping every word, option and command (13227.4391ms)
+✔ Frozen validation rejects forged stage/runtime/commands, wrong versions and non-cosmetic changes (552.9715ms)
+✔ Ending views reflect the actual people and work without generating outcome-specific illustrations (460.1288ms)
+✔ v6 preview preserves eight reachable ending families while all three chapter-seven/nine/ten paths and independent after-scenes run (1765.1081ms)
+✔ v6 preview samples route variants without a dead end and reports genuinely unvisited source nodes (9490.0541ms)
+✔ five distinct canon incidents change later practical outcomes while holding the other choices fixed (326.2663ms)
+✔ early injuries accumulate across chapters: each single contribution can change a prepared rescue into the scar outcome (374.3786ms)
+✔ the promised extra month survives every ending family instead of disappearing when the player leaves the harbor (432.2231ms)
+✔ thirty manually reviewed main decisions retain exclusive later consequences, including ten delayed high-weight decisions (3115.5626ms)
+✔ eight distinct complete endings, both middle routes and genuine later callbacks (1334.0234ms)
+✔ choice, actor-entry, CG and ending snapshots replay exactly; wrong story/tampering rejected (4533.1228ms)
+✔ seeded route variations terminate with legal stages; report measured source coverage (5587.2666ms)
+✔ Dead Ranking complete paths preserve actual three bouts, old case, separate real records and long aftermath (257.0266ms)
+✔ Dead Ranking masked bout reconstructions do not reveal the three actors before they are found (36.8958ms)
+✔ Dead Ranking one early interview choice changes public cost and later witness participation without erasing a defeat (45.5107ms)
+✔ Dead Ranking one disclosure decision changes the joint arrival, repair time and consent while all three still own their acts (54.5937ms)
+✔ Dead Ranking optional Wudeng eyes have distinct inner acts, return to Zhou, and keep late people out of deceased scenes (66.2063ms)
+✔ Dead Ranking sampled paths cover every authored beat and both courtroom/career branches (12396.7323ms)
+✔ Dongting two life outcomes retain the 106/79 bouts, 4–3 recusal and Chen’s independent later seat (175.0393ms)
+✔ Dongting early spare rope and rest materially change a later rescue injury (63.8339ms)
+✔ Dongting reaches every authored branch in a bounded sample; acting cast excludes merely mentioned elders (1375.6528ms)
+✔ Jade first volume has two complete viewpoints with fixed empty box, mutual rescues, Jiang death and genuine-object journey (144.8436ms)
+✔ Jade each viewpoint keeps the other hidden order and identity until the temple, including knowledge descriptions (56.2866ms)
+✔ Jade one early solo/cooperative decision changes actual auction escape space and cost; informed deception requires a checked door (64.023ms)
+✔ Jade counterfeit exposure changes a secondary person’s later injury and study delay, not Jiang’s canon death (175.558ms)
+✔ Jade first volume sampled alternatives reach every authored beat and all three escape choices without long passive stretches (8586.8021ms)
+✔ Jade full second-volume paths keep thirteen coins, nine actual store outcomes, fixed breakage and ordinary Lu career (408.1473ms)
+✔ Jade single surface decision has an explicit three-day private cost and changes witnessed middle scenes (40.4828ms)
+✔ Jade seventh grain defence and ninth broken-object event remain different witnessed locations (36.9471ms)
+✔ Jade the early absent-family question changes reunion and winter-money cost in either later post (66.89ms)
+✔ Jade personal notes have distinct private costs, and He ages only in the late scene (71.1405ms)
+✔ Jade sampled branches cover all authored beats and options with bounded reading gaps (7230.3982ms)
+✔ Kuhe exact v1 bytes, prefixes and old pending saves survive the art edition (694.894ms)
+✔ New art preserves both full texts and commands while wound, weapon and death state changes are chronological (112.2293ms)
+✔ 512 sampled art-edition paths keep all beats, choices and real identity/state files reachable (7134.8129ms)
+✔ Kuhe full two personal endings preserve the staged battle, deaths, injuries and seven-day aftermath (286.9065ms)
+✔ Kuhe paired early preparation changes later physical route and one-month work capacity, without rewriting canon (62.9405ms)
+✔ Kuhe trust and agreed work position echo in a different scene; rescue and pages yield concrete different lives (72.649ms)
+✔ Kuhe sampled branches reach all authored nodes, two endings and stable visible identities (7356.593ms)
+✔ Longmen v1 exact bytes and version identity remain available beside expanded v2 (635.1536ms)
+✔ V2 preserves all fixed bouts and adds He-only private canon without leaking it into the apprentice (96.8588ms)
+✔ Four choices of what to observe produce different next-morning physical failures from one changed input (142.043ms)
+✔ Sampled v2 branches cover every authored beat and choice, and both real story CGs enter and leave (7671.7544ms)
+✔ Longmen two endings preserve fixed bouts, sourced recollection and the five-year jump (203.9128ms)
+✔ Longmen paired spectator duty changes what was witnessed; early overwork and lifting carries a later limit (122.3847ms)
+✔ Longmen sampled paths cover authored nodes without inventing a hidden conversation for the apprentice (1938.0228ms)
+✔ Longmen playable Qinghe recollection explicitly switches age and viewpoint while all three cane results stay fixed (23.1157ms)
+✔ Longmen early school and outsider paths have different partners and later work or trust costs from one changed input (73.609ms)
+✔ Luhua full-life routes retain ages, distinct true bouts, affiliations and limited South career (218.0868ms)
+✔ Luhua one pre-raid retreat choice changes help, injury, apprenticeship and later craft without rewriting victories (68.7984ms)
+✔ Luhua one sea teaching choice changes independent relief, return cost and later practice but keeps both final wins (32.3177ms)
+✔ Luhua identity reveal, age looks, deceased master and two late-life duties have actual stage boundaries (33.1863ms)
+✔ Luhua sampled paths visit every authored beat and choice, with bounded passive runs (7384.8597ms)
+✔ Luoyang fixed five-year chronology, real three exchanges, simultaneous stop and no imaginary injuries hold on both routes (83.8699ms)
+✔ Bamboo keeps Yan inside the closed invite-only night and Liu opinions dated instead of universal power scores (67.3927ms)
+✔ Bamboo only opens from a legal actual V6 main ending family; wrong prefix, wrong work, malformed data and read failures stay closed (0.6881ms)
+✔ All binary paths of both short works are exercised, not merely a seeded sample (3034.9438ms)
+✔ North full careers keep three teachers, old ranks, four battles and unfinished realm on both personal paths (251.2048ms)
+✔ North a single departure choice changes the old school and friend costs twelve years later (62.2107ms)
+✔ North one relearning letter changes later appointments, two-day costs and pupil trust without losing the spear (49.6632ms)
+✔ North mender identity is not presented before the reveal; old tea and aged friend do not share the wrong time (33.8691ms)
+✔ North sampled routes cover all authored beats and choices with bounded passive reading (8040.0571ms)
+✔ Qian Kun two lives keep martial/life contrast, fixed ages, battles and bounded sword rumor (156.1751ms)
+✔ Qian Kun a single youth letter practice changes thirty years later waiting and late life reminders, not martial talent (49.8921ms)
+✔ Qian Kun accepting the head post changes later real teaching delay and time paid without fixing his accounting weakness (27.4649ms)
+✔ Qian Kun phase changes and personal aftermath preserve different duties (26.7803ms)
+✔ Qian Kun sampled routes cover every authored beat and option (6729.7692ms)
+✔ North Notes requires one valid ending from each exact work and never treats another valid ending as completion (0.556ms)
+✔ North Notes keeps three separated dates, real alternate questions and four discoverable teaching notes (540.9419ms)
+✔ Qingshi v1 archive bytes and independently addressable saves remain frozen (2.0038ms)
+✔ Qingshi v2 512 sampled lives visit every authored beat and keep the knife insert before its break (11241.5325ms)
+✔ Qingshi both lives keep all words and inputs, old knife CG and elder closeup restore without resurrecting anyone (965.138ms)
+✔ Qingshi complete canonical life and two personal aftermaths retain four deaths, three teachers, lifespan and defence (211.7135ms)
+✔ Qingshi a single early retreat drill changes later carriage cost and an unnamed defending squad’s lives (45.9901ms)
+✔ Qingshi family truth and all four youthful commitments have concrete later scene echoes (177.0737ms)
+✔ Qingshi sampled alternatives cover authored nodes with bounded reading gaps and stable age labels (10947.4284ms)
+✔ Qingshi protagonist uses three actual age files only at matching years and leaves all posthumous stages (25.9308ms)
+✔ Royal CG preserves exact earlier v2 bytes without changing the work version or words (489.3974ms)
+✔ Two-frame letter illustration exits before choices and later firm expression remains a real separate state (34.1497ms)
+✔ CG compatibility does not accept forged raw data or an unrelated edition and scope (105.7373ms)
+✔ 512 sampled lives keep all beats, choices and the actual illustration reachable (10240.6378ms)
+{
+  states: 4079,
+  edges: 4142,
+  scenes: 20,
+  choiceIds: 32,
+  endings: { public: 384, quiet: 768, common: 32, leave: 768 }
+}
+✔ complete routes, native Ink save/load at every choice, unique consequences (308.6367ms)
+✔ schema, size, unsafe state, impossible choices rejected without altering existing session (12.8634ms)
+✔ all reachable state combinations terminate; conditions and all declared nodes/choices covered (7189.4359ms)
+✔ Sea Tide full lives preserve entry, rescue, forties nine hands, failed seat and sixty-three appointment (133.0464ms)
+✔ Sea Tide a single sustained-practice change alters wrist injury and two months of work cost twelve years later (52.6219ms)
+✔ Sea Tide post preparation changes the seventh ship handoff and real waiting cost without changing seven versus nine (34.4625ms)
+✔ Sea Tide two duties lead to sustained different personal aftermath and appropriate portrait phase/framing (35.6452ms)
+✔ Sea Tide sampled routes visit all authored beats and choices with bounded reading gaps (5519.9117ms)
+✔ Sea keeps separate protagonists, fixed defeats, ordinary pupils, realm and posthumous succession on both full routes (139.1178ms)
+✔ Sea one early cooperation change pays off five years later with a different illness transfer cost (34.3992ms)
+✔ Sea teaching styles change actual later cover duties and time costs without changing the fixed enlightenment (39.137ms)
+✔ Sea personal aftermath changes sustained late activity and keeps disputed Lu pages uncertain (46.6273ms)
+✔ Sea sampled branches visit every authored beat with bounded reading gaps (5977.5327ms)
+✖ Seven Questions V2 chronology keeps east duel before slow-team reunion for either viewpoint (85.7271ms)
+✔ Seven Questions recovered questions, waiting for notes and paid handover have distinct delayed consequences (746.0794ms)
+✔ Seven Questions frozen V1 remains exact and both old routes restore only in their own edition (4827.9275ms)
+✔ Seven Questions full two routes retain canon losses, fourteen houses, distinct perpetrators and actual disposition (60.3775ms)
+✔ Seven Questions single half-day preparation changes health in each route while fixed deaths remain fixed (66.9762ms)
+✔ Seven Questions route choice changes witnessed action and uses reports for the other location (70.1807ms)
+✔ Seven Questions early joint witness and shared testing change later introduction and remaining verification work (64.6945ms)
+✔ Seven Questions sampled paths cover all authored beats and options without passive exposition stretches (5223.5363ms)
+✔ Taihua frozen v1 bytes, both old routes and save identity survive the expanded edition (500.0192ms)
+✔ Taihua two actual endings replay choices, preserve canon, and fulfil different plans (1077.294ms)
+✔ Taihua seeded branch sample reaches all authored beats without loops or missing actors (8444.9374ms)
+✔ early physical overreach plus late heavy lifting carries a delayed cost; prior private agreement changes the actual practice partner (21.7002ms)
+✔ returning early does not erase shoulder damage, and an unmade promise is never invented later (22.4816ms)
+✔ Taihua concrete observation and three-layer escalation preserve each actual combat result (22.0611ms)
+✔ Taihua third outcome receives limited actual instruction, misses peers and respects earlier unasked questions (259.4961ms)
+✔ Taihua Mu keeps a distinct expanded look, leaves after returning upstage and does not change frozen defaults (11.0325ms)
+✔ Royal life frozen v1 bytes remain available (1.7696ms)
+✔ Royal life both personal outcomes keep words and commands while sorting letters moves home and aging is monotonic (1224.688ms)
+✔ 512 sampled Royal life alternatives reach every beat and all five actual Lu sprite files (8071.2384ms)
+✔ Twelfth Life full routes preserve the whole biography, actual failures, four court years and sole formal seat (225.1066ms)
+✔ Twelfth Life one seal-books decision has delayed training and marital consequences with costs on either side (44.001ms)
+✔ Twelfth Life one court handoff decision changes a later actual night, family time and repair without deleting political duties (52.5427ms)
+✔ Twelfth Life family consent changes later witness participation, dead teacher leaves, posthumous epilogue has no Zhao choices (64.4393ms)
+✔ Twelfth Life sampled routes cover all authored beats, eight chapter starts and bounded passive reading (8370.4297ms)
+✔ Twelfth two personal careers preserve Xue’s real win, candidate status, injury record, 4–3 and one edition for four years (137.4176ms)
+✔ Twelfth middle-career duty changes the later school; physical overreach survives as a lesson rather than a magic recovery (42.0233ms)
+✔ Twelfth three age appearances are deterministic, survive replay and reject forged or unknown looks (26.8127ms)
+✔ Twelfth sampled paths cover the authored branches and only actual speaking characters count (2022.5356ms)
+✔ Two Swords separates three viewpoints, fixed losses and both personal careers (161.7186ms)
+✔ Two Swords one early passage choice changes later rescue injury without changing canon destruction (54.619ms)
+✔ Two Swords choosing a career changes middle teacher, later correspondence and final duty (29.7335ms)
+✔ Two Swords sampled alternatives cover every authored beat and choice with bounded reading gaps (5842.2049ms)
+✔ frozen v5 content matches the pre-v6 baseline bytes (1.887ms)
+✔ all eight frozen v5 endings and pending choices restore with identical world and stage (8026.036ms)
+✔ complete three routes; every beat restores current dialogue, cast, choices and read-only history (561.9845ms)
+✔ save damage, forged runtime/presentation, illegal advances and repeated choices are rejected (5.0185ms)
+✔ draft name correction migrates every beat with identical world variables and presentation (1202.1792ms)
+✔ tiny authored scene exercises character entry/exit and fails unknown metadata/loops (40.03ms)
+✔ static metadata catches duplicate IDs, unknown commands and missing endings (65.3887ms)
+✔ all reachable states close; immediate replies differ; conditional replies and script coverage (5118.4427ms)
+✔ White Stone preserves distinct eras, snow loss, old-person inquiry, uncopyable teacher and two fixed crowns (76.4342ms)
+✔ Admitting the missing step and letting the second person see failure have independent later recalls (49.6284ms)
+✔ All 8192 finite binary paths cover every authored beat, option and ending, with valid distinct stage files (23184.3267ms)
+✔ Xuanmen keeps nine duties, simultaneous stop, disciple-first breakthrough and mortal narrator boundaries (66.4692ms)
+✔ One input changes the later handover and a second independently changes medicine staffing, without changing the duel (26.1069ms)
+✔ All 2048 finite binary paths reach both ends and every declared beat, with real asset files and distinct simultaneous faces (25907.608ms)
+ℹ tests 145
+ℹ suites 0
+ℹ pass 144
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 40700.5848
+
+✖ failing tests:
+
+test at tests\seven-questions.test.ts:12:1
+✖ Seven Questions V2 chronology keeps east duel before slow-team reunion for either viewpoint (85.7271ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /最先回来的两名传讯人/. Input:
+
+  '二十七个人，二十四个名字划了朱。你别把那一栏也摺进去。\n' +
+    '你把手从纸角移开。青石驿押送队二十四死、两重伤、一失踪；这不是今日等着你赶去救的一队人，是已送到眼前的讣报。\n' +
+    '约八十年前，你是鹿门往来收发的普通门人。季观尘死后，七卷《门外七问》未抵旧阁便遭截。你没见过袭击者，现在得把两家各收到的副报送去核对。\n' +
+    '先别装七卷。我这袋只装得下两份名单，再多，走到半山准有人问我为何没把整个江湖背来。\n' +
+    '我说装名单，没说装江湖。\n' +
+    '你刚才连雨也想夹进副报里。\n' +
+    '她把压湿的外纸换下，留内页给你。金陵和南岳都来了人，谁也不想先在另一家面前像个只会听话的送信人。\n' +
+    '你这份有收件人，我和你核。另一家那份，核完也请本人来，不隔着我争。\n' +
+    '我去。空着的见证人一栏也留着，不能因为大家知道是华山人，就先写他跑了。\n' +
+    '那我先去报南岳。有改字，用你的墨写，别让我跑回来才猜你们谁添的。\n' +
+    '禾生签过名，又把墨瓶倒过来看。只够半日，他仍把原件匣抱了起来。\n' +
+    '季老的弟子给你看遗命：不归一家，十四家各抄一份，原卷封鹿门旧阁。七卷谈高层武道，有十余场亲见较艺和六位返真留下的话，不是一抄便得神功的秘籍。\n' +
+    '他记了这么多年，最后倒只有这三句话，谁都记得最牢。\n' +
+    '七卷的签收，我还照原单开？\n' +
+    '照开。七个卷次都列着，收到哪个，就在那一格落印。空的给我留着。\n' +
+    '他把季老旧笔收在身边。你伸手接一张空签收，忽然发现纸轻得很，前一张朱名册却还压在腕上。\n' +
+    '这句“六大不许八家看”，是谁亲耳听的？\n' +
+    '目前没有。可以收作传言，别顶到死者名字上面。\n' +
+    '你留了转述人的来处。禾生和阿笙各拿到一份同样的待核页，不必先相信你站在自己那边。\n' +
+    '最先到齐的只有太玄、六合、金陵和华山。你随副报进屋记收件，不坐门主的椅。太玄闻道尘八十余岁，入化极深，先问七卷若真在华山手里，可会照遗命给十四家。\n' +
+    '出事的是共同押书的人，失踪的是华山人，问一句不算过分。\n' +
+    '华山老人剑出半寸，顾南陵也按剑柄。屋外一声坐下，让你正预备递出的纸停在两人中间。\n' +
+    '坐下。\n' +
+    '青石驿那一剑，是不是华山剑？\n' +
+    '不是。\n' +
+    '凭什么？\n' +
+    '陆青崖借他的剑，叫人取来已验过伤口的兽骨。你在旁边接空匣，只看见剑形、落点似乎一样，不敢凭眼熟抢着替任何一方答。\n' +
+    '旧痕这一侧，新试那一侧。落点由谁验过，也请留名。\n' +
+    '再记深浅。\n' +
+    '你才看见两道相似的痕，不能只靠描一个轮廓给山外的人看。\n' +
+    '形像，落点也像。青石驿那一剑多送了一寸。华山真正练过这一式的人，不会送那一寸，再送，后手便死。\n' +
+    '你依尺画下深浅，两道痕的轮廓几乎重叠，末端却错开一寸。顾拿过纸，又把兽骨转向窗光，自己看了一遍。\n' +
+    '那失踪的人，还是要找。\n' +
+    '找。不是替谁先免了这一件。\n' +
+    '顾把剑收回，剑令没摘。屋中暂时不拔剑了，朱名册上的二十四人却仍没有少。\n' +
+    '这份两家各看过，送时请同行。\n' +
+    '禾生把纸压进匣，阿笙在门外等你交代收件处。你们多等半刻，不用到了下一家再从头争是谁只抄了自家那半边。\n' +
+    '汴梁又死了一位八卦老护法，左肋剑痕像昆仑。墙上留“七问已有主”。三日后黑市出现第一卷，季老弟子验过，内容是真，扉页却添“六大所得，八家不得”。\n' +
+    '有人只把扉页抄给了我师弟。还说再不去抢，南岳连一句也剩不下。\n' +
+    '金陵街上也有这句。可卖抄本的就在金陵商号，掌门已去了。\n' +
+    '一本真卷，能让这句也算季老写的？\n' +
+    '所以我带了前一份。他老人家的遗命，我还认得。\n' +
+    '街口有人为抢抄本受伤。你们从人群外走，听见两家弟子已在商号门前相撞。\n' +
+    '这句话不在季老遗命里。要问谁添的，先让我们进到卖书的人面前。\n' +
+    '你们有人要跟着问，就跟。别站在这里先打送纸的。\n' +
+    '一名急性弟子仍骂，手却没再推禾生。你们终于留出能过人的半边门。\n' +
+    '顾南陵不许南岳搜本门地界的商号，沈孤鸿不肯退。前五十招几乎无高低，顾剑快，沈剑沉。八十余招顾左袖破，又数招沈肩头见血。\n' +
+    '你要查书，先把门里的人退开。\n' +
+    '人退了，书与证人若又没了，谁给我一句等过？\n' +
+    '两剑越走越近。你抱着副报在仓外，看见一名抄手跌在门槛边，旁人一挤，他又要被推回去。\n' +
+    '手给我，别翻回门槛。\n' +
+    '阿笙抵住后面的人，禾生在门外接。你退出一段，眼前只剩两柄剑的影子，不再能把每一手写成亲见。\n' +
+    '一百三十余招，两人已真想分胜负。仓顶落下一人，一手搭顾的腕，一手按沈的剑脊，两道剑势同时偏开。\n' +
+    '仓里的人已经死了。\n' +
+    '八卦门主慕容破岳，已返真。你这才敢把门外那份试痕副报递进来，两位门主都没有再追剑。\n' +
+    '卖抄本的商人已死三个时辰，喉骨被掌震碎，像太玄。顾看向闻讯赶来的闻道尘。屋里没人再敢说，方才两剑若分出高低，事情便能自然问清。\n' +
+    '取木人。\n' +
+    '闻一掌落正面，木人背后裂纹先开。他让人再看商人的喉骨。\n' +
+    '太玄这一掌，力不留骨面。这具尸体的喉骨，从外往里碎。\n' +
+    '和华山一样。\n' +
+    '你翻到上一页。一道剑痕，一处碎骨，分别指向两家。慕容替你压住被风掀起的纸角，目光却落在尚未出声的顾脸上。\n' +
+    '华山的一寸和太玄的内外力，都在这里。不要只带对自家最有利的一张。\n' +
+    '禾生交出商号那页。阿笙读到内外力时停住，又把闻门主叫回门边；他按着木人重指了一次，她才系袋口。\n' +
+    '六大在少室山外先议事，八家又起不满。六合燕横江问，出了十四家的事，六家关门商量，再告诉我们？闻道尘给少林送帖。\n' +
+    '若只查六门之事，太玄不问。若查十四家，请十四家坐下。\n' +
+    '少林回帖很快：闻门主说得对。可会还没开，青石驿最后清醒的活口便死了。\n' +
+    '两名重伤者，一人早已不治，季观尘弟子周北衡醒后说过：袭击者七人，六蒙面，一人没遮脸，右手少根小指。随后死在少林外院，三层守卫，近处两位入化长老；门窗无损，没有打斗声。\n' +
+    '你拿着他原来预备签的收件单，纸上依旧空一栏。少林方丈慧寂亲自验后，只说开十四门会。\n' +
+    '七人，六个蒙面，一个没遮脸，右手少小指。只有这些。\n' +
+    '那一栏你不再等他来签。季老弟子收走空单，手指停了一会，才把纸翻到背面写不及收件。\n' +
+    '嵩阳旧院，十四张椅子围一圈，没设上座。你们搬到第十四张，禾生还在看四条腿，怕一位门主坐下就矮人半头。\n' +
+    '你若再量一回，我就坐这里，先问问你这算第十五家还是木匠家。\n' +
+    '你坐我便敢量。等掌门来了，你又不替我挨问。\n' +
+    '别量地。方才最后一张脚下垫的，是谁的未收副报？\n' +
+    '两人一起低头，阿笙先笑，禾生把那张纸抽出来重新抄，没把自己弄湿的事算在哪家门主头上。\n' +
+    '六大六位皆到：慧寂、张玄初、司马归元、慕容破岳、公孙照雪、陆青崖，六人皆返真。八家当家八位也来，妙澄与罗承岳已返真；其余几位仍在门外，不把山中退隐旧人混进这一代的数。\n' +
+    '八家名帖依次收齐：六合燕横江、峨眉妙澄、青城许问岑、金陵顾南陵、南岳沈孤鸿、河东裴照庭、太玄闻道尘、天海宗罗承岳。你把天海那张另辨一次，不与海天门混写。\n' +
+    '顾把你送过的那页放到手边，没让你因为帮过忙就替他对全院讲话。禾生压低声音问，你的纸角这回还湿不湿。\n' +
+    '你先把量椅子的尺收起来。\n' +
+    '季老遗命，十四家各一份。没有可争。\n' +
+    '七问不是普通拳谱。有些话对写它的人是对的，对别人未必。\n' +
+    '张玄初说，顶层心得危险的不只是错，还可能是对，却只对那个人。妙澄亲口承认，入化后曾照祖师一份返真笔记闭关三年，险些把自己练废。\n' +
+    '你原来想问有没有人不肯给八家看，此刻却听见已经返真的八家当家人，讲自己的旧险。她没拿自己如今已成，替那三年说成必经捷径。\n' +
+    '危险归危险。为什么判断谁能看的人，总是六大？\n' +
+    '他点六大六位，再看八家：这一代已算盛，当家八人也只有两位返真。哪一场谁更强，不能解释几十年、一百年以后谁的传承总能接上。\n' +
+    '返真若靠一卷书，天下早有几百返真了。真正拉开差距的，是高人死前，有没有第二个人接住他的东西。\n' +
+    '闻道尘许久不语。太玄出过宁无极，他比年轻的你更知道，没有下一人接住是什么重量。\n' +
+    '不把我当走到了那个位置的人。但若只告诉我不能看，我下回见到假扉页，仍不知道哪句在骗人。\n' +
+    '慧寂将问件递给录事。顾盯着它放到哪一叠，直到录事在末尾添上待议，才靠回椅背。\n' +
+    '顾和燕却又争起眼前第一卷。燕要先封抄本再查幕后，顾说越封越像独占，应先公开已确认的一卷压谣。燕提起第一卷正从金陵流出，顾站起。\n' +
+    '两指作剑点眉心，燕横掌开，第二手已逼肋下。二十、四十、六十招，谁也没先收。第七十余招顾划燕袖，数招后又被逼退三步。\n' +
+    '纸退后！\n' +
+    '你把问件交出，自己让到门侧。第九十六招，一柄剑横进两人之间：顾再进先撞剑，燕再掌腕落剑脊。陆青崖已经在那里。\n' +
+    '若我们不收？\n' +
+    '那我陪。\n' +
+    '两人收了。你没把这一剑写成两人自行决定平手，门外极深和返真之间的距离，是刚才真站到两人手腕前的那一下。\n' +
+    '这张问的是怎么借，不是刚才谁赢。方才没答的，还请留下。\n' +
+    '我同你收。我的那张差点被你踩到，这回算我没说清放哪儿。\n' +
+    '你们把椅子放回圆里，争论也没有被偷偷搬到桌下。\n' +
+    '白日十四人围一圈，晚上分成许多小桌。你送问件时，才听见六大内部也不是一句话。\n' +
+    '找回七问，照遗命抄给十四家。\n' +
+    '少林赞成，武当赞成却要给高卷附不能照练的说明；公孙照雪担心十四份一年以后变一百四十份。陆青崖听完，先放下杯。\n' +
+    '真靠抄书就能追上华山，那华山也该下去了。\n' +
+    '旁边的年轻弟子笑了一声，见本门老人没笑，又把嘴闭上。陆也没等一桌人附和才喝下一口茶。\n' +
+    '这是白日递过的问件。附注若有，给送到外面的前两卷也留一份。\n' +
+    '明早来取。我得先问张掌门要那几条，他的字你若认不出，拿来找我。\n' +
+    '你坐下等，错过最后一碗热汤。禾生给你留了半块饼，抱怨汤倒得比你的字还快。\n' +
+    '八家几桌也在争。闻与妙澄认为六大不是凶手，顾还有保留，河东裴照庭却一直问同一件事。\n' +
+    '谁能在少林两位入化长老眼皮底下杀周北衡？\n' +
+    '周房中窗台下一点青灰，起先当香灰收着。妙澄认出盐水长期浸过的船木烧灰；中原大量用这种木的地方，指向伏牛东南废旧河道。同光会的旧名终于进了案卷。\n' +
+    '萧天策。\n' +
+    '他早年旧总谱十三，没有返真，最擅布局、借势、拆盟。年轻时因出身被拒，晚年收逐徒、遗徒和困在入化的人。他右手少根小指。\n' +
+    '那少林外院，也是他？\n' +
+    '那一条不能因为少根手指，就都接到他身上。\n' +
+    '青城许问岑又提出闻人宿：旧总谱第八，失踪四十余年，老师最后见他，只说快进去了。若仍活，如今极可能已返真。一个负责局，一个负责杀，学各家外形的人再留下最显眼的假痕。\n' +
+    '萧的右手，是活口亲见。闻人的下落，是前辈旧见和如今推断。两条都留。\n' +
+    '如此才好继续问。二十七个人，不是认出一个名字就能全部结案。\n' +
+    '录事用两层纸包灰样，你替他托底。他仍不放心，追着又塞给你一只小木匣。\n' +
+    '十四家终于合查，三路都故意混编六大与八家。慧寂要随闻、燕、许问岑查伏牛旧河，另有急报与核录的人留嵩阳接返程。\n' +
+    '若查案还分六和八，萧天策已经赢了一半。\n' +
+    '出发前还有半日，你能把一路的准备做熟。两份差事，一份问旧水道与溪沟，一份核旧院回报的收转人，不是再拿一张漂亮地图便都算自己走过。\n' +
+    '我要问断流以后走哪儿。旧图照抄的，先别跟我说河上能过船。\n' +
+    '我带你找一个人。他只走过半段，你别一问就是整座伏牛山。\n' +
+    '你们绕回溪沟认过落脚处，少抄了半日信。旧院转报的班次由值房安排，若留下，仍得自己补问。\n' +
+    '路要真分了。前面同你核过副报的人在门边等，愿接你的下一程；另一人仍有本门任务，不可能两边都陪。\n' +
+    '禾生要把假扉页怎样混入真本写到抄手能辨，阿笙想让混编以后谁接谁的话不再靠喊掌门名。两人要的，不只是这一次跟你站在一起。\n' +
+    '你先同我把那两份核过，后面我跟你接。不是金陵派我来看你抄错字。\n' +
+    '那也得等我错了能说。\n' +
+    '这个我不等掌门发话。\n' +
+    '我留。出路那份送走，我不在院中替没到过的山谷记亲见。\n' +
+    '你把回程收转簿放到门边。有人嫌留着无事，你还不知道这一夜会有多少人找这张桌。\n' +
+    '各路离院。杯子还未收净，圆里的椅子空出许多。你接下的不是谁赢的预告，是出了事时别人真能找到的一个位置。\n' +
+    '你留在嵩阳。空椅子围着，司马归元坐院中喝茶，像全院只有他没听见急讯。你来换水，他让你把新一壶放在另一边。\n' +
+    '别都端走。回来的人也要喝。\n' +
+    '您不走？\n' +
+    '有人会去。\n' +
+    '你没听出哪处新线索，只好先把杯放稳。午后，萧天策从原来出入送件的门回来了，右手缺小指。\n' +
+    '我去后门。有消息就从这边应。\n' +
+    '去。\n' +
+    '你放下空托盘，转身时听见萧问他为何不去救人，语气像认定这一院早该空了。\n' +
+    '你知道我回来？\n' +
+    '不知道。\n' +
+    '那为何留下？\n' +
+    '聪明人总想多走一步。我懒得跟。\n' +
+    '萧先出手。旧总谱前列、准备多年，前二十招竟占先。三十招以后，司马开始把针对太极准备的东西一件件拆掉。\n' +
+    '第六十余招第一掌中，第七十余第二掌中。第八十一招，司马掌停萧心口。\n' +
+    '这就是返真？\n' +
+    '这只是我。\n' +
+    '萧忽捏碎袖中烟珠，院后同时起火。你这才知道，他从未打算靠自己在院里赢过司马；真正抢卷的人正进后院。\n' +
+    '正封匣有人接！抄件先放，人从后门退！\n' +
+    '烟里传来应声，你把桌边水泼湿外衣，伏低去接人，没往萧和司马之间钻。\n' +
+    '烟从后院灌过来。司马仍在拦对手，你不能把那一掌挡住的人数，当成每扇门后都有人接应。\n' +
+    '你先前把半日用在水道，院中转报只看过安排。火起有人向前院送，人却等在后门，应声隔了墙。你折回去，把一名抄手拖过倒架，自己袖口也灼破。\n' +
+    '别再等那个名字。后门有人，先走！\n' +
+    '抄手活着，右臂烫伤，养伤三个月。原封匣仍送出，副件烧坏；他的课和抄差要有人接，不是急火过去便一笔销掉。\n' +
+    '他抄的最后一页给我。我先接下一班，后面请值房排人，不让人只见缺件又催他握笔。\n' +
+    '禾生把半张焦纸夹进自己的课簿，翻开干净一页，手抖得第一行写歪了。\n' +
+    '正封已出，副件缺一角，伤的人另列。回来的录事先核哪份，按这张找。\n' +
+    '你报出后门那一班，终于不是全院人互相喊都有人收。\n' +
+    '华山先识南逃路线为假，陆青崖即折返；昆仑从另一面截回，武当接鸽讯，天海宗循水路最快。十四家一夜回流，同光会反被堵在三面。\n' +
+    '你留下的一张收转簿只接其中一段。各路有各路的判断，不是门主们忽然都等着你喊一声才肯回头。\n' +
+    '我在嵩阳，这一夜见到的在这里。谷中谁先过沟，我没有看过。\n' +
+    '你写亲见两字时终于不用猜。快脚后来带来溪沟那一份，纸上有先送弟子的原话。\n' +
+    '东门的消息到了外廊。你身在旧院，还是尚随伤队在路上，决定了这一场如何进入你的记忆。\n' +
+    '你留在院里接返队，东门的刀兵还未停。送完近处伤者，从外廊望见闻人宿遇上陆青崖。两位返真，没有试探，二十余招已见血。\n' +
+    '第三十七招闻人贴剑抢近，想借长剑近身难转逼陆弃路。陆真的松剑。剑落，两指已先到眉前；闻人侧头，长剑恰入陆另一手。\n' +
+    '反剑上挑。第四十一招，剑尖停闻人咽喉。你原来预备往里送的那一只水碗还端着，连叫一声都没来得及。\n' +
+    '你入返真多久？\n' +
+    '二十七年。\n' +
+    '难怪。\n' +
+    '闻人认输。都是返真，也不是一样；你站在门外看见的是一次握与松，不是得到一套照着背便能赢过返真的诀窍。\n' +
+    '水放这边。\n' +
+    '陆在外廊接过，问伤者是否安顿。你答了自己接的那一班，不替全院说都好了。\n' +
+    '急报和慢队终于在旧院汇合。两张一路被雨浸过、一路有烟熏的纸放在一起，你先辨出写字的人，才辨出彼此错过的半场危局。\n' +
+    '随队者讲伏牛旧河早断，许问岑先识假图；两侧火石齐下，慧寂先震树过沟送弟子。闻人现身，燕、许、闻三人围攻六十余招仍没扳回。\n' +
+    '等弟子全部撤过，慧寂才转身。两位返真六十余招同时伤及彼此，闻人吐血入火，慧寂阻追，前方山壁旋即崩落。你在院里没见那座树桥，记时也留下随队者的姓名。\n' +
+    '我不在的那段，写谁见，不只写我听懂。\n' +
+    '等会儿，我刚换了笔尖。你慢些报，第三个人名又扎破纸了。\n' +
+    '给他留点地方，后面还得写欠我的鞋钱。\n' +
+    '你们还真算了一回鞋钱，抄到第三行，才一起发现这几日头一回能为这种小事争。\n' +
+    '萧天策被押回十四张椅子中间。想掀这张桌的人，第一次真坐到了圆里。顾先问书，闻却问他到底想要什么。\n' +
+    '一个没有门第的江湖。\n' +
+    '十七岁想拜大门，连山门进不去；二十七岁能胜内院弟子；三十七岁被请作外门客卿，问为何非正传，只得没有根三个字。\n' +
+    '所以要把这场事推到二十七个人头上？\n' +
+    '萧望向名册。闻道尘把它推到他面前，指尖停在第二十四个朱名上。萧没有接那张纸。\n' +
+    '所以你要毁所有大宗？\n' +
+    '我只是想看看。把你们几百年攒的全摆上桌，六大还是不是六大。\n' +
+    '会。\n' +
+    '萧一愣，像所有答复都预备过，偏没留这一句的位置。\n' +
+    '你把太极所有谱都抄出去，太极还是太极。谱是死的，人是活的。\n' +
+    '青石驿失踪的见证人，案中还未归的卷，都另列着。请继续问。\n' +
+    '录事念到失踪者，萧抬了抬眼，没有答。闻道尘让录事坐下，把那一项移到最前，继续问。\n' +
+    '清点到最后，事情又露出一层荒唐：萧手里只有前三卷。季老早知同运太险，后四卷一直由另一弟子藏在鹿门山中。\n' +
+    '他分开时，连我也没知道全部去处。后来听原卷尽失，我也当七卷都失了。\n' +
+    '这次交接，不能还只写七卷两个字。\n' +
+    '分卷验。哪一卷哪一人接，都验。\n' +
+    '半个江湖被闹动，真正拿走的却不到一半。抄单要重开，死者名册却不会因这件事有多荒唐就变轻。\n' +
+    '前三卷回收，后四另交。原来的“尽失”，保留当时为何那样报，下面添复核结果。\n' +
+    '旧单也给我。这行尽失是我写的，我在下面改，不能让你替我签。\n' +
+    '两条收件路在鹿门汇合，各自留下见证，不让一份新齐单替代全部来路。\n' +
+    '凶手被制，十四门会反而议得更久。闻道尘最后提出：原卷封鹿门，不入一家；十四家各抄；前两卷逐步外流，第三至七只准真正走到入化后完整借阅。\n' +
+    '把看不懂的先照练，前人真得来的东西，也可能害后来的人。\n' +
+    '我同意。模仿一家的形，和真走过那条路，差得太远。\n' +
+    '你想起真卷上那句假扉页。此刻不是十四个人都不再有私心，而是连最反对限制的人，也见到了只看见外形会怎样一路伤人。\n' +
+    '你前头递的问件被翻出来，外流前两卷附带说明的收件人另列。不是年轻门人问过，便能取得高卷，却终于能把不能照练的理由带给只听过封书传言的人。\n' +
+    '散席前，司马叫住你，把昨夜答应的附注递来。三处字旁另有小楷，是他怕你认错，重新写过的。你夹进前两卷，今日不必再等一封催信。\n' +
+    '白日收回的问件还在原匣。你把学生问的那句展给录事，原题下添上带读与限阅的答复，交回去时仍认得提问人的字。\n' +
+    '我去送。哪处只收了书、还没有人讲，回报也请留这一项。\n' +
+    '往南的先停一日。那边带读的人还没到，我把回信催来，你一并带。\n' +
+    '你改了自己的行期，不替两位同伴一并答应全年都上路。\n' +
+    '议约不是盟约。十四家往后仍会争、会打、会抢人和路，只是两家以上顶层人物之死不凭招痕定凶；六大八家争议至少三家共验；跨宗高层遗录若原主无明确指定，不由一家独占。\n' +
+    '顾坚持添榜、门、世家有别，武道无籍。陆没有反对。你们抄最后一行时，纸终于没有再被拿去垫椅子。\n' +
+    '木匠那一卷，要不给我留着。\n' +
+    '写在你那册。下回若又量椅子，先把纸收好。\n' +
+    '两人笑完，还是各拿回自己的差事。你想请同伴再接一程，也得先问这回要误哪一班。\n' +
+    '头两趟我同你接。后面我回金陵教新抄手，假扉页那一课不能总等我师父来骂。\n' +
+    '两趟。再请你，另约时日。\n' +
+    '他把自己的日子划出来，没用全听你的替代一句有始有终的答应。\n' +
+    '到了日子你走。剩下这一份，写我的名字。\n' +
+    '禾生把到日标清，阿笙把交班处圈好。你们各有回去的地方，仍能在下一次真约定的时候认得彼此。\n' +
+    '大会散后，闻道尘在少室山脚又留两日。你去送最后一份抄件，听他问慧寂：我真的离返真很远？伏牛谷，三人打闻人宿，差得太清楚。\n' +
+    '你离门很近。\n' +
+    '这句话，我听了十五年。\n' +
+    '很近，不是说你明年进去。是说你这一生，已有资格真正站在门前看。\n' +
+    '闻停了许久，又问里面差别何以仍大。慧寂说闻人刚进去，陆已经走了二十七年。\n' +
+    '所以里面也还是一样。\n' +
+    '武道什么时候不是这样？\n' +
+    '闻道尘把杯里冷茶喝尽，伸手又提壶。壶已空了。他看一眼慧寂，两人忽然又笑起来。\n' +
+    '这一份收好了。我按约回去。\n' +
+    '去。下次你来，不一定有十四家等着，也还会有人等一张该到的纸。\n' +
+    '你拱手出门。山脚路不窄，却仍有人走得快，有人要停一回。\n' +
+    '闻道尘后来活到一百一十余，最终没有返真。太玄后人更多叫他十四门会的闻道尘，而不是那个没能进去的门主。你后来写身后录，没有把他的笑改成已经预知会赢。\n' +
+    '七问流出一部分，六大仍六大，八家仍八家，没有谁因此忽然多出三个返真。原卷、借阅、授课、验案，各要后来的人继续做。\n' +
+    '旧院那名抄手养臂三个月，回来先接短课。你把代下的那份还他，没有拿自己曾救过他，便要求他照你留下的每一行写。\n' +
+    '最初同送的两家试痕副报仍在，往后的共同验案有人肯带你去做交接。亲见者当时留下的名字，终于不只在这一次危局里有用。\n' +
+    '约定的那天，同伴按期离开。余下的回信由你跑，课由你补；来借书的人催到门口时，你才知道自己答应的剩下这一份有多重。\n' +
+    '你把前两卷送出鹿门，同行的人会换，收件处也会换。有人只想抢先抄一句，你便等他把附注翻开，再说哪处还须问老师。到八月，接班者真站在路口，你没有让所有人永远等着同一个人回来。'
+
+      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/seven-questions.test.ts:17:20)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '二十七个人，二十四个名字划了朱。你别把那一栏也摺进去。\n你把手从纸角移开。青石驿押送队二十四死、两重伤、一失踪；这不是今日等着你赶去救的一队人，是已送到眼前的讣报。\n约八十年前，你是鹿门往来收发的普通门人。季观尘死后，七卷《门外七问》未抵旧阁便遭截。你没见过袭击者，现在得把两家各收到的副报送去核对。\n先别装七卷。我这袋只装得下两份名单，再多，走到半山准有人问我为何没把整个江湖背来。\n我说装名单，没说装江湖。\n你刚才连雨也想夹进副报里。\n她把压湿的外纸换下，留内页给你。金陵和南岳都来了人，谁也不想先在另一家面前像个只会听话的送信人。\n你这份有收件人，我和你核。另一家那份，核完也请本人来，不隔着我争。\n我去。空着的见证人一栏也留着，不能因为大家知道是华山人，就先写他跑了。\n那我先去报南岳。有改字，用你的墨写，别让我跑回来才猜你们谁添的。\n禾生签过名，又把墨瓶倒过来看。只够半日，他仍把原件匣抱了起来。\n季老的弟子给你看遗命：不归一家，十四家各抄一份，原卷封鹿门旧阁。七卷谈高层武道，有十余场亲见较艺和六位返真留下的话，不是一抄便得神功的秘籍。\n他记了这么多年，最后倒只有这三句话，谁都记得最牢。\n七卷的签收，我还照原单开？\n照开。七个卷次都列着，收到哪个，就在那一格落印。空的给我留着。\n他把季老旧笔收在身边。你伸手接一张空签收，忽然发现纸轻得很，前一张朱名册却还压在腕上。\n这句“六大不许八家看”，是谁亲耳听的？\n目前没有。可以收作传言，别顶到死者名字上面。\n你留了转述人的来处。禾生和阿笙各拿到一份同样的待核页，不必先相信你站在自己那边。\n最先到齐的只有太玄、六合、金陵和华山。你随副报进屋记收件，不坐门主的椅。太玄闻道尘八十余岁，入化极深，先问七卷若真在华山手里，可会照遗命给十四家。\n出事的是共同押书的人，失踪的是华山人，问一句不算过分。\n华山老人剑出半寸，顾南陵也按剑柄。屋外一声坐下，让你正预备递出的纸停在两人中间。\n坐下。\n青石驿那一剑，是不是华山剑？\n不是。\n凭什么？\n陆青崖借他的剑，叫人取来已验过伤口的兽骨。你在旁边接空匣，只看见剑形、落点似乎一样，不敢凭眼熟抢着替任何一方答。\n旧痕这一侧，新试那一侧。落点由谁验过，也请留名。\n再记深浅。\n你才看见两道相似的痕，不能只靠描一个轮廓给山外的人看。\n形像，落点也像。青石驿那一剑多送了一寸。华山真正练过这一式的人，不会送那一寸，再送，后手便死。\n你依尺画下深浅，两道痕的轮廓几乎重叠，末端却错开一寸。顾拿过纸，又把兽骨转向窗光，自己看了一遍。\n那失踪的人，还是要找。\n找。不是替谁先免了这一件。\n顾把剑收回，剑令没摘。屋中暂时不拔剑了，朱名册上的二十四人却仍没有少。\n这份两家各看过，送时请同行。\n禾生把纸压进匣，阿笙在门外等你交代收件处。你们多等半刻，不用到了下一家再从头争是谁只抄了自家那半边。\n汴梁又死了一位八卦老护法，左肋剑痕像昆仑。墙上留“七问已有主”。三日后黑市出现第一卷，季老弟子验过，内容是真，扉页却添“六大所得，八家不得”。\n有人只把扉页抄给了我师弟。还说再不去抢，南岳连一句也剩不下。\n金陵街上也有这句。可卖抄本的就在金陵商号，掌门已去了。\n一本真卷，能让这句也算季老写的？\n所以我带了前一份。他老人家的遗命，我还认得。\n街口有人为抢抄本受伤。你们从人群外走，听见两家弟子已在商号门前相撞。\n这句话不在季老遗命里。要问谁添的，先让我们进到卖书的人面前。\n你们有人要跟着问，就跟。别站在这里先打送纸的。\n一名急性弟子仍骂，手却没再推禾生。你们终于留出能过人的半边门。\n顾南陵不许南岳搜本门地界的商号，沈孤鸿不肯退。前五十招几乎无高低，顾剑快，沈剑沉。八十余招顾左袖破，又数招沈肩头见血。\n你要查书，先把门里的人退开。\n人退了，书与证人若又没了，谁给我一句等过？\n两剑越走越近。你抱着副报在仓外，看见一名抄手跌在门槛边，旁人一挤，他又要被推回去。\n手给我，别翻回门槛。\n阿笙抵住后面的人，禾生在门外接。你退出一段，眼前只剩两柄剑的影子，不再能把每一手写成亲见。\n一百三十余招，两人已真想分胜负。仓顶落下一人，一手搭顾的腕，一手按沈的剑脊，两道剑势同时偏开。\n仓里的人已经死了。\n八卦门主慕容破岳，已返真。你这才敢把门外那份试痕副报递进来，两位门主都没有再追剑。\n卖抄本的商人已死三个时辰，喉骨被掌震碎，像太玄。顾看向闻讯赶来的闻道尘。屋里没人再敢说，方才两剑若分出高低，事情便能自然问清。\n取木人。\n闻一掌落正面，木人背后裂纹先开。他让人再看商人的喉骨。\n太玄这一掌，力不留骨面。这具尸体的喉骨，从外往里碎。\n和华山一样。\n你翻到上一页。一道剑痕，一处碎骨，分别指向两家。慕容替你压住被风掀起的纸角，目光却落在尚未出声的顾脸上。\n华山的一寸和太玄的内外力，都在这里。不要只带对自家最有利的一张。\n禾生交出商号那页。阿笙读到内外力时停住，又把闻门主叫回门边；他按着木人重指了一次，她才系袋口。\n六大在少室山外先议事，八家又起不满。六合燕横江问，出了十四家的事，六家关门商量，再告诉我们？闻道尘给少林送帖。\n若只查六门之事，太玄不问。若查十四家，请十四家坐下。\n少林回帖很快：闻门主说得对。可会还没开，青石驿最后清醒的活口便死了。\n两名重伤者，一人早已不治，季观尘弟子周北衡醒后说过：袭击者七人，六蒙面，一人没遮脸，右手少根小指。随后死在少林外院，三层守卫，近处两位入化长老；门窗无损，没有打斗声。\n你拿着他原来预备签的收件单，纸上依旧空一栏。少林方丈慧寂亲自验后，只说开十四门会。\n七人，六个蒙面，一个没遮脸，右手少小指。只有这些。\n那一栏你不再等他来签。季老弟子收走空单，手指停了一会，才把纸翻到背面写不及收件。\n嵩阳旧院，十四张椅子围一圈，没设上座。你们搬到第十四张，禾生还在看四条腿，怕一位门主坐下就矮人半头。\n你若再量一回，我就坐这里，先问问你这算第十五家还是木匠家。\n你坐我便敢量。等掌门来了，你又不替我挨问。\n别量地。方才最后一张脚下垫的，是谁的未收副报？\n两人一起低头，阿笙先笑，禾生把那张纸抽出来重新抄，没把自己弄湿的事算在哪家门主头上。\n六大六位皆到：慧寂、张玄初、司马归元、慕容破岳、公孙照雪、陆青崖，六人皆返真。八家当家八位也来，妙澄与罗承岳已返真；其余几位仍在门外，不把山中退隐旧人混进这一代的数。\n八家名帖依次收齐：六合燕横江、峨眉妙澄、青城许问岑、金陵顾南陵、南岳沈孤鸿、河东裴照庭、太玄闻道尘、天海宗罗承岳。你把天海那张另辨一次，不与海天门混写。\n顾把你送过的那页放到手边，没让你因为帮过忙就替他对全院讲话。禾生压低声音问，你的纸角这回还湿不湿。\n你先把量椅子的尺收起来。\n季老遗命，十四家各一份。没有可争。\n七问不是普通拳谱。有些话对写它的人是对的，对别人未必。\n张玄初说，顶层心得危险的不只是错，还可能是对，却只对那个人。妙澄亲口承认，入化后曾照祖师一份返真笔记闭关三年，险些把自己练废。\n你原来想问有没有人不肯给八家看，此刻却听见已经返真的八家当家人，讲自己的旧险。她没拿自己如今已成，替那三年说成必经捷径。\n危险归危险。为什么判断谁能看的人，总是六大？\n他点六大六位，再看八家：这一代已算盛，当家八人也只有两位返真。哪一场谁更强，不能解释几十年、一百年以后谁的传承总能接上。\n返真若靠一卷书，天下早有几百返真了。真正拉开差距的，是高人死前，有没有第二个人接住他的东西。\n闻道尘许久不语。太玄出过宁无极，他比年轻的你更知道，没有下一人接住是什么重量。\n不把我当走到了那个位置的人。但若只告诉我不能看，我下回见到假扉页，仍不知道哪句在骗人。\n慧寂将问件递给录事。顾盯着它放到哪一叠，直到录事在末尾添上待议，才靠回椅背。\n顾和燕却又争起眼前第一卷。燕要先封抄本再查幕后，顾说越封越像独占，应先公开已确认的一卷压谣。燕提起第一卷正从金陵流出，顾站起。\n两指作剑点眉心，燕横掌开，第二手已逼肋下。二十、四十、六十招，谁也没先收。第七十余招顾划燕袖，数招后又被逼退三步。\n纸退后！\n你把问件交出，自己让到门侧。第九十六招，一柄剑横进两人之间：顾再进先撞剑，燕再掌腕落剑脊。陆青崖已经在那里。\n若我们不收？\n那我陪。\n两人收了。你没把这一剑写成两人自行决定平手，门外极深和返真之间的距离，是刚才真站到两人手腕前的那一下。\n这张问的是怎么借，不是刚才谁赢。方才没答的，还请留下。\n我同你收。我的那张差点被你踩到，这回算我没说清放哪儿。\n你们把椅子放回圆里，争论也没有被偷偷搬到桌下。\n白日十四人围一圈，晚上分成许多小桌。你送问件时，才听见六大内部也不是一句话。\n找回七问，照遗命抄给十四家。\n少林赞成，武当赞成却要给高卷附不能照练的说明；公孙照雪担心十四份一年以后变一百四十份。陆青崖听完，先放下杯。\n真靠抄书就能追上华山，那华山也该下去了。\n旁边的年轻弟子笑了一声，见本门老人没笑，又把嘴闭上。陆也没等一桌人附和才喝下一口茶。\n这是白日递过的问件。附注若有，给送到外面的前两卷也留一份。\n明早来取。我得先问张掌门要那几条，他的字你若认不出，拿来找我。\n你坐下等，错过最后一碗热汤。禾生给你留了半块饼，抱怨汤倒得比你的字还快。\n八家几桌也在争。闻与妙澄认为六大不是凶手，顾还有保留，河东裴照庭却一直问同一件事。\n谁能在少林两位入化长老眼皮底下杀周北衡？\n周房中窗台下一点青灰，起先当香灰收着。妙澄认出盐水长期浸过的船木烧灰；中原大量用这种木的地方，指向伏牛东南废旧河道。同光会的旧名终于进了案卷。\n萧天策。\n他早年旧总谱十三，没有返真，最擅布局、借势、拆盟。年轻时因出身被拒，晚年收逐徒、遗徒和困在入化的人。他右手少根小指。\n那少林外院，也是他？\n那一条不能因为少根手指，就都接到他身上。\n青城许问岑又提出闻人宿：旧总谱第八，失踪四十余年，老师最后见他，只说快进去了。若仍活，如今极可能已返真。一个负责局，一个负责杀，学各家外形的人再留下最显眼的假痕。\n萧的右手，是活口亲见。闻人的下落，是前辈旧见和如今推断。两条都留。\n如此才好继续问。二十七个人，不是认出一个名字就能全部结案。\n录事用两层纸包灰样，你替他托底。他仍不放心，追着又塞给你一只小木匣。\n十四家终于合查，三路都故意混编六大与八家。慧寂要随闻、燕、许问岑查伏牛旧河，另有急报与核录的人留嵩阳接返程。\n若查案还分六和八，萧天策已经赢了一半。\n出发前还有半日，你能把一路的准备做熟。两份差事，一份问旧水道与溪沟，一份核旧院回报的收转人，不是再拿一张漂亮地图便都算自己走过。\n我要问断流以后走哪儿。旧图照抄的，先别跟我说河上能过船。\n我带你找一个人。他只走过半段，你别一问就是整座伏牛山。\n你们绕回溪沟认过落脚处，少抄了半日信。旧院转报的班次由值房安排，若留下，仍得自己补问。\n路要真分了。前面同你核过副报的人在门边等，愿接你的下一程；另一人仍有本门任务，不可能两边都陪。\n禾生要把假扉页怎样混入真本写到抄手能辨，阿笙想让混编以后谁接谁的话不再靠喊掌门名。两人要的，不只是这一次跟你站在一起。\n你先同我把那两份核过，后面我跟你接。不是金陵派我来看你抄错字。\n那也得等我错了能说。\n这个我不等掌门发话。\n我留。出路那份送走，我不在院中替没到过的山谷记亲见。\n你把回程收转簿放到门边。有人嫌留着无事，你还不知道这一夜会有多少人找这张桌。\n各路离院。杯子还未收净，圆里的椅子空出许多。你接下的不是谁赢的预告，是出了事时别人真能找到的一个位置。\n你留在嵩阳。空椅子围着，司马归元坐院中喝茶，像全院只有他没听见急讯。你来换水，他让你把新一壶放在另一边。\n别都端走。回来的人也要喝。\n您不走？\n有人会去。\n你没听出哪处新线索，只好先把杯放稳。午后，萧天策从原来出入送件的门回来了，右手缺小指。\n我去后门。有消息就从这边应。\n去。\n你放下空托盘，转身时听见萧问他为何不去救人，语气像认定这一院早该空了。\n你知道我回来？\n不知道。\n那为何留下？\n聪明人总想多走一步。我懒得跟。\n萧先出手。旧总谱前列、准备多年，前二十招竟占先。三十招以后，司马开始把针对太极准备的东西一件件拆掉。\n第六十余招第一掌中，第七十余第二掌中。第八十一招，司马掌停萧心口。\n这就是返真？\n这只是我。\n萧忽捏碎袖中烟珠，院后同时起火。你这才知道，他从未打算靠自己在院里赢过司马；真正抢卷的人正进后院。\n正封匣有人接！抄件先放，人从后门退！\n烟里传来应声，你把桌边水泼湿外衣，伏低去接人，没往萧和司马之间钻。\n烟从后院灌过来。司马仍在拦对手，你不能把那一掌挡住的人数，当成每扇门后都有人接应。\n你先前把半日用在水道，院中转报只看过安排。火起有人向前院送，人却等在后门，应声隔了墙。你折回去，把一名抄手拖过倒架，自己袖口也灼破。\n别再等那个名字。后门有人，先走！\n抄手活着，右臂烫伤，养伤三个月。原封匣仍送出，副件烧坏；他的课和抄差要有人接，不是急火过去便一笔销掉。\n他抄的最后一页给我。我先接下一班，后面请值房排人，不让人只见缺件又催他握笔。\n禾生把半张焦纸夹进自己的课簿，翻开干净一页，手抖得第一行写歪了。\n正封已出，副件缺一角，伤的人另列。回来的录事先核哪份，按这张找。\n你报出后门那一班，终于不是全院人互相喊都有人收。\n华山先识南逃路线为假，陆青崖即折返；昆仑从另一面截回，武当接鸽讯，天海宗循水路最快。十四家一夜回流，同光会反被堵在三面。\n你留下的一张收转簿只接其中一段。各路有各路的判断，不是门主们忽然都等着你喊一声才肯回头。\n我在嵩阳，这一夜见到的在这里。谷中谁先过沟，我没有看过。\n你写亲见两字时终于不用猜。快脚后来带来溪沟那一份，纸上有先送弟子的原话。\n东门的消息到了外廊。你身在旧院，还是尚随伤队在路上，决定了这一场如何进入你的记忆。\n你留在院里接返队，东门的刀兵还未停。送完近处伤者，从外廊望见闻人宿遇上陆青崖。两位返真，没有试探，二十余招已见血。\n第三十七招闻人贴剑抢近，想借长剑近身难转逼陆弃路。陆真的松剑。剑落，两指已先到眉前；闻人侧头，长剑恰入陆另一手。\n反剑上挑。第四十一招，剑尖停闻人咽喉。你原来预备往里送的那一只水碗还端着，连叫一声都没来得及。\n你入返真多久？\n二十七年。\n难怪。\n闻人认输。都是返真，也不是一样；你站在门外看见的是一次握与松，不是得到一套照着背便能赢过返真的诀窍。\n水放这边。\n陆在外廊接过，问伤者是否安顿。你答了自己接的那一班，不替全院说都好了。\n急报和慢队终于在旧院汇合。两张一路被雨浸过、一路有烟熏的纸放在一起，你先辨出写字的人，才辨出彼此错过的半场危局。\n随队者讲伏牛旧河早断，许问岑先识假图；两侧火石齐下，慧寂先震树过沟送弟子。闻人现身，燕、许、闻三人围攻六十余招仍没扳回。\n等弟子全部撤过，慧寂才转身。两位返真六十余招同时伤及彼此，闻人吐血入火，慧寂阻追，前方山壁旋即崩落。你在院里没见那座树桥，记时也留下随队者的姓名。\n我不在的那段，写谁见，不只写我听懂。\n等会儿，我刚换了笔尖。你慢些报，第三个人名又扎破纸了。\n给他留点地方，后面还得写欠我的鞋钱。\n你们还真算了一回鞋钱，抄到第三行，才一起发现这几日头一回能为这种小事争。\n萧天策被押回十四张椅子中间。想掀这张桌的人，第一次真坐到了圆里。顾先问书，闻却问他到底想要什么。\n一个没有门第的江湖。\n十七岁想拜大门，连山门进不去；二十七岁能胜内院弟子；三十七岁被请作外门客卿，问为何非正传，只得没有根三个字。\n所以要把这场事推到二十七个人头上？\n萧望向名册。闻道尘把它推到他面前，指尖停在第二十四个朱名上。萧没有接那张纸。\n所以你要毁所有大宗？\n我只是想看看。把你们几百年攒的全摆上桌，六大还是不是六大。\n会。\n萧一愣，像所有答复都预备过，偏没留这一句的位置。\n你把太极所有谱都抄出去，太极还是太极。谱是死的，人是活的。\n青石驿失踪的见证人，案中还未归的卷，都另列着。请继续问。\n录事念到失踪者，萧抬了抬眼，没有答。闻道尘让录事坐下，把那一项移到最前，继续问。\n清点到最后，事情又露出一层荒唐：萧手里只有前三卷。季老早知同运太险，后四卷一直由另一弟子藏在鹿门山中。\n他分开时，连我也没知道全部去处。后来听原卷尽失，我也当七卷都失了。\n这次交接，不能还只写七卷两个字。\n分卷验。哪一卷哪一人接，都验。\n半个江湖被闹动，真正拿走的却不到一半。抄单要重开，死者名册却不会因这件事有多荒唐就变轻。\n前三卷回收，后四另交。原来的“尽失”，保留当时为何那样报，下面添复核结果。\n旧单也给我。这行尽失是我写的，我在下面改，不能让你替我签。\n两条收件路在鹿门汇合，各自留下见证，不让一份新齐单替代全部来路。\n凶手被制，十四门会反而议得更久。闻道尘最后提出：原卷封鹿门，不入一家；十四家各抄；前两卷逐步外流，第三至七只准真正走到入化后完整借阅。\n把看不懂的先照练，前人真得来的东西，也可能害后来的人。\n我同意。模仿一家的形，和真走过那条路，差得太远。\n你想起真卷上那句假扉页。此刻不是十四个人都不再有私心，而是连最反对限制的人，也见到了只看见外形会怎样一路伤人。\n你前头递的问件被翻出来，外流前两卷附带说明的收件人另列。不是年轻门人问过，便能取得高卷，却终于能把不能照练的理由带给只听过封书传言的人。\n散席前，司马叫住你，把昨夜答应的附注递来。三处字旁另有小楷，是他怕你认错，重新写过的。你夹进前两卷，今日不必再等一封催信。\n白日收回的问件还在原匣。你把学生问的那句展给录事，原题下添上带读与限阅的答复，交回去时仍认得提问人的字。\n我去送。哪处只收了书、还没有人讲，回报也请留这一项。\n往南的先停一日。那边带读的人还没到，我把回信催来，你一并带。\n你改了自己的行期，不替两位同伴一并答应全年都上路。\n议约不是盟约。十四家往后仍会争、会打、会抢人和路，只是两家以上顶层人物之死不凭招痕定凶；六大八家争议至少三家共验；跨宗高层遗录若原主无明确指定，不由一家独占。\n顾坚持添榜、门、世家有别，武道无籍。陆没有反对。你们抄最后一行时，纸终于没有再被拿去垫椅子。\n木匠那一卷，要不给我留着。\n写在你那册。下回若又量椅子，先把纸收好。\n两人笑完，还是各拿回自己的差事。你想请同伴再接一程，也得先问这回要误哪一班。\n头两趟我同你接。后面我回金陵教新抄手，假扉页那一课不能总等我师父来骂。\n两趟。再请你，另约时日。\n他把自己的日子划出来，没用全听你的替代一句有始有终的答应。\n到了日子你走。剩下这一份，写我的名字。\n禾生把到日标清，阿笙把交班处圈好。你们各有回去的地方，仍能在下一次真约定的时候认得彼此。\n大会散后，闻道尘在少室山脚又留两日。你去送最后一份抄件，听他问慧寂：我真的离返真很远？伏牛谷，三人打闻人宿，差得太清楚。\n你离门很近。\n这句话，我听了十五年。\n很近，不是说你明年进去。是说你这一生，已有资格真正站在门前看。\n闻停了许久，又问里面差别何以仍大。慧寂说闻人刚进去，陆已经走了二十七年。\n所以里面也还是一样。\n武道什么时候不是这样？\n闻道尘把杯里冷茶喝尽，伸手又提壶。壶已空了。他看一眼慧寂，两人忽然又笑起来。\n这一份收好了。我按约回去。\n去。下次你来，不一定有十四家等着，也还会有人等一张该到的纸。\n你拱手出门。山脚路不窄，却仍有人走得快，有人要停一回。\n闻道尘后来活到一百一十余，最终没有返真。太玄后人更多叫他十四门会的闻道尘，而不是那个没能进去的门主。你后来写身后录，没有把他的笑改成已经预知会赢。\n七问流出一部分，六大仍六大，八家仍八家，没有谁因此忽然多出三个返真。原卷、借阅、授课、验案，各要后来的人继续做。\n旧院那名抄手养臂三个月，回来先接短课。你把代下的那份还他，没有拿自己曾救过他，便要求他照你留下的每一行写。\n最初同送的两家试痕副报仍在，往后的共同验案有人肯带你去做交接。亲见者当时留下的名字，终于不只在这一次危局里有用。\n约定的那天，同伴按期离开。余下的回信由你跑，课由你补；来借书的人催到门口时，你才知道自己答应的剩下这一份有多重。\n你把前两卷送出鹿门，同行的人会换，收件处也会换。有人只想抢先抄一句，你便等他把附注翻开，再说哪处还须问老师。到八月，接班者真站在路口，你没有让所有人永远等着同一个人回来。',
+    expected: /最先回来的两名传讯人/,
+    operator: 'match',
+    diff: 'simple'
+  }

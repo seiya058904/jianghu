@@ -1,0 +1,12 @@
+✔ Ending direction retains exact pre-change V6 and frozen V5 bytes (1.465ms)
+✔ Every affected ending beat in nine complete routes migrates only presentation while keeping every word, option and command (5038.1751ms)
+✔ Frozen validation rejects forged stage/runtime/commands, wrong versions and non-cosmetic changes (227.1891ms)
+✔ Ending views reflect the actual people and work without generating outcome-specific illustrations (176.5375ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5567.128

@@ -1,0 +1,3845 @@
+{
+  "scope": "All 256 combinations of eight named dimensions, other choices first legal. Not exhaustive over 21 decisions.",
+  "rows": [
+    {
+      "mask": 0,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 1,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 2,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 3,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 4,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 5,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 6,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 7,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 8,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 9,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 10,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 11,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 12,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 13,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 14,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 15,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 16,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 17,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 18,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 19,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 20,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 21,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 22,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 23,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 24,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 25,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 26,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 27,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 28,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 29,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 30,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 31,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 32,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 33,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 34,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 35,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 36,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 37,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 38,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 39,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 40,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 41,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 42,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 43,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 44,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 45,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 46,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 47,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 48,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 49,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 50,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 51,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 52,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 53,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 54,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 55,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 56,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 57,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 58,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 59,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 60,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 61,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 62,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 63,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 64,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 65,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 66,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 67,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 68,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 69,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 70,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 71,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 72,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 73,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 74,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 75,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 76,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 77,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 78,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 79,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 80,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 81,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 82,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 83,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 84,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 85,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 86,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 87,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 88,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 89,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 90,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 91,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 92,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 93,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 94,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 95,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 96,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 97,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 98,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 99,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 100,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 101,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 102,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 103,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 104,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 105,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 106,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 107,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 108,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 109,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 110,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 111,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 112,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 113,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 114,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 115,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 116,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 117,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 118,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 119,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 120,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 121,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 122,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 123,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 124,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 125,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 126,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 169,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 127,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_teach"
+      ],
+      "frames": 170,
+      "ending": "st_next_step"
+    },
+    {
+      "mask": 128,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 129,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 130,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 131,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 132,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 133,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 134,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 135,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 136,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 137,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 138,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 139,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 140,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 141,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 142,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 143,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 144,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 145,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 146,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 147,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 148,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 149,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 150,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 151,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 152,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 153,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 154,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 155,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 156,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 157,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 158,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 159,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 160,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 161,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 162,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 163,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 164,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 165,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 166,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 167,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 168,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 169,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 170,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 171,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 172,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 173,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 174,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 175,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 176,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 177,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 178,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 179,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 180,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 181,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 182,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 183,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 184,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 185,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 186,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 187,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 188,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 189,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 190,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 191,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_talk",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 192,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 193,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 194,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 195,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 196,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 197,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 198,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 199,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 200,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 201,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 202,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 203,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 204,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 205,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 206,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 207,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 208,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 209,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 210,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 211,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 212,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 213,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 214,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 215,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 216,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 217,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 218,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 219,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 220,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 221,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 222,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 223,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_pay_waiting",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 224,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 225,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 226,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 227,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 228,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 229,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 230,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 231,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 232,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 233,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 234,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 235,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 236,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 237,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 238,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 239,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_shared_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 240,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 241,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 242,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 243,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 244,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 245,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 246,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 247,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_set_transfer_line",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 248,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 249,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 250,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 251,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_follow_motion",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 252,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 253,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_exchange",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 254,
+      "choices": [
+        "st_learn_shared_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 169,
+      "ending": "st_next_watch"
+    },
+    {
+      "mask": 255,
+      "choices": [
+        "st_learn_fast_knot",
+        "st_practice_alone",
+        "st_release_fixed",
+        "st_send_nearest_people",
+        "st_prepare_fast_post",
+        "st_rehearse_handoff",
+        "st_repair_work",
+        "st_life_patrol"
+      ],
+      "frames": 170,
+      "ending": "st_next_watch"
+    }
+  ]
+}

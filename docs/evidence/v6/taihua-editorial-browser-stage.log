@@ -1,0 +1,36 @@
+
+Running 1 test using 1 worker
+
+(node:53308) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 tests\taihua-editorial-stage.spec.ts:5:1 › Taihua V3 exact night doorway, six-hand CG and Mu return: real text, exits and decoded existing art at three sizes and two themes (11.3s)
+
+
+  1) tests\taihua-editorial-stage.spec.ts:5:1 › Taihua V3 exact night doorway, six-hand CG and Mu return: real text, exits and decoded existing art at three sizes and two themes
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  locator('[data-character="th_mu"]')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" locator('[data-character="th_mu"]') with timeout 5000ms
+      - waiting for locator('[data-character="th_mu"]')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      4 | const prefix='jianghu:chronicle:taihua:v3:';
+      5 | test('Taihua V3 exact night doorway, six-hand CG and Mu return: real text, exits and decoded existing art at three sizes and two themes',async({browser})=>{
+    > 6 |  for(const target of ['th_supper_8','th_six_open_4','th_mu_front_5'])for(const dark of [false,true])for(const [width,height]of [[360,800],[800,360],[1440,900]]){const s=new VNRuntime(current,'taihua-3.0.0');while(s.frame.id!==target){if(s.frame.ending)throw Error(target);s.frame.choices.length?s.choose(s.frame.choices[0].id):s.advance()}const context=await browser.newContext({viewport:{width,height},reducedMotion:'reduce'}),page=await context.newPage();await page.addInitScript(({prefix,raw,dark})=>{if(!localStorage.getItem(prefix+'auto'))localStorage.setItem(prefix+'auto',raw);localStorage.setItem(prefix+'settings',JSON.stringify({speed:0,size:24,reduced:true,dark}))},{prefix,raw:JSON.stringify(s.save()),dark});await page.goto('/taihua.html#play');await expect(page.locator('#dialogue-visible')).toHaveText(s.frame.text);if(target==='th_mu_front_5')await expect(page.locator('[data-character="th_mu"]')).toHaveAttribute('data-look','v2');else await expect(page.locator('.play-stage')).toHaveAttribute('data-cg',target==='th_supper_8'?'nightCompany':'mountainInquiry');await page.locator('.scene-background,.portrait').evaluateAll(async ns=>{for(const n of ns)for(const m of getComputedStyle(n).backgroundImage.matchAll(/url\(["']?([^"')]+)["']?\)/g)){const im=new Image();im.src=m[1];await im.decode()}});await page.screenshot({path:`docs/evidence/v6/taihua-editorial-stage-${target}-${dark?'dark':'paper'}-${width}.png`});const steps=target==='th_supper_8'?2:1;for(let i=0;i<steps;i++){await page.locator('#advance-button').click();s.advance();await expect(page.locator('#dialogue-visible')).toHaveText(s.frame.text)}if(target==='th_mu_front_5')await expect(page.locator('[data-character="th_mu"]')).toHaveCount(0);else await expect(page.locator('.play-stage')).not.toHaveAttribute('data-cg',/nightCompany|mountainInquiry/);await context.close()}
+        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^
+      7 | });
+      8 |
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\taihua-editorial-stage.spec.ts:6:1712
+
+    Error Context: test-results-taihua-editorial-stage\taihua-editorial-stage-Tai-bf00d--three-sizes-and-two-themes\error-context.md
+
+  1 failed
+    tests\taihua-editorial-stage.spec.ts:5:1 › Taihua V3 exact night doorway, six-hand CG and Mu return: real text, exits and decoded existing art at three sizes and two themes

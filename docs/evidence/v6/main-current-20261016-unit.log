@@ -1,0 +1,16 @@
+✔ v6 preview preserves eight reachable ending families while all three chapter-seven/nine/ten paths and independent after-scenes run (577.46ms)
+✔ v6 preview samples route variants without a dead end and reports genuinely unvisited source nodes (3935.9763ms)
+✔ five distinct canon incidents change later practical outcomes while holding the other choices fixed (141.4274ms)
+✔ early injuries accumulate across chapters: each single contribution can change a prepared rescue into the scar outcome (160.4667ms)
+✔ the promised extra month survives every ending family instead of disappearing when the player leaves the harbor (178.753ms)
+✔ thirty manually reviewed main decisions retain exclusive later consequences, including ten delayed high-weight decisions (1408.5037ms)
+✔ frozen v5 content matches the pre-v6 baseline bytes (1.1697ms)
+✔ all eight frozen v5 endings and pending choices restore with identical world and stage (4755.7329ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6525.0334

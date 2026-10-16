@@ -1,0 +1,51 @@
+{
+  "status": "ACTUAL_SOURCE_SNAPSHOTS",
+  "rows": [
+    {
+      "file": "docs/archives/longmen-editorial-rounds/round1/longmen-author.mjs",
+      "sha256": "80463b0f6ea907b628a9b96b437717fbb5bada4f31c14e41082ba0eeab85e62e",
+      "bytes": 24035
+    },
+    {
+      "file": "docs/archives/longmen-editorial-rounds/round1/longmen-night.mjs",
+      "sha256": "e5beef02553944cc502cf3b37f3191a1733ffc92d18131f2f5db797b49e4bc11",
+      "bytes": 8026
+    },
+    {
+      "file": "docs/archives/longmen-editorial-rounds/round1/longmen-scenes.mjs",
+      "sha256": "614e20fcb2281bec08c69aa4910a7967d5eca52e514775dcadc17412964d7f45",
+      "bytes": 8409
+    },
+    {
+      "file": "docs/archives/longmen-editorial-rounds/round2/longmen-author.mjs",
+      "sha256": "657063d303b4550b971fe6425a9577ae6740c376b4f57ecf64e3adf4a270a5f2",
+      "bytes": 24176
+    },
+    {
+      "file": "docs/archives/longmen-editorial-rounds/round2/longmen-night.mjs",
+      "sha256": "d528adca9bf7ff145f09dff1f3c289d76eaca67afd5e89e5b4a75a901e5cd59a",
+      "bytes": 8026
+    },
+    {
+      "file": "docs/archives/longmen-editorial-rounds/round2/longmen-scenes.mjs",
+      "sha256": "ed8be56f3f5173d137af72f6997df85a1445b1b2fe4c6554ded45512bc23b6ad",
+      "bytes": 8418
+    },
+    {
+      "file": "docs/archives/longmen-editorial-rounds/round3/longmen-author.mjs",
+      "sha256": "a6d168f617c31fa669eb826efc57f375d986b57c2a98472271113da08c87768c",
+      "bytes": 25334
+    },
+    {
+      "file": "docs/archives/longmen-editorial-rounds/round3/longmen-night.mjs",
+      "sha256": "75754aafea8f99af46e761162d308b296627ca893fbb2553351b85367dcc7668",
+      "bytes": 8047
+    },
+    {
+      "file": "docs/archives/longmen-editorial-rounds/round3/longmen-scenes.mjs",
+      "sha256": "ed8be56f3f5173d137af72f6997df85a1445b1b2fe4c6554ded45512bc23b6ad",
+      "bytes": 8418
+    }
+  ],
+  "limits": "Passive historical sources; relative imports are retained, not runnable from archive directory."
+}

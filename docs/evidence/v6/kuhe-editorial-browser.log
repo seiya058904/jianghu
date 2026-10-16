@@ -1,0 +1,52 @@
+
+Running 24 tests using 1 worker
+
+  ok  1 tests\default-entry.spec.ts:11:225 › Default V6 root: shared alias progress, real V5 preservation and direct archive resume/export (793ms)
+  ok  2 tests\default-entry.spec.ts:11:225 › Default V6 index: shared alias progress, real V5 preservation and direct archive resume/export (679ms)
+  ok  3 tests\default-entry.spec.ts:11:225 › Default V6 subroot: shared alias progress, real V5 preservation and direct archive resume/export (676ms)
+  ok  4 tests\default-entry.spec.ts:11:225 › Default V6 subindex: shared alias progress, real V5 preservation and direct archive resume/export (702ms)
+  ok  5 tests\default-entry.spec.ts:20:1 › Default V6 covers and direct old-save links remain visible, hittable and usable at seven sizes (5.4s)
+  ok  6 tests\default-entry.spec.ts:24:107 › Default V6 root: download replaces stale root/index HTML and cold story chunks, retaining other offline data (735ms)
+  ok  7 tests\default-entry.spec.ts:24:107 › Default V6 subpath: download replaces stale root/index HTML and cold story chunks, retaining other offline data (742ms)
+  ok  8 tests\default-entry.spec.ts:32:1 › Library and chronicle return links lead to default V6 at root and subpath (775ms)
+  ok  9 tests\kuhe-editorial.spec.ts:8:25 › Kuhe V3 real full route 0, identity changes and personal aftermath (1.0m)
+  ok 10 tests\kuhe-editorial.spec.ts:8:25 › Kuhe V3 real full route 1, identity changes and personal aftermath (1.0m)
+  ok 11 tests\kuhe-editorial.spec.ts:11:1 › Kuhe archive preserves pending auto, manual, previous and dark settings, while v3 rejects v2 imports (430ms)
+  ok 12 tests\kuhe-editorial.spec.ts:14:1 › Kuhe new wounded/empty states and CG decode offline at root and subpath (1.5s)
+  ok 13 tests\kuhe-editorial.spec.ts:17:1 › Kuhe three identities, short elder, locking close-up and choices remain usable at seven sizes (4.3s)
+  ok 14 tests\kuhe-editorial.spec.ts:20:1 › Kuhe new CG failure retains reusable valley and live dialogue (220ms)
+  ok 15 tests\kuhe-v2.spec.ts:8:25 › Kuhe V2 real full route 0, identity changes and personal aftermath (56.6s)
+  ok 16 tests\kuhe-v2.spec.ts:8:25 › Kuhe V2 real full route 1, identity changes and personal aftermath (58.6s)
+  ok 17 tests\kuhe-v2.spec.ts:11:1 › Kuhe archive preserves pending auto, manual, previous and dark settings, while v2 rejects v1 imports (419ms)
+  x  18 tests\kuhe-v2.spec.ts:14:1 › Kuhe new wounded/empty states and CG decode offline at root and subpath (1.0m)
+  ok 19 tests\kuhe-v2.spec.ts:17:1 › Kuhe three identities, short elder, locking close-up and choices remain usable at seven sizes (4.4s)
+  ok 20 tests\kuhe-v2.spec.ts:20:1 › Kuhe new CG failure retains reusable valley and live dialogue (235ms)
+  ok 21 tests\kuhe.spec.ts:4:26 › Kuhe actual browser full canonical route 0: choices, rescue aftermath, independent save and ending (57.8s)
+  ok 22 tests\kuhe.spec.ts:4:26 › Kuhe actual browser full canonical route 1: choices, rescue aftermath, independent save and ending (58.5s)
+  ok 23 tests\kuhe.spec.ts:30:1 › Kuhe unvisited late scene is available through explicit per-work offline download on root and subpath (824ms)
+  ok 24 tests\kuhe.spec.ts:45:1 › Kuhe corrected reusable elder, traveler and valley decode with readable panels at seven viewport sizes (1.8s)
+
+
+  1) tests\kuhe-v2.spec.ts:14:1 › Kuhe new wounded/empty states and CG decode offline at root and subpath
+
+    Test timeout of 60000ms exceeded.
+
+    Error: locator.click: Test ended.
+    Call log:
+      - waiting for getByRole('button', { name: '下载《枯河谷 · 门后有人》离线资源', exact: true })
+
+
+      13 | });
+      14 | test('Kuhe new wounded/empty states and CG decode offline at root and subpath',async({browser})=>{
+    > 15 |  for(const root of ['http://127.0.0.1:4173/','http://127.0.0.1:4175/Jianghu/']){const context=await browser.newContext(),page=await context.newPage();await page.goto(root+'kuhe-v2.html');await page.evaluate(async()=>{await navigator.serviceWorker.ready});await page.reload();await page.getByRole('button',{name:'设置',exact:true}).click();await page.getByRole('button',{name:'下载《枯河谷 · 门后有人》离线资源',exact:true}).click();await expect(page.getByRole('dialog')).toContainText('离线资源已备好');await page.keyboard.press('Escape');await context.setOffline(true);for(const target of ['kh_bell_13','kh_three_old_5','kh_lock_2']){const s=at(target);await page.getByRole('button',{name:'Jianghu 封面',exact:true}).click();await page.evaluate(({prefix,raw})=>{localStorage.setItem(prefix+'auto',raw);localStorage.setItem(prefix+'settings',JSON.stringify({size:24,speed:0,reduced:true}))},{prefix,raw:JSON.stringify(s.save())});await page.goto(root+'kuhe-v2.html#play');await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',target);await decoded(page);if(s.frame.choices.length)await page.locator(`[data-choice="${s.frame.choices[0].id}"]`).click();else await page.locator('#advance-button').click();await expect(page.locator('#app')).not.toHaveAttribute('data-beat',target)}await context.close()}
+         |                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+      16 | });
+      17 | test('Kuhe three identities, short elder, locking close-up and choices remain usable at seven sizes',async({browser})=>{
+      18 |  const context=await browser.newContext({reducedMotion:'reduce'}),page=await context.newPage();for(const target of ['kh_three_old_5','kh_lock_2','kh_bell_13']){const s=at(target);for(const [width,height]of [[360,800],[390,844],[412,915],[800,360],[1366,768],[1440,900],[1920,1080]]){await page.setViewportSize({width,height});await page.goto('/kuhe-v2.html');await page.evaluate(({prefix,raw})=>{localStorage.setItem(prefix+'auto',raw);localStorage.setItem(prefix+'settings',JSON.stringify({size:24,speed:0,reduced:true}))},{prefix,raw:JSON.stringify(s.save())});await page.goto('/kuhe-v2.html#play');await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',target);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);if(target==='kh_lock_2'){await expect(page.locator('#actors .actor:visible')).toHaveCount(1);const face=await page.locator('[data-character="kh2_gui"]').boundingBox();expect(face&&face.width>=Math.min(width*.6,600)).toBeTruthy()}await decoded(page);if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/kuhe-editorial-archive-v2-stage-${target}-${width}.png`});if(s.frame.choices.length){for(const choice of s.frame.choices){const button=page.locator(`[data-choice="${choice.id}"]`);await button.focus();await button.scrollIntoViewIfNeeded();const b=await button.boundingBox();expect(b&&b.x>=0&&b.y>=0&&b.x+b.width<=width+1&&b.y+b.height<=height+1).toBeTruthy()}await page.keyboard.press('Enter')}else{await page.locator('#advance-button').focus();await page.keyboard.press('Enter')}await expect(page.locator('#app')).not.toHaveAttribute('data-beat',target)}}await context.close();
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\kuhe-v2.spec.ts:15:408
+
+    Error Context: test-results\kuhe-v2-Kuhe-new-wounded-e-77333-offline-at-root-and-subpath\error-context.md
+
+  1 failed
+    tests\kuhe-v2.spec.ts:14:1 › Kuhe new wounded/empty states and CG decode offline at root and subpath
+  23 passed (7.3m)

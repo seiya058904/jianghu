@@ -1,0 +1,12 @@
+[
+  {
+    "side": 0,
+    "frames": 200,
+    "ending": "qk_open_lesson"
+  },
+  {
+    "side": 1,
+    "frames": 196,
+    "ending": "qk_open_mountain"
+  }
+]

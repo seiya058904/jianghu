@@ -1,0 +1,14 @@
+import {writeFileSync} from 'node:fs';
+import {createWriter} from './chronicle-writer.mjs';
+import {writeYoung} from './luhua-young.mjs';
+import {writeSeat} from './luhua-seat.mjs';
+import {writeSeven} from './luhua-seven.mjs';
+import {writeTide} from './luhua-tide.mjs';
+import {writeMountain} from './luhua-mountain.mjs';
+import {writeAfter} from './luhua-after.mjs';
+const w=createWriter('lh_');
+for(const write of [writeYoung,writeSeat,writeSeven,writeTide,writeMountain,writeAfter])write(w);
+const flags=['first_work','market_listen','shared_retreat','jiao_line','master_real','whole_boat','chen_rope','jiang_change','raid_help','box_people','child_listen','defend','once','wei_again','defeat_plain','relief','count_boats','winter_teach','try_gap','market_walk','medicine_walk','south_loss','tang_next','last_hand'];
+const looks={lh_half_blade_1:'lh_meng=mid',lh_five_people_1:'lh_meng=late',lh_town_names_1:'lh_apo=adult'};
+const body=w.render().split('\n').map(line=>{const id=line.match(/# beat:(\S+)/)?.[1];return id&&looks[id]?line+' # look:'+looks[id]:line}).join('\n');
+writeFileSync('story/luhua.ink','// Source: 宋世江湖34836–35057. Liang viewpoint; unnamed ordinary companions and choice costs are compatible additions.\n'+flags.map(k=>`VAR lh_${k} = false`).join('\n')+'\nVAR lh_late = 0\n-> eleven\n'+body);

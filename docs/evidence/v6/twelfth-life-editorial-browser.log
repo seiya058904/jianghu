@@ -1,0 +1,102 @@
+[WebServer] (node:53068) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 29 tests using 2 workers
+
+(node:51600) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31820) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  2 tests\default-entry.spec.ts:11:225 › Default V6 root: shared alias progress, real V5 preservation and direct archive resume/export (929ms)
+  ok  3 tests\default-entry.spec.ts:11:225 › Default V6 index: shared alias progress, real V5 preservation and direct archive resume/export (691ms)
+  ok  4 tests\default-entry.spec.ts:11:225 › Default V6 subroot: shared alias progress, real V5 preservation and direct archive resume/export (703ms)
+  ok  5 tests\default-entry.spec.ts:11:225 › Default V6 subindex: shared alias progress, real V5 preservation and direct archive resume/export (682ms)
+  ok  1 tests\royal-letters-cg.spec.ts:14:1 › Royal old CG-entry auto and slots retain raw bytes, restore seven sizes, and release before the choice (6.6s)
+  ok  7 tests\royal-letters-cg.spec.ts:19:1 › Royal old pending choice migrates without consuming a response (288ms)
+  ok  8 tests\royal-letters-cg.spec.ts:22:1 › Royal illustration night and failure fallback remain readable and controllable (537ms)
+  ok  9 tests\royal-letters-cg.spec.ts:25:1 › Royal frozen validation and new illustration work from a fresh offline page at root and subpath (1.1s)
+  ok  6 tests\default-entry.spec.ts:20:1 › Default V6 covers and direct old-save links remain visible, hittable and usable at seven sizes (5.6s)
+  ok 11 tests\default-entry.spec.ts:24:107 › Default V6 root: download replaces stale root/index HTML and cold story chunks, retaining other offline data (823ms)
+  ok 12 tests\default-entry.spec.ts:24:107 › Default V6 subpath: download replaces stale root/index HTML and cold story chunks, retaining other offline data (764ms)
+  ok 13 tests\default-entry.spec.ts:32:1 › Library and chronicle return links lead to default V6 at root and subpath (885ms)
+  ok 14 tests\twelfth-life-v2.spec.ts:8:1 › Lu actual five sprite files, letter-room transition and seven sizes restore (4.3s)
+  ok 15 tests\twelfth-life-v2.spec.ts:13:1 › Lu new age and expression resources decode offline at root and subpath (865ms)
+  ok 16 tests\twelfth-life-v2.spec.ts:16:1 › Royal life v1 pending slot remains on archive and wrong import is rejected by v2 (473ms)
+  ok 17 tests\twelfth-life-v2.spec.ts:19:1 › Twelfth Life Lu identity epochs retain no merchant prop at sealing and retains late-age separation (1.6s)
+  ok 10 tests\twelfth-life-editorial.spec.ts:6:25 › Royal V3 actual full biography 0, every text, three refreshes, actual new bout and isolated endings (1.5m)
+  ok 18 tests\twelfth-life-v2.spec.ts:22:25 › Twelfth Life actual biography 0, companion preserved and posthumous epilogue distinct (1.4m)
+  ok 19 tests\twelfth-life-editorial.spec.ts:6:25 › Royal V3 actual full biography 1, every text, three refreshes, actual new bout and isolated endings (1.5m)
+  ok 21 tests\twelfth-life.spec.ts:6:1 › Twelfth Life neutral Lu template has no merchant prop at sealing and retains late-age separation (1.3s)
+  ok 20 tests\twelfth-life-v2.spec.ts:22:25 › Twelfth Life actual biography 1, companion preserved and posthumous epilogue distinct (1.4m)
+  ok 23 tests\twelfth-life-v2.spec.ts:27:1 › Twelfth Life downloads late Sun resources unvisited, offline at root and subpath (895ms)
+  x  22 tests\twelfth-life.spec.ts:9:25 › Twelfth Life actual biography 0, companion preserved and posthumous epilogue distinct (5.2s)
+(node:53700) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 24 tests\twelfth-life-v2.spec.ts:30:1 › Twelfth Life sealed books, late responsibility reply and deceased teacher fit seven sizes (4.1s)
+  x  25 tests\twelfth-life.spec.ts:9:25 › Twelfth Life actual biography 1, companion preserved and posthumous epilogue distinct (5.4s)
+(node:30492) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 27 tests\twelfth-life.spec.ts:14:1 › Twelfth Life downloads late Sun resources unvisited, offline at root and subpath (985ms)
+  ok 28 tests\twelfth-life.spec.ts:17:1 › Twelfth Life sealed books, late responsibility reply and deceased teacher fit seven sizes (3.7s)
+  ok 26 tests\twelfth.spec.ts:6:26 › Twelfth complete career 0, visible age changes and no deceased teacher on stage (36.2s)
+  ok 29 tests\twelfth.spec.ts:6:26 › Twelfth complete career 1, visible age changes and no deceased teacher on stage (36.0s)
+
+
+  1) tests\twelfth-life.spec.ts:9:25 › Twelfth Life actual biography 0, companion preserved and posthumous epilogue distinct
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  locator('#app')
+    Expected: "rl_three_wins_2"
+    Received: "rl_three_wins_1"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveAttribute" locator('#app') with timeout 5000ms
+      - waiting for locator('#app')
+        14 × locator resolved to <div id="app" data-beat="rl_three_wins_1" data-phase="awaitingAdvance">…</div>
+           - unexpected value "rl_three_wins_1"
+
+
+       9 | for(const side of [0,1])test(`Twelfth Life actual biography ${side}, companion preserved and posthumous epilogue distinct`,async({page})=>{
+      10 |  test.setTimeout(210000);const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await page.addInitScript(()=>{localStorage.setItem('jianghu:chronicle:twelfth-life:v1:settings',JSON.stringify({speed:0,reduced:true,size:20}));localStorage.setItem('jianghu:chronicle:twelfth:v1:sentinel','companion-kept');localStorage.setItem('jianghu:campaign:tide:v1:sentinel','v5-kept')});await page.setViewportSize({width:side?390:1440,height:side?844:900});await page.goto('/twelfth.html');await page.getByRole('link',{name:'赵承晏 · 本人生涯',exact:true}).click();await expect(page.getByRole('link',{name:'陪练篇 · 馆师视角',exact:true})).toBeVisible();await page.getByRole('button',{name:'回院取那块玉佩',exact:true}).click();const s=new VNRuntime(content,version);let choices=0;
+    > 11 |  while(!s.frame.ending){await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);if(s.frame.speaker==='rl_boardelder')await expect(page.locator('[data-character="qw_xue"]')).toHaveCount(0);if(s.frame.text.includes('陈三平去世'))await expect(page.locator('#actors .actor')).toHaveCount(0);if(['rl_seal_books_1','rl_capital_three_1'].includes(s.frame.id)){await decoded(page);await page.screenshot({path:`docs/evidence/v6/twelfth-life-editorial-archive-v1-${s.frame.id}-${side}.png`})}if(s.frame.id==='rl_old_book_1')await expect(page.locator('#actors .actor')).toHaveCount(0);if(s.frame.choices.length){const id=s.frame.choices[side].id;await page.locator(`[data-choice="${id}"]`).click();s.choose(id);choices++}else{await page.locator('#advance-button').click();s.advance()}}
+         |                                                            ^
+      12 |  expect(choices).toBe(33);await expect(page.locator('#ending-actions')).toContainText(side?'一封没有求绝学的信':'一起看清一场');await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await decoded(page);await page.screenshot({path:`docs/evidence/v6/twelfth-life-editorial-archive-v1-ending-${side}.png`});expect(await page.evaluate(()=>localStorage.getItem('jianghu:chronicle:twelfth:v1:sentinel'))).toBe('companion-kept');expect(await page.evaluate(()=>localStorage.getItem('jianghu:campaign:tide:v1:sentinel'))).toBe('v5-kept');expect(errors).toEqual([]);
+      13 | });
+      14 | test('Twelfth Life downloads late Sun resources unvisited, offline at root and subpath',async({browser})=>{
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\twelfth-life.spec.ts:11:60
+
+    Error Context: test-results-royal-editorial\twelfth-life-Twelfth-Life--16752-osthumous-epilogue-distinct\error-context.md
+
+  2) tests\twelfth-life.spec.ts:9:25 › Twelfth Life actual biography 1, companion preserved and posthumous epilogue distinct
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  locator('#app')
+    Expected: "rl_three_wins_2"
+    Received: "rl_three_wins_1"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveAttribute" locator('#app') with timeout 5000ms
+      - waiting for locator('#app')
+        14 × locator resolved to <div id="app" data-beat="rl_three_wins_1" data-phase="awaitingAdvance">…</div>
+           - unexpected value "rl_three_wins_1"
+
+
+       9 | for(const side of [0,1])test(`Twelfth Life actual biography ${side}, companion preserved and posthumous epilogue distinct`,async({page})=>{
+      10 |  test.setTimeout(210000);const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await page.addInitScript(()=>{localStorage.setItem('jianghu:chronicle:twelfth-life:v1:settings',JSON.stringify({speed:0,reduced:true,size:20}));localStorage.setItem('jianghu:chronicle:twelfth:v1:sentinel','companion-kept');localStorage.setItem('jianghu:campaign:tide:v1:sentinel','v5-kept')});await page.setViewportSize({width:side?390:1440,height:side?844:900});await page.goto('/twelfth.html');await page.getByRole('link',{name:'赵承晏 · 本人生涯',exact:true}).click();await expect(page.getByRole('link',{name:'陪练篇 · 馆师视角',exact:true})).toBeVisible();await page.getByRole('button',{name:'回院取那块玉佩',exact:true}).click();const s=new VNRuntime(content,version);let choices=0;
+    > 11 |  while(!s.frame.ending){await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);if(s.frame.speaker==='rl_boardelder')await expect(page.locator('[data-character="qw_xue"]')).toHaveCount(0);if(s.frame.text.includes('陈三平去世'))await expect(page.locator('#actors .actor')).toHaveCount(0);if(['rl_seal_books_1','rl_capital_three_1'].includes(s.frame.id)){await decoded(page);await page.screenshot({path:`docs/evidence/v6/twelfth-life-editorial-archive-v1-${s.frame.id}-${side}.png`})}if(s.frame.id==='rl_old_book_1')await expect(page.locator('#actors .actor')).toHaveCount(0);if(s.frame.choices.length){const id=s.frame.choices[side].id;await page.locator(`[data-choice="${id}"]`).click();s.choose(id);choices++}else{await page.locator('#advance-button').click();s.advance()}}
+         |                                                            ^
+      12 |  expect(choices).toBe(33);await expect(page.locator('#ending-actions')).toContainText(side?'一封没有求绝学的信':'一起看清一场');await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await decoded(page);await page.screenshot({path:`docs/evidence/v6/twelfth-life-editorial-archive-v1-ending-${side}.png`});expect(await page.evaluate(()=>localStorage.getItem('jianghu:chronicle:twelfth:v1:sentinel'))).toBe('companion-kept');expect(await page.evaluate(()=>localStorage.getItem('jianghu:campaign:tide:v1:sentinel'))).toBe('v5-kept');expect(errors).toEqual([]);
+      13 | });
+      14 | test('Twelfth Life downloads late Sun resources unvisited, offline at root and subpath',async({browser})=>{
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\twelfth-life.spec.ts:11:60
+
+    Error Context: test-results-royal-editorial\twelfth-life-Twelfth-Life--76dbb-osthumous-epilogue-distinct\error-context.md
+
+  2 failed
+    tests\twelfth-life.spec.ts:9:25 › Twelfth Life actual biography 0, companion preserved and posthumous epilogue distinct
+    tests\twelfth-life.spec.ts:9:25 › Twelfth Life actual biography 1, companion preserved and posthumous epilogue distinct
+  27 passed (4.0m)

@@ -1,0 +1,25 @@
+[WebServer] (node:43104) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 12 tests using 3 workers
+
+(node:22212) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:25024) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:42144) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  3 tests\child-reuse.spec.ts:9:107 › Reusable child root: old V2 pending auto/slot/import retain raw originals; V1 imagery remains unchanged (819ms)
+  ok  2 tests\default-entry.spec.ts:11:225 › Default V6 root: shared alias progress, real V5 preservation and direct archive resume/export (1.2s)
+  ok  4 tests\child-reuse.spec.ts:9:107 › Reusable child subpath: old V2 pending auto/slot/import retain raw originals; V1 imagery remains unchanged (574ms)
+  ok  5 tests\default-entry.spec.ts:11:225 › Default V6 index: shared alias progress, real V5 preservation and direct archive resume/export (846ms)
+  ok  7 tests\default-entry.spec.ts:11:225 › Default V6 subroot: shared alias progress, real V5 preservation and direct archive resume/export (836ms)
+  ok  1 tests\art-manifest.spec.ts:8:107 › Asset manifest: every raster has exact built bytes and browser decode on root (3.1s)
+  ok  8 tests\default-entry.spec.ts:11:225 › Default V6 subindex: shared alias progress, real V5 preservation and direct archive resume/export (891ms)
+  ok 10 tests\default-entry.spec.ts:32:1 › Library and chronicle return links lead to default V6 at root and subpath (995ms)
+  ok  9 tests\art-manifest.spec.ts:8:107 › Asset manifest: every raster has exact built bytes and browser decode on subpath (2.8s)
+  ok  6 tests\child-reuse.spec.ts:13:1 › Reusable child: true alpha, both people, seven sizes, readable dark and paper scenes; later ages keep their files (5.2s)
+  ok 11 tests\child-reuse.spec.ts:18:107 › Reusable child root: cold image and trusted previous chunk are restored by work download and run offline (643ms)
+  ok 12 tests\child-reuse.spec.ts:18:107 › Reusable child subpath: cold image and trusted previous chunk are restored by work download and run offline (640ms)
+
+  12 passed (9.1s)

@@ -1,0 +1,353 @@
+{
+  "status": "PRIMARY_DATA_AND_FROZEN_MIGRATION_CHUNKS_VERIFIED",
+  "registeredWorkCount": 44,
+  "rows": [
+    {
+      "work": "kuhe",
+      "primary": "./assets/kuhe-D9NsAiwb.js",
+      "owners": [
+        "kuhe"
+      ]
+    },
+    {
+      "work": "kuhe-v2",
+      "primary": "./assets/kuhe-v2-BCK9CfnA.js",
+      "owners": [
+        "kuhe-v2"
+      ]
+    },
+    {
+      "work": "kuhe-v1",
+      "primary": "./assets/kuhe-v1-B3nnr8hF.js",
+      "owners": [
+        "kuhe-v1"
+      ]
+    },
+    {
+      "work": "qingshi",
+      "primary": "./assets/qingshi-4b8jMKnm.js",
+      "owners": [
+        "qingshi"
+      ]
+    },
+    {
+      "work": "qingshi-v2",
+      "primary": "./assets/qingshi-v2-BwUstz2D.js",
+      "owners": [
+        "qingshi-v2"
+      ]
+    },
+    {
+      "work": "qingshi-v1",
+      "primary": "./assets/qingshi-v1-D7L0dlDb.js",
+      "owners": [
+        "qingshi-v1"
+      ]
+    },
+    {
+      "work": "two-swords",
+      "primary": "./assets/two-swords-DPx8E6Gy.js",
+      "owners": [
+        "two-swords"
+      ]
+    },
+    {
+      "work": "two-swords-v1",
+      "primary": "./assets/two-swords-v1-BNc0T1Ax.js",
+      "owners": [
+        "two-swords-v1"
+      ]
+    },
+    {
+      "work": "seven-questions",
+      "primary": "./assets/seven-questions-DNMxI_Ec.js",
+      "owners": [
+        "seven-questions"
+      ]
+    },
+    {
+      "work": "seven-questions-v1",
+      "primary": "./assets/seven-questions-v1-CRKKjF8R.js",
+      "owners": [
+        "seven-questions-v1"
+      ]
+    },
+    {
+      "work": "jade-thieves",
+      "primary": "./assets/jade-thieves-1Jkyuev8.js",
+      "owners": [
+        "jade-thieves"
+      ]
+    },
+    {
+      "work": "jade-thieves-v1",
+      "primary": "./assets/jade-thieves-v1-Du-9K4yW.js",
+      "owners": [
+        "jade-thieves-v1"
+      ]
+    },
+    {
+      "work": "jade",
+      "primary": "./assets/jade-BAcBi2iK.js",
+      "owners": [
+        "jade"
+      ]
+    },
+    {
+      "work": "jade-v1",
+      "primary": "./assets/jade-v1-D2hpuAEc.js",
+      "owners": [
+        "jade-v1"
+      ]
+    },
+    {
+      "work": "sea",
+      "primary": "./assets/sea-DWov8XAl.js",
+      "owners": [
+        "sea"
+      ]
+    },
+    {
+      "work": "sea-v1",
+      "primary": "./assets/sea-v1-C9OoPrt5.js",
+      "owners": [
+        "sea-v1"
+      ]
+    },
+    {
+      "work": "sea-tide",
+      "primary": "./assets/sea-tide-CQPXJCpE.js",
+      "owners": [
+        "sea-tide"
+      ]
+    },
+    {
+      "work": "sea-tide-v1",
+      "primary": "./assets/sea-tide-v1-Deaj2zDg.js",
+      "owners": [
+        "sea-tide-v1"
+      ]
+    },
+    {
+      "work": "north",
+      "primary": "./assets/north-Dc4N-c-a.js",
+      "owners": [
+        "north"
+      ]
+    },
+    {
+      "work": "north-v2",
+      "primary": "./assets/north-v2-U_lNJrLH.js",
+      "owners": [
+        "north-v2"
+      ]
+    },
+    {
+      "work": "north-v1",
+      "primary": "./assets/north-v1-3XiVHj3X.js",
+      "owners": [
+        "north-v1"
+      ]
+    },
+    {
+      "work": "qian-kun",
+      "primary": "./assets/qian-kun-CQiud99_.js",
+      "owners": [
+        "qian-kun"
+      ]
+    },
+    {
+      "work": "qian-kun-v2",
+      "primary": "./assets/qian-kun-v2-_d1BWB_g.js",
+      "owners": [
+        "qian-kun-v2"
+      ]
+    },
+    {
+      "work": "qian-kun-v1",
+      "primary": "./assets/qian-kun-v1-CB4VJfgz.js",
+      "owners": [
+        "qian-kun-v1"
+      ]
+    },
+    {
+      "work": "north-notes",
+      "primary": "./assets/north-notes-CcFKJqW2.js",
+      "owners": [
+        "north-notes"
+      ]
+    },
+    {
+      "work": "dead-ranking",
+      "primary": "./assets/dead-ranking-Ck25b7ZX.js",
+      "owners": [
+        "dead-ranking"
+      ]
+    },
+    {
+      "work": "luhua",
+      "primary": "./assets/luhua-D3Hz48Lq.js",
+      "owners": [
+        "luhua"
+      ]
+    },
+    {
+      "work": "twelfth-life",
+      "primary": "./assets/twelfth-life-DAYnt5iX.js",
+      "owners": [
+        "twelfth-life"
+      ]
+    },
+    {
+      "work": "twelfth-life-v2",
+      "primary": "./assets/twelfth-life-v2-D584i6q5.js",
+      "owners": [
+        "twelfth-life-v2"
+      ]
+    },
+    {
+      "work": "twelfth-life-v1",
+      "primary": "./assets/twelfth-life-v1-Du_HZ577.js",
+      "owners": [
+        "twelfth-life-v1"
+      ]
+    },
+    {
+      "work": "luoyang",
+      "primary": "./assets/luoyang-eIHx4Olt.js",
+      "owners": [
+        "luoyang"
+      ]
+    },
+    {
+      "work": "bamboo",
+      "primary": "./assets/bamboo-BV0sQX_Y.js",
+      "owners": [
+        "bamboo"
+      ]
+    },
+    {
+      "work": "xuanmen",
+      "primary": "./assets/xuanmen-CVoc_pbB.js",
+      "owners": [
+        "xuanmen"
+      ]
+    },
+    {
+      "work": "white-stone",
+      "primary": "./assets/white-stone-uY8NWqvp.js",
+      "owners": [
+        "white-stone"
+      ]
+    },
+    {
+      "work": "beyond-ranking",
+      "primary": "./assets/beyond-ranking-BTUpP-9M.js",
+      "owners": [
+        "beyond-ranking"
+      ]
+    },
+    {
+      "work": "taihua",
+      "primary": "./assets/taihua-Ugb1JvX3.js",
+      "owners": [
+        "taihua"
+      ]
+    },
+    {
+      "work": "taihua-v2",
+      "primary": "./assets/taihua-v2-DRO33qiJ.js",
+      "owners": [
+        "taihua-v2"
+      ]
+    },
+    {
+      "work": "taihua-v1",
+      "primary": "./assets/taihua-v1-Bx-Fjr3h.js",
+      "owners": [
+        "taihua-v1"
+      ]
+    },
+    {
+      "work": "longmen",
+      "primary": "./assets/longmen-CeOjOmWY.js",
+      "owners": [
+        "longmen"
+      ]
+    },
+    {
+      "work": "longmen-v2",
+      "primary": "./assets/longmen-v2-Bz_PoGs3.js",
+      "owners": [
+        "longmen-v2"
+      ]
+    },
+    {
+      "work": "longmen-v1",
+      "primary": "./assets/longmen-v1-B-Dq3A95.js",
+      "owners": [
+        "longmen-v1"
+      ]
+    },
+    {
+      "work": "dongting",
+      "primary": "./assets/dongting-DZE0UszT.js",
+      "owners": [
+        "dongting"
+      ]
+    },
+    {
+      "work": "twelfth",
+      "primary": "./assets/twelfth-DT1ev8mp.js",
+      "owners": [
+        "twelfth"
+      ]
+    },
+    {
+      "work": "tide-v6",
+      "primary": "./assets/campaign-v6-Ct-yMjRt.js",
+      "owners": [
+        "tide-v6"
+      ]
+    }
+  ],
+  "frozenFiles": [
+    {
+      "work": "jade-thieves-v1",
+      "file": "jade-thieves-before-cg-41CIyEqZ.js"
+    },
+    {
+      "work": "jade-v1",
+      "file": "jade-before-cg-BzcHDdQg.js"
+    },
+    {
+      "work": "tide-v6",
+      "file": "campaign-v6-before-ending-staging-CZt1BII1.js"
+    },
+    {
+      "work": "twelfth-life-v2",
+      "file": "twelfth-life-before-cg-Bs4lCK0J.js"
+    },
+    {
+      "work": "two-swords-v1",
+      "file": "two-swords-before-art-Cc8iQ0sp.js"
+    },
+    {
+      "work": "seven-questions",
+      "file": "seven-questions-before-books-cg-HnjLifKh.js"
+    },
+    {
+      "work": "sea-v1",
+      "file": "sea-before-rigging-BPDJ9qbe.js"
+    },
+    {
+      "work": "sea-tide-v1",
+      "file": "sea-tide-before-rigging-l3DbwTpP.js"
+    },
+    {
+      "work": "sea-tide",
+      "file": "sea-tide-before-child-Ci_CD4WV.js"
+    }
+  ],
+  "scope": "Current Rolldown build data files, independent of preliminary browser visits. Shell and work packages are used together."
+}

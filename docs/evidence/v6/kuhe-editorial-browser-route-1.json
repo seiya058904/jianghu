@@ -1,0 +1,12 @@
+{
+  "fullVisibleTextCompared": true,
+  "commandsAndEndingStageCompared": true,
+  "refreshPoints": [
+    "kh_dawn_return_1",
+    "kh_lock_2",
+    "kh_seventh_1"
+  ],
+  "ending": "kh_record",
+  "frames": 221,
+  "pageErrors": []
+}

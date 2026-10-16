@@ -1,0 +1,117 @@
+{
+  "combinations": 16,
+  "rows": [
+    {
+      "gap": false,
+      "edict": false,
+      "tax": false,
+      "late": "rl_ask_young_to_watch",
+      "ending": "rl_watch_after"
+    },
+    {
+      "gap": false,
+      "edict": false,
+      "tax": false,
+      "late": "rl_write_with_lu",
+      "ending": "rl_letter_after"
+    },
+    {
+      "gap": false,
+      "edict": false,
+      "tax": true,
+      "late": "rl_ask_young_to_watch",
+      "ending": "rl_watch_after"
+    },
+    {
+      "gap": false,
+      "edict": false,
+      "tax": true,
+      "late": "rl_write_with_lu",
+      "ending": "rl_letter_after"
+    },
+    {
+      "gap": false,
+      "edict": true,
+      "tax": false,
+      "late": "rl_ask_young_to_watch",
+      "ending": "rl_watch_after"
+    },
+    {
+      "gap": false,
+      "edict": true,
+      "tax": false,
+      "late": "rl_write_with_lu",
+      "ending": "rl_letter_after"
+    },
+    {
+      "gap": false,
+      "edict": true,
+      "tax": true,
+      "late": "rl_ask_young_to_watch",
+      "ending": "rl_watch_after"
+    },
+    {
+      "gap": false,
+      "edict": true,
+      "tax": true,
+      "late": "rl_write_with_lu",
+      "ending": "rl_letter_after"
+    },
+    {
+      "gap": true,
+      "edict": false,
+      "tax": false,
+      "late": "rl_ask_young_to_watch",
+      "ending": "rl_watch_after"
+    },
+    {
+      "gap": true,
+      "edict": false,
+      "tax": false,
+      "late": "rl_write_with_lu",
+      "ending": "rl_letter_after"
+    },
+    {
+      "gap": true,
+      "edict": false,
+      "tax": true,
+      "late": "rl_ask_young_to_watch",
+      "ending": "rl_watch_after"
+    },
+    {
+      "gap": true,
+      "edict": false,
+      "tax": true,
+      "late": "rl_write_with_lu",
+      "ending": "rl_letter_after"
+    },
+    {
+      "gap": true,
+      "edict": true,
+      "tax": false,
+      "late": "rl_ask_young_to_watch",
+      "ending": "rl_watch_after"
+    },
+    {
+      "gap": true,
+      "edict": true,
+      "tax": false,
+      "late": "rl_write_with_lu",
+      "ending": "rl_letter_after"
+    },
+    {
+      "gap": true,
+      "edict": true,
+      "tax": true,
+      "late": "rl_ask_young_to_watch",
+      "ending": "rl_watch_after"
+    },
+    {
+      "gap": true,
+      "edict": true,
+      "tax": true,
+      "late": "rl_write_with_lu",
+      "ending": "rl_letter_after"
+    }
+  ]
+}

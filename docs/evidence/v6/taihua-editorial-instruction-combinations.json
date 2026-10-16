@@ -1,0 +1,89 @@
+{
+  "combinations": 12,
+  "rows": [
+    {
+      "booked": false,
+      "soup": false,
+      "requested": "th_together",
+      "ending": "th_company",
+      "cancelled": false
+    },
+    {
+      "booked": false,
+      "soup": false,
+      "requested": "th_letter",
+      "ending": "th_letter",
+      "cancelled": false
+    },
+    {
+      "booked": false,
+      "soup": false,
+      "requested": "th_guidance",
+      "ending": "th_company",
+      "cancelled": false
+    },
+    {
+      "booked": false,
+      "soup": true,
+      "requested": "th_together",
+      "ending": "th_company",
+      "cancelled": false
+    },
+    {
+      "booked": false,
+      "soup": true,
+      "requested": "th_letter",
+      "ending": "th_letter",
+      "cancelled": false
+    },
+    {
+      "booked": false,
+      "soup": true,
+      "requested": "th_guidance",
+      "ending": "th_company",
+      "cancelled": false
+    },
+    {
+      "booked": true,
+      "soup": false,
+      "requested": "th_together",
+      "ending": "th_company",
+      "cancelled": true
+    },
+    {
+      "booked": true,
+      "soup": false,
+      "requested": "th_letter",
+      "ending": "th_letter",
+      "cancelled": true
+    },
+    {
+      "booked": true,
+      "soup": false,
+      "requested": "th_guidance",
+      "ending": "th_guidance",
+      "cancelled": false
+    },
+    {
+      "booked": true,
+      "soup": true,
+      "requested": "th_together",
+      "ending": "th_company",
+      "cancelled": true
+    },
+    {
+      "booked": true,
+      "soup": true,
+      "requested": "th_letter",
+      "ending": "th_letter",
+      "cancelled": true
+    },
+    {
+      "booked": true,
+      "soup": true,
+      "requested": "th_guidance",
+      "ending": "th_guidance",
+      "cancelled": false
+    }
+  ]
+}

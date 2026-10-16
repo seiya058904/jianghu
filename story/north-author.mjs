@@ -1,0 +1,13 @@
+import {writeFileSync} from 'node:fs';
+import {createWriter} from './chronicle-writer.mjs';
+import {writeYard} from './north-yard.mjs';
+import {writeRoad} from './north-road.mjs';
+import {writeRain} from './north-rain.mjs';
+import {writeDuels} from './north-duels.mjs';
+import {writeAfter} from './north-after.mjs';
+const w=createWriter('nq_');writeYard(w);writeRoad(w);writeRain(w);writeDuels(w);writeAfter(w);
+const flags=['first_count','asked_more','night_rest','other_foot','stop_plain','next_honest','handoff','loss_trace','return_room','failure_open','yuan_reply','chu_limit','xue_stop','wood_share','mender_plain','relearn_plain','spear_listen','pupil_plain','han_step','ordinary_reply','han_witness','qinghe_place','gu_continue','gu_question','gu_notes','chair_keep'];
+const numbers=['xue_method','han_method','qinghe_change','gu_begin','legacy'];
+let body=w.render().split('\n').map(line=>line.includes('# beat:nq_letter_1 ')?line+' # look:nq_yuan=adult':line.includes('# beat:nq_return_school_1 ')?line+' # look:nq_yuan=late':line).join('\n');
+body=body.replace(/\bnq_mender\b/g,'nq2_mender').replace(/\bnq_heng\b/g,'nq2_heng');
+writeFileSync('story/north.ink','// Source: 宋世江湖33333–34835; Qin stays Liuhe, fixed chronological old fights.\n'+flags.map(k=>`VAR nq_${k} = false`).join('\n')+'\n'+numbers.map(k=>`VAR nq_${k} = 0`).join('\n')+'\n-> hundred_twenty_seven\n'+body);

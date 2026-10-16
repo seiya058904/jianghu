@@ -1,0 +1,36 @@
+✔ north Heng V2: identical narrative/inputs/world, exact frozen V1 restores and wrong-version rejection (3539.0878ms)
+✔ qian-kun Heng V2: identical narrative/inputs/world, exact frozen V1 restores and wrong-version rejection (2227.5714ms)
+✔ Heng is one explicit identity with two ages and three actual files per age, also in the older Notes interview (5493.9845ms)
+✔ Both plain tea CGs last two frames and every focused camera clears on the next frame (28.2455ms)
+✔ Notes accepts either exact released edition of each book, mixed V1/V2, and rejects wrong families/versions (0.459ms)
+✔ North draft reproduces late three-month explanation, then returns to school before age-64 trial on all letter and pupil paths (126.1905ms)
+✔ North draft departures keep introduction distinct from a promised visit and preserve real handoff costs (34.5276ms)
+✔ North draft tea is a dated memory, chair already owned, relic stays hung and later pupils are distinct (15.8302ms)
+✔ North draft keeps fixed four battles, three teachers, old ranks and both personal endings with exact replay (83.0726ms)
+✔ North draft sampled alternatives cover all beats and choices with bounded passive reading (6731.1041ms)
+✔ North draft preserves all 17 published and canon baselines byte-for-byte (3.8509ms)
+✔ North draft actual Yuan visit occurs only after a confirmed date, in his school with a return journey (27.4302ms)
+✔ North draft six earlier actions return as specific work and costs under both endings (56.4849ms)
+✔ North draft preparation precedes the actual garden and three round snapshots keep their declared changes (590.6228ms)
+✔ North draft reproduces late three-month explanation, then returns to school before age-64 trial on all letter and pupil paths (153.062ms)
+✔ North draft departures keep introduction distinct from a promised visit and preserve real handoff costs (34.8623ms)
+✔ North draft tea is a dated memory, chair already owned, relic stays hung and later pupils are distinct (17.7172ms)
+✔ North draft keeps fixed four battles, three teachers, old ranks and both personal endings with exact replay (82.7462ms)
+✔ North draft sampled alternatives cover all beats and choices with bounded passive reading (6622.7672ms)
+✔ North draft preserves all 17 published and canon baselines byte-for-byte (4.6476ms)
+✔ North draft actual Yuan visit occurs only after a confirmed date, in his school with a return journey (23.2996ms)
+✔ North draft six earlier actions return as specific work and costs under both endings (43.4462ms)
+✔ North draft preparation precedes the actual garden and three round snapshots keep their declared changes (499.2098ms)
+✔ North full careers keep three teachers, old ranks, four battles and unfinished realm on both personal paths (137.4906ms)
+✔ North a single departure choice changes the old school and friend costs twelve years later (33.8301ms)
+✔ North one relearning letter changes later appointments, two-day costs and pupil trust without losing the spear (36.5859ms)
+✔ North mender identity is not presented before the reveal; old tea and aged friend do not share the wrong time (36.6365ms)
+✔ North sampled routes cover all authored beats and choices with bounded passive reading (5996.3718ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11490.2722

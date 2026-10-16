@@ -1,0 +1,17 @@
+[WebServer] (node:9192) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 1 worker
+
+(node:42904) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\twelfth-life-v2.spec.ts:8:1 › Lu actual five sprite files, letter-room transition and seven sizes restore (4.0s)
+  ok 2 tests\twelfth-life-v2.spec.ts:13:1 › Lu new age and expression resources decode offline at root and subpath (693ms)
+  ok 3 tests\twelfth-life-v2.spec.ts:16:1 › Royal life v1 pending slot remains on archive and wrong import is rejected by v2 (367ms)
+  ok 4 tests\twelfth-life-v2.spec.ts:19:1 › Twelfth Life Lu identity epochs retain no merchant prop at sealing and retains late-age separation (1.3s)
+  ok 5 tests\twelfth-life-v2.spec.ts:22:25 › Twelfth Life actual biography 0, companion preserved and posthumous epilogue distinct (1.3m)
+  ok 6 tests\twelfth-life-v2.spec.ts:22:25 › Twelfth Life actual biography 1, companion preserved and posthumous epilogue distinct (1.3m)
+  ok 7 tests\twelfth-life-v2.spec.ts:27:1 › Twelfth Life downloads late Sun resources unvisited, offline at root and subpath (848ms)
+  ok 8 tests\twelfth-life-v2.spec.ts:30:1 › Twelfth Life sealed books, late responsibility reply and deceased teacher fit seven sizes (3.6s)
+
+  8 passed (2.9m)

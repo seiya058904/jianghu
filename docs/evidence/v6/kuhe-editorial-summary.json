@@ -1,0 +1,80 @@
+{
+  "status": "KUHE_THREE_INTERNAL_ROUNDS_AND_VERSIONED_BROWSER_QA_VERIFIED_FULL_GOAL_OPEN",
+  "baseline": "db0025e",
+  "version": "kuhe-3.0.0",
+  "contentSHA256": "c4c8ee8da76ee854a4f8ffc002c2d437178dc3d22648e60166b68f2ee6cbac71",
+  "beats": 326,
+  "options": 40,
+  "decisions": 20,
+  "editorialRounds": 3,
+  "beforeAfterRecords": 29,
+  "generatedOrEditedImages": 0,
+  "node": {
+    "fullPass": 201,
+    "separateSnapshotPass": 3,
+    "sixDimensionCombinations": 64,
+    "sampledPaths": 512,
+    "exhaustive": false
+  },
+  "browser": {
+    "availability": "Browser plugin not available; existing Playwright/Chrome",
+    "roots": [
+      "http://127.0.0.1:4173/",
+      "http://127.0.0.1:4175/Jianghu/"
+    ],
+    "initial": {
+      "passed": 23,
+      "failed": 1
+    },
+    "finalBeforeSWPermissionRepair": 11,
+    "finalAfterSWRepair": 7,
+    "uniqueCasesWithPassingEvidence": 29,
+    "routeDetail": [
+      "docs/evidence/v6/kuhe-editorial-browser-route-0.json",
+      "docs/evidence/v6/kuhe-editorial-browser-route-1.json"
+    ],
+    "manualImagesReviewed": [
+      "kuhe-editorial-stage-kh_bell_13-360.png",
+      "kuhe-editorial-kh_lock_2-0.png",
+      "kuhe-editorial-stage-kh_lock_2-360.png",
+      "kuhe-editorial-ending-1.png"
+    ]
+  },
+  "failuresRetained": [
+    "Initial V2 offline test sought old download caption; selector repaired.",
+    "After selector repair, actual SW rejected new kuhe-v2 slug; reproduced in unit listener test, then fixed allowlist.",
+    "First single-input unit fixture expected hidden-pain label without choosing hide-pain; corrected expected one-month restriction."
+  ],
+  "offlineGate": {
+    "registeredWorks": 36,
+    "scopeLocations": 2,
+    "functionalMessageCases": 72,
+    "realOfflineBrowser": "V3 and V2 root/subpath verified after SW fix; existing default cache retention checks also passed."
+  },
+  "counts": {
+    "speakingNPC": 307,
+    "registeredDedicatedUsed": 32,
+    "independentDedicatedActorIdsUsed": 32,
+    "independentDedicatedUsed": 28,
+    "charactersWithThreeImagesAtSameAppearance": 19,
+    "registeredArchetypesUsed": 12,
+    "distinctBackgroundFiles": 30,
+    "distinctCGFiles": 19,
+    "referencedBytes": 23816294
+  },
+  "rasterCounts": {
+    "rasterFiles": 156,
+    "v6RasterFiles": 109,
+    "withRetainedPromptRecords": 111,
+    "withoutRetainedPromptRecords": 45,
+    "observedRuntimeFiles": 155,
+    "registeredFiles": 156,
+    "byteMismatchFiles": 0,
+    "bytesOnDisk": 27383425
+  },
+  "limits": [
+    "No new art; existing close-up does not prove full weapon/limb action geometry.",
+    "Three internal editorial rounds are not external literary approval or measured human playtime.",
+    "Other required literary, identity/age/action art and full project acceptance remain open."
+  ]
+}

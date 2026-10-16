@@ -1,0 +1,11 @@
+✔ Published Qingshi V2 contradictions are reproduced; draft removes fabricated Han family across letters and both funerary routes (96.1811ms)
+✔ Focused draft cannot alter published sources, compiled saves or canon; all exact baseline hashes remain unchanged (13.3998ms)
+✔ 512 sampled unpublished lives retain all draft beats,58 choices,two personal endings and fixed four deaths/age92 sacrifice (5188.3206ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5547.0778

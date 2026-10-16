@@ -1,0 +1,11 @@
+✔ Kuhe exact v1 bytes, prefixes and old pending saves survive the art edition (192.8077ms)
+✔ New art preserves both full texts and commands while wound, weapon and death state changes are chronological (38.9162ms)
+✔ 512 sampled art-edition paths keep all beats, choices and real identity/state files reachable (2766.209ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3111.8153

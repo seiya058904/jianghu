@@ -1,0 +1,132 @@
+{
+  "status": "FIXED_FINAL_168_SAMPLE_ZERO_COLLISIONS_AND_BROWSER_RECHECK",
+  "finding": "Mu and Ji share an old template when newly put together; Mu also remains on stage after returning to the upper seat. Preserve v1 default, assign a v2-only neutral existing look and clear Mu after exit.",
+  "collisions": [
+    {
+      "work": "taihua",
+      "beat": "th_mu_front_5",
+      "cast": [
+        [
+          "th_mu",
+          "v6/npc-robed-elder-b.webp"
+        ],
+        [
+          "th_ji",
+          "v6/npc-robed-elder-b.webp"
+        ],
+        [
+          "th_luqi",
+          "v6/npc-martial-elder-b.webp"
+        ]
+      ]
+    },
+    {
+      "work": "taihua",
+      "beat": "th_mu_front_6",
+      "cast": [
+        [
+          "th_mu",
+          "v6/npc-robed-elder-b.webp"
+        ],
+        [
+          "th_ji",
+          "v6/npc-robed-elder-b.webp"
+        ],
+        [
+          "th_luqi",
+          "v6/npc-martial-elder-b.webp"
+        ]
+      ]
+    },
+    {
+      "work": "taihua",
+      "beat": "th_mu_front_7",
+      "cast": [
+        [
+          "th_mu",
+          "v6/npc-robed-elder-b.webp"
+        ],
+        [
+          "th_ji",
+          "v6/npc-robed-elder-b.webp"
+        ],
+        [
+          "th_luqi",
+          "v6/npc-martial-elder-b.webp"
+        ]
+      ]
+    },
+    {
+      "work": "taihua",
+      "beat": "th_mu_front_8",
+      "cast": [
+        [
+          "th_mu",
+          "v6/npc-robed-elder-b.webp"
+        ],
+        [
+          "th_ji",
+          "v6/npc-robed-elder-b.webp"
+        ],
+        [
+          "th_luqi",
+          "v6/npc-martial-elder-b.webp"
+        ]
+      ]
+    },
+    {
+      "work": "taihua",
+      "beat": "th_mu_front_9",
+      "cast": [
+        [
+          "th_zhang",
+          "v6/npc-robed-elder.webp"
+        ],
+        [
+          "th_mu",
+          "v6/npc-robed-elder-b.webp"
+        ],
+        [
+          "th_ji",
+          "v6/npc-robed-elder-b.webp"
+        ]
+      ]
+    },
+    {
+      "work": "taihua",
+      "beat": "th_mu_front_10",
+      "cast": [
+        [
+          "th_zhang",
+          "v6/npc-robed-elder.webp"
+        ],
+        [
+          "th_mu",
+          "v6/npc-robed-elder-b.webp"
+        ],
+        [
+          "th_ji",
+          "v6/npc-robed-elder-b.webp"
+        ]
+      ]
+    },
+    {
+      "work": "taihua",
+      "beat": "th_mu_front_11",
+      "cast": [
+        [
+          "th_zhang",
+          "v6/npc-robed-elder.webp"
+        ],
+        [
+          "th_mu",
+          "v6/npc-robed-elder-b.webp"
+        ],
+        [
+          "th_ji",
+          "v6/npc-robed-elder-b.webp"
+        ]
+      ]
+    }
+  ]
+}

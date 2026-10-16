@@ -1,0 +1,95 @@
+{
+  "status": "HENG_IDENTITY_AND_SHARED_TEA_VERIFIED_NOT_WHOLE_GOAL_COMPLETION",
+  "finalGameAssets": 7,
+  "portraitFiles": 6,
+  "agePeriods": 2,
+  "actualFilesPerPeriod": 3,
+  "newUniqueCanonicalPerson": 1,
+  "explicitStageAliases": [
+    "nq2_mender",
+    "nq2_heng",
+    "qk2_heng_earlier",
+    "qk2_heng_later",
+    "nn_heng"
+  ],
+  "builtInCalls": 9,
+  "rejectedDraftWebPsArchived": 2,
+  "sharedUniqueCGs": 1,
+  "bookCGUses": 2,
+  "currentVersions": {
+    "north": "north-2.0.0",
+    "qian-kun": "qian-kun-2.0.0",
+    "north-notes": "north-notes-1.0.0"
+  },
+  "oldArchives": [
+    "north-v1.html",
+    "qian-kun-v1.html"
+  ],
+  "sourceBeats": {
+    "north": 309,
+    "qian-kun": 256,
+    "north-notes": 69
+  },
+  "nodeInitial": {
+    "passed": 165,
+    "failed": 1,
+    "reason": "Test advanced a pending-choice camera. Corrected the test to select a legal response, without changing the authored choice."
+  },
+  "nodeFullPass": 166,
+  "nodeFinalSpecificPass": 5,
+  "browserInitialPass": 20,
+  "browserInitialManual": "FAILED: early intent/amused black matte and unhandled new-ID scale selector despite automatic checks. Preserved3problem screenshots and2rejected rasters.",
+  "browserFinalSpecificPass": 6,
+  "browserFinalExtendedCGExitLayoutPass": 1,
+  "assetBrowserPass": 2,
+  "actualFullBookRoutes": "Four distinct representative routes; North first route additionally repeated in the actual two-book-to-Notes unlock flow. Notes also completed after genuine V2 completions.",
+  "fullRouteBoundary": "Full route set preceded alpha/CSS/knowledge-card refinement; final Ink/JSON hashes stayed identical. Final targeted tests rechecked corrected portraits, actual computed sizes, profile deduplication, raw V1 export/isolation and cold offline assets.",
+  "visualFixes": [
+    "Two early expression mattes repaired using built-in edit; rejected originals kept.",
+    "Explicit nq2/qk2 portrait sizing; computed CSS assertion.",
+    "Single-camera actor widened to76vw/max640px to prevent face-side clipping; actual bounds asserted.",
+    "Knowledge keeps the latest already-seen alias per explicit canonicalIdentity, hiding unrevealed names."
+  ],
+  "manualFinalScreenshots": [
+    "heng-qk_four_weapons_2-360.png",
+    "heng-qk_slow_questions_3-360.png",
+    "heng-nq_too_heavy_2-800.png",
+    "heng-nq_last_tea_1-after-cg-360.png"
+  ],
+  "counts": {
+    "speakingNPC": 306,
+    "registeredDedicatedUsed": 32,
+    "independentDedicatedActorIdsUsed": 32,
+    "independentDedicatedUsed": 28,
+    "charactersWithThreeImagesAtSameAppearance": 19,
+    "registeredArchetypesUsed": 12,
+    "distinctBackgroundFiles": 30,
+    "distinctCGFiles": 19,
+    "referencedBytes": 23752882
+  },
+  "frozenV1": {
+    "story/north-v1.ink": "427d81d50c479a510e393c51d5e74e5cadcf2552a6019eb47db075eec255c2bb",
+    "src/generated/north-v1.json": "dff07857f0bdec586e07b3f0bf9fd709e00308be8288d77e00476915ecca4a02",
+    "story/qian-kun-v1.ink": "c883e603fa56b9b8641c8accb42eb9f0d6026deb97e6ea375b4bd7f3eca39540",
+    "src/generated/qian-kun-v1.json": "13d7ea5815b8b5015635fe799e5858b2e70721647720db03dc02ab4c7de810df"
+  },
+  "currentContentSHA256": {
+    "north": "2456c8b3e365837492c039c457e7bc46e6933f89df6dd57e955de4b05254ac67",
+    "qian-kun": "9ace994454860592868502a7ef806b78124f22ba6bae69e70d9855a10a80fc12",
+    "north-notes": "d7024c9015d1287f57a4d2b9d52bfc40a38edfc70995c4146d5066e71f15d7a6"
+  },
+  "canonicalSHA256": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393",
+  "offline": {
+    "registeredWorks": 33,
+    "frozenMigrationChunks": 8,
+    "archivePrimaryDataIsIndependent": true,
+    "wrongPrimaryOwners": 0
+  },
+  "graph": "metadata_changed on relevant paths; current-source fallback used, no complete-index claim.",
+  "remaining": [
+    "Qin/Sima protagonists and other major identities/age periods remain incomplete.",
+    "Repair-chair action, relics, spear/staff/palm staging and sea-splash art are incomplete.",
+    "North and Qian full literary rounds and external reading acceptance remain open.",
+    "Every core group now has a triggered CG; this is not full visual acceptance. Main final/root delivery and other whole-goal requirements remain open."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "actualBrowserInputs": true,
+  "fullVisibleTextCompared": true,
+  "commandsAndFinalStageCompared": true,
+  "refreshPoints": [
+    "qs_driver_settlement_1",
+    "qs_home_visit_1",
+    "qs_oldknife_6"
+  ],
+  "externalHuman": false,
+  "beats": 313,
+  "choices": 30,
+  "ending": "qs_heirs",
+  "scenes": [
+    "qs_yard17",
+    "qs_village",
+    "qs_town20",
+    "qs_mahouse",
+    "qs_fair23",
+    "qs_wall32",
+    "qs_road32",
+    "qs_sick32",
+    "qs_graves32",
+    "qs_office",
+    "qs_office44",
+    "qs_road44",
+    "qs_wei46",
+    "qs_fair56",
+    "qs_capital64",
+    "qs_guard66",
+    "qs_home70",
+    "qs_army76",
+    "qs_army84",
+    "qs_wall92",
+    "qs_room92",
+    "qs_stairs92",
+    "qs_after"
+  ],
+  "errors": []
+}

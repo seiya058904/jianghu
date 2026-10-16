@@ -1,0 +1,11 @@
+{
+  "tool": "built-in image_gen",
+  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-d33e3c6f-0485-40b8-82a4-6b49ec398199.png",
+  "prompt": "Use case: visual novel expression and gesture edit. Preserve EXACT reference character identity, facial anatomy, age, gender, costume colors/materials, hair, and fine naturalistic watercolor/ink rendering. Same30-year-old male rice merchant heir Rong Jibai. Visibly uneasy embarrassed expression with brows raised inward, lips pressed, looking toward companion while one hand adjusts his sash and other rests on wooden staff. Same cream robe with gold embroidered edging, bronze hair clasp, no royal crown or aging. Meaningful expression and gesture change, same portrait framing as reference, one character only, no other person. True transparent alpha background, no colored panel, no scenery, no floor, no cast shadow rectangle. No signature, no text, no watermark.",
+  "reference": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v5/rong.webp",
+  "output": "D:\\xia zai\\AI project\\Project in Iteration\\Jianghu\\public\\art\\v6\\rong-uneasy-v2.webp",
+  "review": "Same original PNG converted preserving aspect ratio. Actual gallery decode and visual review recorded in docs/evidence/v6/portrait-proportions-browser.log (16 passed); screenshot docs/evidence/v6/portrait-v6_rong-uneasy.png.",
+  "initialWebPOutput": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/rong-uneasy.webp",
+  "initialWebPArchived": "D:\\xia zai\\AI project\\Project in Iteration\\Jianghu\\docs\\v6\\art-candidates\\rong-uneasy.webp",
+  "formatRepair": "Original PNG retained. Resize within 560x840 while preserving native aspect ratio, no repainting, no new generation. Earlier fixed 560x840 conversion stretched this half-body source."
+}

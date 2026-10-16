@@ -1,0 +1,16 @@
+{
+  "version": "seven-questions-1.0.0",
+  "slowTeamReunion": 163,
+  "personallyWitnessedEastDuel": 171,
+  "text": [
+    {
+      "id": "sq_converge_1",
+      "text": "急报和慢队终于在旧院汇合。两张一路被雨浸过、一路有烟熏的纸放在一起，你先辨出写字的人，才辨出彼此错过的半场危局。"
+    },
+    {
+      "id": "sq_east_gate_7",
+      "text": "你留在院里接返队，东门的刀兵还未停。送完近处伤者，从外廊望见闻人宿遇上陆青崖。两位返真，没有试探，二十余招已见血。"
+    }
+  ],
+  "issue": "Courtyard route reunites with slow valley team before a duel that slow valley team explicitly misses."
+}

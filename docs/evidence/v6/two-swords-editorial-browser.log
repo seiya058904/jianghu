@@ -1,0 +1,46 @@
+[WebServer] (node:47896) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 12 tests using 1 worker
+
+(node:49996) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\offline-work-pack.spec.ts:8:134 › download two-swords pack restores uncached story data on root (541ms)
+  ok  2 tests\offline-work-pack.spec.ts:8:134 › download two-swords pack restores uncached story data on subpath (488ms)
+  ok  3 tests\offline-work-pack.spec.ts:8:134 › download two-swords-v1 pack restores uncached story data on root (589ms)
+  ok  4 tests\offline-work-pack.spec.ts:8:134 › download two-swords-v1 pack restores uncached story data on subpath (497ms)
+  ok  5 tests\swords-art.spec.ts:10:25 › Swords art two-swords-v1: old CG/pending saves, raw slots/export/import, and two-frame exit (761ms)
+  ok  6 tests\swords-art.spec.ts:18:25 › Swords art two-swords-v1: old pending choice restores without consuming a response (280ms)
+  x   7 tests\swords-art.spec.ts:30:25 › Swords art two-swords-v1: frozen-source migration and new images survive a fresh offline page (1.5m)
+(node:51008) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  8 tests\two-swords.spec.ts:5:26 › Two Swords actual full first-book route 0 (59.6s)
+  ok  9 tests\two-swords.spec.ts:5:26 › Two Swords actual full first-book route 1 (58.9s)
+  ok 10 tests\two-swords.spec.ts:18:1 › Two Swords downloads unvisited late chapter for root and subpath offline use (783ms)
+  ok 11 tests\two-swords.spec.ts:25:1 › Two Swords three-generation scenes fit all seven viewports with usable controls (2.9s)
+  ok 12 tests\two-swords.spec.ts:35:1 › Two Swords long choice labels remain reachable at 24px on seven sizes (1.7s)
+
+
+  1) tests\swords-art.spec.ts:30:25 › Swords art two-swords-v1: frozen-source migration and new images survive a fresh offline page
+
+    Test timeout of 90000ms exceeded.
+
+    Error: locator.click: Test ended.
+    Call log:
+      - waiting for getByRole('button', { name: '下载《一剑两脉 · 旧本归还》离线资源', exact: true })
+
+
+      30 | for(const work of works)test(`Swords art ${work.slug}: frozen-source migration and new images survive a fresh offline page`,async({browser})=>{
+      31 |  test.setTimeout(90000);for(const root of ['http://127.0.0.1:4173/','http://127.0.0.1:4175/Jianghu/']){
+    > 32 |   const context=await browser.newContext(),page=await context.newPage();await page.goto(root+work.slug+'.html');await page.evaluate(async()=>{await navigator.serviceWorker.ready});await page.reload();await page.getByRole('button',{name:'设置',exact:true}).click();await page.getByRole('button',{name:work.slug==='two-swords-v1'?'下载《一剑两脉 · 旧本归还》离线资源':'下载《一剑两脉 · 门外七问》离线资源',exact:true}).click();await expect(page.getByRole('dialog')).toContainText('离线资源已备好');const cdp=await context.newCDPSession(page);await cdp.send('Network.clearBrowserCache');await cdp.detach();await page.close();
+         |                                                                                                                                                                                                                                                                                                                                                                                                ^
+      33 |   const old=at(work,work.cg,true),fresh=await context.newPage();await fresh.addInitScript(({prefix,raw})=>{localStorage.setItem(prefix+'auto',raw);localStorage.setItem(prefix+'settings',JSON.stringify({speed:0,reduced:true}))},{prefix:work.prefix,raw:JSON.stringify(old.save())});await context.setOffline(true);await fresh.goto(root+work.slug+'.html#play');await expect(fresh.locator('#app')).toHaveAttribute('data-beat',work.cg);await expect(fresh.locator('.play-stage')).toHaveAttribute('data-cg','workingBooks');
+      34 |   const files=work.slug==='two-swords-v1'?['cg-working-books','ss-xie','ss-xie-intent','ss-xie-uneasy']:['cg-working-books'];expect(await fresh.evaluate(async({files,root})=>Promise.all(files.map(async name=>{const image=new Image();image.src=new URL('art/v6/'+name+'.webp',root).href;await image.decode();return image.naturalWidth>0})),{files,root})).toEqual(files.map(()=>true));await fresh.locator('#advance-button').click();await expect(fresh.locator('#app')).not.toHaveAttribute('data-beat',work.cg);await context.close();
+      35 |  }
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\swords-art.spec.ts:32:384
+
+    Error Context: test-results\swords-art-Swords-art-two--1e39a-urvive-a-fresh-offline-page\error-context.md
+
+  1 failed
+    tests\swords-art.spec.ts:30:25 › Swords art two-swords-v1: frozen-source migration and new images survive a fresh offline page
+  11 passed (3.6m)

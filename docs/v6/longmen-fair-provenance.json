@@ -1,0 +1,7 @@
+{
+  "tool": "built-in image_gen",
+  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-8bbd3eb5-6219-4e60-a1bd-fb5f7434627d.png",
+  "prompt": "Use case: historical-scene. Production illustrated environment background for Jianghu Chinese wuxia visual novel. Wide landscape3:2. Autumn martial gathering ground at Longmen town beside a broad quiet northern river. A low plain wooden canopy for seated elders at the back, simple pale cloth awnings and worn stone paving in a wide empty foreground, an orderly weapon rack at the far edge with wooden and sheathed straight practice swords. Autumn ochre poplars, restrained river-town roofs and low distant hills. A serious regional gathering, not a fantasy arena or a battlefield. Clear crisp late morning light. No inscriptions or painted characters. Fine muted naturalistic watercolor and ink illustration, historically grounded timber and stone, tactile understated brushwork, atmospheric depth, coherent restrained Jianghu visual world. Bottom foreground visually quiet for HTML dialogue. No people, no silhouettes, no text, no logos, no UI, no watermark, no magical effects.",
+  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/longmen-fair.webp",
+  "review": "Reviewed native image: coherent timber/stone or lake working space, empty foreground, no named figure or text. Mapped to matching chronicle scenes. Fair uses one image for several related scenes and is counted once."
+}

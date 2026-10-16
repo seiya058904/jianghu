@@ -1,0 +1,112 @@
+{
+  "status": "QINGSHI_V3_VERSIONED_LOCAL_DELIVERY_VERIFIED_FULL_OBJECTIVE_OPEN",
+  "baseline": "d2fa219",
+  "version": "qingshi-3.0.0",
+  "contentSHA256": "35df6f330bd78edd7f283374773d3660f58afefe8cc0652762b2b7e0380a60de",
+  "beats": 447,
+  "options": 60,
+  "decisions": 30,
+  "editorialRounds": 3,
+  "beforeAfterRecords": 38,
+  "newOrEditedArtFiles": 0,
+  "preservation": "docs/evidence/v6/qingshi-editorial-preservation.json",
+  "checks": {
+    "fullUnitPass": 208,
+    "finalFocusedPass": 13,
+    "focusedOverlap": "Seven current tests repeat full-suite cases; six draft snapshot cases are separate.",
+    "build": "passed",
+    "initialCombinedBrowserPass": 28,
+    "additionalBrowserPass": 6,
+    "explicitColdBrowserPass": 1,
+    "finalPointerChoiceBrowserPass": 1,
+    "uniqueBrowserCases": 35,
+    "runtimeSamples": 512,
+    "exhaustive": false,
+    "settlementCombinations": 8,
+    "homeLessonCombinations": 16,
+    "witnessCombinations": 4
+  },
+  "browser": {
+    "availability": "Browser plugin not available; existing Playwright/Chrome",
+    "roots": [
+      "http://127.0.0.1:4173/",
+      "http://127.0.0.1:4175/Jianghu/"
+    ],
+    "sizes": [
+      [
+        360,
+        800
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        412,
+        915
+      ],
+      [
+        800,
+        360
+      ],
+      [
+        1366,
+        768
+      ],
+      [
+        1440,
+        900
+      ],
+      [
+        1920,
+        1080
+      ]
+    ],
+    "currentFullRouteDetails": [
+      "docs/evidence/v6/qingshi-editorial-browser-0.json",
+      "docs/evidence/v6/qingshi-editorial-browser-1.json"
+    ],
+    "newChoiceContexts": 28,
+    "manualImages": [
+      "qingshi-editorial-home-dark-360-1.png",
+      "qingshi-editorial-home-paper-800-0.png",
+      "qingshi-editorial-qs_oldknife_1-360.png",
+      "qingshi-editorial-qs_oldknife_6-1440.png"
+    ],
+    "shortLandscape": "Choice panel has independent104px viewport for124px content and5px separation from dialogue, not overlap. Scrolling, actual hit testing, pointer choice and keyboard choice verified."
+  },
+  "offline": {
+    "registeredCurrentAndArchivePackages": 37,
+    "functionalScopeMessages": 74,
+    "explicitCold": "V2 hashed data chunk and shared knife cache entries evicted, explicit V2 download restored them, HTTP cache cleared, fresh offline pages resumed both V2/V3 at root/subpath."
+  },
+  "rasterCounts": {
+    "rasterFiles": 156,
+    "v6RasterFiles": 109,
+    "withRetainedPromptRecords": 111,
+    "withoutRetainedPromptRecords": 45,
+    "observedRuntimeFiles": 155,
+    "registeredFiles": 156,
+    "byteMismatchFiles": 0,
+    "bytesOnDisk": 27383425
+  },
+  "productionCounts": {
+    "speakingNPC": 307,
+    "registeredDedicatedUsed": 32,
+    "independentDedicatedActorIdsUsed": 32,
+    "independentDedicatedUsed": 28,
+    "charactersWithThreeImagesAtSameAppearance": 19,
+    "registeredArchetypesUsed": 12,
+    "distinctBackgroundFiles": 30,
+    "distinctCGFiles": 19,
+    "referencedBytes": 23816294
+  },
+  "usageSampleEntries": 40,
+  "countsLimits": "Archive editions and root aliases are sampling entries, not new works or unique people.307 speaking IDs are not a full person census.",
+  "failureRetained": "Compiled-specific unit expected branch-local oldknife7 on both routes; changed assertion to actual successor frame.15 passed/1failed in that batch; full208 and final13 pass afterward.",
+  "limits": [
+    "No new art; complete four-friend identities/ages and combat or battle-damage scenes remain open.",
+    "Internal editorial passes are not external literary approval or human playtime.",
+    "Other commissioned editorial/art requirements and complete project acceptance remain open."
+  ]
+}

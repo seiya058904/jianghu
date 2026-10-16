@@ -1,0 +1,845 @@
+{
+  "counts": {
+    "speakingNPC": 297,
+    "registeredDedicatedUsed": 21,
+    "independentDedicatedUsed": 21,
+    "charactersWithThreeImagesAtSameAppearance": 16,
+    "registeredArchetypesUsed": 12,
+    "distinctBackgroundFiles": 29,
+    "distinctCGFiles": 11,
+    "referencedBytes": 19560586
+  },
+  "ownershipConflicts": 0,
+  "simultaneousCollisions": 0,
+  "works": {
+    "tide-v6": {
+      "version": "tide-promise-2.0.0",
+      "sourceBeats": 1325,
+      "visitedBeats": 1325,
+      "unvisited": [],
+      "choiceOptions": 182,
+      "endings": [
+        "harbor",
+        "name",
+        "together5",
+        "teacher",
+        "captain",
+        "apart",
+        "scar",
+        "lost"
+      ],
+      "longestPassiveGap": 28,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "storm",
+        "dawn",
+        "rescue",
+        "quiet",
+        "timber"
+      ],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "v6_zhaoli",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v5/zhaoli-intent.webp",
+          "beat": "c6_v6_after_lost_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_zhaoli",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/zhaoli-amused.webp",
+          "beat": "c_last_boat_after_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_qiao",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v5/qiao-uneasy.webp",
+          "beat": "c_levee_wrist_14",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_su",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/su-intent.webp",
+          "beat": "c_arena_pair_result_11",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_han",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/han-amused.webp",
+          "beat": "c_last_lesson_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_ling",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/ling-intent.webp",
+          "beat": "c_storm_return_11",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_qiao",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/qiao-amused-v2.webp",
+          "beat": "c_morning_roof_after_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_lu",
+          "look": "default",
+          "mood": "calm",
+          "file": "v5/lu-intent.webp",
+          "beat": "c_storm_return_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_rong",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/rong-amused-v2.webp",
+          "beat": "c_arena_result_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_pei",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/pei-intent-v2.webp",
+          "beat": "c6_v6_roles_after_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_han",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/han-intent.webp",
+          "beat": "c6_v6_roles_ready_1",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_he",
+          "look": "default",
+          "mood": "sharp",
+          "file": "v6/he-intent.webp",
+          "beat": "c_levee_call_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_pei",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/pei-amused-v2.webp",
+          "beat": "c_bridge_letter_5",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_ling",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v6/ling-uneasy.webp",
+          "beat": "c_workshop_people_1",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_rong",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v6/rong-uneasy-v2.webp",
+          "beat": "c6_v6_grain_inventory_2",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_su",
+          "look": "default",
+          "mood": "amused",
+          "file": "v5/su-amused.webp",
+          "beat": "c_arena_pair_result_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_he",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/he-amused.webp",
+          "beat": "c6_v6_stay_pay_8",
+          "kind": "dedicated"
+        }
+      ]
+    },
+    "kuhe": {
+      "version": "kuhe-1.0.0",
+      "sourceBeats": 299,
+      "visitedBeats": 299,
+      "unvisited": [],
+      "choiceOptions": 40,
+      "endings": [
+        "kh_care",
+        "kh_record"
+      ],
+      "longestPassiveGap": 15,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": []
+    },
+    "qingshi": {
+      "version": "qingshi-1.0.0",
+      "sourceBeats": 414,
+      "visitedBeats": 414,
+      "unvisited": [],
+      "choiceOptions": 58,
+      "endings": [
+        "qs_records",
+        "qs_heirs"
+      ],
+      "longestPassiveGap": 18,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": []
+    },
+    "two-swords": {
+      "version": "two-swords-1.0.0",
+      "sourceBeats": 327,
+      "visitedBeats": 327,
+      "unvisited": [],
+      "choiceOptions": 50,
+      "endings": [
+        "ss_mountain_lesson",
+        "ss_library_lesson"
+      ],
+      "longestPassiveGap": 15,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": []
+    },
+    "seven-questions": {
+      "version": "seven-questions-1.0.0",
+      "sourceBeats": 376,
+      "visitedBeats": 376,
+      "unvisited": [],
+      "choiceOptions": 62,
+      "endings": [
+        "sq_shared_road",
+        "sq_open_lesson"
+      ],
+      "longestPassiveGap": 11,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": []
+    },
+    "jade-thieves": {
+      "version": "jade-thieves-1.0.0",
+      "sourceBeats": 265,
+      "visitedBeats": 265,
+      "unvisited": [],
+      "choiceOptions": 43,
+      "endings": [
+        "jt_unmarked_life",
+        "jt_private_account"
+      ],
+      "longestPassiveGap": 14,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": []
+    },
+    "jade": {
+      "version": "jade-1.0.0",
+      "sourceBeats": 296,
+      "visitedBeats": 296,
+      "unvisited": [],
+      "choiceOptions": 66,
+      "endings": [
+        "jd_storework",
+        "jd_archivework"
+      ],
+      "longestPassiveGap": 9,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": []
+    },
+    "sea": {
+      "version": "sea-1.0.0",
+      "sourceBeats": 228,
+      "visitedBeats": 228,
+      "unvisited": [],
+      "choiceOptions": 46,
+      "endings": [
+        "sr_open_courtyard",
+        "sr_next_harbor"
+      ],
+      "longestPassiveGap": 11,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": []
+    },
+    "sea-tide": {
+      "version": "sea-tide-1.0.0",
+      "sourceBeats": 211,
+      "visitedBeats": 211,
+      "unvisited": [],
+      "choiceOptions": 42,
+      "endings": [
+        "st_next_step",
+        "st_next_watch"
+      ],
+      "longestPassiveGap": 14,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": []
+    },
+    "north": {
+      "version": "north-1.0.0",
+      "sourceBeats": 309,
+      "visitedBeats": 309,
+      "unvisited": [],
+      "choiceOptions": 62,
+      "endings": [
+        "nq_first_again",
+        "nq_three_names"
+      ],
+      "longestPassiveGap": 12,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": []
+    },
+    "qian-kun": {
+      "version": "qian-kun-1.0.0",
+      "sourceBeats": 256,
+      "visitedBeats": 256,
+      "unvisited": [],
+      "choiceOptions": 48,
+      "endings": [
+        "qk_open_lesson",
+        "qk_open_mountain"
+      ],
+      "longestPassiveGap": 16,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": []
+    },
+    "north-notes": {
+      "version": "north-notes-1.0.0",
+      "sourceBeats": 69,
+      "visitedBeats": 69,
+      "unvisited": [],
+      "choiceOptions": 12,
+      "endings": [
+        "nn_unfinished_page",
+        "nn_different_starts"
+      ],
+      "longestPassiveGap": 11,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": []
+    },
+    "dead-ranking": {
+      "version": "dead-ranking-1.0.0",
+      "sourceBeats": 325,
+      "visitedBeats": 325,
+      "unvisited": [],
+      "choiceOptions": 66,
+      "endings": [
+        "dr_room_after",
+        "dr_road_after"
+      ],
+      "longestPassiveGap": 16,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": []
+    },
+    "luhua": {
+      "version": "luhua-1.0.0",
+      "sourceBeats": 256,
+      "visitedBeats": 256,
+      "unvisited": [],
+      "choiceOptions": 50,
+      "endings": [
+        "lh_hall_after",
+        "lh_coast_after"
+      ],
+      "longestPassiveGap": 15,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "dt_chen",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/dt-chen-intent.webp",
+          "beat": "lh_five_people_3",
+          "kind": "dedicated"
+        }
+      ]
+    },
+    "twelfth-life": {
+      "version": "twelfth-life-1.0.0",
+      "sourceBeats": 375,
+      "visitedBeats": 375,
+      "unvisited": [],
+      "choiceOptions": 66,
+      "endings": [
+        "rl_watch_after",
+        "rl_letter_after"
+      ],
+      "longestPassiveGap": 18,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": []
+    },
+    "luoyang": {
+      "version": "luoyang-1.0.0",
+      "sourceBeats": 76,
+      "visitedBeats": 76,
+      "unvisited": [],
+      "choiceOptions": 18,
+      "endings": [
+        "ly_trial_after",
+        "ly_post_after"
+      ],
+      "longestPassiveGap": 6,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "lm_xu",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/lm-xu-amused.webp",
+          "beat": "ly_ten_li_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_shi",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/lm-shi-intent.webp",
+          "beat": "ly_shi_half_sword_2",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_xu",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/lm-xu-intent.webp",
+          "beat": "ly_both_hands_7",
+          "kind": "dedicated"
+        }
+      ]
+    },
+    "bamboo": {
+      "version": "bamboo-1.0.0",
+      "sourceBeats": 86,
+      "visitedBeats": 86,
+      "unvisited": [],
+      "choiceOptions": 14,
+      "endings": [
+        "bb_palm_after",
+        "bb_tea_after"
+      ],
+      "longestPassiveGap": 9,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": []
+    },
+    "xuanmen": {
+      "version": "xuanmen-1.0.0",
+      "sourceBeats": 114,
+      "visitedBeats": 114,
+      "unvisited": [],
+      "choiceOptions": 22,
+      "endings": [
+        "xm_handover_after",
+        "xm_blank_after"
+      ],
+      "longestPassiveGap": 13,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": []
+    },
+    "white-stone": {
+      "version": "white-stone-1.0.0",
+      "sourceBeats": 132,
+      "visitedBeats": 132,
+      "unvisited": [],
+      "choiceOptions": 26,
+      "endings": [
+        "ws_outside_after",
+        "ws_receiving_after"
+      ],
+      "longestPassiveGap": 11,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": []
+    },
+    "beyond-ranking": {
+      "version": "beyond-ranking-1.0.0",
+      "sourceBeats": 98,
+      "visitedBeats": 98,
+      "unvisited": [],
+      "choiceOptions": 18,
+      "endings": [
+        "br_reader_after",
+        "br_record_after"
+      ],
+      "longestPassiveGap": 10,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": []
+    },
+    "taihua": {
+      "version": "taihua-2.0.0",
+      "sourceBeats": 440,
+      "visitedBeats": 440,
+      "unvisited": [],
+      "choiceOptions": 61,
+      "endings": [
+        "th_company",
+        "th_letter",
+        "th_guidance"
+      ],
+      "longestPassiveGap": 18,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "nightCompany",
+        "mountainInquiry"
+      ],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "th_shen",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/th-shen-amused.webp",
+          "beat": "th_mu_question_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "th_shen",
+          "look": "default",
+          "mood": "sharp",
+          "file": "v6/th-shen-intent.webp",
+          "beat": "th_after_six_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "th_huo",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/th-huo-intent.webp",
+          "beat": "th_six_open_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "th_huo",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v6/th-huo-uneasy.webp",
+          "beat": "th_six_open_6",
+          "kind": "dedicated"
+        }
+      ]
+    },
+    "taihua-v1": {
+      "version": "taihua-1.0.0",
+      "sourceBeats": 309,
+      "visitedBeats": 309,
+      "unvisited": [],
+      "choiceOptions": 36,
+      "endings": [
+        "th_company",
+        "th_letter"
+      ],
+      "longestPassiveGap": 16,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "nightCompany",
+        "mountainInquiry"
+      ],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "th_shen",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/th-shen-amused.webp",
+          "beat": "th_order_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "th_shen",
+          "look": "default",
+          "mood": "sharp",
+          "file": "v6/th-shen-intent.webp",
+          "beat": "th_after_six_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "th_huo",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v6/th-huo-uneasy.webp",
+          "beat": "th_six_open_6",
+          "kind": "dedicated"
+        },
+        {
+          "id": "th_huo",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/th-huo-intent.webp",
+          "beat": "th_after_six_12",
+          "kind": "dedicated"
+        }
+      ]
+    },
+    "longmen": {
+      "version": "longmen-2.0.0",
+      "sourceBeats": 339,
+      "visitedBeats": 339,
+      "unvisited": [],
+      "choiceOptions": 50,
+      "endings": [
+        "lm_travel",
+        "lm_home"
+      ],
+      "longestPassiveGap": 15,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "woodenInquiry",
+        "longmenNight"
+      ],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "lm_xu",
+          "look": "default",
+          "mood": "sharp",
+          "file": "v6/lm-xu-intent.webp",
+          "beat": "lm_where_6",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_xu",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/lm-xu-amused.webp",
+          "beat": "lm_where_10",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_shi",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/lm-shi-intent.webp",
+          "beat": "lm_leave_8",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_shi",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v6/lm-shi-uneasy.webp",
+          "beat": "lm_nine_2",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_he",
+          "look": "default",
+          "mood": "sharp",
+          "file": "v6/lm-he-sharp.webp",
+          "beat": "lm_fortyseven_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_he",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/lm-he-amused.webp",
+          "beat": "lm_fortyseven_6",
+          "kind": "dedicated"
+        }
+      ]
+    },
+    "longmen-v1": {
+      "version": "longmen-1.0.0",
+      "sourceBeats": 271,
+      "visitedBeats": 271,
+      "unvisited": [],
+      "choiceOptions": 42,
+      "endings": [
+        "lm_travel",
+        "lm_home"
+      ],
+      "longestPassiveGap": 15,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "woodenInquiry"
+      ],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "lm_xu",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/lm-xu-intent.webp",
+          "beat": "lm_where_12",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_xu",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/lm-xu-amused.webp",
+          "beat": "lm_leave_20",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_shi",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/lm-shi-intent.webp",
+          "beat": "lm_nine_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_shi",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v6/lm-shi-uneasy.webp",
+          "beat": "lm_nine_2",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_he",
+          "look": "default",
+          "mood": "sharp",
+          "file": "v6/lm-he-sharp.webp",
+          "beat": "lm_fortyseven_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_he",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/lm-he-amused.webp",
+          "beat": "lm_fortyseven_6",
+          "kind": "dedicated"
+        }
+      ]
+    },
+    "dongting": {
+      "version": "dongting-1.0.0",
+      "sourceBeats": 155,
+      "visitedBeats": 155,
+      "unvisited": [],
+      "choiceOptions": 22,
+      "endings": [
+        "dt_company",
+        "dt_cargo"
+      ],
+      "longestPassiveGap": 13,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "lakeRest"
+      ],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "dt_liang",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/dt-liang-intent.webp",
+          "beat": "dt_raid_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "dt_chen",
+          "look": "default",
+          "mood": "sharp",
+          "file": "v6/dt-chen-intent.webp",
+          "beat": "dt_chen_rope_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "dt_chen",
+          "look": "default",
+          "mood": "hurt",
+          "file": "v6/dt-chen-hurt.webp",
+          "beat": "dt_shore_after_7",
+          "kind": "dedicated"
+        },
+        {
+          "id": "dt_liang",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/dt-liang-amused.webp",
+          "beat": "dt_threeyears_3",
+          "kind": "dedicated"
+        }
+      ]
+    },
+    "twelfth": {
+      "version": "twelfth-1.0.0",
+      "sourceBeats": 236,
+      "visitedBeats": 236,
+      "unvisited": [],
+      "choiceOptions": 36,
+      "endings": [
+        "qw_school",
+        "qw_palace"
+      ],
+      "longestPassiveGap": 11,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "notice"
+      ],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "qw_zhao",
+          "look": "age58",
+          "mood": "amused",
+          "file": "v6/qw-zhao-58-amused.webp",
+          "beat": "qw_sun_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "qw_zhao",
+          "look": "age58",
+          "mood": "sharp",
+          "file": "v6/qw-zhao-58-intent.webp",
+          "beat": "qw_people_after_9",
+          "kind": "dedicated"
+        }
+      ]
+    }
+  }
+}

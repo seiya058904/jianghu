@@ -1,0 +1,26 @@
+[WebServer] (node:32292) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 13 tests using 3 workers
+
+(node:40448) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:44476) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:49028) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  3 tests\sea-tide-editorial.spec.ts:10:107 › Sea Tide V2 root: old raw saves, backup/export and current progress stay isolated through both edition links (977ms)
+  ok  2 tests\default-entry.spec.ts:11:225 › Default V6 root: shared alias progress, real V5 preservation and direct archive resume/export (1.0s)
+  ok  4 tests\sea-tide-editorial.spec.ts:10:107 › Sea Tide V2 subpath: old raw saves, backup/export and current progress stay isolated through both edition links (709ms)
+  ok  5 tests\default-entry.spec.ts:11:225 › Default V6 index: shared alias progress, real V5 preservation and direct archive resume/export (806ms)
+  ok  7 tests\default-entry.spec.ts:11:225 › Default V6 subroot: shared alias progress, real V5 preservation and direct archive resume/export (840ms)
+  ok  1 tests\art-manifest.spec.ts:8:107 › Asset manifest: every raster has exact built bytes and browser decode on root (2.9s)
+  ok  8 tests\default-entry.spec.ts:11:225 › Default V6 subindex: shared alias progress, real V5 preservation and direct archive resume/export (826ms)
+  ok 10 tests\default-entry.spec.ts:32:1 › Library and chronicle return links lead to default V6 at root and subpath (874ms)
+  ok  9 tests\art-manifest.spec.ts:8:107 › Asset manifest: every raster has exact built bytes and browser decode on subpath (2.6s)
+  ok  6 tests\sea-tide-editorial.spec.ts:18:1 › Sea Tide V2 common CG, coach question and both late-duty texts work at seven sizes (10.9s)
+  ok 11 tests\sea-tide-editorial.spec.ts:22:1 › Sea Tide V2 CG failure and dark reading retain exact dialogue and next input (452ms)
+  ok 12 tests\sea-tide-editorial.spec.ts:26:107 › Sea Tide editions root: offline cold archive chunks, raw backup and unseen V2 late scene restore independently (796ms)
+  ok 13 tests\sea-tide-editorial.spec.ts:26:107 › Sea Tide editions subpath: offline cold archive chunks, raw backup and unseen V2 late scene restore independently (690ms)
+
+  13 passed (15.6s)

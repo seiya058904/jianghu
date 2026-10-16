@@ -1,0 +1,9 @@
+{
+  "actualFromCover": true,
+  "priorReadingMarkers": "fixtures; actual two-book completion tested separately",
+  "inputs": 48,
+  "frames": 49,
+  "commandsExact": true,
+  "ending": "nn_different_starts",
+  "endingReload": true
+}

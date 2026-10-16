@@ -1,0 +1,31 @@
+✔ Unpublished Kuhe first-round draft preserves published data bytes and canonical final fates (56.4197ms)
+✖ Leave-camp choice has voluntary limited-duty return; single preparation changes have delayed concrete consequences (46.8077ms)
+✔ 512 sampled draft paths reach every authored beat and both personal endings without rewriting fixed history (2921.2994ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 2
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3261.9615
+
+✖ failing tests:
+
+test at tests\kuhe-editorial-draft.test.ts:16:1
+✖ Leave-camp choice has voluntary limited-duty return; single preparation changes have delayed concrete consequences (46.8077ms)
+  AssertionError [ERR_ASSERTION]: kh_make_strap: consequence belongs to a later scene
+      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/kuhe-editorial-draft.test.ts:21:387)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'kh_path',
+    expected: 'kh_path',
+    operator: 'notStrictEqual',
+    diff: 'simple'
+  }

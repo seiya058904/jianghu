@@ -1,0 +1,26 @@
+{
+  "actualBrowserInputs": true,
+  "externalHuman": false,
+  "beats": 237,
+  "choices": 27,
+  "ending": "sq_shared_road",
+  "scenes": [
+    "sq_receipt",
+    "sq_record",
+    "sq_four",
+    "sq_copy",
+    "sq_warehouse",
+    "sq_outer",
+    "sq_chairs",
+    "sq_night",
+    "sq_ash",
+    "sq_depart",
+    "sq_valley",
+    "sq_return",
+    "sq_east_record",
+    "sq_records",
+    "sq_door",
+    "sq_after"
+  ],
+  "errors": []
+}

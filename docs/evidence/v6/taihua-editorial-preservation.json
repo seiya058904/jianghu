@@ -1,0 +1,24 @@
+{
+  "baseline": "2ce5922",
+  "pathMap": {
+    "story/taihua-author.mjs": "docs/archives/taihua-v2-editorial-baseline/taihua-author.mjs",
+    "story/taihua-observation.mjs": "docs/archives/taihua-v2-editorial-baseline/taihua-observation.mjs",
+    "story/taihua-elders.mjs": "docs/archives/taihua-v2-editorial-baseline/taihua-elders.mjs",
+    "story/taihua.ink": "story/taihua-v2.ink",
+    "src/generated/taihua.json": "src/generated/taihua-v2.json",
+    "宋世江湖.md": "宋世江湖.md",
+    "story/taihua-v1.ink": "story/taihua-v1.ink",
+    "src/generated/taihua-v1.json": "src/generated/taihua-v1.json"
+  },
+  "frozen": {
+    "docs/archives/taihua-v2-editorial-baseline/taihua-author.mjs": "ec3ca4ac5aa0c14cd5a10994c3f2f58103c0a1c45c6b2e4d1ad37bc152979484",
+    "docs/archives/taihua-v2-editorial-baseline/taihua-observation.mjs": "092087b6d0b42c7c0d3090ac5085b27f066699f84f42f286ea929f0b83cecf54",
+    "docs/archives/taihua-v2-editorial-baseline/taihua-elders.mjs": "6cf79098338a6ea58b4a562f8064b52c9fdb64fd1d3f183f0e0096f99f812242",
+    "story/taihua-v2.ink": "c2467279f9c0c429900fb190d8c7972a713173d3c118be4b0ed36f27fba4bdbd",
+    "src/generated/taihua-v2.json": "fd05ba04a02970c12bf905b6ddee379035f0b91b2c76bd82aaf4cc0b801be482",
+    "宋世江湖.md": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393",
+    "story/taihua-v1.ink": "f61de7f912d58bb7a82e83b85164e8cfe371b8bf7a2babcdd578f226fa45e9fd",
+    "src/generated/taihua-v1.json": "59e7f5e688ba05c396434b3426eb18ba8894fe2d7578dc8e15eaaa8a5ec24e98"
+  },
+  "artChanges": 0
+}

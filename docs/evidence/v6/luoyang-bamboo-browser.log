@@ -1,0 +1,12 @@
+
+Running 7 tests using 1 worker
+
+  ok 1 tests\luoyang-bamboo.spec.ts:6:175 › luoyang actual complete auxiliary route 0 (15.8s)
+  ok 2 tests\luoyang-bamboo.spec.ts:6:175 › luoyang actual complete auxiliary route 1 (15.0s)
+  ok 3 tests\luoyang-bamboo.spec.ts:6:175 › bamboo actual complete auxiliary route 0 (17.2s)
+  ok 4 tests\luoyang-bamboo.spec.ts:6:175 › bamboo actual complete auxiliary route 1 (17.0s)
+  ok 5 tests\luoyang-bamboo.spec.ts:9:1 › Bamboo locked saved data survives forced click, wrong main prefix, live correct unlock and live relock (223ms)
+  ok 6 tests\luoyang-bamboo.spec.ts:12:1 › Both auxiliary packs restore unvisited later scenes offline at root and subpath (1.6s)
+  ok 7 tests\luoyang-bamboo.spec.ts:15:1 › Both auxiliary casts and reply choices fit seven sizes at enlarged type with keyboard (2.2s)
+
+  7 passed (1.2m)

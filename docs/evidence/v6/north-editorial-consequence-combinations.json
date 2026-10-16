@@ -1,0 +1,22 @@
+{
+  "rows": [
+    {
+      "ending": "nq_end_teach",
+      "first": true
+    },
+    {
+      "ending": "nq_end_teach",
+      "first": false
+    },
+    {
+      "ending": "nq_end_visits",
+      "first": true
+    },
+    {
+      "ending": "nq_end_visits",
+      "first": false
+    }
+  ],
+  "count": 4,
+  "limits": "Paired six-action regression plus 512 sampled paths; not all combinations."
+}

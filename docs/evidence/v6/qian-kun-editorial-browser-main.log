@@ -1,0 +1,26 @@
+[WebServer] (node:51840) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 24 tests using 1 worker
+
+(node:28088) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\heng-art.spec.ts:8:22 › Heng north: real V1 auto/slot remain byte-exact while V2 starts; old entry continues and exports (599ms)
+  ok  2 tests\heng-art.spec.ts:8:22 › Heng qian-kun: real V1 auto/slot remain byte-exact while V2 starts; old entry continues and exports (423ms)
+  ok  3 tests\heng-art.spec.ts:17:1 › Heng two ages, actual expressions, unrevealed name and both CGs render at seven sizes (22.4s)
+  ok  4 tests\heng-art.spec.ts:25:1 › Heng shared tea remains readable at night and with missing image on both books (1.0s)
+  ok  5 tests\heng-art.spec.ts:29:22 › Heng north: current CG and archived V1 mid-scene boot on fresh offline root and subpath (2.1s)
+  ok  6 tests\heng-art.spec.ts:29:22 › Heng qian-kun: current CG and archived V1 mid-scene boot on fresh offline root and subpath (2.1s)
+  ok  7 tests\north-editorial.spec.ts:11:156 › North north-3.0.0 actual complete route 0 and three middle reloads (1.1m)
+  ok  8 tests\north-editorial.spec.ts:11:156 › North north-3.0.0 actual complete route 1 and three middle reloads (1.2m)
+  ok  9 tests\north-editorial.spec.ts:33:1 › North V3 and both archives link with Qian Kun and Notes at seven cover sizes (3.0s)
+  ok 10 tests\north-editorial.spec.ts:37:1 › Notes alternate actual from cover traverses every beat before its second ending (13.0s)
+  ok 11 tests\qian-kun-editorial.spec.ts:10:167 › Qian Kun qian-kun-2.0.0 actual complete route 0 and three middle reloads (52.5s)
+  ok 12 tests\qian-kun-editorial.spec.ts:10:167 › Qian Kun qian-kun-2.0.0 actual complete route 1 and three middle reloads (47.9s)
+  ok 13 tests\qian-kun-editorial.spec.ts:10:167 › Qian Kun qian-kun-1.0.0 actual complete route 0 and three middle reloads (53.8s)
+  ok 14 tests\qian-kun-editorial.spec.ts:10:167 › Qian Kun qian-kun-1.0.0 actual complete route 1 and three middle reloads (51.2s)
+  ok 15 tests\qian-kun-editorial.spec.ts:19:107 › Qian Kun root: V2 slots and previous export exact, V3 wrong-version import rejected (582ms)
+  ok 16 tests\qian-kun-editorial.spec.ts:19:107 › Qian Kun subpath: V2 slots and previous export exact, V3 wrong-version import rejected (837ms)
+  ok 17 tests\qian-kun-editorial.spec.ts:23:1 › Qian Kun sea choices: two methods, two themes and seven viewports accept real input and restore commands (12.9s)
+  ok 18 tests\qian-kun-editorial.spec.ts:27:1 › Qian Kun revised stages show people, readable scroll text and reusable tea at three sizes (10.3s)
+  ok 19 tests\qian-kun-editorial.spec.ts:31:1 › Qian Kun three covers link to the current first volume at seven sizes (2.5s)

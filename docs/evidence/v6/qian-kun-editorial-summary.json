@@ -1,0 +1,127 @@
+{
+  "status": "LOCAL_V3_INTEGRATION_VERIFIED_NOT_FULL_GOAL_ACCEPTANCE",
+  "baseline": "f0717e6",
+  "priorIntegrationBaseline": "16de888",
+  "current": {
+    "version": "qian-kun-3.0.0",
+    "sourceBeats": 318,
+    "options": 50,
+    "decisions": 25,
+    "endings": 2,
+    "longestPassiveGap": 17,
+    "samples": 512,
+    "exhaustive": false,
+    "contentSHA256": "6a783c891047244e3bdb96ff86e8a1a7626e87efb71123fc07e5184a6a6f45df",
+    "inkSHA256": "70a735580631f414a46ca49b5cfe7eb7ebfe676a2af10f923ef32ef52d63806d"
+  },
+  "prefixes": {
+    "qian-kun-3.0.0": "jianghu:chronicle:qian-kun:v3:",
+    "qian-kun-2.0.0": "jianghu:chronicle:qian-kun:v2:",
+    "qian-kun-1.0.0": "jianghu:chronicle:qian-kun:v1:"
+  },
+  "archives": {
+    "qian-kun-v2": "qian-kun-2.0.0",
+    "qian-kun-v1": "qian-kun-1.0.0"
+  },
+  "tests": {
+    "fullUnit": 291,
+    "unitFailures": 0,
+    "build": "pass",
+    "browserMain": 24,
+    "browserExtra": 56,
+    "browserTotalExecuted": 80,
+    "offlineWorkPackTargets": 27,
+    "offlineWorkPackPlaces": 2,
+    "offlineWorkPackCases": 54,
+    "coldOfflineCases": 2
+  },
+  "routeCoverage": {
+    "qianKunV3FullRoutes": 2,
+    "qianKunV2FullRoutes": 2,
+    "qianKunV1FullRoutes": 2,
+    "v3Endings": ["qk_open_lesson", "qk_beyond_ask"],
+    "v3MidReloadCheckpoints": ["qk_forgot_letter_1", "qk_nine_days_1", "qk_boat_tipping_1"],
+    "pairedNotesFlow": true,
+    "notesLockedWhenNorthIncomplete": true,
+    "wrongVersionImportRejected": "qian-kun-2.0.0",
+    "seaChoiceMatrix": "2 methods x 2 themes x 7 viewports",
+    "revisedStageScenes": 8,
+    "revisedStageViewports": 3,
+    "coverLinkViewports": 7
+  },
+  "preservation": {
+    "protectedPaths": 28,
+    "pathMapRedirects": 8,
+    "allSHAExact": true,
+    "redirectSemantics": "pathMap[path] ?? path",
+    "trackedProductSourceChanges": 0,
+    "gameImageChanges": 0
+  },
+  "protectedPathGroups": {
+    "north": 14,
+    "qianKunArchiveV2AuthorModules": 6,
+    "qianKunArchiveV2InkAndJson": 2,
+    "qianKunV1InkAndJson": 2,
+    "mainCampaignV5V6": 2,
+    "productionDirectionV6": 1,
+    "canonDocument": 1
+  },
+  "sourceCorrection": {
+    "file": "src/qian-kun-catalog.ts",
+    "scene": "qk_gate.time",
+    "from": "九日之后",
+    "to": "门前等候",
+    "reason": "第二日回访前不应提前显示第九日",
+    "verifiedInBuild": {
+      "oldDistContainsReplacedLabel": true,
+      "newDistReplacedLabelOccurrences": 0,
+      "newDistNewLabelPresent": true
+    },
+    "evidence": [
+      "docs/evidence/v6/qian-kun-handoff-build.log",
+      "docs/evidence/v6/qian-kun-editorial-scene-qk_nine_days_1-1440.png"
+    ]
+  },
+  "art": {
+    "rasterFiles": 156,
+    "v6RasterFiles": 109,
+    "withRetainedPromptRecords": 111,
+    "withoutRetainedPromptRecords": 45,
+    "observedRuntimeFiles": 155,
+    "registeredFiles": 156,
+    "byteMismatchFiles": 0,
+    "bytesOnDisk": 27383425,
+    "usageWorks": 47,
+    "usageAssets": 156,
+    "unvisitedDeclaredBeats": 0,
+    "manifest": "docs/art/ASSET_MANIFEST_V6.json"
+  },
+  "offline": {
+    "registeredWorkCount": 44,
+    "ownershipAudit": "docs/evidence/v6/offline-bundle-ownership-audit.json",
+    "coldRoot": "docs/evidence/v6/qian-kun-editorial-cold-root.json",
+    "coldSubpath": "docs/evidence/v6/qian-kun-editorial-cold-subpath.json"
+  },
+  "changedSourceInThisBatch": [
+    "src/qian-kun-catalog.ts"
+  ],
+  "evidence": {
+    "buildLog": "docs/evidence/v6/qian-kun-handoff-build.log",
+    "unitLog": "docs/evidence/v6/qian-kun-editorial-final-full-unit.log",
+    "browserMainLog": "docs/evidence/v6/qian-kun-handoff-browser-main.log",
+    "browserExtraLog": "docs/evidence/v6/qian-kun-handoff-cold-offline-and-work-pack.log",
+    "preservationCheck": "docs/evidence/v6/qian-kun-editorial-integration-preservation.json",
+    "currentAudit": "docs/evidence/v6/qian-kun-editorial-current-audit.json"
+  },
+  "report": "docs/v6/QIAN_KUN_V3_EDITORIAL.md",
+  "open": [
+    "死者争榜",
+    "芦花渡",
+    "主篇等其余剧本与文学轮次",
+    "核心人物专属身份/年龄与真实枪棍刀剑动作",
+    "旧观修椅与三物状态、雨夜素材",
+    "全项目完整终验",
+    "真人审美、真人阅读耗时、Android实体机"
+  ],
+  "noPushNoMergeNoDeploy": true
+}

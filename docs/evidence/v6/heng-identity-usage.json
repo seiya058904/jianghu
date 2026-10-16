@@ -1,0 +1,31 @@
+{
+  "canonicalIdentity": "sima-heng",
+  "actorAliases": {
+    "nq2_mender": [
+      "v6/heng-later.webp",
+      "v6/heng-later-intent.webp"
+    ],
+    "nq2_heng": [
+      "v6/heng-later.webp",
+      "v6/heng-later-intent.webp",
+      "v6/heng-later-amused.webp"
+    ],
+    "qk2_heng_earlier": [
+      "v6/heng-earlier.webp",
+      "v6/heng-earlier-intent-v2.webp",
+      "v6/heng-earlier-amused-v2.webp"
+    ],
+    "qk2_heng_later": [
+      "v6/heng-later.webp",
+      "v6/heng-later-amused.webp",
+      "v6/heng-later-intent.webp"
+    ],
+    "nn_heng": [
+      "v6/heng-later.webp",
+      "v6/heng-later-intent.webp",
+      "v6/heng-later-amused.webp"
+    ]
+  },
+  "sampledPathsPerWork": 256,
+  "exhaustive": false
+}

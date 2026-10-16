@@ -1,0 +1,92 @@
+{
+  "status": "V2_INTERNAL_EDITORIAL_AND_REGRESSION_VERIFIED_NOT_WHOLE_GOAL",
+  "currentContentSHA256": "f18de35a5898444111db7f9541f55e646cc8d3b3e20e5a04d8c0216de3d1eae5",
+  "frozen": {
+    "story/seven-questions-v1.ink": "c788b74ec54af765beac3ed5d482271101e41cee307fe351e7cee0481a6215a4",
+    "src/generated/seven-questions-v1.json": "2763e894391f75703da0e3b021b30455cf5234134c7c15cd2760d83b044a2791"
+  },
+  "sourceBeats": 382,
+  "choiceOptions": 62,
+  "internalEditRecords": 32,
+  "voiceRewrites": 25,
+  "lateConsequencesAdded": 3,
+  "nodeFullPass": 145,
+  "metadataUnitPass": 8,
+  "browserFinalPass": 10,
+  "browserInitial": "8 passed / 2 archive download timeouts; fixed SW allowlist; full final10 passed",
+  "unitInitial": "144 passed / 1 wrong-branch fixture assertion; fixed explicit alternate-branch coverage; full final145 passed",
+  "actualRoutes": [
+    {
+      "actualBrowserInputs": true,
+      "externalHuman": false,
+      "beats": 240,
+      "choices": 27,
+      "ending": "sq_shared_road",
+      "scenes": [
+        "sq_receipt",
+        "sq_record",
+        "sq_four",
+        "sq_copy",
+        "sq_warehouse",
+        "sq_outer",
+        "sq_chairs",
+        "sq_night",
+        "sq_ash",
+        "sq_depart",
+        "sq_valley",
+        "sq_return",
+        "sq_east_record",
+        "sq_records",
+        "sq_door",
+        "sq_after"
+      ],
+      "errors": []
+    },
+    {
+      "actualBrowserInputs": true,
+      "externalHuman": false,
+      "beats": 236,
+      "choices": 26,
+      "ending": "sq_open_lesson",
+      "scenes": [
+        "sq_receipt",
+        "sq_record",
+        "sq_four",
+        "sq_copy",
+        "sq_warehouse",
+        "sq_outer",
+        "sq_chairs",
+        "sq_night",
+        "sq_ash",
+        "sq_depart",
+        "sq_court",
+        "sq_court_fire",
+        "sq_return",
+        "sq_east",
+        "sq_records",
+        "sq_door",
+        "sq_after"
+      ],
+      "errors": []
+    }
+  ],
+  "newRasterFiles": 0,
+  "registeredOfflineWorks": 30,
+  "limits": [
+    "Internal editorial record is not external acceptance.",
+    "Fire/injury/chairs/action/CG/dedicated identities still incomplete; first-book editorial not automatically passed.",
+    "No physical Android or human reading-time claim.",
+    "Graph metadata_changed; used current source.",
+    "Required docs/art/ASSET_MANIFEST_V6.md absent; whole-goal deliverables and final root switch still pending."
+  ],
+  "finalLogs": {
+    "unit": "seven-editorial-last-unit.log",
+    "build": "seven-editorial-last-build.log",
+    "browser": "seven-editorial-last-browser.log",
+    "tightenedArchiveFixture": "seven-editorial-slot-fixture-final.log",
+    "production": "seven-editorial-last-production.log",
+    "offlineOwnership": "seven-editorial-last-offline.log"
+  },
+  "archiveFixtureFinalPass": 1,
+  "chapterRegression": "Shared east_gate_1 now uses return-veranda scene; courtyard route cannot unlock the reported-history chapter. Full final10 and strict slot fixture1 passed."
+}

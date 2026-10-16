@@ -1,0 +1,37 @@
+✔ Published Qingshi V2 contradictions are reproduced; draft removes fabricated Han family across letters and both funerary routes (103.4535ms)
+✔ Focused draft cannot alter published sources, compiled saves or canon; all exact baseline hashes remain unchanged (14.2508ms)
+✔ 512 sampled unpublished lives retain all draft beats,60 choices,two personal endings and fixed four deaths/age92 sacrifice (5189.9191ms)
+✔ Eight real carriage choices produce truthful four-cell settlements with no invented medicine bill on the uninjured path (78.5668ms)
+✔ Sixteen Song/private-lesson combinations retain chosen promises and do not claim a second half-day of the deferred lesson (145.852ms)
+✔ Only a positioned witness reports the terminal call; runner never claims unwalked posts as his own route (37.2031ms)
+✔ Published Qingshi V2 contradictions are reproduced; draft removes fabricated Han family across letters and both funerary routes (108.6503ms)
+✔ Focused draft cannot alter published sources, compiled saves or canon; all exact baseline hashes remain unchanged (14.7168ms)
+✔ Qingshi V3 512 sampled lives retain all draft beats,60 choices,two personal endings and fixed four deaths/age92 sacrifice (5129.9134ms)
+✔ Eight real carriage choices produce truthful four-cell settlements with no invented medicine bill on the uninjured path (73.7555ms)
+✔ Sixteen Song/private-lesson combinations retain chosen promises and do not claim a second half-day of the deferred lesson (155.998ms)
+✔ Only a positioned witness reports the terminal call; runner never claims unwalked posts as his own route (38.2372ms)
+✖ Qingshi V3 keeps all three age files, knife CG before breaking, closeup exit and posthumous withdrawal; V2 remains independent (17.9577ms)
+✔ Qingshi v1 archive bytes and independently addressable saves remain frozen (1.0348ms)
+✔ Qingshi v2 512 sampled lives visit every authored beat and keep the knife insert before its break (4709.3962ms)
+✔ Qingshi both lives keep all words and inputs, old knife CG and elder closeup restore without resurrecting anyone (464.7243ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 15
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5865.5075
+
+✖ failing tests:
+
+test at tests\qingshi-editorial.test.ts:31:1
+✖ Qingshi V3 keeps all three age files, knife CG before breaking, closeup exit and posthumous withdrawal; V2 remains independent (17.9577ms)
+  TypeError: Cannot read properties of undefined (reading 'stage')
+      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/qingshi-editorial.test.ts:32:382)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7)

@@ -1,0 +1,420 @@
+{
+  "status": "ACTUAL_SOURCE_EDITS_NOT_EXTERNAL_ACCEPTANCE",
+  "frozen": {
+    "story/seven-questions-v1.ink": "c788b74ec54af765beac3ed5d482271101e41cee307fe351e7cee0481a6215a4",
+    "src/generated/seven-questions-v1.json": "2763e894391f75703da0e3b021b30455cf5234134c7c15cd2760d83b044a2791"
+  },
+  "changes": [
+    {
+      "round": "structure",
+      "file": "story/seven-questions-resolution.mjs",
+      "before": "converge → east_gate → middle_chairs",
+      "after": "east_gate → converge → middle_chairs",
+      "reason": "Slow valley party misses east duel; courtyard player must see it before slow-party reunion.",
+      "beforeBeatIDs": [],
+      "afterBeatIDs": []
+    },
+    {
+      "round": "structure",
+      "file": "story/seven-questions-split.mjs",
+      "before": "去接回院的慢队，先安置伤者，再把不同路线证词配到各自见者名下。",
+      "after": "去前门接最先回院的传讯人，先安置伤者，谷中慢队另留接应。",
+      "reason": "Do not bring slow valley party back before east duel.",
+      "beforeBeatIDs": [],
+      "afterBeatIDs": []
+    },
+    {
+      "round": "structure",
+      "file": "story/seven-questions-split.mjs",
+      "before": "你在门边接到满鞋泥的同门，才知道同一场火局，山里人和院里人各有一夜没能看见。",
+      "after": "最先回来的两名传讯人鞋上满是泥，只带来谷中已撤的急讯。你给后来的伤队留好抬架，东门忽然有人喊让路。",
+      "reason": "Courtyard receives quick messengers; slow team remains on the road.",
+      "beforeBeatIDs": [
+        "sq_court_report_6"
+      ],
+      "afterBeatIDs": [
+        "sq_court_report_6"
+      ]
+    },
+    {
+      "round": "structure",
+      "file": "story/seven-questions-resolution.mjs",
+      "before": "东门那一场，也有自己的亲见者。前后两路送来的时刻，不能摺成你同时站过的两处。",
+      "after": "外廊挤着待问的人，有人捧水，有人抱着湿透的外衣。你把空抬架放到墙边，腾出通往东门的路。",
+      "reason": "State the viewpoint once instead of repeatedly policing reader.",
+      "beforeBeatIDs": [
+        "sq_east_gate_1"
+      ],
+      "afterBeatIDs": [
+        "sq_east_gate_1"
+      ]
+    },
+    {
+      "round": "cross-branch",
+      "file": "story/seven-questions-split.mjs",
+      "before": "两日前还要争得见血的人，此刻都没有空问石头该归哪家接。",
+      "after": "两日前还在席上争封卷的人，此刻一人托底，一人推开石沿。",
+      "reason": "Yan fought Gu, not Wen; do not invent Yan/Wen bloody duel.",
+      "beforeBeatIDs": [
+        "sq_tree_1"
+      ],
+      "afterBeatIDs": [
+        "sq_tree_1"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-opening.mjs",
+      "before": "照。现在缺的，别先写成永远缺；还没收到的，也别写成你已经验过。",
+      "after": "照开。七个卷次都列着，收到哪个，就在那一格落印。空的给我留着。",
+      "reason": "The disciple uses the actual seven-volume receipt.",
+      "beforeBeatIDs": [
+        "sq_last_wish_4"
+      ],
+      "afterBeatIDs": [
+        "sq_last_wish_4"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-opening.mjs",
+      "before": "禾生留下自己的押名，接下这一程共同核问，不再只让你替他传一份结论。",
+      "after": "禾生签过名，又把墨瓶倒过来看。只够半日，他仍把原件匣抱了起来。",
+      "reason": "His limited supplies and decision replace narrator endorsement.",
+      "beforeBeatIDs": [
+        "sq_receipt_11"
+      ],
+      "afterBeatIDs": [
+        "sq_receipt_11"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-opening.mjs",
+      "before": "行。若要问哪日雨，得让我找那天走过的人。不是我今天能走，就什么旧路都见过。",
+      "after": "行。我先去西渡找老程，他那日撑船。过了酉时他便收橹，你跟紧些。",
+      "reason": "Asheng acts on contacts and timing rather than reciting an evidence rule.",
+      "beforeBeatIDs": [
+        "sq_receipt_13"
+      ],
+      "afterBeatIDs": [
+        "sq_receipt_13"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-opening.mjs",
+      "before": "我带收件簿去。你们别先替金陵划一个不肯配合。",
+      "after": "我拿收件簿。先等等——这是去年的，谁把今年那本垫桌脚了？",
+      "reason": "Hesheng can be flustered; books and furniture joke gains an early seed.",
+      "beforeBeatIDs": [
+        "sq_receipt_14"
+      ],
+      "afterBeatIDs": [
+        "sq_receipt_14"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-opening.mjs",
+      "before": "第一处破绽记下了。不是因为返真一句话便能抹去所有疑问，而是两道痕终于能摆在同一张桌上，比里面那一处差别。你带走的副报添了试验，不添“已经抓到凶手”。",
+      "after": "你依尺画下深浅，两道痕的轮廓几乎重叠，末端却错开一寸。顾拿过纸，又把兽骨转向窗光，自己看了一遍。",
+      "reason": "Make Gu verify the discrepancy instead of explaining what player may not claim.",
+      "beforeBeatIDs": [
+        "sq_bone_2"
+      ],
+      "afterBeatIDs": [
+        "sq_bone_2"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-inquiry.mjs",
+      "before": "你仍只记他演过、指出的差处，不把一具木人写成自己已经会验太玄掌。有人不只嫁祸一家，是要每一家都能疑另一家。",
+      "after": "你翻到上一页。一道剑痕，一处碎骨，分别指向两家。慕容替你压住被风掀起的纸角，目光却落在尚未出声的顾脸上。",
+      "reason": "Material evidence and reaction carry the suspicion.",
+      "beforeBeatIDs": [
+        "sq_hands_9"
+      ],
+      "afterBeatIDs": [
+        "sq_hands_9"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-inquiry.mjs",
+      "before": "禾生把商号那页也交阿笙。她核过自己没听全的一句才装袋，没拿回本门就算终于落袋为安。",
+      "after": "禾生交出商号那页。阿笙读到内外力时停住，又把闻门主叫回门边；他按着木人重指了一次，她才系袋口。",
+      "reason": "Asheng interrupts an elder to clarify; active instead of obedient.",
+      "beforeBeatIDs": [
+        "sq_hands_11"
+      ],
+      "afterBeatIDs": [
+        "sq_hands_11"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-inquiry.mjs",
+      "before": "慧寂收下问件，让录事记入后议。顾没有借你的问题再骂一句六大，司马也没叫人把纸收走便算已经回答。",
+      "after": "慧寂将问件递给录事。顾盯着它放到哪一叠，直到录事在末尾添上待议，才靠回椅背。",
+      "reason": "Gu actively guards access request.",
+      "beforeBeatIDs": [
+        "sq_first_argument_10"
+      ],
+      "afterBeatIDs": [
+        "sq_first_argument_10"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-inquiry.mjs",
+      "before": "你收问件，我接这里。回来对哪几张少了，别先替我签全。",
+      "after": "阿笙，问件放门边那只匣。我去看他的手，一会儿回来点数。",
+      "reason": "Player gives a practical location instead of a moral warning.",
+      "beforeBeatIDs": [
+        "sq_ninety_six_11"
+      ],
+      "afterBeatIDs": [
+        "sq_ninety_six_11"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-inquiry.mjs",
+      "before": "一名年轻人手背擦破，包好仍想回院听。你没借他的疼替任何一位门主喊冤。",
+      "after": "年轻人手背擦破，包好便伸头听里面说话。你让他先把袖口挽住，省得血把刚缠的布又浸开。",
+      "reason": "Small physical care replaces author verdict.",
+      "beforeBeatIDs": [
+        "sq_ninety_six_13"
+      ],
+      "afterBeatIDs": [
+        "sq_ninety_six_13"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-tables.mjs",
+      "before": "有答复再抄。别拿我今晚说会商量，替他明早写成已定。",
+      "after": "明早来取。我得先问张掌门要那几条，他的字你若认不出，拿来找我。",
+      "reason": "Sima makes a specific future commitment, mildly dry.",
+      "beforeBeatIDs": [
+        "sq_night_tables_7"
+      ],
+      "afterBeatIDs": [
+        "sq_night_tables_7"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-tables.mjs",
+      "before": "你请亲见灰样的录事同送，不独自把那撮灰变成自己的破案本领。",
+      "after": "录事用两层纸包灰样，你替他托底。他仍不放心，追着又塞给你一只小木匣。",
+      "reason": "Recorded evidence handled by actual people.",
+      "beforeBeatIDs": [
+        "sq_ash_11"
+      ],
+      "afterBeatIDs": [
+        "sq_ash_11"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-tables.mjs",
+      "before": "先前那条岔路，是你跟我一起认的。我接你这一路，但别把我的名字抄成你随叫随到。",
+      "after": "跟你走。只是先说好，路上走到哪儿歇，我来定。你上回眼里只有下一站。",
+      "reason": "Asheng has her own condition tied to travel.",
+      "beforeBeatIDs": [
+        "sq_choose_route_6"
+      ],
+      "afterBeatIDs": [
+        "sq_choose_route_6"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-split.mjs",
+      "before": "人名给我。现在先接下一人，别想一口气把伤也写没了。",
+      "after": "你接上面！我压这头。哎，笔先拿走，硌进肋骨了！",
+      "reason": "Hesheng is under physical pressure, not lecturing while saving people.",
+      "beforeBeatIDs": [
+        "sq_tree_11"
+      ],
+      "afterBeatIDs": [
+        "sq_tree_11"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-split.mjs",
+      "before": "你没挪。前面掌风再响，树中间那名弟子也比不过一声有人答应接他的喊。",
+      "after": "前面一声掌响，那名弟子猛地伏住。你够住他的腕，等他重新探出一只脚，才一点点往岸边带。",
+      "reason": "Player action stays concrete under pressure.",
+      "beforeBeatIDs": [
+        "sq_tree_16"
+      ],
+      "afterBeatIDs": [
+        "sq_tree_16"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-split.mjs",
+      "before": "你没有用胆小两字逼他回来，又让他自己决定不来。",
+      "after": "他跑出两步又折回，把自己落下的包袱也扛上；这次没再往谷口看。",
+      "reason": "Replace baffling double-negative with observable choice.",
+      "beforeBeatIDs": [
+        "sq_outsider_7"
+      ],
+      "afterBeatIDs": [
+        "sq_outsider_7"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-split.mjs",
+      "before": "禾生先前说不替别人空签，这回签下的是自己愿接的差。",
+      "after": "禾生把半张焦纸夹进自己的课簿，翻开干净一页，手抖得第一行写歪了。",
+      "reason": "Show strain and taking work rather than explicitly explaining growth.",
+      "beforeBeatIDs": [
+        "sq_courtyard_fire_9"
+      ],
+      "afterBeatIDs": [
+        "sq_courtyard_fire_9"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-resolution.mjs",
+      "before": "那你这份终于没把整个江湖都签到自己手里。",
+      "after": "等会儿，我刚换了笔尖。你慢些报，第三个人名又扎破纸了。",
+      "reason": "Hesheng remains meticulous and tired, less omniscient.",
+      "beforeBeatIDs": [
+        "sq_converge_7"
+      ],
+      "afterBeatIDs": [
+        "sq_converge_7"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-resolution.mjs",
+      "before": "去，我替你压着。别连代问的每一个人都要自己跑。",
+      "after": "西廊那班我去问。你去东边，回来就在这儿碰头。",
+      "reason": "Asheng independently divides work.",
+      "beforeBeatIDs": [
+        "sq_converge_11"
+      ],
+      "afterBeatIDs": [
+        "sq_converge_11"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-resolution.mjs",
+      "before": "他望向桌边那份名册，没说死的都是谁该死。你也没把自己对门第的怨，写成二十四条命的签名许可。",
+      "after": "萧望向名册。闻道尘把它推到他面前，指尖停在第二十四个朱名上。萧没有接那张纸。",
+      "reason": "Let confrontation and refusal bear the ethical conflict.",
+      "beforeBeatIDs": [
+        "sq_middle_chairs_5"
+      ],
+      "afterBeatIDs": [
+        "sq_middle_chairs_5"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-resolution.mjs",
+      "before": "录事把问件递进去。你没有得到一个年轻人发话便让所有疑案自动结清的答案，仍跟着后续核问逐项记。",
+      "after": "录事念到失踪者，萧抬了抬眼，没有答。闻道尘让录事坐下，把那一项移到最前，继续问。",
+      "reason": "Resistance remains, no easy answer.",
+      "beforeBeatIDs": [
+        "sq_middle_chairs_12"
+      ],
+      "afterBeatIDs": [
+        "sq_middle_chairs_12"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-resolution.mjs",
+      "before": "我认我当时没知道的这一项。别把旧单抽掉，后来的人才知道错从哪儿传出去。",
+      "after": "旧单也给我。这行尽失是我写的，我在下面改，不能让你替我签。",
+      "reason": "Disciple personally corrects his mistake.",
+      "beforeBeatIDs": [
+        "sq_three_volumes_7"
+      ],
+      "afterBeatIDs": [
+        "sq_three_volumes_7"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-resolution.mjs",
+      "before": "先别许一趟便都讲懂。你会回来的话，比一句天下从此无疑更有用。",
+      "after": "往南的先停一日。那边带读的人还没到，我把回信催来，你一并带。",
+      "reason": "Wen attends to actual teaching rather than another maxim.",
+      "beforeBeatIDs": [
+        "sq_distribution_8"
+      ],
+      "afterBeatIDs": [
+        "sq_distribution_12"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-resolution.mjs",
+      "before": "你没有请他在抄件上写一句这一次必成。那句话若写得好看，也不能替一个老人过完他还要走的路。",
+      "after": "闻道尘把杯里冷茶喝尽，伸手又提壶。壶已空了。他看一眼慧寂，两人忽然又笑起来。",
+      "reason": "Let the melancholy scene breathe rather than explain its moral.",
+      "beforeBeatIDs": [
+        "sq_at_the_door_8"
+      ],
+      "afterBeatIDs": [
+        "sq_at_the_door_8"
+      ]
+    },
+    {
+      "round": "character",
+      "file": "story/seven-questions-resolution.mjs",
+      "before": "他封的是普通回帖。你把它另放，送这一封也用双脚，不因听过最高层的话便能少走一里。",
+      "after": "你将回帖放进袋侧。闻道尘追到门边，又问你路上可有卖茶的地方；方才那壶，他到底还想续上。",
+      "reason": "Recall the empty tea pot and keep Wen a person.",
+      "beforeBeatIDs": [
+        "sq_at_the_door_14"
+      ],
+      "afterBeatIDs": [
+        "sq_at_the_door_14"
+      ]
+    },
+    {
+      "round": "cross-branch",
+      "file": "story/seven-questions-resolution.mjs",
+      "before": "sq_notes / sq_kept_questions have no delayed call",
+      "after": " iff('sq_notes',`n|散席前，司马叫住你，把昨夜答应的附注递来。三处字旁另有小楷，是他怕你认错，重新写过的。你夹进前两卷，今日不必再等一封催信。`,`n|你先前送的是扉页来源表，附注还没领。司马已收好自己的行囊，听见你问，又解开袋口找；到门边时，送午饭的人已把担子挑走。`);\n iff('sq_kept_questions',`n|白日收回的问件还在原匣。你把学生问的那句展给录事，原题下添上带读与限阅的答复，交回去时仍认得提问人的字。`,`n|那日先去包手，问件交过几次人，末尾被蹭掉一行。你找到手上缠布的年轻人，请他重新讲一遍；他这回问得比纸上更细，录事只好再搬一张凳。`);\n",
+      "reason": "Waiting vs sources errand changes delivery wait; saved questions vs aid changes whose voice reconstructs missing question.",
+      "beforeBeatIDs": [],
+      "afterBeatIDs": [
+        "sq_distribution_7",
+        "sq_distribution_8",
+        "sq_distribution_9",
+        "sq_distribution_10"
+      ]
+    },
+    {
+      "round": "cross-branch",
+      "file": "story/seven-questions-resolution.mjs",
+      "before": "kept-time/paid choice stops at immediate reply",
+      "after": " iff('sq_kept_time',`n|约定的那天，同伴按期离开。余下的回信由你跑，课由你补；来借书的人催到门口时，你才知道自己答应的剩下这一份有多重。`,`n|多请的那一日过去，同伴把你付的代差钱收好，替你约来下一班。你少了一份束脩，下一次开课便自己修那张旧凳，没再请木匠。`);\n",
+      "reason": "Both career endings inherit the actual personal cost.",
+      "beforeBeatIDs": [],
+      "afterBeatIDs": [
+        "sq_afterwards_7",
+        "sq_afterwards_8"
+      ]
+    }
+  ],
+  "chapterFix": "V2 registers sq_east and sq_east_record separately; shared east_gate_1 uses sq_return so courtyard readers do not unlock the reported-history chapter. V1 metadata unchanged.",
+  "offlineFix": "New archive slug registered in Service Worker cache-work allow list after two actual download timeouts.",
+  "currentSourceBeats": 382
+}

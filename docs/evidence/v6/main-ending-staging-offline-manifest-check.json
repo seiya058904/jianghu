@@ -1,0 +1,9 @@
+{
+  "mainWorkURLs": 63,
+  "shellURLs": 65,
+  "frozenValidationChunkInRequestedWorkPack": [
+    "./assets/campaign-v6-before-ending-staging-CZt1BII1.js"
+  ],
+  "allRequestedFilesExist": true,
+  "scope": "Frozen validation data travels with requested V6 pack, not a missing online-only migration dependency."
+}

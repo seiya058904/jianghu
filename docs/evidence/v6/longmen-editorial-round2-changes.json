@@ -1,0 +1,113 @@
+{
+  "status": "SECOND_INTERNAL_ROUND_DRAFT_UNPUBLISHED",
+  "changes": [
+    {
+      "id": "L14",
+      "round": 2,
+      "focus": "character-voice-and-rhythm",
+      "file": "longmen-author.mjs",
+      "reason": "第四日不再把原次晨说成昨晨，保持真实日期。",
+      "before": "你先报昨晨卡的是哪一处",
+      "after": "你先报上回卡的是哪一处"
+    },
+    {
+      "id": "L15",
+      "round": 2,
+      "focus": "character-voice-and-rhythm",
+      "file": "longmen-author.mjs",
+      "reason": "许作为下一位应战者说自己的输赢，不只对门人训诫。",
+      "before": "lm_xu~sharp|这句等他没赢的时候，你也记得。",
+      "after": "lm_xu~sharp|下一场他若真把我送下来，你也照这样喊。"
+    },
+    {
+      "id": "L16",
+      "round": 2,
+      "focus": "character-voice-and-rhythm",
+      "file": "longmen-author.mjs",
+      "reason": "石的尊重落在归剑当场，不再由旁白解释未放水。",
+      "before": "n|他把剑鞘交给随行人，没因你说一句好话就把下一场打轻。",
+      "after": "n|他把剑鞘交给随行人，先看棚下留出的空地。你退到外沿，等他走过去，场边才又有人开口报名字。"
+    },
+    {
+      "id": "L17",
+      "round": 2,
+      "focus": "character-voice-and-rhythm",
+      "file": "longmen-author.mjs",
+      "reason": "复原高光当事人的我慢半分，更贴原典自认败。",
+      "before": "lm_xu~calm|慢了半分。",
+      "after": "lm_xu~calm|我慢了半分。"
+    },
+    {
+      "id": "L18",
+      "round": 2,
+      "focus": "character-voice-and-rhythm",
+      "file": "longmen-scenes.mjs",
+      "reason": "清和记忆用当时刀杖说明，不拿假设在场者再作课堂。",
+      "before": "lm_xu~intent|不是。可你当时若在我旁边，我也没法先替你演一遍差多少。",
+      "after": "lm_xu~intent|不是。我拿木刀，他只取藤条；我那时只想接住，哪先知道差多少。"
+    },
+    {
+      "id": "L19",
+      "round": 2,
+      "focus": "character-voice-and-rhythm",
+      "file": "longmen-author.mjs",
+      "reason": "九剑后的紧张用起手半寸体现，不由旁白训示不能喊层次。",
+      "before": "n|你握了握自己借的木刀，手心有汗。若此刻把“不在同一层”说得很响，仍不能替你使好第一刀。",
+      "after": "n|你握了握借来的木刀，手心有汗。刀头才举半寸，手腕又先绷紧。许看过来，你把它放低，没抢着接石那句第一剑。"
+    },
+    {
+      "id": "L20",
+      "round": 2,
+      "focus": "character-voice-and-rhythm",
+      "file": "longmen-night.mjs",
+      "reason": "石的败不替玩家批准求胜，反问有自己的锋芒且不再增未兑承诺。",
+      "before": "lm_shi~intent|你该问你的。我败的九剑，不该替你把想试的一刀也收掉。",
+      "after": "lm_shi~intent|我这九剑已经出完了。你那一刀还举在手里，怎么先要替我收起来？"
+    },
+    {
+      "id": "L21",
+      "round": 2,
+      "focus": "character-voice-and-rhythm",
+      "file": "longmen-night.mjs",
+      "reason": "晚茶收束用灯罩与续茶的生活动作，不引入灯因境界突然全亮的假设。",
+      "before": "n|院里灯没有因两位前辈谈完门槛就全亮起来。你们把那杯茶喝完，也各自留着明日要练的东西。",
+      "after": "n|院里风进来，灯芯偏到一边。贺把灯罩转了半面，章续上茶，两个人就又坐了一会儿。"
+    },
+    {
+      "id": "L22",
+      "round": 2,
+      "focus": "character-voice-and-rhythm",
+      "file": "longmen-author.mjs",
+      "reason": "补试开头用许等学生说问题的现场行为，少解释一次不是替学生。",
+      "before": "n|秋会散后第四日，你按借刀册上的日期到许面前。先把写着自己名字的那页取出，再拿木刀，不把替学生走过一回说成自己已经补试。",
+      "after": "n|秋会散后第四日，你按借刀册上的日期到许面前。写着自己名字的那页先放在架上，拿刀时许按住刀背，等你说这一回要试哪一处。"
+    },
+    {
+      "id": "L23",
+      "round": 2,
+      "focus": "character-voice-and-rhythm",
+      "file": "longmen-author.mjs",
+      "reason": "旅途补试成本以石已先走和门人赶路落地，不再用算不算工夫总结。",
+      "before": "n|补试占去半日，石已到了前一镇。你带着写好的会面处再上路，没有把许这一回指点算作石替你等过的工夫。",
+      "after": "n|补试占去半日，石已到了前一镇。你照着他写的会面处赶路，晚饭时才到；他已把自己的问帖递过，不替你再排一次场。"
+    },
+    {
+      "id": "L24",
+      "round": 2,
+      "focus": "character-voice-and-rhythm",
+      "file": "longmen-author.mjs",
+      "reason": "恢复原典罗等的是赢的语气，保留撤酒和由退而升。",
+      "before": "lm_luo~sharp|我要的是赢他，不是等他走。",
+      "after": "lm_luo~sharp|我等的是赢他，不是等他走。"
+    },
+    {
+      "id": "L25",
+      "round": 2,
+      "focus": "character-voice-and-rhythm",
+      "file": "longmen-author.mjs",
+      "reason": "旅途曾借别馆木刀、延期也用馆中练具，尾声不混成绝对第二回计数。",
+      "before": "end('lm_travel','后来你回到镇河门，先把沿途答应的杂事做完，才借第二回刀。路仍往前，借过的东西仍要亲手归还。')",
+      "after": "end('lm_travel','后来回镇河门，你先把沿途答应的杂事办完，再问能不能借一把出门用的木刀。许让你取出借刀册，你在旧名字下写了新的归期。')"
+    }
+  ]
+}

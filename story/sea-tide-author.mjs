@@ -1,0 +1,11 @@
+import {writeFileSync} from 'node:fs';
+import {createWriter} from './chronicle-writer.mjs';
+import {writeEntry} from './sea-tide-entry.mjs';
+import {writeRescue} from './sea-tide-rescue.mjs';
+import {writeSeats} from './sea-tide-seats.mjs';
+const w=createWriter('st_');writeEntry(w);writeRescue(w);writeSeats(w);
+const flags=['first_rail','trial_breath','shared_knot','exchange_drill','tide_follow','transfer_line','call_gap','after_carry','rush_plain','rank_question','flat_practice','watch_space','condition_excuse','shared_post','wait_paid','listen_seat','zhou_talk','enter_plain','fish_question','last_unknown'];
+let body=w.render();
+for(const [beat,look] of [['st_trial_1','childV2'],['st_outer_years_1','youth'],['st_eleven_years_1','adult'],['st_last_look_1','late']])body=body.split('\n').map(line=>line.includes(`# beat:${beat} `)?line+' # look:st_an='+look:line).join('\n');
+body=body.split('\n').map(line=>line.includes('# beat:st_sixty_three_1 ')?line+' # look:st_ye=late':line).join('\n');
+writeFileSync('story/sea-tide.ink','// Source: 宋世江湖7424–7787. Shen remembers nine hands in his forties, not first at63.\n'+flags.map(k=>`VAR st_${k} = false`).join('\n')+'\nVAR st_life = 0\n-> first_boat\n'+body);

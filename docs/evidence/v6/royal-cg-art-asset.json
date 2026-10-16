@@ -1,0 +1,17 @@
+{
+  "mode": "built-in image_gen",
+  "file": "public/art/v6/cg-royal-letters.webp",
+  "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-d907ffea-d096-4389-b838-1aff7de0e946.png",
+  "references": [
+    "public/art/v6/rl-lu-mid.webp",
+    "public/art/v6/reusable-study.webp"
+  ],
+  "prompt": "Create one reusable Chinese historical visual-novel narrative illustration, landscape 3:2. Reference 1 is the exact character identity, Lu Qingwan in middle life: preserve her oval face, almond eyes, small nose, discreet temple greys, simple jade hairpin, muted teal/ivory/blue-grey civilian clothing and natural proportions. Reference 2 is the environment and lighting reference: the same ordinary timber study with shelves, desk, paper window and warm daylight. Show Lu seated at the left third of the desk, medium-wide view, reading one ordinary folded sheet with an attentive, gently amused, knowing expression. A modest untidy pile of blank folded correspondence and two plain open wooden sorting boxes sit nearby, with one ordinary closed storage box farther back. No exact number of letters is shown. Her hands naturally support the paper, anatomically sound fingers. Keep face and hands in the upper-middle left 45% so that narrow/low game viewports retain them; leave lower 30% free of essential detail for external dialogue. Painterly detailed anime-adjacent wuxia illustration, restrained ink edges and soft fabric textures consistent with the character reference. No other people or invented prince face; an unseen interlocutor can be off-frame to her right. No readable words, labels, seals, numbers, heraldry, weapons, magic, dramatic pointing or throwing, injury, mourning, battle, ending symbol or unique narrative clue. The image should work equally for reading letters, sorting accounts, reviewing notes or ordinary conversation if the plot changes. Complete opaque background; one full illustration, not a collage or sprite sheet.",
+  "processing": "WebP format conversion only; original PNG retained.",
+  "reuse": "Reading, sorting correspondence, accounts, reviewing notes and ordinary conversation. No names, count, ranked outcome or irreversible-event symbol.",
+  "bytes": 192530,
+  "dimensions": [
+    1536,
+    1024
+  ]
+}

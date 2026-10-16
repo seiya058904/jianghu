@@ -1,0 +1,19 @@
+{
+  "baseline": "db0025e",
+  "canonSHA256": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393",
+  "frozen": {
+    "story/kuhe-v2.ink": "afbf06c1501553dfa32d3843703c20eaddec40cc65273e67e964e93573585ee6",
+    "src/generated/kuhe-v2.json": "cdec7e0e8bb4a6c3904278c1e523a1af8e9519012bb107191798619256702dba",
+    "docs/archives/kuhe-v2-editorial-baseline/kuhe-author.mjs": "fcda715fa5088f11606e06ed8d8f3974129e1bd88a22e7b149d1b56770ff0632"
+  },
+  "roundSnapshots": {
+    "round1": "Reconstructed from the exact db0025e round2 source by reversing all ten round2 before/after records; verified each replacement occurs once.",
+    "round2": "Exact db0025e draft author source.",
+    "round3": "Current full author snapshot before production-direction tags."
+  },
+  "roundSnapshotSHA256": {
+    "docs/archives/kuhe-v2-editorial-baseline/round1-author.mjs": "d758b366602352c9aab6dba0dff6210a493683d673fb849126f622ca61b14b37",
+    "docs/archives/kuhe-v2-editorial-baseline/round2-author.mjs": "3d0ade48a70a2f0278bf91c24041db186ac142e6e4bba68ddef6039c9424466e",
+    "docs/archives/kuhe-v2-editorial-baseline/round3-author.mjs": "dc7a6ec457b0d97edf4344bb79cff3746ad64a4b176c1e50b40ae20e709dc5ef"
+  }
+}

@@ -1,0 +1,34 @@
+[WebServer] (node:6652) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 23 tests using 2 workers
+
+(node:50292) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:28024) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  2 tests\default-entry.spec.ts:11:225 › Default V6 root: shared alias progress, real V5 preservation and direct archive resume/export (949ms)
+  ok  3 tests\default-entry.spec.ts:11:225 › Default V6 index: shared alias progress, real V5 preservation and direct archive resume/export (692ms)
+  ok  4 tests\default-entry.spec.ts:11:225 › Default V6 subroot: shared alias progress, real V5 preservation and direct archive resume/export (690ms)
+  ok  5 tests\default-entry.spec.ts:11:225 › Default V6 subindex: shared alias progress, real V5 preservation and direct archive resume/export (677ms)
+  ok  6 tests\default-entry.spec.ts:20:1 › Default V6 covers and direct old-save links remain visible, hittable and usable at seven sizes (5.3s)
+  ok  7 tests\default-entry.spec.ts:24:107 › Default V6 root: download replaces stale root/index HTML and cold story chunks, retaining other offline data (740ms)
+  ok  8 tests\default-entry.spec.ts:24:107 › Default V6 subpath: download replaces stale root/index HTML and cold story chunks, retaining other offline data (772ms)
+  ok  9 tests\default-entry.spec.ts:32:1 › Library and chronicle return links lead to default V6 at root and subpath (862ms)
+  ok 10 tests\taihua-v2-upgrade.spec.ts:7:1 › Taihua v2 leaves real v1 auto, manual, previous and settings untouched; old link restores original stage and two-ending counter (441ms)
+  ok 11 tests\taihua-v2-upgrade.spec.ts:10:1 › Taihua three late choices and Mu scene fit seven viewports with keyboard and decoded imagery (2.7s)
+  ok 12 tests\taihua-v2-upgrade.spec.ts:13:1 › Taihua unvisited guidance assets restore offline at root and subpath with v1 cache kept separate (1.3s)
+  ok  1 tests\taihua-v1.spec.ts:5:26 › Taihua complete actual browser path 0: independent saves, ending and reload (45.2s)
+  ok 13 tests\taihua-v2.spec.ts:5:28 › Taihua complete actual browser path 0: independent saves, ending and reload (1.1m)
+  ok 14 tests\taihua-v1.spec.ts:5:26 › Taihua complete actual browser path 1: independent saves, ending and reload (42.5s)
+  ok 15 tests\taihua-v2.spec.ts:5:28 › Taihua complete actual browser path 1: independent saves, ending and reload (1.0m)
+  ok 16 tests\taihua.spec.ts:5:28 › Taihua complete actual browser path 0: independent saves, ending and reload (1.1m)
+  ok 17 tests\taihua-v2.spec.ts:5:28 › Taihua complete actual browser path 2: independent saves, ending and reload (1.1m)
+  ok 19 tests\taihua-v2.spec.ts:37:1 › Taihua actual new portrait, mobile and desktop reply layout, and night background (1.6s)
+  ok 20 tests\taihua-v2.spec.ts:65:1 › Taihua resources are requested per work and an unvisited night scene loads offline on root and subpath (893ms)
+  ok 18 tests\taihua.spec.ts:5:28 › Taihua complete actual browser path 1: independent saves, ending and reload (1.1m)
+  ok 21 tests\taihua.spec.ts:5:28 › Taihua complete actual browser path 2: independent saves, ending and reload (1.1m)
+  ok 22 tests\taihua.spec.ts:40:1 › Taihua actual new portrait, mobile and desktop reply layout, and night background (1.6s)
+  ok 23 tests\taihua.spec.ts:68:1 › Taihua resources are requested per work and an unvisited night scene loads offline on root and subpath (876ms)
+
+  23 passed (4.7m)

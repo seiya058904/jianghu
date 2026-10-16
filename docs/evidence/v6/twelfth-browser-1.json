@@ -1,0 +1,13 @@
+{
+  "actualInputs": true,
+  "humanPlaytest": false,
+  "ending": "qw_palace",
+  "looks": [
+    "age44",
+    "age52",
+    "age58"
+  ],
+  "beats": 166,
+  "decisions": 18,
+  "errors": []
+}

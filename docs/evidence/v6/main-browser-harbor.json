@@ -1,0 +1,25 @@
+{
+  "version": "tide-promise-2.0.0",
+  "route": "harbor",
+  "actualInputs": true,
+  "humanPlaytest": false,
+  "beats": 622,
+  "decisions": 57,
+  "scenes": [
+    "v6_quay",
+    "v6_hall",
+    "v6_inn",
+    "v6_depart",
+    "v6_ridge",
+    "v6_bridge",
+    "v6_workshop",
+    "v6_contract",
+    "v6_arena",
+    "v6_wind",
+    "v6_levee",
+    "v6_storm",
+    "v6_dawn"
+  ],
+  "ending": "harbor",
+  "errors": []
+}

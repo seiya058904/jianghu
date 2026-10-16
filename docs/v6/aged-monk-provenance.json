@@ -1,0 +1,10 @@
+{
+  "tool": "built-in image_gen",
+  "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-6dd669a9-9621-47c7-8a88-5440b61cd16a.png",
+  "output": "public/art/v6/npc-aged-monk.webp",
+  "prompt": "Use case: reusable transparent NPC portrait sprite for a mature Chinese wuxia visual novel. One very old thin Chinese Buddhist monk about 90, visibly aged lined thoughtful face, shaved bald head with no topknot or beard, lean body slightly stooped but standing with quiet balance. Simple faded washed pale gray layered monk robe, cloth belt, empty relaxed hands, bare feet visible. Calm attentive neutral expression, three-quarter facing viewer left. Single full body head to bare toes with comfortable margins, consistent natural proportions; mature realistic watercolor/ink illustration with fine tactile fabric, muted parchment and gray palette, hand-painted visual novel quality. Generic unnamed elder suitable for many different stories: no scene-specific pose, injury, combat stance, prop, weapon, magic, tears or death imagery. True transparent alpha background, no scenery, floor, shadow rectangle, frame, text, signature, seal or watermark.",
+  "transparent": true,
+  "conversion": "FFmpeg WebP, preserve original aspect ratio and alpha; no repainting.",
+  "review": "Generated PNG and actual 360px/1440px stage screenshots visually reviewed: age/costume/empty hands or empty valley, no baked plot text. Final kuhe-staging-browser.log 4 passed, including seven viewport sizes, image decode and root/subpath offline. Other production-wide art gates remain pending.",
+  "reuse": "No named event, unique prop, fixed gesture, injury or outcome; reusable subject with interpretation in dialogue and staging."
+}

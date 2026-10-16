@@ -1,0 +1,114 @@
+{
+  "status": "SECOND_INTERNAL_ROUND_DRAFT",
+  "changes": [
+    {
+      "id": "R13",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "twelfth-life-youth.mjs",
+      "reason": "开场羞愧由少年动作与赵让开表现，不先替他讲权力主题。",
+      "before": "n|他仍看孙的脸，起来也站得不直。你这才发现，自己叫不许让，同样能让他先怕。",
+      "after": "n|他先看孙的脸，才撑着膝站起来。你往后让了一步，他仍没敢抬眼，刚要出口的再打一场也被你咽了回去。"
+    },
+    {
+      "id": "R14",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "twelfth-life-youth.mjs",
+      "reason": "王妃用眼前用剑问题逼出收藏/训练差别，不替作者说主题句。",
+      "before": "n|你答应，仍把最爱的一柄放回架上；喜欢铁与肯练，不是同一件事。",
+      "after": "n|你答应，把最爱的一柄放回架上。陆指着门边那把问今日用不用，你只好伸手又取回来。"
+    },
+    {
+      "id": "R15",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "twelfth-life-names.mjs",
+      "reason": "拒教仍保留长辈个性和脚位动作，减少旁白泛解所有拒绝。",
+      "before": "n|你竟被说服。这些年听见的不教，未必都在藏一门不肯给你的奇功。",
+      "after": "n|你竟被说服。老枪师将手放回膝上，等你自己把那只歪着的脚挪正，才又端起茶。"
+    },
+    {
+      "id": "R16",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "twelfth-life-teacher.mjs",
+      "reason": "骗子收钱与主角被夸中的喜感以具体手势落地。",
+      "before": "rl_cloud|贫道只看根骨。\nn|这句话比封面还中你的心意，二十两出去时，你甚至觉得比府中名师便宜。",
+      "after": "rl_cloud|贫道只看根骨。\nn|他把书推过来，手掌仍摊在书下。你将二十两放上去，还觉比府中名师便宜。"
+    },
+    {
+      "id": "R17",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "twelfth-life-teacher.mjs",
+      "reason": "陈因身份也会怕，关键问答真由两人在场说出；不是一段旁白压掉最好的人物喜剧。",
+      "before": "n|第二次见，他已猜到身份。确认那夜没睡，次日客气得你发慌。你问还教不教，他说钱已收，先约骂王爷不治罪，第三日便骂得更凶。",
+      "after": "n|第二次见，他已猜到身份。确认那夜没睡，次日一声殿下，叫得你停在门口。\ny|还教不教？\nrl_chen~uneasy|钱都收了。先说，我要骂王爷，别治罪。\ny|不治。说话算话。\nn|第三日，他叫你把刚歪的脚挪回来，语气比从前还凶。"
+    },
+    {
+      "id": "R18",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "twelfth-life-teacher.mjs",
+      "reason": "普通馆师回到自己教课的空间，不铺传奇师父姿态。",
+      "before": "n|你真走，三日后又回来。他只提三年：不换老师，不偷练新拳，见谁强也不临时改底。",
+      "after": "n|你真走，三日后又回来。他把门边常用的短凳让开，只提三年：不换老师，不偷练新拳，见谁强也不临时改底。"
+    },
+    {
+      "id": "R19",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "twelfth-life-six.mjs",
+      "reason": "身上教法混杂由查纸不填名表现，不作全知评价。",
+      "before": "n|纸上留白刺眼。你从前写满名字的时候，未必真有今日这一问清楚。",
+      "after": "n|你写未记清三个字，笔尖停在下面。本想添一个最熟的姓名，翻过两页旧记，还是将笔收回去了。"
+    },
+    {
+      "id": "R20",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "twelfth-life-defeat.mjs",
+      "reason": "薛家自己要回去过日子，不只由旁白定义替王爷证明后的恐惧。",
+      "before": "n|薛望场边，妻还站着。他收手后没立刻笑，怕的事情不会在这一拳落定时一同散。",
+      "after": "n|薛望场边，妻还站着，手里一直攥着衣角。他收手后没立刻笑。\nrl_xuewife~intent|先回馆。明日还开门。"
+    },
+    {
+      "id": "R21",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "twelfth-life-defeat.mjs",
+      "reason": "不追礼的克制以停问/差事表现，避免对手全家只供主角监看。",
+      "before": "n|你带着伤回，礼与补偿都没追到薛家。他明日还得自己推开武馆门，你不能替他先看清外面每个人。",
+      "after": "n|你带伤回府，礼箱仍放在门内。次晨门人来报薛馆已开门，你把本想再问的几句话停住，让他先去做原定差事。"
+    },
+    {
+      "id": "R22",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "twelfth-life-capital.mjs",
+      "reason": "兄弟沉默交给添油与等待，不解释病重为了谁的悟道。",
+      "before": "n|你没笑，也没立刻说若早让自己练又如何。窗边的灯快尽，你叫人添油，留着听他还想说的话。",
+      "after": "n|窗边的灯快尽，你起身叫人添油，回来坐在原处。帐顶那一点光又亮起来，兄长仍没说下一句，你也没催。"
+    },
+    {
+      "id": "R23",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "twelfth-life-capital.mjs",
+      "reason": "把否定主题化讲法换成病中的实际相处，皇帝有自己的未完话。",
+      "before": "n|你们笑得很轻，没把他这一病也讲成让你终于悟了的一场安排。",
+      "after": "n|兄长笑了一声，咳了两下。你将茶移近，等他缓过来，他又问起当年那块玉佩。"
+    },
+    {
+      "id": "R24",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "twelfth-life-after.mjs",
+      "reason": "王妃有自己正在读的书，再选择腾时间听他，不永远待机给评价。",
+      "before": "n|陆读到信里那一处你承认没看懂，没替你改成久仰绝艺。你们坐着重新说那场，她只看见人退后先扶腰，便问是不是疼。",
+      "after": "n|陆把自己看到一半的书夹好书签，才接你的信。读到那处，她问场边那人退后为什么先扶腰；你们坐着又从那里说起。"
+    }
+  ],
+  "newOrEditedArtFiles": 0
+}

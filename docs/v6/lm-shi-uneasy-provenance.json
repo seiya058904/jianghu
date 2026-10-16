@@ -1,0 +1,8 @@
+{
+  "tool": "built-in image_gen",
+  "target": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-450284fd-636d-4645-948b-68595e7dd0f3.png",
+  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-c74413f6-f855-44aa-802e-370224d34d65.png",
+  "prompt": "Use case: identity-preserve. Edit target: the provided neutral production character sprite. Create a new expression and subtle pose state for the exact same character. Preserve face identity, apparent age, facial hair, hairstyle, clothing and all cloth wear, belt and weapon identity, full head to mid thighs framing, watercolor ink style and warm even light. Change only: Quietly shaken after a great gap in skill: gaze visibly lowered, inner brows slightly raised, mouth pressed, shoulders subtly soften. No tears and no humiliation caricature. Both hands remain inside frame and sword fully sheathed. Preserve genuine transparent alpha and complete silhouette. No setting, no text, no particles, no logo, no new props, no additional figures.",
+  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/lm-shi-uneasy.webp",
+  "review": "Pending model visual review and story mapping"
+}

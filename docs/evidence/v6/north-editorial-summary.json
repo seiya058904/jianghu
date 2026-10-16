@@ -1,0 +1,176 @@
+{
+  "status": "LOCAL_V3_INTEGRATION_VERIFIED_NOT_FULL_GOAL_ACCEPTANCE",
+  "baseline": "da0ffcf",
+  "current": {
+    "version": "north-3.0.0",
+    "sourceBeats": 342,
+    "options": 62,
+    "decisions": 31,
+    "endings": 2,
+    "longestPassiveGap": 13,
+    "contentSHA256": "9f98a28824116eae675bcf111a2f904d6cb4cfba0ef8a6cc51c50c9bad333e4c"
+  },
+  "archives": {
+    "north-v2": "north-2.0.0",
+    "north-v1": "north-1.0.0"
+  },
+  "tests": {
+    "fullUnit": 277,
+    "focused": 41,
+    "focusedOverlapWithFull": 32,
+    "additionalDraftTests": 9,
+    "browserMain": 24,
+    "browserExtra": 56,
+    "repeatedStorageCases": 2,
+    "distinctBrowserCases": 79,
+    "fullRouteExecutions": 11,
+    "distinctFullRoutes": 10,
+    "fullRouteScope": "Root: North V3/V2/V1 each two, Qian Kun two, Notes two; paired test repeats North V3 first route. Subpath checks are cold boot/storage/link coverage, not additional full routes.",
+    "additionalNotesFromCover": 1
+  },
+  "newBrowserRouteRows": [
+    {
+      "actualInputs": true,
+      "version": "north-1.0.0",
+      "side": 0,
+      "decisions": 31,
+      "frames": 239,
+      "middleReloads": [
+        "nq_letter_1",
+        "nq_without_spear_1",
+        "nq_years_win_1"
+      ],
+      "ending": "nq_first_again",
+      "endingReload": true,
+      "commandsExact": true,
+      "yuanVisit": false,
+      "errors": [],
+      "externalHuman": false
+    },
+    {
+      "actualInputs": true,
+      "version": "north-1.0.0",
+      "side": 1,
+      "decisions": 31,
+      "frames": 237,
+      "middleReloads": [
+        "nq_letter_1",
+        "nq_without_spear_1",
+        "nq_years_win_1"
+      ],
+      "ending": "nq_three_names",
+      "endingReload": true,
+      "commandsExact": true,
+      "yuanVisit": false,
+      "errors": [],
+      "externalHuman": false
+    },
+    {
+      "actualInputs": true,
+      "version": "north-3.0.0",
+      "side": 0,
+      "decisions": 31,
+      "frames": 260,
+      "middleReloads": [
+        "nq_letter_1",
+        "nq_return_school_1",
+        "nq_years_win_1"
+      ],
+      "ending": "nq_first_again",
+      "endingReload": true,
+      "commandsExact": true,
+      "yuanVisit": false,
+      "errors": [],
+      "externalHuman": false
+    },
+    {
+      "actualInputs": true,
+      "version": "north-3.0.0",
+      "side": 1,
+      "decisions": 31,
+      "frames": 262,
+      "middleReloads": [
+        "nq_letter_1",
+        "nq_return_school_1",
+        "nq_years_win_1"
+      ],
+      "ending": "nq_three_names",
+      "endingReload": true,
+      "commandsExact": true,
+      "yuanVisit": true,
+      "errors": [],
+      "externalHuman": false
+    }
+  ],
+  "offline": {
+    "registeredPacks": 43,
+    "migrationChunks": 9,
+    "actualMessageAdapterCalls": 86,
+    "rootAndSubpathCold": true,
+    "allThreeNorthFreshOfflineSaves": true,
+    "V3UnseenReturnAndTea": true
+  },
+  "assets": {
+    "changes": 0,
+    "counts": {
+      "rasterFiles": 156,
+      "v6RasterFiles": 109,
+      "withRetainedPromptRecords": 111,
+      "withoutRetainedPromptRecords": 45,
+      "observedRuntimeFiles": 155,
+      "registeredFiles": 156,
+      "byteMismatchFiles": 0,
+      "bytesOnDisk": 27383425
+    },
+    "usageWorkEntries": 46,
+    "usageEvidenceSHA256": "a072f52a786acb84eedbc0ddd43e4db94906479fc8a927f501e71893a87075cf",
+    "productionCounts": {
+      "speakingNPC": 308,
+      "registeredDedicatedUsed": 32,
+      "independentDedicatedActorIdsUsed": 32,
+      "independentDedicatedUsed": 28,
+      "charactersWithThreeImagesAtSameAppearance": 19,
+      "registeredArchetypesUsed": 12,
+      "distinctBackgroundFiles": 30,
+      "distinctCGFiles": 19,
+      "referencedBytes": 23816294
+    }
+  },
+  "protectedCount": 20,
+  "checks": {
+    "build": true,
+    "publicDistArtBytes": true,
+    "publicDistSWBytes": true,
+    "unitSnapshotsAndCanonSHA": true
+  },
+  "manualVisualReview": [
+    "north-editorial-north-3.0.0-ending-0.png",
+    "north-editorial-lesson-360-1.png",
+    "north-editorial-scene-nq_return_school_1-800.png",
+    "north-editorial-scene-nq_last_tea_1-1440.png"
+  ],
+  "limits": [
+    "Browser plugin not available; existing Playwright/Chrome used.",
+    "Internal sampling and actual automated browser inputs are not external human reading or literary consensus.",
+    "Generic school background does not depict the exact three relics; rain and martial actions and key identity/age artwork remain incomplete.",
+    "Qian Kun and other remaining literary rounds and full project acceptance remain OPEN.",
+    "No Android physical device, push, merge, deploy or publication."
+  ],
+  "notesAlternateFull": {
+    "actualFromCover": true,
+    "priorReadingMarkers": "fixtures; actual two-book completion tested separately",
+    "inputs": 48,
+    "frames": 49,
+    "commandsExact": true,
+    "ending": "nn_different_starts",
+    "endingReload": true
+  },
+  "evidenceLogSHA256": {
+    "north-editorial-full-unit.log": "0553a3dad63c0fbe7c84437e244679ecc56d0ae514e9c1055a2e9dc14f7220e0",
+    "north-editorial-focused-unit.log": "e6b4dd03d8ddfc635ad4dbefc8aecdbf6f1948462e1612aa37b8d28540bc3a20",
+    "north-editorial-build.log": "902b8f7de2f3ace8ca23c319e90e75ce6fd8aebef8d6192f362df49b2649df47",
+    "north-editorial-browser-main.log": "63a9659a4027bdf67f39092965df245d924f141b048172710fab71dc73ac8f3a",
+    "north-editorial-browser-extra.log": "a5b134f0b2493df23418dc933ac45b6538908462100970bbf7f656749db9375a",
+    "north-editorial-browser-notes.log": "0f690a607a6353b9c2b1797380a4b00a93c080a992a4ea9905bfd0e7f3bf4510"
+  }
+}

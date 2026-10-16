@@ -1,0 +1,10 @@
+{
+  "tool": "built-in image_gen",
+  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-872f5920-f5dd-41ae-a13b-e4c478d1705b.png",
+  "prompt": "Use case: production story CG for Jianghu Chinese historical wuxia visual novel. Key story illustration AFTER a cargo-boat raid: Chen Zhen, exactly the mature50s male with gray-streaked topknot, stern clean-shaven face and dark burgundy sleeveless overrobe of reference, sits against a battered wooden gunwale. His anatomical RIGHT shoulder, on viewer LEFT in this mostly frontal composition, has the same modest clean linen bandage with a small dull dried stain, no exposed wound or gore; LEFT arm supports a coil of cut rope in his lap. He is tired but lucid, telling his account, not smiling in victory. A snapped dark rope and an abandoned long polearm shaft lie clearly separate on the damaged deck. Quiet inland lake behind, distant companion boat only, no other clear faces. Preserve exact face, age and costume and correct right-side injury. Wide cinematic landscape3:2 with upper/middle faces and essential action visible; lower20 percent quiet for HTML dialogue. Match reference fine naturalistic ink illustration and tactile painterly rendering. Historically grounded Song-inspired clothing and architecture. No magical effects, no blood spray, no ornate UI, no text of ANY kind, no signature or artist mark in any corner, no watermark. Preserve exact referenced identities instead of inventing lookalikes.",
+  "references": [
+    "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/dt-chen-hurt.webp"
+  ],
+  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/cg-dongting-shoulder.webp",
+  "review": "Reviewed: reference identities, ages/costumes and action or injury stage match the selected scene. No generated readable plot text. Reuse within matching cast/age/physical conditions; separate script captions supply meaning. Already-generated output, no further CG requests after user reuse clarification. Actual trigger and exit are in production-direction-v6.mjs; responsive screenshot checks tracked separately."
+}

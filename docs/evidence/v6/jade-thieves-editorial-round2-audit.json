@@ -1,0 +1,14 @@
+{
+  "status": "SECOND_INTERNAL_ROUND_DRAFT_NOT_INTEGRATED",
+  "declared": 288,
+  "visited": 288,
+  "options": 43,
+  "endings": [
+    "jt_private_account",
+    "jt_unmarked_life"
+  ],
+  "decisions": 21,
+  "samples": 768,
+  "exhaustive": false,
+  "longestPassiveGap": 16
+}

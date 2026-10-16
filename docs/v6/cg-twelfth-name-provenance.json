@@ -1,0 +1,10 @@
+{
+  "tool": "built-in image_gen",
+  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-9146918b-ccbf-4949-b724-a06a724b2392.png",
+  "prompt": "Use case: production story CG for Jianghu Chinese historical wuxia visual novel. Key story illustration at a local Qingxi ranking-office street: Zhao Chengyan, EXACTLY same58-year-old stocky man with graying tied hair, moustache, faint creases and understated dusty blue practice robe as reference, seen in three-quarter side profile, quietly looking for a long time at an UNLETTERED parchment sheet on a humble wooden notice frame. His expression is disbelieving, relieved and deeply private; empty relaxed hands, no royal crown or rich regalia, no sword-waving celebration. The sheet must be blank/indistinct so the game HTML supplies his name and twelfth place, NO generated writing. Empty stone street in warm morning light, one side of his face and eyes visible, ordinary local achievement rather than coronation. No other people. Wide cinematic landscape3:2 with upper/middle faces and essential action visible; lower20 percent quiet for HTML dialogue. Match reference fine naturalistic ink illustration and tactile painterly rendering. Historically grounded Song-inspired clothing and architecture. No magical effects, no blood spray, no ornate UI, no text of ANY kind, no signature or artist mark in any corner, no watermark. Preserve exact referenced identities instead of inventing lookalikes.",
+  "references": [
+    "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/qw-zhao-58.webp"
+  ],
+  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/cg-twelfth-name.webp",
+  "review": "Reviewed: reference identities, ages/costumes and action or injury stage match the selected scene. No generated readable plot text. Reuse within matching cast/age/physical conditions; separate script captions supply meaning. Already-generated output, no further CG requests after user reuse clarification. Actual trigger and exit are in production-direction-v6.mjs; responsive screenshot checks tracked separately."
+}

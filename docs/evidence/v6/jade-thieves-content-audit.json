@@ -1,0 +1,11 @@
+{
+  "status": "FIRST_VOLUME_PRODUCTION_DRAFT_NOT_FINAL",
+  "sourceBeats": 265,
+  "visited": 265,
+  "choiceOptions": 43,
+  "decisionsPerRoute": 21,
+  "sampledPaths": 768,
+  "exhaustive": false,
+  "longestPassiveGap": 14,
+  "limits": "Second volume unimplemented. Vault, bridge, temple, jade-state objects, active special action, CG and full editorial rounds remain incomplete; no human playtime claim."
+}

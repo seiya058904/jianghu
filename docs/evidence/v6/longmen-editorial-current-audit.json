@@ -1,0 +1,14 @@
+{
+  "status": "THREE_INTERNAL_ROUNDS_COMPILED_RUNTIME_VERIFIED",
+  "editorialRecords": 35,
+  "beats": 356,
+  "options": 50,
+  "ends": [
+    "lm_travel",
+    "lm_home"
+  ],
+  "sampledPaths": 512,
+  "exhaustive": false,
+  "longestPassiveGap": 20,
+  "limits": "Current compiled/directed edition; rendered QA and remaining project requirements recorded separately."
+}

@@ -1,0 +1,17 @@
+{
+  "beforeVisualAgeCorrection": true,
+  "productionCounts": {
+    "speakingNPC": 306,
+    "registeredDedicatedUsed": 32,
+    "independentDedicatedActorIdsUsed": 32,
+    "independentDedicatedUsed": 28,
+    "charactersWithThreeImagesAtSameAppearance": 19,
+    "registeredArchetypesUsed": 12,
+    "distinctBackgroundFiles": 30,
+    "distinctCGFiles": 19,
+    "referencedBytes": 23752882
+  },
+  "sourceSHA256": "1cff28d1c811d93eac3c8cf32d4c255b9ac9e9f3675b7fc542100e18aced70e9",
+  "technicalFileSHA256": "b1a8f8ecb86f44dd1a4968e2727203c1bf3c6681992ba526df506fcdabdbf4b6",
+  "knownVisualFailure": "Opening old boat person used v5/npc-boatwoman.webp, visibly young; screenshot retained. Technical no-collision checks did not catch age mismatch."
+}

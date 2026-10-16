@@ -1,0 +1,18 @@
+{
+  "status": "AUTHOR_SNAPSHOTS_RECONSTRUCTED_AND_CROSS_CHECKED",
+  "method": "Round3 exact current files. Round2 reverse exact round3 edits; Q37 separates the new-node and later-reply insertions and removes its added variable. Round1 reverses round2 edits and is independently compared with committed6d08464 first11 source plus six round1 additions. Snapshot paths are passive source records; their original relative imports are not executable from the archive.",
+  "sha256": {
+    "docs/archives/qingshi-editorial-rounds/round1/qingshi-author.mjs": "45e393f0f2a8cc2054163d38021a23f360a342628d4e802c1025d4d618235e89",
+    "docs/archives/qingshi-editorial-rounds/round1/qingshi-youth.mjs": "b5ba21106664a0a17cbd30a72e2f59e7c904e8b6f2cc11d6ea9938c0a32c9fa1",
+    "docs/archives/qingshi-editorial-rounds/round1/qingshi-career.mjs": "ebedb8fd8655304490849cc858b3660c7b63e835e86b88149656cbe733ffc54c",
+    "docs/archives/qingshi-editorial-rounds/round1/qingshi-last.mjs": "8af59c34c7bd028f44a5e41d851b43601a593c27aeab9297e2038bdbeb909463",
+    "docs/archives/qingshi-editorial-rounds/round2/qingshi-author.mjs": "45e393f0f2a8cc2054163d38021a23f360a342628d4e802c1025d4d618235e89",
+    "docs/archives/qingshi-editorial-rounds/round2/qingshi-youth.mjs": "58ff3f7e0a2bbbc81f8a03374f89c4d7c2c5b63fd94cfe01c92515336ea9303a",
+    "docs/archives/qingshi-editorial-rounds/round2/qingshi-career.mjs": "ba555bb077e6f45e5bb4c282baf885ce5e32af501f2bd0f89d5c3b6f0027fd5c",
+    "docs/archives/qingshi-editorial-rounds/round2/qingshi-last.mjs": "f8aef6151c30c194b2fea13705171e81796bdbb5c979b5963d7e6337a79e1331",
+    "docs/archives/qingshi-editorial-rounds/round3/qingshi-author.mjs": "05edc42b84b2971cc18de2b46a76db60dc6228c4f61624102e10bb3cb8a7db0e",
+    "docs/archives/qingshi-editorial-rounds/round3/qingshi-youth.mjs": "125f3fc7ad2d686cf6d1d309297f6c359ae066764b4e2d63138bfbb1a26eadb4",
+    "docs/archives/qingshi-editorial-rounds/round3/qingshi-career.mjs": "ee2c7b0a3d468a2aa7814fe037cae2d342eced2a28233017a02cb6ec2663fe6a",
+    "docs/archives/qingshi-editorial-rounds/round3/qingshi-last.mjs": "e78f4c7b93323f47a555180584fed3a6289fc414ca162a05b600ba805e0760e6"
+  }
+}

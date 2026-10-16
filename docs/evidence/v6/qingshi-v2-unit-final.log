@@ -1,0 +1,11 @@
+✔ Qingshi v1 archive bytes and independently addressable saves remain frozen (1.5672ms)
+✔ Qingshi v2 512 sampled lives visit every authored beat and keep the knife insert before its break (4246.0142ms)
+✔ Qingshi both lives keep all words and inputs, old knife CG and elder closeup restore without resurrecting anyone (414.9438ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4775.0239

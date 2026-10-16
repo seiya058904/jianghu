@@ -1,0 +1,122 @@
+{
+  "status": "FIRST_STRUCTURE_POV_DRAFT_UNPUBLISHED",
+  "baseline": "dbd957f",
+  "frozen": {
+    "story/longmen-author.mjs": "1804a2221582d91f3d73d36ef90f51889c0d364ba8804fe93f19808303a33a29",
+    "story/longmen-scenes.mjs": "614e20fcb2281bec08c69aa4910a7967d5eca52e514775dcadc17412964d7f45",
+    "story/longmen-night.mjs": "746cd8b47e583671199a1d33271d753d2630a842dd39ec1dbbb909b1a4b2efa8",
+    "story/longmen.ink": "20869c4b727240cfc0e36d2b4f9494753891d1b59bf4d5552a75e6249ce72e7c",
+    "src/generated/longmen.json": "defa8d5958677bc820c70a3e532909ca406a48521625ff235ac31a7789cbe58e",
+    "宋世江湖.md": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393"
+  },
+  "canonRange": [
+    1804,
+    2021
+  ],
+  "changes": [
+    {
+      "id": "L01",
+      "pass": "FIRST_STRUCTURE_AND_POV_DRAFT_NOT_THREE_ROUNDS",
+      "file": "longmen-night.mjs",
+      "reason": "门人未听私谈，否定式没提某句仍容易暗示知道具体措辞；只写自己真试过的事。",
+      "before": "n|收拾去处之前，石来取自己的行装。你只讲今晨试刀在哪里又挤住，没提内院夜里那句差一点。",
+      "after": "n|收拾去处之前，石来取自己的行装。你把记下的脚与肘向他摆了一回，只说今晨哪一处又挤住，还没接上。"
+    },
+    {
+      "id": "L02",
+      "pass": "FIRST_STRUCTURE_AND_POV_DRAFT_NOT_THREE_ROUNDS",
+      "file": "longmen-night.mjs",
+      "reason": "早有搬架肩臂痛，晨试须交代只走脚位、不再强压伤处。",
+      "before": "out.push('{\\n- lm_night_read == 1:');",
+      "after": "iff('not lm_stopped and not lm_share_load',`n|你抬刀时肩臂还疼。许先托住刀背，只让你走脚下半步，不许用伤臂硬顶；他说要看的仍是你怎样留路，不是今日能举多重。`);\n out.push('{\\n- lm_night_read == 1:');"
+    },
+    {
+      "id": "L03",
+      "pass": "FIRST_STRUCTURE_AND_POV_DRAFT_NOT_THREE_ROUNDS",
+      "file": "longmen-night.mjs",
+      "reason": "晨试轻引避免明知有伤又推痛肩，判断仍由脚步呈现。",
+      "before": "许推一下肩，前脚先转进来",
+      "after": "许用两指轻引袖口，前脚先转进来"
+    },
+    {
+      "id": "L04",
+      "pass": "FIRST_STRUCTURE_AND_POV_DRAFT_NOT_THREE_ROUNDS",
+      "file": "longmen-night.mjs",
+      "reason": "改进重复试的动作措辞，与受伤时托刀相容。",
+      "before": "y|再来一下。别替我留稳了，才让我说会。",
+      "after": "y|脚下再走一遍。别替我站稳了，才让我说会。"
+    },
+    {
+      "id": "L05",
+      "pass": "FIRST_STRUCTURE_AND_POV_DRAFT_NOT_THREE_ROUNDS",
+      "file": "longmen-night.mjs",
+      "reason": "延期不是只留下日期，明确返馆第四日，为后日实际补试留可验证约定。",
+      "before": "y|还没做到。我记在哪里断，不先教人说我已经会。\nlm_xu|写明回来的日子。你欠一回真试，不是欠我一句好话。",
+      "after": "y|还没做到。我先交差，第四日回馆，再请您看这一处。\nlm_xu|写在借刀册上。第四日若还举不动，先说；别拿替别人教过课当你自己试过。"
+    },
+    {
+      "id": "L06",
+      "pass": "FIRST_STRUCTURE_AND_POV_DRAFT_NOT_THREE_ROUNDS",
+      "file": "longmen-author.mjs",
+      "reason": "选同行却约第四日回馆，须限定首段范围和石的自主行程，不让远行瞬间折返。",
+      "before": "out.push('{\\n- lm_future == 1:');\nstage('lm_road','lm_shi');",
+      "after": "iff('lm_future == 1 and not lm_morning_try',`n|你先只陪石走河中近处三日，第四日回镇河补试。石把前一镇的会面处写给你，他先去问自己的剑，不等你办完每一件事才动身。`);\n out.push('{\\n- lm_future == 1:');\nstage('lm_road','lm_shi');"
+    },
+    {
+      "id": "L07",
+      "pass": "FIRST_STRUCTURE_AND_POV_DRAFT_NOT_THREE_ROUNDS",
+      "file": "longmen-author.mjs",
+      "reason": "三日伤期后可能先按约返馆，不预先写死第四日必在另一新馆举刀。",
+      "before": "n|你把借刀钱留在袋里，直到第四日，才重新问一处馆门肯不肯借一把木刀。",
+      "after": "n|借刀钱仍留在袋里。等能把那只手抬稳，才再问人肯不肯借刀；没做成的三日练习不算补过了。"
+    },
+    {
+      "id": "L08",
+      "pass": "FIRST_STRUCTURE_AND_POV_DRAFT_NOT_THREE_ROUNDS",
+      "file": "longmen-author.mjs",
+      "reason": "只选择留侍不一定伤臂，不能统一拿手酸作为没试刀的理由。",
+      "before": "y|手还酸，先不拿着它找人证明。",
+      "after": "y|我先守这边。外围那回还没试，等交清这里的事再去问。"
+    },
+    {
+      "id": "L09",
+      "pass": "FIRST_STRUCTURE_AND_POV_DRAFT_NOT_THREE_ROUNDS",
+      "file": "longmen-author.mjs",
+      "reason": "延期路线确实返馆补试，受伤只试脚位，行旅多占半日与留馆让别人示范均有代价。",
+      "before": "out.push('}');\ngo('fiveyears');",
+      "after": "out.push('}');\nout.push('{\\n- not lm_morning_try:');stage('lm_afterhall','lm_xu');say(`n|秋会散后第四日，你按借刀册上的日期回到镇河。先把写着自己名字的那页取出，再拿木刀，不把替学生走过一回说成自己已经补试。`);\niff('not lm_stopped and not lm_share_load',`n|肩臂还没全好，许仍托着刀背。你只走原先卡住的半步，刀不硬举过肩；第二遍脚仍会挤，便停在那一处问。`,`n|许轻引你袖口，你从上回挤住的地方重新摆。第二遍仍没有走得漂亮，至少不是一拿刀便把欠过的那回说成已经会了。`);\niff('lm_future == 1',`n|补试占去半日，石已到了前一镇。你带着写好的会面处再上路，没有把许这一回指点算作石替你等过的工夫。`,`n|这半日许留给你的脚步，学生的示范请同门先接。你课后再去把没带完的那一段交清，不把留馆说成从此有空同时做完所有事。`);\nout.push('}');\ngo('fiveyears');"
+    },
+    {
+      "id": "L10",
+      "pass": "FIRST_STRUCTURE_AND_POV_DRAFT_NOT_THREE_ROUNDS",
+      "file": "longmen-author.mjs",
+      "reason": "留馆线本来没有离镇，不把两路线都写成刚回镇河；共同到许面前，行旅返程另有专属交代。",
+      "before": "n|秋会散后第四日，你按借刀册上的日期回到镇河。先把写着自己名字的那页取出，再拿木刀，不把替学生走过一回说成自己已经补试。",
+      "after": "n|秋会散后第四日，你按借刀册上的日期到许面前。先把写着自己名字的那页取出，再拿木刀，不把替学生走过一回说成自己已经补试。"
+    },
+    {
+      "id": "L11",
+      "pass": "FIRST_STRUCTURE_AND_POV_DRAFT_NOT_THREE_ROUNDS",
+      "file": "longmen-night.mjs",
+      "reason": "四题包括肘/刀线/求胜心，不把负伤限制写成只能做脚位；改为托刀试轻量起手。",
+      "before": "许先托住刀背，只让你走脚下半步，不许用伤臂硬顶",
+      "after": "许先托住刀背，只让你试起手的一小段，不许用伤臂硬顶"
+    },
+    {
+      "id": "L12",
+      "pass": "FIRST_STRUCTURE_AND_POV_DRAFT_NOT_THREE_ROUNDS",
+      "file": "longmen-night.mjs",
+      "reason": "再试回应四种题目而非全都改问脚位。",
+      "before": "y|脚下再走一遍。别替我站稳了，才让我说会。",
+      "after": "y|这一处再试一遍。别替我摆稳了，才让我说会。"
+    },
+    {
+      "id": "L13",
+      "pass": "FIRST_STRUCTURE_AND_POV_DRAFT_NOT_THREE_ROUNDS",
+      "file": "longmen-author.mjs",
+      "reason": "首次通用补试只走半步，未兑现手/线/心三个未选脚位的问题；将第四日实际动作按原夜读四题分开，保留伤臂托刀。",
+      "before": "iff('not lm_stopped and not lm_share_load',`n|肩臂还没全好，许仍托着刀背。你只走原先卡住的半步，刀不硬举过肩；第二遍脚仍会挤，便停在那一处问。`,`n|许轻引你袖口，你从上回挤住的地方重新摆。第二遍仍没有走得漂亮，至少不是一拿刀便把欠过的那回说成已经会了。`);",
+      "after": "iff('not lm_stopped and not lm_share_load',`n|肩臂还没全好，许仍托着刀背。你先报昨晨卡的是哪一处，只试那一小段，刀不硬举过肩，痛了便停。`,`n|许让你先说原先没接上的那一处，再起刀。这一次不赶着给学生看，你先把自己的问题摆在他面前。`);\niff('lm_night_read == 1',`n|补试这一回，你先腾后脚。许轻引袖口，前脚又挤了进去；你停在两脚将撞的地方，问那一步应从哪儿让。`);\niff('lm_night_read == 2',`n|补试这一回，你松了柄，右肘却仍追原来的末尾。许托住刀，你将肘退回一点，才发现刀头到不了旧画的位置。`);\niff('lm_night_read == 3',`n|补试这一回，许从刀线旁移开。你没有继续追那条空线，眼睛转回人身上时仍慢了半拍，便请他照样再走一次。`);\niff('lm_night_read == 4',`n|补试这一回，许一近身，你想赢的那一下又先抢了出去。你自己叫停，没有说想赢已错，只重看他走来时你漏掉的半步。`);"
+    }
+  ]
+}

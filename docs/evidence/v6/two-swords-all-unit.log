@@ -1,0 +1,96 @@
+
+> jianghu@1.0.0 test
+> npm run story:build && node --experimental-strip-types --test tests/runtime.test.ts tests/vn-runtime.test.ts tests/campaign.test.ts tests/v6-compat.test.ts tests/taihua.test.ts tests/campaign-v6.test.ts tests/longmen.test.ts tests/dongting.test.ts tests/twelfth.test.ts tests/kuhe.test.ts tests/qingshi.test.ts tests/two-swords.test.ts
+
+
+> jianghu@1.0.0 story:build
+> node scripts/compile-story.mjs
+
+Authored 22 chapter files; 1006 unique source beats.
+Taihua authored: 309 beats
+V6 preview: 1325 source beats; three midroutes and independent after-scenes.
+Ink main: 16805 source characters; 0 warnings
+Dialogue metadata: { beats: 108, choices: 28, endings: 3 }
+Ink duel: 12041 source characters; 0 warnings
+Campaign metadata: { beats: 1006, choices: 135, endings: 8 }
+Ink campaign: 122888 source characters; 0 warnings
+Taihua metadata: { beats: 309, choices: 36, endings: 2 }
+Ink taihua: 38436 source characters; 0 warnings
+V6 preview metadata: { beats: 1325, choices: 182, endings: 8 }
+Ink campaign-v6: 186024 source characters; 0 warnings
+Longmen metadata: { beats: 271, choices: 42, endings: 2 }
+Ink longmen: 35436 source characters; 0 warnings
+Dongting metadata: { beats: 155, choices: 22, endings: 2 }
+Ink dongting: 21908 source characters; 0 warnings
+Twelfth metadata: { beats: 236, choices: 36, endings: 2 }
+Ink twelfth: 31623 source characters; 0 warnings
+Kuhe metadata: { beats: 299, choices: 40, endings: 2 }
+Ink kuhe: 39197 source characters; 0 warnings
+Qingshi metadata: { beats: 414, choices: 58, endings: 2 }
+Ink qingshi: 55817 source characters; 0 warnings
+Two Swords metadata: { beats: 327, choices: 50, endings: 2 }
+Ink two-swords: 45526 source characters; 0 warnings
+✔ v6 preview preserves eight reachable ending families while all three chapter-seven/nine/ten paths and independent after-scenes run (2275.3791ms)
+✔ v6 preview samples route variants without a dead end and reports genuinely unvisited source nodes (8501.4495ms)
+✔ five distinct canon incidents change later practical outcomes while holding the other choices fixed (249.0769ms)
+✔ early injuries accumulate across chapters: each single contribution can change a prepared rescue into the scar outcome (273.0035ms)
+✔ the promised extra month survives every ending family instead of disappearing when the player leaves the harbor (279.6885ms)
+✔ thirty manually reviewed main decisions retain exclusive later consequences, including ten delayed high-weight decisions (1821.2386ms)
+✔ eight distinct complete endings, both middle routes and genuine later callbacks (1723.923ms)
+✔ choice, actor-entry, CG and ending snapshots replay exactly; wrong story/tampering rejected (4771.907ms)
+✔ seeded route variations terminate with legal stages; report measured source coverage (4352.7294ms)
+✔ Dongting two life outcomes retain the 106/79 bouts, 4–3 recusal and Chen’s independent later seat (284.9764ms)
+✔ Dongting early spare rope and rest materially change a later rescue injury (250.6775ms)
+✔ Dongting reaches every authored branch in a bounded sample; acting cast excludes merely mentioned elders (2026.5433ms)
+✔ Kuhe full two personal endings preserve the staged battle, deaths, injuries and seven-day aftermath (447.644ms)
+✔ Kuhe paired early preparation changes later physical route and one-month work capacity, without rewriting canon (108.4541ms)
+✔ Kuhe trust and agreed work position echo in a different scene; rescue and pages yield concrete different lives (78.743ms)
+✔ Kuhe sampled branches reach all authored nodes, two endings and stable visible identities (7872.7055ms)
+✔ Longmen two endings preserve fixed bouts, sourced recollection and the five-year jump (192.2896ms)
+✔ Longmen paired spectator duty changes what was witnessed; early overwork and lifting carries a later limit (85.1232ms)
+✔ Longmen sampled paths cover authored nodes without inventing a hidden conversation for the apprentice (2615.9627ms)
+✔ Longmen playable Qinghe recollection explicitly switches age and viewpoint while all three cane results stay fixed (30.5682ms)
+✔ Longmen early school and outsider paths have different partners and later work or trust costs from one changed input (67.5305ms)
+✔ Qingshi complete canonical life and two personal aftermaths retain four deaths, three teachers, lifespan and defence (268.6856ms)
+✔ Qingshi a single early retreat drill changes later carriage cost and an unnamed defending squad’s lives (64.9156ms)
+✔ Qingshi family truth and all four youthful commitments have concrete later scene echoes (205.9379ms)
+✔ Qingshi sampled alternatives cover authored nodes with bounded reading gaps and stable age labels (10332.5841ms)
+✔ Qingshi protagonist uses three actual age files only at matching years and leaves all posthumous stages (18.0975ms)
+{
+  states: 4079,
+  edges: 4142,
+  scenes: 20,
+  choiceIds: 32,
+  endings: { public: 384, quiet: 768, common: 32, leave: 768 }
+}
+✔ complete routes, native Ink save/load at every choice, unique consequences (579.658ms)
+✔ schema, size, unsafe state, impossible choices rejected without altering existing session (4.7863ms)
+✔ all reachable state combinations terminate; conditions and all declared nodes/choices covered (8127.1713ms)
+✔ Taihua two actual endings replay choices, preserve canon, and fulfil different plans (1002.2984ms)
+✔ Taihua seeded branch sample reaches all authored beats without loops or missing actors (2593.7969ms)
+✔ early physical overreach plus late heavy lifting carries a delayed cost; prior private agreement changes the actual practice partner (32.9741ms)
+✔ returning early does not erase shoulder damage, and an unmade promise is never invented later (35.1738ms)
+✔ Twelfth two personal careers preserve Xue’s real win, candidate status, injury record, 4–3 and one edition for four years (319.387ms)
+✔ Twelfth middle-career duty changes the later school; physical overreach survives as a lesson rather than a magic recovery (39.8518ms)
+✔ Twelfth three age appearances are deterministic, survive replay and reject forged or unknown looks (51.4518ms)
+✔ Twelfth sampled paths cover the authored branches and only actual speaking characters count (2809.1175ms)
+✔ Two Swords separates three viewpoints, fixed losses and both personal careers (338.6699ms)
+✔ Two Swords one early passage choice changes later rescue injury without changing canon destruction (77.3181ms)
+✔ Two Swords choosing a career changes middle teacher, later correspondence and final duty (58.3739ms)
+✔ Two Swords sampled alternatives cover every authored beat and choice with bounded reading gaps (7934.4576ms)
+✔ frozen v5 content matches the pre-v6 baseline bytes (1.747ms)
+✔ all eight frozen v5 endings and pending choices restore with identical world and stage (11167.3269ms)
+✔ complete three routes; every beat restores current dialogue, cast, choices and read-only history (1030.9144ms)
+✔ save damage, forged runtime/presentation, illegal advances and repeated choices are rejected (7.4977ms)
+✔ draft name correction migrates every beat with identical world variables and presentation (1941.4645ms)
+✔ tiny authored scene exercises character entry/exit and fails unknown metadata/loops (56.6421ms)
+✔ static metadata catches duplicate IDs, unknown commands and missing endings (37.9539ms)
+✔ all reachable states close; immediate replies differ; conditional replies and script coverage (7503.7422ms)
+ℹ tests 49
+ℹ suites 0
+ℹ pass 49
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 13621.4995

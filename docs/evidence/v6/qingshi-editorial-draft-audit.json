@@ -1,0 +1,15 @@
+{
+  "status": "THREE_INTERNAL_ROUNDS_DRAFT_NOT_PUBLISHED",
+  "editorialRecords": 38,
+  "beats": 447,
+  "options": 60,
+  "sampledPaths": 512,
+  "exhaustive": false,
+  "endings": [
+    "qs_records",
+    "qs_heirs"
+  ],
+  "longestPassiveGap": 16,
+  "compilerWarnings": [],
+  "limits": "No production-direction application or browser entry. Three internal rounds drafted; production direction, browser, external literary feedback and project acceptance remain open."
+}

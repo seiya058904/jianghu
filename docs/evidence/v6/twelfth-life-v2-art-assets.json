@@ -1,0 +1,85 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "file": "public/art/v6/rl-lu-early.webp",
+      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-d3a2505b-c9b1-4352-acba-bb5e78bf9b39.png",
+      "prompt": "Use case illustration-story. Full-body transparent-background character sprite for a refined Chinese wuxia visual novel. Lu Qingwan, a civilian scholar-family woman newly married in early adulthood, around 22 in visual appearance. Warm oval face, almond-shaped dark eyes with naturally clear brows, a small straight nose, a subtle shallow dimple on the left cheek, thoughtful and lightly inquisitive expression; distinctive gentle face, not a generic porcelain doll. Black hair in a simple neat Song-inspired bun, one small plain jade hairpin. Muted teal cross-collar outer robe over warm ivory inner layer and darker blue-grey long skirt; practical noble household clothing, discreet fine weave, no extravagant jewelry or imperial emblems. Non-martial woman, no weapon or armor. Standing naturally, feet visible, hands loosely together at waist, shoulders relaxed, three-quarter front, looking slightly toward viewer's right. Painterly detailed anime-adjacent historical game art, crisp face and hands, natural human proportions, restrained ink edges and softly textured fabric; no photorealism. Entire silhouette fits with margin, consistent soft frontal daylight, no ground, no scenery, no props or text, actual transparent alpha. Reusable everyday conversation pose with no singular event meaning.",
+      "reference": null,
+      "processing": "Aspect-preserving resize and WebP format only; generated alpha retained, no external pixel edits",
+      "bytes": 64530,
+      "dimensions": [
+        560,
+        840
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "public/art/v6/rl-lu-mid.webp",
+      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-9891095d-8a78-4ee5-b6bc-42e9d6ae1c76.png",
+      "prompt": "Edit the provided Lu Qingwan character sprite into her middle-life appearance, visually early forties, for the SAME woman many years later. Preserve exact facial identity (oval face, almond eyes, small straight nose, subtle left cheek dimple), body proportions, silhouette, natural standing pose, complete feet, fabric colors, clothing cut, simple jade hairpin, framing and lighting. Add believable gentle maturation: faint eye-corner lines, slightly fuller mature cheeks, composed neutral closed-mouth attentive expression, a few discreet grey hairs near temples, no drastic old-age change. Same civilian wife, no weapon, rank insignia or luxury new accessories. Do not invent any narrative event or prop. Preserve actual transparent background and clean silhouette. One full-body sprite, no text, no panel, painterly historical visual novel art.",
+      "reference": "d3a2505b-c9b1-4352-acba-bb5e78bf9b39",
+      "processing": "Aspect-preserving resize and WebP format only; generated alpha retained, no external pixel edits",
+      "bytes": 61348,
+      "dimensions": [
+        560,
+        840
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "public/art/v6/rl-lu-mid-amused.webp",
+      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-56f5da18-97d6-4709-9e8d-cb2767ae7871.png",
+      "prompt": "Edit ONLY facial expression of this same middle-life Lu Qingwan sprite. Preserve exact middle-aged face identity, age, hair including temple greys, body, outfit, hands, framing, silhouette and actual transparent background. She now gives a warm, unmistakably amused teasing smile: smile reaches eyes, slight left-cheek dimple, small natural opening of lips, a mildly raised eyebrow, as if sharing an ordinary household joke. No laughter pose, no new props, no event-specific gesture, no text or scenery. Same full-body painterly historical game sprite. Do not make her younger or change her clothes.",
+      "reference": "9891095d-8a78-4ee5-b6bc-42e9d6ae1c76",
+      "processing": "Aspect-preserving resize and WebP format only; generated alpha retained, no external pixel edits",
+      "bytes": 154368,
+      "dimensions": [
+        560,
+        840
+      ],
+      "alphaExtrema": [
+        1,
+        253
+      ]
+    },
+    {
+      "file": "public/art/v6/rl-lu-mid-firm.webp",
+      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-e8be912a-d79a-439a-adf9-edc32a6b7e68.png",
+      "prompt": "Edit ONLY expression of the same middle-life Lu Qingwan transparent sprite. Preserve exact facial identity, middle age, hair and grey temple threads, body, clothing, hands and full-body framing. Replace neutral expression with a clearly firm, skeptical, mildly impatient look: lowered eyebrows slightly drawn together, eyes attentive and level, mouth closed in a straight line, a trace of dry humor rather than anger. This is a civilian woman setting an ordinary practical boundary in conversation, not a fighter, villain or crisis. No altered pose, no added props, no tears or symbols, no scene or text. Keep actual transparent background.",
+      "reference": "9891095d-8a78-4ee5-b6bc-42e9d6ae1c76",
+      "processing": "Aspect-preserving resize and WebP format only; generated alpha retained, no external pixel edits",
+      "bytes": 66286,
+      "dimensions": [
+        560,
+        840
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "public/art/v6/rl-lu-late.webp",
+      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-67065c39-c361-4340-87c5-10331f2a18c0.png",
+      "prompt": "Age this same Lu Qingwan full-body transparent sprite into her later life, visibly about 65, while preserving recognizable facial identity, pose, complete silhouette, plain jade hairpin and muted teal/ivory/blue-grey household clothing. Clearly older adult woman: silver-grey hair through most of the bun and temples, natural forehead lines, eye-corner and under-eye wrinkles, gentle nasolabial lines, subtly softer jaw and age-appropriate neck. Do not merely recolor hair on a youthful face. Kind composed neutral expression, mouth closed, intelligent alert eyes, neither frail nor glamour-retouched. No mourning, no sickness, no narrative prop. Consistent painterly historical game sprite lighting, same full-body framing, no scenery or text, preserve true transparency.",
+      "reference": "9891095d-8a78-4ee5-b6bc-42e9d6ae1c76",
+      "processing": "Aspect-preserving resize and WebP format only; generated alpha retained, no external pixel edits",
+      "bytes": 63536,
+      "dimensions": [
+        560,
+        840
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ]
+    }
+  ]
+}

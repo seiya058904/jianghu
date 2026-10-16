@@ -1,0 +1,19 @@
+{
+  "actualInputs": true,
+  "humanPlaytest": false,
+  "ending": "lm_home",
+  "decisions": 20,
+  "beats": 173,
+  "scenes": [
+    "lm_hall",
+    "lm_qingheyard",
+    "lm_challenge",
+    "lm_backyard",
+    "lm_autumn",
+    "lm_nine",
+    "lm_road",
+    "lm_afterhall",
+    "lm_fiveyears"
+  ],
+  "errors": []
+}

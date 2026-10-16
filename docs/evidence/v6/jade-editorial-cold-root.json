@@ -1,0 +1,12 @@
+{
+  "targets": [
+    "./assets/jade-v1-D2hpuAEc.js",
+    "./assets/jade-before-cg-BzcHDdQg.js",
+    "./art/v6/cg-grain-measure.webp"
+  ],
+  "cacheColdBeforeDownload": true,
+  "cacheRestoredByExplicitV1Download": true,
+  "HTTPcacheCleared": true,
+  "freshOfflineV1CGAndData": true,
+  "freshOfflineV2NewFireChoiceAndResponse": true
+}

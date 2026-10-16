@@ -1,0 +1,16 @@
+{
+  "status": "THREE_INTERNAL_ROUNDS_DRAFT_UNPUBLISHED",
+  "beforeAfterRecords": 49,
+  "beats": 465,
+  "options": 63,
+  "ends": [
+    "th_company",
+    "th_letter",
+    "th_guidance"
+  ],
+  "sampledPaths": 512,
+  "exhaustive": false,
+  "longestPassiveGap": 18,
+  "compilerWarnings": [],
+  "limits": "No published version/production direction/browser entry; No claim of human acceptance or full goal completion."
+}

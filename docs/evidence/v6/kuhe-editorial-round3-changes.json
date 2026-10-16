@@ -1,0 +1,77 @@
+{
+  "status": "THIRD_INTERNAL_ROUND_NOT_BROWSER_ACCEPTED",
+  "changes": [
+    {
+      "id": "K21",
+      "round": 3,
+      "focus": "alternative-route-and-payoff",
+      "reason": "未救回弟子的路线不应套用给活伤者处理腿伤的对白。",
+      "before": "iff('kh_saved_runner and kh_second_ready',`kh_peer~intent|腿还在流血。我按这边，你剪衣。\nn|同门这回叫了你的名字，手没有再从布上离开。你们等药师回来，弟子能跟着她的声音睁眼。`,`kh_healer|伤者这头给我。你们退到水边，报清还有谁没回来。\nn|你没有再争自己也能做，先把三张床上的姓名报给她。`);",
+      "after": "out.push('{\\n- kh_saved_runner:');\niff('kh_second_ready',`kh_peer~intent|腿还在流血。我按这边，你剪衣。\nn|同门这回叫了你的名字，手没有再从布上离开。你们等药师回来，弟子能跟着她的声音睁眼。`,`kh_healer|这条腿我来托。你先取水，叫替班的过来。\nn|同门提起半桶水，另一位门人来接布。他照先前说好的只送水，没有被一句着急就推到担架前。`);\nout.push('- else:');say(`kh_healer|这张担架先别挪。门派和姓名，谁认得？\nn|你抱着纸袋站到水边，等亲见的同门把名字补齐。没有人再叫他应一声。`);out.push('}');"
+    },
+    {
+      "id": "K22",
+      "round": 3,
+      "focus": "alternative-route-and-payoff",
+      "reason": "外坡支未缝宽带，原六人接架台词却默认人人穿宽带。",
+      "before": "n|你等到他把宽带过肩，才接住两位前辈递来的人。",
+      "after": "n|你等他把肩带理平、示意站稳，才接住两位前辈递来的人。"
+    },
+    {
+      "id": "K23",
+      "round": 3,
+      "focus": "alternative-route-and-payoff",
+      "reason": "轻微擦伤支不该一律告知整月忌重与疼痛工作承诺。",
+      "before": "iff('kh_hidden',`kh_peer|你说还能用，我当真了。后面每次递东西都先递右边。\ny|往后疼就说，不让你替我猜。\nn|他把“右腕忌重”写在你那只药袋上，字很大，没有替你藏。`,`kh_peer|那时你说拧布疼，我才知道能换你下来。别等下一回全提不动才讲。\ny|知道。我也会先问你。\nn|他把药袋放到左边，没再让你先伸疼的那只手。`);",
+      "after": "out.push('{\\n- not kh_named_patient or not kh_detour or not kh_repair_fear:');\niff('kh_hidden',`kh_peer|你说还能用，我当真了。后面每次递东西都先递右边。\ny|往后疼就说，不让你替我猜。\nn|他把“右腕忌重”写在你那只药袋上，字很大，没有替你藏。`,`kh_peer|那时你说拧布疼，我才知道能换你下来。别等下一回全提不动才讲。\ny|知道。我也会先问你。\nn|他把药袋放到左边，没再让你先伸疼的那只手。`);\nout.push('- else:');iff('kh_hidden',`kh_peer|还好没有伤筋。昨夜你盆沿歪着，我还以为你要把药倒掉。\ny|手酸了也该换，往后我叫你。`,`kh_peer|这回只是磨破了，也别拿肩带继续蹭。\nn|你把新布垫在擦破的皮外，让他看过，才试着提空盆。`);out.push('}');"
+    },
+    {
+      "id": "K24",
+      "round": 3,
+      "focus": "alternative-route-and-payoff",
+      "reason": "早期缺布实报/含糊影响后场核账态度而不改变历史。",
+      "before": "choose('seventh',[",
+      "after": "iff('kh_clear_report',`n|司马门人来收空药箱，认出你报过的三卷布。用掉多少便记多少，破布也收回去，交给缝垫的人。`,`n|司马门人拿着两张不合的布单来找你。出发时迟掉的那一趟还记在旁边，你得从东帐领布重新对起，没法只签一个数。`);\nchoose('seventh',["
+    },
+    {
+      "id": "K25",
+      "round": 3,
+      "focus": "alternative-route-and-payoff",
+      "reason": "诚实记82招或演练退令各有实际记录内容，非变量死存。",
+      "before": "iff('kh_late_duty == 1',",
+      "after": "iff('kh_record_honest',`n|核录者在你那页旁添注：八十二招，空劫叫两人合手。你问过他，才把“缘故待核”那行划掉一半。`,`n|核录者向你讨那张接应草图。纸角记着两次试喊的位置，哪一处听不清，后来的人照着又试了一遍。`);\niff('kh_late_duty == 1',"
+    },
+    {
+      "id": "K26",
+      "round": 3,
+      "focus": "alternative-route-and-payoff",
+      "reason": "无伤主角也说拧布疼需明确轻劳损，而非凭空重伤。",
+      "before": "choose('night_camp',[",
+      "after": "iff('kh_named_patient and kh_detour and kh_repair_fear',`n|没有扭伤，湿肩带仍把腕边磨破了一小圈。你拧布时换了只手，怕把皮再绞开。`);\nchoose('night_camp',["
+    },
+    {
+      "id": "K27",
+      "round": 3,
+      "focus": "alternative-route-and-payoff",
+      "reason": "护理与记录两条后日收回早期信件实际分工。",
+      "before": "part('future','kh_after','kh_peer',`n|谷口的人渐渐散了。你与同门又走到那两块石头前，空担架侧着仍能过，坐上一个人便过不去。`);",
+      "after": "part('future','kh_after','kh_peer',`n|谷口的人渐渐散了。你与同门又走到那两块石头前，空担架侧着仍能过，坐上一个人便过不去。`);\niff('kh_supply',`n|药师托人递来一张旧收条，是你当年先送药留下的。如今收件的门人已换，她要你去时重新问名，别沿用旧人的印。`,`n|你带过的第一份伤亡名册还夹在旧袋里。当年替你搬药的人在背后签过名，这次交班，你也等接手者到场才走。`);"
+    },
+    {
+      "id": "K28",
+      "round": 3,
+      "focus": "alternative-route-and-payoff",
+      "reason": "两类结尾避免末句都落为编剧结论。",
+      "before": "end('kh_care','你留下的不是一声赞叹。夜里那更有人按时起身，床边的人睁眼，能叫出你的名字。门后有人，也包括终于学会接班的人。')",
+      "after": "end('kh_care','夜里轮到你换水。床边的人睁眼叫你，你先应了，再去拧布。下一更的门人坐在窗下吃完半块饼，你拍过他的肩，才回自己铺上躺下。')"
+    },
+    {
+      "id": "K29",
+      "round": 3,
+      "focus": "alternative-route-and-payoff",
+      "reason": "送信结尾给收件方实际回应，不同于照护尾声。",
+      "before": "end('kh_record','你带走的旧录有缺页，有不懂，有逐一核过的姓名。下一处山门问谷中如何，你先打开撤伤那张图，而后才说三位老人的名字。')",
+      "after": "end('kh_record','下一处山门的人问谷中如何，你先摊开撤伤那张图。门人按着石口的位置问要多宽，你借他一根绳，量完才坐下说三位老人的名字。缺页仍夹在袋里，收件一栏添了新姓名。')"
+    }
+  ]
+}

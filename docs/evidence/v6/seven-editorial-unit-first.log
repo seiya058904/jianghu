@@ -1,0 +1,13 @@
+✔ Seven Questions full two routes retain canon losses, fourteen houses, distinct perpetrators and actual disposition (65.0403ms)
+✔ Seven Questions single half-day preparation changes health in each route while fixed deaths remain fixed (30.8281ms)
+✔ Seven Questions route choice changes witnessed action and uses reports for the other location (28.6746ms)
+✔ Seven Questions early joint witness and shared testing change later introduction and remaining verification work (27.9418ms)
+✔ Seven Questions sampled paths cover all authored beats and options without passive exposition stretches (3131.7766ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3391.2737

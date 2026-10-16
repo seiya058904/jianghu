@@ -1,0 +1,124 @@
+{
+  "status": "LONGMEN_V3_VERSIONED_LOCAL_DELIVERY_VERIFIED_FULL_OBJECTIVE_OPEN",
+  "baseline": "91e2958",
+  "version": "longmen-3.0.0",
+  "contentSHA256": "7da7c5bfbbb4ec126a4b136535d5127168482d6cba2c31308bdc2e5f6c4fcf78",
+  "beats": 356,
+  "options": 50,
+  "decisions": 23,
+  "editorialRounds": 3,
+  "beforeAfterRecords": 35,
+  "roundRecords": [
+    13,
+    12,
+    10
+  ],
+  "newOrEditedArtFiles": 0,
+  "preservation": "docs/evidence/v6/longmen-editorial-preservation.json",
+  "snapshots": "docs/evidence/v6/longmen-editorial-round-snapshots.json",
+  "checks": {
+    "fullUnitPass": 214,
+    "finalFocusedPass": 14,
+    "focusedOverlap": "6 current and4 V2 repeat full-suite tests;4 draft snapshot checks are separate.",
+    "build": "passed",
+    "runtimeSamples": 512,
+    "exhaustive": false,
+    "deferredTrialCombinations": 32,
+    "lateDutyCombinations": 16,
+    "combinedBrowserPass": 22,
+    "initialExtraBrowserPass": 6,
+    "initialExtraBrowserFailed": 1,
+    "day4FixedPass": 1,
+    "day4ScrollStrengthenedPass": 1,
+    "uniquePassingBrowserCases": 29,
+    "deduplication": "22 combined plus7 distinct extra; day4 correction and scroll strengthening repeat the same case."
+  },
+  "browser": {
+    "availability": "Browser plugin not available; existing Playwright/Chrome",
+    "roots": [
+      "http://127.0.0.1:4173/",
+      "http://127.0.0.1:4175/Jianghu/"
+    ],
+    "sizes": [
+      [
+        360,
+        800
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        412,
+        915
+      ],
+      [
+        800,
+        360
+      ],
+      [
+        1366,
+        768
+      ],
+      [
+        1440,
+        900
+      ],
+      [
+        1920,
+        1080
+      ]
+    ],
+    "currentFullRoute": "Both paths verify per-frame visible text against runtime and three refresh points with commands; final ending reload verified.",
+    "deferredDay4": "Both future routes with injured arm at seven sizes; date, generic hall, text, no old CG leakage, scroll to end, button bounds and actual click, response and reload.",
+    "manualImages": [
+      "longmen-editorial-day4-360-false.png",
+      "longmen-editorial-day4-800-true.png",
+      "longmen-editorial-lm_night_private_2-0.png",
+      "longmen-editorial-day4-scroll-end-false.png"
+    ],
+    "fullRoutes": "V3,V2,V1 each two actual full UI routes, six total. V3 per-frame visible text and three mid-route refresh command comparisons; V2/V1 frame IDs and isolated final reload."
+  },
+  "offline": {
+    "registeredCurrentAndArchivePackages": 38,
+    "functionalScopeMessages": 76,
+    "frozenMigrationChunks": 9,
+    "explicitCold": "V2 hashed data and shared night image evicted, explicit download restored, HTTP cache cleared and page closed; fresh offline V2 private CG and V3 four-way pending question with response at root/subpath."
+  },
+  "rasterCounts": {
+    "rasterFiles": 156,
+    "v6RasterFiles": 109,
+    "withRetainedPromptRecords": 111,
+    "withoutRetainedPromptRecords": 45,
+    "observedRuntimeFiles": 155,
+    "registeredFiles": 156,
+    "byteMismatchFiles": 0,
+    "bytesOnDisk": 27383425
+  },
+  "productionCounts": {
+    "speakingNPC": 307,
+    "registeredDedicatedUsed": 32,
+    "independentDedicatedActorIdsUsed": 32,
+    "independentDedicatedUsed": 28,
+    "charactersWithThreeImagesAtSameAppearance": 19,
+    "registeredArchetypesUsed": 12,
+    "distinctBackgroundFiles": 30,
+    "distinctCGFiles": 19,
+    "referencedBytes": 23816294
+  },
+  "samplingEntries": 41,
+  "namedPeopleVerifiedLowerBound": 60,
+  "failuresRetained": [
+    "Initial scene-key match assertion corrected with actual literal.",
+    "First build duplicate longmen extra key corrected by retaining old Luoyang link and adding archive.",
+    "Initial day4 browser fixture overwrote auto on reload; corrected first-seed-only fixture, product story unchanged."
+  ],
+  "sharedCatalogCorrection": "Xu fixed age56 biography applies to all editions glossary; frozen story bytes and art mapping unchanged.",
+  "graph": "18 paths coverage_unavailable/metadata_changed; direct source/diff/runtime evidence, no graph completeness claim.",
+  "fullObjective": "OPEN",
+  "limits": [
+    "Internal editing, no independent literary acceptance or human playtime proof.",
+    "No claim all important identities/ages, action art, full setting/CG requirements or Android device gates completed.",
+    "No push, deployment, publication or remote changes."
+  ]
+}

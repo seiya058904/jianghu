@@ -1,0 +1,16 @@
+{
+  "status": "THREE_INTERNAL_ROUNDS_CURRENT_COMPILED",
+  "beforeAfterRecords": 49,
+  "beats": 465,
+  "options": 63,
+  "ends": [
+    "th_company",
+    "th_letter",
+    "th_guidance"
+  ],
+  "sampledPaths": 512,
+  "exhaustive": false,
+  "longestPassiveGap": 18,
+  "compiledBy": "scripts/compile-story.mjs",
+  "limits": "Current compiled/directed version; no claim of human acceptance or full goal completion."
+}

@@ -1,0 +1,14 @@
+{
+  "actualBrowserInputs": true,
+  "everyVisibleTextCompared": true,
+  "decisions": 34,
+  "refreshes": 3,
+  "frames": 319,
+  "ending": "rl_watch_after",
+  "looks": [
+    "early",
+    "mid",
+    "late"
+  ],
+  "errors": []
+}

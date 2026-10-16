@@ -1,0 +1,131 @@
+{
+  "status": "TAIHUA_V3_VERSIONED_LOCAL_DELIVERY_VERIFIED_FULL_OBJECTIVE_OPEN",
+  "baseline": "2ce5922",
+  "version": "taihua-3.0.0",
+  "contentSHA256": "770de567c32d1fad2cd2841ebf0f11e27a0a626b0f1778b8cad31444953866eb",
+  "beats": 465,
+  "options": 63,
+  "decisions": {
+    "company": 30,
+    "letter": 30,
+    "guidance": 31
+  },
+  "editorialRounds": 3,
+  "beforeAfterRecords": 49,
+  "roundRecords": [
+    23,
+    16,
+    10
+  ],
+  "newOrEditedArtFiles": 0,
+  "preservation": "docs/evidence/v6/taihua-editorial-preservation.json",
+  "snapshots": "docs/evidence/v6/taihua-editorial-round-snapshots.json",
+  "checks": {
+    "fullUnitPass": 225,
+    "finalFocusedPass": 29,
+    "focusedOverlap": "19 current/V2/V1 cases repeat full suite;10 draft snapshot cases separate.",
+    "build": "passed",
+    "combinedBrowserPass": 23,
+    "extraBrowserPass": 7,
+    "stageFixedBrowserPass": 1,
+    "uniquePassingBrowserCases": 31,
+    "stageInitialFailure": 1,
+    "exhaustive": false,
+    "runtimeSamples": 512,
+    "commitmentCombinations": 24,
+    "diagramCombinations": 12,
+    "loadCombinations": 24,
+    "instructionCombinations": 12
+  },
+  "browser": {
+    "availability": "Browser plugin not available; existing Playwright/Chrome",
+    "roots": [
+      "http://127.0.0.1:4173/",
+      "http://127.0.0.1:4175/Jianghu/"
+    ],
+    "sizes": [
+      [
+        360,
+        800
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        412,
+        915
+      ],
+      [
+        800,
+        360
+      ],
+      [
+        1366,
+        768
+      ],
+      [
+        1440,
+        900
+      ],
+      [
+        1920,
+        1080
+      ]
+    ],
+    "fullActualRoutes": 8,
+    "fullActualRouteScope": "V3 and frozen V2 each3 outcomes; frozen V1 two. V3 every visible text compared,3 mid-route reload command comparisons, final text/commands and ending reload. Other editions frame IDs/isolated final reload.",
+    "lessonChoiceContexts": 28,
+    "stageContexts": 18,
+    "manualImages": [
+      "taihua-editorial-lesson-dark-360-1.png",
+      "taihua-editorial-lesson-paper-800-0.png",
+      "taihua-editorial-stage-th_supper_8-paper-1440.png",
+      "taihua-editorial-stage-th_mu_front_5-paper-1440.png",
+      "taihua-editorial-stage-th_six_open_4-dark-360.png"
+    ]
+  },
+  "offline": {
+    "registeredCurrentAndArchivePackages": 39,
+    "functionalScopeMessages": 78,
+    "frozenMigrationChunks": 9,
+    "explicitCold": "V2 hashed data and shared night image evicted; explicit V2 download restores both, HTTP cache cleared and page closed; fresh offline V2 CG and V3 unvisited lesson choice and response at root/subpath."
+  },
+  "rasterCounts": {
+    "rasterFiles": 156,
+    "v6RasterFiles": 109,
+    "withRetainedPromptRecords": 111,
+    "withoutRetainedPromptRecords": 45,
+    "observedRuntimeFiles": 155,
+    "registeredFiles": 156,
+    "byteMismatchFiles": 0,
+    "bytesOnDisk": 27383425
+  },
+  "productionCounts": {
+    "speakingNPC": 307,
+    "registeredDedicatedUsed": 32,
+    "independentDedicatedActorIdsUsed": 32,
+    "independentDedicatedUsed": 28,
+    "charactersWithThreeImagesAtSameAppearance": 19,
+    "registeredArchetypesUsed": 12,
+    "distinctBackgroundFiles": 30,
+    "distinctCGFiles": 19,
+    "referencedBytes": 23816294
+  },
+  "samplingEntries": 42,
+  "namedPeopleVerifiedLowerBound": 60,
+  "failuresAndCorrections": [
+    "Second-round literal edit matched only a sentence tail with wrong narrator prefix; continued against actual full source sentence.",
+    "Promotion script expected longer HTML title than actual short title; corrected exact existing title before completing tests.",
+    "Initial29 focused tests:28 pass, V1 protection expected current v2; corrected current v3 plus explicit archived v2 registry assertions; final29 and225 full pass.",
+    "Stage test expected Mu exit after one advance; actual next beat is still his return, following beat clears cast; corrected to actual two-step sequence, product unchanged."
+  ],
+  "graph": "23 paths coverage_unavailable/metadata_changed; source/diff/runtime evidence, no graph completeness claim.",
+  "fullObjective": "OPEN",
+  "limits": [
+    "Internal literary work; no independent human acceptance or measured playtime.",
+    "No claim six youths complete dedicated3-state art, all older identities/ages, action choreography or all project gates passed.",
+    "Android physical-device and final delivery remain open.",
+    "No push/deployment/publication/remotes changed."
+  ]
+}

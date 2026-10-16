@@ -1,0 +1,9 @@
+
+Running 2 tests using 1 worker
+
+(node:54364) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\jade-thieves-editorial-integrity.spec.ts:16:1 › Jade new, original and second-volume covers remain linked at seven sizes (1.8s)
+  ok 2 tests\jade-thieves-editorial-stage.spec.ts:5:1 › Jade current empty box, two closeups, close-range action, death and final paper remain readable in three sizes (6.9s)
+
+  2 passed (9.5s)

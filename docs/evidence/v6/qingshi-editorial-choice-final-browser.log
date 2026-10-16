@@ -1,0 +1,6 @@
+
+Running 1 test using 1 worker
+
+  ok 1 tests\qingshi-editorial-integrity.spec.ts:15:1 › Qingshi V3 new home choice: both family reactions, paper/dark, seven sizes, readable controls and real response (8.3s)
+
+  1 passed (9.0s)

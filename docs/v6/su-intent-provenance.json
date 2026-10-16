@@ -1,0 +1,8 @@
+{
+  "tool": "built-in image_gen",
+  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-2f2876d6-e31c-441b-9aca-ff02f2d2cd0b.png",
+  "prompt": "Use case: expression and pose edit for existing visual novel character. Preserve EXACT identity, facial anatomy, age, hair, clothing materials/colors and watercolor/ink illustration finish of reference. Make this meaningful expression/gesture variation: Same27-year-old woman Su Wancheng, focused firm expression with brows drawn and mouth about to speak, unroll the small paper in one hand while opposite hand points to one place on it. Paper has only indistinct ink marks, no legible text. Preserve dark navy official-travel robe, ivory/red collar, hairpin, belt and sheathed sword, identical face. Single character only, same framing and proportions as reference, portrait2:3. True transparent background, preserve alpha, no background, no shadow panel, no text, no logos. Do not copy the original neutral pose without the requested change.",
+  "reference": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v5/su.webp",
+  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/su-intent.webp",
+  "review": "Visually reviewed: age, identity or generic type, anatomy and meaningful pose/environment differences checked; mapped to matching production metadata. Independent NPC ownership and same-stage collisions audited. Browser final screenshot review remains pending."
+}

@@ -1,0 +1,14 @@
+{
+  "status": "EXPANDED_DRAFT_NOT_FINAL",
+  "beats": 339,
+  "decisionsPerRoute": 23,
+  "options": 50,
+  "sampledPaths": 512,
+  "exhaustive": false,
+  "longestPassiveGap": 15,
+  "storyCGs": [
+    "woodenInquiry",
+    "longmenNight"
+  ],
+  "limits": "Nights outer and next-morning dialogue are additions; He/Zhang central private exchange fixed. Old v1 bytes preserved. New Zhang one portrait not three states. Full three-round editorial and all-core art acceptance remain."
+}

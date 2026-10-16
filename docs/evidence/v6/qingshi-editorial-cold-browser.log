@@ -1,0 +1,6 @@
+
+Running 1 test using 1 worker
+
+  ok 1 tests\qingshi-editorial-cold-offline.spec.ts:8:1 › Qingshi V2 cold chunk and shared knife are explicitly restored; fresh offline pages resume V2 and V3 at root and subpath (1.6s)
+
+  1 passed (2.7s)

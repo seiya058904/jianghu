@@ -1,0 +1,75 @@
+
+> jianghu@1.0.0 test
+> npm run story:build && node --experimental-strip-types --test tests/runtime.test.ts tests/vn-runtime.test.ts tests/campaign.test.ts tests/v6-compat.test.ts tests/taihua.test.ts tests/campaign-v6.test.ts tests/longmen.test.ts tests/dongting.test.ts tests/twelfth.test.ts
+
+
+> jianghu@1.0.0 story:build
+> node scripts/compile-story.mjs
+
+Authored 22 chapter files; 1006 unique source beats.
+Taihua authored: 309 beats
+V6 preview: 1325 source beats; three midroutes and independent after-scenes.
+Ink main: 16805 source characters; 0 warnings
+Dialogue metadata: { beats: 108, choices: 28, endings: 3 }
+Ink duel: 12041 source characters; 0 warnings
+Campaign metadata: { beats: 1006, choices: 135, endings: 8 }
+Ink campaign: 122888 source characters; 0 warnings
+Taihua metadata: { beats: 309, choices: 36, endings: 2 }
+Ink taihua: 38436 source characters; 0 warnings
+V6 preview metadata: { beats: 1325, choices: 182, endings: 8 }
+Ink campaign-v6: 186024 source characters; 0 warnings
+Longmen metadata: { beats: 192, choices: 28, endings: 2 }
+Ink longmen: 24898 source characters; 0 warnings
+Dongting metadata: { beats: 155, choices: 22, endings: 2 }
+Ink dongting: 21908 source characters; 0 warnings
+Twelfth metadata: { beats: 236, choices: 36, endings: 2 }
+Ink twelfth: 31623 source characters; 0 warnings
+✔ v6 preview preserves eight reachable ending families while all three chapter-seven/nine/ten paths and independent after-scenes run (1090.4095ms)
+✔ v6 preview samples route variants without a dead end and reports genuinely unvisited source nodes (4810.5384ms)
+✔ five distinct canon incidents change later practical outcomes while holding the other choices fixed (150.0083ms)
+✔ early injuries accumulate across chapters: each single contribution can change a prepared rescue into the scar outcome (172.497ms)
+✔ the promised extra month survives every ending family instead of disappearing when the player leaves the harbor (194.8522ms)
+✔ thirty manually reviewed main decisions retain exclusive later consequences, including ten delayed high-weight decisions (1419.4085ms)
+✔ eight distinct complete endings, both middle routes and genuine later callbacks (777.3006ms)
+✔ choice, actor-entry, CG and ending snapshots replay exactly; wrong story/tampering rejected (2482.2572ms)
+✔ seeded route variations terminate with legal stages; report measured source coverage (2671.6338ms)
+✔ Dongting two life outcomes retain the 106/79 bouts, 4–3 recusal and Chen’s independent later seat (104.0184ms)
+✔ Dongting early spare rope and rest materially change a later rescue injury (90.0205ms)
+✔ Dongting reaches every authored branch in a bounded sample; acting cast excludes merely mentioned elders (957.6847ms)
+✔ Longmen two endings preserve fixed bouts, sourced recollection and the five-year jump (94.7198ms)
+✔ Longmen paired spectator duty changes what was witnessed; early overwork and lifting carries a later limit (47.3452ms)
+✔ Longmen sampled paths cover authored nodes without inventing a hidden conversation for the apprentice (926.2141ms)
+{
+  states: 4079,
+  edges: 4142,
+  scenes: 20,
+  choiceIds: 32,
+  endings: { public: 384, quiet: 768, common: 32, leave: 768 }
+}
+✔ complete routes, native Ink save/load at every choice, unique consequences (250.8947ms)
+✔ schema, size, unsafe state, impossible choices rejected without altering existing session (5.4234ms)
+✔ all reachable state combinations terminate; conditions and all declared nodes/choices covered (4186.1029ms)
+✔ Taihua two actual endings replay choices, preserve canon, and fulfil different plans (466.434ms)
+✔ Taihua seeded branch sample reaches all authored beats without loops or missing actors (1244.9775ms)
+✔ early physical overreach plus late heavy lifting carries a delayed cost; prior private agreement changes the actual practice partner (19.7436ms)
+✔ returning early does not erase shoulder damage, and an unmade promise is never invented later (23.7384ms)
+✔ Twelfth two personal careers preserve Xue’s real win, candidate status, injury record, 4–3 and one edition for four years (114.4475ms)
+✔ Twelfth middle-career duty changes the later school; physical overreach survives as a lesson rather than a magic recovery (41.3427ms)
+✔ Twelfth three age appearances are deterministic, survive replay and reject forged or unknown looks (27.5953ms)
+✔ Twelfth sampled paths cover the authored branches and only actual speaking characters count (1396.3145ms)
+✔ frozen v5 content matches the pre-v6 baseline bytes (1.5967ms)
+✔ all eight frozen v5 endings and pending choices restore with identical world and stage (6202.9753ms)
+✔ complete three routes; every beat restores current dialogue, cast, choices and read-only history (423.9513ms)
+✔ save damage, forged runtime/presentation, illegal advances and repeated choices are rejected (5.0555ms)
+✔ draft name correction migrates every beat with identical world variables and presentation (925.464ms)
+✔ tiny authored scene exercises character entry/exit and fails unknown metadata/loops (31.547ms)
+✔ static metadata catches duplicate IDs, unknown commands and missing endings (19.2656ms)
+✔ all reachable states close; immediate replies differ; conditional replies and script coverage (4291.2253ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7978.8126

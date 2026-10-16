@@ -1,0 +1,13 @@
+[WebServer] (node:49216) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:43112) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\campaign-v6-storage.spec.ts:9:1 › all eight current main ending final sentences also restore as exact production text (1.9s)
+  ok 2 tests\campaign-v6-storage.spec.ts:12:1 › current main pending manual slot and exported file restore; frozen-v5 import cannot replace it (464ms)
+  ok 3 tests\campaign-v6-storage.spec.ts:17:1 › current main corrupt auto remains exportable and is backed up before restart (288ms)
+  ok 4 tests\campaign-v6-storage.spec.ts:20:1 › current main unvisited timber CG decodes offline and continues at root and subpath (928ms)
+
+  4 passed (4.5s)

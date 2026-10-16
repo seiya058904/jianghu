@@ -1,0 +1,12 @@
+import {writeFileSync} from 'node:fs';
+import {createWriter} from './chronicle-writer.mjs';
+import {writeBouts} from './dead-ranking-bouts.mjs';
+import {writePeople} from './dead-ranking-people.mjs';
+import {writeCase} from './dead-ranking-case.mjs';
+import {writeCouncil} from './dead-ranking-council.mjs';
+import {writeAfter} from './dead-ranking-after.mjs';
+const w=createWriter('dr_');writeBouts(w);writePeople(w);writeCase(w);writeCouncil(w);writeAfter(w);
+const flags=['letter_hand','practice','liang_private','claim_separate','asked_reopen','wants_test','boat_wait','clinic_time','zhao_direct','each_name','two_accounts','tell_three','each_seen','old_worker','gu_wait','gu_own_words','land_trace','house_plain','names_plain','life_limits','letter_private','new_name'];
+const numbers=['first_sword','second_sword','third_sword','pov','mid_response','bow_response','career','lesson'];
+const body=w.render().split('\n').map(line=>line.includes('# beat:dr_last_page_1 ')?line+' # look:dr_next=late':line).join('\n');
+writeFileSync('story/dead-ranking.ink','// Source: 宋世江湖20214–24155. Anonymous bout reconstructions are compatible additions; three identities and fixed records stay separate.\n'+flags.map(k=>`VAR dr_${k} = false`).join('\n')+'\n'+numbers.map(k=>`VAR dr_${k} = 0`).join('\n')+'\n-> dead_letter\n'+body);

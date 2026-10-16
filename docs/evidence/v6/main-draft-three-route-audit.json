@@ -1,0 +1,200 @@
+{
+  "status": "DRAFT_NOT_FINAL",
+  "version": "tide-promise-2.0.0",
+  "routes": {
+    "harbor": {
+      "beats": 728,
+      "decisions": 63,
+      "longestPassiveGap": 27,
+      "scenes": [
+        "v6_quay",
+        "v6_hall",
+        "v6_inn",
+        "v6_depart",
+        "v6_ridge",
+        "v6_bridge",
+        "v6_workshop",
+        "v6_contract",
+        "v6_arena",
+        "v6_wind",
+        "v6_levee",
+        "v6_storm",
+        "v6_dawn",
+        "v6_end_harbor"
+      ]
+    },
+    "name": {
+      "beats": 728,
+      "decisions": 63,
+      "longestPassiveGap": 27,
+      "scenes": [
+        "v6_quay",
+        "v6_hall",
+        "v6_inn",
+        "v6_depart",
+        "v6_ridge",
+        "v6_bridge",
+        "v6_workshop",
+        "v6_contract",
+        "v6_arena",
+        "v6_wind",
+        "v6_levee",
+        "v6_storm",
+        "v6_dawn",
+        "v6_end_name"
+      ]
+    },
+    "together5": {
+      "beats": 731,
+      "decisions": 63,
+      "longestPassiveGap": 27,
+      "scenes": [
+        "v6_quay",
+        "v6_hall",
+        "v6_inn",
+        "v6_depart",
+        "v6_ridge",
+        "v6_bridge",
+        "v6_workshop",
+        "v6_contract",
+        "v6_arena",
+        "v6_wind",
+        "v6_levee",
+        "v6_storm",
+        "v6_dawn",
+        "v6_afterhall",
+        "v6_end_departure",
+        "v6_end_together5"
+      ]
+    },
+    "teacher": {
+      "beats": 730,
+      "decisions": 63,
+      "longestPassiveGap": 27,
+      "scenes": [
+        "v6_quay",
+        "v6_hall",
+        "v6_inn",
+        "v6_depart",
+        "v6_ridge",
+        "v6_bridge",
+        "v6_workshop",
+        "v6_contract",
+        "v6_arena",
+        "v6_wind",
+        "v6_levee",
+        "v6_storm",
+        "v6_dawn",
+        "v6_afterhall",
+        "v6_end_teacher"
+      ]
+    },
+    "captain": {
+      "beats": 739,
+      "decisions": 64,
+      "longestPassiveGap": 27,
+      "scenes": [
+        "v6_quay",
+        "v6_hall",
+        "v6_inn",
+        "v6_depart",
+        "v6_reeds",
+        "v6_rainboat",
+        "v6_workshop",
+        "v6_contract",
+        "v6_arena",
+        "v6_wind",
+        "v6_levee",
+        "v6_storm",
+        "v6_dawn",
+        "v6_end_captain"
+      ]
+    },
+    "apart": {
+      "beats": 727,
+      "decisions": 63,
+      "longestPassiveGap": 27,
+      "scenes": [
+        "v6_quay",
+        "v6_hall",
+        "v6_inn",
+        "v6_depart",
+        "v6_ridge",
+        "v6_bridge",
+        "v6_workshop",
+        "v6_contract",
+        "v6_arena",
+        "v6_wind",
+        "v6_levee",
+        "v6_storm",
+        "v6_dawn",
+        "v6_end_apart"
+      ]
+    },
+    "scar": {
+      "beats": 728,
+      "decisions": 63,
+      "longestPassiveGap": 27,
+      "scenes": [
+        "v6_quay",
+        "v6_hall",
+        "v6_inn",
+        "v6_depart",
+        "v6_ridge",
+        "v6_bridge",
+        "v6_workshop",
+        "v6_contract",
+        "v6_arena",
+        "v6_wind",
+        "v6_levee",
+        "v6_storm",
+        "v6_dawn",
+        "v6_afterhall",
+        "v6_end_scar"
+      ]
+    },
+    "lost": {
+      "beats": 729,
+      "decisions": 63,
+      "longestPassiveGap": 27,
+      "scenes": [
+        "v6_quay",
+        "v6_hall",
+        "v6_inn",
+        "v6_depart",
+        "v6_ridge",
+        "v6_bridge",
+        "v6_workshop",
+        "v6_contract",
+        "v6_arena",
+        "v6_wind",
+        "v6_levee",
+        "v6_storm",
+        "v6_dawn",
+        "v6_end_lost"
+      ]
+    },
+    "stay": {
+      "beats": 681,
+      "decisions": 58,
+      "longestPassiveGap": 27,
+      "scenes": [
+        "v6_quay",
+        "v6_hall",
+        "v6_inn",
+        "v6_depart",
+        "v6_stay",
+        "v6_staycare",
+        "v6_workshop",
+        "v6_contract",
+        "v6_arena",
+        "v6_wind",
+        "v6_levee",
+        "v6_storm",
+        "v6_dawn",
+        "v6_end_harbor"
+      ]
+    }
+  },
+  "limits": "Node playthroughs and paired consequences only; new art, browser paths and editorial rounds pending."
+}

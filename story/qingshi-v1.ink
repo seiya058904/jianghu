@@ -1,0 +1,734 @@
+// Source: 宋世江湖 14850–20213; fixed four deaths and Xu age92 sacrifice.
+VAR qs_honest_start = false
+VAR qs_chen_word = 0
+VAR qs_han_word = 0
+VAR qs_song_word = 0
+VAR qs_zhao_word = 0
+VAR qs_paid_wine = false
+VAR qs_rest_leg = false
+VAR qs_wait_word = false
+VAR qs_family_truth = false
+VAR qs_returned = false
+VAR qs_exit_drill = false
+VAR qs_shield_gap = false
+VAR qs_finished_chop = false
+VAR qs_kept_reasons = false
+VAR qs_handover = false
+VAR qs_carriage_drill = false
+VAR qs_settled_driver = false
+VAR qs_army_drill = false
+VAR qs_runner_return = false
+VAR qs_counted = false
+VAR qs_shared_limit = false
+VAR qs_last_duty = 0
+VAR qs_names_left = false
+VAR qs_final_call = false
+VAR qs_epilogue_roll = false
+-> grain
+
+=== grain ===
+粮袋卸下，右臂还抬不高，陈虎已经在仓后空地招手。你打中他三次，他一点没退，回过来一拳却让你晚饭都不敢大口吃。 # beat:qs_grain_1 # scene:qs_yard17 # cast:qs_xu,qs_chen,qs_han # speaker:narrator # look:qs_xu=age17 # action:十七岁 · 青石粮仓
+许长安，你这一碗饭是按米粒买的？ # beat:qs_grain_2 # scene:qs_yard17 # cast:qs_xu,qs_han,qs_chen # speaker:qs_han # mood:qs_han=amused # look:qs_xu=age17
+我收了力。 # beat:qs_grain_3 # scene:qs_yard17 # cast:qs_xu,qs_chen,qs_han # speaker:qs_chen # mood:qs_chen=uneasy # look:qs_xu=age17
+我知道。你收过的还这样，没收过的我暂时不想知道。 # beat:qs_grain_4 # scene:qs_yard17 # cast:qs_xu,qs_chen,qs_han # speaker:you # look:qs_xu=age17
+陈虎伸手扶你，你刚一抬胳膊，肋下又疼。 # beat:qs_grain_5 # scene:qs_yard17 # cast:qs_xu,qs_chen,qs_han # speaker:narrator # look:qs_xu=age17
+* [承认疼，拉陈虎坐下，约好明日慢走一遍。 # cid:qs_admit_ribs]
+  ~ qs_honest_start = true
+  明日别上来就拳。我先看你怎么把那三下都吃住了。 # beat:qs_grain_6 # scene:qs_yard17 # cast:qs_xu,qs_chen,qs_han # speaker:you # look:qs_xu=age17
+  你不是说我只会仗着肉厚？ # beat:qs_grain_7 # scene:qs_yard17 # cast:qs_xu,qs_chen,qs_han # speaker:qs_chen # mood:qs_chen=amused # look:qs_xu=age17
+  明日再说。今日先让我吃完。 # beat:qs_grain_8 # scene:qs_yard17 # cast:qs_xu,qs_chen,qs_han # speaker:you # look:qs_xu=age17
+  他这个明日，我替你记着。 # beat:qs_grain_9 # scene:qs_yard17 # cast:qs_xu,qs_han,qs_chen # speaker:qs_han # mood:qs_han=neutral # look:qs_xu=age17
+  -> feng
+* [说没事，端起碗才发现胳膊还是使不上劲。 # cid:qs_hide_ribs]
+  ~ qs_honest_start = false
+  只是粮扛多了。 # beat:qs_grain_10 # scene:qs_yard17 # cast:qs_xu,qs_chen,qs_han # speaker:you # look:qs_xu=age17
+  粮袋长拳头了？ # beat:qs_grain_11 # scene:qs_yard17 # cast:qs_xu,qs_han,qs_chen # speaker:qs_han # mood:qs_han=amused # look:qs_xu=age17
+  陈虎把你的碗往身前推近一点，没再追问；韩小七给你夹菜时，偏偏先夹最大的一块。 # beat:qs_grain_12 # scene:qs_yard17 # cast:qs_xu,qs_chen,qs_han # speaker:narrator # look:qs_xu=age17
+  -> feng
+
+=== feng ===
+旧事 · 十四岁。你曾抱着一袋粟站在冯老六门前，父亲提两只鸡，还答应替他修半间漏雨的屋顶。 # beat:qs_feng_1 # scene:qs_village # cast:qs_feng # speaker:narrator
+先放鸡。你站。 # beat:qs_feng_2 # scene:qs_village # cast:qs_feng # speaker:qs_feng # mood:qs_feng=neutral
+站多久？ # beat:qs_feng_3 # scene:qs_village # cast:qs_feng # speaker:you
+一炷香。 # beat:qs_feng_4 # scene:qs_village # cast:qs_feng # speaker:qs_feng # mood:qs_feng=neutral
+第七日你问什么时候教打人，老人脚尖在膝后一勾，你扑通坐下。全院笑了。 # beat:qs_feng_5 # scene:qs_village # cast:qs_feng # speaker:narrator
+等站住再说。 # beat:qs_feng_6 # scene:qs_village # cast:qs_feng # speaker:qs_feng # mood:qs_feng=amused
+你想起路上那位背药箱赶走三个劫道人的药商。他不肯停下教你，只说找一个能每天看着你练的人。眼前这个，明日也在这院里。 # beat:qs_feng_7 # scene:qs_village # cast:qs_feng # speaker:narrator
+* [坐在地上问，刚才膝后那一下该怎么接。 # cid:qs_ask_stand]
+  还没站住。您再让我摆一回。 # beat:qs_feng_8 # scene:qs_village # cast:qs_feng # speaker:you
+  先起来。你坐着问得再好，也站不住。 # beat:qs_feng_9 # scene:qs_village # cast:qs_feng # speaker:qs_feng # mood:qs_feng=intent
+  你扶着膝盖起身，这一次没把脸转向等着看笑的人。 # beat:qs_feng_10 # scene:qs_village # cast:qs_feng # speaker:narrator
+  -> wall
+* [问药商拿树枝也能退敌，为何我还没拿上棍。 # cid:qs_ask_branch]
+  你找他，还是找我？ # beat:qs_feng_11 # scene:qs_village # cast:qs_feng # speaker:qs_feng # mood:qs_feng=neutral
+  找您。他赶路去了。 # beat:qs_feng_12 # scene:qs_village # cast:qs_feng # speaker:you
+  那就别叫我一天赶完他二十年的路。起来。 # beat:qs_feng_13 # scene:qs_village # cast:qs_feng # speaker:qs_feng # mood:qs_feng=amused
+  你还是得从地上站起，才有机会再问。 # beat:qs_feng_14 # scene:qs_village # cast:qs_feng # speaker:narrator
+  -> wall
+
+=== wall ===
+回到十七岁的仓后。你已经学了一年半的短拳、擒拿与齐眉棍，没学过内功，也没见过秘籍。眼下最想学的，是怎样坐上矮墙时不扯疼肋骨。 # beat:qs_wall_1 # scene:qs_yard17 # cast:qs_xu,qs_song,qs_zhao # speaker:narrator # look:qs_xu=age17
+下面留个地方，别都往高处爬。我家女儿两岁，也知道下不来要叫人。 # beat:qs_wall_2 # scene:qs_yard17 # cast:qs_xu,qs_zhao,qs_song # speaker:qs_zhao # mood:qs_zhao=amused # look:qs_xu=age17
+你把这句给陈虎。他刚想说将来开馆，得先把门楼修得气派。 # beat:qs_wall_3 # scene:qs_yard17 # cast:qs_xu,qs_song,qs_zhao # speaker:qs_song # mood:qs_song=neutral # look:qs_xu=age17
+不开得像样，谁来？ # beat:qs_wall_4 # scene:qs_yard17 # cast:qs_xu,qs_chen,qs_song # speaker:qs_chen # mood:qs_chen=intent # look:qs_xu=age17
+我来。门楼还没影，我今日这一下已经交了。 # beat:qs_wall_5 # scene:qs_yard17 # cast:qs_xu,qs_song,qs_zhao # speaker:you # look:qs_xu=age17
+陈虎笑得直拍墙，忽然认真问你，馆真开了，肯不肯帮忙。 # beat:qs_wall_6 # scene:qs_yard17 # cast:qs_xu,qs_song,qs_zhao # speaker:narrator # look:qs_xu=age17
+* [答应替他带最初的学生，先练会不把人打伤。 # cid:qs_chen_teach]
+  ~ qs_chen_word = 1
+  我帮教起手。头一个学生若像今日的我，别给人一拳送回去。 # beat:qs_wall_7 # scene:qs_yard17 # cast:qs_xu,qs_song,qs_zhao # speaker:you # look:qs_xu=age17
+  那你得先比今日强一点。我可不想馆里两个人一起揉肋骨。 # beat:qs_wall_8 # scene:qs_yard17 # cast:qs_xu,qs_chen,qs_song # speaker:qs_chen # mood:qs_chen=amused # look:qs_xu=age17
+  他把给学生站的空地比了一下，量得比想象中的门楼更认真。 # beat:qs_wall_9 # scene:qs_yard17 # cast:qs_xu,qs_song,qs_zhao # speaker:narrator # look:qs_xu=age17
+  -> han_promise
+* [答应帮他修馆门，教人的事等自己真会了再说。 # cid:qs_chen_build]
+  ~ qs_chen_word = 2
+  门板我会抬，起手未必教得好。先答应修门。 # beat:qs_wall_10 # scene:qs_yard17 # cast:qs_xu,qs_song,qs_zhao # speaker:you # look:qs_xu=age17
+  成，门得耐踢。穷人家学徒可不能一来先赔门钱。 # beat:qs_wall_11 # scene:qs_yard17 # cast:qs_xu,qs_chen,qs_song # speaker:qs_chen # mood:qs_chen=neutral # look:qs_xu=age17
+  你们各用脚量了一步，韩小七说馆还没开，脚印倒先欠了仓东家一院。 # beat:qs_wall_12 # scene:qs_yard17 # cast:qs_xu,qs_song,qs_zhao # speaker:narrator # look:qs_xu=age17
+  -> han_promise
+
+=== han_promise ===
+你们守馆，我走镖。一路走到京城。 # beat:qs_han_promise_1 # scene:qs_yard17 # cast:qs_xu,qs_han,qs_song # speaker:qs_han # mood:qs_han=neutral # look:qs_xu=age17
+谁替你写镖单？ # beat:qs_han_promise_2 # scene:qs_yard17 # cast:qs_xu,qs_song,qs_han # speaker:qs_song # mood:qs_song=amused # look:qs_xu=age17
+我先跑到，字慢慢认。长安，你若先去，可得替我瞧。 # beat:qs_han_promise_3 # scene:qs_yard17 # cast:qs_xu,qs_han,qs_song # speaker:qs_han # mood:qs_han=neutral # look:qs_xu=age17
+瞧什么？城墙，还是卖吃的？ # beat:qs_han_promise_4 # scene:qs_yard17 # cast:qs_xu,qs_han,qs_song # speaker:you # look:qs_xu=age17
+都瞧。只会报一声到了的信，拿来垫鞋？ # beat:qs_han_promise_5 # scene:qs_yard17 # cast:qs_xu,qs_han,qs_song # speaker:qs_han # mood:qs_han=amused # look:qs_xu=age17
+* [答应真到了京城，给他家里写一封有街道和人事的信。 # cid:qs_han_letter]
+  ~ qs_han_word = 1
+  写信。不能只写到了。 # beat:qs_han_promise_6 # scene:qs_yard17 # cast:qs_xu,qs_han,qs_song # speaker:you # look:qs_xu=age17
+  先让我教你写街字。你现在那两道横，到了京城也找不着路。 # beat:qs_han_promise_7 # scene:qs_yard17 # cast:qs_xu,qs_song,qs_han # speaker:qs_song # mood:qs_song=neutral # look:qs_xu=age17
+  我家里若看不懂，就等你回来亲口念。 # beat:qs_han_promise_8 # scene:qs_yard17 # cast:qs_xu,qs_han,qs_song # speaker:qs_han # mood:qs_han=amused # look:qs_xu=age17
+  -> song_promise
+* [约定跑远路时先报回头的路，谁没回来就去找。 # cid:qs_han_return]
+  ~ qs_han_word = 2
+  走远也留回头的路。你只顾快，摔了我上哪儿找？ # beat:qs_han_promise_9 # scene:qs_yard17 # cast:qs_xu,qs_han,qs_song # speaker:you # look:qs_xu=age17
+  你追得上再说。 # beat:qs_han_promise_10 # scene:qs_yard17 # cast:qs_xu,qs_han,qs_song # speaker:qs_han # mood:qs_han=neutral # look:qs_xu=age17
+  先留句话，比追上有用。 # beat:qs_han_promise_11 # scene:qs_yard17 # cast:qs_xu,qs_zhao,qs_han # speaker:qs_zhao # mood:qs_zhao=calm # look:qs_xu=age17
+  韩小七把腿收回墙里，笑声小了一点，仍答应出镇先说去处。 # beat:qs_han_promise_12 # scene:qs_yard17 # cast:qs_xu,qs_han,qs_song # speaker:narrator # look:qs_xu=age17
+  -> song_promise
+
+=== song_promise ===
+宋礼把铁剑放在腿上，陈虎刚想拿，手被他拍开。这柄剑攒了半年，师父第一日就说太重，他直到现在也舍不得换。 # beat:qs_song_promise_1 # scene:qs_yard17 # cast:qs_xu,qs_song,qs_chen # speaker:narrator # look:qs_xu=age17
+我喜欢剑，又不等于能再买一柄。 # beat:qs_song_promise_2 # scene:qs_yard17 # cast:qs_xu,qs_song,qs_chen # speaker:qs_song # mood:qs_song=neutral # look:qs_xu=age17
+那得练到什么时候？ # beat:qs_song_promise_3 # scene:qs_yard17 # cast:qs_xu,qs_song,qs_chen # speaker:you # look:qs_xu=age17
+总比一边卖布一边嫌自己来不及强。 # beat:qs_song_promise_4 # scene:qs_yard17 # cast:qs_xu,qs_song,qs_chen # speaker:qs_song # mood:qs_song=neutral # look:qs_xu=age17
+他想学真正的剑，眼下却得先用这柄把手腕练疼。 # beat:qs_song_promise_5 # scene:qs_yard17 # cast:qs_xu,qs_song,qs_chen # speaker:narrator # look:qs_xu=age17
+* [请他教自己认练法里的字，替他留住学过的几页。 # cid:qs_song_words]
+  ~ qs_song_word = 1
+  你教我认。我替你抄，错了你得指出来。 # beat:qs_song_promise_6 # scene:qs_yard17 # cast:qs_xu,qs_song,qs_chen # speaker:you # look:qs_xu=age17
+  先别抄一整页。今天认三个字，明天我问。 # beat:qs_song_promise_7 # scene:qs_yard17 # cast:qs_xu,qs_song,qs_chen # speaker:qs_song # mood:qs_song=intent # look:qs_xu=age17
+  这下你那一拳白挨了，明日还得来。 # beat:qs_song_promise_8 # scene:qs_yard17 # cast:qs_xu,qs_chen,qs_song # speaker:qs_chen # mood:qs_chen=amused # look:qs_xu=age17
+  宋礼在碎纸上写了三个大字，没把你第一次肯学就夸成天生能做先生。 # beat:qs_song_promise_9 # scene:qs_yard17 # cast:qs_xu,qs_song,qs_chen # speaker:narrator # look:qs_xu=age17
+  -> zhao_promise
+* [答应陪他慢试轻重，先用木条找一回能收回来的剑路。 # cid:qs_song_test]
+  ~ qs_song_word = 2
+  铁剑舍不得换，木条还能削。我陪你试，别一上来就拿真剑互撞。 # beat:qs_song_promise_10 # scene:qs_yard17 # cast:qs_xu,qs_song,qs_chen # speaker:you # look:qs_xu=age17
+  木条总不嫌我穷。 # beat:qs_song_promise_11 # scene:qs_yard17 # cast:qs_xu,qs_song,qs_chen # speaker:qs_song # mood:qs_song=amused # look:qs_xu=age17
+  嫌你削歪。拿来，我家有锉。 # beat:qs_song_promise_12 # scene:qs_yard17 # cast:qs_xu,qs_chen,qs_song # speaker:qs_chen # mood:qs_chen=neutral # look:qs_xu=age17
+  宋礼终于把剑交到陈虎手里，只是一直看着他别碰剑口。 # beat:qs_song_promise_13 # scene:qs_yard17 # cast:qs_xu,qs_song,qs_chen # speaker:narrator # look:qs_xu=age17
+  -> zhao_promise
+
+=== zhao_promise ===
+我没你们想得远。多挣些钱，女儿大了别住我这破院。 # beat:qs_zhao_promise_1 # scene:qs_yard17 # cast:qs_xu,qs_zhao,qs_han # speaker:qs_zhao # mood:qs_zhao=neutral # look:qs_xu=age17
+等陈虎开馆，把门楼拆一截给你盖房。 # beat:qs_zhao_promise_2 # scene:qs_yard17 # cast:qs_xu,qs_han,qs_zhao # speaker:qs_han # mood:qs_han=amused # look:qs_xu=age17
+我问过他门楼上有没有瓦么？他现在只有脚印。 # beat:qs_zhao_promise_3 # scene:qs_yard17 # cast:qs_xu,qs_zhao,qs_han # speaker:qs_zhao # mood:qs_zhao=neutral # look:qs_xu=age17
+笑过以后，赵大春收拾要带回家的两小包米，一包是替邻家捎的，绳结绑得不同。 # beat:qs_zhao_promise_4 # scene:qs_yard17 # cast:qs_xu,qs_zhao,qs_han # speaker:narrator # look:qs_xu=age17
+* [答应他当差晚归时帮捎消息，不让家里空等。 # cid:qs_zhao_home]
+  ~ qs_zhao_word = 1
+  你晚归，我若顺路就到家里说。两包米可别让我认错。 # beat:qs_zhao_promise_5 # scene:qs_yard17 # cast:qs_xu,qs_zhao,qs_han # speaker:you # look:qs_xu=age17
+  说到谁面前，也回来告诉我。别往门缝一塞便算送到。 # beat:qs_zhao_promise_6 # scene:qs_yard17 # cast:qs_xu,qs_zhao,qs_han # speaker:qs_zhao # mood:qs_zhao=calm # look:qs_xu=age17
+  他指给你看给自家的那根结，顺手把另一包提得远些。 # beat:qs_zhao_promise_7 # scene:qs_yard17 # cast:qs_xu,qs_zhao,qs_han # speaker:narrator # look:qs_xu=age17
+  -> wine
+* [答应帮他核工钱，多认几个字便少吃一次糊涂亏。 # cid:qs_zhao_pay]
+  ~ qs_zhao_word = 2
+  我和宋礼学认字，你把工钱条也拿来。不是靠我替你打赢商号才拿得到。 # beat:qs_zhao_promise_8 # scene:qs_yard17 # cast:qs_xu,qs_zhao,qs_han # speaker:you # look:qs_xu=age17
+  行。你们认不出也直说，别把八十文看成八文。 # beat:qs_zhao_promise_9 # scene:qs_yard17 # cast:qs_xu,qs_zhao,qs_han # speaker:qs_zhao # mood:qs_zhao=amused # look:qs_xu=age17
+  他说得很认真。你第一次觉得矮墙上谈的事，有一件明早便得用。 # beat:qs_zhao_promise_10 # scene:qs_yard17 # cast:qs_xu,qs_zhao,qs_han # speaker:narrator # look:qs_xu=age17
+  -> wine
+
+=== wine ===
+三年后，二十岁。赵大春的晚差一趟趟来，宋礼教的字也一页页添。 # beat:qs_wine_1 # scene:qs_town20 # cast:qs_chen,qs_zhao,qs_han # speaker:narrator
+{
+- qs_zhao_word == 1:
+你替赵家捎过几回晚归的口信，每次站到家里有人答应才走。小女儿后来远远看见你，先问今天爹要晚多久。 # beat:qs_wine_2 # scene:qs_town20 # cast:qs_chen,qs_zhao,qs_han # speaker:narrator
+- else:
+你和宋礼核过赵的几张工钱条。认不出的仍要请账房重说，不能靠两人凑在一处便把八十文猜成八文。 # beat:qs_wine_3 # scene:qs_town20 # cast:qs_chen,qs_zhao,qs_han # speaker:narrator
+}
+有人把陈虎排进青石年轻十杰，他请你们喝了一晚酒。第二月另一家酒楼没排他，他三天没去。 # beat:qs_wine_4 # scene:qs_town20 # cast:qs_chen,qs_zhao,qs_han # speaker:narrator
+人家拿嘴排的，你还真信？ # beat:qs_wine_5 # scene:qs_town20 # cast:qs_chen,qs_zhao,qs_han # speaker:qs_zhao # mood:qs_zhao=neutral
+那为什么不排你？ # beat:qs_wine_6 # scene:qs_town20 # cast:qs_chen,qs_zhao,qs_han # speaker:qs_chen # mood:qs_chen=sharp
+因为我没你这么闲。 # beat:qs_wine_7 # scene:qs_town20 # cast:qs_chen,qs_zhao,qs_han # speaker:qs_zhao # mood:qs_zhao=amused
+这句该拿去换一壶，掌柜怕他第四天还不来。 # beat:qs_wine_8 # scene:qs_town20 # cast:qs_chen,qs_zhao,qs_han # speaker:qs_han # mood:qs_han=neutral
+陈虎偏问你，明日去不去那家店。 # beat:qs_wine_9 # scene:qs_town20 # cast:qs_chen,qs_zhao,qs_han # speaker:narrator
+* [去，照付自己的茶钱，也让陈虎自己决定坐不坐。 # cid:qs_pay_wine]
+  ~ qs_paid_wine = true
+  我喝茶。你来就坐，不来我替你留一炷香，之后走。 # beat:qs_wine_10 # scene:qs_town20 # cast:qs_chen,qs_zhao,qs_han # speaker:you
+  别点他家那碟豆子，昨天还贵两文。 # beat:qs_wine_11 # scene:qs_town20 # cast:qs_chen,qs_zhao,qs_han # speaker:qs_chen # mood:qs_chen=neutral
+  你不去，价倒记得清。 # beat:qs_wine_12 # scene:qs_town20 # cast:qs_chen,qs_zhao,qs_han # speaker:qs_han # mood:qs_han=amused
+  -> ma
+* [把两张十杰放在一处比，问他明日准备请哪一桌。 # cid:qs_mock_list]
+  ~ qs_paid_wine = false
+  照这个换法，你下月再进一次，是不是还得请？ # beat:qs_wine_13 # scene:qs_town20 # cast:qs_chen,qs_zhao,qs_han # speaker:you
+  好，明日请你喝水。 # beat:qs_wine_14 # scene:qs_town20 # cast:qs_chen,qs_zhao,qs_han # speaker:qs_chen # mood:qs_chen=amused
+  水也先问价，别又让名次给你算账。 # beat:qs_wine_15 # scene:qs_town20 # cast:qs_chen,qs_zhao,qs_han # speaker:qs_zhao # mood:qs_zhao=neutral
+  -> ma
+
+=== ma ===
+五人凑钱走了六十余里，见到六十八岁的马元魁。陈虎抢着请教，老人问五个一起么，他才红着脸说一个一个也行。 # beat:qs_ma_1 # scene:qs_mahouse # cast:qs_ma,qs_chen,qs_song # speaker:narrator
+马没打你们，让你们看一位来问拳的馆主。半步进，拳偏；手搭肘；第三下，那位馆主已到墙边，没摔也没伤，却不能再动。 # beat:qs_ma_2 # scene:qs_mahouse # cast:qs_ma,qs_chen,qs_song # speaker:narrator
+你腰比去年好。 # beat:qs_ma_3 # scene:qs_mahouse # cast:qs_ma,qs_chen,qs_song # speaker:qs_ma # mood:qs_ma=neutral
+这便是三川十六手？ # beat:qs_ma_4 # scene:qs_mahouse # cast:qs_ma,qs_chen,qs_song # speaker:qs_song # mood:qs_song=neutral
+晚上老人正吃面，你们才敢问在江湖算什么。他听到那张榜，筷子停了一下。 # beat:qs_ma_5 # scene:qs_mahouse # cast:qs_ma,qs_chen,qs_song # speaker:narrator
+* [问这张民间榜与真正小榜，到底差在哪件事。 # cid:qs_ask_real_list]
+  那也叫榜？我年轻时问过真正小榜，没进去。 # beat:qs_ma_6 # scene:qs_mahouse # cast:qs_ma,qs_chen,qs_song # speaker:qs_ma # mood:qs_ma=amused
+  您都没进去？ # beat:qs_ma_7 # scene:qs_mahouse # cast:qs_ma,qs_chen,qs_song # speaker:qs_chen # mood:qs_chen=uneasy
+  没。这里叫得响，出了几个镇，人家凭什么认？ # beat:qs_ma_8 # scene:qs_mahouse # cast:qs_ma,qs_chen,qs_song # speaker:qs_ma # mood:qs_ma=neutral
+  你把那张随手换名的酒楼榜折起来，第一次没把折角当作一块正式席位。 # beat:qs_ma_9 # scene:qs_mahouse # cast:qs_ma,qs_chen,qs_song # speaker:narrator
+  -> spring
+* [追问路榜第一多强，老人拒绝替没见过的人编战绩。 # cid:qs_ask_next_power]
+  那路榜第一呢？ # beat:qs_ma_10 # scene:qs_mahouse # cast:qs_ma,qs_chen,qs_song # speaker:you
+  我没见过。 # beat:qs_ma_11 # scene:qs_mahouse # cast:qs_ma,qs_chen,qs_song # speaker:qs_ma # mood:qs_ma=neutral
+  比您…… # beat:qs_ma_12 # scene:qs_mahouse # cast:qs_ma,qs_chen,qs_song # speaker:you
+  没见过，怎么知道？面凉了，你们还吃不吃？ # beat:qs_ma_13 # scene:qs_mahouse # cast:qs_ma,qs_chen,qs_song # speaker:qs_ma # mood:qs_ma=intent
+  宋礼先端碗，韩小七竟忍住了下一句。老人没有拿见识广替自己封更高一席。 # beat:qs_ma_14 # scene:qs_mahouse # cast:qs_ma,qs_chen,qs_song # speaker:narrator
+  -> spring
+
+=== spring ===
+二十三岁，青石、白河、榆关春会。你二十余招胜一场，四十多招又胜短棍，以为脚下已经很稳。第三场，四十九岁的杨姓老镖师抬腿并不快。 # beat:qs_spring_1 # scene:qs_fair23 # cast:qs_yang,qs_han # speaker:narrator
+第六招，大腿外侧中一次；第十二招再中；第十七招，你跪下，想站，腿不听。 # beat:qs_spring_2 # scene:qs_fair23 # cast:qs_yang,qs_han # speaker:narrator
+还来么？ # beat:qs_spring_3 # scene:qs_fair23 # cast:qs_yang,qs_han # speaker:qs_yang # mood:qs_yang=amused
+来。 # beat:qs_spring_4 # scene:qs_fair23 # cast:qs_yang,qs_han # speaker:you
+先站起来再说。 # beat:qs_spring_5 # scene:qs_fair23 # cast:qs_yang,qs_han # speaker:qs_yang # mood:qs_yang=neutral
+你先扶我。我今日不跑，够你抓。 # beat:qs_spring_6 # scene:qs_fair23 # cast:qs_yang,qs_han # speaker:qs_han # mood:qs_han=uneasy
+* [承认站不起来，先退下养腿，问老镖师能否再看自己起手。 # cid:qs_rest_leg]
+  ~ qs_rest_leg = true
+  今日站不起来。养好以后，我来请您看第六招以前。 # beat:qs_spring_7 # scene:qs_fair23 # cast:qs_yang,qs_han # speaker:you
+  那时我未必在。先问清投宿哪家，别对着空棚子许愿。 # beat:qs_spring_8 # scene:qs_fair23 # cast:qs_yang,qs_han # speaker:qs_yang # mood:qs_yang=calm
+  你记下客舍。腿青了半个月，回头要练的不是硬撑着站起那一下。 # beat:qs_spring_9 # scene:qs_fair23 # cast:qs_yang,qs_han # speaker:narrator
+  -> years32
+* [扶着韩小七试站，发现真使不上力，仍得退下。 # cid:qs_push_leg]
+  ~ qs_rest_leg = false
+  你再站，腿一软，韩小七几乎被带倒。陈虎从另一头接住，嘟囔这回可不是他一拳打的。 # beat:qs_spring_10 # scene:qs_fair23 # cast:qs_yang,qs_han # speaker:narrator
+  平日笑我跑，今日不跑了，你又要把我压进地里？ # beat:qs_spring_11 # scene:qs_fair23 # cast:qs_yang,qs_han # speaker:qs_han # mood:qs_han=sharp
+  扶我下去。 # beat:qs_spring_12 # scene:qs_fair23 # cast:qs_yang,qs_han # speaker:you
+  半个月青腿没有因这句不服少一天，你只多欠了两个人来回背的工夫。 # beat:qs_spring_13 # scene:qs_fair23 # cast:qs_yang,qs_han # speaker:narrator
+  -> years32
+
+=== years32 ===
+九年后，三十二岁。五人都在附近闯出一点名声，做工、家计和孩子却不断分去练功时辰。仓后的墙补过一次，你们仍坐原来那一段。 # beat:qs_years32_1 # scene:qs_wall32 # cast:qs_zhao,qs_song,qs_chen # speaker:narrator
+那位自称药商的客人不识行规，掌茧不像走货，镇上又接连失踪伙计、死了差役。协查文书送到，名字是杜百川。 # beat:qs_years32_2 # scene:qs_wall32 # cast:qs_zhao,qs_song,qs_chen # speaker:narrator
+报官。等人。 # beat:qs_years32_3 # scene:qs_wall32 # cast:qs_zhao,qs_song,qs_chen # speaker:qs_zhao # mood:qs_zhao=intent
+先盯住，真要走就拿。 # beat:qs_years32_4 # scene:qs_wall32 # cast:qs_zhao,qs_song,qs_chen # speaker:qs_chen # mood:qs_chen=neutral
+五个人，他还有伤。 # beat:qs_years32_5 # scene:qs_wall32 # cast:qs_zhao,qs_song,qs_chen # speaker:qs_song # mood:qs_song=neutral
+人要走怎么办？ # beat:qs_years32_6 # scene:qs_wall32 # cast:qs_zhao,qs_song,qs_chen # speaker:you
+赵大春把手里米包放下，这一次没有替你们把争执笑过去。 # beat:qs_years32_7 # scene:qs_wall32 # cast:qs_zhao,qs_song,qs_chen # speaker:narrator
+* [重说先拖、等官差，问清谁去报信。 # cid:qs_repeat_wait]
+  ~ qs_wait_word = true
+  先说清楚，拖，不是抢着拿。谁都别以为自己一句话就能让另外四人退。 # beat:qs_years32_8 # scene:qs_wall32 # cast:qs_zhao,qs_song,qs_chen # speaker:you
+  他不动，我们不动。真要拿，先拖。 # beat:qs_years32_9 # scene:qs_wall32 # cast:qs_zhao,qs_song,qs_chen # speaker:qs_zhao # mood:qs_zhao=neutral
+  所有人都答应。你也答应，手心却一直捏着那张来不及替你判断差距的文书。 # beat:qs_years32_10 # scene:qs_wall32 # cast:qs_zhao,qs_song,qs_chen # speaker:narrator
+  -> road32
+* [仍相信五个人有办法，接受赵大春反复交代不能抢攻。 # cid:qs_trust_five]
+  ~ qs_wait_word = false
+  五个人，总能碰到一回。 # beat:qs_years32_11 # scene:qs_wall32 # cast:qs_zhao,qs_song,qs_chen # speaker:you
+  碰到和拿住不是一回事。真要拿，先拖，别逞强。 # beat:qs_years32_12 # scene:qs_wall32 # cast:qs_zhao,qs_song,qs_chen # speaker:qs_zhao # mood:qs_zhao=sharp
+  你们还是全答应了。陈虎把刀推回鞘里，等的只是杜退房那一个消息。 # beat:qs_years32_13 # scene:qs_wall32 # cast:qs_zhao,qs_song,qs_chen # speaker:narrator
+  -> road32
+
+=== road32 ===
+次日下午，杜百川退房。镇外荒路，前竹林、后河沟。陈虎和赵大春拦前，宋礼侧面，韩小七盯退路，你最后补。 # beat:qs_road32_1 # scene:qs_road32 # cast:qs_du # speaker:narrator # action:三十二岁 · 荒道
+跟多久了？ # beat:qs_road32_2 # scene:qs_road32 # cast:qs_du # speaker:qs_du # mood:qs_du=neutral
+杜百川。 # beat:qs_road32_3 # scene:qs_road32 # cast:qs_du # speaker:you
+你亮文书。他问是不是官差，你答不是。陈虎说杀人便关，杜只点头，说原来是好汉。 # beat:qs_road32_4 # scene:qs_road32 # cast:qs_du # speaker:narrator
+刀出，两指搭刀背，另一掌落胸。陈虎退两步，低头，倒下，嘴里出血。第一招。 # beat:qs_road32_5 # scene:qs_road32 # cast:qs_du # speaker:narrator
+赵大春为拖延上去，中路护得很稳，第三步对方滑到肩侧，掌落后背，人再没起来。 # beat:qs_road32_6 # scene:qs_road32 # cast:qs_du # speaker:narrator
+韩小七真的想跑，看见地上的两个人，却回头冲来。袖子带开手，掌落颈侧，他滚进路边。 # beat:qs_road32_7 # scene:qs_road32 # cast:qs_du # speaker:narrator
+宋礼刺胸、回挑，第三剑还没出，腕被扣，剑落，掌按心口。那柄用了多年的剑没有替他撑到自己以为的一场较艺。 # beat:qs_road32_8 # scene:qs_road32 # cast:qs_du # speaker:narrator
+你脑子里已经没有先前的布置。齐眉棍横扫，杜向前一步，棍失去距离，胸口一热，你滚进沟里。 # beat:qs_road32_9 # scene:qs_road32 # cast:qs_du # speaker:narrator
+最后看见陈虎的刀滚在泥里。十几息，也许更短，你后来一直记不清。 # beat:qs_road32_10 # scene:qs_road32 # cast:qs_du # speaker:narrator
+-> wake
+
+=== wake ===
+五日后醒来。陆慎行坐在床旁，告诉你四个人都没了。青崖剑是公门礼聘的路榜中位人物；杜百川没有榜籍，却有路榜中段的本事。 # beat:qs_wake_1 # scene:qs_sick32 # cast:qs_lu,qs_wife # speaker:narrator
+你们连他有多强都没看清。 # beat:qs_wake_2 # scene:qs_sick32 # cast:qs_lu,qs_wife # speaker:qs_lu # mood:qs_lu=neutral
+赵大春妻子问你那时怕不怕。你先答不怕，她看着你，等了很久。那句不怕里，竟没有一件自己真看明白的事。 # beat:qs_wake_3 # scene:qs_sick32 # cast:qs_lu,qs_wife # speaker:narrator
+* [改口，承认不是不怕，是自己没看清。 # cid:qs_admit_blind]
+  ~ qs_family_truth = true
+  我没看清。说不怕，是我连该怕什么也没明白。 # beat:qs_wake_4 # scene:qs_sick32 # cast:qs_lu,qs_wife # speaker:you
+  他临出门说拖住，等官差。你们都应了？ # beat:qs_wake_5 # scene:qs_sick32 # cast:qs_lu,qs_wife # speaker:qs_wife # mood:qs_wife=uneasy
+  应了。我也在。 # beat:qs_wake_6 # scene:qs_sick32 # cast:qs_lu,qs_wife # speaker:you
+  她没有原谅你，只问丈夫的东西何时能送回来。你答了一个能做到的日子。 # beat:qs_wake_7 # scene:qs_sick32 # cast:qs_lu,qs_wife # speaker:narrator
+  -> burial
+* [仍只说自己上去了，没能把当时不懂的说出来。 # cid:qs_keep_brave]
+  ~ qs_family_truth = false
+  我也上去了。 # beat:qs_wake_8 # scene:qs_sick32 # cast:qs_lu,qs_wife # speaker:you
+  我问的不是这个。 # beat:qs_wake_9 # scene:qs_sick32 # cast:qs_lu,qs_wife # speaker:qs_wife # mood:qs_wife=uneasy
+  她把带来的干衣放在床尾，去问陆慎行什么时候能领东西。你没有被赶出去，却也没再得到一个替她家决定事情的机会。 # beat:qs_wake_10 # scene:qs_sick32 # cast:qs_lu,qs_wife # speaker:narrator
+  -> burial
+
+=== burial ===
+四座新坟。陈虎的刀捡回来了，你擦去泥，没动刀柄旧皮。宋礼的剑、韩小七的旧鞋、赵大春带米的绳结，各有要送的人家。 # beat:qs_burial_1 # scene:qs_graves32 # cast:qs_lu # speaker:narrator
+报官不是把纸递出去便算完。活下来的人还要说清自己做了什么。 # beat:qs_burial_2 # scene:qs_graves32 # cast:qs_lu # speaker:qs_lu # mood:qs_lu=neutral
+我想进公门。 # beat:qs_burial_3 # scene:qs_graves32 # cast:qs_lu # speaker:you
+进来以后先学问路。不是有了腰牌，下一回便挡得住杜百川。 # beat:qs_burial_4 # scene:qs_graves32 # cast:qs_lu # speaker:qs_lu # mood:qs_lu=intent
+你把刀装进箱。很久以后它还随你走，眼下先要把四件物事交到人手里。 # beat:qs_burial_5 # scene:qs_graves32 # cast:qs_lu # speaker:narrator
+* [逐家亲自交还，肯听他们问自己答不出的事。 # cid:qs_return_each]
+  ~ qs_returned = true
+  有的人哭，有的人一句没问。你都坐了一会，不拿别人的沉默当允许自己马上走。 # beat:qs_burial_6 # scene:qs_graves32 # cast:qs_lu # speaker:narrator
+  答不出的我会写下来，问到再来。 # beat:qs_burial_7 # scene:qs_graves32 # cast:qs_lu # speaker:you
+  四户走完，天已黑。你把公门报到的时辰改到次晨。 # beat:qs_burial_8 # scene:qs_graves32 # cast:qs_lu # speaker:narrator
+  -> constable
+* [托熟识人代送物件，先到公门当差，留下可来找自己的去处。 # cid:qs_send_items]
+  ~ qs_returned = false
+  物件照数送出，你先到公门。有人来问最后那段路，你才知道装进包裹的东西不能替你回答。 # beat:qs_burial_9 # scene:qs_graves32 # cast:qs_lu # speaker:narrator
+  我明日出来见。 # beat:qs_burial_10 # scene:qs_graves32 # cast:qs_lu # speaker:you
+  你把见面的时辰登记给值房。这一次推迟的事，没有再消失在一句日后再说里。 # beat:qs_burial_11 # scene:qs_graves32 # cast:qs_lu # speaker:narrator
+  -> constable
+
+=== constable ===
+做捕役后，你先问几个人、有没有兵刃、从哪里来、往哪里退。抓三个逃犯时，你拦住撞门的年轻人，夜里封后墙、守屋顶、再放烟，三人自己出来，一个没死。 # beat:qs_constable_1 # scene:qs_office # cast:qs_meng # speaker:narrator
+几年后进州府，孟长庚看你走完拳，二十余招让你败。他能让你看懂每一处抢早，比从前一掌倒下还难受。 # beat:qs_constable_2 # scene:qs_office # cast:qs_meng # speaker:narrator
+基础太杂。 # beat:qs_constable_3 # scene:qs_office # cast:qs_meng # speaker:qs_meng # mood:qs_meng=neutral
+都能用。 # beat:qs_constable_4 # scene:qs_office # cast:qs_meng # speaker:you
+那就给我看，哪一下是为了把人留下。 # beat:qs_constable_5 # scene:qs_office # cast:qs_meng # speaker:qs_meng # mood:qs_meng=intent
+他指着一处空墙，让你和同僚练擒拿。后面两条退路，你又想等出手之后再管。 # beat:qs_constable_6 # scene:qs_office # cast:qs_meng # speaker:narrator
+* [先让同僚把两条退路走一遍，再上手。 # cid:qs_rehearse_exit]
+  ~ qs_exit_drill = true
+  你从后门试走，我得知道谁能接住。光在这面墙前拿住你，不算完。 # beat:qs_constable_7 # scene:qs_office # cast:qs_meng # speaker:you
+  这回像个捕人。 # beat:qs_constable_8 # scene:qs_office # cast:qs_meng # speaker:qs_meng # mood:qs_meng=calm
+  你们多花半个时辰，背刀的小捕快也认出了从侧墙转回的那条巷。 # beat:qs_constable_9 # scene:qs_office # cast:qs_meng # speaker:narrator
+  -> du_message
+* [先磨近身那一下，退路只在纸上交代，晚些再补。 # cid:qs_rehearse_grab]
+  ~ qs_exit_drill = false
+  拿住这一下我总慢，先试熟。 # beat:qs_constable_10 # scene:qs_office # cast:qs_meng # speaker:you
+  试。要是真有人往后跑，别怪巷子没照着你的纸长。 # beat:qs_constable_11 # scene:qs_office # cast:qs_meng # speaker:qs_meng # mood:qs_meng=neutral
+  近身有了起色，侧巷仍没人走过。你在值册上留着未练二字。 # beat:qs_constable_12 # scene:qs_office # cast:qs_meng # speaker:narrator
+  -> du_message
+
+=== du_message ===
+四十四岁，杜百川的消息又来。你正在审偷马案，纸在手里很久没动。终于问出口的，不是借刀，是消息哪里来、几日前、谁见过。 # beat:qs_du_message_1 # scene:qs_office44 # cast:qs_meng # speaker:narrator
+你想用多少人？ # beat:qs_du_message_2 # scene:qs_office44 # cast:qs_meng # speaker:qs_meng # mood:qs_meng=neutral
+先过一百。弩、盾、网索、拒马，还得有人盯自己人的退路。 # beat:qs_du_message_3 # scene:qs_office44 # cast:qs_meng # speaker:you
+我去。你把每一段都排明。 # beat:qs_du_message_4 # scene:qs_office44 # cast:qs_meng # speaker:qs_meng # mood:qs_meng=intent
+半年。假商队、真贵货、旧识带出的假消息，绕了三个月才进杜耳朵。他终于黄昏入谷，肩腿各中一箭，退路也封住了。 # beat:qs_du_message_5 # scene:qs_office44 # cast:qs_meng # speaker:narrator
+* [盯自己盾手怎样退，不让弩手在己方人前硬射。 # cid:qs_watch_shields]
+  ~ qs_shield_gap = true
+  前面是自己人，弩停！盾后让一步，别把倒的人夹住。 # beat:qs_du_message_6 # scene:qs_office44 # cast:qs_meng # speaker:you
+  最前一掌仍震倒盾手，撞开两人。你叫身后接住，却没能把重新合上的机会抢回来。 # beat:qs_du_message_7 # scene:qs_office44 # cast:qs_meng # speaker:narrator
+  -> net_break
+* [盯杜哪条腿中了箭，想把这处慢变成拿住他的机会。 # cid:qs_watch_du]
+  ~ qs_shield_gap = false
+  腿中箭，的确慢了。你正想叫人逼这一侧，他已从盾缝换位，弩手面前全是自己人。 # beat:qs_du_message_8 # scene:qs_office44 # cast:qs_meng # speaker:narrator
+  先别放箭！ # beat:qs_du_message_9 # scene:qs_office44 # cast:qs_meng # speaker:you
+  这一声晚了一点才传完，阵中已经开始有人跌倒。计划没有因为你先算过便替人挡掌。 # beat:qs_du_message_10 # scene:qs_office44 # cast:qs_meng # speaker:narrator
+  -> net_break
+
+=== net_break ===
+教头肩骨碎，一名小榜人物中掌倒，孟长庚五十余招打中杜肋，自己回掌中胸，吐血昏迷。两名高手一死一重伤，阵里乱了。 # beat:qs_net_break_1 # scene:qs_road44 # cast:qs_meng,qs_du # speaker:narrator
+你终于接上。第二十招锁链绕住一手，心里刚动，杜肩一沉，链反卷，一肘撞脸。再看清时，他已经冲开最后一口。 # beat:qs_net_break_2 # scene:qs_road44 # cast:qs_meng,qs_du # speaker:narrator
+二十三招。 # beat:qs_net_break_3 # scene:qs_road44 # cast:qs_meng,qs_du # speaker:you
+不是三招就倒了，也不是复仇成功。地上死伤几十人，半年的网仍没留住他。远处却传来一声驴叫。 # beat:qs_net_break_4 # scene:qs_road44 # cast:qs_meng,qs_du # speaker:narrator
+* [朝路中老人喊有凶徒，请身边人先带伤者避开。 # cid:qs_call_oldman]
+  老人家，避开！ # beat:qs_net_break_5 # scene:qs_road44 # cast:qs_meng,qs_du # speaker:you
+  老人似乎没听清，反问什么。杜百川已一掌拍去，你抓住身旁想追的小捕快，没再往两人之间挤。 # beat:qs_net_break_6 # scene:qs_road44 # cast:qs_meng,qs_du # speaker:narrator
+  那一掌却停住了。 # beat:qs_net_break_7 # scene:qs_road44 # cast:qs_meng,qs_du # speaker:narrator
+  -> seven
+* [先拦住想追的同僚，告诉他们自己还没看清前路。 # cid:qs_hold_followers]
+  别跟。我还看不清他下一步。 # beat:qs_net_break_8 # scene:qs_road44 # cast:qs_meng,qs_du # speaker:you
+  杜喝路中央骑驴老人滚开。老人问什么，掌已到，随手接下。 # beat:qs_net_break_9 # scene:qs_road44 # cast:qs_meng,qs_du # speaker:narrator
+  没有巨响，也没有人飞出去。杜第一次真的停住了。 # beat:qs_net_break_10 # scene:qs_road44 # cast:qs_meng,qs_du # speaker:narrator
+  -> seven
+
+=== seven ===
+第一招杜退半步，第二招老人从驴边下来，第三双掌齐出被让开，第四手搭肘，第五杜想走，第六老人已在退路。 # beat:qs_seven_1 # scene:qs_road44 # cast:qs_wei,qs_du # speaker:narrator
+第七掌落胸，杜退两步，跪下，又坐下，没有再起来。你挣扎着站起，嘴里仍是血，只能数出七。 # beat:qs_seven_2 # scene:qs_road44 # cast:qs_wei,qs_du # speaker:narrator # action:第七掌
+伤者在哪边？ # beat:qs_seven_3 # scene:qs_road44 # cast:qs_wei,qs_du # speaker:qs_wei # mood:qs_wei=neutral
+石后。孟教头还没醒。 # beat:qs_seven_4 # scene:qs_road44 # cast:qs_wei,qs_du # speaker:you
+老人牵驴过去。后来你知道他叫魏沉舟，旧路榜第一坐过十一年，退了二十余年。孟醒来听见名字，竟要坐起。 # beat:qs_seven_5 # scene:qs_road44 # cast:qs_wei,qs_du # speaker:narrator
+我认识他。他不认识我。 # beat:qs_seven_6 # scene:qs_road44 # cast:qs_meng,qs_wei,qs_du # speaker:qs_meng # mood:qs_meng=neutral
+* [问魏若年轻二十年，杜能撑多久。 # cid:qs_ask_young_wei]
+  魏老若年轻二十年…… # beat:qs_seven_7 # scene:qs_road44 # cast:qs_meng,qs_wei,qs_du # speaker:you
+  我怎么知道。反正不会更多。 # beat:qs_seven_8 # scene:qs_road44 # cast:qs_meng,qs_wei,qs_du # speaker:qs_meng # mood:qs_meng=amused
+  他笑了一下便咳，手仍离不开床沿。你把水递近，不再让他为了回答多坐一会。 # beat:qs_seven_9 # scene:qs_road44 # cast:qs_meng,qs_wei,qs_du # speaker:narrator
+  -> chop46
+* [先给孟递水，问这一仗哪里还要补报。 # cid:qs_ask_meng_rest]
+  死伤、调了多少人，不能只写魏老七招。 # beat:qs_seven_10 # scene:qs_road44 # cast:qs_meng,qs_wei,qs_du # speaker:you
+  写。也写我答应去，不是你骗我去。 # beat:qs_seven_11 # scene:qs_road44 # cast:qs_meng,qs_wei,qs_du # speaker:qs_meng # mood:qs_meng=intent
+  他把水喝完，示意你先拿出名册。七招后没有谁的伤自动轻下来。 # beat:qs_seven_12 # scene:qs_road44 # cast:qs_meng,qs_wei,qs_du # speaker:narrator
+  -> chop46
+
+=== chop46 ===
+四十六岁，你找魏沉舟。头一回他说你太老，你顶回四十六也老，他说练我的东西，老。第二回送酒，他收酒，仍不教。 # beat:qs_chop46_1 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:narrator # look:qs_xu=age46 # action:四十六岁 · 第三次登门
+第三回你空手来，劈柴。木头里有节，斧刃陷住，魏在门里看了半晌。 # beat:qs_chop46_2 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:narrator # look:qs_xu=age46
+你倒会讲价，酒钱想从柴钱扣？ # beat:qs_chop46_3 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:qs_wei # mood:qs_wei=amused # look:qs_xu=age46
+酒没说要退。 # beat:qs_chop46_4 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:you # look:qs_xu=age46
+到底想学什么？ # beat:qs_chop46_5 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:qs_wei # mood:qs_wei=neutral # look:qs_xu=age46
+你想很久，答不知道，只知道过去每回觉得会了，后来又发现不会，还想学一点。 # beat:qs_chop46_6 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:narrator # look:qs_xu=age46
+* [把卡住的斧拔出来，先把今日这一堆劈完。 # cid:qs_finish_chop]
+  ~ qs_finished_chop = true
+  这一堆，我劈完再回。 # beat:qs_chop46_7 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:you # look:qs_xu=age46
+  那两根湿的留下。劈来烧不着，也白费你一身汗。 # beat:qs_chop46_8 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:qs_wei # mood:qs_wei=calm # look:qs_xu=age46
+  你挑出湿木，第一次没把多劈两根也当作更有诚意。 # beat:qs_chop46_9 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:narrator # look:qs_xu=age46
+  -> cut
+* [问明日还来不来，怕自己又在门外做错一整天。 # cid:qs_ask_tomorrow]
+  ~ qs_finished_chop = false
+  您若不教，我明日也能来劈柴。但得先问哪堆。 # beat:qs_chop46_10 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:you # look:qs_xu=age46
+  比送酒那回像样。 # beat:qs_chop46_11 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:qs_wei # mood:qs_wei=amused # look:qs_xu=age46
+  他指了干木，让你把湿的另放。你先前想全劈完的打算落了空，倒省下了一回无用功。 # beat:qs_chop46_12 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:narrator # look:qs_xu=age46
+  -> cut
+
+=== cut ===
+明日来。 # beat:qs_cut_1 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:qs_wei # mood:qs_wei=neutral # look:qs_xu=age46
+他没有正式收你入门，也没有传镇派神功。看你从短拳走到公门擒拿，他问这些年怎么没把自己练死。 # beat:qs_cut_2 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:narrator # look:qs_xu=age46
+都能用。 # beat:qs_cut_3 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:you # look:qs_xu=age46
+只是你什么都舍不得。 # beat:qs_cut_4 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:qs_wei # mood:qs_wei=intent # look:qs_xu=age46
+十几手删到七，七又删成五。你说练了二十年，他反问错二十年便要再错二十年？ # beat:qs_cut_5 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:narrator # look:qs_xu=age46
+* [把删掉与留下的都记明理由，练时只用留下的。 # cid:qs_cut_copy]
+  ~ qs_kept_reasons = true
+  不全带上手。可为什么删，我想留给后来问的人。 # beat:qs_cut_6 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:you # look:qs_xu=age46
+  你真问明白再写。我活着，不用先替我写一部遗书。 # beat:qs_cut_7 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:qs_wei # mood:qs_wei=neutral # look:qs_xu=age46
+  你划掉第一句凭空猜的解释，回到院里重试。 # beat:qs_cut_8 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:narrator # look:qs_xu=age46
+  -> wins56
+* [先用木条示范自己终于能停在哪儿，让学生看得见差别。 # cid:qs_cut_show]
+  ~ qs_kept_reasons = false
+  我先走给他们看。怕光说删，他们以为只求少。 # beat:qs_cut_9 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:you # look:qs_xu=age46
+  来，先走给我看。 # beat:qs_cut_10 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:qs_wei # mood:qs_wei=intent # look:qs_xu=age46
+  你还没转身叫学生，已被他拦回一步。删了招，不是从此没人能再改你。 # beat:qs_cut_11 # scene:qs_wei46 # cast:qs_xu,qs_wei # speaker:narrator # look:qs_xu=age46
+  -> wins56
+
+=== wins56 ===
+又十年。五十六岁，你在数县武会拿头名。魏没来争名，只问第三场为何急。你想了想，竟还记得二十三岁那回两胜之后，自己觉得够了。 # beat:qs_wins56_1 # scene:qs_fair56 # cast:qs_wei # speaker:narrator
+赢了也能问。又不是输了才有错。 # beat:qs_wins56_2 # scene:qs_fair56 # cast:qs_wei # speaker:qs_wei # mood:qs_wei=neutral
+你开始带人，把封、逼、贴、拿、打拆开，一遍遍看他们真能做到哪儿。 # beat:qs_wins56_3 # scene:qs_fair56 # cast:qs_wei # speaker:narrator
+{
+- qs_chen_word == 1:
+陈虎要开馆那句话，你如今在一处小院里兑现一角。头个学生拳太重，你先教他收力，自己挨一下，不让他把初来的同伴打伤。 # beat:qs_wins56_4 # scene:qs_fair56 # cast:qs_wei # speaker:narrator
+你陈师伯当年比我结实。我至今记得那顿饭。 # beat:qs_wins56_5 # scene:qs_fair56 # cast:qs_wei # speaker:you
+学生笑，你没有把陈虎讲成从未犯过错的人。 # beat:qs_wins56_6 # scene:qs_fair56 # cast:qs_wei # speaker:narrator
+- else:
+陈虎想要耐踢的馆门，你请学生先修松动的门板。有人嫌今日没练，你让他真拿门栓守住一回，才知道门与练法也能连在一起。 # beat:qs_wins56_7 # scene:qs_fair56 # cast:qs_wei # speaker:narrator
+馆还没修成，别先让头个学徒赔门。 # beat:qs_wins56_8 # scene:qs_fair56 # cast:qs_wei # speaker:you
+那句多年以前的玩笑，终于有一块真的门板来接。 # beat:qs_wins56_9 # scene:qs_fair56 # cast:qs_wei # speaker:narrator
+}
+* [留下把今天带的学生交到能接课的人手里，再去看师父。 # cid:qs_keep_class]
+  ~ qs_handover = true
+  谁接第二趟，先让学生认脸。我不能走了才说自会有人。 # beat:qs_wins56_10 # scene:qs_fair56 # cast:qs_wei # speaker:you
+  你晚到魏院里。他问是不是终于嫌老头话多，你把接课的姓名报完，他才把另一只碗推来。 # beat:qs_wins56_11 # scene:qs_fair56 # cast:qs_wei # speaker:narrator
+  -> capital64
+* [先赶去见师父，留下书面练法与约定的补课时辰。 # cid:qs_go_master]
+  ~ qs_handover = false
+  我今夜补。纸上这一条，先别自己加力。 # beat:qs_wins56_12 # scene:qs_fair56 # cast:qs_wei # speaker:you
+  你先见到魏，回来却发现学生只照字做，仍卡在同一处。补课多花了一更，灯油得从自己工钱扣。 # beat:qs_wins56_13 # scene:qs_fair56 # cast:qs_wei # speaker:narrator
+  -> capital64
+
+=== capital64 ===
+六十二岁时，魏走到生命最后。他说你又不只有武功，没许你一个将来必进路榜的位子。你带过的学生已经能接几堂课，旧刀仍在箱里。 # beat:qs_capital64_1 # scene:qs_capital64 # cast:qs_wang # speaker:narrator
+六十四岁押犯入京，见到旧南北榜出身的供奉，你才知道自己在地方的成就仍是地方。两年左右后，商路案让靖王赵允和注意到你。 # beat:qs_capital64_2 # scene:qs_capital64 # cast:qs_wang # speaker:narrator
+本王要能把人带回来的教头，不是每回都追到看不见马车的人。 # beat:qs_capital64_3 # scene:qs_capital64 # cast:qs_wang # speaker:qs_wang # mood:qs_wang=neutral
+车有多宽，沿途哪处只能走一辆，得先给我看。 # beat:qs_capital64_4 # scene:qs_capital64 # cast:qs_wang # speaker:you
+靖王还年轻，不习武。这份差事也不是请你替他找一个天下名次。 # beat:qs_capital64_5 # scene:qs_capital64 # cast:qs_wang # speaker:narrator
+{
+- qs_han_word == 1:
+你给韩小七家写信，写城门里的卖饼人如何找零、押犯时借哪处水。写到京城二字，才发现再没人能坐在墙上催你别只写到了。 # beat:qs_capital64_6 # scene:qs_capital64 # cast:qs_wang # speaker:narrator
+我到了。信给你家里，回来还念。 # beat:qs_capital64_7 # scene:qs_capital64 # cast:qs_wang # speaker:you
+封面不是一份官样履历。 # beat:qs_capital64_8 # scene:qs_capital64 # cast:qs_wang # speaker:narrator
+- else:
+你先把回程投宿处一一问清，抄一份留给同伴。有人嫌教头连回头路也管，你想起韩小七收回墙外那条腿。 # beat:qs_capital64_9 # scene:qs_capital64 # cast:qs_wang # speaker:narrator
+跑得快的人，也得有人知道去哪儿找。 # beat:qs_capital64_10 # scene:qs_capital64 # cast:qs_wang # speaker:you
+你把那份去处留在门房，而非只放自己袋里。 # beat:qs_capital64_11 # scene:qs_capital64 # cast:qs_wang # speaker:narrator
+}
+* [让护卫真正夹车走一次，把狭口退次排出来。 # cid:qs_plan_carriage]
+  ~ qs_carriage_drill = true
+  车别空推，先坐个人。哪边盾挡了车轮，今日就看。 # beat:qs_capital64_12 # scene:qs_capital64 # cast:qs_wang # speaker:you
+  本王还没遇刺，先要在自家院里被你颠一回？ # beat:qs_capital64_13 # scene:qs_capital64 # cast:qs_wang # speaker:qs_wang # mood:qs_wang=amused
+  今日颠，有空改轮边的位子。 # beat:qs_capital64_14 # scene:qs_capital64 # cast:qs_wang # speaker:you
+  他还是上车了，命人别为王爷坐着便只推得平稳好看。 # beat:qs_capital64_15 # scene:qs_capital64 # cast:qs_wang # speaker:narrator
+  -> carriage
+* [先教护卫怎样逼退来犯者，再补狭口夹车。 # cid:qs_plan_attack]
+  ~ qs_carriage_drill = false
+  先看近身这一段，车路另走。 # beat:qs_capital64_16 # scene:qs_capital64 # cast:qs_wang # speaker:you
+  那你明日再来一回。本王不想真出门时，才知道另走是往哪儿走。 # beat:qs_capital64_17 # scene:qs_capital64 # cast:qs_wang # speaker:qs_wang # mood:qs_wang=neutral
+  你添了一日。前来当班的护卫要换人，夹车那段只来得及让新班认过一遍。 # beat:qs_capital64_18 # scene:qs_capital64 # cast:qs_wang # speaker:narrator
+  -> carriage
+
+=== carriage ===
+巡田遇刺，盾夹车，马开路。刺客退了，你却没追。前面狭口，只够人车一段段过。 # beat:qs_carriage_1 # scene:qs_guard66 # cast:qs_wang # speaker:narrator
+放石灰，撤车。谁也别追到路外。 # beat:qs_carriage_2 # scene:qs_guard66 # cast:qs_wang # speaker:you
+刺客没有因一袋石灰全成了败将，靖王却被带过了窄口。这回你终于没犯年轻时要拿人的错。 # beat:qs_carriage_3 # scene:qs_guard66 # cast:qs_wang # speaker:narrator
+{
+- qs_exit_drill and qs_carriage_drill:
+护卫照实走过的先后换位，后车的年轻车夫也接上了。车到安全处时，仍是他自己扶着马，你不用再回去把人从翻倒的车辕下接出来。 # beat:qs_carriage_4 # scene:qs_guard66 # cast:qs_wang # speaker:narrator
+- else:
+到了窄口，后车换位慢，车辕卡住。你叫护卫掩着自己回去接，年轻车夫活着出来，腿却伤了。这份药钱与后来的补差，不能从一句王爷平安里扣掉。 # beat:qs_carriage_5 # scene:qs_guard66 # cast:qs_wang # speaker:narrator
+}
+* [亲自交清后车的人与差事，给受累者留自己的去处。 # cid:qs_pay_driver]
+  ~ qs_settled_driver = true
+  王爷过口了，车夫也得有人点到。伤药和下趟差事，一起报。 # beat:qs_carriage_6 # scene:qs_guard66 # cast:qs_wang # speaker:you
+  照办。别只给本王一份没有后半页的好消息。 # beat:qs_carriage_7 # scene:qs_guard66 # cast:qs_wang # speaker:qs_wang # mood:qs_wang=intent
+  你把后半页递上，名册不以最后一人跑得快慢改谁该有姓名。 # beat:qs_carriage_8 # scene:qs_guard66 # cast:qs_wang # speaker:narrator
+  -> home70
+* [先送靖王归府，再补查后车差事，把延误也写进回报。 # cid:qs_report_king]
+  ~ qs_settled_driver = false
+  我先送殿下到府。后车这一项还没交清，不能写全齐。 # beat:qs_carriage_9 # scene:qs_guard66 # cast:qs_wang # speaker:you
+  留着。明日先报这一项。 # beat:qs_carriage_10 # scene:qs_guard66 # cast:qs_wang # speaker:qs_wang # mood:qs_wang=intent
+  你隔日重走窄口，才把后车人员核完；那半日多跑的工钱，由你自己出。 # beat:qs_carriage_11 # scene:qs_guard66 # cast:qs_wang # speaker:narrator
+  -> home70
+
+=== home70 ===
+六十八岁面圣，后来在禁中教武。到七十回乡，马元魁已是极高龄老人。你扶他起身，没拿一场如今能赢的比武逼他证明还年轻。 # beat:qs_home70_1 # scene:qs_home70 # cast:qs_zhaodaughter # speaker:narrator
+你早年成过一次亲，妻子病逝得早，此后没有再娶，也无亲子。青石镇的门里，却仍有人认得旧名。 # beat:qs_home70_2 # scene:qs_home70 # cast:qs_zhaodaughter # speaker:narrator
+我小时候记得五个人坐墙上。现在走到那里，总觉得墙矮了。 # beat:qs_home70_3 # scene:qs_home70 # cast:qs_zhaodaughter # speaker:qs_zhaodaughter # mood:qs_zhaodaughter=neutral
+也修过。后来我回来，得先低头才不碰到那截新檐。 # beat:qs_home70_4 # scene:qs_home70 # cast:qs_zhaodaughter # speaker:you
+赵家女儿替你把凳子端近。她记得母亲说过你三十二岁醒来的那一回。 # beat:qs_home70_5 # scene:qs_home70 # cast:qs_zhaodaughter # speaker:narrator
+{
+- qs_family_truth:
+娘说你后来肯说自己没看清。她没有说从此便不怨你。 # beat:qs_home70_6 # scene:qs_home70 # cast:qs_zhaodaughter # speaker:qs_zhaodaughter # mood:qs_zhaodaughter=calm
+我知道。 # beat:qs_home70_7 # scene:qs_home70 # cast:qs_zhaodaughter # speaker:you
+家里有后辈想去做事。我想让他先来听你说一次，不要只听你已经做成了什么。 # beat:qs_home70_8 # scene:qs_home70 # cast:qs_zhaodaughter # speaker:qs_zhaodaughter # mood:qs_zhaodaughter=neutral
+她把后辈的信交给你。来不来由他自己选，你先有一封能实话回答的信。 # beat:qs_home70_9 # scene:qs_home70 # cast:qs_zhaodaughter # speaker:narrator
+- else:
+娘等的那一句，你后来也没说清。我不替她说算了。 # beat:qs_home70_10 # scene:qs_home70 # cast:qs_zhaodaughter # speaker:qs_zhaodaughter # mood:qs_zhaodaughter=uneasy
+我在这里。你要问哪一段，我慢慢答。 # beat:qs_home70_11 # scene:qs_home70 # cast:qs_zhaodaughter # speaker:you
+她没有把后辈的去处交给你安排。你仍替赵家把漏雨处看了一遍，留下修缮的钱和回信地址。 # beat:qs_home70_12 # scene:qs_home70 # cast:qs_zhaodaughter # speaker:narrator
+}
+{
+- qs_song_word == 1 and qs_kept_reasons:
+你带来的练法里，宋礼教你的那几个字还留着。抄本写了为什么删，也写原先是谁教。赵家收一份，另一份带回给学生。 # beat:qs_home70_13 # scene:qs_home70 # cast:qs_zhaodaughter # speaker:narrator
+- else:
+你取一根木条，把宋礼当年舍不得换剑的事走给小辈看。先试怎样收，才谈重不重；他们看得到一件没靠传闻变轻的事。 # beat:qs_home70_14 # scene:qs_home70 # cast:qs_zhaodaughter # speaker:narrator
+}
+{
+- qs_zhao_word == 1:
+小时候见你来，就知道爹要晚。今日也让我家里人知道你还坐在这儿吃饭。 # beat:qs_home70_15 # scene:qs_home70 # cast:qs_zhaodaughter # speaker:qs_zhaodaughter # mood:qs_zhaodaughter=neutral
+她叫人捎一句你今晚住哪里。你当年替人带过的口信，如今有人替你把同一件小事做完。 # beat:qs_home70_16 # scene:qs_home70 # cast:qs_zhaodaughter # speaker:narrator
+- else:
+娘还留着那几张工钱条，说你认不出的字，宋叔叔就多教一回。 # beat:qs_home70_17 # scene:qs_home70 # cast:qs_zhaodaughter # speaker:qs_zhaodaughter # mood:qs_zhaodaughter=neutral
+她请你留半日给小辈认账，不是教打。你拿过纸，那句又不只有武功没有再只停在魏的遗言里。 # beat:qs_home70_18 # scene:qs_home70 # cast:qs_zhaodaughter # speaker:narrator
+}
+-> army76
+
+=== army76 ===
+七十六岁，灾年与边患把你带进军中。巡斥、传令、轮换，跟几个人围一位高手不是同一种事。 # beat:qs_army76_1 # scene:qs_army76 # cast:qs_vice # speaker:narrator
+许教头，学过拳的要不要放一队？ # beat:qs_army76_2 # scene:qs_army76 # cast:qs_vice # speaker:qs_vice # mood:qs_vice=neutral
+先问他们能守哪儿。能打，不等于能听见隔墙那道令。 # beat:qs_army76_3 # scene:qs_army76 # cast:qs_vice # speaker:you
+八十四岁，你识破佯攻，留军受封守定塞。小城的井、墙、东边空地，得一件件先看，而不是等敌来才问这儿谁管。 # beat:qs_army76_4 # scene:qs_army76 # cast:qs_vice # speaker:narrator
+* [带轮值军士实走后门、山道与两处木障位置。 # cid:qs_walk_defense]
+  ~ qs_army_drill = true
+  白天走一回，夜里再走。哪儿喊不应，换人到转弯处接，不等开战。 # beat:qs_army76_5 # scene:qs_army76 # cast:qs_vice # speaker:you
+  要多调一班。 # beat:qs_army76_6 # scene:qs_army76 # cast:qs_vice # speaker:qs_vice # mood:qs_vice=intent
+  我把教拳挪一日。两件事不是都写个照常便有了。 # beat:qs_army76_7 # scene:qs_army76 # cast:qs_vice # speaker:you
+  你少了一日授课，换来转弯处真的有人会回一声。 # beat:qs_army76_8 # scene:qs_army76 # cast:qs_vice # speaker:narrator
+  -> runner84
+* [先补教头和弩手，后门位置标图交各班认。 # cid:qs_drill_weapons]
+  ~ qs_army_drill = false
+  先补短兵，退路在这张图上。夜里另排一次。 # beat:qs_army76_9 # scene:qs_army76 # cast:qs_vice # speaker:you
+  我记着。修东墙那班还没下来，夜里未必凑得齐。 # beat:qs_army76_10 # scene:qs_army76 # cast:qs_vice # speaker:qs_vice # mood:qs_vice=neutral
+  你把没走过写在图边。后来几次轮换有人补上，有人仍只见过那张纸。 # beat:qs_army76_11 # scene:qs_army76 # cast:qs_vice # speaker:narrator
+  -> runner84
+
+=== runner84 ===
+新卒阿满从外县来，腿脚快，字只认得几个。你让他先报一处转弯，谁在那儿、喊哪句话。 # beat:qs_runner84_1 # scene:qs_army84 # cast:qs_runner # speaker:narrator
+我跑得快。教头要我送哪儿，我就送哪儿。 # beat:qs_runner84_2 # scene:qs_army84 # cast:qs_runner # speaker:qs_runner # mood:qs_runner=neutral
+你跑到人不在的地方，要怎么办？ # beat:qs_runner84_3 # scene:qs_army84 # cast:qs_runner # speaker:you
+……再找？ # beat:qs_runner84_4 # scene:qs_army84 # cast:qs_runner # speaker:qs_runner # mood:qs_runner=uneasy
+他想了一会儿，先问能不能找人陪自己走一次。你听见年轻时韩小七说的那句追上再骂，却不是同一个人回来了。 # beat:qs_runner84_5 # scene:qs_army84 # cast:qs_runner # speaker:narrator
+* [陪他报回程的人与位置，不只练去的那一趟。 # cid:qs_runner_repeat]
+  ~ qs_runner_return = true
+  来。我站这里，你走到头，回来告诉我谁真在。 # beat:qs_runner84_6 # scene:qs_army84 # cast:qs_runner # speaker:you
+  那我路上不能只看脚下。 # beat:qs_runner84_7 # scene:qs_army84 # cast:qs_runner # speaker:qs_runner # mood:qs_runner=intent
+  第一回他报错一人。你让他重走，没有把腿快当作字不识也能不问的本事。 # beat:qs_runner84_8 # scene:qs_army84 # cast:qs_runner # speaker:narrator
+  -> city92
+* [先教他记短句，去回的位置请当值伍长再带。 # cid:qs_runner_message]
+  ~ qs_runner_return = false
+  先记这句。后面的位置找当值伍长认，我不能替他答人在。 # beat:qs_runner84_9 # scene:qs_army84 # cast:qs_runner # speaker:you
+  那我得等伍长回来。 # beat:qs_runner84_10 # scene:qs_army84 # cast:qs_runner # speaker:qs_runner # mood:qs_runner=neutral
+  你把等待也排进差事。第一次他只送到了话，没有把自己带回你以为的时辰。 # beat:qs_runner84_11 # scene:qs_army84 # cast:qs_runner # speaker:narrator
+  -> city92
+
+=== city92 ===
+八年后，九十二岁。敌军三名将领，阿勒台近路榜前位，乌延海更年轻更快，萧姓枪将擅长长兵；都不是南北榜人物，却足够让一座边城难过。 # beat:qs_city92_1 # scene:qs_wall92 # cast:qs_xu,qs_vice,qs_runner # speaker:narrator # look:qs_xu=age92 # action:九十二岁 · 定塞
+许公先走。南门还有路。 # beat:qs_city92_2 # scene:qs_wall92 # cast:qs_xu,qs_vice,qs_runner # speaker:qs_vice # mood:qs_vice=neutral # look:qs_xu=age92
+我走了，你们呢？ # beat:qs_city92_3 # scene:qs_wall92 # cast:qs_xu,qs_vice,qs_runner # speaker:you # look:qs_xu=age92
+我们守。 # beat:qs_city92_4 # scene:qs_wall92 # cast:qs_xu,qs_vice,qs_runner # speaker:qs_vice # mood:qs_vice=neutral # look:qs_xu=age92
+那我为什么走？ # beat:qs_city92_5 # scene:qs_wall92 # cast:qs_xu,qs_vice,qs_runner # speaker:you # look:qs_xu=age92
+你知道自己一个也稳吃不了，两个很难活过五十招，三个齐来必死。这回不是六十年前五个人以为总能试一回。 # beat:qs_city92_6 # scene:qs_wall92 # cast:qs_xu,qs_vice,qs_runner # speaker:narrator # look:qs_xu=age92
+第一日你在高处调滚木、箭、梯。阿勒台登墙，你和四名教头五打一，也只是把他逼退。城守住，死三百余人。 # beat:qs_city92_7 # scene:qs_wall92 # cast:qs_xu,qs_vice,qs_runner # speaker:narrator # look:qs_xu=age92
+* [先点回来的活人，问下一班谁能接，不把死伤写成只有数目。 # cid:qs_count_living]
+  ~ qs_counted = true
+  一个班一个班报。伤了能做什么，也报；不能让还站着的人都顶三份差。 # beat:qs_city92_8 # scene:qs_wall92 # cast:qs_xu,qs_vice,qs_runner # speaker:you # look:qs_xu=age92
+  有一队只回了半队。 # beat:qs_city92_9 # scene:qs_wall92 # cast:qs_xu,qs_vice,qs_runner # speaker:qs_vice # mood:qs_vice=uneasy # look:qs_xu=age92
+  把他们先换下来。缺口我和你再排。 # beat:qs_city92_10 # scene:qs_wall92 # cast:qs_xu,qs_vice,qs_runner # speaker:you # look:qs_xu=age92
+  你没有因此多出半队人，却让另一张轮换表真正用起来。 # beat:qs_city92_11 # scene:qs_wall92 # cast:qs_xu,qs_vice,qs_runner # speaker:narrator # look:qs_xu=age92
+  -> second_day
+* [先填墙口，点人交副将，晚些亲自核受累的班。 # cid:qs_patch_wall]
+  ~ qs_counted = false
+  墙口先撑，名册你来。我回头逐班核。 # beat:qs_city92_12 # scene:qs_wall92 # cast:qs_xu,qs_vice,qs_runner # speaker:you # look:qs_xu=age92
+  那我先撤伤重的。别等你回来才准动。 # beat:qs_city92_13 # scene:qs_wall92 # cast:qs_xu,qs_vice,qs_runner # speaker:qs_vice # mood:qs_vice=neutral # look:qs_xu=age92
+  你点头。等你核到最后一班，已有两人多顶了一轮，次日得给他们留补歇的空。 # beat:qs_city92_14 # scene:qs_wall92 # cast:qs_xu,qs_vice,qs_runner # speaker:narrator # look:qs_xu=age92
+  -> second_day
+
+=== second_day ===
+第二日东墙破，乌延海登城连杀七人。十九招，你右肩中拳，退四步；二十七招短棍中他左肋。 # beat:qs_second_day_1 # scene:qs_wall92 # cast:qs_vice # speaker:narrator
+老东西。 # beat:qs_second_day_2 # scene:qs_wall92 # cast:qs_wu,qs_vice # speaker:qs_wu # mood:qs_wu=sharp
+小东西。 # beat:qs_second_day_3 # scene:qs_wall92 # cast:qs_wu,qs_vice # speaker:you
+旁边士兵竟笑了。敌军暂撤，你短棍撑地，半天没动。 # beat:qs_second_day_4 # scene:qs_wall92 # cast:qs_wu,qs_vice # speaker:narrator
+一个还能打么？ # beat:qs_second_day_5 # scene:qs_wall92 # cast:qs_wu,qs_vice # speaker:qs_vice # mood:qs_vice=neutral
+能拖。 # beat:qs_second_day_6 # scene:qs_wall92 # cast:qs_wu,qs_vice # speaker:you
+两个呢？ # beat:qs_second_day_7 # scene:qs_wall92 # cast:qs_wu,qs_vice # speaker:qs_vice # mood:qs_vice=neutral
+你盼我死？ # beat:qs_second_day_8 # scene:qs_wall92 # cast:qs_wu,qs_vice # speaker:you
+他也想笑，手却先扶住你右肩下方，不敢再碰伤处。 # beat:qs_second_day_9 # scene:qs_wall92 # cast:qs_wu,qs_vice # speaker:narrator
+* [把哪一只手还能用、哪一段要换人说清，给下一班重排。 # cid:qs_share_limit]
+  ~ qs_shared_limit = true
+  右边别让我再抬重物。墙口还有哪一段非得我去，你先挑出来。 # beat:qs_second_day_10 # scene:qs_wall92 # cast:qs_wu,qs_vice # speaker:you
+  那封门栓给年轻的。你到石阶上，能看见两边。 # beat:qs_second_day_11 # scene:qs_wall92 # cast:qs_wu,qs_vice # speaker:qs_vice # mood:qs_vice=intent
+  你接受换位，没有用一声还能撑把他又留给你一只重箱的打算撑回去。 # beat:qs_second_day_12 # scene:qs_wall92 # cast:qs_wu,qs_vice # speaker:narrator
+  -> night92
+* [先问斥候与援军，身体的事等包扎时再补说。 # cid:qs_first_report]
+  ~ qs_shared_limit = false
+  斥候回来没有？ # beat:qs_second_day_13 # scene:qs_wall92 # cast:qs_wu,qs_vice # speaker:you
+  还没。先坐。 # beat:qs_second_day_14 # scene:qs_wall92 # cast:qs_wu,qs_vice # speaker:qs_vice # mood:qs_vice=neutral
+  你看着城外火点，直到包扎才说右肩抬不起来。副将划掉原先排给你的搬栓，临时换的人没赶上头一趟。 # beat:qs_second_day_15 # scene:qs_wall92 # cast:qs_wu,qs_vice # speaker:narrator
+  -> night92
+
+=== night92 ===
+第二日夜，斥候回来。援军最快明日下午，人却快不够了。副将再劝夜里突围，说城没了可以再拿。 # beat:qs_night92_1 # scene:qs_room92 # cast:qs_xu,qs_vice,qs_runner # speaker:narrator # look:qs_xu=age92
+对。若只是城，当然可以不要。 # beat:qs_night92_2 # scene:qs_room92 # cast:qs_xu,qs_vice,qs_runner # speaker:you # look:qs_xu=age92
+你把图展开，指城后山道。敌军一旦提前一天穿过，后方另一支宋军会被侧击。 # beat:qs_night92_3 # scene:qs_room92 # cast:qs_xu,qs_vice,qs_runner # speaker:narrator # look:qs_xu=age92
+不是守城，是守一天。 # beat:qs_night92_4 # scene:qs_room92 # cast:qs_xu,qs_vice,qs_runner # speaker:you # look:qs_xu=age92
+那我传令说守到明日下午？ # beat:qs_night92_5 # scene:qs_room92 # cast:qs_xu,qs_runner,qs_vice # speaker:qs_runner # mood:qs_runner=uneasy # look:qs_xu=age92
+说援军最快那时来。不能替他们先答一定赶得上。 # beat:qs_night92_6 # scene:qs_room92 # cast:qs_xu,qs_vice,qs_runner # speaker:you # look:qs_xu=age92
+你把两道木障画在纸上，阿满的指头停在第二处转弯。 # beat:qs_night92_7 # scene:qs_room92 # cast:qs_xu,qs_vice,qs_runner # speaker:narrator # look:qs_xu=age92
+{
+- qs_exit_drill and qs_army_drill:
+这里我走过，叫不应有另一处能接。我先去认人。 # beat:qs_night92_8 # scene:qs_room92 # cast:qs_xu,qs_runner,qs_vice # speaker:qs_runner # mood:qs_runner=intent # look:qs_xu=age92
+前面多年反复走退路的习惯，这一夜没有只剩纸上的线。副将把实认过的人填到两处木障。 # beat:qs_night92_9 # scene:qs_room92 # cast:qs_xu,qs_vice,qs_runner # speaker:narrator # look:qs_xu=age92
+- else:
+上回的伍长换了，这个名字我不认得。 # beat:qs_night92_10 # scene:qs_room92 # cast:qs_xu,qs_runner,qs_vice # speaker:qs_runner # mood:qs_runner=uneasy # look:qs_xu=age92
+带一个认得的去。来不及全走，也不能拿旧名字替一个不在的人答。 # beat:qs_night92_11 # scene:qs_room92 # cast:qs_xu,qs_vice,qs_runner # speaker:you # look:qs_xu=age92
+副将腾出一位熟路军士。另一头因此少一人，接应要等这趟确认回来。 # beat:qs_night92_12 # scene:qs_room92 # cast:qs_xu,qs_vice,qs_runner # speaker:narrator # look:qs_xu=age92
+}
+* [把退路和伤者去处交阿满先送，自己留城头，约定回报。 # cid:qs_send_record]
+  ~ qs_last_duty = 1
+  带着图去，不是带一句英勇。认到谁，回来报谁。 # beat:qs_night92_13 # scene:qs_room92 # cast:qs_xu,qs_vice,qs_runner # speaker:you # look:qs_xu=age92
+  两处都认。我还回来。 # beat:qs_night92_14 # scene:qs_room92 # cast:qs_xu,qs_runner,qs_vice # speaker:qs_runner # mood:qs_runner=intent # look:qs_xu=age92
+  你把较轻的纸袋给他，不给一件让年轻人以为非得赴死才配带的信物。 # beat:qs_night92_15 # scene:qs_room92 # cast:qs_xu,qs_vice,qs_runner # speaker:narrator # look:qs_xu=age92
+  -> oldknife
+* [让阿满留下守第二木障，派熟路者送令，自己承担当场教他。 # cid:qs_keep_heir]
+  ~ qs_last_duty = 2
+  你守第二道。口令现在说给我听，拿不稳弩也不要跟着往前冲。 # beat:qs_night92_16 # scene:qs_room92 # cast:qs_xu,qs_vice,qs_runner # speaker:you # look:qs_xu=age92
+  第一道退下来，我接人，再合木栓。 # beat:qs_night92_17 # scene:qs_room92 # cast:qs_xu,qs_runner,qs_vice # speaker:qs_runner # mood:qs_runner=intent # look:qs_xu=age92
+  你听他真说完，才让副将接下教这一步的后半截。 # beat:qs_night92_18 # scene:qs_room92 # cast:qs_xu,qs_vice,qs_runner # speaker:narrator # look:qs_xu=age92
+  -> oldknife
+
+=== oldknife ===
+第三日清晨，你打开箱底。陈虎的旧刀换过两次鞘，刃磨过，柄还旧。从青石到府衙、京城、王府、边疆，六十年没用它真打一场。 # beat:qs_oldknife_1 # scene:qs_room92 # cast:qs_xu,qs_vice # speaker:narrator # look:qs_xu=age92
+许公还有这样的刀？ # beat:qs_oldknife_2 # scene:qs_room92 # cast:qs_xu,qs_vice # speaker:qs_vice # mood:qs_vice=neutral # look:qs_xu=age92
+朋友的。 # beat:qs_oldknife_3 # scene:qs_room92 # cast:qs_xu,qs_vice # speaker:you # look:qs_xu=age92
+哪位？ # beat:qs_oldknife_4 # scene:qs_room92 # cast:qs_xu,qs_vice # speaker:qs_vice # mood:qs_vice=neutral # look:qs_xu=age92
+死六十年了。 # beat:qs_oldknife_5 # scene:qs_room92 # cast:qs_xu,qs_vice # speaker:you # look:qs_xu=age92
+你摸了摸柄上旧皮，没再把它擦成一件像新的一样的纪念物。 # beat:qs_oldknife_6 # scene:qs_room92 # cast:qs_xu,qs_vice # speaker:narrator # look:qs_xu=age92
+{
+- qs_chen_word == 1:
+他说想开馆。我后来教过几个人，头一个挨打还知道笑。 # beat:qs_oldknife_7 # scene:qs_room92 # cast:qs_xu,qs_vice # speaker:you # look:qs_xu=age92
+那些课，还留着？ # beat:qs_oldknife_8 # scene:qs_room92 # cast:qs_xu,qs_vice # speaker:qs_vice # mood:qs_vice=neutral # look:qs_xu=age92
+在。把能接课的人名，也装进去。 # beat:qs_oldknife_9 # scene:qs_room92 # cast:qs_xu,qs_vice # speaker:you # look:qs_xu=age92
+- else:
+他说馆门得耐踢。我答应帮他修，馆没开成，后来倒修过不少门。 # beat:qs_oldknife_10 # scene:qs_room92 # cast:qs_xu,qs_vice # speaker:you # look:qs_xu=age92
+后头那门，也照这样？ # beat:qs_oldknife_11 # scene:qs_room92 # cast:qs_xu,qs_vice # speaker:qs_vice # mood:qs_vice=neutral # look:qs_xu=age92
+多堵一层。门后站的是人，别只等木头。 # beat:qs_oldknife_12 # scene:qs_room92 # cast:qs_xu,qs_vice # speaker:you # look:qs_xu=age92
+}
+* [把四友名字报给副将，请他回乡时逐个交清。 # cid:qs_name_four]
+  ~ qs_names_left = true
+  陈虎、韩七郎，大家叫小七。宋礼、赵大春。还有我。 # beat:qs_oldknife_13 # scene:qs_room92 # cast:qs_xu,qs_vice # speaker:you # look:qs_xu=age92
+  我记。五个。 # beat:qs_oldknife_14 # scene:qs_room92 # cast:qs_xu,qs_vice # speaker:qs_vice # mood:qs_vice=intent # look:qs_xu=age92
+  他逐个复了一遍，没有把四个人都记成许公旧友这一句。 # beat:qs_oldknife_15 # scene:qs_room92 # cast:qs_xu,qs_vice # speaker:narrator # look:qs_xu=age92
+  -> breach
+* [先交学生和后门的差事，再把五个名字写在包里的旧页。 # cid:qs_leave_lessons]
+  ~ qs_names_left = false
+  先接课、接门。名字在这页，别落下。 # beat:qs_oldknife_16 # scene:qs_room92 # cast:qs_xu,qs_vice # speaker:you # look:qs_xu=age92
+  明白。我若不认得字，请认得的人念给我听。 # beat:qs_oldknife_17 # scene:qs_room92 # cast:qs_xu,qs_vice # speaker:qs_vice # mood:qs_vice=neutral # look:qs_xu=age92
+  你把那页压在最上面，交了三件眼前就要接手的事。 # beat:qs_oldknife_18 # scene:qs_room92 # cast:qs_xu,qs_vice # speaker:narrator # look:qs_xu=age92
+  -> breach
+
+=== breach ===
+上午三处搭梯，你仍先调人。直到内门受破损处冲击，阿勒台、乌延海、萧姓枪将都到了。 # beat:qs_breach_1 # scene:qs_stairs92 # cast:qs_xu,qs_vice # speaker:narrator # look:qs_xu=age92 # action:第三日上午 · 内门
+后面那门，再堵一层。 # beat:qs_breach_2 # scene:qs_stairs92 # cast:qs_vice # speaker:you
+你拔刀。阿勒台先来，四十余招，陈虎旧刀第一次真正砍中人，左臂见血；第六十一招，你腰侧中刀背撞墙，借墙反撩，逼他退半步。 # beat:qs_breach_3 # scene:qs_stairs92 # cast:qs_vice # speaker:narrator
+多大？ # beat:qs_breach_4 # scene:qs_stairs92 # cast:qs_ale,qs_vice # speaker:qs_ale # mood:qs_ale=neutral
+九十二。 # beat:qs_breach_5 # scene:qs_stairs92 # cast:qs_ale,qs_vice # speaker:you
+该在家。 # beat:qs_breach_6 # scene:qs_stairs92 # cast:qs_ale,qs_vice # speaker:qs_ale # mood:qs_ale=amused
+你们来了。回不去。 # beat:qs_breach_7 # scene:qs_stairs92 # cast:qs_ale,qs_vice # speaker:you
+乌延海加入，不到二十招左臂又伤，腿中一脚，你跪下又站。身后的军士要冲，你喝他们守门。 # beat:qs_breach_8 # scene:qs_stairs92 # cast:qs_ale,qs_vice # speaker:narrator
+萧枪到肩，贯入一寸。你卡枪砍，后掌中背，硬抬旧刀去接阿勒台。刀终于断了。 # beat:qs_breach_9 # scene:qs_stairs92 # cast:qs_ale,qs_vice # speaker:narrator
+* [不回头，只请门后应一声，确认下一班已接。 # cid:qs_call_gate]
+  ~ qs_final_call = true
+  门后，回一声。 # beat:qs_breach_10 # scene:qs_stairs92 # cast:qs_ale,qs_vice # speaker:you
+  隔着木障，有人应在。你没有让他们冲出来，刀只剩半截，仍留在手里。 # beat:qs_breach_11 # scene:qs_stairs92 # cast:qs_ale,qs_vice # speaker:narrator
+  -> last_stand
+* [不再额外喊话，听身后木栓落下，把余力留在眼前。 # cid:qs_hold_breath]
+  ~ qs_final_call = false
+  你听见木栓压下的重响。身后的人没有冲出来，你把那口气留住，半刀重新立到身前。 # beat:qs_breach_12 # scene:qs_stairs92 # cast:qs_ale,qs_vice # speaker:narrator
+  -> last_stand
+
+=== last_stand ===
+让开。城一定破。 # beat:qs_last_stand_1 # scene:qs_stairs92 # cast:qs_ale,qs_wu,qs_xiao # speaker:qs_ale # mood:qs_ale=neutral
+可能。 # beat:qs_last_stand_2 # scene:qs_stairs92 # cast:qs_ale,qs_wu,qs_xiao # speaker:you
+那你守什么？ # beat:qs_last_stand_3 # scene:qs_stairs92 # cast:qs_ale,qs_wu,qs_xiao # speaker:qs_ale # mood:qs_ale=neutral
+守时间。你们晚一点，就够了。 # beat:qs_last_stand_4 # scene:qs_stairs92 # cast:qs_ale,qs_wu,qs_xiao # speaker:you
+最后多少招，后来记录不一。你只知道断刀最后刺进乌延海大腿，胸口又中掌；萧枪从侧面贯腹，阿勒台的刀再落，你没挡住。 # beat:qs_last_stand_5 # scene:qs_stairs92 # cast:qs_ale,qs_wu,qs_xiao # speaker:narrator
+靠墙坐下时，阿勒台还问降不降。你已说不出完整的话，只摇头。这是最后一个明确动作。 # beat:qs_last_stand_6 # scene:qs_stairs92 # cast:qs_ale,qs_wu,qs_xiao # speaker:narrator
+-> after
+
+=== after ===
+后日 · 许长安死后。内门被冲过，后头的两层木障、弩手和伤兵却已合起来。第三日黄昏，定塞仍未全失；夜里援军火线到了，第四日天亮前敌撤。 # beat:qs_after_1 # scene:qs_after # cast:qs_vice # speaker:narrator
+副将在石阶下找到尸体和半刀，吩咐一起收。东墙破，南门烧一半，死伤过半，不能只写一句城还在。 # beat:qs_after_2 # scene:qs_after # cast:qs_vice # speaker:narrator
+送回石门村。他没有亲子，旧屋也未必还在，总得走这一程。 # beat:qs_after_3 # scene:qs_after # cast:qs_vice # speaker:qs_vice # mood:qs_vice=neutral
+后日视角 · 送灵副将。你手里还有伤亡册与接课名单，活下来的军士等着报清自己这一队。 # beat:qs_after_4 # scene:qs_after # cast:qs_vice # speaker:narrator # action:后日视角 · 送灵副将
+* [先逐队听完伤亡与接应，再定送灵的人。 # cid:qs_epilogue_roll]
+  ~ qs_epilogue_roll = true
+  谁没回到这里，先报；谁还在伤帐，别写成已经走了。 # beat:qs_after_5 # scene:qs_after # cast:qs_vice # speaker:you
+  你听完最后一队，才请能走的人接护送。名册上留了还要核问的空处。 # beat:qs_after_6 # scene:qs_after # cast:qs_vice # speaker:narrator
+  -> after_report
+* [先把送灵的人路排定，自己留下与伤者逐一核册。 # cid:qs_epilogue_escort]
+  ~ qs_epilogue_roll = false
+  先替许公走一段。我留下，伤帐这头还有几户不知道往哪里报。 # beat:qs_after_7 # scene:qs_after # cast:qs_vice # speaker:you
+  你把送灵的名单交出，自己走到伤帐。半刀没有被匆忙当作一件领完就走的战利品。 # beat:qs_after_8 # scene:qs_after # cast:qs_vice # speaker:narrator
+  -> after_report
+
+=== after_report ===
+送灵的差事有人接，城里仍要把每个名字核完。 # beat:qs_after_report_1 # scene:qs_after # cast:qs_vice # speaker:narrator
+{
+- qs_last_duty == 1:
+阿满走的是传令那条路。 # beat:qs_after_report_2 # scene:qs_after # cast:qs_vice # speaker:narrator
+- else:
+阿满留在第二道木障，等第一道人退来。 # beat:qs_after_report_3 # scene:qs_after # cast:qs_vice # speaker:narrator
+}
+{
+- (qs_exit_drill and qs_army_drill) or (qs_last_duty == 2 and qs_runner_return):
+两处接应都认到了活人。阿满和这一小队三个军士活着熬到黄昏。他后来能说出自己在哪一处等过，不把没去过的地方也写进见证。 # beat:qs_after_report_4 # scene:qs_after # cast:qs_vice # speaker:narrator
+回去把你认得的路画上。许公留下的那一页，别替他抄成一路无伤。 # beat:qs_after_report_5 # scene:qs_after # cast:qs_vice # speaker:qs_vice # mood:qs_vice=neutral
+- else:
+回报迟到一处，旧班名下没人应。阿满腿伤，被同伴拖过第二木障，同行三人死了两人。那张图带回来时边角浸了血，活着的人仍得替写错的交接逐一补名。 # beat:qs_after_report_6 # scene:qs_after # cast:qs_vice # speaker:narrator
+这两个人也写上。不是只记许公一个人替城守住了全部。 # beat:qs_after_report_7 # scene:qs_after # cast:qs_vice # speaker:qs_vice # mood:qs_vice=neutral
+}
+{
+- qs_han_word == 1:
+送灵的人还带着一封旧信，写京城街道与卖饼的人。韩家后辈翻到那句到了，旁边果然没有只剩这两个字。 # beat:qs_after_report_8 # scene:qs_after # cast:qs_vice # speaker:narrator
+- else:
+送灵每过一站，阿满都让人知道回程落脚处。到了青石，韩家后辈说，跑得再远，也终于有人知道去哪里接。 # beat:qs_after_report_9 # scene:qs_after # cast:qs_vice # speaker:narrator
+}
+{
+- qs_family_truth:
+赵家后辈来接，祖辈留下的不全是谅解，还有那句许长安终于承认没看清。家里愿让想学的年轻人来听旧课，先听败过的，再听守过的。 # beat:qs_after_report_10 # scene:qs_after # cast:qs_vice # speaker:narrator
+- else:
+赵家后辈仍来送灵，却没有因为许公战死就把当年所有伤话改成原谅。阿满把旧课带回军中，先给新卒讲接应；青石那份记录照样留下不合之处。 # beat:qs_after_report_11 # scene:qs_after # cast:qs_vice # speaker:narrator
+}
+灵柩在石门村和青石镇停过。赵大春的外孙也老了，拄杖来，只说五个终于又在一处。 # beat:qs_after_report_12 # scene:qs_after # cast:qs_vice # speaker:narrator
+半截旧刀没有入许的棺，埋在五人坟旁。小石不刻大官职，只刻青石五友，下面五个名字。 # beat:qs_after_report_13 # scene:qs_after # cast:qs_vice # speaker:narrator
+{
+- qs_last_duty == 1:
+旧信、退路和那张有缺口的名册一起留下。后来有人问许长安究竟排第几，接过旧录的人先说五个名字，再说那一天是谁把谁接了回来。 # beat:qs_after_report_14 # scene:qs_after # cast:qs_vice # speaker:narrator # ending:qs_records
+-> END
+- else:
+军中又有新卒问什么时候才能上手。阿满先让他把第二道门走一回。旧人没活回来，课却在别人的脚下接下去；下课以后，有人仍来把五个名字念全。 # beat:qs_after_report_15 # scene:qs_after # cast:qs_vice # speaker:narrator # ending:qs_heirs
+-> END
+}

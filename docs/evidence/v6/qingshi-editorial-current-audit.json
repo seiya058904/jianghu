@@ -1,0 +1,14 @@
+{
+  "status": "THREE_INTERNAL_ROUNDS_COMPILED_RUNTIME_VERIFIED",
+  "editorialRecords": 38,
+  "beats": 447,
+  "options": 60,
+  "sampledPaths": 512,
+  "exhaustive": false,
+  "endings": [
+    "qs_records",
+    "qs_heirs"
+  ],
+  "longestPassiveGap": 16,
+  "limits": "Current compiled/directed content; browser, external feedback and project acceptance recorded separately."
+}

@@ -1,0 +1,118 @@
+{
+  "round": 1,
+  "focus": "causality and viewpoint continuity",
+  "records": [
+    {
+      "round": 1,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-vault.mjs",
+      "reason": "空盒之后不把未查明的真货位置写成已知。",
+      "before": "真货明夜才要上台，两个人还得回来。",
+      "after": "墙内有人催明夜开席的杂役搬桌。你们只知道盒子空了，还得在真货上台前找出它被换去了哪里。"
+    },
+    {
+      "round": 1,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-flight.mjs",
+      "reason": "跟脚/问买家各自兑现拍卖观察，不默认两支都先看过送匣路线。",
+      "before": " choose('four_hands',[",
+      "after": " iff('jt_auction_watch',`n|你认出方才端匣人那双湿鞋，正从火后往右退；台下那只飞出去的亮匣没有经过他手。`,`n|你记下的外门果然被堵。先前说主家会反抢的买客缩到柱后，指向仍有人护着的后门；你们从那里重认送匣人。`);\n choose('four_hands',["
+    },
+    {
+      "round": 1,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-flight.mjs",
+      "reason": "救伙计与先认真物两条操作各给当场回响，保持四次换手与真璧归属。",
+      "before": "第一次江救沈，不因先前那句家传是真是假而停。`);",
+      "after": "第一次江救沈，不因先前那句家传是真是假而停。`);\n iff('jt_took_real',`n|你们认准银补才接匣，落手便裹住。火星从柱边落下，这一回不必拆开再认。`,`n|被拉下台的伙计伏着身，把松掉的一块台板踢开。沈脚下少了这块绊物，接匣后仍须掀布认一次银补，才敢随江往外退。`);"
+    },
+    {
+      "round": 1,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-flight.mjs",
+      "reason": "包裹/改路的当场选择到三百里后仍有追踪与费用差异。",
+      "before": "一路三百里，不只一拨人追：内廷、盗门、黑市原主，还有闻风来的地方门派。你们每躲过一处，都少点干粮，也多知道另一人的一句话哪里站不住。`);",
+      "after": "一路三百里，不只一拨人追：内廷、盗门、黑市原主，还有闻风来的地方门派。你们每躲过一处，都少点干粮，也多知道另一人的一句话哪里站不住。`);\n iff('jt_plain_pack',`n|过一处问路棚，追兵只问雕匣。普通行囊没让你们当场停下，等到下一个镇口，盘查已改成一男一女。省下的这一宿钱留作药费，路并没有就此断追。`,`n|绕出城的路让你们晚到一站。到镇上才换普通箱，店家要连旧匣底一并收走；少付下来的钱不够补那一夜住钱，只好少买一份干粮。`);"
+    },
+    {
+      "round": 1,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-flight.mjs",
+      "reason": "双视角选项不再让沈视角替自己口中的她包伤。",
+      "before": "先替她包好袖边，再走低处涉水，不在桥上赌还能多接几枚。",
+      "after": "沈先压住伤处，让江递布系住袖边，再从低处涉水。"
+    },
+    {
+      "round": 1,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-flight.mjs",
+      "reason": "第二操作明确两人的行动，玩家切换视角不切换身体身份。",
+      "before": "先扶人退到树后，挡住再来的一线，包扎请她自己选松紧。",
+      "after": "江先扶沈退到树后挡住来路，沈自己压布，告诉他哪边还能使力。"
+    },
+    {
+      "round": 1,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-flight.mjs",
+      "reason": "包伤动作由谁完成明确，不把沈主视角叙为无伤旁观者。",
+      "before": "布从衣里拆，勒得不算好看，至少不让血继续洇。你们绕到浅水，鞋湿透了，桥上的人再追时已得另找下脚处。",
+      "after": "江从衣里拆布，沈压住伤处让他系紧，勒得不算好看，至少不让血继续洇。你们绕到浅水，鞋湿透了，桥上的人再追时已得另找下脚处。"
+    },
+    {
+      "round": 1,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-flight.mjs",
+      "reason": "包扎路线回收到废庙换药与干湿鞋，固定两救一挡不变。",
+      "before": "废庙，夜里只剩雨。玉放在中间，黑青的边、旧银补和新沾的泥，怎么看都不像能替人解开眼前这一团。`);",
+      "after": "废庙，夜里只剩雨。玉放在中间，黑青的边、旧银补和新沾的泥，怎么看都不像能替人解开眼前这一团。`);\n iff('jt_bound_wound',`n|江把两双湿鞋倒扣在门边。沈抬伤臂试了试，布已沾水，得再拆一条干的；从水里绕开追兵，没省下这一回换药。`,`n|沈先把树后压住的布揭开，腕侧还在渗。江守着门口，她把松紧重系一遍，这才叫他过来坐；没涉水的鞋仍能穿，雨夜却没法再赶路。`);"
+    },
+    {
+      "round": 1,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "选择说清命令之前不先由全知旁白替两人公开原话。",
+      "before": "她受命取璧绝旁知者，他受命归璧不留外人。这一回，两边的命令都摆到能看见的地方。",
+      "after": "来路都已查实，谁也不能再拿卖钱或家传敷衍。至于新命令上究竟写了什么，两人还没有当面说清。"
+    },
+    {
+      "round": 1,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "姓名先给/先约时辰的早期操作到共同生活中有具体差别。",
+      "before": "第三个月，一封新信把能暂时不问的事推到眼前。你们都已知道对方不像最初说的那个人，还没把最后一层纸揭开。`);",
+      "after": "第三个月，一封新信把能暂时不问的事推到眼前。你们都已知道对方不像最初说的那个人，还没把最后一层纸揭开。`);\n iff('jt_name_plain',`n|客店伙计问一人还是两人留饭，另一人在楼上叫出你的真名。密库外先交出的那两个字，后来竟成了普通留饭的叫法。`,`n|客店伙计问要不要等同行那位，你照约定的门角等了一会儿。对方回来才叫你一声名字；晚饭没凉，见面的时辰却又被你们各核了一遍。`);"
+    },
+    {
+      "round": 1,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "假璧仍须极像真物，漂亮不是另造不相关图案。",
+      "before": "老匠把断续处连得更漂亮，图一眼看全。",
+      "after": "老匠按你们挑定的样子把断续处连齐，仍留真物上认得出的曲折，图一眼看全。"
+    },
+    {
+      "round": 1,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-aftermath.mjs",
+      "reason": "半年明确从真假替换后算，不与第三个月和数月造假混为总历时。",
+      "before": "半年以后，几方还是追上来。",
+      "after": "假璧被抢走的半年以后，几方还是追上来。"
+    },
+    {
+      "round": 1,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-aftermath.mjs",
+      "reason": "选过补齐工钱支不应在江死后又默认同一工钱未付。",
+      "before": "把暂能送到的工钱与伤者后话交清",
+      "after": "把暂能送到的食宿欠账与伤者后话交清"
+    },
+    {
+      "round": 1,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-aftermath.mjs",
+      "reason": "私记支亦区分工钱已清与其他欠项。",
+      "before": "路费、药费和未还的工钱一笔笔另记",
+      "after": "路费、药费和未清的食宿钱一笔笔另记"
+    },
+    {
+      "round": 1,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-aftermath.mjs",
+      "reason": "补明山道被堵后沈如何带真璧脱身，既不复活江也不瞬移跳过包围。",
+      "before": "旧铜钱仍放在贴身衣内。木箱里的玉压着肩，江已不在，没再有人问里面那件东西还在不在。",
+      "after": "赶车人从低处把散开的车包扔回山口，喊声将外侧追兵引开片刻。沈沿石后的窄缝拖着木箱退，回身时江已不会再应她。她靠这片刻出了包围，没有把他的那条路也带出来。\nn|旧铜钱仍放在贴身衣内。木箱里的玉压着肩，江已不在，没再有人问里面那件东西还在不在。"
+    },
+    {
+      "round": 1,
+      "file": "story/drafts/jade-thieves/jade-thieves-temple.mjs",
+      "reason": "订钱与余款说清，后场补齐工钱不会被读成重复付全额。",
+      "before": "你们按约见人，先交手工的钱。",
+      "after": "你们按约见人，先交一份订钱，余款等做成再结。"
+    }
+  ]
+}

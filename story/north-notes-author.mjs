@@ -1,0 +1,84 @@
+import {writeFileSync} from 'node:fs';
+import {createWriter} from './chronicle-writer.mjs';
+const w=createWriter('nn_');const {part,choose,iff,say,go,end,fact}=w;
+part('two_books','nn_oldporch','nn_heng',`n|这册夹页先从终南开始。你那时还年轻，替门里誊几份旧稿，见老师把一杆枪放回角落，便问同样是天岳，为何一个先不许碰枪，一个却总让他慢一点。
+n|司马衡没有把两人叫到同一张桌前作比较。你在观里问过他，若干年后又分别问秦与司马，才把三段不同年景的对话装订在一起。
+nn_heng~intent|你是要抄一条谁都可用的办法，还是先问我教的是谁？`);
+choose('different_pupils',[
+ ['nn_ask_gun','先问秦天岳，六十一岁已有北榜前位，为什么偏要离枪三个月。','nn_gun_first = true',`y|他不拿枪，还怎么知道哪里错？
+nn_heng~amused|他一拿，就把能做的全替枪做了。先看看不站在那杆枪后面，他还肯不肯不会。
+n|你在旁边记三个月，却不把不碰兵器写成所有人入门都必守的第一条。`],
+ ['nn_ask_palm','先问司马天岳，看得那么快，为何还要反复问他真看见了么。','nn_gun_first = false',`y|他能想出别人没想的，为什么还要慢？
+nn_heng~intent|看得快，就容易替眼前那人先长成自己想的样子。
+n|你在旁边记慢，却不把从此永远慢一步写成谁来都该照做的身法。`],
+]);
+part('different_pupils','nn_oldporch','nn_heng',`nn_heng|一个总想自己来，一个总想先知道怎样最对。你把两句话换过来，未必就教得动另一个。
+y|都是先放下？
+nn_heng~intent|你又想省成两个字。
+n|老师把你的纸推回。秦仍六合，教这一段不改门；司马十四便正式在太极师门里。你先在两页上各写清人，不能一个老师便抄成同一份谱。`);fact('nn_two_doors');
+choose('not_same_scale',[
+ ['nn_ask_stronger','问后来谁走得更高，听他为什么不肯用这一问替代两个孩子的路。','nn_scale = true',`nn_heng~amused|他们有没有各自走过，你先写清。秦不必因司马早返真，就把自己六十一那年删掉。
+n|你把原想空一栏排谁先谁后的地方划开，改成各自在学什么。`],
+ ['nn_ask_same_teacher','问老师是否也得承认有教不到的地方，不让第三位高处抹掉周与楚。','nn_scale = false',`nn_heng~intent|没有周定川练成那杆枪，没有楚怀锋让他知道怎么输，我这里凭空教什么？
+n|你在师名下留三处，不把最高境界那一个写得最大。`],
+]);
+part('not_same_scale','nn_oldporch','nn_heng',`n|你记录的只是这席教法。它没有给两位弟子未来尚未发生的问艺先填胜负，更不能用来证明世间只有这两种学生。
+nn_heng~intent|先别太早觉得懂了。
+n|那时你还不知这句会在后来的两份访问里各回来一次。老师转身去看木椅，你收起纸，没再催他把教过谁都替你数完。`);
+choose('qin_visit',[
+ ['nn_keep_questions','把没听懂的一并留下，几年后有机会再向当事人问。','nn_open_questions = true',`n|你在页边留一个问：若自己已经走很远，还敢不敢回第一步？没有因为今天未答就撕掉这页。`],
+ ['nn_keep_example','把三月离枪与问慢各留一件实事，不让两句漂亮话占满整本。','nn_open_questions = false',`n|你先记枪靠哪边，再记老师没有替弟子迈出的那半步。将来还有新的事情，页边也要留得下。`],
+]);
+part('qin_visit','nn_gunroom','nn_qin',`n|又过些年，你到六合馆。秦天岳已八十余，枪房三件仍挂：白蜡枪、断枪杆、椅扶手。你的终南旧页没有因纸黄便先比这间院里的人知道得多。
+nn_qin~intent|想问哪一段？
+y|六十一。那三个月。
+nn_qin|我当时也不懂。后来三年才懂一点，不是放下枪那天就换了一个人。
+n|你把三年记到三月旁。第一页原来写得太短，不是因为老师一句够深就真已包括了后来的每一天。`);fact('nn_qin_time');
+iff('nn_gun_first',`y|老师说你总想自己来。你何时发现这不是夸强？
+nn_qin~amused|三月不碰，棋还想赢。二十七盘才等一回赢，他偏又问我为什么高兴。
+n|秦笑完，手摸旧枪，没把如今懂得一点说成当时早有深意。`,`y|老师说不能拿司马的快和你的强抄一份谱。你会想自己到得晚么？
+nn_qin~intent|先把今日这一枪走明白。没有周师那三样，我连晚到哪里都不知。
+n|他把旧白蜡枪拿下，让你看那一处早已发黑的掌痕。`);
+choose('qin_names',[
+ ['nn_name_three','问后辈该怎样记三位老师，容他们各自的门人也保留自己的讲法。','nn_three_names = true',`nn_qin|先把名字叫对。别见周师没进北榜，就在他面前添一句只是。
+y|若有人记得你走时留下的麻烦？
+nn_qin~intent|也记。我走到这里，不替别人把那几个月还回去了。`],
+ ['nn_show_first_page','把早年笔录交给他看，请他指出自己写得过快的地方。','nn_three_names = false',`nn_qin~intent|你这里写后来懂了，中间太空。
+n|他没替你补一句更玄的话，先说没有枪的日子照样扫院、挑水，回门也还得接着做事。你把那一空拆成能容下三年的几行。`],
+]);
+part('qin_names','nn_gunroom','nn_qin',`n|他没有把枪房扶手取下烧掉，也不肯把它说成暗藏太极一脉的信物。第三位老师教的一段很深，门籍却一直是六合。
+nn_qin~amused|你这回不是来问他到底第几？
+y|先记我今日真听见的。
+n|秦叫一个年轻人站到纸前，先只让纸动。你收好旧页，等他把这堂真课接起来才告辞。`);
+go('sima_visit');
+part('sima_visit','nn_teaporch','nn_sima',`n|另一个时日，你到太极。司马天岳已经坐稳总谱第一，账仍没在自己手上，桌边倒有剑。你刚坐下，他先看你手边那册，问夹页是不是会滑出来。
+nn_sima~intent|你右边多夹一张，翻到后面会歪。
+y|我来问师父为何教你慢。
+nn_sima~amused|这个我想很久。纸也先放平，字总不能在地上听。
+n|他替你挪正纸，没有因此把茶也泡得更好。你尝一口，很苦，他看剑看久了，又忘了出汤。`);
+choose('sima_person',[
+ ['nn_ask_shoulder','问六十八岁那位弟子，一种正确为何在他身上走不通。','nn_person = true',`nn_sima~intent|肩骨不一样。我一直要他走别人顺的那一手。
+y|所以是先会所有谱？
+nn_sima|不是。是我先看见他。
+n|你把这个人的这一手记下来，没改写成世上再不需要旧谱。`],
+ ['nn_ask_outside','问既在第一，又被周道玄等人胜过，老师那句慢还有没有尽头。','nn_person = false',`nn_sima~amused|七十三再二十九，合一百零二。我知道怎么输，还不知他为何让我只能这样输。
+y|那你如今全知道了么？
+nn_sima|不知道。
+n|你没有为一份晚年访谈更像答案，替他补一句早就看透。`],
+]);
+part('sima_person','nn_teaporch','nn_sima',`nn_sima|秦的枪得他自己去。我这掌，也不能叫师父替我返真。
+y|后来比师父高，是不是师父老？
+nn_sima~intent|有一部分。换回二十年前，我也觉得能赢。他还笑我早就超过却不问。
+n|你写下老的一部分，也写下多年真走过的一部分。谁也不必靠抹掉前者证明后者，老师也不靠从未被弟子越过才算老师。`);fact('nn_sima_person');
+choose('notes_remain',[
+ ['nn_keep_unfinished','师门笔记留可追问处，未见的境界和旧战仍不替他们填。','nn_keep = 1',`y|天外那个使剑人，性别来处也还不知道？
+nn_sima|不知道。说过三剑，是旧人传来的话。我没见三剑。
+n|你给那一页注明传闻，再留一处将来确有见闻才添的位置。`],
+ ['nn_keep_teaching','师门笔记留下各自能再练的例子，不把两个天岳抄成一套通用诀窍。','nn_keep = 2',`n|你写秦先离枪，司马先问真看见么，旁边各留一个别照抄。司马看你，又说字挤得太紧，后面再来人要写哪里。
+y|还有下一页。
+nn_sima~amused|那就好。`],
+]);
+part('notes_remain','nn_pages','',`n|装订时，终南、六合与太极各有日期，不是三位老人同夜为后来人排座次。两位弟子也没有互相继承对方的选择与记忆。
+n|老师当年的问，经过两个不同人的多年，才在页边长出不同答复。这册笔记可再翻，不替每一个来学的人先决定他该有哪一种快、哪一种强。`);fact('nn_rumor_limit');
+w.out.push('{\n- nn_keep == 1:');end('nn_unfinished_page','页边空着，已经写下的并不因此无用。你把线放松一点，留给下一回真能问的人。');w.out.push('- else:');end('nn_different_starts','一个起手先放枪，一个起手先看人。后来人翻到这里，也仍得把自己的手举起，不能只把两句都背熟。');w.out.push('}');
+writeFileSync('story/north-notes.ink','VAR nn_gun_first = false\nVAR nn_scale = false\nVAR nn_open_questions = false\nVAR nn_three_names = false\nVAR nn_person = false\nVAR nn_keep = 0\n-> two_books\n'+w.render());

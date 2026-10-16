@@ -1,0 +1,43 @@
+[WebServer] (node:9912) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:31392) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\qian-kun.spec.ts:9:1 › actual North then Qian Kun completion unlocks real Notes reading and four teaching notes (2.1m)
+  ok 2 tests\qian-kun.spec.ts:15:1 › Qian Kun alternate full life keeps incomplete North from unlocking Notes (51.4s)
+  x  3 tests\qian-kun.spec.ts:18:1 › Notes direct URL, synthetic start and import/load cannot bypass missing readings or replace preserved saves (1.0m)
+(node:27984) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 4 tests\qian-kun.spec.ts:22:1 › Qian Kun and Notes download unseen chapters offline at root and subpath (1.6s)
+  ok 5 tests\qian-kun.spec.ts:25:1 › both covers, linked volumes and long final choices remain readable at seven sizes (3.4s)
+
+
+  1) tests\qian-kun.spec.ts:18:1 › Notes direct URL, synthetic start and import/load cannot bypass missing readings or replace preserved saves
+
+    Test timeout of 60000ms exceeded.
+
+    Error: locator.click: Test timeout of 60000ms exceeded.
+    Call log:
+      - waiting for locator('#advance-button')
+        - locator resolved to <button disabled aria-label="继续对白" id="advance-button" data-action="advance" class="advance-button">继续</button>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+
+
+       6 | const qk='jianghu:chronicle:qian-kun:v1:',nq='jianghu:chronicle:north:v1:',nn='jianghu:chronicle:north-notes:v1:';
+       7 | async function settings(page:Page){await page.addInitScript(()=>{for(const prefix of ['jianghu:chronicle:north:v1:','jianghu:chronicle:qian-kun:v1:','jianghu:chronicle:north-notes:v1:'])localStorage.setItem(prefix+'settings',JSON.stringify({speed:0,reduced:true,size:20}));localStorage.setItem('jianghu:campaign:tide:v1:sentinel','v5-kept')})}
+    >  8 | async function walk(page:Page,s:VNRuntime,side:number){while(!s.frame.ending){await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);if(s.frame.choices.length){const id=s.frame.choices[side].id;await page.locator(`[data-choice="${id}"]`).click();s.choose(id)}else{await page.locator('#advance-button').click();s.advance()}}await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id)}
+         |                                                                                                                                                                                                                                                                                                                                   ^
+       9 | test('actual North then Qian Kun completion unlocks real Notes reading and four teaching notes',async({page})=>{
+      10 |  test.setTimeout(360000);await settings(page);const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('/north-notes.html');await expect(page.getByRole('button',{name:'翻开两册之间的夹页',exact:true})).toBeDisabled();await expect(page.locator('[data-reading-lock]')).toContainText('三师一枪');
+      11 |  await page.goto('/north.html');await page.getByRole('button',{name:'把竹竿放低半寸',exact:true}).click();await walk(page,new VNRuntime(north,'north-1.0.0'),0);await page.getByRole('button',{name:'回到封面',exact:true}).click();await page.getByRole('link',{name:'双卷附篇 · 师门夜话',exact:true}).click();await expect(page.locator('[data-reading-lock]')).toContainText('不会算账');await expect(page.locator('[data-reading-lock]')).not.toContainText('三师一枪');
+        at walk (D:\xia zai\AI project\Project in Iteration\Jianghu\tests\qian-kun.spec.ts:8:323)
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\qian-kun.spec.ts:20:504
+
+    Error Context: test-results\qian-kun\qian-kun-Notes-direct-URL--5a787--or-replace-preserved-saves\error-context.md
+
+  1 failed
+    tests\qian-kun.spec.ts:18:1 › Notes direct URL, synthetic start and import/load cannot bypass missing readings or replace preserved saves
+  4 passed (4.1m)

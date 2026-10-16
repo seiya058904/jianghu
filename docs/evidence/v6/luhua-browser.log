@@ -1,0 +1,9 @@
+
+Running 4 tests using 1 worker
+
+  ok 1 tests\luhua.spec.ts:6:25 › Luhua actual full life 0, old companion links and separate storage (54.2s)
+  ok 2 tests\luhua.spec.ts:6:25 › Luhua actual full life 1, old companion links and separate storage (51.9s)
+  ok 3 tests\luhua.spec.ts:11:1 › Luhua downloads unvisited mountain and aged-master resources at root and subpath (870ms)
+  ok 4 tests\luhua.spec.ts:14:1 › Luhua sea decision, deceased master and late duties fit seven sizes with keyboard operation (3.0s)
+
+  4 passed (1.9m)

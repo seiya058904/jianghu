@@ -1,0 +1,330 @@
+
+> jianghu@1.0.0 test
+> npm run story:build && node --experimental-strip-types --test tests/runtime.test.ts tests/vn-runtime.test.ts tests/campaign.test.ts tests/v6-compat.test.ts tests/taihua.test.ts tests/taihua-v2.test.ts tests/taihua-v1.test.ts tests/campaign-v6.test.ts tests/campaign-v6-ending-staging.test.ts tests/longmen.test.ts tests/longmen-v2.test.ts tests/longmen-editorial.test.ts tests/dongting.test.ts tests/twelfth.test.ts tests/kuhe.test.ts tests/kuhe-v2.test.ts tests/kuhe-editorial.test.ts tests/qingshi.test.ts tests/qingshi-v2.test.ts tests/qingshi-editorial.test.ts tests/two-swords.test.ts tests/seven-questions.test.ts tests/jade-thieves.test.ts tests/jade-thieves-editorial.test.ts tests/jade.test.ts tests/sea.test.ts tests/sea-v1.test.ts tests/sea-editorial.test.ts tests/sea-tide.test.ts tests/sea-tide-v1.test.ts tests/sea-tide-editorial.test.ts tests/child-reuse.test.ts tests/north.test.ts tests/qian-kun.test.ts tests/dead-ranking.test.ts tests/luhua.test.ts tests/twelfth-life.test.ts tests/twelfth-life-v2.test.ts tests/twelfth-life-editorial.test.ts tests/royal-letters-cg.test.ts tests/swords-art.test.ts tests/sea-rigging.test.ts tests/jade-reusable.test.ts tests/heng-art.test.ts tests/default-entry.test.ts tests/offline-work-gate.test.ts tests/luoyang-bamboo.test.ts tests/xuanmen.test.ts tests/white-stone.test.ts tests/beyond-ranking.test.ts
+
+
+> jianghu@1.0.0 story:build
+> node scripts/compile-story.mjs
+
+Authored 22 chapter files; 1006 unique source beats.
+Taihua authored: 465 beats
+V6 preview: 1325 source beats; three midroutes and independent after-scenes.
+Ink main: 16805 source characters; 0 warnings
+Dialogue metadata: { beats: 108, choices: 28, endings: 3 }
+Ink duel: 12041 source characters; 0 warnings
+Campaign metadata: { beats: 1006, choices: 135, endings: 8 }
+Ink campaign: 122888 source characters; 0 warnings
+Taihua metadata: { beats: 465, choices: 63, endings: 3 }
+Ink taihua: 62670 source characters; 0 warnings
+V6 preview metadata: { beats: 1325, choices: 182, endings: 8 }
+Ink campaign-v6: 186345 source characters; 0 warnings
+Longmen metadata: { beats: 356, choices: 50, endings: 2 }
+Ink longmen: 47614 source characters; 0 warnings
+Dongting metadata: { beats: 155, choices: 22, endings: 2 }
+Ink dongting: 21908 source characters; 0 warnings
+Twelfth metadata: { beats: 236, choices: 36, endings: 2 }
+Ink twelfth: 31623 source characters; 0 warnings
+Kuhe metadata: { beats: 326, choices: 40, endings: 2 }
+Ink kuhe: 43200 source characters; 0 warnings
+Qingshi metadata: { beats: 447, choices: 60, endings: 2 }
+Ink qingshi: 61540 source characters; 0 warnings
+Two Swords metadata: { beats: 334, choices: 50, endings: 2 }
+Ink two-swords: 46835 source characters; 0 warnings
+Seven Questions metadata: { beats: 382, choices: 62, endings: 2 }
+Ink seven-questions: 54934 source characters; 0 warnings
+Jade Thieves metadata: { beats: 320, choices: 45, endings: 2 }
+Ink jade-thieves: 43671 source characters; 0 warnings
+Jade metadata: { beats: 296, choices: 66, endings: 2 }
+Ink jade: 45874 source characters; 0 warnings
+Sea metadata: { beats: 257, choices: 46, endings: 2 }
+Ink sea: 38305 source characters; 0 warnings
+Sea Tide metadata: { beats: 239, choices: 42, endings: 2 }
+Ink sea-tide: 35281 source characters; 0 warnings
+North metadata: { beats: 309, choices: 62, endings: 2 }
+Ink north: 45534 source characters; 0 warnings
+qian-kun metadata: { beats: 256, choices: 48, endings: 2 }
+Ink qian-kun: 37823 source characters; 0 warnings
+north-notes metadata: { beats: 69, choices: 12, endings: 2 }
+Ink north-notes: 9617 source characters; 0 warnings
+dead-ranking metadata: { beats: 325, choices: 66, endings: 2 }
+Ink dead-ranking: 50246 source characters; 0 warnings
+luhua metadata: { beats: 256, choices: 50, endings: 2 }
+Ink luhua: 38722 source characters; 0 warnings
+twelfth-life metadata: { beats: 393, choices: 68, endings: 2 }
+Ink twelfth-life: 56281 source characters; 0 warnings
+luoyang metadata: { beats: 76, choices: 18, endings: 2 }
+Ink luoyang: 12387 source characters; 0 warnings
+bamboo metadata: { beats: 86, choices: 14, endings: 2 }
+Ink bamboo: 12490 source characters; 0 warnings
+xuanmen metadata: { beats: 114, choices: 22, endings: 2 }
+Ink xuanmen: 16119 source characters; 0 warnings
+white-stone metadata: { beats: 132, choices: 26, endings: 2 }
+Ink white-stone: 19335 source characters; 0 warnings
+beyond-ranking metadata: { beats: 98, choices: 18, endings: 2 }
+Ink beyond-ranking: 14443 source characters; 0 warnings
+✔ Ning ten preserve source order, private scales, uncertain survival and unplayed bouts (73.0496ms)
+✔ Two independent early inputs change later copying labour and source-checking without inventing a third palm (22.1795ms)
+✔ Two exact historical works must each have a legal ending; wrong prefix, one-sided unlock, garbage and storage failure stay closed (0.8427ms)
+✔ All 512 finite binary paths cover all beats and choices with valid distinct images (2761.6575ms)
+✔ Ending direction retains exact pre-change V6 and frozen V5 bytes (4.889ms)
+✔ Every affected ending beat in nine complete routes migrates only presentation while keeping every word, option and command (14975.5668ms)
+✔ Frozen validation rejects forged stage/runtime/commands, wrong versions and non-cosmetic changes (836.5624ms)
+✔ Ending views reflect the actual people and work without generating outcome-specific illustrations (532.7779ms)
+✔ v6 preview preserves eight reachable ending families while all three chapter-seven/nine/ten paths and independent after-scenes run (1668.5142ms)
+✔ v6 preview samples route variants without a dead end and reports genuinely unvisited source nodes (10260.2907ms)
+✔ five distinct canon incidents change later practical outcomes while holding the other choices fixed (393.8414ms)
+✔ early injuries accumulate across chapters: each single contribution can change a prepared rescue into the scar outcome (429.9802ms)
+✔ the promised extra month survives every ending family instead of disappearing when the player leaves the harbor (515.3651ms)
+✔ thirty manually reviewed main decisions retain exclusive later consequences, including ten delayed high-weight decisions (4287.7146ms)
+✔ eight distinct complete endings, both middle routes and genuine later callbacks (1314.1056ms)
+✔ choice, actor-entry, CG and ending snapshots replay exactly; wrong story/tampering rejected (4622.7002ms)
+✔ seeded route variations terminate with legal stages; report measured source coverage (6047.2356ms)
+✔ Child portrait changes only trusted childhood presentations; both full old V2 paths retain every word, choice, world and restorable snapshot (3186.2416ms)
+✔ Child update cannot accept forged stage, world, commands, wrong edition or missing frozen authority (25.5801ms)
+✔ Generic child remains a youth-template variant; archived child and all later age images stay unchanged (27.0972ms)
+✔ Child source, final bytes and trusted pre-update files match retained provenance (7.3732ms)
+✔ Dead Ranking complete paths preserve actual three bouts, old case, separate real records and long aftermath (205.3239ms)
+✔ Dead Ranking masked bout reconstructions do not reveal the three actors before they are found (27.6375ms)
+✔ Dead Ranking one early interview choice changes public cost and later witness participation without erasing a defeat (40.9015ms)
+✔ Dead Ranking one disclosure decision changes the joint arrival, repair time and consent while all three still own their acts (57.2949ms)
+✔ Dead Ranking optional Wudeng eyes have distinct inner acts, return to Zhou, and keep late people out of deceased scenes (69.5928ms)
+✔ Dead Ranking sampled paths cover every authored beat and both courtroom/career branches (13275.6331ms)
+✔ Default roots and explicit index select real V6 content, chapters, saved-progress namespace and offline pack (80.6339ms)
+✔ Frozen V5, Half Step and chronicles keep their own content/version/prefix after the default changes (40.7709ms)
+✔ Dongting two life outcomes retain the 106/79 bouts, 4–3 recusal and Chen’s independent later seat (97.3913ms)
+✔ Dongting early spare rope and rest materially change a later rescue injury (75.251ms)
+✔ Dongting reaches every authored branch in a bounded sample; acting cast excludes merely mentioned elders (1420.8429ms)
+✔ north Heng V2: identical narrative/inputs/world, exact frozen V1 restores and wrong-version rejection (5356.0672ms)
+✔ qian-kun Heng V2: identical narrative/inputs/world, exact frozen V1 restores and wrong-version rejection (3055.8214ms)
+✔ Heng is one explicit identity with two ages and three actual files per age, also in the older Notes interview (9158.6371ms)
+✔ Both plain tea CGs last two frames and every focused camera clears on the next frame (126.0451ms)
+✔ Notes accepts either exact released edition of each book, mixed V1/V2, and rejects wrong families/versions (0.6276ms)
+✔ jade-thieves reusable art: all sampled old snapshots preserve narrative/world and restore only verified staging (10257.8198ms)
+✔ jade reusable art: all sampled old snapshots preserve narrative/world and restore only verified staging (13306.8904ms)
+✔ Jade reusable CGs exit before replies; both first-book viewpoints and next-frame cameras remain distinct (54.5942ms)
+✔ Jade staging migration rejects forged stage/world/commands/version and requires the exact frozen source (94.4157ms)
+✔ Jade draft reproduces premature order reveal then leaves actual disclosure to the player (155.034ms)
+✔ Jade draft auction observation and rescue priorities each produce their actual later action (143.1151ms)
+✔ Jade draft sleeve actions name both bodies under either viewpoint and retain different wet-clothes treatment costs (55.0575ms)
+✔ Jade draft early naming and package actions keep distinct shared-life and resource returns (124.1244ms)
+✔ Jade draft repayment alternatives do not re-owe already settled craftsman wages; time and escape stay concrete (176.5213ms)
+✔ Jade draft two viewpoints and both private futures preserve fixed death, ordinary true jade and final objects; saves replay exactly (181.527ms)
+✔ Jade draft 768 sampled alternatives cover all declared beats/options and keep bounded passive gaps (10739.9557ms)
+✔ Jade draft leaves published first/second volume, canon and original authors exact (4.8282ms)
+✔ Jade draft exact orders are actually spoken only after disclosure in both viewpoints (102.2402ms)
+✔ Jade draft hot meal and early settlement both pay the craftsman, with distinct night and travel costs (159.1628ms)
+✔ Jade draft close-range actions retain positions and injury echoes without avoiding Jiang death (254.0205ms)
+✔ Jade draft later work and final paper actions survive either private future (95.1264ms)
+✔ Jade draft both settlement routes keep chronology coherent and held-order route learns threats without reading the other letter (11.5294ms)
+✔ Jade revised fact and scene subtitle do not reveal either order before the chosen disclosure; frozen metadata stays available (11.4571ms)
+✔ Jade V2 preserves exact empty-box timing, two new portrait anchors, old version prefix and narrow migration boundary (44.263ms)
+✔ Jade first volume has two complete viewpoints with fixed empty box, mutual rescues, Jiang death and genuine-object journey (214.018ms)
+✔ Jade each viewpoint keeps the other hidden order and identity until the temple, including knowledge descriptions (56.2219ms)
+✔ Jade one early solo/cooperative decision changes actual auction escape space and cost; informed deception requires a checked door (64.0581ms)
+✔ Jade counterfeit exposure changes a secondary person’s later injury and study delay, not Jiang’s canon death (85.3425ms)
+✔ Jade first volume sampled alternatives reach every authored beat and all three escape choices without long passive stretches (8546.4084ms)
+✔ Jade full second-volume paths keep thirteen coins, nine actual store outcomes, fixed breakage and ordinary Lu career (260.7602ms)
+✔ Jade single surface decision has an explicit three-day private cost and changes witnessed middle scenes (44.6055ms)
+✔ Jade seventh grain defence and ninth broken-object event remain different witnessed locations (62.2586ms)
+✔ Jade the early absent-family question changes reunion and winter-money cost in either later post (106.6683ms)
+✔ Jade personal notes have distinct private costs, and He ages only in the late scene (66.139ms)
+✔ Jade sampled branches cover all authored beats and options with bounded reading gaps (8144.595ms)
+✔ Kuhe V3 64 combinations preserve canonical history while fixing rescue, light wound and voluntary-return contradictions (2632.8102ms)
+✔ Kuhe V3 single-input record, cloth and wrist changes are paid in later passages without reassigning fixed fates (90.5481ms)
+✔ Kuhe V3 512 sampled paths reach every directed beat and retain staged injuries, CG exits and deaths (8002.4715ms)
+✔ Kuhe V2 bytes and namespace stay frozen and cannot import into rewritten V3 (55.6079ms)
+✔ Kuhe exact v1 bytes, prefixes and old pending saves survive the art edition (719.7248ms)
+✔ New art preserves both full texts and commands while wound, weapon and death state changes are chronological (142.7126ms)
+✔ 512 sampled art-edition paths keep all beats, choices and real identity/state files reachable (7345.1697ms)
+✔ Kuhe full two personal endings preserve the staged battle, deaths, injuries and seven-day aftermath (222.6456ms)
+✔ Kuhe paired early preparation changes later physical route and one-month work capacity, without rewriting canon (32.6577ms)
+✔ Kuhe trust and agreed work position echo in a different scene; rescue and pages yield concrete different lives (88.0572ms)
+✔ Kuhe sampled branches reach all authored nodes, two endings and stable visible identities (7517.9865ms)
+✔ Longmen V3 removes the specific private-quote implication; all actual He/Zhang private statements remain in private POV (201.8986ms)
+✔ Thirty-two read/try/duty/arm combinations repay only the deferred trial on day4 without magically healing the strained arm (629.7114ms)
+✔ Longmen retained V2 authors, compiled version and canon remain byte-identical; V3 cannot consume V2 (34.2392ms)
+✔ 512 sampled current routes reach all authored beats,50 options and both endings; all four morning questions and fixed victories remain reachable (8807.4317ms)
+✔ Sixteen early-route/practice/future/morning combinations have real letter, lesson and handoff duties five years later (312.6007ms)
+✔ V3 day4 scene appears only for deferred practice, CGs exit and private POV never becomes apprentice knowledge; all three prefixes stay independent (81.2477ms)
+✔ Longmen v1 exact bytes and version identity remain available beside expanded v2 (481.7315ms)
+✔ V2 preserves all fixed bouts and adds He-only private canon without leaking it into the apprentice (67.1895ms)
+✔ Four choices of what to observe produce different next-morning physical failures from one changed input (128.8873ms)
+✔ Sampled v2 branches cover every authored beat and choice, and both real story CGs enter and leave (8273.1333ms)
+✔ Longmen two endings preserve fixed bouts, sourced recollection and the five-year jump (178.439ms)
+✔ Longmen paired spectator duty changes what was witnessed; early overwork and lifting carries a later limit (51.0742ms)
+✔ Longmen sampled paths cover authored nodes without inventing a hidden conversation for the apprentice (1701.3156ms)
+✔ Longmen playable Qinghe recollection explicitly switches age and viewpoint while all three cane results stay fixed (26.08ms)
+✔ Longmen early school and outsider paths have different partners and later work or trust costs from one changed input (54.4603ms)
+✔ Luhua full-life routes retain ages, distinct true bouts, affiliations and limited South career (144.6483ms)
+✔ Luhua one pre-raid retreat choice changes help, injury, apprenticeship and later craft without rewriting victories (42.2481ms)
+✔ Luhua one sea teaching choice changes independent relief, return cost and later practice but keeps both final wins (52.6119ms)
+✔ Luhua identity reveal, age looks, deceased master and two late-life duties have actual stage boundaries (28.1433ms)
+✔ Luhua sampled paths visit every authored beat and choice, with bounded passive runs (8141.3406ms)
+✔ Luoyang fixed five-year chronology, real three exchanges, simultaneous stop and no imaginary injuries hold on both routes (103.0573ms)
+✔ Bamboo keeps Yan inside the closed invite-only night and Liu opinions dated instead of universal power scores (51.2578ms)
+✔ Bamboo only opens from a legal actual V6 main ending family; wrong prefix, wrong work, malformed data and read failures stay closed (0.4274ms)
+✔ All binary paths of both short works are exercised, not merely a seeded sample (4360.0142ms)
+✔ North full careers keep three teachers, old ranks, four battles and unfinished realm on both personal paths (256.7189ms)
+✔ North a single departure choice changes the old school and friend costs twelve years later (60.6258ms)
+✔ North one relearning letter changes later appointments, two-day costs and pupil trust without losing the spear (68.612ms)
+✔ North mender identity is not presented before the reveal; old tea and aged friend do not share the wrong time (66.966ms)
+✔ North sampled routes cover all authored beats and choices with bounded passive reading (11144.8642ms)
+✔ Every registered work can complete the actual service-worker download message at root and subpath; unknown work is ignored (136.4124ms)
+✔ Qian Kun two lives keep martial/life contrast, fixed ages, battles and bounded sword rumor (243.2349ms)
+✔ Qian Kun a single youth letter practice changes thirty years later waiting and late life reminders, not martial talent (118.7051ms)
+✔ Qian Kun accepting the head post changes later real teaching delay and time paid without fixing his accounting weakness (89.1212ms)
+✔ Qian Kun phase changes and personal aftermath preserve different duties (63.6833ms)
+✔ Qian Kun sampled routes cover every authored beat and option (9330.4145ms)
+✔ North Notes requires one valid ending from each exact work and never treats another valid ending as completion (0.6356ms)
+✔ North Notes keeps three separated dates, real alternate questions and four discoverable teaching notes (567.5932ms)
+✔ Qingshi V3 corrects released V2 Han-family contradictions across letters and both life paths (399.8671ms)
+✔ Released Qingshi V2 bytes stay at frozen addresses; V3 rejects old saves and canon remains unchanged (105.3274ms)
+✔ Qingshi V3 512 sampled lives retain all draft beats,60 choices,two personal endings and fixed four deaths/age92 sacrifice (14311.2019ms)
+✔ Eight real carriage choices produce truthful four-cell settlements with no invented medicine bill on the uninjured path (215.1228ms)
+✔ Sixteen Song/private-lesson combinations retain chosen promises and do not claim a second half-day of the deferred lesson (480.7596ms)
+✔ Only a positioned witness reports the terminal call; runner never claims unwalked posts as his own route (141.6051ms)
+✔ Qingshi V3 keeps all three age files, knife CG before breaking, closeup exit and posthumous withdrawal; V2 remains independent (55.4121ms)
+✔ Qingshi v1 archive bytes and independently addressable saves remain frozen (1.9898ms)
+✔ Qingshi v2 512 sampled lives visit every authored beat and keep the knife insert before its break (13949.1208ms)
+✔ Qingshi both lives keep all words and inputs, old knife CG and elder closeup restore without resurrecting anyone (1651.3656ms)
+✔ Qingshi complete canonical life and two personal aftermaths retain four deaths, three teachers, lifespan and defence (308.4766ms)
+✔ Qingshi a single early retreat drill changes later carriage cost and an unnamed defending squad’s lives (102.5151ms)
+✔ Qingshi family truth and all four youthful commitments have concrete later scene echoes (304.6008ms)
+✔ Qingshi sampled alternatives cover authored nodes with bounded reading gaps and stable age labels (13065.04ms)
+✔ Qingshi protagonist uses three actual age files only at matching years and leaves all posthumous stages (24.4633ms)
+✔ Royal CG preserves exact earlier v2 bytes without changing the work version or words (760.2607ms)
+✔ Two-frame letter illustration exits before choices and later firm expression remains a real separate state (69.8535ms)
+✔ CG compatibility does not accept forged raw data or an unrelated edition and scope (144.408ms)
+✔ 512 sampled lives keep all beats, choices and the actual illustration reachable (12798.6578ms)
+{
+  states: 4079,
+  edges: 4142,
+  scenes: 20,
+  choiceIds: 32,
+  endings: { public: 384, quiet: 768, common: 32, leave: 768 }
+}
+✔ complete routes, native Ink save/load at every choice, unique consequences (493.9748ms)
+✔ schema, size, unsafe state, impossible choices rejected without altering existing session (4.9232ms)
+✔ all reachable state combinations terminate; conditions and all declared nodes/choices covered (9818.2432ms)
+✔ Sea V2 seven consequential binary dimensions keep fixed history, 23 decisions and isolated original-era cast across 128 combinations (5698.9771ms)
+✔ Sea V2 shared cargo work has a shown initial time cost and later assistance, while self-managed goods keep the earlier visit but pay for a porter (28.2428ms)
+✔ Sea V2 local practice and disarm experiments get distinct later feedback, with no altered fixed enlightenment (23.1114ms)
+✔ Sea V2 return promise and assigned work actually get called back at the school; late document handling affects later use (24.1063ms)
+✔ Sea V2 reuses the ordinary rigging CG and puts both closeups on Canghe actual questions, clearing the next beat (14.234ms)
+✔ Sea V1 bytes and pre-CG migration remain available; V1 commands cannot be relabelled and accepted as V2 (61.3966ms)
+✔ Sea default, archive and sequel load separate real content, version and save namespaces (13.0376ms)
+✔ sea-v1 rigging: unchanged words/choices/world and strict old-save replay at every changed snapshot (697.9185ms)
+✔ sea-tide-v1 rigging: unchanged words/choices/world and strict old-save replay at every changed snapshot (423.8836ms)
+✔ Rigging detail exits after two frames; closeup is one frame and does not remain on the next person (20.2683ms)
+✔ Rigging migration rejects forged stage, world, commands and wrong edition (55.4862ms)
+✔ Both rigging contexts and each alternative closeup are reachable without new text or choices (13530.4385ms)
+✔ Sea Tide V2 256 combinations of eight dimensions preserve public history and 21 decisions (8486.0618ms)
+✔ Sea Tide V2 fixes the V1 fictitious overnight bill for a prepared handoff and retains the actual failed-handoff costs (67.7865ms)
+✔ Sea Tide V2 childhood knot does not decide adult injury, and both learned tide styles remain constrained by the fixed mast (86.4189ms)
+✔ Sea Tide V2 late recall uses only the actual selected nine-hand question and the repaired peer relationship (42.4822ms)
+✔ Sea Tide V2 both childhood gestures return in both late duties at a late pier with the late portrait (46.1776ms)
+✔ Sea Tide V1 bytes, older raw staging and the unchanged Sea V2/canon remain protected (41.9675ms)
+✔ Sea Tide current and V1 archive load distinct content and namespaces while first-volume Sea stays V2 (11.433ms)
+✔ Sea Tide full lives preserve entry, rescue, forties nine hands, failed seat and sixty-three appointment (274.5761ms)
+✔ Sea Tide a single sustained-practice change alters wrist injury and two months of work cost twelve years later (82.7611ms)
+✔ Sea Tide post preparation changes the seventh ship handoff and real waiting cost without changing seven versus nine (60.3839ms)
+✔ Sea Tide two duties lead to sustained different personal aftermath and appropriate portrait phase/framing (21.6272ms)
+✔ Sea Tide sampled routes visit all authored beats and choices with bounded reading gaps (7204.5979ms)
+✔ Sea Tide full lives preserve entry, rescue, forties nine hands, failed seat and sixty-three appointment (291.1707ms)
+✔ Sea Tide a single sustained-practice change alters wrist injury and two months of work cost twelve years later (79.8152ms)
+✔ Sea Tide post preparation changes the seventh ship handoff and real waiting cost without changing seven versus nine (31.758ms)
+✔ Sea Tide two duties lead to sustained different personal aftermath and appropriate portrait phase/framing (71.6953ms)
+✔ Sea Tide sampled routes visit all authored beats and choices with bounded reading gaps (7662.376ms)
+✔ Sea keeps separate protagonists, fixed defeats, ordinary pupils, realm and posthumous succession on both full routes (278.426ms)
+✔ Sea one early cooperation change pays off five years later with a different illness transfer cost (92.6843ms)
+✔ Sea teaching styles change actual later cover duties and time costs without changing the fixed enlightenment (57.8395ms)
+✔ Sea personal aftermath changes sustained late activity and keeps disputed Lu pages uncertain (25.199ms)
+✔ Sea sampled branches visit every authored beat with bounded reading gaps (7589.3167ms)
+✔ Sea keeps separate protagonists, fixed defeats, ordinary pupils, realm and posthumous succession on both full routes (234.1428ms)
+✔ Sea one early cooperation change pays off five years later with a different illness transfer cost (106.9191ms)
+✔ Sea teaching styles change actual later cover duties and time costs without changing the fixed enlightenment (69.4713ms)
+✔ Sea personal aftermath changes sustained late activity and keeps disputed Lu pages uncertain (69.4663ms)
+✔ Sea sampled branches visit every authored beat with bounded reading gaps (8563.4666ms)
+✔ Seven Questions V2 chronology keeps east duel before slow-team reunion for either viewpoint (315.9178ms)
+✔ Seven Questions recovered questions, waiting for notes and paid handover have distinct delayed consequences (960.85ms)
+✔ Seven Questions frozen V1 remains exact and both old routes restore only in their own edition (6308.2349ms)
+✔ Seven Questions full two routes retain canon losses, fourteen houses, distinct perpetrators and actual disposition (83.4774ms)
+✔ Seven Questions single half-day preparation changes health in each route while fixed deaths remain fixed (94.5145ms)
+✔ Seven Questions route choice changes witnessed action and uses reports for the other location (97.9615ms)
+✔ Seven Questions early joint witness and shared testing change later introduction and remaining verification work (64.8758ms)
+✔ Seven Questions sampled paths cover all authored beats and options without passive exposition stretches (8085.7893ms)
+✔ two-swords-v1: exact previous bytes, all words/commands/variables and narrow presentation-only compatibility (1202.1624ms)
+✔ seven-questions: exact previous bytes, all words/commands/variables and narrow presentation-only compatibility (889.2924ms)
+✔ Book CGs last two frames and camera is strictly per frame, not a sticky age/look change (70.4232ms)
+✔ Changed-art restore still rejects forged camera, variables, command truncation and mismatched versions (177.3105ms)
+✔ Same-age Xie expressions use three actual independent files and both CGs remain reachable in broad sampling (14692.9167ms)
+✔ Taihua frozen v1 bytes, both old routes and save identity survive the expanded edition (744.4438ms)
+✔ Taihua two actual endings replay choices, preserve canon, and fulfil different plans (1259.3655ms)
+✔ Taihua seeded branch sample reaches all authored beats without loops or missing actors (11230.31ms)
+✔ early physical overreach plus late heavy lifting carries a delayed cost; prior private agreement changes the actual practice partner (28.6433ms)
+✔ returning early does not erase shoulder damage, and an unmade promise is never invented later (30.5216ms)
+✔ Taihua concrete observation and three-layer escalation preserve each actual combat result (35.1065ms)
+✔ Taihua third outcome receives limited actual instruction, misses peers and respects earlier unasked questions (383.5814ms)
+✔ Taihua Mu keeps a distinct expanded look, leaves after returning upstage and does not change frozen defaults (14.6623ms)
+✔ Taihua reproduces erased V2 Shen commitment; draft keeps it until explicitly kept or cancelled in all24 named paths (773.6664ms)
+✔ Deferred brother diagram is delivered on the actual next morning before first elder bout, independently of initial promise (326.597ms)
+✔ 24 arm/load/future paths carry actual first-leg cost without inventing refused rotation or healthy injured brother (688.9651ms)
+✔ Asked-after-night Xie question is actually revisited before Huo bout; no invented prior request (119.0034ms)
+✔ 512 sampled Taihua draft routes reach every authored beat,63 options and3 endings with canonical victories unchanged (11070.7973ms)
+✔ Published Taihua versions, author modules and canon stay byte-identical; draft cannot consume a published save (20.8426ms)
+✔ Sima private practice asks about the actual patient or rushed bout, never invents a rush on patient path (37.1216ms)
+✔ Guidance is an actual repeat-or-record action with distinct home rehearsal; neither consumes the missed peer session (139.6348ms)
+✔ Reserved Zhang instruction is explicitly cancelled only when promised and another future chosen; soup joke depends on actual tray action (158.8837ms)
+✔ Three late routes respect original Shen appointment and injured shoulder, including repeat-vs-mark guidance home work (77.2095ms)
+✔ V3 CG starts at actual night bowl/doorway after quarrel, exits before falling leaf; V2 remains frozen (13.8764ms)
+✔ Royal draft: both palace replies reach Chen actual public-defeat plan; old second reply skipped the plan (382.1771ms)
+✔ Royal draft seal stays shut until the three-year term; both cataloguing choices retain their real training and missed-fair costs (238.6271ms)
+✔ Royal draft anonymous candidate actually replies; invitation does not force date or invent official rematch (47.6049ms)
+✔ Royal draft court handoff and family/process choices keep distinct late burdens without erasing fixed duties (181.0222ms)
+✔ Royal draft late paths actually watch first bout then leave next, or stay writing while next bout begins; death and book POV remain fixed (149.4068ms)
+✔ 512 sampled Royal draft paths cover every authored beat,68 options and2 endings with fixed biography/results intact (11272.7303ms)
+✔ Published Royal V2/V1, companion, author modules and canon stay byte-identical; draft rejects published save (21.2519ms)
+✔ Royal actual Xue response chooses named gap or reset line and returns in same-day treatment; all16 combinations keep the same true defeat (244.1864ms)
+✔ Royal early boy/child and brother-night acts have specific late recall; returning from practice receives actual board notice (129.8701ms)
+✔ Royal draft preserves monotonic Lu appearances and all five existing sprite files; no legacy Lu substitution (846.0372ms)
+✔ Royal V3 actual CG exits, age aliases and before-CG migration remain isolated at V2 archive (21.8929ms)
+✔ Royal life frozen v1 bytes remain available (1.8918ms)
+✔ Royal life both personal outcomes keep words and commands while sorting letters moves home and aging is monotonic (1456.8768ms)
+✔ 512 sampled Royal life alternatives reach every beat and all five actual Lu sprite files (10698.7304ms)
+✔ Twelfth Life full routes preserve the whole biography, actual failures, four court years and sole formal seat (237.3725ms)
+✔ Twelfth Life one seal-books decision has delayed training and marital consequences with costs on either side (59.0096ms)
+✔ Twelfth Life one court handoff decision changes a later actual night, family time and repair without deleting political duties (50.1614ms)
+✔ Twelfth Life family consent changes later witness participation, dead teacher leaves, posthumous epilogue has no Zhao choices (62.3386ms)
+✔ Twelfth Life sampled routes cover all authored beats, eight chapter starts and bounded passive reading (10644.2097ms)
+✔ Twelfth two personal careers preserve Xue’s real win, candidate status, injury record, 4–3 and one edition for four years (274.7842ms)
+✔ Twelfth middle-career duty changes the later school; physical overreach survives as a lesson rather than a magic recovery (50.3738ms)
+✔ Twelfth three age appearances are deterministic, survive replay and reject forged or unknown looks (53.2158ms)
+✔ Twelfth sampled paths cover the authored branches and only actual speaking characters count (2751.9644ms)
+✔ Two Swords V2 keeps V1 bytes and storage separate, and restores every frame on both old routes (5266.2275ms)
+✔ Two Swords V2 letter, classroom method and divided records have distinct delayed consequences (46.5299ms)
+✔ Two Swords separates three viewpoints, fixed losses and both personal careers (63.7406ms)
+✔ Two Swords one early passage choice changes later rescue injury without changing canon destruction (43.4046ms)
+✔ Two Swords choosing a career changes middle teacher, later correspondence and final duty (29.028ms)
+✔ Two Swords sampled alternatives cover every authored beat and choice with bounded reading gaps (5918.1783ms)
+✔ frozen v5 content matches the pre-v6 baseline bytes (4.3868ms)
+✔ all eight frozen v5 endings and pending choices restore with identical world and stage (10438.0039ms)
+✔ complete three routes; every beat restores current dialogue, cast, choices and read-only history (867.5336ms)
+✔ save damage, forged runtime/presentation, illegal advances and repeated choices are rejected (9.4382ms)
+✔ draft name correction migrates every beat with identical world variables and presentation (1487.1094ms)
+✔ tiny authored scene exercises character entry/exit and fails unknown metadata/loops (42.885ms)
+✔ static metadata catches duplicate IDs, unknown commands and missing endings (181.0479ms)
+✔ all reachable states close; immediate replies differ; conditional replies and script coverage (7343.9221ms)
+✔ White Stone preserves distinct eras, snow loss, old-person inquiry, uncopyable teacher and two fixed crowns (129.0566ms)
+✔ Admitting the missing step and letting the second person see failure have independent later recalls (82.154ms)
+✔ All 8192 finite binary paths cover every authored beat, option and ending, with valid distinct stage files (29527.7704ms)
+✔ Xuanmen keeps nine duties, simultaneous stop, disciple-first breakthrough and mortal narrator boundaries (97.2507ms)
+✔ One input changes the later handover and a second independently changes medicine staffing, without changing the duel (37.0421ms)
+✔ All 2048 finite binary paths reach both ends and every declared beat, with real asset files and distinct simultaneous faces (32333.664ms)
+ℹ tests 251
+ℹ suites 0
+ℹ pass 251
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 60668.7229

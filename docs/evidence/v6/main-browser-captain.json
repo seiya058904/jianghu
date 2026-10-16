@@ -1,0 +1,25 @@
+{
+  "version": "tide-promise-2.0.0",
+  "route": "captain",
+  "actualInputs": true,
+  "humanPlaytest": false,
+  "beats": 633,
+  "decisions": 58,
+  "scenes": [
+    "v6_quay",
+    "v6_hall",
+    "v6_inn",
+    "v6_depart",
+    "v6_reeds",
+    "v6_rainboat",
+    "v6_workshop",
+    "v6_contract",
+    "v6_arena",
+    "v6_wind",
+    "v6_levee",
+    "v6_storm",
+    "v6_dawn"
+  ],
+  "ending": "captain",
+  "errors": []
+}

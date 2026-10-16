@@ -1,0 +1,12 @@
+
+Running 7 tests using 1 worker
+
+  ok 1 tests\default-entry.spec.ts:24:107 › Default V6 root: download replaces stale root/index HTML and cold story chunks, retaining other offline data (831ms)
+  ok 2 tests\default-entry.spec.ts:24:107 › Default V6 subpath: download replaces stale root/index HTML and cold story chunks, retaining other offline data (746ms)
+  ok 3 tests\kuhe-editorial-integrity.spec.ts:8:107 › Kuhe three editions root: exact old raw exports, import rejection, independent current pending choice (636ms)
+  ok 4 tests\kuhe-editorial-integrity.spec.ts:8:107 › Kuhe three editions subpath: exact old raw exports, import rejection, independent current pending choice (582ms)
+  ok 5 tests\kuhe-editorial-integrity.spec.ts:11:1 › Kuhe current, second edition and original cover links remain usable at seven sizes (1.6s)
+  ok 6 tests\kuhe-editorial.spec.ts:15:1 › Kuhe new wounded/empty states and CG decode offline at root and subpath (1.5s)
+  ok 7 tests\kuhe-v2.spec.ts:14:1 › Kuhe new wounded/empty states and CG decode offline at root and subpath (1.4s)
+
+  7 passed (8.3s)

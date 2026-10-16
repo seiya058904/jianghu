@@ -1,0 +1,11 @@
+{
+  "status": "THREE_INTERNAL_ROUNDS_DRAFT_NOT_INTEGRATED",
+  "declared": 318,
+  "visited": 318,
+  "options": 50,
+  "decisions": 25,
+  "samples": 512,
+  "exhaustive": false,
+  "longestPassiveGap": 17,
+  "gameArtChanges": 0
+}

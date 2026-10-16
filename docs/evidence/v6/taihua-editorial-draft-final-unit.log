@@ -1,0 +1,35 @@
+✔ Taihua reproduces erased V2 Shen commitment; draft keeps it until explicitly kept or cancelled in all24 named paths (495.6106ms)
+✔ Deferred brother diagram is delivered on the actual next morning before first elder bout, independently of initial promise (243.4743ms)
+✔ 24 arm/load/future paths carry actual first-leg cost without inventing refused rotation or healthy injured brother (521.3266ms)
+✔ Asked-after-night Xie question is actually revisited before Huo bout; no invented prior request (155.3397ms)
+✖ 512 sampled Taihua draft routes reach every authored beat,61 options and3 endings with canonical victories unchanged (17681.7606ms)
+✔ Published Taihua versions, author modules and canon stay byte-identical; draft cannot consume a published save (26.9825ms)
+✔ Sima private practice asks about the actual patient or rushed bout, never invents a rush on patient path (54.2776ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 6
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 19917.2998
+
+✖ failing tests:
+
+test at tests\taihua-editorial-draft.test.ts:31:1
+✖ 512 sampled Taihua draft routes reach every authored beat,61 options and3 endings with canonical victories unchanged (17681.7606ms)
+  AssertionError [ERR_ASSERTION]: gap19
+      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/taihua-editorial-draft.test.ts:33:157)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

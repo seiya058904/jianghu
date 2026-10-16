@@ -1,0 +1,107 @@
+{
+  "status": "SECOND_VOLUME_V2_INTERNAL_EDITORIAL_AND_LOCAL_QA_VERIFIED_GOAL_IN_PROGRESS",
+  "baselineCommit": "ba039d1",
+  "work": "海路两世 · 归潮岛",
+  "current": {
+    "entry": "sea-tide.html",
+    "version": "sea-tide-2.0.0",
+    "prefix": "jianghu:chronicle:sea-tide:v2:",
+    "beats": 239,
+    "choiceOptions": 42,
+    "decisionsPerRoute": 21,
+    "endings": 2
+  },
+  "archive": {
+    "entry": "sea-tide-v1.html",
+    "version": "sea-tide-1.0.0",
+    "prefix": "jianghu:chronicle:sea-tide:v1:",
+    "InkSHA256": "a13c3476c5eceefd26c14b92ed83ed008bbbf6986a1b2893b607d35023aee3f2",
+    "compiledSHA256": "2c5d168105b00e52f0181bc9a64f050c66e6e450249a39dfc7cbc73bfe246375",
+    "olderPreCGMigrationRetained": true
+  },
+  "editorial": {
+    "actualRecords": 58,
+    "textFlowAndSceneRecords": 55,
+    "visualRegistrationAndFramingRecords": 3,
+    "roundRecords": {
+      "1": 10,
+      "2": 28,
+      "3": 20
+    },
+    "completeRouteTextsRead": 2,
+    "distinctBeatCountNotInferredFromReplacementCount": true,
+    "drafts": "docs/archives/sea-tide-v1-editorial-baseline/"
+  },
+  "checks": {
+    "finalNodePass": 192,
+    "finalBuildPass": true,
+    "initialBrowser": {
+      "passed": 22,
+      "failed": 1,
+      "failure": "Single-portrait selector after the coach closeup resolved to the correct two returning actors; fixed to scope the coach."
+    },
+    "selectorFixAndRootAssetPass": 13,
+    "finalBuildBrowserPass": 18,
+    "retainedFrozenBrowserPass": 12,
+    "uniqueCasesVerifiedAcrossFinalEvidence": 30,
+    "fullActualInputRoutes": {
+      "currentTideV2": 2,
+      "frozenTideV1": 2,
+      "frozenSeaV1": 2
+    },
+    "namedStrategicCombinations": 256,
+    "namedDimensions": 8,
+    "otherChoicesInMatrix": "first legal option",
+    "sampledPaths": 512,
+    "sampledVisitedBeats": 239,
+    "longestPassiveGap512": 14,
+    "productionLongestPassiveGap168": 15,
+    "assetSources": 38,
+    "workPrimaryOwners": 35,
+    "frozenMigrationChunks": 8,
+    "rasterFilesRootAndSubpathBytesDecode": 155,
+    "expandedCurrentArchiveCoverLinkCasePass": 1,
+    "expandedCoverLinkCaseScope": "Existing paired-cover case additionally checks current/old archive links at all seven sizes; not counted as a new unique case."
+  },
+  "visualReview": {
+    "initialTechnicalPassDidNotProveAgeCorrect": true,
+    "knownYoungBoatkeeperScreenshot": "docs/evidence/v6/sea-tide-editorial-initial-young-boatkeeper-360.png",
+    "V2Boatkeeper": "st2_boatkeeper",
+    "reusedPortrait": "v5/npc-elder-male.webp",
+    "V1BoatkeeperUnchanged": "st_boatkeeper -> v5/npc-boatwoman.webp",
+    "canonicalIdentity": "st_boatkeeper",
+    "latePier": "st_latepier -> v5/quay.webp",
+    "newImages": 0,
+    "imageEdits": 0,
+    "imageGenerationCalls": 0
+  },
+  "hashes": {
+    "src/generated/sea-tide.json": "d5e375e49654f92d5a5c0c4f50c696c18149543f3afcbb5ff2ca7660ecee24f5",
+    "src/generated/sea-tide-v1.json": "2c5d168105b00e52f0181bc9a64f050c66e6e450249a39dfc7cbc73bfe246375",
+    "src/generated/sea-tide-before-rigging.json": "5eb442173277b4b85fc540b8805013d2b8c7ebfa549556122499c1dcd53a8471",
+    "src/generated/sea.json": "c207f3f9d59777d1b451e3f453b8d487b0c9f325a739d3352f8fd2f60c8e5a99",
+    "src/generated/campaign-v6.json": "8c199458e449d3fde8710eabe1c9594b0392d2066f1601f5181297128dee48b6",
+    "宋世江湖.md": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393"
+  },
+  "productionCounts": {
+    "speakingNPC": 307,
+    "registeredDedicatedUsed": 32,
+    "independentDedicatedActorIdsUsed": 32,
+    "independentDedicatedUsed": 28,
+    "charactersWithThreeImagesAtSameAppearance": 19,
+    "registeredArchetypesUsed": 12,
+    "distinctBackgroundFiles": 30,
+    "distinctCGFiles": 19,
+    "referencedBytes": 23752882
+  },
+  "limits": [
+    "Internal editorial and local browser input proof are not measured human reading time or external enjoyment.",
+    "256 selected combinations and 512 samples are not exhaustive across all 21 decisions.",
+    "Child/youth An remains generic and not a validated 12-year-old depiction; protagonist/major-person identities and age/action art remain incomplete.",
+    "Real overseas environment and storm/martial action presentation remain incomplete.",
+    "Other works literary rounds, whole-site final gates and V6_DELIVERY remain open.",
+    "No remote mutation, publication, deployment or physical Android validation.",
+    "Graph metadata changed; current source and executed checks used."
+  ],
+  "verificationScope": "Final opening-age actor fix was followed by full192unit, final build and18browser cases including both new full routes. The12frozen-edition cases are from the earlier run; their story bytes and original portrait mapping remain unchanged."
+}

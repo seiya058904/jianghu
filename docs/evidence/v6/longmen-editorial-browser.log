@@ -1,0 +1,31 @@
+[WebServer] (node:45084) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 22 tests using 1 worker
+
+(node:31092) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\default-entry.spec.ts:11:225 › Default V6 root: shared alias progress, real V5 preservation and direct archive resume/export (906ms)
+  ok  2 tests\default-entry.spec.ts:11:225 › Default V6 index: shared alias progress, real V5 preservation and direct archive resume/export (705ms)
+  ok  3 tests\default-entry.spec.ts:11:225 › Default V6 subroot: shared alias progress, real V5 preservation and direct archive resume/export (721ms)
+  ok  4 tests\default-entry.spec.ts:11:225 › Default V6 subindex: shared alias progress, real V5 preservation and direct archive resume/export (694ms)
+  ok  5 tests\default-entry.spec.ts:20:1 › Default V6 covers and direct old-save links remain visible, hittable and usable at seven sizes (5.4s)
+  ok  6 tests\default-entry.spec.ts:24:107 › Default V6 root: download replaces stale root/index HTML and cold story chunks, retaining other offline data (806ms)
+  ok  7 tests\default-entry.spec.ts:24:107 › Default V6 subpath: download replaces stale root/index HTML and cold story chunks, retaining other offline data (811ms)
+  ok  8 tests\default-entry.spec.ts:32:1 › Library and chronicle return links lead to default V6 at root and subpath (899ms)
+  ok  9 tests\longmen-editorial.spec.ts:7:25 › Longmen V3 actual complete route 0, private point of view and isolation (1.0m)
+  ok 10 tests\longmen-editorial.spec.ts:7:25 › Longmen V3 actual complete route 1, private point of view and isolation (1.0m)
+  ok 11 tests\longmen-editorial.spec.ts:10:1 › Longmen old auto/slot/previous/settings stay accessible at frozen archive and cannot import into new edition (444ms)
+  ok 12 tests\longmen-editorial.spec.ts:13:1 › Longmen new night CG and frozen old pack both restore unseen scenes offline at root and subpath (1.8s)
+  ok 13 tests\longmen-editorial.spec.ts:16:1 › Four night questions scroll and keyboard-select at seven viewports with enlarged type (2.0s)
+  ok 14 tests\longmen-editorial.spec.ts:19:1 › New Longmen night illustration failure keeps reusable fallback and playable text (217ms)
+  ok 15 tests\longmen-v2.spec.ts:7:25 › Longmen V2 actual complete route 0, private point of view and isolation (1.0m)
+  ok 16 tests\longmen-v2.spec.ts:7:25 › Longmen V2 actual complete route 1, private point of view and isolation (59.6s)
+  ok 17 tests\longmen-v2.spec.ts:10:1 › Longmen old auto/slot/previous/settings stay accessible at frozen archive and cannot import into new edition (460ms)
+  ok 18 tests\longmen-v2.spec.ts:13:1 › Longmen new night CG and frozen old pack both restore unseen scenes offline at root and subpath (1.8s)
+  ok 19 tests\longmen-v2.spec.ts:16:1 › Four night questions scroll and keyboard-select at seven viewports with enlarged type (2.2s)
+  ok 20 tests\longmen-v2.spec.ts:19:1 › New Longmen night illustration failure keeps reusable fallback and playable text (224ms)
+  ok 21 tests\longmen.spec.ts:6:26 › Longmen library entry, real complete route 0, explicit time jump and isolated reload (38.3s)
+  ok 22 tests\longmen.spec.ts:6:26 › Longmen library entry, real complete route 1, explicit time jump and isolated reload (37.3s)
+
+  22 passed (5.7m)

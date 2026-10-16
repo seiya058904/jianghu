@@ -1,0 +1,466 @@
+[
+  {
+    "round": 1,
+    "purpose": "time-and-causal-accounting",
+    "file": "story/sea-tide-entry.mjs",
+    "before": "n|东极群岛更偏南、更深，大小四十余岛，常住的十余座。归潮岛有山、有田、三处大港；北面的蓬莱另是一大片门派岛寨，不能把你这一船算作罗天海当年登陆的那一港。",
+    "after": "n|东极群岛更偏南、更深，大小四十余岛，常住的十余座。归潮岛有山、有田、三处大港。船上的老人说，北去蓬莱还得换船；你到的这座岛，山脚已有人把田分成一格一格。",
+    "reason": "Keep the geography without explaining another book to a twelve-year-old player."
+  },
+  {
+    "round": 1,
+    "purpose": "time-and-causal-accounting",
+    "file": "story/sea-tide-entry.mjs",
+    "before": "n|教头让近处的人接着看，不叫十二岁的你在考场里冒充唯一能救人的大人。",
+    "after": "n|教头沿水边跟着那口咳声走，叫近处两个看护者下到浅水。阿岑站起来时，他已经等在岸边。",
+    "reason": "Retain adult safety responsibility through actual action rather than an editorial disclaimer."
+  },
+  {
+    "round": 1,
+    "purpose": "time-and-causal-accounting",
+    "file": "story/sea-tide-seats.mjs",
+    "before": " choose('ninth_empty',[",
+    "after": " choose('handoff_account',[",
+    "reason": "Introduce actual settlement before the later age-49 episode, so nonexistent waiting costs are not asserted on the successful-handoff path."
+  },
+  {
+    "round": 1,
+    "purpose": "time-and-causal-accounting",
+    "file": "story/sea-tide-seats.mjs",
+    "before": "['st_pay_waiting','先把候夜与替班工钱说清，自己该误的约自己去解释。','st_wait_paid = true',`n|你把差的那份记在自己这边，次日去道歉，不拿带回七船作别人都该再等你的理由。\nst_zhou~intent|他们得知道下次有人接，才敢先进去抬人。`]",
+    "after": "['st_pay_waiting','先对清各人该领的工钱，把误掉的约另记下来。','st_wait_paid = true',`n|你把账页带到船工面前，先报今日各人该收的，再问有没有漏记。`]",
+    "reason": "This option must not assume a night was waited when the earlier route avoided it."
+  },
+  {
+    "round": 1,
+    "purpose": "time-and-causal-accounting",
+    "file": "story/sea-tide-seats.mjs",
+    "before": "['st_rehearse_handoff','先请船工把自己离开后的那段走一次，再补该付的候夜，不只叫他下次机灵。','st_wait_paid = false',`n|他从缆这头走到门边，你才看见两处根本不能同时站。你给另一处补了人，也补该付的工钱，不能用一遍改法把昨天多候的一夜取消。\nst_zhou|这回谁接，说给他本人听。`]",
+    "after": "['st_rehearse_handoff','请船工走一次交接，再按实际多留的时辰结钱。','st_wait_paid = false',`n|你把绳又递回船工手里，请他从接过这一头，走到能把人送进去的地方。`]",
+    "reason": "Rehearsal is also available when the handoff worked, but its extra minutes differ from a failed route night."
+  },
+  {
+    "round": 1,
+    "purpose": "time-and-causal-accounting",
+    "file": "story/sea-tide-seats.mjs",
+    "before": " part('ninth_empty','st_inner','st_ye,st_zhou',",
+    "after": " part('handoff_account','st_returnport','st_zhou,st_deckhand',`n|账在船篷下摊开。周望海又往自己的船走了几步，问第九船的交接，才折回来。`);\n iff('st_shared_post and st_wait_paid',`n|账上没有候夜这一项。你按原班结清工钱，把自己错过的问手约另写一封信。\nst_deckhand~intent|那我回家了。明早头一班，我照旧来。`);\n iff('st_shared_post and not st_wait_paid',`n|两头原已接得上，船工再走一遍也没停住。他望望候渡的船，催你快些结清；你把这次多练的一刻另算，送他赶上离岸那班。\nst_zhou|今日没人候夜。多占的这一刻，也记清。`);\n iff('not st_shared_post and st_wait_paid',`n|候夜和次日少接的短工，两笔都列在你这边。船工点完钱，仍问明晚是否还要这样守；你把账合上，留下听他把这一问说完。\nst_zhou~intent|他们得知道下次有人接，才敢先进去抬人。`);\n iff('not st_shared_post and not st_wait_paid',`n|船工从缆头走到门边，另一头就空了。你给那处补人，又照实付昨夜与短工的钱；改过一遍交接，昨日候的那一夜仍在账上。\nst_zhou|这回谁接，说给他本人听。`);\n go('ninth_empty');\n part('ninth_empty','st_inner','st_ye,st_zhou',",
+    "reason": "Four real shared-post/accounting combinations: a rehearsed handoff has no overnight cost, while the late handoff still owes a night and lost work."
+  },
+  {
+    "round": 1,
+    "purpose": "time-and-causal-accounting",
+    "file": "story/sea-tide-seats.mjs",
+    "before": "n|从四十九到六十三，十四年不是一句想通便跳过的空白。白沙屿两帮七年未动早是周留下的结果，你后来去，不抢作自己的功；本门还得年年巡海、教人、护住旧差旁生的新事。",
+    "after": "n|四十九岁以后，白沙屿那段七年未动的日子，仍是周望海先前留下的。你接到的是今日的修船地、明日的巡海班，还有教场里等课的人。",
+    "reason": "Choose the sustained occupation at its beginning, not after narrating the entire fourteen-year interval as completed."
+  },
+  {
+    "round": 1,
+    "purpose": "time-and-causal-accounting",
+    "file": "story/sea-tide-seats.mjs",
+    "before": "n|六十三，你终于补入第九席。这回你没有先问能不能再打第八。",
+    "after": "n|十四年后，六十三岁，你终于补入第九席。这回你没有先问能不能再打第八。",
+    "reason": "Mark the actual elapsed time after the teaching/patrol commitment."
+  },
+  {
+    "round": 1,
+    "purpose": "time-and-causal-accounting",
+    "file": "story/sea-tide-seats.mjs",
+    "before": "n|你下意识摸了一下衣襟，才笑。四十余岁看过的九招此刻又回到眼前，并不是到六十三岁才第一次看见。",
+    "after": "n|你下意识摸了一下衣襟，才笑。当年四十余岁在院里看那九招，谢观海收手后，自己站着没敢问。今日想起，还是先想到他放在桌边的茶碗。",
+    "reason": "Keep the earlier witnessed age explicit through memory, not a correction addressed to an imagined editor."
+  },
+  {
+    "round": 1,
+    "purpose": "time-and-causal-accounting",
+    "file": "story/sea-tide-rescue.mjs",
+    "before": "n|后来中原传回龙虎风云会的战报：叶观澜与北榜第十四郭洪，一百零六合互有杀着，主事同时叫停。这是你在岛上听来的，不是你忽然站到中原场边亲见的一战。",
+    "after": "n|后来，中原的战报经回岛船带来：龙虎风云会，叶观澜与北榜第十四郭洪一百零六合互有杀着，主事同时叫停。老教习把纸展开，你在岛上听他念完。",
+    "reason": "Make the source of a remote event a delivered report, without granting impossible firsthand knowledge."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-entry.mjs",
+    "before": "先握栏，再顺船摇的方向站起，认清脚下才去看那座楼。",
+    "after": "抓住栏杆，顺着船摇站起来。",
+    "reason": "A twelve-year-old chooses a bodily action, not a completed lesson."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-entry.mjs",
+    "before": "先坐着等过这一波，再扶边站起，不为别人看你而抢这一下。",
+    "after": "再坐一会，等这波落下去才站。",
+    "reason": "Short alternative preserves a different timing choice."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-entry.mjs",
+    "before": "n|老人等你，没有替你向岸上喊勇敢。船身回落，你才把脚移到能踏住的地方。",
+    "after": "n|老人把你身旁的空桶推远一点，自己仍扶着舷。船身回落，你才把脚移到刚才放桶的地方。",
+    "reason": "The boatkeeper helps practically without declaring what courage is."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-entry.mjs",
+    "before": "n|三年一次试门，四十七个孩子排在水边。身旁阿岑也是白螺屿来的，先扯你袖口，问有没有看见他们叫人摆的木刀。",
+    "after": "n|三年一次试门，四十七个孩子排在水边。阿岑也是白螺屿来的，挤在你旁边，扯袖问木刀是不是等下要发。他看中了靠边那柄，怕先叫别人拿去。",
+    "reason": "Give the child a particular desire before the adults redirect him to swimming."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-entry.mjs",
+    "before": "按自己的气口游，不因阿岑先冲出去就跟着憋掉下一口。",
+    "after": "先换足一口气，按自己的快慢游。",
+    "reason": "Replace explanatory prose with a child-sized response."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-entry.mjs",
+    "before": "沿教头指的回流外边走，先认水往哪去，再选自己能过的距离。",
+    "after": "绕开教头指的回流，从外侧游。",
+    "reason": "Make the alternative course visible."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-entry.mjs",
+    "before": "收绳时请阿岑试解自己绑的一扣，练会让接手的人也能用。",
+    "after": "把自己绑的扣交给阿岑，让他解一次。",
+    "reason": "Action carries the lesson."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-entry.mjs",
+    "before": "n|他扯半晌解不开，你只得重新绑。省下自己半口夸奖，换来两个人都记得怎样在湿绳里松开这一扣。",
+    "after": "n|他扯半晌解不开，索性拿膝顶住绳圈。你笑他，又看他真急了，只得凑过去同他拆开；轮到他绑，倒也卡住了你的指头。",
+    "reason": "Children can be impatient and funny without a narrator praising the correct attitude."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-entry.mjs",
+    "before": "先练自己湿手也能快收快放的一扣，把慢处一遍遍重做。",
+    "after": "先练湿手快解，再同阿岑换一回。",
+    "reason": "The competing exercise has its own practical purpose, not a knowingly bad promise."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-entry.mjs",
+    "before": "n|你的手很快，教头却仍叫你递给别人。阿岑解不开，你先替他解了，催着再练；这一回省下时辰，却没真让下一只手学会。\nst_an~uneasy|你不在，我再问谁？\nn|你说以后教，转身又拿起木刀。",
+    "after": "n|你练到手指发热，自己解扣越来越快。阿岑拿来却还打不开，木刀那边已经叫人，你答应明早再同他换。\nst_an~uneasy|那你明早叫我。我不替你占前面那柄刀。\nn|你说好，先跑去排队。他把这扣留下，没肯让你替他解。",
+    "reason": "A child can keep a real promise later; this single early choice never determines the adult injury."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-entry.mjs",
+    "before": "n|阿岑真把绳递回来，你才发现他留的扣与你习惯不同。你们晚走了一刻，饭已经温了，教头没替你们把那一刻变成一招能赢人的绝学。",
+    "after": "n|阿岑真把绳递回来，你才发现他留的扣与你习惯不同。两人拆到指头发酸，回去时饭已经温了。他抢走碗底那块鱼，说早来就有热的，偏要留这会儿。",
+    "reason": "Show the shared drill cost as a missed hot meal and a friend reaction."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-entry.mjs",
+    "before": "n|你又跌一次，这次却知道自己何时还能转脚。老师没伸手把你摆成一个永远正确的架子，只等你从水里爬回。",
+    "after": "n|你又跌一次，手还没摸到舷，船已往另一边沉。老师挪开脚，给你留了爬回来的地方；你刚上来，膝盖便又得跟着松。",
+    "reason": "Show the next unstable movement instead of assuring there is no permanent correct stance."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-rescue.mjs",
+    "before": "n|你看见船距又张开。这里没有等你打赢便会停下的敌人，只有一船来不及等下一次商量的人。",
+    "after": "n|两船又被拉开。阿岑伸长手，没够住那边递来的腕；船主已经往卡住的舱门跑，风把他的后半句吹散了。",
+    "reason": "Remove a nonexistent combat alternative and let people drive the emergency."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-rescue.mjs",
+    "before": "n|你本想过去接人，此刻反成一处还得别人来接的险。",
+    "after": "n|你想叫阿岑，抬头却见他还牵着两船间那一头。你每挣一下，湿木梁便往胸前再磨一寸。",
+    "reason": "The reversal is physical and costly without a narrator passing judgment."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-rescue.mjs",
+    "before": "n|那是你第一次真正见叶孤舟，内院第六席。你还没叫出谢字，他已先问接应船能不能再腾一处，不肯站在你面前等你把救命的道理说完。",
+    "after": "n|那是你第一次真正见叶孤舟，内院第六席。你才张嘴，他又回身去接后面的人。\nst_ye~sharp|那边腾一处！别把孩子挤在舷口！",
+    "reason": "Ye acts and orders another landing space instead of a narrator explaining his dignity."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-rescue.mjs",
+    "before": "缓过一口气便在接应船帮抬，不再跳回自己刚逃出的险处证明勇敢。",
+    "after": "缓过一口气，蹲下接递来的那只手。",
+    "reason": "Offer rescue work instead of telling the player which motive is wrong."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-rescue.mjs",
+    "before": "先把船头接下的人送开，叫后来的人有地方落，不再挤在叶孤舟身旁。",
+    "after": "把船头的人往里送，给下一人留落脚处。",
+    "reason": "A different useful role after the fixed rescue."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-rescue.mjs",
+    "before": "n|大风过去，不会因为你获救就自动把各家船修好。阿岑要回白螺屿告诉家里这回怎么了，你陪他等工钱，也看他能不能独自把湿袖捋上去。",
+    "after": "n|大风过去，三艘撞礁船的木料还堆在岸上。阿岑要回白螺屿报平安，先陪他等这趟工钱；他捋湿袖时，你看见他手腕，伸过去的手又停住了。",
+    "reason": "Keep the damaged world and friend business visible after the hero is saved."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-rescue.mjs",
+    "before": "n|同一来掌，两人续法不同。你接孤舟的手也没自动变容易，他在平地仍比你深得多；你不能因说清相对强弱就凭空省去这些年的工夫。",
+    "after": "n|同一来掌，两人续法不同。你刚想说看明白了，孤舟便把你叫回原处，让你亲接；你挡住前半手，后半步已经叫他转到肩外。",
+    "reason": "Demonstrate the remaining skill gap instead of warning against a free upgrade."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-seats.mjs",
+    "before": "n|谢坐回去喝茶，呼吸没变多少。你站了半天，还想从别处找一句能把九手解释轻的话。",
+    "after": "n|谢坐回去喝茶，呼吸没变多少。叶把短棍横在膝上，食指沿着方才被碰的位置摸了一下。你看那只手，又看谢的茶碗，迟迟没问出口。",
+    "reason": "Let the aftermath and hesitation hold the gap."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-seats.mjs",
+    "before": "n|他没替你保一个第六席本该再打百招的愿望。",
+    "after": "n|他把棍收好，抬眼等你。你那句还想问的话卡在嘴里，想了一遍，又慢慢咽回去。",
+    "reason": "Avoid explaining the listener deserved a longer fight."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-seats.mjs",
+    "before": "n|你还没有因看懂一句话便入化。几年以后，自己的脾气仍比认输的道理先来。",
+    "after": "n|你回院照着试第二招，叫同门一碰，棍尖便歪了。他问是不是这样，你只得请他再慢些。几年后再想起，先记得的仍是自己那一句：是不是状态不好。",
+    "reason": "The protagonist must actually try and remain fallible without a power-level disclaimer."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-seats.mjs",
+    "before": "n|四十七岁那场大风，你带回七条船，周望海九条。这两个数不会因为你怎样安排七条便多长出两条。回港时，自己的第七船仍在等岸上接下一段。",
+    "after": "n|四十七岁那场大风，你带回七条船，周望海九条。第七船到港时，病客还裹着湿毯，岸上的人站在缆头等你开口。",
+    "reason": "Preserve seven/nine as facts without discussing branch implementation."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-seats.mjs",
+    "before": "n|你气了三个月没和他说话。周来取巡船差，你把该交的仍交，话却短得像每个字都要多付钱。三个月后，你终于去问叶孤舟。",
+    "after": "n|你气了三个月没和他说话。周来取差，你把卷纸递过去；他问东港还是西港，你只指东边。他还想问哪日，你已低头找下一张。三个月后，你终于去问叶孤舟。",
+    "reason": "Show the fixed sulk in an awkward work interaction."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-seats.mjs",
+    "before": "n|你六十三，头回听人这样说。他叫你打一手，你刚摆架，胸口已被一根手指点住。没等你换完，老人转身继续拨鱼。",
+    "after": "n|你六十三，头回听人这样说。他叫你打一手，你把后脚收了半寸，刚摆架，胸口已被一根手指点住。你还没想好该不该再来，他已转身去翻鱼了。",
+    "reason": "Let the senior move and return to his own task, preserving the fixed one-finger event."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-seats.mjs",
+    "before": "n|你不知晒鱼老人的确切境界，不能替他补一个返真的名字。海天门有些年代门主返真，院里仍有返真旧人；有衰时，最高层传承却少全断。前一代还在，下一代已接上，这才是门立得久的骨架。",
+    "after": "n|你回头看那位老人，没问出他的确切境界。院里另有人收竹匾，叶孤舟同他招手；这扇门后，退下去的前辈并没有随着旧席次一同消失。\nn|门中旧录有门主返真、院里仍有返真旧人的年代，也记过衰时。最高层传承少有全断，常是前一代仍在，后一代已接了差。",
+    "reason": "Keep institutional history without inventing a precise realm for the fish elder."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-seats.mjs",
+    "before": "n|你笑着走出去，没有拿一个不知道再装出只有你才知道的秘密。",
+    "after": "n|你笑起来。叶孤舟让开门边，你这才看见候在外面的弟子还拿着出港单，方才一直不敢催。",
+    "reason": "Replace a warning against pretension with the next ordinary obligation."
+  },
+  {
+    "round": 2,
+    "purpose": "voice-action-and-rhythm",
+    "file": "story/sea-tide-seats.mjs",
+    "before": "n|弟子还想问，你先让他看看下一班船是否已到；不是不许问，是不能为等一个漂亮答案便漏掉今天能做的事。",
+    "after": "n|弟子还想问，出港单的纸角已经被他捏皱。你先问哪条船，他低头找了一回，又翻到背面，把来接班的人名报给你。",
+    "reason": "An unfinished question remains while the student brings real work."
+  },
+  {
+    "round": 3,
+    "purpose": "route-recall-and-long-term-consequences",
+    "file": "story/sea-tide-entry.mjs",
+    "before": "n|早年你说以后教的一扣，后来终于教过了，不再只是自己会。可是每换一个新人，仍得从头让他试；会过一次，并不等于每一班都真接得住。",
+    "after": "n|十二岁那回，你第二日真去叫过阿岑，一扣也教过了。十七岁再回头看，换了新人，还是得让他从头试，不能指着自己和阿岑都会，就算这班人都能接。",
+    "reason": "Fulfil the childhood promise on the actual next day; adult risk still comes only from the later sustained practice choice."
+  },
+  {
+    "round": 3,
+    "purpose": "route-recall-and-long-term-consequences",
+    "file": "story/sea-tide-rescue.mjs",
+    "before": " choose('three_steps',[",
+    "after": " iff('st_tide_follow',`n|你试着松膝随船转，压住的地方却没有跟来。十八岁时能换出的那一步，此刻先得有人替你移开木梁。`,`n|你想像当年在小船上那样退半步，脚跟却卡在梁下。你只得停住，把胸口勉强留得出的那口气用来喊人。`);\n choose('three_steps',[",
+    "reason": "Recall the chosen tide exercise in a different physical constraint; neither option evades the fixed mast injury and Ye rescue."
+  },
+  {
+    "round": 3,
+    "purpose": "route-recall-and-long-term-consequences",
+    "file": "story/sea-tide-rescue.mjs",
+    "before": " choose('four_six',[",
+    "after": " iff('st_transfer_line',`st_ye~intent|那天你叫阿岑留绳，他真留住了。你自己跳前，却少看了一眼桅。\nn|你还想答已说过了，叶孤舟让你把下次谁留岸上再报一遍，直到名字也说清。`,`st_ye~intent|你先送能动的人，没错。你跳过去以后，那头谁留绳？\nn|你报了阿岑，话到一半，又想起他还在往里送人。你得再找一个肯留下的，不能只把同一个名字报两次。`);\n choose('four_six',[",
+    "reason": "Recognize the earlier rescue allocation and require a concrete next handoff, without rewriting how Ye saved Shen and the child."
+  },
+  {
+    "round": 3,
+    "purpose": "route-recall-and-long-term-consequences",
+    "file": "story/sea-tide-seats.mjs",
+    "before": "n|你回院照着试第二招，叫同门一碰，棍尖便歪了。他问是不是这样，你只得请他再慢些。几年后再想起，先记得的仍是自己那一句：是不是状态不好。",
+    "after": "n|你回院照着试第二招，叫同门一碰，棍尖便歪了。他问是不是这样，你只得请他再慢些。第二回，他还没碰上来，你便先把棍收了，重新找站的地方。",
+    "reason": "Do not make the protagonist remember a state-excuse question on the route that never asked it."
+  },
+  {
+    "round": 3,
+    "purpose": "route-recall-and-long-term-consequences",
+    "file": "story/sea-tide-seats.mjs",
+    "before": " choose('fourteen_years',[",
+    "after": " iff('st_rank_question',`n|当年你追问第四、第六相当于中原第几，如今又在叶孤舟面前报自己赢过周。说到一半，你把那个名次咽回去，先问白沙屿今日谁在那里。`,`n|你曾问平地与船上为何不同。今日坐在这间屋里，脚下又没有石坪；你把原先想报的那一场收住，改问谁接明日的巡船。`);\n choose('fourteen_years',[",
+    "reason": "Recall the earlier rankings-versus-environment question while moving to an actual current assignment."
+  },
+  {
+    "round": 3,
+    "purpose": "route-recall-and-long-term-consequences",
+    "file": "story/sea-tide-seats.mjs",
+    "before": " choose('sixty_three',[",
+    "after": " iff('st_wait_paid',`n|你先带着工钱和时辰去问人。周把账还给你，请你也把每一班接手者叫来，当面听他们答能不能来。`,`n|你先请人走清两头。周看完，又替你把旁边一直等的短工叫过来；位置排得进，收工与领钱的时辰也得听本人说。`);\n choose('sixty_three',[",
+    "reason": "The earlier settlement method changes the later planning conversation; both accounting and workable positions remain necessary."
+  },
+  {
+    "round": 3,
+    "purpose": "route-recall-and-long-term-consequences",
+    "file": "story/sea-tide-seats.mjs",
+    "before": " choose('dry_fish',[",
+    "after": " iff('st_zhou_talk',`n|今早周望海交差，照你后来肯听完的习惯，把最末那段也讲了。你原想点头便走，听到候潮时辰，又坐回去把接班的人名补齐。`,`n|今早周望海把白沙屿那份单另给了你。你后来常去亲看，他便只问还缺谁；你没替没到场的人先答肯来，出门后又去找了一趟。`);\n choose('dry_fish',[",
+    "reason": "Let the repaired peer relationship affect later information and delegation, rather than ending when an apology is spoken."
+  },
+  {
+    "round": 3,
+    "purpose": "route-recall-and-long-term-consequences",
+    "file": "story/sea-tide-seats.mjs",
+    "before": " choose('last_look',[",
+    "after": " iff('st_condition_excuse',`n|当年问叶孤舟是不是状态不好，话一出口，自己都觉得该有别的解释。如今胸口那一指还在，你先把想问老人是不是趁你没备好的话压住。`,`n|当年问他每手既知道为何还输，如今这一指，也没给你多出一手的工夫。你把方才准备进的那一步在心里重走，仍没问出晒鱼老人的确切境界。`);\n choose('last_look',[",
+    "reason": "Bring back the actual question selected at the nine-hand scene and retain the unknown realm."
+  },
+  {
+    "round": 3,
+    "purpose": "route-recall-and-long-term-consequences",
+    "file": "story/sea-tide-seats.mjs",
+    "before": " go('beyond_sea');",
+    "after": " iff('st_life == 1 and st_first_rail',`n|学生把栏抓得指节发白，像十二岁那回的你。你把自己的手放在旁边，让他先握着，又等他肯松开一指，才把船再晃一下。`);\n iff('st_life == 1 and not st_first_rail',`n|学生坐在船边等浪过去，你也同他坐一会。十二岁时那位老人挪开空桶等过你；这回你先把学生脚边的杂物挪开。`);\n iff('st_life == 2 and st_first_rail',`n|新人伸手抓栏，你记得十二岁沾过的那一点湿木屑，把还没收好的绳往里理了理。等他站好，才叫岸上把这一头松开。`);\n iff('st_life == 2 and not st_first_rail',`n|新人催着出港，你却请他等过眼前这一波。十二岁时你等船回落才站，今日等的是岸上那只手真正松开，少等一口气都不行。`);\n go('beyond_sea');",
+    "reason": "The initial standing/waiting gesture returns within the chosen teaching or patrol duty; neither childhood option determines the adult wrist injury."
+  },
+  {
+    "round": 3,
+    "purpose": "scene-and-age-fidelity",
+    "file": "story/sea-tide-seats.mjs",
+    "before": " iff('st_life == 1',`n|今日你带新人回小船",
+    "after": " stage('st_latepier','st_an');\n iff('st_life == 1',`n|今日你带新人回小船",
+    "reason": "The chosen late teaching/patrol aftermath must be at a pier with its actual late-age label, not inside a tower or the old eighteen-year training boat. It reuses quay.webp; no new image."
+  },
+  {
+    "round": 3,
+    "purpose": "complete-route-reread-correction",
+    "file": "story/sea-tide-entry.mjs",
+    "before": "你趴在船边，肚里早已没有什么可吐，仍舍不得先抬头。",
+    "after": "你趴在船边，肚里早已没有什么可吐，一抬头，胃里又跟着船晃。",
+    "reason": "A seasick child wants to look up; reluctance is bodily rather than inexplicably being unwilling to see the tower."
+  },
+  {
+    "round": 3,
+    "purpose": "complete-route-reread-correction",
+    "file": "story/sea-tide-rescue.mjs",
+    "before": "n|你被接回时，回头仍看见他往里走。最后一个离船的人，也是他。",
+    "after": "n|你被接回时，回头仍看见他往里走。",
+    "reason": "Do not declare the final departure before Ye turns back to rescue the remaining people."
+  },
+  {
+    "round": 3,
+    "purpose": "complete-route-reread-correction",
+    "file": "story/sea-tide-rescue.mjs",
+    "before": "st_ye~sharp|那边腾一处！别把孩子挤在舷口！`);",
+    "after": "st_ye~sharp|那边腾一处！别把孩子挤在舷口！\nn|等再没有人朝这头伸手，他才跟着最后一拨人回来。最后一个离船的人，也是他。`);",
+    "reason": "Let the last departure occur after the final landing-space command; preserve the canonical last rescuer."
+  },
+  {
+    "round": 3,
+    "purpose": "complete-route-reread-correction",
+    "file": "story/sea-tide-rescue.mjs",
+    "before": "阿岑要回白螺屿报平安，先陪他等这趟工钱；他捋湿袖时，你看见他手腕，伸过去的手又停住了。",
+    "after": "阿岑要回白螺屿报平安，你先陪他等这趟工钱。他捋湿袖时，你问能不能自己拿那只行包，没急着先替他接过来。",
+    "reason": "Keep both injured and uninjured branches possible and let the friend retain control over his own work."
+  },
+  {
+    "round": 3,
+    "purpose": "complete-route-reread-correction",
+    "file": "story/sea-tide-seats.mjs",
+    "before": "st_ye~intent|他比我早知道。\nn|你回想第二招那一碰，才知道自己看懂这招想做什么，不等于已看见对方将把下一步放到哪里。",
+    "after": "st_ye~intent|你摸摸棍侧这一处。\nn|他把棍横过来，你照着第二招封住的方向试，刚伸手，自己也先挪了脚。",
+    "reason": "Avoid immediately repeating the same canonical explanation on the analytical-question route; use a small physical demonstration before the shared quote."
+  },
+  {
+    "round": 3,
+    "purpose": "complete-route-reread-correction",
+    "file": "story/sea-tide-seats.mjs",
+    "before": "谢观海收手后，自己站着没敢问。",
+    "after": "谢观海收手后，自己站了好一会才开口。",
+    "reason": "Both routes eventually ask Ye a question; the later memory must not imply it was never spoken."
+  },
+  {
+    "round": 3,
+    "purpose": "complete-route-reread-correction",
+    "file": "story/sea-tide-seats.mjs",
+    "before": "n|接班的人出港前试过两头，病客转入以后还有人照看缆。你留在第七船到交清才走，错过了当晚原约的问手；第二日人能照常接班，没再把你从住处喊回来。",
+    "after": "n|接班的人出港前试过两头，病客转入以后还有人照看缆。你留在第七船到交清才走，错过了当晚原约的问手；天黑前病客进了舱，这头船工不用候夜。",
+    "reason": "Do not jump to the next day before the successful route current-evening settlement."
+  },
+  {
+    "round": 3,
+    "purpose": "manual-visual-age-correction",
+    "file": "story/sea-tide-entry.mjs",
+    "before": "st_boatkeeper in current cast/speaker references",
+    "after": "st2_boatkeeper in current cast/speaker references",
+    "reason": "Actual opening screenshot exposed a young woman standing for the canonical old boat person. V2 uses a separate actor key so archived V1 pixels stay unchanged."
+  },
+  {
+    "round": 3,
+    "purpose": "reusable-portrait-registration",
+    "file": "src/sea-tide-catalog.ts",
+    "before": "V2 reused V1 young boatwoman mapping",
+    "after": "export const seaTideCharacters:Record<string,Person>={\n st2_boatkeeper:{...p('送试门的老船人','沈十二岁 · 原典船上老人','在外岛与归潮岛间送人，顺手修理船上木作；会等孩子站稳，也还要把船送到泊位。','v5/npc-elder-male.webp','elder'),canonicalIdentity:'st_boatkeeper'},",
+    "reason": "Use existing plain elderly craftsman, canonicalIdentity links the same original person across versions. This adds a versioned actor identifier, not a new fictional person or new image."
+  },
+  {
+    "round": 3,
+    "purpose": "portrait-framing",
+    "file": "src/stage.css",
+    "before": "No scoped st2 boatkeeper variable framing rule",
+    "after": "\nbody[data-content-version=\"sea-tide-2.0.0\"] .actor[data-character=\"st2_boatkeeper\"] .portrait{background-size:var(--portrait-size);background-position:var(--portrait-position)}\n",
+    "reason": "Keep the existing portrait variable contract for the new actor identifier, with computed browser framing checked."
+  }
+]

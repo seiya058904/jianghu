@@ -1,0 +1,11 @@
+[WebServer] (node:48132) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:32636) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\kuhe-v2.spec.ts:14:1 › Kuhe new wounded/empty states and CG decode offline at root and subpath (1.4s)
+  ok 2 tests\kuhe-v2.spec.ts:20:1 › Kuhe new CG failure retains reusable valley and live dialogue (201ms)
+
+  2 passed (2.5s)

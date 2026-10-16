@@ -1,0 +1,67 @@
+{
+  "status": "DUAL_BOOK_REUSABLE_ART_AND_STRICT_SAVE_COMPAT_VERIFIED_NOT_WHOLE_V6",
+  "newImages": 4,
+  "newDedicatedIdentities": 1,
+  "newSameAgeStateFiles": 3,
+  "newUniqueCGFiles": 1,
+  "CGWorkReferences": 2,
+  "currentContentSHA256": {
+    "two-swords": "6a52c1423e46511aa23d17e0471ce855bb0f5f2f5450612b9e50299e3070c475",
+    "seven-questions": "e7caa65fa5970db4c440a6895a88b18cc7f58d91912cae02a77a7c8b9bc45402"
+  },
+  "frozen": {
+    "story/two-swords-before-art.ink": "6c164c4eb84d6e5984fdb9466608e48f0d6f3fdc7273fb8afe0ca05b0c618c84",
+    "src/generated/two-swords-before-art.json": "02a7a45ff212fb842dd10ccfb97a5f6971d4039d3ede1d9b77dec3f196a81367",
+    "story/seven-questions-before-books-cg.ink": "62ced8c41260598e8051beb9af079eadb89c730874d4975f787987087b0c38db",
+    "src/generated/seven-questions-before-books-cg.json": "f18de35a5898444111db7f9541f55e646cc8d3b3e20e5a04d8c0216de3d1eae5"
+  },
+  "nodeFullPass": 150,
+  "browserInitial": "13passed/1viewport fixture failed; fixed via blank-page fixture isolation",
+  "browserFinalPass": 10,
+  "actualCompleteUIRoutes": 4,
+  "registeredOfflineWorkOwnerships": 30,
+  "frozenMigrationChunks": 4,
+  "actualCGFrames": {
+    "two-swords": [
+      "ss_open_boxes_1",
+      "ss_open_boxes_2"
+    ],
+    "seven-questions": [
+      "sq_three_volumes_1",
+      "sq_three_volumes_2"
+    ]
+  },
+  "perFrameCameras": {
+    "two-swords": [
+      "ss_token_4",
+      "ss_token_5"
+    ],
+    "seven-questions": [
+      "sq_eighty_one_8"
+    ]
+  },
+  "counts": {
+    "speakingNPC": 302,
+    "registeredDedicatedUsed": 27,
+    "independentDedicatedUsed": 27,
+    "charactersWithThreeImagesAtSameAppearance": 18,
+    "registeredArchetypesUsed": 12,
+    "distinctBackgroundFiles": 30,
+    "distinctCGFiles": 15,
+    "referencedBytes": 21906272
+  },
+  "limits": [
+    "Sima remains a shared template, not a new dedicated identity.",
+    "Three core groups still CG0; other identities, ages, fire/injury/martial staging, first-book literary rounds and final-root/delivery work remain.",
+    "No physical Android, human reading-time or external aesthetic acceptance claim.",
+    "Graph metadata_changed; current source/frozen bytes/runtime/browser evidence used."
+  ],
+  "automaticRawBackupFinalPass": 2,
+  "currentFullRouteEvidence": [
+    "swords-art-first-browser-0.json",
+    "swords-art-first-browser-1.json",
+    "swords-art-second-browser-0.json",
+    "swords-art-second-browser-1.json"
+  ],
+  "historicalEvidencePreserved": "swords-art-evidence-versions.json"
+}

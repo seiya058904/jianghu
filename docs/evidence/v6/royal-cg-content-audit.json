@@ -1,0 +1,20 @@
+{
+  "status": "CG_INCREMENT_NOT_FULL_ACCEPTANCE",
+  "beats": 375,
+  "choiceOptions": 66,
+  "sampledPaths": 512,
+  "exhaustive": false,
+  "newRasterFiles": 1,
+  "CG": "royalLetters",
+  "CGBeats": [
+    "rl_fair_seat_3",
+    "rl_fair_seat_4"
+  ],
+  "migrationBeats": [
+    "rl_fair_seat_3",
+    "rl_fair_seat_4",
+    "rl_fair_seat_5"
+  ],
+  "versionUnchanged": "twelfth-life-2.0.0",
+  "limits": "Protagonist/other principal identities, full three editorial rounds and final acceptance remain."
+}

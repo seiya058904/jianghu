@@ -1,0 +1,97 @@
+{
+  "round": 2,
+  "focus": "character voices and initiative",
+  "records": [
+    {
+      "round": 2,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-vault.mjs",
+      "reason": "用原典盗门答问显出江的迟疑，不只履历摘要。",
+      "before": "父亲二十年前死于争璧，长辈说皇家杀人、璧本归江湖；你信了多年，却没亲见那一夜。",
+      "after": "父亲二十年前死于争璧，长辈说皇家杀人、璧本归江湖。你问皇家拿到怎么算，老人竟说算他们偷得好。你信过他的旧事，却一直没学会把这个道理说得同他一样顺。"
+    },
+    {
+      "round": 2,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-vault.mjs",
+      "reason": "改掉绕口走错出去，江遇险仍以买卖打趣。",
+      "before": "先走错出去，还是再等它自己回来？",
+      "after": "空盒也守两个人。这盒子倒比我们有身价。"
+    },
+    {
+      "round": 2,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-vault.mjs",
+      "reason": "卖主主动绕开剑录问题，夸物成具体交易冲突。",
+      "before": "n|你挤在人外，先听清他少讲了哪一句。柳当年把十剑删到七剑、再到五剑，肯让位置；不是一块玉替他拿剑。返真老剑客也曾说，玉没教他，是他自己想明白。",
+      "after": "y|柳家的剑录也在匣里？\njt_broker~amused|剑录是柳家的。机缘却只这一块。\nn|你挤在人外听。他把柳当年十剑删到七剑、再到五剑的三年略掉，只留一次指玉的手势。返真老剑客说过玉没教他，那一句也不在今日的价钱里。"
+    },
+    {
+      "round": 2,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "沈有截住追问的口吻，江以拿空碗露慌，不用旁白替死者作保。",
+      "before": "n|你没拿这句替其他谎话作保。他也没有再问死者能不能替你保证今夜不动刀。",
+      "after": "n|你把包药的纸折齐，等了片刻。\ny|这一句不用你信。\njt_jiang~uneasy|我没说不信。\nn|他说完伸手拿水，拿的是已经空了的那只碗。"
+    },
+    {
+      "round": 2,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "对视角保留同一外部动作，江自己的杀令由手的位置继续施压。",
+      "before": "n|她说完便继续包药。你把自己的密信藏好，没有趁她回头时动手，也没因为自己此刻没动，就以为明日还会有人准你不动。",
+      "after": "n|她把包药的纸折齐，等了片刻。\njt_shen~intent|这一句不用你信。\ny|我没说不信。\nn|你伸手拿水，碗已空了。衣袋里的信顶着掌根，你把那只手留在碗边。"
+    },
+    {
+      "round": 2,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "用两人当场防备替代玉重人重的抽象比喻。",
+      "before": "中间那块玉没有变重，人却都像多背了一层。",
+      "after": "佛座缺了一角，你把短刃挪开一点，免得刃背碰石发响。他听见这半寸动静，手指也收紧了。"
+    },
+    {
+      "round": 2,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "替代视角只能看实际动作，既紧张又不代沈宣告心思。",
+      "before": "她没躲目光，也没先把要杀你说成是为了你好。",
+      "after": "她将短刃挪离佛座的缺角，刃背没碰上石头。你听见衣袖一响，手指先收紧，才看清她没有往前。"
+    },
+    {
+      "round": 2,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "沈主动催下一步，不只对江逗嘴。",
+      "before": "你若还想明日也睡在这块破玉旁，就继续夸它。",
+      "after": "你若想明夜还抱着它睡，就继续夸。我先去问价。"
+    },
+    {
+      "round": 2,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "江实际让门放弃先占物，不由旁白替物教做人。",
+      "before": "n|你摸了摸父亲故事里那件所谓江湖旧物。它现在硌在行囊里，先要学会像一块不值得抢的石头。",
+      "after": "n|你把行囊往膝边拖，硌着腿的正是银补。她起身前你先让开门，终于没再争这块家传该由谁抱。"
+    },
+    {
+      "round": 2,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "原典名句由匠人亲说，师徒各自对手艺有行动。",
+      "before": "n|江问假的能不能做一样，老人摇头：做旧容易，做这么丑难。做出来得数月，不能拿一块今夜刻完的圆石便叫别人拿命去信。",
+      "after": "n|江指着银补，问假的能不能做一样。\njt_craftsman~uneasy|做旧容易，做这么丑难。\njt_apprentice|那先把这一处补平？\njt_craftsman~sharp|刚说过别磨。去拿灯，我看背面。\nn|老人把工期说到数月以后，没接你们当夜便走的试探。"
+    },
+    {
+      "round": 2,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "师父当面问徒弟而非替玩家道德解释。",
+      "before": "像普通，不是就没风险。买主若问来处，问到的是他，不是你们。",
+      "after": "送工料我准。到了买主面前，人家认住的可是你的脸。先说，问你师父住哪，你怎么答？"
+    },
+    {
+      "round": 2,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "徒弟有学艺与引信所求，答应一回不变专业密使。",
+      "before": "我本来也要往南边换师学艺。渡头那条山道，我还得走。若后来遇着，别又叫我只管送箱。",
+      "after": "我想往南边换师学艺，师父的引信还没写。渡头那条山道我总得走。可这回若被人问住，我先跑，不替谁逞好汉。"
+    },
+    {
+      "round": 2,
+      "file": "story\\drafts\\jade-thieves\\jade-thieves-temple.mjs",
+      "reason": "风险承诺落实到师徒两人的离城费用。",
+      "before": "我去这一回。被问起，我不替你们守一辈子嘴。",
+      "after": "我去这一回。真有人堵门，我带师父一起走，你们留的那点钱得够两个人。"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "version": "tide-promise-2.0.0",
+  "route": "stay",
+  "actualInputs": true,
+  "humanPlaytest": false,
+  "beats": 572,
+  "decisions": 52,
+  "scenes": [
+    "v6_quay",
+    "v6_hall",
+    "v6_inn",
+    "v6_depart",
+    "v6_stay",
+    "v6_staycare",
+    "v6_workshop",
+    "v6_contract",
+    "v6_arena",
+    "v6_wind",
+    "v6_levee",
+    "v6_storm",
+    "v6_dawn"
+  ],
+  "ending": "harbor",
+  "errors": []
+}

@@ -1,0 +1,15 @@
+[WebServer] (node:49440) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:33144) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\heng-art.spec.ts:7:22 › Heng north: real V1 auto/slot remain byte-exact while V2 starts; old entry continues and exports (524ms)
+  ok 2 tests\heng-art.spec.ts:7:22 › Heng qian-kun: real V1 auto/slot remain byte-exact while V2 starts; old entry continues and exports (413ms)
+  ok 3 tests\heng-art.spec.ts:16:1 › Heng two ages, actual expressions, unrevealed name and both CGs render at seven sizes (16.5s)
+  ok 4 tests\heng-art.spec.ts:24:1 › Heng shared tea remains readable at night and with missing image on both books (868ms)
+  ok 5 tests\heng-art.spec.ts:28:22 › Heng north: current CG and archived V1 mid-scene boot on fresh offline root and subpath (1.9s)
+  ok 6 tests\heng-art.spec.ts:28:22 › Heng qian-kun: current CG and archived V1 mid-scene boot on fresh offline root and subpath (1.9s)
+
+  6 passed (23.0s)

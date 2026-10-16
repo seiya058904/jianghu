@@ -1,0 +1,506 @@
+[
+  {
+    "round": 1,
+    "purpose": "structure-time-and-physical-causality",
+    "file": "story/sea-crossing.mjs",
+    "before": "n|此刻你是陆玄都，五十余岁。前一版总谱第三，十名中的七人已问过，五胜两平；第二位两百余招后败。眼前这位极老的返真宗师，却让你从上午打到了日影斜过门槛。",
+    "after": "n|你是陆玄都，五十余岁。前一版总谱第三，前十中的七人已经问过，五胜两平；第二位又在两百余招后败给你。\nn|眼前这位极老的返真宗师，让你从上午打到日影斜过门槛。你的右脚刚落稳，他左掌又到了。",
+    "reason": "Separate identity/statistics from the immediate incoming action."
+  },
+  {
+    "round": 1,
+    "purpose": "structure-time-and-physical-causality",
+    "file": "story/sea-crossing.mjs",
+    "before": "choose('two_centuries',[",
+    "after": "choose('seven_years',[",
+    "reason": "Both ways of leaving must share the same canonical seven-year history rather than hide facts behind alternative options."
+  },
+  {
+    "round": 1,
+    "purpose": "structure-time-and-physical-causality",
+    "file": "story/sea-crossing.mjs",
+    "before": "['sr_take_open_route','走向还没有自己名字的航路，不为祖师将来的结局先留一个保证。','',`n|你先经蓬莱，七年后再向外，十余年海路里真见过能让自己停步的人。后来远海有了天都门，陆玄都再未回中原。`]",
+    "after": "['sr_take_open_route','去外港问转船，先跟船工把这一箱搬上去。','',`n|箱子不好下手，船工让你换到低的一头。你照做，脚下的船板随着第二个人上来，往下一沉。`]",
+    "reason": "Replace a future-aware editorial choice with a physical departure action."
+  },
+  {
+    "round": 1,
+    "purpose": "structure-time-and-physical-causality",
+    "file": "story/sea-crossing.mjs",
+    "before": "['sr_leave_closed_map','把旧图尽头当下一条路的起处，走出去，不替未见过的海先取终点之名。','',`n|蓬莱留下二十余场可靠记录：三百余招胜旧阁主，与孤岛老人两日较艺各自离开无胜负。离岛时更高，后来向远海立天都门，再未归中原。`]",
+    "after": "['sr_leave_closed_map','先把岸图收进油布，按船人说的时辰到潮线外等。','',`n|你把图叠小，油布边角压进包内。船人叫到第二声，你才发现他喊的是这班船，不是你的名字。`]",
+    "reason": "Make the alternative a different immediate action without inventing a farewell that contradicts the disappearance."
+  },
+  {
+    "round": 1,
+    "purpose": "structure-time-and-physical-causality",
+    "file": "story/sea-crossing.mjs",
+    "before": "part('two_centuries','sr_newshore','sr_boatman',`n|陆玄都的终老、葬处与最后境界，旧卷没有给出确证。以下已是两百余年后，新的年景，新的主角。你是阿罗真，西海诸国当地父母所生，天都门弟子；祖像上的陆玄都不会作为当代老人来码头接你。",
+    "after": "part('seven_years','sr_oldshore','',`n|陆玄都先到蓬莱，停了七年。二十余场可靠记录里，有三百余招胜旧阁主，也有与孤岛老人连问两日、第三日各自离开而无胜负。\nn|蓬莱旧卷说，他离岛时比来时更高。再往外十余年，他确实遇过能令自己停步的人，最后在西海诸国留下天都门，再未回中原。\nn|陆玄都的终老、葬处与最后境界，旧卷都没有确证。岸上那个人已经走远。`);\n w.go('two_centuries');\n part('two_centuries','sr_newshore','sr_boatman',`n|两百余年后，蓬莱。你是阿罗真，三十五岁，天都门弟子。西海诸国当地父母所生，九岁入门；汉文谱和汉话，从小都学过。",
+    "reason": "Put both variants through one old-era knot before changing scene, protagonist and century. Preserve the uncertainty without breaking the fourth wall."
+  },
+  {
+    "round": 1,
+    "purpose": "structure-time-and-physical-causality",
+    "file": "story/sea-crossing.mjs",
+    "before": "n|如今三十五，刚抵蓬莱。这里是北部一大片岛群，中原以外的另一套武林；不是东极归潮岛。同行船夫阿汀才把缆抛起，一个武馆弟子已来推他让船位。",
+    "after": "n|如今你刚到北部蓬莱诸岛；去南偏深处东极归潮岛的船，还得另外转。阿汀把缆抛上岸，一个武馆弟子却踩住绳头，要他让船位。",
+    "reason": "Make the organizational/geographical distinction part of navigation and give the dispute a tangible cause."
+  },
+  {
+    "round": 1,
+    "purpose": "structure-time-and-physical-causality",
+    "file": "story/sea-asking.mjs",
+    "before": "n|蓬莱五年，二十八场正式较艺，二十三胜、三平、两败。你先遇到阁中大长老；两百余招以后，自己的剑从手里脱出。",
+    "after": "n|后来回看蓬莱五年，二十八场正式较艺：二十三胜、三平、两败。第一场败给阁中大长老，两百余招以后，自己的剑从手里脱出。",
+    "reason": "Signal retrospective five-year totals before focusing on the first defeat."
+  },
+  {
+    "round": 1,
+    "purpose": "structure-time-and-physical-causality",
+    "file": "story/sea-teaching.mjs",
+    "before": "n|五十四岁，你到武当，和一位百余岁的玄门老人问手。你自己先停，不是受了让就能勉强再拖百招。",
+    "after": "n|五十四岁，你到武当，和一位百余岁的玄门老人问手。百余招，你自己先停。他的脚还没移到你原来想逼去的位置，你再多送一掌，也只是把手肘递给他。",
+    "reason": "Restore the canonical hundred-plus exchanges and show the reason to stop through distance."
+  },
+  {
+    "round": 1,
+    "purpose": "structure-time-and-physical-causality",
+    "file": "story/sea-legacy.mjs",
+    "before": "['sr_show_next_class','带旧友看第二日的课怎么交给后辈，再回来喝完，不替他们示范到下课。','sr_old_visit = false',`n|你们在门边看，年轻人接得有不稳的地方，也有你没先教的转法。旧友才想抬手，你把酒盏递过去，两个人都没抢进院里。`]",
+    "after": "['sr_show_next_class','请他留到明早看后辈接课，散课后再喝。','sr_old_visit = false',`n|第二日，旧友陪你在门边看课。年轻人接得有不稳的地方，也有你没先教的转法。旧友才抬手，你便按住他，等那两人走完。\nn|散课以后，昨夜没喝完的酒重新温上。旧友说早知还要看半天，昨夜就不该让你先收酒壶。`]",
+    "reason": "Mark the overnight transition explicitly and stop giving the friend a wine cup before an unmarked next-day class."
+  },
+  {
+    "round": 1,
+    "purpose": "structure-time-and-physical-causality",
+    "file": "story/sea-legacy.mjs",
+    "before": "n|百余岁时，一份据说是陆玄都晚年所记的残卷辗转来到。几十页，有路、有海图，真伪与最后年代都没有全证。它不能证明祖师尚在人世，也不能补出他的葬处或最后境界。",
+    "after": "n|又过了一些年，你已百余岁。一份据说是陆玄都晚年所记的残卷辗转来到，只有几十页。转交的人说不清它何时成卷；真伪与最后年代都没有全证，更不能证明祖师尚在人世。",
+    "reason": "Separate the late visit from the later centenarian manuscript and keep the provenance uncertain."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-crossing.mjs",
+    "before": "n|他给你的不是为了成全一个年轻第一的虚招。你得从眼前这只真会换路的掌里再找下一步。",
+    "after": "n|他掌根一沉，你刚要抬的脚又踩实。地上那片斜阳离门槛更远了，老人仍没催，也没松开这一手。",
+    "reason": "Use pressure, footing and passing light instead of the narrator certifying an honest match."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-crossing.mjs",
+    "before": "先接实他转来的力，再换身，不把上一刻的空处当还在。",
+    "after": "先踩实脚下，接住这一掌再转身。",
+    "reason": "Make a short executable physical response."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-crossing.mjs",
+    "before": "放开抢到底的念头，先走到还能接住下一掌的位置，再从那里续。",
+    "after": "让开肩前那一点，绕到掌外接下一手。",
+    "reason": "Make the alternative about a different distance."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-crossing.mjs",
+    "before": "向船人问更远的转船路，不把无人能答的地方先画成空白天下。",
+    "after": "问船人，过了眼前这班还能转到哪里。",
+    "reason": "Remove the editorial interpretation from a spoken question."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-crossing.mjs",
+    "before": "先看船怎么随潮离岸，把一张已经走到头的陆地图收起来。",
+    "after": "收起岸图，先看船人怎样等潮离岸。",
+    "reason": "Keep the hand action and let the metaphor remain implicit."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-crossing.mjs",
+    "before": "n|几年后，天下第一失踪，无尸、无告别，连近人也不知去处。总谱等两次重修才撤名。那些船人并没带回一个可以替全部亲旧解释完的行程。",
+    "after": "n|几年后，天下第一失踪，无尸、无告别，连近人也不知去处。总谱等两次重修才撤名，旧录只留下陆玄都的名字，后面两个字：失踪。",
+    "reason": "Let the actual record carry the absence."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-crossing.mjs",
+    "before": "n|你九岁入门，刀、拳、枪、剑都学得快，二十五年轻第一，二十九三百余招胜六十余护法。三十三岁与来船的蓬莱武人一百四十余招，胜，对方却笑着请你去看更大的地方。",
+    "after": "n|刀、拳、枪、剑，你从小换着学。二十五年轻第一，二十九三百余招胜六十余护法；三十三岁，又胜了来船的蓬莱武人一百四十余招。那人临走替你留了个船名，叫你去蓬莱看看。",
+    "reason": "Keep the fixed ages and exchanges while making the invitation an object of later action."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-crossing.mjs",
+    "before": "n|第十二招，那武馆弟子倒地。你把他的手送开才收，不为证明汉话说得对便补一脚。",
+    "after": "n|第十二招，那武馆弟子倒地。你松开他腕子，他往后坐，压住了方才自己踩着的绳头。阿汀拽了两下，没拽动。",
+    "reason": "Replace a moral assurance with a concrete awkward aftermath."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-crossing.mjs",
+    "before": "n|你笑了一下。对方师父闻讯赶来，没叫弟子躺着替自己多讨一手。",
+    "after": "n|你笑了一下，又替他把绳头抽出来。对方师父闻讯赶来，先把弟子拉到身后，叫围观的人往外退。",
+    "reason": "Give the opponent teacher his own protective action."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-crossing.mjs",
+    "before": "sr_teacher~intent|你们的祖师，在这里留过七年。不是一到海边便把我们一并算作没见过的岸外。",
+    "after": "sr_teacher~intent|七年。你们门里没记这一段？\ny|只记他向外走了。\nsr_teacher|那你这回可别又只抄一个名字。",
+    "reason": "Turn an authorial geography lesson into an exchange with a personal challenge."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-asking.mjs",
+    "before": "n|你握空的那只手仍想先接下一剑，回头看，剑已落在够不着的一边。他并没因你能胜三位名家，便在最难接的一处替你留余地。",
+    "after": "n|你握空的那只手又伸了一下。剑落在两步外，大长老剑尖却还抵着你能过去拾剑的那条路。",
+    "reason": "Show why a disarmed fighter cannot simply continue."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-asking.mjs",
+    "before": "先问剑怎样脱的，自己照刚才身位再试，不拿手滑替整场败解释。",
+    "after": "拾起剑，请他再试刚才卸腕的半掌。",
+    "reason": "Offer an actual request instead of diagnosing an excuse for the player."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-asking.mjs",
+    "before": "先空手重走落剑前一步，看失掉的是兵器还是身体已经站错的地方。",
+    "after": "先不拾剑，空手重走落剑前的那一步。",
+    "reason": "Keep the contrasting experiment short and playable."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-asking.mjs",
+    "before": "n|你拿起剑，一次次试那半掌。学过的一条路，终于不再因为自己熟就总来得及。",
+    "after": "n|你退了半掌再接，剑这次留在手里，却够不着他。你把脚收回来，请他慢一遍，自己照着再试。",
+    "reason": "A correction fixes one problem and exposes another, without a neat instant lesson."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-asking.mjs",
+    "before": "n|另一场对沧鹤老人，短得多。第九十七招，你自己停手认输。二十多年习武以来，头一回不到百招便知道不必借再打一阵遮住眼前的差。",
+    "after": "n|另一场对沧鹤老人，短得多。第九十七招，你自己停手认输。他脚边那块湿石始终没人踩到，你已经绕过它三回；下一回，掌缘还是会先到。\nn|二十多年习武，头一回不到百招就收手。",
+    "reason": "Give the voluntary stop a legible repeated-distance problem."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-asking.mjs",
+    "before": "n|你眼睛又亮。老人看见了，不急着替你另写一张该去挑战的名单。",
+    "after": "n|你眼睛又亮，手还没放下，已经往岸那边指。老人顺着你手指看了一眼，没动。",
+    "reason": "Show the appetite for another fight through a gesture and a pause."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-asking.mjs",
+    "before": "sr_boatman~amused|这场先不收他们钱。",
+    "after": "sr_boatman~amused|汤我替你问。船上的账，可得醒着同我对。",
+    "reason": "Give the boatman his own paid work rather than another martial metaphor."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-asking.mjs",
+    "before": "sr_innkeeper~intent|慢一点。你方才喝得像怕别人先来接招，我又没收你的碗。\ny|这回是我慢了。\nsr_innkeeper~amused|病里说快也没用。吃完就躺，我还得给外头那桌上菜。",
+    "after": "sr_innkeeper~intent|放稳。烫的，别一口灌。\ny|我先前没闻见。\nsr_innkeeper|鼻子也叫你逞强去了？喝完把碗放这里。我得给外头那桌上菜。",
+    "reason": "Distinct practical voice; the innkeeper continues serving other customers."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-asking.mjs",
+    "before": "把阿罗真写给店家，先让今天的药与饭找对人，再慢慢讲自己的来处。",
+    "after": "把阿罗真写在药包旁，再写下新名罗天海。",
+    "reason": "Replace an explanatory choice with writing the two names."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-asking.mjs",
+    "before": "自己取汉名罗天海，也留下阿罗真，不让一个新称呼抹掉父母与旧门。",
+    "after": "报出新取的汉名罗天海，也告诉她旧名阿罗真。",
+    "reason": "Keep self-naming voluntary through the action itself."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-asking.mjs",
+    "before": "sr_innkeeper~amused|那我少跑一间房。你们练武的，原来也会被名字多要一碗汤。\nn|你会汉字、会汉话，仍有许多日常要重学。这个新名是自己愿意写下，不是谁替你把原来的都擦了。",
+    "after": "sr_innkeeper~amused|那我记同一页。多写个名字，不多算一碗汤。\nn|她把两名并排，药包押在纸角。你还想解释，外头又催上菜，她先应了一声，带着空盘走了。",
+    "reason": "Let the two names coexist without narrating an identity-policy conclusion."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-teaching.mjs",
+    "before": "n|他拿手在你肘外一碰，你才笑着让开。眼前这一平，总算不是替前两场补的一张漂亮落款。",
+    "after": "n|他在你肘外一碰，你才笑着让开，想请他再来。对方却收了手，指指天色：饭过了两顿，先吃。",
+    "reason": "The old opponent controls his own time and does not exist solely to assess the protagonist."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-teaching.mjs",
+    "before": "sr_xuanmen|你还在走，何必替今日看见的这一层封底。",
+    "after": "sr_xuanmen|下山先歇歇腿。后面那几级石阶，雨刚停，比院里滑。",
+    "reason": "Give the elder a particular concern instead of another universal maxim."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-teaching.mjs",
+    "before": "n|他常问为什么。你问这一步对不对，他反问为什么这样走；你问换成那一式呢，他还是问。终于有一日，你把手里木棍放下，直看着他。",
+    "after": "n|他问你为什么退，你换了一式；他把木棍搁回原处，仍问为什么退。你再进一次，他侧过肩，你的棍头便撞到晾布的横杆。\nn|这一回你没换式。你把木棍放下，直看着他。",
+    "reason": "Put the frustrating questions into one bodily exchange, without adding a secret complete form."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-teaching.mjs",
+    "before": "n|你想生气，又忍不住笑。他等你笑完，仍没替你挪脚。",
+    "after": "n|你气得伸手去取棍，碰到晾布，又停下。赵无极已经把湿布移到另一头，回头仍在等你的答复。",
+    "reason": "Zhao has practical business and keeps the question open."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-teaching.mjs",
+    "before": "n|离开太极后两年，江南一间小武馆，十二名普通弟子。站、走、拳、刀，从最笨的地方教起。这里没人能凭你总谱战绩少交一天房租，也没人会因为掌门说懂了就真懂。\nsr_carpenter~uneasy|师父，我做活时能抬，怎么一到这儿就僵？\nsr_seller~amused|你抬的是木头，今早像把师父也一块抬在肩上。",
+    "after": "n|离开太极后两年，江南一间小武馆，十二名普通弟子。站、走、拳、刀。木工把扛料的搭肩布搭在门边，卖鱼人挪开凳子，先问今日几时散。\nsr_carpenter~uneasy|师父，做活能抬，一来这里就僵。再站半个时辰，明早那副门框怕抬不稳。\nsr_seller~intent|那就先看他这一下。我今日也不能多留，集上欠的秤钱还没收。",
+    "reason": "Two pupils have their own work deadlines and push the lesson forward."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-teaching.mjs",
+    "before": "n|你看他的脚，自己也跟着走。两年里，你的进境反比过去四处找人时快；不是十二个人忽然都成高手，是你不能再只拿自己学得快的一次，替他们的每一天作数。",
+    "after": "n|他走得比你说的短，放下木料时，后脚还要再挪一次。你跟着试，第一回也多挪了那一步。\nn|木工以为做错，赶忙要从头走。你拉住他，叫卖鱼人把凳子移过来：再抬一次，慢些。两年的课，常常这样拖过原定时辰。",
+    "reason": "Show the exceptional learner meeting a real teaching difficulty; no universal moral is supplied."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-teaching.mjs",
+    "before": "sr_challenger|我说不出替你练的法。只是不愿再拿从前那张想好的你来打这一场。",
+    "after": "sr_challenger|以前看你换手，认得出几家。今日那两场，我等你换，等完了，也没等到。",
+    "reason": "Describe an observed change without pretending the third contest occurred."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-teaching.mjs",
+    "before": "n|六十一，返真。你没把这句话倒写成某一个答对便会开的门；五年的岛、十二日的病、两年的小馆、三次同一人的问手，都还在你真正走过的脚下。",
+    "after": "n|六十一，返真。你还站在原处，旧对手先走到水缸边，拿走了你本来伸手要取的那只碗。\nsr_oldfriend~amused|都这岁数了，你这回连什么时候进去的都要问我。",
+    "reason": "Keep the fixed achievement and end the scene on the two people rather than a warning about game mechanics."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-legacy.mjs",
+    "before": "n|门规写下：学我者，不得终于我。不是把从前教过的都抹去，是不许后来人永远只等你替他们向前走。",
+    "after": "n|你写下门规：学我者，不得终于我。卖鱼人看完，说得了，明早她那班先照新时辰来，别等匾漆干才开门。",
+    "reason": "Canonical rule followed by an ordinary commitment."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-legacy.mjs",
+    "before": "n|他没替你把早十年算成一定更强，酒又倒了一回。今晚的院子够坐两个人，没必要再摆一张未曾打过的总谱。",
+    "after": "n|旧友还在笑，笑得桌边酒洒了，伸袖去擦又被你拦住。你把盏往自己这边挪，他便把壶拿过去，没再让你先倒。",
+    "reason": "Replace the narrator declaring what the scene means with convivial action."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-legacy.mjs",
+    "before": "n|卷上写的意思，你如今不需把每一页认成神谕才听得进：地图尽头不是路尽头，后来人当走自己的。\ny|祖师，我没丢人。",
+    "after": "n|其中一页写着：不是没有路，只是我站在自己的地图尽头。纸角已经残了，下一行还辨得出几个字：走自己的。\ny|祖师，我没给你丢人。",
+    "reason": "Let the uncertain manuscript speak in its actual canonical words; retain the private emotional address."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-legacy.mjs",
+    "before": "n|他取一张旁注，先记转交来路，再把仍不知的一处留空。那几十页终于不必靠多长出一个活了几百年的陆玄都才显得珍贵。",
+    "after": "n|他取一张旁注，记下转交来路。写到成卷年月，笔尖停住，抬头看你；你摇头，他便把那一格空下。",
+    "reason": "Represent uncertainty as a practical unanswered question, without discussing an invented impossible cameo."
+  },
+  {
+    "round": 2,
+    "purpose": "character-voice-and-visible-action",
+    "file": "story/sea-legacy.mjs",
+    "before": "n|你一生一百二十余年，走到这里，仍没替后来人把所有海问完。陆玄都在旧祖像里，你在今日这间院里；两张图隔着两百余年，终于不是谁必须活到谁面前的一场重逢。",
+    "after": "n|你这一生一百二十余年。后来这间院里，学生还记得你合卷时手指压在残页上，起身却又忘了带走拐杖，走到门边才叫人递来。",
+    "reason": "Let the last scene hold a specific human memory; do not stage a meeting across centuries."
+  },
+  {
+    "round": 3,
+    "purpose": "alternate-routes-and-delayed-consequences",
+    "file": "story/sea-crossing.mjs",
+    "before": "把缆交给阿汀掌住，自己拦人，先用一个两边都懂的停手势说清。",
+    "after": "把缆交给阿汀，自己去拦推人的手。",
+    "reason": "Keep the crisis choice short; establish longer cooperation in the aftermath rather than talking over an active fight."
+  },
+  {
+    "round": 3,
+    "purpose": "alternate-routes-and-delayed-consequences",
+    "file": "story/sea-crossing.mjs",
+    "before": "先把缆扣在自己认得的桩上，再拦推人的手；动作慢一息，船位自己负责。",
+    "after": "先把缆扣到熟悉的桩上，再拦推人的手。",
+    "reason": "Make the cautious alternative a practical allocation, not a moral deficiency."
+  },
+  {
+    "round": 3,
+    "purpose": "alternate-routes-and-delayed-consequences",
+    "file": "story/sea-crossing.mjs",
+    "before": " choose('five_years',[",
+    "after": " iff('sr_line_shared',`y|往后转船的箱单也托你点。我接岸上的人，不替你先点收。\nsr_boatman~intent|那今日先同我对一遍。你每只箱上那两个记号，我可猜不来。\nn|你挪出一下午，同他逐只验清。原想当日再去的武馆，只好先托人递一句改日拜访。`,`y|往后行李、路钱还是我收。船位托你，你要开船，不用等我点箱。\nsr_boatman|好。到了港，我报哪家脚夫还在。你自己接，别又只顾着问武馆。\nn|阿汀先去交船钱。你收好箱单，武馆的人还在门外等，今日的拜访来得及。`);\n choose('five_years',[",
+    "reason": "Explicitly agree the continuing division of work. Shared help costs an afternoon now; self-managed goods keep time now and cost money during illness later."
+  },
+  {
+    "round": 3,
+    "purpose": "alternate-routes-and-delayed-consequences",
+    "file": "story/sea-asking.mjs",
+    "before": " choose('ninety_seven',[",
+    "after": " iff('sr_local_practice',`n|这几年你在馆里改过的步，被他拆开还给你。熟悉的起脚，后半寸却被封住；你往侧边找，剑柄又要滑。\nsr_elder~intent|你在阁里练过这一步。再试，别照我的身子落脚。`,`n|你随身的纸上记着几处旧录剑路。大长老等你拾剑，把纸压在石沿，叫你在落点旁再画自己刚才那只脚。\nsr_elder~intent|前人的脚到了。你自己的，还差这里。`);\n choose('ninety_seven',[",
+    "reason": "Pay the five-year local-practice versus record-seeking decision with different concrete feedback, preserving both fixed defeats."
+  },
+  {
+    "round": 3,
+    "purpose": "alternate-routes-and-delayed-consequences",
+    "file": "story/sea-asking.mjs",
+    "before": "n|阿汀五年前同你接过那条缆，后来几次转船也都分清谁接什么。病时他把剩下物件和路钱交到店里，自己照开船。你少请一趟脚夫，醒来知道人和东西各在哪里。",
+    "after": "n|五年前那一下午对过的箱单，后来转船一直这样分。病时阿汀照单把物件和路钱交到店里，自己照开船。你少请一趟脚夫；醒来时，箱单折在药碗旁，末一只已由店家画了点。",
+    "reason": "The five-year payoff follows an explicit continuing arrangement and retains the earlier time cost."
+  },
+  {
+    "round": 3,
+    "purpose": "alternate-routes-and-delayed-consequences",
+    "file": "story/sea-asking.mjs",
+    "before": "n|你一向把物与路钱都留自己手里，到病得抬不起来，才临时请店家接。阿汀要先顾本船，另请脚夫搬物、候一宿的费用得从你的行资里出。他仍帮你找好住处，你也终于把下一次怎样接说清。",
+    "after": "n|按五年前说的，物件与路钱一直由你点收。如今站不起来，临时请店家接；阿汀得开本船，另请脚夫搬物、候一宿的费用从你行资里出。他仍帮你找好住处，把脚夫的姓名也留在箱单上。",
+    "reason": "Do not turn a single careful knot into a lifelong personality flaw; maintain companionship and a legitimate extra cost."
+  },
+  {
+    "round": 3,
+    "purpose": "alternate-routes-and-delayed-consequences",
+    "file": "story/sea-teaching.mjs",
+    "before": " iff('sr_teaching_daily',`n|卖鱼人照着自己湿地收脚",
+    "after": " stage('sr_school','sr_carpenter,sr_seller');\n iff('sr_teaching_daily',`n|卖鱼人照着自己湿地收脚",
+    "reason": "Actually return the stage and cast to the school before showing the changed teaching duties."
+  },
+  {
+    "round": 3,
+    "purpose": "alternate-routes-and-delayed-consequences",
+    "file": "story/sea-teaching.mjs",
+    "before": " go('sixty_one');",
+    "after": " iff('sr_class_return',`sr_seller~intent|门边的归期我没擦。你这一回倒早了一晚。\nn|你没接会散后再问一场的邀请，赶上这班课。她把旧日期抹去，等你写下一次，才肯让开门边。`,`sr_carpenter~intent|各人的纸都在这里。师父先看，别忙着出下一题。\nn|十二张纸摊开，有两张把同一处都练反了。你收起会场带回的新谱，先蹲下来，请那两人把错的一步走给你看。`);\n go('sixty_one');",
+    "reason": "Call back the promised return date or the individually assigned work with distinct actions, not a changed slogan."
+  },
+  {
+    "round": 3,
+    "purpose": "alternate-routes-and-delayed-consequences",
+    "file": "story/sea-teaching.mjs",
+    "before": " choose('own_hand',[",
+    "after": " iff('sr_loss_question',`n|当年在蓬莱，你为免剑脱手往后退半掌。如今空着的手收回来，那半掌已在身侧；旧对手贴进来，你没再往脚后找。`,`n|当年在蓬莱，你丢开剑重走一遍，才看清肩先挡了转身。如今对方又压这一侧，你肩头未动，脚已在他能跟来的地方落稳。`);\n choose('own_hand',[",
+    "reason": "Recall the disarm experiment at the later physical breakthrough while keeping the age and fixed result identical."
+  },
+  {
+    "round": 3,
+    "purpose": "alternate-routes-and-delayed-consequences",
+    "file": "story/sea-legacy.mjs",
+    "before": "n|你这一生一百二十余年。后来这间院里，学生还记得你合卷时手指压在残页上，起身却又忘了带走拐杖，走到门边才叫人递来。",
+    "after": "n|你合上残卷，指尖还压着纸角。院外有人来，你先问他带了什么，后来弟子却说那人是来请你看课的。你才把卷交给他，起身往门外走。",
+    "reason": "Re-reading round two exposed a premature retrospective before living dialogue; keep the protagonist alive here and reserve lifespan for the actual posthumous knot."
+  },
+  {
+    "round": 3,
+    "purpose": "alternate-routes-and-delayed-consequences",
+    "file": "story/sea-legacy.mjs",
+    "before": "n|罗天海身后，第二代宗主入化很深，却未返真；第三代再出返真。",
+    "after": "n|罗天海一生一百二十余年。他身后，第二代宗主入化很深，却未返真；第三代再出返真。",
+    "reason": "Put the canonical lifespan at the actual posthumous transition."
+  },
+  {
+    "round": 3,
+    "purpose": "alternate-routes-and-delayed-consequences",
+    "file": "story/sea-legacy.mjs",
+    "before": " w.out.push('{\\n- sr_legacy == 1:');",
+    "after": " iff('sr_pages_plain',`n|残卷前留着那张成卷年月未填的旁注。后来借卷的人问过那一格，门里仍答不知道；抄本就连空格和转交来路一同抄去。`,`n|残卷与新路记同架。有人寻最新的一条航路，先抽走了后添的纸；要问祖师的旧路，还得回来翻那几十页上写着据说的来历。`);\n w.out.push('{\\n- sr_legacy == 1:');",
+    "reason": "The late document-handling choice changes what later readers do, without resolving uncertain authorship or altering the second/third generation history."
+  },
+  {
+    "round": 3,
+    "purpose": "complete-route-reread-correction",
+    "file": "story/sea-crossing.mjs",
+    "before": "\nn|几年后，天下第一失踪，无尸、无告别，连近人也不知去处。总谱等两次重修才撤名，旧录只留下陆玄都的名字，后面两个字：失踪。`);",
+    "after": "`);",
+    "reason": "Full-route reading found the disappearance retrospectively told before an immediate departure action; move it after both actions."
+  },
+  {
+    "round": 3,
+    "purpose": "complete-route-reread-correction",
+    "file": "story/sea-crossing.mjs",
+    "before": "part('seven_years','sr_oldshore','',`n|陆玄都先到蓬莱",
+    "after": "part('seven_years','sr_oldshore','',`n|几年后，天下第一失踪，无尸、无告别，连近人也不知去处。总谱等两次重修才撤名，旧录只留下陆玄都的名字，后面两个字：失踪。\nn|陆玄都先到蓬莱",
+    "reason": "Both routes now depart, then receive the historical disappearance and seven-year account, before the century switch."
+  },
+  {
+    "round": 3,
+    "purpose": "complete-route-reread-correction",
+    "file": "story/sea-crossing.mjs",
+    "before": "n|六十前后，你登少林住十一日",
+    "after": "n|这十余年里，六十前后你登少林住十一日",
+    "reason": "Clarify that the age-sixty visits fall within the preceding aggregate decade, rather than after it."
+  },
+  {
+    "round": 3,
+    "purpose": "complete-route-reread-correction",
+    "file": "story/sea-asking.mjs",
+    "before": "n|这几年你在馆里改过的步，被他拆开还给你。熟悉的起脚，后半寸却被封住；你往侧边找，剑柄又要滑。",
+    "after": "n|你想起方才那一下：这几年在馆里改过的步，被他拆开还给你。熟悉的起脚，后半寸却被封住；你往侧边找，剑柄就滑了。",
+    "reason": "The sword is still on the ground at this moment; describe the preceding disarm, not an impossible second slipping grip."
+  },
+  {
+    "round": 3,
+    "purpose": "complete-route-reread-correction",
+    "file": "story/sea-asking.mjs",
+    "before": "n|你随身的纸上记着几处旧录剑路。大长老等你拾剑，把纸压在石沿，叫你在落点旁再画自己刚才那只脚。",
+    "after": "n|你随身的纸上记着几处旧录剑路。大长老撤开剑尖，让你把纸压在石沿，在旧落点旁比一比自己刚才站的地方。",
+    "reason": "Withdraw the blocking sword before the next chosen experiment; do not force a pickup before the empty-hand option."
+  },
+  {
+    "round": 3,
+    "purpose": "complete-route-reread-correction",
+    "file": "story/sea-asking.mjs",
+    "before": "y|我先前没闻见。\nsr_innkeeper|鼻子也叫你逞强去了？喝完把碗放这里。我得给外头那桌上菜。",
+    "after": "y|我以为凉了。\nsr_innkeeper|才从锅里舀的，哪里就凉。喝完把碗放这里，我得给外头那桌上菜。",
+    "reason": "Full-route reading caught an unconvincing smell/temperature response; keep an ordinary exchange about the soup."
+  },
+  {
+    "round": 3,
+    "purpose": "complete-route-reread-correction",
+    "file": "story/sea-teaching.mjs",
+    "before": "n|离开太极后两年，江南一间小武馆，十二名普通弟子。站、走、拳、刀。",
+    "after": "n|这一留便是两年。江南小馆，十二名普通弟子，站、走、拳、刀。",
+    "reason": "Describe the two-year teaching interval after the initial lesson, rather than placing another first lesson two years later."
+  }
+]

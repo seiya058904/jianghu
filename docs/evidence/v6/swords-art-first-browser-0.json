@@ -1,0 +1,31 @@
+{
+  "actualBrowserInputs": true,
+  "externalHuman": false,
+  "beats": 221,
+  "choices": 24,
+  "ending": "ss_mountain_lesson",
+  "scenes": [
+    "ss_ridge",
+    "ss_mountain",
+    "ss_hall",
+    "ss_ancestral",
+    "ss_cottage",
+    "ss_lateshen",
+    "ss_founding",
+    "ss_tea",
+    "ss_duel",
+    "ss_librain",
+    "ss_library",
+    "ss_corridor",
+    "ss_fire",
+    "ss_afterfire",
+    "ss_cart",
+    "ss_newwork",
+    "ss_mountainwork",
+    "ss_thirtyyears",
+    "ss_twoschools",
+    "ss_guiboard",
+    "ss_afterward"
+  ],
+  "errors": []
+}

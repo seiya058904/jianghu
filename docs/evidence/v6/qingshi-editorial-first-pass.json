@@ -1,0 +1,112 @@
+{
+  "status": "FIRST_FOCUSED_PASS_UNPUBLISHED_NOT_THREE_ROUNDS",
+  "baseline": "7106942",
+  "canonAnchors": [
+    16554,
+    16558,
+    16564,
+    16566,
+    16572,
+    19144,
+    19146
+  ],
+  "frozen": {
+    "story/qingshi-author.mjs": "9c2cada6c2ab28446137bf14e861e93832532ece32eb9d9d0a424549bea1f9f4",
+    "story/qingshi-youth.mjs": "dea74dc38eca045253d146a3bc67a55e39bf75c732c3c08f46c5384c8e1ec714",
+    "story/qingshi-career.mjs": "6d865b12ada2a3f738422d336c2206fd9277f48ae9d05227c2c2a5e36cba2ce7",
+    "story/qingshi-last.mjs": "320abec4730ee0e852218175c002651107e1c5ce4056a0f14ba6fd0f9c5e76d6",
+    "story/qingshi.ink": "f36a9152b6bcdc1cefbf59054e972c3540901c8439bd0e4e4f7f4c4736a447d0",
+    "src/generated/qingshi.json": "61000c248de1bd7839f783e3dd5ee26bc05b71fead533e3231ebe6f3bc2e4bfa",
+    "宋世江湖.md": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393"
+  },
+  "changes": [
+    {
+      "id": "Q01",
+      "stage": "FIRST_CANON_AND_CAUSALITY_PASS_NOT_FULL_THREE_ROUNDS",
+      "file": "qingshi-youth.mjs",
+      "reason": "原典16558韩小七没有亲人，少年约信不可写给不存在的家属。",
+      "before": "答应真到了京城，给他家里写一封有街道和人事的信。",
+      "after": "答应真到了京城，寄一封有街道和人事的信回青石，让他能找到。"
+    },
+    {
+      "id": "Q02",
+      "stage": "FIRST_CANON_AND_CAUSALITY_PASS_NOT_FULL_THREE_ROUNDS",
+      "file": "qingshi-youth.mjs",
+      "reason": "约信应说投送到镇上熟人处，不造家庭。",
+      "before": "qs_han~amused|我家里若看不懂，就等你回来亲口念。",
+      "after": "qs_han~amused|留在青石我常住的店里。你回来，得亲口念，别说写过就算。"
+    },
+    {
+      "id": "Q03",
+      "stage": "FIRST_CANON_AND_CAUSALITY_PASS_NOT_FULL_THREE_ROUNDS",
+      "file": "qingshi-career.mjs",
+      "reason": "原典16572问丈夫最后怕不怕，不是问许自己。",
+      "before": "n|赵大春妻子问你那时怕不怕。你先答不怕，她看着你，等了很久。那句不怕里，竟没有一件自己真看明白的事。",
+      "after": "n|赵大春妻子问他最后怕不怕。你先答不怕，她看着你，等了很久。你其实没看清他最后那几息，手抓着被角，不知道该不该再说。"
+    },
+    {
+      "id": "Q04",
+      "stage": "FIRST_CANON_AND_CAUSALITY_PASS_NOT_FULL_THREE_ROUNDS",
+      "file": "qingshi-career.mjs",
+      "reason": "纠正谎话选项回应妻子的问题，不替赵最后感受定论。",
+      "before": "y|我没看清。说不怕，是我连该怕什么也没明白。",
+      "after": "y|我没看清他最后那几息。那句不怕，是我替他说的。"
+    },
+    {
+      "id": "Q05",
+      "stage": "FIRST_CANON_AND_CAUSALITY_PASS_NOT_FULL_THREE_ROUNDS",
+      "file": "qingshi-career.mjs",
+      "reason": "原典16554–16590宋剑入棺/韩无亲人，19144–19146陈刀一直留着；不能都写为交给四户的物品。",
+      "before": "n|四座新坟。陈虎的刀捡回来了，你擦去泥，没动刀柄旧皮。宋礼的剑、韩小七的旧鞋、赵大春带米的绳结，各有要送的人家。",
+      "after": "n|四座新坟。陈虎的刀捡回来了，你擦去泥，留在自己箱里。宋礼父亲抱过半日的剑已放入棺；韩小七没有亲人，旧鞋随他安葬。赵大春带米的绳结另包着，要送回他妻子手里。"
+    },
+    {
+      "id": "Q06",
+      "stage": "FIRST_CANON_AND_CAUSALITY_PASS_NOT_FULL_THREE_ROUNDS",
+      "file": "qingshi-career.mjs",
+      "reason": "去除刀既留己又按四件交还的矛盾。",
+      "before": "n|你把刀装进箱。很久以后它还随你走，眼下先要把四件物事交到人手里。",
+      "after": "n|刀留在箱底。眼下要交还的是另拢好的衣物和消息，不能只派人说一声都葬好了。"
+    },
+    {
+      "id": "Q07",
+      "stage": "FIRST_CANON_AND_CAUSALITY_PASS_NOT_FULL_THREE_ROUNDS",
+      "file": "qingshi-career.mjs",
+      "reason": "不虚构韩家是第四户待交还家庭。",
+      "before": "逐家亲自交还，肯听他们问自己答不出的事。",
+      "after": "亲自交还剩下的物件，肯听仍在的人问自己答不出的事。"
+    },
+    {
+      "id": "Q08",
+      "stage": "FIRST_CANON_AND_CAUSALITY_PASS_NOT_FULL_THREE_ROUNDS",
+      "file": "qingshi-career.mjs",
+      "reason": "四户计数与韩无亲人不符，只写实际该去的门。",
+      "before": "n|四户走完，天已黑。你把公门报到的时辰改到次晨。",
+      "after": "n|几处该去的门都走过，天已黑。你把公门报到的时辰改到次晨。"
+    },
+    {
+      "id": "Q09",
+      "stage": "FIRST_CANON_AND_CAUSALITY_PASS_NOT_FULL_THREE_ROUNDS",
+      "file": "qingshi-career.mjs",
+      "reason": "64岁信件的收件地址不能是虚构韩家。",
+      "before": "n|你给韩小七家写信，写城门里的卖饼人如何找零、押犯时借哪处水。写到京城二字，才发现再没人能坐在墙上催你别只写到了。\ny|我到了。信给你家里，回来还念。\nn|封面不是一份官样履历。",
+      "after": "n|你给青石镇那间旧店写信，托仍认得你的人存着，写城门里的卖饼人如何找零、押犯时借哪处水。写到京城二字，才发现再没人能坐在墙上催你别只写到了。\ny|我到了。回青石时，我拿着信去坟前念。\nn|封面写着转存的去处，信里没有把韩小七写成还在等回信的人。"
+    },
+    {
+      "id": "Q10",
+      "stage": "FIRST_CANON_AND_CAUSALITY_PASS_NOT_FULL_THREE_ROUNDS",
+      "file": "qingshi-last.mjs",
+      "reason": "送灵接信者不是凭空出现的韩后裔，两类约定仍各自回响。",
+      "before": "n|送灵的人还带着一封旧信，写京城街道与卖饼的人。韩家后辈翻到那句到了，旁边果然没有只剩这两个字。",
+      "after": "n|送灵的人还带着一封存过多年的旧信，写京城街道与卖饼的人。青石来接灵的年轻人翻到那句到了，旁边果然没有只剩这两个字。"
+    },
+    {
+      "id": "Q11",
+      "stage": "FIRST_CANON_AND_CAUSALITY_PASS_NOT_FULL_THREE_ROUNDS",
+      "file": "qingshi-last.mjs",
+      "reason": "另一信件分支也不可保留虚构韩家后辈。",
+      "before": "n|送灵每过一站，阿满都让人知道回程落脚处。到了青石，韩家后辈说，跑得再远，也终于有人知道去哪里接。",
+      "after": "n|送灵每过一站，阿满都让人知道回程落脚处。到了青石，接灵的人照着那份去处来等，不必再向每一辆过路的车问是不是许公回来。"
+    }
+  ]
+}

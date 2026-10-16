@@ -1,0 +1,14 @@
+{
+  "status": "ART_EDITION_NOT_FINAL",
+  "beats": 299,
+  "decisions": 20,
+  "options": 40,
+  "sampledPaths": 512,
+  "exhaustive": false,
+  "identityImages": 4,
+  "stateVariants": 3,
+  "storyCGs": [
+    "oldPillars"
+  ],
+  "limits": "Eight raster files total; locking close-up reuses wounded Gui file, not another image. No extra gameplay words or new rank/death outcomes. Not three mood states per character, no full three-round literary acceptance."
+}

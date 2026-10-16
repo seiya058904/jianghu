@@ -1,0 +1,23 @@
+{
+  "status": "DRAFT_NOT_FINAL",
+  "sourceBeats": 236,
+  "visited": 236,
+  "speakingCast": [
+    "qw_gu",
+    "qw_zhao",
+    "qw_xue",
+    "qw_chen",
+    "qw_lu",
+    "qw_shi",
+    "qw_zhou",
+    "qw_wei",
+    "qw_pan",
+    "qw_fei",
+    "qw_sun"
+  ],
+  "decisionPoints": 18,
+  "sampledPaths": 168,
+  "exhaustive": false,
+  "longestPassiveGap": 10,
+  "limits": "Pending browser age validation, art completion and three editorial rounds."
+}

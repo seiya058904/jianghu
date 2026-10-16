@@ -1,0 +1,26 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "file": "public/art/v6/cg-rigging.webp",
+      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-b0241a25-9bd0-47b1-adc4-6b356eb9cb3c.png",
+      "prompt": "Use case: illustration-story. Asset type: one reusable landscape still-life close-up for the grounded Chinese historical wuxia visual novel Jianghu. Use the supplied boat image as reference ONLY for worn timber, hemp rope and restrained painterly materials. Show an ordinary hemp rope lying in a loose open coil beside a folded piece of plain unmarked sailcloth on a weathered flat timber working surface. Medium-close eye-level downward view, tactile rope fibres and softened cloth folds. The surface could be a boat's working board or a harbour practice bench; frame out all identifiable buildings, shoreline, mast, rail, water and geography. Neutral diffused daylight, muted warm timber, oatmeal canvas and brown rope, finely painted naturalistic ink-and-watercolour period-game art. The main rope/cloth shapes sit in the central upper half, bottom30% quiet planks for external dialogue. NO people, hands, needle, weapon, tools performing an action, labels, writing, emblems, numbers, magic, injuries, blood, storm, burning, wreckage, dramatic knot or event-specific arrangement. No rope tied to anything; do not imply a vessel is currently secured or sinking. Not an instructional knot diagram, advertising image or UI. Full opaque1536x1024 illustration. It should remain usable for ordinary seamanship learning, rope handover, sail work, packing, waiting and later plot changes, without denoting a named rescue, victory or ending.",
+      "references": [
+        "public/art/v6/dongting-deck.webp"
+      ],
+      "processing": "WebP format conversion only; original PNG retained.",
+      "bytes": 389900,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "f0bfee0da20c362bd40f7dc10887cf5ea65f905e6457a8ece411c23d4603d1c6"
+    }
+  ],
+  "frozen": {
+    "story/sea-before-rigging.ink": "24f74d8bf0a5858bb40472f8e01334797cc926e988efc5c01dc991d068e153dd",
+    "src/generated/sea-before-rigging.json": "4061e07b8c3865937b8b83e6954c11d147f7faba237fcadad2c80d0ea7066dbd",
+    "story/sea-tide-before-rigging.ink": "e0e05e393b8203792c3a819021f873d862748ec18df4c3148129ffba93216ad6",
+    "src/generated/sea-tide-before-rigging.json": "5eb442173277b4b85fc540b8805013d2b8c7ebfa549556122499c1dcd53a8471"
+  }
+}

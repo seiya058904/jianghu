@@ -1,0 +1,361 @@
+[WebServer] (node:25704) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 15 tests using 1 worker
+
+(node:39524) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\campaign-v6-ending-staging.spec.ts:10:1 › all eight old ending entrances migrate and the entire closing dialogue still plays in production (14.9s)
+  x   2 tests\campaign-v6-ending-staging.spec.ts:13:64 › old harbor final auto migrates, keeps raw slots and shows appropriate view at seven sizes (336ms)
+(node:48400) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   3 tests\campaign-v6-ending-staging.spec.ts:13:64 › old name final auto migrates, keeps raw slots and shows appropriate view at seven sizes (415ms)
+(node:28280) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   4 tests\campaign-v6-ending-staging.spec.ts:13:64 › old together5 final auto migrates, keeps raw slots and shows appropriate view at seven sizes (424ms)
+(node:48864) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   5 tests\campaign-v6-ending-staging.spec.ts:13:64 › old teacher final auto migrates, keeps raw slots and shows appropriate view at seven sizes (411ms)
+(node:46412) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   6 tests\campaign-v6-ending-staging.spec.ts:13:64 › old captain final auto migrates, keeps raw slots and shows appropriate view at seven sizes (386ms)
+(node:28008) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   7 tests\campaign-v6-ending-staging.spec.ts:13:64 › old apart final auto migrates, keeps raw slots and shows appropriate view at seven sizes (411ms)
+(node:27544) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   8 tests\campaign-v6-ending-staging.spec.ts:13:64 › old scar final auto migrates, keeps raw slots and shows appropriate view at seven sizes (411ms)
+(node:44924) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   9 tests\campaign-v6-ending-staging.spec.ts:13:64 › old lost final auto migrates, keeps raw slots and shows appropriate view at seven sizes (408ms)
+(node:50680) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 10 tests\campaign-v6-ending-staging.spec.ts:25:1 › frozen-source migration and new ending views continue offline at root and subpath (1.2s)
+  ok 11 tests\campaign-v6-storage.spec.ts:9:1 › all eight current main ending final sentences also restore as exact production text (1.7s)
+  ok 12 tests\campaign-v6-storage.spec.ts:12:1 › current main pending manual slot and exported file restore; frozen-v5 import cannot replace it (446ms)
+  ok 13 tests\campaign-v6-storage.spec.ts:17:1 › current main corrupt auto remains exportable and is backed up before restart (273ms)
+  ok 14 tests\campaign-v6-storage.spec.ts:20:1 › current main unvisited timber CG decodes offline and continues at root and subpath (931ms)
+  ok 15 tests\v6-compat.spec.ts:4:1 › frozen v5 entry resumes actual old pending choice on root and subpath (835ms)
+
+
+  1) tests\campaign-v6-ending-staging.spec.ts:13:64 › old harbor final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -37,8 +37,8 @@
+            "v6_yan": "neutral",
+            "v6_yu": "neutral",
+            "v6_zeng": "neutral",
+            "v6_zhaoli": "calm",
+          },
+    -     "scene": "v6_end_harbor",
+    +     "scene": "v6_dawn",
+        },
+      }
+
+      16 |  for(const [width,height] of [[360,800],[390,844],[412,915],[800,360],[1366,768],[1440,900],[1920,1080]]){
+      17 |   await page.setViewportSize({width,height});await page.goto('/tide-v6.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);await expect(page.locator('#dialogue-visible')).toHaveText(current.frame.text);await decoded(page);await expect(page.locator('.play-stage')).toHaveAttribute('data-cg',current.frame.stage.cg??'');
+    > 18 |   const actual=await page.evaluate(prefix=>JSON.parse(localStorage.getItem(prefix+'auto')!),prefix);expect(actual.commands).toEqual(current.commands);expect(actual.presentation).toEqual(JSON.parse(JSON.stringify(current.save().presentation)));expect(await page.evaluate(prefix=>['slot1','previous'].map(k=>localStorage.getItem(prefix+k)),prefix)).toEqual([raw,raw]);expect(await page.evaluate(({prefix,raw})=>Object.keys(localStorage).filter(k=>k.startsWith(prefix+'draft-')&&localStorage.getItem(k)===raw).length,{prefix,raw})).toBe(1);
+         |                                                                                                                                                                                   ^
+      19 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);for(const text of ['收好这一程','再试另一种回应','回到封面']){const box=await page.getByRole('button',{name:text,exact:true}).boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy()}
+      20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
+      21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:18:179
+
+    Error Context: test-results\campaign-v6-ending-staging-b6d8b-opriate-view-at-seven-sizes\error-context.md
+
+  2) tests\campaign-v6-ending-staging.spec.ts:13:64 › old name final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 2
+
+    @@ -5,10 +5,11 @@
+          "cast": Array [
+            "v6_rong",
+            "v6_xu",
+            "v6_su",
+          ],
+    +     "cg": "dawn",
+          "focus": null,
+          "moods": Object {
+            "v6_an": "calm",
+            "v6_aunt": "neutral",
+            "v6_bao": "uneasy",
+    @@ -36,8 +37,8 @@
+            "v6_yan": "neutral",
+            "v6_yu": "neutral",
+            "v6_zeng": "neutral",
+            "v6_zhaoli": "neutral",
+          },
+    -     "scene": "v6_end_name",
+    +     "scene": "v6_dawn",
+        },
+      }
+
+      16 |  for(const [width,height] of [[360,800],[390,844],[412,915],[800,360],[1366,768],[1440,900],[1920,1080]]){
+      17 |   await page.setViewportSize({width,height});await page.goto('/tide-v6.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);await expect(page.locator('#dialogue-visible')).toHaveText(current.frame.text);await decoded(page);await expect(page.locator('.play-stage')).toHaveAttribute('data-cg',current.frame.stage.cg??'');
+    > 18 |   const actual=await page.evaluate(prefix=>JSON.parse(localStorage.getItem(prefix+'auto')!),prefix);expect(actual.commands).toEqual(current.commands);expect(actual.presentation).toEqual(JSON.parse(JSON.stringify(current.save().presentation)));expect(await page.evaluate(prefix=>['slot1','previous'].map(k=>localStorage.getItem(prefix+k)),prefix)).toEqual([raw,raw]);expect(await page.evaluate(({prefix,raw})=>Object.keys(localStorage).filter(k=>k.startsWith(prefix+'draft-')&&localStorage.getItem(k)===raw).length,{prefix,raw})).toBe(1);
+         |                                                                                                                                                                                   ^
+      19 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);for(const text of ['收好这一程','再试另一种回应','回到封面']){const box=await page.getByRole('button',{name:text,exact:true}).boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy()}
+      20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
+      21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:18:179
+
+    Error Context: test-results\campaign-v6-ending-staging-a00aa-opriate-view-at-seven-sizes\error-context.md
+
+  3) tests\campaign-v6-ending-staging.spec.ts:13:64 › old together5 final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    @@ -3,11 +3,13 @@
+        "phase": "ending",
+        "stage": Object {
+          "cast": Array [
+            "v6_qiao",
+            "v6_pei",
+    +       "v6_zhaoli",
+          ],
+    +     "cg": "dawn",
+          "focus": null,
+          "moods": Object {
+            "v6_an": "calm",
+            "v6_aunt": "neutral",
+            "v6_bao": "uneasy",
+    @@ -35,8 +37,8 @@
+            "v6_yan": "neutral",
+            "v6_yu": "neutral",
+            "v6_zeng": "neutral",
+            "v6_zhaoli": "neutral",
+          },
+    -     "scene": "v6_end_together5",
+    +     "scene": "v6_dawn",
+        },
+      }
+
+      16 |  for(const [width,height] of [[360,800],[390,844],[412,915],[800,360],[1366,768],[1440,900],[1920,1080]]){
+      17 |   await page.setViewportSize({width,height});await page.goto('/tide-v6.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);await expect(page.locator('#dialogue-visible')).toHaveText(current.frame.text);await decoded(page);await expect(page.locator('.play-stage')).toHaveAttribute('data-cg',current.frame.stage.cg??'');
+    > 18 |   const actual=await page.evaluate(prefix=>JSON.parse(localStorage.getItem(prefix+'auto')!),prefix);expect(actual.commands).toEqual(current.commands);expect(actual.presentation).toEqual(JSON.parse(JSON.stringify(current.save().presentation)));expect(await page.evaluate(prefix=>['slot1','previous'].map(k=>localStorage.getItem(prefix+k)),prefix)).toEqual([raw,raw]);expect(await page.evaluate(({prefix,raw})=>Object.keys(localStorage).filter(k=>k.startsWith(prefix+'draft-')&&localStorage.getItem(k)===raw).length,{prefix,raw})).toBe(1);
+         |                                                                                                                                                                                   ^
+      19 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);for(const text of ['收好这一程','再试另一种回应','回到封面']){const box=await page.getByRole('button',{name:text,exact:true}).boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy()}
+      20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
+      21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:18:179
+
+    Error Context: test-results\campaign-v6-ending-staging-326a1-opriate-view-at-seven-sizes\error-context.md
+
+  4) tests\campaign-v6-ending-staging.spec.ts:13:64 › old teacher final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 2
+
+    @@ -5,10 +5,11 @@
+          "cast": Array [
+            "v6_han",
+            "v6_qiao",
+            "v6_bao",
+          ],
+    +     "cg": "dawn",
+          "focus": null,
+          "moods": Object {
+            "v6_an": "calm",
+            "v6_aunt": "neutral",
+            "v6_bao": "uneasy",
+    @@ -36,8 +37,8 @@
+            "v6_yan": "neutral",
+            "v6_yu": "neutral",
+            "v6_zeng": "neutral",
+            "v6_zhaoli": "calm",
+          },
+    -     "scene": "v6_end_teacher",
+    +     "scene": "v6_dawn",
+        },
+      }
+
+      16 |  for(const [width,height] of [[360,800],[390,844],[412,915],[800,360],[1366,768],[1440,900],[1920,1080]]){
+      17 |   await page.setViewportSize({width,height});await page.goto('/tide-v6.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);await expect(page.locator('#dialogue-visible')).toHaveText(current.frame.text);await decoded(page);await expect(page.locator('.play-stage')).toHaveAttribute('data-cg',current.frame.stage.cg??'');
+    > 18 |   const actual=await page.evaluate(prefix=>JSON.parse(localStorage.getItem(prefix+'auto')!),prefix);expect(actual.commands).toEqual(current.commands);expect(actual.presentation).toEqual(JSON.parse(JSON.stringify(current.save().presentation)));expect(await page.evaluate(prefix=>['slot1','previous'].map(k=>localStorage.getItem(prefix+k)),prefix)).toEqual([raw,raw]);expect(await page.evaluate(({prefix,raw})=>Object.keys(localStorage).filter(k=>k.startsWith(prefix+'draft-')&&localStorage.getItem(k)===raw).length,{prefix,raw})).toBe(1);
+         |                                                                                                                                                                                   ^
+      19 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);for(const text of ['收好这一程','再试另一种回应','回到封面']){const box=await page.getByRole('button',{name:text,exact:true}).boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy()}
+      20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
+      21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:18:179
+
+    Error Context: test-results\campaign-v6-ending-staging-76f07-opriate-view-at-seven-sizes\error-context.md
+
+  5) tests\campaign-v6-ending-staging.spec.ts:13:64 › old captain final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 2
+
+    @@ -5,10 +5,11 @@
+          "cast": Array [
+            "v6_zhaoli",
+            "v6_du",
+            "v6_cheng",
+          ],
+    +     "cg": "dawn",
+          "focus": null,
+          "moods": Object {
+            "v6_an": "calm",
+            "v6_aunt": "neutral",
+            "v6_bao": "uneasy",
+    @@ -33,8 +34,8 @@
+            "v6_tian": "neutral",
+            "v6_xu": "calm",
+            "v6_yan": "neutral",
+            "v6_zhaoli": "calm",
+          },
+    -     "scene": "v6_end_captain",
+    +     "scene": "v6_dawn",
+        },
+      }
+
+      16 |  for(const [width,height] of [[360,800],[390,844],[412,915],[800,360],[1366,768],[1440,900],[1920,1080]]){
+      17 |   await page.setViewportSize({width,height});await page.goto('/tide-v6.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);await expect(page.locator('#dialogue-visible')).toHaveText(current.frame.text);await decoded(page);await expect(page.locator('.play-stage')).toHaveAttribute('data-cg',current.frame.stage.cg??'');
+    > 18 |   const actual=await page.evaluate(prefix=>JSON.parse(localStorage.getItem(prefix+'auto')!),prefix);expect(actual.commands).toEqual(current.commands);expect(actual.presentation).toEqual(JSON.parse(JSON.stringify(current.save().presentation)));expect(await page.evaluate(prefix=>['slot1','previous'].map(k=>localStorage.getItem(prefix+k)),prefix)).toEqual([raw,raw]);expect(await page.evaluate(({prefix,raw})=>Object.keys(localStorage).filter(k=>k.startsWith(prefix+'draft-')&&localStorage.getItem(k)===raw).length,{prefix,raw})).toBe(1);
+         |                                                                                                                                                                                   ^
+      19 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);for(const text of ['收好这一程','再试另一种回应','回到封面']){const box=await page.getByRole('button',{name:text,exact:true}).boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy()}
+      20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
+      21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:18:179
+
+    Error Context: test-results\campaign-v6-ending-staging-79847-opriate-view-at-seven-sizes\error-context.md
+
+  6) tests\campaign-v6-ending-staging.spec.ts:13:64 › old apart final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 2
+    + Received  + 7
+
+    @@ -1,10 +1,15 @@
+      Object {
+        "beatId": "c_ending_apart_7",
+        "phase": "ending",
+        "stage": Object {
+    -     "cast": Array [],
+    +     "cast": Array [
+    +       "v6_su",
+    +       "v6_lu",
+    +       "v6_qiao",
+    +     ],
+    +     "cg": "dawn",
+          "focus": null,
+          "moods": Object {
+            "v6_an": "calm",
+            "v6_aunt": "neutral",
+            "v6_bao": "uneasy",
+    @@ -32,8 +37,8 @@
+            "v6_yan": "neutral",
+            "v6_yu": "neutral",
+            "v6_zeng": "neutral",
+            "v6_zhaoli": "calm",
+          },
+    -     "scene": "v6_end_apart",
+    +     "scene": "v6_dawn",
+        },
+      }
+
+      16 |  for(const [width,height] of [[360,800],[390,844],[412,915],[800,360],[1366,768],[1440,900],[1920,1080]]){
+      17 |   await page.setViewportSize({width,height});await page.goto('/tide-v6.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);await expect(page.locator('#dialogue-visible')).toHaveText(current.frame.text);await decoded(page);await expect(page.locator('.play-stage')).toHaveAttribute('data-cg',current.frame.stage.cg??'');
+    > 18 |   const actual=await page.evaluate(prefix=>JSON.parse(localStorage.getItem(prefix+'auto')!),prefix);expect(actual.commands).toEqual(current.commands);expect(actual.presentation).toEqual(JSON.parse(JSON.stringify(current.save().presentation)));expect(await page.evaluate(prefix=>['slot1','previous'].map(k=>localStorage.getItem(prefix+k)),prefix)).toEqual([raw,raw]);expect(await page.evaluate(({prefix,raw})=>Object.keys(localStorage).filter(k=>k.startsWith(prefix+'draft-')&&localStorage.getItem(k)===raw).length,{prefix,raw})).toBe(1);
+         |                                                                                                                                                                                   ^
+      19 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);for(const text of ['收好这一程','再试另一种回应','回到封面']){const box=await page.getByRole('button',{name:text,exact:true}).boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy()}
+      20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
+      21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:18:179
+
+    Error Context: test-results\campaign-v6-ending-staging-44a03-opriate-view-at-seven-sizes\error-context.md
+
+  7) tests\campaign-v6-ending-staging.spec.ts:13:64 › old scar final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -37,8 +37,8 @@
+            "v6_yan": "neutral",
+            "v6_yu": "neutral",
+            "v6_zeng": "neutral",
+            "v6_zhaoli": "neutral",
+          },
+    -     "scene": "v6_end_scar",
+    +     "scene": "v6_dawn",
+        },
+      }
+
+      16 |  for(const [width,height] of [[360,800],[390,844],[412,915],[800,360],[1366,768],[1440,900],[1920,1080]]){
+      17 |   await page.setViewportSize({width,height});await page.goto('/tide-v6.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);await expect(page.locator('#dialogue-visible')).toHaveText(current.frame.text);await decoded(page);await expect(page.locator('.play-stage')).toHaveAttribute('data-cg',current.frame.stage.cg??'');
+    > 18 |   const actual=await page.evaluate(prefix=>JSON.parse(localStorage.getItem(prefix+'auto')!),prefix);expect(actual.commands).toEqual(current.commands);expect(actual.presentation).toEqual(JSON.parse(JSON.stringify(current.save().presentation)));expect(await page.evaluate(prefix=>['slot1','previous'].map(k=>localStorage.getItem(prefix+k)),prefix)).toEqual([raw,raw]);expect(await page.evaluate(({prefix,raw})=>Object.keys(localStorage).filter(k=>k.startsWith(prefix+'draft-')&&localStorage.getItem(k)===raw).length,{prefix,raw})).toBe(1);
+         |                                                                                                                                                                                   ^
+      19 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);for(const text of ['收好这一程','再试另一种回应','回到封面']){const box=await page.getByRole('button',{name:text,exact:true}).boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy()}
+      20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
+      21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:18:179
+
+    Error Context: test-results\campaign-v6-ending-staging-f8737-opriate-view-at-seven-sizes\error-context.md
+
+  8) tests\campaign-v6-ending-staging.spec.ts:13:64 › old lost final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 2
+
+    @@ -5,10 +5,11 @@
+          "cast": Array [
+            "v6_zhaoli",
+            "v6_liu",
+            "v6_han",
+          ],
+    +     "cg": "quiet",
+          "focus": null,
+          "moods": Object {
+            "v6_an": "calm",
+            "v6_aunt": "neutral",
+            "v6_bao": "uneasy",
+    @@ -37,8 +38,8 @@
+            "v6_yan": "neutral",
+            "v6_yu": "neutral",
+            "v6_zeng": "neutral",
+            "v6_zhaoli": "neutral",
+          },
+    -     "scene": "v6_end_lost",
+    +     "scene": "v6_dawn",
+        },
+      }
+
+      16 |  for(const [width,height] of [[360,800],[390,844],[412,915],[800,360],[1366,768],[1440,900],[1920,1080]]){
+      17 |   await page.setViewportSize({width,height});await page.goto('/tide-v6.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);await expect(page.locator('#dialogue-visible')).toHaveText(current.frame.text);await decoded(page);await expect(page.locator('.play-stage')).toHaveAttribute('data-cg',current.frame.stage.cg??'');
+    > 18 |   const actual=await page.evaluate(prefix=>JSON.parse(localStorage.getItem(prefix+'auto')!),prefix);expect(actual.commands).toEqual(current.commands);expect(actual.presentation).toEqual(JSON.parse(JSON.stringify(current.save().presentation)));expect(await page.evaluate(prefix=>['slot1','previous'].map(k=>localStorage.getItem(prefix+k)),prefix)).toEqual([raw,raw]);expect(await page.evaluate(({prefix,raw})=>Object.keys(localStorage).filter(k=>k.startsWith(prefix+'draft-')&&localStorage.getItem(k)===raw).length,{prefix,raw})).toBe(1);
+         |                                                                                                                                                                                   ^
+      19 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);for(const text of ['收好这一程','再试另一种回应','回到封面']){const box=await page.getByRole('button',{name:text,exact:true}).boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy()}
+      20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
+      21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:18:179
+
+    Error Context: test-results\campaign-v6-ending-staging-b7f00-opriate-view-at-seven-sizes\error-context.md
+
+  8 failed
+    tests\campaign-v6-ending-staging.spec.ts:13:64 › old harbor final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+    tests\campaign-v6-ending-staging.spec.ts:13:64 › old name final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+    tests\campaign-v6-ending-staging.spec.ts:13:64 › old together5 final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+    tests\campaign-v6-ending-staging.spec.ts:13:64 › old teacher final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+    tests\campaign-v6-ending-staging.spec.ts:13:64 › old captain final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+    tests\campaign-v6-ending-staging.spec.ts:13:64 › old apart final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+    tests\campaign-v6-ending-staging.spec.ts:13:64 › old scar final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+    tests\campaign-v6-ending-staging.spec.ts:13:64 › old lost final auto migrates, keeps raw slots and shows appropriate view at seven sizes
+  7 passed (29.1s)

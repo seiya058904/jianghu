@@ -1,0 +1,13 @@
+{
+  "status":"VERIFIED_SUBSET_DEFINITION_NOT_FULL_CENSUS",
+  "purpose":"60 distinct named speaking people, excluding generic roles and avoiding archive/appearance aliases as extra people",
+  "people":[
+    ["江照鲤","v6_zhaoli","tide-v6"],["乔砚生","v6_qiao","tide-v6"],["包小满","v6_bao","tide-v6"],["汤二娘","v6_aunt","tide-v6"],["苏晚澄","v6_su","tide-v6"],["高秉","v6_gao","tide-v6"],["韩鹭石","v6_han","tide-v6"],["许竞川","v6_xu","tide-v6"],["何铆","v6_he","tide-v6"],["凌苇","v6_ling","tide-v6"],["陆汀舟","v6_lu","tide-v6"],["觉茂","v6_jue","tide-v6"],["安福","v6_an","tide-v6"],["容既白","v6_rong","tide-v6"],["裴雁秋","v6_pei","tide-v6"],["程阿笠","v6_cheng","tide-v6"],["范遇","v6_fan","tide-v6"],["明栓","v6_ming","tide-v6"],["余枫","v6_yu","tide-v6"],["曾补","v6_zeng","tide-v6"],["魏葭","v6_wei","tide-v6"],["任耕","v6_ren","tide-v6"],["邓苹","v6_deng","tide-v6"],["严平章","v6_yan","tide-v6"],["薄远","v6_bo","tide-v6"],["田雁","v6_tian","tide-v6"],["刘篙","v6_liu","tide-v6"],
+    ["慧明","kh_hui","kuhe"],["司马元正","kh_sima","kuhe"],["孟天枢","kh_meng","kuhe"],["无生客","kh2_wusheng","kuhe"],["空劫","kh2_kong","kuhe"],["司马玄极","kh2_xuan","kuhe"],["孟归藏","kh2_gui","kuhe"],
+    ["陈虎","qs_chen","qingshi"],["韩小七","qs_han","qingshi"],["冯老六","qs_feng","qingshi"],["宋礼","qs_song","qingshi"],["赵大春","qs_zhao","qingshi"],["马元魁","qs_ma","qingshi"],["杜百川","qs_du","qingshi"],["陆慎行","qs_lu","qingshi"],["孟长庚","qs_meng","qingshi"],["魏沉舟","qs_wei","qingshi"],["赵允和","qs_wang","qingshi"],["乌延海","qs_wu","qingshi"],["阿勒台","qs_ale","qingshi"],
+    ["许重山","lm_xu","longmen"],["罗天庆","lm_luo","longmen"],["贺景庭","lm_he","longmen"],["沈长庚","lm_shenchang","longmen"],["石惊川","lm_shi","longmen"],["清和道人","lm_qinghe","longmen"],["樊承业","lm_fan","longmen"],["广渡","lm_guang","longmen"],["章复生","lm_zhang_v2","longmen"],
+    ["沈照微","th_shen","taihua"],["霍停云","th_huo","taihua"],["明澄","th_ming","taihua"],["穆玄真","th_mu","taihua"]
+  ],
+  "knownAppearanceAliases":{"kh2_wusheng":["kh_wusheng"],"kh2_kong":["kh_kong"],"kh2_xuan":["kh_xuan"],"kh2_gui":["kh_gui"],"lm_zhang_v2":["lm_zhang"]},
+  "limits":["A positive lower bound, not a full deduplication of every speaking ID.","Roles such as 同门, 药师, 老镖师 and generic relatives are not promoted to named people.","Original compatible main-story people are not misrepresented as canonical biographies.","Nickname, monastic name and known alias identify a person; multiple portraits or ages never increase the count."]
+}

@@ -1,0 +1,6 @@
+
+Running 1 test using 1 worker
+
+  ok 1 tests\taihua.spec.ts:5:28 › Taihua complete actual browser path 2: independent saves, ending and reload (1.1m)
+
+  1 passed (1.1m)

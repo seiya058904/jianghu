@@ -1,0 +1,45 @@
+{
+  "combinations": 8,
+  "rows": [
+    {
+      "handoff": false,
+      "tax": false,
+      "late": "rl_ask_young_to_watch"
+    },
+    {
+      "handoff": false,
+      "tax": false,
+      "late": "rl_write_with_lu"
+    },
+    {
+      "handoff": false,
+      "tax": true,
+      "late": "rl_ask_young_to_watch"
+    },
+    {
+      "handoff": false,
+      "tax": true,
+      "late": "rl_write_with_lu"
+    },
+    {
+      "handoff": true,
+      "tax": false,
+      "late": "rl_ask_young_to_watch"
+    },
+    {
+      "handoff": true,
+      "tax": false,
+      "late": "rl_write_with_lu"
+    },
+    {
+      "handoff": true,
+      "tax": true,
+      "late": "rl_ask_young_to_watch"
+    },
+    {
+      "handoff": true,
+      "tax": true,
+      "late": "rl_write_with_lu"
+    }
+  ]
+}

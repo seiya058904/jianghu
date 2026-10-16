@@ -1,0 +1,18 @@
+[
+  {
+    "side": 0,
+    "different": [
+      "rl_fair_seat_3",
+      "rl_fair_seat_4",
+      "rl_fair_seat_5"
+    ]
+  },
+  {
+    "side": 1,
+    "different": [
+      "rl_fair_seat_3",
+      "rl_fair_seat_4",
+      "rl_fair_seat_5"
+    ]
+  }
+]

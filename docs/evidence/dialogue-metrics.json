@@ -1,0 +1,26 @@
+{
+  "together": {
+    "beats": 54,
+    "decisions": 8,
+    "firstDecisionAtBeat": 2,
+    "characters": 1295,
+    "averageBeatLength": 24,
+    "maxBeatLength": 37
+  },
+  "practice": {
+    "beats": 54,
+    "decisions": 8,
+    "firstDecisionAtBeat": 2,
+    "characters": 1353,
+    "averageBeatLength": 25.1,
+    "maxBeatLength": 47
+  },
+  "road": {
+    "beats": 54,
+    "decisions": 8,
+    "firstDecisionAtBeat": 2,
+    "characters": 1338,
+    "averageBeatLength": 24.8,
+    "maxBeatLength": 48
+  }
+}

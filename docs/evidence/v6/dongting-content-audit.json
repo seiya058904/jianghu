@@ -1,0 +1,22 @@
+{
+  "status": "DRAFT_NOT_FINAL",
+  "sourceBeats": 155,
+  "visited": 155,
+  "cast": [
+    "dt_liang",
+    "dt_zhao",
+    "dt_meng",
+    "dt_wang",
+    "dt_jiang",
+    "dt_han",
+    "dt_zhuo",
+    "dt_chen",
+    "dt_weihu",
+    "dt_weicang"
+  ],
+  "decisionPoints": 11,
+  "sampledPaths": 160,
+  "exhaustive": false,
+  "longestPassiveGap": 13,
+  "limits": "Pending dedicated art, entry, browser playthrough, and editorial rounds."
+}

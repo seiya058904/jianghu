@@ -1,0 +1,12 @@
+{
+  "sampledPaths": 64,
+  "monotonicAgeAppearance": true,
+  "files": [
+    "v6/rl-lu-early.webp",
+    "v6/rl-lu-mid-firm.webp",
+    "v6/rl-lu-mid-amused.webp",
+    "v6/rl-lu-mid.webp",
+    "v6/rl-lu-late.webp"
+  ],
+  "limits": "Existing sprite selection only, not complete identity/action art or rendered crop acceptance."
+}

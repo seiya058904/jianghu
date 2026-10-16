@@ -1,0 +1,125 @@
+
+> jianghu@1.0.0 test
+> npm run story:build && node --experimental-strip-types --test tests/runtime.test.ts tests/vn-runtime.test.ts tests/campaign.test.ts tests/v6-compat.test.ts tests/taihua.test.ts tests/campaign-v6.test.ts tests/longmen.test.ts tests/dongting.test.ts tests/twelfth.test.ts tests/kuhe.test.ts tests/qingshi.test.ts tests/two-swords.test.ts tests/seven-questions.test.ts tests/jade-thieves.test.ts tests/jade.test.ts tests/sea.test.ts
+
+
+> jianghu@1.0.0 story:build
+> node scripts/compile-story.mjs
+
+Authored 22 chapter files; 1006 unique source beats.
+Taihua authored: 309 beats
+V6 preview: 1325 source beats; three midroutes and independent after-scenes.
+Ink main: 16805 source characters; 0 warnings
+Dialogue metadata: { beats: 108, choices: 28, endings: 3 }
+Ink duel: 12041 source characters; 0 warnings
+Campaign metadata: { beats: 1006, choices: 135, endings: 8 }
+Ink campaign: 122888 source characters; 0 warnings
+Taihua metadata: { beats: 309, choices: 36, endings: 2 }
+Ink taihua: 38436 source characters; 0 warnings
+V6 preview metadata: { beats: 1325, choices: 182, endings: 8 }
+Ink campaign-v6: 186024 source characters; 0 warnings
+Longmen metadata: { beats: 271, choices: 42, endings: 2 }
+Ink longmen: 35436 source characters; 0 warnings
+Dongting metadata: { beats: 155, choices: 22, endings: 2 }
+Ink dongting: 21908 source characters; 0 warnings
+Twelfth metadata: { beats: 236, choices: 36, endings: 2 }
+Ink twelfth: 31623 source characters; 0 warnings
+Kuhe metadata: { beats: 299, choices: 40, endings: 2 }
+Ink kuhe: 39197 source characters; 0 warnings
+Qingshi metadata: { beats: 414, choices: 58, endings: 2 }
+Ink qingshi: 55817 source characters; 0 warnings
+Two Swords metadata: { beats: 327, choices: 50, endings: 2 }
+Ink two-swords: 45526 source characters; 0 warnings
+Seven Questions metadata: { beats: 376, choices: 62, endings: 2 }
+Ink seven-questions: 53950 source characters; 0 warnings
+Jade Thieves metadata: { beats: 265, choices: 43, endings: 2 }
+Ink jade-thieves: 36071 source characters; 0 warnings
+Jade metadata: { beats: 296, choices: 66, endings: 2 }
+Ink jade: 45796 source characters; 0 warnings
+Sea metadata: { beats: 228, choices: 46, endings: 2 }
+Ink sea: 34532 source characters; 0 warnings
+✔ v6 preview preserves eight reachable ending families while all three chapter-seven/nine/ten paths and independent after-scenes run (1818.3745ms)
+✔ v6 preview samples route variants without a dead end and reports genuinely unvisited source nodes (7433.4273ms)
+✔ five distinct canon incidents change later practical outcomes while holding the other choices fixed (182.2933ms)
+✔ early injuries accumulate across chapters: each single contribution can change a prepared rescue into the scar outcome (188.8293ms)
+✔ the promised extra month survives every ending family instead of disappearing when the player leaves the harbor (200.9208ms)
+✔ thirty manually reviewed main decisions retain exclusive later consequences, including ten delayed high-weight decisions (1474.8081ms)
+✔ eight distinct complete endings, both middle routes and genuine later callbacks (1451.0984ms)
+✔ choice, actor-entry, CG and ending snapshots replay exactly; wrong story/tampering rejected (4400.078ms)
+✔ seeded route variations terminate with legal stages; report measured source coverage (3528.9677ms)
+✔ Dongting two life outcomes retain the 106/79 bouts, 4–3 recusal and Chen’s independent later seat (195.2537ms)
+✔ Dongting early spare rope and rest materially change a later rescue injury (141.4451ms)
+✔ Dongting reaches every authored branch in a bounded sample; acting cast excludes merely mentioned elders (1601.5033ms)
+✔ Jade first volume has two complete viewpoints with fixed empty box, mutual rescues, Jiang death and genuine-object journey (225.238ms)
+✔ Jade each viewpoint keeps the other hidden order and identity until the temple, including knowledge descriptions (105.0992ms)
+✔ Jade one early solo/cooperative decision changes actual auction escape space and cost; informed deception requires a checked door (104.3921ms)
+✔ Jade counterfeit exposure changes a secondary person’s later injury and study delay, not Jiang’s canon death (85.5149ms)
+✔ Jade first volume sampled alternatives reach every authored beat and all three escape choices without long passive stretches (7403.448ms)
+✔ Jade full second-volume paths keep thirteen coins, nine actual store outcomes, fixed breakage and ordinary Lu career (247.07ms)
+✔ Jade single surface decision has an explicit three-day private cost and changes witnessed middle scenes (68.1341ms)
+✔ Jade seventh grain defence and ninth broken-object event remain different witnessed locations (32.8197ms)
+✔ Jade the early absent-family question changes reunion and winter-money cost in either later post (95.8031ms)
+✔ Jade personal notes have distinct private costs, and He ages only in the late scene (106.805ms)
+✔ Jade sampled branches cover all authored beats and options with bounded reading gaps (6511.7612ms)
+✔ Kuhe full two personal endings preserve the staged battle, deaths, injuries and seven-day aftermath (290.1687ms)
+✔ Kuhe paired early preparation changes later physical route and one-month work capacity, without rewriting canon (80.5204ms)
+✔ Kuhe trust and agreed work position echo in a different scene; rescue and pages yield concrete different lives (107.8382ms)
+✔ Kuhe sampled branches reach all authored nodes, two endings and stable visible identities (6937.7177ms)
+✔ Longmen two endings preserve fixed bouts, sourced recollection and the five-year jump (455.2269ms)
+✔ Longmen paired spectator duty changes what was witnessed; early overwork and lifting carries a later limit (71.7012ms)
+✔ Longmen sampled paths cover authored nodes without inventing a hidden conversation for the apprentice (1993.0712ms)
+✔ Longmen playable Qinghe recollection explicitly switches age and viewpoint while all three cane results stay fixed (29.1942ms)
+✔ Longmen early school and outsider paths have different partners and later work or trust costs from one changed input (50.2396ms)
+✔ Qingshi complete canonical life and two personal aftermaths retain four deaths, three teachers, lifespan and defence (340.4586ms)
+✔ Qingshi a single early retreat drill changes later carriage cost and an unnamed defending squad’s lives (159.8079ms)
+✔ Qingshi family truth and all four youthful commitments have concrete later scene echoes (166.2929ms)
+✔ Qingshi sampled alternatives cover authored nodes with bounded reading gaps and stable age labels (8773.7212ms)
+✔ Qingshi protagonist uses three actual age files only at matching years and leaves all posthumous stages (13.3775ms)
+{
+  states: 4079,
+  edges: 4142,
+  scenes: 20,
+  choiceIds: 32,
+  endings: { public: 384, quiet: 768, common: 32, leave: 768 }
+}
+✔ complete routes, native Ink save/load at every choice, unique consequences (483.5754ms)
+✔ schema, size, unsafe state, impossible choices rejected without altering existing session (4.8184ms)
+✔ all reachable state combinations terminate; conditions and all declared nodes/choices covered (6909.0281ms)
+✔ Sea keeps separate protagonists, fixed defeats, ordinary pupils, realm and posthumous succession on both full routes (166.5077ms)
+✔ Sea one early cooperation change pays off five years later with a different illness transfer cost (81.59ms)
+✔ Sea teaching styles change actual later cover duties and time costs without changing the fixed enlightenment (64.3773ms)
+✔ Sea personal aftermath changes sustained late activity and keeps disputed Lu pages uncertain (61.0566ms)
+✔ Sea sampled branches visit every authored beat with bounded reading gaps (5718.1166ms)
+✔ Seven Questions full two routes retain canon losses, fourteen houses, distinct perpetrators and actual disposition (342.3406ms)
+✔ Seven Questions single half-day preparation changes health in each route while fixed deaths remain fixed (91.3179ms)
+✔ Seven Questions route choice changes witnessed action and uses reports for the other location (82.818ms)
+✔ Seven Questions early joint witness and shared testing change later introduction and remaining verification work (116.3909ms)
+✔ Seven Questions sampled paths cover all authored beats and options without passive exposition stretches (7389.9121ms)
+✔ Taihua two actual endings replay choices, preserve canon, and fulfil different plans (718.7285ms)
+✔ Taihua seeded branch sample reaches all authored beats without loops or missing actors (2168.4036ms)
+✔ early physical overreach plus late heavy lifting carries a delayed cost; prior private agreement changes the actual practice partner (35.7196ms)
+✔ returning early does not erase shoulder damage, and an unmade promise is never invented later (25.8797ms)
+✔ Twelfth two personal careers preserve Xue’s real win, candidate status, injury record, 4–3 and one edition for four years (203.3788ms)
+✔ Twelfth middle-career duty changes the later school; physical overreach survives as a lesson rather than a magic recovery (77.0792ms)
+✔ Twelfth three age appearances are deterministic, survive replay and reject forged or unknown looks (96.876ms)
+✔ Twelfth sampled paths cover the authored branches and only actual speaking characters count (2283.2033ms)
+✔ Two Swords separates three viewpoints, fixed losses and both personal careers (242.7504ms)
+✔ Two Swords one early passage choice changes later rescue injury without changing canon destruction (78.2345ms)
+✔ Two Swords choosing a career changes middle teacher, later correspondence and final duty (29.5668ms)
+✔ Two Swords sampled alternatives cover every authored beat and choice with bounded reading gaps (6814.0094ms)
+✔ frozen v5 content matches the pre-v6 baseline bytes (1.7712ms)
+✔ all eight frozen v5 endings and pending choices restore with identical world and stage (9456.1205ms)
+✔ complete three routes; every beat restores current dialogue, cast, choices and read-only history (654.0829ms)
+✔ save damage, forged runtime/presentation, illegal advances and repeated choices are rejected (5.2525ms)
+✔ draft name correction migrates every beat with identical world variables and presentation (1259.2353ms)
+✔ tiny authored scene exercises character entry/exit and fails unknown metadata/loops (41.8617ms)
+✔ static metadata catches duplicate IDs, unknown commands and missing endings (44.5857ms)
+✔ all reachable states close; immediate replies differ; conditional replies and script coverage (5561.1128ms)
+ℹ tests 70
+ℹ suites 0
+ℹ pass 70
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11483.0183

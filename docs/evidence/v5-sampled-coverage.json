@@ -1,0 +1,19 @@
+{
+  "seed": 71,
+  "runs": 120,
+  "sourceBeats": 1006,
+  "visitedBeats": 1006,
+  "choices": 135,
+  "endings": [
+    "apart",
+    "together5",
+    "harbor",
+    "teacher",
+    "scar",
+    "lost",
+    "captain",
+    "name"
+  ],
+  "unvisited": [],
+  "exhaustive": false
+}

@@ -1,0 +1,58 @@
+{
+  "baseline": "reader-v1-baseline-20261014.zip",
+  "changedOriginalFiles": [
+    ".\\vite.config.ts",
+    ".\\tests\\game.spec.ts",
+    ".\\ASSETS.md",
+    ".\\DESIGN.md",
+    ".\\package.json",
+    ".\\index.html",
+    ".\\README.md",
+    ".\\public\\sw.js",
+    ".\\scripts\\serve.mjs",
+    ".\\scripts\\compile-story.mjs"
+  ],
+  "missingOriginalFiles": [],
+  "protectedFiles": [
+    {
+      "path": "story/main.ink",
+      "unchanged": true
+    },
+    {
+      "path": "src/runtime.ts",
+      "unchanged": true
+    },
+    {
+      "path": "src/storage.ts",
+      "unchanged": true
+    },
+    {
+      "path": "src/main.ts",
+      "unchanged": true
+    },
+    {
+      "path": "src/styles.css",
+      "unchanged": true
+    },
+    {
+      "path": "src/tokens.css",
+      "unchanged": true
+    },
+    {
+      "path": "src/knowledge.ts",
+      "unchanged": true
+    },
+    {
+      "path": "src/generated/story.json",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/ferry.png",
+      "unchanged": true
+    },
+    {
+      "path": "package-lock.json",
+      "unchanged": true
+    }
+  ]
+}

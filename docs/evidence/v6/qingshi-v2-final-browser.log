@@ -1,0 +1,16 @@
+[WebServer] (node:37512) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 7 tests using 1 worker
+
+(node:29752) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\qingshi-v2.spec.ts:7:1 › Qingshi missing old-knife CG keeps duty room and controllable words (286ms)
+  ok 2 tests\qingshi-v2.spec.ts:10:1 › Qingshi old knife CG and reused elderly closeup decode and restore at seven sizes (3.9s)
+  ok 3 tests\qingshi-v2.spec.ts:30:1 › Qingshi actual old-knife resource works offline at root and subpath (821ms)
+  ok 4 tests\v6-cg.spec.ts:27:59 › oldKnife: existing illustration loads, restores and returns to reusable stage at 360 (1.4s)
+  ok 5 tests\v6-cg.spec.ts:27:59 › oldKnife: existing illustration loads, restores and returns to reusable stage at 800 (1.4s)
+  ok 6 tests\v6-cg.spec.ts:27:59 › oldKnife: existing illustration loads, restores and returns to reusable stage at 1440 (1.5s)
+  ok 7 tests\v6-cg.spec.ts:52:1 › failed illustration retains the scene fallback and playable text (229ms)
+
+  7 passed (10.4s)

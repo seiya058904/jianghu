@@ -1,0 +1,15 @@
+import {writeFileSync} from 'node:fs';
+import {createWriter} from './chronicle-writer.mjs';
+import {writeYouth} from './twelfth-life-youth.mjs';
+import {writeNames} from './twelfth-life-names.mjs';
+import {writeSix} from './twelfth-life-six.mjs';
+import {writeTeacher} from './twelfth-life-teacher.mjs';
+import {writeDefeat} from './twelfth-life-defeat.mjs';
+import {writeCapital} from './twelfth-life-capital.mjs';
+import {writeSeat} from './twelfth-life-seat.mjs';
+import {writeAfter} from './twelfth-life-after.mjs';
+const w=createWriter('rl_');for(const write of [writeYouth,writeNames,writeSix,writeTeacher,writeDefeat,writeCapital,writeSeat,writeAfter])write(w);
+const looks={rl_fair_seat_3:'rl_lu=mid',rl_sun_trial_1:'rl_sun=elder',rl_first_year_1:'rl_lu=mid',rl_capital_one_1:'rl_emperor=late,rl_gu=late',rl_sun_late_1:'rl_sun=late',rl_wife_board_1:'rl_lu=late'};
+const body=w.render().split('\n').map(line=>{const id=line.match(/# beat:(\S+)/)?.[1];return id&&looks[id]?line+' # look:'+looks[id]:line}).join('\n').replace(/\brl_lu\b/g,'rl2_lu').replace(/\brl_letterroom\b/g,'rl2_study').replace(/\brl_swordroom\b/g,'rl2_swordroom');
+const vars=new Map([...body.matchAll(/~ (rl_\w+) = (true|false|\d+)/g)].map(m=>[m[1],/^\d/.test(m[2])?'0':'false']));
+writeFileSync('story/twelfth-life.ink','// Source: 宋世江湖28498–32537. Zhao viewpoint until explicit posthumous book epilogue; ordinary dialogue and choice costs are compatible additions.\n'+[...vars].map(([id,value])=>`VAR ${id} = ${value}`).join('\n')+'\n-> three_wins\n'+body);

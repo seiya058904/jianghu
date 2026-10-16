@@ -1,0 +1,10 @@
+[WebServer] (node:44912) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:44408) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\north-editorial.spec.ts:37:1 › Notes alternate actual from cover traverses every beat before its second ending (13.4s)
+
+  1 passed (14.7s)

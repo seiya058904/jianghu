@@ -1,0 +1,1797 @@
+{
+  "scope": "All 128 combinations of seven named dimensions; other choices use first legal option. Not exhaustive over all 23 decisions.",
+  "rows": [
+    {
+      "mask": 0,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 195,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 1,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 196,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 2,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 3,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 195,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 4,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 195,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 5,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 196,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 6,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 7,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 195,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 8,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 9,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 195,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 10,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 193,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 11,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 12,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 13,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 195,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 14,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 193,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 15,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 16,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 17,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 195,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 18,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 193,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 19,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 20,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 21,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 195,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 22,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 193,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 23,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 24,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 193,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 25,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 26,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 192,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 27,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 193,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 28,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 193,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 29,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 30,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 192,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 31,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_as_question"
+      ],
+      "frames": 193,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 32,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 195,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 33,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 196,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 34,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 35,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 195,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 36,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 195,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 37,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 196,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 38,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 39,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 195,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 40,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 41,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 195,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 42,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 193,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 43,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 44,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 45,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 195,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 46,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 193,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 47,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 48,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 49,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 195,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 50,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 193,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 51,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 52,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 53,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 195,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 54,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 193,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 55,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 56,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 193,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 57,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 58,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 192,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 59,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 193,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 60,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 193,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 61,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 62,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 192,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 63,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_as_question"
+      ],
+      "frames": 193,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 64,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 195,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 65,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 196,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 66,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 67,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 195,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 68,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 195,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 69,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 196,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 70,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 71,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 195,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 72,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 73,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 195,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 74,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 193,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 75,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 76,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 77,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 195,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 78,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 193,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 79,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 80,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 81,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 195,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 82,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 193,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 83,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 84,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 85,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 195,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 86,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 193,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 87,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 88,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 193,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 89,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 90,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 192,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 91,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 193,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 92,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 193,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 93,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 94,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 192,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 95,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_teach",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 193,
+      "ending": "sr_open_courtyard"
+    },
+    {
+      "mask": 96,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 195,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 97,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 196,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 98,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 99,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 195,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 100,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 195,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 101,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 196,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 102,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 103,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 195,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 104,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 105,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 195,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 106,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 193,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 107,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 108,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 109,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 195,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 110,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 193,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 111,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_class_in_turn",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 112,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 113,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 195,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 114,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 193,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 115,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 116,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 117,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 195,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 118,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 193,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 119,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_daily",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 120,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 193,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 121,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 122,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 192,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 123,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_ask_lost_grip",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 193,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 124,
+      "selected": [
+        "sr_trust_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 193,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 125,
+      "selected": [
+        "sr_hold_line",
+        "sr_ask_local_method",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 194,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 126,
+      "selected": [
+        "sr_trust_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 192,
+      "ending": "sr_next_harbor"
+    },
+    {
+      "mask": 127,
+      "selected": [
+        "sr_hold_line",
+        "sr_test_old_record",
+        "sr_try_without_sword",
+        "sr_teach_pair",
+        "sr_leave_short_work",
+        "sr_late_sea",
+        "sr_pages_beside_routes"
+      ],
+      "frames": 193,
+      "ending": "sr_next_harbor"
+    }
+  ]
+}

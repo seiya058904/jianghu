@@ -1,0 +1,967 @@
+{
+  "status": "OPEN_VISUAL_EDITORIAL_FINDING_NOT_FINAL_ACCEPTANCE",
+  "contentSHA256": "f9fbb2de979b17ef702ed09606578772d0605fc8e4ad4675da5b792a20d957a8",
+  "sourceOfSharedTerminalCG": "story/campaign/author.mjs:894",
+  "sharedTerminalViews": {
+    "v5/cg-dawn.webp": [
+      "harbor",
+      "name",
+      "together5",
+      "teacher",
+      "captain",
+      "apart"
+    ],
+    "v5/cg-quiet.webp": [
+      "scar",
+      "lost"
+    ]
+  },
+  "rows": [
+    {
+      "ending": "harbor",
+      "finalBeat": "c_ending_harbor_7",
+      "finalScene": "v6_dawn",
+      "finalCG": "dawn",
+      "finalCGFile": "v5/cg-dawn.webp",
+      "cast": [
+        {
+          "id": "v6_zhaoli",
+          "name": "江照鲤"
+        },
+        {
+          "id": "v6_he",
+          "name": "何铆"
+        },
+        {
+          "id": "v6_aunt",
+          "name": "汤二娘"
+        }
+      ],
+      "distinctAftermathBeats": [
+        "c6_v6_after_harbor_1",
+        "c6_v6_after_harbor_2",
+        "c6_v6_after_harbor_3",
+        "c6_v6_after_harbor_4",
+        "c6_v6_after_harbor_5",
+        "c6_v6_after_harbor_6"
+      ],
+      "endingSequence": [
+        {
+          "id": "c_ending_harbor_1",
+          "text": "你留在青蒲渡。护渡的差事没有让谁一夜成名，却让修桥、开仓、教人的工钱都有了着落。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_zhaoli",
+            "v6_he",
+            "v6_aunt"
+          ]
+        },
+        {
+          "id": "c_ending_harbor_2",
+          "text": "新板别急着上漆，里头还潮。今天要是不装样子，明年就不用重修。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_zhaoli",
+            "v6_he",
+            "v6_aunt"
+          ]
+        },
+        {
+          "id": "c_ending_harbor_3",
+          "text": "我这儿也是。账慢慢还，别拿一阵子风光抵一年的饭。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_zhaoli",
+            "v6_he",
+            "v6_aunt"
+          ]
+        },
+        {
+          "id": "c_ending_harbor_4",
+          "text": "我先把这根钉敲直。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_zhaoli",
+            "v6_he",
+            "v6_aunt"
+          ]
+        },
+        {
+          "id": "c_ending_harbor_5",
+          "text": "下午有一条船，过来搭手？不是有危险，就是缺人。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_zhaoli",
+            "v6_he",
+            "v6_aunt"
+          ]
+        },
+        {
+          "id": "c_ending_harbor_6",
+          "text": "来。普通的那一条，也有人要回家。",
+          "scene": "v6_dawn",
+          "cg": "dawn",
+          "cast": [
+            "v6_zhaoli",
+            "v6_he",
+            "v6_aunt"
+          ]
+        },
+        {
+          "id": "c_ending_harbor_7",
+          "text": "潮又涨起来。你们没有把江湖变小，只让它在这一处，多留了一段能安稳走过的岸。",
+          "scene": "v6_dawn",
+          "cg": "dawn",
+          "cast": [
+            "v6_zhaoli",
+            "v6_he",
+            "v6_aunt"
+          ]
+        }
+      ]
+    },
+    {
+      "ending": "name",
+      "finalBeat": "c_ending_name_8",
+      "finalScene": "v6_dawn",
+      "finalCG": "dawn",
+      "finalCGFile": "v5/cg-dawn.webp",
+      "cast": [
+        {
+          "id": "v6_rong",
+          "name": "容既白"
+        },
+        {
+          "id": "v6_xu",
+          "name": "许竞川"
+        },
+        {
+          "id": "v6_su",
+          "name": "苏晚澄"
+        }
+      ],
+      "distinctAftermathBeats": [
+        "c6_v6_after_name_1",
+        "c6_v6_after_name_2",
+        "c6_v6_after_name_3",
+        "c6_v6_after_name_4",
+        "c6_v6_after_name_5",
+        "c6_v6_after_name_6",
+        "c6_v6_after_name_7"
+      ],
+      "endingSequence": [
+        {
+          "id": "c_ending_name_1",
+          "text": "补试那日，容既白主动来约同一块坪。棍尾换了走法，你也没把上次那一剑当成万能的解。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_rong",
+            "v6_xu",
+            "v6_su"
+          ]
+        },
+        {
+          "id": "c_ending_name_2",
+          "text": "再来。今天你不用让，也别以为昨天的我还站在原地。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_rong",
+            "v6_xu",
+            "v6_su"
+          ]
+        },
+        {
+          "id": "c_ending_name_3",
+          "text": "你们交手到最后一轮，各退半步。你凭新的一手先碰到肩衣，这一次，没有同时中身。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_rong",
+            "v6_xu",
+            "v6_su"
+          ]
+        },
+        {
+          "id": "c_ending_name_4",
+          "text": "记下了。只记这场，不替你写进任何大榜。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_rong",
+            "v6_xu",
+            "v6_su"
+          ]
+        },
+        {
+          "id": "c_ending_name_5",
+          "text": "这场就够了。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_rong",
+            "v6_xu",
+            "v6_su"
+          ]
+        },
+        {
+          "id": "c_ending_name_6",
+          "text": "够今天的。明年的你还得自己来。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_rong",
+            "v6_xu",
+            "v6_su"
+          ]
+        },
+        {
+          "id": "c_ending_name_7",
+          "text": "后来米行的人照样催工钱，馆里的瓦照样要修。可你知道自己赢过一场，也知道对手没有替你输。",
+          "scene": "v6_dawn",
+          "cg": "dawn",
+          "cast": [
+            "v6_rong",
+            "v6_xu",
+            "v6_su"
+          ]
+        },
+        {
+          "id": "c_ending_name_8",
+          "text": "没有人叫你宗师。有人叫你的名字，问下一回什么时候来。你认真给了一个能赴的日期。",
+          "scene": "v6_dawn",
+          "cg": "dawn",
+          "cast": [
+            "v6_rong",
+            "v6_xu",
+            "v6_su"
+          ]
+        }
+      ]
+    },
+    {
+      "ending": "together5",
+      "finalBeat": "c_ending_together5_8",
+      "finalScene": "v6_dawn",
+      "finalCG": "dawn",
+      "finalCGFile": "v5/cg-dawn.webp",
+      "cast": [
+        {
+          "id": "v6_qiao",
+          "name": "乔砚生"
+        },
+        {
+          "id": "v6_pei",
+          "name": "裴雁秋"
+        },
+        {
+          "id": "v6_zhaoli",
+          "name": "江照鲤"
+        }
+      ],
+      "distinctAftermathBeats": [
+        "c6_v6_after_together_1",
+        "c6_v6_after_together_2",
+        "c6_v6_after_together_3",
+        "c6_v6_after_together_4",
+        "c6_v6_after_together_5",
+        "c6_v6_after_together_6",
+        "c6_v6_after_together_9",
+        "c6_v6_after_together_10",
+        "c6_v6_after_together_11"
+      ],
+      "endingSequence": [
+        {
+          "id": "c_ending_together5_1",
+          "text": "你和乔砚生随镖队再上路。他的腕子还没能任意使剑，裴雁秋给他换了押尾报路的差事。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_qiao",
+            "v6_pei",
+            "v6_zhaoli"
+          ]
+        },
+        {
+          "id": "c_ending_together5_2",
+          "text": "以前总觉得得拿剑站最前。现在最后一个走，也能把人叫齐。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_qiao",
+            "v6_pei",
+            "v6_zhaoli"
+          ]
+        },
+        {
+          "id": "c_ending_together5_3",
+          "text": "我若走快了，你就喊。不许只在心里骂我。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_qiao",
+            "v6_pei",
+            "v6_zhaoli"
+          ]
+        },
+        {
+          "id": "c_ending_together5_4",
+          "text": "那我能一边喊一边骂吗？",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_qiao",
+            "v6_pei",
+            "v6_zhaoli"
+          ]
+        },
+        {
+          "id": "c_ending_together5_5",
+          "text": "看前头的坡。有力气斗嘴，留一点抬车。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_qiao",
+            "v6_pei",
+            "v6_zhaoli"
+          ]
+        },
+        {
+          "id": "c_ending_together5_6",
+          "text": "渡口这头我守着。你们回来，别再拿米袋当刺客。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_qiao",
+            "v6_pei",
+            "v6_zhaoli"
+          ]
+        },
+        {
+          "id": "c_ending_together5_7",
+          "text": "你们各自背一半行李，谁也没有替另一人写完前程。",
+          "scene": "v6_dawn",
+          "cg": "dawn",
+          "cast": [
+            "v6_qiao",
+            "v6_pei",
+            "v6_zhaoli"
+          ]
+        },
+        {
+          "id": "c_ending_together5_8",
+          "text": "路还会分岔，伤也不会因为同行就消失。这回你们学会的，是分开之前先开口，重逢时仍肯听。",
+          "scene": "v6_dawn",
+          "cg": "dawn",
+          "cast": [
+            "v6_qiao",
+            "v6_pei",
+            "v6_zhaoli"
+          ]
+        }
+      ]
+    },
+    {
+      "ending": "teacher",
+      "finalBeat": "c_ending_teacher_8",
+      "finalScene": "v6_dawn",
+      "finalCG": "dawn",
+      "finalCGFile": "v5/cg-dawn.webp",
+      "cast": [
+        {
+          "id": "v6_han",
+          "name": "韩鹭石"
+        },
+        {
+          "id": "v6_qiao",
+          "name": "乔砚生"
+        },
+        {
+          "id": "v6_bao",
+          "name": "包小满"
+        }
+      ],
+      "distinctAftermathBeats": [
+        "c6_v6_after_teacher_1",
+        "c6_v6_after_teacher_2",
+        "c6_v6_after_teacher_3",
+        "c6_v6_after_teacher_4",
+        "c6_v6_after_teacher_5",
+        "c6_v6_after_teacher_6",
+        "c6_v6_after_teacher_7",
+        "c6_v6_after_teacher_8"
+      ],
+      "endingSequence": [
+        {
+          "id": "c_ending_teacher_1",
+          "text": "你回石梁馆，先养手，再教刚入门的孩子。包小满第一日就问，学多久能打赢许竞川。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_han",
+            "v6_qiao",
+            "v6_bao"
+          ]
+        },
+        {
+          "id": "c_ending_teacher_2",
+          "text": "我不知道。今天先学车歪了，怎样不跟着倒。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_han",
+            "v6_qiao",
+            "v6_bao"
+          ]
+        },
+        {
+          "id": "c_ending_teacher_3",
+          "text": "那不是回到搬米吗？",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_han",
+            "v6_qiao",
+            "v6_bao"
+          ]
+        },
+        {
+          "id": "c_ending_teacher_4",
+          "text": "我出门一圈，也才知道原来搬米有这么多事。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_han",
+            "v6_qiao",
+            "v6_bao"
+          ]
+        },
+        {
+          "id": "c_ending_teacher_5",
+          "text": "教人之前，把你那一回做错的也讲给他听。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_han",
+            "v6_qiao",
+            "v6_bao"
+          ]
+        },
+        {
+          "id": "c_ending_teacher_6",
+          "text": "你照做了，没有把伤说成英雄的勋章。孩子听完，还敢问你第二遍。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_han",
+            "v6_qiao",
+            "v6_bao"
+          ]
+        },
+        {
+          "id": "c_ending_teacher_7",
+          "text": "再来。今天没有谁必须先证明自己特别。",
+          "scene": "v6_dawn",
+          "cg": "dawn",
+          "cast": [
+            "v6_han",
+            "v6_qiao",
+            "v6_bao"
+          ]
+        },
+        {
+          "id": "c_ending_teacher_8",
+          "text": "新瓦盖住了最漏的地方。雨盆没有扔，放在门边养了一株小草。你仍在学，也开始让别人敢于学。",
+          "scene": "v6_dawn",
+          "cg": "dawn",
+          "cast": [
+            "v6_han",
+            "v6_qiao",
+            "v6_bao"
+          ]
+        }
+      ]
+    },
+    {
+      "ending": "captain",
+      "finalBeat": "c_ending_captain_8",
+      "finalScene": "v6_dawn",
+      "finalCG": "dawn",
+      "finalCGFile": "v5/cg-dawn.webp",
+      "cast": [
+        {
+          "id": "v6_zhaoli",
+          "name": "江照鲤"
+        },
+        {
+          "id": "v6_du",
+          "name": "杜汀叟"
+        },
+        {
+          "id": "v6_cheng",
+          "name": "程阿笠"
+        }
+      ],
+      "distinctAftermathBeats": [
+        "c6_v6_after_captain_1",
+        "c6_v6_after_captain_2",
+        "c6_v6_after_captain_3",
+        "c6_v6_after_captain_4",
+        "c6_v6_after_captain_5",
+        "c6_v6_after_captain_6",
+        "c6_v6_after_captain_7",
+        "c6_v6_after_captain_8"
+      ],
+      "endingSequence": [
+        {
+          "id": "c_ending_captain_1",
+          "text": "你留在青蒲渡，与江照鲤分领两段水路。旧船没有凭空回来，赔船的账压在第一年的工钱里。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_zhaoli",
+            "v6_du",
+            "v6_cheng"
+          ]
+        },
+        {
+          "id": "c_ending_captain_2",
+          "text": "当领船的人，先学会每月少买两条新腰带。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_zhaoli",
+            "v6_du",
+            "v6_cheng"
+          ]
+        },
+        {
+          "id": "c_ending_captain_3",
+          "text": "你哪月买过？别拿笑话把该算的藏了。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_zhaoli",
+            "v6_du",
+            "v6_cheng"
+          ]
+        },
+        {
+          "id": "c_ending_captain_4",
+          "text": "他这句我同意。今天还差谁的船钱，先报清。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_zhaoli",
+            "v6_du",
+            "v6_cheng"
+          ]
+        },
+        {
+          "id": "c_ending_captain_5",
+          "text": "我报。还有，明天那段我想自己掌桨，你们在岸上看一次。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_zhaoli",
+            "v6_du",
+            "v6_cheng"
+          ]
+        },
+        {
+          "id": "c_ending_captain_6",
+          "text": "好。我先看你准备，不替你把每个险处都走掉。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_zhaoli",
+            "v6_du",
+            "v6_cheng"
+          ]
+        },
+        {
+          "id": "c_ending_captain_7",
+          "text": "红绳挂在新船头，末端还是能一手解开的活结。",
+          "scene": "v6_dawn",
+          "cg": "dawn",
+          "cast": [
+            "v6_zhaoli",
+            "v6_du",
+            "v6_cheng"
+          ]
+        },
+        {
+          "id": "c_ending_captain_8",
+          "text": "后来有人问，那年是谁救了渡口。照鲤把船册翻开，指给他看许多个名字。你的名字在其中，有自己的那一段。",
+          "scene": "v6_dawn",
+          "cg": "dawn",
+          "cast": [
+            "v6_zhaoli",
+            "v6_du",
+            "v6_cheng"
+          ]
+        }
+      ]
+    },
+    {
+      "ending": "apart",
+      "finalBeat": "c_ending_apart_7",
+      "finalScene": "v6_dawn",
+      "finalCG": "dawn",
+      "finalCGFile": "v5/cg-dawn.webp",
+      "cast": [
+        {
+          "id": "v6_su",
+          "name": "苏晚澄"
+        },
+        {
+          "id": "v6_lu",
+          "name": "陆汀舟"
+        },
+        {
+          "id": "v6_qiao",
+          "name": "乔砚生"
+        }
+      ],
+      "distinctAftermathBeats": [
+        "c6_v6_after_apart_1",
+        "c6_v6_after_apart_2",
+        "c6_v6_after_apart_3",
+        "c6_v6_after_apart_4",
+        "c6_v6_after_apart_5",
+        "c6_v6_after_apart_6"
+      ],
+      "endingSequence": [
+        {
+          "id": "c_ending_apart_1",
+          "text": "你离开青蒲，没有把一路相识都装进同行的承诺。乔砚生留馆养腕，照鲤守船，你向下一处城走。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_su",
+            "v6_lu",
+            "v6_qiao"
+          ]
+        },
+        {
+          "id": "c_ending_apart_2",
+          "text": "你想走，就走。别替我留，也别把我没走说成不敢。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_su",
+            "v6_lu",
+            "v6_qiao"
+          ]
+        },
+        {
+          "id": "c_ending_apart_3",
+          "text": "知道。写信给你，说我亲眼见的，不抄别人吹的。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_su",
+            "v6_lu",
+            "v6_qiao"
+          ]
+        },
+        {
+          "id": "c_ending_apart_4",
+          "text": "欠的事我替你留着记，不替你去还。下回路过，自己一一敲门。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_su",
+            "v6_lu",
+            "v6_qiao"
+          ]
+        },
+        {
+          "id": "c_ending_apart_5",
+          "text": "要是记不得名字，就说明你走太急。先回来吃顿饭。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_su",
+            "v6_lu",
+            "v6_qiao"
+          ]
+        },
+        {
+          "id": "c_ending_apart_6",
+          "text": "你没有拿到所有人的认可。有人送到路口，有人只在窗边点头，都是真实给出的分量。",
+          "scene": "v6_dawn",
+          "cg": "dawn",
+          "cast": [
+            "v6_su",
+            "v6_lu",
+            "v6_qiao"
+          ]
+        },
+        {
+          "id": "c_ending_apart_7",
+          "text": "远行的代价，是不能同时在每一盏灯下坐着。你把能到的地址写好，才把第一步踏到无人替你保证的路上。",
+          "scene": "v6_dawn",
+          "cg": "dawn",
+          "cast": [
+            "v6_su",
+            "v6_lu",
+            "v6_qiao"
+          ]
+        }
+      ]
+    },
+    {
+      "ending": "scar",
+      "finalBeat": "c_ending_scar_8",
+      "finalScene": "v6_dawn",
+      "finalCG": "quiet",
+      "finalCGFile": "v5/cg-quiet.webp",
+      "cast": [
+        {
+          "id": "v6_ling",
+          "name": "凌苇"
+        },
+        {
+          "id": "v6_qiao",
+          "name": "乔砚生"
+        },
+        {
+          "id": "v6_he",
+          "name": "何铆"
+        }
+      ],
+      "distinctAftermathBeats": [
+        "c6_v6_after_scar_1",
+        "c6_v6_after_scar_2",
+        "c6_v6_after_scar_3",
+        "c6_v6_after_scar_4",
+        "c6_v6_after_scar_5",
+        "c6_v6_after_scar_6",
+        "c6_v6_after_scar_7"
+      ],
+      "endingSequence": [
+        {
+          "id": "c_ending_scar_1",
+          "text": "你休养了整个秋天。肋伤让你不能像从前一样猛转，第一次试着抬木料时，疼得蹲了下去。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_ling",
+            "v6_qiao",
+            "v6_he"
+          ]
+        },
+        {
+          "id": "c_ending_scar_2",
+          "text": "不是说了三个月？你想把三个月养成三年？",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_ling",
+            "v6_qiao",
+            "v6_he"
+          ]
+        },
+        {
+          "id": "c_ending_scar_3",
+          "text": "这回轮到我说你嘴硬了。木料放下，不会自己跑。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_ling",
+            "v6_qiao",
+            "v6_he"
+          ]
+        },
+        {
+          "id": "c_ending_scar_4",
+          "text": "我以为只试一下。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_ling",
+            "v6_qiao",
+            "v6_he"
+          ]
+        },
+        {
+          "id": "c_ending_scar_5",
+          "text": "我年轻时也这么想。你的手不是坏了就换一根的木头。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_ling",
+            "v6_qiao",
+            "v6_he"
+          ]
+        },
+        {
+          "id": "c_ending_scar_6",
+          "text": "人最终由大船接回，代价没有被一句好结局抵掉。你改了练法，也学着接受同伴替你搬那根梁。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_ling",
+            "v6_qiao",
+            "v6_he"
+          ]
+        },
+        {
+          "id": "c_ending_scar_7",
+          "text": "明天还来。但不抬这一头，先量尺寸。",
+          "scene": "v6_dawn",
+          "cg": "quiet",
+          "cast": [
+            "v6_ling",
+            "v6_qiao",
+            "v6_he"
+          ]
+        },
+        {
+          "id": "c_ending_scar_8",
+          "text": "你没能按原定的日子上路。窗外有人来，有人走；你仍能把能做的一件事做完，慢慢重新约下一次。",
+          "scene": "v6_dawn",
+          "cg": "quiet",
+          "cast": [
+            "v6_ling",
+            "v6_qiao",
+            "v6_he"
+          ]
+        }
+      ]
+    },
+    {
+      "ending": "lost",
+      "finalBeat": "c_ending_lost_8",
+      "finalScene": "v6_dawn",
+      "finalCG": "quiet",
+      "finalCGFile": "v5/cg-quiet.webp",
+      "cast": [
+        {
+          "id": "v6_zhaoli",
+          "name": "江照鲤"
+        },
+        {
+          "id": "v6_liu",
+          "name": "刘篙"
+        },
+        {
+          "id": "v6_han",
+          "name": "韩鹭石"
+        }
+      ],
+      "distinctAftermathBeats": [
+        "c6_v6_after_lost_1",
+        "c6_v6_after_lost_2",
+        "c6_v6_after_lost_3",
+        "c6_v6_after_lost_4",
+        "c6_v6_after_lost_5",
+        "c6_v6_after_lost_6",
+        "c6_v6_after_lost_7"
+      ],
+      "endingSequence": [
+        {
+          "id": "c_ending_lost_1",
+          "text": "刘篙保住了命，左腿却再不能长久站在晃船上。之后的每次点名，他都在岸上答应。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_zhaoli",
+            "v6_liu",
+            "v6_han"
+          ]
+        },
+        {
+          "id": "c_ending_lost_2",
+          "text": "别每次看我都先问疼不疼。我还认船号，能管发船。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_zhaoli",
+            "v6_liu",
+            "v6_han"
+          ]
+        },
+        {
+          "id": "c_ending_lost_3",
+          "text": "好。哪条先走，你报，我听。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_zhaoli",
+            "v6_liu",
+            "v6_han"
+          ]
+        },
+        {
+          "id": "c_ending_lost_4",
+          "text": "我把领船的钱分出一份赔他，不算替你洗清，也不算替我。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_zhaoli",
+            "v6_liu",
+            "v6_han"
+          ]
+        },
+        {
+          "id": "c_ending_lost_5",
+          "text": "你回到旧桩湾看过许多次。那一刻没学会的松手，不能靠后来再说一百遍补回去。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_zhaoli",
+            "v6_liu",
+            "v6_han"
+          ]
+        },
+        {
+          "id": "c_ending_lost_6",
+          "text": "记住不等于永远跪在那里。你以后握的是别人要用的绳，不是自己的惩罚。",
+          "scene": "v6_dawn",
+          "cg": null,
+          "cast": [
+            "v6_zhaoli",
+            "v6_liu",
+            "v6_han"
+          ]
+        },
+        {
+          "id": "c_ending_lost_7",
+          "text": "你开始每次先试结，每次把没回来做原来那份活的人，也写进报平安的信里。",
+          "scene": "v6_dawn",
+          "cg": "quiet",
+          "cast": [
+            "v6_zhaoli",
+            "v6_liu",
+            "v6_han"
+          ]
+        },
+        {
+          "id": "c_ending_lost_8",
+          "text": "江湖里少了一位掌桨的人，多了一位在岸上报船的人。你们继续过日子，连同那场没有被好话遮住的失去。",
+          "scene": "v6_dawn",
+          "cg": "quiet",
+          "cast": [
+            "v6_zhaoli",
+            "v6_liu",
+            "v6_han"
+          ]
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Eight different aftermath sequences do exist; shared final illustration alone is not proof that the entire endings are identical.",
+    "No invented requirement that eight unique generated CGs must exist. Reuse is preferred.",
+    "Review whether final framing still reflects each relationship/duty/consequence; use existing stages and people before generating one-off ending art.",
+    "Functional browser results and visual/editorial acceptance are separate evidence."
+  ]
+}

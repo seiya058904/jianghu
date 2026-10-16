@@ -1,0 +1,24 @@
+{
+  "rows": [
+    {
+      "slug": "north",
+      "primary": "north-Dc4N-c-a.js",
+      "explicitDownloadRestoredData": true
+    },
+    {
+      "slug": "north-v2",
+      "primary": "north-v2-U_lNJrLH.js",
+      "explicitDownloadRestoredData": true
+    },
+    {
+      "slug": "north-v1",
+      "primary": "north-v1-3XiVHj3X.js",
+      "explicitDownloadRestoredData": true
+    }
+  ],
+  "HTTPcacheCleared": true,
+  "allThreeFreshOfflineSaves": true,
+  "V3UnseenSchool": true,
+  "V3ReusedTeaDecoded": true,
+  "CGExit": true
+}

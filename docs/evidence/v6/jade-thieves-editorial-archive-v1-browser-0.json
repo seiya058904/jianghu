@@ -1,0 +1,27 @@
+{
+  "actualBrowserInputs": true,
+  "externalHuman": false,
+  "beats": 160,
+  "choices": 21,
+  "ending": "jt_unmarked_life",
+  "viewpoint": "Shen",
+  "scenes": [
+    "jt_vault",
+    "jt_wall",
+    "jt_market",
+    "jt_auction",
+    "jt_sidehall",
+    "jt_road",
+    "jt_bridge",
+    "jt_temple",
+    "jt_lodging",
+    "jt_temple_reveal",
+    "jt_workshop",
+    "jt_exchange",
+    "jt_mountainpass",
+    "jt_afterpass",
+    "jt_pawn",
+    "jt_hidden"
+  ],
+  "errors": []
+}

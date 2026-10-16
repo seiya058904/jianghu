@@ -1,0 +1,41 @@
+[
+  {
+    "side": 0,
+    "changed": [
+      "st_trial_1",
+      "st_trial_2",
+      "st_trial_3",
+      "st_trial_4",
+      "st_trial_5",
+      "st_trial_6",
+      "st_trial_7",
+      "st_four_tests_1",
+      "st_four_tests_2",
+      "st_four_tests_3",
+      "st_four_tests_4",
+      "st_four_tests_5"
+    ],
+    "ending": "st_next_step",
+    "wordsAndCommandsIdentical": true
+  },
+  {
+    "side": 1,
+    "changed": [
+      "st_trial_1",
+      "st_trial_2",
+      "st_trial_3",
+      "st_trial_4",
+      "st_trial_5",
+      "st_trial_8",
+      "st_trial_9",
+      "st_four_tests_1",
+      "st_four_tests_2",
+      "st_four_tests_3",
+      "st_four_tests_6",
+      "st_four_tests_7",
+      "st_four_tests_8"
+    ],
+    "ending": "st_next_watch",
+    "wordsAndCommandsIdentical": true
+  }
+]

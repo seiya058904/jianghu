@@ -1,0 +1,11 @@
+{
+  "tool": "built-in image_gen",
+  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-d1617d23-d7c5-4261-ae6d-8502c5faa9d2.png",
+  "prompt": "Use case: production story CG for Jianghu Chinese historical wuxia visual novel. Key story illustration: warm lamp-lit small enclosed mountain guest courtyard at night. FOREGROUND: Shen Zhaowei, same30-year-old woman as reference1 in faded plum and ivory martial clothes, sitting balanced on a low courtyard wall, wry bright smile, watching beyond frame. NEAR DOOR: Mingcheng, same bald37-year-old monk as reference2 with gray patched robe, carefully holding a steaming soup bowl and amused expression. A single severed bamboo leaf floats between them. Deep background includes ONLY two indistinct distant practice figures whose faces cannot be seen, safely far from the soup. Intimate playful pause during an unofficial late-night spar, not a battle. Keep both reference identities, ages and costumes exactly; no extra clear faces. Wide cinematic landscape3:2 with upper/middle faces and essential action visible; lower20 percent quiet for HTML dialogue. Match reference fine naturalistic ink illustration and tactile painterly rendering. Historically grounded Song-inspired clothing and architecture. No magical effects, no blood spray, no ornate UI, no text of ANY kind, no signature or artist mark in any corner, no watermark. Preserve exact referenced identities instead of inventing lookalikes.",
+  "references": [
+    "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/th-shen.webp",
+    "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v5/npc-monk.webp"
+  ],
+  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/cg-taihua-night.webp",
+  "review": "Reviewed: reference identities, ages/costumes and action or injury stage match the selected scene. No generated readable plot text. Reuse within matching cast/age/physical conditions; separate script captions supply meaning. Already-generated output, no further CG requests after user reuse clarification. Actual trigger and exit are in production-direction-v6.mjs; responsive screenshot checks tracked separately."
+}

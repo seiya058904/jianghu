@@ -1,0 +1,10 @@
+✔ Default roots and explicit index select real V6 content, chapters, saved-progress namespace and offline pack (30.9952ms)
+✔ Frozen V5, Half Step and chronicles keep their own content/version/prefix after the default changes (8.3315ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 119.1434

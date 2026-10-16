@@ -1,0 +1,70 @@
+[WebServer] (node:37060) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 27 tests using 2 workers
+
+(node:19296) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:16896) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\campaign-v6-ending-staging.spec.ts:10:1 › opening an old completed V6 from its cover preserves raw data until continuing, then keeps an original backup (597ms)
+  ok  2 tests\offline-work-pack.spec.ts:8:134 › download kuhe-v1 pack restores uncached story data on root (622ms)
+  ok  4 tests\offline-work-pack.spec.ts:8:134 › download kuhe-v1 pack restores uncached story data on subpath (504ms)
+  ok  3 tests\campaign-v6-ending-staging.spec.ts:13:1 › migration quota failure keeps the original auto and allows both original and current progress exports (563ms)
+  ok  5 tests\offline-work-pack.spec.ts:8:134 › download qingshi-v1 pack restores uncached story data on root (507ms)
+  ok  6 tests\player.spec.ts:152:1 › draft correction keeps raw slots, migrates the current beat and preserves an exportable original (667ms)
+  ok  7 tests\offline-work-pack.spec.ts:8:134 › download qingshi-v1 pack restores uncached story data on subpath (578ms)
+  ok  9 tests\offline-work-pack.spec.ts:8:134 › download longmen-v1 pack restores uncached story data on root (450ms)
+  ok 10 tests\offline-work-pack.spec.ts:8:134 › download longmen-v1 pack restores uncached story data on subpath (440ms)
+  ok 11 tests\offline-work-pack.spec.ts:8:134 › download taihua-v1 pack restores uncached story data on root (441ms)
+  ok 12 tests\offline-work-pack.spec.ts:8:134 › download taihua-v1 pack restores uncached story data on subpath (421ms)
+  ok 13 tests\offline-work-pack.spec.ts:8:134 › download twelfth-life-v1 pack restores uncached story data on root (559ms)
+  ok 14 tests\offline-work-pack.spec.ts:8:134 › download twelfth-life-v1 pack restores uncached story data on subpath (437ms)
+  ok 15 tests\offline-work-pack.spec.ts:8:134 › download sea-tide pack restores uncached story data on root (534ms)
+  ok 16 tests\offline-work-pack.spec.ts:8:134 › download sea-tide pack restores uncached story data on subpath (525ms)
+  ok 17 tests\offline-work-pack.spec.ts:8:134 › download north-notes pack restores uncached story data on root (431ms)
+  ok 18 tests\offline-work-pack.spec.ts:8:134 › download north-notes pack restores uncached story data on subpath (431ms)
+  ok 19 tests\offline-work-pack.spec.ts:8:134 › download twelfth-life pack restores uncached story data on root (442ms)
+  ok 20 tests\offline-work-pack.spec.ts:8:134 › download twelfth-life pack restores uncached story data on subpath (561ms)
+  ok 21 tests\offline-work-pack.spec.ts:8:134 › download tide-v6 pack restores uncached story data on root (566ms)
+  ok 22 tests\offline-work-pack.spec.ts:8:134 › download tide-v6 pack restores uncached story data on subpath (589ms)
+  ok  8 tests\royal-letters-cg.spec.ts:9:25 › Royal letters actual complete biography 0 reaches illustration and both outcomes (1.3m)
+  ok 23 tests\royal-letters-cg.spec.ts:9:25 › Royal letters actual complete biography 1 reaches illustration and both outcomes (1.3m)
+  ok 24 tests\royal-letters-cg.spec.ts:14:1 › Royal old CG-entry auto and slots retain raw bytes, restore seven sizes, and release before the choice (6.8s)
+  x  25 tests\royal-letters-cg.spec.ts:19:1 › Royal old pending choice migrates without consuming a response (5.2s)
+(node:45948) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 26 tests\royal-letters-cg.spec.ts:22:1 › Royal illustration night and failure fallback remain readable and controllable (595ms)
+  ok 27 tests\royal-letters-cg.spec.ts:25:1 › Royal frozen validation and new illustration work from a fresh offline page at root and subpath (999ms)
+
+
+  1) tests\royal-letters-cg.spec.ts:19:1 › Royal old pending choice migrates without consuming a response
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  locator('#app')
+    Expected: "rl_fair_seat_6"
+    Received: "rl_fair_seat_5"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveAttribute" locator('#app') with timeout 5000ms
+      - waiting for locator('#app')
+        14 × locator resolved to <div id="app" data-beat="rl_fair_seat_5" data-phase="awaitingChoice">…</div>
+           - unexpected value "rl_fair_seat_5"
+
+
+      18 | });
+      19 | test('Royal old pending choice migrates without consuming a response',async({page})=>{
+    > 20 |  const old=at(previous,'rl_fair_seat_5'),s=at(content,'rl_fair_seat_5');await page.addInitScript(({raw,prefix})=>{localStorage.setItem(prefix+'auto',raw);localStorage.setItem(prefix+'settings',JSON.stringify({speed:0,reduced:true}))},{raw:JSON.stringify(old.save()),prefix});await page.goto('/twelfth-life.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await expect(page.locator('[data-choice]')).toHaveCount(s.frame.choices.length);await page.locator(`[data-choice="${s.frame.choices[0].id}"]`).click();s.choose(s.frame.choices[0].id);await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+      21 | });
+      22 | test('Royal illustration night and failure fallback remain readable and controllable',async({browser})=>{
+      23 |  for(const broken of [false,true]){const context=await browser.newContext(),page=await context.newPage(),s=at(content,'rl_fair_seat_3');await page.setViewportSize({width:390,height:844});if(broken)await page.route('**/art/v6/cg-royal-letters.webp',route=>route.abort());await page.addInitScript(({raw,prefix})=>{localStorage.setItem(prefix+'auto',raw);localStorage.setItem(prefix+'settings',JSON.stringify({speed:0,reduced:true,size:24,dark:true}))},{raw:JSON.stringify(s.save()),prefix});await page.goto('/twelfth-life.html#play');await expect(page.locator('html')).toHaveAttribute('data-theme','dark');await expect(page.locator('#dialogue-visible')).toHaveText(s.frame.text);if(!broken){await decoded(page);await page.screenshot({path:'docs/evidence/v6/royal-cg-night-390.png'})}else expect(await page.locator('.scene-background').getAttribute('style')).toContain('reusable-study.webp');await page.locator('#advance-button').click();s.advance();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await context.close()}
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\royal-letters-cg.spec.ts:20:632
+
+    Error Context: test-results\royal-letters-cg-Royal-old-a1251-ithout-consuming-a-response\error-context.md
+
+  1 failed
+    tests\royal-letters-cg.spec.ts:19:1 › Royal old pending choice migrates without consuming a response
+  26 passed (3.0m)

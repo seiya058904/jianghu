@@ -1,0 +1,15 @@
+{
+  "status": "THREE_INTERNAL_ROUNDS_CURRENT_COMPILED",
+  "beforeAfterRecords": 34,
+  "beats": 393,
+  "options": 68,
+  "ends": [
+    "rl_letter_after",
+    "rl_watch_after"
+  ],
+  "sampledPaths": 512,
+  "exhaustive": false,
+  "longestPassiveGap": 18,
+  "compiledBy": "scripts/compile-story.mjs",
+  "limits": "Current compiled/directed version; internal rounds only; no identity/age/action art, human acceptance or full goal completion."
+}

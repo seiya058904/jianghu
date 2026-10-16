@@ -1,0 +1,37 @@
+{
+  "status": "THREE_INTERNAL_ROUNDS_DRAFT_VERIFIED_NOT_PUBLISHED",
+  "baseline": "cf59779",
+  "records": 34,
+  "roundRecords": [
+    12,
+    12,
+    10
+  ],
+  "beats": 393,
+  "options": 68,
+  "decisions": 34,
+  "endings": 2,
+  "draftUnitPass": 10,
+  "publishedRegressionPass": 12,
+  "sampledPaths": 512,
+  "allDeclaredBeatsAndOptionsReached": true,
+  "exhaustive": false,
+  "longestPassiveGap": 18,
+  "compilerWarnings": 0,
+  "appearanceSamples": 64,
+  "existingLuImages": 5,
+  "newOrEditedArtFiles": 0,
+  "publishedV2": "UNCHANGED375/66/33",
+  "browser": "NOT_RUN_NO_ENTRY",
+  "fullBuild": "NOT_RUN_NO_PUBLISHED_CHANGES",
+  "frozenPaths": 16,
+  "recordFiles": [
+    "twelfth-life-editorial-first-pass.json",
+    "twelfth-life-editorial-round2-changes.json",
+    "twelfth-life-editorial-round3-changes.json"
+  ],
+  "snapshots": "docs/evidence/v6/twelfth-life-editorial-round-snapshots.json",
+  "brief": "docs/v6/TWELFTH_LIFE_EDITORIAL_DRAFT.md",
+  "fullObjective": "OPEN",
+  "next": "FreezeV2 and its before-CG narrow migration alongsideV1/companion; independentV3, production direction,225+full suite/build and actual new/old browser/storage/offline/staging."
+}

@@ -1,0 +1,837 @@
+{
+  "scope": "All 64 combinations of six listed dimensions; remaining choices first legal, not exhaustive over20 decisions",
+  "rows": [
+    {
+      "mask": 0,
+      "picks": [
+        "kh_plan_second",
+        "kh_prepare_litter",
+        "kh_save_runner",
+        "kh_admit_gap",
+        "kh_write_known",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 217
+    },
+    {
+      "mask": 1,
+      "picks": [
+        "kh_leave_choice",
+        "kh_prepare_litter",
+        "kh_save_runner",
+        "kh_admit_gap",
+        "kh_write_known",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 218
+    },
+    {
+      "mask": 2,
+      "picks": [
+        "kh_plan_second",
+        "kh_offer_run",
+        "kh_save_runner",
+        "kh_admit_gap",
+        "kh_write_known",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 219
+    },
+    {
+      "mask": 3,
+      "picks": [
+        "kh_leave_choice",
+        "kh_offer_run",
+        "kh_save_runner",
+        "kh_admit_gap",
+        "kh_write_known",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 220
+    },
+    {
+      "mask": 4,
+      "picks": [
+        "kh_plan_second",
+        "kh_prepare_litter",
+        "kh_save_pages",
+        "kh_admit_gap",
+        "kh_write_known",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 216
+    },
+    {
+      "mask": 5,
+      "picks": [
+        "kh_leave_choice",
+        "kh_prepare_litter",
+        "kh_save_pages",
+        "kh_admit_gap",
+        "kh_write_known",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 217
+    },
+    {
+      "mask": 6,
+      "picks": [
+        "kh_plan_second",
+        "kh_offer_run",
+        "kh_save_pages",
+        "kh_admit_gap",
+        "kh_write_known",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 217
+    },
+    {
+      "mask": 7,
+      "picks": [
+        "kh_leave_choice",
+        "kh_offer_run",
+        "kh_save_pages",
+        "kh_admit_gap",
+        "kh_write_known",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 218
+    },
+    {
+      "mask": 8,
+      "picks": [
+        "kh_plan_second",
+        "kh_prepare_litter",
+        "kh_save_runner",
+        "kh_first_names",
+        "kh_write_known",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 217
+    },
+    {
+      "mask": 9,
+      "picks": [
+        "kh_leave_choice",
+        "kh_prepare_litter",
+        "kh_save_runner",
+        "kh_first_names",
+        "kh_write_known",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 218
+    },
+    {
+      "mask": 10,
+      "picks": [
+        "kh_plan_second",
+        "kh_offer_run",
+        "kh_save_runner",
+        "kh_first_names",
+        "kh_write_known",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 219
+    },
+    {
+      "mask": 11,
+      "picks": [
+        "kh_leave_choice",
+        "kh_offer_run",
+        "kh_save_runner",
+        "kh_first_names",
+        "kh_write_known",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 220
+    },
+    {
+      "mask": 12,
+      "picks": [
+        "kh_plan_second",
+        "kh_prepare_litter",
+        "kh_save_pages",
+        "kh_first_names",
+        "kh_write_known",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 216
+    },
+    {
+      "mask": 13,
+      "picks": [
+        "kh_leave_choice",
+        "kh_prepare_litter",
+        "kh_save_pages",
+        "kh_first_names",
+        "kh_write_known",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 217
+    },
+    {
+      "mask": 14,
+      "picks": [
+        "kh_plan_second",
+        "kh_offer_run",
+        "kh_save_pages",
+        "kh_first_names",
+        "kh_write_known",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 217
+    },
+    {
+      "mask": 15,
+      "picks": [
+        "kh_leave_choice",
+        "kh_offer_run",
+        "kh_save_pages",
+        "kh_first_names",
+        "kh_write_known",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 218
+    },
+    {
+      "mask": 16,
+      "picks": [
+        "kh_plan_second",
+        "kh_prepare_litter",
+        "kh_save_runner",
+        "kh_admit_gap",
+        "kh_keep_beds",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 217
+    },
+    {
+      "mask": 17,
+      "picks": [
+        "kh_leave_choice",
+        "kh_prepare_litter",
+        "kh_save_runner",
+        "kh_admit_gap",
+        "kh_keep_beds",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 218
+    },
+    {
+      "mask": 18,
+      "picks": [
+        "kh_plan_second",
+        "kh_offer_run",
+        "kh_save_runner",
+        "kh_admit_gap",
+        "kh_keep_beds",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 219
+    },
+    {
+      "mask": 19,
+      "picks": [
+        "kh_leave_choice",
+        "kh_offer_run",
+        "kh_save_runner",
+        "kh_admit_gap",
+        "kh_keep_beds",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 220
+    },
+    {
+      "mask": 20,
+      "picks": [
+        "kh_plan_second",
+        "kh_prepare_litter",
+        "kh_save_pages",
+        "kh_admit_gap",
+        "kh_keep_beds",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 216
+    },
+    {
+      "mask": 21,
+      "picks": [
+        "kh_leave_choice",
+        "kh_prepare_litter",
+        "kh_save_pages",
+        "kh_admit_gap",
+        "kh_keep_beds",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 217
+    },
+    {
+      "mask": 22,
+      "picks": [
+        "kh_plan_second",
+        "kh_offer_run",
+        "kh_save_pages",
+        "kh_admit_gap",
+        "kh_keep_beds",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 217
+    },
+    {
+      "mask": 23,
+      "picks": [
+        "kh_leave_choice",
+        "kh_offer_run",
+        "kh_save_pages",
+        "kh_admit_gap",
+        "kh_keep_beds",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 218
+    },
+    {
+      "mask": 24,
+      "picks": [
+        "kh_plan_second",
+        "kh_prepare_litter",
+        "kh_save_runner",
+        "kh_first_names",
+        "kh_keep_beds",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 217
+    },
+    {
+      "mask": 25,
+      "picks": [
+        "kh_leave_choice",
+        "kh_prepare_litter",
+        "kh_save_runner",
+        "kh_first_names",
+        "kh_keep_beds",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 218
+    },
+    {
+      "mask": 26,
+      "picks": [
+        "kh_plan_second",
+        "kh_offer_run",
+        "kh_save_runner",
+        "kh_first_names",
+        "kh_keep_beds",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 219
+    },
+    {
+      "mask": 27,
+      "picks": [
+        "kh_leave_choice",
+        "kh_offer_run",
+        "kh_save_runner",
+        "kh_first_names",
+        "kh_keep_beds",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 220
+    },
+    {
+      "mask": 28,
+      "picks": [
+        "kh_plan_second",
+        "kh_prepare_litter",
+        "kh_save_pages",
+        "kh_first_names",
+        "kh_keep_beds",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 216
+    },
+    {
+      "mask": 29,
+      "picks": [
+        "kh_leave_choice",
+        "kh_prepare_litter",
+        "kh_save_pages",
+        "kh_first_names",
+        "kh_keep_beds",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 217
+    },
+    {
+      "mask": 30,
+      "picks": [
+        "kh_plan_second",
+        "kh_offer_run",
+        "kh_save_pages",
+        "kh_first_names",
+        "kh_keep_beds",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 217
+    },
+    {
+      "mask": 31,
+      "picks": [
+        "kh_leave_choice",
+        "kh_offer_run",
+        "kh_save_pages",
+        "kh_first_names",
+        "kh_keep_beds",
+        "kh_choose_care"
+      ],
+      "ending": "kh_care",
+      "frames": 218
+    },
+    {
+      "mask": 32,
+      "picks": [
+        "kh_plan_second",
+        "kh_prepare_litter",
+        "kh_save_runner",
+        "kh_admit_gap",
+        "kh_write_known",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 217
+    },
+    {
+      "mask": 33,
+      "picks": [
+        "kh_leave_choice",
+        "kh_prepare_litter",
+        "kh_save_runner",
+        "kh_admit_gap",
+        "kh_write_known",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 218
+    },
+    {
+      "mask": 34,
+      "picks": [
+        "kh_plan_second",
+        "kh_offer_run",
+        "kh_save_runner",
+        "kh_admit_gap",
+        "kh_write_known",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 219
+    },
+    {
+      "mask": 35,
+      "picks": [
+        "kh_leave_choice",
+        "kh_offer_run",
+        "kh_save_runner",
+        "kh_admit_gap",
+        "kh_write_known",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 220
+    },
+    {
+      "mask": 36,
+      "picks": [
+        "kh_plan_second",
+        "kh_prepare_litter",
+        "kh_save_pages",
+        "kh_admit_gap",
+        "kh_write_known",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 216
+    },
+    {
+      "mask": 37,
+      "picks": [
+        "kh_leave_choice",
+        "kh_prepare_litter",
+        "kh_save_pages",
+        "kh_admit_gap",
+        "kh_write_known",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 217
+    },
+    {
+      "mask": 38,
+      "picks": [
+        "kh_plan_second",
+        "kh_offer_run",
+        "kh_save_pages",
+        "kh_admit_gap",
+        "kh_write_known",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 217
+    },
+    {
+      "mask": 39,
+      "picks": [
+        "kh_leave_choice",
+        "kh_offer_run",
+        "kh_save_pages",
+        "kh_admit_gap",
+        "kh_write_known",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 218
+    },
+    {
+      "mask": 40,
+      "picks": [
+        "kh_plan_second",
+        "kh_prepare_litter",
+        "kh_save_runner",
+        "kh_first_names",
+        "kh_write_known",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 217
+    },
+    {
+      "mask": 41,
+      "picks": [
+        "kh_leave_choice",
+        "kh_prepare_litter",
+        "kh_save_runner",
+        "kh_first_names",
+        "kh_write_known",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 218
+    },
+    {
+      "mask": 42,
+      "picks": [
+        "kh_plan_second",
+        "kh_offer_run",
+        "kh_save_runner",
+        "kh_first_names",
+        "kh_write_known",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 219
+    },
+    {
+      "mask": 43,
+      "picks": [
+        "kh_leave_choice",
+        "kh_offer_run",
+        "kh_save_runner",
+        "kh_first_names",
+        "kh_write_known",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 220
+    },
+    {
+      "mask": 44,
+      "picks": [
+        "kh_plan_second",
+        "kh_prepare_litter",
+        "kh_save_pages",
+        "kh_first_names",
+        "kh_write_known",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 216
+    },
+    {
+      "mask": 45,
+      "picks": [
+        "kh_leave_choice",
+        "kh_prepare_litter",
+        "kh_save_pages",
+        "kh_first_names",
+        "kh_write_known",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 217
+    },
+    {
+      "mask": 46,
+      "picks": [
+        "kh_plan_second",
+        "kh_offer_run",
+        "kh_save_pages",
+        "kh_first_names",
+        "kh_write_known",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 217
+    },
+    {
+      "mask": 47,
+      "picks": [
+        "kh_leave_choice",
+        "kh_offer_run",
+        "kh_save_pages",
+        "kh_first_names",
+        "kh_write_known",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 218
+    },
+    {
+      "mask": 48,
+      "picks": [
+        "kh_plan_second",
+        "kh_prepare_litter",
+        "kh_save_runner",
+        "kh_admit_gap",
+        "kh_keep_beds",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 217
+    },
+    {
+      "mask": 49,
+      "picks": [
+        "kh_leave_choice",
+        "kh_prepare_litter",
+        "kh_save_runner",
+        "kh_admit_gap",
+        "kh_keep_beds",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 218
+    },
+    {
+      "mask": 50,
+      "picks": [
+        "kh_plan_second",
+        "kh_offer_run",
+        "kh_save_runner",
+        "kh_admit_gap",
+        "kh_keep_beds",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 219
+    },
+    {
+      "mask": 51,
+      "picks": [
+        "kh_leave_choice",
+        "kh_offer_run",
+        "kh_save_runner",
+        "kh_admit_gap",
+        "kh_keep_beds",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 220
+    },
+    {
+      "mask": 52,
+      "picks": [
+        "kh_plan_second",
+        "kh_prepare_litter",
+        "kh_save_pages",
+        "kh_admit_gap",
+        "kh_keep_beds",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 216
+    },
+    {
+      "mask": 53,
+      "picks": [
+        "kh_leave_choice",
+        "kh_prepare_litter",
+        "kh_save_pages",
+        "kh_admit_gap",
+        "kh_keep_beds",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 217
+    },
+    {
+      "mask": 54,
+      "picks": [
+        "kh_plan_second",
+        "kh_offer_run",
+        "kh_save_pages",
+        "kh_admit_gap",
+        "kh_keep_beds",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 217
+    },
+    {
+      "mask": 55,
+      "picks": [
+        "kh_leave_choice",
+        "kh_offer_run",
+        "kh_save_pages",
+        "kh_admit_gap",
+        "kh_keep_beds",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 218
+    },
+    {
+      "mask": 56,
+      "picks": [
+        "kh_plan_second",
+        "kh_prepare_litter",
+        "kh_save_runner",
+        "kh_first_names",
+        "kh_keep_beds",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 217
+    },
+    {
+      "mask": 57,
+      "picks": [
+        "kh_leave_choice",
+        "kh_prepare_litter",
+        "kh_save_runner",
+        "kh_first_names",
+        "kh_keep_beds",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 218
+    },
+    {
+      "mask": 58,
+      "picks": [
+        "kh_plan_second",
+        "kh_offer_run",
+        "kh_save_runner",
+        "kh_first_names",
+        "kh_keep_beds",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 219
+    },
+    {
+      "mask": 59,
+      "picks": [
+        "kh_leave_choice",
+        "kh_offer_run",
+        "kh_save_runner",
+        "kh_first_names",
+        "kh_keep_beds",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 220
+    },
+    {
+      "mask": 60,
+      "picks": [
+        "kh_plan_second",
+        "kh_prepare_litter",
+        "kh_save_pages",
+        "kh_first_names",
+        "kh_keep_beds",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 216
+    },
+    {
+      "mask": 61,
+      "picks": [
+        "kh_leave_choice",
+        "kh_prepare_litter",
+        "kh_save_pages",
+        "kh_first_names",
+        "kh_keep_beds",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 217
+    },
+    {
+      "mask": 62,
+      "picks": [
+        "kh_plan_second",
+        "kh_offer_run",
+        "kh_save_pages",
+        "kh_first_names",
+        "kh_keep_beds",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 217
+    },
+    {
+      "mask": 63,
+      "picks": [
+        "kh_leave_choice",
+        "kh_offer_run",
+        "kh_save_pages",
+        "kh_first_names",
+        "kh_keep_beds",
+        "kh_choose_record"
+      ],
+      "ending": "kh_record",
+      "frames": 218
+    }
+  ]
+}

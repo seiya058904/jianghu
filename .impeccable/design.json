@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-15",
+  "title": "Design System: Jianghu",
+  "extensions": {
+    "shadows": [
+      {
+        "name": "pause-panel",
+        "value": "0 24px 100px #0003",
+        "purpose": "Pause dialog depth"
+      },
+      {
+        "name": "stage-dialogue",
+        "value": "0 16px 40px #293b3612",
+        "purpose": "Subtle dialogue separation"
+      }
+    ],
+    "motion": [
+      {
+        "name": "portrait-state",
+        "value": "150ms ease-out",
+        "purpose": "Focus and stance feedback; disabled for reduced motion"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "720px"
+      },
+      {
+        "name": "short-height",
+        "value": "600px"
+      }
+    ]
+  },
+  "components": [],
+  "narrative": {
+    "northStar": "人物在场，玩家接话",
+    "overview": "User-directed preservation of the established paper, ink-green and cinnabar identity with a dialogue stage.",
+    "keyCharacteristics": [
+      "Scene and characters",
+      "One natural beat at a time",
+      "Explicit player replies",
+      "Pause panels"
+    ],
+    "rules": [
+      {
+        "name": "Scene authorship",
+        "body": "Ink and the presentation manifest drive new scenes without UI story conditionals.",
+        "section": "layout"
+      }
+    ],
+    "dos": [
+      "Keep the established palette and local font fallbacks.",
+      "Use genuine generated art with provenance."
+    ],
+    "donts": [
+      "Do not append the whole novel to the main stage.",
+      "Do not bake choices into images."
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+
+Running 11 tests using 1 worker
+
+  ok  1 tests\taihua-v2-upgrade.spec.ts:7:1 › Taihua v2 leaves real v1 auto, manual, previous and settings untouched; old link restores original stage and two-ending counter (441ms)
+  ok  2 tests\taihua-v2-upgrade.spec.ts:10:1 › Taihua three late choices and Mu scene fit seven viewports with keyboard and decoded imagery (2.5s)
+  ok  3 tests\taihua-v2-upgrade.spec.ts:13:1 › Taihua unvisited guidance assets restore offline at root and subpath with v1 cache kept separate (853ms)
+  ok  4 tests\taihua.spec.ts:5:28 › Taihua complete actual browser path 2: independent saves, ending and reload (1.1m)
+  ok  5 tests\v6-cg.spec.ts:24:59 › nightCompany: existing illustration loads, restores and returns to reusable stage at 360 (554ms)
+  ok  6 tests\v6-cg.spec.ts:24:59 › nightCompany: existing illustration loads, restores and returns to reusable stage at 800 (558ms)
+  ok  7 tests\v6-cg.spec.ts:24:59 › nightCompany: existing illustration loads, restores and returns to reusable stage at 1440 (693ms)
+  ok  8 tests\v6-cg.spec.ts:24:59 › mountainInquiry: existing illustration loads, restores and returns to reusable stage at 360 (318ms)
+  ok  9 tests\v6-cg.spec.ts:24:59 › mountainInquiry: existing illustration loads, restores and returns to reusable stage at 800 (311ms)
+  ok 10 tests\v6-cg.spec.ts:24:59 › mountainInquiry: existing illustration loads, restores and returns to reusable stage at 1440 (442ms)
+  ok 11 tests\v6-cg.spec.ts:49:1 › failed illustration retains the scene fallback and playable text (222ms)
+
+  11 passed (1.2m)

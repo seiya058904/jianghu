@@ -1,0 +1,100 @@
+{
+  "status": "FIRST_VOLUME_V2_INTERNAL_EDITORIAL_VERIFIED_GOAL_IN_PROGRESS",
+  "baselineCommit": "b382387",
+  "work": "海路两世 · 中原以外",
+  "current": {
+    "entry": "sea.html",
+    "version": "sea-2.0.0",
+    "prefix": "jianghu:chronicle:sea:v2:",
+    "beats": 257,
+    "options": 46,
+    "decisionsPerFullRoute": 23,
+    "endings": 2
+  },
+  "archive": {
+    "entry": "sea-v1.html",
+    "version": "sea-1.0.0",
+    "prefix": "jianghu:chronicle:sea:v1:",
+    "compiledSHA256": "cdf7e31ae6af2d0ee606715bcdf5ff85ce0adfe1f0b92f3e3ddf573ed3378cca",
+    "inkSHA256": "2d9350f36cfbff82a53eb7bb9132a1f380aed5b022e1715b22775c7c4ee10b3d",
+    "preCGCompatibilityRetained": true
+  },
+  "editorial": {
+    "actualReplacementRecords": 63,
+    "recordsByRound": {
+      "1": 10,
+      "2": 34,
+      "3": 19
+    },
+    "recordFile": "docs/evidence/v6/sea-editorial-changes.json",
+    "roundDrafts": "docs/archives/sea-v1-editorial-baseline/",
+    "fullRouteTranscriptsRead": 2,
+    "countsAreNotDistinctBeats": true
+  },
+  "checks": {
+    "nodeFullPass": 180,
+    "finalBuildPass": true,
+    "initialBrowser": {
+      "passed": 21,
+      "failed": 1,
+      "failure": "Test cache eviction raced service-worker cache writes; harness waits for both cache entries before removing, then asserts absent."
+    },
+    "correctedAndRootRegressionBrowserPass": 10,
+    "finalBuildBrowserPass": 10,
+    "pairedCoversBrowserPass": 1,
+    "uniqueBrowserCasesPassedAcrossFinalEvidence": 30,
+    "fullActualInputRoutes": {
+      "V2": 2,
+      "V1": 2,
+      "sequelUnchanged": 2
+    },
+    "keyDimensionCombinations": 128,
+    "keyDimensions": 7,
+    "keyDimensionsOtherChoices": "first legal option",
+    "sampledPaths": 512,
+    "sampledVisitedBeats": 257,
+    "longestPassiveGap": 14,
+    "offlinePrimaryOwnersVerified": 34,
+    "frozenMigrationChunksVerified": 8,
+    "allRasterRootAndSubpathByteDecodePass": 155,
+    "newImages": 0,
+    "editedImages": 0,
+    "generatedCalls": 0
+  },
+  "hashes": {
+    "src/generated/sea.json": "c207f3f9d59777d1b451e3f453b8d487b0c9f325a739d3352f8fd2f60c8e5a99",
+    "src/generated/sea-v1.json": "cdf7e31ae6af2d0ee606715bcdf5ff85ce0adfe1f0b92f3e3ddf573ed3378cca",
+    "src/generated/sea-before-rigging.json": "4061e07b8c3865937b8b83e6954c11d147f7faba237fcadad2c80d0ea7066dbd",
+    "src/generated/sea-tide.json": "2c5d168105b00e52f0181bc9a64f050c66e6e450249a39dfc7cbc73bfe246375",
+    "src/generated/campaign-v6.json": "8c199458e449d3fde8710eabe1c9594b0392d2066f1601f5181297128dee48b6",
+    "宋世江湖.md": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393"
+  },
+  "productionCounts": {
+    "speakingNPC": 306,
+    "registeredDedicatedUsed": 32,
+    "independentDedicatedActorIdsUsed": 32,
+    "independentDedicatedUsed": 28,
+    "charactersWithThreeImagesAtSameAppearance": 19,
+    "registeredArchetypesUsed": 12,
+    "distinctBackgroundFiles": 30,
+    "distinctCGFiles": 19,
+    "referencedBytes": 23752882
+  },
+  "assetSourcesSampled": 37,
+  "evidence": [
+    "docs/evidence/v6/sea-editorial-unit.log",
+    "docs/evidence/v6/sea-editorial-browser-initial.log",
+    "docs/evidence/v6/sea-editorial-final-browser.log",
+    "docs/evidence/v6/sea-editorial-final-build-browser.log",
+    "docs/evidence/v6/sea-editorial-paired-browser.log"
+  ],
+  "limits": [
+    "Internal editing and actual UI inputs are not external human enjoyment or measured reading-time proof.",
+    "Seven-dimensional 128 combinations and 512 samples are not exhaustive over every story state.",
+    "Protagonist and important-character dedicated ages, actual overseas environments and action staging still incomplete.",
+    "Second volume remains unchanged and has not received this three-round editorial work.",
+    "Final full-site art, literature and delivery gates remain open.",
+    "Graph metadata was changed; current source and executed checks used for versioning claims."
+  ],
+  "finalVerificationScope": "Six full current/archive/sequel routes passed before the final cover-note-only copy change. The final build then passed edition links, raw storage, 7-size framing/scrolling, offline and all-raster checks; full routes were not repeated for the shorter note."
+}

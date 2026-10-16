@@ -1,0 +1,23 @@
+[WebServer] (node:42492) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 10 tests using 3 workers
+
+(node:40388) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:26644) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:38344) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  3 tests\default-entry.spec.ts:11:225 › Default V6 root: shared alias progress, real V5 preservation and direct archive resume/export (1.1s)
+  ok  4 tests\default-entry.spec.ts:11:225 › Default V6 index: shared alias progress, real V5 preservation and direct archive resume/export (775ms)
+  ok  5 tests\default-entry.spec.ts:11:225 › Default V6 subroot: shared alias progress, real V5 preservation and direct archive resume/export (776ms)
+  ok  1 tests\art-manifest.spec.ts:8:107 › Asset manifest: every raster has exact built bytes and browser decode on root (3.0s)
+  ok  6 tests\default-entry.spec.ts:11:225 › Default V6 subindex: shared alias progress, real V5 preservation and direct archive resume/export (858ms)
+  ok  8 tests\default-entry.spec.ts:32:1 › Library and chronicle return links lead to default V6 at root and subpath (959ms)
+  ok  7 tests\art-manifest.spec.ts:8:107 › Asset manifest: every raster has exact built bytes and browser decode on subpath (2.7s)
+  ok  2 tests\sea-editorial.spec.ts:18:1 › Sea V2 common CG, both actual Canghe question closeups and teaching replies work at seven sizes (9.1s)
+  ok  9 tests\sea-editorial.spec.ts:26:107 › Sea editions root: offline cold archive chunks, raw backup and unseen V2 late scene restore independently (713ms)
+  ok 10 tests\sea-editorial.spec.ts:26:107 › Sea editions subpath: offline cold archive chunks, raw backup and unseen V2 late scene restore independently (808ms)
+
+  10 passed (11.6s)

@@ -1,0 +1,17 @@
+[WebServer] (node:35052) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 1 worker
+
+(node:48792) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\longmen-v2.spec.ts:10:1 › Longmen old auto/slot/previous/settings stay accessible at frozen archive and cannot import into new edition (535ms)
+  ok 2 tests\longmen-v2.spec.ts:19:1 › New Longmen night illustration failure keeps reusable fallback and playable text (253ms)
+  ok 3 tests\v6-cg.spec.ts:25:59 › woodenInquiry: existing illustration loads, restores and returns to reusable stage at 360 (345ms)
+  ok 4 tests\v6-cg.spec.ts:25:59 › woodenInquiry: existing illustration loads, restores and returns to reusable stage at 800 (327ms)
+  ok 5 tests\v6-cg.spec.ts:25:59 › woodenInquiry: existing illustration loads, restores and returns to reusable stage at 1440 (476ms)
+  ok 6 tests\v6-cg.spec.ts:25:59 › longmenNight: existing illustration loads, restores and returns to reusable stage at 360 (603ms)
+  ok 7 tests\v6-cg.spec.ts:25:59 › longmenNight: existing illustration loads, restores and returns to reusable stage at 800 (631ms)
+  ok 8 tests\v6-cg.spec.ts:25:59 › longmenNight: existing illustration loads, restores and returns to reusable stage at 1440 (718ms)
+
+  8 passed (5.0s)

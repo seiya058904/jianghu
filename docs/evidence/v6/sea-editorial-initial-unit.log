@@ -1,0 +1,23 @@
+✔ sea-v1 rigging: unchanged words/choices/world and strict old-save replay at every changed snapshot (159.478ms)
+✔ sea-tide rigging: unchanged words/choices/world and strict old-save replay at every changed snapshot (84.2817ms)
+✔ Rigging detail exits after two frames; closeup is one frame and does not remain on the next person (6.6999ms)
+✔ Rigging migration rejects forged stage, world, commands and wrong edition (18.0872ms)
+✔ Both rigging contexts and each alternative closeup are reachable without new text or choices (4528.3944ms)
+✔ Sea keeps separate protagonists, fixed defeats, ordinary pupils, realm and posthumous succession on both full routes (64.1018ms)
+✔ Sea one early cooperation change pays off five years later with a different illness transfer cost (17.1765ms)
+✔ Sea teaching styles change actual later cover duties and time costs without changing the fixed enlightenment (17.7933ms)
+✔ Sea personal aftermath changes sustained late activity and keeps disputed Lu pages uncertain (13.7887ms)
+✔ Sea sampled branches visit every authored beat with bounded reading gaps (2687.5908ms)
+✔ Sea keeps separate protagonists, fixed defeats, ordinary pupils, realm and posthumous succession on both full routes (71.2825ms)
+✔ Sea one early cooperation change pays off five years later with a different illness transfer cost (24.4361ms)
+✔ Sea teaching styles change actual later cover duties and time costs without changing the fixed enlightenment (15.0844ms)
+✔ Sea personal aftermath changes sustained late activity and keeps disputed Lu pages uncertain (12.9998ms)
+✔ Sea sampled branches visit every authored beat with bounded reading gaps (2875.6847ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4917.5918

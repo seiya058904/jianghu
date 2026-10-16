@@ -1,0 +1,14 @@
+✔ Published Qingshi V2 contradictions are reproduced; draft removes fabricated Han family across letters and both funerary routes (89.2993ms)
+✔ Focused draft cannot alter published sources, compiled saves or canon; all exact baseline hashes remain unchanged (12.8237ms)
+✔ 512 sampled unpublished lives retain all draft beats,60 choices,two personal endings and fixed four deaths/age92 sacrifice (4842.754ms)
+✔ Eight real carriage choices produce truthful four-cell settlements with no invented medicine bill on the uninjured path (72.5755ms)
+✔ Sixteen Song/private-lesson combinations retain chosen promises and do not claim a second half-day of the deferred lesson (154.7056ms)
+✔ Only a positioned witness reports the terminal call; runner never claims unwalked posts as his own route (36.3197ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5449.436

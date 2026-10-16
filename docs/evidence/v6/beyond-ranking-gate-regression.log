@@ -1,0 +1,11 @@
+[WebServer] (node:46268) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:36928) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\luoyang-bamboo.spec.ts:9:1 › Bamboo locked saved data survives forced click, wrong main prefix, live correct unlock and live relock (546ms)
+  ok 2 tests\qian-kun.spec.ts:18:1 › Notes direct URL, synthetic start and import/load cannot bypass missing readings or replace preserved saves (13.0s)
+
+  2 passed (16.4s)

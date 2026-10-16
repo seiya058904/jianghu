@@ -1,0 +1,11 @@
+{
+  "targets": [
+    "./assets/qingshi-v2-BwUstz2D.js",
+    "./art/v6/cg-qingshi-old-knife.webp"
+  ],
+  "cacheColdBeforeDownload": true,
+  "cacheRestoredByExplicitV2Download": true,
+  "HTTPcacheCleared": true,
+  "freshOfflineV2CGAndData": true,
+  "freshOfflineV3HomeChoiceAndResponse": true
+}

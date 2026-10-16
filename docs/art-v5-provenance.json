@@ -1,0 +1,443 @@
+{
+  "records": [
+    {
+      "id": "zhaoli",
+      "file": "public/art/v5/zhaoli.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-ed481659-9e80-4e09-a043-9629a09538e7.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": null,
+      "promptNote": "Character/environment specification in ART_DIRECTION.md; original exact prompt remains in this chat tool call.",
+      "used": true
+    },
+    {
+      "id": "qiao",
+      "file": "public/art/v5/qiao.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-2accf8f5-48fc-491c-9f26-9b2ee42a4ed7.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": null,
+      "promptNote": "Character/environment specification in ART_DIRECTION.md; original exact prompt remains in this chat tool call.",
+      "used": true
+    },
+    {
+      "id": "su",
+      "file": "public/art/v5/su.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-f00732f5-33dc-431e-a236-8be5e91b9996.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": null,
+      "promptNote": "Character/environment specification in ART_DIRECTION.md; original exact prompt remains in this chat tool call.",
+      "used": true
+    },
+    {
+      "id": "lu",
+      "file": "public/art/v5/lu.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-505beae8-050c-4727-932b-5f4ae249ac62.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": null,
+      "promptNote": "Character/environment specification in ART_DIRECTION.md; original exact prompt remains in this chat tool call.",
+      "used": true
+    },
+    {
+      "id": "han",
+      "file": "public/art/v5/han.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-a646b2c4-569a-4993-93a2-6b2905cfe405.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": null,
+      "promptNote": "Character/environment specification in ART_DIRECTION.md; original exact prompt remains in this chat tool call.",
+      "used": true
+    },
+    {
+      "id": "ling",
+      "file": "public/art/v5/ling.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-2612b26f-1028-4a36-8444-057d075baf54.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": null,
+      "promptNote": "Character/environment specification in ART_DIRECTION.md; original exact prompt remains in this chat tool call.",
+      "used": true
+    },
+    {
+      "id": "xu",
+      "file": "public/art/v5/xu.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-d8a3c6fb-2fd6-4cbf-9df9-f8d8a1fc5619.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": null,
+      "promptNote": "Character/environment specification in ART_DIRECTION.md; original exact prompt remains in this chat tool call.",
+      "used": true
+    },
+    {
+      "id": "pei",
+      "file": "public/art/v5/pei.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-54162380-a209-4119-a886-c6c9d0600ef9.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": null,
+      "promptNote": "Character/environment specification in ART_DIRECTION.md; original exact prompt remains in this chat tool call.",
+      "used": true
+    },
+    {
+      "id": "yan",
+      "file": "public/art/v5/yan.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-d5d1bbb4-b48c-4015-a03c-6769b8577411.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": null,
+      "promptNote": "Character/environment specification in ART_DIRECTION.md; original exact prompt remains in this chat tool call.",
+      "used": true
+    },
+    {
+      "id": "rong",
+      "file": "public/art/v5/rong.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-2dce2ea1-b435-4519-a5e6-fe0adcfad85d.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": null,
+      "promptNote": "Character/environment specification in ART_DIRECTION.md; original exact prompt remains in this chat tool call.",
+      "used": true
+    },
+    {
+      "id": "du",
+      "file": "public/art/v5/du.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-11a26073-63e2-4538-9e6f-64826e811253.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": null,
+      "promptNote": "Character/environment specification in ART_DIRECTION.md; original exact prompt remains in this chat tool call.",
+      "used": true
+    },
+    {
+      "id": "he",
+      "file": "public/art/v5/he.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-f8dd1a2b-2351-4b4e-b2b1-562cd34adc8d.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": null,
+      "promptNote": "Character/environment specification in ART_DIRECTION.md; original exact prompt remains in this chat tool call.",
+      "used": true
+    },
+    {
+      "id": "zhaoli-intent",
+      "file": "public/art/v5/zhaoli-intent.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-1d91f6a6-f2a5-4a62-9c63-3fbb03a498f9.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "Edit this exact character portrait for the same wuxia game. Preserve the same woman identity, face shape, hair, red head cloth, teal clothes, rope, materials, style, framing, lighting, pose and transparency. Change ONLY facial expression: smile gone, brows drawn with quiet worried concentration, mouth gently closed, eyes intent. Absolutely no new background; preserve genuine transparent alpha. No text.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "cg-rescue",
+      "file": "public/art/v5/cg-rescue.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-dbb4d02c-f9f2-49d0-8fed-e0d8590838b3.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "Landscape 16:9 cinematic key illustration for Song dynasty Chinese wuxia visual novel. Fine realistic delicate ink and opaque watercolor, cream muted jade and cinnabar, readable faces and natural anatomy, emotionally specific and human scale. No words, no text, watermark, frames or UI. Rainy night on river inlet: a young tan female boat pilot with red hair ribbon, teal cross collar jacket and rough brown rain cape leans from a small wooden boat to help a frightened elderly farmer cross the gap from a sinking fishing boat. A thick hemp rope leads toward a stone anchor in the foreground. Controlled rescue, not superhuman leaping. Warm lantern across dark water, no swords drawn.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "cg-storm",
+      "file": "public/art/v5/cg-storm.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-b3cec28d-56b6-4f13-a6b8-9d1c51893be1.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "Landscape 16:9 cinematic key illustration for Song dynasty Chinese wuxia visual novel. Fine realistic delicate ink and opaque watercolor, cream muted jade and cinnabar, readable faces and natural anatomy, emotionally specific and human scale. No words, no text, watermark, frames or UI. Dramatic close-up at night in rain: two tired hands, one with cloth wrist wrap, are carefully letting out a taut wet hemp rope around a stone mooring block. In middle distance a young woman in teal and brown rain cape reaches toward the safety of shore from a small boat, a red ribbon in her dark hair. Strong diagonal rope, black jade river, warm lantern held by a distant ally. The turning point is releasing, not pulling harder.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "cg-dawn",
+      "file": "public/art/v5/cg-dawn.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-67c05abd-6867-4c2b-937c-297f02e4ae15.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "Landscape 16:9 cinematic key illustration for Song dynasty Chinese wuxia visual novel. Fine realistic delicate ink and opaque watercolor, cream muted jade and cinnabar, readable faces and natural anatomy, emotionally specific and human scale. No words, no text, watermark, frames or UI. Warm dawn epilogue: young tan female boat pilot in teal jacket and red hair ribbon, a lean young man in ochre robe with wrist bandage, and a gray-bearded village teacher share breakfast at a plain table beside a repaired ferry landing. New timber planks, small boat, white reeds, golden mist. Quiet relief and friendship, subtle tired smiles, grounded Chinese historical clothes. Faces central and clear.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "cg-quiet",
+      "file": "public/art/v5/cg-quiet.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-c4f814c5-6485-4214-8220-e81e8951fe48.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "Landscape 16:9 cinematic key illustration for Song dynasty Chinese wuxia visual novel. Fine realistic delicate ink and opaque watercolor, cream muted jade and cinnabar, readable faces and natural anatomy, emotionally specific and human scale. No words, no text, watermark, frames or UI. Quiet autumn afternoon beside a humble Chinese riverside training hall. An injured young traveler with plain cream sleeves sits on a timber threshold, hands resting beside an unused wooden practice sword. A companion in ochre robe silently sets down a warm bowl next to them. View from side with modest realistic faces, dry leaves and one rain basin with a small green plant, tenderness without triumph.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "npc-elder-male",
+      "file": "public/art/v5/npc-elder-male.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-83e25875-2800-425e-9ab3-d89ccf5f0ab0.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "Single ordinary supporting character waist-up production portrait, Song dynasty Chinese wuxia game, fine realistic ink watercolor, muted cream ochre jade, full head generous margins, genuine transparent alpha with no background/gradient. No text/watermark/frame. 72-year-old male village cobbler, thin lined smiling face, short silver beard, gray hair under faded brown cloth cap, weathered gray tunic and coarse beige apron, holding two bamboo strips and a tiny shoe awl safely at waist.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "npc-merchant-male",
+      "file": "public/art/v5/npc-merchant-male.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-96247815-1faf-4462-b7df-8182fedcd271.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "Single ordinary supporting character waist-up production portrait, Song dynasty Chinese wuxia game, fine realistic ink watercolor, muted cream ochre jade, full head generous margins, genuine transparent alpha with no background/gradient. No text/watermark/frame. 38-year-old male roadside cake vendor, plump round expressive face with small mustache, ochre headcloth, faded light blue cross collar shirt and brown apron dusted flour, holding a bamboo tray with two small flat cakes, ruefully apologetic smile.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "npc-youth-blue",
+      "file": "public/art/v5/npc-youth-blue.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-2c209aee-2390-460c-9dbc-e78a5f0192ab.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "Single ordinary supporting character waist-up production portrait, Song dynasty Chinese wuxia game, fine realistic ink watercolor, muted cream ochre jade, full head generous margins, genuine transparent alpha with no background/gradient. No text/watermark/frame. 21-year-old male village apprentice flag bearer, slim long face, straight brows, black hair low knot, blue-gray short robe cream collar and dark sash, holding a small plain red triangular signal flag at waist, earnest slightly worried expression.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "qiao-uneasy",
+      "file": "public/art/v5/qiao-uneasy.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-19ab1b04-047a-4cde-81ef-34921bb9f19f.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "Edit this exact portrait for the same visual novel. Preserve the exact identity, face shape, clothing, hair, accessories, pose, anatomy, framing, lighting, painterly style, and transparent alpha. Remove the proud smile. He is quietly embarrassed and worried about an injured wrist, brows slightly raised at inner corners, lips pressed, eyes looking toward a trusted friend. No words. No background. Preserve genuine transparency.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "su-amused",
+      "file": "public/art/v5/su-amused.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-aa3c9223-2628-471d-a184-7592736d61f8.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "Edit this exact portrait for the same visual novel. Preserve the exact identity, face shape, clothing, hair, accessories, pose, anatomy, framing, lighting, painterly style, and transparent alpha. Change only expression to a restrained warm amused smile, softened eyes and subtle lifted mouth corners, not exaggerated. No words. No background. Preserve genuine transparency.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "lu-intent",
+      "file": "public/art/v5/lu-intent.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-5b698d26-a564-4c43-a36e-97e3fe51c209.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "Edit this exact portrait for the same visual novel. Preserve the exact identity, face shape, clothing, hair, accessories, pose, anatomy, framing, lighting, painterly style, and transparent alpha. Change only expression to serious attentive concentration, smile gone, lips closed, focused eyes. Keep the raised arm and the rice cake. No words. No background. Preserve genuine transparency.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "quay",
+      "file": "public/art/v5/quay.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-c82211b7-a587-4761-a0e1-97e0dfb56043.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": null,
+      "promptNote": "Character/environment specification in ART_DIRECTION.md; original exact prompt remains in this chat tool call.",
+      "used": true
+    },
+    {
+      "id": "hall",
+      "file": "public/art/v5/hall.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-b310e930-e2cf-405b-ac6b-a6801ef0970f.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": null,
+      "promptNote": "Character/environment specification in ART_DIRECTION.md; original exact prompt remains in this chat tool call.",
+      "used": true
+    },
+    {
+      "id": "inn",
+      "file": "public/art/v5/inn.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-9e2b27b7-f301-4634-816c-e3cbcf60f03d.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": null,
+      "promptNote": "Character/environment specification in ART_DIRECTION.md; original exact prompt remains in this chat tool call.",
+      "used": true
+    },
+    {
+      "id": "ridge",
+      "file": "public/art/v5/ridge.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-5c5289e2-251a-4867-9fbc-57a6396fc138.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": null,
+      "promptNote": "Character/environment specification in ART_DIRECTION.md; original exact prompt remains in this chat tool call.",
+      "used": true
+    },
+    {
+      "id": "bridge",
+      "file": "public/art/v5/bridge.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-043766e0-ca2d-4ab5-b172-14c8437b8df9.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "Landscape 16:9 game background for Chinese Song dynasty wuxia visual novel. Fine realistic ink and opaque watercolor, warm paper cream muted jade and cinnabar, clear central foreground for sprites, cinematic atmospheric depth, no text/writing/UI/watermark/frame, no foreground people. Rain-darkened narrow old wooden bridge over a small mountain torrent, broken planks and exposed timber support, rope tied to strong tree on near bank, misty autumn gorge and mossy stones, dramatic but natural overcast light.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "reeds",
+      "file": "public/art/v5/reeds.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-e51011d2-2637-47dd-87c8-d7c04760ed5d.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "Landscape 16:9 game background for Chinese Song dynasty wuxia visual novel. Fine realistic ink and opaque watercolor, warm paper cream muted jade and cinnabar, clear central foreground for sprites, cinematic atmospheric depth, no text/writing/UI/watermark/frame, no foreground people. Quiet flat-bottom river boat at broad white reed marsh inlet in daylight, low wooden rail at bottom, coiled rope, ivory reed plumes and pale jade water, low riverside houses far away, delicate early autumn breeze.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "rainboat",
+      "file": "public/art/v5/rainboat.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-fc08852a-9d3c-4002-b621-aa6ca2460b69.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "Landscape 16:9 game background for Chinese Song dynasty wuxia visual novel. Fine realistic ink and opaque watercolor, warm paper cream muted jade and cinnabar, clear central foreground for sprites, cinematic atmospheric depth, no text/writing/UI/watermark/frame, no foreground people. Night river inlet beneath heavy rain, small wooden boat moored beside old dark piling, single warm lantern reflected in black-green water, distant crooked shore shelter, suspenseful intimate light, readable foreground.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "workshop",
+      "file": "public/art/v5/workshop.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-75cf83b9-48d0-4fae-b179-66b9b647284a.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "Landscape 16:9 game background for Chinese Song dynasty wuxia visual novel. Fine realistic ink and opaque watercolor, warm paper cream muted jade and cinnabar, clear central foreground for sprites, cinematic atmospheric depth, no text/writing/UI/watermark/frame, no foreground people. Warm ship carpenters' open-sided workshop beside river at dusk, wooden ribs of unfinished boat at right, long plank table with steaming soup and ceramic bowls at left, hanging tools and warm amber lantern, humane homecoming mood.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "arena",
+      "file": "public/art/v5/arena.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-b03a15a4-d05f-4798-ba85-bcfb193e331b.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "Landscape 16:9 production background, Song dynasty Chinese wuxia visual novel, detailed fine realistic ink and opaque watercolor, cream rice-paper light, muted jade greens warm ochre restrained red, atmospheric cinematic depth. Central foreground clear for game sprites, main subject within middle 50 percent for mobile crop. No text, UI, watermark, borders or foreground people. Small local martial arts meeting on pale stone riverside training ground, wooden boundary poles with simple red streamers, simple seating awnings and timber weapon rack, crowded distant low village silhouettes but no detailed faces, fresh morning autumn light. Not royal palace or huge tournament.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "levee",
+      "file": "public/art/v5/levee.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-abfe0de5-063f-4236-8b55-4eea833bd87b.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "Landscape 16:9 production background, Song dynasty Chinese wuxia visual novel, detailed fine realistic ink and opaque watercolor, cream rice-paper light, muted jade greens warm ochre restrained red, atmospheric cinematic depth. Central foreground clear for game sprites, main subject within middle 50 percent for mobile crop. No text, UI, watermark, borders or foreground people. Narrow village river levee during rising storm, shallow muddy floodwater around cart wheels, temporary awning collapsing at right, scattered rice sacks and planks, urgent rain and dim jade sky, warehouse with stone mooring post at left.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "storm",
+      "file": "public/art/v5/storm.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-2fe85e53-14b5-4aae-a311-c40f6bfa205b.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "Landscape 16:9 production background, Song dynasty Chinese wuxia visual novel, detailed fine realistic ink and opaque watercolor, cream rice-paper light, muted jade greens warm ochre restrained red, atmospheric cinematic depth. Central foreground clear for game sprites, main subject within middle 50 percent for mobile crop. No text, UI, watermark, borders or foreground people. Flood river bend at night under rain, strong rope stretched diagonally from near stone mooring block to small boat beyond broken wooden posts, two distant warm lanterns on dark teal water, dramatic turbulent water and human-scale danger, no supernatural effects.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "dawn",
+      "file": "public/art/v5/dawn.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-f3e39d9e-96b4-4a73-9af2-ba58b0912b04.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "Landscape 16:9 production background, Song dynasty Chinese wuxia visual novel, detailed fine realistic ink and opaque watercolor, cream rice-paper light, muted jade greens warm ochre restrained red, atmospheric cinematic depth. Central foreground clear for game sprites, main subject within middle 50 percent for mobile crop. No text, UI, watermark, borders or foreground people. Same modest Chinese river ferry at dawn after storm, repaired timber landing, pale gold light over misty reed islands, wet boards and new planks, folded ropes, peaceful small village, empty foreground quietly hopeful.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "npc-porter",
+      "file": "public/art/v5/npc-porter.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-cc99c922-d895-44d6-860e-e92201c4ab99.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "One single ordinary supporting character waist-up production portrait for Song dynasty Chinese wuxia visual novel. Realistic delicate ink and opaque watercolor, humane expressive face, muted rice-paper cream jade ochre colors. Head fully visible with generous margins. True transparent alpha background, no scenery, no gradient, no words, watermark or frame. Broad muscular 38-year-old male ferry porter, tan weathered face, brown headcloth, rough dark brown short tunic over off-white cross collar, rolled sleeves, thick hemp rope over one shoulder, straightforward tired smile.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "npc-merchant",
+      "file": "public/art/v5/npc-merchant.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-134b17eb-9396-4a2d-8542-45398451c864.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "One single ordinary supporting character waist-up production portrait for Song dynasty Chinese wuxia visual novel. Realistic delicate ink and opaque watercolor, humane expressive face, muted rice-paper cream jade ochre colors. Head fully visible with generous margins. True transparent alpha background, no scenery, no gradient, no words, watermark or frame. 45-year-old female food-stall owner and merchant, sturdy build, rounded lined face, hair in simple bun under blue-gray cloth, faded green jacket and rust-brown apron, holds wooden abacus in one hand, wry kind expression.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "npc-elder",
+      "file": "public/art/v5/npc-elder.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-97218807-1baa-4eaa-a1ae-d42ae2b2f672.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "One single ordinary supporting character waist-up production portrait for Song dynasty Chinese wuxia visual novel. Realistic delicate ink and opaque watercolor, humane expressive face, muted rice-paper cream jade ochre colors. Head fully visible with generous margins. True transparent alpha background, no scenery, no gradient, no words, watermark or frame. 73-year-old female riverside farmer, silver hair in low bun, deeply lined small face, humble brown and faded ochre clothes, holds bamboo vegetable basket at waist, alert warm gaze, tough ordinary hands.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "npc-youth",
+      "file": "public/art/v5/npc-youth.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-491ba15e-0d7f-4ae7-b471-b5564677acc1.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "One single ordinary supporting character waist-up production portrait for Song dynasty Chinese wuxia visual novel. Realistic delicate ink and opaque watercolor, humane expressive face, muted rice-paper cream jade ochre colors. Head fully visible with generous margins. True transparent alpha background, no scenery, no gradient, no words, watermark or frame. 19-year-old male village apprentice, slim, freckled sun-tanned friendly face, short ponytail plain brown ribbon, patched ochre martial tunic with plain cloth wrist wraps, holds a wooden practice pole, eager slightly awkward smile.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "npc-monk",
+      "file": "public/art/v5/npc-monk.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-56daabda-a624-43b8-9a7c-9de8b031d6d5.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "One single ordinary supporting character waist-up production portrait, Song dynasty Chinese wuxia visual novel. Fine realistic ink and opaque watercolor, humane expressive adult face, muted jade ochre paper cream. Full head, generous margins. Genuinely transparent alpha background, no gradient, scenery, writing, watermark, or frame. 40-year-old male Buddhist traveling monk, shaved head, broad gentle face, gray patched simple monk robe, cloth bundle over shoulder, small prayer beads at wrist, strong calm hands holding plain ceramic bowl. Humble practical wanderer.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "npc-clerk",
+      "file": "public/art/v5/npc-clerk.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-1b395ac1-380e-4019-b66d-efd96964ba7b.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "One single ordinary supporting character waist-up production portrait, Song dynasty Chinese wuxia visual novel. Fine realistic ink and opaque watercolor, humane expressive adult face, muted jade ochre paper cream. Full head, generous margins. Genuinely transparent alpha background, no gradient, scenery, writing, watermark, or frame. 35-year-old female village constable, stern intelligent square face, dark hair in compact bun under plain black cloth hat, simple deep-blue Song era public-service robe with dark belt, carries plain wooden clipboard and rolled rope, sleeves practical.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "npc-traveler",
+      "file": "public/art/v5/npc-traveler.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-15588891-ac49-44e6-b9fa-6a9f00bf0c86.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "One single ordinary supporting character waist-up production portrait, Song dynasty Chinese wuxia visual novel. Fine realistic ink and opaque watercolor, humane expressive adult face, muted jade ochre paper cream. Full head, generous margins. Genuinely transparent alpha background, no gradient, scenery, writing, watermark, or frame. 50-year-old male weathered traveler, narrow tanned face, sparse beard, broad worn bamboo hat, faded gray-brown cloak over olive tunic, travel pouch and simple fishing rod, tired alert eyes, grounded rural appearance.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "npc-boatwoman",
+      "file": "public/art/v5/npc-boatwoman.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-d4227d6a-5a99-4ec1-8b08-24fc1b37c741.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "One single ordinary supporting character waist-up production portrait, Song dynasty Chinese wuxia visual novel. Fine realistic ink and opaque watercolor, humane expressive adult face, muted jade ochre paper cream. Full head, generous margins. Genuinely transparent alpha background, no gradient, scenery, writing, watermark, or frame. 32-year-old female river boat worker, sun-tanned round face, dark hair tied with indigo headcloth, navy short cross collar jacket rolled sleeves, brown sash, holds worn wooden paddle at waist, cheerful direct gaze, practical strong build.",
+      "promptNote": "Exact prompt recorded.",
+      "used": true
+    },
+    {
+      "id": "npc-clerk-male",
+      "file": "public/art/v5/npc-clerk-male.webp",
+      "sourceFile": "C:\\Users\\admin\\.codex\\generated_images\\01a13d5e-ee07-7030-8dd6-f0dab96a7de9\\exec-87494a17-22fc-4f61-86d3-bf91799200a8.png",
+      "generator": "built-in image_gen.imagegen",
+      "date": "2026-10-15",
+      "prompt": "Single ordinary male clerk waist-up game portrait for Song dynasty Chinese wuxia novel. 37-year-old slender man with a long thoughtful face, small neat mustache, dark hair under simple black scholar cap, faded ink-brown cross collar robe with pale collar, carrying bamboo writing tablet and brush pouch, attentive mildly worried eyes. Fine realistic ink and opaque watercolor, muted cream jade and ochre, full head with margin, genuine transparent alpha background, no gradient, scenery, text, watermark or frame.",
+      "used": true
+    }
+  ]
+}

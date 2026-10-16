@@ -1,0 +1,11 @@
+{
+  "status": "PRODUCTION_DRAFT_NOT_FINAL",
+  "sourceBeats": 299,
+  "visited": 299,
+  "choiceOptions": 40,
+  "decisionPoints": 20,
+  "sampledPaths": 512,
+  "exhaustive": false,
+  "longestPassiveGap": 15,
+  "limits": "No external reader, no human playtime, elder identity art and CG pending; three editorial rounds not complete."
+}

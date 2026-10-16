@@ -1,0 +1,26 @@
+[
+  {
+    "side": 0,
+    "changed": [
+      "sr_two_centuries_3",
+      "sr_two_centuries_4",
+      "sr_two_centuries_5",
+      "sr_ninety_seven_12",
+      "sr_ninety_seven_13"
+    ],
+    "ending": "sr_open_courtyard",
+    "frames": 176
+  },
+  {
+    "side": 1,
+    "changed": [
+      "sr_two_centuries_3",
+      "sr_two_centuries_4",
+      "sr_two_centuries_5",
+      "sr_ninety_seven_15",
+      "sr_ninety_seven_16"
+    ],
+    "ending": "sr_next_harbor",
+    "frames": 167
+  }
+]

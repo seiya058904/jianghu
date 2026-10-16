@@ -1,0 +1,13 @@
+import {writeFileSync} from 'node:fs';
+import {createWriter} from '../../chronicle-writer.mjs';
+import {writeYoung} from './qian-kun-young.mjs';
+import {writeSlow} from './qian-kun-slow.mjs';
+import {writeHead} from './qian-kun-head.mjs';
+import {writeClouds} from './qian-kun-clouds.mjs';
+import {writeAfter} from './qian-kun-after.mjs';
+const w=createWriter('qk_');writeYoung(w);writeSlow(w);writeHead(w);writeClouds(w);writeAfter(w);
+const flags=['first_waist','weapon_return','letter_check','false_step','plain_question','xue_praise','natural_test','half_cup','refusal','office_plain','watch_slow','boy_try','head_clear','unwon','teacher_honest','mountain_handoff','outside','named_unknown','cloud','rumor_plain','rope','missing_plain'];
+const numbers=['zhou_change','legacy'];
+let laterHeng=false;
+const body=w.render().split('\n').map(line=>{if(line.includes('# beat:qk_tomorrow_1 '))laterHeng=true;return line.replace(/\bqk_heng\b/g,laterHeng?'qk2_heng_later':'qk2_heng_earlier')}).map(line=>line.includes('# beat:qk_accounts_1 ')?line+' # look:qk_xu=late':line.includes('# beat:qk_trouble_1 ')?line+' # look:qk_manager=late':line).join('\n');
+writeFileSync('story/drafts/qian-kun/qian-kun-editorial.ink','// Source: 宋世江湖32538–33332. Sima is Taiji; public first is not an absolute universe ranking.\n'+flags.map(k=>`VAR qk_${k} = false`).join('\n')+'\n'+numbers.map(k=>`VAR qk_${k} = 0`).join('\n')+'\n-> short_inch\n'+body);

@@ -1,0 +1,12 @@
+{
+  "states": 4079,
+  "edges": 4142,
+  "scenes": 20,
+  "choiceIds": 32,
+  "endings": {
+    "public": 384,
+    "quiet": 768,
+    "common": 32,
+    "leave": 768
+  }
+}

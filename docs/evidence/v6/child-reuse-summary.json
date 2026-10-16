@@ -1,0 +1,82 @@
+{
+  "status": "LOCAL_CHILD_VARIANT_VERIFIED_FULL_GOAL_OPEN",
+  "baseline": "612f462",
+  "generatedImages": 1,
+  "generationMode": "built-in image_gen",
+  "asset": "public/art/v6/npc-child-boy.webp",
+  "source": "docs/archives/reusable-child-source/generated-child.png",
+  "provenance": "docs/evidence/v6/reusable-child-art-assets.json",
+  "framing": {
+    "size": "auto 85%",
+    "position": "center bottom"
+  },
+  "currentContentSHA256": "7f08941a6f629300196762f9f1af1bbf5f92cb0078c62b152a1da988d413629e",
+  "delta": [
+    {
+      "side": 0,
+      "changed": [
+        "st_trial_1",
+        "st_trial_2",
+        "st_trial_3",
+        "st_trial_4",
+        "st_trial_5",
+        "st_trial_6",
+        "st_trial_7",
+        "st_four_tests_1",
+        "st_four_tests_2",
+        "st_four_tests_3",
+        "st_four_tests_4",
+        "st_four_tests_5"
+      ],
+      "ending": "st_next_step",
+      "wordsAndCommandsIdentical": true
+    },
+    {
+      "side": 1,
+      "changed": [
+        "st_trial_1",
+        "st_trial_2",
+        "st_trial_3",
+        "st_trial_4",
+        "st_trial_5",
+        "st_trial_8",
+        "st_trial_9",
+        "st_four_tests_1",
+        "st_four_tests_2",
+        "st_four_tests_3",
+        "st_four_tests_6",
+        "st_four_tests_7",
+        "st_four_tests_8"
+      ],
+      "ending": "st_next_watch",
+      "wordsAndCommandsIdentical": true
+    }
+  ],
+  "checks": {
+    "fullNodePass": 196,
+    "finalSpecificNodePass": 4,
+    "finalTideNodePass": 5,
+    "initialBrowserPass": 14,
+    "finalBrowserPass": 12,
+    "uniqueBrowserCases": 14,
+    "finalAssetDecodeCountPerRoot": 156,
+    "offlineWorks": 35,
+    "frozenChunks": 9,
+    "build": "passed"
+  },
+  "assetCounts": {
+    "rasterFiles": 156,
+    "v6RasterFiles": 109,
+    "withRetainedPromptRecords": 111,
+    "withoutRetainedPromptRecords": 45,
+    "observedRuntimeFiles": 155,
+    "registeredFiles": 156,
+    "byteMismatchFiles": 0,
+    "bytesOnDisk": 27383425
+  },
+  "limits": [
+    "No new dedicated character or expression set; later An age images remain existing templates.",
+    "Full route browser coverage precedes final framing-only change; final child tests cover final framing.",
+    "Global literary, identity, action art and final acceptance requirements remain open."
+  ]
+}

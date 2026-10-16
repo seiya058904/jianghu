@@ -1,0 +1,13 @@
+✔ north Heng V2: identical narrative/inputs/world, exact frozen V1 restores and wrong-version rejection (1850.3778ms)
+✔ qian-kun Heng V2: identical narrative/inputs/world, exact frozen V1 restores and wrong-version rejection (1181.7282ms)
+✔ Heng is one explicit identity with two ages and three actual files per age, also in the older Notes interview (2952.9364ms)
+✔ Both plain tea CGs last two frames and every focused camera clears on the next frame (23.9394ms)
+✔ Notes accepts either exact released edition of each book, mixed V1/V2, and rejects wrong families/versions (0.3373ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6125.2139

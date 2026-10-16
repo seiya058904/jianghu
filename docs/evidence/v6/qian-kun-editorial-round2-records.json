@@ -1,0 +1,90 @@
+{
+  "round": 2,
+  "focus": "people doing ordinary work and direct disagreement",
+  "records": [
+    {
+      "round": 2,
+      "file": "story/drafts/qian-kun/qian-kun-young.mjs",
+      "reason": "许师姐要解决盐与找钱，不只为天才贴一个生活笨标签。",
+      "before": "qk_xu~amused|下回买盐也看这么明白，我就不用再陪你走一趟。",
+      "after": "qk_xu~amused|那半斤盐，你也肯再看一眼就好了。\ny|明日我再去。\nqk_xu|明日先找我拿钱。上回钱也少找了，你别又空着手去讲脚短一寸。"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/qian-kun/qian-kun-young.mjs",
+      "reason": "具体补脚后还有肘的问题，教习在教而非总结聪明的局限。",
+      "before": "n|你慢走，教习从旁托你的肘，那一下仍有一处不顺。你又试，不为今日说中了便不许别人再碰。\nqk_tutor~intent|这处也记着。不是换一只聪明脚就够。",
+      "after": "n|你慢走，教习从旁托你的肘。脚补上，肘却抬高了，你看一眼他的手，又走一次。\nqk_tutor~intent|别光看我。看你的肘。\nn|后排有人笑，你把手臂摆平，等教习真从那一侧进。"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/qian-kun/qian-kun-young.mjs",
+      "reason": "早年师父也得催收器械，秦习枪与司马爱所有武学保持区别。",
+      "before": "qk_heng~amused|喜欢四样，就四样都不会给我看。别只喜欢说出来。",
+      "after": "qk_heng~amused|明日还拿枪。其余三件别跟着滚到我脚边，先收回架上。\nn|你才看见刀背挤在棍底下。挪开时又看起它的重心，老人咳一声，你赶紧把它放稳。"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/qian-kun/qian-kun-young.mjs",
+      "reason": "送信办法明确可找当值，不把许师姐变成终生专属提醒工具。",
+      "before": "qk_xu~amused|回话我收。路上两个人拿剑，我可不能一个个替你藏起来。",
+      "after": "qk_xu~amused|出门前来找我，别等明日又叫我问你往哪儿去。\ny|你不在呢？\nqk_xu|找当值的。总有人在，可不是总有人跟着你。"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/qian-kun/qian-kun-young.mjs",
+      "reason": "许当面回应和保自己的书，场上明确换人，不让师父一直旁站听私下问答。",
+      "before": "n|门里后来都说别同你讲暗话。许师姐听见，还得当面问，你是不是只在说转腰。\ny|不然呢？\nn|她笑着把掌重新走一遍，叫你别替她省掉手肘那一截。",
+      "after": "n|门里后来都说别同你讲暗话。`);\n stage('qk_oldyard','qk_xu');say(`n|又一日许师姐来还借过的谱，正听见你向人说她转腰最好。她停在门边。\nqk_xu~intent|只说转腰？\ny|还有肘。上回我没说完。\nn|她把书塞进你手里，自己走一遍掌。你刚要叫好，她先停手。\nqk_xu~amused|先把书放好。折了页，你可得给我展平。"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/qian-kun/qian-kun-slow.mjs",
+      "reason": "入化后的身体、对方的检查可见，删掉对其他年轻人该怎么练的说明。",
+      "before": "n|他看你一会，没拿这句话叫所有年轻人也从此什么都别练。今日能自然到这里的，仍是你早已走过的那些年。",
+      "after": "n|老者看你一会，抹开袖口，指了指方才掌从哪里穿过。你低头去找，自己腰间也一层汗，脚仍停在那半步上。"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/qian-kun/qian-kun-slow.mjs",
+      "reason": "十七日等待有坐麻的身体，老人先等站稳再问手，非感动即传功。",
+      "before": "n|他气得发笑，到底真打。你不是为让人看自己能等才等，他也不是只要被你感动便随便发一门绝学。",
+      "after": "n|他气得发笑，开门先叫你起身。你坐久了，腿麻，站到一半又扶住门框。老人等你缓过来，才把袖口扎紧。\nqk_huashan~sharp|站稳了再来，别叫我一掌把你送回门外坐着。"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/qian-kun/qian-kun-slow.mjs",
+      "reason": "门务判断错误当面带起众人，管事叫停，许挪凳，不只旁白报不擅长。",
+      "before": "qk_manager~uneasy|不是问谁拳好。哪段路哪家先垫钱，都在这几页。\ny|打完也不知道？\nqk_xu~intent|不知道。像你看剑忘信，剑打得再好，收信的人也没见到那封。",
+      "after": "qk_manager~uneasy|这页谁先垫的路钱，还没认清。你让他们打，赢的便是先垫的？\ny|不是。\nqk_manager|那先别叫他们到院里去。人已经站起来了。\nn|你向门边叫等一等。许师姐把两张凳子往里挪，让人坐回来。\nqk_xu~intent|先听完。跟那封信一样，有人真在等一句话。"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/qian-kun/qian-kun-head.mjs",
+      "reason": "接印与想走同时发生，管事要可用的权限而非只训主角责任。",
+      "before": "qk_manager~intent|这四件可不能说也麻烦。\ny|这四件可以。",
+      "after": "qk_manager~intent|账你不用看。这四件，可得真有人找得着你。\ny|这四件可以。\nqk_manager|印先别塞进袖里。你带走了，我还得去寻你盖。\nn|你把印放回桌上，手却仍留在门边。"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/qian-kun/qian-kun-head.mjs",
+      "reason": "超过老师之后的日常阻拦由半壶茶承载，仍保留未知更高处的兴奋。",
+      "before": "qk_heng~uneasy|我就知道你会先听这一句。",
+      "after": "qk_heng~uneasy|坐。茶喝了一口就剩半壶给我，你倒跑得快。\nn|你站住，看看茶，再看看老人。他没指路，先指你刚空出来的座。"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/qian-kun/qian-kun-clouds.mjs",
+      "reason": "原典我很难的停顿当面发生，杀意与问艺条件由动作和对白呈现。",
+      "before": "n|周想很久，答很难。你问谁难，他说我。完全不惜命，不是把问艺时谁先停的排名再抄一次就算得清。",
+      "after": "n|周想很久，杯子在手里，没喝。\nqk_zhou~intent|很难。\ny|谁难？\nqk_zhou|我。\nn|你不再伸手催那盏茶。他才说，无生客肯换命、废手，问艺时会收的地方，那人未必收。"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/qian-kun/qian-kun-after.mjs",
+      "reason": "晚年生活迟钝仍具体发生，记录者有烫口与不急的选择。",
+      "before": "n|你等他把杯放好，没让一个能三时辰看剑的人忽然也全会生活。",
+      "after": "n|你等他把杯放好。他尝过的茶还烫，你拿另一只杯想兑淡些，又把热水添满了沿。\nqk_youngscribe~uneasy|别端。放这里晾一会，我不急。\nn|你停住，终于先问他刚才要说什么。"
+    }
+  ]
+}

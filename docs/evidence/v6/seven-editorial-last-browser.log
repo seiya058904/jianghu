@@ -1,0 +1,19 @@
+[WebServer] (node:42340) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 10 tests using 1 worker
+
+(node:46496) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\offline-work-pack.spec.ts:8:134 › download seven-questions pack restores uncached story data on root (501ms)
+  ok  2 tests\offline-work-pack.spec.ts:8:134 › download seven-questions pack restores uncached story data on subpath (549ms)
+  ok  3 tests\offline-work-pack.spec.ts:8:134 › download seven-questions-v1 pack restores uncached story data on root (539ms)
+  ok  4 tests\offline-work-pack.spec.ts:8:134 › download seven-questions-v1 pack restores uncached story data on subpath (446ms)
+  ok  5 tests\seven-editorial-archive.spec.ts:8:1 › Seven editorial V2 and frozen V1 keep independent pending saves and exact old export (590ms)
+  ok  6 tests\seven-questions.spec.ts:6:26 › Seven Questions V2 actual complete route 0: separate witnessed locations and independent save (1.1m)
+  ok  7 tests\seven-questions.spec.ts:6:26 › Seven Questions V2 actual complete route 1: separate witnessed locations and independent save (1.0m)
+  ok  8 tests\seven-questions.spec.ts:20:1 › Seven Questions work download includes an unvisited final chapter offline on root and subpath (786ms)
+  ok  9 tests\seven-questions.spec.ts:27:1 › Seven Questions two locations and injury branches fit seven sizes at 24px (3.4s)
+  ok 10 tests\seven-questions.spec.ts:37:1 › Seven Questions long location choices remain clickable at seven viewport sizes (1.4s)
+
+  10 passed (2.2m)

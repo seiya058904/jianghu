@@ -1,0 +1,293 @@
+{
+  "scope": "All32 combinations of four night questions and three named binary dimensions; other decisions first legal",
+  "rows": [
+    {
+      "read": "lm_night_foot",
+      "tried": false,
+      "travel": false,
+      "hurt": false,
+      "ending": "lm_home",
+      "repayment": true,
+      "frames": 221
+    },
+    {
+      "read": "lm_night_foot",
+      "tried": false,
+      "travel": false,
+      "hurt": true,
+      "ending": "lm_home",
+      "repayment": true,
+      "frames": 223
+    },
+    {
+      "read": "lm_night_foot",
+      "tried": false,
+      "travel": true,
+      "hurt": false,
+      "ending": "lm_travel",
+      "repayment": true,
+      "frames": 224
+    },
+    {
+      "read": "lm_night_foot",
+      "tried": false,
+      "travel": true,
+      "hurt": true,
+      "ending": "lm_travel",
+      "repayment": true,
+      "frames": 226
+    },
+    {
+      "read": "lm_night_foot",
+      "tried": true,
+      "travel": false,
+      "hurt": false,
+      "ending": "lm_home",
+      "repayment": false,
+      "frames": 217
+    },
+    {
+      "read": "lm_night_foot",
+      "tried": true,
+      "travel": false,
+      "hurt": true,
+      "ending": "lm_home",
+      "repayment": false,
+      "frames": 219
+    },
+    {
+      "read": "lm_night_foot",
+      "tried": true,
+      "travel": true,
+      "hurt": false,
+      "ending": "lm_travel",
+      "repayment": false,
+      "frames": 219
+    },
+    {
+      "read": "lm_night_foot",
+      "tried": true,
+      "travel": true,
+      "hurt": true,
+      "ending": "lm_travel",
+      "repayment": false,
+      "frames": 221
+    },
+    {
+      "read": "lm_night_hand",
+      "tried": false,
+      "travel": false,
+      "hurt": false,
+      "ending": "lm_home",
+      "repayment": true,
+      "frames": 221
+    },
+    {
+      "read": "lm_night_hand",
+      "tried": false,
+      "travel": false,
+      "hurt": true,
+      "ending": "lm_home",
+      "repayment": true,
+      "frames": 223
+    },
+    {
+      "read": "lm_night_hand",
+      "tried": false,
+      "travel": true,
+      "hurt": false,
+      "ending": "lm_travel",
+      "repayment": true,
+      "frames": 224
+    },
+    {
+      "read": "lm_night_hand",
+      "tried": false,
+      "travel": true,
+      "hurt": true,
+      "ending": "lm_travel",
+      "repayment": true,
+      "frames": 226
+    },
+    {
+      "read": "lm_night_hand",
+      "tried": true,
+      "travel": false,
+      "hurt": false,
+      "ending": "lm_home",
+      "repayment": false,
+      "frames": 217
+    },
+    {
+      "read": "lm_night_hand",
+      "tried": true,
+      "travel": false,
+      "hurt": true,
+      "ending": "lm_home",
+      "repayment": false,
+      "frames": 219
+    },
+    {
+      "read": "lm_night_hand",
+      "tried": true,
+      "travel": true,
+      "hurt": false,
+      "ending": "lm_travel",
+      "repayment": false,
+      "frames": 219
+    },
+    {
+      "read": "lm_night_hand",
+      "tried": true,
+      "travel": true,
+      "hurt": true,
+      "ending": "lm_travel",
+      "repayment": false,
+      "frames": 221
+    },
+    {
+      "read": "lm_night_line",
+      "tried": false,
+      "travel": false,
+      "hurt": false,
+      "ending": "lm_home",
+      "repayment": true,
+      "frames": 221
+    },
+    {
+      "read": "lm_night_line",
+      "tried": false,
+      "travel": false,
+      "hurt": true,
+      "ending": "lm_home",
+      "repayment": true,
+      "frames": 223
+    },
+    {
+      "read": "lm_night_line",
+      "tried": false,
+      "travel": true,
+      "hurt": false,
+      "ending": "lm_travel",
+      "repayment": true,
+      "frames": 224
+    },
+    {
+      "read": "lm_night_line",
+      "tried": false,
+      "travel": true,
+      "hurt": true,
+      "ending": "lm_travel",
+      "repayment": true,
+      "frames": 226
+    },
+    {
+      "read": "lm_night_line",
+      "tried": true,
+      "travel": false,
+      "hurt": false,
+      "ending": "lm_home",
+      "repayment": false,
+      "frames": 217
+    },
+    {
+      "read": "lm_night_line",
+      "tried": true,
+      "travel": false,
+      "hurt": true,
+      "ending": "lm_home",
+      "repayment": false,
+      "frames": 219
+    },
+    {
+      "read": "lm_night_line",
+      "tried": true,
+      "travel": true,
+      "hurt": false,
+      "ending": "lm_travel",
+      "repayment": false,
+      "frames": 219
+    },
+    {
+      "read": "lm_night_line",
+      "tried": true,
+      "travel": true,
+      "hurt": true,
+      "ending": "lm_travel",
+      "repayment": false,
+      "frames": 221
+    },
+    {
+      "read": "lm_night_want",
+      "tried": false,
+      "travel": false,
+      "hurt": false,
+      "ending": "lm_home",
+      "repayment": true,
+      "frames": 221
+    },
+    {
+      "read": "lm_night_want",
+      "tried": false,
+      "travel": false,
+      "hurt": true,
+      "ending": "lm_home",
+      "repayment": true,
+      "frames": 223
+    },
+    {
+      "read": "lm_night_want",
+      "tried": false,
+      "travel": true,
+      "hurt": false,
+      "ending": "lm_travel",
+      "repayment": true,
+      "frames": 224
+    },
+    {
+      "read": "lm_night_want",
+      "tried": false,
+      "travel": true,
+      "hurt": true,
+      "ending": "lm_travel",
+      "repayment": true,
+      "frames": 226
+    },
+    {
+      "read": "lm_night_want",
+      "tried": true,
+      "travel": false,
+      "hurt": false,
+      "ending": "lm_home",
+      "repayment": false,
+      "frames": 217
+    },
+    {
+      "read": "lm_night_want",
+      "tried": true,
+      "travel": false,
+      "hurt": true,
+      "ending": "lm_home",
+      "repayment": false,
+      "frames": 219
+    },
+    {
+      "read": "lm_night_want",
+      "tried": true,
+      "travel": true,
+      "hurt": false,
+      "ending": "lm_travel",
+      "repayment": false,
+      "frames": 219
+    },
+    {
+      "read": "lm_night_want",
+      "tried": true,
+      "travel": true,
+      "hurt": true,
+      "ending": "lm_travel",
+      "repayment": false,
+      "frames": 221
+    }
+  ]
+}

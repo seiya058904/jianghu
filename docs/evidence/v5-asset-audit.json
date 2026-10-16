@@ -1,0 +1,333 @@
+{
+  "sourceVersion": "tide-promise-1.0.0",
+  "registeredCharacters": 32,
+  "actualCharacters": 30,
+  "dedicatedCharacters": 12,
+  "npcArchetypes": 8,
+  "npcTemplateImages": 12,
+  "scenes": 12,
+  "cg": 4,
+  "files": [
+    {
+      "file": "public/art/v5/quay.webp",
+      "bytes": 267876,
+      "width": 1440,
+      "height": 810,
+      "pix_fmt": "yuv420p"
+    },
+    {
+      "file": "public/art/v5/hall.webp",
+      "bytes": 288214,
+      "width": 1440,
+      "height": 810,
+      "pix_fmt": "yuv420p"
+    },
+    {
+      "file": "public/art/v5/inn.webp",
+      "bytes": 219734,
+      "width": 1440,
+      "height": 810,
+      "pix_fmt": "yuv420p"
+    },
+    {
+      "file": "public/art/v5/ridge.webp",
+      "bytes": 353214,
+      "width": 1440,
+      "height": 810,
+      "pix_fmt": "yuv420p"
+    },
+    {
+      "file": "public/art/v5/bridge.webp",
+      "bytes": 311608,
+      "width": 1440,
+      "height": 810,
+      "pix_fmt": "yuv420p"
+    },
+    {
+      "file": "public/art/v5/reeds.webp",
+      "bytes": 217286,
+      "width": 1440,
+      "height": 810,
+      "pix_fmt": "yuv420p"
+    },
+    {
+      "file": "public/art/v5/rainboat.webp",
+      "bytes": 192934,
+      "width": 1440,
+      "height": 810,
+      "pix_fmt": "yuv420p"
+    },
+    {
+      "file": "public/art/v5/workshop.webp",
+      "bytes": 234918,
+      "width": 1440,
+      "height": 810,
+      "pix_fmt": "yuv420p"
+    },
+    {
+      "file": "public/art/v5/arena.webp",
+      "bytes": 261954,
+      "width": 1440,
+      "height": 810,
+      "pix_fmt": "yuv420p"
+    },
+    {
+      "file": "public/art/v5/levee.webp",
+      "bytes": 283718,
+      "width": 1440,
+      "height": 810,
+      "pix_fmt": "yuv420p"
+    },
+    {
+      "file": "public/art/v5/storm.webp",
+      "bytes": 254768,
+      "width": 1440,
+      "height": 810,
+      "pix_fmt": "yuv420p"
+    },
+    {
+      "file": "public/art/v5/dawn.webp",
+      "bytes": 260388,
+      "width": 1440,
+      "height": 810,
+      "pix_fmt": "yuv420p"
+    },
+    {
+      "file": "public/art/v5/zhaoli.webp",
+      "bytes": 135950,
+      "width": 560,
+      "height": 840,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/zhaoli-intent.webp",
+      "bytes": 108826,
+      "width": 560,
+      "height": 840,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/qiao.webp",
+      "bytes": 132034,
+      "width": 560,
+      "height": 840,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/qiao-uneasy.webp",
+      "bytes": 103954,
+      "width": 560,
+      "height": 840,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/su.webp",
+      "bytes": 96528,
+      "width": 560,
+      "height": 840,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/su-amused.webp",
+      "bytes": 81522,
+      "width": 560,
+      "height": 840,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/lu.webp",
+      "bytes": 144380,
+      "width": 560,
+      "height": 840,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/lu-intent.webp",
+      "bytes": 118616,
+      "width": 560,
+      "height": 840,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/han.webp",
+      "bytes": 127576,
+      "width": 560,
+      "height": 840,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/ling.webp",
+      "bytes": 129338,
+      "width": 560,
+      "height": 840,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/xu.webp",
+      "bytes": 96058,
+      "width": 560,
+      "height": 672,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/pei.webp",
+      "bytes": 73188,
+      "width": 560,
+      "height": 513,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/yan.webp",
+      "bytes": 101920,
+      "width": 560,
+      "height": 840,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/rong.webp",
+      "bytes": 107840,
+      "width": 560,
+      "height": 672,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/du.webp",
+      "bytes": 161530,
+      "width": 560,
+      "height": 840,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/he.webp",
+      "bytes": 105992,
+      "width": 560,
+      "height": 840,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/npc-youth.webp",
+      "bytes": 101430,
+      "width": 560,
+      "height": 672,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/npc-merchant.webp",
+      "bytes": 107838,
+      "width": 560,
+      "height": 840,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/npc-clerk-male.webp",
+      "bytes": 103164,
+      "width": 560,
+      "height": 840,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/npc-porter.webp",
+      "bytes": 131180,
+      "width": 560,
+      "height": 840,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/npc-elder.webp",
+      "bytes": 127956,
+      "width": 560,
+      "height": 840,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/npc-merchant-male.webp",
+      "bytes": 97520,
+      "width": 560,
+      "height": 672,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/npc-monk.webp",
+      "bytes": 80642,
+      "width": 560,
+      "height": 672,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/npc-boatwoman.webp",
+      "bytes": 88670,
+      "width": 560,
+      "height": 672,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/npc-elder-male.webp",
+      "bytes": 119642,
+      "width": 560,
+      "height": 840,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/npc-traveler.webp",
+      "bytes": 113352,
+      "width": 560,
+      "height": 672,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/npc-youth-blue.webp",
+      "bytes": 98002,
+      "width": 560,
+      "height": 840,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/npc-clerk.webp",
+      "bytes": 65088,
+      "width": 560,
+      "height": 672,
+      "pix_fmt": "yuva420p"
+    },
+    {
+      "file": "public/art/v5/cg-rescue.webp",
+      "bytes": 273350,
+      "width": 1440,
+      "height": 810,
+      "pix_fmt": "yuv420p"
+    },
+    {
+      "file": "public/art/v5/cg-storm.webp",
+      "bytes": 197818,
+      "width": 1440,
+      "height": 810,
+      "pix_fmt": "yuv420p"
+    },
+    {
+      "file": "public/art/v5/cg-dawn.webp",
+      "bytes": 314008,
+      "width": 1440,
+      "height": 810,
+      "pix_fmt": "yuv420p"
+    },
+    {
+      "file": "public/art/v5/cg-quiet.webp",
+      "bytes": 249610,
+      "width": 1440,
+      "height": 810,
+      "pix_fmt": "yuv420p"
+    }
+  ],
+  "artBytes": 7241134,
+  "nameClashes": [],
+  "preserved": [
+    "宋世江湖.md",
+    "story/main.ink",
+    "story/duel.ink",
+    "src/runtime.ts",
+    "src/storage.ts",
+    "src/knowledge.ts",
+    "src/presentation.ts",
+    "src/generated/duel-1.0.0.json"
+  ],
+  "missingBaselineFiles": []
+}

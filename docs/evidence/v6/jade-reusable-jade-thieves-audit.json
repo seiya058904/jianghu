@@ -1,0 +1,24 @@
+{
+  "beats": 265,
+  "options": 43,
+  "sampledPaths": 256,
+  "exhaustive": false,
+  "changed": [
+    "jt_empty_box_1",
+    "jt_empty_box_2",
+    "jt_empty_box_3",
+    "jt_empty_box_4",
+    "jt_empty_box_5",
+    "jt_empty_box_6",
+    "jt_empty_box_7",
+    "jt_revealed_13",
+    "jt_revealed_14",
+    "jt_revealed_15",
+    "jt_revealed_16",
+    "jt_revealed_17",
+    "jt_revealed_18",
+    "jt_revealed_8",
+    "jt_revealed_9"
+  ],
+  "representativeOldSnapshotMigrationVerified": true
+}

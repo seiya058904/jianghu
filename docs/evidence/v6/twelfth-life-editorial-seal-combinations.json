@@ -1,0 +1,45 @@
+{
+  "combinations": 8,
+  "rows": [
+    {
+      "sorted": false,
+      "limits": false,
+      "late": "rl_ask_young_to_watch"
+    },
+    {
+      "sorted": false,
+      "limits": false,
+      "late": "rl_write_with_lu"
+    },
+    {
+      "sorted": false,
+      "limits": true,
+      "late": "rl_ask_young_to_watch"
+    },
+    {
+      "sorted": false,
+      "limits": true,
+      "late": "rl_write_with_lu"
+    },
+    {
+      "sorted": true,
+      "limits": false,
+      "late": "rl_ask_young_to_watch"
+    },
+    {
+      "sorted": true,
+      "limits": false,
+      "late": "rl_write_with_lu"
+    },
+    {
+      "sorted": true,
+      "limits": true,
+      "late": "rl_ask_young_to_watch"
+    },
+    {
+      "sorted": true,
+      "limits": true,
+      "late": "rl_write_with_lu"
+    }
+  ]
+}

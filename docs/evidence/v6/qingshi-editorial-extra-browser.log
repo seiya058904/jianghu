@@ -1,0 +1,11 @@
+
+Running 6 tests using 1 worker
+
+  ok 1 tests\art-manifest.spec.ts:8:107 › Asset manifest: every raster has exact built bytes and browser decode on root (2.3s)
+  ok 2 tests\art-manifest.spec.ts:8:107 › Asset manifest: every raster has exact built bytes and browser decode on subpath (2.3s)
+  ok 3 tests\qingshi-editorial-integrity.spec.ts:8:107 › Qingshi three editions root: exact old raw exports, import rejection, independent current pending choice (741ms)
+  ok 4 tests\qingshi-editorial-integrity.spec.ts:8:107 › Qingshi three editions subpath: exact old raw exports, import rejection, independent current pending choice (656ms)
+  ok 5 tests\qingshi-editorial-integrity.spec.ts:11:1 › Qingshi current, second edition and original cover links remain usable at seven sizes (2.1s)
+  ok 6 tests\qingshi-editorial-integrity.spec.ts:15:1 › Qingshi V3 new home choice: both family reactions, paper/dark, seven sizes, readable controls and real response (8.4s)
+
+  6 passed (17.3s)

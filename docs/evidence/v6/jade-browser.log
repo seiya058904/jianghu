@@ -1,0 +1,71 @@
+[WebServer] (node:25348) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:26188) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:21364) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\jade.spec.ts:6:26 › Jade complete Lu route 0, witnessed store, family result, saves and independent replay metadata (54.3s)
+  ok 2 tests\jade.spec.ts:6:26 › Jade complete Lu route 1, witnessed store, family result, saves and independent replay metadata (50.0s)
+  ok 3 tests\jade.spec.ts:18:1 › Jade offline download restores an unseen ninth-store branch on root and subpath (807ms)
+  ok 4 tests\jade.spec.ts:24:1 › Jade separated store stages, late He and location choices render at seven sizes (3.9s)
+  x  5 tests\jade.spec.ts:33:1 › paired volumes have visible companion links and real navigation at seven cover sizes (1.0m)
+
+
+  1) tests\jade.spec.ts:33:1 › paired volumes have visible companion links and real navigation at seven cover sizes
+
+    Test timeout of 60000ms exceeded.
+
+    Error: locator.click: Test ended.
+    Browser logs:
+
+    <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,AvoidCorsURLLoaderRestartOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=C:\Users\admin\AppData\Local\Temp\playwright_chromiumdev_profile-hcQgk5 --remote-debugging-pipe --no-startup-window
+    <launched> pid=24992
+    [pid=24992][err] [24992:22616:1015/215812.143:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+    [pid=24992][err] [24992:22616:1015/215841.116:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+    [pid=24992][err] [24992:22616:1015/215940.041:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: QUOTA_EXCEEDED
+    [pid=24992] <gracefully close start>
+    Call log:
+      - waiting for getByRole('link', { name: '第二卷 · 十三文', exact: true })
+        - locator resolved to <a href="./jade.html">…</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <p class="cover-note">宋世江湖 · 山河璧 · 密库双贼</p> intercepts pointer events
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - <p class="cover-note">宋世江湖 · 山河璧 · 密库双贼</p> intercepts pointer events
+        - retrying click action
+          - waiting 100ms
+        116 × waiting for element to be visible, enabled and stable
+            - element is visible, enabled and stable
+            - scrolling into view if needed
+            - done scrolling
+            - <p class="cover-note">宋世江湖 · 山河璧 · 密库双贼</p> intercepts pointer events
+          - retrying click action
+            - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+
+
+      33 | test('paired volumes have visible companion links and real navigation at seven cover sizes',async({browser})=>{
+      34 |  for(const [file,label,destination]of [['jade-thieves.html','第二卷 · 十三文','jade.html'],['jade.html','第一卷 · 密库双贼','jade-thieves.html'],['two-swords.html','第二册 · 门外七问','seven-questions.html'],['seven-questions.html','第一册 · 旧本归还','two-swords.html']]){
+    > 35 |   const context=await browser.newContext(),page=await context.newPage();for(const [width,height]of [[360,800],[390,844],[412,915],[800,360],[1366,768],[1440,900],[1920,1080]]){await page.setViewportSize({width,height});await page.goto('/'+file);const link=page.getByRole('link',{name:label,exact:true});await link.scrollIntoViewIfNeeded();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await link.click();await expect(page).toHaveURL(new RegExp('/'+destination.replace('.','\\.')+'$'))}await context.close();
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^
+      36 |  }
+      37 | });
+      38 |
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\jade.spec.ts:35:444
+
+    Error Context: test-results\jade-paired-volumes-have-v-6bfeb-gation-at-seven-cover-sizes\error-context.md
+
+  1 failed
+    tests\jade.spec.ts:33:1 › paired volumes have visible companion links and real navigation at seven cover sizes
+  4 passed (2.8m)

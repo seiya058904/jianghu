@@ -1,0 +1,796 @@
+{
+  "status": "PAIRED_REGRESSIONS_PASS_NOT_EXTERNAL_PLAYTEST",
+  "decisions": 30,
+  "highWeight": 13,
+  "method": "Replay the stated route policy twice, changing only the named decision. Subsequent available choices follow the same policy. Conditional availability may itself change as a consequence. Inspect non-ending text in the stated later scene, not just final titles or variables.",
+  "excluded": "Pure acknowledgement or callback-only candidates are not counted: ask_fair/ask_task, bread, repair/practice, Rong dinner tone, two medicine courtesy variants, and asking Qiao's preference. A three-option or four-option node counts once; conditional choice-frame IDs and conditional option availability never create extra decisions.",
+  "results": [
+    {
+      "id": "M01",
+      "decisionPoint": "c_hall_exchange",
+      "weight": "high",
+      "effect": "馆内以伤换碰袖所添的一处伤，在两处既有劳损的临界上下文中使终章有准备的接人失败；不靠结局标题证明。",
+      "preferred": [
+        "load_shoulder",
+        "bridge_jump"
+      ],
+      "baselineChoice": "choice:yield_side",
+      "changedChoice": "choice:press_again",
+      "earlyBeat": "c_hall_exchange_7",
+      "baseline": {
+        "beat": "c_storm_act_6",
+        "scene": "v6_storm",
+        "quote": "石墩把绳的力接住，你按口令松出半臂。照鲤借船身的转向靠拢，刘篙把老人送进她臂间。",
+        "distance": 589,
+        "ending": "harbor"
+      },
+      "counterfactual": {
+        "beat": "c_storm_act_9",
+        "scene": "v6_storm",
+        "quote": "岸绳突然震动，你试图多撑一瞬，伤处先替你松了力。何铆把你往后扯，自己也跪进水里。",
+        "distance": 589,
+        "ending": "scar"
+      }
+    },
+    {
+      "id": "M02",
+      "decisionPoint": "c_hall_wrist",
+      "weight": "normal",
+      "effect": "砚生先休与先藏伤，改变后来的身体可用程度及医者是否必须强制换下。",
+      "preferred": [
+        "route_land"
+      ],
+      "baselineChoice": "choice:wrist_rest",
+      "changedChoice": "choice:wrist_private",
+      "earlyBeat": "c_hall_wrist_7",
+      "baseline": {
+        "beat": "c_levee_wrist_8",
+        "scene": "v6_levee",
+        "quote": "之前肯歇，手就还没坏到拿不住轻物。现在换下来，等养好还能握。",
+        "distance": 508,
+        "ending": "harbor"
+      },
+      "counterfactual": {
+        "beat": "c_levee_wrist_10",
+        "scene": "v6_levee",
+        "quote": "之前没肯休，这一下不能再商量。疼不是你不够勇敢，是手已经在说不能。",
+        "distance": 508,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M03",
+      "decisionPoint": "c_inn_rain",
+      "weight": "normal",
+      "effect": "向主事报水情推动移棚；优先备物则临场有绳但没有同一份事前移棚成果。",
+      "preferred": [
+        "route_land"
+      ],
+      "baselineChoice": "choice:warn_water",
+      "changedChoice": "choice:prepare_water",
+      "earlyBeat": "c_inn_rain_7",
+      "baseline": {
+        "beat": "c_levee_call_13",
+        "scene": "v6_levee",
+        "quote": "你们报过回水。我把棚往内挪了两丈，还少做了一步。",
+        "distance": 403,
+        "ending": "harbor"
+      },
+      "counterfactual": {
+        "beat": "c_levee_call_15",
+        "scene": "v6_levee",
+        "quote": "幸亏昨晚多留了两根长绳。谁绑的先别领功，先把那头拉过来。",
+        "distance": 404,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M04",
+      "decisionPoint": "c6_v6_books",
+      "weight": "normal",
+      "effect": "错过对练护卷或按时赴约，改变旧页保存与两门后续补抄劳动，而非只变友好台词。",
+      "preferred": [
+        "route_land"
+      ],
+      "baselineChoice": "choice:v6_air_books",
+      "changedChoice": "choice:v6_delegate_books",
+      "earlyBeat": "c6_v6_books_9",
+      "baseline": {
+        "beat": "c6_v6_canon_reckon_8",
+        "scene": "v6_storm",
+        "quote": "客舍那夜分开晾透了，夹在中间的也没粘。只湿了封皮。",
+        "distance": 490,
+        "ending": "harbor"
+      },
+      "counterfactual": {
+        "beat": "c6_v6_canon_reckon_12",
+        "scene": "v6_storm",
+        "quote": "先回馆找另一份。没有副本的那一包，我陪你重抄能认的。",
+        "distance": 491,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M05",
+      "decisionPoint": "c6_v6_separate",
+      "weight": "high",
+      "effect": "三条中段线作为一个决策点：陆路护药断桥、水路识流夜航、留守栏旗工钱；重逢必须承认未亲历的另一队经历。留守第三向另有全程与伤手回归。",
+      "preferred": [
+        "route_land"
+      ],
+      "baselineChoice": "choice:route_land",
+      "changedChoice": "choice:route_water",
+      "earlyBeat": "c6_v6_separate_2",
+      "baseline": {
+        "beat": "c6_workshop_gate_6",
+        "scene": "v6_workshop",
+        "quote": "听说你们桥边耽搁。我们也迟了，只是缘故不一样。",
+        "distance": 148,
+        "ending": "harbor"
+      },
+      "counterfactual": {
+        "beat": "c6_workshop_gate_8",
+        "scene": "v6_workshop",
+        "quote": "整夜没见你们灯。砚生把汤端热三回，最后不敢再问。",
+        "distance": 157,
+        "ending": "captain"
+      }
+    },
+    {
+      "id": "M06",
+      "decisionPoint": "c6_v6_roles_anchor",
+      "weight": "normal",
+      "effect": "少练一轮实走交班，或只报自身一班，后来一趟接送船能否腾出来不同；不冒充海天九席擂台排名。",
+      "preferred": [
+        "route_land"
+      ],
+      "baselineChoice": "choice:v6_walk_handover",
+      "changedChoice": "choice:v6_name_own_shift",
+      "earlyBeat": "c6_v6_roles_anchor_9",
+      "baseline": {
+        "beat": "c6_v6_canon_reckon_14",
+        "scene": "v6_storm",
+        "quote": "两班木牌照出发前走的换过。程阿笠接上后船，我才腾得出这一趟。",
+        "distance": 446,
+        "ending": "harbor"
+      },
+      "counterfactual": {
+        "beat": "c6_v6_canon_reckon_16",
+        "scene": "v6_storm",
+        "quote": "后船没接上人，我折回换班，又耽搁一趟。程阿笠现在守着，你去就先向她报。",
+        "distance": 446,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M07",
+      "decisionPoint": "c6_v6_roles_after",
+      "weight": "normal",
+      "effect": "出发前牺牲歇脚练复报，后来可以直接确认末队已出；未练则须回跑复问，实付脚程。",
+      "preferred": [
+        "route_land"
+      ],
+      "baselineChoice": "choice:v6_rehearse_exit",
+      "changedChoice": "choice:v6_leave_rested",
+      "earlyBeat": "c6_v6_roles_after_5",
+      "baseline": {
+        "beat": "c6_v6_sluice_17",
+        "scene": "v6_levee",
+        "quote": "出发前练过的两声接在一起。你听清最后一队已经离开高窗，才把侧栏放下，不必再站进水里等。",
+        "distance": 326,
+        "ending": "harbor"
+      },
+      "counterfactual": {
+        "beat": "c6_v6_sluice_21",
+        "scene": "v6_levee",
+        "quote": "回头多走的这一段，让你的鞋里灌满冷泥。名单终于接上，腿却不会因此少走这段路。",
+        "distance": 327,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M08",
+      "decisionPoint": "c_ridge_load",
+      "weight": "high",
+      "effect": "肩抬抢时添的劳损在三伤边界使终章失败；卸货过坑虽慢，留下承重能力。",
+      "preferred": [
+        "load_shoulder",
+        "bridge_jump",
+        "duel_risk"
+      ],
+      "baselineChoice": "choice:load_shoulder",
+      "changedChoice": "choice:load_unload",
+      "earlyBeat": "c_ridge_load_7",
+      "baseline": {
+        "beat": "c_storm_act_9",
+        "scene": "v6_storm",
+        "quote": "岸绳突然震动，你试图多撑一瞬，伤处先替你松了力。何铆把你往后扯，自己也跪进水里。",
+        "distance": 412,
+        "ending": "scar"
+      },
+      "counterfactual": {
+        "beat": "c_storm_act_6",
+        "scene": "v6_storm",
+        "quote": "石墩把绳的力接住，你按口令松出半臂。照鲤借船身的转向靠拢，刘篙把老人送进她臂间。",
+        "distance": 411,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M09",
+      "decisionPoint": "c_ridge_toll",
+      "weight": "normal",
+      "effect": "坡口实际帮车获得借用受力扁担的互助；未帮则由不同人分管桥头与叫停，不伪称同一份人情已建立。",
+      "preferred": [
+        "route_land"
+      ],
+      "baselineChoice": "choice:toll_share",
+      "changedChoice": "choice:toll_road",
+      "earlyBeat": "c_ridge_toll_6",
+      "baseline": {
+        "beat": "c_bridge_guard_8",
+        "scene": "v6_bridge",
+        "quote": "坡口你帮我把车扶正，这会儿扁担也借你。放心，新的，我试过受力。",
+        "distance": 63,
+        "ending": "harbor"
+      },
+      "counterfactual": {
+        "beat": "c_bridge_guard_9",
+        "scene": "v6_bridge",
+        "quote": "你在坡口没抢着谈路钱，现在也别抢着跟所有人讲理。守住这头，我去叫车停。",
+        "distance": 63,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M10",
+      "decisionPoint": "c_bridge_arrive",
+      "weight": "high",
+      "effect": "抢踩桥梁的肋伤是终章伤势阈值中的独立贡献；交给何铆掌绳可保住后来的身体余量。",
+      "preferred": [
+        "load_shoulder",
+        "bridge_jump",
+        "duel_risk"
+      ],
+      "baselineChoice": "choice:bridge_jump",
+      "changedChoice": "choice:bridge_expert",
+      "earlyBeat": "c_bridge_arrive_7",
+      "baseline": {
+        "beat": "c_storm_act_9",
+        "scene": "v6_storm",
+        "quote": "岸绳突然震动，你试图多撑一瞬，伤处先替你松了力。何铆把你往后扯，自己也跪进水里。",
+        "distance": 350,
+        "ending": "scar"
+      },
+      "counterfactual": {
+        "beat": "c_storm_act_6",
+        "scene": "v6_storm",
+        "quote": "石墩把绳的力接住，你按口令松出半臂。照鲤借船身的转向靠拢，刘篙把老人送进她臂间。",
+        "distance": 351,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M11",
+      "decisionPoint": "c_workshop_rong",
+      "weight": "normal",
+      "effect": "实做搬运建立可接应的熟手，或先立数量用途取得明确物资授权；灾时实际可调动的协助方式不同。",
+      "preferred": [
+        "route_land"
+      ],
+      "baselineChoice": "choice:grain_work",
+      "changedChoice": "choice:grain_terms",
+      "earlyBeat": "c_workshop_rong_7",
+      "baseline": {
+        "beat": "c_levee_grain_8",
+        "scene": "v6_levee",
+        "quote": "昨天搬米的人我都叫来了。不是报恩，是大家认得哪袋能压，哪袋不能再沾水。",
+        "distance": 186,
+        "ending": "harbor"
+      },
+      "counterfactual": {
+        "beat": "c_levee_grain_9",
+        "scene": "v6_levee",
+        "quote": "按你说的，数和用途都写在这儿。今天谁拿了米，先做事，回来也得讲清。",
+        "distance": 186,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M12",
+      "decisionPoint": "c6_v6_contract",
+      "weight": "normal",
+      "effect": "公开缺口形成停班与重招期限；守本馆底价则明确少接一班，未承诺的工作不能算到玩家头上。",
+      "preferred": [
+        "route_land"
+      ],
+      "baselineChoice": "choice:v6_wage_public",
+      "changedChoice": "choice:v6_roof_first",
+      "earlyBeat": "c6_v6_contract_15",
+      "baseline": {
+        "beat": "c6_after_choice_7",
+        "scene": "v6_dawn",
+        "quote": "工钱缺口公开后，今晚还是没有全凑足。严主事把不能开的那班划掉，留了重新招人的日期。",
+        "distance": 268,
+        "ending": "harbor"
+      },
+      "counterfactual": {
+        "beat": "c6_after_choice_9",
+        "scene": "v6_dawn",
+        "quote": "你不肯认的那班没有写你名字。会后若有人再说你答应全包，我留着原具结。",
+        "distance": 268,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M13",
+      "decisionPoint": "c6_v6_contract_cost",
+      "weight": "high",
+      "effect": "承接临时第二班须真正多守一个月、减少练剑并错过原定镖队；重伤线另请付薪替工、留下欠款，八类结局均保留承诺。",
+      "preferred": [
+        "route_land"
+      ],
+      "baselineChoice": "choice:v6_share_shift",
+      "changedChoice": "choice:v6_cover_shift",
+      "earlyBeat": "c6_v6_contract_cost_5",
+      "baseline": {
+        "beat": "c6_v6_harbor_shift_4",
+        "scene": "v6_dawn",
+        "quote": "只认的一班做稳了，再谈第二班。今天不是因为你赢过才让你拿钥匙。",
+        "distance": 268,
+        "ending": "harbor"
+      },
+      "counterfactual": {
+        "beat": "c6_after_choice_14",
+        "scene": "v6_dawn",
+        "quote": "修船开班以后，你按约多接了一月的代守，练剑的课表少去几日。月底回执签完，空出的时辰才重新归你。",
+        "distance": 262,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M14",
+      "decisionPoint": "c6_v6_contract_sign",
+      "weight": "normal",
+      "effect": "让砚生自己约试，后来能领报路工钱；先休满则今日仍待试，玩家先前顶下的工日不自动到期。",
+      "preferred": [
+        "route_land"
+      ],
+      "baselineChoice": "choice:v6_qiao_apply",
+      "changedChoice": "choice:v6_qiao_wait",
+      "earlyBeat": "c6_v6_contract_sign_4",
+      "baseline": {
+        "beat": "c6_v6_wind_people_3",
+        "scene": "v6_wind",
+        "quote": "报路那一段我刚自己试过，高秉给我排了两趟。别把我当多出来的伤员，找得到名字的那份我能做。",
+        "distance": 81,
+        "ending": "harbor"
+      },
+      "counterfactual": {
+        "beat": "c6_v6_wind_people_5",
+        "scene": "v6_wind",
+        "quote": "我还没休满，今日不接报路的工钱。先替你们喊名字，等自己试过再领那一班。",
+        "distance": 82,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M15",
+      "decisionPoint": "c6_v6_grain_inventory",
+      "weight": "high",
+      "effect": "查实借到好梯可从高窗接出老人；保住对练则需绕巷，程阿笠因此少赶一趟接送船。",
+      "preferred": [
+        "route_land"
+      ],
+      "baselineChoice": "choice:v6_inspect_stock",
+      "changedChoice": "choice:v6_keep_evening",
+      "earlyBeat": "c6_v6_grain_inventory_8",
+      "baseline": {
+        "beat": "c6_v6_sluice_11",
+        "scene": "v6_levee",
+        "quote": "横梯搭上，两位老人能从内墙边慢慢挪。你把手伸到最外一格，听他们自己报脚下踩稳没有。",
+        "distance": 97,
+        "ending": "harbor"
+      },
+      "counterfactual": {
+        "beat": "c6_v6_sluice_14",
+        "scene": "v6_levee",
+        "quote": "你们绕了两条巷才到干地。老人都还在，程阿笠少赶上一趟送人回渡的船。",
+        "distance": 98,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M16",
+      "decisionPoint": "c6_v6_evidence",
+      "weight": "normal",
+      "effect": "牺牲热身作亲见证据，或保热身留下双方次日补核；不让祖辈传闻侵入正式战绩。",
+      "preferred": [
+        "route_land"
+      ],
+      "baselineChoice": "choice:v6_sign_witness",
+      "changedChoice": "choice:v6_split_rumor",
+      "earlyBeat": "c6_v6_evidence_7",
+      "baseline": {
+        "beat": "c6_v6_canon_reckon_18",
+        "scene": "v6_storm",
+        "quote": "高秉把你签过的私试照原样留了。许竞川的同门已看过，没有替那句祖辈传闻找一个模糊出处。",
+        "distance": 201,
+        "ending": "harbor"
+      },
+      "counterfactual": {
+        "beat": "c6_v6_canon_reckon_20",
+        "scene": "v6_storm",
+        "quote": "高秉还等你核私试。你们俩明日都得早到一刻，今天的热身保住了，旧账没因此自己结清。",
+        "distance": 201,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M17",
+      "decisionPoint": "c6_v6_wind",
+      "weight": "normal",
+      "effect": "先清车获得空道但药仍待补；先备物则药绳到手，却须分队绕车，各有具体时序代价。",
+      "preferred": [
+        "route_land"
+      ],
+      "baselineChoice": "choice:v6_clear_gate",
+      "changedChoice": "choice:v6_stage_rope",
+      "earlyBeat": "c6_v6_wind_7",
+      "baseline": {
+        "beat": "c6_v6_sluice_4",
+        "scene": "v6_levee",
+        "quote": "坪上那辆车提前退了，接出来的人能直接过东口。只是药箱还在后队，我先借一块干布。",
+        "distance": 29,
+        "ending": "harbor"
+      },
+      "counterfactual": {
+        "beat": "c6_v6_sluice_7",
+        "scene": "v6_levee",
+        "quote": "药箱和绳都到手了。东口那辆车得先退，能走的人暂时跟我绕内侧。",
+        "distance": 29,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M18",
+      "decisionPoint": "c6_v6_wind_people",
+      "weight": "normal",
+      "effect": "留出口的双份名单可由高秉接手；先跑药棚的干布及时用上，但临时改核名需多对一轮。",
+      "preferred": [
+        "route_land"
+      ],
+      "baselineChoice": "choice:v6_assign_people",
+      "changedChoice": "choice:v6_run_myself",
+      "earlyBeat": "c6_v6_wind_people_10",
+      "baseline": {
+        "beat": "c6_v6_canon_reckon_3",
+        "scene": "v6_storm",
+        "quote": "高秉接着你留的两份名单往下核，没把往返的人重算。你离开出口以后，那里还有人能接手。",
+        "distance": 134,
+        "ending": "harbor"
+      },
+      "counterfactual": {
+        "beat": "c6_v6_canon_reckon_6",
+        "scene": "v6_storm",
+        "quote": "出口临时改由我和高秉核，往返的人重记了一次。数要重新对，不能拿药已送到替它勾齐。",
+        "distance": 135,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M19",
+      "decisionPoint": "c_arena_pair_result",
+      "weight": "normal",
+      "effect": "公开停试可带走程序争执；自己先赶救援时，另有人须留下补报，不能当成全场已经知道。",
+      "preferred": [
+        "route_land"
+      ],
+      "baselineChoice": "choice:stop_public",
+      "changedChoice": "choice:go_direct",
+      "earlyBeat": "c_arena_pair_result_7",
+      "baseline": {
+        "beat": "c_levee_call_8",
+        "scene": "v6_levee",
+        "quote": "停试令已报全，东出口放开了。你在坪上喊的那句，现在后面的人也听见了。",
+        "distance": 21,
+        "ending": "harbor"
+      },
+      "counterfactual": {
+        "beat": "c_levee_call_9",
+        "scene": "v6_levee",
+        "quote": "东出口还有人争刚才算不算输。我先去报清，不让你们这边还要等。",
+        "distance": 21,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M20",
+      "decisionPoint": "c_levee_split",
+      "weight": "high",
+      "effect": "固定岸绳与徒手抢时产生真实接人成功/撤回等大船的不同过程；无伤路径不虚构旧伤。",
+      "preferred": [
+        "route_land"
+      ],
+      "baselineChoice": "choice:final_prepare",
+      "changedChoice": "choice:final_hurry",
+      "earlyBeat": "c_levee_split_6",
+      "baseline": {
+        "beat": "c_storm_act_6",
+        "scene": "v6_storm",
+        "quote": "石墩把绳的力接住，你按口令松出半臂。照鲤借船身的转向靠拢，刘篙把老人送进她臂间。",
+        "distance": 35,
+        "ending": "harbor"
+      },
+      "counterfactual": {
+        "beat": "c_storm_act_9",
+        "scene": "v6_storm",
+        "quote": "岸绳突然震动，你试图多撑一瞬，手臂先替你松了力。何铆把你往后扯，自己也跪进水里。",
+        "distance": 35,
+        "ending": "lost"
+      }
+    },
+    {
+      "id": "M21",
+      "decisionPoint": "c_storm_choice",
+      "weight": "high",
+      "effect": "守自己的试艺承诺、现场接人、领队或回馆是同一处四向决策；有不同投入与后日生活，不把四选项重复计数。",
+      "preferred": [
+        "end_honor"
+      ],
+      "baselineChoice": "choice:end_honor",
+      "changedChoice": "choice:end_rescue",
+      "earlyBeat": "c_storm_choice_9",
+      "baseline": {
+        "beat": "c6_v6_after_name_1",
+        "scene": "v6_dawn",
+        "quote": "容既白把棍尾重新包好，试着走了一遍新步。你想起自己也有没练明白的地方，没先摆出赢者的样子。",
+        "distance": 48,
+        "ending": "name"
+      },
+      "counterfactual": {
+        "beat": "c6_v6_after_harbor_1",
+        "scene": "v6_dawn",
+        "quote": "何铆把船坞钥匙放在桌上，让你自己伸手拿。领了差事的人，明日得第一个开门。",
+        "distance": 49,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M22",
+      "decisionPoint": "c_water_load",
+      "weight": "normal",
+      "effect": "装船平衡与多载抢时影响真正送到的药与箱底修补，并非只改装载标签。",
+      "preferred": [
+        "route_water"
+      ],
+      "baselineChoice": "choice:balance_load",
+      "changedChoice": "choice:load_more",
+      "earlyBeat": "c_water_load_6",
+      "baseline": {
+        "beat": "c_workshop_night_11",
+        "scene": "v6_workshop",
+        "quote": "药箱是干的，村里能用到最后一包。出门时肯挪那半刻，到地方就不用追着湿纸捡药。",
+        "distance": 168,
+        "ending": "captain"
+      },
+      "counterfactual": {
+        "beat": "c_workshop_night_12",
+        "scene": "v6_workshop",
+        "quote": "有箱角沾了水，药没全坏。何铆在修底，下回装货不能只想着多一袋。",
+        "distance": 168,
+        "ending": "captain"
+      }
+    },
+    {
+      "id": "M23",
+      "decisionPoint": "c_night_moor",
+      "weight": "high",
+      "effect": "夜航硬拉绳留下的腕伤，与先前和试艺伤势叠加后改变终章；正确绳角或依口令放绳都能避开这一处新伤。",
+      "preferred": [
+        "route_water",
+        "press_again",
+        "duel_risk"
+      ],
+      "baselineChoice": "choice:night_angle",
+      "changedChoice": "choice:night_pull",
+      "earlyBeat": "c_night_moor_7",
+      "baseline": {
+        "beat": "c_storm_act_6",
+        "scene": "v6_storm",
+        "quote": "石墩把绳的力接住，你按口令松出半臂。照鲤借船身的转向靠拢，刘篙把老人送进她臂间。",
+        "distance": 360,
+        "ending": "captain"
+      },
+      "counterfactual": {
+        "beat": "c_storm_act_9",
+        "scene": "v6_storm",
+        "quote": "岸绳突然震动，你试图多撑一瞬，伤处先替你松了力。何铆把你往后扯，自己也跪进水里。",
+        "distance": 359,
+        "ending": "scar"
+      }
+    },
+    {
+      "id": "M24",
+      "decisionPoint": "c6_v6_stay_lines",
+      "weight": "normal",
+      "effect": "清出领钱队与先垫馆中路费，改变馆款是否先被占用、后日是否必须核对归还的收据。此项回归主要核对已垫款有归还、未垫款没有虚构还款。",
+      "preferred": [
+        "route_stay"
+      ],
+      "baselineChoice": "choice:v6_separate_queue",
+      "changedChoice": "choice:v6_advance_wage",
+      "earlyBeat": "c6_v6_stay_lines_5",
+      "baseline": {
+        "beat": "c6_v6_contract_15",
+        "scene": "v6_contract",
+        "quote": "谁没垫过，也得问这一年靠谁的工钱养。不是只看今日哪位肯掏。",
+        "distance": 128,
+        "ending": "harbor"
+      },
+      "counterfactual": {
+        "beat": "c6_v6_contract_13",
+        "scene": "v6_contract",
+        "quote": "还有你垫的这笔。先还馆里，不许我一说账，你就说算了。",
+        "distance": 128,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M25",
+      "decisionPoint": "c6_v6_stay_pay",
+      "weight": "high",
+      "effect": "早先放下裂杆或勉强攀最低档，改变任耕伤手、送伤者的能力以及第九章旗手分工。",
+      "preferred": [
+        "route_stay"
+      ],
+      "baselineChoice": "choice:v6_lower_flag",
+      "changedChoice": "choice:v6_tie_flag",
+      "earlyBeat": "c6_v6_stay_pay_6",
+      "baseline": {
+        "beat": "c6_v6_wind_people_9",
+        "scene": "v6_wind",
+        "quote": "我报旗。木杆先查，再上；叫停的时候，下面要有人真听见。",
+        "distance": 217,
+        "ending": "harbor"
+      },
+      "counterfactual": {
+        "beat": "c6_v6_wind_people_7",
+        "scene": "v6_wind",
+        "quote": "我的手不能爬。我去下面跑，旗得换个人。",
+        "distance": 217,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M26",
+      "decisionPoint": "c6_v6_stay_return",
+      "weight": "normal",
+      "effect": "留原稿便于去重核款；挨户交代带回家中急用信息，却须等当事人来核，不能替他签字。",
+      "preferred": [
+        "route_stay"
+      ],
+      "baselineChoice": "choice:v6_write_names",
+      "changedChoice": "choice:v6_speak_first",
+      "earlyBeat": "c6_v6_stay_return_4",
+      "baseline": {
+        "beat": "c6_v6_contract_7",
+        "scene": "v6_contract",
+        "quote": "你昨晚写的原稿在这里。同一笔垫款被抄了两回，先划掉重复的，别从每个人那份均摊。",
+        "distance": 94,
+        "ending": "harbor"
+      },
+      "counterfactual": {
+        "beat": "c6_v6_contract_12",
+        "scene": "v6_contract",
+        "quote": "你知道谁等不得，却没有一张能直接对数的原稿。这一轮要等人到场，午前还发不完。",
+        "distance": 97,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M27",
+      "decisionPoint": "c_arena_open",
+      "weight": "high",
+      "effect": "先看棍路才有可信转侧机会；急冲使该后手不可用，后日不能凭守名愿望冒领正式胜场。",
+      "preferred": [
+        "end_honor"
+      ],
+      "baselineChoice": "choice:arena_read",
+      "changedChoice": "choice:arena_rush",
+      "earlyBeat": "c_arena_open_10",
+      "baseline": {
+        "beat": "c6_v6_after_name_1",
+        "scene": "v6_dawn",
+        "quote": "容既白把棍尾重新包好，试着走了一遍新步。你想起自己也有没练明白的地方，没先摆出赢者的样子。",
+        "distance": 214,
+        "ending": "name"
+      },
+      "counterfactual": {
+        "beat": "c6_v6_after_harbor_1",
+        "scene": "v6_dawn",
+        "quote": "何铆把船坞钥匙放在桌上，让你自己伸手拿。领了差事的人，明日得第一个开门。",
+        "distance": 215,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M28",
+      "decisionPoint": "c_arena_press",
+      "weight": "high",
+      "effect": "看准后的绕侧胜、稳接后的不同战果、以伤换碰肩分别保留真实较艺结果；后日与名望目标必须受这一场约束。",
+      "preferred": [
+        "end_honor"
+      ],
+      "baselineChoice": "choice:duel_turn",
+      "changedChoice": "choice:duel_three",
+      "earlyBeat": "c_arena_press_6",
+      "baseline": {
+        "beat": "c6_v6_after_name_1",
+        "scene": "v6_dawn",
+        "quote": "容既白把棍尾重新包好，试着走了一遍新步。你想起自己也有没练明白的地方，没先摆出赢者的样子。",
+        "distance": 206,
+        "ending": "name"
+      },
+      "counterfactual": {
+        "beat": "c6_v6_after_harbor_1",
+        "scene": "v6_dawn",
+        "quote": "何铆把船坞钥匙放在桌上，让你自己伸手拿。领了差事的人，明日得第一个开门。",
+        "distance": 207,
+        "ending": "harbor"
+      }
+    },
+    {
+      "id": "M29",
+      "decisionPoint": "c_workshop_qiao",
+      "weight": "high",
+      "effect": "事先愿共同做配合而非各自单打，影响后日能否同路；分开有自己的具体行装与回信，不只改结局名。",
+      "preferred": [
+        "aftermath_road"
+      ],
+      "baselineChoice": "choice:qiao_team",
+      "changedChoice": "choice:qiao_single",
+      "earlyBeat": "c_workshop_qiao_8",
+      "baseline": {
+        "beat": "c6_v6_after_together_1",
+        "scene": "v6_afterhall",
+        "quote": "再出门的包袱比来时轻，砚生的药却多了一包。裴雁秋看完他的腕，先把押前的名字划成押尾。",
+        "distance": 316,
+        "ending": "together5"
+      },
+      "counterfactual": {
+        "beat": "c6_v6_after_apart_1",
+        "scene": "v6_dawn",
+        "quote": "你要走的那条路，不在砚生今日的包袱里。他把借来的护腕叠好，搁在桌边，没有追问为什么。",
+        "distance": 316,
+        "ending": "apart"
+      }
+    },
+    {
+      "id": "M30",
+      "decisionPoint": "c_storm_resolution",
+      "weight": "normal",
+      "effect": "这是明确的未来职业与生活选择，后续进入不同完整场景；因选择发生较晚，不冒充早期高权重伏笔。",
+      "preferred": [
+        "aftermath_road"
+      ],
+      "baselineChoice": "choice:aftermath_road",
+      "changedChoice": "choice:aftermath_teach",
+      "earlyBeat": "c_storm_resolution_10",
+      "baseline": {
+        "beat": "c6_v6_after_together_1",
+        "scene": "v6_afterhall",
+        "quote": "再出门的包袱比来时轻，砚生的药却多了一包。裴雁秋看完他的腕，先把押前的名字划成押尾。",
+        "distance": 9,
+        "ending": "together5"
+      },
+      "counterfactual": {
+        "beat": "c6_v6_after_teacher_1",
+        "scene": "v6_afterhall",
+        "quote": "包小满把水盆端到门边，等着你说下一步。你一时真想把这一趟见过的，全教给他。",
+        "distance": 9,
+        "ending": "teacher"
+      }
+    }
+  ]
+}

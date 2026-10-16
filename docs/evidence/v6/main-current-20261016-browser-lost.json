@@ -1,0 +1,34 @@
+{
+  "version": "tide-promise-2.0.0",
+  "route": "lost",
+  "actualInputs": true,
+  "humanPlaytest": false,
+  "contentSHA256": "f9fbb2de979b17ef702ed09606578772d0605fc8e4ad4675da5b792a20d957a8",
+  "restoredCheckpoints": [
+    "v6_depart",
+    "v6_contract",
+    "v6_wind",
+    "v6_levee"
+  ],
+  "assertedProductionTextEveryBeat": true,
+  "assertedEndingVariablesAndCommands": true,
+  "beats": 729,
+  "decisions": 63,
+  "scenes": [
+    "v6_quay",
+    "v6_hall",
+    "v6_inn",
+    "v6_depart",
+    "v6_ridge",
+    "v6_bridge",
+    "v6_workshop",
+    "v6_contract",
+    "v6_arena",
+    "v6_wind",
+    "v6_levee",
+    "v6_storm",
+    "v6_dawn"
+  ],
+  "ending": "lost",
+  "errors": []
+}

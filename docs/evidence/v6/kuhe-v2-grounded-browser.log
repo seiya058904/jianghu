@@ -1,0 +1,11 @@
+[WebServer] (node:27104) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:32620) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\kuhe-v2.spec.ts:11:1 › Kuhe archive preserves pending auto, manual, previous and dark settings, while v2 rejects v1 imports (445ms)
+  ok 2 tests\kuhe-v2.spec.ts:17:1 › Kuhe three identities, short elder, locking close-up and choices remain usable at seven sizes (4.1s)
+
+  2 passed (5.5s)

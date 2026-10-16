@@ -1,0 +1,159 @@
+[WebServer] (node:37028) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 1 worker
+
+(node:34840) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 tests\default-entry.spec.ts:11:225 › Default V6 root: shared alias progress, real V5 preservation and direct archive resume/export (5.2s)
+(node:36072) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  2 tests\default-entry.spec.ts:11:225 › Default V6 index: shared alias progress, real V5 preservation and direct archive resume/export (5.2s)
+(node:46236) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  3 tests\default-entry.spec.ts:11:225 › Default V6 subroot: shared alias progress, real V5 preservation and direct archive resume/export (5.2s)
+(node:47088) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  4 tests\default-entry.spec.ts:11:225 › Default V6 subindex: shared alias progress, real V5 preservation and direct archive resume/export (5.2s)
+(node:42596) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  5 tests\default-entry.spec.ts:20:1 › Default V6 covers and direct old-save links remain visible, hittable and usable at seven sizes (1.2s)
+(node:31376) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 6 tests\default-entry.spec.ts:24:107 › Default V6 root: download replaces stale root/index HTML and cold story chunks, retaining other offline data (684ms)
+  ok 7 tests\default-entry.spec.ts:24:107 › Default V6 subpath: download replaces stale root/index HTML and cold story chunks, retaining other offline data (625ms)
+  ok 8 tests\v6-compat.spec.ts:4:1 › frozen v5 entry resumes actual old pending choice on root and subpath (816ms)
+
+
+  1) tests\default-entry.spec.ts:11:225 › Default V6 root: shared alias progress, real V5 preservation and direct archive resume/export
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  locator('html')
+    Expected: "light"
+    Received: "paper"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveAttribute" locator('html') with timeout 5000ms
+      - waiting for locator('html')
+        14 × locator resolved to <html lang="zh-CN" data-theme="paper" data-motion="reduced">…</html>
+           - unexpected value "paper"
+
+
+      12 |  const old=oldPending(),raw=JSON.stringify(old.save()),kept={auto:raw,slot1:raw,previous:raw,readBeats:'["c_cargo_1"]',endings:'["harbor"]',settings:JSON.stringify({speed:0,reduced:true,size:24,dark:true})};
+      13 |  await page.addInitScript(({v1,v2,kept})=>{for(const [key,value]of Object.entries(kept))if(!localStorage.getItem(v1+key))localStorage.setItem(v1+key,value);localStorage.setItem(v2+'settings',JSON.stringify({speed:0,reduced:true,size:20,dark:false}));localStorage.setItem('jianghu:vn:v2:preserve','half-kept');localStorage.setItem('jianghu:v1:preserve','reader-kept')},{v1,v2,kept});
+    > 14 |  await page.goto(root+file);await expect(page.locator('body')).toHaveAttribute('data-content-version','tide-promise-2.0.0');await expect(page.locator('html')).toHaveAttribute('data-theme','light');await page.getByRole('button',{name:'启程 · 青蒲渡',exact:true}).click();const s=new VNRuntime(current,'tide-promise-2.0.0');await expect(page.locator('#dialogue-visible')).toHaveText(s.frame.text);await page.locator('#advance-button').click();s.advance();
+         |                                                                                                                                                                ^
+      15 |  await page.goto(root+'tide-v6.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await page.locator('#advance-button').click();s.advance();await page.goto(root+'index.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(await page.evaluate(p=>JSON.parse(localStorage.getItem(p+'auto')!).commands,v2)).toEqual(s.commands);
+      16 |  expect(await page.evaluate(({p,keys})=>Object.fromEntries(keys.map(k=>[k,localStorage.getItem(p+k)])),{p:v1,keys:Object.keys(kept)})).toEqual(kept);await page.getByRole('button',{name:'Jianghu 封面',exact:true}).click();await page.getByRole('link',{name:'旧版《潮生有约》与原存档',exact:true}).click();await expect(page.locator('body')).toHaveAttribute('data-content-version','tide-promise-1.0.0');await page.getByRole('button',{name:/继续这一程/}).click();await expect(page.locator('#app')).toHaveAttribute('data-beat',old.frame.id);await expect(page.locator('#dialogue-visible')).toHaveText(old.frame.text);
+      17 |  await page.getByRole('button',{name:'存档',exact:true}).click();const download=page.waitForEvent('download');await page.locator('[data-action="slot-export"][data-slot="slot1"]').click();expect(readFileSync((await(await download).path())!,'utf8')).toBe(raw);await page.keyboard.press('Escape');await page.getByRole('button',{name:'Jianghu 封面',exact:true}).click();await page.getByRole('link',{name:'返回《潮生有约》',exact:true}).click();await page.getByRole('button',{name:/继续这一程/}).click();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(await page.evaluate(()=>[localStorage.getItem('jianghu:vn:v2:preserve'),localStorage.getItem('jianghu:v1:preserve')])).toEqual(['half-kept','reader-kept']);
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\default-entry.spec.ts:14:160
+
+    Error Context: test-results\default-entry-Default-V6-r-1571b-irect-archive-resume-export\error-context.md
+
+  2) tests\default-entry.spec.ts:11:225 › Default V6 index: shared alias progress, real V5 preservation and direct archive resume/export
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  locator('html')
+    Expected: "light"
+    Received: "paper"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveAttribute" locator('html') with timeout 5000ms
+      - waiting for locator('html')
+        14 × locator resolved to <html lang="zh-CN" data-theme="paper" data-motion="reduced">…</html>
+           - unexpected value "paper"
+
+
+      12 |  const old=oldPending(),raw=JSON.stringify(old.save()),kept={auto:raw,slot1:raw,previous:raw,readBeats:'["c_cargo_1"]',endings:'["harbor"]',settings:JSON.stringify({speed:0,reduced:true,size:24,dark:true})};
+      13 |  await page.addInitScript(({v1,v2,kept})=>{for(const [key,value]of Object.entries(kept))if(!localStorage.getItem(v1+key))localStorage.setItem(v1+key,value);localStorage.setItem(v2+'settings',JSON.stringify({speed:0,reduced:true,size:20,dark:false}));localStorage.setItem('jianghu:vn:v2:preserve','half-kept');localStorage.setItem('jianghu:v1:preserve','reader-kept')},{v1,v2,kept});
+    > 14 |  await page.goto(root+file);await expect(page.locator('body')).toHaveAttribute('data-content-version','tide-promise-2.0.0');await expect(page.locator('html')).toHaveAttribute('data-theme','light');await page.getByRole('button',{name:'启程 · 青蒲渡',exact:true}).click();const s=new VNRuntime(current,'tide-promise-2.0.0');await expect(page.locator('#dialogue-visible')).toHaveText(s.frame.text);await page.locator('#advance-button').click();s.advance();
+         |                                                                                                                                                                ^
+      15 |  await page.goto(root+'tide-v6.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await page.locator('#advance-button').click();s.advance();await page.goto(root+'index.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(await page.evaluate(p=>JSON.parse(localStorage.getItem(p+'auto')!).commands,v2)).toEqual(s.commands);
+      16 |  expect(await page.evaluate(({p,keys})=>Object.fromEntries(keys.map(k=>[k,localStorage.getItem(p+k)])),{p:v1,keys:Object.keys(kept)})).toEqual(kept);await page.getByRole('button',{name:'Jianghu 封面',exact:true}).click();await page.getByRole('link',{name:'旧版《潮生有约》与原存档',exact:true}).click();await expect(page.locator('body')).toHaveAttribute('data-content-version','tide-promise-1.0.0');await page.getByRole('button',{name:/继续这一程/}).click();await expect(page.locator('#app')).toHaveAttribute('data-beat',old.frame.id);await expect(page.locator('#dialogue-visible')).toHaveText(old.frame.text);
+      17 |  await page.getByRole('button',{name:'存档',exact:true}).click();const download=page.waitForEvent('download');await page.locator('[data-action="slot-export"][data-slot="slot1"]').click();expect(readFileSync((await(await download).path())!,'utf8')).toBe(raw);await page.keyboard.press('Escape');await page.getByRole('button',{name:'Jianghu 封面',exact:true}).click();await page.getByRole('link',{name:'返回《潮生有约》',exact:true}).click();await page.getByRole('button',{name:/继续这一程/}).click();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(await page.evaluate(()=>[localStorage.getItem('jianghu:vn:v2:preserve'),localStorage.getItem('jianghu:v1:preserve')])).toEqual(['half-kept','reader-kept']);
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\default-entry.spec.ts:14:160
+
+    Error Context: test-results\default-entry-Default-V6-i-1631d-irect-archive-resume-export\error-context.md
+
+  3) tests\default-entry.spec.ts:11:225 › Default V6 subroot: shared alias progress, real V5 preservation and direct archive resume/export
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  locator('html')
+    Expected: "light"
+    Received: "paper"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveAttribute" locator('html') with timeout 5000ms
+      - waiting for locator('html')
+        14 × locator resolved to <html lang="zh-CN" data-theme="paper" data-motion="reduced">…</html>
+           - unexpected value "paper"
+
+
+      12 |  const old=oldPending(),raw=JSON.stringify(old.save()),kept={auto:raw,slot1:raw,previous:raw,readBeats:'["c_cargo_1"]',endings:'["harbor"]',settings:JSON.stringify({speed:0,reduced:true,size:24,dark:true})};
+      13 |  await page.addInitScript(({v1,v2,kept})=>{for(const [key,value]of Object.entries(kept))if(!localStorage.getItem(v1+key))localStorage.setItem(v1+key,value);localStorage.setItem(v2+'settings',JSON.stringify({speed:0,reduced:true,size:20,dark:false}));localStorage.setItem('jianghu:vn:v2:preserve','half-kept');localStorage.setItem('jianghu:v1:preserve','reader-kept')},{v1,v2,kept});
+    > 14 |  await page.goto(root+file);await expect(page.locator('body')).toHaveAttribute('data-content-version','tide-promise-2.0.0');await expect(page.locator('html')).toHaveAttribute('data-theme','light');await page.getByRole('button',{name:'启程 · 青蒲渡',exact:true}).click();const s=new VNRuntime(current,'tide-promise-2.0.0');await expect(page.locator('#dialogue-visible')).toHaveText(s.frame.text);await page.locator('#advance-button').click();s.advance();
+         |                                                                                                                                                                ^
+      15 |  await page.goto(root+'tide-v6.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await page.locator('#advance-button').click();s.advance();await page.goto(root+'index.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(await page.evaluate(p=>JSON.parse(localStorage.getItem(p+'auto')!).commands,v2)).toEqual(s.commands);
+      16 |  expect(await page.evaluate(({p,keys})=>Object.fromEntries(keys.map(k=>[k,localStorage.getItem(p+k)])),{p:v1,keys:Object.keys(kept)})).toEqual(kept);await page.getByRole('button',{name:'Jianghu 封面',exact:true}).click();await page.getByRole('link',{name:'旧版《潮生有约》与原存档',exact:true}).click();await expect(page.locator('body')).toHaveAttribute('data-content-version','tide-promise-1.0.0');await page.getByRole('button',{name:/继续这一程/}).click();await expect(page.locator('#app')).toHaveAttribute('data-beat',old.frame.id);await expect(page.locator('#dialogue-visible')).toHaveText(old.frame.text);
+      17 |  await page.getByRole('button',{name:'存档',exact:true}).click();const download=page.waitForEvent('download');await page.locator('[data-action="slot-export"][data-slot="slot1"]').click();expect(readFileSync((await(await download).path())!,'utf8')).toBe(raw);await page.keyboard.press('Escape');await page.getByRole('button',{name:'Jianghu 封面',exact:true}).click();await page.getByRole('link',{name:'返回《潮生有约》',exact:true}).click();await page.getByRole('button',{name:/继续这一程/}).click();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(await page.evaluate(()=>[localStorage.getItem('jianghu:vn:v2:preserve'),localStorage.getItem('jianghu:v1:preserve')])).toEqual(['half-kept','reader-kept']);
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\default-entry.spec.ts:14:160
+
+    Error Context: test-results\default-entry-Default-V6-s-a3176-irect-archive-resume-export\error-context.md
+
+  4) tests\default-entry.spec.ts:11:225 › Default V6 subindex: shared alias progress, real V5 preservation and direct archive resume/export
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  locator('html')
+    Expected: "light"
+    Received: "paper"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveAttribute" locator('html') with timeout 5000ms
+      - waiting for locator('html')
+        14 × locator resolved to <html lang="zh-CN" data-theme="paper" data-motion="reduced">…</html>
+           - unexpected value "paper"
+
+
+      12 |  const old=oldPending(),raw=JSON.stringify(old.save()),kept={auto:raw,slot1:raw,previous:raw,readBeats:'["c_cargo_1"]',endings:'["harbor"]',settings:JSON.stringify({speed:0,reduced:true,size:24,dark:true})};
+      13 |  await page.addInitScript(({v1,v2,kept})=>{for(const [key,value]of Object.entries(kept))if(!localStorage.getItem(v1+key))localStorage.setItem(v1+key,value);localStorage.setItem(v2+'settings',JSON.stringify({speed:0,reduced:true,size:20,dark:false}));localStorage.setItem('jianghu:vn:v2:preserve','half-kept');localStorage.setItem('jianghu:v1:preserve','reader-kept')},{v1,v2,kept});
+    > 14 |  await page.goto(root+file);await expect(page.locator('body')).toHaveAttribute('data-content-version','tide-promise-2.0.0');await expect(page.locator('html')).toHaveAttribute('data-theme','light');await page.getByRole('button',{name:'启程 · 青蒲渡',exact:true}).click();const s=new VNRuntime(current,'tide-promise-2.0.0');await expect(page.locator('#dialogue-visible')).toHaveText(s.frame.text);await page.locator('#advance-button').click();s.advance();
+         |                                                                                                                                                                ^
+      15 |  await page.goto(root+'tide-v6.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await page.locator('#advance-button').click();s.advance();await page.goto(root+'index.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(await page.evaluate(p=>JSON.parse(localStorage.getItem(p+'auto')!).commands,v2)).toEqual(s.commands);
+      16 |  expect(await page.evaluate(({p,keys})=>Object.fromEntries(keys.map(k=>[k,localStorage.getItem(p+k)])),{p:v1,keys:Object.keys(kept)})).toEqual(kept);await page.getByRole('button',{name:'Jianghu 封面',exact:true}).click();await page.getByRole('link',{name:'旧版《潮生有约》与原存档',exact:true}).click();await expect(page.locator('body')).toHaveAttribute('data-content-version','tide-promise-1.0.0');await page.getByRole('button',{name:/继续这一程/}).click();await expect(page.locator('#app')).toHaveAttribute('data-beat',old.frame.id);await expect(page.locator('#dialogue-visible')).toHaveText(old.frame.text);
+      17 |  await page.getByRole('button',{name:'存档',exact:true}).click();const download=page.waitForEvent('download');await page.locator('[data-action="slot-export"][data-slot="slot1"]').click();expect(readFileSync((await(await download).path())!,'utf8')).toBe(raw);await page.keyboard.press('Escape');await page.getByRole('button',{name:'Jianghu 封面',exact:true}).click();await page.getByRole('link',{name:'返回《潮生有约》',exact:true}).click();await page.getByRole('button',{name:/继续这一程/}).click();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(await page.evaluate(()=>[localStorage.getItem('jianghu:vn:v2:preserve'),localStorage.getItem('jianghu:v1:preserve')])).toEqual(['half-kept','reader-kept']);
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\default-entry.spec.ts:14:160
+
+    Error Context: test-results\default-entry-Default-V6-s-5d9cf-irect-archive-resume-export\error-context.md
+
+  5) tests\default-entry.spec.ts:20:1 › Default V6 covers and direct old-save links remain visible, hittable and usable at seven sizes
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      19 |
+      20 | test('Default V6 covers and direct old-save links remain visible, hittable and usable at seven sizes',async({browser})=>{
+    > 21 |  for(const [width,height]of [[360,800],[390,844],[412,915],[800,360],[1366,768],[1440,900],[1920,1080]]){const context=await browser.newContext({viewport:{width,height}}),page=await context.newPage();await page.goto('/');await expect(page.locator('body')).toHaveAttribute('data-content-version','tide-promise-2.0.0');for(const locator of [page.getByRole('button',{name:'启程 · 青蒲渡',exact:true}),page.getByRole('link',{name:'旧版《潮生有约》与原存档',exact:true})]){const b=await locator.boundingBox();expect(b&&b.x>=0&&b.y>=0&&b.x+b.width<=width+1&&b.y+b.height<=height+1).toBeTruthy();expect(await locator.evaluate(n=>{const r=n.getBoundingClientRect(),hit=document.elementFromPoint(r.x+r.width/2,r.y+r.height/2);return n===hit||Boolean(hit&&n.contains(hit))})).toBe(true)}expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/default-entry-cover-${width}.png`});await page.getByRole('link',{name:'旧版《潮生有约》与原存档',exact:true}).click();await expect(page.locator('body')).toHaveAttribute('data-content-version','tide-promise-1.0.0');await page.getByRole('link',{name:'返回《潮生有约》',exact:true}).click();await expect(page.locator('body')).toHaveAttribute('data-content-version','tide-promise-2.0.0');await context.close()}
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^
+      22 | });
+      23 |
+      24 | for(const [label,root]of [['root','http://127.0.0.1:4173/'],['subpath','http://127.0.0.1:4175/Jianghu/']])test(`Default V6 ${label}: download replaces stale root/index HTML and cold story chunks, retaining other offline data`,async({browser})=>{
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\default-entry.spec.ts:21:560
+
+    Error Context: test-results\default-entry-Default-V6-c-9cd64-e-and-usable-at-seven-sizes\error-context.md
+
+  5 failed
+    tests\default-entry.spec.ts:11:225 › Default V6 root: shared alias progress, real V5 preservation and direct archive resume/export
+    tests\default-entry.spec.ts:11:225 › Default V6 index: shared alias progress, real V5 preservation and direct archive resume/export
+    tests\default-entry.spec.ts:11:225 › Default V6 subroot: shared alias progress, real V5 preservation and direct archive resume/export
+    tests\default-entry.spec.ts:11:225 › Default V6 subindex: shared alias progress, real V5 preservation and direct archive resume/export
+    tests\default-entry.spec.ts:20:1 › Default V6 covers and direct old-save links remain visible, hittable and usable at seven sizes
+  3 passed (27.8s)

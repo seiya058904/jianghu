@@ -1,0 +1,96 @@
+{
+  "status": "THIRD_INTERNAL_EDITORIAL_ROUND_DRAFT",
+  "changes": [
+    {
+      "id": "T40",
+      "round": 3,
+      "focus": "alternative-route-and-delayed-consequence",
+      "file": "taihua-author.mjs",
+      "reason": "已约张却另选同辈/回山须当面取消；没约过或真来短问不凭空触发取消。",
+      "before": "part('last_pack','th_guest','th_bro',`n|你推开屋门，师兄已把衣物扎好，护腕压在最上头。同门答应在第一处宽石阶接箱；师兄只提药包，伤膝不替你接重的。\nth_bro|还我？还是再借一程？`);",
+      "after": "part('last_pack','th_steps','',`n|回客舍之前，你先把今日去处与答应的人交代清。`);\nout.push('{\\n- front_page and future != 3:');stage('th_steps','th_zhang');say(`y|前辈留的一炷香，我今日不来了。{future == 1:改去同辈那里复手。|先陪师兄回山。}\nth_zhang~calm|知道了。我照自己的时辰走。\nn|张收好那页排过时辰的纸，没有把这一回说成往后随时可补。`);out.push('}');\nstage('th_guest','th_bro');say(`n|你推开屋门，师兄已把衣物扎好，护腕压在最上头。同门答应在第一处宽石阶接箱；师兄只提药包，伤膝不替你接重的。\nth_bro|还我？还是再借一程？`);"
+    },
+    {
+      "id": "T41",
+      "round": 3,
+      "focus": "alternative-route-and-delayed-consequence",
+      "file": "taihua-author.mjs",
+      "reason": "回山不再称山上试过为刚才；伤肩支明确只动脚，不暗示剑已能抬。",
+      "before": "y|{guidance_repeated:刚才真走的那回，手还在追旧落点。你先看这里。|第二次还没走，图在这里。我先试，你看哪只脚又挤住。}",
+      "after": "y|{guidance_repeated:先前在张面前真走的那回，手还在追旧落点。{strain and not measured and carried:手还要歇，今日先看脚下。|你先看手与脚接在何处。}|第二次还没走，图在这里。我先只试脚下，你看哪只脚又挤住。}"
+    },
+    {
+      "id": "T42",
+      "round": 3,
+      "focus": "alternative-route-and-delayed-consequence",
+      "file": "taihua-author.mjs",
+      "reason": "指导后寄霍原题与沈的约分别交代；没许私约者不在尾声再生一份未赴约。",
+      "before": "n|第七日，霍要的那页也寄出，仍是追沈时的起手，不拿张刚指过的回身替换他要看的那一面。你将没能同沈复手的事另写清，没有因收过一次指点便把未赴的约从信里抹去。",
+      "after": "n|第七日，霍要的那页也寄出，仍是追沈时的起手，不拿张刚指过的回身替换他要看的那一面。{rematch:给沈的信另写原约怎样取消，不把改约藏在听指点的热闹后面。|给沈的信只说今晨去了短问，不虚写她原本在等。}"
+    },
+    {
+      "id": "T43",
+      "round": 3,
+      "focus": "alternative-route-and-delayed-consequence",
+      "file": "taihua-author.mjs",
+      "reason": "回信后日收具体地址和未到半日，不额外虚造今年另一份未在剧本出现的约。",
+      "before": "end('th_letter','一个月内，你寄出第一封信：练到哪里、哪里仍错、今年不能再赴哪一次约。你选了自己的路，也承担没能在每一场相逢里出现的遗憾。回信来的那天，练功没有停。');",
+      "after": "end('th_letter','一个月内，你寄出第一封信，写清练到哪里、哪里仍错，也写这半日为何先走。信封上是沈留下的地址，三年后的再会仍需到时再问。回信到的那天，师兄将它放在你练脚的空地旁，等你先收住这一步。');"
+    },
+    {
+      "id": "T44",
+      "round": 3,
+      "focus": "alternative-route-and-delayed-consequence",
+      "file": "taihua-author.mjs",
+      "reason": "夜里真端过汤才回收汤碗笑话，纯旁观者收到司马主动邀试的不同话。",
+      "before": "th_sima~amused|我今日没碗在你手里，别客气。",
+      "after": "th_sima~amused|{soup:我今日没碗在你手里，别客气。|今日不用坐墙头。过来，我也想看看你那一下。}"
+    },
+    {
+      "id": "T45",
+      "round": 3,
+      "focus": "alternative-route-and-delayed-consequence",
+      "file": "taihua-author.mjs",
+      "reason": "回信时序从后来表示，不暗示出门现场已收到回信；司马具体圈脚而非泛泛拒夸。",
+      "before": "n|回山后，第一封给同辈的信写明自己那半日不在，另画了试给张看的回身。司马回信不肯照图先判你进步，只约再见时真接一次。",
+      "after": "n|回山后，你给司马的信写明那半日不在，另画了试给张看的回身。后来回信到了，他只圈出你图上的落脚处，约再见时真接一次。"
+    },
+    {
+      "id": "T46",
+      "round": 3,
+      "focus": "alternative-route-and-delayed-consequence",
+      "file": "taihua-elders.mjs",
+      "reason": "口述已复盘支不强设次晨还来取纸，延期支在条件内补画。",
+      "before": "n|青序结束的次晨，正序还未叫名。你到客舍门口取纸，师兄已将鞋挪在床前。",
+      "after": "n|青序结束的次晨，正序还未叫名。你到客舍门口，师兄已将鞋挪在床前。"
+    },
+    {
+      "id": "T47",
+      "round": 3,
+      "focus": "alternative-route-and-delayed-consequence",
+      "file": "taihua-elders.mjs",
+      "reason": "此前选择请明澄讲一处，不保证画过三处空格；短问邀请不强生三格图。",
+      "before": "{ask_limit:还缺回身的图|留着三处空格的图}",
+      "after": "{ask_limit:还缺回身的图|留空的脚位图}"
+    },
+    {
+      "id": "T48",
+      "round": 3,
+      "focus": "alternative-route-and-delayed-consequence",
+      "file": "taihua-author.mjs",
+      "reason": "未即时问张支不因模板强记准确三空格；与此前记录方式相容。",
+      "before": "纸上三处空白，先补一处，另两处他不替你猜全。",
+      "after": "纸上空白还多，先补这一处，其余留待你回去试。"
+    },
+    {
+      "id": "T49",
+      "round": 3,
+      "focus": "alternative-route-and-delayed-consequence",
+      "file": "taihua-author.mjs",
+      "reason": "结伴私试也保留两场累积肩紧，没扛重箱不等于此前酸紧自动全消；沈遵守只拆小段。",
+      "before": "n|你们把剑放下。这半日练的，比正式场窄得多，也细得多。",
+      "after": "n|你们把剑放下。{strain and not measured:右肩仍紧，沈只让你把那只脚摆回去，手不追她。|沈把第一场收掌的位置再摆给你，这次先停在那里，等你看清两个人谁先到。}"
+    }
+  ],
+  "newImages": 0
+}

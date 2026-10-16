@@ -1,0 +1,37 @@
+✖ two-swords: exact previous bytes, all words/commands/variables and narrow presentation-only compatibility (51.5545ms)
+✖ seven-questions: exact previous bytes, all words/commands/variables and narrow presentation-only compatibility (95.3366ms)
+✔ Book CGs last two frames and camera is strictly per frame, not a sticky age/look change (30.9074ms)
+✔ Changed-art restore still rejects forged camera, variables, command truncation and mismatched versions (81.4496ms)
+✔ Same-age Xie expressions use three actual independent files and both CGs remain reachable in broad sampling (6696.067ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 3
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7074.6674
+
+✖ failing tests:
+
+test at tests\swords-art.test.ts:13:25
+✖ two-swords: exact previous bytes, all words/commands/variables and narrow presentation-only compatibility (51.5545ms)
+  Error: 存档进度与演出状态不一致，未覆盖当前进度。
+      at restoreVN (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/src/vn-runtime.ts:143:19)
+      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/swords-art.test.ts:16:147)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17)
+
+test at tests\swords-art.test.ts:13:25
+✖ seven-questions: exact previous bytes, all words/commands/variables and narrow presentation-only compatibility (95.3366ms)
+  Error: 存档进度与演出状态不一致，未覆盖当前进度。
+      at restoreVN (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/src/vn-runtime.ts:143:19)
+      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/swords-art.test.ts:16:147)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3)

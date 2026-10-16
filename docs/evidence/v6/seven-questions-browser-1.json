@@ -1,0 +1,28 @@
+{
+  "actualBrowserInputs": true,
+  "externalHuman": false,
+  "beats": 233,
+  "choices": 26,
+  "ending": "sq_open_lesson",
+  "scenes": [
+    "sq_receipt",
+    "sq_record",
+    "sq_four",
+    "sq_copy",
+    "sq_warehouse",
+    "sq_outer",
+    "sq_chairs",
+    "sq_night",
+    "sq_ash",
+    "sq_depart",
+    "sq_court",
+    "sq_court_fire",
+    "sq_return",
+    "sq_east_record",
+    "sq_east",
+    "sq_records",
+    "sq_door",
+    "sq_after"
+  ],
+  "errors": []
+}

@@ -1,0 +1,61 @@
+
+Running 56 tests using 1 worker
+
+[1/56] tests\offline-work-pack.spec.ts:8:134 › download north pack restores uncached story data on root
+[2/56] tests\offline-work-pack.spec.ts:8:134 › download north pack restores uncached story data on subpath
+[3/56] tests\offline-work-pack.spec.ts:8:134 › download north-v2 pack restores uncached story data on root
+[4/56] tests\offline-work-pack.spec.ts:8:134 › download north-v2 pack restores uncached story data on subpath
+[5/56] tests\offline-work-pack.spec.ts:8:134 › download north-v1 pack restores uncached story data on root
+[6/56] tests\offline-work-pack.spec.ts:8:134 › download north-v1 pack restores uncached story data on subpath
+[7/56] tests\offline-work-pack.spec.ts:8:134 › download qian-kun pack restores uncached story data on root
+[8/56] tests\offline-work-pack.spec.ts:8:134 › download qian-kun pack restores uncached story data on subpath
+[9/56] tests\offline-work-pack.spec.ts:8:134 › download qian-kun-v2 pack restores uncached story data on root
+[10/56] tests\offline-work-pack.spec.ts:8:134 › download qian-kun-v2 pack restores uncached story data on subpath
+[11/56] tests\offline-work-pack.spec.ts:8:134 › download qian-kun-v1 pack restores uncached story data on root
+[12/56] tests\offline-work-pack.spec.ts:8:134 › download qian-kun-v1 pack restores uncached story data on subpath
+[13/56] tests\offline-work-pack.spec.ts:8:134 › download jade-thieves pack restores uncached story data on root
+[14/56] tests\offline-work-pack.spec.ts:8:134 › download jade-thieves pack restores uncached story data on subpath
+[15/56] tests\offline-work-pack.spec.ts:8:134 › download jade-thieves-v1 pack restores uncached story data on root
+[16/56] tests\offline-work-pack.spec.ts:8:134 › download jade-thieves-v1 pack restores uncached story data on subpath
+[17/56] tests\offline-work-pack.spec.ts:8:134 › download jade pack restores uncached story data on root
+[18/56] tests\offline-work-pack.spec.ts:8:134 › download jade pack restores uncached story data on subpath
+[19/56] tests\offline-work-pack.spec.ts:8:134 › download jade-v1 pack restores uncached story data on root
+[20/56] tests\offline-work-pack.spec.ts:8:134 › download jade-v1 pack restores uncached story data on subpath
+[21/56] tests\offline-work-pack.spec.ts:8:134 › download sea pack restores uncached story data on root
+[22/56] tests\offline-work-pack.spec.ts:8:134 › download sea pack restores uncached story data on subpath
+[23/56] tests\offline-work-pack.spec.ts:8:134 › download sea-v1 pack restores uncached story data on root
+[24/56] tests\offline-work-pack.spec.ts:8:134 › download sea-v1 pack restores uncached story data on subpath
+[25/56] tests\offline-work-pack.spec.ts:8:134 › download two-swords pack restores uncached story data on root
+[26/56] tests\offline-work-pack.spec.ts:8:134 › download two-swords pack restores uncached story data on subpath
+[27/56] tests\offline-work-pack.spec.ts:8:134 › download two-swords-v1 pack restores uncached story data on root
+[28/56] tests\offline-work-pack.spec.ts:8:134 › download two-swords-v1 pack restores uncached story data on subpath
+[29/56] tests\offline-work-pack.spec.ts:8:134 › download seven-questions pack restores uncached story data on root
+[30/56] tests\offline-work-pack.spec.ts:8:134 › download seven-questions pack restores uncached story data on subpath
+[31/56] tests\offline-work-pack.spec.ts:8:134 › download seven-questions-v1 pack restores uncached story data on root
+[32/56] tests\offline-work-pack.spec.ts:8:134 › download seven-questions-v1 pack restores uncached story data on subpath
+[33/56] tests\offline-work-pack.spec.ts:8:134 › download kuhe-v1 pack restores uncached story data on root
+[34/56] tests\offline-work-pack.spec.ts:8:134 › download kuhe-v1 pack restores uncached story data on subpath
+[35/56] tests\offline-work-pack.spec.ts:8:134 › download qingshi-v1 pack restores uncached story data on root
+[36/56] tests\offline-work-pack.spec.ts:8:134 › download qingshi-v1 pack restores uncached story data on subpath
+[37/56] tests\offline-work-pack.spec.ts:8:134 › download longmen-v1 pack restores uncached story data on root
+[38/56] tests\offline-work-pack.spec.ts:8:134 › download longmen-v1 pack restores uncached story data on subpath
+[39/56] tests\offline-work-pack.spec.ts:8:134 › download taihua-v1 pack restores uncached story data on root
+[40/56] tests\offline-work-pack.spec.ts:8:134 › download taihua-v1 pack restores uncached story data on subpath
+[41/56] tests\offline-work-pack.spec.ts:8:134 › download twelfth-life-v1 pack restores uncached story data on root
+[42/56] tests\offline-work-pack.spec.ts:8:134 › download twelfth-life-v1 pack restores uncached story data on subpath
+[43/56] tests\offline-work-pack.spec.ts:8:134 › download sea-tide pack restores uncached story data on root
+[44/56] tests\offline-work-pack.spec.ts:8:134 › download sea-tide pack restores uncached story data on subpath
+[45/56] tests\offline-work-pack.spec.ts:8:134 › download sea-tide-v1 pack restores uncached story data on root
+[46/56] tests\offline-work-pack.spec.ts:8:134 › download sea-tide-v1 pack restores uncached story data on subpath
+[47/56] tests\offline-work-pack.spec.ts:8:134 › download north-notes pack restores uncached story data on root
+[48/56] tests\offline-work-pack.spec.ts:8:134 › download north-notes pack restores uncached story data on subpath
+[49/56] tests\offline-work-pack.spec.ts:8:134 › download twelfth-life pack restores uncached story data on root
+[50/56] tests\offline-work-pack.spec.ts:8:134 › download twelfth-life pack restores uncached story data on subpath
+[51/56] tests\offline-work-pack.spec.ts:8:134 › download twelfth-life-v2 pack restores uncached story data on root
+[52/56] tests\offline-work-pack.spec.ts:8:134 › download twelfth-life-v2 pack restores uncached story data on subpath
+[53/56] tests\offline-work-pack.spec.ts:8:134 › download tide-v6 pack restores uncached story data on root
+[54/56] tests\offline-work-pack.spec.ts:8:134 › download tide-v6 pack restores uncached story data on subpath
+[55/56] tests\qian-kun-editorial-cold-offline.spec.ts:4:107 › Qian Kun root: all three cold packages restore fresh offline saves and V3 unseen sea choice then tea
+[56/56] tests\qian-kun-editorial-cold-offline.spec.ts:4:107 › Qian Kun subpath: all three cold packages restore fresh offline saves and V3 unseen sea choice then tea
+  56 passed (38.4s)
+EXIT=0

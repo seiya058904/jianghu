@@ -1,0 +1,141 @@
+{
+  "status": "ACTUAL_SOURCE_SNAPSHOTS",
+  "rows": [
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round1/twelfth-life-after.mjs",
+      "sha256": "325018306a0f23d1e4635c6ac359f0cac62646dc3b107c4cafc594622a855464",
+      "bytes": 7977
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round1/twelfth-life-author.mjs",
+      "sha256": "a0e3764750c05b285c3270d7f09d246a43b16cea2f243e162699bdb68bf990bd",
+      "bytes": 1582
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round1/twelfth-life-capital.mjs",
+      "sha256": "683015206c63e4185bd163dfa1c4a3f546843453bbe228c2adcbd90560790353",
+      "bytes": 6318
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round1/twelfth-life-defeat.mjs",
+      "sha256": "58e45580c42d106d6d626ac82a71b1408921d1e8b9413c8d7e17e0551b7a9f1e",
+      "bytes": 6653
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round1/twelfth-life-names.mjs",
+      "sha256": "825c5c6a7ddbb1fdda9335661503d50b8e95a88965c3180a7441c09d2e044179",
+      "bytes": 3732
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round1/twelfth-life-seat.mjs",
+      "sha256": "40c7a6eb4b69b7ce84af9c7bd8081c26322c9d5bf0a98242caa6cacd68d38456",
+      "bytes": 5998
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round1/twelfth-life-six.mjs",
+      "sha256": "c333c699ad53176deba53b39e601e1db7cd02dd0be1f232ce8b1c8655412b76b",
+      "bytes": 4771
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round1/twelfth-life-teacher.mjs",
+      "sha256": "0e1081efb48fc2a574958be15702bcf69d87f7d02a7d32e35ebdafa30b4e8dff",
+      "bytes": 8628
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round1/twelfth-life-youth.mjs",
+      "sha256": "5b33088838f44923632d2d0ae7ce0036229a595d896e2baaf21fee2d6ae96969",
+      "bytes": 5983
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round2/twelfth-life-after.mjs",
+      "sha256": "1650fd19b4ab454179e8158b5f1c95a1d2c90fd0a9bd70c3d4817ee1f3d21547",
+      "bytes": 7974
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round2/twelfth-life-author.mjs",
+      "sha256": "a0e3764750c05b285c3270d7f09d246a43b16cea2f243e162699bdb68bf990bd",
+      "bytes": 1582
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round2/twelfth-life-capital.mjs",
+      "sha256": "f63e36211a0d37335725eed4ff3c27fa704689a23d304e6de97a0cc8b8c7c8d6",
+      "bytes": 6354
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round2/twelfth-life-defeat.mjs",
+      "sha256": "ae002eeb6af0439fc5f4d09675faaab7a685f8021cf5c16a6e79059448469f3d",
+      "bytes": 6693
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round2/twelfth-life-names.mjs",
+      "sha256": "16a83af1c0a7d9ca06cdacbec34b4c4ca827837e7a2b7c22fb32b94da97b36f7",
+      "bytes": 3750
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round2/twelfth-life-seat.mjs",
+      "sha256": "40c7a6eb4b69b7ce84af9c7bd8081c26322c9d5bf0a98242caa6cacd68d38456",
+      "bytes": 5998
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round2/twelfth-life-six.mjs",
+      "sha256": "fff03cca2b84acf95d3edfca53f9001755361bdf529384c9295b4d127a58b9ad",
+      "bytes": 4810
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round2/twelfth-life-teacher.mjs",
+      "sha256": "e653b6403e5a0e5ae767d68dda997f28fdde522929c02418bed9e64f5170ce0b",
+      "bytes": 8779
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round2/twelfth-life-youth.mjs",
+      "sha256": "65489a838dc2f0b3f679dc624541390477b13814cb6272e85e182d1247f35daa",
+      "bytes": 6043
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round3/twelfth-life-after.mjs",
+      "sha256": "c3cd48d92288d8150d5bee880fd50e53ae2347a10390faac709fcc50d76abd9e",
+      "bytes": 8603
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round3/twelfth-life-author.mjs",
+      "sha256": "a0e3764750c05b285c3270d7f09d246a43b16cea2f243e162699bdb68bf990bd",
+      "bytes": 1582
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round3/twelfth-life-capital.mjs",
+      "sha256": "f63e36211a0d37335725eed4ff3c27fa704689a23d304e6de97a0cc8b8c7c8d6",
+      "bytes": 6354
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round3/twelfth-life-defeat.mjs",
+      "sha256": "f1d1e43bb04425f6535a3954061b690a4b69fc7f4db5f3d2cf6437ab672dc269",
+      "bytes": 7938
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round3/twelfth-life-names.mjs",
+      "sha256": "16a83af1c0a7d9ca06cdacbec34b4c4ca827837e7a2b7c22fb32b94da97b36f7",
+      "bytes": 3750
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round3/twelfth-life-seat.mjs",
+      "sha256": "2d95afbfb43abebd604a66b32eb770f014135beaf646c0255fd4181dba377eab",
+      "bytes": 6158
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round3/twelfth-life-six.mjs",
+      "sha256": "fff03cca2b84acf95d3edfca53f9001755361bdf529384c9295b4d127a58b9ad",
+      "bytes": 4810
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round3/twelfth-life-teacher.mjs",
+      "sha256": "9a811b1d4685f8ed76c3c0d3fd22779047d6e670a1e6bb0e3629cfb460f03e5e",
+      "bytes": 8869
+    },
+    {
+      "file": "docs/archives/twelfth-life-editorial-rounds/round3/twelfth-life-youth.mjs",
+      "sha256": "65489a838dc2f0b3f679dc624541390477b13814cb6272e85e182d1247f35daa",
+      "bytes": 6043
+    }
+  ],
+  "limits": "Passive source archive; relative imports preserved, not executable from archive folder."
+}

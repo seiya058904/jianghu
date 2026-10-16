@@ -1,0 +1,39 @@
+[WebServer] (node:46868) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 10 tests using 1 worker
+
+(node:27812) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\kuhe-v2.spec.ts:8:25 › Kuhe V2 real full route 0, identity changes and personal aftermath (55.1s)
+  ok  2 tests\kuhe-v2.spec.ts:8:25 › Kuhe V2 real full route 1, identity changes and personal aftermath (55.3s)
+  ok  3 tests\kuhe-v2.spec.ts:11:1 › Kuhe archive preserves pending auto, manual, previous and dark settings, while v2 rejects v1 imports (400ms)
+  x   4 tests\kuhe-v2.spec.ts:14:1 › Kuhe new wounded/empty states and CG decode offline at root and subpath (1.0m)
+(node:34152) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  5 tests\kuhe-v2.spec.ts:17:1 › Kuhe three identities, short elder, locking close-up and choices remain usable at seven sizes (4.2s)
+  x   6 tests\kuhe-v2.spec.ts:20:1 › Kuhe new CG failure retains reusable valley and live dialogue (1.0m)
+(node:38048) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  7 tests\kuhe.spec.ts:4:26 › Kuhe actual browser full canonical route 0: choices, rescue aftermath, independent save and ending (54.8s)
+  ok  8 tests\kuhe.spec.ts:4:26 › Kuhe actual browser full canonical route 1: choices, rescue aftermath, independent save and ending (55.2s)
+  ok  9 tests\kuhe.spec.ts:30:1 › Kuhe unvisited late scene is available through explicit per-work offline download on root and subpath (765ms)
+  ok 10 tests\kuhe.spec.ts:45:1 › Kuhe corrected reusable elder, traveler and valley decode with readable panels at seven viewport sizes (1.7s)
+
+
+  1) tests\kuhe-v2.spec.ts:14:1 › Kuhe new wounded/empty states and CG decode offline at root and subpath
+
+    Test timeout of 60000ms exceeded.
+
+    Error Context: test-results\kuhe-v2\kuhe-v2-Kuhe-new-wounded-e-77333-offline-at-root-and-subpath\error-context.md
+
+  2) tests\kuhe-v2.spec.ts:20:1 › Kuhe new CG failure retains reusable valley and live dialogue ────
+
+    Test timeout of 60000ms exceeded.
+
+    Error Context: test-results\kuhe-v2\kuhe-v2-Kuhe-new-CG-failur-56255-le-valley-and-live-dialogue\error-context.md
+
+  2 failed
+    tests\kuhe-v2.spec.ts:14:1 › Kuhe new wounded/empty states and CG decode offline at root and subpath
+    tests\kuhe-v2.spec.ts:20:1 › Kuhe new CG failure retains reusable valley and live dialogue ─────
+  8 passed (5.8m)

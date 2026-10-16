@@ -1,0 +1,86 @@
+{
+  "status": "ROUND2_DRAFT_NOT_PUBLISHED",
+  "readScope": "Complete first-round author draft; all three principal helper voices and branch responses reviewed.",
+  "changes": [
+    {
+      "id": "K11",
+      "round": 2,
+      "focus": "character-voice",
+      "reason": "药师用眼前照料代替抽象评判。",
+      "before": "kh_healer~calm|你得记住，他不说，不是欠你一句明白话。",
+      "after": "kh_healer~calm|门口别站人。水凉了，你再换一盆。"
+    },
+    {
+      "id": "K12",
+      "round": 2,
+      "focus": "character-voice",
+      "reason": "保留问话造成负担的反馈，不训成格言。",
+      "before": "kh_healer~sharp|不是问得轻，便一定是他受得住。把这一句也记下。",
+      "after": "kh_healer~sharp|先出去。他喘成这样，今日不能再问了。"
+    },
+    {
+      "id": "K13",
+      "round": 2,
+      "focus": "character-voice",
+      "reason": "同门以具体未完成动作讲害怕。",
+      "before": "kh_peer~uneasy|我晓得。可我一说怕，便觉得自己比别人少了一样。",
+      "after": "kh_peer~uneasy|我晓得。只是手一伸到石边，就想缩回来。别人还等着我接呢。"
+    },
+    {
+      "id": "K14",
+      "round": 2,
+      "focus": "character-voice",
+      "reason": "主人公不能总把选择复述成编剧的主题句。",
+      "before": "y|你留营。我要另找一人，今夜就找，不拿你到了明日才说不行作罪名。",
+      "after": "y|你留营吧。我今晚就找人换，不等明早才叫你硬上。"
+    },
+    {
+      "id": "K15",
+      "round": 2,
+      "focus": "character-voice",
+      "reason": "药师承担实际排床争执。",
+      "before": "kh_healer~sharp|盼好事可以，别拿床去押。",
+      "after": "kh_healer~sharp|箱子搬开。赢了也有人要躺，三张都铺回去。"
+    },
+    {
+      "id": "K16",
+      "round": 2,
+      "focus": "character-voice",
+      "reason": "返场同门的害怕是具体职责边界。",
+      "before": "kh_peer~uneasy|是还有人，还是你想有？",
+      "after": "kh_peer~uneasy|谁来了？你真看见了？"
+    },
+    {
+      "id": "K17",
+      "round": 2,
+      "focus": "character-voice",
+      "reason": "药师不替未见面老人保证，回复带临床任务。",
+      "before": "kh_healer|有些人，连我也没见过。你不能替他们先答今日一定能来。",
+      "after": "kh_healer|我不知道谁能到。先把这三处的水添上，等消息。"
+    },
+    {
+      "id": "K18",
+      "round": 2,
+      "focus": "character-voice",
+      "reason": "明确先别围床，不用百步类比。",
+      "before": "kh_healer|醒了，还要活下去。今天这一步，别替他走到一百步外。",
+      "after": "kh_healer|别往里挤。他刚醒，连话也先少问两句。"
+    },
+    {
+      "id": "K19",
+      "round": 2,
+      "focus": "character-voice",
+      "reason": "选择照护者的实际责任更具口吻。",
+      "before": "kh_healer~intent|别只留一个好心。夜里哪一更换水，你先认。",
+      "after": "kh_healer~intent|后半夜缺人。你认不认得那几包药？先跟我换一次水。"
+    },
+    {
+      "id": "K20",
+      "round": 2,
+      "focus": "character-voice",
+      "reason": "代写记录不再用抽象空白总结人物感受。",
+      "before": "n|同门把你的笔递回。空白比你以为的重，纸却仍能拿得起来。",
+      "after": "n|同门把你的笔递回，在末尾压了一小块石头。你写到最后几十招，停下来，另起一栏记待问的人。"
+    }
+  ]
+}

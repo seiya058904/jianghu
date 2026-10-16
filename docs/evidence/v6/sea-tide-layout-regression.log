@@ -1,0 +1,13 @@
+
+Running 6 tests using 1 worker
+
+(node:29252) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\jade.spec.ts:25:1 › Jade separated store stages, late He and location choices render at seven sizes (4.0s)
+  ok 2 tests\qingshi.spec.ts:38:1 › Qingshi age phases and empty frontier gate render at seven sizes; deceased POV is absent (2.4s)
+  ok 3 tests\seven-questions.spec.ts:27:1 › Seven Questions two locations and injury branches fit seven sizes at 24px (3.4s)
+  ok 4 tests\seven-questions.spec.ts:37:1 › Seven Questions long location choices remain clickable at seven viewport sizes (1.4s)
+  ok 5 tests\two-swords.spec.ts:25:1 › Two Swords three-generation scenes fit all seven viewports with usable controls (2.9s)
+  ok 6 tests\two-swords.spec.ts:35:1 › Two Swords long choice labels remain reachable at 24px on seven sizes (1.6s)
+
+  6 passed (16.6s)

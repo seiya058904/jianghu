@@ -1,0 +1,13 @@
+[WebServer] (node:20524) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:14672) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\north.spec.ts:5:26 › North full route 0 uses actual inputs and survives refresh (1.1m)
+  ok 2 tests\north.spec.ts:5:26 › North full route 1 uses actual inputs and survives refresh (1.0m)
+  ok 3 tests\north.spec.ts:10:1 › North offline root and subpath load an unseen late scene (812ms)
+  ok 4 tests\north.spec.ts:13:1 › North cover and relic choice at seven sizes preserve keyboard access (1.7s)
+
+  4 passed (2.1m)

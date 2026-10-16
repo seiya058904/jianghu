@@ -1,0 +1,11 @@
+{
+  "targets": [
+    "./assets/longmen-v2-Bz_PoGs3.js",
+    "./art/v6/cg-longmen-night.webp"
+  ],
+  "cacheColdBeforeDownload": true,
+  "cacheRestoredByExplicitV2Download": true,
+  "HTTPcacheCleared": true,
+  "freshOfflineV2CGAndData": true,
+  "freshOfflineV3NightChoiceAndResponse": true
+}

@@ -1,0 +1,82 @@
+{
+  "status": "VERSIONED_LOCAL_INTEGRATION_VERIFIED_NOT_FULL_GOAL_ACCEPTANCE",
+  "baseline": "6de661c",
+  "rounds": 3,
+  "recordsPerRound": [
+    13,
+    12,
+    18
+  ],
+  "records": 43,
+  "recordsMeaning": "Actual text/flow/variable/correction records, not43 independent literary scenes.",
+  "beats": 322,
+  "options": 68,
+  "decisionsPerRoute": {
+    "grain": 29,
+    "records": 28
+  },
+  "endings": 2,
+  "newOrEditedGameImages": 0,
+  "build": "PASS",
+  "fullUnit": {
+    "initialNpmTestPassed": 264,
+    "initialNpmTestFailed": 1,
+    "finalPassed": 265,
+    "finalFailed": 0,
+    "finalCommand": "Exact package.json node --test list after successful build; no build rewritten during active browser sessions."
+  },
+  "focusedUnit": {
+    "passed": 73,
+    "overlapWithFull": 46,
+    "separateDraftTests": 27
+  },
+  "browser": {
+    "distinctPassed": 92,
+    "mainPassed": 34,
+    "extraPassed": 58,
+    "fullActualRoutes": 8,
+    "fullRouteScope": [
+      "second-volumeV2 grain/store,records/archive",
+      "second-volumeV1 grain/store,records/archive",
+      "first-volumeV2 Shen then unlocked Jiang",
+      "first-volumeV1 Shen then unlocked Jiang"
+    ],
+    "newFireChoiceContexts": 28,
+    "stageContexts": 18,
+    "currentFullRouteMidRefreshesEach": 3,
+    "roots": [
+      "http://127.0.0.1:4173/",
+      "http://127.0.0.1:4175/Jianghu/"
+    ],
+    "coldEvictedEntries": 3
+  },
+  "offlinePackages": 42,
+  "actualSWAdapterMessages": 84,
+  "frozenMigrationChunks": 9,
+  "usageEntries": 45,
+  "protectedPaths": 13,
+  "registeredRasterFiles": 156,
+  "v6RasterFiles": 109,
+  "observedRuntimeFiles": 155,
+  "retainedPromptRecords": 111,
+  "missingHistoricalPrompts": 45,
+  "assetBytes": 27383425,
+  "byteMismatches": 0,
+  "speakingIDsNotPeople": 308,
+  "dedicatedActorIDs": 32,
+  "dedicatedIdentityOwners": 28,
+  "sameAppearanceThreeActualFiles": 19,
+  "namedLowerBoundNotFullCensus": 60,
+  "corrections": [
+    "Default-entry unit test hard-coded current jade.html as V1; now validates exact V2/V1 content objects, namespace and migration ownership under root/subpath. Initial failure log retained."
+  ],
+  "preserved": [
+    "V1 six authors,Ink,JSON exact original bytes and original storage prefix",
+    "before-CG narrow migration only on V1",
+    "first-volume V2/V1 canon/mainV6/V5 and production direction",
+    "historical first-volume screenshot bytes; current changed outputs retained with separate manifest"
+  ],
+  "visualLimits": "No new game art. Generic portraits/daylight gate-yard images do not prove identity/age continuity, night combat/fire, jade physical damage states or actual tactical animation.",
+  "unverified": "External human liking/time, Android physical device and full-project final acceptance. No push/deploy/publication.",
+  "fullGoal": "OPEN"
+}

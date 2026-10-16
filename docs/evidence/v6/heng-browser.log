@@ -1,0 +1,29 @@
+[WebServer] (node:41464) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 20 tests using 1 worker
+
+(node:24048) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\heng-art.spec.ts:7:22 › Heng north: real V1 auto/slot remain byte-exact while V2 starts; old entry continues and exports (548ms)
+  ok  2 tests\heng-art.spec.ts:7:22 › Heng qian-kun: real V1 auto/slot remain byte-exact while V2 starts; old entry continues and exports (414ms)
+  ok  3 tests\heng-art.spec.ts:16:1 › Heng two ages, actual expressions, unrevealed name and both CGs render at seven sizes (15.8s)
+  ok  4 tests\heng-art.spec.ts:24:1 › Heng shared tea remains readable at night and with missing image on both books (972ms)
+  ok  5 tests\heng-art.spec.ts:28:22 › Heng north: current CG and archived V1 mid-scene boot on fresh offline root and subpath (2.1s)
+  ok  6 tests\heng-art.spec.ts:28:22 › Heng qian-kun: current CG and archived V1 mid-scene boot on fresh offline root and subpath (1.9s)
+  ok  7 tests\north.spec.ts:5:26 › North full route 0 uses actual inputs and survives refresh (1.1m)
+  ok  8 tests\north.spec.ts:5:26 › North full route 1 uses actual inputs and survives refresh (1.0m)
+  ok  9 tests\offline-work-pack.spec.ts:8:134 › download north pack restores uncached story data on root (444ms)
+  ok 10 tests\offline-work-pack.spec.ts:8:134 › download north pack restores uncached story data on subpath (559ms)
+  ok 11 tests\offline-work-pack.spec.ts:8:134 › download north-v1 pack restores uncached story data on root (560ms)
+  ok 12 tests\offline-work-pack.spec.ts:8:134 › download north-v1 pack restores uncached story data on subpath (565ms)
+  ok 13 tests\offline-work-pack.spec.ts:8:134 › download qian-kun pack restores uncached story data on root (466ms)
+  ok 14 tests\offline-work-pack.spec.ts:8:134 › download qian-kun pack restores uncached story data on subpath (562ms)
+  ok 15 tests\offline-work-pack.spec.ts:8:134 › download qian-kun-v1 pack restores uncached story data on root (439ms)
+  ok 16 tests\offline-work-pack.spec.ts:8:134 › download qian-kun-v1 pack restores uncached story data on subpath (545ms)
+  ok 17 tests\offline-work-pack.spec.ts:8:134 › download north-notes pack restores uncached story data on root (443ms)
+  ok 18 tests\offline-work-pack.spec.ts:8:134 › download north-notes pack restores uncached story data on subpath (427ms)
+  ok 19 tests\qian-kun.spec.ts:9:1 › actual North then Qian Kun completion unlocks real Notes reading and four teaching notes (2.1m)
+  ok 20 tests\qian-kun.spec.ts:15:1 › Qian Kun alternate full life keeps incomplete North from unlocking Notes (51.6s)
+
+  20 passed (5.6m)

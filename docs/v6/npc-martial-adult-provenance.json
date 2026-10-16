@@ -1,0 +1,7 @@
+{
+  "tool": "built-in image_gen",
+  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-ece10e05-858f-447d-85be-6c3ecca18f3d.png",
+  "prompt": "Use case: character portrait asset. Single full standing character for a Chinese historical wuxia visual novel, restrained naturalistic watercolor and fine ink, tactile hand painted cloth, believable anatomy, Song-inspired grounded costume, no fantasy armor. Male martial practitioner age about32, compact athletic frame, square cheekbones, no beard, hair in plain cloth topknot, muted faded rust practice jacket and charcoal trousers, empty relaxed hands, upright neutral attentive posture. A generic adult disciple type, not resembling any dedicated hero. Entire head, feet and sleeves within frame, portrait 2:3, clearly readable silhouette, front three quarter view looking toward viewer. True transparent background, no floor, no scenery, no frame, no text, no logo, no shadow rectangle. Production generic NPC template, one person only.",
+  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/npc-martial-adult.webp",
+  "review": "Visually reviewed: age, identity or generic type, anatomy and meaningful pose/environment differences checked; mapped to matching production metadata. Independent NPC ownership and same-stage collisions audited. Browser final screenshot review remains pending."
+}

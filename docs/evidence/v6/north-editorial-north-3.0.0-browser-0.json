@@ -1,0 +1,18 @@
+{
+  "actualInputs": true,
+  "version": "north-3.0.0",
+  "side": 0,
+  "decisions": 31,
+  "frames": 260,
+  "middleReloads": [
+    "nq_letter_1",
+    "nq_return_school_1",
+    "nq_years_win_1"
+  ],
+  "ending": "nq_first_again",
+  "endingReload": true,
+  "commandsExact": true,
+  "yuanVisit": false,
+  "errors": [],
+  "externalHuman": false
+}

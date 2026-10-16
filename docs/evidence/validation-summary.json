@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-15",
+  "contentVersion": "half-step-1.0.1",
+  "build": "passed",
+  "unitTests": { "passed": 9, "failed": 0 },
+  "browserTests": { "passed": 28, "failed": 0 },
+  "browser": "Google Chrome 154.0.8037.98",
+  "viewports": [[1440,900],[1366,768],[390,844],[360,800],[800,360]],
+  "nativeAndroid": "not tested; ADB device inventory empty",
+  "externalPlaytest": "not performed",
+  "git": "not a git repository",
+  "published": false,
+  "legacyNamespace": "jianghu:v1: (preserved)",
+  "currentNamespace": "jianghu:vn:v2:",
+  "draftMigration": "frozen 1.0.0 validation, replay to same beat and world variables, exportable raw backup"
+}

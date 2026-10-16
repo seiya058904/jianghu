@@ -1,0 +1,259 @@
+{
+  "status": "INTERNAL_THREE_PURPOSE_EDITORIAL_NOT_EXTERNAL_ACCEPTANCE",
+  "changes": [
+    {
+      "file": "story/two-swords-books.mjs",
+      "round": 1,
+      "reason": "交代有限人手和未移架子的明确排期，避免课后承诺无故消失",
+      "before": "只够先做一件。",
+      "after": "今日只够先做一件，另一件排在明早。",
+      "finalSourceLine": 8
+    },
+    {
+      "file": "story/two-swords-books.mjs",
+      "round": 1,
+      "reason": "选项与当夜未搬架子的时间一致",
+      "before": "先核湿卷，架子等讲课完再搬，把未做的留在值册。",
+      "after": "先核湿卷，架子排明早搬，把未做的留在值册。",
+      "finalSourceLine": 13
+    },
+    {
+      "file": "story/two-swords-books.mjs",
+      "round": 1,
+      "reason": "阿棠的约定同选项一致",
+      "before": "课后再搬，你也得来。",
+      "after": "明早再搬，你也得来。",
+      "finalSourceLine": 14
+    },
+    {
+      "file": "story/two-swords-later.mjs",
+      "round": 1,
+      "reason": "返程者不再临时提出多留一天；留下者已在前一选项付过代差，不追加无选择的延误",
+      "before": "离开剑会时，年轻门人替你系紧装谱的包。你还欠两地几封回信，问他肯不肯随自己多留一日，先看完那两种归鸿。",
+      "after": "临走，年轻门人替你系紧装谱的包，发现里头还夹着没写完的回信。你请他路过两地时带去，先问了他原定的行程；他指着包说，信能带，半箱谱你自己背。",
+      "finalSourceLine": 66
+    },
+    {
+      "file": "story/two-swords-origin.mjs",
+      "round": 2,
+      "reason": "用实际练习和时间开销代替作者解释选择正确",
+      "before": "n|你们少练半日斜岭，却把平地那一回走明白。学徒在纸边画了一小方院子，又怕画得比他家还大。",
+      "after": "n|学徒在纸边画了一小方院子，又怕画得比他家还大。你让他在院子那边画出原来的收脚，斜路这边另画一条；两张画完，午课只剩半个时辰。",
+      "finalSourceLine": 24
+    },
+    {
+      "file": "story/two-swords-origin.mjs",
+      "round": 2,
+      "reason": "弟子自己追记承诺，与晚年旧图回收呼应",
+      "before": "n|你把这一项留在未写完的页边，没将它抹成旧式从此不能用。",
+      "after": "n|你在旧步旁写了个“问”字。学徒抢过笔，又在后面添一小横，像给没回来的课记账。",
+      "finalSourceLine": 28
+    },
+    {
+      "file": "story/two-swords-origin.mjs",
+      "round": 2,
+      "reason": "掌门实际安排试剑，不预先代他说善意",
+      "before": "笔停得更多。谢知白没说你的剑不好，问你先拿哪一种地方来试。",
+      "after": "笔停得更多。谢知白扶着椅背起身，让人撤开中间两张席，问你先拿哪一种地方来试。",
+      "finalSourceLine": 34
+    },
+    {
+      "file": "story/two-swords-origin.mjs",
+      "round": 2,
+      "reason": "两种教学顾虑用桌面动作呈现",
+      "before": "他叫录剑人把旧式也铺开，不是为了证明新式无用。",
+      "after": "他把录剑人手下的旧式抽出，压在新页旁。纸边错了一寸，他亲手对齐。",
+      "finalSourceLine": 49
+    },
+    {
+      "file": "story/two-swords-origin.mjs",
+      "round": 2,
+      "reason": "试教选项产生实际补稿，不由旁白给改式开脱",
+      "before": "那句还没写明的问话，并没有使新式失去价值。",
+      "after": "录剑人拿笔点着第二行，仍等你的答复。你把准备好的下一册放回膝上，先补这一行。",
+      "finalSourceLine": 58
+    },
+    {
+      "file": "story/two-swords-origin.mjs",
+      "round": 2,
+      "reason": "保留辞门关系的沉默和未决，不替掌门宣判",
+      "before": "他没替你写成叛门，也没把这一步说成赌气几年便会回来的远游。",
+      "after": "谢知白问到这里便停了。你等了一会儿，堂外有人催录剑人领纸，两人都没有应。",
+      "finalSourceLine": 68
+    },
+    {
+      "file": "story/two-swords-origin.mjs",
+      "round": 2,
+      "reason": "沈说自己的去处，减少同声的代写原则",
+      "before": "以后怎样，先不替自己说满。",
+      "after": "以后在哪里教，到了再找。",
+      "finalSourceLine": 71
+    },
+    {
+      "file": "story/two-swords-origin.mjs",
+      "round": 2,
+      "reason": "返山信写生活安排，不由作者解释祖师身份",
+      "before": "n|信先走，人后行。你不是在纸上为尚未出现的南岳门派争一位祖师。",
+      "after": "n|信封不够大，你把后半页另折了两次。写到让他们先收拾哪间屋，笔尖停住，又添一句：床不用给我换新的。",
+      "finalSourceLine": 83
+    },
+    {
+      "file": "story/two-swords-origin.mjs",
+      "round": 2,
+      "reason": "离门的复杂情绪留在行囊动作",
+      "before": "n|你带走旧谱与自己的疑问，没有带走谢知白的同意。",
+      "after": "n|行囊里旧谱挤着那张折过的堂规。扣子扣不上，你把堂规抽出来，塞进外侧的小袋。",
+      "finalSourceLine": 86
+    },
+    {
+      "file": "story/two-swords-origin.mjs",
+      "round": 3,
+      "reason": "提前寄信与直接返回有各自的等候和漏项，不是无后果装饰",
+      "before": " choose('later_shen',[",
+      "after": " iff('ss_letter_plain',`ss_pupil~amused|信里说床不换，雨檐总得换吧？昨夜您那屋先滴的。\ny|先带我看看。信上这一项倒漏了。`,`ss_pupil~uneasy|怎么连封信也没先来？昨日师弟还在山下等。\ny|我去找他。先别让他再等今日。`);\n choose('later_shen',[",
+      "finalSourceLine": 93
+    },
+    {
+      "file": "story/two-swords-origin.mjs",
+      "round": 2,
+      "reason": "老弟子照顾自己的学生，落在正在发生的课堂",
+      "before": "n|你笑，没有替一门还未立起的剑派写完整个将来。",
+      "after": "n|你笑着将那叠纸还他。他仍拿在手里，等最年轻的弟子把刚才第二步问完。",
+      "finalSourceLine": 116
+    },
+    {
+      "file": "story/two-swords-origin.mjs",
+      "round": 2,
+      "reason": "立派长者主动承担抄录分发，区别沈和录剑人",
+      "before": "n|新辈序发出，祖堂旁还放着那份来历，来问的人能一起看。",
+      "after": "n|老人另磨一砚墨，自己抄那份来历。新辈序印好时，他又抱来薄薄一叠，叫发信的人两份一起装。",
+      "finalSourceLine": 128
+    },
+    {
+      "file": "story/two-swords-origin.mjs",
+      "round": 2,
+      "reason": "谢庭松关注眼前接招，少讲作品主题",
+      "before": "好。我接这一步，不替它先叫金陵或南岳。",
+      "after": "好。慢到转腕那一下，我要看清。",
+      "finalSourceLine": 140
+    },
+    {
+      "file": "story/two-swords-books.mjs",
+      "round": 2,
+      "reason": "救火由声音、受困者和伙伴负荷推进，不作考试比喻",
+      "before": "火不是一场能让你把所有旧纸都拿回的考试。你眼前仍有可做的事，得有人真去做。",
+      "after": "梁上传来一声裂响，门外有人喊水桶到了。阿棠顶住架子，腾不出手来接。",
+      "finalSourceLine": 48
+    },
+    {
+      "file": "story/two-swords-books.mjs",
+      "round": 2,
+      "reason": "固定原笔损失用报失的迟疑呈现",
+      "before": "你没把自己救下几页写成祖卷全部无恙。",
+      "after": "先生拿来空册报失，笔搁上去两次，都没落下。",
+      "finalSourceLine": 56
+    },
+    {
+      "file": "story/two-swords-books.mjs",
+      "round": 2,
+      "reason": "阿棠先照顾刚救出的具体人，失物报告移到次日",
+      "before": "轮到我们补活着的人能补的。那两页不能补的，别瞒。",
+      "after": "还有干布么？他袖子黏住了。那两册……先生，明日我陪您报。",
+      "finalSourceLine": 61
+    },
+    {
+      "file": "story/two-swords-books.mjs",
+      "round": 2,
+      "reason": "用伙伴正在核查的动作取代抽象资料伦理",
+      "before": "阿棠把你原来没填的空格圈起来，没为了凑一张齐表就拿像字的灰痕补进去。",
+      "after": "阿棠蘸着冷茶润开黏住的页角。你写到第三箱，她用胳膊肘挡了一下：这箱得等先生。",
+      "finalSourceLine": 65
+    },
+    {
+      "file": "story/two-swords-books.mjs",
+      "round": 2,
+      "reason": "归还的冲击落在接书失手和等待，人物不齐声讲理",
+      "before": "本门老师没有因此受辱。他把第一册放稳，过一会儿才说这一份真的回来了，不是说谁又赢了。",
+      "after": "本门老师伸手去接，没托稳书脊，又换了两只手。长老等他抱住，才去取下一册。",
+      "finalSourceLine": 83
+    },
+    {
+      "file": "story/two-swords-books.mjs",
+      "round": 2,
+      "reason": "自主分工由阿棠主动做，不替她宣布无怨",
+      "before": "她没有把独自留下当作你不肯陪。两人把各自该交的纸分开，各署自己的名。",
+      "after": "她抽走你压着的车单，先圈了自己的楼内值日，又把空着的收书回信推给你。",
+      "finalSourceLine": 94
+    },
+    {
+      "file": "story/two-swords-books.mjs",
+      "round": 2,
+      "reason": "阿棠自己追问行程并回收山图笑话",
+      "before": "她自己去问行期，没等你替她安排全部路程。你留下的活，也终于有了一张能按日交的单。",
+      "after": "她抱剑去追刚出门的车夫，走到门槛又折回来，把那张锅盖似的山图卷走了。你低头重排楼内值日。",
+      "finalSourceLine": 97
+    },
+    {
+      "file": "story/two-swords-books.mjs",
+      "round": 2,
+      "reason": "伤后恢复由阿棠自己试手，主角等她实际动作",
+      "before": "她没把自己的手交给你的愧疚指挥。你代笔的三回，她逐字改三回，试过能握住剑，才肯让这页出门。",
+      "after": "她把剑递给你，先空手屈伸几次，再接回来。第一下握得太紧，她自己松了，等掌心不再发白才起手。你将刚提起来的纸重新放下。",
+      "finalSourceLine": 101
+    },
+    {
+      "file": "story/two-swords-later.mjs",
+      "round": 2,
+      "reason": "现场两代人的尴尬由两人的动作承担",
+      "before": "n|你在金陵听见那次追问，抄录的人转头看你。你没替老人补一段更体面的原话，也没替年轻人把自己没做过的努力写齐。",
+      "after": "n|你在金陵听见那次追问，抄录的人转头看你。老人端着茶迟迟不喝，年轻人涨红了脸，仍站在原处等答复。",
+      "finalSourceLine": 9
+    },
+    {
+      "file": "story/two-swords-later.mjs",
+      "round": 2,
+      "reason": "保留争论的即时回报让提问者自己索取",
+      "before": "n|你们多核一趟，借阅晚了两日；新录没有因此只剩一场人人看起来都聪明的议事。",
+      "after": "n|你们多核一趟，借阅晚了两日。年轻人来领时先翻到那句，隔着柜台念了一遍，问这次能不能连自己的追问也带走。",
+      "finalSourceLine": 16
+    },
+    {
+      "file": "story/two-swords-later.mjs",
+      "round": 3,
+      "reason": "教学方式在三十年后回响：亲试的记忆与并排法的局限各不相同",
+      "before": " choose('two_schools',[",
+      "after": " iff('ss_lesson == 1',`n|旧课簿翻到一处汗渍。那年你等学生做完才落笔，后来带新人，总有人嫌你一页写得慢；你如今还认得那位学生转身时露出的空处。`,`n|你把旧本和新注抽出来，想用当年那种并排法收这次议论。纸铺到桌沿才发现还得另添一页：练剑的两种走法，装不下堂上所有人的话。`);\n choose('two_schools',[",
+      "finalSourceLine": 12
+    },
+    {
+      "file": "story/two-swords-later.mjs",
+      "round": 3,
+      "reason": "整段保留与分册核问有不同的后续可见性和调卷等待",
+      "before": " choose('guihong_trial',[",
+      "after": " iff('ss_kept_question',`n|年轻门人带着当年的整段议录，指着那句追问请两位老人看。南岳老人看完要了一份，金陵老人借走他的笔，在页边补自己今天的答法。`,`n|年轻门人只借到讲课正文，找不到你说的原问。你写信回楼调附册；送到已是剑会第三日，他带着信来催你先看，别再压在新课下面。`);\n choose('guihong_trial',[",
+      "finalSourceLine": 40
+    },
+    {
+      "file": "story/two-swords-later.mjs",
+      "round": 2,
+      "reason": "守约具体说出等课者；留楼路线下一步需另作分支修正",
+      "before": "想。可那里有个人等的，不是我想不想。",
+      "after": "想。学生都到山下了，不能让他只等到一句我还想看。",
+      "finalSourceLine": null,
+      "note": "Intermediate wording superseded by a later record in this same editorial round."
+    },
+    {
+      "file": "story/two-swords-later.mjs",
+      "round": 3,
+      "reason": "两种职业都能守约，不把留楼者误写成山下授课；寄录请求留在已离场分支",
+      "before": "y|想。学生都到山下了，不能让他只等到一句我还想看。\nn|你请他若记下真见的，后来寄一份；不要求他把自己也未懂的替你全懂。",
+      "after": "n|你把等候的那封信给他看，约他若记下最后一场，往后寄来。信里那个人等着接你的班，落款旁还写了值日时辰。",
+      "finalSourceLine": 61
+    }
+  ],
+  "frozen": {
+    "story/two-swords-v1.ink": "8a33ed47785dd6e6068287221c331f4722976788c490600bde60a2efe770c652",
+    "src/generated/two-swords-v1.json": "6a52c1423e46511aa23d17e0471ce855bb0f5f2f5450612b9e50299e3070c475"
+  },
+  "imagesGenerated": 0
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PRODUCTION_DRAFT_NOT_FINAL",
+  "sourceBeats": 414,
+  "visited": 414,
+  "choiceOptions": 58,
+  "decisionsPerRoute": 29,
+  "sampledPaths": 512,
+  "exhaustive": false,
+  "longestPassiveGap": 18,
+  "limits": "CG, combat-state staging and full three editorial rounds remain incomplete; no external human reading-time or aesthetic claim. Technical reach is not final literary acceptance."
+}

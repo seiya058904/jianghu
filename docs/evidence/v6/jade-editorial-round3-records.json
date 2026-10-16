@@ -1,0 +1,132 @@
+{
+  "round": 3,
+  "focus": "alternative costs, fire response and later returns",
+  "records": [
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade\\jade-night.mjs",
+      "reason": "救人/卸粮之后留一次实际处理落下火种的行动，不把老人近百招当全部灭火。",
+      "before": " choose('grain_held',[",
+      "after": " choose('grain_sparks',["
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade\\jade-night.mjs",
+      "reason": "两法分别处理湿粮和焦草/缺筐，成本具体，守粮仍固定成功。",
+      "before": " part('grain_held','jd_grainnight','jd_relief,jd_red,jd_kite',",
+      "after": " part('grain_sparks','jd_grainnight','jd_relief',`n|门外两名高手仍被拦住，火种却从外路投进来，落在车沿的干草下。粮车挨着木架，硬推过去会把火带进下一车底。`);\n choose('grain_held',[\n  ['jd_fold_wet_canvas','叫车夫压住另一角，用湿棚布盖住车沿火种，再把已潮的半担移到旁边。','jd_sparks = 1',`y|这角别撒手，先盖下来！\nn|车夫应一声，你们一同压住布。湿汽烫得你缩手，火没沿干草跑开；半担粮沾水，须另放验过，不能又抬回干粮那一堆。\nn|这车慢了一轮才出门，你留下报清那半担去处，没把眼前灭了就算粮数没少。`],\n  ['jd_pull_ember_cart','先拉这辆车离开木架，让接水的人从空出的侧路进，再将焦草单独铲走。','jd_sparks = 2',`y|先松后轮！水从这边进，别越着粮袋泼！\nn|你同车夫把车尾拖出，另一班才把水送到起火的一角。焦草铲进空筐，粮袋没被整担淋湿，你的鞋却踩进泥水，脚底拖得发酸。\nn|那只盛焦草的筐不再拿去装粮，你记清一只缺筐，等下一班送来。`],\n ]);\n part('grain_held','jd_grainnight','jd_relief,jd_red,jd_kite',"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade\\jade-author.mjs",
+      "reason": "新增火种操作独立状态，不改既有交通选择含义。",
+      "before": "jd_grain_work:0,jd_people_lane:false",
+      "after": "jd_grain_work:0,jd_sparks:0,jd_people_lane:false"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade\\jade-night.mjs",
+      "reason": "火种两操作在夜后实际交班回响，不靠同一总结把湿粮与缺筐吞掉。",
+      "before": " part('night_reports','jd_grainafter','jd_qiao',`n|转车时，一班粮路往南，一班护病者先送县里。阿荞父亲也在其中，腿能慢走，手却拿不了自己的行囊。`);",
+      "after": " part('night_reports','jd_grainafter','jd_qiao',`n|转车时，一班粮路往南，一班护病者先送县里。阿荞父亲也在其中，腿能慢走，手却拿不了自己的行囊。`);\n iff('jd_sparks == 1',`n|你压火时留下的湿粮另进验粮棚，下一班问起少的半担，你把木签交给他。阿荞认出是刚才慢出的那辆车，先问它停在哪边。`,`n|盛焦草的旧筐已挪开，车夫来问下一班补筐的时辰。你先把这项交清，才借阿荞带来的布拧一拧鞋边泥水。`);"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade\\jade-stores.mjs",
+      "reason": "四种中段操作不再只共用未调用变量：图、坏筐、回程钱/热食、晚一班分别兑现。",
+      "before": " choose('seventh',[",
+      "after": " out.push('{\\n- jd_surface:');\n iff('jd_later_work == 1',`n|第五库记过的通风口尺寸还在纸角，灾务官拿去同这几箱车具的防潮盖对。你得留下补一幅小图，少睡的一段没因已经过五库就还回来。`,`n|第五库替验药人腾路时用坏的空筐得补。你同车夫在第六库多找一圈，才找出还能修的一只，不把帮忙过就算器物没有耗。`);\n out.push('- else:');\n iff('jd_later_work == 1',`n|你付回程钱赶上这班，行囊已薄。第六库外那一夜少买一份热食，县吏把自己的水碗挪来，叫你别再站着硬等。`,`n|核对页先到，你自己晚一日追来，县吏已接走第一班车。你改接次班，把堂兄交清的两册收好，没有把晚来的这班也写成自己先到。`);out.push('}');\n choose('seventh',["
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade\\jade-buy.mjs",
+      "reason": "分封/带副件在核验时间与需回问的缺页上不同，不默认两支都已掌握全部原件。",
+      "before": " choose('sima',[",
+      "after": " iff('jd_sent_sources',`n|玉与残档两封都到了，封上来路还在。内官叫你等另一名核件者腾手，你在廊下站到腿麻，才听见两份都收妥。`,`n|堂兄留的原查簿没到京，你把核过的副件一页页指给收件者。少一处原页码便须回信再问，今夜先把还不能答的那处留空。`);\n choose('sima',["
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade\\jade-buy.mjs",
+      "reason": "查旧称/追修补两方法到上报所需称名与一夜补抄各有作用。",
+      "before": " choose('in_palace',[",
+      "after": " iff('jd_full_names',`n|九库总验的旧称先帮你找到了这页；堂兄叫你把前后两个书名都留着，免得递上去又按山河璧三个字找不回来。`,`n|银补信把你引到旧物清册，真到璧半册半这一页，仍得另抄旧称。修补痕能认物，没替你省下这一夜补称名的工。`);\n choose('in_palace',["
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade\\jade-grain.mjs",
+      "reason": "准备水布或信路在分岗后确实被认领，后者不使两地消息凭空同时到。",
+      "before": " part('post_gate','jd_muster','',`n|入夜，两路都起了急声。你站到自己答应的位置上，先认那一声到底从哪边来。`);",
+      "after": " part('post_gate','jd_muster','',`n|入夜，两路都起了急声。你站到自己答应的位置上，先认那一声到底从哪边来。`);\n iff('jd_prep_water',`n|你先前留在外廊的干布已有人接好，回头还能指清哪捆给伤者，湿的哪捆只压火，不把两样混抓。`,`n|先前认过的两路转报人各报了所在，一人跑七、一人跑九。你向自己这一路的当值者交清转口，另一头的消息仍得等本人跑来。`);"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade\\jade-after.mjs",
+      "reason": "初次写样/先核姓名在何老处由本人记起，各有具体旧日笑点。",
+      "before": " choose('sima_late',[",
+      "after": " iff('jd_letter_care',`jd_he~amused|当年我只叫字写好点，你就给我看了两行。后来真交来，纸角还卷着，你倒先怕我把它压在菜底。`,`jd_he~amused|当年你先问姑娘名字，没来问猫。我媳妇后来还说，这先生至少没把别家的名字抄给我们。`);\n choose('sima_late',["
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade\\jade-after.mjs",
+      "reason": "没选带婚书底稿支仍能看誊本，不从身上突然摸出刚选择不带的唯一底稿。",
+      "before": "你把那页拿出，说自己最得意这一份。",
+      "after": "你取出当年留下的誊本，说自己最得意这一份。"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade\\jade-after.mjs",
+      "reason": "原件归婚书两家，何家一侧取来，区分陆的底稿/誊本。",
+      "before": "何老板翻出婚书，偏要旁人看看你当年有没有写错名字。",
+      "after": "何老板叫儿子从里屋找出婚书，偏要旁人看看你当年有没有写错名字。"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade\\jade-night.mjs",
+      "reason": "保稿手伤有可理解的挡落木动作，不是走过去随机扣一月。",
+      "before": "护卫接了人，你才抱自己的旁注过去。帘边一片烧木擦到右手",
+      "after": "护卫接了人，你才抱自己的旁注过去。帘边一片烧木落下，你抬右手去挡，火边擦伤右手"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade\\jade-after.mjs",
+      "reason": "未带底稿支不能靠按钮凭空取出未设的誊本，先请持原件的何家。",
+      "before": "给问者看婚书原字，直认这一份自己的好，再将查库与守粮功分还真做的人。",
+      "after": "请何家拿婚书原件给问者看，直认这一份自己的好，再将查库与守粮功分还真做的人。"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade\\jade-after.mjs",
+      "reason": "复改：誊本也不应无铺垫出现，改为何家交原件，不制造第二份作者未交代的纸。",
+      "before": "你取出当年留下的誊本，说自己最得意这一份。",
+      "after": "何老板应你所请，叫家里取来当年那封婚书。你指着原字，说自己最得意这一份。"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade\\jade-after.mjs",
+      "reason": "带底稿/带干货在多年后分别有可见物与主人回应，不把操作都略成普通叙述。",
+      "before": " iff('jd_letter_care',",
+      "after": " iff('jd_wedding_kept',`n|你带的底稿已卷角，何家那封正件仍包得齐整。何老板让你并放一会儿，看清当年哪一字真从草稿改过，才叫儿子把正件收回。`,`n|你带来的干货先被放到秤边，何老板剪开绳头分给孩子尝。有人要听买玉那一段，他先问你这东西要不要过秤，今日的东西也不能让人白拿。`);\n iff('jd_letter_care',"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade\\jade-night.mjs",
+      "reason": "同一动作不重复报两遍右手擦伤，保留一月代价。",
+      "before": "你抬右手去挡，火边擦伤右手，皮肉燎伤",
+      "after": "你抬右手挡开，掌侧皮肉燎伤"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade\\jade-night.mjs",
+      "reason": "阿荞说带走木牌却当拍还回交班处，改成认得该行，保留公共交接木牌。",
+      "before": "这牌我带着。刚才东边说不归他们接",
+      "after": "这行我认得。刚才东边说不归他们接"
+    },
+    {
+      "round": 3,
+      "file": "story\\drafts\\jade\\jade-after.mjs",
+      "reason": "未来酬钱不能当场拿出；已给与未够分开，补偿不凭时间错写成全清。",
+      "before": "你拿后来能领到的酬钱先补找人路费，另给真能上车的去处让她自己选。",
+      "after": "你把此刻能拿出的路费先补找人那一段，未够的记明，等下一份酬钱实领再给，没把承诺当已经结清。另给真能上车的去处让她自己选。"
+    }
+  ]
+}

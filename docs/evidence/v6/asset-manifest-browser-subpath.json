@@ -1,0 +1,1414 @@
+{
+  "status": "ALL_RASTER_BYTES_AND_BROWSER_DECODE_VERIFIED",
+  "assetFingerprint": "ca272a2bf394a65c6ec450241b9081b0c9207b9a587041db53d59787ad82049f",
+  "root": "http://127.0.0.1:4175/Jianghu/",
+  "files": 156,
+  "rows": [
+    {
+      "file": "public/art/cast.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/cast.webp",
+      "status": 200,
+      "bytes": 462470,
+      "sha256": "171539945fc52aa82f524ba24552a5a5f9b0d92e1081ceb87d5ac7481adf662f",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/courtyard.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/courtyard.webp",
+      "status": 200,
+      "bytes": 402830,
+      "sha256": "445f38493640cd4899640f6ae49d67dc8d25fbf14b9c4b15d7e9e2f2a9f4a499",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "public/art/ferry.png",
+      "url": "http://127.0.0.1:4175/Jianghu/art/ferry.png",
+      "status": 200,
+      "bytes": 2701831,
+      "sha256": "3afd0d4d63d4b77745b5cf7aa567d18ec053ec5dd5562afe7b187fc09568ba9e",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "file": "public/art/v5/arena.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/arena.webp",
+      "status": 200,
+      "bytes": 261954,
+      "sha256": "cb0d3f1cb0383f13e4c3080a3671994ca32b29c484c1d756b2445241922afea1",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "file": "public/art/v5/bridge.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/bridge.webp",
+      "status": 200,
+      "bytes": 311608,
+      "sha256": "b74272afa583d61a0043ffd355cbe35c1e296339a10a69f73f9b0e933a2d9cc4",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "file": "public/art/v5/cg-dawn.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/cg-dawn.webp",
+      "status": 200,
+      "bytes": 314008,
+      "sha256": "94485e85d43c183a5829f18290a9f0eda2c976cf3c256591d09e1bb1892a66d8",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "file": "public/art/v5/cg-quiet.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/cg-quiet.webp",
+      "status": 200,
+      "bytes": 249610,
+      "sha256": "7bbd63a53f5280fdc5db2c3fe27187f5293f5855d879c7bbc960693f8914d786",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "file": "public/art/v5/cg-rescue.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/cg-rescue.webp",
+      "status": 200,
+      "bytes": 273350,
+      "sha256": "3ec9e08bfb3b88de7090f5e04f6680c1798c979ddc307e52847a661dc1bee30e",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "file": "public/art/v5/cg-storm.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/cg-storm.webp",
+      "status": 200,
+      "bytes": 197818,
+      "sha256": "d8293b5b4124c77de727bbe4f2948d6a500df809f55e7ea75290ce516bfb6b51",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "file": "public/art/v5/dawn.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/dawn.webp",
+      "status": 200,
+      "bytes": 260388,
+      "sha256": "362fd9f5403e7c007b131197341bc85dc3a4f848860a4d6bb153398a5b90be30",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "file": "public/art/v5/du.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/du.webp",
+      "status": 200,
+      "bytes": 161530,
+      "sha256": "057bad1e7b87de4db4d9d6be7e6c34a71bd04e069b23eb9a4ccf3e8d22936cd4",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v5/hall.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/hall.webp",
+      "status": 200,
+      "bytes": 288214,
+      "sha256": "25b0308e3c0b5ca86d454f53f5973119b3bc3317e16dc833bf69bb049ca78247",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "file": "public/art/v5/han.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/han.webp",
+      "status": 200,
+      "bytes": 127576,
+      "sha256": "09f64c23b73bcd06661956a94822a47ad98f03b7ee129d8c79a97d6e0fac75d1",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v5/he.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/he.webp",
+      "status": 200,
+      "bytes": 105992,
+      "sha256": "141f241185c5f582f66aa8b276f64ddf51bdb8f42311421a49cb307d5ba2abfd",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v5/inn.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/inn.webp",
+      "status": 200,
+      "bytes": 219734,
+      "sha256": "7b22805a26aa803714aa2330aa0aa877597179ab3e5436bdbc706045452451e5",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "file": "public/art/v5/levee.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/levee.webp",
+      "status": 200,
+      "bytes": 283718,
+      "sha256": "ddb930fcfd1d54d50042baf33bccdbf079327b6107390a8da804a48ce23b9653",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "file": "public/art/v5/ling.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/ling.webp",
+      "status": 200,
+      "bytes": 129338,
+      "sha256": "a70472ceb177ee6460e76306abaff6e2597a895e054f8cde25ce4d2cc8342893",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v5/lu-intent.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/lu-intent.webp",
+      "status": 200,
+      "bytes": 118616,
+      "sha256": "f9d8dbf874b1fb55e070d3ad7feedbff0664ce0c247251f63ddac8d1023de1f3",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v5/lu.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/lu.webp",
+      "status": 200,
+      "bytes": 144380,
+      "sha256": "36d55f8d25b0368040f182e2ea633279c7d4040c78a071403ead2e346d0f88b7",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v5/npc-boatwoman.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/npc-boatwoman.webp",
+      "status": 200,
+      "bytes": 88670,
+      "sha256": "81be1cbc91fe652db50a9c690ba2df488db1238cf6f65d0b861298a5a7216c97",
+      "width": 560,
+      "height": 672
+    },
+    {
+      "file": "public/art/v5/npc-clerk-male.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/npc-clerk-male.webp",
+      "status": 200,
+      "bytes": 103164,
+      "sha256": "86089682c535f54c4a983e579d8ec6f4d964d4095503b781cf06125d040c0c0c",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v5/npc-clerk.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/npc-clerk.webp",
+      "status": 200,
+      "bytes": 65088,
+      "sha256": "f034333fc57e94258ad9ea0bb89ccd1a1165acd882e4f2b2ef4a653513c6ceb1",
+      "width": 560,
+      "height": 672
+    },
+    {
+      "file": "public/art/v5/npc-elder-male.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/npc-elder-male.webp",
+      "status": 200,
+      "bytes": 119642,
+      "sha256": "e20008459b692cd8024bf8d859c01da733f8ad1f51b8f0207e59b2960f194161",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v5/npc-elder.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/npc-elder.webp",
+      "status": 200,
+      "bytes": 127956,
+      "sha256": "bbc6de52edfd4d8b24756c166737425f7f4cd4161902d96b2ed86f07acb82242",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v5/npc-merchant-male.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/npc-merchant-male.webp",
+      "status": 200,
+      "bytes": 97520,
+      "sha256": "08d8e6a7781317ad08993107b62f88e6452521eaf2baeaeb0e9910b6acc77a20",
+      "width": 560,
+      "height": 672
+    },
+    {
+      "file": "public/art/v5/npc-merchant.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/npc-merchant.webp",
+      "status": 200,
+      "bytes": 107838,
+      "sha256": "b9194fc3b5989121c56c08e8cfc28010212e478c987b41f594521d198c782d54",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v5/npc-monk.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/npc-monk.webp",
+      "status": 200,
+      "bytes": 80642,
+      "sha256": "2e21ed9f1b86446322e720839e4117799090752ea194867876573b24b9955ed4",
+      "width": 560,
+      "height": 672
+    },
+    {
+      "file": "public/art/v5/npc-porter.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/npc-porter.webp",
+      "status": 200,
+      "bytes": 131180,
+      "sha256": "dccb9b99e723de4d1e9e4bd1d8adddb2e4e9fe2dc9196ffec074044fcd9b8b5e",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v5/npc-traveler.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/npc-traveler.webp",
+      "status": 200,
+      "bytes": 113352,
+      "sha256": "7cb985fc963e61069ad6bbcdea21d322bc24d13209a768d82a314f7d11f4773d",
+      "width": 560,
+      "height": 672
+    },
+    {
+      "file": "public/art/v5/npc-youth-blue.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/npc-youth-blue.webp",
+      "status": 200,
+      "bytes": 98002,
+      "sha256": "c1791cd911ecec5243f37c583b7749e68afc3817863d842762e8cc173cbfdc0a",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v5/npc-youth.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/npc-youth.webp",
+      "status": 200,
+      "bytes": 101430,
+      "sha256": "83214aab6146e4a5121f50c8b7e15acad97c77c3cd9d4723217b8a609732fc7d",
+      "width": 560,
+      "height": 672
+    },
+    {
+      "file": "public/art/v5/pei.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/pei.webp",
+      "status": 200,
+      "bytes": 73188,
+      "sha256": "336ec93f951f4a3c45bb8a182309ebed04de20644d9356b626220e86736359c6",
+      "width": 560,
+      "height": 513
+    },
+    {
+      "file": "public/art/v5/qiao-uneasy.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/qiao-uneasy.webp",
+      "status": 200,
+      "bytes": 103954,
+      "sha256": "717a06d40a194903b36ccb7905e2f8ce03329be7f540660d8709d0df9c632de0",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v5/qiao.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/qiao.webp",
+      "status": 200,
+      "bytes": 132034,
+      "sha256": "7f13bf3dff24a82fbffcdb2dd70b68e81f65fa54476c50230548675ea7dce62a",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v5/quay.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/quay.webp",
+      "status": 200,
+      "bytes": 267876,
+      "sha256": "728bf1eaf3e423ac07c877ca394c531245195fdada6785f30823b9abea707406",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "file": "public/art/v5/rainboat.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/rainboat.webp",
+      "status": 200,
+      "bytes": 192934,
+      "sha256": "4d4fb7a6d5aca5fd9e3fbfa1b0922debf20dfecd98bb225e1f1b121d7f81c2ff",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "file": "public/art/v5/reeds.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/reeds.webp",
+      "status": 200,
+      "bytes": 217286,
+      "sha256": "281fee795d7167712ddda45af71dd960b7c47ab419532eb1e4073a1d60967bd9",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "file": "public/art/v5/ridge.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/ridge.webp",
+      "status": 200,
+      "bytes": 353214,
+      "sha256": "f18afb9f1d18a6266d0f6e8780053594d86b1cd89bffaceaf6b350e37fec9ba5",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "file": "public/art/v5/rong.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/rong.webp",
+      "status": 200,
+      "bytes": 107840,
+      "sha256": "17d3d4fd004e3cd1f1cc3adb15c2a6cf8ab49dcc5dbc894b97346abd1ab31a0a",
+      "width": 560,
+      "height": 672
+    },
+    {
+      "file": "public/art/v5/storm.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/storm.webp",
+      "status": 200,
+      "bytes": 254768,
+      "sha256": "fb860941b46cd230411fe73f2f336c725430babe408712adbf94ea9c95b7a8f7",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "file": "public/art/v5/su-amused.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/su-amused.webp",
+      "status": 200,
+      "bytes": 81522,
+      "sha256": "e3217d658eac9bebd1f5fd37493c6d8043f97b2a58c742d367f819ff429467c4",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v5/su.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/su.webp",
+      "status": 200,
+      "bytes": 96528,
+      "sha256": "f252204eed7b854d4c6b3b0c9ecba8d34188d2c2ef3158883ec900186fd63af3",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v5/workshop.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/workshop.webp",
+      "status": 200,
+      "bytes": 234918,
+      "sha256": "d0e598deb32182dae48df2e1070268949f6136d7df428b128ccaae83f457ae79",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "file": "public/art/v5/xu.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/xu.webp",
+      "status": 200,
+      "bytes": 96058,
+      "sha256": "357fa9ad1994ae0fa9b3d5ba8b8440c91b5c1814337d47158131f15d94720362",
+      "width": 560,
+      "height": 672
+    },
+    {
+      "file": "public/art/v5/yan.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/yan.webp",
+      "status": 200,
+      "bytes": 101920,
+      "sha256": "15aa34bddb1b46a49d3c1cf23312dd57d1fc34f7c99bce447791307f7c17bd22",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v5/zhaoli-intent.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/zhaoli-intent.webp",
+      "status": 200,
+      "bytes": 108826,
+      "sha256": "a52ebb4db41f24401f194c542ba889eb2aaafa31362abf89a06f8b67a61f0df7",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v5/zhaoli.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v5/zhaoli.webp",
+      "status": 200,
+      "bytes": 135950,
+      "sha256": "d6fc820269593ffb04a14e24ff264a1835f2b43984b52bb2729af51f9e13fc78",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/cg-dongting-shoulder.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/cg-dongting-shoulder.webp",
+      "status": 200,
+      "bytes": 318078,
+      "sha256": "0790171dfd32ae27a14b9d7388998278199ec5d4692afb981920c638571bd0ad",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/cg-empty-box.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/cg-empty-box.webp",
+      "status": 200,
+      "bytes": 316552,
+      "sha256": "0f46dcdd90cc5cf8c900a22d066760e7079a18d812a2b77c6ae87346664c6465",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/cg-grain-measure.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/cg-grain-measure.webp",
+      "status": 200,
+      "bytes": 361700,
+      "sha256": "8b9829ec0ee33a95bb8bed8c0542fcb0fe70b38153a5d96a8259f5bd1cb26f3c",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/cg-kuhe-old.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/cg-kuhe-old.webp",
+      "status": 200,
+      "bytes": 416168,
+      "sha256": "8f8d819a58f9fad3db07d1d76a21a13a1663332cc13a590fe32e3ced2d660be7",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/cg-longmen-night.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/cg-longmen-night.webp",
+      "status": 200,
+      "bytes": 228976,
+      "sha256": "90a053b8f0b831fb40d8284429f4172555f9b47b1c999ae489342e0bcc1be433",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/cg-longmen-nine.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/cg-longmen-nine.webp",
+      "status": 200,
+      "bytes": 349390,
+      "sha256": "7de7c110431dbf3f84c1db49c764d4623910a621fa65de8a8f1370e24ae1688a",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/cg-main-flag.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/cg-main-flag.webp",
+      "status": 200,
+      "bytes": 300966,
+      "sha256": "425a391fe57d23fa6cca6d9a299364ae30e2bd61ebeb1e62d0059416dfbd1d46",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/cg-plain-tea.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/cg-plain-tea.webp",
+      "status": 200,
+      "bytes": 288368,
+      "sha256": "7fa309d4fd730b06d3ae668d399fc121d89fcccfa6034212329a62dabd57a6d9",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/cg-qingshi-old-knife.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/cg-qingshi-old-knife.webp",
+      "status": 200,
+      "bytes": 232026,
+      "sha256": "77f4d1d3716a192a59a07d30950e809de068de2a08bfe4a30053d6bbdca6e0c0",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/cg-rigging.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/cg-rigging.webp",
+      "status": 200,
+      "bytes": 389900,
+      "sha256": "f0bfee0da20c362bd40f7dc10887cf5ea65f905e6457a8ece411c23d4603d1c6",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/cg-royal-letters.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/cg-royal-letters.webp",
+      "status": 200,
+      "bytes": 192530,
+      "sha256": "ce04bae25384694625d0a2b2b568b7c706cdc088df6dd5bf8ce6fba0ccdf516e",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/cg-taihua-night.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/cg-taihua-night.webp",
+      "status": 200,
+      "bytes": 251964,
+      "sha256": "81b283e31b1cf450562c9731fa2a434bcdc25c70dd42262a270bd87a97b633dc",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/cg-taihua-six.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/cg-taihua-six.webp",
+      "status": 200,
+      "bytes": 308722,
+      "sha256": "0a2c0e1d5375627bcfdf85bfd4514adf8141ab781a07fe1f0519d332cd7e7c74",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/cg-twelfth-name.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/cg-twelfth-name.webp",
+      "status": 200,
+      "bytes": 265672,
+      "sha256": "2c41f4a5ecdaad1a9a3746c569558abe3cc4e689f93c5f6d5994f50fd24021c1",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/cg-working-books.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/cg-working-books.webp",
+      "status": 200,
+      "bytes": 235104,
+      "sha256": "a5b6ff811955ec6d4502d87a093bf576dc088a3dfe70cef27b9afc10b5e40837",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/dongting-deck.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/dongting-deck.webp",
+      "status": 200,
+      "bytes": 311698,
+      "sha256": "fd5aee879717075e1c60ec7639f81110104ca66ab925256b1f7150837bed69be",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/dongting-dock.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/dongting-dock.webp",
+      "status": 200,
+      "bytes": 371788,
+      "sha256": "26ad130b543d844b2222f08c0173119fc8fd50ae912f118b2799d34e2e9562e8",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/dongting-raid.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/dongting-raid.webp",
+      "status": 200,
+      "bytes": 307086,
+      "sha256": "52dd38b36fe24b02bbdbaacb58365204fb5429ce022e1ed140ada0942824e169",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/dt-chen-hurt.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/dt-chen-hurt.webp",
+      "status": 200,
+      "bytes": 82878,
+      "sha256": "0786dc7fcf19da5b4248ed8cff78d02f118dd1ac417a19ff4dcace29d1d0cc68",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/dt-chen-intent.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/dt-chen-intent.webp",
+      "status": 200,
+      "bytes": 96120,
+      "sha256": "d9fd7958fa279fb81435f23aeea11ae496bbfb3ff624cb74019fd23fa6b05870",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/dt-chen.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/dt-chen.webp",
+      "status": 200,
+      "bytes": 87024,
+      "sha256": "15fbc7af90b099f681c46953bf4e4dc3eb9e3f874cc23c50ec181c6fd35c7960",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/dt-liang-amused.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/dt-liang-amused.webp",
+      "status": 200,
+      "bytes": 95340,
+      "sha256": "2bb798086e0e74a11b918d6762c3dce3cf9575ebb69e6deb196ff60370af740c",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/dt-liang-intent.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/dt-liang-intent.webp",
+      "status": 200,
+      "bytes": 98872,
+      "sha256": "17fa77574d3efa61c892da60ca224c9e5a3e91ff6a3d9fe7a3ae12153c7d9c51",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/dt-liang.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/dt-liang.webp",
+      "status": 200,
+      "bytes": 105318,
+      "sha256": "2c04644957acd9ff642d20e7f3bba546f337cec3c94b94a9344f945c950e457d",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/fair-eastgate.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/fair-eastgate.webp",
+      "status": 200,
+      "bytes": 447402,
+      "sha256": "baa609c968d49914c0050d561695954b7a03933f10f58fc1fc84d118dc794603",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/grain-yard.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/grain-yard.webp",
+      "status": 200,
+      "bytes": 388064,
+      "sha256": "e8188cffe6886fe6ab3eee2f1c37ef8c0ea1e3aa3d82c4d24cb4436b9100f321",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/han-amused.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/han-amused.webp",
+      "status": 200,
+      "bytes": 96092,
+      "sha256": "002aa3cd786e8318a2d3f7139e606af69c751d55ef76a03532184f06d495caf0",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/han-intent.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/han-intent.webp",
+      "status": 200,
+      "bytes": 108202,
+      "sha256": "a5684b82f8f6b1d1cdae17613a33a308824926c307cef5649f6429d471d3ea12",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/he-amused.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/he-amused.webp",
+      "status": 200,
+      "bytes": 86052,
+      "sha256": "0a0bae590442e67b3500801ffdc15349ee27c312f0e27e0a567f988bc67be5a2",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/he-intent.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/he-intent.webp",
+      "status": 200,
+      "bytes": 100554,
+      "sha256": "9ed9ae791198a42e31ac2f75f14c11553c9479461618ae4a0275f64fb3fd049d",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/heng-earlier-amused-v2.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/heng-earlier-amused-v2.webp",
+      "status": 200,
+      "bytes": 73596,
+      "sha256": "6b67dd9fedeb18da417de28ffa99de6bc8bbf845a83b7685599943f0d21a389e",
+      "width": 512,
+      "height": 768
+    },
+    {
+      "file": "public/art/v6/heng-earlier-intent-v2.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/heng-earlier-intent-v2.webp",
+      "status": 200,
+      "bytes": 82746,
+      "sha256": "5bc591df62b6859d41e8c1df35fcd0a2dffbde33ca6e2e7e9f581ba4150ff928",
+      "width": 512,
+      "height": 768
+    },
+    {
+      "file": "public/art/v6/heng-earlier.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/heng-earlier.webp",
+      "status": 200,
+      "bytes": 86506,
+      "sha256": "1cc0c5bd5f4db200551caf87b037a7a67e6e1154d0e7aac0d6a6f8f17ec56c2b",
+      "width": 512,
+      "height": 768
+    },
+    {
+      "file": "public/art/v6/heng-later-amused.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/heng-later-amused.webp",
+      "status": 200,
+      "bytes": 81262,
+      "sha256": "3dc01efbe1610e574561bf6cb79b5e3286e5cbb5b61f3ef2c11833f300790162",
+      "width": 512,
+      "height": 768
+    },
+    {
+      "file": "public/art/v6/heng-later-intent.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/heng-later-intent.webp",
+      "status": 200,
+      "bytes": 83918,
+      "sha256": "aa56923c305165c48edce35e0b01bbb5ea81fe6cac306d10a848d7d9630a5b2b",
+      "width": 512,
+      "height": 768
+    },
+    {
+      "file": "public/art/v6/heng-later.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/heng-later.webp",
+      "status": 200,
+      "bytes": 82062,
+      "sha256": "73f240409ef0f669079ca1e5221636f471c7419314924e280da8c75b34351e03",
+      "width": 512,
+      "height": 768
+    },
+    {
+      "file": "public/art/v6/kh-gui-wounded.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/kh-gui-wounded.webp",
+      "status": 200,
+      "bytes": 88938,
+      "sha256": "40ce00330247142f6ecce37269b8bf5a7ab02b0a0d2ecb3995a2659187ab38c3",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/kh-gui.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/kh-gui.webp",
+      "status": 200,
+      "bytes": 76990,
+      "sha256": "7f37c5ef738aecb212935ed1cd0ae4e03ec34ed01580c043f50110e3597352e9",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/kh-kong-wounded.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/kh-kong-wounded.webp",
+      "status": 200,
+      "bytes": 53060,
+      "sha256": "0f2208f8c5b65bb5f73410d56c04058ac8f700e5d3cba209c9c3b9cdc46c31b0",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/kh-kong.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/kh-kong.webp",
+      "status": 200,
+      "bytes": 51604,
+      "sha256": "424fd1779098ce025416359f758f89331534478fc2f450f01a68414e72032c13",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/kh-wusheng.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/kh-wusheng.webp",
+      "status": 200,
+      "bytes": 67564,
+      "sha256": "9fe00a2f2279d6321cbaeee256572da445969de30668bb92513c14c6272085bd",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/kh-xuan-empty.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/kh-xuan-empty.webp",
+      "status": 200,
+      "bytes": 61122,
+      "sha256": "d7c352c0a41ed5c4e337fe120cc9c2c3e2dc1a7015067fa8b5db4644f0262542",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/kh-xuan.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/kh-xuan.webp",
+      "status": 200,
+      "bytes": 63108,
+      "sha256": "1750a9e42838bd46b70a4e9c62619463970ba50038bb27dc2ce86a9004f548b7",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/ling-intent.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/ling-intent.webp",
+      "status": 200,
+      "bytes": 123826,
+      "sha256": "747d24feb8039966478e0750f0847b0d2a9679c56ec694a09479644084d4617f",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/ling-uneasy.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/ling-uneasy.webp",
+      "status": 200,
+      "bytes": 98424,
+      "sha256": "38b2283fcd0a6142aea7fc22401afd43606fbedbf5771a5a81d25e4e4ca0d10f",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/lm-he-amused.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/lm-he-amused.webp",
+      "status": 200,
+      "bytes": 75698,
+      "sha256": "9985b4cd4fce957eae0f160892facbf053d33b98cdccdb15f60e10f49813527b",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/lm-he-sharp.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/lm-he-sharp.webp",
+      "status": 200,
+      "bytes": 69050,
+      "sha256": "6fe752f39ca703a99b0243274fa8c123639f05c9de22f5bc7cfc33cf88ba180e",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/lm-he.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/lm-he.webp",
+      "status": 200,
+      "bytes": 88852,
+      "sha256": "0900fb9670b34839697460fc371a332f256483380b0e17baa48861c613d7dc57",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/lm-shi-intent.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/lm-shi-intent.webp",
+      "status": 200,
+      "bytes": 88252,
+      "sha256": "89331cea898e5eb38085ef7e90bcff36dcf763a8570fa37e1782cf73eaeab3a2",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/lm-shi-uneasy.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/lm-shi-uneasy.webp",
+      "status": 200,
+      "bytes": 75632,
+      "sha256": "5d826d91afdd98555fccfaa933ebbd09380c01a04004145cecefcb4c4c3e7eca",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/lm-shi.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/lm-shi.webp",
+      "status": 200,
+      "bytes": 92618,
+      "sha256": "fc921edfe2bcae63ad290db0ef2195b9e88fcfa13375ebff2fe9f4435dc669ae",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/lm-xu-amused.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/lm-xu-amused.webp",
+      "status": 200,
+      "bytes": 75536,
+      "sha256": "e2782f2fb501a5fa7f6473c5c55b196e813c0f7d5e5846986beca33dcbb10f48",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/lm-xu-intent.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/lm-xu-intent.webp",
+      "status": 200,
+      "bytes": 79458,
+      "sha256": "9836a54c9e476cf3a35eb29ec90afb9a02495029a023b0e81b50506e56fce4b3",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/lm-xu.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/lm-xu.webp",
+      "status": 200,
+      "bytes": 94432,
+      "sha256": "b7807ff9907d00e4e021e9059ba539b5a931452a33d34913bb7a4fa1c0646cbf",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/lm-zhang.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/lm-zhang.webp",
+      "status": 200,
+      "bytes": 61150,
+      "sha256": "d0b932c15d49d555d75880f012c96b8c0b280c40d5fdd9de35f0d21ac9b0c414",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/longmen-backyard.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/longmen-backyard.webp",
+      "status": 200,
+      "bytes": 374828,
+      "sha256": "9ecfa1857d48955570ad32fe546f52dc162ef3c0db5737aad113ef16169d53a0",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/longmen-fair.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/longmen-fair.webp",
+      "status": 200,
+      "bytes": 362972,
+      "sha256": "772372b3f8080eea2ac40c5f70eed89e632397a7190b9c74c587ba5306f22c53",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/longmen-hall.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/longmen-hall.webp",
+      "status": 200,
+      "bytes": 293626,
+      "sha256": "36468d0f9692eb69f563baa7c8b9312e4a3a374fb4b9c6b6a8bcb50b41e4b03e",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/npc-aged-monk.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/npc-aged-monk.webp",
+      "status": 200,
+      "bytes": 52736,
+      "sha256": "52cfa13aaf9babed84ccd4cd18996a0c6d0c39bf978a62f09de5605882f20303",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/npc-child-boy.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/npc-child-boy.webp",
+      "status": 200,
+      "bytes": 63412,
+      "sha256": "23d7d269dfcb059f615d4f4934c3d7a07ae2c8ecf1ec52ed0ed6473b35f54631",
+      "width": 512,
+      "height": 768
+    },
+    {
+      "file": "public/art/v6/npc-martial-adult-b.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/npc-martial-adult-b.webp",
+      "status": 200,
+      "bytes": 60966,
+      "sha256": "b5edd0901b799bcd353750d1c539a1667412be451401db340bcd2b2270ceffa1",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/npc-martial-adult.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/npc-martial-adult.webp",
+      "status": 200,
+      "bytes": 54546,
+      "sha256": "5f2b8e2218cc78b83b069ab13dd18bf77c294bdad6105298878d3a8d06494b8c",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/npc-martial-elder-b.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/npc-martial-elder-b.webp",
+      "status": 200,
+      "bytes": 59420,
+      "sha256": "166f837ede9d81ea2f4208f4b8b64bed2cfcdc65ee5b9452fb90136cf588a22b",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/npc-martial-elder.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/npc-martial-elder.webp",
+      "status": 200,
+      "bytes": 55632,
+      "sha256": "4132987b2e184a769591ad5af2f83cbf1da8e678b26e3416f27b0fa3e87ea388",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/npc-mature-woman-b.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/npc-mature-woman-b.webp",
+      "status": 200,
+      "bytes": 60364,
+      "sha256": "924c30e755757370622e892c1c0e04bc4cd06f93e16440df1f2e5cf43454f73e",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/npc-mature-woman.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/npc-mature-woman.webp",
+      "status": 200,
+      "bytes": 42002,
+      "sha256": "01bfc30dadf343ef50d8b3b222038c4ba60ac89fa0d55cd0185e9c767dc17ea7",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/npc-robed-elder-b.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/npc-robed-elder-b.webp",
+      "status": 200,
+      "bytes": 56966,
+      "sha256": "b0fa364bc781b1c23d57d5d5c0d53e6f3c944aaa126735083b681ea913fdd787",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/npc-robed-elder.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/npc-robed-elder.webp",
+      "status": 200,
+      "bytes": 53410,
+      "sha256": "283e324741f8c15f01e7dd2678ff59a11337634e75dc3451fb5b4a7988c59000",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/npc-seasoned-traveler.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/npc-seasoned-traveler.webp",
+      "status": 200,
+      "bytes": 61828,
+      "sha256": "c5cb55ab17e475ccbaabde6d0f4e557764da8a8835a7d99a1e57c2b2d384eeff",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/npc-young-laborer.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/npc-young-laborer.webp",
+      "status": 200,
+      "bytes": 50620,
+      "sha256": "bebd16a4aef0654120040d0a846fd4cd709a428703c9f0fad4719ef463ea4a5e",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/pei-amused-v2.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/pei-amused-v2.webp",
+      "status": 200,
+      "bytes": 66966,
+      "sha256": "568de74ea18ed1837073a2e15232dbd00cc954918a5113dcb6b8179ddae2c526",
+      "width": 560,
+      "height": 513
+    },
+    {
+      "file": "public/art/v6/pei-intent-v2.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/pei-intent-v2.webp",
+      "status": 200,
+      "bytes": 61570,
+      "sha256": "26a1947dff0beb2c7d5d2e1b5ef5e9b3cfb34d01a22cd468c8c4520e71d110e5",
+      "width": 560,
+      "height": 513
+    },
+    {
+      "file": "public/art/v6/qiao-amused-v2.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/qiao-amused-v2.webp",
+      "status": 200,
+      "bytes": 110666,
+      "sha256": "8dbe5158571115a56b2448250c104aae3958576baa54ac273bcb28a4ef4fa230",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/qingxi-board.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/qingxi-board.webp",
+      "status": 200,
+      "bytes": 376516,
+      "sha256": "19545338963b58d17ae511514c93410742fee7af14910bdef57250c4fb053f66",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/qingxi-veranda.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/qingxi-veranda.webp",
+      "status": 200,
+      "bytes": 385902,
+      "sha256": "f8b80a2ce5d39d88c55822023ef052377a71f3330105444f84ac596f796bd2f6",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/qs-xu-age17.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/qs-xu-age17.webp",
+      "status": 200,
+      "bytes": 54484,
+      "sha256": "628bbe4068d0549576e6677a932a6ab833ec63b486036728271f1708f02bf156",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/qs-xu-age46.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/qs-xu-age46.webp",
+      "status": 200,
+      "bytes": 54034,
+      "sha256": "9691f7c6d7b85b0258c9cb1a1a391dace61c825f5cceb92db0d74da941b6cb79",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/qs-xu-age92.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/qs-xu-age92.webp",
+      "status": 200,
+      "bytes": 56740,
+      "sha256": "6825c1f5f091114ba27aa069a714dc0995e1ebaeac0a231d782e7cd854959c81",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/qw-zhao-44.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/qw-zhao-44.webp",
+      "status": 200,
+      "bytes": 91946,
+      "sha256": "ecf27285b600e6dd8d665cf08c78c7d152f085fdf83387b8fce57928359f8621",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/qw-zhao-52.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/qw-zhao-52.webp",
+      "status": 200,
+      "bytes": 81208,
+      "sha256": "6dc80ff22c505570ba3fc5c498a075cb2a6b83c673eeb9af9613bb43292fccce",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/qw-zhao-58-amused.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/qw-zhao-58-amused.webp",
+      "status": 200,
+      "bytes": 88356,
+      "sha256": "237d4ab6be2db5b49a7d45635476e6621c76b5e1e7bb82914a3581ece7329ea7",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/qw-zhao-58-intent.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/qw-zhao-58-intent.webp",
+      "status": 200,
+      "bytes": 90454,
+      "sha256": "286f08d42b1c427422d73f3be77ca52837112bf7d339471346adc82c26736689",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/qw-zhao-58.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/qw-zhao-58.webp",
+      "status": 200,
+      "bytes": 87286,
+      "sha256": "40b484a768acc630fe7e54fbf62d35e0183ec76985a0283f9ccb87ed9c096d8c",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/reusable-snow-courtyard.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/reusable-snow-courtyard.webp",
+      "status": 200,
+      "bytes": 454746,
+      "sha256": "eba70bf0101f0b07bc313877399b750341d3bb044532ea98a40e664557e600a2",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/reusable-stone-inner-gate.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/reusable-stone-inner-gate.webp",
+      "status": 200,
+      "bytes": 290284,
+      "sha256": "983532388aaaf563fa6b1ab38f41ef104522523024028c6eda68e9bce08a75c1",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "file": "public/art/v6/reusable-stone-valley.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/reusable-stone-valley.webp",
+      "status": 200,
+      "bytes": 372224,
+      "sha256": "081f4cfac7465f485d03b1f735f90bb3abb6f48cc93a6bed8c30bdd4c8a94e3f",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "file": "public/art/v6/reusable-study.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/reusable-study.webp",
+      "status": 200,
+      "bytes": 218782,
+      "sha256": "aadad0f4aa617afc7025c6555242cdfad303d6ebeafeb09d812b65f62747e531",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/rl-lu-early.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/rl-lu-early.webp",
+      "status": 200,
+      "bytes": 64530,
+      "sha256": "3d3dce77429d0754baa5b38a3e99b1a492666274c3df822c7ff5287f0de6958f",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/rl-lu-late.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/rl-lu-late.webp",
+      "status": 200,
+      "bytes": 63536,
+      "sha256": "3cce5e80a0c98b2d3f0af41a72dd2d0a6a0edee07c79e1b1c560664929717927",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/rl-lu-mid-amused.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/rl-lu-mid-amused.webp",
+      "status": 200,
+      "bytes": 154368,
+      "sha256": "f06f036c68c5ffb505c1ab59da109fbfcd00294ce4f4ecd0ff394f348556daa4",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/rl-lu-mid-firm.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/rl-lu-mid-firm.webp",
+      "status": 200,
+      "bytes": 66286,
+      "sha256": "928f982ec9d7ca20959be7ad06d86bca9f37d22759972e31e58e7d1b113a8461",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/rl-lu-mid.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/rl-lu-mid.webp",
+      "status": 200,
+      "bytes": 61348,
+      "sha256": "8966c61dbc56616dbb698868f86850aa86e570fe8a4be1f6d143c98f5e544509",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/rong-amused-v2.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/rong-amused-v2.webp",
+      "status": 200,
+      "bytes": 86352,
+      "sha256": "2c22777a680a2dcd937e57fe86021f930f48e8f2912331822503bd226719db51",
+      "width": 560,
+      "height": 672
+    },
+    {
+      "file": "public/art/v6/rong-uneasy-v2.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/rong-uneasy-v2.webp",
+      "status": 200,
+      "bytes": 94440,
+      "sha256": "bc4aebee2d05087de70fa6f7f8bdc162fce3d5a2dc168b9632bdd03a2876e3a7",
+      "width": 560,
+      "height": 672
+    },
+    {
+      "file": "public/art/v6/ss-xie-intent.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/ss-xie-intent.webp",
+      "status": 200,
+      "bytes": 59918,
+      "sha256": "5b4b671a9c88f24582495c87e648cb947a06499697d213286d7e38a55baf403c",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/ss-xie-uneasy.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/ss-xie-uneasy.webp",
+      "status": 200,
+      "bytes": 57272,
+      "sha256": "e3e46f39812b02f1f1b8d7e62a840fdb416eae769541959391855725679988b7",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/ss-xie.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/ss-xie.webp",
+      "status": 200,
+      "bytes": 61432,
+      "sha256": "39d44527ec83e78c9eb8892630b4b533cfa22ba38791f84c47787ec3c3c03d2d",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/su-intent.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/su-intent.webp",
+      "status": 200,
+      "bytes": 81308,
+      "sha256": "4f5a3c30f5d9055a74252c2f1c1ceff5c8ed6d6cb4ceeca380633bc927248d9d",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/taihua-court.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/taihua-court.webp",
+      "status": 200,
+      "bytes": 324784,
+      "sha256": "e8f9f11761f9bdf8bf011735f09694cac390b575d6e528e3059d28c7240d1237",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/taihua-guest.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/taihua-guest.webp",
+      "status": 200,
+      "bytes": 230264,
+      "sha256": "245f8abf5aaf19bff2f488a6c36ee329a4297fa04a56ef2f1b1b243aa32823ea",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/taihua-night.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/taihua-night.webp",
+      "status": 200,
+      "bytes": 302466,
+      "sha256": "529b9b1b300fcb12fba53d9ff5050cd3c79716aee3498c00340c313b32ef8138",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/taihua-steps.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/taihua-steps.webp",
+      "status": 200,
+      "bytes": 416610,
+      "sha256": "8b6e39198a2b546e8bee8372d55edacb5dd7aabfca2372ad3460e9b84e6fd04a",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "public/art/v6/th-huo-intent.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/th-huo-intent.webp",
+      "status": 200,
+      "bytes": 87438,
+      "sha256": "e7f8418788eb19f2b6192145d4f0d2a9377f90b89e36d1ee506d6143ec2f3b02",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/th-huo-uneasy.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/th-huo-uneasy.webp",
+      "status": 200,
+      "bytes": 80164,
+      "sha256": "b9c3040fa14089649171c350a642803d015894844d288b29949fc7b048469fdd",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/th-huo.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/th-huo.webp",
+      "status": 200,
+      "bytes": 96124,
+      "sha256": "9f2cb0f50face2b67ed92ca76d79a99e2f3176623094099f0391ff7c198875f6",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/th-shen-amused.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/th-shen-amused.webp",
+      "status": 200,
+      "bytes": 69032,
+      "sha256": "0ba33450f8ac88b73ec9139eb736f6f938382c3d9460ae7486b1fbaf857a5183",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/th-shen-intent.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/th-shen-intent.webp",
+      "status": 200,
+      "bytes": 68420,
+      "sha256": "4487ef26f69881ac80184e4fb7a9ef8d92135d73fba81b38cc4d6bec7dd3dc4c",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/th-shen.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/th-shen.webp",
+      "status": 200,
+      "bytes": 75340,
+      "sha256": "6c2b60c2559edc435cd7be8006f509135d36a36eb88eaab7aaf418f1bf9bb0e3",
+      "width": 560,
+      "height": 840
+    },
+    {
+      "file": "public/art/v6/zhaoli-amused.webp",
+      "url": "http://127.0.0.1:4175/Jianghu/art/v6/zhaoli-amused.webp",
+      "status": 200,
+      "bytes": 114226,
+      "sha256": "72bad410cc16bfd7a3fccc999817fdd0c508fc863c58a0317df1a5aadf6b78fd",
+      "width": 560,
+      "height": 840
+    }
+  ],
+  "errors": [],
+  "limits": "Image fetch and decode only; no claim of per-scene crop, expression quality, identity/canon correctness, offline completeness or human aesthetic acceptance."
+}

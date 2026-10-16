@@ -1,0 +1,21 @@
+{
+  "status": "FIRST_INTERNAL_ROUND_DRAFT_NOT_INTEGRATED",
+  "baseline": "d07746a",
+  "roundsComplete": 1,
+  "records": 16,
+  "beats": 276,
+  "options": 43,
+  "decisions": 21,
+  "endings": 2,
+  "unitPassed": 19,
+  "draftUnitPassed": 8,
+  "publishedFirstVolumeRegressionPassed": 5,
+  "publishedSecondVolumeRegressionPassed": 6,
+  "samples": 768,
+  "longestPassiveGap": 14,
+  "protectedFiles": 10,
+  "newGameImages": 0,
+  "browser": "NOT_RUN_NO_DRAFT_ENTRY",
+  "published": "UNCHANGED265_FIRST_VOLUME_296_SECOND_VOLUME",
+  "fullGoal": "OPEN"
+}

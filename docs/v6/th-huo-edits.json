@@ -1,0 +1,12 @@
+{
+  "tool": "built-in image_gen",
+  "target": "exec-7b300b64-e3f0-4fef-98cc-4609ef1bfd19.png",
+  "intent": {
+    "source": "exec-41e2d105-3ba4-4055-8b5a-ad33d26193b6.png",
+    "prompt": "Use case: identity-preserve. Edit target: the provided Huo Tingyun neutral transparent production sprite. Create his intent state. Keep the exact same man, face identity age33, plain hair topknot, all ash and indigo cloth robes and tied belt, sword fully sheathed, full head to mid thighs composition, watercolor ink style, neutral soft lighting. Change only the expression and small gesture specified here: visibly focused martial concentration: brow drawn slightly down, eyes sharply attentive, mouth firm; his left hand tightens firmly on the scabbard, right hand stays relaxed. No new objects, no props, no setting, no text, no particles, no logos. Preserve true transparent alpha and complete silhouette."
+  },
+  "uneasy": {
+    "source": "exec-b7e652f7-64b6-4b62-866d-08d580dc7db4.png",
+    "prompt": "Use case: identity-preserve. Edit target: the provided Huo Tingyun neutral transparent production sprite. Create his uneasy state. Keep the exact same man, face identity age33, plain hair topknot, all ash and indigo cloth robes and tied belt, sword fully sheathed, full head to mid thighs composition, watercolor ink style, neutral soft lighting. Change only the expression and small gesture specified here: quietly shaken after learning the gap to an elder: eyebrows slightly raised inward, eyes looking down, mouth pressed with one corner tense, shoulder slightly dropped, left hand on scabbard relaxed. No crying, no injuries. No new objects, no props, no setting, no text, no particles, no logos. Preserve true transparent alpha and complete silhouette."
+  }
+}

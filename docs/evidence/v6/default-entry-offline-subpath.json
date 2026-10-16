@@ -1,0 +1,12 @@
+{
+  "staleRootAndIndexReplaced": true,
+  "coldPrimaryAndFrozenRestored": [
+    "campaign-v6-Ct-yMjRt.js",
+    "campaign-v6-before-ending-staging-CZt1BII1.js"
+  ],
+  "otherOfflineEntryRetained": true,
+  "HTTPcacheCleared": true,
+  "rawOldV6BackupRetained": true,
+  "V5autoUntouched": true,
+  "actualOfflineRootIndex": true
+}

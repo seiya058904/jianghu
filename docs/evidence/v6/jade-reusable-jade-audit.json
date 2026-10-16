@@ -1,0 +1,13 @@
+{
+  "beats": 296,
+  "options": 66,
+  "sampledPaths": 256,
+  "exhaustive": false,
+  "changed": [
+    "jd_seventh_2",
+    "jd_seventh_3",
+    "jd_seventh_4",
+    "jd_seventh_5"
+  ],
+  "representativeOldSnapshotMigrationVerified": true
+}

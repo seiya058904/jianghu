@@ -1,0 +1,10 @@
+import {writeFileSync} from 'node:fs';
+import {createWriter} from './chronicle-writer.mjs';
+import {writeOpening} from './seven-questions-opening.mjs';
+import {writeInquiry} from './seven-questions-inquiry.mjs';
+import {writeTables} from './seven-questions-tables.mjs';
+import {writeSplit} from './seven-questions-split.mjs';
+import {writeResolution} from './seven-questions-resolution.mjs';
+const w=createWriter('sq_');writeOpening(w);writeInquiry(w);writeTables(w);writeSplit(w);writeResolution(w);
+const vars={sq_partner:0,sq_sources:false,sq_bone:false,sq_witness:false,sq_front:false,sq_saved_scribe:false,sq_shared_tests:false,sq_last_words:false,sq_seat_side:0,sq_access_question:false,sq_kept_questions:false,sq_notes:false,sq_two_names:false,sq_water_ready:false,sq_route:0,sq_valley_call:0,sq_stayed_tree:false,sq_valley_after:0,sq_court_duty:false,sq_fire_people:false,sq_court_after:0,sq_final_sources:false,sq_asked_people:false,sq_each_volume:false,sq_career:0,sq_kept_time:false};
+writeFileSync('story/seven-questions.ink','// Source: 宋世江湖 13920–14849. Independent era, fixed canon, separate witnessed and reported routes.\n'+Object.entries(vars).map(([key,value])=>`VAR ${key} = ${value}`).join('\n')+'\n-> receipt\n'+w.render());

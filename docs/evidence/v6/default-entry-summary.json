@@ -1,0 +1,78 @@
+{
+  "status": "LOCAL_DEFAULT_V6_ENTRY_AND_COMPATIBILITY_VERIFIED_GOAL_IN_PROGRESS",
+  "defaultEntries": [
+    "/",
+    "/index.html",
+    "/Jianghu/",
+    "/Jianghu/index.html"
+  ],
+  "retainedV6Alias": "tide-v6.html",
+  "currentVersion": "tide-promise-2.0.0",
+  "currentPrefix": "jianghu:campaign:tide:v2:",
+  "archive": "tide-v5.html",
+  "archiveVersion": "tide-promise-1.0.0",
+  "archivePrefix": "jianghu:campaign:tide:v1:",
+  "hashes": {
+    "src/generated/campaign.json": "b0c071f9cf69c22817edf712d92cd9002c9373e92905e721cb7a1a29755c63ec",
+    "src/generated/campaign-v5-1.0.0.json": "b0c071f9cf69c22817edf712d92cd9002c9373e92905e721cb7a1a29755c63ec",
+    "src/generated/campaign-v6.json": "8c199458e449d3fde8710eabe1c9594b0392d2066f1601f5181297128dee48b6",
+    "宋世江湖.md": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393"
+  },
+  "checks": {
+    "unitPass": 168,
+    "buildPass": true,
+    "storageEndingBrowserPass": 26,
+    "assetFilesVerifiedAtRootAndSubpath": 155,
+    "offlineWorkOwnersVerified": 33,
+    "frozenMigrationChunksVerified": 8,
+    "mainOfflineURLs": [
+      "./",
+      "./index.html",
+      "./tide-v6.html"
+    ],
+    "fullRouteBrowserPass": 17,
+    "currentDefaultFullRoutes": 9,
+    "frozenV5FullRoutes": 8,
+    "finalCombinedBrowserPass": 29,
+    "uniqueFinalBrowserCases": 46,
+    "finalBuildPass": true,
+    "footerVisualVerified": true
+  },
+  "imageGeneration": 0,
+  "limits": [
+    "No publication or remote mutation.",
+    "Scripted browser QA is not human reading or physical Android testing.",
+    "Other art identity/action and literary gates remain open.",
+    "Graph metadata changed; conclusions use current source and executed browser checks."
+  ],
+  "initialFailures": [
+    "Theme fixture incorrectly expected light instead of paper, corrected.",
+    "800x360 cover archive link below first screen; product CSS corrected and new/saved covers verified.",
+    "Navigation fixture compared relative href with absolute path; now verifies resolved destination.",
+    "Manual mobile screenshot revealed footer overlap after automatic click checks passed; moved footer above wrapped archive links and added separation assertion."
+  ],
+  "routeEvidence": {
+    "v6": [
+      "docs/evidence/v6/default-entry-main-browser-apart.json",
+      "docs/evidence/v6/default-entry-main-browser-captain.json",
+      "docs/evidence/v6/default-entry-main-browser-harbor.json",
+      "docs/evidence/v6/default-entry-main-browser-lost.json",
+      "docs/evidence/v6/default-entry-main-browser-name.json",
+      "docs/evidence/v6/default-entry-main-browser-scar.json",
+      "docs/evidence/v6/default-entry-main-browser-stay.json",
+      "docs/evidence/v6/default-entry-main-browser-teacher.json",
+      "docs/evidence/v6/default-entry-main-browser-together5.json"
+    ],
+    "v5": [
+      "docs/evidence/v6/default-entry-v5-browser-apart.json",
+      "docs/evidence/v6/default-entry-v5-browser-captain.json",
+      "docs/evidence/v6/default-entry-v5-browser-harbor.json",
+      "docs/evidence/v6/default-entry-v5-browser-lost.json",
+      "docs/evidence/v6/default-entry-v5-browser-name.json",
+      "docs/evidence/v6/default-entry-v5-browser-scar.json",
+      "docs/evidence/v6/default-entry-v5-browser-teacher.json",
+      "docs/evidence/v6/default-entry-v5-browser-together5.json"
+    ]
+  },
+  "verificationScope": "17 complete routes ran before the final cover-footer-only CSS adjustment. Final build then passed 29 entry, cover, ending, storage, offline and raster checks. No replay of complete routes after this isolated footer change."
+}

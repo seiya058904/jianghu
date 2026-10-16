@@ -1,0 +1,23 @@
+[WebServer] (node:27432) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 10 tests using 3 workers
+
+(node:34804) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30700) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2100) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  3 tests\sea-editorial.spec.ts:10:107 › Sea V2 root: old raw saves, backup/export and current progress stay isolated through both edition links (969ms)
+  ok  2 tests\sea.spec.ts:10:1 › Sea offline root and subpath load an unseen late scene (1.2s)
+  ok  4 tests\sea-editorial.spec.ts:10:107 › Sea V2 subpath: old raw saves, backup/export and current progress stay isolated through both edition links (706ms)
+  ok  1 tests\art-manifest.spec.ts:8:107 › Asset manifest: every raster has exact built bytes and browser decode on root (2.9s)
+  ok  5 tests\sea.spec.ts:13:1 › Sea cover and teaching choice at seven sizes preserve keyboard access (2.0s)
+  ok  7 tests\art-manifest.spec.ts:8:107 › Asset manifest: every raster has exact built bytes and browser decode on subpath (2.4s)
+  ok  6 tests\sea-editorial.spec.ts:18:1 › Sea V2 common CG, both actual Canghe question closeups and teaching replies work at seven sizes (8.3s)
+  ok  8 tests\sea-editorial.spec.ts:22:1 › Sea V2 CG failure and dark reading retain exact dialogue and next input (436ms)
+  ok  9 tests\sea-editorial.spec.ts:26:107 › Sea editions root: offline cold archive chunks, raw backup and unseen V2 late scene restore independently (802ms)
+  ok 10 tests\sea-editorial.spec.ts:26:107 › Sea editions subpath: offline cold archive chunks, raw backup and unseen V2 late scene restore independently (791ms)
+
+  10 passed (13.1s)

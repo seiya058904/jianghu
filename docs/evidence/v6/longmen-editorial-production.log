@@ -1,0 +1,1823 @@
+{
+  "counts": {
+    "speakingNPC": 307,
+    "registeredDedicatedUsed": 32,
+    "independentDedicatedActorIdsUsed": 32,
+    "independentDedicatedUsed": 28,
+    "charactersWithThreeImagesAtSameAppearance": 19,
+    "registeredArchetypesUsed": 12,
+    "distinctBackgroundFiles": 30,
+    "distinctCGFiles": 19,
+    "referencedBytes": 23816294
+  },
+  "ownershipConflicts": 0,
+  "simultaneousCollisions": 0,
+  "works": {
+    "tide-v6": {
+      "version": "tide-promise-2.0.0",
+      "contentSHA256": "8c199458e449d3fde8710eabe1c9594b0392d2066f1601f5181297128dee48b6",
+      "sourceBeats": 1325,
+      "visitedBeats": 1325,
+      "unvisited": [],
+      "choiceOptions": 182,
+      "endings": [
+        "harbor",
+        "name",
+        "together5",
+        "teacher",
+        "captain",
+        "apart",
+        "scar",
+        "lost"
+      ],
+      "longestPassiveGap": 28,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "storm",
+        "dawn",
+        "rescue",
+        "quiet",
+        "timber"
+      ],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "v6_zhaoli",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v5/zhaoli-intent.webp",
+          "beat": "c6_v6_after_lost_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_zhaoli",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/zhaoli-amused.webp",
+          "beat": "c_last_boat_after_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_qiao",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v5/qiao-uneasy.webp",
+          "beat": "c_levee_wrist_14",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_su",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/su-intent.webp",
+          "beat": "c_arena_pair_result_11",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_han",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/han-amused.webp",
+          "beat": "c_last_lesson_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_ling",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/ling-intent.webp",
+          "beat": "c_storm_return_11",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_qiao",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/qiao-amused-v2.webp",
+          "beat": "c_morning_roof_after_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_lu",
+          "look": "default",
+          "mood": "calm",
+          "file": "v5/lu-intent.webp",
+          "beat": "c_storm_return_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_rong",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/rong-amused-v2.webp",
+          "beat": "c_arena_result_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_pei",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/pei-intent-v2.webp",
+          "beat": "c6_v6_roles_after_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_han",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/han-intent.webp",
+          "beat": "c6_v6_roles_ready_1",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_he",
+          "look": "default",
+          "mood": "sharp",
+          "file": "v6/he-intent.webp",
+          "beat": "c_levee_call_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_pei",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/pei-amused-v2.webp",
+          "beat": "c_bridge_letter_5",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_ling",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v6/ling-uneasy.webp",
+          "beat": "c_workshop_people_1",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_rong",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v6/rong-uneasy-v2.webp",
+          "beat": "c6_v6_grain_inventory_2",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_su",
+          "look": "default",
+          "mood": "amused",
+          "file": "v5/su-amused.webp",
+          "beat": "c_arena_pair_result_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "v6_he",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/he-amused.webp",
+          "beat": "c6_v6_stay_pay_8",
+          "kind": "dedicated"
+        }
+      ],
+      "appearanceTriggers": []
+    },
+    "kuhe": {
+      "version": "kuhe-3.0.0",
+      "contentSHA256": "c4c8ee8da76ee854a4f8ffc002c2d437178dc3d22648e60166b68f2ee6cbac71",
+      "sourceBeats": 326,
+      "visitedBeats": 326,
+      "unvisited": [],
+      "choiceOptions": 40,
+      "endings": [
+        "kh_care",
+        "kh_record"
+      ],
+      "longestPassiveGap": 15,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "oldPillars"
+      ],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": [
+        {
+          "id": "kh2_kong",
+          "look": "wounded",
+          "file": "v6/kh-kong-wounded.webp",
+          "beat": "kh_lock_15",
+          "size": "contain",
+          "position": "center bottom"
+        },
+        {
+          "id": "kh2_xuan",
+          "look": "empty",
+          "file": "v6/kh-xuan-empty.webp",
+          "beat": "kh_lock_15",
+          "size": "contain",
+          "position": "center bottom"
+        },
+        {
+          "id": "kh2_gui",
+          "look": "wounded",
+          "file": "v6/kh-gui-wounded.webp",
+          "beat": "kh_lock_1",
+          "size": "82% auto",
+          "position": "center bottom"
+        },
+        {
+          "id": "kh2_gui",
+          "look": "locking",
+          "file": "v6/kh-gui-wounded.webp",
+          "beat": "kh_lock_4",
+          "size": "auto 240%",
+          "position": "60% top"
+        }
+      ]
+    },
+    "kuhe-v2": {
+      "version": "kuhe-2.0.0",
+      "contentSHA256": "cdec7e0e8bb4a6c3904278c1e523a1af8e9519012bb107191798619256702dba",
+      "sourceBeats": 299,
+      "visitedBeats": 299,
+      "unvisited": [],
+      "choiceOptions": 40,
+      "endings": [
+        "kh_care",
+        "kh_record"
+      ],
+      "longestPassiveGap": 15,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "oldPillars"
+      ],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": [
+        {
+          "id": "kh2_kong",
+          "look": "wounded",
+          "file": "v6/kh-kong-wounded.webp",
+          "beat": "kh_lock_15",
+          "size": "contain",
+          "position": "center bottom"
+        },
+        {
+          "id": "kh2_xuan",
+          "look": "empty",
+          "file": "v6/kh-xuan-empty.webp",
+          "beat": "kh_lock_15",
+          "size": "contain",
+          "position": "center bottom"
+        },
+        {
+          "id": "kh2_gui",
+          "look": "wounded",
+          "file": "v6/kh-gui-wounded.webp",
+          "beat": "kh_lock_1",
+          "size": "82% auto",
+          "position": "center bottom"
+        },
+        {
+          "id": "kh2_gui",
+          "look": "locking",
+          "file": "v6/kh-gui-wounded.webp",
+          "beat": "kh_lock_4",
+          "size": "auto 240%",
+          "position": "60% top"
+        }
+      ]
+    },
+    "kuhe-v1": {
+      "version": "kuhe-1.0.0",
+      "contentSHA256": "0db4c79d56b4bcb1dbe67dd99db9640bcc272f2b282c4c69ac95d3e69784c53a",
+      "sourceBeats": 299,
+      "visitedBeats": 299,
+      "unvisited": [],
+      "choiceOptions": 40,
+      "endings": [
+        "kh_care",
+        "kh_record"
+      ],
+      "longestPassiveGap": 15,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": []
+    },
+    "qingshi": {
+      "version": "qingshi-3.0.0",
+      "contentSHA256": "35df6f330bd78edd7f283374773d3660f58afefe8cc0652762b2b7e0380a60de",
+      "sourceBeats": 447,
+      "visitedBeats": 447,
+      "unvisited": [],
+      "choiceOptions": 60,
+      "endings": [
+        "qs_records",
+        "qs_heirs"
+      ],
+      "longestPassiveGap": 16,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "oldKnife"
+      ],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": [
+        {
+          "id": "qs_xu",
+          "look": "age17",
+          "file": "v6/qs-xu-age17.webp",
+          "beat": "qs_zhao_promise_10",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "qs_xu",
+          "look": "age46",
+          "file": "v6/qs-xu-age46.webp",
+          "beat": "qs_cut_8",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "qs_xu",
+          "look": "age92",
+          "file": "v6/qs-xu-age92.webp",
+          "beat": "qs_breach_1",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "qs_xu",
+          "look": "age92close",
+          "file": "v6/qs-xu-age92.webp",
+          "beat": "qs_oldknife_6",
+          "size": "auto 240%",
+          "position": "center top"
+        }
+      ]
+    },
+    "qingshi-v2": {
+      "version": "qingshi-2.0.0",
+      "contentSHA256": "61000c248de1bd7839f783e3dd5ee26bc05b71fead533e3231ebe6f3bc2e4bfa",
+      "sourceBeats": 414,
+      "visitedBeats": 414,
+      "unvisited": [],
+      "choiceOptions": 58,
+      "endings": [
+        "qs_records",
+        "qs_heirs"
+      ],
+      "longestPassiveGap": 18,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "oldKnife"
+      ],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": [
+        {
+          "id": "qs_xu",
+          "look": "age17",
+          "file": "v6/qs-xu-age17.webp",
+          "beat": "qs_zhao_promise_10",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "qs_xu",
+          "look": "age46",
+          "file": "v6/qs-xu-age46.webp",
+          "beat": "qs_cut_8",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "qs_xu",
+          "look": "age92",
+          "file": "v6/qs-xu-age92.webp",
+          "beat": "qs_breach_1",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "qs_xu",
+          "look": "age92close",
+          "file": "v6/qs-xu-age92.webp",
+          "beat": "qs_oldknife_6",
+          "size": "auto 240%",
+          "position": "center top"
+        }
+      ]
+    },
+    "qingshi-v1": {
+      "version": "qingshi-1.0.0",
+      "contentSHA256": "ed390e1dccdcea7d32f32f0287904174ed6af21239a21e7aaf1f40d37ddd72f6",
+      "sourceBeats": 414,
+      "visitedBeats": 414,
+      "unvisited": [],
+      "choiceOptions": 58,
+      "endings": [
+        "qs_records",
+        "qs_heirs"
+      ],
+      "longestPassiveGap": 18,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": [
+        {
+          "id": "qs_xu",
+          "look": "age17",
+          "file": "v6/qs-xu-age17.webp",
+          "beat": "qs_zhao_promise_10",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "qs_xu",
+          "look": "age46",
+          "file": "v6/qs-xu-age46.webp",
+          "beat": "qs_cut_8",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "qs_xu",
+          "look": "age92",
+          "file": "v6/qs-xu-age92.webp",
+          "beat": "qs_breach_1",
+          "size": "auto 150%",
+          "position": "center top"
+        }
+      ]
+    },
+    "two-swords": {
+      "version": "two-swords-2.0.0",
+      "contentSHA256": "2f32bd44f0909fdc786fa47c2458eba6f4c44e55c99d9e8bbbcb789850243064",
+      "sourceBeats": 334,
+      "visitedBeats": 334,
+      "unvisited": [],
+      "choiceOptions": 50,
+      "endings": [
+        "ss_mountain_lesson",
+        "ss_library_lesson"
+      ],
+      "longestPassiveGap": 15,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "workingBooks"
+      ],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "ss_xiezhibai",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/ss-xie-intent.webp",
+          "beat": "ss_token_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "ss_xiezhibai",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v6/ss-xie-uneasy.webp",
+          "beat": "ss_separate_record_6",
+          "kind": "dedicated"
+        }
+      ],
+      "appearanceTriggers": []
+    },
+    "two-swords-v1": {
+      "version": "two-swords-1.0.0",
+      "contentSHA256": "6a52c1423e46511aa23d17e0471ce855bb0f5f2f5450612b9e50299e3070c475",
+      "sourceBeats": 327,
+      "visitedBeats": 327,
+      "unvisited": [],
+      "choiceOptions": 50,
+      "endings": [
+        "ss_mountain_lesson",
+        "ss_library_lesson"
+      ],
+      "longestPassiveGap": 15,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "workingBooks"
+      ],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "ss_xiezhibai",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/ss-xie-intent.webp",
+          "beat": "ss_token_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "ss_xiezhibai",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v6/ss-xie-uneasy.webp",
+          "beat": "ss_separate_record_6",
+          "kind": "dedicated"
+        }
+      ],
+      "appearanceTriggers": []
+    },
+    "seven-questions": {
+      "version": "seven-questions-2.0.0",
+      "contentSHA256": "e7caa65fa5970db4c440a6895a88b18cc7f58d91912cae02a77a7c8b9bc45402",
+      "sourceBeats": 382,
+      "visitedBeats": 382,
+      "unvisited": [],
+      "choiceOptions": 62,
+      "endings": [
+        "sq_shared_road",
+        "sq_open_lesson"
+      ],
+      "longestPassiveGap": 13,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "workingBooks"
+      ],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": []
+    },
+    "seven-questions-v1": {
+      "version": "seven-questions-1.0.0",
+      "contentSHA256": "2763e894391f75703da0e3b021b30455cf5234134c7c15cd2760d83b044a2791",
+      "sourceBeats": 376,
+      "visitedBeats": 376,
+      "unvisited": [],
+      "choiceOptions": 62,
+      "endings": [
+        "sq_shared_road",
+        "sq_open_lesson"
+      ],
+      "longestPassiveGap": 11,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": []
+    },
+    "jade-thieves": {
+      "version": "jade-thieves-1.0.0",
+      "contentSHA256": "2a82781050ff0fcf2aefb4f91fb9c3a0d3180b38b308509e7ae994479ff4721f",
+      "sourceBeats": 265,
+      "visitedBeats": 265,
+      "unvisited": [],
+      "choiceOptions": 43,
+      "endings": [
+        "jt_unmarked_life",
+        "jt_private_account"
+      ],
+      "longestPassiveGap": 14,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "emptyBox"
+      ],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": []
+    },
+    "jade": {
+      "version": "jade-1.0.0",
+      "contentSHA256": "333c337a3a24483353b623343b06aea2a0b0e0e7488fed2fc630b6d486b43593",
+      "sourceBeats": 296,
+      "visitedBeats": 296,
+      "unvisited": [],
+      "choiceOptions": 66,
+      "endings": [
+        "jd_storework",
+        "jd_archivework"
+      ],
+      "longestPassiveGap": 9,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "grainMeasure"
+      ],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": [
+        {
+          "id": "jd_he",
+          "look": "late",
+          "file": "v6/npc-robed-elder-b.webp",
+          "beat": "jd_he_late_10",
+          "size": "auto 100%",
+          "position": "center top"
+        }
+      ]
+    },
+    "sea": {
+      "version": "sea-2.0.0",
+      "contentSHA256": "c207f3f9d59777d1b451e3f453b8d487b0c9f325a739d3352f8fd2f60c8e5a99",
+      "sourceBeats": 257,
+      "visitedBeats": 257,
+      "unvisited": [],
+      "choiceOptions": 46,
+      "endings": [
+        "sr_open_courtyard",
+        "sr_next_harbor"
+      ],
+      "longestPassiveGap": 14,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "rigging"
+      ],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": []
+    },
+    "sea-v1": {
+      "version": "sea-1.0.0",
+      "contentSHA256": "cdf7e31ae6af2d0ee606715bcdf5ff85ce0adfe1f0b92f3e3ddf573ed3378cca",
+      "sourceBeats": 228,
+      "visitedBeats": 228,
+      "unvisited": [],
+      "choiceOptions": 46,
+      "endings": [
+        "sr_open_courtyard",
+        "sr_next_harbor"
+      ],
+      "longestPassiveGap": 11,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "rigging"
+      ],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": []
+    },
+    "sea-tide": {
+      "version": "sea-tide-2.0.0",
+      "contentSHA256": "7f08941a6f629300196762f9f1af1bbf5f92cb0078c62b152a1da988d413629e",
+      "sourceBeats": 239,
+      "visitedBeats": 239,
+      "unvisited": [],
+      "choiceOptions": 42,
+      "endings": [
+        "st_next_step",
+        "st_next_watch"
+      ],
+      "longestPassiveGap": 15,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "rigging"
+      ],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": [
+        {
+          "id": "st_an",
+          "look": "childV2",
+          "file": "v6/npc-child-boy.webp",
+          "beat": "st_four_tests_5",
+          "size": "auto 85%",
+          "position": "center bottom"
+        },
+        {
+          "id": "st_an",
+          "look": "youth",
+          "file": "v5/npc-youth-blue.webp",
+          "beat": "st_outer_years_8",
+          "size": "auto 100%",
+          "position": "center top"
+        },
+        {
+          "id": "st_an",
+          "look": "adult",
+          "file": "v6/npc-martial-adult-b.webp",
+          "beat": "st_after_storm_7",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "st_ye",
+          "look": "late",
+          "file": "v6/npc-martial-elder-b.webp",
+          "beat": "st_old_depth_11",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "st_an",
+          "look": "late",
+          "file": "v6/npc-martial-elder.webp",
+          "beat": "st_last_look_15",
+          "size": "auto 150%",
+          "position": "center top"
+        }
+      ]
+    },
+    "sea-tide-v1": {
+      "version": "sea-tide-1.0.0",
+      "contentSHA256": "2c5d168105b00e52f0181bc9a64f050c66e6e450249a39dfc7cbc73bfe246375",
+      "sourceBeats": 211,
+      "visitedBeats": 211,
+      "unvisited": [],
+      "choiceOptions": 42,
+      "endings": [
+        "st_next_step",
+        "st_next_watch"
+      ],
+      "longestPassiveGap": 14,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "rigging"
+      ],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": [
+        {
+          "id": "st_an",
+          "look": "child",
+          "file": "v5/npc-youth-blue.webp",
+          "beat": "st_four_tests_5",
+          "size": "auto 100%",
+          "position": "center top"
+        },
+        {
+          "id": "st_an",
+          "look": "youth",
+          "file": "v5/npc-youth-blue.webp",
+          "beat": "st_outer_years_8",
+          "size": "auto 100%",
+          "position": "center top"
+        },
+        {
+          "id": "st_an",
+          "look": "adult",
+          "file": "v6/npc-martial-adult-b.webp",
+          "beat": "st_after_storm_7",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "st_ye",
+          "look": "late",
+          "file": "v6/npc-martial-elder-b.webp",
+          "beat": "st_old_depth_8",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "st_an",
+          "look": "late",
+          "file": "v6/npc-martial-elder.webp",
+          "beat": "st_last_look_12",
+          "size": "auto 150%",
+          "position": "center top"
+        }
+      ]
+    },
+    "north": {
+      "version": "north-2.0.0",
+      "contentSHA256": "2456c8b3e365837492c039c457e7bc46e6933f89df6dd57e955de4b05254ac67",
+      "sourceBeats": 309,
+      "visitedBeats": 309,
+      "unvisited": [],
+      "choiceOptions": 62,
+      "endings": [
+        "nq_first_again",
+        "nq_three_names"
+      ],
+      "longestPassiveGap": 12,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "plainTea"
+      ],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "nq2_mender",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/heng-later-intent.webp",
+          "beat": "nq_too_heavy_2",
+          "kind": "dedicated"
+        },
+        {
+          "id": "nq2_heng",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/heng-later-intent.webp",
+          "beat": "nq_sixty_four_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "nq2_heng",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/heng-later-amused.webp",
+          "beat": "nq_last_tea_3",
+          "kind": "dedicated"
+        }
+      ],
+      "appearanceTriggers": [
+        {
+          "id": "nq_yuan",
+          "look": "adult",
+          "file": "v6/npc-martial-adult-b.webp",
+          "beat": "nq_letter_6",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "nq_yuan",
+          "look": "late",
+          "file": "v6/npc-martial-elder.webp",
+          "beat": "nq_what_to_leave_7",
+          "size": "auto 150%",
+          "position": "center top"
+        }
+      ]
+    },
+    "north-v1": {
+      "version": "north-1.0.0",
+      "contentSHA256": "dff07857f0bdec586e07b3f0bf9fd709e00308be8288d77e00476915ecca4a02",
+      "sourceBeats": 309,
+      "visitedBeats": 309,
+      "unvisited": [],
+      "choiceOptions": 62,
+      "endings": [
+        "nq_first_again",
+        "nq_three_names"
+      ],
+      "longestPassiveGap": 12,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": [
+        {
+          "id": "nq_yuan",
+          "look": "adult",
+          "file": "v6/npc-martial-adult-b.webp",
+          "beat": "nq_letter_6",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "nq_yuan",
+          "look": "late",
+          "file": "v6/npc-martial-elder.webp",
+          "beat": "nq_what_to_leave_7",
+          "size": "auto 150%",
+          "position": "center top"
+        }
+      ]
+    },
+    "qian-kun": {
+      "version": "qian-kun-2.0.0",
+      "contentSHA256": "9ace994454860592868502a7ef806b78124f22ba6bae69e70d9855a10a80fc12",
+      "sourceBeats": 256,
+      "visitedBeats": 256,
+      "unvisited": [],
+      "choiceOptions": 48,
+      "endings": [
+        "qk_open_lesson",
+        "qk_open_mountain"
+      ],
+      "longestPassiveGap": 16,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "plainTea"
+      ],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "qk2_heng_earlier",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/heng-earlier-intent-v2.webp",
+          "beat": "qk_eighteen_8",
+          "kind": "dedicated"
+        },
+        {
+          "id": "qk2_heng_earlier",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/heng-earlier-amused-v2.webp",
+          "beat": "qk_people_lie_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "qk2_heng_later",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/heng-later-amused.webp",
+          "beat": "qk_already_exceeded_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "qk2_heng_later",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/heng-later-intent.webp",
+          "beat": "qk_eighty_teacher_3",
+          "kind": "dedicated"
+        }
+      ],
+      "appearanceTriggers": [
+        {
+          "id": "qk_xu",
+          "look": "late",
+          "file": "v5/npc-elder.webp",
+          "beat": "qk_trouble_7",
+          "size": "auto 100%",
+          "position": "center top"
+        },
+        {
+          "id": "qk_manager",
+          "look": "late",
+          "file": "v6/npc-robed-elder.webp",
+          "beat": "qk_first_in_line_9",
+          "size": "auto 150%",
+          "position": "center top"
+        }
+      ]
+    },
+    "qian-kun-v1": {
+      "version": "qian-kun-1.0.0",
+      "contentSHA256": "13d7ea5815b8b5015635fe799e5858b2e70721647720db03dc02ab4c7de810df",
+      "sourceBeats": 256,
+      "visitedBeats": 256,
+      "unvisited": [],
+      "choiceOptions": 48,
+      "endings": [
+        "qk_open_lesson",
+        "qk_open_mountain"
+      ],
+      "longestPassiveGap": 16,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": [
+        {
+          "id": "qk_xu",
+          "look": "late",
+          "file": "v5/npc-elder.webp",
+          "beat": "qk_trouble_7",
+          "size": "auto 100%",
+          "position": "center top"
+        },
+        {
+          "id": "qk_manager",
+          "look": "late",
+          "file": "v6/npc-robed-elder.webp",
+          "beat": "qk_first_in_line_9",
+          "size": "auto 150%",
+          "position": "center top"
+        }
+      ]
+    },
+    "north-notes": {
+      "version": "north-notes-1.0.0",
+      "contentSHA256": "d7024c9015d1287f57a4d2b9d52bfc40a38edfc70995c4146d5066e71f15d7a6",
+      "sourceBeats": 69,
+      "visitedBeats": 69,
+      "unvisited": [],
+      "choiceOptions": 12,
+      "endings": [
+        "nn_unfinished_page",
+        "nn_different_starts"
+      ],
+      "longestPassiveGap": 11,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "nn_heng",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/heng-later-intent.webp",
+          "beat": "nn_not_same_scale_2",
+          "kind": "dedicated"
+        },
+        {
+          "id": "nn_heng",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/heng-later-amused.webp",
+          "beat": "nn_different_pupils_5",
+          "kind": "dedicated"
+        }
+      ],
+      "appearanceTriggers": []
+    },
+    "dead-ranking": {
+      "version": "dead-ranking-1.0.0",
+      "contentSHA256": "f762aa1a44140af8f79710dc3709ab516480de6eb905666fd4c5a9f5c7f64a06",
+      "sourceBeats": 325,
+      "visitedBeats": 325,
+      "unvisited": [],
+      "choiceOptions": 66,
+      "endings": [
+        "dr_room_after",
+        "dr_road_after"
+      ],
+      "longestPassiveGap": 16,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": [
+        {
+          "id": "dr_next",
+          "look": "late",
+          "file": "v6/npc-martial-adult-b.webp",
+          "beat": "dr_last_page_9",
+          "size": "auto 150%",
+          "position": "center top"
+        }
+      ]
+    },
+    "luhua": {
+      "version": "luhua-1.0.0",
+      "contentSHA256": "71d928498a17a0d82dd98723fd60852af8b9a29bbff2c42bcc3da0e1fd3740d6",
+      "sourceBeats": 256,
+      "visitedBeats": 256,
+      "unvisited": [],
+      "choiceOptions": 50,
+      "endings": [
+        "lh_hall_after",
+        "lh_coast_after"
+      ],
+      "longestPassiveGap": 15,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "dt_chen",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/dt-chen-intent.webp",
+          "beat": "lh_five_people_3",
+          "kind": "dedicated"
+        }
+      ],
+      "appearanceTriggers": [
+        {
+          "id": "lh_meng",
+          "look": "mid",
+          "file": "v6/npc-martial-elder.webp",
+          "beat": "lh_master_can_miss_7",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "lh_apo",
+          "look": "adult",
+          "file": "v6/npc-martial-adult.webp",
+          "beat": "lh_town_names_5",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "lh_meng",
+          "look": "late",
+          "file": "v6/npc-robed-elder-b.webp",
+          "beat": "lh_winter_master_4",
+          "size": "auto 150%",
+          "position": "center top"
+        }
+      ]
+    },
+    "twelfth-life": {
+      "version": "twelfth-life-2.0.0",
+      "contentSHA256": "5be356f88c363df1cb7fb84bd397aa9a4210a7ba951519ef47762bf4cc55d528",
+      "sourceBeats": 375,
+      "visitedBeats": 375,
+      "unvisited": [],
+      "choiceOptions": 66,
+      "endings": [
+        "rl_watch_after",
+        "rl_letter_after"
+      ],
+      "longestPassiveGap": 18,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "royalLetters"
+      ],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "rl2_lu",
+          "look": "mid",
+          "mood": "amused",
+          "file": "v6/rl-lu-mid-amused.webp",
+          "beat": "rl_fifty_two_6",
+          "kind": "dedicated"
+        },
+        {
+          "id": "rl2_lu",
+          "look": "mid",
+          "mood": "intent",
+          "file": "v6/rl-lu-mid-firm.webp",
+          "beat": "rl_capital_four_2",
+          "kind": "dedicated"
+        }
+      ],
+      "appearanceTriggers": [
+        {
+          "id": "rl_sun",
+          "look": "elder",
+          "file": "v6/npc-martial-elder.webp",
+          "beat": "rl_fair_seat_2",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "rl2_lu",
+          "look": "mid",
+          "file": "v6/rl-lu-mid.webp",
+          "beat": "rl_five_years_10",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "rl_emperor",
+          "look": "late",
+          "file": "v6/npc-martial-elder-b.webp",
+          "beat": "rl_three_readers_8",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "rl_gu",
+          "look": "late",
+          "file": "v6/npc-robed-elder.webp",
+          "beat": "rl_four_three_6",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "rl2_lu",
+          "look": "late",
+          "file": "v6/rl-lu-late.webp",
+          "beat": "rl_later_letters_14",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "rl_sun",
+          "look": "late",
+          "file": "v6/npc-robed-elder.webp",
+          "beat": "rl_sun_late_10",
+          "size": "auto 150%",
+          "position": "center top"
+        }
+      ]
+    },
+    "twelfth-life-v1": {
+      "version": "twelfth-life-1.0.0",
+      "contentSHA256": "718d15fbcd9e54cb6d69ce67faaf1f926eb7183f39ae0f5593c2878c546d31ff",
+      "sourceBeats": 375,
+      "visitedBeats": 375,
+      "unvisited": [],
+      "choiceOptions": 66,
+      "endings": [
+        "rl_watch_after",
+        "rl_letter_after"
+      ],
+      "longestPassiveGap": 18,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": [
+        {
+          "id": "rl_sun",
+          "look": "elder",
+          "file": "v6/npc-martial-elder.webp",
+          "beat": "rl_fair_seat_8",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "rl_lu",
+          "look": "mid",
+          "file": "v6/npc-mature-woman.webp",
+          "beat": "rl_five_years_10",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "rl_emperor",
+          "look": "late",
+          "file": "v6/npc-martial-elder-b.webp",
+          "beat": "rl_three_readers_8",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "rl_gu",
+          "look": "late",
+          "file": "v6/npc-robed-elder.webp",
+          "beat": "rl_four_three_6",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "rl_lu",
+          "look": "late",
+          "file": "v6/npc-mature-woman-b.webp",
+          "beat": "rl_later_letters_14",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "rl_sun",
+          "look": "late",
+          "file": "v6/npc-robed-elder.webp",
+          "beat": "rl_sun_late_10",
+          "size": "auto 150%",
+          "position": "center top"
+        }
+      ]
+    },
+    "luoyang": {
+      "version": "luoyang-1.0.0",
+      "contentSHA256": "aabd55620da02b7ce899bfc80344df17394c9a352aa4f5af8d2162efe74c6288",
+      "sourceBeats": 76,
+      "visitedBeats": 76,
+      "unvisited": [],
+      "choiceOptions": 18,
+      "endings": [
+        "ly_trial_after",
+        "ly_post_after"
+      ],
+      "longestPassiveGap": 6,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "lm_xu",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/lm-xu-amused.webp",
+          "beat": "ly_ten_li_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_shi",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/lm-shi-intent.webp",
+          "beat": "ly_shi_half_sword_2",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_xu",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/lm-xu-intent.webp",
+          "beat": "ly_both_hands_7",
+          "kind": "dedicated"
+        }
+      ],
+      "appearanceTriggers": []
+    },
+    "bamboo": {
+      "version": "bamboo-1.0.0",
+      "contentSHA256": "cbaf1b334b2379e4dd5bd4dbf232321a2006e6dc9c382a61b54c75b8bbd5a3a3",
+      "sourceBeats": 86,
+      "visitedBeats": 86,
+      "unvisited": [],
+      "choiceOptions": 14,
+      "endings": [
+        "bb_palm_after",
+        "bb_tea_after"
+      ],
+      "longestPassiveGap": 9,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": []
+    },
+    "xuanmen": {
+      "version": "xuanmen-1.0.0",
+      "contentSHA256": "336de478e64d8715aa4fb07246a3122ad7899a07e8108c06d0ac22a6cc92267a",
+      "sourceBeats": 114,
+      "visitedBeats": 114,
+      "unvisited": [],
+      "choiceOptions": 22,
+      "endings": [
+        "xm_handover_after",
+        "xm_blank_after"
+      ],
+      "longestPassiveGap": 13,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": [
+        {
+          "id": "xm_xuandu",
+          "look": "elder",
+          "file": "v6/npc-robed-elder-b.webp",
+          "beat": "xm_last_day_5",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "id": "xm_wugou",
+          "look": "elder",
+          "file": "v6/npc-martial-elder-b.webp",
+          "beat": "xm_empty_seat_6",
+          "size": "auto 150%",
+          "position": "center top"
+        }
+      ]
+    },
+    "white-stone": {
+      "version": "white-stone-1.0.0",
+      "contentSHA256": "b6c905a519d9242c97389c26c4b4f888a8d59bb941e75796d657c2df9d133b54",
+      "sourceBeats": 132,
+      "visitedBeats": 132,
+      "unvisited": [],
+      "choiceOptions": 26,
+      "endings": [
+        "ws_outside_after",
+        "ws_receiving_after"
+      ],
+      "longestPassiveGap": 11,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": []
+    },
+    "beyond-ranking": {
+      "version": "beyond-ranking-1.0.0",
+      "contentSHA256": "66b35ac898c4f6edd8ed728b271bd2396d5805dfb23fbde9dd4416b90dd3ba29",
+      "sourceBeats": 98,
+      "visitedBeats": 98,
+      "unvisited": [],
+      "choiceOptions": 18,
+      "endings": [
+        "br_reader_after",
+        "br_record_after"
+      ],
+      "longestPassiveGap": 10,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [],
+      "nonNeutralPortraitTriggers": [],
+      "appearanceTriggers": []
+    },
+    "taihua": {
+      "version": "taihua-2.0.0",
+      "contentSHA256": "fd05ba04a02970c12bf905b6ddee379035f0b91b2c76bd82aaf4cc0b801be482",
+      "sourceBeats": 440,
+      "visitedBeats": 440,
+      "unvisited": [],
+      "choiceOptions": 61,
+      "endings": [
+        "th_company",
+        "th_letter",
+        "th_guidance"
+      ],
+      "longestPassiveGap": 18,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "nightCompany",
+        "mountainInquiry"
+      ],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "th_shen",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/th-shen-amused.webp",
+          "beat": "th_mu_question_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "th_shen",
+          "look": "default",
+          "mood": "sharp",
+          "file": "v6/th-shen-intent.webp",
+          "beat": "th_after_six_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "th_huo",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/th-huo-intent.webp",
+          "beat": "th_six_open_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "th_huo",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v6/th-huo-uneasy.webp",
+          "beat": "th_six_open_6",
+          "kind": "dedicated"
+        }
+      ],
+      "appearanceTriggers": [
+        {
+          "id": "th_mu",
+          "look": "v2",
+          "file": "v6/npc-martial-elder.webp",
+          "beat": "th_mu_front_6",
+          "size": "auto 150%",
+          "position": "center top"
+        }
+      ]
+    },
+    "taihua-v1": {
+      "version": "taihua-1.0.0",
+      "contentSHA256": "59e7f5e688ba05c396434b3426eb18ba8894fe2d7578dc8e15eaaa8a5ec24e98",
+      "sourceBeats": 309,
+      "visitedBeats": 309,
+      "unvisited": [],
+      "choiceOptions": 36,
+      "endings": [
+        "th_company",
+        "th_letter"
+      ],
+      "longestPassiveGap": 16,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "nightCompany",
+        "mountainInquiry"
+      ],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "th_shen",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/th-shen-amused.webp",
+          "beat": "th_order_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "th_shen",
+          "look": "default",
+          "mood": "sharp",
+          "file": "v6/th-shen-intent.webp",
+          "beat": "th_after_six_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "th_huo",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v6/th-huo-uneasy.webp",
+          "beat": "th_six_open_6",
+          "kind": "dedicated"
+        },
+        {
+          "id": "th_huo",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/th-huo-intent.webp",
+          "beat": "th_after_six_12",
+          "kind": "dedicated"
+        }
+      ],
+      "appearanceTriggers": []
+    },
+    "longmen": {
+      "version": "longmen-3.0.0",
+      "contentSHA256": "7da7c5bfbbb4ec126a4b136535d5127168482d6cba2c31308bdc2e5f6c4fcf78",
+      "sourceBeats": 356,
+      "visitedBeats": 356,
+      "unvisited": [],
+      "choiceOptions": 50,
+      "endings": [
+        "lm_travel",
+        "lm_home"
+      ],
+      "longestPassiveGap": 20,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "woodenInquiry",
+        "longmenNight"
+      ],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "lm_xu",
+          "look": "default",
+          "mood": "sharp",
+          "file": "v6/lm-xu-intent.webp",
+          "beat": "lm_where_6",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_xu",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/lm-xu-amused.webp",
+          "beat": "lm_where_10",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_shi",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/lm-shi-intent.webp",
+          "beat": "lm_leave_9",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_shi",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v6/lm-shi-uneasy.webp",
+          "beat": "lm_nine_2",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_he",
+          "look": "default",
+          "mood": "sharp",
+          "file": "v6/lm-he-sharp.webp",
+          "beat": "lm_fortyseven_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_he",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/lm-he-amused.webp",
+          "beat": "lm_fortyseven_6",
+          "kind": "dedicated"
+        }
+      ],
+      "appearanceTriggers": []
+    },
+    "longmen-v2": {
+      "version": "longmen-2.0.0",
+      "contentSHA256": "defa8d5958677bc820c70a3e532909ca406a48521625ff235ac31a7789cbe58e",
+      "sourceBeats": 339,
+      "visitedBeats": 339,
+      "unvisited": [],
+      "choiceOptions": 50,
+      "endings": [
+        "lm_travel",
+        "lm_home"
+      ],
+      "longestPassiveGap": 15,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "woodenInquiry",
+        "longmenNight"
+      ],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "lm_xu",
+          "look": "default",
+          "mood": "sharp",
+          "file": "v6/lm-xu-intent.webp",
+          "beat": "lm_where_6",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_xu",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/lm-xu-amused.webp",
+          "beat": "lm_where_10",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_shi",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/lm-shi-intent.webp",
+          "beat": "lm_leave_8",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_shi",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v6/lm-shi-uneasy.webp",
+          "beat": "lm_nine_2",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_he",
+          "look": "default",
+          "mood": "sharp",
+          "file": "v6/lm-he-sharp.webp",
+          "beat": "lm_fortyseven_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_he",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/lm-he-amused.webp",
+          "beat": "lm_fortyseven_6",
+          "kind": "dedicated"
+        }
+      ],
+      "appearanceTriggers": []
+    },
+    "longmen-v1": {
+      "version": "longmen-1.0.0",
+      "contentSHA256": "648aad6c1bd5fb00b28ad0ee8a25c7aed069e506f662f57d745b67081d2cc9b0",
+      "sourceBeats": 271,
+      "visitedBeats": 271,
+      "unvisited": [],
+      "choiceOptions": 42,
+      "endings": [
+        "lm_travel",
+        "lm_home"
+      ],
+      "longestPassiveGap": 15,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "woodenInquiry"
+      ],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "lm_xu",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/lm-xu-intent.webp",
+          "beat": "lm_where_12",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_xu",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/lm-xu-amused.webp",
+          "beat": "lm_leave_20",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_shi",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/lm-shi-intent.webp",
+          "beat": "lm_nine_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_shi",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v6/lm-shi-uneasy.webp",
+          "beat": "lm_nine_2",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_he",
+          "look": "default",
+          "mood": "sharp",
+          "file": "v6/lm-he-sharp.webp",
+          "beat": "lm_fortyseven_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "lm_he",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/lm-he-amused.webp",
+          "beat": "lm_fortyseven_6",
+          "kind": "dedicated"
+        }
+      ],
+      "appearanceTriggers": []
+    },
+    "dongting": {
+      "version": "dongting-1.0.0",
+      "contentSHA256": "57d0c66b8ebee2ee12592348ba64a0f8e24a6faba75ff5bd6b56aef990548f95",
+      "sourceBeats": 155,
+      "visitedBeats": 155,
+      "unvisited": [],
+      "choiceOptions": 22,
+      "endings": [
+        "dt_company",
+        "dt_cargo"
+      ],
+      "longestPassiveGap": 13,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "lakeRest"
+      ],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "dt_liang",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/dt-liang-intent.webp",
+          "beat": "dt_raid_4",
+          "kind": "dedicated"
+        },
+        {
+          "id": "dt_chen",
+          "look": "default",
+          "mood": "sharp",
+          "file": "v6/dt-chen-intent.webp",
+          "beat": "dt_chen_rope_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "dt_chen",
+          "look": "default",
+          "mood": "hurt",
+          "file": "v6/dt-chen-hurt.webp",
+          "beat": "dt_shore_after_7",
+          "kind": "dedicated"
+        },
+        {
+          "id": "dt_liang",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/dt-liang-amused.webp",
+          "beat": "dt_threeyears_3",
+          "kind": "dedicated"
+        }
+      ],
+      "appearanceTriggers": []
+    },
+    "twelfth": {
+      "version": "twelfth-1.0.0",
+      "contentSHA256": "56da5b5ecc124fc65866c17b4f0082f77f1279bbde37f01a180899d997047e4b",
+      "sourceBeats": 236,
+      "visitedBeats": 236,
+      "unvisited": [],
+      "choiceOptions": 36,
+      "endings": [
+        "qw_school",
+        "qw_palace"
+      ],
+      "longestPassiveGap": 11,
+      "sampledRuns": 168,
+      "exhaustive": false,
+      "storyCGs": [
+        "notice"
+      ],
+      "nonNeutralPortraitTriggers": [
+        {
+          "id": "qw_zhao",
+          "look": "age58",
+          "mood": "amused",
+          "file": "v6/qw-zhao-58-amused.webp",
+          "beat": "qw_sun_3",
+          "kind": "dedicated"
+        },
+        {
+          "id": "qw_zhao",
+          "look": "age58",
+          "mood": "sharp",
+          "file": "v6/qw-zhao-58-intent.webp",
+          "beat": "qw_people_after_9",
+          "kind": "dedicated"
+        }
+      ],
+      "appearanceTriggers": [
+        {
+          "id": "qw_zhao",
+          "look": "age44",
+          "file": "v6/qw-zhao-44.webp",
+          "beat": "qw_guard_faces_8",
+          "size": "contain",
+          "position": "center top"
+        },
+        {
+          "id": "qw_zhao",
+          "look": "age52",
+          "file": "v6/qw-zhao-52.webp",
+          "beat": "qw_stone55_11",
+          "size": "contain",
+          "position": "center top"
+        },
+        {
+          "id": "qw_zhao",
+          "look": "age58",
+          "file": "v6/qw-zhao-58.webp",
+          "beat": "qw_sun_9",
+          "size": "contain",
+          "position": "center top"
+        }
+      ]
+    }
+  }
+}

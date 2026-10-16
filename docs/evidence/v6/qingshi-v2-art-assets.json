@@ -1,0 +1,17 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "file": "public/art/v6/cg-qingshi-old-knife.webp",
+      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-5fa14e38-b555-4bcd-be4e-5e858d25ea54.png",
+      "prompt": "Use case: illustration-story. Create one polished Chinese wuxia visual-novel still-life illustration, landscape 3:2. A plain, work-worn single-edged Chinese dao rests diagonally across a folded faded indigo cloth beside an open low wooden storage chest in an ordinary timber duty room. The blade is intact, recently honed but unornamented; the grip is old, dark leather with smooth wear from years of hands. A plain replacement scabbard lies parallel, no jewels or heraldry. Cool early morning light from a paper window meets a small warm pool from an oil lamp. Restrained painterly ink edges, richly textured wood, muted blue-grey and warm brown, convincing hand-made historical objects, tender attention to everyday use. The old grip should be clearly readable in the upper-middle central 45% of the picture, the full weapon mostly visible, space at bottom 30% for an external dialogue overlay. No people, no hands, no blood, no cracks or broken blade, no battlefield, no graves, no mourning emblems, no text, no letters, no calligraphy, no magic or symbolic glowing effects. This is a reusable quiet object scene suitable for packing, repairing, remembering a friend or handing over equipment; do not imply a particular death, ending or battle. Do not add decorative weapons. High quality narrative game painting, neither poster nor product advertisement.",
+      "processing": "Aspect-preserving WebP format conversion only; original PNG retained",
+      "reuse": "Intact ordinary dao, cloth and chest; no death/battle/ending symbols. Reuse only before the blade breaks.",
+      "bytes": 232026,
+      "dimensions": [
+        1536,
+        1024
+      ]
+    }
+  ]
+}

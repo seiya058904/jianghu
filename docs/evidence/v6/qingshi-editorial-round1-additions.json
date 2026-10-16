@@ -1,0 +1,59 @@
+{
+  "status": "ROUND1_EXTENDS_FIRST11_RECORDS_WITH6_STRUCTURE_REVISIONS_UNPUBLISHED",
+  "changes": [
+    {
+      "id": "Q12",
+      "round": 1,
+      "focus": "structure-and-causality",
+      "file": "qingshi-career.mjs",
+      "reason": "所有人无伤时选亲核仍要报伤药，结算须按真实伤情分流。",
+      "before": "choose('home70',[",
+      "after": "choose('driver_settlement',["
+    },
+    {
+      "id": "Q13",
+      "round": 1,
+      "focus": "structure-and-causality",
+      "file": "qingshi-career.mjs",
+      "reason": "先亲核不预设车夫受伤。",
+      "before": "y|王爷过口了，车夫也得有人点到。伤药和下趟差事，一起报。",
+      "after": "y|王爷过口了，车夫也得有人点到。后车的工钱和下趟差事，一起报。"
+    },
+    {
+      "id": "Q14",
+      "round": 1,
+      "focus": "structure-and-causality",
+      "file": "qingshi-career.mjs",
+      "reason": "后结算支的复核代价留到实际核单，不提前与归府时序混写。",
+      "before": "n|你隔日重走窄口，才把后车人员核完；那半日多跑的工钱，由你自己出。",
+      "after": "n|你把未结的名单放在值房门边，约好次日先查后车，不在回报末尾填上一句诸人皆安。"
+    },
+    {
+      "id": "Q15",
+      "round": 1,
+      "focus": "structure-and-causality",
+      "file": "qingshi-career.mjs",
+      "reason": "用四格结算确认无伤/伤与当日/隔日核验，不给准备充分者凭空添药账。",
+      "before": "part('home70','qs_home70','qs_zhaodaughter',",
+      "after": "part('driver_settlement','qs_guard66','qs_wang',`n|归府后，后车的名单摊在值房案上。你把已交清与待补的项目分开。`);\n iff('qs_exit_drill and qs_carriage_drill and qs_settled_driver',`n|没有人受伤，也没有伤药这笔钱。当日原班工钱结清，你亲自问过接下一趟的人，才把名单合上。`);\n iff('qs_exit_drill and qs_carriage_drill and not qs_settled_driver',`n|没有人受伤，原班工钱照领。你隔日多跑半日复核窄口，自己的工钱自己出，没有给车夫添一笔并不存在的药钱。`);\n iff('not (qs_exit_drill and qs_carriage_drill) and qs_settled_driver',`n|车夫的腿伤了。你当日把药钱与误差银分开交清，护卫接下他暂时不能跑的那趟，不能拿殿下已到家抵掉这一项。`);\n iff('not (qs_exit_drill and qs_carriage_drill) and not qs_settled_driver',`n|车夫的腿伤了。你隔日才核完后车，药钱与误差银仍须照发；多跑半日复核的工钱由你自己出，迟交的日期也留在单上。`);\n go('home70');\n part('home70','qs_home70','qs_zhaodaughter',"
+    },
+    {
+      "id": "Q16",
+      "round": 1,
+      "focus": "structure-and-causality",
+      "file": "qingshi-last.mjs",
+      "reason": "阿满只学口令未练回程时，不能一律自称那处走过。",
+      "before": "iff('qs_exit_drill and qs_army_drill',`qs_runner~intent|这里我走过，叫不应有另一处能接。我先去认人。",
+      "after": "iff('qs_exit_drill and qs_army_drill',`qs_runner~intent|这两处有实走过的当值人。我先去核名字，旧班换了就回来报。"
+    },
+    {
+      "id": "Q17",
+      "round": 1,
+      "focus": "structure-and-causality",
+      "file": "qingshi-career.mjs",
+      "reason": "少年约信有身体到场的兑现，借回乡谈话确认，不另造年龄错误的墓地舞台。",
+      "before": "go('army76');",
+      "after": "iff('qs_han_word == 1',`y|那封信，我方才在坟前念过了。京城的饼铺写了半页，他当年非要问这个。\nqs_zhaodaughter|我听人说过，他坐在墙上总想着跑远。\nn|她替你压平折了多年的信角，另找了干布包好。纸仍交回你手里，不当作谁家失而复得的家书。`,`y|回程住哪儿，我已留在店里。若晚了，按那几处找。\nqs_zhaodaughter|那走的时候也说一声。别把再见又留给墙上的人。`);\n go('army76');"
+    }
+  ]
+}

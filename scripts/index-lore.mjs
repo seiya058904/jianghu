@@ -1,0 +1,10 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+const raw=readFileSync('宋世江湖.md');const lines=raw.toString('utf8').split(/\r?\n/);
+const headings=[];for(let i=0;i<lines.length;i++)if(/^## /.test(lines[i]))headings.push({title:lines[i].slice(3),start:i+1});
+const complete=new Set(['江湖总叙','武途深浅','榜谱旧制','天下门庭','江湖武会','河中旧事·截浪刀','玄门客过河中','武陵剑魁问河中','龙门秋会','洛阳龙虎风云会','海天门旧事·归潮岛','洞庭旧事·照水刀梁照水','太玄旧录·宁无极所评天下十人']);
+const partial=new Set(['六门旧会·太华试序','竹院夜论','金陵南岳旧史·一剑两脉']);
+const sections=headings.map((h,i)=>{const end=(headings[i+1]?.start??lines.length+1)-1;const body=lines.slice(h.start,end);return {...h,end,review:complete.has(h.title)?'section-read':partial.has(h.title)?'partial-read':'indexed-only',opening:body.filter(x=>x.trim()).slice(0,12),subheadings:body.map((text,j)=>({text,line:h.start+j+1})).filter(x=>/^### /.test(x.text))}});
+writeFileSync('docs/lore/source-index.json',JSON.stringify({source:'宋世江湖.md',sha256:createHash('sha256').update(raw).digest('hex'),lines:lines.length,sections,warning:'Indexing all sections is not a claim of full close reading. Review status is explicit.'},null,2));
+writeFileSync('docs/lore/LORE_INDEX.md','# 原典索引与审读边界\n\n原文件：`宋世江湖.md`，保持原样。全文结构索引包含所有二级故事及三级分节，精确行号和开篇原文见 `source-index.json`。原文出处均指该文件。\n\n**尚未完成委托要求的 22 组故事全文逐段审读**。下表严格区分整节审读、片段审读与仅定位。未完整审读的故事不用于编造具体年代、人物存亡或改写其结局。不得把全文建立索引称为全文审读完成。\n\n|单元|原文行号|实际审读状态|本篇使用边界|\n|---|---|---|---|\n'+sections.map(s=>`|${s.title}|${s.start}–${s.end}|${s.review==='section-read'?'已读该二级单元':s.review==='partial-read'?'片段已读，未完整':'已定位，未完整审读'}|${complete.has(s.title)?'只取制度或交锋/协作逻辑，不搬演原作胜负':'不采用具体人物生死、战绩或年代'}|`).join('\n')+'\n\n本游戏全部出场人物、青蒲渡、石梁馆、雁回镖行与水陆小会均为原创。时代放在最近一届洛阳龙虎风云会后，不让不同世代的名家同台；无原作顶层人物被主角击败。\n');
+console.log(`Indexed ${sections.length} sections; source unchanged.`);

@@ -1,0 +1,72 @@
+{
+  "status": "SHARED_SEA_RIGGING_AND_STRICT_COMPAT_VERIFIED_NOT_WHOLE_V6",
+  "newImages": 1,
+  "newUniqueCGFiles": 1,
+  "CGWorkReferences": 2,
+  "newIdentities": 0,
+  "currentContentSHA256": {
+    "sea": "cdf7e31ae6af2d0ee606715bcdf5ff85ce0adfe1f0b92f3e3ddf573ed3378cca",
+    "sea-tide": "2c5d168105b00e52f0181bc9a64f050c66e6e450249a39dfc7cbc73bfe246375"
+  },
+  "frozen": {
+    "story/sea-before-rigging.ink": "24f74d8bf0a5858bb40472f8e01334797cc926e988efc5c01dc991d068e153dd",
+    "src/generated/sea-before-rigging.json": "4061e07b8c3865937b8b83e6954c11d147f7faba237fcadad2c80d0ea7066dbd",
+    "story/sea-tide-before-rigging.ink": "e0e05e393b8203792c3a819021f873d862748ec18df4c3148129ffba93216ad6",
+    "src/generated/sea-tide-before-rigging.json": "5eb442173277b4b85fc540b8805013d2b8c7ebfa549556122499c1dcd53a8471"
+  },
+  "nodeFullPass": 155,
+  "actualFullRoutes": [
+    {
+      "actualBrowserInputs": true,
+      "externalHuman": false,
+      "beats": 176,
+      "choices": 23,
+      "ending": "sr_open_courtyard",
+      "errors": []
+    },
+    {
+      "actualBrowserInputs": true,
+      "externalHuman": false,
+      "beats": 167,
+      "choices": 23,
+      "ending": "sr_next_harbor",
+      "errors": []
+    },
+    {
+      "actualBrowserInputs": true,
+      "externalHuman": false,
+      "beats": 156,
+      "choices": 21,
+      "ending": "st_next_step",
+      "errors": []
+    },
+    {
+      "actualBrowserInputs": true,
+      "externalHuman": false,
+      "beats": 156,
+      "choices": 21,
+      "ending": "st_next_watch",
+      "errors": []
+    }
+  ],
+  "browserPass": 16,
+  "assetBrowserPass": 2,
+  "registeredOfflineWorks": 30,
+  "frozenMigrationChunks": 6,
+  "counts": {
+    "speakingNPC": 302,
+    "registeredDedicatedUsed": 27,
+    "independentDedicatedUsed": 27,
+    "charactersWithThreeImagesAtSameAppearance": 18,
+    "registeredArchetypesUsed": 12,
+    "distinctBackgroundFiles": 30,
+    "distinctCGFiles": 16,
+    "referencedBytes": 22296172
+  },
+  "limits": [
+    "Two core groups still CG0; other core/midstory character/age/action/literary/visual/delivery gates remain.",
+    "Templates and borrowed local backgrounds are not dedicated overseas identity/geography acceptance.",
+    "No physical Android, external aesthetic or human reading-time claim.",
+    "Graph metadata_changed; current source/frozen/runtime/browser evidence used."
+  ]
+}

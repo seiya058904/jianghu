@@ -1,0 +1,51 @@
+{
+  "status": "ACTUAL_SOURCE_SNAPSHOTS",
+  "rows": [
+    {
+      "file": "docs/archives/taihua-editorial-rounds/round1/taihua-author.mjs",
+      "sha256": "1a9e1f1ff9d17b9121afb5d37616fb3775dab5fa4a5cbac4224038d221813b5c",
+      "bytes": 32854
+    },
+    {
+      "file": "docs/archives/taihua-editorial-rounds/round1/taihua-elders.mjs",
+      "sha256": "041afb2bd53de52ecccd13b9b3bf0d8ae6c6c64d3e4fec55181624f41b8accde",
+      "bytes": 9794
+    },
+    {
+      "file": "docs/archives/taihua-editorial-rounds/round1/taihua-observation.mjs",
+      "sha256": "092087b6d0b42c7c0d3090ac5085b27f066699f84f42f286ea929f0b83cecf54",
+      "bytes": 8373
+    },
+    {
+      "file": "docs/archives/taihua-editorial-rounds/round2/taihua-author.mjs",
+      "sha256": "97da88b0ea19ce351db6df1d2e1f128ebb29af0f6c35804bc3a741e16b894478",
+      "bytes": 33090
+    },
+    {
+      "file": "docs/archives/taihua-editorial-rounds/round2/taihua-elders.mjs",
+      "sha256": "ccab6137aed04862a5ff08eb028758ff685cc5700a2729a3ac696a9b9fe686c3",
+      "bytes": 9947
+    },
+    {
+      "file": "docs/archives/taihua-editorial-rounds/round2/taihua-observation.mjs",
+      "sha256": "3da74cddbb54fd1a51712c03a6af35574ad8abcfc04d14eae281bf09cb5fc8b3",
+      "bytes": 8313
+    },
+    {
+      "file": "docs/archives/taihua-editorial-rounds/round3/taihua-author.mjs",
+      "sha256": "f44cef22fc2cfff3942bca190e77cfcc3aec99abb727920be7ad9bc99a874f0c",
+      "bytes": 33957
+    },
+    {
+      "file": "docs/archives/taihua-editorial-rounds/round3/taihua-elders.mjs",
+      "sha256": "cae45db792f15ecd77b16fbab3345cc3976cd1a32547512f4b2c9877f6830fe4",
+      "bytes": 9935
+    },
+    {
+      "file": "docs/archives/taihua-editorial-rounds/round3/taihua-observation.mjs",
+      "sha256": "3da74cddbb54fd1a51712c03a6af35574ad8abcfc04d14eae281bf09cb5fc8b3",
+      "bytes": 8313
+    }
+  ],
+  "limits": "Passive historical source, relative imports retained; not runnable from archive folder."
+}

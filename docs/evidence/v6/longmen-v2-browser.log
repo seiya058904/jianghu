@@ -1,0 +1,41 @@
+[WebServer] (node:35400) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 7 tests using 1 worker
+
+(node:40468) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\longmen-v2.spec.ts:7:25 › Longmen V2 actual complete route 0, private point of view and isolation (59.3s)
+  ok 2 tests\longmen-v2.spec.ts:7:25 › Longmen V2 actual complete route 1, private point of view and isolation (56.3s)
+  x  3 tests\longmen-v2.spec.ts:10:1 › Longmen old auto/slot/previous/settings stay accessible at frozen archive and cannot import into new edition (1.0m)
+(node:28176) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 4 tests\longmen-v2.spec.ts:13:1 › Longmen new night CG and frozen old pack both restore unseen scenes offline at root and subpath (5.0s)
+  ok 5 tests\longmen-v2.spec.ts:16:1 › Four night questions scroll and keyboard-select at seven viewports with enlarged type (3.1s)
+  ok 6 tests\longmen.spec.ts:6:26 › Longmen library entry, real complete route 0, explicit time jump and isolated reload (41.8s)
+  ok 7 tests\longmen.spec.ts:6:26 › Longmen library entry, real complete route 1, explicit time jump and isolated reload (40.8s)
+
+
+  1) tests\longmen-v2.spec.ts:10:1 › Longmen old auto/slot/previous/settings stay accessible at frozen archive and cannot import into new edition
+
+    Test timeout of 60000ms exceeded.
+
+    Error: locator.click: Test timeout of 60000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: '回到封面', exact: true })
+
+
+       9 | });
+      10 | test('Longmen old auto/slot/previous/settings stay accessible at frozen archive and cannot import into new edition',async({page})=>{
+    > 11 |  const s=new VNRuntime(old,'longmen-1.0.0');while(!s.frame.choices.length)s.advance();const raw=JSON.stringify(s.save());await page.addInitScript(({previous,raw,prefix})=>{for(const key of ['auto','slot1','previous'])localStorage.setItem(previous+key,raw);localStorage.setItem(previous+'settings',JSON.stringify({size:24,speed:0,reduced:true,theme:'night'}));localStorage.setItem(prefix+'settings',JSON.stringify({size:20,speed:0,reduced:true}))},{previous,raw,prefix});await page.goto('/longmen.html');await expect(page.getByRole('button',{name:'去借那把木刀'})).toBeVisible();await page.getByRole('link',{name:'旧稿及旧存档',exact:true}).click();await page.getByRole('button',{name:/继续这一场/}).click();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(await page.evaluate(({previous})=>['slot1','previous'].map(k=>localStorage.getItem(previous+k)),{previous})).toEqual([raw,raw]);await page.getByRole('button',{name:'Jianghu 封面',exact:true}).click();await page.getByRole('link',{name:'扩写篇 · 龙门问刀',exact:true}).click();await page.getByRole('button',{name:'去借那把木刀'}).click();await page.getByRole('button',{name:'存档',exact:true}).click();const before=await page.evaluate(prefix=>localStorage.getItem(prefix+'auto'),prefix);await page.locator('#import-file').setInputFiles({name:'old-longmen.json',mimeType:'application/json',buffer:Buffer.from(raw)});await expect(page.getByRole('dialog')).toContainText('作品或版本不兼容');expect(await page.evaluate(prefix=>localStorage.getItem(prefix+'auto'),prefix)).toBe(before);expect(await page.evaluate(previous=>localStorage.getItem(previous+'auto'),previous)).toBe(raw);
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^
+      12 | });
+      13 | test('Longmen new night CG and frozen old pack both restore unseen scenes offline at root and subpath',async({browser})=>{
+      14 |  for(const root of ['http://127.0.0.1:4173/','http://127.0.0.1:4175/Jianghu/'])for(const [slug,title,data,version,key,target]of [['longmen','龙门问刀',content,'longmen-2.0.0',prefix,'lm_night_private_2'],['longmen-v1','龙门秋会 · 旧稿',old,'longmen-1.0.0',previous,'lm_qinghe_third_1']] as const){const context=await browser.newContext(),page=await context.newPage();await page.goto(root+slug+'.html');await page.evaluate(async()=>{await navigator.serviceWorker.ready});await page.reload();await page.getByRole('button',{name:'设置',exact:true}).click();await page.getByRole('button',{name:`下载《${title}》离线资源`,exact:true}).click();await expect(page.getByRole('dialog')).toContainText('离线资源已备好');await page.keyboard.press('Escape');const s=new VNRuntime(data,version);while(s.frame.id!==target)s.frame.choices.length?s.choose(s.frame.choices[0].id):s.advance();await page.evaluate(({key,raw})=>{localStorage.setItem(key+'auto',raw);localStorage.setItem(key+'settings',JSON.stringify({size:24,speed:0,reduced:true}))},{key,raw:JSON.stringify(s.save())});await context.setOffline(true);await page.goto(root+slug+'.html#play');await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',target);await decoded(page);if(slug==='longmen')await expect(page.locator('.play-stage')).toHaveAttribute('data-cg','longmenNight');await page.locator('#advance-button').click();await expect(page.locator('#app')).not.toHaveAttribute('data-beat',target);await context.close()}
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\longmen-v2.spec.ts:11:1052
+
+    Error Context: test-results\longmen-v2\longmen-v2-Longmen-old-aut-8afa1-not-import-into-new-edition\error-context.md
+
+  1 failed
+    tests\longmen-v2.spec.ts:10:1 › Longmen old auto/slot/previous/settings stay accessible at frozen archive and cannot import into new edition
+  6 passed (4.5m)

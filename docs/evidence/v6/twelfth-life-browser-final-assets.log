@@ -1,0 +1,8 @@
+
+Running 3 tests using 1 worker
+
+  ok 1 tests\twelfth-life.spec.ts:6:1 › Twelfth Life neutral Lu template has no merchant prop at sealing and retains late-age separation (1.4s)
+  ok 2 tests\twelfth-life.spec.ts:14:1 › Twelfth Life downloads late Sun resources unvisited, offline at root and subpath (876ms)
+  ok 3 tests\twelfth-life.spec.ts:17:1 › Twelfth Life sealed books, late responsibility reply and deceased teacher fit seven sizes (3.5s)
+
+  3 passed (6.8s)

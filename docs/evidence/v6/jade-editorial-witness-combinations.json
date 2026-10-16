@@ -1,0 +1,45 @@
+{
+  "count": 8,
+  "rows": [
+    {
+      "surface": true,
+      "report": "jd_take_duty",
+      "post": "jd_stay_grain"
+    },
+    {
+      "surface": true,
+      "report": "jd_take_duty",
+      "post": "jd_stay_records"
+    },
+    {
+      "surface": true,
+      "report": "jd_send_plain_report",
+      "post": "jd_stay_grain"
+    },
+    {
+      "surface": true,
+      "report": "jd_send_plain_report",
+      "post": "jd_stay_records"
+    },
+    {
+      "surface": false,
+      "report": "jd_take_duty",
+      "post": "jd_stay_grain"
+    },
+    {
+      "surface": false,
+      "report": "jd_take_duty",
+      "post": "jd_stay_records"
+    },
+    {
+      "surface": false,
+      "report": "jd_send_plain_report",
+      "post": "jd_stay_grain"
+    },
+    {
+      "surface": false,
+      "report": "jd_send_plain_report",
+      "post": "jd_stay_records"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "FIRST_STRUCTURE_POV_DRAFT_UNPUBLISHED",
+  "beats": 356,
+  "options": 50,
+  "ends": [
+    "lm_travel",
+    "lm_home"
+  ],
+  "sampledPaths": 512,
+  "exhaustive": false,
+  "longestPassiveGap": 20,
+  "compilerWarnings": [],
+  "limits": "No production-direction application or browser entry; not full three-round literary or project acceptance."
+}

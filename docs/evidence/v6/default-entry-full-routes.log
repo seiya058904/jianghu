@@ -1,0 +1,30 @@
+[WebServer] (node:36204) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 17 tests using 3 workers
+
+(node:25676) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:37732) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:26456) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  3 tests\campaign-v6.spec.ts:9:55 › default V6 actual browser complete harbor (2.6m)
+  ok  1 tests\campaign-v6.spec.ts:9:55 › default V6 actual browser complete name (2.6m)
+  ok  2 tests\campaign-v6.spec.ts:9:55 › default V6 actual browser complete together5 (2.6m)
+  ok  4 tests\campaign-v6.spec.ts:9:55 › default V6 actual browser complete teacher (2.6m)
+  ok  6 tests\campaign-v6.spec.ts:9:55 › default V6 actual browser complete apart (2.6m)
+  ok  5 tests\campaign-v6.spec.ts:9:55 › default V6 actual browser complete captain (2.6m)
+  ok  9 tests\campaign-v6.spec.ts:9:55 › default V6 actual browser complete stay (2.4m)
+  ok  7 tests\campaign-v6.spec.ts:9:55 › default V6 actual browser complete scar (2.6m)
+  ok  8 tests\campaign-v6.spec.ts:9:55 › default V6 actual browser complete lost (2.6m)
+  ok 10 tests\campaign.spec.ts:14:64 › v5 full harbor: actual input, choice reload, chapter, CG and ending (2.2m)
+  ok 11 tests\campaign.spec.ts:14:64 › v5 full name: actual input, choice reload, chapter, CG and ending (2.2m)
+  ok 12 tests\campaign.spec.ts:14:64 › v5 full together5: actual input, choice reload, chapter, CG and ending (2.2m)
+  ok 13 tests\campaign.spec.ts:14:64 › v5 full teacher: actual input, choice reload, chapter, CG and ending (2.2m)
+  ok 15 tests\campaign.spec.ts:14:64 › v5 full apart: actual input, choice reload, chapter, CG and ending (2.2m)
+  ok 14 tests\campaign.spec.ts:14:64 › v5 full captain: actual input, choice reload, chapter, CG and ending (2.2m)
+  ok 16 tests\campaign.spec.ts:14:64 › v5 full scar: actual input, choice reload, chapter, CG and ending (2.2m)
+  ok 17 tests\campaign.spec.ts:14:64 › v5 full lost: actual input, choice reload, chapter, CG and ending (2.2m)
+
+  17 passed (14.5m)

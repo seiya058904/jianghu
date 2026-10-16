@@ -1,0 +1,62 @@
+{
+  "status": "FIXED_FINAL_168_SAMPLE_ZERO_COLLISIONS_AND_BROWSER_VERIFIED",
+  "finding": "Private Xue scene retained Xue at boardhouse; fixed stage scene/cast before elders, cleared stage for anonymous bout recollection. No new image needed.",
+  "collisions": [
+    {
+      "work": "twelfth-life",
+      "beat": "rl_private_xue_6",
+      "cast": [
+        [
+          "rl_boardelder",
+          "v5/npc-elder-male.webp"
+        ],
+        [
+          "qw_xue",
+          "v5/npc-elder-male.webp"
+        ]
+      ]
+    },
+    {
+      "work": "twelfth-life",
+      "beat": "rl_private_xue_7",
+      "cast": [
+        [
+          "rl_boardelder",
+          "v5/npc-elder-male.webp"
+        ],
+        [
+          "qw_xue",
+          "v5/npc-elder-male.webp"
+        ]
+      ]
+    },
+    {
+      "work": "twelfth-life",
+      "beat": "rl_private_xue_8",
+      "cast": [
+        [
+          "rl_boardelder",
+          "v5/npc-elder-male.webp"
+        ],
+        [
+          "qw_xue",
+          "v5/npc-elder-male.webp"
+        ]
+      ]
+    },
+    {
+      "work": "twelfth-life",
+      "beat": "rl_private_xue_9",
+      "cast": [
+        [
+          "rl_boardelder",
+          "v5/npc-elder-male.webp"
+        ],
+        [
+          "qw_xue",
+          "v5/npc-elder-male.webp"
+        ]
+      ]
+    }
+  ]
+}

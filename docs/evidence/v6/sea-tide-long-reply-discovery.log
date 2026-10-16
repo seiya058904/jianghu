@@ -1,0 +1,30 @@
+[WebServer] (node:9632) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:4116) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 tests\sea-tide.spec.ts:17:1 › Sea Tide cover and lifelong choice at seven sizes preserve keyboard access (375ms)
+
+
+  1) tests\sea-tide.spec.ts:17:1 › Sea Tide cover and lifelong choice at seven sizes preserve keyboard access
+
+    Error: continue stays inside the screen after a long reply
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      17 | test('Sea Tide cover and lifelong choice at seven sizes preserve keyboard access',async({browser})=>{
+      18 |  const context=await browser.newContext({reducedMotion:'reduce'}),page=await context.newPage();const s=new VNRuntime(content,version);while(!s.frame.choices.some(c=>c.id==='st_life_teach'))s.frame.choices.length?s.choose(s.frame.choices[0].id):s.advance();
+    > 19 |  for(const [width,height]of [[360,800],[390,844],[412,915],[800,360],[1366,768],[1440,900],[1920,1080]]){await page.setViewportSize({width,height});await page.goto('/sea-tide.html');await page.locator('.cover-scene').evaluate(async node=>{for(const m of getComputedStyle(node).backgroundImage.matchAll(/url\(["']?([^"')]+)["']?\)/g)){const img=new Image();img.src=m[1];await img.decode()}});await page.evaluate(({raw,prefix})=>{localStorage.setItem(prefix+'auto',raw);localStorage.setItem(prefix+'settings',JSON.stringify({speed:0,reduced:true,size:24}))},{raw:JSON.stringify(s.save()),prefix});await page.goto('/sea-tide.html#play');await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);for(const c of s.frame.choices){const b=page.locator(`[data-choice="${c.id}"]`);await b.focus();await b.scrollIntoViewIfNeeded();const r=await b.boundingBox();expect(r&&r.x>=0&&r.y>=0&&r.x+r.width<=width+1&&r.y+r.height<=height+1).toBeTruthy()}await page.keyboard.press('Enter');await expect(page.locator('#app')).not.toHaveAttribute('data-beat',s.frame.id);const next=await page.locator('#advance-button').boundingBox();expect(next&&next.y>=0&&next.y+next.height<=height+1,'continue stays inside the screen after a long reply').toBeTruthy();if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/sea-tide-layout-${width}.png`})}await context.close();
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+      20 | });
+      21 |
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\sea-tide.spec.ts:19:1352
+
+    Error Context: test-results\sea-tide-long-reply\sea-tide-Sea-Tide-cover-an-9ce0f-es-preserve-keyboard-access\error-context.md
+
+  1 failed
+    tests\sea-tide.spec.ts:17:1 › Sea Tide cover and lifelong choice at seven sizes preserve keyboard access

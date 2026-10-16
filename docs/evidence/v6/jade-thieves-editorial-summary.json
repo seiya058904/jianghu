@@ -1,0 +1,78 @@
+{
+  "status": "VERSIONED_LOCAL_INTEGRATION_VERIFIED_NOT_FULL_GOAL_ACCEPTANCE",
+  "baseline": "ee682af",
+  "rounds": 3,
+  "recordsPerRound": [
+    16,
+    13,
+    22
+  ],
+  "records": 51,
+  "recordsMeaning": "Actual text, flow, variable/metadata and correction records; not51 independent literary scenes.",
+  "beats": 320,
+  "options": 45,
+  "decisionsPerRoute": 22,
+  "endings": 2,
+  "newOrEditedGameArt": 0,
+  "fullUnitPassed": 251,
+  "focusedUnitPassed": 44,
+  "focusedOverlapWithFull": 30,
+  "separateDraftUnitPassed": 14,
+  "build": "PASS",
+  "browser": {
+    "distinctPassed": 84,
+    "mainPassed": 28,
+    "extraDistinctPassed": 56,
+    "extraInitialPassed": 55,
+    "extraInitialFailed": 1,
+    "initialStageDeathTargetProofInvalid": true,
+    "correctiveCoverAndExactDeathStagePassed": 2,
+    "finalStorageMetadataRerunPassed": 2,
+    "actualFullRoutes": 6,
+    "versions": [
+      "currentV2 two viewpoints",
+      "frozenV1 two viewpoints",
+      "second volume two careers"
+    ],
+    "newChoiceContexts": 28,
+    "stageContexts": 18,
+    "roots": [
+      "http://127.0.0.1:4173/",
+      "http://127.0.0.1:4175/Jianghu/"
+    ],
+    "coldEvictedEntries": 3
+  },
+  "offlinePackages": 41,
+  "actualSWGateMessages": 82,
+  "frozenMigrationChunks": 9,
+  "usageSamplingEntries": 44,
+  "protectedFiles": 12,
+  "registeredRasterFiles": 156,
+  "observedRuntimeFiles": 155,
+  "v6RasterFiles": 109,
+  "retainedPrompts": 111,
+  "missingHistoricalPrompts": 45,
+  "assetBytes": 27383425,
+  "byteMismatches": 0,
+  "speakingIDsNotPeople": 308,
+  "dedicatedActorIDs": 32,
+  "dedicatedOwnershipIdentities": 28,
+  "sameAppearanceThreeActualFiles": 19,
+  "verifiedNamedLowerBoundNotFullCensus": 60,
+  "corrections": [
+    "Round3 first test run retained old21/43 expectations; updated for actual22/45.",
+    "Time correction left one stale text assertion; corrected and reran.",
+    "Browser cover title expected extra spaces; corrected to actual retained HTML title.",
+    "Stage death search inherited incorrect boolean negation; corrected exact beat target and explicit DOM beat assertion; reran full18 contexts.",
+    "Test file generator malformed reusable fixture URL concatenation; corrected before build/browser execution."
+  ],
+  "preserved": [
+    "V1 original five authors,Ink,JSON exact frozen bytes and original prefix",
+    "before-CG narrow staging migration only on V1",
+    "second-volume Ink/JSON and original prefix",
+    "canon and main V6/V5"
+  ],
+  "visualLimits": "Existing generic portraits and wide valley framing remain; no dedicated Shen/Jiang age/action set, broken temple/night stage or combat animation acceptance. Text tactics and controls are verified separately.",
+  "externalLimits": "No external human playtime/liking validation, Android device proof, push/deploy/publication or full project acceptance.",
+  "fullGoal": "OPEN"
+}

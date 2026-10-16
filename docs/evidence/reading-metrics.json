@@ -1,0 +1,22 @@
+{
+  "public": {
+    "choices": 14,
+    "chineseCharacters": 6084,
+    "readingMinutesAt350Chars": 18
+  },
+  "quiet": {
+    "choices": 14,
+    "chineseCharacters": 6113,
+    "readingMinutesAt350Chars": 18
+  },
+  "common": {
+    "choices": 14,
+    "chineseCharacters": 6166,
+    "readingMinutesAt350Chars": 18
+  },
+  "leave": {
+    "choices": 14,
+    "chineseCharacters": 6137,
+    "readingMinutesAt350Chars": 18
+  }
+}

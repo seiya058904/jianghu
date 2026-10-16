@@ -1,0 +1,39 @@
+
+> jianghu@1.0.0 story:build
+> node scripts/compile-story.mjs
+
+Authored 22 chapter files; 1006 unique source beats.
+Taihua authored: 440 beats
+V6 preview: 1325 source beats; three midroutes and independent after-scenes.
+Ink main: 16805 source characters; 0 warnings
+Dialogue metadata: { beats: 108, choices: 28, endings: 3 }
+Ink duel: 12041 source characters; 0 warnings
+Campaign metadata: { beats: 1006, choices: 135, endings: 8 }
+Ink campaign: 122888 source characters; 0 warnings
+Taihua metadata: { beats: 440, choices: 61, endings: 3 }
+Ink taihua: 58376 source characters; 0 warnings
+V6 preview metadata: { beats: 1325, choices: 182, endings: 8 }
+Ink campaign-v6: 186345 source characters; 0 warnings
+Longmen metadata: { beats: 339, choices: 50, endings: 2 }
+Ink longmen: 44865 source characters; 0 warnings
+Dongting metadata: { beats: 155, choices: 22, endings: 2 }
+Ink dongting: 21908 source characters; 0 warnings
+Twelfth metadata: { beats: 236, choices: 36, endings: 2 }
+Ink twelfth: 31623 source characters; 0 warnings
+Kuhe metadata: { beats: 299, choices: 40, endings: 2 }
+Ink kuhe: 39496 source characters; 0 warnings
+Qingshi metadata: { beats: 414, choices: 58, endings: 2 }
+Ink qingshi: 55880 source characters; 0 warnings
+file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/scripts/validate-dialogue.mjs:9
+    const fail = message => { throw new Error(`${name}:${i + 1}: ${message}`); };
+                                    ^
+
+Error: two-swords.ink:124: 非法外观 ss_xiezhibai=default
+    at fail (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/scripts/validate-dialogue.mjs:9:37)
+    at validateDialogue (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/scripts/validate-dialogue.mjs:31:74)
+    at file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/scripts/compile-story.mjs:43:65
+    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)
+    at async node:internal/modules/esm/loader:639:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.15.0

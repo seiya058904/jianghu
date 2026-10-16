@@ -1,0 +1,61 @@
+✔ Taihua reproduces erased V2 Shen commitment; draft keeps it until explicitly kept or cancelled in all24 named paths (309.0477ms)
+✔ Deferred brother diagram is delivered on the actual next morning before first elder bout, independently of initial promise (134.4019ms)
+✔ 24 arm/load/future paths carry actual first-leg cost without inventing refused rotation or healthy injured brother (246.7046ms)
+✔ Asked-after-night Xie question is actually revisited before Huo bout; no invented prior request (55.3315ms)
+✔ 512 sampled Taihua draft routes reach every authored beat,63 options and3 endings with canonical victories unchanged (4867.1064ms)
+✔ Published Taihua versions, author modules and canon stay byte-identical; draft cannot consume a published save (14.0104ms)
+✔ Sima private practice asks about the actual patient or rushed bout, never invents a rush on patient path (22.6331ms)
+✔ Guidance is an actual repeat-or-record action with distinct home rehearsal; neither consumes the missed peer session (77.312ms)
+✔ Reserved Zhang instruction is explicitly cancelled only when promised and another future chosen; soup joke depends on actual tray action (111.3262ms)
+✔ Three late routes respect original Shen appointment and injured shoulder, including repeat-vs-mark guidance home work (43.8174ms)
+✖ Taihua frozen v1 bytes, both old routes and save identity survive the expanded edition (2.1016ms)
+✔ Taihua two actual endings replay choices, preserve canon, and fulfil different plans (491.7193ms)
+✔ Taihua seeded branch sample reaches all authored beats without loops or missing actors (4599.625ms)
+✔ early physical overreach plus late heavy lifting carries a delayed cost; prior private agreement changes the actual practice partner (15.9481ms)
+✔ returning early does not erase shoulder damage, and an unmade promise is never invented later (16.6829ms)
+✔ Taihua concrete observation and three-layer escalation preserve each actual combat result (16.359ms)
+✔ Taihua third outcome receives limited actual instruction, misses peers and respects earlier unasked questions (198.467ms)
+✔ Taihua Mu keeps a distinct expanded look, leaves after returning upstage and does not change frozen defaults (9.2369ms)
+✔ Taihua reproduces erased V2 Shen commitment; draft keeps it until explicitly kept or cancelled in all24 named paths (342.9927ms)
+✔ Deferred brother diagram is delivered on the actual next morning before first elder bout, independently of initial promise (122.6261ms)
+✔ 24 arm/load/future paths carry actual first-leg cost without inventing refused rotation or healthy injured brother (269.5311ms)
+✔ Asked-after-night Xie question is actually revisited before Huo bout; no invented prior request (49.699ms)
+✔ 512 sampled Taihua draft routes reach every authored beat,63 options and3 endings with canonical victories unchanged (4761.2462ms)
+✔ Published Taihua versions, author modules and canon stay byte-identical; draft cannot consume a published save (10.8401ms)
+✔ Sima private practice asks about the actual patient or rushed bout, never invents a rush on patient path (17.1309ms)
+✔ Guidance is an actual repeat-or-record action with distinct home rehearsal; neither consumes the missed peer session (78.6974ms)
+✔ Reserved Zhang instruction is explicitly cancelled only when promised and another future chosen; soup joke depends on actual tray action (114.5264ms)
+✔ Three late routes respect original Shen appointment and injured shoulder, including repeat-vs-mark guidance home work (55.4981ms)
+✔ V3 CG starts at actual night bowl/doorway after quarrel, exits before falling leaf; V2 remains frozen (11.1767ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 28
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6217.5652
+
+✖ failing tests:
+
+test at tests\taihua-v1.test.ts:9:1
+✖ Taihua frozen v1 bytes, both old routes and save identity survive the expanded edition (2.1016ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+
+  + 'jianghu:chronicle:taihua:v3:'
+  - 'jianghu:chronicle:taihua:v2:'
+                               ^
+
+      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/taihua-v1.test.ts:11:107)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'jianghu:chronicle:taihua:v3:',
+    expected: 'jianghu:chronicle:taihua:v2:',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

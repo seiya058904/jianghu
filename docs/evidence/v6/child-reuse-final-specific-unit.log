@@ -1,0 +1,12 @@
+✔ Child portrait changes only trusted childhood presentations; both full old V2 paths retain every word, choice, world and restorable snapshot (1076.4459ms)
+✔ Child update cannot accept forged stage, world, commands, wrong edition or missing frozen authority (8.1814ms)
+✔ Generic child remains a youth-template variant; archived child and all later age images stay unchanged (8.8958ms)
+✔ Child source, final bytes and trusted pre-update files match retained provenance (1.0814ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1209.0269

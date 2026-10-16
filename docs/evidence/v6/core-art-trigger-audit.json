@@ -1,0 +1,558 @@
+{
+  "status": "IN_PROGRESS_EVIDENCE_NOT_ACCEPTANCE",
+  "sampledPathsPerWork": 168,
+  "exhaustive": false,
+  "groups": [
+    {
+      "title": "枯河谷",
+      "works": [
+        "kuhe"
+      ],
+      "observedCGs": [
+        "oldPillars"
+      ],
+      "observedDifferentPortraitFiles": [],
+      "declaredCGs": [
+        "oldPillars"
+      ],
+      "allDeclaredBeatsObserved": true,
+      "appearanceTriggers": [
+        {
+          "work": "kuhe",
+          "id": "kh2_kong",
+          "look": "wounded",
+          "file": "v6/kh-kong-wounded.webp",
+          "beat": "kh_lock_15",
+          "size": "contain",
+          "position": "center bottom"
+        },
+        {
+          "work": "kuhe",
+          "id": "kh2_xuan",
+          "look": "empty",
+          "file": "v6/kh-xuan-empty.webp",
+          "beat": "kh_lock_15",
+          "size": "contain",
+          "position": "center bottom"
+        },
+        {
+          "work": "kuhe",
+          "id": "kh2_gui",
+          "look": "wounded",
+          "file": "v6/kh-gui-wounded.webp",
+          "beat": "kh_lock_1",
+          "size": "82% auto",
+          "position": "center bottom"
+        },
+        {
+          "work": "kuhe",
+          "id": "kh2_gui",
+          "look": "locking",
+          "file": "v6/kh-gui-wounded.webp",
+          "beat": "kh_lock_4",
+          "size": "auto 240%",
+          "position": "60% top"
+        }
+      ],
+      "reviewedPoseCameraEvidence": [
+        {
+          "beat": "kh_three_old_5",
+          "look": "kh2_xuan=empty",
+          "meaning": "150staff discarded; actual empty-hand bitmap"
+        },
+        {
+          "beat": "kh_lock_2",
+          "look": "kh2_gui=locking",
+          "meaning": "wounded bitmap reused as single-person close-up; visible face checked360/1440"
+        }
+      ]
+    },
+    {
+      "title": "龙门问刀",
+      "works": [
+        "longmen"
+      ],
+      "observedCGs": [
+        "longmenNight",
+        "woodenInquiry"
+      ],
+      "observedDifferentPortraitFiles": [
+        {
+          "work": "longmen",
+          "id": "lm_xu",
+          "look": "default",
+          "mood": "sharp",
+          "file": "v6/lm-xu-intent.webp",
+          "beat": "lm_where_6",
+          "kind": "dedicated"
+        },
+        {
+          "work": "longmen",
+          "id": "lm_xu",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/lm-xu-amused.webp",
+          "beat": "lm_where_10",
+          "kind": "dedicated"
+        },
+        {
+          "work": "longmen",
+          "id": "lm_shi",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/lm-shi-intent.webp",
+          "beat": "lm_leave_8",
+          "kind": "dedicated"
+        },
+        {
+          "work": "longmen",
+          "id": "lm_shi",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v6/lm-shi-uneasy.webp",
+          "beat": "lm_nine_2",
+          "kind": "dedicated"
+        },
+        {
+          "work": "longmen",
+          "id": "lm_he",
+          "look": "default",
+          "mood": "sharp",
+          "file": "v6/lm-he-sharp.webp",
+          "beat": "lm_fortyseven_3",
+          "kind": "dedicated"
+        },
+        {
+          "work": "longmen",
+          "id": "lm_he",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/lm-he-amused.webp",
+          "beat": "lm_fortyseven_6",
+          "kind": "dedicated"
+        }
+      ],
+      "declaredCGs": [
+        "longmenNight",
+        "woodenInquiry"
+      ],
+      "allDeclaredBeatsObserved": true,
+      "appearanceTriggers": []
+    },
+    {
+      "title": "太华试序",
+      "works": [
+        "taihua"
+      ],
+      "observedCGs": [
+        "mountainInquiry",
+        "nightCompany"
+      ],
+      "observedDifferentPortraitFiles": [
+        {
+          "work": "taihua",
+          "id": "th_shen",
+          "look": "default",
+          "mood": "amused",
+          "file": "v6/th-shen-amused.webp",
+          "beat": "th_mu_question_4",
+          "kind": "dedicated"
+        },
+        {
+          "work": "taihua",
+          "id": "th_shen",
+          "look": "default",
+          "mood": "sharp",
+          "file": "v6/th-shen-intent.webp",
+          "beat": "th_after_six_3",
+          "kind": "dedicated"
+        },
+        {
+          "work": "taihua",
+          "id": "th_huo",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/th-huo-intent.webp",
+          "beat": "th_six_open_3",
+          "kind": "dedicated"
+        },
+        {
+          "work": "taihua",
+          "id": "th_huo",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v6/th-huo-uneasy.webp",
+          "beat": "th_six_open_6",
+          "kind": "dedicated"
+        }
+      ],
+      "declaredCGs": [
+        "mountainInquiry",
+        "nightCompany"
+      ],
+      "allDeclaredBeatsObserved": true,
+      "appearanceTriggers": [
+        {
+          "work": "taihua",
+          "id": "th_mu",
+          "look": "v2",
+          "file": "v6/npc-martial-elder.webp",
+          "beat": "th_mu_front_6",
+          "size": "auto 150%",
+          "position": "center top"
+        }
+      ]
+    },
+    {
+      "title": "青石五友",
+      "works": [
+        "qingshi"
+      ],
+      "observedCGs": [
+        "oldKnife"
+      ],
+      "observedDifferentPortraitFiles": [],
+      "declaredCGs": [
+        "oldKnife"
+      ],
+      "allDeclaredBeatsObserved": true,
+      "appearanceTriggers": [
+        {
+          "work": "qingshi",
+          "id": "qs_xu",
+          "look": "age17",
+          "file": "v6/qs-xu-age17.webp",
+          "beat": "qs_zhao_promise_10",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "work": "qingshi",
+          "id": "qs_xu",
+          "look": "age46",
+          "file": "v6/qs-xu-age46.webp",
+          "beat": "qs_cut_8",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "work": "qingshi",
+          "id": "qs_xu",
+          "look": "age92",
+          "file": "v6/qs-xu-age92.webp",
+          "beat": "qs_breach_1",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "work": "qingshi",
+          "id": "qs_xu",
+          "look": "age92close",
+          "file": "v6/qs-xu-age92.webp",
+          "beat": "qs_oldknife_6",
+          "size": "auto 240%",
+          "position": "center top"
+        }
+      ],
+      "reviewedPoseCameraEvidence": [
+        {
+          "beat": "qs_oldknife_6",
+          "look": "age92close",
+          "type": "single-person closeup reusing age92 file; not new emotional image",
+          "verification": "tests/qingshi-v2.spec.ts seven sizes, screenshots and save/reload"
+        }
+      ]
+    },
+    {
+      "title": "第十二席本人",
+      "works": [
+        "twelfth-life"
+      ],
+      "observedCGs": [
+        "royalLetters"
+      ],
+      "observedDifferentPortraitFiles": [
+        {
+          "work": "twelfth-life",
+          "id": "rl2_lu",
+          "look": "mid",
+          "mood": "amused",
+          "file": "v6/rl-lu-mid-amused.webp",
+          "beat": "rl_fifty_two_6",
+          "kind": "dedicated"
+        },
+        {
+          "work": "twelfth-life",
+          "id": "rl2_lu",
+          "look": "mid",
+          "mood": "intent",
+          "file": "v6/rl-lu-mid-firm.webp",
+          "beat": "rl_capital_four_2",
+          "kind": "dedicated"
+        }
+      ],
+      "declaredCGs": [
+        "royalLetters"
+      ],
+      "allDeclaredBeatsObserved": true,
+      "appearanceTriggers": [
+        {
+          "work": "twelfth-life",
+          "id": "rl_sun",
+          "look": "elder",
+          "file": "v6/npc-martial-elder.webp",
+          "beat": "rl_fair_seat_2",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "work": "twelfth-life",
+          "id": "rl2_lu",
+          "look": "mid",
+          "file": "v6/rl-lu-mid.webp",
+          "beat": "rl_five_years_10",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "work": "twelfth-life",
+          "id": "rl_emperor",
+          "look": "late",
+          "file": "v6/npc-martial-elder-b.webp",
+          "beat": "rl_three_readers_8",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "work": "twelfth-life",
+          "id": "rl_gu",
+          "look": "late",
+          "file": "v6/npc-robed-elder.webp",
+          "beat": "rl_four_three_6",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "work": "twelfth-life",
+          "id": "rl2_lu",
+          "look": "late",
+          "file": "v6/rl-lu-late.webp",
+          "beat": "rl_later_letters_14",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "work": "twelfth-life",
+          "id": "rl_sun",
+          "look": "late",
+          "file": "v6/npc-robed-elder.webp",
+          "beat": "rl_sun_late_10",
+          "size": "auto 150%",
+          "position": "center top"
+        }
+      ]
+    },
+    {
+      "title": "一剑两脉/七问",
+      "works": [
+        "two-swords",
+        "seven-questions"
+      ],
+      "observedCGs": [
+        "workingBooks"
+      ],
+      "observedDifferentPortraitFiles": [
+        {
+          "work": "two-swords",
+          "id": "ss_xiezhibai",
+          "look": "default",
+          "mood": "intent",
+          "file": "v6/ss-xie-intent.webp",
+          "beat": "ss_token_4",
+          "kind": "dedicated"
+        },
+        {
+          "work": "two-swords",
+          "id": "ss_xiezhibai",
+          "look": "default",
+          "mood": "uneasy",
+          "file": "v6/ss-xie-uneasy.webp",
+          "beat": "ss_separate_record_6",
+          "kind": "dedicated"
+        }
+      ],
+      "declaredCGs": [
+        "workingBooks"
+      ],
+      "allDeclaredBeatsObserved": true,
+      "appearanceTriggers": [],
+      "reviewedPoseCameraEvidence": [
+        {
+          "work": "two-swords",
+          "beat": "ss_token_4",
+          "camera": "portrait",
+          "meaning": "Xie questioning close-up with actual intent bitmap; also5 then6 returns normal"
+        },
+        {
+          "work": "seven-questions",
+          "beat": "sq_eighty_one_8",
+          "camera": "portrait",
+          "meaning": "Sima alone at reply;9 restores two-person shot; existing template remains provisional identity"
+        }
+      ]
+    },
+    {
+      "title": "山河璧两卷",
+      "works": [
+        "jade-thieves",
+        "jade"
+      ],
+      "observedCGs": [],
+      "observedDifferentPortraitFiles": [],
+      "declaredCGs": [],
+      "allDeclaredBeatsObserved": true,
+      "appearanceTriggers": [
+        {
+          "work": "jade",
+          "id": "jd_he",
+          "look": "late",
+          "file": "v6/npc-robed-elder-b.webp",
+          "beat": "jd_he_late_10",
+          "size": "auto 100%",
+          "position": "center top"
+        }
+      ]
+    },
+    {
+      "title": "海路两世",
+      "works": [
+        "sea",
+        "sea-tide"
+      ],
+      "observedCGs": [
+        "rigging"
+      ],
+      "observedDifferentPortraitFiles": [],
+      "declaredCGs": [
+        "rigging"
+      ],
+      "allDeclaredBeatsObserved": true,
+      "appearanceTriggers": [
+        {
+          "work": "sea-tide",
+          "id": "st_an",
+          "look": "child",
+          "file": "v5/npc-youth-blue.webp",
+          "beat": "st_four_tests_5",
+          "size": "auto 100%",
+          "position": "center top"
+        },
+        {
+          "work": "sea-tide",
+          "id": "st_an",
+          "look": "youth",
+          "file": "v5/npc-youth-blue.webp",
+          "beat": "st_outer_years_8",
+          "size": "auto 100%",
+          "position": "center top"
+        },
+        {
+          "work": "sea-tide",
+          "id": "st_an",
+          "look": "adult",
+          "file": "v6/npc-martial-adult-b.webp",
+          "beat": "st_after_storm_7",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "work": "sea-tide",
+          "id": "st_ye",
+          "look": "late",
+          "file": "v6/npc-martial-elder-b.webp",
+          "beat": "st_old_depth_8",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "work": "sea-tide",
+          "id": "st_an",
+          "look": "late",
+          "file": "v6/npc-martial-elder.webp",
+          "beat": "st_last_look_12",
+          "size": "auto 150%",
+          "position": "center top"
+        }
+      ],
+      "reviewedPoseCameraEvidence": [
+        {
+          "work": "sea",
+          "beat": "sr_ninety_seven_12/15",
+          "camera": "portrait",
+          "meaning": "Canghe question in either branch, next frame normal; template identity still provisional"
+        },
+        {
+          "work": "sea-tide",
+          "beat": "st_outer_years_4",
+          "camera": "portrait",
+          "meaning": "Coach alone,5 restores coach/An; uses existing template"
+        }
+      ]
+    },
+    {
+      "title": "北枪与乾坤",
+      "works": [
+        "north",
+        "qian-kun"
+      ],
+      "observedCGs": [],
+      "observedDifferentPortraitFiles": [],
+      "declaredCGs": [],
+      "allDeclaredBeatsObserved": true,
+      "appearanceTriggers": [
+        {
+          "work": "north",
+          "id": "nq_yuan",
+          "look": "adult",
+          "file": "v6/npc-martial-adult-b.webp",
+          "beat": "nq_letter_6",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "work": "north",
+          "id": "nq_yuan",
+          "look": "late",
+          "file": "v6/npc-martial-elder.webp",
+          "beat": "nq_what_to_leave_7",
+          "size": "auto 150%",
+          "position": "center top"
+        },
+        {
+          "work": "qian-kun",
+          "id": "qk_xu",
+          "look": "late",
+          "file": "v5/npc-elder.webp",
+          "beat": "qk_trouble_7",
+          "size": "auto 100%",
+          "position": "center top"
+        },
+        {
+          "work": "qian-kun",
+          "id": "qk_manager",
+          "look": "late",
+          "file": "v6/npc-robed-elder.webp",
+          "beat": "qk_first_in_line_9",
+          "size": "auto 150%",
+          "position": "center top"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Does not count action subtitles as actual character poses or camera motion.",
+    "A different neutral-age portrait is not an expression at one age.",
+    "Empty sampled CG sets are real current art gaps, not waived by overall totals.",
+    "Recorded bitmap triggers are not human aesthetic approval or literary completion."
+  ]
+}

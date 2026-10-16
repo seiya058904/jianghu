@@ -1,0 +1,132 @@
+{
+  "status": "FUNCTIONAL_CURRENT_MAIN_VERIFIED_NOT_FINAL_LITERARY_VISUAL_ACCEPTANCE",
+  "contentSHA256": "f9fbb2de979b17ef702ed09606578772d0605fc8e4ad4675da5b792a20d957a8",
+  "actualFullBrowserRoutes": 9,
+  "distinctEndingFamilies": 8,
+  "frozenV5PendingResumeRootSubpath": true,
+  "completeSuiteLog": "main-current-20261016-browser.log",
+  "completeSuitePassed": 10,
+  "storageFinalPassed": 4,
+  "storageFinalLog": "main-current-20261016-storage-final.log",
+  "targetedNodePassed": 8,
+  "targetedNodeLog": "main-current-20261016-unit.log",
+  "namedPeoplePositiveLowerBound": 60,
+  "fullPersonCensus": false,
+  "routes": [
+    {
+      "route": "harbor",
+      "ending": "harbor",
+      "beats": 728,
+      "decisions": 63,
+      "refreshedScenes": [
+        "v6_depart",
+        "v6_contract",
+        "v6_wind",
+        "v6_levee"
+      ]
+    },
+    {
+      "route": "name",
+      "ending": "name",
+      "beats": 728,
+      "decisions": 63,
+      "refreshedScenes": [
+        "v6_depart",
+        "v6_contract",
+        "v6_wind",
+        "v6_levee"
+      ]
+    },
+    {
+      "route": "together5",
+      "ending": "together5",
+      "beats": 731,
+      "decisions": 63,
+      "refreshedScenes": [
+        "v6_depart",
+        "v6_contract",
+        "v6_wind",
+        "v6_levee"
+      ]
+    },
+    {
+      "route": "teacher",
+      "ending": "teacher",
+      "beats": 730,
+      "decisions": 63,
+      "refreshedScenes": [
+        "v6_depart",
+        "v6_contract",
+        "v6_wind",
+        "v6_levee"
+      ]
+    },
+    {
+      "route": "captain",
+      "ending": "captain",
+      "beats": 739,
+      "decisions": 64,
+      "refreshedScenes": [
+        "v6_depart",
+        "v6_contract",
+        "v6_wind",
+        "v6_levee"
+      ]
+    },
+    {
+      "route": "apart",
+      "ending": "apart",
+      "beats": 727,
+      "decisions": 63,
+      "refreshedScenes": [
+        "v6_depart",
+        "v6_contract",
+        "v6_wind",
+        "v6_levee"
+      ]
+    },
+    {
+      "route": "scar",
+      "ending": "scar",
+      "beats": 728,
+      "decisions": 63,
+      "refreshedScenes": [
+        "v6_depart",
+        "v6_contract",
+        "v6_wind",
+        "v6_levee"
+      ]
+    },
+    {
+      "route": "lost",
+      "ending": "lost",
+      "beats": 729,
+      "decisions": 63,
+      "refreshedScenes": [
+        "v6_depart",
+        "v6_contract",
+        "v6_wind",
+        "v6_levee"
+      ]
+    },
+    {
+      "route": "stay",
+      "ending": "harbor",
+      "beats": 681,
+      "decisions": 58,
+      "refreshedScenes": [
+        "v6_depart",
+        "v6_contract",
+        "v6_wind",
+        "v6_levee"
+      ]
+    }
+  ],
+  "openFinding": "Six positive terminal CGs share dawn and two costly endings share quiet; review correct people/consequences using reusable art. Separate from distinct written aftermaths.",
+  "limits": [
+    "Root remains V5 pending actual final delivery gates.",
+    "No external human timing or physical Android verification.",
+    "No assertion that all branches are exhaustively browser-played.",
+    "No requirement invented for eight independently generated ending CGs."
+  ]
+}

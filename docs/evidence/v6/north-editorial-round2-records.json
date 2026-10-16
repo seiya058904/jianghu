@@ -1,0 +1,90 @@
+{
+  "round": 2,
+  "focus": "voices, ordinary wants and bodily interruptions",
+  "records": [
+    {
+      "round": 2,
+      "file": "story/drafts/north/north-yard.mjs",
+      "reason": "让少年阿原有自己的睡意和眼前事，不只为主角讲勤奋的漂亮话。",
+      "before": "nq_yuan~amused|师父没说寅时加教。先进来，别让枪冻得比你还直。",
+      "after": "nq_yuan~amused|卯时！我还当进了贼，门闩差点砸你脚上。\nn|他把门只开半扇，自己去取灯，你赶紧把长枪侧过门框。\nnq_yuan|进来。先别扎，把门给我扶住。"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/north/north-yard.mjs",
+      "reason": "师生斗嘴有灯油、等待和未舍得收枪的具体动作。",
+      "before": "nq_zhou~amused|我叫你练，也没叫你把睡觉全省了。明早扎歪，可别说纸困。",
+      "after": "nq_zhou~amused|明早头一枪扎歪，别跟我说纸困。\nnq_yuan|那我这灯能拿走了吧？油钱又不算他的。\nn|老师摆手，阿原却等你先把枪靠好。你握着发热的杆，还真不大想放。"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/north/north-yard.mjs",
+      "reason": "阿原主动索取带班空间，交班问题由两人当面发生。",
+      "before": "nq_yuan~intent|你要走，我知道。可这班不是拿着你的谱就会开口。",
+      "after": "nq_yuan~intent|走可以。今夜最后一班，你别再一听错就替我接。\ny|我站后面。\nnq_yuan|你站哪儿都行，嘴先借我用一晚。"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/north/north-road.mjs",
+      "reason": "楚师先处理口渴，秦用招数答非所问，保留原典疯劲。",
+      "before": "nq_chu~uneasy|你不累？\ny|累。第五次比第一次多十三招。\nnq_chu~amused|周定川没说错。确实是疯子。\nn|他没拿这十三招替你算一层新境界，叫你把枪放下，先喝水。",
+      "after": "nq_chu~uneasy|水还没喝，你又拎枪？\ny|第五次比第一次多十三招。\nnq_chu~amused|问你累不累，你报账。周定川送来的，果然是疯子。\nn|他把水碗按到你手里。你一口喝急了，呛得弯下腰；老人这回总算等到你点头认累。"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/north/north-road.mjs",
+      "reason": "楚师的提醒指向真实漏读动作，少用总结式训话。",
+      "before": "nq_chu~intent|这也该学。你赢过谁，不替你把他这张纸先看完。",
+      "after": "nq_chu~intent|纸翻过来，背面还有半张。北榜只许你看正面么？\nn|你刚才把折角压住了，展开一看，正是阿原自己补的慢脚一栏。"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/north/north-road.mjs",
+      "reason": "楚师同时有想打与身体承受不住的矛盾，不仅扮演放行导师。",
+      "before": "nq_chu~amused|忘了倒省心。下次来不是来逼我再打三百招。",
+      "after": "nq_chu~amused|下次来，先把枪搁门口。你站那儿不说话，我手就痒，明日又得自己受着。"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/north/north-rain.mjs",
+      "reason": "无名老人首先关心可烧的柴和工具安全，保持身份隐瞒。",
+      "before": "nq_mender|会劈柴么？\ny|会。\nnq_mender|那边。",
+      "after": "nq_mender|会劈柴么？\ny|会。\nnq_mender|斧在门后。那根带钉的别劈。\nn|你俯身才看见钉头锈进木里，先把它另拣出来。"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/north/north-rain.mjs",
+      "reason": "棋局有输赢中的小气与笑意，不把每句都写成否定求胜的道理。",
+      "before": "nq_heng~amused|所以你还是很想赢。",
+      "after": "nq_heng~amused|前二十七盘，怎么没见你替我倒茶？\nn|你才伸手，他自己先倒满，把壶挪到你够得着的地方。\ny|这盘确实赢了。\nnq_heng|嗯。还下么？"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/north/north-rain.mjs",
+      "reason": "六十一招退一步的喜悦在动作中被打断，保留返真差距。",
+      "before": "nq_heng~intent|高兴什么？",
+      "after": "nq_heng~intent|别看脚。枪又高了。\nn|你还没把眼从他退过的那一步收回，掌里的枪已经被压下。"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/north/north-duels.mjs",
+      "reason": "韩世雄认输后仍处理眼前伤势，见证者保持行动与分寸。",
+      "before": "nq_hanshi~intent|正因为近，才知里面多远。",
+      "after": "nq_hanshi~intent|近才看得见。把胳膊给我，别等血滴到我刀鞘里。\nn|他收好刀，先替你摁住伤口，等人拿布来。你要问的那句，只好留到包扎时。"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/north/north-after.mjs",
+      "reason": "顾的坦率借酒席对答出现，秦仍惦记未解的手上问题。",
+      "before": "nq_gu~amused|赢他，和他天赋比我高，有什么冲突？",
+      "after": "nq_gu~amused|他天赋高。我赢了。你这杯酒偏要少喝一口才听得明白？\nn|柳把杯沿放回桌上，笑着摇头；你也笑了，手指还在桌下试那一下晚来的换手。"
+    },
+    {
+      "round": 2,
+      "file": "story/drafts/north/north-after.mjs",
+      "reason": "最后一面写成当时仍可继续的生活，不用不存在的灌功作说明。",
+      "before": "nq_heng~amused|对。\nn|没有一场临别灌功，也没因你是第三个老师的得意门人就提前许下返真。茶喝完，院里仍有要扫的叶。",
+      "after": "nq_heng~amused|对。茶凉了，倒你自己杯里，别兑我这盏。\nn|你摸壶底，还温着。老人把自己的杯子护到另一边，你笑着收手，添过茶，才去扫门边积着的叶。"
+    }
+  ]
+}

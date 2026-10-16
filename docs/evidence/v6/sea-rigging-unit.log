@@ -1,0 +1,13 @@
+✔ sea rigging: unchanged words/choices/world and strict old-save replay at every changed snapshot (137.6425ms)
+✔ sea-tide rigging: unchanged words/choices/world and strict old-save replay at every changed snapshot (84.376ms)
+✔ Rigging detail exits after two frames; closeup is one frame and does not remain on the next person (6.8444ms)
+✔ Rigging migration rejects forged stage, world, commands and wrong edition (19.0009ms)
+✔ Both rigging contexts and each alternative closeup are reachable without new text or choices (4596.8739ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4968.2173

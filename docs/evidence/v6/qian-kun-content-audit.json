@@ -1,0 +1,11 @@
+{
+  "status": "SECOND_VOLUME_DRAFT_NOT_FINAL",
+  "sourceBeats": 256,
+  "visited": 256,
+  "choiceOptions": 48,
+  "decisionsPerRoute": 24,
+  "sampledPaths": 512,
+  "exhaustive": false,
+  "longestPassiveGap": 15,
+  "limits": "Dedicated ages, palm/sleeve ruler/boat splash, real CG and full three editorial rounds remain incomplete."
+}

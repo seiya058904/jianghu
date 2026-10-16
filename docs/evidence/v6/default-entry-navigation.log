@@ -1,0 +1,28 @@
+
+Running 1 test using 1 worker
+
+(node:30744) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 tests\default-entry.spec.ts:32:1 › Library and chronicle return links lead to default V6 at root and subpath (263ms)
+
+
+  1) tests\default-entry.spec.ts:32:1 › Library and chronicle return links lead to default V6 at root and subpath
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/"
+    Received: "./"
+
+      32 | test('Library and chronicle return links lead to default V6 at root and subpath',async({browser})=>{
+      33 |  for(const root of ['http://127.0.0.1:4173/','http://127.0.0.1:4175/Jianghu/']){
+    > 34 |   const context=await browser.newContext(),page=await context.newPage();await page.goto(root);await page.getByRole('button',{name:'选篇',exact:true}).click();const link=page.getByRole('link',{name:'潮生有约',exact:true});expect(await link.getAttribute('href')).toBe(new URL(root).pathname);await link.click();await expect(page.locator('body')).toHaveAttribute('data-content-version','tide-promise-2.0.0');await page.goto(root+'taihua.html');await page.getByRole('link',{name:/回到《潮生有约》/}).click();expect(page.url()).toBe(root);await expect(page.locator('body')).toHaveAttribute('data-content-version','tide-promise-2.0.0');await context.close();
+         |                                                                                                                                                                                                                                                                ^
+      35 |  }
+      36 | });
+      37 |
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\default-entry.spec.ts:34:256
+
+    Error Context: test-results\default-entry-Library-and--6920a-ault-V6-at-root-and-subpath\error-context.md
+
+  1 failed
+    tests\default-entry.spec.ts:32:1 › Library and chronicle return links lead to default V6 at root and subpath

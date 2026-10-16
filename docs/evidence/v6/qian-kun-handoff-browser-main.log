@@ -1,0 +1,29 @@
+
+Running 24 tests using 1 worker
+
+[1/24] tests\heng-art.spec.ts:8:22 › Heng north: real V1 auto/slot remain byte-exact while V2 starts; old entry continues and exports
+[2/24] tests\heng-art.spec.ts:8:22 › Heng qian-kun: real V1 auto/slot remain byte-exact while V2 starts; old entry continues and exports
+[3/24] tests\heng-art.spec.ts:17:1 › Heng two ages, actual expressions, unrevealed name and both CGs render at seven sizes
+[4/24] tests\heng-art.spec.ts:25:1 › Heng shared tea remains readable at night and with missing image on both books
+[5/24] tests\heng-art.spec.ts:29:22 › Heng north: current CG and archived V1 mid-scene boot on fresh offline root and subpath
+[6/24] tests\heng-art.spec.ts:29:22 › Heng qian-kun: current CG and archived V1 mid-scene boot on fresh offline root and subpath
+[7/24] tests\north-editorial.spec.ts:11:156 › North north-3.0.0 actual complete route 0 and three middle reloads
+[8/24] tests\north-editorial.spec.ts:11:156 › North north-3.0.0 actual complete route 1 and three middle reloads
+[9/24] tests\north-editorial.spec.ts:33:1 › North V3 and both archives link with Qian Kun and Notes at seven cover sizes
+[10/24] tests\north-editorial.spec.ts:37:1 › Notes alternate actual from cover traverses every beat before its second ending
+[11/24] tests\qian-kun-editorial.spec.ts:10:167 › Qian Kun qian-kun-2.0.0 actual complete route 0 and three middle reloads
+[12/24] tests\qian-kun-editorial.spec.ts:10:167 › Qian Kun qian-kun-2.0.0 actual complete route 1 and three middle reloads
+[13/24] tests\qian-kun-editorial.spec.ts:10:167 › Qian Kun qian-kun-1.0.0 actual complete route 0 and three middle reloads
+[14/24] tests\qian-kun-editorial.spec.ts:10:167 › Qian Kun qian-kun-1.0.0 actual complete route 1 and three middle reloads
+[15/24] tests\qian-kun-editorial.spec.ts:19:107 › Qian Kun root: V2 slots and previous export exact, V3 wrong-version import rejected
+[16/24] tests\qian-kun-editorial.spec.ts:19:107 › Qian Kun subpath: V2 slots and previous export exact, V3 wrong-version import rejected
+[17/24] tests\qian-kun-editorial.spec.ts:23:1 › Qian Kun sea choices: two methods, two themes and seven viewports accept real input and restore commands
+[18/24] tests\qian-kun-editorial.spec.ts:27:1 › Qian Kun revised stages show people, readable scroll text and reusable tea at three sizes
+[19/24] tests\qian-kun-editorial.spec.ts:31:1 › Qian Kun three covers link to the current first volume at seven sizes
+[20/24] tests\qian-kun.spec.ts:9:1 › actual North then Qian Kun completion unlocks real Notes reading and four teaching notes
+[21/24] tests\qian-kun.spec.ts:15:1 › Qian Kun alternate full life keeps incomplete North from unlocking Notes
+[22/24] tests\qian-kun.spec.ts:18:1 › Notes direct URL, synthetic start and import/load cannot bypass missing readings or replace preserved saves
+[23/24] tests\qian-kun.spec.ts:22:1 › Qian Kun and Notes download unseen chapters offline at root and subpath
+[24/24] tests\qian-kun.spec.ts:25:1 › both covers, linked volumes and long final choices remain readable at seven sizes
+  24 passed (11.2m)
+EXIT=0

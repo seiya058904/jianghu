@@ -1,0 +1,12 @@
+{
+  "targets": [
+    "./assets/jade-thieves-v1-Du-9K4yW.js",
+    "./assets/jade-thieves-before-cg-41CIyEqZ.js",
+    "./art/v6/cg-empty-box.webp"
+  ],
+  "cacheColdBeforeDownload": true,
+  "cacheRestoredByExplicitV1Download": true,
+  "HTTPcacheCleared": true,
+  "freshOfflineV1CGAndData": true,
+  "freshOfflineV2NewCloseChoiceAndResponse": true
+}

@@ -1,0 +1,53 @@
+✖ Dead Ranking complete paths preserve actual three bouts, old case, separate real records and long aftermath (23.2669ms)
+✔ Dead Ranking masked bout reconstructions do not reveal the three actors before they are found (12.1461ms)
+✔ Dead Ranking one early interview choice changes public cost and later witness participation without erasing a defeat (26.592ms)
+✔ Dead Ranking one disclosure decision changes the joint arrival, repair time and consent while all three still own their acts (16.5871ms)
+✖ Dead Ranking optional Wudeng eyes have distinct inner acts, return to Zhou, and keep late people out of deceased scenes (28.0646ms)
+✔ Dead Ranking sampled paths cover every authored beat and both courtroom/career branches (4702.1858ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 4
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4921.492
+
+✖ failing tests:
+
+test at tests\dead-ranking.test.ts:9:1
+✖ Dead Ranking complete paths preserve actual three bouts, old case, separate real records and long aftermath (23.2669ms)
+  AssertionError [ERR_ASSERTION]: 七十余里
+      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/dead-ranking.test.ts:10:608)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\dead-ranking.test.ts:23:1
+✖ Dead Ranking optional Wudeng eyes have distinct inner acts, return to Zhou, and keep late people out of deceased scenes (28.0646ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+    assert.ok(zhou.s.frames.slice(death+1).every(f=>!f.stage.cast.includes('dr_lu')))
+
+      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/dead-ranking.test.ts:25:95)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

@@ -1,0 +1,138 @@
+{
+  "status": "FIRST_CAUSALITY_DRAFT_UNPUBLISHED_NOT_THREE_ROUNDS",
+  "baseline": "cf59779",
+  "canonRead": "Prior full28498–32537 in TWELFTH_LIFE_ADAPTATION_BRIEF; current targeted30198–30480,30670–30790,32372–32537",
+  "frozen": {
+    "宋世江湖.md": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393",
+    "story/twelfth-life.ink": "4e0ee737cb3da7f29a049a71baaced555b51d40fbf82a4adfac10ceb412381f2",
+    "src/generated/twelfth-life.json": "5be356f88c363df1cb7fb84bd397aa9a4210a7ba951519ef47762bf4cc55d528",
+    "story/twelfth-life-v1.ink": "363bc235c070c05163f3f75dcbd7d1b4d43171b503eca44390c7324221f745d8",
+    "src/generated/twelfth-life-v1.json": "718d15fbcd9e54cb6d69ce67faaf1f926eb7183f39ae0f5593c2878c546d31ff",
+    "story/twelfth.ink": "80cdf0c9c232a84bec22ba1e015e26b41a990bb240d5718abc69e12e7a27440c",
+    "src/generated/twelfth.json": "56da5b5ecc124fc65866c17b4f0082f77f1279bbde37f01a180899d997047e4b",
+    "story/twelfth-life-author.mjs": "400175dc31468f509e4a76230f8481467b44ecb895dd90331c10bb336a4ca4ca",
+    "story/twelfth-life-youth.mjs": "5b33088838f44923632d2d0ae7ce0036229a595d896e2baaf21fee2d6ae96969",
+    "story/twelfth-life-names.mjs": "825c5c6a7ddbb1fdda9335661503d50b8e95a88965c3180a7441c09d2e044179",
+    "story/twelfth-life-six.mjs": "c333c699ad53176deba53b39e601e1db7cd02dd0be1f232ce8b1c8655412b76b",
+    "story/twelfth-life-teacher.mjs": "a61abc6b93558a8cc79cb563217ef3098cbfdb518282a5fc7c6a06fd7d7c2598",
+    "story/twelfth-life-defeat.mjs": "be800a64b1487c084ced568ff06de51e45fba79d56eadf250823db291ba0c99b",
+    "story/twelfth-life-capital.mjs": "ebe43d76e4004bde4575eb44eca36132debbe8c2e12deb4fc57717f8122651c2",
+    "story/twelfth-life-seat.mjs": "40c7a6eb4b69b7ce84af9c7bd8081c26322c9d5bf0a98242caa6cacd68d38456",
+    "story/twelfth-life-after.mjs": "85c9c5e6904503fdf1454ef7c4e15478397fdbfd071ccc4e3c8b07b0f8581769"
+  },
+  "changes": [
+    {
+      "id": "R01",
+      "round": 1,
+      "focus": "causality-and-timeline",
+      "file": "twelfth-life-teacher.mjs",
+      "reason": "区分出府第五日购书与拿书后第四日寻人，避免两个相对日序混写。",
+      "before": "n|第四日回去，云中散人已经跑了。",
+      "after": "n|拿书后的第四日再回去，云中散人已经跑了。"
+    },
+    {
+      "id": "R02",
+      "round": 1,
+      "focus": "causality-and-timeline",
+      "file": "twelfth-life-teacher.mjs",
+      "reason": "封谱状态不被回府即取旧册的动作穿透；念头到锁扣停住，仍未开封。",
+      "before": "n|第一年，旧日百招略输的大馆主，再问仍输，已到二百余招。你高兴，陈仍说远。回府想从旧剑里找一点更快的办法，手刚抬，陆已看过来。",
+      "after": "n|第一年，旧日百招略输的大馆主，再问仍输，已到二百余招。你高兴，陈仍说远。回府又想起封箱里的那套旧剑，走到箱前，手刚碰上锁扣，陆已看过来。"
+    },
+    {
+      "id": "R03",
+      "round": 1,
+      "focus": "causality-and-timeline",
+      "file": "twelfth-life-teacher.mjs",
+      "reason": "共同分类支用记得内容拦住开箱的意图，未凭空在第一年已拿出封谱。",
+      "before": "rl_lu~intent|你自己说过，这一页一看就想换。今日输了，也用不着装只是拿出来赏字。\nn|她认得，提醒的正是你那两夜亲指的一册。你没翻，去找陈问输时最后一步；那晚仍只练同一条底。",
+      "after": "rl_lu~intent|你自己说过，这一页一看就想换。锁还没开，先告诉我：想赏字，还是想今晚照着走？\nn|她记得那两夜亲指的一册。你从锁扣上收回手，没有开箱，去找陈问输时最后一步；那晚仍只练同一条底。"
+    },
+    {
+      "id": "R04",
+      "round": 1,
+      "focus": "causality-and-timeline",
+      "file": "twelfth-life-teacher.mjs",
+      "reason": "立即封箱支通过记忆和实走辨混杂，不为补理就违反三年开箱承诺；原晚练代价保留。",
+      "before": "rl_lu~uneasy|你说只是看，我不知道哪处看了便会练。叫陈来一起分清吧。\nn|你没翻，仍多花两夜与陈重理哪些正同旧习纠缠。早先看成那场会的好处还在，这两夜却须现在补上，陈原约另一班的晚练也得挪开。",
+      "after": "rl_lu~uneasy|你说只是想起来，我却不知道脑中这一式同陈教的接在何处。叫他来，先把你真走的分清。\nn|箱仍封着。你在空处把记得的旧式走给陈看，多花两夜重理哪些正同旧习纠缠。早先看成那场会的好处还在，这两夜却须现在补上，陈原约另一班的晚练也得挪开。"
+    },
+    {
+      "id": "R05",
+      "round": 1,
+      "focus": "causality-and-timeline",
+      "file": "twelfth-life-teacher.mjs",
+      "reason": "从封谱之约计三年，不让紧接第一年场景的三年后误成第四年。",
+      "before": "n|三年后，四十出头，重走旧学，最爱的剑也有一半不想用。陈问还换老师么。",
+      "after": "n|约定的三年期满，你已四十出头。重走旧学，最爱的剑也有一半不想用。陈问还换老师么。"
+    },
+    {
+      "id": "R06",
+      "round": 1,
+      "focus": "causality-and-timeline",
+      "file": "twelfth-life-defeat.mjs",
+      "reason": "把陈的关键办法移至两条宫中回应都会抵达的共同场，避免一支有办法一支直接开场。",
+      "before": "n|你出宫时没得一纸不罪的保证。陈听完，答先输，公开真打，输了以后什么也别做。",
+      "after": "n|你出宫时没得一纸不罪的保证，带着兄长那句帮不了回到陈的馆里。"
+    },
+    {
+      "id": "R07",
+      "round": 1,
+      "focus": "causality-and-timeline",
+      "file": "twelfth-life-defeat.mjs",
+      "reason": "两条求旨后回应都亲见陈的办法，公开真打与败后不干涉在场前成立；不会把假输当成破局。",
+      "before": "part('public_xue','rl_public','qw_xue,rl_xuewife',`n|公开挑战薛直。开场前，你远远看见他与妻说话；顾后来传来，他三日没睡，拒也怕被全青溪说怕王爷。",
+      "after": "part('public_xue','rl_chenyard','rl_chen',`n|陈听完宫中这一回，把你交来的问帖翻到正面。\nrl_chen~intent|先输。公开身份，真打。真输了以后，礼、补偿，一样都不送。\ny|若先挑个稳能赢我的？\nrl_chen|问现在就敢接的。不是替他排一场收钱也没有的戏；你接不住，就当众认。\nn|你把原来想写的输赢无罪划去，照常向第十二薛直问手。`);\nstage('rl_public','qw_xue,rl_xuewife');say(`n|公开挑战薛直。开场前，你远远看见他与妻说话；顾后来传来，他三日没睡，拒也怕被全青溪说怕王爷。"
+    },
+    {
+      "id": "R08",
+      "round": 1,
+      "focus": "causality-and-timeline",
+      "file": "twelfth-life-defeat.mjs",
+      "reason": "单方邀约不等于双方定期；保护候补自己的答复权，为后场实际回话留清楚起点。",
+      "before": "n|他没立刻应，你留可再问的日子，没让王府催他必须马上来表明不怕。",
+      "after": "n|他没立刻应，你留一封再问帖，让他自己回话，不把写了日期当成对方已经答应。"
+    },
+    {
+      "id": "R09",
+      "round": 1,
+      "focus": "causality-and-timeline",
+      "file": "twelfth-life-defeat.mjs",
+      "reason": "匿名胜者的再问意愿实际回收，可暂缓也可拒；不新增官方重赛或令对方必须替王爷作证。",
+      "before": "go('capital_one');",
+      "after": "w.iff('rl_anonymous_words',`n|先前化名时真败过的候补托人带回话，仍想再问，只是要先办完馆中常课。你叫顾等他自己定日，不替他把前一次胜负洗成人人都信。`,`n|再问帖有了回话：这一回先不约，馆里的课不能再挪。你把帖子收起，给顾的话只有不催；那次真胜仍留在记录里，没有靠一场硬凑的重赛替自己盖信字。`);\n go('capital_one');"
+    },
+    {
+      "id": "R10",
+      "round": 1,
+      "focus": "causality-and-timeline",
+      "file": "twelfth-life-capital.mjs",
+      "reason": "未教交班的负担说明为退件核回与重新交接，而非王爷已亲接一处却无缘由再扣书吏两日。",
+      "before": "n|你早先保住三晚练习，如今又腾出两夜同他们重走交接。文河晚了两日才回家，回来带一块新裁的小布，没因王爷也少练便当那两日没有。",
+      "after": "n|你早先保住三晚练习，如今又腾出两夜同他们重走交接。文河须把退回的两份回话核完才交班，晚了两日才回家，回来带一块新裁的小布。你停练也没替他补回那两夜。"
+    },
+    {
+      "id": "R11",
+      "round": 1,
+      "focus": "causality-and-timeline",
+      "file": "twelfth-life-after.mjs",
+      "reason": "真正出门看过会的支不说当晚没去看会；明确舍下未看第二场并承担饭重温，私下责任实际发生。",
+      "before": "n|回府那晚，陆没等到你讲新奇招，你说那孩子终于问出一处自己没看明白。她笑，问不去看会的这一晚可肯陪她吃完饭。",
+      "after": "n|第二场刚报名，你记起同陆说过的饭时，带年轻人先回。他一路回头，问下一场是不是更好看，你也想知道，只说这回看见的先记下。回府，陆问那一脚怎么讲了这么久，饭已重新温过一回。"
+    },
+    {
+      "id": "R12",
+      "round": 1,
+      "focus": "causality-and-timeline",
+      "file": "twelfth-life-after.mjs",
+      "reason": "留家写信支用划掉强求传艺与实际错过开手声表现选择，和带人看会再回饭各有成本。",
+      "before": "n|你想起从前只问该如何赢，今天真给那位问候伤势，没要求他伤好了必须来教。没去成下一场热闹的遗憾仍有，今晚你们把一封信一起写完。",
+      "after": "n|你在信末另问那位扶腰的人如今还疼不疼，写到请来两字，自己划掉了。陆将灯拨近一点，外头报下一场开手，你们仍坐着把这一封信一起写完。"
+    }
+  ],
+  "supportChanges": [
+    "Draft author imports existing writer two levels above; output only own draft Ink."
+  ],
+  "newOrEditedArtFiles": 0,
+  "limits": "CurrentV2/V1 and companion remain unchanged; character/rhythm and alternate-route rounds plus versioned browser delivery remain open."
+}

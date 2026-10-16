@@ -1,0 +1,150 @@
+{
+  "status": "SECOND_INTERNAL_EDITORIAL_ROUND_DRAFT",
+  "changes": [
+    {
+      "id": "T24",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "taihua-author.mjs",
+      "reason": "沈用仍要再试的动作回应窘态，减少旁白替她证明输得起。",
+      "before": "n|她笑出声，没有趁你窘迫把那半息要回去。",
+      "after": "n|她笑出声，伸手指你仍在抖的袖口，随后把自己的脚又摆回第一步。"
+    },
+    {
+      "id": "T25",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "taihua-author.mjs",
+      "reason": "师兄等具体过程，替抽象的人物解释换成饭碗与迟疑。",
+      "before": "n|这句不是恭喜，也不像挑错。你在床边坐下，重新想第一掌。",
+      "after": "n|他将饭碗往床边挪了挪，等你坐下。你张了两次嘴，还是先从追着她转的第一掌说起。"
+    },
+    {
+      "id": "T26",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "taihua-author.mjs",
+      "reason": "暂养气支真正坐下来吃，减少连续否定讲情绪。",
+      "before": "n|他把一碗尚温的饭推过来。你没有演刚才那一下，也没有装作没受用。",
+      "after": "n|他把一碗尚温的饭推过来。你捧着碗，没再起身比那一下，先吃了一口。"
+    },
+    {
+      "id": "T27",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "taihua-author.mjs",
+      "reason": "还原原典争执起因：司马评谢急收，谢问他是否打过明澄；不误写为司马须先打过谢才有资格评论。",
+      "before": "part('supper','th_night','th_xie,th_sima,th_ming',`n|夜里小院传来剑声。谢临川刚败明澄，司马承一一句话没让，两手试着试着便到了二十余招。\nth_xie~sharp|你没打过我，倒先说看得出来。\nth_sima~calm|你让我试，便试到底。",
+      "after": "part('supper','th_night','th_xie,th_sima,th_ming',`n|夜里，谢临川在侧院重走白日那三剑。司马承一路过，站住看了一回。\nth_sima~calm|你第六十招以后太想收。\nth_xie~sharp|你打过他？\nth_sima|没有。看得出来。\nth_xie|那来。\nn|原说只试两手。到二十余招，院门已经围上人，谁也没先收。"
+    },
+    {
+      "id": "T28",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "taihua-author.mjs",
+      "reason": "谢不被一句关心立刻疗愈，用接汤和目光表现余怒。",
+      "before": "n|谢临川甩了甩袖口，没有对你的担心道谢，也没把汤推开。",
+      "after": "n|谢临川将剑鞘靠上墙，接碗时碰得沿口一响。他低头喝了一口，仍盯着院里刚才站过的位置。"
+    },
+    {
+      "id": "T29",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "taihua-author.mjs",
+      "reason": "把作者对人物不完美的讲解换成两人的小动作。",
+      "before": "n|你握着碗沿。明澄不是庙里供的像，谢临川也不是输一场就把每句劝告都接住的人。",
+      "after": "n|明澄把碗里的葱拨到一边。谢伸手指他破开的袖口，和尚把那只袖子往身后一藏，又笑了。"
+    },
+    {
+      "id": "T30",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "taihua-author.mjs",
+      "reason": "沈先想下次热闹与对手，保留主动笑闹，减少又一位教招者。",
+      "before": "th_shen|墙头坐得舒服？明日别又只看剑尖。",
+      "after": "th_shen|墙头坐得舒服？下回换你在下头，我带汤来。"
+    },
+    {
+      "id": "T31",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "taihua-author.mjs",
+      "reason": "谢要继续试自己的剑，不向玩家解释记录应如何写。",
+      "before": "th_xie|我还没想好怎么接。不是叫你把这一停记成我已经懂了。",
+      "after": "th_xie|我还没想好怎么接。你先让一让，我把第三剑再走一次。"
+    },
+    {
+      "id": "T32",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "taihua-author.mjs",
+      "reason": "司马真服本场又记着重问的对招。",
+      "before": "th_sima~calm|这回归你。等我能说整句，再跟你计较。",
+      "after": "th_sima~calm|这回归你。先容我喘匀，刚才你等的那一下，我还要问。"
+    },
+    {
+      "id": "T33",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "taihua-observation.mjs",
+      "reason": "预测先留痕再看结果，改掉作者对玩家诚实的解释。",
+      "before": "n|你点头，不因老人没夸便立刻把话改成自己其实早看出反面。",
+      "after": "n|你把这句写在纸边，刚落笔，慕容的左脚又抬起来。"
+    },
+    {
+      "id": "T34",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "taihua-observation.mjs",
+      "reason": "留空间有实际可用位置，不靠旁白宣告对方心理。",
+      "before": "n|你退到门外。谢没因你安静便心情转好，至少不用一边想剑，一边向人证明自己输得起。",
+      "after": "n|你退到门外。谢把你刚才站的那一处也走进去，剑到中途，自己停下来重摆。"
+    },
+    {
+      "id": "T35",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "taihua-observation.mjs",
+      "reason": "保留有一点的原典口吻，用伤袖和复说53留笑中较真。",
+      "before": "n|谢看他一眼，没把剑交给别人。明澄也没忙着改口成全无此意。你站旁边，终于知道“都在等”不能替这几个人写成同一种心思。",
+      "after": "n|谢抬起眼。明澄仍笑着，手里捏住破袖的一头。过了一会儿，谢把剑往膝上横稳，又从第五十三招说起。"
+    },
+    {
+      "id": "T36",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "taihua-elders.mjs",
+      "reason": "明澄识得本门开头而非全能解说，以动作停顿表现共同不懂。",
+      "before": "n|你没有因为他讲得出一段，就把余下都交给他负责懂。",
+      "after": "n|明澄把拇指搭在膝上，比出自己认得的起手；到后来一停，拇指也停了。你在那一格旁点了个空圈。"
+    },
+    {
+      "id": "T37",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "taihua-elders.mjs",
+      "reason": "正序旁观中的失落留出安静。",
+      "before": "n|他没笑，终于不再为你也不懂便得来一句赢过明澄也一样的安慰。",
+      "after": "n|谢的目光仍追着慧觉收回的手。你们都没添下一句，纸上那两指旁边，墨迹已经干了。"
+    },
+    {
+      "id": "T38",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "taihua-elders.mjs",
+      "reason": "固定成绩由场内报席落地，谢的门庭心情以留座表现。",
+      "before": "n|季自己收，陆行礼。谁先不由你看台上想华山追一分便改写。昆仑青正双首，成在这两场不同的人。",
+      "after": "n|季自己收，陆行礼。报席声从坪边传来，昆仑青正双首。谢在膝上握紧手指，直到季走回席前，才让出身边的位置。"
+    },
+    {
+      "id": "T39",
+      "round": 2,
+      "focus": "character-and-rhythm",
+      "file": "taihua-elders.mjs",
+      "reason": "最后饭局用夹菜留住寡言霍与主动沈。",
+      "before": "n|沈问霍三年后来不来，他说师父尚没说。一桌人笑，你也笑，留白并没让这顿饭少了真正的同伴。",
+      "after": "n|沈问霍三年后来不来，他说师父尚没说。她将一碟菜推过去，说那先多吃一口，下回别拿不认得当借口。霍低头夹了菜，一桌人笑。"
+    }
+  ],
+  "newImages": 0
+}

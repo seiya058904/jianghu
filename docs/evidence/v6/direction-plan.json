@@ -1,0 +1,173 @@
+{
+  "status": "IMPLEMENTED_PENDING_FULL_REVIEW",
+  "distinctDirectedScenes": 12,
+  "plan": [
+    {
+      "work": "campaign-v6",
+      "beat": "c_cargo_1",
+      "scene": "v6_quay",
+      "action": "米袋坠下"
+    },
+    {
+      "work": "campaign-v6",
+      "beat": "c_arena_open_1",
+      "scene": "v6_arena",
+      "action": "试艺开场"
+    },
+    {
+      "work": "campaign-v6",
+      "beat": "c_storm_choice_1",
+      "scene": "v6_storm",
+      "action": "回水口 · 两盏灯"
+    },
+    {
+      "work": "campaign-v6",
+      "beat": "c6_v6_wind_1",
+      "scene": "v6_wind",
+      "action": "风向先变"
+    },
+    {
+      "work": "campaign-v6",
+      "beat": "c6_v6_evidence_1",
+      "scene": "v6_arena",
+      "action": "亲见与传闻"
+    },
+    {
+      "work": "campaign-v6",
+      "beat": "c6_v6_stay_pay_13",
+      "scene": "v6_stay",
+      "cg": "timber",
+      "action": "裂处松动 · 人已回到地上"
+    },
+    {
+      "work": "campaign-v6",
+      "beat": "c6_v6_stay_pay_14",
+      "scene": "v6_stay",
+      "cg": "none"
+    },
+    {
+      "work": "taihua",
+      "beat": "th_supper_1",
+      "scene": "th_night",
+      "action": "院内试手"
+    },
+    {
+      "work": "taihua",
+      "beat": "th_supper_5",
+      "scene": "th_night",
+      "cg": "nightCompany",
+      "action": "灯下 · 门边留路"
+    },
+    {
+      "work": "taihua",
+      "beat": "th_supper_7",
+      "scene": "th_night",
+      "cg": "none"
+    },
+    {
+      "work": "taihua",
+      "beat": "th_six_open_4",
+      "scene": "th_old",
+      "cg": "mountainInquiry",
+      "action": "第六手 · 止"
+    },
+    {
+      "work": "taihua",
+      "beat": "th_six_open_5",
+      "scene": "th_old",
+      "cg": "none"
+    },
+    {
+      "work": "longmen",
+      "beat": "lm_wooden_1",
+      "scene": "lm_nine",
+      "action": "秋会来客"
+    },
+    {
+      "work": "longmen",
+      "beat": "lm_wooden_5",
+      "scene": "lm_nine",
+      "cg": "woodenInquiry",
+      "action": "木剑与真剑"
+    },
+    {
+      "work": "longmen",
+      "beat": "lm_wooden_6",
+      "scene": "lm_nine",
+      "cg": "none"
+    },
+    {
+      "work": "longmen",
+      "beat": "lm_wooden_9",
+      "scene": "lm_nine",
+      "cg": "none"
+    },
+    {
+      "work": "longmen",
+      "beat": "lm_nine_1",
+      "scene": "lm_nine",
+      "action": "剑停以后"
+    },
+    {
+      "work": "dongting",
+      "beat": "dt_third_step_4",
+      "scene": "dt_memory",
+      "action": "第一百零六合"
+    },
+    {
+      "work": "dongting",
+      "beat": "dt_raid_return_2",
+      "scene": "dt_raid",
+      "action": "右肩 · 断索"
+    },
+    {
+      "work": "dongting",
+      "beat": "dt_raid_return_17",
+      "scene": "dt_raid",
+      "cg": "lakeRest",
+      "action": "伤肩固定以后 · 听他自己讲"
+    },
+    {
+      "work": "dongting",
+      "beat": "dt_shore_after_1",
+      "scene": "dt_after",
+      "cg": "none"
+    },
+    {
+      "work": "twelfth",
+      "beat": "qw_paid_1",
+      "scene": "qw_private",
+      "action": "四十四岁 · 陪练差事"
+    },
+    {
+      "work": "twelfth",
+      "beat": "qw_named_1",
+      "scene": "qw_board",
+      "cg": "notice",
+      "action": "第十二 · 赵承晏"
+    },
+    {
+      "work": "twelfth",
+      "beat": "qw_named_2",
+      "scene": "qw_board",
+      "action": "第十二 · 赵承晏"
+    },
+    {
+      "work": "twelfth",
+      "beat": "qw_named_3",
+      "scene": "qw_board",
+      "action": "第十二 · 赵承晏"
+    },
+    {
+      "work": "twelfth",
+      "beat": "qw_named_4",
+      "scene": "qw_board",
+      "cg": "none"
+    }
+  ],
+  "limits": [
+    "Captions and existing cast focus are reused; no new animation engine.",
+    "CG browser checks cover loading, restore, aspect ratios and exits, not a full literary review.",
+    "Existing v5 source and archived presentation mappings are unaffected."
+  ]
+}

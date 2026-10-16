@@ -1,0 +1,14 @@
+{
+  "status": "SECOND_INTERNAL_ROUND_DRAFT_NOT_INTEGRATED",
+  "declared": 299,
+  "visited": 299,
+  "options": 66,
+  "endings": [
+    "jd_archivework",
+    "jd_storework"
+  ],
+  "decisions": 28,
+  "samples": 512,
+  "longestPassiveGap": 9,
+  "exhaustive": false
+}

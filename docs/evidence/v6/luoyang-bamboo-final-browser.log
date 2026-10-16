@@ -1,0 +1,8 @@
+
+Running 3 tests using 1 worker
+
+  ok 1 tests\luoyang-bamboo.spec.ts:9:1 › Bamboo locked saved data survives forced click, wrong main prefix, live correct unlock and live relock (732ms)
+  ok 2 tests\luoyang-bamboo.spec.ts:12:1 › Both auxiliary packs restore unvisited later scenes offline at root and subpath (5.2s)
+  ok 3 tests\luoyang-bamboo.spec.ts:15:1 › Both auxiliary casts and reply choices fit seven sizes at enlarged type with keyboard (4.8s)
+
+  3 passed (14.4s)

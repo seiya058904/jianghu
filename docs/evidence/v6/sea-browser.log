@@ -1,0 +1,13 @@
+[WebServer] (node:18868) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:27452) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\sea.spec.ts:5:26 › Sea full route 0 uses actual inputs and survives refresh (46.6s)
+  ok 2 tests\sea.spec.ts:5:26 › Sea full route 1 uses actual inputs and survives refresh (43.9s)
+  ok 3 tests\sea.spec.ts:10:1 › Sea offline root and subpath load an unseen late scene (777ms)
+  ok 4 tests\sea.spec.ts:13:1 › Sea cover, teaching choice and late frame at seven sizes preserve keyboard access (1.5s)
+
+  4 passed (1.6m)

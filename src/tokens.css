@@ -1,0 +1,3 @@
+:root{--paper:#f4f0e6;--paper-trans:#f4f0e6dc;--ink:#293b36;--muted:#71766a;--line:#b8b9ac;--accent:#a54735;--accent-hover:#8b392a;--surface:#eae5d8;--serif:'Noto Serif CJK SC','Source Han Serif SC','Songti SC','SimSun',serif;--reading-size:20px;color-scheme:light}
+:root[data-theme=dark]{--paper:#222b28;--paper-trans:#222b28e8;--ink:#e3e0d5;--muted:#aaa99b;--line:#586057;--accent:#d19074;--accent-hover:#a86d56;--surface:#303b34;color-scheme:dark}
+:root[data-theme=dark] .cover-art{opacity:.22}

@@ -1,0 +1,56 @@
+[WebServer] (node:49900) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 22 tests using 3 workers
+
+(node:31584) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31348) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:37324) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  3 tests\sea-editorial.spec.ts:10:107 › Sea V2 root: old raw saves, backup/export and current progress stay isolated through both edition links (916ms)
+  ok  4 tests\sea-editorial.spec.ts:10:107 › Sea V2 subpath: old raw saves, backup/export and current progress stay isolated through both edition links (567ms)
+  ok  5 tests\sea-editorial.spec.ts:18:1 › Sea V2 common CG, both actual Canghe question closeups and teaching replies work at seven sizes (7.6s)
+  ok  6 tests\sea-editorial.spec.ts:22:1 › Sea V2 CG failure and dark reading retain exact dialogue and next input (426ms)
+  ok  7 tests\sea-editorial.spec.ts:26:107 › Sea editions root: offline cold archive chunks, raw backup and unseen V2 late scene restore independently (697ms)
+  x   8 tests\sea-editorial.spec.ts:26:107 › Sea editions subpath: offline cold archive chunks, raw backup and unseen V2 late scene restore independently (333ms)
+  ok  2 tests\sea-rigging.spec.ts:10:46 › Sea rigging sea-v1 actual full route 0 (46.9s)
+  ok  1 tests\sea.spec.ts:5:26 › Sea full route 0 uses actual inputs and survives refresh (51.7s)
+  ok  9 tests\sea-rigging.spec.ts:10:46 › Sea rigging sea-v1 actual full route 1 (44.1s)
+  ok 10 tests\sea.spec.ts:5:26 › Sea full route 1 uses actual inputs and survives refresh (48.9s)
+  ok 12 tests\sea.spec.ts:10:1 › Sea offline root and subpath load an unseen late scene (811ms)
+  ok 13 tests\sea.spec.ts:13:1 › Sea cover and teaching choice at seven sizes preserve keyboard access (1.7s)
+  ok 11 tests\sea-rigging.spec.ts:10:46 › Sea rigging sea-tide actual full route 0 (41.3s)
+  ok 14 tests\sea-rigging.spec.ts:10:46 › Sea rigging sea-tide actual full route 1 (41.0s)
+  ok 15 tests\sea-rigging.spec.ts:15:22 › Sea rigging sea-v1 old saves retain raw backups, slots and export bytes (618ms)
+  ok 16 tests\sea-rigging.spec.ts:15:22 › Sea rigging sea-tide old saves retain raw backups, slots and export bytes (562ms)
+  ok 17 tests\sea-rigging.spec.ts:19:22 › Sea rigging sea-v1 old pending choices stay pending across restore and reload (221ms)
+  ok 18 tests\sea-rigging.spec.ts:19:22 › Sea rigging sea-tide old pending choices stay pending across restore and reload (226ms)
+  ok 19 tests\sea-rigging.spec.ts:22:1 › Sea rigging CGs and two question closeups fit seven sizes and return to ordinary framing (6.4s)
+  ok 20 tests\sea-rigging.spec.ts:25:1 › Sea rigging night reading and CG failure preserve text and controls (477ms)
+  ok 21 tests\sea-rigging.spec.ts:28:22 › Sea rigging sea-v1 fresh offline page restores frozen saves with the shared CG (1.2s)
+  ok 22 tests\sea-rigging.spec.ts:28:22 › Sea rigging sea-tide fresh offline page restores frozen saves with the shared CG (1.0s)
+
+
+  1) tests\sea-editorial.spec.ts:26:107 › Sea editions subpath: offline cold archive chunks, raw backup and unseen V2 late scene restore independently
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      25 |
+      26 | for(const [label,root]of [['root','http://127.0.0.1:4173/'],['subpath','http://127.0.0.1:4175/Jianghu/']])test(`Sea editions ${label}: offline cold archive chunks, raw backup and unseen V2 late scene restore independently`,async({browser})=>{
+    > 27 |  const context=await browser.newContext(),page=await context.newPage();await page.goto(root+'sea.html');await page.evaluate(async()=>{await navigator.serviceWorker.ready});await page.reload();await page.getByRole('button',{name:'设置',exact:true}).click();await page.getByRole('button',{name:'下载《海路两世 · 中原以外》离线资源',exact:true}).click();await expect(page.getByRole('dialog')).toContainText('离线资源已备好');await page.keyboard.press('Escape');await page.goto(root+'sea-v1.html');const names=['sea-v1-','sea-before-rigging-'].map(prefix=>readdirSync('dist/assets').find(n=>new RegExp('^'+prefix+'[A-Za-z0-9_-]{8}\\.js$').test(n))!);expect(names.every(Boolean)).toBe(true);await page.evaluate(async({root,names})=>{for(const name of names)for(const key of await caches.keys())await(await caches.open(key)).delete(new URL('assets/'+name,root))},{root,names});for(const name of names)expect(await page.evaluate(async url=>Boolean(await caches.match(url)),new URL('assets/'+name,root).href)).toBe(false);await page.getByRole('button',{name:'设置',exact:true}).click();await page.getByRole('button',{name:'下载《海路两世 · 中原以外 · 旧稿》离线资源',exact:true}).click();await expect(page.getByRole('dialog')).toContainText('离线资源已备好');for(const name of names)expect(await page.evaluate(async url=>Boolean(await caches.match(url)),new URL('assets/'+name,root).href)).toBe(true);
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^
+      28 |  const a=at(before,'sea-1.0.0','sr_two_centuries_3'),b=at(current,'sea-2.0.0','sr_old_pages_1',1),raw=JSON.stringify(a.save());await page.evaluate(({v1,v2,raw,fresh})=>{localStorage.setItem(v1+'auto',raw);localStorage.setItem(v2+'auto',fresh);for(const p of [v1,v2])localStorage.setItem(p+'settings',JSON.stringify({speed:0,reduced:true,size:24}))},{v1,v2,raw,fresh:JSON.stringify(b.save())});const cdp=await context.newCDPSession(page);await cdp.send('Network.clearBrowserCache');await cdp.detach();await page.close();const fresh=await context.newPage();await context.setOffline(true);await fresh.goto(root+'sea-v1.html#play');await expect(fresh.locator('.play-stage')).toHaveAttribute('data-cg','rigging');expect(await fresh.evaluate(({v1,raw})=>Object.keys(localStorage).some(k=>k.startsWith(v1+'draft-')&&localStorage.getItem(k)===raw),{v1,raw})).toBe(true);await decoded(fresh);await fresh.goto(root+'sea.html#play');await expect(fresh.locator('#dialogue-visible')).toHaveText(b.frame.text);await decoded(fresh);await fresh.locator('#advance-button').click();b.advance();await expect(fresh.locator('#app')).toHaveAttribute('data-beat',b.frame.id);writeFileSync(`docs/evidence/v6/sea-editorial-offline-${label}.json`,JSON.stringify({downloadedBothEditions:true,coldArchiveChunks:names,HTTPcacheCleared:true,actualOfflineArchiveCGAndRawBackup:true,V2unseenLateSceneAndContinue:true},null,2)+'\n');await context.close();
+      29 | });
+      30 |
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\sea-editorial.spec.ts:27:978
+
+    Error Context: test-results\sea-editorial-Sea-editions-cd31e-scene-restore-independently\error-context.md
+
+  1 failed
+    tests\sea-editorial.spec.ts:26:107 › Sea editions subpath: offline cold archive chunks, raw backup and unseen V2 late scene restore independently
+  21 passed (3.1m)

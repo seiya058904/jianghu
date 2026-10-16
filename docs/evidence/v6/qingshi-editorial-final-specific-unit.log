@@ -1,0 +1,21 @@
+✔ Published Qingshi V2 contradictions are reproduced; draft removes fabricated Han family across letters and both funerary routes (91.2802ms)
+✔ Focused draft cannot alter published sources, compiled saves or canon; all exact baseline hashes remain unchanged (13.6889ms)
+✔ 512 sampled unpublished lives retain all draft beats,60 choices,two personal endings and fixed four deaths/age92 sacrifice (5005.3449ms)
+✔ Eight real carriage choices produce truthful four-cell settlements with no invented medicine bill on the uninjured path (84.1326ms)
+✔ Sixteen Song/private-lesson combinations retain chosen promises and do not claim a second half-day of the deferred lesson (161.1276ms)
+✔ Only a positioned witness reports the terminal call; runner never claims unwalked posts as his own route (43.9658ms)
+✔ Qingshi V3 corrects released V2 Han-family contradictions across letters and both life paths (101.2905ms)
+✔ Released Qingshi V2 bytes stay at frozen addresses; V3 rejects old saves and canon remains unchanged (13.7488ms)
+✔ Qingshi V3 512 sampled lives retain all draft beats,60 choices,two personal endings and fixed four deaths/age92 sacrifice (4857.2631ms)
+✔ Eight real carriage choices produce truthful four-cell settlements with no invented medicine bill on the uninjured path (81.1396ms)
+✔ Sixteen Song/private-lesson combinations retain chosen promises and do not claim a second half-day of the deferred lesson (169.4521ms)
+✔ Only a positioned witness reports the terminal call; runner never claims unwalked posts as his own route (36.7231ms)
+✔ Qingshi V3 keeps all three age files, knife CG before breaking, closeup exit and posthumous withdrawal; V2 remains independent (24.1673ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5656.5249

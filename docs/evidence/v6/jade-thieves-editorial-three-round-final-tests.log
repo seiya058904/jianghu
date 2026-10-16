@@ -1,0 +1,63 @@
+✔ Jade draft reproduces premature order reveal then leaves actual disclosure to the player (60.6142ms)
+✔ Jade draft auction observation and rescue priorities each produce their actual later action (50.1305ms)
+✔ Jade draft sleeve actions name both bodies under either viewpoint and retain different wet-clothes treatment costs (33.8763ms)
+✔ Jade draft early naming and package actions keep distinct shared-life and resource returns (48.3792ms)
+✔ Jade draft repayment alternatives do not re-owe already settled craftsman wages; time and escape stay concrete (48.8698ms)
+✔ Jade draft two viewpoints and both private futures preserve fixed death, ordinary true jade and final objects; saves replay exactly (72.0124ms)
+✔ Jade draft 768 sampled alternatives cover all declared beats/options and keep bounded passive gaps (4451.4275ms)
+✔ Jade draft leaves published first/second volume, canon and original authors exact (2.4344ms)
+✔ Jade draft exact orders are actually spoken only after disclosure in both viewpoints (45.8251ms)
+✖ Jade draft hot meal and early settlement both pay the craftsman, with distinct night and travel costs (10.685ms)
+✔ Jade draft close-range actions retain positions and injury echoes without avoiding Jiang death (85.3399ms)
+✔ Jade draft later work and final paper actions survive either private future (44.5214ms)
+✔ Jade draft both settlement routes keep chronology coherent and held-order route learns threats without reading the other letter (5.5675ms)
+✔ Jade first volume has two complete viewpoints with fixed empty box, mutual rescues, Jiang death and genuine-object journey (56.3215ms)
+✔ Jade each viewpoint keeps the other hidden order and identity until the temple, including knowledge descriptions (22.8203ms)
+✔ Jade one early solo/cooperative decision changes actual auction escape space and cost; informed deception requires a checked door (24.2815ms)
+✔ Jade counterfeit exposure changes a secondary person’s later injury and study delay, not Jiang’s canon death (25.352ms)
+✔ Jade first volume sampled alternatives reach every authored beat and all three escape choices without long passive stretches (3705.7464ms)
+✔ Jade full second-volume paths keep thirteen coins, nine actual store outcomes, fixed breakage and ordinary Lu career (77.6101ms)
+✔ Jade single surface decision has an explicit three-day private cost and changes witnessed middle scenes (19.3156ms)
+✔ Jade seventh grain defence and ninth broken-object event remain different witnessed locations (14.7618ms)
+✔ Jade the early absent-family question changes reunion and winter-money cost in either later post (31.4409ms)
+✔ Jade personal notes have distinct private costs, and He ages only in the late scene (28.8375ms)
+✔ Jade sampled branches cover all authored beats and options with bounded reading gaps (3351.3729ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 23
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5211.43
+
+✖ failing tests:
+
+test at tests\jade-thieves-editorial-draft.test.ts:54:1
+✖ Jade draft hot meal and early settlement both pay the craftsman, with distinct night and travel costs (10.685ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /省下的住钱添了药/. Input:
+
+  '最后谁也没有出手。玉还放在两人之间。\n' +
+    '你们没再追问信上的字句，只约明早出门时先叫醒另一人。兵器各收在够得着的位置，这一夜仍分坐两边。\n' +
+    '江问内廷的人会不会放他，沈问盗门会不会放她。两人都摇头。明早醒来，谁也没有等到一封撤令的信。\n' +
+    '两边都回不去，玉又不能永远抱着跑。沈说做一块假的，江问她会不会，她答不会，但认识一个会的人。\n' +
+    '你说不会这句，比卖钱倒像真话。\n' +
+    '有人会。你若想明夜还抱着它睡，就继续夸。我先去问价。\n' +
+    '他把真玉抱回普通行囊，没再把家传当做自己可以先拿走的理由。\n' +
+    '出庙前你们重算路费。先前少住一宿省下的钱已经添过药，今日饼只买一块，分开仍嫌硬，江笑说下一回再换软的。\n' +
+    '你们按约见人，先交一份订钱，余款等做成再结。老人听到皇家二字先皱眉，等看见玉，反倒愣住，指着那块银补问怎么成了这样。'
+
+      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/jade-thieves-editorial-draft.test.ts:55:435)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '最后谁也没有出手。玉还放在两人之间。\n你们没再追问信上的字句，只约明早出门时先叫醒另一人。兵器各收在够得着的位置，这一夜仍分坐两边。\n江问内廷的人会不会放他，沈问盗门会不会放她。两人都摇头。明早醒来，谁也没有等到一封撤令的信。\n两边都回不去，玉又不能永远抱着跑。沈说做一块假的，江问她会不会，她答不会，但认识一个会的人。\n你说不会这句，比卖钱倒像真话。\n有人会。你若想明夜还抱着它睡，就继续夸。我先去问价。\n他把真玉抱回普通行囊，没再把家传当做自己可以先拿走的理由。\n出庙前你们重算路费。先前少住一宿省下的钱已经添过药，今日饼只买一块，分开仍嫌硬，江笑说下一回再换软的。\n你们按约见人，先交一份订钱，余款等做成再结。老人听到皇家二字先皱眉，等看见玉，反倒愣住，指着那块银补问怎么成了这样。',
+    expected: /省下的住钱添了药/,
+    operator: 'match',
+    diff: 'simple'
+  }

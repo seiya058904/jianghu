@@ -1,0 +1,156 @@
+{
+  "round": 3,
+  "focus": "kept appointments, active sea footing and delayed practical work",
+  "records": [
+    {
+      "round": 3,
+      "file": "story/drafts/qian-kun/qian-kun-slow.mjs",
+      "reason": "三日约定分流到真正返场，不直接跳到数年后学慢。",
+      "before": " choose('slow_questions',[",
+      "after": " choose('office_route',["
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/qian-kun/qian-kun-slow.mjs",
+      "reason": "实际履行三日回来的武学判断与晚出门，不把承诺一直悬到七十一。",
+      "before": " part('slow_questions','qk_oldyard'",
+      "after": " w.out.push('\\n=== office_route ===','{\\n- qk_office_plain:\\n  -> slow_questions\\n- else:\\n  -> office_followup\\n}');\n part('office_followup','qk_office','qk_xu,qk_manager',`n|三日后，你依约回来。许师姐把两处武馆送来的起手图放开，问同一位教习先教哪一班。你原先只答这件我来，今日才看到他们要等的是什么。\nqk_xu~intent|先试这两路。别只看一眼便叫他们都改。\nn|你请送图的门人当面慢走，试到午后，留下两种可行的起手，按各班的基础分开。\nqk_manager|这页我带回。今日你还出门么？\ny|走晚些。这两路先讲完。\nn|出门已过了原拟午时。你把自己的问武往后挪，并没让别人替你把这三日的约抹掉。`);\n go('slow_questions');\n part('slow_questions','qk_oldyard'"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/qian-kun/qian-kun-slow.mjs",
+      "reason": "十四岁问最难收回或比较四器的方法，在五十余学慢时产生不同练法和耗时。",
+      "before": " choose('sixty_eight',[",
+      "after": " iff('qk_weapon_return',`n|你又拿起少年时老收得过满的那杆枪，想把掌里的先备也照样找出来。老人换了站位，你那一点改法便又得重走，练完才去吃早饭。`,`n|你把早年比较刀棍握法的旧页翻出，原想给每种来掌配一处省法。列到第四行，眼前那人的脚已换了；半日上午只得把配好的几行拆开重试。`);\n choose('sixty_eight',["
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/qian-kun/qian-kun-slow.mjs",
+      "reason": "开场两种观察方式在六十八的具体教学里回收，肩骨发现与当夜返真均固定。",
+      "before": " choose('enter_return',[",
+      "after": " iff('qk_first_waist',`n|你想起十四岁把脚补对以后，教习还得托住自己的肘。眼前少年也是整只手在走，你请他把肩与肘一同慢给自己看，陪他多走两轮。`,`n|你想起十四岁请教习从另一侧接的那一回，便也换到少年的侧面。他从这里能自己回身，旧谱正面的那张图却画不出这条路，你另铺一页给带班的人。`);\n choose('enter_return',["
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/qian-kun/qian-kun-head.mjs",
+      "reason": "华山门外的回应方式回到混元门口童子自己的差事，不让等待天然换来服侍。",
+      "before": " stage('qk_gate','qk_zhou,qk_gatechild');",
+      "after": " iff('qk_refusal',`n|等候这些日子，童子照旧挑水、扫阶。你坐在不挡担子的地方，只在他肯停下时问一句，没叫他每日替自己重递一次来意。`,`n|第二日你想请童子转问功课，他说自己只管送水，不替祖师答。你把已铺开的掌谱卷回去，等他送完水，才挪到不挡门的一边。`);\n stage('qk_gate','qk_zhou,qk_gatechild');"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/qian-kun/qian-kun-clouds.mjs",
+      "reason": "从十八岁读假步或读自己的先动到周祖局中，读法不同，仍七十三再二十九。",
+      "before": " choose('one_oh_two',[",
+      "after": " iff('qk_false_step',`n|你又想起十八岁那次假滑，去找老人哪一步其实还站得住。他没有假倒，连给你的空处也是真的；可每逢你伸进去，下一处便只剩他要你走的地方。`,`n|你照十八岁重走自己抢进的办法，先撤那半步，不抢旧空处。周也不追，等你换一条更细的路，才让你看见那一条仍会回到同一个位置。`);\n choose('one_oh_two',["
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/qian-kun/qian-kun-clouds.mjs",
+      "reason": "海船交锋给出四十余招前的主动读脚下机会，而非只在落水后答话。",
+      "before": " go('boat_fifty_one');",
+      "after": " go('boat_tipping');"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/qian-kun/qian-kun-author.mjs",
+      "reason": "独立记录船上观察行动，后场依实际所选回收。",
+      "before": "const numbers=['zhou_change','legacy'];",
+      "after": "const numbers=['zhou_change','legacy','boat_method'];"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/qian-kun/qian-kun-after.mjs",
+      "reason": "新增两种实际身体应对，先有局部能接或落点准但身已送出，仍在51落水。",
+      "before": " part('boat_fifty_one','qk_boat','qk_ye',`n|海船上试五十余。第四十余，你已觉得脚下没处值得站稳，越要稳，那一处越不在原来脚下。",
+      "after": " part('boat_tipping','qk_boat','qk_ye',`n|海船上试手。三十余招，叶无涯脚下也在动，船头抬起时，他那一步已经落下。你刚在甲板认定一处稳的地方，它便随船转了。\nqk_ye~intent|别等船替你站住。`);\n choose('boat_fifty_one',[\n  ['qk_follow_deck_pitch','先让重心随甲板起落，试着接他已换过的那一脚。','qk_boat_method = 1',`n|你松开硬压在板上的脚跟，前两次真接住了起落。叶却又换一处，船头还没回到你等的高度，掌已到肩前。\nqk_ye|眼前这一脚。别等刚才那一下又来。`],\n  ['qk_test_shore_step','仍走岸上最熟的半步，请他真接，看失处究竟在脚还是身。','qk_boat_method = 2',`n|你盯住一枚钉眼，想让熟悉的半步从这里生出来。脚落准了，身子却随着船多送一点，叶不必抢快，便把那一点接了过去。\nqk_ye|踩中了。那又怎样？`],\n ]);\n part('boat_fifty_one','qk_boat','qk_ye',`n|第四十余，你已觉得脚下没处值得站稳，越要稳，那一处越不在原来脚下。"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/qian-kun/qian-kun-after.mjs",
+      "reason": "新船上选择在上船后得到不同复盘，不以固定败局抹掉局部变化或换胜。",
+      "before": " part('wet_again','qk_boat','qk_ye',`n|后来评叶无涯",
+      "after": " part('wet_again','qk_boat','qk_ye',`n|上船以后，你把湿鞋先倒空，叶等你擦过脸才再谈脚下。`);\n iff('qk_boat_method == 1',`y|那两步我接到了，后来又在等船回来。\nqk_ye|接到了。可你又想等它照刚才走。\nn|你把这两步另记，不把最后落水便说成从头全没用。`,`y|钉眼我踩准了，身子还是送出去。\nqk_ye|船不是地上的一块砖。\nn|你把图上那枚钉眼划掉。叶叫你别把整张甲板也跟着画没了，明日还得真站。`);\n say(`n|后来评叶无涯"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/qian-kun/qian-kun-after.mjs",
+      "reason": "出行交接的补下午实际支付；传闻记录需保来源或补一晚；船上判断变为后来的两种亲教。",
+      "before": " choose('late_way',[",
+      "after": " iff('qk_mountain_handoff',`n|去混元院前已说清那半日，管事这回照留下的驿路来问，没有为寻你再跑一趟。你接过该问的一件，当面说哪日试给来人看。`,`n|管事把迟一班驿后重排的会面留到你面前。你回来坐满一下午，逐个接完，原想拆的那一路掌便留到明日；这个下午总算不是又一句以后补。`);\n iff('qk_rumor_plain',`n|记录者抄海外剑事，照你先前记的把师伯祖听到的话、周祖说的若那句话是真的分在两栏。哪栏也没写成你亲见三剑。`,`n|你原页只记了海的方向。记录者问三剑是谁亲见，稿还不能照这几字送出；你们另留一晚，把谁听谁说逐层补清，未核的第二剑仍空着。`);\n iff('qk_boat_method == 1',`n|有一回渡口弟子来问，你先陪他站船上，叫他认起落，再接眼前的脚。你原定午前回，直到他能自己站稳才走，留他下一回真遇浪还得再学的地方。`,`n|渡口弟子照你旧图找一枚钉眼，问为何落准还进不了。你把午后留给他，陪到船边，将那张固定脚点图擦开重画；练的仍是他自己怎样站，不是照抄你那一次。`);\n choose('late_way',["
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/qian-kun/qian-kun-after.mjs",
+      "reason": "未见留白或托问的动作真有后场，回绝不改写成见过与赢过。",
+      "before": " part('first_in_line','qk_headroom','qk_manager,qk_youngscribe',`n|记录者写到总谱第一",
+      "after": " part('first_in_line','qk_headroom','qk_manager,qk_youngscribe',`n|回问旧人那几页，记录者另放到一边。`);\n iff('qk_missing_plain',`n|没见的几行照旧留空，管事先收回原拟出行的车次。你仍想去，等有人答愿见，再请他排路。`,`n|你托问的两家回了话，眼下都不见。管事把未定日期圈起，先不订车；你看完点头，请他有新回话时叫自己，没把递过话写成已上门。`);\n say(`n|记录者写到总谱第一"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/qian-kun/qian-kun-after.mjs",
+      "reason": "先实际画下脚位，才划掉钉眼，不突然从未带出的旧图取物。",
+      "before": "你把图上那枚钉眼划掉。叶叫你别把整张甲板也跟着画没了，明日还得真站。",
+      "after": "你拿纸画下方才认准的钉眼和脚位，又把那枚钉眼划掉。叶叫你别把整张甲板也跟着画没了，明日还得真站。"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/qian-kun/qian-kun-after.mjs",
+      "reason": "海船后回收教能随起落换脚，不把教稳误写成等甲板不动。",
+      "before": "你原定午前回，直到他能自己站稳才走",
+      "after": "你原定午前回，直到他能随着起落换脚才走"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/qian-kun/qian-kun-young.mjs",
+      "reason": "复查第二轮新增明日买盐一句，在三日后收徒前落实补买与核零钱，不添另一个悬约。",
+      "before": "n|三日后，多年不收徒的司马衡来。",
+      "after": "n|你第二日依言先拿钱，再去买盐，回来让许师姐把盐和零钱一同过目。三日后，多年不收徒的司马衡来。"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/qian-kun/qian-kun-after.mjs",
+      "reason": "交接不足的停课在接掌后首次出访发生，补三日时已修权限；不写先已说清又在80余仍错误停课，或九年一直不补边界。",
+      "before": "接掌时先排传功，其他边界迟迟才说清。这次出门，一项传承争论被当作普通馆务压下，两边不敢越权，课停了一月。管事后来补问，你得留三日逐个试学徒的功，别人也少了一月原课；你不能拿自己正问榜外更深作不用回来的理由。",
+      "after": "接掌那年，你先排传功，其他几项却没逐人试过。头一次出访，一项传承争论被当作普通馆务压下，两边不敢越权，课停了一月。那次回来，管事补问，你留三日逐个试学徒的功，把以后谁能来问一并说清；别人少掉的一月原课，仍不能从旧簿上划没。"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/qian-kun/qian-kun-head.mjs",
+      "reason": "完整全第二项路线审读发现第九日开门后才写第二日等候；日常等候移到九日开门前。",
+      "before": " part('nine_days','qk_gate','qk_gatechild',`n|到了混元院，童子不认这个总谱第一。问找祖师做什么，你答打架。祖师不见，你便等。第九日，院门终于开了。\nqk_gatechild~uneasy|还是那个人。每天都说等有空。\nn|你没借掌门印叫童子先证明自己认得太极，站起时只拍去衣上的尘。`);",
+      "after": " part('nine_days','qk_gate','qk_gatechild',`n|到了混元院，童子不认这个总谱第一。问找祖师做什么，你答打架。祖师不见，你便等。`);",
+      "movedTail": " say(`n|第九日，院门终于开了。\nqk_gatechild~uneasy|还是那个人。每天都说等有空。\nn|你站起，先让童子抱茶过去，只拍去衣上的尘，没有把掌门印亮到他面前。`);\n stage('qk_gate','qk_zhou,qk_gatechild');",
+      "orderBefore": "arrival/day-nine; waiting callback; Zhou",
+      "orderAfter": "arrival; waiting callback; day-nine; Zhou"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/qian-kun/qian-kun-head.mjs",
+      "reason": "门前周已问来意，第二应答支不再让他重复问已第一。",
+      "before": "周问不是已经第一么，你答谱上第一，不是都见完。他终于应看百招，没先替你说会是怎样的百招。",
+      "after": "你又补一句，谱上第一，不是都见完。周点头应看百招，转身让你跟上。"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/qian-kun/qian-kun-after.mjs",
+      "reason": "纸页记录一个真实时刻，不先删掉钉眼后又说后人照同一钉眼；不把今天所得写成万能脚点。",
+      "before": "你拿纸画下方才认准的钉眼和脚位，又把那枚钉眼划掉。叶叫你别把整张甲板也跟着画没了，明日还得真站。",
+      "after": "你拿纸画下方才认准的钉眼和脚位，旁记“此船此刻”。叶看完，叫你也记上船头当时朝哪边，别只剩那一枚钉眼。"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/qian-kun/qian-kun-after.mjs",
+      "reason": "后人带旧图来问而非老师先删掉还误教；根据今日船向和身体补图，旧记录保留真实用途。",
+      "before": "渡口弟子照你旧图找一枚钉眼，问为何落准还进不了。你把午后留给他，陪到船边，将那张固定脚点图擦开重画；练的仍是他自己怎样站，不是照抄你那一次。",
+      "after": "渡口弟子拿来旧图，问今日能否也从那枚钉眼起手。你指旁记的此船此刻，把午后留给他，陪到船边，另画进今日船头朝向与他自己起脚的位置；旧图留着记那一回，不替他今天站这一脚。"
+    },
+    {
+      "round": 3,
+      "file": "story/drafts/qian-kun/qian-kun-slow.mjs",
+      "reason": "把当前再送账的任务交明，区分旁白中旧日原封未看的例子与此刻管事已核、需送的封件。",
+      "before": " iff('qk_letter_check',",
+      "after": " say(`n|等这桩路款说完，另有一封核好的商号账要送下山。管事封好交给你，只请送到，不叫你在路上替人再算。`);\n iff('qk_letter_check',"
+    }
+  ]
+}

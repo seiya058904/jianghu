@@ -1,0 +1,91 @@
+{
+  "status": "ROUND1_DRAFT_NOT_PUBLISHED",
+  "baseline": "d86ae09",
+  "canonRange": [
+    364,
+    1803
+  ],
+  "changes": [
+    {
+      "id": "K01",
+      "round": 1,
+      "focus": "structure-causality",
+      "reason": "末幕始终左手接物与未伤腕路线冲突。",
+      "before": "n|同门把早已凉的饼掰开，递来一半。你先接在左手。",
+      "after": "n|同门把早已凉的饼掰开，递来一半。你接住饼，先坐下吃。"
+    },
+    {
+      "id": "K02",
+      "round": 1,
+      "focus": "structure-causality",
+      "reason": "明确123招出掌者与中掌者，不误读为司马中招。",
+      "before": "第一百二十三招司马元正掌中右肋",
+      "after": "第一百二十三招，司马元正一掌打中无生客右肋"
+    },
+    {
+      "id": "K03",
+      "round": 1,
+      "focus": "structure-causality",
+      "reason": "已留营同门次日缺席但仍台词在场，补自发返场与职责界限。",
+      "before": "part('masters','kh_valley','kh_hui,kh_meng,kh_sima',",
+      "after": "part('dawn_return','kh_path','kh_peer,kh_healer',`n|天亮后，你提着水走到石后。`);\niff('kh_second_ready',`n|同门已等在昨夜踩过的转弯处，先看你的脚印，再把空担架挪到身旁。\nkh_peer|还是这里。换地方得先叫我。`,`n|同门从营里追来，手里只提半桶水。晾布已经交给换下来的师兄，他自己来找药师。\nkh_peer~uneasy|我不接谷里那头。我送水，守在石后，行不行？\nkh_healer|桶放这里。若还要退回营，来跟我交一声。\nn|他把水放下，没有去拿担架肩带。你给他让出能退回营的路。`);\ngo('masters');\npart('masters','kh_valley','kh_hui,kh_meng,kh_sima',"
+    },
+    {
+      "id": "K04",
+      "round": 1,
+      "focus": "structure-causality",
+      "reason": "救人路线回收预备担架与剪衣，代价不改固定死者。",
+      "before": "iff('kh_saved_runner',`n|外沿弟子被安置在布上。`, `n|外沿弟子的担架随后抬回来，布盖过了脸。你收好的那袋纸搁在另一边，不能铺到他身上说两件事一样重。`);",
+      "after": "out.push('{\\n- kh_saved_runner:');\niff('kh_litter',`n|担架早已放平，你把备好的小刀递给药师。她剪开裤脚，血黏住的布不用再扯过伤口。`,`kh_healer|剪刀呢？\nn|你翻了两只药袋才找到。药师托着弟子的腿等你，谁也没催伤者自己忍过去。`);\nout.push('}');"
+    },
+    {
+      "id": "K05",
+      "round": 1,
+      "focus": "structure-causality",
+      "reason": "后日选择照护/记录之前的分工不应失效。",
+      "before": "choose('future',[",
+      "after": "iff('kh_late_duty == 1',`n|你画的撤路图已核过两处，转弯那块白布有人另补了标记。纸要送出去，仍得先有人接今晚的床边值守。`,`n|你守过的时辰牌已经添了两个接班人的名字。代写者把未核的那页递来，等你逐项说清再封。`);\nchoose('future',["
+    },
+    {
+      "id": "K06",
+      "round": 1,
+      "focus": "structure-causality",
+      "reason": "宽肩带确曾制作，后面须实际用到，不能仅有失查外坡惩罚。",
+      "before": "n|你绕石时滑倒，右腕撑上碎石。担架最后还是过了外坡，止血的布却迟了一段才按上伤口。",
+      "after": "n|你绕石时滑倒，右腕撑上碎石。同门把缝好的宽带从肩下穿过，接去你那头的重量。担架最后还是过了外坡，止血的布却迟了一段才按上伤口。"
+    },
+    {
+      "id": "K07",
+      "round": 1,
+      "focus": "structure-causality",
+      "reason": "候接岗位留营分支不该默认托举。",
+      "before": "iff('kh_saved_runner and (kh_second_ready or kh_peer_ready)'",
+      "after": "iff('kh_saved_runner and kh_second_ready'"
+    },
+    {
+      "id": "K08",
+      "round": 1,
+      "focus": "structure-causality",
+      "reason": "叙述应保留记录者知识边界，准招数来自后核。",
+      "before": "n|二十招，无生客退；四十招，刀被压住；第五十三招，孟天枢掌缘擦裂他后衣，却没有伤到肉。谷外有人已把半卷干布收起来，觉得或许用不到。",
+      "after": "n|谷口有人替看不清的人报招：二十，四十。刀被压住时，旁边几个人跟着向前挪了半步。第五十三招衣裂、未伤到肉，是后来核录才分清的；此刻你只见后衣飘起，已有半卷干布被收了回去。"
+    },
+    {
+      "id": "K09",
+      "round": 1,
+      "focus": "structure-causality",
+      "reason": "人物用名防止同伴死亡与同门混淆。",
+      "before": "先前接应的年轻弟子伏在外沿",
+      "after": "一名从别处来接应的年轻弟子伏在外沿"
+    },
+    {
+      "id": "K10",
+      "round": 1,
+      "focus": "structure-causality",
+      "reason": "三处床位在已收布路线体现实际工作差异。",
+      "before": "choose('aftercare',[",
+      "after": "iff('kh_beds',`n|三处床位一直空着，药师叫你按原来的顺序送水。`, `n|收回的药箱又要挪一次。你跪着擦去床边倒出的药粉，给抬伤者的人腾出落脚处。`);\nchoose('aftercare',["
+    }
+  ],
+  "publishedSHA256": "cdec7e0e8bb4a6c3904278c1e523a1af8e9519012bb107191798619256702dba"
+}

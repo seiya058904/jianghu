@@ -1,0 +1,8 @@
+{
+  "tool": "built-in image_gen",
+  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-d5266322-faa8-4db3-a166-9716242bd0e9.png",
+  "prompt": "Use case: generic NPC portrait. Use reference for matching naturalistic watercolor/ink illustration finish and asset framing only. Generate a different character: A DIFFERENT man age35: broad round weathered face, broad nose, visibly thicker eyebrows, close cropped short black beard, strong stocky shoulders, black hair topknot, plain muted indigo martial tunic. Empty arms crossed loosely at waist. Calm mildly challenging expression. Clearly another identity, not a recolor of the reference. Single full body standing character, head and feet inside portrait2:3 frame. Grounded Song-inspired wuxia visual novel; historically plausible fabric, no armor, no magic. True transparent background with alpha, no scenery, no floor or black rectangle, no text, no logos.",
+  "reference": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-ece10e05-858f-447d-85be-6c3ecca18f3d.png",
+  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/npc-martial-adult-b.webp",
+  "review": "Visually reviewed: age, identity or generic type, anatomy and meaningful pose/environment differences checked; mapped to matching production metadata. Independent NPC ownership and same-stage collisions audited. Browser final screenshot review remains pending."
+}

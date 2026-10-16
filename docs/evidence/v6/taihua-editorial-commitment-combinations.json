@@ -1,0 +1,174 @@
+{
+  "combinations": 24,
+  "scope": "2 promised x2 willing-to-listen x3 futures x2 brother-recap =24; other choices first legal",
+  "rows": [
+    {
+      "promised": false,
+      "listen": false,
+      "future": "th_together",
+      "kept": false,
+      "ending": "th_company"
+    },
+    {
+      "promised": false,
+      "listen": false,
+      "future": "th_together",
+      "kept": true,
+      "ending": "th_company"
+    },
+    {
+      "promised": false,
+      "listen": false,
+      "future": "th_letter",
+      "kept": false,
+      "ending": "th_letter"
+    },
+    {
+      "promised": false,
+      "listen": false,
+      "future": "th_letter",
+      "kept": true,
+      "ending": "th_letter"
+    },
+    {
+      "promised": false,
+      "listen": false,
+      "future": "th_guidance",
+      "kept": false,
+      "ending": "th_guidance"
+    },
+    {
+      "promised": false,
+      "listen": false,
+      "future": "th_guidance",
+      "kept": true,
+      "ending": "th_guidance"
+    },
+    {
+      "promised": false,
+      "listen": true,
+      "future": "th_together",
+      "kept": false,
+      "ending": "th_company"
+    },
+    {
+      "promised": false,
+      "listen": true,
+      "future": "th_together",
+      "kept": true,
+      "ending": "th_company"
+    },
+    {
+      "promised": false,
+      "listen": true,
+      "future": "th_letter",
+      "kept": false,
+      "ending": "th_letter"
+    },
+    {
+      "promised": false,
+      "listen": true,
+      "future": "th_letter",
+      "kept": true,
+      "ending": "th_letter"
+    },
+    {
+      "promised": false,
+      "listen": true,
+      "future": "th_guidance",
+      "kept": false,
+      "ending": "th_guidance"
+    },
+    {
+      "promised": false,
+      "listen": true,
+      "future": "th_guidance",
+      "kept": true,
+      "ending": "th_guidance"
+    },
+    {
+      "promised": true,
+      "listen": false,
+      "future": "th_together",
+      "kept": false,
+      "ending": "th_company"
+    },
+    {
+      "promised": true,
+      "listen": false,
+      "future": "th_together",
+      "kept": true,
+      "ending": "th_company"
+    },
+    {
+      "promised": true,
+      "listen": false,
+      "future": "th_letter",
+      "kept": false,
+      "ending": "th_letter"
+    },
+    {
+      "promised": true,
+      "listen": false,
+      "future": "th_letter",
+      "kept": true,
+      "ending": "th_letter"
+    },
+    {
+      "promised": true,
+      "listen": false,
+      "future": "th_guidance",
+      "kept": false,
+      "ending": "th_guidance"
+    },
+    {
+      "promised": true,
+      "listen": false,
+      "future": "th_guidance",
+      "kept": true,
+      "ending": "th_guidance"
+    },
+    {
+      "promised": true,
+      "listen": true,
+      "future": "th_together",
+      "kept": false,
+      "ending": "th_company"
+    },
+    {
+      "promised": true,
+      "listen": true,
+      "future": "th_together",
+      "kept": true,
+      "ending": "th_company"
+    },
+    {
+      "promised": true,
+      "listen": true,
+      "future": "th_letter",
+      "kept": false,
+      "ending": "th_letter"
+    },
+    {
+      "promised": true,
+      "listen": true,
+      "future": "th_letter",
+      "kept": true,
+      "ending": "th_letter"
+    },
+    {
+      "promised": true,
+      "listen": true,
+      "future": "th_guidance",
+      "kept": false,
+      "ending": "th_guidance"
+    },
+    {
+      "promised": true,
+      "listen": true,
+      "future": "th_guidance",
+      "kept": true,
+      "ending": "th_guidance"
+    }
+  ]
+}

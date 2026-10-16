@@ -1,0 +1,18 @@
+{
+  "actualInputs": true,
+  "version": "qian-kun-1.0.0",
+  "side": 1,
+  "decisions": 24,
+  "frames": 196,
+  "middleReloads": [
+    "qk_forgot_letter_1",
+    "qk_accounts_1",
+    "qk_many_unknowns_1"
+  ],
+  "ending": "qk_open_mountain",
+  "endingReload": true,
+  "commandsExact": true,
+  "officeFollowup": false,
+  "errors": [],
+  "externalHuman": false
+}

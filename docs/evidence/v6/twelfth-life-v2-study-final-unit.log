@@ -1,0 +1,11 @@
+✔ Royal life frozen v1 bytes remain available (0.9966ms)
+✔ Royal life both personal outcomes keep words and commands while sorting letters moves home and aging is monotonic (440.0877ms)
+✔ 512 sampled Royal life alternatives reach every beat and all five actual Lu sprite files (4031.5589ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4581.4504

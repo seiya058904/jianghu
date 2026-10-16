@@ -1,0 +1,22 @@
+{
+  "status": "DRAFT_NOT_FINAL",
+  "sourceBeats": 271,
+  "visited": 271,
+  "decisionPointsPerRoute": 20,
+  "choiceOptions": 42,
+  "cast": [
+    "lm_xu",
+    "lm_qinghe",
+    "lm_shi",
+    "lm_luo",
+    "lm_he",
+    "lm_fan",
+    "lm_shenchang",
+    "lm_guang",
+    "lm_zhang"
+  ],
+  "sampledPaths": 128,
+  "exhaustive": false,
+  "longestPassiveGap": 15,
+  "limits": "Expanded supplement scenes require production browser and full editorial review; not final acceptance."
+}

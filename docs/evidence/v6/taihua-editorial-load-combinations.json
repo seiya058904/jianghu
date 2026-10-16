@@ -1,0 +1,173 @@
+{
+  "combinations": 24,
+  "rows": [
+    {
+      "strain": false,
+      "measured": false,
+      "carried": false,
+      "future": "th_together",
+      "monthWithoutSword": false
+    },
+    {
+      "strain": false,
+      "measured": false,
+      "carried": false,
+      "future": "th_letter",
+      "monthWithoutSword": false
+    },
+    {
+      "strain": false,
+      "measured": false,
+      "carried": false,
+      "future": "th_guidance",
+      "monthWithoutSword": false
+    },
+    {
+      "strain": false,
+      "measured": false,
+      "carried": true,
+      "future": "th_together",
+      "monthWithoutSword": false
+    },
+    {
+      "strain": false,
+      "measured": false,
+      "carried": true,
+      "future": "th_letter",
+      "monthWithoutSword": false
+    },
+    {
+      "strain": false,
+      "measured": false,
+      "carried": true,
+      "future": "th_guidance",
+      "monthWithoutSword": false
+    },
+    {
+      "strain": false,
+      "measured": true,
+      "carried": false,
+      "future": "th_together",
+      "monthWithoutSword": false
+    },
+    {
+      "strain": false,
+      "measured": true,
+      "carried": false,
+      "future": "th_letter",
+      "monthWithoutSword": false
+    },
+    {
+      "strain": false,
+      "measured": true,
+      "carried": false,
+      "future": "th_guidance",
+      "monthWithoutSword": false
+    },
+    {
+      "strain": false,
+      "measured": true,
+      "carried": true,
+      "future": "th_together",
+      "monthWithoutSword": false
+    },
+    {
+      "strain": false,
+      "measured": true,
+      "carried": true,
+      "future": "th_letter",
+      "monthWithoutSword": false
+    },
+    {
+      "strain": false,
+      "measured": true,
+      "carried": true,
+      "future": "th_guidance",
+      "monthWithoutSword": false
+    },
+    {
+      "strain": true,
+      "measured": false,
+      "carried": false,
+      "future": "th_together",
+      "monthWithoutSword": false
+    },
+    {
+      "strain": true,
+      "measured": false,
+      "carried": false,
+      "future": "th_letter",
+      "monthWithoutSword": false
+    },
+    {
+      "strain": true,
+      "measured": false,
+      "carried": false,
+      "future": "th_guidance",
+      "monthWithoutSword": false
+    },
+    {
+      "strain": true,
+      "measured": false,
+      "carried": true,
+      "future": "th_together",
+      "monthWithoutSword": true
+    },
+    {
+      "strain": true,
+      "measured": false,
+      "carried": true,
+      "future": "th_letter",
+      "monthWithoutSword": true
+    },
+    {
+      "strain": true,
+      "measured": false,
+      "carried": true,
+      "future": "th_guidance",
+      "monthWithoutSword": true
+    },
+    {
+      "strain": true,
+      "measured": true,
+      "carried": false,
+      "future": "th_together",
+      "monthWithoutSword": false
+    },
+    {
+      "strain": true,
+      "measured": true,
+      "carried": false,
+      "future": "th_letter",
+      "monthWithoutSword": false
+    },
+    {
+      "strain": true,
+      "measured": true,
+      "carried": false,
+      "future": "th_guidance",
+      "monthWithoutSword": false
+    },
+    {
+      "strain": true,
+      "measured": true,
+      "carried": true,
+      "future": "th_together",
+      "monthWithoutSword": false
+    },
+    {
+      "strain": true,
+      "measured": true,
+      "carried": true,
+      "future": "th_letter",
+      "monthWithoutSword": false
+    },
+    {
+      "strain": true,
+      "measured": true,
+      "carried": true,
+      "future": "th_guidance",
+      "monthWithoutSword": false
+    }
+  ]
+}

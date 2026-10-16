@@ -1,0 +1,15 @@
+{
+  "status": "UNPUBLISHED_ROUND1_DRAFT_ONLY",
+  "sourceBeats": 313,
+  "options": 40,
+  "endings": [
+    "kh_record",
+    "kh_care"
+  ],
+  "sampledPaths": 512,
+  "exhaustive": false,
+  "longestPassiveGap": 15,
+  "compilerWarnings": [],
+  "limits": "Draft has no production-direction pass or browser entry; not three editorial rounds or final acceptance.",
+  "scope": "Structural round1 audit; round2 changes dialogue lines without changing beat/choice topology. Current rerun uses kuhe-editorial-draft-audit.json."
+}

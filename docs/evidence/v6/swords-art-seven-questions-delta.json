@@ -1,0 +1,28 @@
+[
+  {
+    "side": 0,
+    "changed": [
+      "sq_three_volumes_1",
+      "sq_three_volumes_2",
+      "sq_three_volumes_3",
+      "sq_three_volumes_4",
+      "sq_three_volumes_5"
+    ],
+    "ending": "sq_shared_road",
+    "frames": 240
+  },
+  {
+    "side": 1,
+    "changed": [
+      "sq_eighty_one_8",
+      "sq_eighty_one_9",
+      "sq_three_volumes_1",
+      "sq_three_volumes_2",
+      "sq_three_volumes_3",
+      "sq_three_volumes_4",
+      "sq_three_volumes_5"
+    ],
+    "ending": "sq_open_lesson",
+    "frames": 236
+  }
+]

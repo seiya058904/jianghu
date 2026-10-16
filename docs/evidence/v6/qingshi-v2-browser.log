@@ -1,0 +1,56 @@
+[WebServer] (node:50944) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 15 tests using 1 worker
+
+(node:43200) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   1 tests\qingshi-v2.spec.ts:7:1 › Qingshi old knife CG and reused elderly closeup decode and restore at seven sizes (5.2s)
+(node:9992) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  2 tests\qingshi-v2.spec.ts:20:1 › Qingshi archive keeps pending auto and slots, new edition rejects old import (492ms)
+  ok  3 tests\qingshi-v2.spec.ts:27:1 › Qingshi actual old-knife resource works offline at root and subpath (856ms)
+  ok  4 tests\qingshi-v2.spec.ts:30:26 › Qingshi actual complete life route 0: explicit ages, fixed sacrifice, personal aftermath and independent save (1.3m)
+  ok  5 tests\qingshi-v2.spec.ts:30:26 › Qingshi actual complete life route 1: explicit ages, fixed sacrifice, personal aftermath and independent save (1.3m)
+  ok  6 tests\qingshi-v2.spec.ts:54:1 › Qingshi work download retains an unvisited late chapter offline on root and subpath (798ms)
+  ok  7 tests\qingshi-v2.spec.ts:63:1 › Qingshi age phases and empty frontier gate render at seven sizes; deceased POV is absent (2.3s)
+  ok  8 tests\qingshi.spec.ts:5:26 › Qingshi actual complete life route 0: explicit ages, fixed sacrifice, personal aftermath and independent save (1.3m)
+  ok  9 tests\qingshi.spec.ts:5:26 › Qingshi actual complete life route 1: explicit ages, fixed sacrifice, personal aftermath and independent save (1.3m)
+  ok 10 tests\qingshi.spec.ts:29:1 › Qingshi work download retains an unvisited late chapter offline on root and subpath (825ms)
+  ok 11 tests\qingshi.spec.ts:38:1 › Qingshi age phases and empty frontier gate render at seven sizes; deceased POV is absent (2.3s)
+  ok 12 tests\v6-cg.spec.ts:27:59 › oldKnife: existing illustration loads, restores and returns to reusable stage at 360 (1.4s)
+  ok 13 tests\v6-cg.spec.ts:27:59 › oldKnife: existing illustration loads, restores and returns to reusable stage at 800 (1.4s)
+  ok 14 tests\v6-cg.spec.ts:27:59 › oldKnife: existing illustration loads, restores and returns to reusable stage at 1440 (1.5s)
+  ok 15 tests\v6-cg.spec.ts:52:1 › failed illustration retains the scene fallback and playable text (214ms)
+
+
+  1) tests\qingshi-v2.spec.ts:7:1 › Qingshi old knife CG and reused elderly closeup decode and restore at seven sizes
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  locator('#app')
+    Expected: "qs_oldknife_1"
+    Received: ""
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveAttribute" locator('#app') with timeout 5000ms
+      - waiting for locator('#app')
+        14 × locator resolved to <div id="app">…</div>
+           - unexpected value "null"
+
+
+       9 |   await page.goto('/qingshi.html');await page.setViewportSize({width,height});const s=at(id);
+      10 |   await page.evaluate(raw=>{localStorage.setItem('jianghu:chronicle:qingshi:v2:auto',raw);localStorage.setItem('jianghu:chronicle:qingshi:v2:settings',JSON.stringify({speed:0,reduced:true,size:24}))},JSON.stringify(s.save()));
+    > 11 |   await page.goto('/qingshi.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',id);
+         |                                                                            ^
+      12 |   await page.locator('.scene-background,.portrait').evaluateAll(async ns=>{for(const n of ns)for(const m of getComputedStyle(n).backgroundImage.matchAll(/url\(["']?([^"')]+)["']?\)/g)){const im=new Image();im.src=m[1];await im.decode();if(im.naturalWidth<100)throw Error(im.src)}});
+      13 |   if(id==='qs_oldknife_6'){await expect(page.locator('.actor:visible')).toHaveCount(1);const box=await page.locator('.actor:visible').boundingBox();expect(box!.width).toBeGreaterThanOrEqual(Math.min(width*.6,600))}
+      14 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\qingshi-v2.spec.ts:11:76
+
+    Error Context: test-results\qingshi-v2-Qingshi-old-kni-d0362--and-restore-at-seven-sizes\error-context.md
+
+  1 failed
+    tests\qingshi-v2.spec.ts:7:1 › Qingshi old knife CG and reused elderly closeup decode and restore at seven sizes
+  14 passed (5.5m)

@@ -1,0 +1,73 @@
+{
+  "status": "VERSIONED_LOCAL_INTEGRATION_VERIFIED_NOT_FULL_GOAL_ACCEPTANCE",
+  "baseline": "f209540",
+  "rounds": 3,
+  "recordsPerRound": [
+    12,
+    12,
+    10
+  ],
+  "records": 34,
+  "beats": 393,
+  "options": 68,
+  "decisionsPerRoute": 34,
+  "endings": 2,
+  "newOrEditedGameArt": 0,
+  "fullUnitPassed": 236,
+  "focusedUnitPassed": 33,
+  "focusedOverlapWithFull": 23,
+  "separateDraftTests": 10,
+  "browser": {
+    "distinctPassed": 83,
+    "mainDistinctPassed": 29,
+    "mainInitialPassed": 27,
+    "mainInitialFailed": 2,
+    "realV1CorrectedPassed": 2,
+    "extraInitialPassed": 42,
+    "extraInitialFailed": 8,
+    "extraFinalPassed": 53,
+    "extraFinalFailed": 1,
+    "stageCorrectedPassed": 1,
+    "completeCareers": 8,
+    "battleContexts": 28,
+    "stageContexts": 18,
+    "roots": [
+      "http://127.0.0.1:4173/",
+      "http://127.0.0.1:4175/Jianghu/"
+    ],
+    "coldEvictedEntries": 3
+  },
+  "build": "PASS",
+  "offlinePackages": 40,
+  "actualSWGateMessages": 80,
+  "frozenMigrationChunks": 9,
+  "usageSamplingEntries": 43,
+  "speakingIDsNotPeople": 308,
+  "namedLowerBoundNotFullCensus": 60,
+  "assetCounts": {
+    "rasterFiles": 156,
+    "v6RasterFiles": 109,
+    "retainedPrompts": 111,
+    "missingHistoricalPrompts": 45,
+    "observedRuntimeFiles": 155,
+    "bytes": 27383425,
+    "byteMismatches": 0
+  },
+  "protectedPaths": 18,
+  "graph": "Coverage unavailable/metadata changed; direct source, diff and runtime fallback. No completeness claim.",
+  "corrections": [
+    "V2 before-CG migration data owned by wrong offline package; producer and audit fixed; cold restoration root/sub passed.",
+    "Sea archived migration expectations stale; corrected tests only.",
+    "Real V1 full-route test previously entered current edition; explicit archived entry and exact version assertion added; both actual V1 careers passed.",
+    "Stage URL decoding fixture lost escaped parentheses; corrected regex.",
+    "Stage death frame contains choices; disabled advance caused timeout. Corrected real choice action; all18 contexts passed."
+  ],
+  "preserved": [
+    "V2 authors/Ink/JSON exact original bytes and V2 saves",
+    "V1 and companion",
+    "before-CG narrow migration only on V2",
+    "canon and main V6/V5"
+  ],
+  "visualLimits": "Generic Xue/wife templates do not prove age/identity or combat choreography. Internal editorial review is not external literary acceptance, human reading time or Android verification.",
+  "fullGoal": "OPEN"
+}

@@ -1,0 +1,38 @@
+[WebServer] (node:8828) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:36284) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 tests\beyond-ranking.spec.ts:9:1 › Fresh Xuanmen then White Stone completions really unlock Ning, followed by complete first route (4.0m)
+(node:344) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 2 tests\beyond-ranking.spec.ts:12:1 › Ning second complete route on mobile and raw gate preserves saves through live unlock and relock (20.2s)
+  ok 3 tests\beyond-ranking.spec.ts:15:1 › Ning work pack later room restores offline at root and subpath after legal unlock (2.1s)
+  ok 4 tests\beyond-ranking.spec.ts:18:1 › Ning first question and two actors fit seven viewports at 24px with keyboard (2.0s)
+
+
+  1) tests\beyond-ranking.spec.ts:9:1 › Fresh Xuanmen then White Stone completions really unlock Ning, followed by complete first route
+
+    Test timeout of 240000ms exceeded.
+
+    Error: locator.click: Test timeout of 240000ms exceeded.
+    Call log:
+      - waiting for getByRole('link', { name: '两座山之后 · 榜纸之外', exact: true })
+
+
+       8 | async function walk(page:Page,s:VNRuntime,side:number){while(!s.frame.ending){await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);if(s.frame.id==='br_third_fourth_1'){await decoded(page);await page.screenshot({path:`docs/evidence/v6/beyond-ranking-room-${side}.png`})}if(s.frame.choices.length){const id=s.frame.choices[side].id;await page.locator(`[data-choice="${id}"]`).click();s.choose(id)}else{await page.locator('#advance-button').click();s.advance()}}}
+       9 | test('Fresh Xuanmen then White Stone completions really unlock Ning, followed by complete first route',async({page})=>{
+    > 10 |  test.setTimeout(240000);const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await page.addInitScript(()=>{for(const slug of ['xuanmen','white-stone','beyond-ranking'])localStorage.setItem(`jianghu:chronicle:${slug}:v1:settings`,JSON.stringify({size:20,speed:0,reduced:true}))});await page.goto('/beyond-ranking.html');await expect(page.getByRole('button',{name:'坐到旧册另一边'})).toBeDisabled();for(const [slug,data,start]of [['xuanmen',xuanmen,'从襄阳的泥地起身'],['white-stone',whiteStone,'翻开雪后未接完的一页']] as const){await page.goto('/'+slug+'.html');await page.getByRole('button',{name:start}).click();await walk(page,new VNRuntime(data,slug+'-1.0.0'),0);await page.getByRole('button',{name:'回到封面',exact:true}).click();if(slug==='xuanmen'){await page.getByRole('link',{name:'两座山之后 · 榜纸之外',exact:true}).click();await expect(page.getByRole('button',{name:'坐到旧册另一边'})).toBeDisabled();await expect(page.locator('[data-reading-lock]')).toContainText('白石谷外')}}const before=await page.evaluate(()=>['xuanmen','white-stone'].map(slug=>localStorage.getItem(`jianghu:chronicle:${slug}:v1:auto`)));await page.getByRole('link',{name:'两座山之后 · 榜纸之外',exact:true}).click();await expect(page.locator('[data-reading-lock]')).toHaveCount(0);await page.getByRole('button',{name:'坐到旧册另一边'}).click();const s=new VNRuntime(content,'beyond-ranking-1.0.0');await walk(page,s,0);await expect(page.locator('#ending-actions')).toContainText('把若字再念一遍');await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await decoded(page);await page.screenshot({path:'docs/evidence/v6/beyond-ranking-ending-0.png'});expect(await page.evaluate(()=>['xuanmen','white-stone'].map(slug=>localStorage.getItem(`jianghu:chronicle:${slug}:v1:auto`)))).toEqual(before);expect(errors).toEqual([]);
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^
+      11 | });
+      12 | test('Ning second complete route on mobile and raw gate preserves saves through live unlock and relock',async({page})=>{
+      13 |  test.setTimeout(90000);await page.setViewportSize({width:390,height:844});const s=new VNRuntime(content,'beyond-ranking-1.0.0'),raw=JSON.stringify(s.save());await page.addInitScript(({prefix,raw})=>{localStorage.setItem(prefix+'auto',raw);localStorage.setItem(prefix+'slot1',raw);localStorage.setItem(prefix+'settings',JSON.stringify({size:20,speed:0,reduced:true}));localStorage.setItem('jianghu:chronicle:xuanmen:v2:endings','["xm_handover_after"]');localStorage.setItem('jianghu:chronicle:white-stone:v1:endings','["ws_outside_after"]')},{prefix,raw});await page.goto('/beyond-ranking.html#play');const start=page.getByRole('button',{name:'坐到旧册另一边'});await expect(start).toBeDisabled();await start.dispatchEvent('click');expect(await page.evaluate(prefix=>localStorage.getItem(prefix+'auto'),prefix)).toBe(raw);await page.evaluate(()=>{const key='jianghu:chronicle:xuanmen:v1:endings';localStorage.setItem(key,'["xm_handover_after"]');dispatchEvent(new StorageEvent('storage',{key,newValue:'["xm_handover_after"]'}))});await expect(start).toBeEnabled();await page.goto('/beyond-ranking.html#play');await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await walk(page,s,1);await expect(page.locator('#ending-actions')).toContainText('空手也留下来日');await decoded(page);await page.screenshot({path:'docs/evidence/v6/beyond-ranking-ending-1.png'});await page.evaluate(()=>{const key='jianghu:chronicle:white-stone:v1:endings';localStorage.setItem(key,'[]');dispatchEvent(new StorageEvent('storage',{key,newValue:'[]'}))});await expect(page.locator('[data-reading-lock]')).toBeVisible();expect(await page.evaluate(prefix=>localStorage.getItem(prefix+'slot1'),prefix)).toBe(raw);
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\beyond-ranking.spec.ts:10:746
+
+    Error Context: test-results\beyond-ranking\beyond-ranking-Fresh-Xuanm-a8420-wed-by-complete-first-route\error-context.md
+
+  1 failed
+    tests\beyond-ranking.spec.ts:9:1 › Fresh Xuanmen then White Stone completions really unlock Ning, followed by complete first route
+  3 passed (4.6m)

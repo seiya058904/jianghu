@@ -1,0 +1,15 @@
+
+Running 10 tests using 1 worker
+
+  ok  1 tests\taihua-v1.spec.ts:5:26 › Taihua complete actual browser path 0: independent saves, ending and reload (45.5s)
+  ok  2 tests\taihua-v1.spec.ts:5:26 › Taihua complete actual browser path 1: independent saves, ending and reload (43.0s)
+  ok  3 tests\taihua-v2-upgrade.spec.ts:7:1 › Taihua v2 leaves real v1 auto, manual, previous and settings untouched; old link restores original stage and two-ending counter (331ms)
+  ok  4 tests\taihua-v2-upgrade.spec.ts:10:1 › Taihua three late choices and Mu scene fit seven viewports with keyboard and decoded imagery (2.4s)
+  ok  5 tests\taihua-v2-upgrade.spec.ts:13:1 › Taihua unvisited guidance assets restore offline at root and subpath with v1 cache kept separate (841ms)
+  ok  6 tests\taihua.spec.ts:5:28 › Taihua complete actual browser path 0: independent saves, ending and reload (1.0m)
+  ok  7 tests\taihua.spec.ts:5:28 › Taihua complete actual browser path 1: independent saves, ending and reload (1.0m)
+  ok  8 tests\taihua.spec.ts:5:28 › Taihua complete actual browser path 2: independent saves, ending and reload (1.1m)
+  ok  9 tests\taihua.spec.ts:37:1 › Taihua actual new portrait, mobile and desktop reply layout, and night background (1.6s)
+  ok 10 tests\taihua.spec.ts:65:1 › Taihua resources are requested per work and an unvisited night scene loads offline on root and subpath (831ms)
+
+  10 passed (4.7m)

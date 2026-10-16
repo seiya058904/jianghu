@@ -1,0 +1,10 @@
+{
+  "tool": "built-in image_gen",
+  "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-c89c7c63-3f66-47c3-a81b-83111261b34e.png",
+  "output": "public/art/v6/reusable-stone-valley.webp",
+  "prompt": "Use case: reusable environment background for a mature Chinese wuxia visual novel, landscape 16:9. An empty broad dry rocky river valley in the central Chinese mountains, low broken gray-ochre stone walls, dry shallow gravel channel, two large natural boulders at the distant narrow entrance, sparse grasses and modest low scrub, overcast pale daylight with soft shadows and generous negative space across flat foreground. Human eye-level from a safe valley edge, clear traversable ground so character sprites read well. Beautiful nuanced traditional ink and naturalistic watercolor painting, subdued mineral and parchment palette, detailed physical stones and atmospheric layered mountains, polished game production background. This is an ordinary place usable for a conversation, travel, training, a gathering or a duel; the painting itself makes no fixed plot statement. Completely empty: no people, corpses, blood, weapons, flags, tents, buildings, fire, ruins of a battle, supernatural effects, text, signatures, seal stamps, watermark, or UI. Full scene to edges, no border.",
+  "transparent": false,
+  "conversion": "FFmpeg WebP, preserve original aspect ratio and alpha; no repainting.",
+  "review": "Generated PNG and actual 360px/1440px stage screenshots visually reviewed: age/costume/empty hands or empty valley, no baked plot text. Final kuhe-staging-browser.log 4 passed, including seven viewport sizes, image decode and root/subpath offline. Other production-wide art gates remain pending.",
+  "reuse": "No named event, unique prop, fixed gesture, injury or outcome; reusable subject with interpretation in dialogue and staging."
+}

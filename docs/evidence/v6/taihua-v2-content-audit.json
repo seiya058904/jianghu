@@ -1,0 +1,39 @@
+{
+  "status": "DRAFT_IMPLEMENTED_NOT_FINAL_ACCEPTANCE",
+  "sampledPaths": 512,
+  "exhaustive": false,
+  "reachableBeats": 440,
+  "choiceOptions": 61,
+  "decisionPoints": 30,
+  "cast": [
+    "th_leader",
+    "th_bro",
+    "th_shen",
+    "th_huo",
+    "th_walnut",
+    "th_fache",
+    "th_jingsheng",
+    "th_xie",
+    "th_ming",
+    "th_mu",
+    "th_sima",
+    "th_guestelder",
+    "th_ji",
+    "th_huijue",
+    "th_zhang",
+    "th_luqi",
+    "th_murong",
+    "th_chensima"
+  ],
+  "endings": [
+    "th_company",
+    "th_letter",
+    "th_guidance"
+  ],
+  "longestPassiveGap": 18,
+  "dedicatedNewPortraits": [
+    "th_shen",
+    "th_huo"
+  ],
+  "notes": "Remaining temporary portraits explicitly marked templates. Statistical content reach is not editorial or visual acceptance."
+}

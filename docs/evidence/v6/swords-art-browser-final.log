@@ -1,0 +1,19 @@
+[WebServer] (node:37296) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 10 tests using 1 worker
+
+(node:51116) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\art-manifest.spec.ts:8:107 › Asset manifest: every raster has exact built bytes and browser decode on root (2.1s)
+  ok  2 tests\art-manifest.spec.ts:8:107 › Asset manifest: every raster has exact built bytes and browser decode on subpath (2.0s)
+  ok  3 tests\swords-art.spec.ts:10:25 › Swords art two-swords: old CG/pending saves, raw slots/export/import, and two-frame exit (754ms)
+  ok  4 tests\swords-art.spec.ts:10:25 › Swords art seven-questions: old CG/pending saves, raw slots/export/import, and two-frame exit (721ms)
+  ok  5 tests\swords-art.spec.ts:18:25 › Swords art two-swords: old pending choice restores without consuming a response (266ms)
+  ok  6 tests\swords-art.spec.ts:18:25 › Swords art seven-questions: old pending choice restores without consuming a response (276ms)
+  ok  7 tests\swords-art.spec.ts:21:1 › Swords art CGs, actual expressions and per-frame closeups fit seven sizes with usable reading controls (5.9s)
+  ok  8 tests\swords-art.spec.ts:27:1 › Swords art night reading and failed CG loading retain the actual text and advance (432ms)
+  ok  9 tests\swords-art.spec.ts:30:25 › Swords art two-swords: frozen-source migration and new images survive a fresh offline page (1.0s)
+  ok 10 tests\swords-art.spec.ts:30:25 › Swords art seven-questions: frozen-source migration and new images survive a fresh offline page (1.0s)
+
+  10 passed (15.6s)

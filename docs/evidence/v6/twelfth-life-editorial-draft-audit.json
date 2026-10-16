@@ -1,0 +1,15 @@
+{
+  "status": "THREE_INTERNAL_ROUNDS_DRAFT_UNPUBLISHED",
+  "beforeAfterRecords": 34,
+  "beats": 393,
+  "options": 68,
+  "ends": [
+    "rl_letter_after",
+    "rl_watch_after"
+  ],
+  "sampledPaths": 512,
+  "exhaustive": false,
+  "longestPassiveGap": 18,
+  "compilerWarnings": [],
+  "limits": "No production-direction/browser entry. Internal rounds only; no identity/age/action art, human acceptance or full goal completion."
+}

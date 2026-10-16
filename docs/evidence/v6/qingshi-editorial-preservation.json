@@ -1,0 +1,21 @@
+{
+  "baseline": "d2fa219",
+  "pathMap": {
+    "story/qingshi-author.mjs": "docs/archives/qingshi-v2-editorial-baseline/qingshi-author.mjs",
+    "story/qingshi-youth.mjs": "docs/archives/qingshi-v2-editorial-baseline/qingshi-youth.mjs",
+    "story/qingshi-career.mjs": "docs/archives/qingshi-v2-editorial-baseline/qingshi-career.mjs",
+    "story/qingshi-last.mjs": "docs/archives/qingshi-v2-editorial-baseline/qingshi-last.mjs",
+    "story/qingshi.ink": "story/qingshi-v2.ink",
+    "src/generated/qingshi.json": "src/generated/qingshi-v2.json",
+    "宋世江湖.md": "宋世江湖.md"
+  },
+  "frozen": {
+    "docs/archives/qingshi-v2-editorial-baseline/qingshi-author.mjs": "9c2cada6c2ab28446137bf14e861e93832532ece32eb9d9d0a424549bea1f9f4",
+    "docs/archives/qingshi-v2-editorial-baseline/qingshi-youth.mjs": "dea74dc38eca045253d146a3bc67a55e39bf75c732c3c08f46c5384c8e1ec714",
+    "docs/archives/qingshi-v2-editorial-baseline/qingshi-career.mjs": "6d865b12ada2a3f738422d336c2206fd9277f48ae9d05227c2c2a5e36cba2ce7",
+    "docs/archives/qingshi-v2-editorial-baseline/qingshi-last.mjs": "320abec4730ee0e852218175c002651107e1c5ce4056a0f14ba6fd0f9c5e76d6",
+    "story/qingshi-v2.ink": "f36a9152b6bcdc1cefbf59054e972c3540901c8439bd0e4e4f7f4c4736a447d0",
+    "src/generated/qingshi-v2.json": "61000c248de1bd7839f783e3dd5ee26bc05b71fead533e3231ebe6f3bc2e4bfa",
+    "宋世江湖.md": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393"
+  }
+}

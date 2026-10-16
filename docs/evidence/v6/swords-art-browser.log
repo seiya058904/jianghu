@@ -1,0 +1,57 @@
+[WebServer] (node:36916) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 14 tests using 2 workers
+
+(node:41384) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:34936) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\offline-work-pack.spec.ts:8:134 › download two-swords pack restores uncached story data on root (621ms)
+  ok  3 tests\offline-work-pack.spec.ts:8:134 › download two-swords pack restores uncached story data on subpath (562ms)
+  ok  4 tests\offline-work-pack.spec.ts:8:134 › download seven-questions pack restores uncached story data on root (549ms)
+  ok  5 tests\offline-work-pack.spec.ts:8:134 › download seven-questions pack restores uncached story data on subpath (560ms)
+  ok  6 tests\swords-art.spec.ts:10:25 › Swords art two-swords: old CG/pending saves, raw slots/export/import, and two-frame exit (740ms)
+  ok  7 tests\swords-art.spec.ts:10:25 › Swords art seven-questions: old CG/pending saves, raw slots/export/import, and two-frame exit (694ms)
+  ok  8 tests\swords-art.spec.ts:18:25 › Swords art two-swords: old pending choice restores without consuming a response (255ms)
+  ok  9 tests\swords-art.spec.ts:18:25 › Swords art seven-questions: old pending choice restores without consuming a response (262ms)
+  x  10 tests\swords-art.spec.ts:21:1 › Swords art CGs, actual expressions and per-frame closeups fit seven sizes with usable reading controls (5.2s)
+(node:23008) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 11 tests\swords-art.spec.ts:27:1 › Swords art night reading and failed CG loading retain the actual text and advance (597ms)
+  ok  2 tests\seven-questions.spec.ts:6:26 › Seven Questions V2 actual complete route 0: separate witnessed locations and independent save (1.1m)
+  ok 12 tests\two-swords.spec.ts:5:26 › Two Swords actual full first-book route 0 (58.7s)
+  ok 13 tests\seven-questions.spec.ts:6:26 › Seven Questions V2 actual complete route 1: separate witnessed locations and independent save (1.0m)
+  ok 14 tests\two-swords.spec.ts:5:26 › Two Swords actual full first-book route 1 (57.9s)
+
+
+  1) tests\swords-art.spec.ts:21:1 › Swords art CGs, actual expressions and per-frame closeups fit seven sizes with usable reading controls
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  locator('#app')
+    Expected: "ss_six_years_2"
+    Received: "ss_six_years_3"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveAttribute" locator('#app') with timeout 5000ms
+      - waiting for locator('#app')
+        14 × locator resolved to <div id="app" data-beat="ss_six_years_3" data-phase="awaitingAdvance">…</div>
+           - unexpected value "ss_six_years_3"
+
+
+      22 |  const targets=[{work:works[0],id:'ss_six_years_2'},{work:works[0],id:'ss_fifteen_8'},{work:works[0],id:works[0].camera},{work:works[0],id:works[0].cg},{work:works[1],id:works[1].camera},{work:works[1],id:works[1].cg}];
+      23 |  for(const {work,id}of targets){const s=at(work,id),context=await browser.newContext(),page=await context.newPage();await page.addInitScript(({prefix,raw})=>{localStorage.setItem(prefix+'auto',raw);localStorage.setItem(prefix+'settings',JSON.stringify({speed:0,reduced:true,size:24}))},{prefix:work.prefix,raw:JSON.stringify(s.save())});
+    > 24 |   for(const [width,height]of [[360,800],[390,844],[412,915],[800,360],[1366,768],[1440,900],[1920,1080]]){await page.setViewportSize({width,height});await page.goto('/'+work.slug+'.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',id);await expect(page.locator('#dialogue-visible')).toHaveText(s.frame.text);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);const box=await page.locator('#advance-button').boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy();if(s.frame.stage.camera==='portrait'){await expect(page.locator('.actor')).toHaveCount(1);await expect(page.locator('.actor')).toHaveAttribute('style',/--portrait-size:auto 240%/)}if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/swords-art-${id}-${width}.png`});await page.locator('#advance-button').click();await expect(page.locator('#app')).not.toHaveAttribute('data-beat',id)}await context.close();
+         |                                                                                                                                                                                                                                     ^
+      25 |  }
+      26 | });
+      27 | test('Swords art night reading and failed CG loading retain the actual text and advance',async({browser})=>{
+        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\swords-art.spec.ts:24:229
+
+    Error Context: test-results\swords-art-Swords-art-CGs--b4e4a-ith-usable-reading-controls\error-context.md
+
+  1 failed
+    tests\swords-art.spec.ts:21:1 › Swords art CGs, actual expressions and per-frame closeups fit seven sizes with usable reading controls
+  13 passed (2.1m)

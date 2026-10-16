@@ -1,0 +1,16 @@
+[
+  {
+    "work": "sea",
+    "beats": 228,
+    "options": 46,
+    "sampledPaths": 512,
+    "exhaustive": false
+  },
+  {
+    "work": "sea-tide",
+    "beats": 211,
+    "options": 42,
+    "sampledPaths": 512,
+    "exhaustive": false
+  }
+]

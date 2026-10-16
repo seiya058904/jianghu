@@ -1,0 +1,7 @@
+{
+  "tool": "built-in image_gen",
+  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-fcdd7fdf-5129-4662-bb08-a72ae1ad7970.png",
+  "prompt": "Use case: character portrait asset. Single full standing character for a Chinese historical wuxia visual novel, restrained naturalistic watercolor and fine ink, tactile hand painted cloth, believable anatomy, Song-inspired grounded costume, no fantasy armor. Male elder aged about84, lean tall build, long narrow face, white eyebrows and long sparse white beard, faded pale gray-blue cross collar scholar robe, plain wooden hairpin, hands folded naturally, no religious insignia, dignified neutral listening expression. A generic senior robed master type. Entire head, feet and sleeves within frame, portrait 2:3, clearly readable silhouette, front three quarter view looking toward viewer. True transparent background, no floor, no scenery, no frame, no text, no logo, no shadow rectangle. Production generic NPC template, one person only.",
+  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/npc-robed-elder.webp",
+  "review": "Visually reviewed: age, identity or generic type, anatomy and meaningful pose/environment differences checked; mapped to matching production metadata. Independent NPC ownership and same-stage collisions audited. Browser final screenshot review remains pending."
+}

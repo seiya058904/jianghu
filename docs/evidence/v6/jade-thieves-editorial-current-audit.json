@@ -1,0 +1,14 @@
+{
+  "status": "VERSIONED_PRODUCTION_CONTENT_VERIFIED_NOT_FULL_GOAL_ACCEPTANCE",
+  "declared": 320,
+  "visited": 320,
+  "options": 45,
+  "endings": [
+    "jt_private_account",
+    "jt_unmarked_life"
+  ],
+  "decisions": 22,
+  "samples": 768,
+  "exhaustive": false,
+  "longestPassiveGap": 16
+}

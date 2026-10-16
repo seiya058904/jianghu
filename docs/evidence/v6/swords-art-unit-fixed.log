@@ -1,0 +1,13 @@
+✔ two-swords: exact previous bytes, all words/commands/variables and narrow presentation-only compatibility (320.2902ms)
+✔ seven-questions: exact previous bytes, all words/commands/variables and narrow presentation-only compatibility (268.2812ms)
+✔ Book CGs last two frames and camera is strictly per frame, not a sticky age/look change (32.9578ms)
+✔ Changed-art restore still rejects forged camera, variables, command truncation and mismatched versions (79.2773ms)
+✔ Same-age Xie expressions use three actual independent files and both CGs remain reachable in broad sampling (6165.9779ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6980.1313

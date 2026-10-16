@@ -1,0 +1,21 @@
+{
+  "baseline": "91e2958",
+  "pathMap": {
+    "story/longmen-author.mjs": "docs/archives/longmen-v2-editorial-baseline/longmen-author.mjs",
+    "story/longmen-scenes.mjs": "docs/archives/longmen-v2-editorial-baseline/longmen-scenes.mjs",
+    "story/longmen-night.mjs": "docs/archives/longmen-v2-editorial-baseline/longmen-night.mjs",
+    "story/longmen.ink": "story/longmen-v2.ink",
+    "src/generated/longmen.json": "src/generated/longmen-v2.json",
+    "宋世江湖.md": "宋世江湖.md"
+  },
+  "frozen": {
+    "docs/archives/longmen-v2-editorial-baseline/longmen-author.mjs": "1804a2221582d91f3d73d36ef90f51889c0d364ba8804fe93f19808303a33a29",
+    "docs/archives/longmen-v2-editorial-baseline/longmen-scenes.mjs": "614e20fcb2281bec08c69aa4910a7967d5eca52e514775dcadc17412964d7f45",
+    "docs/archives/longmen-v2-editorial-baseline/longmen-night.mjs": "746cd8b47e583671199a1d33271d753d2630a842dd39ec1dbbb909b1a4b2efa8",
+    "story/longmen-v2.ink": "20869c4b727240cfc0e36d2b4f9494753891d1b59bf4d5552a75e6249ce72e7c",
+    "src/generated/longmen-v2.json": "defa8d5958677bc820c70a3e532909ca406a48521625ff235ac31a7789cbe58e",
+    "宋世江湖.md": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393"
+  },
+  "sharedCatalogCorrection": "Xu biography replaces relative previous-year with fixed age56; applies to glossary in all editions. Archived story bytes and art mappings unchanged.",
+  "newScene": "lm_returntrial is a V3-only logical day4 label reusing existing longmen-hall art."
+}

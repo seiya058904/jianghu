@@ -1,0 +1,35 @@
+✔ Qingshi v1 archive bytes and independently addressable saves remain frozen (1.5276ms)
+✖ Qingshi both lives keep all words and inputs, old knife CG and elder closeup restore without resurrecting anyone (248.1023ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 1
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 361.169
+
+✖ failing tests:
+
+test at tests\qingshi-v2.test.ts:15:1
+✖ Qingshi both lives keep all words and inputs, old knife CG and elder closeup restore without resurrecting anyone (248.1023ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+
+  + undefined
+  - null
+
+      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/qingshi-v2.test.ts:24:62)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: null,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

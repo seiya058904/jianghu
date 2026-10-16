@@ -1,0 +1,27 @@
+[WebServer] (node:46332) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 16 tests using 2 workers
+
+(node:20952) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:46384) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\offline-work-pack.spec.ts:8:134 › download sea pack restores uncached story data on root (619ms)
+  ok  3 tests\offline-work-pack.spec.ts:8:134 › download sea pack restores uncached story data on subpath (475ms)
+  ok  4 tests\offline-work-pack.spec.ts:8:134 › download sea-tide pack restores uncached story data on root (437ms)
+  ok  5 tests\offline-work-pack.spec.ts:8:134 › download sea-tide pack restores uncached story data on subpath (437ms)
+  ok  2 tests\sea-rigging.spec.ts:10:46 › Sea rigging sea actual full route 0 (46.9s)
+  ok  6 tests\sea-rigging.spec.ts:10:46 › Sea rigging sea actual full route 1 (44.2s)
+  ok  7 tests\sea-rigging.spec.ts:10:46 › Sea rigging sea-tide actual full route 0 (41.1s)
+  ok  8 tests\sea-rigging.spec.ts:10:46 › Sea rigging sea-tide actual full route 1 (41.0s)
+  ok  9 tests\sea-rigging.spec.ts:15:22 › Sea rigging sea old saves retain raw backups, slots and export bytes (635ms)
+  ok 10 tests\sea-rigging.spec.ts:15:22 › Sea rigging sea-tide old saves retain raw backups, slots and export bytes (579ms)
+  ok 11 tests\sea-rigging.spec.ts:19:22 › Sea rigging sea old pending choices stay pending across restore and reload (223ms)
+  ok 12 tests\sea-rigging.spec.ts:19:22 › Sea rigging sea-tide old pending choices stay pending across restore and reload (246ms)
+  ok 13 tests\sea-rigging.spec.ts:22:1 › Sea rigging CGs and two question closeups fit seven sizes and return to ordinary framing (6.6s)
+  ok 14 tests\sea-rigging.spec.ts:25:1 › Sea rigging night reading and CG failure preserve text and controls (589ms)
+  ok 15 tests\sea-rigging.spec.ts:28:22 › Sea rigging sea fresh offline page restores frozen saves with the shared CG (1.0s)
+  ok 16 tests\sea-rigging.spec.ts:28:22 › Sea rigging sea-tide fresh offline page restores frozen saves with the shared CG (1.0s)
+
+  16 passed (3.1m)

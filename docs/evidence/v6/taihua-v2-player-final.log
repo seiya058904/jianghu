@@ -1,0 +1,25 @@
+
+Running 20 tests using 1 worker
+
+  ok  1 tests\player.spec.ts:44:55 › new story completes together; real reply, reload and ending (23.2s)
+  ok  2 tests\player.spec.ts:44:55 › new story completes practice; real reply, reload and ending (24.7s)
+  ok  3 tests\player.spec.ts:44:55 › new story completes road; real reply, reload and ending (22.6s)
+  ok  4 tests\player.spec.ts:68:1 › manual slot restores a choice, read-only panels pause, export/import and protected restart (1.8s)
+  ok  5 tests\player.spec.ts:89:1 › old auto/manual/previous/endings remain byte-for-byte intact and playable (1.1s)
+  ok  6 tests\player.spec.ts:100:1 › damaged data and invalid imports stay exportable without replacing current play (753ms)
+  ok  7 tests\player.spec.ts:116:1 › typing click completes first; stage/keyboard cannot skip a reply; double click settles once (3.2s)
+  ok  8 tests\player.spec.ts:130:1 › auto and read skip stop at choices, unvisited reactions are not skipped (7.4s)
+  ok  9 tests\player.spec.ts:141:1 › storage write failure keeps the old snapshot and current progress can still export (1.1s)
+  ok 10 tests\player.spec.ts:152:1 › draft correction keeps raw slots, migrates the current beat and preserves an exportable original (629ms)
+  ok 11 tests\player.spec.ts:166:121 › stage, choices, three actors and 24px night mode 1440 (11.8s)
+  ok 12 tests\player.spec.ts:166:121 › stage, choices, three actors and 24px night mode 1366 (11.7s)
+  ok 13 tests\player.spec.ts:166:121 › stage, choices, three actors and 24px night mode 390 (11.2s)
+  ok 14 tests\player.spec.ts:166:121 › stage, choices, three actors and 24px night mode 360 (11.2s)
+  ok 15 tests\player.spec.ts:177:1 › touch simulation, rotation and enlarged long content use local scrolling (1.6s)
+  ok 16 tests\player.spec.ts:189:1 › subpath and all art unavailable still support real choices (1.2s)
+  ok 17 tests\player.spec.ts:196:1 › root and subpath production cache reload offline and accept a new choice (2.3s)
+  ok 18 tests\taihua-v2-upgrade.spec.ts:7:1 › Taihua v2 leaves real v1 auto, manual, previous and settings untouched; old link restores original stage and two-ending counter (555ms)
+  ok 19 tests\taihua-v2-upgrade.spec.ts:10:1 › Taihua three late choices and Mu scene fit seven viewports with keyboard and decoded imagery (4.4s)
+  ok 20 tests\taihua-v2-upgrade.spec.ts:13:1 › Taihua unvisited guidance assets restore offline at root and subpath with v1 cache kept separate (3.1s)
+
+  20 passed (2.5m)

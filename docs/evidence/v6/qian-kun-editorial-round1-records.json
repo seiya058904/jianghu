@@ -1,0 +1,104 @@
+{
+  "round": 1,
+  "focus": "chronology, one real letter and separate remembered bouts",
+  "records": [
+    {
+      "round": 1,
+      "file": "story/drafts/qian-kun/qian-kun-author.mjs",
+      "reason": "草稿使用共享writer，不改正式构建入口。",
+      "before": "./chronicle-writer.mjs",
+      "after": "../../chronicle-writer.mjs"
+    },
+    {
+      "round": 1,
+      "file": "story/drafts/qian-kun/qian-kun-author.mjs",
+      "reason": "正文/命令修改独立写草稿，保持现行V2与旧档。",
+      "before": "story/qian-kun.ink",
+      "after": "story/drafts/qian-kun/qian-kun-editorial.ink"
+    },
+    {
+      "round": 1,
+      "file": "story/drafts/qian-kun/qian-kun-young.mjs",
+      "reason": "同一信封在司马怀里，许拿的是灯，不凭空复制一封。",
+      "before": "许师姐在收灯，手里那封还等着你送出去的信，把你照得比练剑时更无处可藏。",
+      "after": "许师姐提灯拦住你，照见你怀里露出的信封角。信还没送，她已经等到收灯的时候。"
+    },
+    {
+      "round": 1,
+      "file": "story/drafts/qian-kun/qian-kun-young.mjs",
+      "reason": "固定败局以疼痛和站位表现，删掉选择能否取消结果的制作说明。",
+      "before": "输了。不是别人认错赢家，也不是你只要答对眼前一句便能将那一下取消。刀客收尺，看你还盯着他脚下。",
+      "after": "输了。肋下那点还疼，你再看他的脚，鞋底稳稳贴着地。刀客收尺，等你把抢进来的半步退回去。"
+    },
+    {
+      "round": 1,
+      "file": "story/drafts/qian-kun/qian-kun-young.mjs",
+      "reason": "保留五战跨时，去掉对不存在刷战绩方式的辩白。",
+      "before": "五战不是同一天四处补出来的战绩，你每回带回去的东西都要花日子。",
+      "after": "几次来去之间，你带回去的每一剑都要花日子想，想过还得请人真接。"
+    },
+    {
+      "round": 1,
+      "file": "story/drafts/qian-kun/qian-kun-head.mjs",
+      "reason": "先坐稳、翻册、问去处，再作出行交接，避免先出发后寻人。",
+      "before": "n|门里尚有你答应的事，新的门也还在远处，两边不会因为你兴奋便自动替你安排好。",
+      "after": "n|师父把你叫回去坐完这盏茶。又过些时日，真正坐稳总谱第一，你翻太极旧册，向门中老人问周祖可还活着。\nn|周道玄，太极旧掌，居终南混元院。宁无极晚年私评十人以他居首，那不是另一张公开总谱；旧册也没有替你约下一场问武。"
+    },
+    {
+      "round": 1,
+      "file": "story/drafts/qian-kun/qian-kun-head.mjs",
+      "reason": "原典是门外等九日，不能将个人想去当周已应约。",
+      "before": "先按已经定的约去，将行程与未答的事托驿回报，知道人手仍得真接上。",
+      "after": "先赶这一程山路，将去处与未答的事托驿回报，承担不能当面说清的来回。"
+    },
+    {
+      "round": 1,
+      "file": "story/drafts/qian-kun/qian-kun-head.mjs",
+      "reason": "此行去终南，未去海港；交接须真有可用地点。",
+      "before": "最后只确认回信从哪个港或驿来",
+      "after": "最后只确认你走哪条山路、回话送哪处驿"
+    },
+    {
+      "round": 1,
+      "file": "story/drafts/qian-kun/qian-kun-head.mjs",
+      "reason": "已翻册后真正到门，修门不见，并把老人登场留给明确舞台。",
+      "before": "part('nine_days','qk_gate','qk_gatechild',`n|后来真正坐稳第一，你翻旧册，问周祖还活么。周道玄，太极旧掌，居终南混元院；宁无极晚年私评十人居首，不是又一张公开总谱。\nn|你到门前，童子不认这个总谱第一。问找祖师做什么，你答打架。门不见，你便等。第九日，极老的周道玄终于出来。",
+      "after": "part('nine_days','qk_gate','qk_gatechild',`n|到了混元院，童子不认这个总谱第一。问找祖师做什么，你答打架。祖师不见，你便等。第九日，院门终于开了。"
+    },
+    {
+      "round": 1,
+      "file": "story/drafts/qian-kun/qian-kun-head.mjs",
+      "reason": "周先真实登场、当面提问，再由司马回应；不只童子在场却隔空应百招。",
+      "before": " choose('zhou_field',[",
+      "after": " stage('qk_gate','qk_zhou,qk_gatechild');say(`n|周道玄慢慢走下门槛。童子抱茶站到一边，先等老人看完你。\nqk_zhou~intent|你现在总谱第一，还找我做什么？`);\n choose('zhou_field',["
+    },
+    {
+      "round": 1,
+      "file": "story/drafts/qian-kun/qian-kun-clouds.mjs",
+      "reason": "门前问答已完成，进入院子便试手，不重复问来意。",
+      "before": "part('zhou_field','qk_mixedyard','qk_zhou',`qk_zhou~intent|你现在总谱第一，还找我做什么？\ny|还有没见过的。\nn|第一轮",
+      "after": "part('zhou_field','qk_mixedyard','qk_zhou',`n|老人领你进院，童子将茶留在门边。第一轮"
+    },
+    {
+      "round": 1,
+      "file": "story/drafts/qian-kun/qian-kun-after.mjs",
+      "reason": "海船评语之后实际回山，在记录者面前回忆旧战；叶不随场站进孟/慧空的问艺。",
+      "before": "n|八卦孟沧海，一百九十余败。问服不服，你服；问差多少，你反问这些老人为何都爱问这个。少林慧空只试两掌，第三未出便停。\nn|陆天行、公孙无我、妙真、燕九霄，有失踪、有闭门、有不肯见，终究没逐一碰上。那份遗憾，你不让后来人替你添几行已赢的战绩来填。`);",
+      "after": "`);\n go('other_inquiries');\n part('other_inquiries','qk_headroom','qk_youngscribe',`n|回山以后，记录者把别几场旧问也摊到桌上，请你逐处说亲见。八卦孟沧海，一百九十余败。问服不服，你服；问差多少，你反问这些老人为何都爱问这个。\nn|少林慧空只试两掌，第三未出便停。陆天行、公孙无我、妙真、燕九霄，有失踪、有闭门、有不肯见，终究没逐一碰上。\nqk_youngscribe~intent|没见到的，旁边还留一行么？\ny|留着。我还想问。\nn|他把墨移开，等你说完才写。`);"
+    },
+    {
+      "round": 1,
+      "file": "story/drafts/qian-kun/qian-kun-after.mjs",
+      "reason": "前面已坐稳才出行，返山谈榜不再写成此刻重登一次。",
+      "before": "part('first_in_line','qk_headroom','qk_manager,qk_youngscribe',`n|重新坐稳总谱第一，有人拿旧败问它有何意义。",
+      "after": "part('first_in_line','qk_headroom','qk_manager,qk_youngscribe',`n|记录者写到总谱第一，停笔问：这些旧败都列着，第一又是什么意思？"
+    },
+    {
+      "round": 1,
+      "file": "story/drafts/qian-kun/qian-kun-slow.mjs",
+      "reason": "返真保持日常，以倒茶与停掌写动作，不列出未发生的神迹。",
+      "before": "n|没有雷落，也没有全身发光。院里仍有下一个来问的人，师父手里仍是那杯已经晾了一阵的茶。",
+      "after": "n|你坐回师父对面，手还悬在方才停掌的地方。老人自己把凉茶倒掉，等你先笑完，再把热水推过来。"
+    }
+  ]
+}

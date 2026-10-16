@@ -1,0 +1,11 @@
+{
+  "targets": [
+    "./assets/taihua-v2-DRO33qiJ.js",
+    "./art/v6/cg-taihua-night.webp"
+  ],
+  "cacheColdBeforeDownload": true,
+  "cacheRestoredByExplicitV2Download": true,
+  "HTTPcacheCleared": true,
+  "freshOfflineV2CGAndData": true,
+  "freshOfflineV3NightChoiceAndResponse": true
+}

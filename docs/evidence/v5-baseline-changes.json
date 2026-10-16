@@ -1,0 +1,25 @@
+{
+  "git": false,
+  "changedOriginalPaths": [
+    "ARCHITECTURE_REVIEW.md",
+    "BRANCH_MATRIX.md",
+    "DESIGN.md",
+    "DIALOGUE_AUTHORING_GUIDE.md",
+    "index.html",
+    "INTERACTION_QA.md",
+    "NARRATIVE_DESIGN.md",
+    "package.json",
+    "PRODUCT.md",
+    "README.md",
+    "vite.config.ts",
+    "src\\player.ts",
+    "src\\stage.css",
+    "src\\vn-runtime.ts",
+    "src\\vn-ui.ts",
+    "public\\sw.js",
+    "scripts\\compile-story.mjs",
+    "scripts\\validate-dialogue.mjs",
+    "tests\\player.spec.ts"
+  ],
+  "knownGeneratedReplacement": "public/art/v5/zhaoli.png -> zhaoli.webp; originals preserved in archive and tool output"
+}

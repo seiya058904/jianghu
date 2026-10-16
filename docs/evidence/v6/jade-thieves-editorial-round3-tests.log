@@ -1,0 +1,60 @@
+✔ Jade draft reproduces premature order reveal then leaves actual disclosure to the player (57.5242ms)
+✔ Jade draft auction observation and rescue priorities each produce their actual later action (50.3357ms)
+✔ Jade draft sleeve actions name both bodies under either viewpoint and retain different wet-clothes treatment costs (25.4424ms)
+✔ Jade draft early naming and package actions keep distinct shared-life and resource returns (45.5561ms)
+✔ Jade draft repayment alternatives do not re-owe already settled craftsman wages; time and escape stay concrete (45.1681ms)
+✖ Jade draft two viewpoints and both private futures preserve fixed death, ordinary true jade and final objects; saves replay exactly (6.5028ms)
+✖ Jade draft 768 sampled alternatives cover all declared beats/options and keep bounded passive gaps (4110.0849ms)
+✔ Jade draft leaves published first/second volume, canon and original authors exact (2.2511ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 6
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4574.9467
+
+✖ failing tests:
+
+test at tests\jade-thieves-editorial-draft.test.ts:33:1
+✖ Jade draft two viewpoints and both private futures preserve fixed death, ordinary true jade and final objects; saves replay exactly (6.5028ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+  22 !== 21
+
+      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/jade-thieves-editorial-draft.test.ts:34:247)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 22,
+    expected: 21,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\jade-thieves-editorial-draft.test.ts:37:1
+✖ Jade draft 768 sampled alternatives cover all declared beats/options and keep bounded passive gaps (4110.0849ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+  45 !== 43
+
+      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/jade-thieves-editorial-draft.test.ts:40:129)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 45,
+    expected: 43,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

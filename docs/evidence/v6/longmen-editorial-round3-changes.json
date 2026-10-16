@@ -1,0 +1,95 @@
+{
+  "status": "THIRD_INTERNAL_REVIEW_DRAFT_UNPUBLISHED",
+  "changes": [
+    {
+      "id": "L26",
+      "round": 3,
+      "focus": "alternative-route-and-responsibility",
+      "file": "longmen-night.mjs",
+      "reason": "再试成本落在实际收行装差事，不虚指一段次晨未说明的场边热闹。",
+      "before": "n|又试两回，许才叫停。你收刀时外头已有人搬起行李，今日得少站在场边看一会儿。",
+      "after": "n|又试两回，许才叫停。行李已经搬到院门，外头先后喊过你两声，你收刀以后还得过去交接。"
+    },
+    {
+      "id": "L27",
+      "round": 3,
+      "focus": "alternative-route-and-responsibility",
+      "file": "longmen-night.mjs",
+      "reason": "实际承担代收干粮的人的早饭与时间，时间不凭空补回。",
+      "before": "iff('lm_morning_try',`n|你少看的那段场边热闹已散，同门替你收的半包干粮仍要自己接回。重试那几遍占的时辰，没人又替你添一份。`",
+      "after": "iff('lm_morning_try',`n|同门替你扎好半包干粮，自己还没吃早饭。你把热粥端回来，等他吃完才交接；原定早走的那半刻，已经补不回来了。`"
+    },
+    {
+      "id": "L28",
+      "round": 3,
+      "focus": "alternative-route-and-responsibility",
+      "file": "longmen-author.mjs",
+      "reason": "五年后不把行旅与留馆都先写成同一种回帖差事，具体责任在各自结尾履行。",
+      "before": "n|五年以后。贺景庭百岁后自请退榜，河中第一终于换成罗天庆。你带着镇河门的回帖到席前，已不是初借木刀的那一日。",
+      "after": "n|五年以后。贺景庭百岁后自请退榜，河中第一终于换成罗天庆。你到席前时，门人已经摆过一轮酒碗。"
+    },
+    {
+      "id": "L29",
+      "round": 3,
+      "focus": "alternative-route-and-responsibility",
+      "file": "longmen-author.mjs",
+      "reason": "撤酒答话区分自请退榜与实际输赢，少用已经不压着的歧义。",
+      "before": "y|我会讲。他没输给您，也没再压着您。是他自己退了。",
+      "after": "y|我会照这句讲。不写您赢了贺老，只写他自请退榜。"
+    },
+    {
+      "id": "L30",
+      "round": 3,
+      "focus": "alternative-route-and-responsibility",
+      "file": "longmen-author.mjs",
+      "reason": "罗谈自己的明日课务，退榜不被误读成贺从此不练。",
+      "before": "lm_luo~intent|开。贺老退了，我还没退。",
+      "after": "lm_luo~intent|开。榜位先让他们记，明日那一课照旧。"
+    },
+    {
+      "id": "L31",
+      "round": 3,
+      "focus": "alternative-route-and-responsibility",
+      "file": "longmen-author.mjs",
+      "reason": "行旅末段先收清不同去处的回帖，以物件与责任替代宽泛见识总结。",
+      "before": "n|你在路上见过更多不会替你留位置的人，也每回把能到的时日写回门里。送剑那一段没有让你忽然懂九剑，却让你在别人停手时，知道先把兵刃递还。",
+      "after": "n|你将席上听见的撤酒缘故另写一行，和沿路应过的回帖分开收，哪封去镇河、哪封交石，封面都写清。"
+    },
+    {
+      "id": "L32",
+      "round": 3,
+      "focus": "alternative-route-and-responsibility",
+      "file": "longmen-author.mjs",
+      "reason": "留馆的五年责任按早期教人/外来递帖及是否真做分别落到接班、亲走、收话、纠错，不永久惩罚当年学徒。",
+      "before": "say(`n|你留在门里，把第七刀拆成学生能试的一步。许重山仍会输给强过自己的人，也仍会推开你的刀，问你下一步准备让谁走。`);",
+      "after": "out.push('{\\n- lm_early_route == 1:');\niff('lm_early_practice',`n|最初与你撞过退线的门人，如今能接下一班。你把课册交给他，先到许面前试自己改过的起手；院里没有因为你走开半刻便停课。`,`n|你记得那张画完却没走过的纸，曾让抬架的人在门口多等。如今有人来借课册，你先陪他走窄处，回来再把未交完的那一班接上。`);\nout.push('- else:');\niff('lm_early_practice',`n|有远来的问帖到馆，你让送帖人自己把愿问哪一场说完，再把名字记下。弟子在旁学着收话，不替客人先缩成随便试手。`,`n|有人替外客把问帖改成客套话，你叫他停住，请来客重新读原字。你先前说轻过石的那一帖，今日不让学生再替别人改掉要问的东西。`);\nout.push('}');"
+    },
+    {
+      "id": "L33",
+      "round": 3,
+      "focus": "early-route-late-handoff",
+      "file": "longmen-author.mjs",
+      "reason": "早分流在行旅结尾同样留下具体信任/交班动作，不把半日前照顾与五年后责任混成一个回复。",
+      "before": "Travel closes after the general collection of letters.",
+      "after": "iff('lm_early_route == 2 and lm_early_practice',`n|石交来的下一封帖只夹了会面处。你按原字递出，拿到回话再去找他，他先去问自己的剑。`);\niff('lm_early_route == 2 and not lm_early_practice',`n|再接石的问帖，你先当面读完原字，才去找收帖的人。这回他没有替你补那句愿问第一，等你把原话交清才封回信。`);\niff('lm_early_route == 1',`n|临走前，新门人到院门送你，你先问下一班由谁接。他真叫来接班的人，你才带着自己的行包出门。`);\n"
+    },
+    {
+      "id": "L34",
+      "round": 3,
+      "focus": "handoff-agent-recheck",
+      "file": "longmen-author.mjs",
+      "reason": "复读交帖动作：石封发出的问帖，收帖人回话；避免最近的他代词与封回信混淆行动人。",
+      "before": "n|再接石的问帖，你先当面读完原字，才去找收帖的人。这回他没有替你补那句愿问第一，等你把原话交清才封回信。",
+      "after": "n|再接石的问帖，你先当面读完原字。石听你读准，才把帖封好交来；这回没有替你补愿问第一。你拿到答复以后，再报哪个门人收过。"
+    },
+    {
+      "id": "L35",
+      "round": 3,
+      "focus": "private-viewpoint-pronoun-recheck",
+      "file": "longmen-night.mjs",
+      "reason": "私谈POV是贺本人，转灯罩也用你，不突然改为贺的外部旁观者。",
+      "before": "n|院里风进来，灯芯偏到一边。贺把灯罩转了半面，章续上茶，两个人就又坐了一会儿。",
+      "after": "n|院里风进来，灯芯偏到一边。你把灯罩转了半面，章续上茶，两个人就又坐了一会儿。"
+    }
+  ]
+}
