@@ -1,3 +1,4 @@
+import {evidencePath} from '../tests/evidence-path.ts';
 // V7 narration-run audit — how much uninterrupted narration does a reader really face?
 //
 // The commission's dialogue-ratio target (§8.2) is a *locator*, not a verdict: it
@@ -82,8 +83,8 @@ const report={generatedBy:'node --experimental-strip-types scripts/audit-v7-narr
     overTwentyBeatRuns:withRuns.filter(r=>r.longestNarrationRun>20).map(r=>`${r.slug}:${r.longestNarrationRun}`),
   }};
 
-mkdirSync('docs/evidence/v7',{recursive:true});
-writeFileSync('docs/evidence/v7/narration-runs.json',`${JSON.stringify(report,null,1)}\n`);
+
+writeFileSync(evidencePath('docs/evidence/v7/narration-runs.json'),`${JSON.stringify(report,null,1)}\n`);
 for(const row of withRuns)console.log(`${row.slug.padEnd(16)} longestRun ${String(row.longestNarrationRun).padStart(3)}  openingRun ${String(row.openingNarrationRun).padStart(3)}  runEndsAt ${String(row.runEndsAtStep).padStart(4)}/${String(row.approxTotalSteps).padStart(4)} (${row.longestAt})`);
 console.log(`\nmax narration run ${report.summary.maxLongestRun} (${report.summary.maxLongestRunAt}); max opening run ${report.summary.maxOpeningRun} (${report.summary.worstOpening})`);
 console.log(`runs over 20 beats: ${report.summary.overTwentyBeatRuns.join(', ')||'none'}`);

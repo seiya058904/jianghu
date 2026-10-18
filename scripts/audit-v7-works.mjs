@@ -1,3 +1,4 @@
+import {evidencePath} from '../tests/evidence-path.ts';
 // V7 works + canon-coverage audit.
 // Reads the canonical work registry (src/chronicle-catalog.ts) and the author
 // sources (story/*.ink) with no browser, then writes two ledgers:
@@ -8,7 +9,7 @@ import {readFileSync,writeFileSync,mkdirSync,existsSync} from 'node:fs';
 import {chronicleWorks} from '../src/chronicle-catalog.ts';
 import {chronicleCharacters} from '../src/chronicle-catalog.ts';
 
-mkdirSync('docs/evidence/v7',{recursive:true});
+
 
 function inkStats(file){
   const path=`story/${file}.ink`;
@@ -49,12 +50,12 @@ for(const work of chronicleWorks){
 }
 const current=ledger.filter(row=>!/-(v1|v2|v3|v4|v5)$/.test(row.slug));
 
-writeFileSync('docs/evidence/v7/works-ledger.json',JSON.stringify({
+writeFileSync(evidencePath('docs/evidence/v7/works-ledger.json'),JSON.stringify({
   generatedBy:'node --experimental-strip-types scripts/audit-v7-works.mjs',
   editions:ledger.length,currentEditions:current.length,
   rows:ledger,
 },null,2)+'\n');
-writeFileSync('docs/evidence/v7/works-current.json',JSON.stringify({current},null,2)+'\n');
+writeFileSync(evidencePath('docs/evidence/v7/works-current.json'),JSON.stringify({current},null,2)+'\n');
 
 console.log(`Registered editions: ${ledger.length}`);
 for(const row of ledger)

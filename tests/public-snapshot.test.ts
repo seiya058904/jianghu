@@ -27,6 +27,41 @@ const python = findPython();
 const skip = python ? false : 'python3 is required to run the public snapshot policy tests';
 const env = {...process.env, PYTHONIOENCODING: 'utf-8', PYTHONUTF8: '1'};
 
+test('publish gate stages only reviewed paths, accepting new directories while rejecting extra files and build drift', () => {
+  const shell = ['pwsh', 'powershell'].find(name => spawnSync(name, ['-NoProfile', '-NonInteractive', '-Command', '$PSVersionTable.PSVersion.Major'], {encoding:'utf8'}).status === 0);
+  assert.ok(shell, 'PowerShell is required to exercise the actual publication path gate');
+  const root = tempRoot('jianghu-publish-paths-');
+  const publicRepo = makePublic(root, {'README.md':'before\n'});
+  const files = {'README.md':'after\n', 'docs/audits/new-review/report.md':'report\n', 'src/generated/new-baseline/story.json':'{}\n'};
+  writeFiles(publicRepo, files);
+  const source = readFileSync(join(repoRoot, 'scripts', 'publish-public.ps1'), 'utf8');
+  const gate = source.slice(source.indexOf('  $changedText ='), source.indexOf('  $npm ='));
+  assert.ok(gate.includes('Unexpected paths in the public checkout after apply'));
+  const command = `
+    $ErrorActionPreference='Stop'
+    function Invoke-Native { param($File, $CommandArgs); $output = & $File @CommandArgs; if ($LASTEXITCODE -ne 0) { throw 'git status failed' }; return @{Text=(($output | Out-String).Trim())} }
+    function Invoke-Git { param($Repository, $GitArgs); $output = & git -C $Repository @GitArgs; if ($LASTEXITCODE -ne 0) { throw 'git command failed' }; return (($output | Out-String).Trim()) }
+    function Stop-With { param($Message, $Code); throw $Message }
+    $publicClone=$env:JIANGHU_GATE_FIXTURE
+    $plan=ConvertFrom-Json $env:JIANGHU_GATE_PLAN
+    ${gate}
+    Write-Output 'APPROVED'
+  `;
+  const run = () => spawnSync(shell!, ['-NoProfile','-NonInteractive','-Command',command], {encoding:'utf8', env:{...env, JIANGHU_GATE_FIXTURE:publicRepo, JIANGHU_GATE_PLAN:JSON.stringify({changed:Object.keys(files),removed:[]})}});
+  const accepted = run();
+  assert.equal(accepted.status, 0, accepted.stdout + accepted.stderr);
+  assert.match(accepted.stdout, /APPROVED/);
+  assert.deepEqual(git(publicRepo, ['diff','--cached','--name-only']).split(/\r?\n/).sort(), Object.keys(files).sort());
+  git(publicRepo, ['diff','--exit-code']);
+  writeFiles(publicRepo, {'src/generated/new-baseline/story.json':'{"unexpectedBuildChange":true}\n'});
+  assert.notEqual(spawnSync('git', ['-C',publicRepo,'diff','--exit-code','--','story','src/generated']).status, 0);
+  writeFiles(publicRepo, {'src/generated/new-baseline/story.json':'{}\n'});
+  writeFiles(publicRepo, {'docs/audits/new-review/unplanned.md':'unexpected\n'});
+  const rejected = run();
+  assert.notEqual(rejected.status, 0);
+  assert.match(rejected.stdout + rejected.stderr, /Unexpected paths.*unplanned\.md/s);
+});
+
 function git(cwd: string, args: string[], input?: string): string {
   const result = spawnSync('git', ['-C', cwd, ...args], {encoding: 'utf8', input});
   assert.equal(result.status, 0, 'git ' + args.join(' ') + ' failed: ' + String(result.stderr ?? ''));

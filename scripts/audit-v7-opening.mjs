@@ -1,3 +1,4 @@
+import {evidencePath} from '../tests/evidence-path.ts';
 // V7 opening-rhythm ledger — no browser.
 //
 // For every current edition it measures, straight from the compiled Ink:
@@ -56,8 +57,8 @@ const report={generatedBy:'node --experimental-strip-types scripts/audit-v7-open
     longestPassiveRunMax:Math.max(...rows.map(row=>row.longestPassiveRun)),
     dialogueRatioMin:Math.min(...rows.map(row=>row.dialogueRatio))}};
 
-mkdirSync('docs/evidence/v7',{recursive:true});
-writeFileSync('docs/evidence/v7/opening-rhythm.json',`${JSON.stringify(report,null,1)}\n`);
+
+writeFileSync(evidencePath('docs/evidence/v7/opening-rhythm.json'),`${JSON.stringify(report,null,1)}\n`);
 console.log(`opening rhythm: ${rows.length} current editions`);
 console.log(`first choice within 8 beats: ${firstChoiceWithin8.length}/${rows.length}`);
 console.log(`dialogue >= 65%: ${dialogueAtLeast65.length}/${rows.length} (${dialogueAtLeast65.join(', ')||'none'})`);

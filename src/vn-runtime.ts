@@ -106,7 +106,7 @@ export class VNRuntime {
   }
 }
 
-export function restoreVN(raw: string, edition?: {content: Record<string,unknown>; version:string;previousContent?:Record<string,unknown>;editorialContent?:Record<string,unknown>}): { session: VNRuntime; save: VNSave; migrated?: boolean;migration?:'ending-staging'|'illustration-staging'|'editorial-text' } {
+export function restoreVN(raw: string, edition?: {content: Record<string,unknown>; version:string;previousContent?:Record<string,unknown>;editorialContent?:Record<string,unknown>;editorialHistory?:Record<string,unknown>[]}): { session: VNRuntime; save: VNSave; migrated?: boolean;migration?:'ending-staging'|'illustration-staging'|'editorial-text' } {
   if (raw.length > 1_000_000) throw new Error('存档超过 1 MB，原文件保留。');
   let save: VNSave;
   try { save = JSON.parse(raw); } catch { throw new Error('不是有效的 JSON 存档。原数据保留。'); }
@@ -119,23 +119,26 @@ export function restoreVN(raw: string, edition?: {content: Record<string,unknown
     for (const command of save.commands) command === 'next' ? session.advance() : session.choose(command.slice(7));
     const expected = session.save();
     if (expected.runtime !== save.runtime || JSON.stringify(expected.presentation) !== JSON.stringify(save.presentation)) {
-      if (edition?.editorialContent && editorialBaselineManifest.some(row => row.version === edition.version)) {
-        // Validate the complete submitted snapshot against trusted old bytes.
-        // Replay the new story independently; never LoadJson old state into it.
-        const previous = new VNRuntime(edition.editorialContent, edition.version);
-        const current = new VNRuntime(edition.content, edition.version);
-        const structure = ({text: _text, ...frame}: Beat) => frame;
-        const sameCheckpoint = () => JSON.stringify(structure(previous.frame)) === JSON.stringify(structure(current.frame))
-          && JSON.stringify(JSON.parse(previous.story.state.ToJson()).variablesState) === JSON.stringify(JSON.parse(current.story.state.ToJson()).variablesState);
-        let compatible = sameCheckpoint();
-        for (const command of save.commands) {
-          if (command === 'next') { previous.advance(); current.advance(); }
-          else { previous.choose(command.slice(7)); current.choose(command.slice(7)); }
-          compatible = sameCheckpoint() && compatible;
-        }
-        const frozen = previous.save();
-        if (frozen.runtime === save.runtime && JSON.stringify(frozen.presentation) === JSON.stringify(save.presentation) && compatible) {
-          return {session, save: {...expected, savedAt: save.savedAt}, migrated: true, migration: 'editorial-text'};
+      if (edition && editorialBaselineManifest.some(row => row.version === edition.version)) {
+        const baselines = [...(edition.editorialContent ? [edition.editorialContent] : []), ...(edition.editorialHistory ?? [])];
+        for (const baseline of baselines) {
+          // Validate the complete submitted snapshot against trusted old bytes.
+          // Replay the new story independently; never LoadJson old state into it.
+          const previous = new VNRuntime(baseline, edition.version);
+          const current = new VNRuntime(edition.content, edition.version);
+          const structure = ({text: _text, ...frame}: Beat) => frame;
+          const sameCheckpoint = () => JSON.stringify(structure(previous.frame)) === JSON.stringify(structure(current.frame))
+            && JSON.stringify(JSON.parse(previous.story.state.ToJson()).variablesState) === JSON.stringify(JSON.parse(current.story.state.ToJson()).variablesState);
+          let compatible = sameCheckpoint();
+          for (const command of save.commands) {
+            if (command === 'next') { previous.advance(); current.advance(); }
+            else { previous.choose(command.slice(7)); current.choose(command.slice(7)); }
+            compatible = sameCheckpoint() && compatible;
+          }
+          const frozen = previous.save();
+          if (frozen.runtime === save.runtime && JSON.stringify(frozen.presentation) === JSON.stringify(save.presentation) && compatible) {
+            return {session, save: {...expected, savedAt: save.savedAt}, migrated: true, migration: 'editorial-text'};
+          }
         }
       }
       const endingMigration=edition?.version==='tide-promise-2.0.0'&&/^c_ending_(harbor|name|together5|teacher|captain|apart|scar|lost)_\d+$/.test(save.presentation.beatId);

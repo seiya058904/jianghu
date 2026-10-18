@@ -270,7 +270,7 @@ VAR lh_late = 0
 === own_sleeve ===
 五十一祭祖较艺，你一刀点孟衣袖，不是他教，也不是沈教。孟问谁教，你想很久，说可能自己。 # beat:lh_own_sleeve_1 # scene:lh_ancestral # cast:lh_meng,lh_shen # speaker:narrator
 再走一回。 # beat:lh_own_sleeve_2 # scene:lh_ancestral # cast:lh_meng,lh_shen # speaker:lh_meng # mood:lh_meng=intent
-你走，师父没把熟过几十年的路抢回来。那夜他独自找沈喝酒，说三十以前越像自己越好，四十以后还越来越像便未必好，可自己不敢再往下改。 # beat:lh_own_sleeve_3 # scene:lh_ancestral # cast:lh_meng,lh_shen # speaker:narrator
+你走，师父没把熟过几十年的路抢回来。那夜两位老人的私谈，你并未在场。孟独自找沈喝酒，说三十以前越像自己越好，四十以后还越来越像便未必好，可自己不敢再往下改。 # beat:lh_own_sleeve_3 # scene:lh_ancestral # cast:lh_meng,lh_shen # speaker:narrator
 所以没收他。我带看门外，从哪扇门出去，是你教。 # beat:lh_own_sleeve_4 # scene:lh_ancestral # cast:lh_meng,lh_shen # speaker:lh_shen # mood:lh_shen=intent
 刚才那刀不是我的，也不是你的。 # beat:lh_own_sleeve_5 # scene:lh_ancestral # cast:lh_meng,lh_shen # speaker:lh_meng # mood:lh_meng=amused
 那就是他的。 # beat:lh_own_sleeve_6 # scene:lh_ancestral # cast:lh_meng,lh_shen # speaker:lh_shen # mood:lh_shen=neutral

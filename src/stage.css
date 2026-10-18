@@ -102,3 +102,23 @@ body[data-edition=chronicle] .actor:is([data-character^="nq2_"],[data-character^
 @media(max-width:720px) and (min-height:601px){.campaign-cover .cover-note{bottom:125px}}
 
 body[data-content-version="sea-tide-2.0.0"] .actor[data-character="st2_boatkeeper"] .portrait{background-size:var(--portrait-size);background-position:var(--portrait-position)}
+
+/* Short landscape keeps people beside the reading column, including replies. */
+@media(max-height:450px) and (min-width:650px){
+ body[data-edition=chronicle] .play-stage[data-cg=""]{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto;column-gap:12px;padding:0 12px 7px}
+ body[data-edition=chronicle] .play-stage[data-cg=""] .scene{grid-column:1;grid-row:1 / -1;padding:48px 0 0;overflow:hidden}
+ body[data-edition=chronicle] .play-stage[data-cg=""] .scene-heading{left:0;max-width:100%;flex-wrap:wrap}
+ body[data-edition=chronicle] .play-stage[data-cg=""] .actors{padding:0;gap:0}
+ body[data-edition=chronicle] .play-stage[data-cg=""] .actor{width:48%;max-width:210px;flex:0 1 210px}
+ body[data-edition=chronicle] .play-stage[data-cg=""] .actors[data-count="3"] .actor{width:33.3%;flex-basis:33.3%}
+ body[data-edition=chronicle] .play-stage[data-cg=""] .choices-panel{grid-column:2;grid-row:1;width:100%;max-height:100%;margin:0;align-self:end;min-height:0}
+ body[data-edition=chronicle] .play-stage[data-cg=""] .dialogue-panel{grid-column:2;grid-row:2;width:100%;margin:0;max-height:calc((100dvh - 54px)*.52)}
+ body[data-edition=chronicle] .play-stage[data-cg=""] .choices-panel[hidden]+.dialogue-panel{grid-row:1 / -1;align-self:end;max-height:100%}
+ /* A single-person closeup retains its wide cinematic canvas. Anchor the
+    portrait at the left so the reading column never covers the face. */
+ body[data-edition=chronicle] .play-stage[data-cg=""][data-camera=portrait] .scene{grid-column:1 / -1}
+ body[data-edition=chronicle] .play-stage[data-cg=""][data-camera=portrait] .scene-heading{max-width:calc(50% - 6px)}
+ body[data-edition=chronicle] .play-stage[data-cg=""][data-camera=portrait] .actors{justify-content:flex-start}
+ body[data-edition=chronicle] .play-stage[data-cg=""][data-camera=portrait] .actor{width:min(76vw,640px);max-width:none;flex:0 0 min(76vw,640px)}
+ body[data-edition=chronicle] .play-stage[data-cg=""][data-camera=portrait] .portrait{background-position:left top}
+}

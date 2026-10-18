@@ -1,6 +1,8 @@
 # 文档导航
 
-**2026-10-18 当前入口：[独立终审基线](audits/independent-final/BASELINE.md) · [问题台账](audits/independent-final/ISSUE_LEDGER.md) · [最终QA](audits/independent-final/FINAL_QA.md) · [F01–F30验收](audits/independent-final/FINAL_ACCEPTANCE.md) · [发布验证](audits/independent-final/RELEASE_VALIDATION.md)。** 下方V7/V6为历史迭代材料，不将旧状态与数字当成本轮实测。
+**2026-10-18 本地体验精修：[玩家体验审计](audits/experience-2026-10-18/EXPERIENCE_AUDIT.md) · [实玩矩阵](audits/experience-2026-10-18/PLAYTHROUGH_MATRIX.csv) · [问题台账](audits/experience-2026-10-18/ISSUE_LEDGER.md) · [视觉复验](audits/experience-2026-10-18/VISUAL_REVIEW.md) · [最终验证](audits/experience-2026-10-18/FINAL_VALIDATION.md)。本轮尚未公开发布。**
+
+**此前独立终审：[独立终审基线](audits/independent-final/BASELINE.md) · [问题台账](audits/independent-final/ISSUE_LEDGER.md) · [最终QA](audits/independent-final/FINAL_QA.md) · [F01–F30验收](audits/independent-final/FINAL_ACCEPTANCE.md) · [发布验证](audits/independent-final/RELEASE_VALIDATION.md)。** 下方V7/V6为历史迭代材料，不将旧状态与数字当成本轮实测。
 
 本目录是项目全部文档与证据的根。**第一次来请先读仓库根的 [README.md](../README.md) 与 [AGENTS.md](../AGENTS.md)**，本页只负责告诉你去哪找。
 

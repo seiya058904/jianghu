@@ -2,9 +2,11 @@
 
 以作者原典《宋世江湖》改编的互动武侠纪事集：**16 部作品、23 个现行版本**。观察、问话、较艺与合作，在固定的历史胜负之间决定自己怎样参与。每篇独立存档，无声音也能完整游玩。
 
-[在线作品库](https://seiya058904.github.io/jianghu/) · [文档导航](docs/README.md) · [独立终审基线](docs/audits/independent-final/BASELINE.md) · [本轮验收](docs/audits/independent-final/FINAL_ACCEPTANCE.md)
+[在线作品库](https://seiya058904.github.io/jianghu/) · [文档导航](docs/README.md) · [独立终审基线](docs/audits/independent-final/BASELINE.md) · [独立终审验收](docs/audits/independent-final/FINAL_ACCEPTANCE.md) · [本地体验审计](docs/audits/experience-2026-10-18/EXPERIENCE_AUDIT.md)
 
-2026-10-18 独立审查后的产品已正式发布：公共提交 `f48614493ec4340355602f77d64b19c02220781e` 的 [Verify](https://github.com/seiya058904/jianghu/actions/runs/39105624826) 与 [Pages](https://github.com/seiya058904/jianghu/actions/runs/39105624823) 均成功。对应产品 RC `1138723` 构建退出0、单测474/474、编辑80/80（单测子集），单次完整浏览器492/492通过；351个正式文件与CI artifact逐字节相同，鲜Chrome双档26入口及真实旧67eb窗口升级后的离线作品库／龙门推进通过。详见[发布回执](docs/audits/independent-final/RELEASE_VALIDATION.md)与[本轮验收](docs/audits/independent-final/FINAL_ACCEPTANCE.md)。后续纯文档提交尚未发布，不预写其云端结果；旧版“17/17”保留于 [V7 历史矩阵](docs/v7/V7_ACCEPTANCE_MATRIX.md)，不替代本轮结论。
+2026-10-18 后续本地体验精修：产品候选 `808954f12b16d443dc4e1bf964de9bfc565f79bc`，23个现行入口完成真实浏览器从头到结局，七个重点版本另走相反选择倾向；修复横屏人物、选择回扣、私谈视角、离线图更新及键盘焦点。完整结果见[体验审计与验证](docs/audits/experience-2026-10-18/FINAL_VALIDATION.md)。本轮修改尚未公开发布。
+
+此前2026-10-18独立审查后的产品已正式发布：公共提交 `f48614493ec4340355602f77d64b19c02220781e` 的 [Verify](https://github.com/seiya058904/jianghu/actions/runs/39105624826) 与 [Pages](https://github.com/seiya058904/jianghu/actions/runs/39105624823) 均成功。对应产品 RC `1138723` 构建退出0、单测474/474、编辑80/80（单测子集），单次完整浏览器492/492通过；351个正式文件与CI artifact逐字节相同，鲜Chrome双档26入口及真实旧67eb窗口升级后的离线作品库／龙门推进通过。详见[发布回执](docs/audits/independent-final/RELEASE_VALIDATION.md)与[本轮验收](docs/audits/independent-final/FINAL_ACCEPTANCE.md)。后续纯文档提交尚未发布，不预写其云端结果；旧版“17/17”保留于 [V7 历史矩阵](docs/v7/V7_ACCEPTANCE_MATRIX.md)，不替代本轮结论。
 
 ## 从哪里开始
 

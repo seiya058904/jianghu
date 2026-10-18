@@ -1,10 +1,10 @@
 """Read image pixels without editing assets; report alpha separately from identity QA."""
 from pathlib import Path
 from PIL import Image, ImageOps, ImageDraw
-import json, csv, hashlib
+import json, csv, hashlib, os
 
 root = Path(__file__).resolve().parent.parent
-out = root / 'docs/audits/independent-final'
+out = Path(os.environ['JIANGHU_EVIDENCE_DIR'])/'independent-final' if os.environ.get('JIANGHU_EVIDENCE_DIR') else root/'docs/audits/independent-final'
 out.mkdir(parents=True, exist_ok=True)
 rows = []
 files = sorted(set((root/'public/art').rglob('*')) | set((root/'docs/art/candidates-2026-10-17').rglob('*')))
@@ -27,7 +27,7 @@ for path in files:
 with (out/'ART_ASSET_AUDIT.csv').open('w', encoding='utf-8', newline='') as f:
     writer=csv.DictWriter(f, fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
 # Contact sheets are deliberately small, uncommitted working review artifacts.
-preview = root.parent/'Jianghu-independent-20261018'/'art-contact-sheets'
+preview = Path(os.environ['JIANGHU_EVIDENCE_DIR'])/'art-contact-sheets' if os.environ.get('JIANGHU_EVIDENCE_DIR') else root.parent/'Jianghu-independent-20261018'/'art-contact-sheets'
 preview.mkdir(parents=True, exist_ok=True)
 for start in range(0, len(rows), 20):
     sheet = Image.new('RGB', (1000, 1000), '#ddd9cc')

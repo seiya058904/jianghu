@@ -20,6 +20,7 @@ let typingTimer = 0, playbackTimer = 0, visibleCount = 0, transitionUntil = 0, i
 let transitionTimer = 0, inputTimer = 0, renderedScene = '';
 let isTyping = false, auto = false, skipping = false, previouslyRead = false;
 let dialogReturn: HTMLElement | null = null;
+let pendingReplyFocus = false;
 const readBeats = new Set<string>();
 const entryLock=()=>workReadingLock(chronicle?.slug??'',key=>localStorage.getItem(key));
 try {
@@ -89,6 +90,7 @@ function replayLocks():Record<string,string> {
 }
 function present(complete = false) {
   stopTimers();
+  pendingReplyFocus = false;
   const frame = session!.frame, scene = scenes[frame.stage.scene];
   previouslyRead = readBeats.has(frame.id); app.dataset.beat = frame.id;
   el('scene-location').textContent = scene.name; el('scene-time').textContent = scene.time;
@@ -111,6 +113,7 @@ function present(complete = false) {
   transitionUntil = !complete && renderedScene && renderedScene !== frame.stage.scene && !reduced() ? performance.now() + 120 : 0;
   renderedScene = frame.stage.scene;
   document.querySelector<HTMLElement>('.play-stage')!.dataset.scene = frame.stage.scene;
+  document.querySelector<HTMLElement>('.play-stage')!.dataset.camera = frame.stage.camera ?? '';
   if (transitionUntil) transitionTimer = window.setTimeout(syncControls, 125);
   if (isTyping) { syncControls(); type(); } else completeText();
   if (frame.ending) safe(() => write('endings', JSON.stringify([...new Set([...unlocked(), frame.ending])])));
@@ -126,8 +129,11 @@ function completeText() {
   const frame = session.frame;
   el('dialogue-visible').textContent = frame.text; el('dialogue-announcement').textContent = `${el('speaker-name').textContent}：${frame.text}`;
   el('choices-panel').hidden = frame.phase !== 'awaitingChoice'; readBeats.add(frame.id);
+  // Capture focus before syncControls disables the advance button. Keep it in
+  // the dialogue until the short duplicate-input lock releases the replies.
+  pendingReplyFocus = frame.phase === 'awaitingChoice' && !dialog().open && Boolean(document.activeElement?.closest('#dialogue-panel'));
+  if (pendingReplyFocus) el('dialogue-panel').focus({preventScroll:true});
   safe(() => write('readBeats', JSON.stringify([...readBeats].slice(-10000)))); syncControls(); schedule();
-  if (frame.phase === 'awaitingChoice' && !dialog().open && document.activeElement?.closest('#dialogue-panel')) el('choices-panel').querySelector<HTMLButtonElement>('button')?.focus({preventScroll:true});
 }
 function syncControls() {
   if (mode !== 'play' || !session) return;
@@ -139,6 +145,10 @@ function syncControls() {
   const next = el('advance-button') as HTMLButtonElement;
   next.disabled = locked || (!isTyping && session.frame.phase !== 'awaitingAdvance');
   for (const choice of el('choices-panel').querySelectorAll<HTMLButtonElement>('button')) choice.disabled = locked || isTyping || choice.dataset.replayLocked==='true';
+  if (pendingReplyFocus && !locked && !isTyping && !dialog().open) {
+    if (document.activeElement === el('dialogue-panel')) el('choices-panel').querySelector<HTMLButtonElement>('button:not(:disabled)')?.focus({preventScroll:true});
+    pendingReplyFocus = false;
+  }
   next.setAttribute('aria-label', isTyping ? '显示全文' : '继续对白'); next.textContent = isTyping ? '显示全文' : '继续';
   el('advance-hint').textContent = isTyping ? '点击先显示全文' : session.frame.phase === 'awaitingChoice' ? '等你回应' : session.frame.phase === 'ending' ? '这一场，已有回响。' : '点击对白 · Enter / 空格';
   for (const [action, active] of [['auto', auto], ['skip', skipping]] as const) {
@@ -279,7 +289,8 @@ app.addEventListener('click', event => {
   });
 });
 document.addEventListener('keydown', event => {
-  if (mode !== 'play' || event.repeat || dialog().open || !['Enter', ' '].includes(event.key)) return;
+  if (mode !== 'play' || dialog().open || !['Enter', ' '].includes(event.key)) return;
+  if (event.repeat) { event.preventDefault(); return; }
   if ((event.target as HTMLElement).closest('button,a,input,select,textarea,summary')) return;
   event.preventDefault(); if (performance.now() < inputUntil) return; inputUntil = performance.now() + 180; safe(progress);
 });

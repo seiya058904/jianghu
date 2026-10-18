@@ -1,0 +1,131 @@
+{
+  "schema": 1,
+  "generated_utc": "2026-10-18T13:11:07.925942+00:00",
+  "product_rc": "808954f12b16d443dc4e1bf964de9bfc565f79bc",
+  "baseline": "9ae5e409d25cb983e530bc2475e256b73a039d59",
+  "roots": {
+    "main": "[author-local-path]",
+    "reviewA": "[author-local-path]",
+    "reviewB": "[author-local-path]",
+    "reviewC": "[author-local-path]"
+  },
+  "raw_manifest": {
+    "path": "[author-local-path]",
+    "sha256": "797af41c636128c2856a73bbb11c48c376138377850c7d60d16e856e743051cc",
+    "files": 3482,
+    "bytes": 2118852960
+  },
+  "key_artifacts": [
+    {
+      "path": "main/rc2-build.log",
+      "bytes": 17570,
+      "sha256": "20f5c1c297f1b3566092364b68fe31cf02b15ff547b0e13c88b151a73317ac7d"
+    },
+    {
+      "path": "main/rc2-unit.log",
+      "bytes": 59244,
+      "sha256": "e19792ae7a691a28eef71a0b118c3663cb44ddee108ffb6cd75e1ad596604c09"
+    },
+    {
+      "path": "main/rc2-editorial.log",
+      "bytes": 10459,
+      "sha256": "42efbb448db2c88c6e111df0a4558041999c7de601c7fa6dc900fa068d1b4aba"
+    },
+    {
+      "path": "main/rc2-audit-v7.log",
+      "bytes": 13065,
+      "sha256": "43714b067f5842e9b51b1a6a39e0eaf1b7254ef26c80dfefd098c97cfa12cf2a"
+    },
+    {
+      "path": "main/rc2-independent.log",
+      "bytes": 1548,
+      "sha256": "c2e388436a306da41bea44159398bd5e9c40e9f5c7312d673f9ac73ffc08ac5c"
+    },
+    {
+      "path": "main/camera-targeted/results.json",
+      "bytes": 44955,
+      "sha256": "90c59651cc232e2acd667f5bf3bb14cf5de3e9caad8c341437b22cf9bc710549"
+    },
+    {
+      "path": "main/parallel8/results.json",
+      "bytes": 37005,
+      "sha256": "e2338dd1ff2e323c347b20eeeb79e5da1ec14b47bdae2f5bb8bee771eedf3e36"
+    },
+    {
+      "path": "main/rc2-e2e/results.json",
+      "bytes": 559084,
+      "sha256": "d7cf615a20c401a0cc8187cb7f4c73b37f16089fb39b08e84098cdc603628523"
+    },
+    {
+      "path": "main/rc2-full-before.json",
+      "bytes": 195073,
+      "sha256": "8af2866be8f653d66a85f6c8a96a4491de15bc8ef9caf5a8da07240ca4af1af7"
+    },
+    {
+      "path": "main/rc2-full-after.json",
+      "bytes": 195073,
+      "sha256": "8af2866be8f653d66a85f6c8a96a4491de15bc8ef9caf5a8da07240ca4af1af7"
+    },
+    {
+      "path": "main/rc2-served-build-identity.json",
+      "bytes": 3263,
+      "sha256": "f4e1f3c73a2d406fb0a39e204013349581126c039938d7311e33d8202189967f"
+    },
+    {
+      "path": "main/rc2-performance/performance.json",
+      "bytes": 9395,
+      "sha256": "13fca175297b3f91b15623885404b329ed372d56a5378b55f5cf9fa5e9d70173"
+    },
+    {
+      "path": "main/rc2-walk/walk-summary-first.json",
+      "bytes": 49979,
+      "sha256": "f51281482f71930a3c67e251ef1a112a9c6b3f7c6d4cfb10e9a6a1b9d53d87d4"
+    },
+    {
+      "path": "main/rc2-contrasting-walk/walk-summary-last.json",
+      "bytes": 17273,
+      "sha256": "b248f01b9b2eb7c59346149614a9312b4e31b3c6c438b72596126f377ac5612c"
+    },
+    {
+      "path": "main/final-e2e.log",
+      "bytes": 18082,
+      "sha256": "ebf5567cd0f54cfe924d88173103b7b8405d2e0ff58a48586b340caff6f3ea73"
+    },
+    {
+      "path": "main/full-before.json",
+      "bytes": 195073,
+      "sha256": "00b8260bdbde1370c894a20609f40b8c62e8427e3b9aa3c95e4201b47d65dfbc"
+    },
+    {
+      "path": "main/full-interrupted-after.json",
+      "bytes": 195073,
+      "sha256": "00b8260bdbde1370c894a20609f40b8c62e8427e3b9aa3c95e4201b47d65dfbc"
+    }
+  ],
+  "reviewer_reports": [
+    "reviewA/review.md",
+    "reviewA/final/review.md",
+    "reviewA/rc2-camera/review.md",
+    "reviewB/review.md",
+    "reviewB/final-review.md",
+    "reviewC/review.md"
+  ],
+  "play": {
+    "works": 16,
+    "current_entries": 23,
+    "browser_complete_routes": 30,
+    "first_available_frames": 4631,
+    "first_available_choices": 481,
+    "contrasting_frames": 1910,
+    "contrasting_choices": 200,
+    "all_browser_endings": 30,
+    "browser_page_errors": 0,
+    "not_exhaustive": true
+  },
+  "limits": [
+    "AI simulated reader; no human timed play",
+    "Chrome desktop emulated viewports; no actual Android, Safari, Firefox or screen reader",
+    "Historical and interrupted evidence is retained and is not counted as final full-suite PASS"
+  ],
+  "post_commit_receipt": "[author-local-path]"
+}

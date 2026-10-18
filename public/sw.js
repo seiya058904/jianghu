@@ -1,4 +1,5 @@
-const CACHE = 'jianghu-v6-shell-0.1';
+const CACHE = 'jianghu-v6-shell-0.2';
+const PREVIOUS_CACHE = 'jianghu-v6-shell-0.1';
 self.addEventListener('install', event => {event.waitUntil((async()=>{
   const response=await fetch('./offline-manifest.json',{cache:'no-store'});
   if(!response.ok)throw new Error('Offline manifest unavailable');
@@ -20,13 +21,13 @@ self.addEventListener('message',event=>{
       if(!Array.isArray(files)||!files.length||files.some(file=>typeof file!=='string'||!file.startsWith('./')||new URL(file,scope).origin!==scope.origin||!new URL(file,scope).pathname.startsWith(scope.pathname)))throw new Error('invalid manifest');
       if(!Array.isArray(shell)||!shell.length||shell.some(file=>typeof file!=='string'||!file.startsWith('./')||new URL(file,scope).origin!==scope.origin||!new URL(file,scope).pathname.startsWith(scope.pathname)))throw new Error('invalid shell manifest');
       const cache=await caches.open(CACHE);
-      // Entry URLs stay stable while their hashed scripts change. Refresh HTML
-      // even if an older edition is already cached; retain other cached works.
-      const missing=[];for(const file of files)if(file==='./'||new URL(file,scope).pathname.endsWith('.html')||!await cache.match(new URL(file,scope)))missing.push(file);
+      // Art and HTML use stable URLs. An explicit download refreshes the entire
+      // requested work, including already cached bytes from an older deployment.
+      // addAll commits only a complete successful batch; keep other works intact.
       // Shell entries are shared by every work. Per-work manifests do not list
       // them, so a stale or corrupted front page would otherwise survive any
       // number of per-work downloads. Refresh them with the same batch.
-      await cache.addAll([...new Set([...missing,...shell,'./','./index.html'])].map(file=>new Request(file,{cache:'no-store'})));
+      await cache.addAll([...new Set([...files,...shell,'./','./index.html'])].map(file=>new Request(file,{cache:'no-store'})));
       event.ports[0].postMessage({ok:true,count:files.length});
     }catch{event.ports[0].postMessage({ok:false})}
   })());
@@ -36,5 +37,5 @@ self.addEventListener('fetch', event => {
   if(event.request.method !== 'GET' || url.origin !== self.location.origin || !url.pathname.startsWith(new URL(self.registration.scope).pathname))return;
   // Navigation must reach the network or our refreshed Cache Storage; the HTTP
   // cache can still contain an earlier deployment's HTML while it is offline.
-  event.respondWith(fetch(event.request,event.request.mode==='navigate'?{cache:'no-store'}:undefined).then(response=>{if(response.ok){const copy=response.clone();event.waitUntil(caches.open(CACHE).then(cache=>cache.put(event.request,copy)));}return response;}).catch(async()=>{const cache=await caches.open(CACHE);const hit=await cache.match(event.request);return hit || (event.request.mode==='navigate'?await cache.match('./index.html'):null) || Response.error();}));
+  event.respondWith(fetch(event.request,event.request.mode==='navigate'?{cache:'no-store'}:undefined).then(response=>{if(response.ok){const copy=response.clone();event.waitUntil(caches.open(CACHE).then(cache=>cache.put(event.request,copy)));}return response;}).catch(async()=>{const cache=await caches.open(CACHE);const hit=await cache.match(event.request);const previous=hit?null:await(await caches.open(PREVIOUS_CACHE)).match(event.request);return hit || previous || (event.request.mode==='navigate'?await cache.match('./index.html'):null) || Response.error();}));
 });

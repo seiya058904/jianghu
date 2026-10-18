@@ -1,3 +1,4 @@
+import {evidencePath} from '../tests/evidence-path.ts';
 // V7 real passive-run measurement — no browser, but it does walk the runtime.
 //
 // `works-ledger.json` measures the longest run of beats without a `# cid:` by a
@@ -59,7 +60,7 @@ const report={generatedBy:'node --experimental-strip-types scripts/audit-v7-pass
   summary:{maxPassiveRunOverall:Math.max(...rows.filter(r=>!r.missing).map(r=>r.maxPassiveRun)),
     withinTwentyBeats:atOrUnder20,overTwentyBeats:rows.filter(r=>!r.missing&&r.maxPassiveRun>20).map(r=>`${r.slug}:${r.maxPassiveRun}`)}};
 
-mkdirSync('docs/evidence/v7',{recursive:true});
-writeFileSync('docs/evidence/v7/passive-run.json',`${JSON.stringify(report,null,1)}\n`);
+
+writeFileSync(evidencePath('docs/evidence/v7/passive-run.json'),`${JSON.stringify(report,null,1)}\n`);
 for(const row of rows)console.log(`${row.slug.padEnd(18)} max ${String(row.maxPassiveRun).padStart(3)}  median ${String(row.medianPassiveRun).padStart(3)}  at ${row.maxAt}`);
 console.log(`\nover 20 beats (real paths): ${report.summary.overTwentyBeats.join(', ')||'none'}`);

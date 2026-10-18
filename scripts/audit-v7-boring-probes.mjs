@@ -1,3 +1,4 @@
+import {evidencePath} from '../tests/evidence-path.ts';
 // V7 "boring audit" probes — the two §8.2 items a machine can actually decide.
 //
 // The commission's §8.2 list asks, per work, for (among other things):
@@ -111,8 +112,8 @@ const report={generatedBy:'node --experimental-strip-types scripts/audit-v7-bori
     worksWithSilentChoices:withData.filter(r=>r.silentCount).map(r=>`${r.slug}:${r.silentCount}`),
   }};
 
-mkdirSync('docs/evidence/v7',{recursive:true});
-writeFileSync('docs/evidence/v7/boring-probes.json',`${JSON.stringify(report,null,1)}\n`);
+
+writeFileSync(evidencePath('docs/evidence/v7/boring-probes.json'),`${JSON.stringify(report,null,1)}\n`);
 for(const row of withData)console.log(`${row.slug.padEnd(16)} repeatedTexts ${String(row.repeatedCount).padStart(3)}  flatChoiceGroups ${String(row.flatCount).padStart(3)}  alwaysSilentChoices ${String(row.silentCount).padStart(3)}`);
 console.log(`\nrepeated text: ${report.summary.worksWithRepeatedText.join(' | ')||'none'}`);
 console.log(`flat choices: ${report.summary.worksWithFlatChoices.join(' | ')||'none'}`);

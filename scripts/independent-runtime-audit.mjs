@@ -6,7 +6,7 @@ import {characters,scenes,cgs,resolvePortrait} from '../src/catalog.ts';
 
 // Deterministic state-machine evidence, not exhaustive reachable-state proof or
 // a substitute for literary review. Does not compile or modify historical data.
-const out='docs/audits/independent-final';
+const out=process.env.JIANGHU_EVIDENCE_DIR?`${process.env.JIANGHU_EVIDENCE_DIR}/independent-final`:'docs/audits/independent-final';
 mkdirSync(out,{recursive:true});
 const editions=[...new Map(chronicleWorks.filter(w=>!/-v[12]$/.test(w.slug)).map(w=>[w.slug,w])).values()];
 const walks=Number(process.env.INDEPENDENT_WALKS??600);

@@ -278,7 +278,8 @@ try {
   if ($applyRun.Text.Length -gt 0) { Write-Host $applyRun.Text }
   if ($applyRun.Code -ne 0) { Stop-With 'Snapshot apply was refused (stale plan, dirty checkout or unapproved removal).' 3 }
 
-  $changedText = (Invoke-Native 'git' @('-C', $publicClone, 'status', '--porcelain=v1')).Text
+  # Compare individual paths with the plan, including files in newly added directories.
+  $changedText = (Invoke-Native 'git' @('-C', $publicClone, 'status', '--porcelain=v1', '--untracked-files=all')).Text
   # Invoke-Native trims the block, so the first porcelain line may lose one leading
   # status column; skip the two status characters, then the separating space.
   $actualChanged = @($changedText -split [Environment]::NewLine | Where-Object { $_.Trim().Length -gt 0 } | ForEach-Object { $_.Substring(2).Trim() })
@@ -288,6 +289,10 @@ try {
     Stop-With ('Unexpected paths in the public checkout after apply: ' + ($unexpected -join ', ')) 4
   }
 
+  # The reviewed snapshot is the reproducibility baseline, not the previous
+  # public commit. Stage only approved paths before running the cold build.
+  Invoke-Git $publicClone (@('add', '--all', '--') + $expected) | Out-Null
+
   $npm = (Get-Command npm -ErrorAction SilentlyContinue)
   if (-not $npm) { Stop-With 'npm is required for the public cold validation.' 4 }
   Write-Step 'Cold validation in the isolated public checkout (npm ci, build, tests, reproducible story artifacts)'
@@ -296,6 +301,8 @@ try {
     @{ Name = 'npm-build'; File = $npm.Source; Args = @('run', 'build'); Log = 'npm-build.log'; WorkDir = $publicClone },
     @{ Name = 'npm-test'; File = $npm.Source; Args = @('test'); Log = 'npm-test.log'; WorkDir = $publicClone },
     @{ Name = 'story-reproducible'; File = 'git'; Args = @('-C', $publicClone, 'diff', '--exit-code', '--', 'story', 'src/generated'); Log = 'story-diff.log'; WorkDir = $null },
+    @{ Name = 'snapshot-unchanged'; File = 'git'; Args = @('-C', $publicClone, 'diff', '--exit-code'); Log = 'snapshot-diff.log'; WorkDir = $null },
+    @{ Name = 'staged-whitespace'; File = 'git'; Args = @('-C', $publicClone, 'diff', '--cached', '--check'); Log = 'staged-diff-check.log'; WorkDir = $null },
     @{ Name = 'whitespace'; File = 'git'; Args = @('-C', $publicClone, 'diff', '--check'); Log = 'diff-check.log'; WorkDir = $null }
   )
   foreach ($check in $checks) {
@@ -305,7 +312,6 @@ try {
   }
 
   Write-Step 'Committing the curated snapshot on top of the current public main'
-  Invoke-Git $publicClone @('add', '-A') | Out-Null
   $commitMessage = 'public snapshot: ' + $headShort + ' (policy v' + $plan.policyVersion + ')'
   $commitBody = 'source ' + $sourceSha + [Environment]::NewLine + 'public before ' + $plan.publicBefore + [Environment]::NewLine + 'policy v' + $plan.policyVersion + [Environment]::NewLine + 'plan sha256 ' + $planSha
   if ($plan.removed.Count -gt 0) { $commitBody += [Environment]::NewLine + 'removed public-only paths: ' + ($plan.removed -join ', ') }

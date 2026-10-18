@@ -549,7 +549,7 @@ VAR dr_lesson = 0
 - dr_gu_wait and dr_gu_own_words:
 顾临川是被你等他自己把那三个字说出来的，不是被一句顾全门声带过去。怕丢人这一句在卷里没有被改成别的词。 # beat:dr_living_benefit_7 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
 - else:
-顾临川自己算到第十年才开口。你问的是那一日，也把怕丢人原样留着，没有替他补一个被迫无奈。 # beat:dr_living_benefit_8 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
+{dr_gu_own_words:你先问二月十六夜，再等顾临川自己说出怕丢人。卷里留下的是他的原话，不是你替他找的体面开场。|你问三日怎样拖成十年；顾说到第十年，连为何九年前不说也成了不敢开口的缘由。那不是他在第十年已经作证。}怕丢人仍原样留着，没有被改成被迫无奈。 # beat:dr_living_benefit_8 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
 }
 {
 - dr_land_trace and dr_house_plain:

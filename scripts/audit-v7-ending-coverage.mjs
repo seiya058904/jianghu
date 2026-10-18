@@ -1,3 +1,4 @@
+import {evidencePath} from '../tests/evidence-path.ts';
 // V7 ending coverage — which declared endings can a real reader actually settle on?
 //
 // The commission (§10.2) forbids claiming "we seeded 120 replays so every node was
@@ -94,8 +95,8 @@ const report={generatedBy:'node --experimental-strip-types scripts/audit-v7-endi
     unsettled:rows.filter(r=>!r.missing&&r.unsettledWalks).map(r=>`${r.slug}:${r.unsettledWalks}`),
   }};
 
-mkdirSync('docs/evidence/v7',{recursive:true});
-writeFileSync('docs/evidence/v7/ending-coverage.json',`${JSON.stringify(report,null,1)}\n`);
+
+writeFileSync(evidencePath('docs/evidence/v7/ending-coverage.json'),`${JSON.stringify(report,null,1)}\n`);
 for(const row of rows){
   if(row.missing){console.log(`${row.slug.padEnd(16)} MISSING compiled story`);continue}
   console.log(`${row.slug.padEnd(16)} ${String(row.reachedCount).padStart(2)}/${String(row.declaredCount).padStart(2)} endings  choice@${String(row.firstChoiceStep).padStart(3)}  npcLine@${String(row.firstNpcLineStep).padStart(3)}  twoHander@${String(row.firstTwoHanderStep).padStart(3)}  npcAction@${String(row.firstNpcActionStep).padStart(3)}  ${row.unreached.length?`UNREACHED ${row.unreached.join(',')}`:'all reached'}`);
