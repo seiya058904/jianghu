@@ -1,0 +1,2556 @@
+{
+  "scope": "fresh opening to actual He defeat; no old-save migration verified",
+  "generatedLongmenSha256": "477d6c53d45dd8485c28fd9dcd9ca6027a52004d61790aca7d5347f663f1ec89",
+  "gitHeadAtAudit": "dd81ccbc3fea2486b2978b7c5a7e65e1cbfee855",
+  "pendingRcMapping": true,
+  "rows": [
+    {
+      "rc": "editorial-migration-build",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "url": "http://127.0.0.1:4173/longmen.html#play",
+      "title": "Jianghu · 龙门问刀",
+      "browser": "Chrome via existing Playwright; Browser plugin not available",
+      "settingsOnly": true,
+      "noSaveInjection": true,
+      "distHtmlSha256": "9940b7b84f871051977f96ba02aeb51f8c3595d8ee1ecaa8e999e1961258e717",
+      "localAssets": [
+        {
+          "url": "./assets/modulepreload-polyfill-P2Xu9kJm.js",
+          "sha256": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f"
+        },
+        {
+          "url": "./assets/chronicle-catalog-56xv3GiH.js",
+          "sha256": "da8a503a59e626aad02f8d06e2efc88e5b935a68b73a29d303900ba8f7f85fc5"
+        },
+        {
+          "url": "./assets/catalog-BtET8AA6.js",
+          "sha256": "b53c09e0a158451316c3fad29673bec6d85fe95126360f7c1a4597b11c4079fb"
+        },
+        {
+          "url": "./assets/work-index-BmvMq2vW.js",
+          "sha256": "23ff4dee488d0fa1d039b1930f3e490c1938c47f16ebf79b81d01d8f05549e1c"
+        },
+        {
+          "url": "./assets/ink-DJNFVVIJ.js",
+          "sha256": "2b260fe1d76ddde57679a6587bae1c60a9a9ae0f334cea54df47faeab5f6d765"
+        },
+        {
+          "url": "./assets/player-B9QRtwzd.js",
+          "sha256": "50dc2bd81df96f70fb9c784899b283ededf9effcc0fbf8c5db63ac53282ec1d2"
+        },
+        {
+          "url": "./assets/catalog-BbsrsVBy.css",
+          "sha256": "df186031e11442d679af65465c797d73769b1655785ba0dd3a2180a3d4fb6a60"
+        }
+      ],
+      "frames": [
+        {
+          "beat": "lm_borrow_1",
+          "text": "你想借镇河门一把木刀，到秋会上换人试手。许重山没把刀递过来，先问你第七刀砍谁。",
+          "choices": []
+        },
+        {
+          "beat": "lm_borrow_2",
+          "text": "第七刀……接在第六刀后面。",
+          "choices": []
+        },
+        {
+          "beat": "lm_borrow_3",
+          "text": "我看得出七在六后面。",
+          "choices": []
+        },
+        {
+          "beat": "lm_borrow_4",
+          "text": "你伸出去的手停在半空。他没有把刀收回，只等你把这句话自己想完。",
+          "choices": [
+            {
+              "cid": "lm_ask_use",
+              "text": "承认只记了次序，请他先让我摆出这一刀。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_try_first",
+              "text": "不急着求指点，先试给他看自己的用法。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_borrow_5",
+          "text": "我没想过。让我摆出来，您看我到底想打哪儿。",
+          "choices": []
+        },
+        {
+          "beat": "lm_borrow_6",
+          "text": "别摆给我好看。对着这根柱，先站稳。",
+          "choices": []
+        },
+        {
+          "beat": "lm_borrow_7",
+          "text": "你举刀，才发现刀落完，下一步没有地方接。",
+          "choices": []
+        },
+        {
+          "beat": "lm_old_blade_1",
+          "text": "许重山把你刀背按低，目光转向墙上那把旧刀。他说自己十四岁，也只会把十七刀接得响。",
+          "choices": []
+        },
+        {
+          "beat": "lm_old_blade_2",
+          "text": "宋老当年问我，我一样答不出。",
+          "choices": []
+        },
+        {
+          "beat": "lm_old_blade_3",
+          "text": "那我是不是……",
+          "choices": []
+        },
+        {
+          "beat": "lm_old_blade_4",
+          "text": "别急着找一样。你没走过我的路，也不用替我再撞一次柱。",
+          "choices": []
+        },
+        {
+          "beat": "lm_old_blade_5",
+          "text": "他是伏河刀宋九川的再传。你听过镇河门护盐船、走镖路，却第一次见他说起少年时，笑得这样不留面子。",
+          "choices": []
+        },
+        {
+          "beat": "lm_old_blade_6",
+          "text": "二十六岁霍岭口，我第四十二刀撞脱彭四海兵刃。名号留下了，左肩也留下了。",
+          "choices": []
+        },
+        {
+          "beat": "lm_old_blade_7",
+          "text": "你举过刀，才知道落完没有地方接。此刻听他讲少年时撞柱的旧事，你听得比谁都仔细——同一处亏，不必再吃第二回。",
+          "choices": [
+            {
+              "cid": "lm_ask_wound",
+              "text": "问旧伤现在怎样影响他，不把战绩当没受过伤。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_ask_left",
+              "text": "问四十岁左手换刀，为何没从此每回都换。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_old_blade_9",
+          "text": "您刚才按刀，左脚先让了半寸，也是因为肩？",
+          "choices": []
+        },
+        {
+          "beat": "lm_old_blade_10",
+          "text": "肩与脚不是两件无关的东西。但看出半寸，不等于你知道怎样改。",
+          "choices": []
+        },
+        {
+          "beat": "lm_old_blade_11",
+          "text": "那我先别替您扶。",
+          "choices": []
+        },
+        {
+          "beat": "lm_old_blade_12",
+          "text": "该扶的时候会叫你。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_1",
+          "text": "去年清和道人来，看宋老旧居，不是来替我出名。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_2",
+          "text": "他特地来问刀？",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_3",
+          "text": "他先问宋老晚年还使不使刀。我说七十八以后，几乎只教弟子。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_4",
+          "text": "许重山把木刀搁在膝上。那一回与他交手的，不是宋老，也不是今日的你。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_5",
+          "text": "肩与脚不是两件无关的东西——这句话你记住了。听他回述清和看破左脚那半寸，你先想的不是名字，是那半寸怎样带了一辈子。",
+          "choices": [
+            {
+              "cid": "lm_ask_qinghe_friend",
+              "text": "先问一个武当道人为何还认得宋老的旧刀。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_ask_qinghe_ninth",
+              "text": "问玄门九席第九，为什么连贺老也不能拿来直接比。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_qinghe_7",
+          "text": "他认得这刀，是以前也到过镇河门？",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_8",
+          "text": "四十余年前，宋老护药过伏牛山，和他一位师兄同行。清和这趟先访旧，才碰见我这把没放稳的刀。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_9",
+          "text": "他说到护药时，先把刀鞘边一块旧皮扶平，没有先报老人排第几。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_yard_1",
+          "text": "旧事 · 许重山五十六岁这一年。眼下的判断，属于站在旧院里的许重山。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_yard_2",
+          "text": "清和八十四，看过一炷香的刀。他没有取剑，伸手从架上抽一根三尺藤条。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_yard_3",
+          "text": "左脚压势，少了半寸。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_yard_4",
+          "text": "二十六岁那一处伤，确实一直带着。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_yard_5",
+          "text": "你怎样带，先走一刀。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_yard_6",
+          "text": "许重山换了木刀。刀背还没完全抬起，他已想好了落点。",
+          "choices": [
+            {
+              "cid": "lm_old_watch_foot",
+              "text": "先看左脚，试着把落点压回旧谱的位置。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_old_finish_blade",
+              "text": "先走自己惯熟的刀，想看三尺藤条怎样接。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_qinghe_yard_7",
+          "text": "先把脚下补回去。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_yard_8",
+          "text": "左脚重新压低，肩却随之绷紧。清和没有趁他挪脚就先点过来，等那把木刀真正起了势。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_first_1",
+          "text": "第一刀，藤条搭在刀侧，没有把木刀震飞。许重山的右肘忽然无处可落。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_first_2",
+          "text": "我把他留在刀外，自己的肘却没地方收。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_first_3",
+          "text": "清和并不等他解释完。藤条沿刀背一滑，第二刀走到一半，胸前已空。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_first_4",
+          "text": "左脚压回旧谱位置、肩跟着绷紧——这一换的代价，许重山自己付过。清和的藤条等它起势，等的就是这一寸换来的紧。",
+          "choices": [
+            {
+              "cid": "lm_old_close_elbow",
+              "text": "先收右肘，不强追先前定好的刀头。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_old_press_end",
+              "text": "仍把第二刀送到原定处，亲自试这条路是否真走死。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_qinghe_first_6",
+          "text": "他把肘收回来，原先想追的地方便到不了。清和的藤条却仍没离开那一道空门。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_first_7",
+          "text": "你想改这一刀的末尾？",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_first_8",
+          "text": "是。可是前半截已经走出去了。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_third_1",
+          "text": "第三刀尚未真正走完，藤条已停在喉前两寸。没有点上，更没有因为停住便变成许重山接住了。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_third_2",
+          "text": "你的刀很好。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_third_3",
+          "text": "真人不必宽慰。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_third_4",
+          "text": "你一出刀，便先想好了这一刀要到哪里。到了以后，刀就停了。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_third_5",
+          "text": "许重山垂下木刀。这句话没有把宋老第七刀的问题抹掉，却让他重新听见一个原先没问过的后半句。",
+          "choices": [
+            {
+              "cid": "lm_old_ask_twenty",
+              "text": "承认三下都没接住，再问自己还能怎么练。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_old_try_words",
+              "text": "先说出自己为何想把刀送到底，再问二十年。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_qinghe_third_6",
+          "text": "若我再练二十年，可接住第三下？",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_third_7",
+          "text": "二十年后，何必还是今日这一刀？",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_third_8",
+          "text": "许重山看了看手中木刀，没有请他先说二十年后必定能赢。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_return_1",
+          "text": "这三下是许重山今日亲口回述的旧事。院里的木刀又在你手边。眼下仍是清和到河中的次年，你是来借刀的门人，不是当年的许重山。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_return_2",
+          "text": "我后来少了一些刀。罗天庆先前知道我下一刀在哪，如今有时也不知道。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_return_3",
+          "text": "您现在知道自己的下一刀么？",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_return_4",
+          "text": "有时知道。有时得先看你这一步怎么走。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_return_5",
+          "text": "刚才说收肘，那不是末尾忽然缩一下便行。你出刀之前，留一处还能走的地方。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_return_6",
+          "text": "他推你的刀背，等你自己试哪只脚还能动。",
+          "choices": [
+            {
+              "cid": "lm_practice_slow",
+              "text": "借刀以后，先练停住一步，不赶着连完十七刀。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_practice_more",
+              "text": "仍想多试几轮连刀，自己承担练过头的酸痛。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_qinghe_return_9",
+          "text": "那我先练走完还能停。没法连着好看，也先不连。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_return_10",
+          "text": "停下来不是全身僵住。我推你一下，别跟柱子一样。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_return_11",
+          "text": "他只推肩，你已挪了两步。秋会借刀的事，忽然没那么像拿了刀就能去。",
+          "choices": []
+        },
+        {
+          "beat": "lm_choose_path_1",
+          "text": "正式问艺之前，馆里缺人带新门人；武陵来的帖子也要送到混元门。许重山把两件事放到你面前。",
+          "choices": []
+        },
+        {
+          "beat": "lm_choose_path_2",
+          "text": "留下教起手，或替外来人带路。先说你今日能交清哪一件。",
+          "choices": []
+        },
+        {
+          "beat": "lm_choose_path_3",
+          "text": "不能两个都先答应，回头再让别人补？",
+          "choices": []
+        },
+        {
+          "beat": "lm_choose_path_4",
+          "text": "你已经想得到这一步，还问我许不许。",
+          "choices": [
+            {
+              "cid": "lm_route_school",
+              "text": "留在镇河门，带初入门的人试起手，走传承一线。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_route_guest",
+              "text": "去接武陵问剑的来客，带他认河中门庭，走外来一线。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_choose_path_7",
+          "text": "我送帖。谁收，谁不肯收，照原话回报。",
+          "choices": []
+        },
+        {
+          "beat": "lm_choose_path_8",
+          "text": "带路，不替他求每一家说好话。他递这封帖，自己知道要问什么。",
+          "choices": []
+        },
+        {
+          "beat": "lm_route_first_day_1",
+          "text": "早饭以后，你把答应的第一件事接到手里。",
+          "choices": []
+        },
+        {
+          "beat": "lm_route_first_day_10",
+          "text": "石惊川把帖子递给你，纸角压得很平。路边有人说辰州府榜到河中来，何必把自二十四起写得这么大。",
+          "choices": []
+        },
+        {
+          "beat": "lm_route_first_day_11",
+          "text": "你若领我去，请先照字递。若不愿，我自己去问路。",
+          "choices": [
+            {
+              "cid": "lm_deliver_exact",
+              "text": "照原帖递到收帖人手里，等对方亲口答复。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_smooth_post",
+              "text": "担心对方不收，先把话说成只想与同道随便试手。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_route_first_day_12",
+          "text": "这封是问艺，不是请替他改一封好听的。我等回话。",
+          "choices": []
+        },
+        {
+          "beat": "lm_route_first_day_13",
+          "text": "你在门口等到收帖的人出来，石惊川也没有在身后催。",
+          "choices": []
+        },
+        {
+          "beat": "lm_route_first_day_14",
+          "text": "写的便是我想问的。你不用先替我少问一场。",
+          "choices": []
+        },
+        {
+          "beat": "lm_outsider_1",
+          "text": "武陵来的帖子在棚前传了一圈。石惊川说从河中第二十四问起，棚下先有人笑辰州地方偏。",
+          "choices": []
+        },
+        {
+          "beat": "lm_outsider_2",
+          "text": "石惊川，武陵回雁门。先请写帖的人把名字读完。",
+          "choices": []
+        },
+        {
+          "beat": "lm_outsider_3",
+          "text": "他不是来跟你们争路远路近。把空地清出来。",
+          "choices": []
+        },
+        {
+          "beat": "lm_outsider_4",
+          "text": "第一个七招，第二个十一招，后面二十余招。到金钩手薛伯庸第四十七合收钩时，原先的笑声已经找不到人认。",
+          "choices": []
+        },
+        {
+          "beat": "lm_outsider_5",
+          "text": "地方小，不是人一定小。",
+          "choices": []
+        },
+        {
+          "beat": "lm_outsider_6",
+          "text": "下一场他若真把我送下来，你也照这样喊。",
+          "choices": [
+            {
+              "cid": "lm_stop_mock",
+              "text": "让同门别再喊野榜，输了也照样行礼。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_watch_only",
+              "text": "不替别人说话，只把场地让开，认真看剑。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_outsider_7",
+          "text": "他若下一场输了，也不轮到我们把前面几场笑回去。",
+          "choices": []
+        },
+        {
+          "beat": "lm_outsider_8",
+          "text": "你这句话，我记下。不用先替我担心输。",
+          "choices": []
+        },
+        {
+          "beat": "lm_outsider_9",
+          "text": "他把剑鞘交给随行人，先看棚下留出的空地。你退到外沿，等他走过去，场边才又有人开口报名字。",
+          "choices": []
+        },
+        {
+          "beat": "lm_xu_bout_1",
+          "text": "到了许重山，石惊川的断云剑不再那样快结束。你见许的刀几次留了空，石的剑也没有立刻追进去。",
+          "choices": []
+        },
+        {
+          "beat": "lm_xu_bout_2",
+          "text": "第一百一十九合，剑越过刀背半寸，停在肋下；许的刀几乎同时到石右肩。",
+          "choices": []
+        },
+        {
+          "beat": "lm_xu_bout_3",
+          "text": "我慢了半分。",
+          "choices": []
+        },
+        {
+          "beat": "lm_xu_bout_4",
+          "text": "只有半分。",
+          "choices": []
+        },
+        {
+          "beat": "lm_xu_bout_5",
+          "text": "许先收刀。你站在棚外，最想听见的那声胜没有来，他却比你稳得多。",
+          "choices": []
+        },
+        {
+          "beat": "lm_xu_bout_6",
+          "text": "他若输了也照样行礼——这一句石惊川记下了。到许重山这一场，两人收招时都是先按礼，再论那半分。",
+          "choices": [
+            {
+              "cid": "lm_name_loss",
+              "text": "照实报一百一十九合，不拿旧伤替许解释。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_ask_private",
+              "text": "先不在众人前评说，问许是否要水和座位。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_xu_bout_8",
+          "text": "许先生慢半分。记这一场。",
+          "choices": []
+        },
+        {
+          "beat": "lm_xu_bout_9",
+          "text": "嗯。我的肩没拦着我出来，就别等输了才忽然替它说话。",
+          "choices": []
+        },
+        {
+          "beat": "lm_xu_bout_10",
+          "text": "他的后手我有几回没看清。也记着。",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_1",
+          "text": "此后石惊川又胜第七、险胜第五，与罗天庆百余合后同时收招，记平。",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_2",
+          "text": "他有一手能伤我，我也有。再走下去，不是问艺。",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_3",
+          "text": "你如今知道下一剑在哪儿？",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_4",
+          "text": "你刀改过以后，我有时也不知道。问我的工夫，先把自己那只肩放下。",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_5",
+          "text": "你要将院里的重木架搬到混元门。木刀练过的手一握绳，就知道今日还有没有余力。",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_6",
+          "text": "一百一十九合照实记了，没拿旧伤垫一句。后来罗天庆记贺老的十九、三十二、四十一，也都这样一招一合记着。",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_14",
+          "text": "下一封帖，也请你送。看见我只同罗先生打平，还肯照原话递么？",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_15",
+          "text": "照字递。没人答，我就回来说没人答。",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_16",
+          "text": "他把未封的下一帖放到你面前，仍写愿请第一赐教。你亲眼看见那句话在一场险胜、一场平局以后没有被划掉。",
+          "choices": [
+            {
+              "cid": "lm_share_frame",
+              "text": "请同门分抬，自己只接绳的一头。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_take_frame",
+              "text": "坚持自己抬到门口，过后承认肩臂已经疼。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_sore_20",
+          "text": "这头我来。另一头请个人，不拿一个人抬完证明我刀练得好。",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_21",
+          "text": "知道还要搬东西，练刀也能早停一回。",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_22",
+          "text": "你没有反驳，换了不酸的那一只手。",
+          "choices": []
+        },
+        {
+          "beat": "lm_he_gate_1",
+          "text": "后院里木架落稳，你按吩咐留在侧门，随时把围近的人请回白线。贺景庭九十六岁，手里没有兵刃。",
+          "choices": []
+        },
+        {
+          "beat": "lm_he_gate_2",
+          "text": "石先生用真剑。不必因为我手空着，就把自己的剑也变轻。",
+          "choices": []
+        },
+        {
+          "beat": "lm_he_gate_3",
+          "text": "请指教。",
+          "choices": []
+        },
+        {
+          "beat": "lm_he_gate_4",
+          "text": "前三十余招，剑路几乎铺满眼前。第三十八招，贺老第一次真正出掌，剑势偏开两寸。",
+          "choices": []
+        },
+        {
+          "beat": "lm_he_gate_5",
+          "text": "你正想看脚，身旁有人把头挤过侧门线。剑还在走，不能让后头的人跟着挪进去。",
+          "choices": [
+            {
+              "cid": "lm_guard_line",
+              "text": "守住侧门，把人退回去，错过中间几招也认。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_call_help",
+              "text": "请旁人接住侧门，等听见应声才回头看。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_he_gate_6",
+          "text": "先退。里头看不清，往前挤也不是你的招。",
+          "choices": []
+        },
+        {
+          "beat": "lm_he_gate_7",
+          "text": "你转身时，第四十七招的轻铮已经响了。长剑飞出两丈，贺掌停在石胸前。",
+          "choices": []
+        },
+        {
+          "beat": "lm_he_gate_8",
+          "text": "你没看全那一下，只看清人还在原先的白线后。",
+          "choices": []
+        },
+        {
+          "beat": "lm_fortyseven_1",
+          "text": "石惊川退后三步，按晚辈礼行下去。你以为他要解释，先听见的是认输。",
+          "choices": []
+        },
+        {
+          "beat": "lm_fortyseven_2",
+          "text": "晚辈输了。只是没有料到差这样远。",
+          "choices": []
+        }
+      ],
+      "clicks": [
+        {
+          "action": "advance",
+          "beat": "lm_borrow_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_borrow_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_borrow_3"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_ask_use",
+          "beat": "lm_borrow_4",
+          "label": "承认只记了次序，请他先让我摆出这一刀。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_borrow_5"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_borrow_6"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_borrow_7"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_old_blade_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_old_blade_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_old_blade_3"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_old_blade_4"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_old_blade_5"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_old_blade_6"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_ask_wound",
+          "beat": "lm_old_blade_7",
+          "label": "问旧伤现在怎样影响他，不把战绩当没受过伤。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_old_blade_9"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_old_blade_10"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_old_blade_11"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_old_blade_12"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_3"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_4"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_ask_qinghe_friend",
+          "beat": "lm_qinghe_5",
+          "label": "先问一个武当道人为何还认得宋老的旧刀。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_7"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_8"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_9"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_yard_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_yard_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_yard_3"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_yard_4"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_yard_5"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_old_watch_foot",
+          "beat": "lm_qinghe_yard_6",
+          "label": "先看左脚，试着把落点压回旧谱的位置。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_yard_7"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_yard_8"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_first_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_first_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_first_3"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_old_close_elbow",
+          "beat": "lm_qinghe_first_4",
+          "label": "先收右肘，不强追先前定好的刀头。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_first_6"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_first_7"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_first_8"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_third_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_third_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_third_3"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_third_4"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_old_ask_twenty",
+          "beat": "lm_qinghe_third_5",
+          "label": "承认三下都没接住，再问自己还能怎么练。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_third_6"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_third_7"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_third_8"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_return_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_return_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_return_3"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_return_4"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_return_5"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_practice_slow",
+          "beat": "lm_qinghe_return_6",
+          "label": "借刀以后，先练停住一步，不赶着连完十七刀。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_return_9"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_return_10"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_return_11"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_choose_path_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_choose_path_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_choose_path_3"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_route_guest",
+          "beat": "lm_choose_path_4",
+          "label": "去接武陵问剑的来客，带他认河中门庭，走外来一线。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_choose_path_7"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_choose_path_8"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_route_first_day_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_route_first_day_10"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_deliver_exact",
+          "beat": "lm_route_first_day_11",
+          "label": "照原帖递到收帖人手里，等对方亲口答复。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_route_first_day_12"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_route_first_day_13"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_route_first_day_14"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_outsider_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_outsider_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_outsider_3"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_outsider_4"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_outsider_5"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_stop_mock",
+          "beat": "lm_outsider_6",
+          "label": "让同门别再喊野榜，输了也照样行礼。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_outsider_7"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_outsider_8"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_outsider_9"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_xu_bout_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_xu_bout_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_xu_bout_3"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_xu_bout_4"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_xu_bout_5"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_name_loss",
+          "beat": "lm_xu_bout_6",
+          "label": "照实报一百一十九合，不拿旧伤替许解释。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_xu_bout_8"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_xu_bout_9"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_xu_bout_10"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_3"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_4"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_5"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_6"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_14"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_15"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_share_frame",
+          "beat": "lm_sore_16",
+          "label": "请同门分抬，自己只接绳的一头。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_20"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_21"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_22"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_he_gate_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_he_gate_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_he_gate_3"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_he_gate_4"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_guard_line",
+          "beat": "lm_he_gate_5",
+          "label": "守住侧门，把人退回去，错过中间几招也认。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_he_gate_6"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_he_gate_7"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_he_gate_8"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_fortyseven_1"
+        }
+      ],
+      "selected": [
+        "lm_ask_use",
+        "lm_ask_wound",
+        "lm_ask_qinghe_friend",
+        "lm_old_watch_foot",
+        "lm_old_close_elbow",
+        "lm_old_ask_twenty",
+        "lm_practice_slow",
+        "lm_route_guest",
+        "lm_deliver_exact",
+        "lm_stop_mock",
+        "lm_name_loss",
+        "lm_share_frame",
+        "lm_guard_line"
+      ],
+      "target": true,
+      "tie": true,
+      "heResult": true,
+      "shots": [
+        {
+          "file": "longmen-1440-prior-tie.png",
+          "beat": "lm_sore_1",
+          "text": "此后石惊川又胜第七、险胜第五，与罗天庆百余合后同时收招，记平。",
+          "reviewed": true,
+          "originalSha256": "9c7dcb29caccd34c0a0113d23c2e70bae736bb275f32ccfb11a7028337d87169",
+          "smallEvidence": "docs/evidence/independent-final/browser-longmen-1440-prior-tie.webp",
+          "smallSha256": "d386019e340fa4f8d7a253f07c32fd89421257ced2366dc184f5dc2d507e149e"
+        },
+        {
+          "file": "longmen-1440-fixed-line.png",
+          "beat": "lm_sore_14",
+          "text": "下一封帖，也请你送。看见我只同罗先生打平，还肯照原话递么？",
+          "reviewed": true,
+          "originalSha256": "653c2c02428cbde39e47af529b91dedc1f9182f9e3d8c79e406f421fec3dd812",
+          "smallEvidence": "docs/evidence/independent-final/browser-longmen-1440-fixed-line.webp",
+          "smallSha256": "354f7939ef047b4da8271245c4e671d1359ac85a121e34578bd4a62685f2d31d"
+        },
+        {
+          "file": "longmen-1440-he-actual-loss.png",
+          "beat": "lm_fortyseven_2",
+          "text": "晚辈输了。只是没有料到差这样远。",
+          "reviewed": true,
+          "originalSha256": "039ef28bad2e68b0eac2cdb7883dd79647031bd30d588168e52815998ceb4b07",
+          "smallEvidence": "docs/evidence/independent-final/browser-longmen-1440-he-actual-loss.webp",
+          "smallSha256": "eb0838babfe08e7625ecf708f5a67c451a88c90059133c19f7b03677bc9564ee"
+        }
+      ],
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/longmen-backyard.webp",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/lm-he.webp",
+          "width": 560,
+          "height": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/lm-shi-uneasy.webp",
+          "width": 560,
+          "height": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v5/npc-elder-male.webp",
+          "width": 560,
+          "height": 840
+        }
+      ],
+      "errors": [],
+      "responses": [],
+      "overflow": false
+    },
+    {
+      "rc": "editorial-migration-build",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "http://127.0.0.1:4173/longmen.html#play",
+      "title": "Jianghu · 龙门问刀",
+      "browser": "Chrome via existing Playwright; Browser plugin not available",
+      "settingsOnly": true,
+      "noSaveInjection": true,
+      "distHtmlSha256": "9940b7b84f871051977f96ba02aeb51f8c3595d8ee1ecaa8e999e1961258e717",
+      "localAssets": [
+        {
+          "url": "./assets/modulepreload-polyfill-P2Xu9kJm.js",
+          "sha256": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f"
+        },
+        {
+          "url": "./assets/chronicle-catalog-56xv3GiH.js",
+          "sha256": "da8a503a59e626aad02f8d06e2efc88e5b935a68b73a29d303900ba8f7f85fc5"
+        },
+        {
+          "url": "./assets/catalog-BtET8AA6.js",
+          "sha256": "b53c09e0a158451316c3fad29673bec6d85fe95126360f7c1a4597b11c4079fb"
+        },
+        {
+          "url": "./assets/work-index-BmvMq2vW.js",
+          "sha256": "23ff4dee488d0fa1d039b1930f3e490c1938c47f16ebf79b81d01d8f05549e1c"
+        },
+        {
+          "url": "./assets/ink-DJNFVVIJ.js",
+          "sha256": "2b260fe1d76ddde57679a6587bae1c60a9a9ae0f334cea54df47faeab5f6d765"
+        },
+        {
+          "url": "./assets/player-B9QRtwzd.js",
+          "sha256": "50dc2bd81df96f70fb9c784899b283ededf9effcc0fbf8c5db63ac53282ec1d2"
+        },
+        {
+          "url": "./assets/catalog-BbsrsVBy.css",
+          "sha256": "df186031e11442d679af65465c797d73769b1655785ba0dd3a2180a3d4fb6a60"
+        }
+      ],
+      "frames": [
+        {
+          "beat": "lm_borrow_1",
+          "text": "你想借镇河门一把木刀，到秋会上换人试手。许重山没把刀递过来，先问你第七刀砍谁。",
+          "choices": []
+        },
+        {
+          "beat": "lm_borrow_2",
+          "text": "第七刀……接在第六刀后面。",
+          "choices": []
+        },
+        {
+          "beat": "lm_borrow_3",
+          "text": "我看得出七在六后面。",
+          "choices": []
+        },
+        {
+          "beat": "lm_borrow_4",
+          "text": "你伸出去的手停在半空。他没有把刀收回，只等你把这句话自己想完。",
+          "choices": [
+            {
+              "cid": "lm_ask_use",
+              "text": "承认只记了次序，请他先让我摆出这一刀。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_try_first",
+              "text": "不急着求指点，先试给他看自己的用法。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_borrow_5",
+          "text": "我没想过。让我摆出来，您看我到底想打哪儿。",
+          "choices": []
+        },
+        {
+          "beat": "lm_borrow_6",
+          "text": "别摆给我好看。对着这根柱，先站稳。",
+          "choices": []
+        },
+        {
+          "beat": "lm_borrow_7",
+          "text": "你举刀，才发现刀落完，下一步没有地方接。",
+          "choices": []
+        },
+        {
+          "beat": "lm_old_blade_1",
+          "text": "许重山把你刀背按低，目光转向墙上那把旧刀。他说自己十四岁，也只会把十七刀接得响。",
+          "choices": []
+        },
+        {
+          "beat": "lm_old_blade_2",
+          "text": "宋老当年问我，我一样答不出。",
+          "choices": []
+        },
+        {
+          "beat": "lm_old_blade_3",
+          "text": "那我是不是……",
+          "choices": []
+        },
+        {
+          "beat": "lm_old_blade_4",
+          "text": "别急着找一样。你没走过我的路，也不用替我再撞一次柱。",
+          "choices": []
+        },
+        {
+          "beat": "lm_old_blade_5",
+          "text": "他是伏河刀宋九川的再传。你听过镇河门护盐船、走镖路，却第一次见他说起少年时，笑得这样不留面子。",
+          "choices": []
+        },
+        {
+          "beat": "lm_old_blade_6",
+          "text": "二十六岁霍岭口，我第四十二刀撞脱彭四海兵刃。名号留下了，左肩也留下了。",
+          "choices": []
+        },
+        {
+          "beat": "lm_old_blade_7",
+          "text": "你举过刀，才知道落完没有地方接。此刻听他讲少年时撞柱的旧事，你听得比谁都仔细——同一处亏，不必再吃第二回。",
+          "choices": [
+            {
+              "cid": "lm_ask_wound",
+              "text": "问旧伤现在怎样影响他，不把战绩当没受过伤。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_ask_left",
+              "text": "问四十岁左手换刀，为何没从此每回都换。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_old_blade_9",
+          "text": "您刚才按刀，左脚先让了半寸，也是因为肩？",
+          "choices": []
+        },
+        {
+          "beat": "lm_old_blade_10",
+          "text": "肩与脚不是两件无关的东西。但看出半寸，不等于你知道怎样改。",
+          "choices": []
+        },
+        {
+          "beat": "lm_old_blade_11",
+          "text": "那我先别替您扶。",
+          "choices": []
+        },
+        {
+          "beat": "lm_old_blade_12",
+          "text": "该扶的时候会叫你。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_1",
+          "text": "去年清和道人来，看宋老旧居，不是来替我出名。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_2",
+          "text": "他特地来问刀？",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_3",
+          "text": "他先问宋老晚年还使不使刀。我说七十八以后，几乎只教弟子。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_4",
+          "text": "许重山把木刀搁在膝上。那一回与他交手的，不是宋老，也不是今日的你。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_5",
+          "text": "肩与脚不是两件无关的东西——这句话你记住了。听他回述清和看破左脚那半寸，你先想的不是名字，是那半寸怎样带了一辈子。",
+          "choices": [
+            {
+              "cid": "lm_ask_qinghe_friend",
+              "text": "先问一个武当道人为何还认得宋老的旧刀。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_ask_qinghe_ninth",
+              "text": "问玄门九席第九，为什么连贺老也不能拿来直接比。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_qinghe_7",
+          "text": "他认得这刀，是以前也到过镇河门？",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_8",
+          "text": "四十余年前，宋老护药过伏牛山，和他一位师兄同行。清和这趟先访旧，才碰见我这把没放稳的刀。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_9",
+          "text": "他说到护药时，先把刀鞘边一块旧皮扶平，没有先报老人排第几。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_yard_1",
+          "text": "旧事 · 许重山五十六岁这一年。眼下的判断，属于站在旧院里的许重山。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_yard_2",
+          "text": "清和八十四，看过一炷香的刀。他没有取剑，伸手从架上抽一根三尺藤条。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_yard_3",
+          "text": "左脚压势，少了半寸。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_yard_4",
+          "text": "二十六岁那一处伤，确实一直带着。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_yard_5",
+          "text": "你怎样带，先走一刀。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_yard_6",
+          "text": "许重山换了木刀。刀背还没完全抬起，他已想好了落点。",
+          "choices": [
+            {
+              "cid": "lm_old_watch_foot",
+              "text": "先看左脚，试着把落点压回旧谱的位置。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_old_finish_blade",
+              "text": "先走自己惯熟的刀，想看三尺藤条怎样接。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_qinghe_yard_7",
+          "text": "先把脚下补回去。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_yard_8",
+          "text": "左脚重新压低，肩却随之绷紧。清和没有趁他挪脚就先点过来，等那把木刀真正起了势。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_first_1",
+          "text": "第一刀，藤条搭在刀侧，没有把木刀震飞。许重山的右肘忽然无处可落。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_first_2",
+          "text": "我把他留在刀外，自己的肘却没地方收。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_first_3",
+          "text": "清和并不等他解释完。藤条沿刀背一滑，第二刀走到一半，胸前已空。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_first_4",
+          "text": "左脚压回旧谱位置、肩跟着绷紧——这一换的代价，许重山自己付过。清和的藤条等它起势，等的就是这一寸换来的紧。",
+          "choices": [
+            {
+              "cid": "lm_old_close_elbow",
+              "text": "先收右肘，不强追先前定好的刀头。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_old_press_end",
+              "text": "仍把第二刀送到原定处，亲自试这条路是否真走死。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_qinghe_first_6",
+          "text": "他把肘收回来，原先想追的地方便到不了。清和的藤条却仍没离开那一道空门。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_first_7",
+          "text": "你想改这一刀的末尾？",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_first_8",
+          "text": "是。可是前半截已经走出去了。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_third_1",
+          "text": "第三刀尚未真正走完，藤条已停在喉前两寸。没有点上，更没有因为停住便变成许重山接住了。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_third_2",
+          "text": "你的刀很好。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_third_3",
+          "text": "真人不必宽慰。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_third_4",
+          "text": "你一出刀，便先想好了这一刀要到哪里。到了以后，刀就停了。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_third_5",
+          "text": "许重山垂下木刀。这句话没有把宋老第七刀的问题抹掉，却让他重新听见一个原先没问过的后半句。",
+          "choices": [
+            {
+              "cid": "lm_old_ask_twenty",
+              "text": "承认三下都没接住，再问自己还能怎么练。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_old_try_words",
+              "text": "先说出自己为何想把刀送到底，再问二十年。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_qinghe_third_6",
+          "text": "若我再练二十年，可接住第三下？",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_third_7",
+          "text": "二十年后，何必还是今日这一刀？",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_third_8",
+          "text": "许重山看了看手中木刀，没有请他先说二十年后必定能赢。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_return_1",
+          "text": "这三下是许重山今日亲口回述的旧事。院里的木刀又在你手边。眼下仍是清和到河中的次年，你是来借刀的门人，不是当年的许重山。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_return_2",
+          "text": "我后来少了一些刀。罗天庆先前知道我下一刀在哪，如今有时也不知道。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_return_3",
+          "text": "您现在知道自己的下一刀么？",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_return_4",
+          "text": "有时知道。有时得先看你这一步怎么走。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_return_5",
+          "text": "刚才说收肘，那不是末尾忽然缩一下便行。你出刀之前，留一处还能走的地方。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_return_6",
+          "text": "他推你的刀背，等你自己试哪只脚还能动。",
+          "choices": [
+            {
+              "cid": "lm_practice_slow",
+              "text": "借刀以后，先练停住一步，不赶着连完十七刀。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_practice_more",
+              "text": "仍想多试几轮连刀，自己承担练过头的酸痛。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_qinghe_return_9",
+          "text": "那我先练走完还能停。没法连着好看，也先不连。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_return_10",
+          "text": "停下来不是全身僵住。我推你一下，别跟柱子一样。",
+          "choices": []
+        },
+        {
+          "beat": "lm_qinghe_return_11",
+          "text": "他只推肩，你已挪了两步。秋会借刀的事，忽然没那么像拿了刀就能去。",
+          "choices": []
+        },
+        {
+          "beat": "lm_choose_path_1",
+          "text": "正式问艺之前，馆里缺人带新门人；武陵来的帖子也要送到混元门。许重山把两件事放到你面前。",
+          "choices": []
+        },
+        {
+          "beat": "lm_choose_path_2",
+          "text": "留下教起手，或替外来人带路。先说你今日能交清哪一件。",
+          "choices": []
+        },
+        {
+          "beat": "lm_choose_path_3",
+          "text": "不能两个都先答应，回头再让别人补？",
+          "choices": []
+        },
+        {
+          "beat": "lm_choose_path_4",
+          "text": "你已经想得到这一步，还问我许不许。",
+          "choices": [
+            {
+              "cid": "lm_route_school",
+              "text": "留在镇河门，带初入门的人试起手，走传承一线。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_route_guest",
+              "text": "去接武陵问剑的来客，带他认河中门庭，走外来一线。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_choose_path_7",
+          "text": "我送帖。谁收，谁不肯收，照原话回报。",
+          "choices": []
+        },
+        {
+          "beat": "lm_choose_path_8",
+          "text": "带路，不替他求每一家说好话。他递这封帖，自己知道要问什么。",
+          "choices": []
+        },
+        {
+          "beat": "lm_route_first_day_1",
+          "text": "早饭以后，你把答应的第一件事接到手里。",
+          "choices": []
+        },
+        {
+          "beat": "lm_route_first_day_10",
+          "text": "石惊川把帖子递给你，纸角压得很平。路边有人说辰州府榜到河中来，何必把自二十四起写得这么大。",
+          "choices": []
+        },
+        {
+          "beat": "lm_route_first_day_11",
+          "text": "你若领我去，请先照字递。若不愿，我自己去问路。",
+          "choices": [
+            {
+              "cid": "lm_deliver_exact",
+              "text": "照原帖递到收帖人手里，等对方亲口答复。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_smooth_post",
+              "text": "担心对方不收，先把话说成只想与同道随便试手。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_route_first_day_12",
+          "text": "这封是问艺，不是请替他改一封好听的。我等回话。",
+          "choices": []
+        },
+        {
+          "beat": "lm_route_first_day_13",
+          "text": "你在门口等到收帖的人出来，石惊川也没有在身后催。",
+          "choices": []
+        },
+        {
+          "beat": "lm_route_first_day_14",
+          "text": "写的便是我想问的。你不用先替我少问一场。",
+          "choices": []
+        },
+        {
+          "beat": "lm_outsider_1",
+          "text": "武陵来的帖子在棚前传了一圈。石惊川说从河中第二十四问起，棚下先有人笑辰州地方偏。",
+          "choices": []
+        },
+        {
+          "beat": "lm_outsider_2",
+          "text": "石惊川，武陵回雁门。先请写帖的人把名字读完。",
+          "choices": []
+        },
+        {
+          "beat": "lm_outsider_3",
+          "text": "他不是来跟你们争路远路近。把空地清出来。",
+          "choices": []
+        },
+        {
+          "beat": "lm_outsider_4",
+          "text": "第一个七招，第二个十一招，后面二十余招。到金钩手薛伯庸第四十七合收钩时，原先的笑声已经找不到人认。",
+          "choices": []
+        },
+        {
+          "beat": "lm_outsider_5",
+          "text": "地方小，不是人一定小。",
+          "choices": []
+        },
+        {
+          "beat": "lm_outsider_6",
+          "text": "下一场他若真把我送下来，你也照这样喊。",
+          "choices": [
+            {
+              "cid": "lm_stop_mock",
+              "text": "让同门别再喊野榜，输了也照样行礼。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_watch_only",
+              "text": "不替别人说话，只把场地让开，认真看剑。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_outsider_7",
+          "text": "他若下一场输了，也不轮到我们把前面几场笑回去。",
+          "choices": []
+        },
+        {
+          "beat": "lm_outsider_8",
+          "text": "你这句话，我记下。不用先替我担心输。",
+          "choices": []
+        },
+        {
+          "beat": "lm_outsider_9",
+          "text": "他把剑鞘交给随行人，先看棚下留出的空地。你退到外沿，等他走过去，场边才又有人开口报名字。",
+          "choices": []
+        },
+        {
+          "beat": "lm_xu_bout_1",
+          "text": "到了许重山，石惊川的断云剑不再那样快结束。你见许的刀几次留了空，石的剑也没有立刻追进去。",
+          "choices": []
+        },
+        {
+          "beat": "lm_xu_bout_2",
+          "text": "第一百一十九合，剑越过刀背半寸，停在肋下；许的刀几乎同时到石右肩。",
+          "choices": []
+        },
+        {
+          "beat": "lm_xu_bout_3",
+          "text": "我慢了半分。",
+          "choices": []
+        },
+        {
+          "beat": "lm_xu_bout_4",
+          "text": "只有半分。",
+          "choices": []
+        },
+        {
+          "beat": "lm_xu_bout_5",
+          "text": "许先收刀。你站在棚外，最想听见的那声胜没有来，他却比你稳得多。",
+          "choices": []
+        },
+        {
+          "beat": "lm_xu_bout_6",
+          "text": "他若输了也照样行礼——这一句石惊川记下了。到许重山这一场，两人收招时都是先按礼，再论那半分。",
+          "choices": [
+            {
+              "cid": "lm_name_loss",
+              "text": "照实报一百一十九合，不拿旧伤替许解释。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_ask_private",
+              "text": "先不在众人前评说，问许是否要水和座位。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_xu_bout_8",
+          "text": "许先生慢半分。记这一场。",
+          "choices": []
+        },
+        {
+          "beat": "lm_xu_bout_9",
+          "text": "嗯。我的肩没拦着我出来，就别等输了才忽然替它说话。",
+          "choices": []
+        },
+        {
+          "beat": "lm_xu_bout_10",
+          "text": "他的后手我有几回没看清。也记着。",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_1",
+          "text": "此后石惊川又胜第七、险胜第五，与罗天庆百余合后同时收招，记平。",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_2",
+          "text": "他有一手能伤我，我也有。再走下去，不是问艺。",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_3",
+          "text": "你如今知道下一剑在哪儿？",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_4",
+          "text": "你刀改过以后，我有时也不知道。问我的工夫，先把自己那只肩放下。",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_5",
+          "text": "你要将院里的重木架搬到混元门。木刀练过的手一握绳，就知道今日还有没有余力。",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_6",
+          "text": "一百一十九合照实记了，没拿旧伤垫一句。后来罗天庆记贺老的十九、三十二、四十一，也都这样一招一合记着。",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_14",
+          "text": "下一封帖，也请你送。看见我只同罗先生打平，还肯照原话递么？",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_15",
+          "text": "照字递。没人答，我就回来说没人答。",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_16",
+          "text": "他把未封的下一帖放到你面前，仍写愿请第一赐教。你亲眼看见那句话在一场险胜、一场平局以后没有被划掉。",
+          "choices": [
+            {
+              "cid": "lm_share_frame",
+              "text": "请同门分抬，自己只接绳的一头。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_take_frame",
+              "text": "坚持自己抬到门口，过后承认肩臂已经疼。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_sore_20",
+          "text": "这头我来。另一头请个人，不拿一个人抬完证明我刀练得好。",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_21",
+          "text": "知道还要搬东西，练刀也能早停一回。",
+          "choices": []
+        },
+        {
+          "beat": "lm_sore_22",
+          "text": "你没有反驳，换了不酸的那一只手。",
+          "choices": []
+        },
+        {
+          "beat": "lm_he_gate_1",
+          "text": "后院里木架落稳，你按吩咐留在侧门，随时把围近的人请回白线。贺景庭九十六岁，手里没有兵刃。",
+          "choices": []
+        },
+        {
+          "beat": "lm_he_gate_2",
+          "text": "石先生用真剑。不必因为我手空着，就把自己的剑也变轻。",
+          "choices": []
+        },
+        {
+          "beat": "lm_he_gate_3",
+          "text": "请指教。",
+          "choices": []
+        },
+        {
+          "beat": "lm_he_gate_4",
+          "text": "前三十余招，剑路几乎铺满眼前。第三十八招，贺老第一次真正出掌，剑势偏开两寸。",
+          "choices": []
+        },
+        {
+          "beat": "lm_he_gate_5",
+          "text": "你正想看脚，身旁有人把头挤过侧门线。剑还在走，不能让后头的人跟着挪进去。",
+          "choices": [
+            {
+              "cid": "lm_guard_line",
+              "text": "守住侧门，把人退回去，错过中间几招也认。",
+              "disabled": true
+            },
+            {
+              "cid": "lm_call_help",
+              "text": "请旁人接住侧门，等听见应声才回头看。",
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "beat": "lm_he_gate_6",
+          "text": "先退。里头看不清，往前挤也不是你的招。",
+          "choices": []
+        },
+        {
+          "beat": "lm_he_gate_7",
+          "text": "你转身时，第四十七招的轻铮已经响了。长剑飞出两丈，贺掌停在石胸前。",
+          "choices": []
+        },
+        {
+          "beat": "lm_he_gate_8",
+          "text": "你没看全那一下，只看清人还在原先的白线后。",
+          "choices": []
+        },
+        {
+          "beat": "lm_fortyseven_1",
+          "text": "石惊川退后三步，按晚辈礼行下去。你以为他要解释，先听见的是认输。",
+          "choices": []
+        },
+        {
+          "beat": "lm_fortyseven_2",
+          "text": "晚辈输了。只是没有料到差这样远。",
+          "choices": []
+        }
+      ],
+      "clicks": [
+        {
+          "action": "advance",
+          "beat": "lm_borrow_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_borrow_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_borrow_3"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_ask_use",
+          "beat": "lm_borrow_4",
+          "label": "承认只记了次序，请他先让我摆出这一刀。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_borrow_5"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_borrow_6"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_borrow_7"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_old_blade_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_old_blade_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_old_blade_3"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_old_blade_4"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_old_blade_5"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_old_blade_6"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_ask_wound",
+          "beat": "lm_old_blade_7",
+          "label": "问旧伤现在怎样影响他，不把战绩当没受过伤。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_old_blade_9"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_old_blade_10"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_old_blade_11"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_old_blade_12"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_3"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_4"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_ask_qinghe_friend",
+          "beat": "lm_qinghe_5",
+          "label": "先问一个武当道人为何还认得宋老的旧刀。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_7"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_8"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_9"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_yard_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_yard_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_yard_3"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_yard_4"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_yard_5"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_old_watch_foot",
+          "beat": "lm_qinghe_yard_6",
+          "label": "先看左脚，试着把落点压回旧谱的位置。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_yard_7"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_yard_8"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_first_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_first_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_first_3"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_old_close_elbow",
+          "beat": "lm_qinghe_first_4",
+          "label": "先收右肘，不强追先前定好的刀头。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_first_6"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_first_7"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_first_8"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_third_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_third_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_third_3"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_third_4"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_old_ask_twenty",
+          "beat": "lm_qinghe_third_5",
+          "label": "承认三下都没接住，再问自己还能怎么练。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_third_6"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_third_7"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_third_8"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_return_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_return_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_return_3"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_return_4"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_return_5"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_practice_slow",
+          "beat": "lm_qinghe_return_6",
+          "label": "借刀以后，先练停住一步，不赶着连完十七刀。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_return_9"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_return_10"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_qinghe_return_11"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_choose_path_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_choose_path_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_choose_path_3"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_route_guest",
+          "beat": "lm_choose_path_4",
+          "label": "去接武陵问剑的来客，带他认河中门庭，走外来一线。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_choose_path_7"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_choose_path_8"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_route_first_day_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_route_first_day_10"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_deliver_exact",
+          "beat": "lm_route_first_day_11",
+          "label": "照原帖递到收帖人手里，等对方亲口答复。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_route_first_day_12"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_route_first_day_13"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_route_first_day_14"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_outsider_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_outsider_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_outsider_3"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_outsider_4"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_outsider_5"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_stop_mock",
+          "beat": "lm_outsider_6",
+          "label": "让同门别再喊野榜，输了也照样行礼。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_outsider_7"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_outsider_8"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_outsider_9"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_xu_bout_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_xu_bout_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_xu_bout_3"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_xu_bout_4"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_xu_bout_5"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_name_loss",
+          "beat": "lm_xu_bout_6",
+          "label": "照实报一百一十九合，不拿旧伤替许解释。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_xu_bout_8"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_xu_bout_9"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_xu_bout_10"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_3"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_4"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_5"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_6"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_14"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_15"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_share_frame",
+          "beat": "lm_sore_16",
+          "label": "请同门分抬，自己只接绳的一头。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_20"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_21"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_sore_22"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_he_gate_1"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_he_gate_2"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_he_gate_3"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_he_gate_4"
+        },
+        {
+          "action": "choice",
+          "cid": "lm_guard_line",
+          "beat": "lm_he_gate_5",
+          "label": "守住侧门，把人退回去，错过中间几招也认。"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_he_gate_6"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_he_gate_7"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_he_gate_8"
+        },
+        {
+          "action": "advance",
+          "beat": "lm_fortyseven_1"
+        }
+      ],
+      "selected": [
+        "lm_ask_use",
+        "lm_ask_wound",
+        "lm_ask_qinghe_friend",
+        "lm_old_watch_foot",
+        "lm_old_close_elbow",
+        "lm_old_ask_twenty",
+        "lm_practice_slow",
+        "lm_route_guest",
+        "lm_deliver_exact",
+        "lm_stop_mock",
+        "lm_name_loss",
+        "lm_share_frame",
+        "lm_guard_line"
+      ],
+      "target": true,
+      "tie": true,
+      "heResult": true,
+      "shots": [
+        {
+          "file": "longmen-390-prior-tie.png",
+          "beat": "lm_sore_1",
+          "text": "此后石惊川又胜第七、险胜第五，与罗天庆百余合后同时收招，记平。",
+          "reviewed": true,
+          "originalSha256": "12ab8f12aaafdc8a00dfcd5fa2a0ed83018903f4f58713753b0de60feee7de50",
+          "smallEvidence": "docs/evidence/independent-final/browser-longmen-390-prior-tie.webp",
+          "smallSha256": "f393c63e16afe816c307ad39a791afaa519e76bbb4ab526b94c3944d40b4f970"
+        },
+        {
+          "file": "longmen-390-fixed-line.png",
+          "beat": "lm_sore_14",
+          "text": "下一封帖，也请你送。看见我只同罗先生打平，还肯照原话递么？",
+          "reviewed": true,
+          "originalSha256": "1b58e6d9f8a0b76d1a96e5add03a446d9e89915edf9e87ca248ebaf04a494142",
+          "smallEvidence": "docs/evidence/independent-final/browser-longmen-390-fixed-line.webp",
+          "smallSha256": "b0f5556013e20ce2db6d833337cfbdceed927f0dfaa13480d6afa6a99aa54baa"
+        },
+        {
+          "file": "longmen-390-he-actual-loss.png",
+          "beat": "lm_fortyseven_2",
+          "text": "晚辈输了。只是没有料到差这样远。",
+          "reviewed": true,
+          "originalSha256": "5fe179d085b2332629fe855d9664aef72e1b8de84289f18476af0a1c0150c497",
+          "smallEvidence": "docs/evidence/independent-final/browser-longmen-390-he-actual-loss.webp",
+          "smallSha256": "3a6c27d5add38f32758f715ef05a3e8cc55d6b21f6fb2b341bcb8d3d1aa608ad"
+        }
+      ],
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/longmen-backyard.webp",
+          "width": 1536,
+          "height": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/lm-he.webp",
+          "width": 560,
+          "height": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/lm-shi-uneasy.webp",
+          "width": 560,
+          "height": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v5/npc-elder-male.webp",
+          "width": 560,
+          "height": 840
+        }
+      ],
+      "errors": [],
+      "responses": [],
+      "overflow": false
+    }
+  ]
+}

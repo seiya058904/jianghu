@@ -1,0 +1,245 @@
+{
+  "head": "ec53af4ec75f352b52ba6a85bd818510b890dc10",
+  "files": 46,
+  "bytes": 1148834794,
+  "refsSHA256": "4e7f0a3bd6ea5f7e94936eaa5d4f14a9d58cc602e2602d06f4337f3689c83e53",
+  "objectInventorySHA256": "19bbab566261aba178802f6e724774a483efe84b1b46dc37d056e90d9d017ca2",
+  "allObjects": 6655,
+  "backup": "../Jianghu-independent-20261018/git-maintenance-probe.git",
+  "verifiedAllCopiedFiles": true,
+  "sourceModified": false,
+  "filesManifest": [
+    {
+      "path": "COMMIT_EDITMSG",
+      "bytes": 70,
+      "sha256": "81ea05737e828221d38163a889be19f00d66fa83c865d9eae3907e2bb6186348"
+    },
+    {
+      "path": "config",
+      "bytes": 320,
+      "sha256": "531bbfaa31c56251e270165472f8b064b46622001bbf208886e166acc62d4e3a"
+    },
+    {
+      "path": "description",
+      "bytes": 73,
+      "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee"
+    },
+    {
+      "path": "FETCH_HEAD",
+      "bytes": 98,
+      "sha256": "e3f60f25c2eb2b98fe40255420637951960ad22c91a6feec638cd047a3580a1f"
+    },
+    {
+      "path": "HEAD",
+      "bytes": 23,
+      "sha256": "f6f2b945f6c411b02ba3da9c7ace88dcf71b6af65ba2e0d89aa82900042b5a10"
+    },
+    {
+      "path": "hooks/applypatch-msg.sample",
+      "bytes": 478,
+      "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7"
+    },
+    {
+      "path": "hooks/commit-msg.sample",
+      "bytes": 1972,
+      "sha256": "efc1401b0e99d1ff51494d154d98b46c1e99059bcd8bf9f73cecde19fd3eb23b"
+    },
+    {
+      "path": "hooks/fsmonitor-watchman.sample",
+      "bytes": 4611,
+      "sha256": "9159720099ad5595b8e66645cbfd47763c1e920f46e0b50ae75e642bbec57ef0"
+    },
+    {
+      "path": "hooks/post-update.sample",
+      "bytes": 189,
+      "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5"
+    },
+    {
+      "path": "hooks/pre-applypatch.sample",
+      "bytes": 424,
+      "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475"
+    },
+    {
+      "path": "hooks/pre-commit.sample",
+      "bytes": 1649,
+      "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b"
+    },
+    {
+      "path": "hooks/pre-merge-commit.sample",
+      "bytes": 416,
+      "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53"
+    },
+    {
+      "path": "hooks/pre-push.sample",
+      "bytes": 1374,
+      "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a"
+    },
+    {
+      "path": "hooks/pre-rebase.sample",
+      "bytes": 4898,
+      "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3"
+    },
+    {
+      "path": "hooks/pre-receive.sample",
+      "bytes": 544,
+      "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989"
+    },
+    {
+      "path": "hooks/prepare-commit-msg.sample",
+      "bytes": 1492,
+      "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619"
+    },
+    {
+      "path": "hooks/push-to-checkout.sample",
+      "bytes": 2783,
+      "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f"
+    },
+    {
+      "path": "hooks/sendemail-validate.sample",
+      "bytes": 2308,
+      "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92"
+    },
+    {
+      "path": "hooks/update.sample",
+      "bytes": 3650,
+      "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106"
+    },
+    {
+      "path": "index",
+      "bytes": 262112,
+      "sha256": "8adc0def7bbbd2d051eb5adcfce8d0d858f671139ae9dcbf5f80e64096941fd1"
+    },
+    {
+      "path": "info/exclude",
+      "bytes": 1883,
+      "sha256": "a20045a7de6f829f843ad7233ed7a3c2a9d0a461f10d7e57a85d1619aca73931"
+    },
+    {
+      "path": "info/refs",
+      "bytes": 505,
+      "sha256": "a9feaf7c1e919a5cddb3f25f737e8ad936c6d99d918a188a3ca2399eaffe6d2b"
+    },
+    {
+      "path": "logs/HEAD",
+      "bytes": 28841,
+      "sha256": "7def546a4d071c35b6235ad44fd83483cb3f6c87f7c9f90bbf78bbe040783eeb"
+    },
+    {
+      "path": "logs/refs/heads/master",
+      "bytes": 26824,
+      "sha256": "3021ad0c333640530917b1a833281e35f56b15ffbbeacce975c6e1d4b5e0d896"
+    },
+    {
+      "path": "logs/refs/heads/publish",
+      "bytes": 208,
+      "sha256": "123d69697746dd7184653bab303d22df5cc87fdc7081bcc2ec0a25abff68398e"
+    },
+    {
+      "path": "logs/refs/remotes/origin/main",
+      "bytes": 710,
+      "sha256": "283ce80f0bc3d2bb1da9f181edc3e70cff39d038c1951ae7b2c64883820db93a"
+    },
+    {
+      "path": "objects/info/commit-graphs/commit-graph-chain",
+      "bytes": 41,
+      "sha256": "60170dff70ff1ef9f1003001b63d3ae9412a74403e336d6f9d92dd8b7b867309"
+    },
+    {
+      "path": "objects/info/commit-graphs/graph-1d3da2174617b06a8982a144da348e1e27894f0a.graph",
+      "bytes": 7112,
+      "sha256": "988ac6a53b2ed1ce6d699735b58d7433f22dc5d620857eb5ce6cb4c2910fe970"
+    },
+    {
+      "path": "objects/info/packs",
+      "bytes": 160,
+      "sha256": "39ff80943f654952a9931d1772fcef863d25a251ce949e41147161ec2947c066"
+    },
+    {
+      "path": "objects/pack/multi-pack-index",
+      "bytes": 187608,
+      "sha256": "e2d753a404fe7aef489fa4cfaefd9e29b09175572f348273c57228985e447831"
+    },
+    {
+      "path": "objects/pack/pack-83bfcff958e245369370ab32ad87742d84ccfe4a.idx",
+      "bytes": 4432,
+      "sha256": "e6213465a7e7102ace79823e85059872ce9914000e78f55a1984cf9b34f1a35b"
+    },
+    {
+      "path": "objects/pack/pack-83bfcff958e245369370ab32ad87742d84ccfe4a.mtimes",
+      "bytes": 532,
+      "sha256": "01f77880b74a888b5cc222083b09adfc5c6d6d0e51395eb8876e81be9e130367"
+    },
+    {
+      "path": "objects/pack/pack-83bfcff958e245369370ab32ad87742d84ccfe4a.pack",
+      "bytes": 27070557,
+      "sha256": "76fe739e436066905f2995a010da3d04e077f2c30ae7522c67ccef6cba9f4008"
+    },
+    {
+      "path": "objects/pack/pack-83bfcff958e245369370ab32ad87742d84ccfe4a.rev",
+      "bytes": 532,
+      "sha256": "d81249062de14b4483dc6e699b7664d20fe0bad3e7306148b4b8f98613916d9c"
+    },
+    {
+      "path": "objects/pack/pack-d3ece975a3cab415c9fdb74af9321f0ecb1ffb93.idx",
+      "bytes": 12384,
+      "sha256": "03fc6499a1db0a9340aae4e0852011b8fbc29d88833cf0ce5ccf3727569de2db"
+    },
+    {
+      "path": "objects/pack/pack-d3ece975a3cab415c9fdb74af9321f0ecb1ffb93.pack",
+      "bytes": 5709779,
+      "sha256": "df88747d6bbed2e7e11d2c6f932e4f9c5470c75f56b0a347d9140c05e2368daf"
+    },
+    {
+      "path": "objects/pack/pack-d3ece975a3cab415c9fdb74af9321f0ecb1ffb93.rev",
+      "bytes": 1668,
+      "sha256": "e3cc6c59850162a4f6865ccff04c5ce56614ef6dfd0b47c47d8b644add13c611"
+    },
+    {
+      "path": "objects/pack/pack-e73f33355ffc5873acbbbb65077ce6756d14012f.idx",
+      "bytes": 172740,
+      "sha256": "0f925302cb6ab7be162b709dc6eb6dfded1bce6aab6fc74567f68f972e012467"
+    },
+    {
+      "path": "objects/pack/pack-e73f33355ffc5873acbbbb65077ce6756d14012f.pack",
+      "bytes": 1115293972,
+      "sha256": "6758dc59a4679534502b3535f780004cfa4d0c61cf2c71021f356799af8cbf73"
+    },
+    {
+      "path": "objects/pack/pack-e73f33355ffc5873acbbbb65077ce6756d14012f.rev",
+      "bytes": 24576,
+      "sha256": "ca4ce800c2718583f021008a0868305ea8d437dd2da58d8270b446d13aa7eb5e"
+    },
+    {
+      "path": "ORIG_HEAD",
+      "bytes": 41,
+      "sha256": "7aed27a808ee377d7b78ac2f7744638a1b83f49496436db4c30049791b6ac47d"
+    },
+    {
+      "path": "refs/codex/turn-diffs/captures/1792291035422/e15c27f8-14e3-46fd-b0ef-7d6859a568d3/base",
+      "bytes": 41,
+      "sha256": "c433611c1dfa8920efc7e3fb85a732fc832861161e51fd6e268a4c602e92ad13"
+    },
+    {
+      "path": "refs/codex/turn-diffs/checkpoints/4295f3dd79985ad8a3cfdd30508428cb/3e1ffc60e05e5949ac21804f72640d62/1792138378415/fc25baef-ccb8-4a87-b03f-2771e6827226",
+      "bytes": 41,
+      "sha256": "67906cb843d8b33570f52979018f324fbf0ac5b27162f03a2076ea546f7f1583"
+    },
+    {
+      "path": "refs/heads/master",
+      "bytes": 41,
+      "sha256": "aa928942e5184e90ac18490f966efaebc043e2e3451caeb3fd496167e07648c0"
+    },
+    {
+      "path": "refs/heads/publish",
+      "bytes": 41,
+      "sha256": "87d1631a477d5e605b95cd6e76c21d465cfdf23c47cb9fb05e7801f6b432d5b4"
+    },
+    {
+      "path": "refs/remotes/origin/main",
+      "bytes": 41,
+      "sha256": "87d1631a477d5e605b95cd6e76c21d465cfdf23c47cb9fb05e7801f6b432d5b4"
+    }
+  ],
+  "immutableCompleteBackup": "../Jianghu-independent-20261018/git-complete-before-maintenance.git",
+  "probeDirectoryMayBeRepacked": true
+}

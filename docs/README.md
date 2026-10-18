@@ -12,7 +12,7 @@
 
 | 文档 | 作用 |
 |---|---|
-| [../AGENTS.md](../AGENTS.md) | 面向 AI 代理的入口：V7 口径表、硬事实、验证状态、红线、审计路径 |
+| [../AGENTS.md](../AGENTS.md) | 面向 AI 代理的入口：当前定位、作者入口、正典与冻结保护、验证及发布约束 |
 | [v7/V7_DELIVERY.md](v7/V7_DELIVERY.md) | **V7 交付总览**：改了什么、原创怎么归档、覆盖率分子分母、未达项、能否发布 |
 | [v7/V7_ACCEPTANCE_MATRIX.md](v7/V7_ACCEPTANCE_MATRIX.md) | 历史17项P0与各轮追加证据；本轮以F01–F30为当前结论 |
 | [v7/V7_QA.md](v7/V7_QA.md) | 构建、单测、E2E、离线与子路径、多视口、已知边界 |
@@ -58,7 +58,7 @@
 
 ## 四、上一世代工作文档（`v6/` · 历史）
 
-> **口径提醒**：V6 判断的是「原创主篇继续扩写」，V7 已把产品定位改为「原典纪事集」。引用 V6 数字时不要当作 V7 结论（见 [../AGENTS.md](../AGENTS.md) §2.1）。
+> **口径提醒**：V6 判断的是「原创主篇继续扩写」，V7 已把产品定位改为「原典纪事集」。引用 V6 数字时不要当作 V7 结论（见 [../AGENTS.md](../AGENTS.md) 的当前定位与历史数字说明）。
 
 ### 4.1 进度与交接
 
@@ -141,8 +141,8 @@
 ## 十、阅读本目录的注意事项
 
 1. **文档是叠加式迭代的**，历史段与最新段会同时存在，通常**追加段为最新**。不要只看文件开头。
-2. **`v7/` 与 `v6/` 的产品定位不同**：V7 是「原典纪事集」，V6 是「原创主篇扩写」。**不要把 V6 的完成度结论当作 V7 的**，反之亦然。硬事实表见根 [AGENTS.md](../AGENTS.md) §2.1。
-3. **`ACCEPTANCE_MATRIX.md`（v6）/ `MAIN_EXPANSION_PROGRESS.md` 已有过期内容**，见根 [AGENTS.md](../AGENTS.md) §6。
-4. **截图证据不随公开快照发布**（入库约 1930 张 / 约 1.4 GiB），文档里的 `docs/evidence/**.png` 链接在公开仓库中打不开；文本证据完整。详见 [evidence/README.md](evidence/README.md)。
-5. **文档中引用的裸提交 SHA 在公开仓库中不可解析**（公开快照为单次导入提交）。
-6. **委托点名的四份 V6 文档从未存在**：`V6_DELIVERY.md` / `V6_QA.md` / `DIRECTION_BEATS.md` / `AUTHORING_WORKFLOW.md`。V7 用 `v7/` 的 12 份显式替代，**不假装那四份存在**（`README.md` §已知缺口 第 9 条）。
+2. **`v7/` 与 `v6/` 的产品定位不同**：V7 是「原典纪事集」，V6 是「原创主篇扩写」。**不要把 V6 的完成度结论当作 V7 的**，反之亦然。当前定位与证据入口见根 [AGENTS.md](../AGENTS.md)。
+3. **`ACCEPTANCE_MATRIX.md`（v6）/ `MAIN_EXPANSION_PROGRESS.md` 已有过期内容**，当前状态须回到 [独立终审矩阵](audits/independent-final/FINAL_ACCEPTANCE.md) 核对。
+4. **历史批量PNG不随公开快照发布**：原公开说明的1930张/约1.4GiB是旧口径。本次实际外置2121张，其中2109项原已追踪，逐SHA与恢复清单见 [证据说明](evidence/README.md) 和 [体积报告](audits/independent-final/SIZE_SUMMARY.md)。本轮精选≤800px WebP与白名单文本另行公开；旧PNG路径在公共检出中不可直接打开。
+5. **旧作者谱系的裸SHA通常不能在公共库解析**；公共main从原策展快照继续普通增量历史，后续公共提交可正常解析。不要把作者与公共两个SHA混为同一提交，来源对应见 [发布回执](audits/independent-final/RELEASE_VALIDATION.md)。
+6. 当前未提供四份旧委托文件 `V6_DELIVERY.md` / `V6_QA.md` / `DIRECTION_BEATS.md` / `AUTHORING_WORKFLOW.md`。V7阶段资料见 `v7/`，本轮交付以 [独立终审报告](audits/independent-final/FINAL_DELIVERY.md) 为准；不依赖README已移除的旧缺口段。

@@ -1,0 +1,42 @@
+RC_SHA=83b5049484565940c3c163d6f3558004619ffe83
+WORKERS=2
+DIST_FINGERPRINT=352d4aa13ce6efe06742b0965b98d4c460d67c6d2bdfa23dcaff1ec2ece7d59f
+[WebServer] (node:56980) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:44808) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 485 tests using 2 workers
+
+(node:36640) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:13740) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok   1 tests\art-manifest.spec.ts:9:107 › Asset manifest: every raster has exact built bytes and browser decode on root (2.4s)
+  ok   3 tests\art-manifest.spec.ts:9:107 › Asset manifest: every raster has exact built bytes and browser decode on subpath (2.1s)
+  ok   4 tests\campaign-v6-ending-staging.spec.ts:11:1 › opening an old completed V6 from its cover preserves raw data until continuing, then keeps an original backup (431ms)
+  ok   5 tests\campaign-v6-ending-staging.spec.ts:14:1 › migration quota failure keeps the original auto and allows both original and current progress exports (500ms)
+  ok   6 tests\campaign-v6-ending-staging.spec.ts:17:1 › all eight old ending entrances migrate and the entire closing dialogue still plays in production (14.7s)
+  ok   7 tests\campaign-v6-ending-staging.spec.ts:20:64 › old harbor final auto migrates, keeps raw slots and shows appropriate view at seven sizes (7.0s)
+  ok   8 tests\campaign-v6-ending-staging.spec.ts:20:64 › old name final auto migrates, keeps raw slots and shows appropriate view at seven sizes (6.8s)
+  ok   9 tests\campaign-v6-ending-staging.spec.ts:20:64 › old together5 final auto migrates, keeps raw slots and shows appropriate view at seven sizes (6.8s)
+  ok  10 tests\campaign-v6-ending-staging.spec.ts:20:64 › old teacher final auto migrates, keeps raw slots and shows appropriate view at seven sizes (6.8s)
+  ok  11 tests\campaign-v6-ending-staging.spec.ts:20:64 › old captain final auto migrates, keeps raw slots and shows appropriate view at seven sizes (6.8s)
+  ok  12 tests\campaign-v6-ending-staging.spec.ts:20:64 › old apart final auto migrates, keeps raw slots and shows appropriate view at seven sizes (6.8s)
+  ok  13 tests\campaign-v6-ending-staging.spec.ts:20:64 › old scar final auto migrates, keeps raw slots and shows appropriate view at seven sizes (7.1s)
+  ok  14 tests\campaign-v6-ending-staging.spec.ts:20:64 › old lost final auto migrates, keeps raw slots and shows appropriate view at seven sizes (6.8s)
+  ok  15 tests\campaign-v6-ending-staging.spec.ts:35:1 › frozen-source migration and new ending views continue offline at root and subpath (1.2s)
+  ok  16 tests\campaign-v6-ending-staging.spec.ts:38:1 › ending night reading keeps normal, CG and empty-road views controllable (2.6s)
+  ok  17 tests\campaign-v6-ending-staging.spec.ts:41:1 › new ending subscenes stay in the read-only afterword chapter and do not reveal unplayed endings (321ms)
+  ok  18 tests\campaign-v6-storage.spec.ts:9:1 › all eight current main ending final sentences also restore as exact production text (1.8s)
+  ok  19 tests\campaign-v6-storage.spec.ts:12:1 › current main pending manual slot and exported file restore; frozen-v5 import cannot replace it (379ms)
+  ok  20 tests\campaign-v6-storage.spec.ts:17:1 › current main corrupt auto remains exportable and is backed up before restart (292ms)
+  ok  21 tests\campaign-v6-storage.spec.ts:20:1 › current main unvisited timber CG decodes offline and continues at root and subpath (1.1s)
+  ok   2 tests\beyond-ranking.spec.ts:10:1 › Fresh Xuanmen then White Stone completions really unlock Ning, followed by complete first route (1.5m)
+  ok  23 tests\beyond-ranking.spec.ts:13:1 › Ning second complete route on mobile and raw gate preserves saves through live unlock and relock (26.2s)
+  ok  24 tests\beyond-ranking.spec.ts:16:1 › Ning work pack later room restores offline at root and subpath after legal unlock (997ms)
+  ok  25 tests\beyond-ranking.spec.ts:19:1 › Ning first question and two actors fit seven viewports at 24px with keyboard (1.1s)
+  ok  22 tests\campaign-v6.spec.ts:10:55 › original V6 main story at its own URL: complete harbor (2.6m)
+  ok  26 tests\campaign-v6.spec.ts:10:55 › original V6 main story at its own URL: complete name (2.6m)
+  ok  27 tests\campaign-v6.spec.ts:10:55 › original V6 main story at its own URL: complete together5 (2.6m)
+  ok  28 tests\campaign-v6.spec.ts:10:55 › original V6 main story at its own URL: complete teacher (2.6m)

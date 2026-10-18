@@ -1,0 +1,6 @@
+{
+  "scope": "Root and docs/**/*.md; fenced code omitted; local Markdown targets/anchors only. External URLs not crawled.",
+  "files": 198,
+  "localLinks": 409,
+  "issues": []
+}

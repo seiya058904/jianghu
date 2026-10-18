@@ -1,0 +1,28 @@
+{
+  "sourceCommit": "bb514bb38edf4f20d7a79cb461cfcb28156ebeba",
+  "publicBefore": "a6e5d5947ce2d06c6c2ab83e1cfd515c95191959",
+  "manifestFiles": 2233,
+  "manifestBytes": 72292056,
+  "manifestHashMismatches": [],
+  "forbiddenPaths": [],
+  "patternFindings": [
+    {
+      "path": "scripts/build-art-manifest-v6.py",
+      "kind": "private_absolute_path",
+      "count": 1,
+      "lines": [
+        83
+      ]
+    }
+  ],
+  "canonScan": {
+    "window": 512,
+    "stride": 128,
+    "whitespaceRemoved": true,
+    "testedSamples": 1461,
+    "findings": [],
+    "boundary": "Disclosure probes, not proof against every possible encoding or paraphrase. Public authored adaptations intentionally retain brief canonical facts."
+  },
+  "binaryFiles": 185,
+  "binaryReview": "Existing public art plus independently viewed runtime WebP. No ZIP/bundle/key or candidate original included. No OCR claim."
+}

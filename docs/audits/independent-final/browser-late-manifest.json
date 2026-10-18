@@ -1,0 +1,440 @@
+[
+  {
+    "kind": "actual UI transcript/actions",
+    "path": "browser-late-dead-default-1440.json",
+    "sha256": "f573f08ac611ae648e18379c088c1ee8bec1ad1e3262e5ea1134db2164233ad9",
+    "bytes": 357397
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-default-1440-cover.webp",
+    "sha256": "21c92172d5fe47f5eb86079935e47b73fe06474b99f10537623c842b85b71ce1",
+    "bytes": 111998
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-default-1440-dr_dead_letter_1.webp",
+    "sha256": "6ce43cb85add8f148e0156377ab6ceb945cd80a1873a95af262a914117335f7c",
+    "bytes": 157346
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-default-1440-dr_three_faces_1_1.webp",
+    "sha256": "cceeea735ea6aabc9faeafc2814cc7e1b19891a4a1afffaefb185b12b252b019",
+    "bytes": 105810
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-default-1440-dr_three_faces_2_1.webp",
+    "sha256": "cf74e58e1ec63ced02667847f3e3b8aa5871167d3a389036d8dd8d6131de1495",
+    "bytes": 104240
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-default-1440-dr_three_faces_after_1.webp",
+    "sha256": "8e76a49f41768f5d923565da59ce0402c9a5aefdbbc8c3244fc0bf0b5b3b723c",
+    "bytes": 153566
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-default-1440-dr_case_read_1.webp",
+    "sha256": "be7d504e766172421dad27403008633569b656d3b67277babea215c1dc02db40",
+    "bytes": 159732
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-default-1440-dr_last_page_9.webp",
+    "sha256": "611cbc5bac85a4dd0b4c4c4430b526dcaa73475814ebc3859b163ad63a9a9446",
+    "bytes": 199112
+  },
+  {
+    "kind": "actual UI transcript/actions",
+    "path": "browser-late-dead-mixed-1440.json",
+    "sha256": "104131faf5dfbdec29fbd766bd690a6cfd04d3cd74d7c82bb337e8d1d687e801",
+    "bytes": 360685
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-1440-cover.webp",
+    "sha256": "21c92172d5fe47f5eb86079935e47b73fe06474b99f10537623c842b85b71ce1",
+    "bytes": 111998
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-1440-dr_dead_letter_1.webp",
+    "sha256": "6ce43cb85add8f148e0156377ab6ceb945cd80a1873a95af262a914117335f7c",
+    "bytes": 157346
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-1440-dr_three_parts_8.webp",
+    "sha256": "d0ffec30a3d5144a3fece630aef9fa9259977bdee71c74bd34c390f1d6e76edc",
+    "bytes": 196196
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-1440-dr_three_faces_1_1.webp",
+    "sha256": "95abd9940659f4c49411b3ac3e6c571b6b3c90a3fa7ef2bef172e4263a525063",
+    "bytes": 107254
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-1440-dr_three_faces_2_1.webp",
+    "sha256": "9a7e6ae167360a6b1f699d65e6e87874ead0b50530e8db890fe2fe0137f4a3fb",
+    "bytes": 105570
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-1440-dr_three_faces_after_1.webp",
+    "sha256": "0a54b2c77ce7eec25ee80a3d0dee57e5c7ef2b3643863f0d9cbe8416dffcf0fe",
+    "bytes": 154178
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-1440-dr_living_benefit_10.webp",
+    "sha256": "03815b460f97d4df614833eac1e1820c09545db446e48620288f101c54c6be4a",
+    "bytes": 158178
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-1440-dr_case_read_1.webp",
+    "sha256": "be7d504e766172421dad27403008633569b656d3b67277babea215c1dc02db40",
+    "bytes": 159732
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-1440-dr_later_teacher_6.webp",
+    "sha256": "07fe5d4ffcdf4f44de3dd2a348d7f2195b2c9a63069b8fa6ca13b33b274266fe",
+    "bytes": 191446
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-1440-dr_last_page_5.webp",
+    "sha256": "7bc61820d63cbe9d9bffcf733b5497e302bce468c9d2aeca658f0b2bb320b3f2",
+    "bytes": 201710
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-1440-dr_last_page_10.webp",
+    "sha256": "8ebad003879404b83a108dfc2062ba1ec29057c7877df8389fb01bc392747137",
+    "bytes": 197416
+  },
+  {
+    "kind": "actual UI transcript/actions",
+    "path": "browser-late-luhua-mixed-1440.json",
+    "sha256": "0389e0356a275126242e024bf6a655ba5cbb2d0f0792a479b9cc8b4cbb1042eb",
+    "bytes": 252606
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-1440-cover.webp",
+    "sha256": "18190cdeb7a0bec00efbd02f542e7e468606f10a085cac811e4a9b2e4661dd31",
+    "bytes": 113482
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-1440-lh_third_day_4.webp",
+    "sha256": "02f24b4ba98b51098076e20c9f7e28c434db482b56852e13992bf53c1e42250a",
+    "bytes": 157498
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-1440-lh_seventy_odd_7.webp",
+    "sha256": "cefc30eeda0b01057564c0480c5402c203f2110a29937686a30d1b3bad26080d",
+    "bytes": 150802
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-1440-lh_jiangling_5.webp",
+    "sha256": "597603fbdeafde4442492b4728c2329942fb5971210284ad9633580f411ddf4d",
+    "bytes": 162840
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-1440-lh_jiangling_6.webp",
+    "sha256": "90b924a6c540656d17552f41d169bc70f31d31566c2b6edad8f145afc7633fdc",
+    "bytes": 164014
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-1440-lh_learn_sea_6.webp",
+    "sha256": "aeb11c212ae49a2a981564ee3f0d7c11ec3af608a779968cd99b9dcf715ec6a8",
+    "bytes": 169014
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-1440-lh_mainship_after_9.webp",
+    "sha256": "85a6788e5f88f86e40c092ba3ca2afdeee8f9fbdbcfefcfb567fe7f5cecadd43",
+    "bytes": 186264
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-1440-lh_road_two_4.webp",
+    "sha256": "840893b573c928b2da200553fb2a9b8b239e5ef300f44b00c8ee4e7f46103cd7",
+    "bytes": 191400
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-1440-lh_mountain_fifth_9.webp",
+    "sha256": "c1f278c6d047ce033592fece2a0174be11682d58bfde53a777deeb9d030e6838",
+    "bytes": 199732
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-1440-lh_two_bowls_7.webp",
+    "sha256": "b2ffe5ac5fd1e6f2d08015896ce5c0b58f0f5d2ba01badc39d5814c510316a75",
+    "bytes": 214924
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-1440-lh_late_after_10.webp",
+    "sha256": "eb30d32f2562270dfebc851bf698f99c6c6cce24acb721c0c9a94bbe96f05506",
+    "bytes": 157930
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-1440-lh_late_after_14.webp",
+    "sha256": "fb9acf036644f6c9819d509e6e5a3e5dd74f523ea3f056a8da7fe65c8f67f31c",
+    "bytes": 160588
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-1440-lh_late_after_18.webp",
+    "sha256": "4d6973c4a9c26ce2d246c12ad86a7771b7eacfc641796a3e822e31ca5ed4c1d0",
+    "bytes": 158208
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-1440-lh_late_after_22.webp",
+    "sha256": "c979152b69a036a426c1228a3a7bc4595d55b9144a5df06e83be6e0bdf28e8f4",
+    "bytes": 159998
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-1440-lh_finish_8.webp",
+    "sha256": "91feea7261f4e666402c9cc1d1ede95e3910de5c0a12549358c370e02766c361",
+    "bytes": 153308
+  },
+  {
+    "kind": "actual UI transcript/actions",
+    "path": "browser-late-dead-default-390.json",
+    "sha256": "b8b7b8b00572a971573f32cc8570e0837cf518343a9a70e52dfaea624abfda96",
+    "bytes": 357388
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-default-390-cover.webp",
+    "sha256": "0f97c5c17d4867b12094e895c3e51b842688857eaa395c192daacb85b13b1d9c",
+    "bytes": 40764
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-default-390-dr_dead_letter_1.webp",
+    "sha256": "0bfa45e645eaae750daaa72dcf7fe9df19178656c221e1f4391b0f15902fa187",
+    "bytes": 61084
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-default-390-dr_three_faces_1_1.webp",
+    "sha256": "95c9ee9cb7523b4e7e9b09e0281b1acce31687cd64437f02c7604d5574280be7",
+    "bytes": 49916
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-default-390-dr_three_faces_2_1.webp",
+    "sha256": "ef155d68a01b166a255a6b65697f5cae03f39f5aaff0bf101883984921f99a2e",
+    "bytes": 50818
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-default-390-dr_three_faces_after_1.webp",
+    "sha256": "3fefae12d30ca815d0a4b0a9338833580f4591d73cc388edf622c64940258fc7",
+    "bytes": 58936
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-default-390-dr_case_read_1.webp",
+    "sha256": "741762e62847be22ba1eb582372706d9789edcc31ed1c9b8762dbd6c83eed94c",
+    "bytes": 60014
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-default-390-dr_last_page_9.webp",
+    "sha256": "05b33d60487267d9bab4499d26373f49504d1f96086a86c3fa97b7e816092ee5",
+    "bytes": 76090
+  },
+  {
+    "kind": "actual UI transcript/actions",
+    "path": "browser-late-dead-mixed-390.json",
+    "sha256": "be50d4cac456e7106c0210fc98d3ae35abe7f08dd5e477b8bbd48e9857a443c0",
+    "bytes": 360082
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-390-cover.webp",
+    "sha256": "0f97c5c17d4867b12094e895c3e51b842688857eaa395c192daacb85b13b1d9c",
+    "bytes": 40764
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-390-dr_dead_letter_1.webp",
+    "sha256": "0bfa45e645eaae750daaa72dcf7fe9df19178656c221e1f4391b0f15902fa187",
+    "bytes": 61084
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-390-dr_three_parts_8.webp",
+    "sha256": "0e537d1d78654ecf9f9d2267c463f773a1f1e3cdf7895c546f086156f3a2c697",
+    "bytes": 75124
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-390-dr_three_faces_1_1.webp",
+    "sha256": "a2a92cf03ad88ee7a8cb1b85729319fef830051efb0bd00e9646eb4912ed91ff",
+    "bytes": 51308
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-390-dr_three_faces_2_1.webp",
+    "sha256": "df5e00cce6fc0e603bb2c2ae2b4f64fec9f16647f32ffdbe9970f5f8eafeb638",
+    "bytes": 52200
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-390-dr_three_faces_after_1.webp",
+    "sha256": "b890308548b8d120a37d97df6438448eac0737122fa64f2d8727e0b7a5043307",
+    "bytes": 59008
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-390-dr_living_benefit_10.webp",
+    "sha256": "15ff00ee334f51d79efe0e8a41716abdac6ae7a2cfa7a34565bcc50f0b6467e2",
+    "bytes": 61642
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-390-dr_case_read_1.webp",
+    "sha256": "741762e62847be22ba1eb582372706d9789edcc31ed1c9b8762dbd6c83eed94c",
+    "bytes": 60014
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-390-dr_later_teacher_6.webp",
+    "sha256": "a7cd69600bdabc0d34c8b4f18c473411648d6c8a541dca53f2982c50cf804610",
+    "bytes": 74152
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-390-dr_last_page_5.webp",
+    "sha256": "f4f2cfe9f2f38c9cd58674c8d8a519547e05b86f8111102c5403c13fef6e19f6",
+    "bytes": 79634
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\dead-mixed-390-dr_last_page_10.webp",
+    "sha256": "ae60e1d8c4ef7c821cc4544eeef7bd7bef280c0cdc9863d245eb7833a5dfb407",
+    "bytes": 78352
+  },
+  {
+    "kind": "actual UI transcript/actions",
+    "path": "browser-late-luhua-mixed-390.json",
+    "sha256": "047861b78eb9e123adea39fe97c54e9ab1ae8ac88027e7944b62e2ea63c5b0e5",
+    "bytes": 252491
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-390-cover.webp",
+    "sha256": "088a4992c37addecaf3c522c3e3660cefad882a8eafbdb9dc13d058c9f33f9b1",
+    "bytes": 38146
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-390-lh_third_day_4.webp",
+    "sha256": "55c37d8c4dcc91dc700d61ad51cb809031a0fa9e857e1c1a14e73a8a2435d1c0",
+    "bytes": 46512
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-390-lh_seventy_odd_7.webp",
+    "sha256": "aa381540bc2d5bcfa6127c2df866c46228a4dcfee239d18d2325abf2cfcf6b44",
+    "bytes": 45078
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-390-lh_jiangling_5.webp",
+    "sha256": "6df5f90bf0701d8c299b7e7b9d7da1634c65db1e6d8e6a71a2a4c063ef141934",
+    "bytes": 56302
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-390-lh_jiangling_6.webp",
+    "sha256": "0a1ac87ff1751adef3858fb3c6a940a7a3683e2e06d09e8e275e179e27445242",
+    "bytes": 57018
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-390-lh_learn_sea_6.webp",
+    "sha256": "954b3293dd8b6beb4bb0f1103627b8853ea6362e01adb5db7ebb6255f983792d",
+    "bytes": 59108
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-390-lh_mainship_after_9.webp",
+    "sha256": "886f5af6a658b6e16ae118cfc03108c08e47ff5ff522dda27da7e316b825b631",
+    "bytes": 61826
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-390-lh_road_two_4.webp",
+    "sha256": "8b35691266a90a84f27ad0324355aad463ed0ff5f078ef30938e8f6b5b6c4080",
+    "bytes": 65456
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-390-lh_mountain_fifth_9.webp",
+    "sha256": "c12d2eaf74bcfd32574670ec63758579929f635a5986d82c337694f6334d0c34",
+    "bytes": 68464
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-390-lh_two_bowls_7.webp",
+    "sha256": "645668f2c9d0d168eb1a514f0687982b23e95f865bc17897d52d2d665959fdd7",
+    "bytes": 74110
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-390-lh_late_after_10.webp",
+    "sha256": "96c46a17f6c04a70f1c2f7575a97e15f4fc143919c9984fc04bbae1d2f2f4f7a",
+    "bytes": 61690
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-390-lh_late_after_14.webp",
+    "sha256": "dfc84aec121e7d52c8e1c48c57ff436b8c6c70a7ab3963fe810d5a57c3747f2a",
+    "bytes": 61592
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-390-lh_late_after_18.webp",
+    "sha256": "e5321de65e6192b4e3b07c0684af6173dd87d03cbb583c3dd6770aed56a3d13d",
+    "bytes": 59732
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-390-lh_late_after_22.webp",
+    "sha256": "a8201ca05faa18724b7f0e013e5f393332bdc0be14071a2308f04e45aa8924ef",
+    "bytes": 62382
+  },
+  {
+    "kind": "raw external screenshot",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\luhua-mixed-390-lh_finish_8.webp",
+    "sha256": "367b18b00c973975d37955c3f7e009d7baea1542fd0202149c9837d5e22a2b30",
+    "bytes": 58686
+  },
+  {
+    "kind": "external runner script",
+    "path": "../Jianghu-independent-20261018\\independent-late-browser\\browser-late-run.mjs",
+    "sha256": "cfc5f53adcf181542b3f5c849387054824ed98cf31e6e6734cc6d1da8e0e675b",
+    "bytes": 8479
+  }
+]

@@ -1,0 +1,34 @@
+RC=bb514bb38edf4f20d7a79cb461cfcb28156ebeba
+workers=4; assertions/timeouts unchanged; product=83160cbcc9a5e9dd117544e28bef74088caf56006d1c7cf7f459c5ef7e499586; dist=352d4aa13ce6efe06742b0965b98d4c460d67c6d2bdfa23dcaff1ec2ece7d59f
+[WebServer] (node:56576) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:24008) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 485 tests using 4 workers
+
+(node:40888) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:49700) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:8860) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:42364) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok   4 tests\campaign-v6-ending-staging.spec.ts:11:1 › opening an old completed V6 from its cover preserves raw data until continuing, then keeps an original backup (1.1s)
+  ok   5 tests\campaign-v6-ending-staging.spec.ts:14:1 › migration quota failure keeps the original auto and allows both original and current progress exports (705ms)
+  ok   3 tests\campaign-v6-storage.spec.ts:9:1 › all eight current main ending final sentences also restore as exact production text (2.9s)
+  ok   1 tests\art-manifest.spec.ts:9:107 › Asset manifest: every raster has exact built bytes and browser decode on root (3.3s)
+  ok   7 tests\campaign-v6-storage.spec.ts:12:1 › current main pending manual slot and exported file restore; frozen-v5 import cannot replace it (592ms)
+  ok   9 tests\campaign-v6-storage.spec.ts:17:1 › current main corrupt auto remains exportable and is backed up before restart (433ms)
+  ok  10 tests\campaign-v6-storage.spec.ts:20:1 › current main unvisited timber CG decodes offline and continues at root and subpath (1.7s)
+  ok   8 tests\art-manifest.spec.ts:9:107 › Asset manifest: every raster has exact built bytes and browser decode on subpath (3.1s)
+  ok   6 tests\campaign-v6-ending-staging.spec.ts:17:1 › all eight old ending entrances migrate and the entire closing dialogue still plays in production (15.5s)
+  ok  13 tests\campaign-v6-ending-staging.spec.ts:20:64 › old harbor final auto migrates, keeps raw slots and shows appropriate view at seven sizes (6.6s)
+  ok  14 tests\campaign-v6-ending-staging.spec.ts:20:64 › old name final auto migrates, keeps raw slots and shows appropriate view at seven sizes (6.9s)
+  ok  15 tests\campaign-v6-ending-staging.spec.ts:20:64 › old together5 final auto migrates, keeps raw slots and shows appropriate view at seven sizes (6.9s)
+  ok  16 tests\campaign-v6-ending-staging.spec.ts:20:64 › old teacher final auto migrates, keeps raw slots and shows appropriate view at seven sizes (6.9s)
+  ok  17 tests\campaign-v6-ending-staging.spec.ts:20:64 › old captain final auto migrates, keeps raw slots and shows appropriate view at seven sizes (6.9s)
+  ok  18 tests\campaign-v6-ending-staging.spec.ts:20:64 › old apart final auto migrates, keeps raw slots and shows appropriate view at seven sizes (6.9s)
+  ok  19 tests\campaign-v6-ending-staging.spec.ts:20:64 › old scar final auto migrates, keeps raw slots and shows appropriate view at seven sizes (7.1s)
+  ok  20 tests\campaign-v6-ending-staging.spec.ts:20:64 › old lost final auto migrates, keeps raw slots and shows appropriate view at seven sizes (9.4s)

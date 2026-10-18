@@ -1,0 +1,2949 @@
+{
+  "rc": "83b5049484565940c3c163d6f3558004619ffe83",
+  "distFingerprintProvidedByParent": "352d4aa13ce6efe06742b0965b98d4c460d67c6d2bdfa23dcaff1ec2ece7d59f",
+  "servedLibraryAssetsMatchLocalDist": true,
+  "servedAssetsChecked": 5,
+  "browser": "Google Chrome via existing Playwright channel chrome, headless",
+  "url": "http://127.0.0.1:4173/",
+  "browserPlugin": "ABSENT",
+  "fallback": "Read frontend-testing-debugging and playwright skills, existing Playwright external scripts; no installation",
+  "viewportSizes": [
+    "1440x900",
+    "390x844"
+  ],
+  "initial": [
+    {
+      "slug": "taihua",
+      "title": "Jianghu · 太华试序",
+      "url": "http://127.0.0.1:4173/taihua.html#play",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 7,
+      "beat": "th_called_8",
+      "choices": [
+        "先把水盆移到师兄够得着的地方。",
+        "接过护腕，直说我怕拖武当的后腿。"
+      ],
+      "actors": [
+        {
+          "id": "th_leader",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        },
+        {
+          "id": "th_bro",
+          "focus": "actor listening mood-uneasy",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/taihua-guest.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v5/npc-elder-male.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v5/npc-youth-blue.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "taihua-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "283561b4e14ef968d8293c208dad85e1a151d97b8c026b7aff481e8aee7d6134"
+    },
+    {
+      "slug": "white-stone",
+      "title": "Jianghu · 白石谷外",
+      "url": "http://127.0.0.1:4173/white-stone.html#play",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 4,
+      "beat": "ws_twelve_days_5",
+      "choices": [
+        "将每次接不上处另记，先告诉同来的人自己还不知道什么。",
+        "先把还能示出的形逐次记全，再回来问最后不连贯的一处。"
+      ],
+      "actors": [
+        {
+          "id": "ws_stepelder",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/taihua-guest.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-robed-elder.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "white-stone-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "cc2c87a977fc40c71cd5bcb439980c2d1dc86bc6378ed14a897974d9d7978bcc"
+    },
+    {
+      "slug": "longmen",
+      "title": "Jianghu · 龙门问刀",
+      "url": "http://127.0.0.1:4173/longmen.html#play",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 3,
+      "beat": "lm_borrow_4",
+      "choices": [
+        "承认只记了次序，请他先让我摆出这一刀。",
+        "不急着求指点，先试给他看自己的用法。"
+      ],
+      "actors": [
+        {
+          "id": "lm_xu",
+          "focus": "actor listening mood-sharp",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/longmen-hall.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/lm-xu-intent.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "longmen-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "7e30e3abb1df4a74df4a2051fcb7cc83dc6e02ffef1b9251603520fea156f897"
+    },
+    {
+      "slug": "luoyang",
+      "title": "Jianghu · 洛阳龙虎风云会",
+      "url": "http://127.0.0.1:4173/luoyang.html#play",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 5,
+      "beat": "ly_ten_li_6",
+      "choices": [
+        "「许师父，方才在门口，您为什么停了一下？」",
+        "「我先去南榜那棚，给章前辈行个礼。」"
+      ],
+      "actors": [
+        {
+          "id": "lm_xu",
+          "focus": "actor listening mood-amused",
+          "look": "default"
+        },
+        {
+          "id": "lm_luo",
+          "focus": "actor listening mood-intent",
+          "look": "default"
+        },
+        {
+          "id": "lm_he",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/longmen-fair.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/lm-xu-amused.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v5/npc-elder-male.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/lm-he.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "luoyang-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "9086e53443c46e97dfec76d63c8a74fd3d52bf9230896e91288dc3752545fcb5"
+    },
+    {
+      "slug": "bamboo",
+      "title": "Jianghu · 竹院夜论",
+      "url": "http://127.0.0.1:4173/bamboo.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "LOCKED",
+      "steps": 0,
+      "beat": null,
+      "choices": [],
+      "actors": [],
+      "lockText": "竹院夜论\n\n今夜不教天下，\n只说亲眼见过什么。\n\n你是严仲山，白日才肯收手。\n这次坐下来，还想问什么？\n\n推开旧园的门\n\n先读完《龙门问刀》一种归宿，再来推开竹院的门。\n\n原典纪事 · 北榜第五严仲山 · 读完《龙门问刀》一种归宿后解锁\n\n白日 · 洛阳龙虎风云会",
+      "decode": [],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "bamboo-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "99efa3cfabc2255935a25e90228ead2b32fef9e1c42845b8742b47f943e3a4ec"
+    },
+    {
+      "slug": "twelfth-life",
+      "title": "Jianghu · 第十二席 · 赵承晏",
+      "url": "http://127.0.0.1:4173/twelfth-life.html#play",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 5,
+      "beat": "rl_three_wins_6",
+      "choices": [
+        "先叫他起来，把刚要追问的第二句收住，再问孙师傅自己到底能知道什么。",
+        "不再要他回答，自己退开让他回练场；去问孙，昨日哪几处是真接住了。"
+      ],
+      "actors": [
+        {
+          "id": "rl_sun",
+          "focus": "actor listening mood-intent",
+          "look": "default"
+        },
+        {
+          "id": "rl_boy",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/taihua-court.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-martial-adult.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v5/npc-youth-blue.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "twelfth-life-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "576ffe7969b0e622ec0f88a104f74261ce756af8ab49d93ce009aa0151b6f369"
+    },
+    {
+      "slug": "twelfth",
+      "title": "Jianghu · 第十二席",
+      "url": "http://127.0.0.1:4173/twelfth.html#play",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 4,
+      "beat": "qw_paid_5",
+      "choices": [
+        "拿例钱，额外一封不收，按真能接住的架试。",
+        "先问伤后工钱与停手口令，不拿额外赏猜王意。"
+      ],
+      "actors": [
+        {
+          "id": "qw_zhao",
+          "focus": "actor focused mood-intent",
+          "look": "age44"
+        },
+        {
+          "id": "qw_gu",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/longmen-backyard.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/qw-zhao-44.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v5/npc-clerk-male.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "twelfth-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "4b641b7d806a21c000a2ce49b0627549ce581404925d60ffc3ca9196e29ff960"
+    },
+    {
+      "slug": "jade-thieves",
+      "title": "Jianghu · 山河璧·密库双贼",
+      "url": "http://127.0.0.1:4173/jade-thieves.html#play",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 1,
+      "beat": "jt_threshold_2",
+      "choices": [
+        "沈玉娘 · 从地道探入。",
+        "江十七 · 从屋顶垂下。通关一次后，解锁江十七视角"
+      ],
+      "actors": [],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/jt-vault.webp",
+          "w": 1024,
+          "h": 576
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "jade-thieves-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "892ea19675ad8c6b413b137ec7767d1b46ef541afddfc42428484c24d95ca123"
+    },
+    {
+      "slug": "jade",
+      "title": "Jianghu · 山河璧·十三文",
+      "url": "http://127.0.0.1:4173/jade.html#play",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 5,
+      "beat": "jd_cat_6",
+      "choices": [
+        "先问何时买的桌、这块压了多久，不急着当街喊重宝。",
+        "先问卖不卖，钱不够便直说，别拿鉴宝人架势压这家卖菜的。"
+      ],
+      "actors": [
+        {
+          "id": "jd_he",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v5/inn.webp",
+          "w": 1440,
+          "h": 810
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v5/npc-merchant-male.webp",
+          "w": 560,
+          "h": 672
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "jade-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "bde9a4fd65f532d8a5c3661244367f53fc948110111d1d1ec8cef2c566ccc77f"
+    },
+    {
+      "slug": "qingshi",
+      "title": "Jianghu · 青石五友·守一天",
+      "url": "http://127.0.0.1:4173/qingshi.html#play",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 4,
+      "beat": "qs_grain_5",
+      "choices": [
+        "承认疼，拉陈虎坐下，约好明日慢走一遍。",
+        "说没事，端起碗才发现胳膊还是使不上劲。"
+      ],
+      "actors": [
+        {
+          "id": "qs_xu",
+          "focus": "actor listening mood-neutral",
+          "look": "age17"
+        },
+        {
+          "id": "qs_chen",
+          "focus": "actor listening mood-uneasy",
+          "look": "default"
+        },
+        {
+          "id": "qs_han",
+          "focus": "actor listening mood-amused",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/grain-yard.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/qs-xu-age17.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/qs-chen.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/qs-han.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "qingshi-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "8b6ca49dbff9537515fe9c8120ba9a20321c4a52675cf6f05694877c7949ee20"
+    },
+    {
+      "slug": "dead-ranking",
+      "title": "Jianghu · 死人争榜",
+      "url": "http://127.0.0.1:4173/dead-ranking.html#play",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 6,
+      "beat": "dr_dead_letter_7",
+      "choices": [
+        "先问老人究竟认得什么，不拿一句字不像便替死者断定又是假。",
+        "先让老人把当年当面争榜的那个人讲完，不只把旧录一句涉案念给徒弟。"
+      ],
+      "actors": [
+        {
+          "id": "dr_lu",
+          "focus": "actor focused mood-amused",
+          "look": "default"
+        },
+        {
+          "id": "dr_apprentice",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/longmen-hall.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-robed-elder.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v5/npc-youth-blue.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "dead-ranking-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "d7b5ba40fbe065153df0ab4e965da22d9c77487f5ce109f03390b3e9c1c5cc62"
+    },
+    {
+      "slug": "luhua",
+      "title": "Jianghu · 照水刀 · 芦花渡",
+      "url": "http://127.0.0.1:4173/luhua.html#play",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 3,
+      "beat": "lh_eleven_4",
+      "choices": [
+        "先问今日能做什么，从扫院、认船和站步开始，不等一把刀便能还清命。",
+        "请师父看自己站一回，哪里不稳先改，不拿来还命便要求赶快教成。"
+      ],
+      "actors": [
+        {
+          "id": "lh_meng",
+          "focus": "actor listening mood-intent",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/longmen-backyard.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-martial-adult-b.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "luhua-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "7f584277154a559b1f34e20b37d0e51b980a8796aa90c6a8c4ddc60f8bf0a759"
+    },
+    {
+      "slug": "dongting",
+      "title": "Jianghu · 照水刀 · 问席",
+      "url": "http://127.0.0.1:4173/dongting.html#play",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 5,
+      "beat": "dt_third_step_6",
+      "choices": [
+        "先解开脚边的圈，把绳递到船沿。",
+        "急着递绳，扯到脚才发现自己也被套住。"
+      ],
+      "actors": [
+        {
+          "id": "dt_liang",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        },
+        {
+          "id": "dt_zhao",
+          "focus": "actor listening mood-intent",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/dongting-deck.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/dt-liang.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-robed-elder.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "dongting-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "58348c0b010a76acc95482e2da34e875894cc03f2d5d9848b018587997bf6793"
+    },
+    {
+      "slug": "north",
+      "title": "Jianghu · 三师一枪",
+      "url": "http://127.0.0.1:4173/north.html#play",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 6,
+      "beat": "nq_hundred_twenty_seven_7",
+      "choices": [
+        "先把那半寸重做一轮，看竹竿真到哪里，不拿数对了当已经改好。",
+        "问肩为什么每次先抬，请老人看自己慢走一遍。"
+      ],
+      "actors": [
+        {
+          "id": "nq_zhou",
+          "focus": "actor listening mood-intent",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/longmen-backyard.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-martial-elder.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "north-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "bc17278e67c66c78fb6aeb1621061dc3ee366b028496d3b87834a953b4359eed"
+    },
+    {
+      "slug": "qian-kun",
+      "title": "Jianghu · 天下第一，不会算账",
+      "url": "http://127.0.0.1:4173/qian-kun.html#play",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 6,
+      "beat": "qk_short_inch_7",
+      "choices": [
+        "先把第五掌怎样回来走清，不因当众指出一寸便以为整套都对。",
+        "请教习从另一侧进，看看这一步换人接还会怎样。"
+      ],
+      "actors": [
+        {
+          "id": "qk_tutor",
+          "focus": "actor listening mood-sharp",
+          "look": "default"
+        },
+        {
+          "id": "qk_xu",
+          "focus": "actor focused mood-neutral",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/longmen-backyard.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-martial-adult.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-mature-woman-b.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "qian-kun-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "1ebb9e9bd024bc315e70baf2866f4080d7f1c58d20161168907a6c0c339f2801"
+    },
+    {
+      "slug": "north-notes",
+      "title": "Jianghu · 师门夜话",
+      "url": "http://127.0.0.1:4173/north-notes.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "LOCKED",
+      "steps": 0,
+      "beat": null,
+      "choices": [],
+      "actors": [],
+      "lockText": "北枪与乾坤 · 师门夜话\n\n同一个老师，\n为什么教得不同？\n\n终南的一页旧笔录。\n多年后，六合与太极各有一场访问。\n\n翻开两册之间的夹页\n\n先读完《三师一枪》、《不会算账》各一种归宿，即可进入这场夜话。\n\n原典纪事 · 整理笔记的门中记录者 · 两卷各读完一种归宿后解锁 · 兼容补写访谈\n\n第一卷 · 三师一枪\n\n第二卷 · 不会算账",
+      "decode": [],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "north-notes-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "ea636729be155a5a81883fa47b7fe641b2db447f246a99fd4dd197c6118b5101"
+    },
+    {
+      "slug": "two-swords",
+      "title": "Jianghu · 一剑两脉·旧本归还",
+      "url": "http://127.0.0.1:4173/two-swords.html#play",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 3,
+      "beat": "ss_ridge_4",
+      "choices": [
+        "先让他贴住自己的肩，把两人的重量一起压回里侧。",
+        "仍抓紧他的腕，用自己脚尖探稳一块能落脚的石头。"
+      ],
+      "actors": [
+        {
+          "id": "ss_pupil",
+          "focus": "actor focused mood-uneasy",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v5/ridge.webp",
+          "w": 1440,
+          "h": 810
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-young-laborer.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "two-swords-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "b66956f0d7f323dc6b32e8e64939019d25c94f55facdadbbd0fb82a047be7213"
+    },
+    {
+      "slug": "seven-questions",
+      "title": "Jianghu · 一剑两脉·门外七问",
+      "url": "http://127.0.0.1:4173/seven-questions.html#play",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 6,
+      "beat": "sq_receipt_7",
+      "choices": [
+        "先同禾生核金陵副报，再请他带原件一起去问另一家。",
+        "先同阿笙核南岳沿途副报，再请她带记路人一起去问。"
+      ],
+      "actors": [
+        {
+          "id": "sq_hesheng",
+          "focus": "actor listening mood-sharp",
+          "look": "default"
+        },
+        {
+          "id": "sq_asheng",
+          "focus": "actor listening mood-amused",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/qingxi-veranda.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v5/npc-clerk-male.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-mature-woman-b.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "seven-questions-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "b3d76f111bb2cf940e49443d046d95760758e649458682613f6ac3b6acbeec2b"
+    },
+    {
+      "slug": "xuanmen",
+      "title": "Jianghu · 玄门旧史·九席与返真不绝",
+      "url": "http://127.0.0.1:4173/xuanmen.html#play",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 3,
+      "beat": "xm_mud_4",
+      "choices": [
+        "先问老人是谁，承认昨日见过二十一剑，仍没看懂今日。",
+        "问师父当年在汉水边怎么躺，肯先听一件不体面的旧事。"
+      ],
+      "actors": [
+        {
+          "id": "xm_lu",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        },
+        {
+          "id": "xm_grey",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/fair-eastgate.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-robed-elder.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-martial-elder-b.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "xuanmen-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "7fd5b4c73753ca635c4d187c7ff6b430e66e2a4f496da93c296a4715b3b96811"
+    },
+    {
+      "slug": "beyond-ranking",
+      "title": "Jianghu · 榜纸之外·宁无极旧录",
+      "url": "http://127.0.0.1:4173/beyond-ranking.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "LOCKED",
+      "steps": 0,
+      "beat": null,
+      "choices": [],
+      "actors": [],
+      "lockText": "榜纸之外·宁无极旧录\n\n十个名字，\n没有一场预先写好的胜负。\n\n你想抄走一张最高名单。\n他先问，你究竟看见了什么。\n\n坐到旧册另一边\n\n先读完《玄门旧史》、《白石谷外》各一种归宿，即可进入这份旧录。\n\n原典纪事 · 太玄门侍读门人 · 读完《玄门旧史》与《白石谷外》后解锁\n\n第一份旧录 · 玄门旧史\n\n第二份旧录 · 白石谷外",
+      "decode": [],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "beyond-ranking-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "7f69a32ffee66a2c442a764784ca3eb59ede15b932ed7ff5097c713047f1645e"
+    },
+    {
+      "slug": "sea",
+      "title": "Jianghu · 海路两世·中原以外",
+      "url": "http://127.0.0.1:4173/sea.html#play",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 4,
+      "beat": "sr_old_first_5",
+      "choices": [
+        "先踩实脚下，接住这一掌再转身。",
+        "让开肩前那一点，绕到掌外接下一手。"
+      ],
+      "actors": [
+        {
+          "id": "sr_oldmaster",
+          "focus": "actor listening mood-intent",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/longmen-backyard.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-robed-elder-b.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "sea-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "062fa59360f41742bc621fe2767c4818ec6625ac65288afa932ffb77d17dd00b"
+    },
+    {
+      "slug": "sea-tide",
+      "title": "Jianghu · 海路两世·归潮岛",
+      "url": "http://127.0.0.1:4173/sea-tide.html#play",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 3,
+      "beat": "st_first_boat_4",
+      "choices": [
+        "抓住栏杆，顺着船摇站起来。",
+        "再坐一会，等这波落下去才站。"
+      ],
+      "actors": [
+        {
+          "id": "st2_boatkeeper",
+          "focus": "actor listening mood-intent",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v5/rainboat.webp",
+          "w": 1440,
+          "h": 810
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v5/npc-elder-male.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "sea-tide-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "d9444778839d8c2003ff001376f24897ff91abe033ed13badffb1ad83be11c99"
+    },
+    {
+      "slug": "kuhe",
+      "title": "Jianghu · 枯河谷·门后有人",
+      "url": "http://127.0.0.1:4173/kuhe.html#play",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 5,
+      "beat": "kh_cloth_6",
+      "choices": [
+        "把水放在门外，请屋里的人先陪着他，不再追问。",
+        "先问来时的路，听见他喘不过气就停下来。"
+      ],
+      "actors": [
+        {
+          "id": "kh_healer",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v5/inn.webp",
+          "w": 1440,
+          "h": 810
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-mature-woman.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "kuhe-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "ae162108f0ab2c18c69a0a5880cb666c02faf2f5a4874a80a5a8269aa23d28f4"
+    },
+    {
+      "slug": "taihua",
+      "title": "Jianghu · 太华试序",
+      "url": "http://127.0.0.1:4173/taihua.html#play",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 7,
+      "beat": "th_called_8",
+      "choices": [
+        "先把水盆移到师兄够得着的地方。",
+        "接过护腕，直说我怕拖武当的后腿。"
+      ],
+      "actors": [
+        {
+          "id": "th_leader",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        },
+        {
+          "id": "th_bro",
+          "focus": "actor listening mood-uneasy",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/taihua-guest.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v5/npc-elder-male.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v5/npc-youth-blue.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "taihua-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "61fc81ca29f80d2a4beab6b64f7e9b54dab19869cf8090458dd38644f559b469"
+    },
+    {
+      "slug": "white-stone",
+      "title": "Jianghu · 白石谷外",
+      "url": "http://127.0.0.1:4173/white-stone.html#play",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 4,
+      "beat": "ws_twelve_days_5",
+      "choices": [
+        "将每次接不上处另记，先告诉同来的人自己还不知道什么。",
+        "先把还能示出的形逐次记全，再回来问最后不连贯的一处。"
+      ],
+      "actors": [
+        {
+          "id": "ws_stepelder",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/taihua-guest.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-robed-elder.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "white-stone-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "0ac223eb4593954059b01d23dabd7de490d6d01e56733e33c715d02c53be8966"
+    },
+    {
+      "slug": "longmen",
+      "title": "Jianghu · 龙门问刀",
+      "url": "http://127.0.0.1:4173/longmen.html#play",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 3,
+      "beat": "lm_borrow_4",
+      "choices": [
+        "承认只记了次序，请他先让我摆出这一刀。",
+        "不急着求指点，先试给他看自己的用法。"
+      ],
+      "actors": [
+        {
+          "id": "lm_xu",
+          "focus": "actor listening mood-sharp",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/longmen-hall.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/lm-xu-intent.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "longmen-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "52db3982c0f67e1e6640215abbf1dd7b3224364ccd172175c4e18a475d8015c7"
+    },
+    {
+      "slug": "luoyang",
+      "title": "Jianghu · 洛阳龙虎风云会",
+      "url": "http://127.0.0.1:4173/luoyang.html#play",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 5,
+      "beat": "ly_ten_li_6",
+      "choices": [
+        "「许师父，方才在门口，您为什么停了一下？」",
+        "「我先去南榜那棚，给章前辈行个礼。」"
+      ],
+      "actors": [
+        {
+          "id": "lm_xu",
+          "focus": "actor listening mood-amused",
+          "look": "default"
+        },
+        {
+          "id": "lm_luo",
+          "focus": "actor listening mood-intent",
+          "look": "default"
+        },
+        {
+          "id": "lm_he",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/longmen-fair.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/lm-xu-amused.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v5/npc-elder-male.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/lm-he.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "luoyang-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "a39857608a15f7e8fe32f5bb4a632d990231cec154b8e720c9ecb9f2d95854fc"
+    },
+    {
+      "slug": "bamboo",
+      "title": "Jianghu · 竹院夜论",
+      "url": "http://127.0.0.1:4173/bamboo.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "LOCKED",
+      "steps": 0,
+      "beat": null,
+      "choices": [],
+      "actors": [],
+      "lockText": "竹院夜论\n\n今夜不教天下，\n只说亲眼见过什么。\n\n你是严仲山，白日才肯收手。\n这次坐下来，还想问什么？\n\n推开旧园的门\n\n先读完《龙门问刀》一种归宿，再来推开竹院的门。\n\n原典纪事 · 北榜第五严仲山 · 读完《龙门问刀》一种归宿后解锁\n\n白日 · 洛阳龙虎风云会",
+      "decode": [],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "bamboo-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "16b6b455089fadb26dc550fd2bb8f30ce7f3cec5c364b56c4c64d7fefd44d28c"
+    },
+    {
+      "slug": "twelfth-life",
+      "title": "Jianghu · 第十二席 · 赵承晏",
+      "url": "http://127.0.0.1:4173/twelfth-life.html#play",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 5,
+      "beat": "rl_three_wins_6",
+      "choices": [
+        "先叫他起来，把刚要追问的第二句收住，再问孙师傅自己到底能知道什么。",
+        "不再要他回答，自己退开让他回练场；去问孙，昨日哪几处是真接住了。"
+      ],
+      "actors": [
+        {
+          "id": "rl_sun",
+          "focus": "actor listening mood-intent",
+          "look": "default"
+        },
+        {
+          "id": "rl_boy",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/taihua-court.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-martial-adult.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v5/npc-youth-blue.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "twelfth-life-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "5328766eacaf7b22fe171a9c8bb454203f63965ae6bf7a52e09be64712e1780e"
+    },
+    {
+      "slug": "twelfth",
+      "title": "Jianghu · 第十二席",
+      "url": "http://127.0.0.1:4173/twelfth.html#play",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 4,
+      "beat": "qw_paid_5",
+      "choices": [
+        "拿例钱，额外一封不收，按真能接住的架试。",
+        "先问伤后工钱与停手口令，不拿额外赏猜王意。"
+      ],
+      "actors": [
+        {
+          "id": "qw_zhao",
+          "focus": "actor focused mood-intent",
+          "look": "age44"
+        },
+        {
+          "id": "qw_gu",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/longmen-backyard.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/qw-zhao-44.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v5/npc-clerk-male.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "twelfth-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "8cb7a77ff904203be990fd71a5ed03c00e6f582bc98eb39bd7cbc60cec9cfdfa"
+    },
+    {
+      "slug": "jade-thieves",
+      "title": "Jianghu · 山河璧·密库双贼",
+      "url": "http://127.0.0.1:4173/jade-thieves.html#play",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 1,
+      "beat": "jt_threshold_2",
+      "choices": [
+        "沈玉娘 · 从地道探入。",
+        "江十七 · 从屋顶垂下。通关一次后，解锁江十七视角"
+      ],
+      "actors": [],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/jt-vault.webp",
+          "w": 1024,
+          "h": 576
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "jade-thieves-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "0dadd8254365402493964df68b94155f5f8a686a1e73674bf4ff3843d4cea306"
+    },
+    {
+      "slug": "jade",
+      "title": "Jianghu · 山河璧·十三文",
+      "url": "http://127.0.0.1:4173/jade.html#play",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 5,
+      "beat": "jd_cat_6",
+      "choices": [
+        "先问何时买的桌、这块压了多久，不急着当街喊重宝。",
+        "先问卖不卖，钱不够便直说，别拿鉴宝人架势压这家卖菜的。"
+      ],
+      "actors": [
+        {
+          "id": "jd_he",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v5/inn.webp",
+          "w": 1440,
+          "h": 810
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v5/npc-merchant-male.webp",
+          "w": 560,
+          "h": 672
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "jade-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "6944069dd87debab673f4fb26253c4dd7557643fa3fd62897eba1057047b38e0"
+    },
+    {
+      "slug": "qingshi",
+      "title": "Jianghu · 青石五友·守一天",
+      "url": "http://127.0.0.1:4173/qingshi.html#play",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 4,
+      "beat": "qs_grain_5",
+      "choices": [
+        "承认疼，拉陈虎坐下，约好明日慢走一遍。",
+        "说没事，端起碗才发现胳膊还是使不上劲。"
+      ],
+      "actors": [
+        {
+          "id": "qs_xu",
+          "focus": "actor listening mood-neutral",
+          "look": "age17"
+        },
+        {
+          "id": "qs_chen",
+          "focus": "actor listening mood-uneasy",
+          "look": "default"
+        },
+        {
+          "id": "qs_han",
+          "focus": "actor listening mood-amused",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/grain-yard.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/qs-xu-age17.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/qs-chen.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/qs-han.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "qingshi-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "cded6f31fd020a410e1e435dae24f18d7316713f64fc7672f43682d9ca8e6373"
+    },
+    {
+      "slug": "dead-ranking",
+      "title": "Jianghu · 死人争榜",
+      "url": "http://127.0.0.1:4173/dead-ranking.html#play",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 6,
+      "beat": "dr_dead_letter_7",
+      "choices": [
+        "先问老人究竟认得什么，不拿一句字不像便替死者断定又是假。",
+        "先让老人把当年当面争榜的那个人讲完，不只把旧录一句涉案念给徒弟。"
+      ],
+      "actors": [
+        {
+          "id": "dr_lu",
+          "focus": "actor focused mood-amused",
+          "look": "default"
+        },
+        {
+          "id": "dr_apprentice",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/longmen-hall.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-robed-elder.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v5/npc-youth-blue.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "dead-ranking-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "ae9b28fc49bab880c0448c0cb3d8a09053ca410d1079f2bbfba0192baac83d69"
+    },
+    {
+      "slug": "luhua",
+      "title": "Jianghu · 照水刀 · 芦花渡",
+      "url": "http://127.0.0.1:4173/luhua.html#play",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 3,
+      "beat": "lh_eleven_4",
+      "choices": [
+        "先问今日能做什么，从扫院、认船和站步开始，不等一把刀便能还清命。",
+        "请师父看自己站一回，哪里不稳先改，不拿来还命便要求赶快教成。"
+      ],
+      "actors": [
+        {
+          "id": "lh_meng",
+          "focus": "actor listening mood-intent",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/longmen-backyard.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-martial-adult-b.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "luhua-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "a47df6ad784885cc8f8f917fb89de6a509bb8483c25d1192f59b60cb04391185"
+    },
+    {
+      "slug": "dongting",
+      "title": "Jianghu · 照水刀 · 问席",
+      "url": "http://127.0.0.1:4173/dongting.html#play",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 5,
+      "beat": "dt_third_step_6",
+      "choices": [
+        "先解开脚边的圈，把绳递到船沿。",
+        "急着递绳，扯到脚才发现自己也被套住。"
+      ],
+      "actors": [
+        {
+          "id": "dt_liang",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        },
+        {
+          "id": "dt_zhao",
+          "focus": "actor listening mood-intent",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/dongting-deck.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/dt-liang.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-robed-elder.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "dongting-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "4a9cc079961e846e306ead9facfedd34d390b1d2432107e9bcf3bc038e5269ff"
+    },
+    {
+      "slug": "north",
+      "title": "Jianghu · 三师一枪",
+      "url": "http://127.0.0.1:4173/north.html#play",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 6,
+      "beat": "nq_hundred_twenty_seven_7",
+      "choices": [
+        "先把那半寸重做一轮，看竹竿真到哪里，不拿数对了当已经改好。",
+        "问肩为什么每次先抬，请老人看自己慢走一遍。"
+      ],
+      "actors": [
+        {
+          "id": "nq_zhou",
+          "focus": "actor listening mood-intent",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/longmen-backyard.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-martial-elder.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "north-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "104a3181e71f0283a115f408d03b8fc644eeba1034df7037d72d6b009d0f349b"
+    },
+    {
+      "slug": "qian-kun",
+      "title": "Jianghu · 天下第一，不会算账",
+      "url": "http://127.0.0.1:4173/qian-kun.html#play",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 6,
+      "beat": "qk_short_inch_7",
+      "choices": [
+        "先把第五掌怎样回来走清，不因当众指出一寸便以为整套都对。",
+        "请教习从另一侧进，看看这一步换人接还会怎样。"
+      ],
+      "actors": [
+        {
+          "id": "qk_tutor",
+          "focus": "actor listening mood-sharp",
+          "look": "default"
+        },
+        {
+          "id": "qk_xu",
+          "focus": "actor focused mood-neutral",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/longmen-backyard.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-martial-adult.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-mature-woman-b.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "qian-kun-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "ab9d86e2b2db37f20b7308eb5ebe562144cc809de483cbc3d0826dbf9c0182c3"
+    },
+    {
+      "slug": "north-notes",
+      "title": "Jianghu · 师门夜话",
+      "url": "http://127.0.0.1:4173/north-notes.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "LOCKED",
+      "steps": 0,
+      "beat": null,
+      "choices": [],
+      "actors": [],
+      "lockText": "北枪与乾坤 · 师门夜话\n\n同一个老师，\n为什么教得不同？\n\n终南的一页旧笔录。\n多年后，六合与太极各有一场访问。\n\n翻开两册之间的夹页\n\n先读完《三师一枪》、《不会算账》各一种归宿，即可进入这场夜话。\n\n原典纪事 · 整理笔记的门中记录者 · 两卷各读完一种归宿后解锁 · 兼容补写访谈\n\n第一卷 · 三师一枪\n\n第二卷 · 不会算账",
+      "decode": [],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "north-notes-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "6d0e1748c5844f190d3bf159b45f4f1650d5071b58287ad7b4b857db2bcd7010"
+    },
+    {
+      "slug": "two-swords",
+      "title": "Jianghu · 一剑两脉·旧本归还",
+      "url": "http://127.0.0.1:4173/two-swords.html#play",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 3,
+      "beat": "ss_ridge_4",
+      "choices": [
+        "先让他贴住自己的肩，把两人的重量一起压回里侧。",
+        "仍抓紧他的腕，用自己脚尖探稳一块能落脚的石头。"
+      ],
+      "actors": [
+        {
+          "id": "ss_pupil",
+          "focus": "actor focused mood-uneasy",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v5/ridge.webp",
+          "w": 1440,
+          "h": 810
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-young-laborer.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "two-swords-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "9f29a22f5c839f33000da110c7cf8bd4172a194829a6a7a6bd9f3edcc65e1045"
+    },
+    {
+      "slug": "seven-questions",
+      "title": "Jianghu · 一剑两脉·门外七问",
+      "url": "http://127.0.0.1:4173/seven-questions.html#play",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 6,
+      "beat": "sq_receipt_7",
+      "choices": [
+        "先同禾生核金陵副报，再请他带原件一起去问另一家。",
+        "先同阿笙核南岳沿途副报，再请她带记路人一起去问。"
+      ],
+      "actors": [
+        {
+          "id": "sq_hesheng",
+          "focus": "actor listening mood-sharp",
+          "look": "default"
+        },
+        {
+          "id": "sq_asheng",
+          "focus": "actor listening mood-amused",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/qingxi-veranda.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v5/npc-clerk-male.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-mature-woman-b.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "seven-questions-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "5d26955943253e98b559f1ef8500afe8e8b80d34d83f4f60f330a294cd8a982b"
+    },
+    {
+      "slug": "xuanmen",
+      "title": "Jianghu · 玄门旧史·九席与返真不绝",
+      "url": "http://127.0.0.1:4173/xuanmen.html#play",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 3,
+      "beat": "xm_mud_4",
+      "choices": [
+        "先问老人是谁，承认昨日见过二十一剑，仍没看懂今日。",
+        "问师父当年在汉水边怎么躺，肯先听一件不体面的旧事。"
+      ],
+      "actors": [
+        {
+          "id": "xm_lu",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        },
+        {
+          "id": "xm_grey",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/fair-eastgate.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-robed-elder.webp",
+          "w": 560,
+          "h": 840
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-martial-elder-b.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "xuanmen-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "7eb0a9d6c8c84baeb12cb6a5db7657a16ea73916168394e769586ce0e8d184fa"
+    },
+    {
+      "slug": "beyond-ranking",
+      "title": "Jianghu · 榜纸之外·宁无极旧录",
+      "url": "http://127.0.0.1:4173/beyond-ranking.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "LOCKED",
+      "steps": 0,
+      "beat": null,
+      "choices": [],
+      "actors": [],
+      "lockText": "榜纸之外·宁无极旧录\n\n十个名字，\n没有一场预先写好的胜负。\n\n你想抄走一张最高名单。\n他先问，你究竟看见了什么。\n\n坐到旧册另一边\n\n先读完《玄门旧史》、《白石谷外》各一种归宿，即可进入这份旧录。\n\n原典纪事 · 太玄门侍读门人 · 读完《玄门旧史》与《白石谷外》后解锁\n\n第一份旧录 · 玄门旧史\n\n第二份旧录 · 白石谷外",
+      "decode": [],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "beyond-ranking-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "32ccf18ad5a602d181f2605e416fb91510380ea8aead3213d7a06d1f86bd3feb"
+    },
+    {
+      "slug": "sea",
+      "title": "Jianghu · 海路两世·中原以外",
+      "url": "http://127.0.0.1:4173/sea.html#play",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 4,
+      "beat": "sr_old_first_5",
+      "choices": [
+        "先踩实脚下，接住这一掌再转身。",
+        "让开肩前那一点，绕到掌外接下一手。"
+      ],
+      "actors": [
+        {
+          "id": "sr_oldmaster",
+          "focus": "actor listening mood-intent",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v6/longmen-backyard.webp",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-robed-elder-b.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "sea-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "c9281665c378bd5b1ae617923d038ddce1e11e167c7974aa62150529ada001b0"
+    },
+    {
+      "slug": "sea-tide",
+      "title": "Jianghu · 海路两世·归潮岛",
+      "url": "http://127.0.0.1:4173/sea-tide.html#play",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 3,
+      "beat": "st_first_boat_4",
+      "choices": [
+        "抓住栏杆，顺着船摇站起来。",
+        "再坐一会，等这波落下去才站。"
+      ],
+      "actors": [
+        {
+          "id": "st2_boatkeeper",
+          "focus": "actor listening mood-intent",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v5/rainboat.webp",
+          "w": 1440,
+          "h": 810
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v5/npc-elder-male.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "sea-tide-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "55e54f7aec04bd9ab3ec29c35e02a5f81e3f2fa8316dc5a0796d8c7aa53ff2ac"
+    },
+    {
+      "slug": "kuhe",
+      "title": "Jianghu · 枯河谷·门后有人",
+      "url": "http://127.0.0.1:4173/kuhe.html#play",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": "library -> index -> matching current edition -> new -> advance to first choice",
+      "status": "FIRST_CHOICE",
+      "steps": 5,
+      "beat": "kh_cloth_6",
+      "choices": [
+        "把水放在门外，请屋里的人先陪着他，不再追问。",
+        "先问来时的路，听见他喘不过气就停下来。"
+      ],
+      "actors": [
+        {
+          "id": "kh_healer",
+          "focus": "actor listening mood-neutral",
+          "look": "default"
+        }
+      ],
+      "lockText": null,
+      "decode": [
+        {
+          "url": "http://127.0.0.1:4173/art/v5/inn.webp",
+          "w": 1440,
+          "h": 810
+        },
+        {
+          "url": "http://127.0.0.1:4173/art/v6/npc-mature-woman.webp",
+          "w": 560,
+          "h": 840
+        }
+      ],
+      "overflow": false,
+      "errors": [],
+      "screenshot": "kuhe-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "4aafc77fc3f3bea62e2ab2bd19f5aad4bb4658afd031fbc8c51d91692d4f4633"
+    }
+  ],
+  "assisted": [
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/lh-redbank.webp",
+      "slug": "luhua",
+      "beat": "lh_red_snake_1",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "asset-lh-redbank-1440.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/lh-redbank.webp",
+        "http://127.0.0.1:4173/art/v6/npc-martial-adult.webp",
+        "http://127.0.0.1:4173/art/v6/npc-young-laborer.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "2de0b5f0d5ab59874fa056965626ccfe6b0cc24e689198891d4fedb65d18a0cf"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/lh-townpractice.webp",
+      "slug": "luhua",
+      "beat": "lh_only_defend_1",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "asset-lh-townpractice-1440.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/lh-townpractice.webp",
+        "http://127.0.0.1:4173/art/v6/npc-martial-adult-b.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "6a8af55886e74d2ba04f875fa8b23c2ae2334c0c2e88e6b45be732068627a356"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/lh-jiangling.webp",
+      "slug": "luhua",
+      "beat": "lh_jiangling_1",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "asset-lh-jiangling-1440.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/lh-jiangling.webp",
+        "http://127.0.0.1:4173/art/v6/npc-martial-adult.webp",
+        "http://127.0.0.1:4173/art/v6/npc-martial-elder.webp",
+        "http://127.0.0.1:4173/art/v6/lh-pang.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "71627b38a43c3434b194f9418365a212618d5edfb5de784c63c7598eec79a510"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/lh-pang.webp",
+      "slug": "luhua",
+      "beat": "lh_jiangling_1",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "asset-lh-pang-1440.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/lh-jiangling.webp",
+        "http://127.0.0.1:4173/art/v6/npc-martial-adult.webp",
+        "http://127.0.0.1:4173/art/v6/npc-martial-elder.webp",
+        "http://127.0.0.1:4173/art/v6/lh-pang.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "e3bc49a6a0b42729215611fa10467a291566084ba73004cbcb4092cfc95e58fc"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/jt-vault.webp",
+      "slug": "jade-thieves",
+      "beat": "jt_threshold_1",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "asset-jt-vault-1440.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/jt-vault.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "4748d94a28ecb530ca68e0510ea0630e5aa07750904b3312a5eefef007c67fd8"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/jt-jiang.webp",
+      "slug": "jade-thieves",
+      "beat": "jt_viewpoint_2",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "asset-jt-jiang-1440.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/jt-vault.webp",
+        "http://127.0.0.1:4173/art/v6/jt-jiang.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "1d50f7bdb9058abf6dd648f03dee0bb480d85e6f24201e6802df71d64b7edd6e"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/qs-chen.webp",
+      "slug": "qingshi",
+      "beat": "qs_grain_1",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "asset-qs-chen-1440.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/grain-yard.webp",
+        "http://127.0.0.1:4173/art/v6/qs-xu-age17.webp",
+        "http://127.0.0.1:4173/art/v6/qs-chen.webp",
+        "http://127.0.0.1:4173/art/v6/qs-han.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "5f36962c5e4f2f476c901ea2ce9b981fdd921c5804253c41197e689111d3a61f"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/qs-han.webp",
+      "slug": "qingshi",
+      "beat": "qs_grain_1",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "asset-qs-han-1440.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/grain-yard.webp",
+        "http://127.0.0.1:4173/art/v6/qs-xu-age17.webp",
+        "http://127.0.0.1:4173/art/v6/qs-chen.webp",
+        "http://127.0.0.1:4173/art/v6/qs-han.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "597e74d3039a6e980200dd65c6e6a7dd23e8f96d66047188daf942c938b54dca"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/qs-song.webp",
+      "slug": "qingshi",
+      "beat": "qs_wall_1",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "asset-qs-song-1440.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/grain-yard.webp",
+        "http://127.0.0.1:4173/art/v6/qs-xu-age17.webp",
+        "http://127.0.0.1:4173/art/v6/qs-song.webp",
+        "http://127.0.0.1:4173/art/v5/npc-porter.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "79d4265e7bf495c8f03c24023a9a8fbfe7edbbf53405da2bd688102810d93e9b"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/qs-stairs92.webp",
+      "slug": "qingshi",
+      "beat": "qs_breach_1",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "asset-qs-stairs92-1440.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/qs-stairs92.webp",
+        "http://127.0.0.1:4173/art/v6/qs-xu-age92.webp",
+        "http://127.0.0.1:4173/art/v6/npc-martial-adult-b.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "03196a28b70a975a69e29329fd19fa83bf56dc00d2eb43338cbf300e0e9b717a"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/dr-faceroom.webp",
+      "slug": "dead-ranking",
+      "beat": "dr_three_faces_1",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "asset-dr-faceroom-1440.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/dr-faceroom.webp",
+        "http://127.0.0.1:4173/art/v6/npc-martial-elder.webp",
+        "http://127.0.0.1:4173/art/v6/npc-seasoned-traveler.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "3a05f8e2ccf3739da144224bb84eebaddd35ff5aa83dc080a1330fbe1762e812"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/rl-public.webp",
+      "slug": "twelfth-life",
+      "beat": "rl_private_xue_8",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "asset-rl-public-1440.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/rl-public.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "49afcd711e3506a7402cf60c8795d45675128b9dc61457855949cc1075a2109c"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/th-mufront.webp",
+      "slug": "taihua",
+      "beat": "th_mu_front_1",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "asset-th-mufront-1440.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/th-mufront.webp",
+        "http://127.0.0.1:4173/art/v6/npc-robed-elder-b.webp",
+        "http://127.0.0.1:4173/art/v6/npc-martial-elder-b.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "e69686357bb260dac8c5d93b75f44ef8b9376cf36a8a3f1771b4ee898d22d3a0"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/ws-snow-court.webp",
+      "slug": "white-stone",
+      "beat": "ws_white_council_1",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "asset-ws-snow-court-1440.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/ws-snow-court.webp",
+        "http://127.0.0.1:4173/art/v6/npc-martial-elder-b.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "28b6557bcf0aedbdb6d3fcf20be0805cbf367bb38ac40c89f03f9fa7a1f8fe52"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/nq-rainporch.webp",
+      "slug": "north",
+      "beat": "nq_wood_chair_1",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "asset-nq-rainporch-1440.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/nq-rainporch.webp",
+        "http://127.0.0.1:4173/art/v6/heng-later.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "a02f6e42b537d1dd080da60d8ea7abe2304972a386a92389c58a39f472f4fc83"
+    },
+    {
+      "kind": "PREREQUISITE_ASSISTED_FINAL_UI_ADVANCE",
+      "slug": "white-stone",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "ending": "ws_outside_after",
+      "endingsStorage": "[\"ws_outside_after\"]"
+    },
+    {
+      "kind": "PREREQUISITE_ASSISTED_FINAL_UI_ADVANCE",
+      "slug": "north",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "ending": "nq_first_again",
+      "endingsStorage": "[\"nq_first_again\"]"
+    },
+    {
+      "kind": "PREREQUISITE_ASSISTED_FINAL_UI_ADVANCE",
+      "slug": "longmen",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "ending": "lm_travel",
+      "endingsStorage": "[\"lm_travel\"]"
+    },
+    {
+      "kind": "PREREQUISITE_ASSISTED_FINAL_UI_ADVANCE",
+      "slug": "qian-kun",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "ending": "qk_open_lesson",
+      "endingsStorage": "[\"qk_open_lesson\"]"
+    },
+    {
+      "kind": "PREREQUISITE_ASSISTED_FINAL_UI_ADVANCE",
+      "slug": "xuanmen",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "ending": "xm_handover_after",
+      "endingsStorage": "[\"xm_handover_after\"]"
+    },
+    {
+      "kind": "LOCKED_OPENING_AFTER_ASSISTED_PREREQUISITE",
+      "slug": "bamboo",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "beat": "bb_closed_gate_7",
+      "choices": [
+        "先问入化究竟是什么，承认自己今日懂得该停，手却仍往里走。",
+        "先问见闻能否替眼前的人解难，不想只听一晚人人都说好的高话。"
+      ],
+      "errors": [],
+      "screenshot": "unlocked-bamboo-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "61e552f670736a9c783a989cfbd85599f329243861c90fbf90d303acfe104776"
+    },
+    {
+      "kind": "LOCKED_OPENING_AFTER_ASSISTED_PREREQUISITE",
+      "slug": "north-notes",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "beat": "nn_two_books_3",
+      "choices": [
+        "先问秦天岳，六十一岁已有北榜前位，为什么偏要离枪三个月。",
+        "先问司马天岳，看得那么快，为何还要反复问他真看见了么。"
+      ],
+      "errors": [],
+      "screenshot": "unlocked-north-notes-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "67643fa2b478a2716fc6ff03609d9aa0e1dfd98332bd093b260571ee17693d7b"
+    },
+    {
+      "kind": "LOCKED_OPENING_AFTER_ASSISTED_PREREQUISITE",
+      "slug": "beyond-ranking",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "beat": "br_yellow_page_8",
+      "choices": [
+        "我先记来路：哪些是师祖亲试，哪些是亲见，哪些只是消息。",
+        "监院要的是准数。山外若来问，太玄门总得有一句回话。"
+      ],
+      "errors": [],
+      "screenshot": "unlocked-beyond-ranking-1440.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "e80f1b669c75c61fd91d8865a9669160723f71ef74265351db2a2e856cbbdbca"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/lh-redbank.webp",
+      "slug": "luhua",
+      "beat": "lh_red_snake_1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "asset-lh-redbank-390.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/lh-redbank.webp",
+        "http://127.0.0.1:4173/art/v6/npc-martial-adult.webp",
+        "http://127.0.0.1:4173/art/v6/npc-young-laborer.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "dd63e2cecc3d844763bbf214eb2cd06f67c76789e2c6bdf60d8413aa43bf1053"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/lh-townpractice.webp",
+      "slug": "luhua",
+      "beat": "lh_only_defend_1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "asset-lh-townpractice-390.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/lh-townpractice.webp",
+        "http://127.0.0.1:4173/art/v6/npc-martial-adult-b.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "59f0faa4d8ea0b8fea026844c88093fa48c737ccff8e35e07dbcff08928ef0e7"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/lh-jiangling.webp",
+      "slug": "luhua",
+      "beat": "lh_jiangling_1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "asset-lh-jiangling-390.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/lh-jiangling.webp",
+        "http://127.0.0.1:4173/art/v6/npc-martial-adult.webp",
+        "http://127.0.0.1:4173/art/v6/npc-martial-elder.webp",
+        "http://127.0.0.1:4173/art/v6/lh-pang.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "6eb312e79dc6c18ea45b39d6bcbf94bca7311470f86feb74e11a31241ade21db"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/lh-pang.webp",
+      "slug": "luhua",
+      "beat": "lh_jiangling_1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "asset-lh-pang-390.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/lh-jiangling.webp",
+        "http://127.0.0.1:4173/art/v6/npc-martial-adult.webp",
+        "http://127.0.0.1:4173/art/v6/npc-martial-elder.webp",
+        "http://127.0.0.1:4173/art/v6/lh-pang.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "46c3bc2942480512efc0cba6f97fb935e573bc86d7b0238c3cd8dd06d51687fc"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/jt-vault.webp",
+      "slug": "jade-thieves",
+      "beat": "jt_threshold_1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "asset-jt-vault-390.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/jt-vault.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "443929f7e3e2a9bb02eee559a271424d41b7faf7bb8b5fe01e46e261c56be8b4"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/jt-jiang.webp",
+      "slug": "jade-thieves",
+      "beat": "jt_viewpoint_2",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "asset-jt-jiang-390.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/jt-vault.webp",
+        "http://127.0.0.1:4173/art/v6/jt-jiang.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "5282c6b9be4ce60ae4a3f2bb7b1c06674497b0745f6266704a7ea9c3a57accea"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/qs-chen.webp",
+      "slug": "qingshi",
+      "beat": "qs_grain_1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "asset-qs-chen-390.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/grain-yard.webp",
+        "http://127.0.0.1:4173/art/v6/qs-xu-age17.webp",
+        "http://127.0.0.1:4173/art/v6/qs-chen.webp",
+        "http://127.0.0.1:4173/art/v6/qs-han.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "d7cbf04ef8de589606df1c06ca11ae0e01932a3e970682224a10c4b62a6d3470"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/qs-han.webp",
+      "slug": "qingshi",
+      "beat": "qs_grain_1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "asset-qs-han-390.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/grain-yard.webp",
+        "http://127.0.0.1:4173/art/v6/qs-xu-age17.webp",
+        "http://127.0.0.1:4173/art/v6/qs-chen.webp",
+        "http://127.0.0.1:4173/art/v6/qs-han.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "b1e01099a525bd31d8dfdafab21998f3626a9d9480f8c0baa283ed03f1538464"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/qs-song.webp",
+      "slug": "qingshi",
+      "beat": "qs_wall_1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "asset-qs-song-390.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/grain-yard.webp",
+        "http://127.0.0.1:4173/art/v6/qs-xu-age17.webp",
+        "http://127.0.0.1:4173/art/v6/qs-song.webp",
+        "http://127.0.0.1:4173/art/v5/npc-porter.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "598fe1bd4adb76f1eaa1b1b27a29366104d8e93c491fe03b7b07f5a7279ad4e7"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/qs-stairs92.webp",
+      "slug": "qingshi",
+      "beat": "qs_breach_1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "asset-qs-stairs92-390.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/qs-stairs92.webp",
+        "http://127.0.0.1:4173/art/v6/qs-xu-age92.webp",
+        "http://127.0.0.1:4173/art/v6/npc-martial-adult-b.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "4bc4281d3f76069f9602499d6645fbc4973d540aee10a90f651356e00bd8790d"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/dr-faceroom.webp",
+      "slug": "dead-ranking",
+      "beat": "dr_three_faces_1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "asset-dr-faceroom-390.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/dr-faceroom.webp",
+        "http://127.0.0.1:4173/art/v6/npc-martial-elder.webp",
+        "http://127.0.0.1:4173/art/v6/npc-seasoned-traveler.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "9328d3c845d490fca4fb02422ce9d3210d73f36a1da05cd431fa38a3d6427201"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/rl-public.webp",
+      "slug": "twelfth-life",
+      "beat": "rl_private_xue_8",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "asset-rl-public-390.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/rl-public.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "45cc02cd4b9ced31ff6adb924a04f2a5055fe2d8a8c24083177afb505553f237"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/th-mufront.webp",
+      "slug": "taihua",
+      "beat": "th_mu_front_1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "asset-th-mufront-390.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/th-mufront.webp",
+        "http://127.0.0.1:4173/art/v6/npc-robed-elder-b.webp",
+        "http://127.0.0.1:4173/art/v6/npc-martial-elder-b.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "b025a8d98f04e9768693892b91701bddce3d20a3e3baa10b12aca46d0a1df70b"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/ws-snow-court.webp",
+      "slug": "white-stone",
+      "beat": "ws_white_council_1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "asset-ws-snow-court-390.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/ws-snow-court.webp",
+        "http://127.0.0.1:4173/art/v6/npc-martial-elder-b.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "af2f0a5a4a3145decdf530f216e31cd754877e242cb5c11157279e0de336e92b"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE",
+      "file": "v6/nq-rainporch.webp",
+      "slug": "north",
+      "beat": "nq_wood_chair_1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "asset-nq-rainporch-390.png",
+      "decoded": [
+        "http://127.0.0.1:4173/art/v6/nq-rainporch.webp",
+        "http://127.0.0.1:4173/art/v6/heng-later.webp"
+      ],
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "47f381cc999b77effb0b075d501c882a4a7f6fd8945694578619b8f27b3dc5d3"
+    },
+    {
+      "kind": "PREREQUISITE_ASSISTED_FINAL_UI_ADVANCE",
+      "slug": "white-stone",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "ending": "ws_outside_after",
+      "endingsStorage": "[\"ws_outside_after\"]"
+    },
+    {
+      "kind": "PREREQUISITE_ASSISTED_FINAL_UI_ADVANCE",
+      "slug": "north",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "ending": "nq_first_again",
+      "endingsStorage": "[\"nq_first_again\"]"
+    },
+    {
+      "kind": "PREREQUISITE_ASSISTED_FINAL_UI_ADVANCE",
+      "slug": "longmen",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "ending": "lm_travel",
+      "endingsStorage": "[\"lm_travel\"]"
+    },
+    {
+      "kind": "PREREQUISITE_ASSISTED_FINAL_UI_ADVANCE",
+      "slug": "qian-kun",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "ending": "qk_open_lesson",
+      "endingsStorage": "[\"qk_open_lesson\"]"
+    },
+    {
+      "kind": "PREREQUISITE_ASSISTED_FINAL_UI_ADVANCE",
+      "slug": "xuanmen",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "ending": "xm_handover_after",
+      "endingsStorage": "[\"xm_handover_after\"]"
+    },
+    {
+      "kind": "LOCKED_OPENING_AFTER_ASSISTED_PREREQUISITE",
+      "slug": "bamboo",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "beat": "bb_closed_gate_7",
+      "choices": [
+        "先问入化究竟是什么，承认自己今日懂得该停，手却仍往里走。",
+        "先问见闻能否替眼前的人解难，不想只听一晚人人都说好的高话。"
+      ],
+      "errors": [],
+      "screenshot": "unlocked-bamboo-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "6ae55c72a1bb4dc451e59991e1f25190e9284b88a6cbfec63e345a5bdffb1c2d"
+    },
+    {
+      "kind": "LOCKED_OPENING_AFTER_ASSISTED_PREREQUISITE",
+      "slug": "north-notes",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "beat": "nn_two_books_3",
+      "choices": [
+        "先问秦天岳，六十一岁已有北榜前位，为什么偏要离枪三个月。",
+        "先问司马天岳，看得那么快，为何还要反复问他真看见了么。"
+      ],
+      "errors": [],
+      "screenshot": "unlocked-north-notes-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "3a7e7ba1258cb1f37819fef72431e07dad3edc496d205d4e5254e940435111f5"
+    },
+    {
+      "kind": "LOCKED_OPENING_AFTER_ASSISTED_PREREQUISITE",
+      "slug": "beyond-ranking",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "beat": "br_yellow_page_8",
+      "choices": [
+        "我先记来路：哪些是师祖亲试，哪些是亲见，哪些只是消息。",
+        "监院要的是准数。山外若来问，太玄门总得有一句回话。"
+      ],
+      "errors": [],
+      "screenshot": "unlocked-beyond-ranking-390.png",
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "ea79d20d2a7eb9ff619bb5ed1014e951d899baf335e33e364131e62b21c81075"
+    }
+  ],
+  "shenAlternateView": [
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE_AFTER_LEGAL_UI_END",
+      "file": "v6/jt-shen.webp",
+      "slug": "jade-thieves",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "beat": "jt_viewpoint_7",
+      "ending": "jt_unmarked_life",
+      "actualEnding": "[\"jt_unmarked_life\"]",
+      "screenshot": "asset-jt-shen-1440.png",
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "305f17862652b2fe756fbef61951eda798df1ffd20cdd0135c929137c34a44fa"
+    },
+    {
+      "kind": "ASSET_ASSISTED_VALID_RUNTIME_SAVE_AFTER_LEGAL_UI_END",
+      "file": "v6/jt-shen.webp",
+      "slug": "jade-thieves",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "beat": "jt_viewpoint_7",
+      "ending": "jt_unmarked_life",
+      "actualEnding": "[\"jt_unmarked_life\"]",
+      "screenshot": "asset-jt-shen-390.png",
+      "errors": [],
+      "visuallyReviewed": true,
+      "visualMethod": "Actual screenshot viewed via contact sheet (desktop half-size, mobile full-size); selected originals also viewed",
+      "screenshotSha256": "517b3e4604228614405a21e54a2428a0dd35cd38cde270f425b042fed6de4432"
+    }
+  ],
+  "screenshots": 84,
+  "firstChoiceScreens": 46,
+  "freshLockedScreens": 6,
+  "newAssetScreens": 32,
+  "blockingFindings": [],
+  "remaining": [
+    "P2 Pang anchor identity illustration vs palm exchange; remains nonblocking",
+    "No whole-route browser completion claimed: prereqs use legal runtime penultimate saves then real UI final advance",
+    "Only opener and sixteen targeted asset states, not all beats, choices or CGs",
+    "No Android device, Safari/Firefox or human reader testing"
+  ],
+  "externalDirectory": "../Jianghu-independent-20261018\\independent-opening",
+  "scripts": [
+    "opening.mjs",
+    "assisted.mjs",
+    "shen.mjs"
+  ]
+}

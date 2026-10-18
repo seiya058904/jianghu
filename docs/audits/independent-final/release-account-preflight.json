@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-10-18T03:45:53.724424+00:00",
+  "authenticatedLogin": "seiya058904",
+  "repository": "seiya058904/jianghu",
+  "defaultBranch": "main",
+  "owner": "seiya058904",
+  "pages": {
+    "status": null,
+    "html_url": "https://seiya058904.github.io/jianghu/",
+    "build_type": "workflow",
+    "source": {
+      "branch": "main",
+      "path": "/"
+    },
+    "public": true,
+    "https_enforced": true
+  }
+}

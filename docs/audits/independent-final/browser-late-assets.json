@@ -1,0 +1,345 @@
+[
+  {
+    "path": "/dead-ranking.html",
+    "bytes": 919,
+    "sha256": "1def7691fa46430784478943cfdbed9e3bed4c6ad7fa7fe7892c0b403b947cb8",
+    "served_sha256": "1def7691fa46430784478943cfdbed9e3bed4c6ad7fa7fe7892c0b403b947cb8",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/assets/catalog-BbsrsVBy.css",
+    "bytes": 28548,
+    "sha256": "df186031e11442d679af65465c797d73769b1655785ba0dd3a2180a3d4fb6a60",
+    "served_sha256": "df186031e11442d679af65465c797d73769b1655785ba0dd3a2180a3d4fb6a60",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/assets/modulepreload-polyfill-P2Xu9kJm.js",
+    "bytes": 670,
+    "sha256": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+    "served_sha256": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/assets/work-index-BmvMq2vW.js",
+    "bytes": 18394,
+    "sha256": "23ff4dee488d0fa1d039b1930f3e490c1938c47f16ebf79b81d01d8f05549e1c",
+    "served_sha256": "23ff4dee488d0fa1d039b1930f3e490c1938c47f16ebf79b81d01d8f05549e1c",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/assets/catalog-BtET8AA6.js",
+    "bytes": 16715,
+    "sha256": "b53c09e0a158451316c3fad29673bec6d85fe95126360f7c1a4597b11c4079fb",
+    "served_sha256": "b53c09e0a158451316c3fad29673bec6d85fe95126360f7c1a4597b11c4079fb",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/assets/ink-DJNFVVIJ.js",
+    "bytes": 127084,
+    "sha256": "2b260fe1d76ddde57679a6587bae1c60a9a9ae0f334cea54df47faeab5f6d765",
+    "served_sha256": "2b260fe1d76ddde57679a6587bae1c60a9a9ae0f334cea54df47faeab5f6d765",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/assets/player-Bh5PxvLK.js",
+    "bytes": 94349,
+    "sha256": "69beabeaa5265f70593ae209bac542abf3994cc05d15843de28467003c9fdc4f",
+    "served_sha256": "69beabeaa5265f70593ae209bac542abf3994cc05d15843de28467003c9fdc4f",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/assets/chronicle-catalog-56xv3GiH.js",
+    "bytes": 136935,
+    "sha256": "da8a503a59e626aad02f8d06e2efc88e5b935a68b73a29d303900ba8f7f85fc5",
+    "served_sha256": "da8a503a59e626aad02f8d06e2efc88e5b935a68b73a29d303900ba8f7f85fc5",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/seal.svg",
+    "bytes": 232,
+    "sha256": "3ff5b2e312a35684cc5af80aa330104394b5b3a3cf7af0ca37f7cb53674ce081",
+    "served_sha256": "3ff5b2e312a35684cc5af80aa330104394b5b3a3cf7af0ca37f7cb53674ce081",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/assets/dead-ranking-DsgkqOyq.js",
+    "bytes": 137388,
+    "sha256": "c4eb6fe11022a5f372d4fa5ff59c86d02a6e09012f76af69f6713b031f4ce17f",
+    "served_sha256": "c4eb6fe11022a5f372d4fa5ff59c86d02a6e09012f76af69f6713b031f4ce17f",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/longmen-hall.webp",
+    "bytes": 293626,
+    "sha256": "36468d0f9692eb69f563baa7c8b9312e4a3a374fb4b9c6b6a8bcb50b41e4b03e",
+    "served_sha256": "36468d0f9692eb69f563baa7c8b9312e4a3a374fb4b9c6b6a8bcb50b41e4b03e",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/npc-robed-elder.webp",
+    "bytes": 53410,
+    "sha256": "283e324741f8c15f01e7dd2678ff59a11337634e75dc3451fb5b4a7988c59000",
+    "served_sha256": "283e324741f8c15f01e7dd2678ff59a11337634e75dc3451fb5b4a7988c59000",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v5/npc-youth-blue.webp",
+    "bytes": 98002,
+    "sha256": "c1791cd911ecec5243f37c583b7749e68afc3817863d842762e8cc173cbfdc0a",
+    "served_sha256": "c1791cd911ecec5243f37c583b7749e68afc3817863d842762e8cc173cbfdc0a",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/longmen-backyard.webp",
+    "bytes": 374828,
+    "sha256": "9ecfa1857d48955570ad32fe546f52dc162ef3c0db5737aad113ef16169d53a0",
+    "served_sha256": "9ecfa1857d48955570ad32fe546f52dc162ef3c0db5737aad113ef16169d53a0",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/npc-martial-elder.webp",
+    "bytes": 55632,
+    "sha256": "4132987b2e184a769591ad5af2f83cbf1da8e678b26e3416f27b0fa3e87ea388",
+    "served_sha256": "4132987b2e184a769591ad5af2f83cbf1da8e678b26e3416f27b0fa3e87ea388",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v5/arena.webp",
+    "bytes": 261954,
+    "sha256": "cb0d3f1cb0383f13e4c3080a3671994ca32b29c484c1d756b2445241922afea1",
+    "served_sha256": "cb0d3f1cb0383f13e4c3080a3671994ca32b29c484c1d756b2445241922afea1",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v5/ridge.webp",
+    "bytes": 353214,
+    "sha256": "f18afb9f1d18a6266d0f6e8780053594d86b1cd89bffaceaf6b350e37fec9ba5",
+    "served_sha256": "f18afb9f1d18a6266d0f6e8780053594d86b1cd89bffaceaf6b350e37fec9ba5",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/npc-martial-adult.webp",
+    "bytes": 54546,
+    "sha256": "5f2b8e2218cc78b83b069ab13dd18bf77c294bdad6105298878d3a8d06494b8c",
+    "served_sha256": "5f2b8e2218cc78b83b069ab13dd18bf77c294bdad6105298878d3a8d06494b8c",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/npc-martial-adult-b.webp",
+    "bytes": 60966,
+    "sha256": "b5edd0901b799bcd353750d1c539a1667412be451401db340bcd2b2270ceffa1",
+    "served_sha256": "b5edd0901b799bcd353750d1c539a1667412be451401db340bcd2b2270ceffa1",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v5/npc-elder.webp",
+    "bytes": 127956,
+    "sha256": "bbc6de52edfd4d8b24756c166737425f7f4cd4161902d96b2ed86f07acb82242",
+    "served_sha256": "bbc6de52edfd4d8b24756c166737425f7f4cd4161902d96b2ed86f07acb82242",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/dongting-dock.webp",
+    "bytes": 371788,
+    "sha256": "26ad130b543d844b2222f08c0173119fc8fd50ae912f118b2799d34e2e9562e8",
+    "served_sha256": "26ad130b543d844b2222f08c0173119fc8fd50ae912f118b2799d34e2e9562e8",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/npc-seasoned-traveler.webp",
+    "bytes": 61828,
+    "sha256": "c5cb55ab17e475ccbaabde6d0f4e557764da8a8835a7d99a1e57c2b2d384eeff",
+    "served_sha256": "c5cb55ab17e475ccbaabde6d0f4e557764da8a8835a7d99a1e57c2b2d384eeff",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v5/inn.webp",
+    "bytes": 219734,
+    "sha256": "7b22805a26aa803714aa2330aa0aa877597179ab3e5436bdbc706045452451e5",
+    "served_sha256": "7b22805a26aa803714aa2330aa0aa877597179ab3e5436bdbc706045452451e5",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v5/workshop.webp",
+    "bytes": 234918,
+    "sha256": "d0e598deb32182dae48df2e1070268949f6136d7df428b128ccaae83f457ae79",
+    "served_sha256": "d0e598deb32182dae48df2e1070268949f6136d7df428b128ccaae83f457ae79",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v5/npc-porter.webp",
+    "bytes": 131180,
+    "sha256": "dccb9b99e723de4d1e9e4bd1d8adddb2e4e9fe2dc9196ffec074044fcd9b8b5e",
+    "served_sha256": "dccb9b99e723de4d1e9e4bd1d8adddb2e4e9fe2dc9196ffec074044fcd9b8b5e",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/dr-faceroom.webp",
+    "bytes": 83824,
+    "sha256": "9d5dfa41026e1e67ed1d0da09925c789fab8452391f1d09cf6c8a1fb276d84b6",
+    "served_sha256": "9d5dfa41026e1e67ed1d0da09925c789fab8452391f1d09cf6c8a1fb276d84b6",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v5/quay.webp",
+    "bytes": 267876,
+    "sha256": "728bf1eaf3e423ac07c877ca394c531245195fdada6785f30823b9abea707406",
+    "served_sha256": "728bf1eaf3e423ac07c877ca394c531245195fdada6785f30823b9abea707406",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/qingxi-veranda.webp",
+    "bytes": 385902,
+    "sha256": "f8b80a2ce5d39d88c55822023ef052377a71f3330105444f84ac596f796bd2f6",
+    "served_sha256": "f8b80a2ce5d39d88c55822023ef052377a71f3330105444f84ac596f796bd2f6",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/npc-robed-elder-b.webp",
+    "bytes": 56966,
+    "sha256": "b0fa364bc781b1c23d57d5d5c0d53e6f3c944aaa126735083b681ea913fdd787",
+    "served_sha256": "b0fa364bc781b1c23d57d5d5c0d53e6f3c944aaa126735083b681ea913fdd787",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v5/npc-merchant-male.webp",
+    "bytes": 97520,
+    "sha256": "08d8e6a7781317ad08993107b62f88e6452521eaf2baeaeb0e9910b6acc77a20",
+    "served_sha256": "08d8e6a7781317ad08993107b62f88e6452521eaf2baeaeb0e9910b6acc77a20",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/qingxi-board.webp",
+    "bytes": 376516,
+    "sha256": "19545338963b58d17ae511514c93410742fee7af14910bdef57250c4fb053f66",
+    "served_sha256": "19545338963b58d17ae511514c93410742fee7af14910bdef57250c4fb053f66",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v5/npc-youth.webp",
+    "bytes": 101430,
+    "sha256": "83214aab6146e4a5121f50c8b7e15acad97c77c3cd9d4723217b8a609732fc7d",
+    "served_sha256": "83214aab6146e4a5121f50c8b7e15acad97c77c3cd9d4723217b8a609732fc7d",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/npc-young-laborer.webp",
+    "bytes": 50620,
+    "sha256": "bebd16a4aef0654120040d0a846fd4cd709a428703c9f0fad4719ef463ea4a5e",
+    "served_sha256": "bebd16a4aef0654120040d0a846fd4cd709a428703c9f0fad4719ef463ea4a5e",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/luhua.html",
+    "bytes": 929,
+    "sha256": "e88ef607752eab92d13218487b27e57977aee74a74ca592929bfec69cf82c6b9",
+    "served_sha256": "e88ef607752eab92d13218487b27e57977aee74a74ca592929bfec69cf82c6b9",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/assets/luhua-C6MYLTjB.js",
+    "bytes": 98225,
+    "sha256": "1794b8044d08f17750ab2749c82458e64182a98cebb4d5eab547c65186cc2f69",
+    "served_sha256": "1794b8044d08f17750ab2749c82458e64182a98cebb4d5eab547c65186cc2f69",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v5/reeds.webp",
+    "bytes": 217286,
+    "sha256": "281fee795d7167712ddda45af71dd960b7c47ab419532eb1e4073a1d60967bd9",
+    "served_sha256": "281fee795d7167712ddda45af71dd960b7c47ab419532eb1e4073a1d60967bd9",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v5/npc-elder-male.webp",
+    "bytes": 119642,
+    "sha256": "e20008459b692cd8024bf8d859c01da733f8ad1f51b8f0207e59b2960f194161",
+    "served_sha256": "e20008459b692cd8024bf8d859c01da733f8ad1f51b8f0207e59b2960f194161",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/lh-redbank.webp",
+    "bytes": 179430,
+    "sha256": "c964698ca6915ce26ef8d6296e3ca665b47a8f52d2485c324a2f0b74b9d60d1a",
+    "served_sha256": "c964698ca6915ce26ef8d6296e3ca665b47a8f52d2485c324a2f0b74b9d60d1a",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/dongting-deck.webp",
+    "bytes": 311698,
+    "sha256": "fd5aee879717075e1c60ec7639f81110104ca66ab925256b1f7150837bed69be",
+    "served_sha256": "fd5aee879717075e1c60ec7639f81110104ca66ab925256b1f7150837bed69be",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/dt-chen.webp",
+    "bytes": 87024,
+    "sha256": "15fbc7af90b099f681c46953bf4e4dc3eb9e3f874cc23c50ec181c6fd35c7960",
+    "served_sha256": "15fbc7af90b099f681c46953bf4e4dc3eb9e3f874cc23c50ec181c6fd35c7960",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/dt-chen-intent.webp",
+    "bytes": 96120,
+    "sha256": "d9fd7958fa279fb81435f23aeea11ae496bbfb3ff624cb74019fd23fa6b05870",
+    "served_sha256": "d9fd7958fa279fb81435f23aeea11ae496bbfb3ff624cb74019fd23fa6b05870",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/dongting-raid.webp",
+    "bytes": 307086,
+    "sha256": "52dd38b36fe24b02bbdbaacb58365204fb5429ce022e1ed140ada0942824e169",
+    "served_sha256": "52dd38b36fe24b02bbdbaacb58365204fb5429ce022e1ed140ada0942824e169",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v5/bridge.webp",
+    "bytes": 311608,
+    "sha256": "b74272afa583d61a0043ffd355cbe35c1e296339a10a69f73f9b0e933a2d9cc4",
+    "served_sha256": "b74272afa583d61a0043ffd355cbe35c1e296339a10a69f73f9b0e933a2d9cc4",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/lh-townpractice.webp",
+    "bytes": 208644,
+    "sha256": "5ba0397b3ce2ef033959840037b5eced530dff8402701afd94e94576667b7041",
+    "served_sha256": "5ba0397b3ce2ef033959840037b5eced530dff8402701afd94e94576667b7041",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/lh-jiangling.webp",
+    "bytes": 159340,
+    "sha256": "f5fbd22ed31c5c38d77ddaf2f5efc81493820f7fb6e0f5f724bd05ce31bcc031",
+    "served_sha256": "f5fbd22ed31c5c38d77ddaf2f5efc81493820f7fb6e0f5f724bd05ce31bcc031",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/lh-pang.webp",
+    "bytes": 151444,
+    "sha256": "e5c5ab218de4dee36a2315e881153609e495a279515310abdfc025434b7f1434",
+    "served_sha256": "e5c5ab218de4dee36a2315e881153609e495a279515310abdfc025434b7f1434",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v5/storm.webp",
+    "bytes": 254768,
+    "sha256": "fb860941b46cd230411fe73f2f336c725430babe408712adbf94ea9c95b7a8f7",
+    "served_sha256": "fb860941b46cd230411fe73f2f336c725430babe408712adbf94ea9c95b7a8f7",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/npc-martial-elder-b.webp",
+    "bytes": 59420,
+    "sha256": "166f837ede9d81ea2f4208f4b8b64bed2cfcdc65ee5b9452fb90136cf588a22b",
+    "served_sha256": "166f837ede9d81ea2f4208f4b8b64bed2cfcdc65ee5b9452fb90136cf588a22b",
+    "matches_external_snapshot": true
+  },
+  {
+    "path": "/art/v6/taihua-steps.webp",
+    "bytes": 416610,
+    "sha256": "8b6e39198a2b546e8bee8372d55edacb5dd7aabfca2372ad3460e9b84e6fd04a",
+    "served_sha256": "8b6e39198a2b546e8bee8372d55edacb5dd7aabfca2372ad3460e9b84e6fd04a",
+    "matches_external_snapshot": true
+  }
+]

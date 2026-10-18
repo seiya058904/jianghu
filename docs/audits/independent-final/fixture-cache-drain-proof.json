@@ -1,0 +1,30 @@
+[
+  {
+    "root": "http://127.0.0.1:4173/",
+    "primary": "north-v1-3XiVHj3X.js",
+    "pendingAtNetworkIdle": 2,
+    "stateBeforeRelease": {
+      "pending": 2,
+      "held": 2
+    },
+    "barrierWasBlocked": true,
+    "pendingAfterDrain": 0,
+    "afterEvict": false,
+    "afterDownload": true,
+    "coldOfflineCover": true
+  },
+  {
+    "root": "http://127.0.0.1:4175/Jianghu/",
+    "primary": "north-v1-3XiVHj3X.js",
+    "pendingAtNetworkIdle": 2,
+    "stateBeforeRelease": {
+      "pending": 2,
+      "held": 2
+    },
+    "barrierWasBlocked": true,
+    "pendingAfterDrain": 0,
+    "afterEvict": false,
+    "afterDownload": true,
+    "coldOfflineCover": true
+  }
+]

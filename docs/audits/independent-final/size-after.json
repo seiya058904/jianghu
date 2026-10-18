@@ -1,23 +1,23 @@
 {
-  "head": "7a2c22f74c46d74f07af8bd1a45893ec15daa49b",
-  "all_bytes": 1411602358,
-  "allocated_bytes": 1419716864,
-  "git_bytes": 1146641100,
-  "worktree_bytes": 264961258,
-  "all_GiB": 1.3146571423858404,
-  "all_GB_decimal": 1.411602358,
+  "head": "a04d36a665416f45297a5c2a0191863bd0f44316",
+  "all_bytes": 1403277661,
+  "allocated_bytes": 1411713320,
+  "git_bytes": 1123264381,
+  "worktree_bytes": 280013280,
+  "all_GiB": 1.3069041641429067,
+  "all_GB_decimal": 1.403277661,
   "under_1GiB": false,
-  "files": 4621,
+  "files": 4789,
   "groups": {
     "(root)": {
       "files": 77,
-      "logical_bytes": 24642759,
-      "allocated_bytes": 24718336
+      "logical_bytes": 24611858,
+      "allocated_bytes": 24685936
     },
     ".git": {
-      "files": 97,
-      "logical_bytes": 1146641100,
-      "allocated_bytes": 1146780048
+      "files": 63,
+      "logical_bytes": 1123264381,
+      "allocated_bytes": 1123357464
     },
     ".github": {
       "files": 2,
@@ -35,14 +35,14 @@
       "allocated_bytes": 40960
     },
     "dist": {
-      "files": 338,
-      "logical_bytes": 35777674,
-      "allocated_bytes": 36545536
+      "files": 351,
+      "logical_bytes": 37008232,
+      "allocated_bytes": 37802496
     },
     "docs": {
-      "files": 1934,
-      "logical_bytes": 64039735,
-      "allocated_bytes": 67291272
+      "files": 2105,
+      "logical_bytes": 76616666,
+      "allocated_bytes": 80175032
     },
     "node_modules": {
       "files": 1343,
@@ -56,17 +56,17 @@
     },
     "scripts": {
       "files": 30,
-      "logical_bytes": 123845,
+      "logical_bytes": 125273,
       "allocated_bytes": 180224
     },
     "src": {
-      "files": 109,
-      "logical_bytes": 6375884,
-      "allocated_bytes": 6591512
+      "files": 123,
+      "logical_bytes": 7622881,
+      "allocated_bytes": 7865368
     },
     "story": {
       "files": 317,
-      "logical_bytes": 7786264,
+      "logical_bytes": 7787555,
       "allocated_bytes": 8462336
     },
     "test-results": {
@@ -185,9 +185,9 @@
       "allocated_bytes": 48
     },
     "tests": {
-      "files": 160,
-      "logical_bytes": 1062918,
-      "allocated_bytes": 1398368
+      "files": 164,
+      "logical_bytes": 1088636,
+      "allocated_bytes": 1435232
     }
   },
   "allocation_method": "FILE_STANDARD_INFO.AllocationSize, excludes directory metadata and shared-object deduplication"

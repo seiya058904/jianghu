@@ -1,0 +1,17 @@
+{
+  "sourceCommit": "ec53af4ec75f352b52ba6a85bd818510b890dc10",
+  "stats": {
+    "startTime": "2026-10-18T03:44:47.161Z",
+    "duration": 2194239.789,
+    "expected": 491,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "exitCode": 1,
+  "status": "FAIL_NOT_RELEASE_ACCEPTANCE",
+  "onlyFailure": "tests/player.spec.ts:153 original Half Step deferred auto-write contract",
+  "rawJson": "../Jianghu-independent-20261018/rc-final-e2e.json",
+  "rawJsonSHA256": "110973803635b941346cfe608e82a5073a86c2ae7ff4203a7f6d3bd91e211ab3",
+  "nextAction": "Narrow first-render migration write-back guard, preserve original assertion, rebuild and rerun entire suite on new RC."
+}

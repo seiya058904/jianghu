@@ -1,0 +1,9 @@
+{
+  "currentRC": "a04d36a665416f45297a5c2a0191863bd0f44316",
+  "priorProductRC": "fcef368840ab9d69795b481f2a42b9a0491affc8",
+  "productFiles": 669,
+  "allProductBytesIdentical": true,
+  "productFingerprint": "f6c49035c6ea5a20855e49bf76a930feabc30518eabcda760e4a2a4f3c84621d",
+  "distFingerprint": "15f4a874aa50d0bb3d72cececd2bec2c18e033e3b8f30c207577c93c0705d2c2",
+  "scope": "Only E2E fixture observation/synchronization changed. Runtime, catalog, authored story and art inputs remain byte-identical."
+}

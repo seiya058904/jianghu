@@ -1,0 +1,6 @@
+{
+  "sourceCommit": "bb514bb38edf4f20d7a79cb461cfcb28156ebeba",
+  "status": "ABORTED_NOT_FINAL_ACCEPTANCE",
+  "reason": "Public content preflight found one workstation-specific regex in existing provenance utility. Generalized without changing actual matches; RC3 complete run replaces this unfinished run.",
+  "log": "rc2-e2e.log"
+}

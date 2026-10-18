@@ -1,0 +1,1432 @@
+{
+  "source": "fcef368 frozen existing HTTP/dist; no source/spec/dist edits; independent browser contexts only",
+  "natural": [
+    {
+      "waitUntil": "load",
+      "run": 0,
+      "slug": "north",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298927457,
+          "done": 1792298927458
+        }
+      ],
+      "eviction": {
+        "start": 1792298927478,
+        "end": 1792298927479,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298927457,
+          "done": 1792298927458
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298927476,
+          "done": 1792298927477
+        }
+      ]
+    },
+    {
+      "waitUntil": "load",
+      "run": 0,
+      "slug": "north-v2",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298927659,
+          "done": 1792298927660
+        }
+      ],
+      "eviction": {
+        "start": 1792298927681,
+        "end": 1792298927685,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298927659,
+          "done": 1792298927660
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298927679,
+          "done": 1792298927681
+        }
+      ]
+    },
+    {
+      "waitUntil": "load",
+      "run": 0,
+      "slug": "north-v1",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298927823,
+          "done": 1792298927823
+        }
+      ],
+      "eviction": {
+        "start": 1792298927843,
+        "end": 1792298927846,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298927823,
+          "done": 1792298927823
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298927841,
+          "done": 1792298927843
+        }
+      ]
+    },
+    {
+      "waitUntil": "load",
+      "run": 1,
+      "slug": "north",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298928215,
+          "done": 1792298928216
+        }
+      ],
+      "eviction": {
+        "start": 1792298928235,
+        "end": 1792298928236,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298928215,
+          "done": 1792298928216
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298928233,
+          "done": 1792298928234
+        }
+      ]
+    },
+    {
+      "waitUntil": "load",
+      "run": 1,
+      "slug": "north-v2",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298928487,
+          "done": 1792298928488
+        }
+      ],
+      "eviction": {
+        "start": 1792298928507,
+        "end": 1792298928511,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298928487,
+          "done": 1792298928488
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298928505,
+          "done": 1792298928506
+        }
+      ]
+    },
+    {
+      "waitUntil": "load",
+      "run": 1,
+      "slug": "north-v1",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298928641,
+          "done": 1792298928641
+        }
+      ],
+      "eviction": {
+        "start": 1792298928660,
+        "end": 1792298928664,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298928641,
+          "done": 1792298928641
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298928660,
+          "done": 1792298928661
+        }
+      ]
+    },
+    {
+      "waitUntil": "load",
+      "run": 2,
+      "slug": "north",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298929017,
+          "done": 1792298929018
+        }
+      ],
+      "eviction": {
+        "start": 1792298929036,
+        "end": 1792298929037,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298929017,
+          "done": 1792298929018
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298929034,
+          "done": 1792298929035
+        }
+      ]
+    },
+    {
+      "waitUntil": "load",
+      "run": 2,
+      "slug": "north-v2",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298929292,
+          "done": 1792298929292
+        }
+      ],
+      "eviction": {
+        "start": 1792298929314,
+        "end": 1792298929314,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298929292,
+          "done": 1792298929292
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298929311,
+          "done": 1792298929312
+        }
+      ]
+    },
+    {
+      "waitUntil": "load",
+      "run": 2,
+      "slug": "north-v1",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298929462,
+          "done": 1792298929463
+        }
+      ],
+      "eviction": {
+        "start": 1792298929483,
+        "end": 1792298929485,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298929462,
+          "done": 1792298929463
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298929481,
+          "done": 1792298929482
+        }
+      ]
+    },
+    {
+      "waitUntil": "load",
+      "run": 3,
+      "slug": "north",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298929856,
+          "done": 1792298929857
+        }
+      ],
+      "eviction": {
+        "start": 1792298929875,
+        "end": 1792298929876,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298929856,
+          "done": 1792298929857
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298929874,
+          "done": 1792298929875
+        }
+      ]
+    },
+    {
+      "waitUntil": "load",
+      "run": 3,
+      "slug": "north-v2",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298930024,
+          "done": 1792298930025
+        }
+      ],
+      "eviction": {
+        "start": 1792298930045,
+        "end": 1792298930048,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298930024,
+          "done": 1792298930025
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298930044,
+          "done": 1792298930045
+        }
+      ]
+    },
+    {
+      "waitUntil": "load",
+      "run": 3,
+      "slug": "north-v1",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298930196,
+          "done": 1792298930197
+        }
+      ],
+      "eviction": {
+        "start": 1792298930217,
+        "end": 1792298930217,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298930196,
+          "done": 1792298930197
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298930214,
+          "done": 1792298930215
+        }
+      ]
+    },
+    {
+      "waitUntil": "load",
+      "run": 4,
+      "slug": "north",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298930585,
+          "done": 1792298930585
+        }
+      ],
+      "eviction": {
+        "start": 1792298930605,
+        "end": 1792298930605,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298930585,
+          "done": 1792298930585
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298930603,
+          "done": 1792298930604
+        }
+      ]
+    },
+    {
+      "waitUntil": "load",
+      "run": 4,
+      "slug": "north-v2",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298930860,
+          "done": 1792298930861
+        }
+      ],
+      "eviction": {
+        "start": 1792298930880,
+        "end": 1792298930883,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298930860,
+          "done": 1792298930861
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298930879,
+          "done": 1792298930880
+        }
+      ]
+    },
+    {
+      "waitUntil": "load",
+      "run": 4,
+      "slug": "north-v1",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298931018,
+          "done": 1792298931018
+        }
+      ],
+      "eviction": {
+        "start": 1792298931038,
+        "end": 1792298931041,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298931018,
+          "done": 1792298931018
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298931037,
+          "done": 1792298931038
+        }
+      ]
+    },
+    {
+      "waitUntil": "load",
+      "run": 5,
+      "slug": "north",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298931395,
+          "done": 1792298931395
+        }
+      ],
+      "eviction": {
+        "start": 1792298931414,
+        "end": 1792298931414,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298931395,
+          "done": 1792298931395
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298931412,
+          "done": 1792298931413
+        }
+      ]
+    },
+    {
+      "waitUntil": "load",
+      "run": 5,
+      "slug": "north-v2",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298931559,
+          "done": 1792298931560
+        }
+      ],
+      "eviction": {
+        "start": 1792298931579,
+        "end": 1792298931583,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298931559,
+          "done": 1792298931560
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298931579,
+          "done": 1792298931579
+        }
+      ]
+    },
+    {
+      "waitUntil": "load",
+      "run": 5,
+      "slug": "north-v1",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298931730,
+          "done": 1792298931731
+        }
+      ],
+      "eviction": {
+        "start": 1792298931749,
+        "end": 1792298931751,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298931730,
+          "done": 1792298931731
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298931749,
+          "done": 1792298931749
+        }
+      ]
+    },
+    {
+      "waitUntil": "networkidle",
+      "run": 0,
+      "slug": "north",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298932108,
+          "done": 1792298932109
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298932127,
+          "done": 1792298932128
+        }
+      ],
+      "eviction": {
+        "start": 1792298932651,
+        "end": 1792298932652,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298932108,
+          "done": 1792298932109
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298932127,
+          "done": 1792298932128
+        }
+      ]
+    },
+    {
+      "waitUntil": "networkidle",
+      "run": 0,
+      "slug": "north-v2",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298932798,
+          "done": 1792298932798
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298932816,
+          "done": 1792298932817
+        }
+      ],
+      "eviction": {
+        "start": 1792298933332,
+        "end": 1792298933333,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298932798,
+          "done": 1792298932798
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298932816,
+          "done": 1792298932817
+        }
+      ]
+    },
+    {
+      "waitUntil": "networkidle",
+      "run": 0,
+      "slug": "north-v1",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298933462,
+          "done": 1792298933463
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298933481,
+          "done": 1792298933482
+        }
+      ],
+      "eviction": {
+        "start": 1792298934000,
+        "end": 1792298934001,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298933462,
+          "done": 1792298933463
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298933481,
+          "done": 1792298933482
+        }
+      ]
+    },
+    {
+      "waitUntil": "networkidle",
+      "run": 1,
+      "slug": "north",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298934354,
+          "done": 1792298934355
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298934375,
+          "done": 1792298934376
+        }
+      ],
+      "eviction": {
+        "start": 1792298934902,
+        "end": 1792298934903,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298934354,
+          "done": 1792298934355
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298934375,
+          "done": 1792298934376
+        }
+      ]
+    },
+    {
+      "waitUntil": "networkidle",
+      "run": 1,
+      "slug": "north-v2",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298935046,
+          "done": 1792298935047
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298935066,
+          "done": 1792298935066
+        }
+      ],
+      "eviction": {
+        "start": 1792298935584,
+        "end": 1792298935585,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298935046,
+          "done": 1792298935047
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298935066,
+          "done": 1792298935066
+        }
+      ]
+    },
+    {
+      "waitUntil": "networkidle",
+      "run": 1,
+      "slug": "north-v1",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298935714,
+          "done": 1792298935715
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298935733,
+          "done": 1792298935734
+        }
+      ],
+      "eviction": {
+        "start": 1792298936247,
+        "end": 1792298936247,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298935714,
+          "done": 1792298935715
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298935733,
+          "done": 1792298935734
+        }
+      ]
+    },
+    {
+      "waitUntil": "networkidle",
+      "run": 2,
+      "slug": "north",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298936598,
+          "done": 1792298936599
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298936617,
+          "done": 1792298936618
+        }
+      ],
+      "eviction": {
+        "start": 1792298937132,
+        "end": 1792298937133,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298936598,
+          "done": 1792298936599
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298936617,
+          "done": 1792298936618
+        }
+      ]
+    },
+    {
+      "waitUntil": "networkidle",
+      "run": 2,
+      "slug": "north-v2",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298937279,
+          "done": 1792298937280
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298937299,
+          "done": 1792298937300
+        }
+      ],
+      "eviction": {
+        "start": 1792298937815,
+        "end": 1792298937816,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298937279,
+          "done": 1792298937280
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298937299,
+          "done": 1792298937300
+        }
+      ]
+    },
+    {
+      "waitUntil": "networkidle",
+      "run": 2,
+      "slug": "north-v1",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298937944,
+          "done": 1792298937945
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298937962,
+          "done": 1792298937963
+        }
+      ],
+      "eviction": {
+        "start": 1792298938484,
+        "end": 1792298938485,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298937944,
+          "done": 1792298937945
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298937962,
+          "done": 1792298937963
+        }
+      ]
+    },
+    {
+      "waitUntil": "networkidle",
+      "run": 3,
+      "slug": "north",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298938840,
+          "done": 1792298938841
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298938859,
+          "done": 1792298938859
+        }
+      ],
+      "eviction": {
+        "start": 1792298939372,
+        "end": 1792298939372,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298938840,
+          "done": 1792298938841
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298938859,
+          "done": 1792298938859
+        }
+      ]
+    },
+    {
+      "waitUntil": "networkidle",
+      "run": 3,
+      "slug": "north-v2",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298939520,
+          "done": 1792298939521
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298939541,
+          "done": 1792298939541
+        }
+      ],
+      "eviction": {
+        "start": 1792298940062,
+        "end": 1792298940063,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298939520,
+          "done": 1792298939521
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298939541,
+          "done": 1792298939541
+        }
+      ]
+    },
+    {
+      "waitUntil": "networkidle",
+      "run": 3,
+      "slug": "north-v1",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298940191,
+          "done": 1792298940191
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298940209,
+          "done": 1792298940209
+        }
+      ],
+      "eviction": {
+        "start": 1792298940726,
+        "end": 1792298940727,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298940191,
+          "done": 1792298940191
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298940209,
+          "done": 1792298940209
+        }
+      ]
+    },
+    {
+      "waitUntil": "networkidle",
+      "run": 4,
+      "slug": "north",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298941088,
+          "done": 1792298941089
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298941106,
+          "done": 1792298941106
+        }
+      ],
+      "eviction": {
+        "start": 1792298941631,
+        "end": 1792298941632,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298941088,
+          "done": 1792298941089
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298941106,
+          "done": 1792298941106
+        }
+      ]
+    },
+    {
+      "waitUntil": "networkidle",
+      "run": 4,
+      "slug": "north-v2",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298941778,
+          "done": 1792298941778
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298941797,
+          "done": 1792298941798
+        }
+      ],
+      "eviction": {
+        "start": 1792298942309,
+        "end": 1792298942310,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298941778,
+          "done": 1792298941778
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298941797,
+          "done": 1792298941798
+        }
+      ]
+    },
+    {
+      "waitUntil": "networkidle",
+      "run": 4,
+      "slug": "north-v1",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298942440,
+          "done": 1792298942441
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298942459,
+          "done": 1792298942460
+        }
+      ],
+      "eviction": {
+        "start": 1792298942975,
+        "end": 1792298942975,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298942440,
+          "done": 1792298942441
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298942459,
+          "done": 1792298942460
+        }
+      ]
+    },
+    {
+      "waitUntil": "networkidle",
+      "run": 5,
+      "slug": "north",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298943323,
+          "done": 1792298943324
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298943340,
+          "done": 1792298943341
+        }
+      ],
+      "eviction": {
+        "start": 1792298943860,
+        "end": 1792298943860,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298943323,
+          "done": 1792298943324
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-2QZgZAh9.js",
+          "start": 1792298943340,
+          "done": 1792298943341
+        }
+      ]
+    },
+    {
+      "waitUntil": "networkidle",
+      "run": 5,
+      "slug": "north-v2",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298944005,
+          "done": 1792298944005
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298944025,
+          "done": 1792298944026
+        }
+      ],
+      "eviction": {
+        "start": 1792298944539,
+        "end": 1792298944539,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298944005,
+          "done": 1792298944005
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v2-U_lNJrLH.js",
+          "start": 1792298944025,
+          "done": 1792298944026
+        }
+      ]
+    },
+    {
+      "waitUntil": "networkidle",
+      "run": 5,
+      "slug": "north-v1",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298944669,
+          "done": 1792298944669
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298944688,
+          "done": 1792298944688
+        }
+      ],
+      "eviction": {
+        "start": 1792298945203,
+        "end": 1792298945203,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": true
+          }
+        ]
+      },
+      "found": false,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298944669,
+          "done": 1792298944669
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298944688,
+          "done": 1792298944688
+        }
+      ]
+    }
+  ],
+  "controlled": [
+    {
+      "waitUntil": "load",
+      "slug": "north-v1",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298945552,
+          "done": null
+        }
+      ],
+      "eviction": {
+        "start": 1792298945573,
+        "end": 1792298945573,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": false
+          }
+        ]
+      },
+      "foundBeforeRelease": false,
+      "foundAfterRelease": true,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298945552,
+          "done": 1792298945578
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298945571,
+          "done": 1792298945578
+        }
+      ]
+    },
+    {
+      "waitUntil": "networkidle",
+      "slug": "north-v1",
+      "before": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298945822,
+          "done": null
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298945843,
+          "done": null
+        }
+      ],
+      "eviction": {
+        "start": 1792298946364,
+        "end": 1792298946365,
+        "deletes": [
+          {
+            "name": "jianghu-v6-shell-0.1",
+            "deleted": false
+          }
+        ]
+      },
+      "foundBeforeRelease": false,
+      "foundAfterRelease": true,
+      "after": [
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298945822,
+          "done": 1792298946367
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/north-v1-3XiVHj3X.js",
+          "start": 1792298945843,
+          "done": 1792298946367
+        }
+      ]
+    }
+  ]
+}

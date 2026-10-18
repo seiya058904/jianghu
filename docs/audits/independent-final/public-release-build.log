@@ -1,0 +1,246 @@
+
+> jianghu@1.0.0 build
+> npm run story:build && tsc --noEmit && vite build && node scripts/offline-manifest.mjs
+
+
+> jianghu@1.0.0 story:build
+> node scripts/compile-story.mjs
+
+Authored 22 chapter files; 1006 unique source beats.
+Taihua authored: 485 beats
+V6 preview: 1325 source beats; three midroutes and independent after-scenes.
+Ink main: 16805 source characters; 0 warnings
+Dialogue metadata: { beats: 108, choices: 28, endings: 3 }
+Ink duel: 12041 source characters; 0 warnings
+Campaign metadata: { beats: 1006, choices: 135, endings: 8 }
+Ink campaign: 122888 source characters; 0 warnings
+Taihua metadata: { beats: 485, choices: 63, endings: 3 }
+Ink taihua: 65432 source characters; 0 warnings
+V6 preview metadata: { beats: 1325, choices: 182, endings: 8 }
+Ink campaign-v6: 186345 source characters; 0 warnings
+Longmen metadata: { beats: 376, choices: 50, endings: 2 }
+Ink longmen: 50477 source characters; 0 warnings
+Dongting metadata: { beats: 167, choices: 22, endings: 2 }
+Ink dongting: 23936 source characters; 0 warnings
+Twelfth metadata: { beats: 258, choices: 36, endings: 2 }
+Ink twelfth: 34813 source characters; 0 warnings
+Kuhe metadata: { beats: 336, choices: 40, endings: 2 }
+Ink kuhe: 44513 source characters; 0 warnings
+Qingshi metadata: { beats: 461, choices: 60, endings: 2 }
+Ink qingshi: 63484 source characters; 0 warnings
+Two Swords metadata: { beats: 350, choices: 50, endings: 2 }
+Ink two-swords: 49115 source characters; 0 warnings
+Seven Questions metadata: { beats: 416, choices: 62, endings: 2 }
+Ink seven-questions: 59729 source characters; 0 warnings
+Jade Thieves metadata: { beats: 324, choices: 45, endings: 2 }
+Ink jade-thieves: 44201 source characters; 0 warnings
+Jade metadata: { beats: 360, choices: 68, endings: 2 }
+Ink jade: 55431 source characters; 0 warnings
+Sea metadata: { beats: 287, choices: 46, endings: 2 }
+Ink sea: 42884 source characters; 0 warnings
+Sea Tide metadata: { beats: 259, choices: 42, endings: 2 }
+Ink sea-tide: 38095 source characters; 0 warnings
+North metadata: { beats: 384, choices: 62, endings: 2 }
+Ink north: 55961 source characters; 0 warnings
+qian-kun metadata: { beats: 344, choices: 50, endings: 2 }
+Ink qian-kun: 50000 source characters; 0 warnings
+north-notes metadata: { beats: 77, choices: 12, endings: 2 }
+Ink north-notes: 10651 source characters; 0 warnings
+dead-ranking metadata: { beats: 428, choices: 72, endings: 2 }
+Ink dead-ranking: 65920 source characters; 0 warnings
+luhua metadata: { beats: 306, choices: 50, endings: 2 }
+Ink luhua: 46738 source characters; 0 warnings
+twelfth-life metadata: { beats: 439, choices: 68, endings: 2 }
+Ink twelfth-life: 62652 source characters; 0 warnings
+luoyang metadata: { beats: 100, choices: 18, endings: 2 }
+Ink luoyang: 15236 source characters; 0 warnings
+bamboo metadata: { beats: 110, choices: 14, endings: 2 }
+Ink bamboo: 15628 source characters; 0 warnings
+xuanmen metadata: { beats: 142, choices: 22, endings: 2 }
+Ink xuanmen: 19706 source characters; 0 warnings
+white-stone metadata: { beats: 168, choices: 26, endings: 2 }
+Ink white-stone: 24047 source characters; 0 warnings
+beyond-ranking metadata: { beats: 130, choices: 18, endings: 2 }
+Ink beyond-ranking: 18311 source characters; 0 warnings
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 169 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/gallery.html                                            0.68 kB │ gzip:  0.40 kB
+dist/legacy.html                                             0.76 kB │ gzip:  0.49 kB
+dist/bamboo.html                                             0.91 kB │ gzip:  0.44 kB
+dist/dead-ranking.html                                       0.91 kB │ gzip:  0.44 kB
+dist/north-notes.html                                        0.91 kB │ gzip:  0.44 kB
+dist/north-v1.html                                           0.91 kB │ gzip:  0.44 kB
+dist/north.html                                              0.91 kB │ gzip:  0.44 kB
+dist/white-stone.html                                        0.91 kB │ gzip:  0.44 kB
+dist/jade.html                                               0.92 kB │ gzip:  0.45 kB
+dist/luoyang.html                                            0.92 kB │ gzip:  0.46 kB
+dist/north-v2.html                                           0.92 kB │ gzip:  0.45 kB
+dist/luhua.html                                              0.92 kB │ gzip:  0.45 kB
+dist/qingshi-v1.html                                         0.92 kB │ gzip:  0.46 kB
+dist/taihua-v1.html                                          0.92 kB │ gzip:  0.45 kB
+dist/twelfth-life-v1.html                                    0.92 kB │ gzip:  0.45 kB
+dist/jade-thieves.html                                       0.93 kB │ gzip:  0.46 kB
+dist/qingshi.html                                            0.93 kB │ gzip:  0.46 kB
+dist/sea-tide-v1.html                                        0.93 kB │ gzip:  0.46 kB
+dist/sea-tide.html                                           0.93 kB │ gzip:  0.46 kB
+dist/twelfth-life.html                                       0.93 kB │ gzip:  0.46 kB
+dist/jade-v1.html                                            0.93 kB │ gzip:  0.46 kB
+dist/sea-v1.html                                             0.93 kB │ gzip:  0.46 kB
+dist/sea.html                                                0.93 kB │ gzip:  0.46 kB
+dist/seven-questions-v1.html                                 0.93 kB │ gzip:  0.46 kB
+dist/seven-questions.html                                    0.93 kB │ gzip:  0.46 kB
+dist/two-swords-v1.html                                      0.93 kB │ gzip:  0.46 kB
+dist/two-swords.html                                         0.93 kB │ gzip:  0.46 kB
+dist/qian-kun-v1.html                                        0.93 kB │ gzip:  0.47 kB
+dist/qian-kun.html                                           0.93 kB │ gzip:  0.47 kB
+dist/beyond-ranking.html                                     0.93 kB │ gzip:  0.47 kB
+dist/jade-thieves-v1.html                                    0.93 kB │ gzip:  0.47 kB
+dist/qingshi-v2.html                                         0.93 kB │ gzip:  0.47 kB
+dist/twelfth-life-v2.html                                    0.93 kB │ gzip:  0.46 kB
+dist/xuanmen.html                                            0.94 kB │ gzip:  0.48 kB
+dist/qian-kun-v2.html                                        0.94 kB │ gzip:  0.48 kB
+dist/index.html                                              0.99 kB │ gzip:  0.59 kB
+dist/twelfth.html                                            1.03 kB │ gzip:  0.55 kB
+dist/dongting.html                                           1.05 kB │ gzip:  0.55 kB
+dist/longmen.html                                            1.05 kB │ gzip:  0.56 kB
+dist/longmen-v2.html                                         1.07 kB │ gzip:  0.58 kB
+dist/longmen-v1.html                                         1.07 kB │ gzip:  0.57 kB
+dist/taihua.html                                             1.10 kB │ gzip:  0.57 kB
+dist/taihua-v2.html                                          1.12 kB │ gzip:  0.59 kB
+dist/kuhe.html                                               1.14 kB │ gzip:  0.61 kB
+dist/kuhe-v1.html                                            1.15 kB │ gzip:  0.62 kB
+dist/tide-v6.html                                            1.15 kB │ gzip:  0.58 kB
+dist/kuhe-v2.html                                            1.16 kB │ gzip:  0.63 kB
+dist/half-step.html                                          1.16 kB │ gzip:  0.57 kB
+dist/tide-v5.html                                            1.16 kB │ gzip:  0.58 kB
+dist/assets/main-u1alis0-.css                                9.82 kB │ gzip:  2.68 kB
+dist/assets/legacy-XU3Xbdty.css                             11.68 kB │ gzip:  3.45 kB
+dist/assets/catalog-BbsrsVBy.css                            28.54 kB │ gzip:  6.07 kB
+dist/assets/modulepreload-polyfill-P2Xu9kJm.js               0.67 kB │ gzip:  0.38 kB
+dist/assets/gallery-DA-pyLB7.js                              2.85 kB │ gzip:  1.41 kB
+dist/assets/main-sGjqMVMY.js                                 8.66 kB │ gzip:  3.69 kB
+dist/assets/catalog-BtET8AA6.js                             16.71 kB │ gzip:  7.85 kB
+dist/assets/work-index-BmvMq2vW.js                          18.39 kB │ gzip:  7.44 kB
+dist/assets/north-notes-DNEkqpxw.js                         22.30 kB │ gzip:  5.95 kB
+dist/assets/luoyang-CQYnDRKq.js                             30.77 kB │ gzip:  8.12 kB
+dist/assets/bamboo-DUD_3ZWl.js                              31.70 kB │ gzip:  8.11 kB
+dist/assets/beyond-ranking-HLmMBjgq.js                      36.49 kB │ gzip:  8.41 kB
+dist/assets/xuanmen-BBcPYq4X.js                             41.87 kB │ gzip: 10.93 kB
+dist/assets/xuanmen-rPC3edje.js                             41.96 kB │ gzip: 10.99 kB
+dist/assets/dongting-D-IewDpE.js                            47.41 kB │ gzip: 11.38 kB
+dist/assets/dongting-CoUDceCQ.js                            48.19 kB │ gzip: 11.56 kB
+dist/assets/white-stone-Bhy3bdOw.js                         50.14 kB │ gzip: 12.77 kB
+dist/assets/white-stone-DP6C0uvg.js                         50.44 kB │ gzip: 13.00 kB
+dist/assets/sea-tide-before-rigging-l3DbwTpP.js             63.48 kB │ gzip: 16.49 kB
+dist/assets/sea-tide-v1-Deaj2zDg.js                         63.63 kB │ gzip: 16.55 kB
+dist/assets/legacy-BJbLw5vp.js                              66.45 kB │ gzip: 28.44 kB
+dist/assets/sea-before-rigging-BPDJ9qbe.js                  70.17 kB │ gzip: 18.25 kB
+dist/assets/twelfth-B8U_fPjp.js                             70.19 kB │ gzip: 16.09 kB
+dist/assets/twelfth-D_fCPHVZ.js                             70.19 kB │ gzip: 16.08 kB
+dist/assets/sea-v1-C9OoPrt5.js                              70.40 kB │ gzip: 18.32 kB
+dist/assets/longmen-v1-B-Dq3A95.js                          71.37 kB │ gzip: 16.24 kB
+dist/assets/sea-tide-before-child-Ci_CD4WV.js               73.24 kB │ gzip: 18.69 kB
+dist/assets/qian-kun-v1-CB4VJfgz.js                         74.41 kB │ gzip: 18.92 kB
+dist/assets/taihua-v1-Bx-Fjr3h.js                           75.11 kB │ gzip: 15.48 kB
+dist/assets/jade-thieves-before-cg-41CIyEqZ.js              75.31 kB │ gzip: 18.88 kB
+dist/assets/qian-kun-v2-_d1BWB_g.js                         75.38 kB │ gzip: 19.06 kB
+dist/assets/jade-thieves-v1-Du-9K4yW.js                     75.55 kB │ gzip: 18.98 kB
+dist/assets/kuhe-v1-B3nnr8hF.js                             77.57 kB │ gzip: 17.57 kB
+dist/assets/kuhe-v2-BCK9CfnA.js                             78.01 kB │ gzip: 17.70 kB
+dist/assets/sea-tide-DvMAemcK.js                            80.13 kB │ gzip: 20.03 kB
+dist/assets/sea-BNqsbFmH.js                                 88.84 kB │ gzip: 22.19 kB
+dist/assets/sea-DWHUBo75.js                                 88.87 kB │ gzip: 22.20 kB
+dist/assets/kuhe-kXO3o7pe.js                                89.52 kB │ gzip: 20.21 kB
+dist/assets/longmen-v2-Bz_PoGs3.js                          89.99 kB │ gzip: 20.18 kB
+dist/assets/two-swords-before-art-Cc8iQ0sp.js               91.10 kB │ gzip: 22.10 kB
+dist/assets/two-swords-v1-BNc0T1Ax.js                       91.29 kB │ gzip: 22.18 kB
+dist/assets/north-v1-3XiVHj3X.js                            93.14 kB │ gzip: 23.97 kB
+dist/assets/north-v2-U_lNJrLH.js                            93.49 kB │ gzip: 24.08 kB
+dist/assets/jade-thieves-M8G-OuhI.js                        93.55 kB │ gzip: 23.17 kB
+dist/assets/luhua-BfUxd7oS.js                               95.34 kB │ gzip: 24.89 kB
+dist/assets/jade-before-cg-BzcHDdQg.js                      95.88 kB │ gzip: 26.35 kB
+dist/assets/jade-v1-D2hpuAEc.js                             96.03 kB │ gzip: 26.43 kB
+dist/assets/luhua-C6MYLTjB.js                               98.22 kB │ gzip: 25.58 kB
+dist/assets/player-z58nGABJ.js                              98.59 kB │ gzip: 25.66 kB
+dist/assets/two-swords-CBk34Dfb.js                          99.63 kB │ gzip: 24.23 kB
+dist/assets/qian-kun-CEDRyIWh.js                           102.03 kB │ gzip: 25.01 kB
+dist/assets/qian-kun-Chgozn-a.js                           102.03 kB │ gzip: 25.01 kB
+dist/assets/longmen-CZCxkeHl.js                            103.96 kB │ gzip: 23.21 kB
+dist/assets/longmen-DsptNtDJ.js                            103.97 kB │ gzip: 23.21 kB
+dist/assets/twelfth-life-v1-Du_HZ577.js                    106.55 kB │ gzip: 27.46 kB
+dist/assets/twelfth-life-before-cg-Bs4lCK0J.js             106.73 kB │ gzip: 27.47 kB
+dist/assets/twelfth-life-v2-D584i6q5.js                    106.81 kB │ gzip: 27.51 kB
+dist/assets/seven-questions-v1-CRKKjF8R.js                 110.72 kB │ gzip: 28.57 kB
+dist/assets/qingshi-v1-D7L0dlDb.js                         110.94 kB │ gzip: 25.34 kB
+dist/assets/qingshi-v2-BwUstz2D.js                         111.07 kB │ gzip: 25.39 kB
+dist/assets/seven-questions-before-books-cg-HnjLifKh.js    113.00 kB │ gzip: 29.27 kB
+dist/assets/taihua-v2-DRO33qiJ.js                          116.04 kB │ gzip: 25.37 kB
+dist/assets/north-DGFsOBqg.js                              117.14 kB │ gzip: 29.40 kB
+dist/assets/north-2QZgZAh9.js                              117.28 kB │ gzip: 29.43 kB
+dist/assets/jade-CfFZNrbl.js                               118.09 kB │ gzip: 31.35 kB
+dist/assets/jade-BUTPcyvd.js                               118.55 kB │ gzip: 31.46 kB
+dist/assets/seven-questions-BFV0-kFN.js                    124.16 kB │ gzip: 31.52 kB
+dist/assets/seven-questions-CYSp3ZEa.js                    124.43 kB │ gzip: 31.60 kB
+dist/assets/ink-DJNFVVIJ.js                                127.08 kB │ gzip: 31.29 kB
+dist/assets/qingshi-BLpDNPet.js                            128.18 kB │ gzip: 29.15 kB
+dist/assets/twelfth-life-DtAd1RNi.js                       128.89 kB │ gzip: 32.63 kB
+dist/assets/twelfth-life-BWv8u7e-.js                       128.89 kB │ gzip: 32.63 kB
+dist/assets/taihua-Btssk8rO.js                             133.62 kB │ gzip: 28.91 kB
+dist/assets/dead-ranking-DONmXZXG.js                       134.92 kB │ gzip: 33.93 kB
+dist/assets/chronicle-catalog-56xv3GiH.js                  136.93 kB │ gzip: 51.64 kB
+dist/assets/dead-ranking-DsgkqOyq.js                       137.38 kB │ gzip: 34.33 kB
+dist/assets/campaign-BPNnmm3Z.js                           246.82 kB │ gzip: 53.70 kB
+dist/assets/campaign-v5-1.0.0-BPNnmm3Z.js                  246.82 kB │ gzip: 53.70 kB
+dist/assets/campaign-v6-before-ending-staging-CZt1BII1.js  352.99 kB │ gzip: 73.92 kB
+dist/assets/campaign-v6-Ct-yMjRt.js                        353.32 kB │ gzip: 73.98 kB
+
+✓ built in 438ms
+Offline kuhe: 19 URLs, requested by the player.
+Offline kuhe-v2: 19 URLs, requested by the player.
+Offline kuhe-v1: 15 URLs, requested by the player.
+Offline qingshi: 34 URLs, requested by the player.
+Offline qingshi-v2: 34 URLs, requested by the player.
+Offline qingshi-v1: 33 URLs, requested by the player.
+Offline two-swords: 23 URLs, requested by the player.
+Offline two-swords-v1: 24 URLs, requested by the player.
+Offline seven-questions: 25 URLs, requested by the player.
+Offline seven-questions-v1: 22 URLs, requested by the player.
+Offline jade-thieves: 19 URLs, requested by the player.
+Offline jade-thieves-v1: 20 URLs, requested by the player.
+Offline jade: 26 URLs, requested by the player.
+Offline jade-v1: 26 URLs, requested by the player.
+Offline sea: 25 URLs, requested by the player.
+Offline sea-v1: 25 URLs, requested by the player.
+Offline sea-tide: 25 URLs, requested by the player.
+Offline sea-tide-v1: 25 URLs, requested by the player.
+Offline north: 22 URLs, requested by the player.
+Offline north-v2: 21 URLs, requested by the player.
+Offline north-v1: 18 URLs, requested by the player.
+Offline qian-kun: 30 URLs, requested by the player.
+Offline qian-kun-v2: 29 URLs, requested by the player.
+Offline qian-kun-v1: 23 URLs, requested by the player.
+Offline north-notes: 9 URLs, requested by the player.
+Offline dead-ranking: 26 URLs, requested by the player.
+Offline luhua: 33 URLs, requested by the player.
+Offline twelfth-life: 37 URLs, requested by the player.
+Offline twelfth-life-v2: 37 URLs, requested by the player.
+Offline twelfth-life-v1: 30 URLs, requested by the player.
+Offline luoyang: 23 URLs, requested by the player.
+Offline bamboo: 8 URLs, requested by the player.
+Offline xuanmen: 16 URLs, requested by the player.
+Offline white-stone: 16 URLs, requested by the player.
+Offline beyond-ranking: 6 URLs, requested by the player.
+Offline taihua: 25 URLs, requested by the player.
+Offline taihua-v2: 25 URLs, requested by the player.
+Offline taihua-v1: 23 URLs, requested by the player.
+Offline longmen: 24 URLs, requested by the player.
+Offline longmen-v2: 23 URLs, requested by the player.
+Offline longmen-v1: 21 URLs, requested by the player.
+Offline dongting: 20 URLs, requested by the player.
+Offline twelfth: 24 URLs, requested by the player.
+Offline tide-v6: 63 URLs, requested by the player.
+Offline shell and legacy cache: 69 URLs; new works excluded.
+BUILD_EXIT=0

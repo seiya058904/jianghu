@@ -1,0 +1,83 @@
+{
+  "head": "526c4eb1b4c236767383c16ae774335b9b487c2f",
+  "all_bytes": 258668530,
+  "allocated_bytes": 265922232,
+  "git_bytes": 46553316,
+  "worktree_bytes": 212115214,
+  "all_GiB": 0.24090384133160114,
+  "all_GB_decimal": 0.25866853,
+  "under_1GiB": true,
+  "files": 4119,
+  "groups": {
+    "(root)": {
+      "files": 76,
+      "logical_bytes": 731427,
+      "allocated_bytes": 802160
+    },
+    ".git": {
+      "files": 33,
+      "logical_bytes": 46553316,
+      "allocated_bytes": 46587768
+    },
+    ".github": {
+      "files": 2,
+      "logical_bytes": 5259,
+      "allocated_bytes": 8192
+    },
+    ".impeccable": {
+      "files": 7,
+      "logical_bytes": 3448762,
+      "allocated_bytes": 3461120
+    },
+    "dist": {
+      "files": 351,
+      "logical_bytes": 37008232,
+      "allocated_bytes": 37802496
+    },
+    "docs": {
+      "files": 1497,
+      "logical_bytes": 32680641,
+      "allocated_bytes": 35149312
+    },
+    "node_modules": {
+      "files": 1343,
+      "logical_bytes": 92095984,
+      "allocated_bytes": 94307952
+    },
+    "public": {
+      "files": 177,
+      "logical_bytes": 29524607,
+      "allocated_bytes": 29872360
+    },
+    "scripts": {
+      "files": 30,
+      "logical_bytes": 125273,
+      "allocated_bytes": 180224
+    },
+    "src": {
+      "files": 123,
+      "logical_bytes": 7622881,
+      "allocated_bytes": 7865368
+    },
+    "story": {
+      "files": 317,
+      "logical_bytes": 7787555,
+      "allocated_bytes": 8462336
+    },
+    "tests": {
+      "files": 163,
+      "logical_bytes": 1084593,
+      "allocated_bytes": 1422944
+    }
+  },
+  "allocation_method": "FILE_STANDARD_INFO.AllocationSize, excludes directory metadata and shared-object deduplication",
+  "measurementAlgorithmSHA256": "82d3e698e0aba50d4ca59f852bf0e35043120ab80f9080881892387cedfc4e76",
+  "onlyProbeChanges": "Root and report output directory parameters; identical allocation/count algorithm",
+  "proposalOnlyNotCurrentAuthor": true,
+  "sourceCommit": "fcef368840ab9d69795b481f2a42b9a0491affc8",
+  "coldInstallExit": 0,
+  "buildExit": 0,
+  "unitPassed": 474,
+  "unitFailed": 0,
+  "privateMissingWarnings": false
+}

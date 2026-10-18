@@ -1,0 +1,16 @@
+{
+  "sourceCommit": "a04d36a665416f45297a5c2a0191863bd0f44316",
+  "publicCommit": "9885dfedb780540ea51b97c1692ccd209be12232",
+  "coldInstallExit": 0,
+  "buildExit": 0,
+  "unitPassed": 474,
+  "unitFailed": 0,
+  "unitExit": 0,
+  "allPlanFileHashesUnchangedAfterBuildAndTest": true,
+  "authorDistFiles": 351,
+  "publicDistFiles": 351,
+  "allDistFileHashesIdentical": true,
+  "privateArchiveIntegrity": "PARTIAL: intentionally excluded private paths are explicitly warned, not asserted in the public mirror",
+  "missingReport": "public-missing-baselines-acceptance.json",
+  "missingPrivateBaselinePaths": 40
+}

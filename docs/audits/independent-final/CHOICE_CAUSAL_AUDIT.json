@@ -1,6 +1,6 @@
 {
   "kind": "B_RUNTIME_NOT_BROWSER_OR_HUMAN_ACCEPTANCE",
-  "walksPerEdition": 80,
+  "walksPerEdition": 600,
   "coverage": "deterministic novelty-guided samples and per-observed-choice paired replay; not exhaustive all state combinations",
   "choices": [
     {
@@ -10916,20 +10916,20 @@
       "comparison": {
         "otherCid": "sq_watch_margin",
         "prefixChoices": [
-          "choice:sq_joint_nanyue",
+          "choice:sq_joint_jinling",
           "choice:sq_keep_unknown",
           "choice:sq_ask_margin",
           "choice:sq_send_with_witness",
           "choice:sq_clear_door",
           "choice:sq_call_clear",
-          "choice:sq_first_owner",
-          "choice:sq_keep_last_words",
+          "choice:sq_add_second_test",
+          "choice:sq_help_bereaved",
           "choice:sq_sit_by_jinling",
           "choice:sq_ask_receiver",
           "choice:sq_check_injured",
-          "choice:sq_deliver_risk",
-          "choice:sq_check_shipping",
-          "choice:sq_walk_water",
+          "choice:sq_deliver_sources",
+          "choice:sq_link_without_merge",
+          "choice:sq_set_relay",
           "choice:sq_hold_courtyard"
         ],
         "suffixPolicy": "same first offered choice in each run",
@@ -10972,20 +10972,20 @@
       "comparison": {
         "otherCid": "sq_keep_back_gate",
         "prefixChoices": [
-          "choice:sq_joint_nanyue",
+          "choice:sq_joint_jinling",
           "choice:sq_keep_unknown",
           "choice:sq_ask_margin",
           "choice:sq_send_with_witness",
           "choice:sq_clear_door",
           "choice:sq_call_clear",
-          "choice:sq_first_owner",
-          "choice:sq_keep_last_words",
+          "choice:sq_add_second_test",
+          "choice:sq_help_bereaved",
           "choice:sq_sit_by_jinling",
           "choice:sq_ask_receiver",
           "choice:sq_check_injured",
-          "choice:sq_deliver_risk",
-          "choice:sq_check_shipping",
-          "choice:sq_walk_water",
+          "choice:sq_deliver_sources",
+          "choice:sq_link_without_merge",
+          "choice:sq_set_relay",
           "choice:sq_hold_courtyard"
         ],
         "suffixPolicy": "same first offered choice in each run",
@@ -11028,20 +11028,20 @@
       "comparison": {
         "otherCid": "sq_hold_seals",
         "prefixChoices": [
-          "choice:sq_joint_nanyue",
+          "choice:sq_joint_jinling",
           "choice:sq_keep_unknown",
           "choice:sq_ask_margin",
           "choice:sq_send_with_witness",
           "choice:sq_clear_door",
           "choice:sq_call_clear",
-          "choice:sq_first_owner",
-          "choice:sq_keep_last_words",
+          "choice:sq_add_second_test",
+          "choice:sq_help_bereaved",
           "choice:sq_sit_by_jinling",
           "choice:sq_ask_receiver",
           "choice:sq_check_injured",
-          "choice:sq_deliver_risk",
-          "choice:sq_check_shipping",
-          "choice:sq_walk_water",
+          "choice:sq_deliver_sources",
+          "choice:sq_link_without_merge",
+          "choice:sq_set_relay",
           "choice:sq_hold_courtyard",
           "choice:sq_keep_back_gate"
         ],
@@ -11085,20 +11085,20 @@
       "comparison": {
         "otherCid": "sq_answer_rear",
         "prefixChoices": [
-          "choice:sq_joint_nanyue",
+          "choice:sq_joint_jinling",
           "choice:sq_keep_unknown",
           "choice:sq_ask_margin",
           "choice:sq_send_with_witness",
           "choice:sq_clear_door",
           "choice:sq_call_clear",
-          "choice:sq_first_owner",
-          "choice:sq_keep_last_words",
+          "choice:sq_add_second_test",
+          "choice:sq_help_bereaved",
           "choice:sq_sit_by_jinling",
           "choice:sq_ask_receiver",
           "choice:sq_check_injured",
-          "choice:sq_deliver_risk",
-          "choice:sq_check_shipping",
-          "choice:sq_walk_water",
+          "choice:sq_deliver_sources",
+          "choice:sq_link_without_merge",
+          "choice:sq_set_relay",
           "choice:sq_hold_courtyard",
           "choice:sq_keep_back_gate"
         ],
@@ -11146,20 +11146,20 @@
       "comparison": {
         "otherCid": "sq_relieved_shift",
         "prefixChoices": [
-          "choice:sq_joint_nanyue",
+          "choice:sq_joint_jinling",
           "choice:sq_keep_unknown",
           "choice:sq_ask_margin",
           "choice:sq_send_with_witness",
           "choice:sq_clear_door",
           "choice:sq_call_clear",
-          "choice:sq_first_owner",
-          "choice:sq_keep_last_words",
+          "choice:sq_add_second_test",
+          "choice:sq_help_bereaved",
           "choice:sq_sit_by_jinling",
           "choice:sq_ask_receiver",
           "choice:sq_check_injured",
-          "choice:sq_deliver_risk",
-          "choice:sq_check_shipping",
-          "choice:sq_walk_water",
+          "choice:sq_deliver_sources",
+          "choice:sq_link_without_merge",
+          "choice:sq_set_relay",
           "choice:sq_hold_courtyard",
           "choice:sq_keep_back_gate",
           "choice:sq_answer_rear"
@@ -11208,20 +11208,20 @@
       "comparison": {
         "otherCid": "sq_mark_missing",
         "prefixChoices": [
-          "choice:sq_joint_nanyue",
+          "choice:sq_joint_jinling",
           "choice:sq_keep_unknown",
           "choice:sq_ask_margin",
           "choice:sq_send_with_witness",
           "choice:sq_clear_door",
           "choice:sq_call_clear",
-          "choice:sq_first_owner",
-          "choice:sq_keep_last_words",
+          "choice:sq_add_second_test",
+          "choice:sq_help_bereaved",
           "choice:sq_sit_by_jinling",
           "choice:sq_ask_receiver",
           "choice:sq_check_injured",
-          "choice:sq_deliver_risk",
-          "choice:sq_check_shipping",
-          "choice:sq_walk_water",
+          "choice:sq_deliver_sources",
+          "choice:sq_link_without_merge",
+          "choice:sq_set_relay",
           "choice:sq_hold_courtyard",
           "choice:sq_keep_back_gate",
           "choice:sq_answer_rear"
@@ -11253,20 +11253,20 @@
       "comparison": {
         "otherCid": "sq_pair_arrivals",
         "prefixChoices": [
-          "choice:sq_joint_nanyue",
+          "choice:sq_joint_jinling",
           "choice:sq_keep_unknown",
           "choice:sq_ask_margin",
           "choice:sq_send_with_witness",
           "choice:sq_clear_door",
           "choice:sq_call_clear",
-          "choice:sq_first_owner",
-          "choice:sq_keep_last_words",
+          "choice:sq_add_second_test",
+          "choice:sq_help_bereaved",
           "choice:sq_sit_by_jinling",
           "choice:sq_ask_receiver",
           "choice:sq_check_injured",
-          "choice:sq_deliver_risk",
-          "choice:sq_check_shipping",
-          "choice:sq_walk_water",
+          "choice:sq_deliver_sources",
+          "choice:sq_link_without_merge",
+          "choice:sq_set_relay",
           "choice:sq_hold_courtyard",
           "choice:sq_keep_back_gate",
           "choice:sq_answer_rear",
@@ -11296,20 +11296,20 @@
       "comparison": {
         "otherCid": "sq_report_seen_court",
         "prefixChoices": [
-          "choice:sq_joint_nanyue",
+          "choice:sq_joint_jinling",
           "choice:sq_keep_unknown",
           "choice:sq_ask_margin",
           "choice:sq_send_with_witness",
           "choice:sq_clear_door",
           "choice:sq_call_clear",
-          "choice:sq_first_owner",
-          "choice:sq_keep_last_words",
+          "choice:sq_add_second_test",
+          "choice:sq_help_bereaved",
           "choice:sq_sit_by_jinling",
           "choice:sq_ask_receiver",
           "choice:sq_check_injured",
-          "choice:sq_deliver_risk",
-          "choice:sq_check_shipping",
-          "choice:sq_walk_water",
+          "choice:sq_deliver_sources",
+          "choice:sq_link_without_merge",
+          "choice:sq_set_relay",
           "choice:sq_hold_courtyard",
           "choice:sq_keep_back_gate",
           "choice:sq_answer_rear",
@@ -17413,7 +17413,7 @@
           "choice:jd_sort_old_names",
           "choice:jd_take_verified_copy",
           "choice:jd_bring_archive",
-          "choice:jd_show_salt",
+          "choice:jd_answer_pickle",
           "choice:jd_read_dark_first",
           "choice:jd_match_supplies",
           "choice:jd_tell_empty"
@@ -17467,7 +17467,7 @@
           "choice:jd_sort_old_names",
           "choice:jd_take_verified_copy",
           "choice:jd_bring_archive",
-          "choice:jd_show_salt",
+          "choice:jd_answer_pickle",
           "choice:jd_read_dark_first",
           "choice:jd_match_supplies",
           "choice:jd_tell_empty"
@@ -28986,6 +28986,10 @@
               "text": "- dr_first_sword == 1 and dr_second_sword == 1 and dr_third_sword == 1:"
             },
             {
+              "line": 196,
+              "text": "八十三那场，{dr_first_sword == 2:你把承重的左脚真交出去。|你借追来的力转回右侧。}六十九那场，{dr_second_sword == 2:你留空看他真怎样试。|你先等他真正递手。}一百一十四那场，{dr_third_sword == 2:你留着能停的一手。|你从刀背细处转开。}三种走法拼起来像，却不在同一只手里。 # beat:dr_s"
+            },
+            {
               "line": 200,
               "text": "- dr_first_sword == 2:"
             }
@@ -29032,6 +29036,10 @@
             {
               "line": 192,
               "text": "- dr_first_sword == 1 and dr_second_sword == 1 and dr_third_sword == 1:"
+            },
+            {
+              "line": 196,
+              "text": "八十三那场，{dr_first_sword == 2:你把承重的左脚真交出去。|你借追来的力转回右侧。}六十九那场，{dr_second_sword == 2:你留空看他真怎样试。|你先等他真正递手。}一百一十四那场，{dr_third_sword == 2:你留着能停的一手。|你从刀背细处转开。}三种走法拼起来像，却不在同一只手里。 # beat:dr_s"
             },
             {
               "line": 200,
@@ -29170,6 +29178,10 @@
             {
               "line": 192,
               "text": "- dr_first_sword == 1 and dr_second_sword == 1 and dr_third_sword == 1:"
+            },
+            {
+              "line": 196,
+              "text": "八十三那场，{dr_first_sword == 2:你把承重的左脚真交出去。|你借追来的力转回右侧。}六十九那场，{dr_second_sword == 2:你留空看他真怎样试。|你先等他真正递手。}一百一十四那场，{dr_third_sword == 2:你留着能停的一手。|你从刀背细处转开。}三种走法拼起来像，却不在同一只手里。 # beat:dr_s"
             }
           ]
         }
@@ -29191,7 +29203,7 @@
         "lastDifferentSharedBeat": null,
         "lastDifferentSceneBeat": {
           "beat": "dr_shen_three_7",
-          "text": "她这么一说，你才发觉自己那三次复原，用的其实是同一种站法。"
+          "text": "她这么一说，你才发觉三次复原能相接，不等于真由同一个人走完。"
         },
         "endings": [
           "dr_room_after",
@@ -29216,6 +29228,10 @@
             {
               "line": 192,
               "text": "- dr_first_sword == 1 and dr_second_sword == 1 and dr_third_sword == 1:"
+            },
+            {
+              "line": 196,
+              "text": "八十三那场，{dr_first_sword == 2:你把承重的左脚真交出去。|你借追来的力转回右侧。}六十九那场，{dr_second_sword == 2:你留空看他真怎样试。|你先等他真正递手。}一百一十四那场，{dr_third_sword == 2:你留着能停的一手。|你从刀背细处转开。}三种走法拼起来像，却不在同一只手里。 # beat:dr_s"
             }
           ]
         }
@@ -29262,6 +29278,10 @@
             {
               "line": 192,
               "text": "- dr_first_sword == 1 and dr_second_sword == 1 and dr_third_sword == 1:"
+            },
+            {
+              "line": 196,
+              "text": "八十三那场，{dr_first_sword == 2:你把承重的左脚真交出去。|你借追来的力转回右侧。}六十九那场，{dr_second_sword == 2:你留空看他真怎样试。|你先等他真正递手。}一百一十四那场，{dr_third_sword == 2:你留着能停的一手。|你从刀背细处转开。}三种走法拼起来像，却不在同一只手里。 # beat:dr_s"
             }
           ]
         }
@@ -29284,7 +29304,7 @@
         "lastDifferentSharedBeat": null,
         "lastDifferentSceneBeat": {
           "beat": "dr_shen_three_7",
-          "text": "她这么一说，你才发觉自己那三次复原，用的其实是同一种站法。"
+          "text": "她这么一说，你才发觉三次复原能相接，不等于真由同一个人走完。"
         },
         "endings": [
           "dr_room_after",
@@ -29309,6 +29329,10 @@
             {
               "line": 192,
               "text": "- dr_first_sword == 1 and dr_second_sword == 1 and dr_third_sword == 1:"
+            },
+            {
+              "line": 196,
+              "text": "八十三那场，{dr_first_sword == 2:你把承重的左脚真交出去。|你借追来的力转回右侧。}六十九那场，{dr_second_sword == 2:你留空看他真怎样试。|你先等他真正递手。}一百一十四那场，{dr_third_sword == 2:你留着能停的一手。|你从刀背细处转开。}三种走法拼起来像，却不在同一只手里。 # beat:dr_s"
             }
           ]
         }
@@ -31024,6 +31048,10 @@
             {
               "line": 555,
               "text": "- dr_land_trace and dr_house_plain:"
+            },
+            {
+              "line": 558,
+              "text": "{dr_land_trace:收买活口那笔钱，你沿旧契追到中人。|旧契上那笔钱，你从接路往来反推回来。}{dr_house_plain:接手产业那一家，你问谁当时知道，不将拒答写成参与杀人。|继业门人当场分清亲见与父辈传话，家主也须回答自己知道哪一段。}确认与未答的，两样你都没省。 # beat:dr_living_benefit_10 # scene:dr"
             }
           ]
         }
@@ -31087,6 +31115,10 @@
             {
               "line": 555,
               "text": "- dr_land_trace and dr_house_plain:"
+            },
+            {
+              "line": 558,
+              "text": "{dr_land_trace:收买活口那笔钱，你沿旧契追到中人。|旧契上那笔钱，你从接路往来反推回来。}{dr_house_plain:接手产业那一家，你问谁当时知道，不将拒答写成参与杀人。|继业门人当场分清亲见与父辈传话，家主也须回答自己知道哪一段。}确认与未答的，两样你都没省。 # beat:dr_living_benefit_10 # scene:dr"
             }
           ]
         }
@@ -31125,7 +31157,7 @@
         "lastDifferentSharedBeat": null,
         "lastDifferentSceneBeat": {
           "beat": "dr_living_benefit_10",
-          "text": "旧契上那笔钱你从接路往来反推回来；门前那位家主要么没答，要么话里留着没说清的一段，两样你都没省。"
+          "text": "旧契上那笔钱，你从接路往来反推回来。接手产业那一家，你问谁当时知道，不将拒答写成参与杀人。确认与未答的，两样你都没省。"
         },
         "endings": [
           "dr_room_after",
@@ -31150,6 +31182,10 @@
             {
               "line": 555,
               "text": "- dr_land_trace and dr_house_plain:"
+            },
+            {
+              "line": 558,
+              "text": "{dr_land_trace:收买活口那笔钱，你沿旧契追到中人。|旧契上那笔钱，你从接路往来反推回来。}{dr_house_plain:接手产业那一家，你问谁当时知道，不将拒答写成参与杀人。|继业门人当场分清亲见与父辈传话，家主也须回答自己知道哪一段。}确认与未答的，两样你都没省。 # beat:dr_living_benefit_10 # scene:dr"
             }
           ]
         }
@@ -31214,6 +31250,10 @@
             {
               "line": 555,
               "text": "- dr_land_trace and dr_house_plain:"
+            },
+            {
+              "line": 558,
+              "text": "{dr_land_trace:收买活口那笔钱，你沿旧契追到中人。|旧契上那笔钱，你从接路往来反推回来。}{dr_house_plain:接手产业那一家，你问谁当时知道，不将拒答写成参与杀人。|继业门人当场分清亲见与父辈传话，家主也须回答自己知道哪一段。}确认与未答的，两样你都没省。 # beat:dr_living_benefit_10 # scene:dr"
             }
           ]
         }
@@ -31253,7 +31293,7 @@
         "lastDifferentSharedBeat": null,
         "lastDifferentSceneBeat": {
           "beat": "dr_living_benefit_10",
-          "text": "旧契上那笔钱你从接路往来反推回来；门前那位家主要么没答，要么话里留着没说清的一段，两样你都没省。"
+          "text": "收买活口那笔钱，你沿旧契追到中人。继业门人当场分清亲见与父辈传话，家主也须回答自己知道哪一段。确认与未答的，两样你都没省。"
         },
         "endings": [
           "dr_room_after",
@@ -32230,6 +32270,14 @@
               "text": "- dr_career == 1:"
             },
             {
+              "line": 885,
+              "text": "{dr_career == 1:让抄手自己答第一句、你在旁接漏处|带抄手分别站到当时的位置，让每人只说亲见}——沈说的肯问第二遍，先得容眼前的人说出自己真知道的。 # beat:dr_later_teacher_5 # scene:dr_shenyard # cast:dr_shen # speaker:narrator"
+            },
+            {
+              "line": 887,
+              "text": "{dr_career == 1:示范与原战你在场也分开，今天看见的，不替当天写。|抄手自己问停手细节，你陪他多住一晚，等到胜者背向时没见的那一句。}沈说不懂武、不懂人都不够，今天真做过的，也不能只剩一句查毕。 # beat:dr_later_teacher_6 # scene:dr_shenyard # cast:dr_shen # speaker:narr"
+            },
+            {
               "line": 902,
               "text": "- dr_career == 1:"
             },
@@ -32280,7 +32328,10 @@
           "beat": "dr_lu_last_12",
           "text": "你把原订远访托给同门，留新抄手自己问一回。门外有人要将三十招胜第八直接送上榜，你叫年轻人先把对方也找来，不替他问完才叫他抄。"
         },
-        "lastDifferentSharedBeat": null,
+        "lastDifferentSharedBeat": {
+          "beat": "dr_later_teacher_5",
+          "text": "让抄手自己答第一句、你在旁接漏处——沈说的肯问第二遍，先得容眼前的人说出自己真知道的。"
+        },
         "lastDifferentSceneBeat": {
           "beat": "dr_last_page_9",
           "text": "院里有人又问第二遍。你听见纸翻过一页，没有替他先答；那一行还肯慢下来，门便没有只剩一个写对过的人。"
@@ -32308,6 +32359,14 @@
             {
               "line": 840,
               "text": "- dr_career == 1:"
+            },
+            {
+              "line": 885,
+              "text": "{dr_career == 1:让抄手自己答第一句、你在旁接漏处|带抄手分别站到当时的位置，让每人只说亲见}——沈说的肯问第二遍，先得容眼前的人说出自己真知道的。 # beat:dr_later_teacher_5 # scene:dr_shenyard # cast:dr_shen # speaker:narrator"
+            },
+            {
+              "line": 887,
+              "text": "{dr_career == 1:示范与原战你在场也分开，今天看见的，不替当天写。|抄手自己问停手细节，你陪他多住一晚，等到胜者背向时没见的那一句。}沈说不懂武、不懂人都不够，今天真做过的，也不能只剩一句查毕。 # beat:dr_later_teacher_6 # scene:dr_shenyard # cast:dr_shen # speaker:narr"
             },
             {
               "line": 902,
@@ -32360,7 +32419,10 @@
           "beat": "dr_lu_last_13",
           "text": "你托同门守当天的问事，自己到外县见不愿再赶来的人。新抄手想跟，你只带这一位，另班得由别人真教，不能说出门也算自己都教过了。"
         },
-        "lastDifferentSharedBeat": null,
+        "lastDifferentSharedBeat": {
+          "beat": "dr_later_teacher_5",
+          "text": "带抄手分别站到当时的位置，让每人只说亲见——沈说的肯问第二遍，先得容眼前的人说出自己真知道的。"
+        },
         "lastDifferentSceneBeat": {
           "beat": "dr_last_page_10",
           "text": "远来的人在门边坐下，不必先有能打进榜的名字才配把话说完。你放下已交出的钥匙，听接班的人问他真看见哪一段。"
@@ -32388,6 +32450,10 @@
             {
               "line": 884,
               "text": "- dr_lesson == 1:"
+            },
+            {
+              "line": 905,
+              "text": "来接班的人还记得外县{dr_lesson == 1:分站位置问见闻的那一回|等慢问说完而多住的那一夜}，证人不必为腿脚慢便永远说不上话。后来一份旧说被重核，他派人去到说话者身边，也把自己当初信过的错留在卷上供人看见。 # beat:dr_last_page_5 # scene:dr_lateyard # cast:dr_next # speaker:narr"
             }
           ]
         }
@@ -32436,7 +32502,7 @@
         "lastDifferentSharedBeat": null,
         "lastDifferentSceneBeat": {
           "beat": "dr_later_teacher_5",
-          "text": "让抄手自己答第一句、你在旁接漏处——沈说的肯问第二遍，你把这个机会先给了年轻人。"
+          "text": "让抄手自己答第一句、你在旁接漏处——沈说的肯问第二遍，先得容眼前的人说出自己真知道的。"
         },
         "endings": [
           "dr_room_after",
@@ -32461,6 +32527,10 @@
             {
               "line": 884,
               "text": "- dr_lesson == 1:"
+            },
+            {
+              "line": 905,
+              "text": "来接班的人还记得外县{dr_lesson == 1:分站位置问见闻的那一回|等慢问说完而多住的那一夜}，证人不必为腿脚慢便永远说不上话。后来一份旧说被重核，他派人去到说话者身边，也把自己当初信过的错留在卷上供人看见。 # beat:dr_last_page_5 # scene:dr_lateyard # cast:dr_next # speaker:narr"
             }
           ]
         }
@@ -32509,7 +32579,7 @@
         "lastDifferentSharedBeat": null,
         "lastDifferentSceneBeat": {
           "beat": "dr_later_teacher_6",
-          "text": "示范与原战你在场也分开。沈说不懂武、不懂人都不够，你教抄手的头一条正是：今天看见的，不替当天写。"
+          "text": "示范与原战你在场也分开，今天看见的，不替当天写。沈说不懂武、不懂人都不够，今天真做过的，也不能只剩一句查毕。"
         },
         "endings": [
           "dr_room_after",
@@ -32794,6 +32864,10 @@
             {
               "line": 884,
               "text": "- dr_lesson == 1:"
+            },
+            {
+              "line": 905,
+              "text": "来接班的人还记得外县{dr_lesson == 1:分站位置问见闻的那一回|等慢问说完而多住的那一夜}，证人不必为腿脚慢便永远说不上话。后来一份旧说被重核，他派人去到说话者身边，也把自己当初信过的错留在卷上供人看见。 # beat:dr_last_page_5 # scene:dr_lateyard # cast:dr_next # speaker:narr"
             }
           ]
         }
@@ -32839,10 +32913,13 @@
           "beat": "dr_road_lesson_5",
           "text": "一位看脚，一位看先停的手，谁也没看完所有。你先听彼此能相接的地方，再问相冲那一句，不以年老就先取年轻人那份。"
         },
-        "lastDifferentSharedBeat": null,
+        "lastDifferentSharedBeat": {
+          "beat": "dr_last_page_5",
+          "text": "来接班的人还记得外县分站位置问见闻的那一回，证人不必为腿脚慢便永远说不上话。后来一份旧说被重核，他派人去到说话者身边，也把自己当初信过的错留在卷上供人看见。"
+        },
         "lastDifferentSceneBeat": {
-          "beat": "dr_later_teacher_5",
-          "text": "让抄手自己答第一句、你在旁接漏处——沈说的肯问第二遍，你把这个机会先给了年轻人。"
+          "beat": "dr_last_page_5",
+          "text": "来接班的人还记得外县分站位置问见闻的那一回，证人不必为腿脚慢便永远说不上话。后来一份旧说被重核，他派人去到说话者身边，也把自己当初信过的错留在卷上供人看见。"
         },
         "endings": [
           "dr_road_after",
@@ -32867,6 +32944,10 @@
             {
               "line": 884,
               "text": "- dr_lesson == 1:"
+            },
+            {
+              "line": 905,
+              "text": "来接班的人还记得外县{dr_lesson == 1:分站位置问见闻的那一回|等慢问说完而多住的那一夜}，证人不必为腿脚慢便永远说不上话。后来一份旧说被重核，他派人去到说话者身边，也把自己当初信过的错留在卷上供人看见。 # beat:dr_last_page_5 # scene:dr_lateyard # cast:dr_next # speaker:narr"
             }
           ]
         }
@@ -32912,10 +32993,13 @@
           "beat": "dr_road_lesson_8",
           "text": "他问得慢，渡船已走，你多住一夜，堂里那班仍由同门接。胜者想替老人答，你让他等，后来听见的停手细节正是他当时背向没看见的。"
         },
-        "lastDifferentSharedBeat": null,
+        "lastDifferentSharedBeat": {
+          "beat": "dr_last_page_5",
+          "text": "来接班的人还记得外县等慢问说完而多住的那一夜，证人不必为腿脚慢便永远说不上话。后来一份旧说被重核，他派人去到说话者身边，也把自己当初信过的错留在卷上供人看见。"
+        },
         "lastDifferentSceneBeat": {
-          "beat": "dr_later_teacher_6",
-          "text": "示范与原战你在场也分开。沈说不懂武、不懂人都不够，你教抄手的头一条正是：今天看见的，不替当天写。"
+          "beat": "dr_last_page_5",
+          "text": "来接班的人还记得外县等慢问说完而多住的那一夜，证人不必为腿脚慢便永远说不上话。后来一份旧说被重核，他派人去到说话者身边，也把自己当初信过的错留在卷上供人看见。"
         },
         "endings": [
           "dr_road_after",
@@ -33764,6 +33848,10 @@
             {
               "line": 253,
               "text": "- lh_box_people and lh_child_listen:"
+            },
+            {
+              "line": 257,
+              "text": "{lh_box_people:匣在路上，你先问了人的去处。|你先送稳匣子，再折返问谁留下收尾。}{lh_child_listen:孩子那回，你退开让他把药讲完。|孩子那回，你请药铺来核，候了半日也没抓人。}先将这两次接手的先后走清，一两手从浅处教起。 # beat:lh_seventy_odd_7 # scene:lh_reedboat # cast:lh_"
             }
           ]
         }
@@ -33814,6 +33902,10 @@
             {
               "line": 253,
               "text": "- lh_box_people and lh_child_listen:"
+            },
+            {
+              "line": 257,
+              "text": "{lh_box_people:匣在路上，你先问了人的去处。|你先送稳匣子，再折返问谁留下收尾。}{lh_child_listen:孩子那回，你退开让他把药讲完。|孩子那回，你请药铺来核，候了半日也没抓人。}先将这两次接手的先后走清，一两手从浅处教起。 # beat:lh_seventy_odd_7 # scene:lh_reedboat # cast:lh_"
             }
           ]
         }
@@ -33839,7 +33931,7 @@
         "lastDifferentSharedBeat": null,
         "lastDifferentSceneBeat": {
           "beat": "lh_seventy_odd_8",
-          "text": "你不服，可也答不出那半件到底差在哪。"
+          "text": "你将当时先顾了谁、哪一段后来才接上依次说给他听。他不替你把花过的时辰省掉，也不将另一条走法一概说成没管人。"
         },
         "endings": [
           "lh_hall_after",
@@ -33864,6 +33956,10 @@
             {
               "line": 253,
               "text": "- lh_box_people and lh_child_listen:"
+            },
+            {
+              "line": 257,
+              "text": "{lh_box_people:匣在路上，你先问了人的去处。|你先送稳匣子，再折返问谁留下收尾。}{lh_child_listen:孩子那回，你退开让他把药讲完。|孩子那回，你请药铺来核，候了半日也没抓人。}先将这两次接手的先后走清，一两手从浅处教起。 # beat:lh_seventy_odd_7 # scene:lh_reedboat # cast:lh_"
             },
             {
               "line": 567,
@@ -33919,6 +34015,10 @@
             {
               "line": 253,
               "text": "- lh_box_people and lh_child_listen:"
+            },
+            {
+              "line": 257,
+              "text": "{lh_box_people:匣在路上，你先问了人的去处。|你先送稳匣子，再折返问谁留下收尾。}{lh_child_listen:孩子那回，你退开让他把药讲完。|孩子那回，你请药铺来核，候了半日也没抓人。}先将这两次接手的先后走清，一两手从浅处教起。 # beat:lh_seventy_odd_7 # scene:lh_reedboat # cast:lh_"
             },
             {
               "line": 567,
@@ -47658,6 +47758,154 @@
       "assessment": "Observed text/state divergence only; literary significance requires the accompanying editorial review."
     },
     {
+      "slug": "taihua",
+      "cid": "th_guidance_repeat",
+      "sourceLine": 876,
+      "beat": "th_guidance_trial_3",
+      "effects": [
+        "~ guidance_repeated = true"
+      ],
+      "variables": [
+        {
+          "name": "guidance_repeated",
+          "initial": "false",
+          "reads": [
+            {
+              "line": 912,
+              "text": "{guidance_repeated:先前在张面前真走的那回，手还在追旧落点。{strain and not measured and carried:手还要歇，今日先看脚下。|你先看手与脚接在何处。}|第二次还没走，图在这里。我先只试脚下，你看哪只脚又挤住。} # beat:th_guidance_continue_15 # scene:th_home #"
+            }
+          ]
+        }
+      ],
+      "comparison": {
+        "otherCid": "th_guidance_mark",
+        "prefixChoices": [
+          "choice:th_ask",
+          "choice:th_promise",
+          "choice:th_tease",
+          "choice:th_predict_wait",
+          "choice:th_draw_left",
+          "choice:th_rush",
+          "choice:th_shield",
+          "choice:th_limit",
+          "choice:th_watch_last_distance",
+          "choice:th_leave_xie_room",
+          "choice:th_watch",
+          "choice:th_challenge",
+          "choice:th_practice",
+          "choice:th_read_next_sword",
+          "choice:th_keep_both_swords",
+          "choice:th_force",
+          "choice:th_sulk",
+          "choice:th_tomorrow",
+          "choice:th_ask_huo",
+          "choice:th_ask_ming_one",
+          "choice:th_admit_eye_only",
+          "choice:th_note_stop",
+          "choice:th_compare",
+          "choice:th_watch_can_move",
+          "choice:th_watch_after_bow",
+          "choice:th_private_question",
+          "choice:th_show_front_page",
+          "choice:th_leave_meal_joke",
+          "choice:th_guidance",
+          "choice:th_carry"
+        ],
+        "suffixPolicy": "same first offered choice in each run",
+        "firstDivergence": {
+          "beat": "th_guidance_trial_4",
+          "text": "您别替我让。我从前一步重走。"
+        },
+        "lastDifferentSharedBeat": {
+          "beat": "th_guidance_continue_15",
+          "text": "先前在张面前真走的那回，手还在追旧落点。手还要歇，今日先看脚下。"
+        },
+        "lastDifferentSceneBeat": {
+          "beat": "th_guidance_continue_15",
+          "text": "先前在张面前真走的那回，手还在追旧落点。手还要歇，今日先看脚下。"
+        },
+        "endings": [
+          "th_guidance",
+          "th_guidance"
+        ]
+      },
+      "assessment": "Observed text/state divergence only; literary significance requires the accompanying editorial review."
+    },
+    {
+      "slug": "taihua",
+      "cid": "th_guidance_mark",
+      "sourceLine": 882,
+      "beat": "th_guidance_trial_3",
+      "effects": [
+        "~ guidance_repeated = false"
+      ],
+      "variables": [
+        {
+          "name": "guidance_repeated",
+          "initial": "false",
+          "reads": [
+            {
+              "line": 912,
+              "text": "{guidance_repeated:先前在张面前真走的那回，手还在追旧落点。{strain and not measured and carried:手还要歇，今日先看脚下。|你先看手与脚接在何处。}|第二次还没走，图在这里。我先只试脚下，你看哪只脚又挤住。} # beat:th_guidance_continue_15 # scene:th_home #"
+            }
+          ]
+        }
+      ],
+      "comparison": {
+        "otherCid": "th_guidance_repeat",
+        "prefixChoices": [
+          "choice:th_ask",
+          "choice:th_promise",
+          "choice:th_tease",
+          "choice:th_predict_wait",
+          "choice:th_draw_left",
+          "choice:th_rush",
+          "choice:th_shield",
+          "choice:th_limit",
+          "choice:th_watch_last_distance",
+          "choice:th_leave_xie_room",
+          "choice:th_watch",
+          "choice:th_challenge",
+          "choice:th_practice",
+          "choice:th_read_next_sword",
+          "choice:th_keep_both_swords",
+          "choice:th_force",
+          "choice:th_sulk",
+          "choice:th_tomorrow",
+          "choice:th_ask_huo",
+          "choice:th_ask_ming_one",
+          "choice:th_admit_eye_only",
+          "choice:th_note_stop",
+          "choice:th_compare",
+          "choice:th_watch_can_move",
+          "choice:th_watch_after_bow",
+          "choice:th_private_question",
+          "choice:th_show_front_page",
+          "choice:th_leave_meal_joke",
+          "choice:th_guidance",
+          "choice:th_carry"
+        ],
+        "suffixPolicy": "same first offered choice in each run",
+        "firstDivergence": {
+          "beat": "th_guidance_trial_7",
+          "text": "我先认清是哪一步挤住，不连着走给您看好看。"
+        },
+        "lastDifferentSharedBeat": {
+          "beat": "th_guidance_continue_15",
+          "text": "第二次还没走，图在这里。我先只试脚下，你看哪只脚又挤住。"
+        },
+        "lastDifferentSceneBeat": {
+          "beat": "th_guidance_continue_15",
+          "text": "第二次还没走，图在这里。我先只试脚下，你看哪只脚又挤住。"
+        },
+        "endings": [
+          "th_guidance",
+          "th_guidance"
+        ]
+      },
+      "assessment": "Observed text/state divergence only; literary significance requires the accompanying editorial review."
+    },
+    {
       "slug": "longmen",
       "cid": "lm_ask_use",
       "sourceLine": 29,
@@ -50819,6 +51067,10 @@
             {
               "line": 216,
               "text": "- dt_chen_signal and dt_positions:"
+            },
+            {
+              "line": 220,
+              "text": "{dt_positions:听见你报船在内，可我们没练熟内外交错的口令，我先收，才敢认哪条艇要过。|听见那边报停试与系舟处，{dt_chen_signal:却没接到我们约好的内外口令。|这边接应的内外位置仍得再问。}}下回报到对方真能接上，不只自己说完。 # beat:dt_raid_return_13 # scene:dt_raid # cast:dt_l"
             }
           ]
         }
@@ -50864,6 +51116,10 @@
             {
               "line": 216,
               "text": "- dt_chen_signal and dt_positions:"
+            },
+            {
+              "line": 220,
+              "text": "{dt_positions:听见你报船在内，可我们没练熟内外交错的口令，我先收，才敢认哪条艇要过。|听见那边报停试与系舟处，{dt_chen_signal:却没接到我们约好的内外口令。|这边接应的内外位置仍得再问。}}下回报到对方真能接上，不只自己说完。 # beat:dt_raid_return_13 # scene:dt_raid # cast:dt_l"
             }
           ]
         }
@@ -50884,7 +51140,7 @@
         "lastDifferentSharedBeat": null,
         "lastDifferentSceneBeat": {
           "beat": "dt_raid_return_14",
-          "text": "这回没做成的，我写清，不拿后来有人救到抵掉。"
+          "text": "这回说到哪句、哪边没接上，我分开写清，不拿后来有人救到抵掉。"
         },
         "endings": [
           "dt_company",
@@ -51017,6 +51273,10 @@
             {
               "line": 216,
               "text": "- dt_chen_signal and dt_positions:"
+            },
+            {
+              "line": 220,
+              "text": "{dt_positions:听见你报船在内，可我们没练熟内外交错的口令，我先收，才敢认哪条艇要过。|听见那边报停试与系舟处，{dt_chen_signal:却没接到我们约好的内外口令。|这边接应的内外位置仍得再问。}}下回报到对方真能接上，不只自己说完。 # beat:dt_raid_return_13 # scene:dt_raid # cast:dt_l"
             }
           ]
         }
@@ -51064,6 +51324,10 @@
             {
               "line": 216,
               "text": "- dt_chen_signal and dt_positions:"
+            },
+            {
+              "line": 220,
+              "text": "{dt_positions:听见你报船在内，可我们没练熟内外交错的口令，我先收，才敢认哪条艇要过。|听见那边报停试与系舟处，{dt_chen_signal:却没接到我们约好的内外口令。|这边接应的内外位置仍得再问。}}下回报到对方真能接上，不只自己说完。 # beat:dt_raid_return_13 # scene:dt_raid # cast:dt_l"
             }
           ]
         }
@@ -51086,7 +51350,7 @@
         "lastDifferentSharedBeat": null,
         "lastDifferentSceneBeat": {
           "beat": "dt_raid_return_14",
-          "text": "这回没做成的，我写清，不拿后来有人救到抵掉。"
+          "text": "这回说到哪句、哪边没接上，我分开写清，不拿后来有人救到抵掉。"
         },
         "endings": [
           "dt_company",
@@ -53193,5 +53457,14 @@
       },
       "assessment": "Observed text/state divergence only; literary significance requires the accompanying editorial review."
     }
-  ]
+  ],
+  "sourceRC": "ec53af4ec75f352b52ba6a85bd818510b890dc10",
+  "productFingerprint": "68dc3071fa81e13cc425500832daa7560b2bb96a1c6613264a823ba08b395ea9",
+  "suffixVerification": {
+    "evidence": "choice-suffix-pairs.json",
+    "totalObservedCID": 996,
+    "allOtherCIDIdentical": 981,
+    "policyMatchedOnly": 15,
+    "boundary": "Only the 981 rows compare the same remaining decisions. The 15 branch-policy rows must not be advertised as strict single-decision contrasts."
+  }
 }

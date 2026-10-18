@@ -1,0 +1,23 @@
+{
+  "kind": "regex comparison on actual historical source logs, no manifest rewrite",
+  "files": [
+    {
+      "path": "docs/v6/ART_PROVENANCE.md",
+      "oldCount": 1,
+      "newCount": 1,
+      "equal": true
+    },
+    {
+      "path": "docs/v6/LONGMEN_V2_ADAPTATION_BRIEF.md",
+      "oldCount": 1,
+      "newCount": 1,
+      "equal": true
+    },
+    {
+      "path": "docs/v6/WHITE_STONE_ADAPTATION_BRIEF.md",
+      "oldCount": 1,
+      "newCount": 1,
+      "equal": true
+    }
+  ]
+}

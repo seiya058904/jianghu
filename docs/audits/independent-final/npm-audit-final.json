@@ -1,0 +1,30 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {},
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "dependencies": {
+      "prod": 2,
+      "dev": 64,
+      "optional": 47,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 65
+    }
+  },
+  "verification": {
+    "queriedAt": "2026-10-18T05:14:07.819684+00:00",
+    "sourceCommit": "a04d36a665416f45297a5c2a0191863bd0f44316",
+    "command": "npm audit --json",
+    "exitCode": 0,
+    "packageLockSha256": "cdec7b59f93e7133e5f02f5b3870de89fe3c5a00867b3a23846102da17eb6342",
+    "boundary": "Registry advisory result for the current lockfile at query time, not proof of absence of undisclosed vulnerabilities; no dependency updates."
+  }
+}

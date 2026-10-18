@@ -50,3 +50,19 @@ spec 对 current 与 frozen-v2 分别创建各自内容/版本/命名空间，�
 实际只读命令 git diff、rg、Get-Content、git show、Python源锚点比较及 graph coverage；最终锚点比较 exit0/18一致。没运行编译、npm test、故事生成、E2E或公网操作。父所报12个storage/SW真实浏览器测试与根/小写jianghu两hashed-shell更新通过，是父证据，本轮不将其重标为本人独立验收。
 
 工作快照 SHA256：vn-ui `2154ed56681efa290af84e1e3e7a52be57818d30516ad66e6abbd47f7eb16f47`；portrait spec `2f04b74df084e33d31c7e1bfd296091abda0342b6ecd8f9e958e9d84355b995a`；snapshot脚本 `328afa086f2dfc99036fb8186c18fbc294629b5faa88c354dcc24b189856272d`。故事变更的hash应与父最终source结构记录核对；本报告只对本轮读取的工作副本有效，不提前给尚未形成的最终提交PASS。
+
+## RC83b5049 补充复核（覆盖先前排除项与快照P2）
+
+最终补读 tests/independent-canon-early.test.ts 全文、tests/independent-canon-late.test.ts 全文、tests/shell-update.spec.ts 全文；重读 evidence-path.ts 全文与升级后 public-snapshot.py 全文。本轮仍只写工程报告/CSV，无产品或测试源码变更，无编译或全套测试执行。三份新增审读文件的实际行范围/hash已入 engineering-tests-files.csv。
+
+两份原典回归直接用 inkjs Story 读取现行已编译内容、根据真实 cid 选择并继续到终局，没有替换文本夹具或改写renderer。early5项中，罗的寿年/第三代后世、洞玄认今日高、伏牛慢队有正向事实断言；部分只禁止旧错误句。late60项有4个career/lesson组合、4个money/interview组合、8个三剑组合、4个box/child组合、4个signal/position组合、20个旧错反例及16个双选择回响组合。多组检查目标beat内真实活动关键词与独立变量回忆，并检查ending存在，所以不能概称“仅删旧句就通过”。
+
+但断言强度仍为 PARTIAL：两helper都未断言请求的override CID实际命中，若今后CID消失会回落第一选项；early若干项与late20个counterexample主要是负断言；CL23虽有8组合，主要核foot而非分别证明eye/hand的回忆；CL25 signal=true/positions=true分支没有内容needle，仅执行至ending。双选择组合的false/false主要依赖禁句，不是所有组合都逐项检查原事件与晚回忆一一对应。没有发现因此造成的当前产品新P1，但不可把65个通过等同65个独立的完整选择前因证明。冻结状态下只记录此P2测试强度限制，不改断言或源。
+
+shell-update.spec 在根与小写 /jianghu/ 启动真实本地HTTP服务，以相同SW文件先访问旧index和真实16卡库；服务切换index与offline-manifest指向新模块URL（模拟部署新指纹依赖，模块主体仍为实际旧bundle，仅附执行版本标记）。先断言新资源未缓存，再通过产品设置中的作品下载按钮下载，断言缓存存在，真正切offline后导航index，核标题/16卡与新模块执行标记=2、无pageerror。没有page.route、setContent或evaluate注入库DOM、绕过renderer。服务模拟是发布条件夹具，不是页面结果夹具。它证明新JS依赖刷新；未改CSS或SW字节，因此不能独自证明所有CSS/SW升级模式。父报告2/2是父运行证据，本轮只审源。
+
+所有tests源码的写调用检索已完成（不是AST：TS7 native无先前使用的JS AST API）。直接截图/JSON输出均经过 evidencePath；game.spec 的 shot辅助也解析到该函数。两个已明确例外：frozen-baselines.ts 的missing报告仍直接写 docs/evidence/v6/frozen-baselines-missing.json及锁，这是公开缺档PARTIAL汇总机制；historical-baselines-policy的put只写mkdtemp唯一系统临时目录。两份canon测试无文件输出；shell截图走evidencePath，HTTP服务只读dist并在内存变换响应。故不能笼统宣称“tests完全零仓库写入”，应保留missing摘要例外。
+
+新版snapshot脚本已显式增加scope+扩展名正向allowlist（根配置名单/HTML/MD、src/story/public/scripts/tests/docs的限定扩展名、GitHub workflow YAML），同时继续原典/私档/候选素材/env/key等排除；destination必须等于Git顶层；plan必须在作者与公开两个检出之外。此前两项P2参数边界在当前实现关闭。仍不将文件类型allowlist说成内容秘密识别器：例如许可JSON中的字符串仍需审具体发布plan，文档值会清理机器路径、键保持不变。此次未发现具体保密泄漏，未执行apply或公网发布。
+
+最终补读覆盖：tests161/161（本CSV147文件5430行 + 前轮14文件），全部排除项已补齐。当前public-snapshot.py91行 SHA256 `ea20c5926e492ef7af96f89497a1456b78bec51eecc257b12eed233454804429`；前文78行旧快照限制由本补充明确取代。

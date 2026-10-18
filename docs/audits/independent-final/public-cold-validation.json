@@ -1,0 +1,10 @@
+{
+  "sourceCommit": "bb514bb38edf4f20d7a79cb461cfcb28156ebeba",
+  "installExit": 0,
+  "buildExit": 0,
+  "unitPassed": 451,
+  "unitFailed": 0,
+  "unitExit": 0,
+  "manifestAfterGenerationDifferences": [],
+  "evidence": "public-cold-install.log / public-cold-build.log / public-cold-tests.log (external); private baseline warnings explicit"
+}

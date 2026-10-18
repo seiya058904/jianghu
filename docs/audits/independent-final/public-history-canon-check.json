@@ -1,0 +1,8 @@
+{
+  "checkedAt": "2026-10-18T05:19:10.501666+00:00",
+  "publicHead": "9885dfedb780540ea51b97c1692ccd209be12232",
+  "canonBlobObjectId": "d7d51de4a39e4a176d0fbf1f3c20ead4104dde98",
+  "exactCanonBlobAbsentFromAllPublicObjects": true,
+  "forbiddenPathAbsent": true,
+  "scope": "Exact whole-file Git blob lookup across this public object database; complements current plaintext-window/privacy probes. Not proof against every encoding, chunking or paraphrase."
+}

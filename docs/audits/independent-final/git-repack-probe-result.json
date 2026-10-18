@@ -1,0 +1,12 @@
+{
+  "command": "git -c core.bare=true -c pack.compression=9 repack --cruft -d -f --window=250 --window-memory=256m --depth=50 --threads=2 (isolated full Git copy only)",
+  "exit": 0,
+  "beforeGitBytes": 1148834794,
+  "afterGitBytes": 1123207575,
+  "savedBytes": 25627219,
+  "all6655ObjectsAndSizesIdentical": true,
+  "refsIdentical": true,
+  "fsckExit": 0,
+  "sourceAuthorGitTouched": false,
+  "noExpiryOrHistoryRewrite": true
+}

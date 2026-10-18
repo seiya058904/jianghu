@@ -1,0 +1,6 @@
+{
+  "sourceCommit": "83b5049484565940c3c163d6f3558004619ffe83",
+  "status": "ABORTED_NOT_FINAL_ACCEPTANCE",
+  "reason": "Publication utility rejected existing public legacy image and independent review requested CID hit assertions. RC2 changes tests/utility only. Full suite restarted rather than combining old results.",
+  "log": "rc-e2e-run1.log"
+}

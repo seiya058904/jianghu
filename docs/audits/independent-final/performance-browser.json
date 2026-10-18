@@ -1,0 +1,6248 @@
+{
+  "time": "2026-10-18T03:48:10.796Z",
+  "sourceCommit": "ec53af4ec75f352b52ba6a85bd818510b890dc10",
+  "distFingerprint": "964099434ff80dd33d7b622e60d13ca2c559976fb51e3d61451e4b93999a0c58",
+  "environment": {
+    "platform": "win32",
+    "release": "10.0.22631",
+    "cpu": "AMD Ryzen 7 9700X 8-Core Processor             ",
+    "logicalCpus": 16,
+    "memoryBytes": 33945550848,
+    "node": "v24.15.0",
+    "concurrentLoad": "Parent reports full E2E running with 4 workers; uncontrolled concurrent local load",
+    "browserPlugin": "not available",
+    "mode": "Headless Chrome, desktop host; viewport simulation only",
+    "browserVersion": "155.0.8059.40"
+  },
+  "method": {
+    "cold": "Fresh browser context per sample, HTTP cache disabled through CDP; browser/OS disk caches not cleared; localhost static server",
+    "timing": "Node performance.now round trip around Playwright locator.click through changed beat and complete displayed text; includes automation, actionability and host scheduling",
+    "settings": {
+      "speed": 0,
+      "reduced": true,
+      "size": 20
+    },
+    "noSaveOrStoryInjection": true,
+    "noForcedGC": true
+  },
+  "opening": [
+    {
+      "slug": "taihua",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sample": 1,
+      "coverReadyMs": 109.17970000000003,
+      "newToFirstFrameMs": 110.62900000000013,
+      "firstChoiceBeat": "th_called_8",
+      "advanceClicks": [
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_1",
+          "to": "th_called_2",
+          "roundTripMs": 23.95640000000003
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_2",
+          "to": "th_called_3",
+          "roundTripMs": 276.6729
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_3",
+          "to": "th_called_4",
+          "roundTripMs": 274.9927
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_4",
+          "to": "th_called_5",
+          "roundTripMs": 274.24569999999994
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_5",
+          "to": "th_called_6",
+          "roundTripMs": 274.2035000000001
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_6",
+          "to": "th_called_7",
+          "roundTripMs": 264.9047999999998
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_7",
+          "to": "th_called_8",
+          "roundTripMs": 266.4854
+        }
+      ],
+      "firstChoice": {
+        "action": "choice",
+        "cid": "th_care",
+        "from": "th_called_8",
+        "to": "th_called_9",
+        "roundTripMs": 273.2545
+      },
+      "metrics": {
+        "label": "after-first-choice",
+        "beat": "th_called_9",
+        "at": "2026-10-18T03:48:13.476Z",
+        "JSHeapUsedSize": 6407176,
+        "JSHeapTotalSize": 10887168,
+        "Nodes": 476,
+        "Documents": 8,
+        "LayoutCount": 19,
+        "RecalcStyleCount": 55,
+        "TaskDuration": 0.219247,
+        "ScriptDuration": 0.039064,
+        "LayoutDuration": 0.057345,
+        "RecalcStyleDuration": 0.008772
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "name": "http://127.0.0.1:4173/taihua.html",
+            "entryType": "navigation",
+            "startTime": 0,
+            "duration": 33.099999994039536,
+            "navigationId": 1324,
+            "initiatorType": "navigation",
+            "deliveryType": "",
+            "nextHopProtocol": "http/1.1",
+            "renderBlockingStatus": "non-blocking",
+            "contentType": "text/html",
+            "contentEncoding": "",
+            "workerStart": 0,
+            "workerRouterEvaluationStart": 0,
+            "workerCacheLookupStart": 0,
+            "workerMatchedSourceType": "",
+            "workerFinalSourceType": "",
+            "redirectStart": 0,
+            "redirectEnd": 0,
+            "fetchStart": 0.5,
+            "domainLookupStart": 0.5,
+            "domainLookupEnd": 0.5,
+            "connectStart": 0.5,
+            "secureConnectionStart": 0,
+            "connectEnd": 0.5,
+            "requestStart": 1.5,
+            "responseStart": 2.800000011920929,
+            "firstInterimResponseStart": 0,
+            "finalResponseHeadersStart": 2.800000011920929,
+            "responseEnd": 3.4000000059604645,
+            "transferSize": 1401,
+            "encodedBodySize": 1101,
+            "decodedBodySize": 1101,
+            "responseStatus": 200,
+            "serverTiming": [],
+            "unloadEventStart": 0,
+            "unloadEventEnd": 0,
+            "domInteractive": 12.5,
+            "domContentLoadedEventStart": 32.900000005960464,
+            "domContentLoadedEventEnd": 33,
+            "domComplete": 33.099999994039536,
+            "loadEventStart": 33.099999994039536,
+            "loadEventEnd": 33.099999994039536,
+            "type": "navigate",
+            "redirectCount": 0,
+            "activationStart": 0,
+            "criticalCHRestart": 0,
+            "notRestoredReasons": null,
+            "confidence": {
+              "randomizedTriggerRate": 0.4994798,
+              "value": "low"
+            }
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "entryType": "paint",
+            "startTime": 88,
+            "duration": 0,
+            "navigationId": 1324,
+            "paintTime": 21.80000001192093,
+            "presentationTime": 88
+          },
+          {
+            "name": "first-contentful-paint",
+            "entryType": "paint",
+            "startTime": 156,
+            "duration": 0,
+            "navigationId": 1324,
+            "paintTime": 99.30000001192093,
+            "presentationTime": 156
+          }
+        ],
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/art/v6/taihua-night.webp",
+            "duration": 4,
+            "transferSize": 302766,
+            "encodedBodySize": 302466
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js",
+            "duration": 4.5999999940395355,
+            "transferSize": 970,
+            "encodedBodySize": 670
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/chronicle-catalog-56xv3GiH.js",
+            "duration": 4.9000000059604645,
+            "transferSize": 137235,
+            "encodedBodySize": 136935
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BtET8AA6.js",
+            "duration": 4.600000023841858,
+            "transferSize": 17015,
+            "encodedBodySize": 16715
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/work-index-BmvMq2vW.js",
+            "duration": 6,
+            "transferSize": 18694,
+            "encodedBodySize": 18394
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/ink-DJNFVVIJ.js",
+            "duration": 7.100000023841858,
+            "transferSize": 127384,
+            "encodedBodySize": 127084
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BbsrsVBy.css",
+            "duration": 6.5999999940395355,
+            "transferSize": 28848,
+            "encodedBodySize": 28548
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/player-BlhK4IcF.js",
+            "duration": 8.5,
+            "transferSize": 98856,
+            "encodedBodySize": 98556
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/taihua-Btssk8rO.js",
+            "duration": 3.199999988079071,
+            "transferSize": 133924,
+            "encodedBodySize": 133624
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.5,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/taihua-guest.webp",
+            "duration": 2.4000000059604645,
+            "transferSize": 230564,
+            "encodedBodySize": 230264
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/npc-elder-male.webp",
+            "duration": 2.7000000178813934,
+            "transferSize": 119942,
+            "encodedBodySize": 119642
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/npc-youth-blue.webp",
+            "duration": 2.2000000178813934,
+            "transferSize": 98302,
+            "encodedBodySize": 98002
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 2.9000000059604645,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          }
+        ]
+      },
+      "errors": [],
+      "servedHtmlSha256": "22de952548fd1504866d52e05a7d46cc560a79aef75d63e6d1438b7517bca896",
+      "generatedSha256": "663f6334a5660b64cf5270c4c27e694ea7cafadd2a9173b6a6be001d21e75872"
+    },
+    {
+      "slug": "taihua",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sample": 2,
+      "coverReadyMs": 74.57020000000011,
+      "newToFirstFrameMs": 47.597299999999905,
+      "firstChoiceBeat": "th_called_8",
+      "advanceClicks": [
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_1",
+          "to": "th_called_2",
+          "roundTripMs": 15.712799999999788
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_2",
+          "to": "th_called_3",
+          "roundTripMs": 270.0679
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_3",
+          "to": "th_called_4",
+          "roundTripMs": 266.75869999999986
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_4",
+          "to": "th_called_5",
+          "roundTripMs": 272.2426999999998
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_5",
+          "to": "th_called_6",
+          "roundTripMs": 266.7344000000003
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_6",
+          "to": "th_called_7",
+          "roundTripMs": 275.4512999999997
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_7",
+          "to": "th_called_8",
+          "roundTripMs": 263.8199000000004
+        }
+      ],
+      "firstChoice": {
+        "action": "choice",
+        "cid": "th_care",
+        "from": "th_called_8",
+        "to": "th_called_9",
+        "roundTripMs": 272.6118000000006
+      },
+      "metrics": {
+        "label": "after-first-choice",
+        "beat": "th_called_9",
+        "at": "2026-10-18T03:48:15.643Z",
+        "JSHeapUsedSize": 6437908,
+        "JSHeapTotalSize": 10362880,
+        "Nodes": 476,
+        "Documents": 8,
+        "LayoutCount": 18,
+        "RecalcStyleCount": 53,
+        "TaskDuration": 0.17177,
+        "ScriptDuration": 0.028818,
+        "LayoutDuration": 0.045736,
+        "RecalcStyleDuration": 0.007109
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "name": "http://127.0.0.1:4173/taihua.html",
+            "entryType": "navigation",
+            "startTime": 0,
+            "duration": 20.900000005960464,
+            "navigationId": 6442,
+            "initiatorType": "navigation",
+            "deliveryType": "",
+            "nextHopProtocol": "http/1.1",
+            "renderBlockingStatus": "non-blocking",
+            "contentType": "text/html",
+            "contentEncoding": "",
+            "workerStart": 0,
+            "workerRouterEvaluationStart": 0,
+            "workerCacheLookupStart": 0,
+            "workerMatchedSourceType": "",
+            "workerFinalSourceType": "",
+            "redirectStart": 0,
+            "redirectEnd": 0,
+            "fetchStart": 0.29999998211860657,
+            "domainLookupStart": 0.29999998211860657,
+            "domainLookupEnd": 0.29999998211860657,
+            "connectStart": 0.29999998211860657,
+            "secureConnectionStart": 0,
+            "connectEnd": 0.29999998211860657,
+            "requestStart": 1,
+            "responseStart": 1.699999988079071,
+            "firstInterimResponseStart": 0,
+            "finalResponseHeadersStart": 1.699999988079071,
+            "responseEnd": 1.9000000059604645,
+            "transferSize": 1401,
+            "encodedBodySize": 1101,
+            "decodedBodySize": 1101,
+            "responseStatus": 200,
+            "serverTiming": [],
+            "unloadEventStart": 0,
+            "unloadEventEnd": 0,
+            "domInteractive": 9.099999994039536,
+            "domContentLoadedEventStart": 20.69999998807907,
+            "domContentLoadedEventEnd": 20.799999982118607,
+            "domComplete": 20.900000005960464,
+            "loadEventStart": 20.900000005960464,
+            "loadEventEnd": 20.900000005960464,
+            "type": "navigate",
+            "redirectCount": 0,
+            "activationStart": 0,
+            "criticalCHRestart": 0,
+            "notRestoredReasons": null,
+            "confidence": {
+              "randomizedTriggerRate": 0.4994798,
+              "value": "high"
+            }
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "entryType": "paint",
+            "startTime": 20,
+            "duration": 0,
+            "navigationId": 6442,
+            "paintTime": 16.599999994039536,
+            "presentationTime": 20
+          },
+          {
+            "name": "first-contentful-paint",
+            "entryType": "paint",
+            "startTime": 92,
+            "duration": 0,
+            "navigationId": 6449,
+            "paintTime": 66.09999999403954,
+            "presentationTime": 92
+          }
+        ],
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/art/v6/taihua-night.webp",
+            "duration": 3.2999999821186066,
+            "transferSize": 302766,
+            "encodedBodySize": 302466
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js",
+            "duration": 3.300000011920929,
+            "transferSize": 970,
+            "encodedBodySize": 670
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/chronicle-catalog-56xv3GiH.js",
+            "duration": 3.9000000059604645,
+            "transferSize": 137235,
+            "encodedBodySize": 136935
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/work-index-BmvMq2vW.js",
+            "duration": 5,
+            "transferSize": 18694,
+            "encodedBodySize": 18394
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BtET8AA6.js",
+            "duration": 3.7000000178813934,
+            "transferSize": 17015,
+            "encodedBodySize": 16715
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BbsrsVBy.css",
+            "duration": 5.200000017881393,
+            "transferSize": 28848,
+            "encodedBodySize": 28548
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/ink-DJNFVVIJ.js",
+            "duration": 5.300000011920929,
+            "transferSize": 127384,
+            "encodedBodySize": 127084
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/player-BlhK4IcF.js",
+            "duration": 5.5,
+            "transferSize": 98856,
+            "encodedBodySize": 98556
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/taihua-Btssk8rO.js",
+            "duration": 1.7000000178813934,
+            "transferSize": 133924,
+            "encodedBodySize": 133624
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.300000011920929,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/taihua-guest.webp",
+            "duration": 2.0999999940395355,
+            "transferSize": 230564,
+            "encodedBodySize": 230264
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/npc-elder-male.webp",
+            "duration": 2.199999988079071,
+            "transferSize": 119942,
+            "encodedBodySize": 119642
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/npc-youth-blue.webp",
+            "duration": 2,
+            "transferSize": 98302,
+            "encodedBodySize": 98002
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          }
+        ]
+      },
+      "errors": [],
+      "servedHtmlSha256": "22de952548fd1504866d52e05a7d46cc560a79aef75d63e6d1438b7517bca896",
+      "generatedSha256": "663f6334a5660b64cf5270c4c27e694ea7cafadd2a9173b6a6be001d21e75872"
+    },
+    {
+      "slug": "taihua",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sample": 3,
+      "coverReadyMs": 69.47520000000077,
+      "newToFirstFrameMs": 48.58879999999954,
+      "firstChoiceBeat": "th_called_8",
+      "advanceClicks": [
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_1",
+          "to": "th_called_2",
+          "roundTripMs": 13.580500000000029
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_2",
+          "to": "th_called_3",
+          "roundTripMs": 263.40110000000004
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_3",
+          "to": "th_called_4",
+          "roundTripMs": 265.9520000000002
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_4",
+          "to": "th_called_5",
+          "roundTripMs": 272.9488000000001
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_5",
+          "to": "th_called_6",
+          "roundTripMs": 265.58660000000054
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_6",
+          "to": "th_called_7",
+          "roundTripMs": 280.65580000000045
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_7",
+          "to": "th_called_8",
+          "roundTripMs": 278.5644999999995
+        }
+      ],
+      "firstChoice": {
+        "action": "choice",
+        "cid": "th_care",
+        "from": "th_called_8",
+        "to": "th_called_9",
+        "roundTripMs": 272.4562999999998
+      },
+      "metrics": {
+        "label": "after-first-choice",
+        "beat": "th_called_9",
+        "at": "2026-10-18T03:48:17.802Z",
+        "JSHeapUsedSize": 6425980,
+        "JSHeapTotalSize": 10887168,
+        "Nodes": 476,
+        "Documents": 8,
+        "LayoutCount": 18,
+        "RecalcStyleCount": 53,
+        "TaskDuration": 0.168865,
+        "ScriptDuration": 0.028689,
+        "LayoutDuration": 0.043873,
+        "RecalcStyleDuration": 0.006764
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "name": "http://127.0.0.1:4173/taihua.html",
+            "entryType": "navigation",
+            "startTime": 0,
+            "duration": 18.399999976158142,
+            "navigationId": 8225,
+            "initiatorType": "navigation",
+            "deliveryType": "",
+            "nextHopProtocol": "http/1.1",
+            "renderBlockingStatus": "non-blocking",
+            "contentType": "text/html",
+            "contentEncoding": "",
+            "workerStart": 0,
+            "workerRouterEvaluationStart": 0,
+            "workerCacheLookupStart": 0,
+            "workerMatchedSourceType": "",
+            "workerFinalSourceType": "",
+            "redirectStart": 0,
+            "redirectEnd": 0,
+            "fetchStart": 0.3999999761581421,
+            "domainLookupStart": 0.3999999761581421,
+            "domainLookupEnd": 0.3999999761581421,
+            "connectStart": 0.3999999761581421,
+            "secureConnectionStart": 0,
+            "connectEnd": 0.3999999761581421,
+            "requestStart": 0.8999999761581421,
+            "responseStart": 1.5999999940395355,
+            "firstInterimResponseStart": 0,
+            "finalResponseHeadersStart": 1.5999999940395355,
+            "responseEnd": 1.7999999821186066,
+            "transferSize": 1401,
+            "encodedBodySize": 1101,
+            "decodedBodySize": 1101,
+            "responseStatus": 200,
+            "serverTiming": [],
+            "unloadEventStart": 0,
+            "unloadEventEnd": 0,
+            "domInteractive": 7.899999976158142,
+            "domContentLoadedEventStart": 18.19999998807907,
+            "domContentLoadedEventEnd": 18.299999982118607,
+            "domComplete": 18.399999976158142,
+            "loadEventStart": 18.399999976158142,
+            "loadEventEnd": 18.399999976158142,
+            "type": "navigate",
+            "redirectCount": 0,
+            "activationStart": 0,
+            "criticalCHRestart": 0,
+            "notRestoredReasons": null,
+            "confidence": {
+              "randomizedTriggerRate": 0.4994798,
+              "value": "high"
+            }
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "entryType": "paint",
+            "startTime": 20,
+            "duration": 0,
+            "navigationId": 8225,
+            "paintTime": 14.099999994039536,
+            "presentationTime": 20
+          },
+          {
+            "name": "first-contentful-paint",
+            "entryType": "paint",
+            "startTime": 88,
+            "duration": 0,
+            "navigationId": 8232,
+            "paintTime": 60.89999997615814,
+            "presentationTime": 88
+          }
+        ],
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/art/v6/taihua-night.webp",
+            "duration": 3.9000000059604645,
+            "transferSize": 302766,
+            "encodedBodySize": 302466
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js",
+            "duration": 2.5999999940395355,
+            "transferSize": 970,
+            "encodedBodySize": 670
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BtET8AA6.js",
+            "duration": 4,
+            "transferSize": 17015,
+            "encodedBodySize": 16715
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/work-index-BmvMq2vW.js",
+            "duration": 4.0999999940395355,
+            "transferSize": 18694,
+            "encodedBodySize": 18394
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/ink-DJNFVVIJ.js",
+            "duration": 5.699999988079071,
+            "transferSize": 127384,
+            "encodedBodySize": 127084
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/chronicle-catalog-56xv3GiH.js",
+            "duration": 3.4000000059604645,
+            "transferSize": 137235,
+            "encodedBodySize": 136935
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BbsrsVBy.css",
+            "duration": 5.300000011920929,
+            "transferSize": 28848,
+            "encodedBodySize": 28548
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/player-BlhK4IcF.js",
+            "duration": 5.800000011920929,
+            "transferSize": 98856,
+            "encodedBodySize": 98556
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/taihua-Btssk8rO.js",
+            "duration": 1.5999999940395355,
+            "transferSize": 133924,
+            "encodedBodySize": 133624
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.2999999821186066,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/taihua-guest.webp",
+            "duration": 1.800000011920929,
+            "transferSize": 230564,
+            "encodedBodySize": 230264
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/npc-elder-male.webp",
+            "duration": 1.699999988079071,
+            "transferSize": 119942,
+            "encodedBodySize": 119642
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/npc-youth-blue.webp",
+            "duration": 1.600000023841858,
+            "transferSize": 98302,
+            "encodedBodySize": 98002
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          }
+        ]
+      },
+      "errors": [],
+      "servedHtmlSha256": "22de952548fd1504866d52e05a7d46cc560a79aef75d63e6d1438b7517bca896",
+      "generatedSha256": "663f6334a5660b64cf5270c4c27e694ea7cafadd2a9173b6a6be001d21e75872"
+    },
+    {
+      "slug": "longmen",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sample": 1,
+      "coverReadyMs": 74.83009999999922,
+      "newToFirstFrameMs": 47.39559999999983,
+      "firstChoiceBeat": "lm_borrow_4",
+      "advanceClicks": [
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "lm_borrow_1",
+          "to": "lm_borrow_2",
+          "roundTripMs": 16.467399999999543
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "lm_borrow_2",
+          "to": "lm_borrow_3",
+          "roundTripMs": 274.54299999999967
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "lm_borrow_3",
+          "to": "lm_borrow_4",
+          "roundTripMs": 269.90680000000066
+        }
+      ],
+      "firstChoice": {
+        "action": "choice",
+        "cid": "lm_ask_use",
+        "from": "lm_borrow_4",
+        "to": "lm_borrow_5",
+        "roundTripMs": 270.2533000000003
+      },
+      "metrics": {
+        "label": "after-first-choice",
+        "beat": "lm_borrow_5",
+        "at": "2026-10-18T03:48:18.873Z",
+        "JSHeapUsedSize": 5881120,
+        "JSHeapTotalSize": 9314304,
+        "Nodes": 321,
+        "Documents": 8,
+        "LayoutCount": 10,
+        "RecalcStyleCount": 33,
+        "TaskDuration": 0.130507,
+        "ScriptDuration": 0.022529,
+        "LayoutDuration": 0.035374,
+        "RecalcStyleDuration": 0.004926
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "name": "http://127.0.0.1:4173/longmen.html",
+            "entryType": "navigation",
+            "startTime": 0,
+            "duration": 21.100000023841858,
+            "navigationId": 4618,
+            "initiatorType": "navigation",
+            "deliveryType": "",
+            "nextHopProtocol": "http/1.1",
+            "renderBlockingStatus": "non-blocking",
+            "contentType": "text/html",
+            "contentEncoding": "",
+            "workerStart": 0,
+            "workerRouterEvaluationStart": 0,
+            "workerCacheLookupStart": 0,
+            "workerMatchedSourceType": "",
+            "workerFinalSourceType": "",
+            "redirectStart": 0,
+            "redirectEnd": 0,
+            "fetchStart": 0.4000000059604645,
+            "domainLookupStart": 0.4000000059604645,
+            "domainLookupEnd": 0.4000000059604645,
+            "connectStart": 0.4000000059604645,
+            "secureConnectionStart": 0,
+            "connectEnd": 0.4000000059604645,
+            "requestStart": 1.2000000178813934,
+            "responseStart": 1.9000000059604645,
+            "firstInterimResponseStart": 0,
+            "finalResponseHeadersStart": 1.9000000059604645,
+            "responseEnd": 2.2000000178813934,
+            "transferSize": 1354,
+            "encodedBodySize": 1054,
+            "decodedBodySize": 1054,
+            "responseStatus": 200,
+            "serverTiming": [],
+            "unloadEventStart": 0,
+            "unloadEventEnd": 0,
+            "domInteractive": 9.900000005960464,
+            "domContentLoadedEventStart": 21,
+            "domContentLoadedEventEnd": 21,
+            "domComplete": 21.100000023841858,
+            "loadEventStart": 21.100000023841858,
+            "loadEventEnd": 21.100000023841858,
+            "type": "navigate",
+            "redirectCount": 0,
+            "activationStart": 0,
+            "criticalCHRestart": 0,
+            "notRestoredReasons": null,
+            "confidence": {
+              "randomizedTriggerRate": 0.4994798,
+              "value": "high"
+            }
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "entryType": "paint",
+            "startTime": 20,
+            "duration": 0,
+            "navigationId": 4618,
+            "paintTime": 16.400000005960464,
+            "presentationTime": 20
+          },
+          {
+            "name": "first-contentful-paint",
+            "entryType": "paint",
+            "startTime": 76,
+            "duration": 0,
+            "navigationId": 4618,
+            "paintTime": 66.90000000596046,
+            "presentationTime": 76
+          }
+        ],
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js",
+            "duration": 3,
+            "transferSize": 970,
+            "encodedBodySize": 670
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/chronicle-catalog-56xv3GiH.js",
+            "duration": 5.699999988079071,
+            "transferSize": 137235,
+            "encodedBodySize": 136935
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BtET8AA6.js",
+            "duration": 5.200000017881393,
+            "transferSize": 17015,
+            "encodedBodySize": 16715
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/work-index-BmvMq2vW.js",
+            "duration": 5,
+            "transferSize": 18694,
+            "encodedBodySize": 18394
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/ink-DJNFVVIJ.js",
+            "duration": 5.5,
+            "transferSize": 127384,
+            "encodedBodySize": 127084
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BbsrsVBy.css",
+            "duration": 5.299999982118607,
+            "transferSize": 28848,
+            "encodedBodySize": 28548
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/player-BlhK4IcF.js",
+            "duration": 5.899999976158142,
+            "transferSize": 98856,
+            "encodedBodySize": 98556
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/longmen-DsptNtDJ.js",
+            "duration": 1.4000000059604645,
+            "transferSize": 104271,
+            "encodedBodySize": 103971
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.5,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/longmen-CZCxkeHl.js",
+            "duration": 1.5999999940395355,
+            "transferSize": 104262,
+            "encodedBodySize": 103962
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/arena.webp",
+            "duration": 1.5,
+            "transferSize": 262254,
+            "encodedBodySize": 261954
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/longmen-hall.webp",
+            "duration": 1.5,
+            "transferSize": 293926,
+            "encodedBodySize": 293626
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/lm-xu.webp",
+            "duration": 1.2000000178813934,
+            "transferSize": 94732,
+            "encodedBodySize": 94432
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.199999988079071,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/lm-xu-intent.webp",
+            "duration": 3,
+            "transferSize": 0,
+            "encodedBodySize": 79458
+          }
+        ]
+      },
+      "errors": [],
+      "servedHtmlSha256": "c1e866408b2487db20caa8bedf33ed79ea027e008d7917501e50c5c29f82220b",
+      "generatedSha256": "477d6c53d45dd8485c28fd9dcd9ca6027a52004d61790aca7d5347f663f1ec89"
+    },
+    {
+      "slug": "longmen",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sample": 2,
+      "coverReadyMs": 75.10369999999966,
+      "newToFirstFrameMs": 46.7450000000008,
+      "firstChoiceBeat": "lm_borrow_4",
+      "advanceClicks": [
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "lm_borrow_1",
+          "to": "lm_borrow_2",
+          "roundTripMs": 13.900700000000143
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "lm_borrow_2",
+          "to": "lm_borrow_3",
+          "roundTripMs": 273.45220000000154
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "lm_borrow_3",
+          "to": "lm_borrow_4",
+          "roundTripMs": 280.60260000000017
+        }
+      ],
+      "firstChoice": {
+        "action": "choice",
+        "cid": "lm_ask_use",
+        "from": "lm_borrow_4",
+        "to": "lm_borrow_5",
+        "roundTripMs": 274.3634000000002
+      },
+      "metrics": {
+        "label": "after-first-choice",
+        "beat": "lm_borrow_5",
+        "at": "2026-10-18T03:48:19.963Z",
+        "JSHeapUsedSize": 5882300,
+        "JSHeapTotalSize": 9838592,
+        "Nodes": 321,
+        "Documents": 8,
+        "LayoutCount": 10,
+        "RecalcStyleCount": 34,
+        "TaskDuration": 0.132351,
+        "ScriptDuration": 0.02113,
+        "LayoutDuration": 0.035868,
+        "RecalcStyleDuration": 0.005221
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "name": "http://127.0.0.1:4173/longmen.html",
+            "entryType": "navigation",
+            "startTime": 0,
+            "duration": 19.30000001192093,
+            "navigationId": 3493,
+            "initiatorType": "navigation",
+            "deliveryType": "",
+            "nextHopProtocol": "http/1.1",
+            "renderBlockingStatus": "non-blocking",
+            "contentType": "text/html",
+            "contentEncoding": "",
+            "workerStart": 0,
+            "workerRouterEvaluationStart": 0,
+            "workerCacheLookupStart": 0,
+            "workerMatchedSourceType": "",
+            "workerFinalSourceType": "",
+            "redirectStart": 0,
+            "redirectEnd": 0,
+            "fetchStart": 0.4000000059604645,
+            "domainLookupStart": 0.4000000059604645,
+            "domainLookupEnd": 0.4000000059604645,
+            "connectStart": 0.4000000059604645,
+            "secureConnectionStart": 0,
+            "connectEnd": 0.4000000059604645,
+            "requestStart": 0.9000000059604645,
+            "responseStart": 1.5999999940395355,
+            "firstInterimResponseStart": 0,
+            "finalResponseHeadersStart": 1.5999999940395355,
+            "responseEnd": 1.7000000178813934,
+            "transferSize": 1354,
+            "encodedBodySize": 1054,
+            "decodedBodySize": 1054,
+            "responseStatus": 200,
+            "serverTiming": [],
+            "unloadEventStart": 0,
+            "unloadEventEnd": 0,
+            "domInteractive": 7.9000000059604645,
+            "domContentLoadedEventStart": 19.099999994039536,
+            "domContentLoadedEventEnd": 19.200000017881393,
+            "domComplete": 19.30000001192093,
+            "loadEventStart": 19.30000001192093,
+            "loadEventEnd": 19.30000001192093,
+            "type": "navigate",
+            "redirectCount": 0,
+            "activationStart": 0,
+            "criticalCHRestart": 0,
+            "notRestoredReasons": null,
+            "confidence": {
+              "randomizedTriggerRate": 0.4994798,
+              "value": "high"
+            }
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "entryType": "paint",
+            "startTime": 20,
+            "duration": 0,
+            "navigationId": 3493,
+            "paintTime": 13.200000017881393,
+            "presentationTime": 20
+          },
+          {
+            "name": "first-contentful-paint",
+            "entryType": "paint",
+            "startTime": 76,
+            "duration": 0,
+            "navigationId": 3493,
+            "paintTime": 66.90000000596046,
+            "presentationTime": 76
+          }
+        ],
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js",
+            "duration": 2,
+            "transferSize": 970,
+            "encodedBodySize": 670
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BtET8AA6.js",
+            "duration": 3.2999999821186066,
+            "transferSize": 17015,
+            "encodedBodySize": 16715
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/chronicle-catalog-56xv3GiH.js",
+            "duration": 4,
+            "transferSize": 137235,
+            "encodedBodySize": 136935
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/work-index-BmvMq2vW.js",
+            "duration": 3.5999999940395355,
+            "transferSize": 18694,
+            "encodedBodySize": 18394
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/ink-DJNFVVIJ.js",
+            "duration": 4.0999999940395355,
+            "transferSize": 127384,
+            "encodedBodySize": 127084
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/player-BlhK4IcF.js",
+            "duration": 4.300000011920929,
+            "transferSize": 98856,
+            "encodedBodySize": 98556
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BbsrsVBy.css",
+            "duration": 5.4000000059604645,
+            "transferSize": 28848,
+            "encodedBodySize": 28548
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/longmen-DsptNtDJ.js",
+            "duration": 1.7000000178813934,
+            "transferSize": 104271,
+            "encodedBodySize": 103971
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.0999999940395355,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/longmen-CZCxkeHl.js",
+            "duration": 1.5,
+            "transferSize": 104262,
+            "encodedBodySize": 103962
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/arena.webp",
+            "duration": 1.4000000059604645,
+            "transferSize": 262254,
+            "encodedBodySize": 261954
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/longmen-hall.webp",
+            "duration": 2.2999999821186066,
+            "transferSize": 293926,
+            "encodedBodySize": 293626
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/lm-xu.webp",
+            "duration": 1.7000000178813934,
+            "transferSize": 94732,
+            "encodedBodySize": 94432
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 0.9000000059604645,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/lm-xu-intent.webp",
+            "duration": 2.9000000059604645,
+            "transferSize": 0,
+            "encodedBodySize": 79458
+          }
+        ]
+      },
+      "errors": [],
+      "servedHtmlSha256": "c1e866408b2487db20caa8bedf33ed79ea027e008d7917501e50c5c29f82220b",
+      "generatedSha256": "477d6c53d45dd8485c28fd9dcd9ca6027a52004d61790aca7d5347f663f1ec89"
+    },
+    {
+      "slug": "longmen",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sample": 3,
+      "coverReadyMs": 74.17339999999967,
+      "newToFirstFrameMs": 44.44549999999981,
+      "firstChoiceBeat": "lm_borrow_4",
+      "advanceClicks": [
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "lm_borrow_1",
+          "to": "lm_borrow_2",
+          "roundTripMs": 13.442900000000009
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "lm_borrow_2",
+          "to": "lm_borrow_3",
+          "roundTripMs": 271.8224999999984
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "lm_borrow_3",
+          "to": "lm_borrow_4",
+          "roundTripMs": 264.0144999999993
+        }
+      ],
+      "firstChoice": {
+        "action": "choice",
+        "cid": "lm_ask_use",
+        "from": "lm_borrow_4",
+        "to": "lm_borrow_5",
+        "roundTripMs": 272.53239999999823
+      },
+      "metrics": {
+        "label": "after-first-choice",
+        "beat": "lm_borrow_5",
+        "at": "2026-10-18T03:48:21.030Z",
+        "JSHeapUsedSize": 5848296,
+        "JSHeapTotalSize": 9838592,
+        "Nodes": 321,
+        "Documents": 8,
+        "LayoutCount": 10,
+        "RecalcStyleCount": 33,
+        "TaskDuration": 0.1321,
+        "ScriptDuration": 0.021719,
+        "LayoutDuration": 0.035616,
+        "RecalcStyleDuration": 0.005386
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "name": "http://127.0.0.1:4173/longmen.html",
+            "entryType": "navigation",
+            "startTime": 0,
+            "duration": 20.5,
+            "navigationId": 8236,
+            "initiatorType": "navigation",
+            "deliveryType": "",
+            "nextHopProtocol": "http/1.1",
+            "renderBlockingStatus": "non-blocking",
+            "contentType": "text/html",
+            "contentEncoding": "",
+            "workerStart": 0,
+            "workerRouterEvaluationStart": 0,
+            "workerCacheLookupStart": 0,
+            "workerMatchedSourceType": "",
+            "workerFinalSourceType": "",
+            "redirectStart": 0,
+            "redirectEnd": 0,
+            "fetchStart": 0.4000000059604645,
+            "domainLookupStart": 0.4000000059604645,
+            "domainLookupEnd": 0.4000000059604645,
+            "connectStart": 0.4000000059604645,
+            "secureConnectionStart": 0,
+            "connectEnd": 0.4000000059604645,
+            "requestStart": 1,
+            "responseStart": 2,
+            "firstInterimResponseStart": 0,
+            "finalResponseHeadersStart": 2,
+            "responseEnd": 2.2000000178813934,
+            "transferSize": 1354,
+            "encodedBodySize": 1054,
+            "decodedBodySize": 1054,
+            "responseStatus": 200,
+            "serverTiming": [],
+            "unloadEventStart": 0,
+            "unloadEventEnd": 0,
+            "domInteractive": 9.5,
+            "domContentLoadedEventStart": 20.400000005960464,
+            "domContentLoadedEventEnd": 20.5,
+            "domComplete": 20.5,
+            "loadEventStart": 20.5,
+            "loadEventEnd": 20.5,
+            "type": "navigate",
+            "redirectCount": 0,
+            "activationStart": 0,
+            "criticalCHRestart": 0,
+            "notRestoredReasons": null,
+            "confidence": {
+              "randomizedTriggerRate": 0.4994798,
+              "value": "low"
+            }
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "entryType": "paint",
+            "startTime": 20,
+            "duration": 0,
+            "navigationId": 8236,
+            "paintTime": 17,
+            "presentationTime": 20
+          },
+          {
+            "name": "first-contentful-paint",
+            "entryType": "paint",
+            "startTime": 76,
+            "duration": 0,
+            "navigationId": 8236,
+            "paintTime": 66.60000002384186,
+            "presentationTime": 76
+          }
+        ],
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js",
+            "duration": 2.4000000059604645,
+            "transferSize": 970,
+            "encodedBodySize": 670
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/work-index-BmvMq2vW.js",
+            "duration": 4.799999982118607,
+            "transferSize": 18694,
+            "encodedBodySize": 18394
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BtET8AA6.js",
+            "duration": 5,
+            "transferSize": 17015,
+            "encodedBodySize": 16715
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/chronicle-catalog-56xv3GiH.js",
+            "duration": 5.399999976158142,
+            "transferSize": 137235,
+            "encodedBodySize": 136935
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BbsrsVBy.css",
+            "duration": 5.199999988079071,
+            "transferSize": 28848,
+            "encodedBodySize": 28548
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/player-BlhK4IcF.js",
+            "duration": 5.699999988079071,
+            "transferSize": 98856,
+            "encodedBodySize": 98556
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/ink-DJNFVVIJ.js",
+            "duration": 5.4000000059604645,
+            "transferSize": 127384,
+            "encodedBodySize": 127084
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/longmen-DsptNtDJ.js",
+            "duration": 1.5,
+            "transferSize": 104271,
+            "encodedBodySize": 103971
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.2999999821186066,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/longmen-CZCxkeHl.js",
+            "duration": 1.5,
+            "transferSize": 104262,
+            "encodedBodySize": 103962
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/arena.webp",
+            "duration": 1.5999999940395355,
+            "transferSize": 262254,
+            "encodedBodySize": 261954
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/longmen-hall.webp",
+            "duration": 2.2999999821186066,
+            "transferSize": 293926,
+            "encodedBodySize": 293626
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/lm-xu.webp",
+            "duration": 1.800000011920929,
+            "transferSize": 94732,
+            "encodedBodySize": 94432
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/lm-xu-intent.webp",
+            "duration": 2.7999999821186066,
+            "transferSize": 0,
+            "encodedBodySize": 79458
+          }
+        ]
+      },
+      "errors": [],
+      "servedHtmlSha256": "c1e866408b2487db20caa8bedf33ed79ea027e008d7917501e50c5c29f82220b",
+      "generatedSha256": "477d6c53d45dd8485c28fd9dcd9ca6027a52004d61790aca7d5347f663f1ec89"
+    },
+    {
+      "slug": "dead-ranking",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sample": 1,
+      "coverReadyMs": 75.48049999999967,
+      "newToFirstFrameMs": 50.41660000000047,
+      "firstChoiceBeat": "dr_dead_letter_7",
+      "advanceClicks": [
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_1",
+          "to": "dr_dead_letter_2",
+          "roundTripMs": 18.728900000000067
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_2",
+          "to": "dr_dead_letter_3",
+          "roundTripMs": 270.16059999999925
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_3",
+          "to": "dr_dead_letter_4",
+          "roundTripMs": 274.66489999999976
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_4",
+          "to": "dr_dead_letter_5",
+          "roundTripMs": 261.5712000000003
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_5",
+          "to": "dr_dead_letter_6",
+          "roundTripMs": 261.1316999999999
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_6",
+          "to": "dr_dead_letter_7",
+          "roundTripMs": 269.21730000000025
+        }
+      ],
+      "firstChoice": {
+        "action": "choice",
+        "cid": "dr_ask_letter_hand",
+        "from": "dr_dead_letter_7",
+        "to": "dr_dead_letter_8",
+        "roundTripMs": 274.33560000000034
+      },
+      "metrics": {
+        "label": "after-first-choice",
+        "beat": "dr_dead_letter_8",
+        "at": "2026-10-18T03:48:22.913Z",
+        "JSHeapUsedSize": 6113432,
+        "JSHeapTotalSize": 10362880,
+        "Nodes": 428,
+        "Documents": 8,
+        "LayoutCount": 16,
+        "RecalcStyleCount": 48,
+        "TaskDuration": 0.167857,
+        "ScriptDuration": 0.026092,
+        "LayoutDuration": 0.049022,
+        "RecalcStyleDuration": 0.006742
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "name": "http://127.0.0.1:4173/dead-ranking.html",
+            "entryType": "navigation",
+            "startTime": 0,
+            "duration": 18.099999994039536,
+            "navigationId": 8678,
+            "initiatorType": "navigation",
+            "deliveryType": "",
+            "nextHopProtocol": "http/1.1",
+            "renderBlockingStatus": "non-blocking",
+            "contentType": "text/html",
+            "contentEncoding": "",
+            "workerStart": 0,
+            "workerRouterEvaluationStart": 0,
+            "workerCacheLookupStart": 0,
+            "workerMatchedSourceType": "",
+            "workerFinalSourceType": "",
+            "redirectStart": 0,
+            "redirectEnd": 0,
+            "fetchStart": 0.29999998211860657,
+            "domainLookupStart": 0.29999998211860657,
+            "domainLookupEnd": 0.29999998211860657,
+            "connectStart": 0.29999998211860657,
+            "secureConnectionStart": 0,
+            "connectEnd": 0.29999998211860657,
+            "requestStart": 0.8999999761581421,
+            "responseStart": 1.699999988079071,
+            "firstInterimResponseStart": 0,
+            "finalResponseHeadersStart": 1.699999988079071,
+            "responseEnd": 1.899999976158142,
+            "transferSize": 1219,
+            "encodedBodySize": 919,
+            "decodedBodySize": 919,
+            "responseStatus": 200,
+            "serverTiming": [],
+            "unloadEventStart": 0,
+            "unloadEventEnd": 0,
+            "domInteractive": 8.299999982118607,
+            "domContentLoadedEventStart": 18,
+            "domContentLoadedEventEnd": 18,
+            "domComplete": 18.099999994039536,
+            "loadEventStart": 18.099999994039536,
+            "loadEventEnd": 18.099999994039536,
+            "type": "navigate",
+            "redirectCount": 0,
+            "activationStart": 0,
+            "criticalCHRestart": 0,
+            "notRestoredReasons": null,
+            "confidence": {
+              "randomizedTriggerRate": 0.4994798,
+              "value": "high"
+            }
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "entryType": "paint",
+            "startTime": 16,
+            "duration": 0,
+            "navigationId": 8678,
+            "paintTime": 12.299999982118607,
+            "presentationTime": 16
+          },
+          {
+            "name": "first-contentful-paint",
+            "entryType": "paint",
+            "startTime": 72,
+            "duration": 0,
+            "navigationId": 8678,
+            "paintTime": 67,
+            "presentationTime": 72
+          }
+        ],
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js",
+            "duration": 2,
+            "transferSize": 970,
+            "encodedBodySize": 670
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/chronicle-catalog-56xv3GiH.js",
+            "duration": 4.4000000059604645,
+            "transferSize": 137235,
+            "encodedBodySize": 136935
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/work-index-BmvMq2vW.js",
+            "duration": 3.7000000178813934,
+            "transferSize": 18694,
+            "encodedBodySize": 18394
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BtET8AA6.js",
+            "duration": 3.7000000178813934,
+            "transferSize": 17015,
+            "encodedBodySize": 16715
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/ink-DJNFVVIJ.js",
+            "duration": 4.300000011920929,
+            "transferSize": 127384,
+            "encodedBodySize": 127084
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BbsrsVBy.css",
+            "duration": 4,
+            "transferSize": 28848,
+            "encodedBodySize": 28548
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/player-BlhK4IcF.js",
+            "duration": 4.5,
+            "transferSize": 98856,
+            "encodedBodySize": 98556
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/dead-ranking-DsgkqOyq.js",
+            "duration": 1.7000000178813934,
+            "transferSize": 137688,
+            "encodedBodySize": 137388
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.300000011920929,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/dead-ranking-DONmXZXG.js",
+            "duration": 1.5,
+            "transferSize": 135226,
+            "encodedBodySize": 134926
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/longmen-hall.webp",
+            "duration": 1.9000000059604645,
+            "transferSize": 293926,
+            "encodedBodySize": 293626
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/npc-robed-elder.webp",
+            "duration": 1.800000011920929,
+            "transferSize": 53710,
+            "encodedBodySize": 53410
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/npc-youth-blue.webp",
+            "duration": 1.699999988079071,
+            "transferSize": 98302,
+            "encodedBodySize": 98002
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          }
+        ]
+      },
+      "errors": [],
+      "servedHtmlSha256": "0c794fec6cb210bfc531ea3f61a4423db7c107efad0c1cb3bee6a50143477c15",
+      "generatedSha256": "0cba7ac64b2e068757855c8bfcaa609b93c362d60951f07819eb6efb0222d6cc"
+    },
+    {
+      "slug": "dead-ranking",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sample": 2,
+      "coverReadyMs": 65.63509999999951,
+      "newToFirstFrameMs": 53.164200000001074,
+      "firstChoiceBeat": "dr_dead_letter_7",
+      "advanceClicks": [
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_1",
+          "to": "dr_dead_letter_2",
+          "roundTripMs": 16.82810000000063
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_2",
+          "to": "dr_dead_letter_3",
+          "roundTripMs": 263.28310000000056
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_3",
+          "to": "dr_dead_letter_4",
+          "roundTripMs": 266.02630000000136
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_4",
+          "to": "dr_dead_letter_5",
+          "roundTripMs": 258.03290000000015
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_5",
+          "to": "dr_dead_letter_6",
+          "roundTripMs": 278.8757999999998
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_6",
+          "to": "dr_dead_letter_7",
+          "roundTripMs": 278.5661999999993
+        }
+      ],
+      "firstChoice": {
+        "action": "choice",
+        "cid": "dr_ask_letter_hand",
+        "from": "dr_dead_letter_7",
+        "to": "dr_dead_letter_8",
+        "roundTripMs": 274.8022999999994
+      },
+      "metrics": {
+        "label": "after-first-choice",
+        "beat": "dr_dead_letter_8",
+        "at": "2026-10-18T03:48:24.788Z",
+        "JSHeapUsedSize": 6098404,
+        "JSHeapTotalSize": 10625024,
+        "Nodes": 428,
+        "Documents": 8,
+        "LayoutCount": 16,
+        "RecalcStyleCount": 48,
+        "TaskDuration": 0.160343,
+        "ScriptDuration": 0.026419,
+        "LayoutDuration": 0.047483,
+        "RecalcStyleDuration": 0.006072
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "name": "http://127.0.0.1:4173/dead-ranking.html",
+            "entryType": "navigation",
+            "startTime": 0,
+            "duration": 17.5,
+            "navigationId": 3810,
+            "initiatorType": "navigation",
+            "deliveryType": "",
+            "nextHopProtocol": "http/1.1",
+            "renderBlockingStatus": "non-blocking",
+            "contentType": "text/html",
+            "contentEncoding": "",
+            "workerStart": 0,
+            "workerRouterEvaluationStart": 0,
+            "workerCacheLookupStart": 0,
+            "workerMatchedSourceType": "",
+            "workerFinalSourceType": "",
+            "redirectStart": 0,
+            "redirectEnd": 0,
+            "fetchStart": 0.30000001192092896,
+            "domainLookupStart": 0.30000001192092896,
+            "domainLookupEnd": 0.30000001192092896,
+            "connectStart": 0.30000001192092896,
+            "secureConnectionStart": 0,
+            "connectEnd": 0.30000001192092896,
+            "requestStart": 0.800000011920929,
+            "responseStart": 1.600000023841858,
+            "firstInterimResponseStart": 0,
+            "finalResponseHeadersStart": 1.600000023841858,
+            "responseEnd": 1.800000011920929,
+            "transferSize": 1219,
+            "encodedBodySize": 919,
+            "decodedBodySize": 919,
+            "responseStatus": 200,
+            "serverTiming": [],
+            "unloadEventStart": 0,
+            "unloadEventEnd": 0,
+            "domInteractive": 7.4000000059604645,
+            "domContentLoadedEventStart": 17.30000001192093,
+            "domContentLoadedEventEnd": 17.400000005960464,
+            "domComplete": 17.5,
+            "loadEventStart": 17.5,
+            "loadEventEnd": 17.5,
+            "type": "navigate",
+            "redirectCount": 0,
+            "activationStart": 0,
+            "criticalCHRestart": 0,
+            "notRestoredReasons": null,
+            "confidence": {
+              "randomizedTriggerRate": 0.4994798,
+              "value": "low"
+            }
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "entryType": "paint",
+            "startTime": 20,
+            "duration": 0,
+            "navigationId": 3810,
+            "paintTime": 13.800000011920929,
+            "presentationTime": 20
+          },
+          {
+            "name": "first-contentful-paint",
+            "entryType": "paint",
+            "startTime": 64,
+            "duration": 0,
+            "navigationId": 3810,
+            "paintTime": 58.70000001788139,
+            "presentationTime": 64
+          }
+        ],
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js",
+            "duration": 1.7999999821186066,
+            "transferSize": 970,
+            "encodedBodySize": 670
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BtET8AA6.js",
+            "duration": 3.7999999821186066,
+            "transferSize": 17015,
+            "encodedBodySize": 16715
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/chronicle-catalog-56xv3GiH.js",
+            "duration": 4.199999988079071,
+            "transferSize": 137235,
+            "encodedBodySize": 136935
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BbsrsVBy.css",
+            "duration": 4.0999999940395355,
+            "transferSize": 28848,
+            "encodedBodySize": 28548
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/work-index-BmvMq2vW.js",
+            "duration": 3.5,
+            "transferSize": 18694,
+            "encodedBodySize": 18394
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/ink-DJNFVVIJ.js",
+            "duration": 4.0999999940395355,
+            "transferSize": 127384,
+            "encodedBodySize": 127084
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/player-BlhK4IcF.js",
+            "duration": 4.5,
+            "transferSize": 98856,
+            "encodedBodySize": 98556
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/dead-ranking-DsgkqOyq.js",
+            "duration": 1.4000000059604645,
+            "transferSize": 137688,
+            "encodedBodySize": 137388
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.300000011920929,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/dead-ranking-DONmXZXG.js",
+            "duration": 1.399999976158142,
+            "transferSize": 135226,
+            "encodedBodySize": 134926
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/longmen-hall.webp",
+            "duration": 1.7000000178813934,
+            "transferSize": 293926,
+            "encodedBodySize": 293626
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/npc-robed-elder.webp",
+            "duration": 1.699999988079071,
+            "transferSize": 53710,
+            "encodedBodySize": 53410
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/npc-youth-blue.webp",
+            "duration": 1.5999999940395355,
+            "transferSize": 98302,
+            "encodedBodySize": 98002
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          }
+        ]
+      },
+      "errors": [],
+      "servedHtmlSha256": "0c794fec6cb210bfc531ea3f61a4423db7c107efad0c1cb3bee6a50143477c15",
+      "generatedSha256": "0cba7ac64b2e068757855c8bfcaa609b93c362d60951f07819eb6efb0222d6cc"
+    },
+    {
+      "slug": "dead-ranking",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sample": 3,
+      "coverReadyMs": 64.97420000000056,
+      "newToFirstFrameMs": 48.45429999999942,
+      "firstChoiceBeat": "dr_dead_letter_7",
+      "advanceClicks": [
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_1",
+          "to": "dr_dead_letter_2",
+          "roundTripMs": 18.44300000000112
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_2",
+          "to": "dr_dead_letter_3",
+          "roundTripMs": 260.0547999999999
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_3",
+          "to": "dr_dead_letter_4",
+          "roundTripMs": 260.4963000000007
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_4",
+          "to": "dr_dead_letter_5",
+          "roundTripMs": 264.15659999999843
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_5",
+          "to": "dr_dead_letter_6",
+          "roundTripMs": 264.0564000000013
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_6",
+          "to": "dr_dead_letter_7",
+          "roundTripMs": 266.39429999999993
+        }
+      ],
+      "firstChoice": {
+        "action": "choice",
+        "cid": "dr_ask_letter_hand",
+        "from": "dr_dead_letter_7",
+        "to": "dr_dead_letter_8",
+        "roundTripMs": 274.1741999999995
+      },
+      "metrics": {
+        "label": "after-first-choice",
+        "beat": "dr_dead_letter_8",
+        "at": "2026-10-18T03:48:26.636Z",
+        "JSHeapUsedSize": 6104804,
+        "JSHeapTotalSize": 10625024,
+        "Nodes": 428,
+        "Documents": 8,
+        "LayoutCount": 16,
+        "RecalcStyleCount": 48,
+        "TaskDuration": 0.157653,
+        "ScriptDuration": 0.025005,
+        "LayoutDuration": 0.048991,
+        "RecalcStyleDuration": 0.005825
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "name": "http://127.0.0.1:4173/dead-ranking.html",
+            "entryType": "navigation",
+            "startTime": 0,
+            "duration": 16.5,
+            "navigationId": 5571,
+            "initiatorType": "navigation",
+            "deliveryType": "",
+            "nextHopProtocol": "http/1.1",
+            "renderBlockingStatus": "non-blocking",
+            "contentType": "text/html",
+            "contentEncoding": "",
+            "workerStart": 0,
+            "workerRouterEvaluationStart": 0,
+            "workerCacheLookupStart": 0,
+            "workerMatchedSourceType": "",
+            "workerFinalSourceType": "",
+            "redirectStart": 0,
+            "redirectEnd": 0,
+            "fetchStart": 0.30000001192092896,
+            "domainLookupStart": 0.30000001192092896,
+            "domainLookupEnd": 0.30000001192092896,
+            "connectStart": 0.30000001192092896,
+            "secureConnectionStart": 0,
+            "connectEnd": 0.30000001192092896,
+            "requestStart": 0.800000011920929,
+            "responseStart": 1.5,
+            "firstInterimResponseStart": 0,
+            "finalResponseHeadersStart": 1.5,
+            "responseEnd": 1.7000000178813934,
+            "transferSize": 1219,
+            "encodedBodySize": 919,
+            "decodedBodySize": 919,
+            "responseStatus": 200,
+            "serverTiming": [],
+            "unloadEventStart": 0,
+            "unloadEventEnd": 0,
+            "domInteractive": 7.5999999940395355,
+            "domContentLoadedEventStart": 16.400000005960464,
+            "domContentLoadedEventEnd": 16.400000005960464,
+            "domComplete": 16.5,
+            "loadEventStart": 16.5,
+            "loadEventEnd": 16.5,
+            "type": "navigate",
+            "redirectCount": 0,
+            "activationStart": 0,
+            "criticalCHRestart": 0,
+            "notRestoredReasons": null,
+            "confidence": {
+              "randomizedTriggerRate": 0.4994798,
+              "value": "high"
+            }
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "entryType": "paint",
+            "startTime": 20,
+            "duration": 0,
+            "navigationId": 5571,
+            "paintTime": 15.5,
+            "presentationTime": 20
+          },
+          {
+            "name": "first-contentful-paint",
+            "entryType": "paint",
+            "startTime": 64,
+            "duration": 0,
+            "navigationId": 5571,
+            "paintTime": 57.599999994039536,
+            "presentationTime": 64
+          }
+        ],
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js",
+            "duration": 1.5999999940395355,
+            "transferSize": 970,
+            "encodedBodySize": 670
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BtET8AA6.js",
+            "duration": 2.5999999940395355,
+            "transferSize": 17015,
+            "encodedBodySize": 16715
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/chronicle-catalog-56xv3GiH.js",
+            "duration": 2.9000000059604645,
+            "transferSize": 137235,
+            "encodedBodySize": 136935
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BbsrsVBy.css",
+            "duration": 4.0999999940395355,
+            "transferSize": 28848,
+            "encodedBodySize": 28548
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/work-index-BmvMq2vW.js",
+            "duration": 2.300000011920929,
+            "transferSize": 18694,
+            "encodedBodySize": 18394
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/ink-DJNFVVIJ.js",
+            "duration": 3.0999999940395355,
+            "transferSize": 127384,
+            "encodedBodySize": 127084
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/player-BlhK4IcF.js",
+            "duration": 3.300000011920929,
+            "transferSize": 98856,
+            "encodedBodySize": 98556
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/dead-ranking-DsgkqOyq.js",
+            "duration": 1.300000011920929,
+            "transferSize": 137688,
+            "encodedBodySize": 137388
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.2000000178813934,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/dead-ranking-DONmXZXG.js",
+            "duration": 1.5,
+            "transferSize": 135226,
+            "encodedBodySize": 134926
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/longmen-hall.webp",
+            "duration": 1.800000011920929,
+            "transferSize": 293926,
+            "encodedBodySize": 293626
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/npc-robed-elder.webp",
+            "duration": 1.0999999940395355,
+            "transferSize": 53710,
+            "encodedBodySize": 53410
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/npc-youth-blue.webp",
+            "duration": 1,
+            "transferSize": 98302,
+            "encodedBodySize": 98002
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          }
+        ]
+      },
+      "errors": [],
+      "servedHtmlSha256": "0c794fec6cb210bfc531ea3f61a4423db7c107efad0c1cb3bee6a50143477c15",
+      "generatedSha256": "0cba7ac64b2e068757855c8bfcaa609b93c362d60951f07819eb6efb0222d6cc"
+    },
+    {
+      "slug": "taihua",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sample": 1,
+      "coverReadyMs": 70.45389999999861,
+      "newToFirstFrameMs": 52.0609000000004,
+      "firstChoiceBeat": "th_called_8",
+      "advanceClicks": [
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_1",
+          "to": "th_called_2",
+          "roundTripMs": 14.216499999998632
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_2",
+          "to": "th_called_3",
+          "roundTripMs": 262.1741000000002
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_3",
+          "to": "th_called_4",
+          "roundTripMs": 276.46010000000024
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_4",
+          "to": "th_called_5",
+          "roundTripMs": 276.5771999999997
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_5",
+          "to": "th_called_6",
+          "roundTripMs": 261.6905000000006
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_6",
+          "to": "th_called_7",
+          "roundTripMs": 261.35339999999997
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_7",
+          "to": "th_called_8",
+          "roundTripMs": 276.89540000000125
+        }
+      ],
+      "firstChoice": {
+        "action": "choice",
+        "cid": "th_care",
+        "from": "th_called_8",
+        "to": "th_called_9",
+        "roundTripMs": 279.6720999999998
+      },
+      "metrics": {
+        "label": "after-first-choice",
+        "beat": "th_called_9",
+        "at": "2026-10-18T03:48:28.792Z",
+        "JSHeapUsedSize": 6423300,
+        "JSHeapTotalSize": 10362880,
+        "Nodes": 476,
+        "Documents": 8,
+        "LayoutCount": 18,
+        "RecalcStyleCount": 53,
+        "TaskDuration": 0.174487,
+        "ScriptDuration": 0.029915,
+        "LayoutDuration": 0.046927,
+        "RecalcStyleDuration": 0.007383
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "name": "http://127.0.0.1:4173/taihua.html",
+            "entryType": "navigation",
+            "startTime": 0,
+            "duration": 17.5,
+            "navigationId": 4401,
+            "initiatorType": "navigation",
+            "deliveryType": "",
+            "nextHopProtocol": "http/1.1",
+            "renderBlockingStatus": "non-blocking",
+            "contentType": "text/html",
+            "contentEncoding": "",
+            "workerStart": 0,
+            "workerRouterEvaluationStart": 0,
+            "workerCacheLookupStart": 0,
+            "workerMatchedSourceType": "",
+            "workerFinalSourceType": "",
+            "redirectStart": 0,
+            "redirectEnd": 0,
+            "fetchStart": 0.30000001192092896,
+            "domainLookupStart": 0.30000001192092896,
+            "domainLookupEnd": 0.30000001192092896,
+            "connectStart": 0.30000001192092896,
+            "secureConnectionStart": 0,
+            "connectEnd": 0.30000001192092896,
+            "requestStart": 0.800000011920929,
+            "responseStart": 1.600000023841858,
+            "firstInterimResponseStart": 0,
+            "finalResponseHeadersStart": 1.600000023841858,
+            "responseEnd": 1.800000011920929,
+            "transferSize": 1401,
+            "encodedBodySize": 1101,
+            "decodedBodySize": 1101,
+            "responseStatus": 200,
+            "serverTiming": [],
+            "unloadEventStart": 0,
+            "unloadEventEnd": 0,
+            "domInteractive": 7.700000017881393,
+            "domContentLoadedEventStart": 17.400000005960464,
+            "domContentLoadedEventEnd": 17.5,
+            "domComplete": 17.5,
+            "loadEventStart": 17.5,
+            "loadEventEnd": 17.5,
+            "type": "navigate",
+            "redirectCount": 0,
+            "activationStart": 0,
+            "criticalCHRestart": 0,
+            "notRestoredReasons": null,
+            "confidence": {
+              "randomizedTriggerRate": 0.4994798,
+              "value": "high"
+            }
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "entryType": "paint",
+            "startTime": 20,
+            "duration": 0,
+            "navigationId": 4401,
+            "paintTime": 14.200000017881393,
+            "presentationTime": 20
+          },
+          {
+            "name": "first-contentful-paint",
+            "entryType": "paint",
+            "startTime": 92,
+            "duration": 0,
+            "navigationId": 4408,
+            "paintTime": 62.10000002384186,
+            "presentationTime": 92
+          }
+        ],
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/art/v6/taihua-night.webp",
+            "duration": 2.5999999940395355,
+            "transferSize": 302766,
+            "encodedBodySize": 302466
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js",
+            "duration": 2.9000000059604645,
+            "transferSize": 970,
+            "encodedBodySize": 670
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BtET8AA6.js",
+            "duration": 3.0999999940395355,
+            "transferSize": 17015,
+            "encodedBodySize": 16715
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/work-index-BmvMq2vW.js",
+            "duration": 4.199999988079071,
+            "transferSize": 18694,
+            "encodedBodySize": 18394
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/chronicle-catalog-56xv3GiH.js",
+            "duration": 3.2999999821186066,
+            "transferSize": 137235,
+            "encodedBodySize": 136935
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BbsrsVBy.css",
+            "duration": 4.5,
+            "transferSize": 28848,
+            "encodedBodySize": 28548
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/ink-DJNFVVIJ.js",
+            "duration": 4.5999999940395355,
+            "transferSize": 127384,
+            "encodedBodySize": 127084
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/player-BlhK4IcF.js",
+            "duration": 4.800000011920929,
+            "transferSize": 98856,
+            "encodedBodySize": 98556
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/taihua-Btssk8rO.js",
+            "duration": 1.300000011920929,
+            "transferSize": 133924,
+            "encodedBodySize": 133624
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.0999999940395355,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/taihua-guest.webp",
+            "duration": 1.7000000178813934,
+            "transferSize": 230564,
+            "encodedBodySize": 230264
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/npc-elder-male.webp",
+            "duration": 2.4000000059604645,
+            "transferSize": 119942,
+            "encodedBodySize": 119642
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/npc-youth-blue.webp",
+            "duration": 2.7000000178813934,
+            "transferSize": 98302,
+            "encodedBodySize": 98002
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 0.9000000059604645,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          }
+        ]
+      },
+      "errors": [],
+      "servedHtmlSha256": "22de952548fd1504866d52e05a7d46cc560a79aef75d63e6d1438b7517bca896",
+      "generatedSha256": "663f6334a5660b64cf5270c4c27e694ea7cafadd2a9173b6a6be001d21e75872"
+    },
+    {
+      "slug": "taihua",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sample": 2,
+      "coverReadyMs": 69.7497000000003,
+      "newToFirstFrameMs": 49.53139999999985,
+      "firstChoiceBeat": "th_called_8",
+      "advanceClicks": [
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_1",
+          "to": "th_called_2",
+          "roundTripMs": 13.661400000000867
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_2",
+          "to": "th_called_3",
+          "roundTripMs": 268.2569000000003
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_3",
+          "to": "th_called_4",
+          "roundTripMs": 277.91179999999804
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_4",
+          "to": "th_called_5",
+          "roundTripMs": 271.41359999999986
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_5",
+          "to": "th_called_6",
+          "roundTripMs": 265.91010000000097
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_6",
+          "to": "th_called_7",
+          "roundTripMs": 257.0180999999975
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_7",
+          "to": "th_called_8",
+          "roundTripMs": 263.3071999999993
+        }
+      ],
+      "firstChoice": {
+        "action": "choice",
+        "cid": "th_care",
+        "from": "th_called_8",
+        "to": "th_called_9",
+        "roundTripMs": 275.83780000000115
+      },
+      "metrics": {
+        "label": "after-first-choice",
+        "beat": "th_called_9",
+        "at": "2026-10-18T03:48:30.954Z",
+        "JSHeapUsedSize": 6433024,
+        "JSHeapTotalSize": 11411456,
+        "Nodes": 476,
+        "Documents": 8,
+        "LayoutCount": 18,
+        "RecalcStyleCount": 54,
+        "TaskDuration": 0.164673,
+        "ScriptDuration": 0.027934,
+        "LayoutDuration": 0.041579,
+        "RecalcStyleDuration": 0.006962
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "name": "http://127.0.0.1:4173/taihua.html",
+            "entryType": "navigation",
+            "startTime": 0,
+            "duration": 20.30000001192093,
+            "navigationId": 5083,
+            "initiatorType": "navigation",
+            "deliveryType": "",
+            "nextHopProtocol": "http/1.1",
+            "renderBlockingStatus": "non-blocking",
+            "contentType": "text/html",
+            "contentEncoding": "",
+            "workerStart": 0,
+            "workerRouterEvaluationStart": 0,
+            "workerCacheLookupStart": 0,
+            "workerMatchedSourceType": "",
+            "workerFinalSourceType": "",
+            "redirectStart": 0,
+            "redirectEnd": 0,
+            "fetchStart": 0.5,
+            "domainLookupStart": 0.5,
+            "domainLookupEnd": 0.5,
+            "connectStart": 0.5,
+            "secureConnectionStart": 0,
+            "connectEnd": 0.5,
+            "requestStart": 1.0999999940395355,
+            "responseStart": 2.4000000059604645,
+            "firstInterimResponseStart": 0,
+            "finalResponseHeadersStart": 2.4000000059604645,
+            "responseEnd": 2.699999988079071,
+            "transferSize": 1401,
+            "encodedBodySize": 1101,
+            "decodedBodySize": 1101,
+            "responseStatus": 200,
+            "serverTiming": [],
+            "unloadEventStart": 0,
+            "unloadEventEnd": 0,
+            "domInteractive": 10.300000011920929,
+            "domContentLoadedEventStart": 20.19999998807907,
+            "domContentLoadedEventEnd": 20.19999998807907,
+            "domComplete": 20.30000001192093,
+            "loadEventStart": 20.30000001192093,
+            "loadEventEnd": 20.30000001192093,
+            "type": "navigate",
+            "redirectCount": 0,
+            "activationStart": 0,
+            "criticalCHRestart": 0,
+            "notRestoredReasons": null,
+            "confidence": {
+              "randomizedTriggerRate": 0.4994798,
+              "value": "high"
+            }
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "entryType": "paint",
+            "startTime": 24,
+            "duration": 0,
+            "navigationId": 5083,
+            "paintTime": 14,
+            "presentationTime": 24
+          },
+          {
+            "name": "first-contentful-paint",
+            "entryType": "paint",
+            "startTime": 88,
+            "duration": 0,
+            "navigationId": 5090,
+            "paintTime": 61.80000001192093,
+            "presentationTime": 88
+          }
+        ],
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/art/v6/taihua-night.webp",
+            "duration": 3.7999999821186066,
+            "transferSize": 302766,
+            "encodedBodySize": 302466
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js",
+            "duration": 3.2000000178813934,
+            "transferSize": 970,
+            "encodedBodySize": 670
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BtET8AA6.js",
+            "duration": 3.5999999940395355,
+            "transferSize": 17015,
+            "encodedBodySize": 16715
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/chronicle-catalog-56xv3GiH.js",
+            "duration": 3.800000011920929,
+            "transferSize": 137235,
+            "encodedBodySize": 136935
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/work-index-BmvMq2vW.js",
+            "duration": 4.800000011920929,
+            "transferSize": 18694,
+            "encodedBodySize": 18394
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/ink-DJNFVVIJ.js",
+            "duration": 5.100000023841858,
+            "transferSize": 127384,
+            "encodedBodySize": 127084
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/player-BlhK4IcF.js",
+            "duration": 5.300000011920929,
+            "transferSize": 98856,
+            "encodedBodySize": 98556
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BbsrsVBy.css",
+            "duration": 5.0999999940395355,
+            "transferSize": 28848,
+            "encodedBodySize": 28548
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/taihua-Btssk8rO.js",
+            "duration": 1.5,
+            "transferSize": 133924,
+            "encodedBodySize": 133624
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.5,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/taihua-guest.webp",
+            "duration": 1.699999988079071,
+            "transferSize": 230564,
+            "encodedBodySize": 230264
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/npc-elder-male.webp",
+            "duration": 1.5,
+            "transferSize": 119942,
+            "encodedBodySize": 119642
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/npc-youth-blue.webp",
+            "duration": 1.399999976158142,
+            "transferSize": 98302,
+            "encodedBodySize": 98002
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.4000000059604645,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          }
+        ]
+      },
+      "errors": [],
+      "servedHtmlSha256": "22de952548fd1504866d52e05a7d46cc560a79aef75d63e6d1438b7517bca896",
+      "generatedSha256": "663f6334a5660b64cf5270c4c27e694ea7cafadd2a9173b6a6be001d21e75872"
+    },
+    {
+      "slug": "taihua",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sample": 3,
+      "coverReadyMs": 72.25470000000132,
+      "newToFirstFrameMs": 50.03350000000137,
+      "firstChoiceBeat": "th_called_8",
+      "advanceClicks": [
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_1",
+          "to": "th_called_2",
+          "roundTripMs": 12.636800000000221
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_2",
+          "to": "th_called_3",
+          "roundTripMs": 267.4938000000002
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_3",
+          "to": "th_called_4",
+          "roundTripMs": 265.19980000000214
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_4",
+          "to": "th_called_5",
+          "roundTripMs": 277.1434999999983
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_5",
+          "to": "th_called_6",
+          "roundTripMs": 261.0493999999999
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_6",
+          "to": "th_called_7",
+          "roundTripMs": 266.2534999999989
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "th_called_7",
+          "to": "th_called_8",
+          "roundTripMs": 276.9516000000003
+        }
+      ],
+      "firstChoice": {
+        "action": "choice",
+        "cid": "th_care",
+        "from": "th_called_8",
+        "to": "th_called_9",
+        "roundTripMs": 274.2533999999978
+      },
+      "metrics": {
+        "label": "after-first-choice",
+        "beat": "th_called_9",
+        "at": "2026-10-18T03:48:33.105Z",
+        "JSHeapUsedSize": 6432904,
+        "JSHeapTotalSize": 10625024,
+        "Nodes": 476,
+        "Documents": 8,
+        "LayoutCount": 18,
+        "RecalcStyleCount": 53,
+        "TaskDuration": 0.168469,
+        "ScriptDuration": 0.028137,
+        "LayoutDuration": 0.044622,
+        "RecalcStyleDuration": 0.007497
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "name": "http://127.0.0.1:4173/taihua.html",
+            "entryType": "navigation",
+            "startTime": 0,
+            "duration": 17.599999994039536,
+            "navigationId": 7769,
+            "initiatorType": "navigation",
+            "deliveryType": "",
+            "nextHopProtocol": "http/1.1",
+            "renderBlockingStatus": "non-blocking",
+            "contentType": "text/html",
+            "contentEncoding": "",
+            "workerStart": 0,
+            "workerRouterEvaluationStart": 0,
+            "workerCacheLookupStart": 0,
+            "workerMatchedSourceType": "",
+            "workerFinalSourceType": "",
+            "redirectStart": 0,
+            "redirectEnd": 0,
+            "fetchStart": 0.29999998211860657,
+            "domainLookupStart": 0.29999998211860657,
+            "domainLookupEnd": 0.29999998211860657,
+            "connectStart": 0.29999998211860657,
+            "secureConnectionStart": 0,
+            "connectEnd": 0.29999998211860657,
+            "requestStart": 0.7999999821186066,
+            "responseStart": 1.5999999940395355,
+            "firstInterimResponseStart": 0,
+            "finalResponseHeadersStart": 1.5999999940395355,
+            "responseEnd": 1.699999988079071,
+            "transferSize": 1401,
+            "encodedBodySize": 1101,
+            "decodedBodySize": 1101,
+            "responseStatus": 200,
+            "serverTiming": [],
+            "unloadEventStart": 0,
+            "unloadEventEnd": 0,
+            "domInteractive": 8.199999988079071,
+            "domContentLoadedEventStart": 17.599999994039536,
+            "domContentLoadedEventEnd": 17.599999994039536,
+            "domComplete": 17.599999994039536,
+            "loadEventStart": 17.599999994039536,
+            "loadEventEnd": 17.599999994039536,
+            "type": "navigate",
+            "redirectCount": 0,
+            "activationStart": 0,
+            "criticalCHRestart": 0,
+            "notRestoredReasons": null,
+            "confidence": {
+              "randomizedTriggerRate": 0.4994798,
+              "value": "high"
+            }
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "entryType": "paint",
+            "startTime": 20,
+            "duration": 0,
+            "navigationId": 7769,
+            "paintTime": 14.199999988079071,
+            "presentationTime": 20
+          },
+          {
+            "name": "first-contentful-paint",
+            "entryType": "paint",
+            "startTime": 92,
+            "duration": 0,
+            "navigationId": 7776,
+            "paintTime": 66.7999999821186,
+            "presentationTime": 92
+          }
+        ],
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/art/v6/taihua-night.webp",
+            "duration": 2.7999999821186066,
+            "transferSize": 302766,
+            "encodedBodySize": 302466
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js",
+            "duration": 2.9000000059604645,
+            "transferSize": 970,
+            "encodedBodySize": 670
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BtET8AA6.js",
+            "duration": 3.0999999940395355,
+            "transferSize": 17015,
+            "encodedBodySize": 16715
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/chronicle-catalog-56xv3GiH.js",
+            "duration": 3.199999988079071,
+            "transferSize": 137235,
+            "encodedBodySize": 136935
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/work-index-BmvMq2vW.js",
+            "duration": 4.0999999940395355,
+            "transferSize": 18694,
+            "encodedBodySize": 18394
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/ink-DJNFVVIJ.js",
+            "duration": 4.5,
+            "transferSize": 127384,
+            "encodedBodySize": 127084
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BbsrsVBy.css",
+            "duration": 4.300000011920929,
+            "transferSize": 28848,
+            "encodedBodySize": 28548
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/player-BlhK4IcF.js",
+            "duration": 4.600000023841858,
+            "transferSize": 98856,
+            "encodedBodySize": 98556
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/taihua-Btssk8rO.js",
+            "duration": 1.5,
+            "transferSize": 133924,
+            "encodedBodySize": 133624
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.4000000059604645,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/taihua-guest.webp",
+            "duration": 1.5,
+            "transferSize": 230564,
+            "encodedBodySize": 230264
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/npc-elder-male.webp",
+            "duration": 1.100000023841858,
+            "transferSize": 119942,
+            "encodedBodySize": 119642
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/npc-youth-blue.webp",
+            "duration": 1.0999999940395355,
+            "transferSize": 98302,
+            "encodedBodySize": 98002
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          }
+        ]
+      },
+      "errors": [],
+      "servedHtmlSha256": "22de952548fd1504866d52e05a7d46cc560a79aef75d63e6d1438b7517bca896",
+      "generatedSha256": "663f6334a5660b64cf5270c4c27e694ea7cafadd2a9173b6a6be001d21e75872"
+    },
+    {
+      "slug": "longmen",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sample": 1,
+      "coverReadyMs": 74.60990000000311,
+      "newToFirstFrameMs": 45.76339999999982,
+      "firstChoiceBeat": "lm_borrow_4",
+      "advanceClicks": [
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "lm_borrow_1",
+          "to": "lm_borrow_2",
+          "roundTripMs": 11.209999999999127
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "lm_borrow_2",
+          "to": "lm_borrow_3",
+          "roundTripMs": 270.71710000000166
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "lm_borrow_3",
+          "to": "lm_borrow_4",
+          "roundTripMs": 266.1903999999995
+        }
+      ],
+      "firstChoice": {
+        "action": "choice",
+        "cid": "lm_ask_use",
+        "from": "lm_borrow_4",
+        "to": "lm_borrow_5",
+        "roundTripMs": 272.655700000003
+      },
+      "metrics": {
+        "label": "after-first-choice",
+        "beat": "lm_borrow_5",
+        "at": "2026-10-18T03:48:34.161Z",
+        "JSHeapUsedSize": 5853500,
+        "JSHeapTotalSize": 9838592,
+        "Nodes": 321,
+        "Documents": 8,
+        "LayoutCount": 10,
+        "RecalcStyleCount": 34,
+        "TaskDuration": 0.1309,
+        "ScriptDuration": 0.021839,
+        "LayoutDuration": 0.035596,
+        "RecalcStyleDuration": 0.005369
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "name": "http://127.0.0.1:4173/longmen.html",
+            "entryType": "navigation",
+            "startTime": 0,
+            "duration": 19.700000017881393,
+            "navigationId": 3119,
+            "initiatorType": "navigation",
+            "deliveryType": "",
+            "nextHopProtocol": "http/1.1",
+            "renderBlockingStatus": "non-blocking",
+            "contentType": "text/html",
+            "contentEncoding": "",
+            "workerStart": 0,
+            "workerRouterEvaluationStart": 0,
+            "workerCacheLookupStart": 0,
+            "workerMatchedSourceType": "",
+            "workerFinalSourceType": "",
+            "redirectStart": 0,
+            "redirectEnd": 0,
+            "fetchStart": 0.30000001192092896,
+            "domainLookupStart": 0.30000001192092896,
+            "domainLookupEnd": 0.30000001192092896,
+            "connectStart": 0.30000001192092896,
+            "secureConnectionStart": 0,
+            "connectEnd": 0.30000001192092896,
+            "requestStart": 0.9000000059604645,
+            "responseStart": 1.600000023841858,
+            "firstInterimResponseStart": 0,
+            "finalResponseHeadersStart": 1.600000023841858,
+            "responseEnd": 2,
+            "transferSize": 1354,
+            "encodedBodySize": 1054,
+            "decodedBodySize": 1054,
+            "responseStatus": 200,
+            "serverTiming": [],
+            "unloadEventStart": 0,
+            "unloadEventEnd": 0,
+            "domInteractive": 8.900000005960464,
+            "domContentLoadedEventStart": 19.700000017881393,
+            "domContentLoadedEventEnd": 19.700000017881393,
+            "domComplete": 19.700000017881393,
+            "loadEventStart": 19.700000017881393,
+            "loadEventEnd": 19.700000017881393,
+            "type": "navigate",
+            "redirectCount": 0,
+            "activationStart": 0,
+            "criticalCHRestart": 0,
+            "notRestoredReasons": null,
+            "confidence": {
+              "randomizedTriggerRate": 0.4994798,
+              "value": "low"
+            }
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "entryType": "paint",
+            "startTime": 20,
+            "duration": 0,
+            "navigationId": 3119,
+            "paintTime": 12.5,
+            "presentationTime": 20
+          },
+          {
+            "name": "first-contentful-paint",
+            "entryType": "paint",
+            "startTime": 76,
+            "duration": 0,
+            "navigationId": 3119,
+            "paintTime": 66.10000002384186,
+            "presentationTime": 76
+          }
+        ],
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js",
+            "duration": 2.199999988079071,
+            "transferSize": 970,
+            "encodedBodySize": 670
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/chronicle-catalog-56xv3GiH.js",
+            "duration": 3.9000000059604645,
+            "transferSize": 137235,
+            "encodedBodySize": 136935
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/work-index-BmvMq2vW.js",
+            "duration": 3.7000000178813934,
+            "transferSize": 18694,
+            "encodedBodySize": 18394
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BtET8AA6.js",
+            "duration": 3.4000000059604645,
+            "transferSize": 17015,
+            "encodedBodySize": 16715
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/ink-DJNFVVIJ.js",
+            "duration": 4.100000023841858,
+            "transferSize": 127384,
+            "encodedBodySize": 127084
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/player-BlhK4IcF.js",
+            "duration": 4.399999976158142,
+            "transferSize": 98856,
+            "encodedBodySize": 98556
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BbsrsVBy.css",
+            "duration": 5.199999988079071,
+            "transferSize": 28848,
+            "encodedBodySize": 28548
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/longmen-DsptNtDJ.js",
+            "duration": 1.5999999940395355,
+            "transferSize": 104271,
+            "encodedBodySize": 103971
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.5999999940395355,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/longmen-CZCxkeHl.js",
+            "duration": 1.5999999940395355,
+            "transferSize": 104262,
+            "encodedBodySize": 103962
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/arena.webp",
+            "duration": 1.800000011920929,
+            "transferSize": 262254,
+            "encodedBodySize": 261954
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/longmen-hall.webp",
+            "duration": 2.0999999940395355,
+            "transferSize": 293926,
+            "encodedBodySize": 293626
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/lm-xu.webp",
+            "duration": 1.199999988079071,
+            "transferSize": 94732,
+            "encodedBodySize": 94432
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.0999999940395355,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/lm-xu-intent.webp",
+            "duration": 2.800000011920929,
+            "transferSize": 0,
+            "encodedBodySize": 79458
+          }
+        ]
+      },
+      "errors": [],
+      "servedHtmlSha256": "c1e866408b2487db20caa8bedf33ed79ea027e008d7917501e50c5c29f82220b",
+      "generatedSha256": "477d6c53d45dd8485c28fd9dcd9ca6027a52004d61790aca7d5347f663f1ec89"
+    },
+    {
+      "slug": "longmen",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sample": 2,
+      "coverReadyMs": 71.88690000000133,
+      "newToFirstFrameMs": 45.58520000000135,
+      "firstChoiceBeat": "lm_borrow_4",
+      "advanceClicks": [
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "lm_borrow_1",
+          "to": "lm_borrow_2",
+          "roundTripMs": 14.210300000002462
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "lm_borrow_2",
+          "to": "lm_borrow_3",
+          "roundTripMs": 265.2439000000013
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "lm_borrow_3",
+          "to": "lm_borrow_4",
+          "roundTripMs": 267.33490000000165
+        }
+      ],
+      "firstChoice": {
+        "action": "choice",
+        "cid": "lm_ask_use",
+        "from": "lm_borrow_4",
+        "to": "lm_borrow_5",
+        "roundTripMs": 271.9942999999985
+      },
+      "metrics": {
+        "label": "after-first-choice",
+        "beat": "lm_borrow_5",
+        "at": "2026-10-18T03:48:35.217Z",
+        "JSHeapUsedSize": 5896828,
+        "JSHeapTotalSize": 9838592,
+        "Nodes": 321,
+        "Documents": 8,
+        "LayoutCount": 10,
+        "RecalcStyleCount": 33,
+        "TaskDuration": 0.130627,
+        "ScriptDuration": 0.021598,
+        "LayoutDuration": 0.035903,
+        "RecalcStyleDuration": 0.005477
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "name": "http://127.0.0.1:4173/longmen.html",
+            "entryType": "navigation",
+            "startTime": 0,
+            "duration": 17.399999976158142,
+            "navigationId": 2762,
+            "initiatorType": "navigation",
+            "deliveryType": "",
+            "nextHopProtocol": "http/1.1",
+            "renderBlockingStatus": "non-blocking",
+            "contentType": "text/html",
+            "contentEncoding": "",
+            "workerStart": 0,
+            "workerRouterEvaluationStart": 0,
+            "workerCacheLookupStart": 0,
+            "workerMatchedSourceType": "",
+            "workerFinalSourceType": "",
+            "redirectStart": 0,
+            "redirectEnd": 0,
+            "fetchStart": 0.3999999761581421,
+            "domainLookupStart": 0.3999999761581421,
+            "domainLookupEnd": 0.3999999761581421,
+            "connectStart": 0.3999999761581421,
+            "secureConnectionStart": 0,
+            "connectEnd": 0.3999999761581421,
+            "requestStart": 0.8999999761581421,
+            "responseStart": 1.699999988079071,
+            "firstInterimResponseStart": 0,
+            "finalResponseHeadersStart": 1.699999988079071,
+            "responseEnd": 1.7999999821186066,
+            "transferSize": 1354,
+            "encodedBodySize": 1054,
+            "decodedBodySize": 1054,
+            "responseStatus": 200,
+            "serverTiming": [],
+            "unloadEventStart": 0,
+            "unloadEventEnd": 0,
+            "domInteractive": 8.099999994039536,
+            "domContentLoadedEventStart": 17.299999982118607,
+            "domContentLoadedEventEnd": 17.299999982118607,
+            "domComplete": 17.399999976158142,
+            "loadEventStart": 17.399999976158142,
+            "loadEventEnd": 17.399999976158142,
+            "type": "navigate",
+            "redirectCount": 0,
+            "activationStart": 0,
+            "criticalCHRestart": 0,
+            "notRestoredReasons": null,
+            "confidence": {
+              "randomizedTriggerRate": 0.4994798,
+              "value": "low"
+            }
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "entryType": "paint",
+            "startTime": 16,
+            "duration": 0,
+            "navigationId": 2762,
+            "paintTime": 12.399999976158142,
+            "presentationTime": 16
+          },
+          {
+            "name": "first-contentful-paint",
+            "entryType": "paint",
+            "startTime": 68,
+            "duration": 0,
+            "navigationId": 2762,
+            "paintTime": 62.89999997615814,
+            "presentationTime": 68
+          }
+        ],
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js",
+            "duration": 2.2000000178813934,
+            "transferSize": 970,
+            "encodedBodySize": 670
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/chronicle-catalog-56xv3GiH.js",
+            "duration": 3.7999999821186066,
+            "transferSize": 137235,
+            "encodedBodySize": 136935
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/work-index-BmvMq2vW.js",
+            "duration": 3.0999999940395355,
+            "transferSize": 18694,
+            "encodedBodySize": 18394
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BtET8AA6.js",
+            "duration": 3.300000011920929,
+            "transferSize": 17015,
+            "encodedBodySize": 16715
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BbsrsVBy.css",
+            "duration": 4.9000000059604645,
+            "transferSize": 28848,
+            "encodedBodySize": 28548
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/ink-DJNFVVIJ.js",
+            "duration": 3.800000011920929,
+            "transferSize": 127384,
+            "encodedBodySize": 127084
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/player-BlhK4IcF.js",
+            "duration": 4,
+            "transferSize": 98856,
+            "encodedBodySize": 98556
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/longmen-DsptNtDJ.js",
+            "duration": 1.699999988079071,
+            "transferSize": 104271,
+            "encodedBodySize": 103971
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.5999999940395355,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/longmen-CZCxkeHl.js",
+            "duration": 1.4000000059604645,
+            "transferSize": 104262,
+            "encodedBodySize": 103962
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/arena.webp",
+            "duration": 1.9000000059604645,
+            "transferSize": 262254,
+            "encodedBodySize": 261954
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/longmen-hall.webp",
+            "duration": 3.199999988079071,
+            "transferSize": 293926,
+            "encodedBodySize": 293626
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/lm-xu.webp",
+            "duration": 2.399999976158142,
+            "transferSize": 94732,
+            "encodedBodySize": 94432
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.2000000178813934,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/lm-xu-intent.webp",
+            "duration": 2.5,
+            "transferSize": 0,
+            "encodedBodySize": 79458
+          }
+        ]
+      },
+      "errors": [],
+      "servedHtmlSha256": "c1e866408b2487db20caa8bedf33ed79ea027e008d7917501e50c5c29f82220b",
+      "generatedSha256": "477d6c53d45dd8485c28fd9dcd9ca6027a52004d61790aca7d5347f663f1ec89"
+    },
+    {
+      "slug": "longmen",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sample": 3,
+      "coverReadyMs": 68.98629999999685,
+      "newToFirstFrameMs": 48.731800000001385,
+      "firstChoiceBeat": "lm_borrow_4",
+      "advanceClicks": [
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "lm_borrow_1",
+          "to": "lm_borrow_2",
+          "roundTripMs": 12.974400000002788
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "lm_borrow_2",
+          "to": "lm_borrow_3",
+          "roundTripMs": 266.83250000000044
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "lm_borrow_3",
+          "to": "lm_borrow_4",
+          "roundTripMs": 263.36409999999887
+        }
+      ],
+      "firstChoice": {
+        "action": "choice",
+        "cid": "lm_ask_use",
+        "from": "lm_borrow_4",
+        "to": "lm_borrow_5",
+        "roundTripMs": 271.9916999999987
+      },
+      "metrics": {
+        "label": "after-first-choice",
+        "beat": "lm_borrow_5",
+        "at": "2026-10-18T03:48:36.270Z",
+        "JSHeapUsedSize": 5865408,
+        "JSHeapTotalSize": 9838592,
+        "Nodes": 321,
+        "Documents": 8,
+        "LayoutCount": 10,
+        "RecalcStyleCount": 33,
+        "TaskDuration": 0.130371,
+        "ScriptDuration": 0.021008,
+        "LayoutDuration": 0.035049,
+        "RecalcStyleDuration": 0.005194
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "name": "http://127.0.0.1:4173/longmen.html",
+            "entryType": "navigation",
+            "startTime": 0,
+            "duration": 17.399999976158142,
+            "navigationId": 3248,
+            "initiatorType": "navigation",
+            "deliveryType": "",
+            "nextHopProtocol": "http/1.1",
+            "renderBlockingStatus": "non-blocking",
+            "contentType": "text/html",
+            "contentEncoding": "",
+            "workerStart": 0,
+            "workerRouterEvaluationStart": 0,
+            "workerCacheLookupStart": 0,
+            "workerMatchedSourceType": "",
+            "workerFinalSourceType": "",
+            "redirectStart": 0,
+            "redirectEnd": 0,
+            "fetchStart": 0.19999998807907104,
+            "domainLookupStart": 0.19999998807907104,
+            "domainLookupEnd": 0.19999998807907104,
+            "connectStart": 0.19999998807907104,
+            "secureConnectionStart": 0,
+            "connectEnd": 0.19999998807907104,
+            "requestStart": 0.699999988079071,
+            "responseStart": 1.399999976158142,
+            "firstInterimResponseStart": 0,
+            "finalResponseHeadersStart": 1.399999976158142,
+            "responseEnd": 1.5999999940395355,
+            "transferSize": 1354,
+            "encodedBodySize": 1054,
+            "decodedBodySize": 1054,
+            "responseStatus": 200,
+            "serverTiming": [],
+            "unloadEventStart": 0,
+            "unloadEventEnd": 0,
+            "domInteractive": 7.199999988079071,
+            "domContentLoadedEventStart": 17.299999982118607,
+            "domContentLoadedEventEnd": 17.299999982118607,
+            "domComplete": 17.399999976158142,
+            "loadEventStart": 17.399999976158142,
+            "loadEventEnd": 17.399999976158142,
+            "type": "navigate",
+            "redirectCount": 0,
+            "activationStart": 0,
+            "criticalCHRestart": 0,
+            "notRestoredReasons": null,
+            "confidence": {
+              "randomizedTriggerRate": 0.4994798,
+              "value": "low"
+            }
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "entryType": "paint",
+            "startTime": 16,
+            "duration": 0,
+            "navigationId": 3248,
+            "paintTime": 11.799999982118607,
+            "presentationTime": 16
+          },
+          {
+            "name": "first-contentful-paint",
+            "entryType": "paint",
+            "startTime": 68,
+            "duration": 0,
+            "navigationId": 3248,
+            "paintTime": 60.5,
+            "presentationTime": 68
+          }
+        ],
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js",
+            "duration": 2.0999999940395355,
+            "transferSize": 970,
+            "encodedBodySize": 670
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/chronicle-catalog-56xv3GiH.js",
+            "duration": 4.5999999940395355,
+            "transferSize": 137235,
+            "encodedBodySize": 136935
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BbsrsVBy.css",
+            "duration": 4.4000000059604645,
+            "transferSize": 28848,
+            "encodedBodySize": 28548
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/work-index-BmvMq2vW.js",
+            "duration": 3.9000000059604645,
+            "transferSize": 18694,
+            "encodedBodySize": 18394
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BtET8AA6.js",
+            "duration": 3.7999999821186066,
+            "transferSize": 17015,
+            "encodedBodySize": 16715
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/ink-DJNFVVIJ.js",
+            "duration": 4.5,
+            "transferSize": 127384,
+            "encodedBodySize": 127084
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/player-BlhK4IcF.js",
+            "duration": 4.9000000059604645,
+            "transferSize": 98856,
+            "encodedBodySize": 98556
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/longmen-DsptNtDJ.js",
+            "duration": 1.699999988079071,
+            "transferSize": 104271,
+            "encodedBodySize": 103971
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.5,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/longmen-CZCxkeHl.js",
+            "duration": 1.5,
+            "transferSize": 104262,
+            "encodedBodySize": 103962
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/arena.webp",
+            "duration": 1.4000000059604645,
+            "transferSize": 262254,
+            "encodedBodySize": 261954
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/longmen-hall.webp",
+            "duration": 2.2999999821186066,
+            "transferSize": 293926,
+            "encodedBodySize": 293626
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/lm-xu.webp",
+            "duration": 1.5999999940395355,
+            "transferSize": 94732,
+            "encodedBodySize": 94432
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.199999988079071,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/lm-xu-intent.webp",
+            "duration": 2.5999999940395355,
+            "transferSize": 0,
+            "encodedBodySize": 79458
+          }
+        ]
+      },
+      "errors": [],
+      "servedHtmlSha256": "c1e866408b2487db20caa8bedf33ed79ea027e008d7917501e50c5c29f82220b",
+      "generatedSha256": "477d6c53d45dd8485c28fd9dcd9ca6027a52004d61790aca7d5347f663f1ec89"
+    },
+    {
+      "slug": "dead-ranking",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sample": 1,
+      "coverReadyMs": 67.40219999999681,
+      "newToFirstFrameMs": 58.53379999999743,
+      "firstChoiceBeat": "dr_dead_letter_7",
+      "advanceClicks": [
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_1",
+          "to": "dr_dead_letter_2",
+          "roundTripMs": 18.482499999998254
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_2",
+          "to": "dr_dead_letter_3",
+          "roundTripMs": 262.06440000000293
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_3",
+          "to": "dr_dead_letter_4",
+          "roundTripMs": 261.8636000000006
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_4",
+          "to": "dr_dead_letter_5",
+          "roundTripMs": 275.14589999999953
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_5",
+          "to": "dr_dead_letter_6",
+          "roundTripMs": 259.6077000000005
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_6",
+          "to": "dr_dead_letter_7",
+          "roundTripMs": 268.27800000000207
+        }
+      ],
+      "firstChoice": {
+        "action": "choice",
+        "cid": "dr_ask_letter_hand",
+        "from": "dr_dead_letter_7",
+        "to": "dr_dead_letter_8",
+        "roundTripMs": 272.14830000000075
+      },
+      "metrics": {
+        "label": "after-first-choice",
+        "beat": "dr_dead_letter_8",
+        "at": "2026-10-18T03:48:38.142Z",
+        "JSHeapUsedSize": 6130628,
+        "JSHeapTotalSize": 10100736,
+        "Nodes": 428,
+        "Documents": 8,
+        "LayoutCount": 16,
+        "RecalcStyleCount": 48,
+        "TaskDuration": 0.163763,
+        "ScriptDuration": 0.027144,
+        "LayoutDuration": 0.048384,
+        "RecalcStyleDuration": 0.006112
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "name": "http://127.0.0.1:4173/dead-ranking.html",
+            "entryType": "navigation",
+            "startTime": 0,
+            "duration": 17,
+            "navigationId": 9167,
+            "initiatorType": "navigation",
+            "deliveryType": "",
+            "nextHopProtocol": "http/1.1",
+            "renderBlockingStatus": "non-blocking",
+            "contentType": "text/html",
+            "contentEncoding": "",
+            "workerStart": 0,
+            "workerRouterEvaluationStart": 0,
+            "workerCacheLookupStart": 0,
+            "workerMatchedSourceType": "",
+            "workerFinalSourceType": "",
+            "redirectStart": 0,
+            "redirectEnd": 0,
+            "fetchStart": 0.4000000059604645,
+            "domainLookupStart": 0.4000000059604645,
+            "domainLookupEnd": 0.4000000059604645,
+            "connectStart": 0.4000000059604645,
+            "secureConnectionStart": 0,
+            "connectEnd": 0.4000000059604645,
+            "requestStart": 0.9000000059604645,
+            "responseStart": 1.5999999940395355,
+            "firstInterimResponseStart": 0,
+            "finalResponseHeadersStart": 1.5999999940395355,
+            "responseEnd": 1.7999999821186066,
+            "transferSize": 1219,
+            "encodedBodySize": 919,
+            "decodedBodySize": 919,
+            "responseStatus": 200,
+            "serverTiming": [],
+            "unloadEventStart": 0,
+            "unloadEventEnd": 0,
+            "domInteractive": 8.099999994039536,
+            "domContentLoadedEventStart": 16.799999982118607,
+            "domContentLoadedEventEnd": 16.900000005960464,
+            "domComplete": 17,
+            "loadEventStart": 17,
+            "loadEventEnd": 17,
+            "type": "navigate",
+            "redirectCount": 0,
+            "activationStart": 0,
+            "criticalCHRestart": 0,
+            "notRestoredReasons": null,
+            "confidence": {
+              "randomizedTriggerRate": 0.4994798,
+              "value": "high"
+            }
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "entryType": "paint",
+            "startTime": 16,
+            "duration": 0,
+            "navigationId": 9167,
+            "paintTime": 11.599999994039536,
+            "presentationTime": 16
+          },
+          {
+            "name": "first-contentful-paint",
+            "entryType": "paint",
+            "startTime": 68,
+            "duration": 0,
+            "navigationId": 9167,
+            "paintTime": 60.69999998807907,
+            "presentationTime": 68
+          }
+        ],
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js",
+            "duration": 1.899999976158142,
+            "transferSize": 970,
+            "encodedBodySize": 670
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/work-index-BmvMq2vW.js",
+            "duration": 3.699999988079071,
+            "transferSize": 18694,
+            "encodedBodySize": 18394
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BtET8AA6.js",
+            "duration": 3.5999999940395355,
+            "transferSize": 17015,
+            "encodedBodySize": 16715
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/chronicle-catalog-56xv3GiH.js",
+            "duration": 4.0999999940395355,
+            "transferSize": 137235,
+            "encodedBodySize": 136935
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BbsrsVBy.css",
+            "duration": 3.9000000059604645,
+            "transferSize": 28848,
+            "encodedBodySize": 28548
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/player-BlhK4IcF.js",
+            "duration": 4.300000011920929,
+            "transferSize": 98856,
+            "encodedBodySize": 98556
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/ink-DJNFVVIJ.js",
+            "duration": 4,
+            "transferSize": 127384,
+            "encodedBodySize": 127084
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/dead-ranking-DsgkqOyq.js",
+            "duration": 1.600000023841858,
+            "transferSize": 137688,
+            "encodedBodySize": 137388
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.2999999821186066,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/dead-ranking-DONmXZXG.js",
+            "duration": 1.4000000059604645,
+            "transferSize": 135226,
+            "encodedBodySize": 134926
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/longmen-hall.webp",
+            "duration": 1.800000011920929,
+            "transferSize": 293926,
+            "encodedBodySize": 293626
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/npc-robed-elder.webp",
+            "duration": 1.4000000059604645,
+            "transferSize": 53710,
+            "encodedBodySize": 53410
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/npc-youth-blue.webp",
+            "duration": 1.2999999821186066,
+            "transferSize": 98302,
+            "encodedBodySize": 98002
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.0999999940395355,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          }
+        ]
+      },
+      "errors": [],
+      "servedHtmlSha256": "0c794fec6cb210bfc531ea3f61a4423db7c107efad0c1cb3bee6a50143477c15",
+      "generatedSha256": "0cba7ac64b2e068757855c8bfcaa609b93c362d60951f07819eb6efb0222d6cc"
+    },
+    {
+      "slug": "dead-ranking",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sample": 2,
+      "coverReadyMs": 69.66579999999885,
+      "newToFirstFrameMs": 48.336200000001554,
+      "firstChoiceBeat": "dr_dead_letter_7",
+      "advanceClicks": [
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_1",
+          "to": "dr_dead_letter_2",
+          "roundTripMs": 16.23070000000007
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_2",
+          "to": "dr_dead_letter_3",
+          "roundTripMs": 261.3172000000013
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_3",
+          "to": "dr_dead_letter_4",
+          "roundTripMs": 263.8172999999988
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_4",
+          "to": "dr_dead_letter_5",
+          "roundTripMs": 264.4663999999975
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_5",
+          "to": "dr_dead_letter_6",
+          "roundTripMs": 263.02939999999944
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_6",
+          "to": "dr_dead_letter_7",
+          "roundTripMs": 264.2597999999998
+        }
+      ],
+      "firstChoice": {
+        "action": "choice",
+        "cid": "dr_ask_letter_hand",
+        "from": "dr_dead_letter_7",
+        "to": "dr_dead_letter_8",
+        "roundTripMs": 278.7894000000015
+      },
+      "metrics": {
+        "label": "after-first-choice",
+        "beat": "dr_dead_letter_8",
+        "at": "2026-10-18T03:48:39.994Z",
+        "JSHeapUsedSize": 6113780,
+        "JSHeapTotalSize": 10100736,
+        "Nodes": 428,
+        "Documents": 8,
+        "LayoutCount": 16,
+        "RecalcStyleCount": 49,
+        "TaskDuration": 0.152376,
+        "ScriptDuration": 0.024486,
+        "LayoutDuration": 0.045183,
+        "RecalcStyleDuration": 0.005958
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "name": "http://127.0.0.1:4173/dead-ranking.html",
+            "entryType": "navigation",
+            "startTime": 0,
+            "duration": 17.19999998807907,
+            "navigationId": 9448,
+            "initiatorType": "navigation",
+            "deliveryType": "",
+            "nextHopProtocol": "http/1.1",
+            "renderBlockingStatus": "non-blocking",
+            "contentType": "text/html",
+            "contentEncoding": "",
+            "workerStart": 0,
+            "workerRouterEvaluationStart": 0,
+            "workerCacheLookupStart": 0,
+            "workerMatchedSourceType": "",
+            "workerFinalSourceType": "",
+            "redirectStart": 0,
+            "redirectEnd": 0,
+            "fetchStart": 0.29999998211860657,
+            "domainLookupStart": 0.29999998211860657,
+            "domainLookupEnd": 0.29999998211860657,
+            "connectStart": 0.29999998211860657,
+            "secureConnectionStart": 0,
+            "connectEnd": 0.29999998211860657,
+            "requestStart": 0.7999999821186066,
+            "responseStart": 1.699999988079071,
+            "firstInterimResponseStart": 0,
+            "finalResponseHeadersStart": 1.699999988079071,
+            "responseEnd": 1.7999999821186066,
+            "transferSize": 1219,
+            "encodedBodySize": 919,
+            "decodedBodySize": 919,
+            "responseStatus": 200,
+            "serverTiming": [],
+            "unloadEventStart": 0,
+            "unloadEventEnd": 0,
+            "domInteractive": 7.799999982118607,
+            "domContentLoadedEventStart": 17.099999994039536,
+            "domContentLoadedEventEnd": 17.19999998807907,
+            "domComplete": 17.19999998807907,
+            "loadEventStart": 17.19999998807907,
+            "loadEventEnd": 17.19999998807907,
+            "type": "navigate",
+            "redirectCount": 0,
+            "activationStart": 0,
+            "criticalCHRestart": 0,
+            "notRestoredReasons": null,
+            "confidence": {
+              "randomizedTriggerRate": 0.4994798,
+              "value": "high"
+            }
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "entryType": "paint",
+            "startTime": 16,
+            "duration": 0,
+            "navigationId": 9448,
+            "paintTime": 11.5,
+            "presentationTime": 16
+          },
+          {
+            "name": "first-contentful-paint",
+            "entryType": "paint",
+            "startTime": 68,
+            "duration": 0,
+            "navigationId": 9448,
+            "paintTime": 62.099999994039536,
+            "presentationTime": 68
+          }
+        ],
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js",
+            "duration": 1.800000011920929,
+            "transferSize": 970,
+            "encodedBodySize": 670
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/chronicle-catalog-56xv3GiH.js",
+            "duration": 4.399999976158142,
+            "transferSize": 137235,
+            "encodedBodySize": 136935
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BtET8AA6.js",
+            "duration": 3.699999988079071,
+            "transferSize": 17015,
+            "encodedBodySize": 16715
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BbsrsVBy.css",
+            "duration": 4.0999999940395355,
+            "transferSize": 28848,
+            "encodedBodySize": 28548
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/work-index-BmvMq2vW.js",
+            "duration": 3.800000011920929,
+            "transferSize": 18694,
+            "encodedBodySize": 18394
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/ink-DJNFVVIJ.js",
+            "duration": 4.199999988079071,
+            "transferSize": 127384,
+            "encodedBodySize": 127084
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/player-BlhK4IcF.js",
+            "duration": 4.5,
+            "transferSize": 98856,
+            "encodedBodySize": 98556
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/dead-ranking-DsgkqOyq.js",
+            "duration": 1.5,
+            "transferSize": 137688,
+            "encodedBodySize": 137388
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.0999999940395355,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/dead-ranking-DONmXZXG.js",
+            "duration": 1.5999999940395355,
+            "transferSize": 135226,
+            "encodedBodySize": 134926
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/longmen-hall.webp",
+            "duration": 1.4000000059604645,
+            "transferSize": 293926,
+            "encodedBodySize": 293626
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/npc-robed-elder.webp",
+            "duration": 0.800000011920929,
+            "transferSize": 53710,
+            "encodedBodySize": 53410
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/npc-youth-blue.webp",
+            "duration": 0.800000011920929,
+            "transferSize": 98302,
+            "encodedBodySize": 98002
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.300000011920929,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          }
+        ]
+      },
+      "errors": [],
+      "servedHtmlSha256": "0c794fec6cb210bfc531ea3f61a4423db7c107efad0c1cb3bee6a50143477c15",
+      "generatedSha256": "0cba7ac64b2e068757855c8bfcaa609b93c362d60951f07819eb6efb0222d6cc"
+    },
+    {
+      "slug": "dead-ranking",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sample": 3,
+      "coverReadyMs": 65.49199999999837,
+      "newToFirstFrameMs": 48.53659999999945,
+      "firstChoiceBeat": "dr_dead_letter_7",
+      "advanceClicks": [
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_1",
+          "to": "dr_dead_letter_2",
+          "roundTripMs": 17.029900000001362
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_2",
+          "to": "dr_dead_letter_3",
+          "roundTripMs": 263.6631000000016
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_3",
+          "to": "dr_dead_letter_4",
+          "roundTripMs": 265.9958000000006
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_4",
+          "to": "dr_dead_letter_5",
+          "roundTripMs": 259.11699999999837
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_5",
+          "to": "dr_dead_letter_6",
+          "roundTripMs": 272.4258000000009
+        },
+        {
+          "action": "advance",
+          "cid": null,
+          "from": "dr_dead_letter_6",
+          "to": "dr_dead_letter_7",
+          "roundTripMs": 265.6129000000001
+        }
+      ],
+      "firstChoice": {
+        "action": "choice",
+        "cid": "dr_ask_letter_hand",
+        "from": "dr_dead_letter_7",
+        "to": "dr_dead_letter_8",
+        "roundTripMs": 274.5922000000028
+      },
+      "metrics": {
+        "label": "after-first-choice",
+        "beat": "dr_dead_letter_8",
+        "at": "2026-10-18T03:48:41.845Z",
+        "JSHeapUsedSize": 6177028,
+        "JSHeapTotalSize": 10362880,
+        "Nodes": 428,
+        "Documents": 8,
+        "LayoutCount": 16,
+        "RecalcStyleCount": 48,
+        "TaskDuration": 0.152653,
+        "ScriptDuration": 0.024164,
+        "LayoutDuration": 0.045015,
+        "RecalcStyleDuration": 0.006199
+      },
+      "navigation": {
+        "navigation": [
+          {
+            "name": "http://127.0.0.1:4173/dead-ranking.html",
+            "entryType": "navigation",
+            "startTime": 0,
+            "duration": 16.299999982118607,
+            "navigationId": 8006,
+            "initiatorType": "navigation",
+            "deliveryType": "",
+            "nextHopProtocol": "http/1.1",
+            "renderBlockingStatus": "non-blocking",
+            "contentType": "text/html",
+            "contentEncoding": "",
+            "workerStart": 0,
+            "workerRouterEvaluationStart": 0,
+            "workerCacheLookupStart": 0,
+            "workerMatchedSourceType": "",
+            "workerFinalSourceType": "",
+            "redirectStart": 0,
+            "redirectEnd": 0,
+            "fetchStart": 0.19999998807907104,
+            "domainLookupStart": 0.19999998807907104,
+            "domainLookupEnd": 0.19999998807907104,
+            "connectStart": 0.19999998807907104,
+            "secureConnectionStart": 0,
+            "connectEnd": 0.19999998807907104,
+            "requestStart": 0.699999988079071,
+            "responseStart": 1.399999976158142,
+            "firstInterimResponseStart": 0,
+            "finalResponseHeadersStart": 1.399999976158142,
+            "responseEnd": 1.5999999940395355,
+            "transferSize": 1219,
+            "encodedBodySize": 919,
+            "decodedBodySize": 919,
+            "responseStatus": 200,
+            "serverTiming": [],
+            "unloadEventStart": 0,
+            "unloadEventEnd": 0,
+            "domInteractive": 7.899999976158142,
+            "domContentLoadedEventStart": 16.099999994039536,
+            "domContentLoadedEventEnd": 16.19999998807907,
+            "domComplete": 16.299999982118607,
+            "loadEventStart": 16.299999982118607,
+            "loadEventEnd": 16.299999982118607,
+            "type": "navigate",
+            "redirectCount": 0,
+            "activationStart": 0,
+            "criticalCHRestart": 0,
+            "notRestoredReasons": null,
+            "confidence": {
+              "randomizedTriggerRate": 0.4994798,
+              "value": "high"
+            }
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "entryType": "paint",
+            "startTime": 16,
+            "duration": 0,
+            "navigationId": 8006,
+            "paintTime": 10.899999976158142,
+            "presentationTime": 16
+          },
+          {
+            "name": "first-contentful-paint",
+            "entryType": "paint",
+            "startTime": 64,
+            "duration": 0,
+            "navigationId": 8006,
+            "paintTime": 57.79999998211861,
+            "presentationTime": 64
+          }
+        ],
+        "resources": [
+          {
+            "name": "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js",
+            "duration": 2.0999999940395355,
+            "transferSize": 970,
+            "encodedBodySize": 670
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/chronicle-catalog-56xv3GiH.js",
+            "duration": 3.9000000059604645,
+            "transferSize": 137235,
+            "encodedBodySize": 136935
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/work-index-BmvMq2vW.js",
+            "duration": 3.300000011920929,
+            "transferSize": 18694,
+            "encodedBodySize": 18394
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BtET8AA6.js",
+            "duration": 3.300000011920929,
+            "transferSize": 17015,
+            "encodedBodySize": 16715
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/ink-DJNFVVIJ.js",
+            "duration": 3.699999988079071,
+            "transferSize": 127384,
+            "encodedBodySize": 127084
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/player-BlhK4IcF.js",
+            "duration": 3.899999976158142,
+            "transferSize": 98856,
+            "encodedBodySize": 98556
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/catalog-BbsrsVBy.css",
+            "duration": 3.5,
+            "transferSize": 28848,
+            "encodedBodySize": 28548
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/dead-ranking-DsgkqOyq.js",
+            "duration": 1.699999988079071,
+            "transferSize": 137688,
+            "encodedBodySize": 137388
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 1.0999999940395355,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          },
+          {
+            "name": "http://127.0.0.1:4173/assets/dead-ranking-DONmXZXG.js",
+            "duration": 1.5,
+            "transferSize": 135226,
+            "encodedBodySize": 134926
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/longmen-hall.webp",
+            "duration": 1.7999999821186066,
+            "transferSize": 293926,
+            "encodedBodySize": 293626
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v6/npc-robed-elder.webp",
+            "duration": 1,
+            "transferSize": 53710,
+            "encodedBodySize": 53410
+          },
+          {
+            "name": "http://127.0.0.1:4173/art/v5/npc-youth-blue.webp",
+            "duration": 0.8999999761581421,
+            "transferSize": 98302,
+            "encodedBodySize": 98002
+          },
+          {
+            "name": "http://127.0.0.1:4173/seal.svg",
+            "duration": 0.7999999821186066,
+            "transferSize": 532,
+            "encodedBodySize": 232
+          }
+        ]
+      },
+      "errors": [],
+      "servedHtmlSha256": "0c794fec6cb210bfc531ea3f61a4423db7c107efad0c1cb3bee6a50143477c15",
+      "generatedSha256": "0cba7ac64b2e068757855c8bfcaa609b93c362d60951f07819eb6efb0222d6cc"
+    }
+  ],
+  "longRun": {
+    "slug": "longmen",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "route": "First enabled choice at every decision; real fresh opening through ending",
+    "started": "2026-10-18T03:48:42.052Z",
+    "clicks": [
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_borrow_1",
+        "to": "lm_borrow_2",
+        "roundTripMs": 10.45679999999993
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_borrow_2",
+        "to": "lm_borrow_3",
+        "roundTripMs": 267.88980000000083
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_borrow_3",
+        "to": "lm_borrow_4",
+        "roundTripMs": 258.97230000000127
+      },
+      {
+        "action": "choice",
+        "cid": "lm_ask_use",
+        "from": "lm_borrow_4",
+        "to": "lm_borrow_5",
+        "roundTripMs": 274.15360000000146
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_borrow_5",
+        "to": "lm_borrow_6",
+        "roundTripMs": 262.8859999999986
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_borrow_6",
+        "to": "lm_borrow_7",
+        "roundTripMs": 260.60119999999733
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_borrow_7",
+        "to": "lm_old_blade_1",
+        "roundTripMs": 261.5746999999974
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_old_blade_1",
+        "to": "lm_old_blade_2",
+        "roundTripMs": 263.5414000000019
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_old_blade_2",
+        "to": "lm_old_blade_3",
+        "roundTripMs": 264.1296999999977
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_old_blade_3",
+        "to": "lm_old_blade_4",
+        "roundTripMs": 262.4487000000008
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_old_blade_4",
+        "to": "lm_old_blade_5",
+        "roundTripMs": 260.0598000000027
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_old_blade_5",
+        "to": "lm_old_blade_6",
+        "roundTripMs": 288.42239999999583
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_old_blade_6",
+        "to": "lm_old_blade_7",
+        "roundTripMs": 190.07909999999538
+      },
+      {
+        "action": "choice",
+        "cid": "lm_ask_wound",
+        "from": "lm_old_blade_7",
+        "to": "lm_old_blade_9",
+        "roundTripMs": 183.88930000000255
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_old_blade_9",
+        "to": "lm_old_blade_10",
+        "roundTripMs": 266.76840000000084
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_old_blade_10",
+        "to": "lm_old_blade_11",
+        "roundTripMs": 269.723699999995
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_old_blade_11",
+        "to": "lm_old_blade_12",
+        "roundTripMs": 263.26230000000214
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_old_blade_12",
+        "to": "lm_qinghe_1",
+        "roundTripMs": 269.1644000000015
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_1",
+        "to": "lm_qinghe_2",
+        "roundTripMs": 258.9459999999963
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_2",
+        "to": "lm_qinghe_3",
+        "roundTripMs": 265.25339999999414
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_3",
+        "to": "lm_qinghe_4",
+        "roundTripMs": 263.6218000000008
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_4",
+        "to": "lm_qinghe_5",
+        "roundTripMs": 266.9904999999999
+      },
+      {
+        "action": "choice",
+        "cid": "lm_ask_qinghe_friend",
+        "from": "lm_qinghe_5",
+        "to": "lm_qinghe_7",
+        "roundTripMs": 259.2381000000023
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_7",
+        "to": "lm_qinghe_8",
+        "roundTripMs": 260.0448000000033
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_8",
+        "to": "lm_qinghe_9",
+        "roundTripMs": 264.23049999999785
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_9",
+        "to": "lm_qinghe_yard_1",
+        "roundTripMs": 263.553700000004
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_yard_1",
+        "to": "lm_qinghe_yard_2",
+        "roundTripMs": 259.0771999999997
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_yard_2",
+        "to": "lm_qinghe_yard_3",
+        "roundTripMs": 259.7024999999994
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_yard_3",
+        "to": "lm_qinghe_yard_4",
+        "roundTripMs": 261.6428999999989
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_yard_4",
+        "to": "lm_qinghe_yard_5",
+        "roundTripMs": 264.4521999999997
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_yard_5",
+        "to": "lm_qinghe_yard_6",
+        "roundTripMs": 261.66189999999915
+      },
+      {
+        "action": "choice",
+        "cid": "lm_old_watch_foot",
+        "from": "lm_qinghe_yard_6",
+        "to": "lm_qinghe_yard_7",
+        "roundTripMs": 262.7980000000025
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_yard_7",
+        "to": "lm_qinghe_yard_8",
+        "roundTripMs": 261.3996999999945
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_yard_8",
+        "to": "lm_qinghe_first_1",
+        "roundTripMs": 267.1177000000025
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_first_1",
+        "to": "lm_qinghe_first_2",
+        "roundTripMs": 257.5011999999988
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_first_2",
+        "to": "lm_qinghe_first_3",
+        "roundTripMs": 265.72670000000653
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_first_3",
+        "to": "lm_qinghe_first_4",
+        "roundTripMs": 260.9051000000036
+      },
+      {
+        "action": "choice",
+        "cid": "lm_old_close_elbow",
+        "from": "lm_qinghe_first_4",
+        "to": "lm_qinghe_first_6",
+        "roundTripMs": 263.7473000000027
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_first_6",
+        "to": "lm_qinghe_first_7",
+        "roundTripMs": 262.5679000000018
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_first_7",
+        "to": "lm_qinghe_first_8",
+        "roundTripMs": 277.3807000000015
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_first_8",
+        "to": "lm_qinghe_third_1",
+        "roundTripMs": 257.6445999999996
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_third_1",
+        "to": "lm_qinghe_third_2",
+        "roundTripMs": 263.9722000000038
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_third_2",
+        "to": "lm_qinghe_third_3",
+        "roundTripMs": 265.9928
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_third_3",
+        "to": "lm_qinghe_third_4",
+        "roundTripMs": 256.77530000000115
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_third_4",
+        "to": "lm_qinghe_third_5",
+        "roundTripMs": 261.0103999999992
+      },
+      {
+        "action": "choice",
+        "cid": "lm_old_ask_twenty",
+        "from": "lm_qinghe_third_5",
+        "to": "lm_qinghe_third_6",
+        "roundTripMs": 257.1209000000017
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_third_6",
+        "to": "lm_qinghe_third_7",
+        "roundTripMs": 261.09539999999834
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_third_7",
+        "to": "lm_qinghe_third_8",
+        "roundTripMs": 261.19110000000364
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_third_8",
+        "to": "lm_qinghe_return_1",
+        "roundTripMs": 264.3877999999968
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_return_1",
+        "to": "lm_qinghe_return_2",
+        "roundTripMs": 272.2930000000051
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_return_2",
+        "to": "lm_qinghe_return_3",
+        "roundTripMs": 259.6345999999976
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_return_3",
+        "to": "lm_qinghe_return_4",
+        "roundTripMs": 261.51060000000143
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_return_4",
+        "to": "lm_qinghe_return_5",
+        "roundTripMs": 264.85859999999957
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_return_5",
+        "to": "lm_qinghe_return_6",
+        "roundTripMs": 258.7523000000001
+      },
+      {
+        "action": "choice",
+        "cid": "lm_practice_slow",
+        "from": "lm_qinghe_return_6",
+        "to": "lm_qinghe_return_9",
+        "roundTripMs": 276.0964000000022
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_return_9",
+        "to": "lm_qinghe_return_10",
+        "roundTripMs": 260.72810000000027
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_return_10",
+        "to": "lm_qinghe_return_11",
+        "roundTripMs": 260.60699999999633
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_qinghe_return_11",
+        "to": "lm_choose_path_1",
+        "roundTripMs": 261.78169999999955
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_choose_path_1",
+        "to": "lm_choose_path_2",
+        "roundTripMs": 263.6023999999961
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_choose_path_2",
+        "to": "lm_choose_path_3",
+        "roundTripMs": 261.2786999999953
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_choose_path_3",
+        "to": "lm_choose_path_4",
+        "roundTripMs": 262.32999999999447
+      },
+      {
+        "action": "choice",
+        "cid": "lm_route_school",
+        "from": "lm_choose_path_4",
+        "to": "lm_choose_path_5",
+        "roundTripMs": 255.9233000000022
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_choose_path_5",
+        "to": "lm_choose_path_6",
+        "roundTripMs": 260.61880000000383
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_choose_path_6",
+        "to": "lm_route_first_day_1",
+        "roundTripMs": 261.3602000000028
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_route_first_day_1",
+        "to": "lm_route_first_day_2",
+        "roundTripMs": 267.10020000000077
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_route_first_day_2",
+        "to": "lm_route_first_day_3",
+        "roundTripMs": 261.58920000000217
+      },
+      {
+        "action": "choice",
+        "cid": "lm_show_lane",
+        "from": "lm_route_first_day_3",
+        "to": "lm_route_first_day_4",
+        "roundTripMs": 264.5025999999998
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_route_first_day_4",
+        "to": "lm_route_first_day_5",
+        "roundTripMs": 259.9797999999937
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_route_first_day_5",
+        "to": "lm_route_first_day_6",
+        "roundTripMs": 264.6678000000029
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_route_first_day_6",
+        "to": "lm_outsider_1",
+        "roundTripMs": 279.0697999999975
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_outsider_1",
+        "to": "lm_outsider_2",
+        "roundTripMs": 273.36099999999715
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_outsider_2",
+        "to": "lm_outsider_3",
+        "roundTripMs": 265.11210000000574
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_outsider_3",
+        "to": "lm_outsider_4",
+        "roundTripMs": 275.72260000000097
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_outsider_4",
+        "to": "lm_outsider_5",
+        "roundTripMs": 257.59449999999924
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_outsider_5",
+        "to": "lm_outsider_6",
+        "roundTripMs": 265.16619999999966
+      },
+      {
+        "action": "choice",
+        "cid": "lm_stop_mock",
+        "from": "lm_outsider_6",
+        "to": "lm_outsider_7",
+        "roundTripMs": 260.52930000000197
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_outsider_7",
+        "to": "lm_outsider_8",
+        "roundTripMs": 258.53080000000045
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_outsider_8",
+        "to": "lm_outsider_9",
+        "roundTripMs": 276.7815000000046
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_outsider_9",
+        "to": "lm_xu_bout_1",
+        "roundTripMs": 272.5596000000005
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_xu_bout_1",
+        "to": "lm_xu_bout_2",
+        "roundTripMs": 264.08439999999973
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_xu_bout_2",
+        "to": "lm_xu_bout_3",
+        "roundTripMs": 260.69259999999485
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_xu_bout_3",
+        "to": "lm_xu_bout_4",
+        "roundTripMs": 260.3778999999995
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_xu_bout_4",
+        "to": "lm_xu_bout_5",
+        "roundTripMs": 258.1990000000005
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_xu_bout_5",
+        "to": "lm_xu_bout_6",
+        "roundTripMs": 261.32850000000326
+      },
+      {
+        "action": "choice",
+        "cid": "lm_name_loss",
+        "from": "lm_xu_bout_6",
+        "to": "lm_xu_bout_8",
+        "roundTripMs": 265.1362000000008
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_xu_bout_8",
+        "to": "lm_xu_bout_9",
+        "roundTripMs": 274.85259999999835
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_xu_bout_9",
+        "to": "lm_xu_bout_10",
+        "roundTripMs": 258.8619000000035
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_xu_bout_10",
+        "to": "lm_sore_1",
+        "roundTripMs": 260.2393000000011
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_sore_1",
+        "to": "lm_sore_2",
+        "roundTripMs": 260.42179999999644
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_sore_2",
+        "to": "lm_sore_3",
+        "roundTripMs": 264.40030000000115
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_sore_3",
+        "to": "lm_sore_4",
+        "roundTripMs": 257.793700000002
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_sore_4",
+        "to": "lm_sore_5",
+        "roundTripMs": 265.5783999999985
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_sore_5",
+        "to": "lm_sore_6",
+        "roundTripMs": 261.9091999999946
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_sore_6",
+        "to": "lm_sore_8",
+        "roundTripMs": 274.3603000000003
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_sore_8",
+        "to": "lm_sore_9",
+        "roundTripMs": 265.03719999999885
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_sore_9",
+        "to": "lm_sore_10",
+        "roundTripMs": 262.99549999999726
+      },
+      {
+        "action": "choice",
+        "cid": "lm_share_frame",
+        "from": "lm_sore_10",
+        "to": "lm_sore_20",
+        "roundTripMs": 262.55570000000444
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_sore_20",
+        "to": "lm_sore_21",
+        "roundTripMs": 255.89560000000347
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_sore_21",
+        "to": "lm_sore_22",
+        "roundTripMs": 264.76610000000073
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_sore_22",
+        "to": "lm_he_gate_1",
+        "roundTripMs": 262.71310000000085
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_he_gate_1",
+        "to": "lm_he_gate_2",
+        "roundTripMs": 258.45010000000184
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_he_gate_2",
+        "to": "lm_he_gate_3",
+        "roundTripMs": 260.3492999999944
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_he_gate_3",
+        "to": "lm_he_gate_4",
+        "roundTripMs": 261.49879999999393
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_he_gate_4",
+        "to": "lm_he_gate_5",
+        "roundTripMs": 257.9178000000029
+      },
+      {
+        "action": "choice",
+        "cid": "lm_guard_line",
+        "from": "lm_he_gate_5",
+        "to": "lm_he_gate_6",
+        "roundTripMs": 260.3001000000004
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_he_gate_6",
+        "to": "lm_he_gate_7",
+        "roundTripMs": 257.2740000000049
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_he_gate_7",
+        "to": "lm_he_gate_8",
+        "roundTripMs": 257.5362000000023
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_he_gate_8",
+        "to": "lm_fortyseven_1",
+        "roundTripMs": 260.7586999999985
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fortyseven_1",
+        "to": "lm_fortyseven_2",
+        "roundTripMs": 261.6313999999984
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fortyseven_2",
+        "to": "lm_fortyseven_3",
+        "roundTripMs": 262.4282999999996
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fortyseven_3",
+        "to": "lm_fortyseven_4",
+        "roundTripMs": 259.37279999999737
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fortyseven_4",
+        "to": "lm_fortyseven_5",
+        "roundTripMs": 260.7988000000041
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fortyseven_5",
+        "to": "lm_fortyseven_6",
+        "roundTripMs": 261.6119000000035
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fortyseven_6",
+        "to": "lm_fortyseven_7",
+        "roundTripMs": 260.94689999999537
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fortyseven_7",
+        "to": "lm_fortyseven_8",
+        "roundTripMs": 265.9015999999974
+      },
+      {
+        "action": "choice",
+        "cid": "lm_return_sword",
+        "from": "lm_fortyseven_8",
+        "to": "lm_fortyseven_10",
+        "roundTripMs": 260.0098999999973
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fortyseven_10",
+        "to": "lm_fortyseven_11",
+        "roundTripMs": 259.33120000000054
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fortyseven_11",
+        "to": "lm_fortyseven_12",
+        "roundTripMs": 263.93359999999666
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fortyseven_12",
+        "to": "lm_fortyseven_13",
+        "roundTripMs": 273.7060000000056
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fortyseven_13",
+        "to": "lm_autumn_1",
+        "roundTripMs": 276.9062999999951
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_autumn_1",
+        "to": "lm_autumn_2",
+        "roundTripMs": 261.9207999999999
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_autumn_2",
+        "to": "lm_autumn_3",
+        "roundTripMs": 259.584299999995
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_autumn_3",
+        "to": "lm_autumn_4",
+        "roundTripMs": 260.9236000000019
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_autumn_4",
+        "to": "lm_autumn_5",
+        "roundTripMs": 263.1168000000034
+      },
+      {
+        "action": "choice",
+        "cid": "lm_correct_label",
+        "from": "lm_autumn_5",
+        "to": "lm_autumn_6",
+        "roundTripMs": 260.1930999999968
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_autumn_6",
+        "to": "lm_autumn_7",
+        "roundTripMs": 263.28459999999905
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_autumn_7",
+        "to": "lm_autumn_8",
+        "roundTripMs": 260.0570000000007
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_autumn_8",
+        "to": "lm_fan_bout_1",
+        "roundTripMs": 261.20470000000205
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fan_bout_1",
+        "to": "lm_fan_bout_2",
+        "roundTripMs": 260.3110000000015
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fan_bout_2",
+        "to": "lm_fan_bout_3",
+        "roundTripMs": 259.07190000000264
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fan_bout_3",
+        "to": "lm_fan_bout_4",
+        "roundTripMs": 260.67759999999544
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fan_bout_4",
+        "to": "lm_fan_bout_5",
+        "roundTripMs": 260.95659999999043
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fan_bout_5",
+        "to": "lm_fan_bout_6",
+        "roundTripMs": 264.72209999999905
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fan_bout_6",
+        "to": "lm_fan_bout_7",
+        "roundTripMs": 261.0310000000027
+      },
+      {
+        "action": "choice",
+        "cid": "lm_offer_water",
+        "from": "lm_fan_bout_7",
+        "to": "lm_fan_bout_9",
+        "roundTripMs": 260.9698999999964
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fan_bout_9",
+        "to": "lm_fan_bout_10",
+        "roundTripMs": 274.8490999999922
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fan_bout_10",
+        "to": "lm_fan_bout_11",
+        "roundTripMs": 264.4893999999913
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fan_bout_11",
+        "to": "lm_fan_bout_12",
+        "roundTripMs": 261.4282999999996
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fan_bout_12",
+        "to": "lm_wooden_1",
+        "roundTripMs": 261.7969000000012
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_wooden_1",
+        "to": "lm_wooden_2",
+        "roundTripMs": 260.31269999999495
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_wooden_2",
+        "to": "lm_wooden_3",
+        "roundTripMs": 261.6475000000064
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_wooden_3",
+        "to": "lm_wooden_4",
+        "roundTripMs": 262.4853000000003
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_wooden_4",
+        "to": "lm_wooden_5",
+        "roundTripMs": 276.05770000000484
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_wooden_5",
+        "to": "lm_wooden_6",
+        "roundTripMs": 257.37639999999374
+      },
+      {
+        "action": "choice",
+        "cid": "lm_help_sheath",
+        "from": "lm_wooden_6",
+        "to": "lm_wooden_8",
+        "roundTripMs": 260.704899999997
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_wooden_8",
+        "to": "lm_wooden_9",
+        "roundTripMs": 260.09330000000773
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_wooden_9",
+        "to": "lm_wooden_10",
+        "roundTripMs": 261.0636999999988
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_wooden_10",
+        "to": "lm_nine_1",
+        "roundTripMs": 261.29589999999735
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_nine_1",
+        "to": "lm_nine_2",
+        "roundTripMs": 261.93309999999474
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_nine_2",
+        "to": "lm_nine_3",
+        "roundTripMs": 272.40830000001006
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_nine_3",
+        "to": "lm_nine_4",
+        "roundTripMs": 270.5906999999861
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_nine_4",
+        "to": "lm_nine_5",
+        "roundTripMs": 265.86560000000463
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_nine_5",
+        "to": "lm_nine_6",
+        "roundTripMs": 261.5159999999887
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_nine_6",
+        "to": "lm_nine_7",
+        "roundTripMs": 263.6244000000006
+      },
+      {
+        "action": "choice",
+        "cid": "lm_ask_first",
+        "from": "lm_nine_7",
+        "to": "lm_nine_8",
+        "roundTripMs": 260.16820000000007
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_nine_8",
+        "to": "lm_nine_9",
+        "roundTripMs": 260.2975000000006
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_nine_9",
+        "to": "lm_nine_10",
+        "roundTripMs": 257.7230000000127
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_nine_10",
+        "to": "lm_night_outer_1",
+        "roundTripMs": 263.28579999999783
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_outer_1",
+        "to": "lm_night_outer_2",
+        "roundTripMs": 259.57249999999476
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_outer_2",
+        "to": "lm_night_outer_3",
+        "roundTripMs": 259.8234999999986
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_outer_3",
+        "to": "lm_night_outer_4",
+        "roundTripMs": 264.8070999999909
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_outer_4",
+        "to": "lm_night_outer_5",
+        "roundTripMs": 261.2658000000083
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_outer_5",
+        "to": "lm_night_outer_6",
+        "roundTripMs": 261.9174999999959
+      },
+      {
+        "action": "choice",
+        "cid": "lm_night_foot",
+        "from": "lm_night_outer_6",
+        "to": "lm_night_outer_9",
+        "roundTripMs": 259.57790000000386
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_outer_9",
+        "to": "lm_night_outer_10",
+        "roundTripMs": 260.9003999999986
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_outer_10",
+        "to": "lm_night_outer_11",
+        "roundTripMs": 264.3451000000059
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_outer_11",
+        "to": "lm_night_prepare_1",
+        "roundTripMs": 260.934500000003
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_prepare_1",
+        "to": "lm_night_prepare_2",
+        "roundTripMs": 261.95040000000154
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_prepare_2",
+        "to": "lm_night_prepare_3",
+        "roundTripMs": 273.4627999999939
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_prepare_3",
+        "to": "lm_night_private_1",
+        "roundTripMs": 260.7572000000073
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_private_1",
+        "to": "lm_night_private_2",
+        "roundTripMs": 263.99370000000636
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_private_2",
+        "to": "lm_night_private_3",
+        "roundTripMs": 254.67630000000645
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_private_3",
+        "to": "lm_night_private_4",
+        "roundTripMs": 263.5368000000017
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_private_4",
+        "to": "lm_night_private_5",
+        "roundTripMs": 266.3914999999979
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_private_5",
+        "to": "lm_night_private_6",
+        "roundTripMs": 255.37340000001132
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_private_6",
+        "to": "lm_night_private_7",
+        "roundTripMs": 261.32040000001143
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_private_7",
+        "to": "lm_night_private_8",
+        "roundTripMs": 261.22819999999774
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_private_8",
+        "to": "lm_night_private_9",
+        "roundTripMs": 262.0436000000045
+      },
+      {
+        "action": "choice",
+        "cid": "lm_he_ask_remaining",
+        "from": "lm_night_private_9",
+        "to": "lm_night_private_10",
+        "roundTripMs": 257.0191999999952
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_private_10",
+        "to": "lm_night_private_11",
+        "roundTripMs": 263.49690000001283
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_private_11",
+        "to": "lm_night_private_12",
+        "roundTripMs": 261.847700000013
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_private_12",
+        "to": "lm_night_last_cup_1",
+        "roundTripMs": 265.0341000000044
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_last_cup_1",
+        "to": "lm_night_last_cup_2",
+        "roundTripMs": 275.8157000000065
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_last_cup_2",
+        "to": "lm_night_last_cup_3",
+        "roundTripMs": 260.2746000000043
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_last_cup_3",
+        "to": "lm_night_last_cup_4",
+        "roundTripMs": 262.1417999999976
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_night_last_cup_4",
+        "to": "lm_morning_trial_1",
+        "roundTripMs": 259.0951000000059
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_morning_trial_1",
+        "to": "lm_morning_trial_2",
+        "roundTripMs": 262.8588000000018
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_morning_trial_2",
+        "to": "lm_morning_trial_3",
+        "roundTripMs": 257.39880000000994
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_morning_trial_3",
+        "to": "lm_morning_trial_5",
+        "roundTripMs": 261.97580000000016
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_morning_trial_5",
+        "to": "lm_morning_trial_6",
+        "roundTripMs": 263.255799999999
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_morning_trial_6",
+        "to": "lm_morning_trial_7",
+        "roundTripMs": 264.4719999999943
+      },
+      {
+        "action": "choice",
+        "cid": "lm_repeat_with_push",
+        "from": "lm_morning_trial_7",
+        "to": "lm_morning_trial_17",
+        "roundTripMs": 256.70920000001206
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_morning_trial_17",
+        "to": "lm_morning_trial_18",
+        "roundTripMs": 261.22550000000047
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_morning_trial_18",
+        "to": "lm_morning_trial_19",
+        "roundTripMs": 260.7572000000073
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_morning_trial_19",
+        "to": "lm_morning_return_1",
+        "roundTripMs": 258.78869999999006
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_morning_return_1",
+        "to": "lm_morning_return_2",
+        "roundTripMs": 260.05259999999544
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_morning_return_2",
+        "to": "lm_morning_return_3",
+        "roundTripMs": 261.33860000000277
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_morning_return_3",
+        "to": "lm_morning_return_4",
+        "roundTripMs": 260.9676999999938
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_morning_return_4",
+        "to": "lm_where_1",
+        "roundTripMs": 260.1512000000075
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_where_1",
+        "to": "lm_where_2",
+        "roundTripMs": 262.5734999999986
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_where_2",
+        "to": "lm_where_3",
+        "roundTripMs": 262.31900000000314
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_where_3",
+        "to": "lm_where_4",
+        "roundTripMs": 260.7319000000134
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_where_4",
+        "to": "lm_where_5",
+        "roundTripMs": 260.3724999999977
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_where_5",
+        "to": "lm_where_7",
+        "roundTripMs": 263.73949999999604
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_where_7",
+        "to": "lm_where_11",
+        "roundTripMs": 264.41519999998854
+      },
+      {
+        "action": "choice",
+        "cid": "lm_travel_choice",
+        "from": "lm_where_11",
+        "to": "lm_where_12",
+        "roundTripMs": 260.5774000000092
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_where_12",
+        "to": "lm_where_13",
+        "roundTripMs": 255.33910000001197
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_where_13",
+        "to": "lm_where_14",
+        "roundTripMs": 266.545100000003
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_where_14",
+        "to": "lm_leave_1",
+        "roundTripMs": 258.65550000000803
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_leave_1",
+        "to": "lm_leave_2",
+        "roundTripMs": 261.3399000000063
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_leave_2",
+        "to": "lm_leave_3",
+        "roundTripMs": 261.1562000000122
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_leave_3",
+        "to": "lm_leave_4",
+        "roundTripMs": 264.9737999999925
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_leave_4",
+        "to": "lm_leave_12",
+        "roundTripMs": 259.9586999999883
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_leave_12",
+        "to": "lm_leave_13",
+        "roundTripMs": 260.43559999999707
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_leave_13",
+        "to": "lm_leave_14",
+        "roundTripMs": 263.8043000000034
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_leave_14",
+        "to": "lm_leave_15",
+        "roundTripMs": 266.9945000000007
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_leave_15",
+        "to": "lm_fiveyears_1",
+        "roundTripMs": 260.4649000000063
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fiveyears_1",
+        "to": "lm_fiveyears_2",
+        "roundTripMs": 275.63189999999304
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fiveyears_2",
+        "to": "lm_fiveyears_3",
+        "roundTripMs": 257.2271000000037
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fiveyears_3",
+        "to": "lm_fiveyears_4",
+        "roundTripMs": 261.2134000000078
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fiveyears_4",
+        "to": "lm_fiveyears_5",
+        "roundTripMs": 262.2841999999946
+      },
+      {
+        "action": "choice",
+        "cid": "lm_keep_record",
+        "from": "lm_fiveyears_5",
+        "to": "lm_fiveyears_6",
+        "roundTripMs": 261.0790999999881
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fiveyears_6",
+        "to": "lm_fiveyears_7",
+        "roundTripMs": 263.6771000000008
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fiveyears_7",
+        "to": "lm_fiveyears_8",
+        "roundTripMs": 259.37119999999413
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_fiveyears_8",
+        "to": "lm_ending_1",
+        "roundTripMs": 264.8006000000023
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_ending_1",
+        "to": "lm_ending_2",
+        "roundTripMs": 260.42810000000463
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_ending_2",
+        "to": "lm_ending_5",
+        "roundTripMs": 261.5344999999943
+      },
+      {
+        "action": "advance",
+        "cid": null,
+        "from": "lm_ending_5",
+        "to": "lm_ending_6",
+        "roundTripMs": 262.1680999999953
+      }
+    ],
+    "metrics": [
+      {
+        "label": "start",
+        "beat": "lm_borrow_1",
+        "at": "2026-10-18T03:48:42.054Z",
+        "JSHeapUsedSize": 4741868,
+        "JSHeapTotalSize": 9052160,
+        "Nodes": 206,
+        "Documents": 8,
+        "LayoutCount": 3,
+        "RecalcStyleCount": 10,
+        "TaskDuration": 0.084321,
+        "ScriptDuration": 0.014057,
+        "LayoutDuration": 0.024997,
+        "RecalcStyleDuration": 0.003436
+      },
+      {
+        "label": "middle-150-clicks",
+        "beat": "lm_nine_3",
+        "at": "2026-10-18T03:49:21.401Z",
+        "JSHeapUsedSize": 5494172,
+        "JSHeapTotalSize": 7479296,
+        "Nodes": 229,
+        "Documents": 1,
+        "LayoutCount": 302,
+        "RecalcStyleCount": 846,
+        "TaskDuration": 1.053216,
+        "ScriptDuration": 0.132708,
+        "LayoutDuration": 0.180492,
+        "RecalcStyleDuration": 0.057036
+      },
+      {
+        "label": "end",
+        "beat": "lm_ending_6",
+        "at": "2026-10-18T03:49:41.962Z",
+        "JSHeapUsedSize": 5669372,
+        "JSHeapTotalSize": 6955008,
+        "Nodes": 472,
+        "Documents": 1,
+        "LayoutCount": 458,
+        "RecalcStyleCount": 1266,
+        "TaskDuration": 1.505161,
+        "ScriptDuration": 0.190308,
+        "LayoutDuration": 0.23455,
+        "RecalcStyleDuration": 0.081971
+      }
+    ],
+    "errors": [],
+    "ending": "此篇已完 · 送剑同行\n\n收好这一程\n再试另一种回应\n回到封面",
+    "finished": "2026-10-18T03:49:41.962Z"
+  },
+  "summary": {
+    "openingGroups": [
+      {
+        "slug": "taihua",
+        "width": 1440,
+        "coverReadyMs": {
+          "n": 3,
+          "min": 69.47520000000077,
+          "p50": 74.57020000000011,
+          "p95": 105.71875000000003,
+          "p99": 108.48751000000003,
+          "max": 109.17970000000003
+        },
+        "newToFirstFrameMs": {
+          "n": 3,
+          "min": 47.597299999999905,
+          "p50": 48.58879999999954,
+          "p95": 104.42498000000006,
+          "p99": 109.38819600000012,
+          "max": 110.62900000000013
+        },
+        "firstChoiceRoundTripMs": {
+          "n": 3,
+          "min": 272.4562999999998,
+          "p50": 272.6118000000006,
+          "p95": 273.19023000000004,
+          "p99": 273.241646,
+          "max": 273.2545
+        },
+        "firstChoiceBeats": [
+          "th_called_8",
+          "th_called_8",
+          "th_called_8"
+        ]
+      },
+      {
+        "slug": "taihua",
+        "width": 390,
+        "coverReadyMs": {
+          "n": 3,
+          "min": 69.7497000000003,
+          "p50": 70.45389999999861,
+          "p95": 72.07462000000105,
+          "p99": 72.21868400000126,
+          "max": 72.25470000000132
+        },
+        "newToFirstFrameMs": {
+          "n": 3,
+          "min": 49.53139999999985,
+          "p50": 50.03350000000137,
+          "p95": 51.858160000000495,
+          "p99": 52.02035200000042,
+          "max": 52.0609000000004
+        },
+        "firstChoiceRoundTripMs": {
+          "n": 3,
+          "min": 274.2533999999978,
+          "p50": 275.83780000000115,
+          "p95": 279.2886699999999,
+          "p99": 279.5954139999998,
+          "max": 279.6720999999998
+        },
+        "firstChoiceBeats": [
+          "th_called_8",
+          "th_called_8",
+          "th_called_8"
+        ]
+      },
+      {
+        "slug": "longmen",
+        "width": 1440,
+        "coverReadyMs": {
+          "n": 3,
+          "min": 74.17339999999967,
+          "p50": 74.83009999999922,
+          "p95": 75.07633999999962,
+          "p99": 75.09822799999965,
+          "max": 75.10369999999966
+        },
+        "newToFirstFrameMs": {
+          "n": 3,
+          "min": 44.44549999999981,
+          "p50": 46.7450000000008,
+          "p95": 47.33053999999993,
+          "p99": 47.38258799999985,
+          "max": 47.39559999999983
+        },
+        "firstChoiceRoundTripMs": {
+          "n": 3,
+          "min": 270.2533000000003,
+          "p50": 272.53239999999823,
+          "p95": 274.1803,
+          "p99": 274.32678000000016,
+          "max": 274.3634000000002
+        },
+        "firstChoiceBeats": [
+          "lm_borrow_4",
+          "lm_borrow_4",
+          "lm_borrow_4"
+        ]
+      },
+      {
+        "slug": "longmen",
+        "width": 390,
+        "coverReadyMs": {
+          "n": 3,
+          "min": 68.98629999999685,
+          "p50": 71.88690000000133,
+          "p95": 74.33760000000294,
+          "p99": 74.55544000000307,
+          "max": 74.60990000000311
+        },
+        "newToFirstFrameMs": {
+          "n": 3,
+          "min": 45.58520000000135,
+          "p50": 45.76339999999982,
+          "p95": 48.434960000001226,
+          "p99": 48.67243200000135,
+          "max": 48.731800000001385
+        },
+        "firstChoiceRoundTripMs": {
+          "n": 3,
+          "min": 271.9916999999987,
+          "p50": 271.9942999999985,
+          "p95": 272.5895600000025,
+          "p99": 272.6424720000029,
+          "max": 272.655700000003
+        },
+        "firstChoiceBeats": [
+          "lm_borrow_4",
+          "lm_borrow_4",
+          "lm_borrow_4"
+        ]
+      },
+      {
+        "slug": "dead-ranking",
+        "width": 1440,
+        "coverReadyMs": {
+          "n": 3,
+          "min": 64.97420000000056,
+          "p50": 65.63509999999951,
+          "p95": 74.49595999999966,
+          "p99": 75.28359199999966,
+          "max": 75.48049999999967
+        },
+        "newToFirstFrameMs": {
+          "n": 3,
+          "min": 48.45429999999942,
+          "p50": 50.41660000000047,
+          "p95": 52.88944000000102,
+          "p99": 53.10924800000106,
+          "max": 53.164200000001074
+        },
+        "firstChoiceRoundTripMs": {
+          "n": 3,
+          "min": 274.1741999999995,
+          "p50": 274.33560000000034,
+          "p95": 274.7556299999995,
+          "p99": 274.7929659999994,
+          "max": 274.8022999999994
+        },
+        "firstChoiceBeats": [
+          "dr_dead_letter_7",
+          "dr_dead_letter_7",
+          "dr_dead_letter_7"
+        ]
+      },
+      {
+        "slug": "dead-ranking",
+        "width": 390,
+        "coverReadyMs": {
+          "n": 3,
+          "min": 65.49199999999837,
+          "p50": 67.40219999999681,
+          "p95": 69.43943999999865,
+          "p99": 69.62052799999881,
+          "max": 69.66579999999885
+        },
+        "newToFirstFrameMs": {
+          "n": 3,
+          "min": 48.336200000001554,
+          "p50": 48.53659999999945,
+          "p95": 57.53407999999763,
+          "p99": 58.33385599999747,
+          "max": 58.53379999999743
+        },
+        "firstChoiceRoundTripMs": {
+          "n": 3,
+          "min": 272.14830000000075,
+          "p50": 274.5922000000028,
+          "p95": 278.3696800000016,
+          "p99": 278.7054560000015,
+          "max": 278.7894000000015
+        },
+        "firstChoiceBeats": [
+          "dr_dead_letter_7",
+          "dr_dead_letter_7",
+          "dr_dead_letter_7"
+        ]
+      }
+    ],
+    "longRunAllClickMs": {
+      "n": 228,
+      "min": 10.45679999999993,
+      "p50": 261.51329999999507,
+      "p95": 274.678019999995,
+      "p99": 277.2526119999998,
+      "max": 288.42239999999583
+    },
+    "longRunChoiceClickMs": {
+      "n": 23,
+      "min": 183.88930000000255,
+      "p50": 260.52930000000197,
+      "p95": 273.2518600000014,
+      "p99": 275.668984000002,
+      "max": 276.0964000000022
+    },
+    "longRunAdvanceClickMs": {
+      "n": 205,
+      "min": 10.45679999999993,
+      "p50": 261.6119000000035,
+      "p95": 274.7513399999938,
+      "p99": 277.3617240000013,
+      "max": 288.42239999999583
+    },
+    "errors": 0,
+    "assessment": "MEASURED_ONLY; no invented performance threshold PASS; no long-duration leak inference"
+  },
+  "artifacts": {
+    "script": "../Jianghu-independent-20261018/independent-opening/performance-browser.mjs",
+    "raw": "../Jianghu-independent-20261018/performance-browser/performance-browser-raw.json",
+    "rawSha256": "4a249070d7961bfab20e9b654a7f7cf256d71fc317d58054269a384843a22aaa",
+    "endingScreenshot": "../Jianghu-independent-20261018/performance-browser/longmen-ending.png",
+    "endingScreenshotActuallyViewed": true
+  }
+}

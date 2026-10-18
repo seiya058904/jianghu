@@ -1,0 +1,11 @@
+{
+  "sourceCommit": "fcef368840ab9d69795b481f2a42b9a0491affc8",
+  "status": "ABORTED_AFTER_CONFIRMED_FIXTURE_RACE_NOT_FINAL_ACCEPTANCE",
+  "completedPassRows": 286,
+  "completedFailureRows": 1,
+  "knownFailure": "North root missing-cache precondition, asynchronous fetch waitUntil put raced cache deletion",
+  "exitCode": 1,
+  "rawLogSHA256": "087668f0842fe6c8382961c950995aa765bee0d9bae330ccc853979518a115fe",
+  "independentProof": "../Jianghu-independent-20261018/workspace/north-sw-fetch-drain.json",
+  "next": "Preserve all cold/download/offline assertions; await actual fetch waitUntil jobs before eviction; new RC and entire 492 rerun"
+}

@@ -1,0 +1,4599 @@
+{
+  "sourceCommit": "a04d36a665416f45297a5c2a0191863bd0f44316",
+  "kind": "audited-source",
+  "fingerprintMethod": "SHA256 UTF8 compact JSON file rows in recorded order",
+  "fingerprint": "19a37b5e9b8d29582e76bf35afe66f8101ef67bed8e318f0ef2d007ed084231c",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 456,
+      "sha256": "9351c5a4f7fa5310ef40f41c29d0116bc5eb2a1a633d948d3532a76672e03390"
+    },
+    {
+      "path": ".github/workflows/deploy-pages.yml",
+      "bytes": 1857,
+      "sha256": "24ecde31e1ec424bd0f5428572318b5b7da2571741bd2b39a429c5a6e2a06e1e"
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "bytes": 3402,
+      "sha256": "c71af54126c2ec7db7d10f33d369bba6ce94f5a71d2b06d654f83f63125e87c3"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 786,
+      "sha256": "ddfdd0c5f1a02b4adf19c939cd0c915ff2299f0efe7828dce01f43b50d80fe7e"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 6960,
+      "sha256": "1f0c7956234c2402095cc25972dd37cf7a4d3c7880a04142b550b1d50d5333b4"
+    },
+    {
+      "path": "bamboo.html",
+      "bytes": 387,
+      "sha256": "7ec5daf13bb2db8e08e31c538d24fa342e20636492eb52cbca04123db62009fb"
+    },
+    {
+      "path": "beyond-ranking.html",
+      "bytes": 404,
+      "sha256": "15c9ad3da375e6c4ebc665f70915ae7cc9abce8585dbcd7c18e801e546798a69"
+    },
+    {
+      "path": "dead-ranking.html",
+      "bytes": 387,
+      "sha256": "8fa9bfc91ac08d7e1b228eae2fa7cce5fce5ffbfb9c84edf44efd447e4ff39a5"
+    },
+    {
+      "path": "docs/archives/independent-pre-audit/story/north-after.mjs",
+      "bytes": 12325,
+      "sha256": "0156373b150bc2cd4ba93cbf7137c31389ff30b42f2b2542bd0e830b6babcfa1"
+    },
+    {
+      "path": "docs/archives/independent-pre-audit/story/north.ink",
+      "bytes": 86048,
+      "sha256": "c0c7772ca9c62d0a982a7c9d86743074ff9a7046a8acebcd4e9d554cc3d7ca26"
+    },
+    {
+      "path": "docs/archives/independent-pre-audit/story/qian-kun-slow.mjs",
+      "bytes": 12032,
+      "sha256": "46b1696c27607aee422f5eba5557dd592155a4dac8142ee7de32fc375c8fcd29"
+    },
+    {
+      "path": "docs/archives/independent-pre-audit/story/twelfth.ink",
+      "bytes": 50276,
+      "sha256": "a2d37f61c06837d9764166c7f16dc304761557bcd2fbcd663bada87c46e0c6d3"
+    },
+    {
+      "path": "docs/archives/jade-thieves-v1-editorial-baseline/jade-thieves-aftermath.mjs",
+      "bytes": 10958,
+      "sha256": "36ca1415430e620fdee0e8bcf4eef6f2f32dac218334403425d005d996fe9976"
+    },
+    {
+      "path": "docs/archives/jade-thieves-v1-editorial-baseline/jade-thieves-author.mjs",
+      "bytes": 1420,
+      "sha256": "bfb661fc0d8317ef6df6b47f780aacc749bfb466d63e1b11e7ca87f5b0f39f3e"
+    },
+    {
+      "path": "docs/archives/jade-thieves-v1-editorial-baseline/jade-thieves-flight.mjs",
+      "bytes": 7443,
+      "sha256": "95ecdb479e5a75e97c6ea73d89ba3a2d35f334ffebfd6014300cffaee7b23bf5"
+    },
+    {
+      "path": "docs/archives/jade-thieves-v1-editorial-baseline/jade-thieves-temple.mjs",
+      "bytes": 8822,
+      "sha256": "50cdaf80e5cb838e17a98f9689ca31bddf5d5c1dcbc63e13460c730b814c4439"
+    },
+    {
+      "path": "docs/archives/jade-thieves-v1-editorial-baseline/jade-thieves-vault.mjs",
+      "bytes": 6663,
+      "sha256": "d7e55b6d0703853c4ae2d699d69ef84e5730210f3965d7e14b3cb845105e3d71"
+    },
+    {
+      "path": "docs/archives/jade-v1-editorial-baseline/jade-after.mjs",
+      "bytes": 10841,
+      "sha256": "8df056bec1194f73d5c46b1644f0345f812ba32ae1fcc279384ae4c41a722ff7"
+    },
+    {
+      "path": "docs/archives/jade-v1-editorial-baseline/jade-author.mjs",
+      "bytes": 1266,
+      "sha256": "f74f990e2e9017f5c448a8bc61300eb09d99c4fc40ac61d15933a041d2402506"
+    },
+    {
+      "path": "docs/archives/jade-v1-editorial-baseline/jade-buy.mjs",
+      "bytes": 8186,
+      "sha256": "92b9181a74123c4ab09529fae4ca51c5beacdab5c0ab50e81dfc140a66bfb6f9"
+    },
+    {
+      "path": "docs/archives/jade-v1-editorial-baseline/jade-grain.mjs",
+      "bytes": 10085,
+      "sha256": "ead70bb4c8f74d6742ce981c4dcf9c66e19d07232b662bba44b3a74b2f6a4f96"
+    },
+    {
+      "path": "docs/archives/jade-v1-editorial-baseline/jade-night.mjs",
+      "bytes": 10754,
+      "sha256": "e64b229889f47b565c645bca07a5d7bf1398f1b41f8678c4b35ef790dca070eb"
+    },
+    {
+      "path": "docs/archives/jade-v1-editorial-baseline/jade-stores.mjs",
+      "bytes": 8615,
+      "sha256": "f9ec2f52d6007fa8a8d2fdbb0a2939e029052d97ae85b3ba2579ee3f6db2c8f1"
+    },
+    {
+      "path": "docs/archives/kuhe-v2-editorial-baseline/kuhe-author.mjs",
+      "bytes": 31492,
+      "sha256": "fcda715fa5088f11606e06ed8d8f3974129e1bd88a22e7b149d1b56770ff0632"
+    },
+    {
+      "path": "docs/archives/kuhe-v2-editorial-baseline/round1-author.mjs",
+      "bytes": 33105,
+      "sha256": "d758b366602352c9aab6dba0dff6210a493683d673fb849126f622ca61b14b37"
+    },
+    {
+      "path": "docs/archives/kuhe-v2-editorial-baseline/round2-author.mjs",
+      "bytes": 33120,
+      "sha256": "3d0ade48a70a2f0278bf91c24041db186ac142e6e4bba68ddef6039c9424466e"
+    },
+    {
+      "path": "docs/archives/kuhe-v2-editorial-baseline/round3-author.mjs",
+      "bytes": 34983,
+      "sha256": "dc7a6ec457b0d97edf4344bb79cff3746ad64a4b176c1e50b40ae20e709dc5ef"
+    },
+    {
+      "path": "docs/archives/longmen-editorial-rounds/round1/longmen-author.mjs",
+      "bytes": 24035,
+      "sha256": "80463b0f6ea907b628a9b96b437717fbb5bada4f31c14e41082ba0eeab85e62e"
+    },
+    {
+      "path": "docs/archives/longmen-editorial-rounds/round1/longmen-night.mjs",
+      "bytes": 8026,
+      "sha256": "e5beef02553944cc502cf3b37f3191a1733ffc92d18131f2f5db797b49e4bc11"
+    },
+    {
+      "path": "docs/archives/longmen-editorial-rounds/round1/longmen-scenes.mjs",
+      "bytes": 8409,
+      "sha256": "614e20fcb2281bec08c69aa4910a7967d5eca52e514775dcadc17412964d7f45"
+    },
+    {
+      "path": "docs/archives/longmen-editorial-rounds/round2/longmen-author.mjs",
+      "bytes": 24176,
+      "sha256": "657063d303b4550b971fe6425a9577ae6740c376b4f57ecf64e3adf4a270a5f2"
+    },
+    {
+      "path": "docs/archives/longmen-editorial-rounds/round2/longmen-night.mjs",
+      "bytes": 8026,
+      "sha256": "d528adca9bf7ff145f09dff1f3c289d76eaca67afd5e89e5b4a75a901e5cd59a"
+    },
+    {
+      "path": "docs/archives/longmen-editorial-rounds/round2/longmen-scenes.mjs",
+      "bytes": 8418,
+      "sha256": "ed8be56f3f5173d137af72f6997df85a1445b1b2fe4c6554ded45512bc23b6ad"
+    },
+    {
+      "path": "docs/archives/longmen-editorial-rounds/round3/longmen-author.mjs",
+      "bytes": 25334,
+      "sha256": "a6d168f617c31fa669eb826efc57f375d986b57c2a98472271113da08c87768c"
+    },
+    {
+      "path": "docs/archives/longmen-editorial-rounds/round3/longmen-night.mjs",
+      "bytes": 8047,
+      "sha256": "75754aafea8f99af46e761162d308b296627ca893fbb2553351b85367dcc7668"
+    },
+    {
+      "path": "docs/archives/longmen-editorial-rounds/round3/longmen-scenes.mjs",
+      "bytes": 8418,
+      "sha256": "ed8be56f3f5173d137af72f6997df85a1445b1b2fe4c6554ded45512bc23b6ad"
+    },
+    {
+      "path": "docs/archives/longmen-v2-editorial-baseline/longmen-author.mjs",
+      "bytes": 22064,
+      "sha256": "1804a2221582d91f3d73d36ef90f51889c0d364ba8804fe93f19808303a33a29"
+    },
+    {
+      "path": "docs/archives/longmen-v2-editorial-baseline/longmen-night.mjs",
+      "bytes": 7735,
+      "sha256": "746cd8b47e583671199a1d33271d753d2630a842dd39ec1dbbb909b1a4b2efa8"
+    },
+    {
+      "path": "docs/archives/longmen-v2-editorial-baseline/longmen-scenes.mjs",
+      "bytes": 8409,
+      "sha256": "614e20fcb2281bec08c69aa4910a7967d5eca52e514775dcadc17412964d7f45"
+    },
+    {
+      "path": "docs/archives/qingshi-editorial-rounds/round1/qingshi-author.mjs",
+      "bytes": 2093,
+      "sha256": "45e393f0f2a8cc2054163d38021a23f360a342628d4e802c1025d4d618235e89"
+    },
+    {
+      "path": "docs/archives/qingshi-editorial-rounds/round1/qingshi-career.mjs",
+      "bytes": 18602,
+      "sha256": "ebedb8fd8655304490849cc858b3660c7b63e835e86b88149656cbe733ffc54c"
+    },
+    {
+      "path": "docs/archives/qingshi-editorial-rounds/round1/qingshi-last.mjs",
+      "bytes": 13585,
+      "sha256": "8af59c34c7bd028f44a5e41d851b43601a593c27aeab9297e2038bdbeb909463"
+    },
+    {
+      "path": "docs/archives/qingshi-editorial-rounds/round1/qingshi-youth.mjs",
+      "bytes": 13487,
+      "sha256": "b5ba21106664a0a17cbd30a72e2f59e7c904e8b6f2cc11d6ea9938c0a32c9fa1"
+    },
+    {
+      "path": "docs/archives/qingshi-editorial-rounds/round2/qingshi-author.mjs",
+      "bytes": 2093,
+      "sha256": "45e393f0f2a8cc2054163d38021a23f360a342628d4e802c1025d4d618235e89"
+    },
+    {
+      "path": "docs/archives/qingshi-editorial-rounds/round2/qingshi-career.mjs",
+      "bytes": 18620,
+      "sha256": "ba555bb077e6f45e5bb4c282baf885ce5e32af501f2bd0f89d5c3b6f0027fd5c"
+    },
+    {
+      "path": "docs/archives/qingshi-editorial-rounds/round2/qingshi-last.mjs",
+      "bytes": 13684,
+      "sha256": "f8aef6151c30c194b2fea13705171e81796bdbb5c979b5963d7e6337a79e1331"
+    },
+    {
+      "path": "docs/archives/qingshi-editorial-rounds/round2/qingshi-youth.mjs",
+      "bytes": 13559,
+      "sha256": "58ff3f7e0a2bbbc81f8a03374f89c4d7c2c5b63fd94cfe01c92515336ea9303a"
+    },
+    {
+      "path": "docs/archives/qingshi-editorial-rounds/round3/qingshi-author.mjs",
+      "bytes": 2110,
+      "sha256": "05edc42b84b2971cc18de2b46a76db60dc6228c4f61624102e10bb3cb8a7db0e"
+    },
+    {
+      "path": "docs/archives/qingshi-editorial-rounds/round3/qingshi-career.mjs",
+      "bytes": 20718,
+      "sha256": "ee2c7b0a3d468a2aa7814fe037cae2d342eced2a28233017a02cb6ec2663fe6a"
+    },
+    {
+      "path": "docs/archives/qingshi-editorial-rounds/round3/qingshi-last.mjs",
+      "bytes": 15092,
+      "sha256": "e78f4c7b93323f47a555180584fed3a6289fc414ca162a05b600ba805e0760e6"
+    },
+    {
+      "path": "docs/archives/qingshi-editorial-rounds/round3/qingshi-youth.mjs",
+      "bytes": 13915,
+      "sha256": "125f3fc7ad2d686cf6d1d309297f6c359ae066764b4e2d63138bfbb1a26eadb4"
+    },
+    {
+      "path": "docs/archives/qingshi-v2-editorial-baseline/qingshi-author.mjs",
+      "bytes": 2064,
+      "sha256": "9c2cada6c2ab28446137bf14e861e93832532ece32eb9d9d0a424549bea1f9f4"
+    },
+    {
+      "path": "docs/archives/qingshi-v2-editorial-baseline/qingshi-career.mjs",
+      "bytes": 16786,
+      "sha256": "6d865b12ada2a3f738422d336c2206fd9277f48ae9d05227c2c2a5e36cba2ce7"
+    },
+    {
+      "path": "docs/archives/qingshi-v2-editorial-baseline/qingshi-last.mjs",
+      "bytes": 13507,
+      "sha256": "320abec4730ee0e852218175c002651107e1c5ce4056a0f14ba6fd0f9c5e76d6"
+    },
+    {
+      "path": "docs/archives/qingshi-v2-editorial-baseline/qingshi-youth.mjs",
+      "bytes": 13442,
+      "sha256": "dea74dc38eca045253d146a3bc67a55e39bf75c732c3c08f46c5384c8e1ec714"
+    },
+    {
+      "path": "docs/archives/sea-tide-v1-editorial-baseline/round-1.ink",
+      "bytes": 48429,
+      "sha256": "38812550d29183d81470566d135fb60f5d7f19fbc2e24b80aabd2315658ece56"
+    },
+    {
+      "path": "docs/archives/sea-tide-v1-editorial-baseline/round-2.ink",
+      "bytes": 48865,
+      "sha256": "d29da75c0c634f7fff218cdf1fbd2f15ab485536c1a453d3a6ce850299a80cbe"
+    },
+    {
+      "path": "docs/archives/sea-tide-v1-editorial-baseline/round-3-before-opening-age-fix.ink",
+      "bytes": 53527,
+      "sha256": "a80a690bc33ec1aaf7caf77da0b982f24b910635ffadfd3a6b92f5cfca576557"
+    },
+    {
+      "path": "docs/archives/sea-tide-v1-editorial-baseline/round-3.ink",
+      "bytes": 53542,
+      "sha256": "2066c6503891ee14ea4281e08d877e8495fa7d2d3832a6fe41e5b64b7dc6cbb9"
+    },
+    {
+      "path": "docs/archives/sea-tide-v1-editorial-baseline/sea-tide-author.mjs",
+      "bytes": 1225,
+      "sha256": "655f1ef1ca8fd35b2adf240496533eb18d8dc449d40755844feecc665ac0ca1b"
+    },
+    {
+      "path": "docs/archives/sea-tide-v1-editorial-baseline/sea-tide-catalog.ts",
+      "bytes": 5388,
+      "sha256": "dc1d5b6bc0a711d56a2b9df5c7aab94b7c7f61213146a53083eb7a5df42587bd"
+    },
+    {
+      "path": "docs/archives/sea-tide-v1-editorial-baseline/sea-tide-entry.mjs",
+      "bytes": 7024,
+      "sha256": "767165afc04debcf0b5cfab4939512cfd43ae61542f1ae1bbbae1b341dc29a0d"
+    },
+    {
+      "path": "docs/archives/sea-tide-v1-editorial-baseline/sea-tide-rescue.mjs",
+      "bytes": 8291,
+      "sha256": "e25df2b9af24750766481e8a3a9d43a585782c7675f84666f88b0d7f99590e38"
+    },
+    {
+      "path": "docs/archives/sea-tide-v1-editorial-baseline/sea-tide-seats.mjs",
+      "bytes": 14522,
+      "sha256": "cdb16a5ac7df1ae62b852e537098782318da17ed8a90476b72d644d6f7e39677"
+    },
+    {
+      "path": "docs/archives/sea-v1-editorial-baseline/round-1.ink",
+      "bytes": 53307,
+      "sha256": "7d1ee67654d48e485c3ff73d73db75959a0580de391a6c54939fb0d90b8d7e01"
+    },
+    {
+      "path": "docs/archives/sea-v1-editorial-baseline/round-2.ink",
+      "bytes": 53875,
+      "sha256": "8427c7ccffe0cfb3394e681a263e68493c759452939448f569df08243948fbdb"
+    },
+    {
+      "path": "docs/archives/sea-v1-editorial-baseline/round-3.ink",
+      "bytes": 57869,
+      "sha256": "1b73b3778a3b1dc2ea5e9135ed5c075cf234cf98049d1dbc14e946b0678ccd70"
+    },
+    {
+      "path": "docs/archives/sea-v1-editorial-baseline/sea-asking.mjs",
+      "bytes": 7781,
+      "sha256": "135c258fe3da32a29223e0abace1ea9ad14e312d3d9dc4dfbb29817b686bfc1e"
+    },
+    {
+      "path": "docs/archives/sea-v1-editorial-baseline/sea-author.mjs",
+      "bytes": 1072,
+      "sha256": "b3d80a49c5632b14fe51cafc0aa6f1e2855f446a5e7946e46464c967557299c6"
+    },
+    {
+      "path": "docs/archives/sea-v1-editorial-baseline/sea-catalog.ts",
+      "bytes": 5981,
+      "sha256": "2dbc57be4f56fb9794a73363a3f19402121805500f7918ba81db5c077ed2f0fd"
+    },
+    {
+      "path": "docs/archives/sea-v1-editorial-baseline/sea-crossing.mjs",
+      "bytes": 7809,
+      "sha256": "109c7cbb057964b376ac29ab904555a95eac92f18e74dbb33b0f57f1c852bc94"
+    },
+    {
+      "path": "docs/archives/sea-v1-editorial-baseline/sea-legacy.mjs",
+      "bytes": 8708,
+      "sha256": "51707d0cca58ca0b7192c5b82ee8eb37d2f54a4e27791661d2079750a29dceec"
+    },
+    {
+      "path": "docs/archives/sea-v1-editorial-baseline/sea-teaching.mjs",
+      "bytes": 9356,
+      "sha256": "5a1e562bba57e995a1d81f4028f062d822119b09d54ef92509e79c4397dfedd1"
+    },
+    {
+      "path": "docs/archives/taihua-editorial-rounds/round1/taihua-author.mjs",
+      "bytes": 32854,
+      "sha256": "1a9e1f1ff9d17b9121afb5d37616fb3775dab5fa4a5cbac4224038d221813b5c"
+    },
+    {
+      "path": "docs/archives/taihua-editorial-rounds/round1/taihua-elders.mjs",
+      "bytes": 9794,
+      "sha256": "041afb2bd53de52ecccd13b9b3bf0d8ae6c6c64d3e4fec55181624f41b8accde"
+    },
+    {
+      "path": "docs/archives/taihua-editorial-rounds/round1/taihua-observation.mjs",
+      "bytes": 8373,
+      "sha256": "092087b6d0b42c7c0d3090ac5085b27f066699f84f42f286ea929f0b83cecf54"
+    },
+    {
+      "path": "docs/archives/taihua-editorial-rounds/round2/taihua-author.mjs",
+      "bytes": 33090,
+      "sha256": "97da88b0ea19ce351db6df1d2e1f128ebb29af0f6c35804bc3a741e16b894478"
+    },
+    {
+      "path": "docs/archives/taihua-editorial-rounds/round2/taihua-elders.mjs",
+      "bytes": 9947,
+      "sha256": "ccab6137aed04862a5ff08eb028758ff685cc5700a2729a3ac696a9b9fe686c3"
+    },
+    {
+      "path": "docs/archives/taihua-editorial-rounds/round2/taihua-observation.mjs",
+      "bytes": 8313,
+      "sha256": "3da74cddbb54fd1a51712c03a6af35574ad8abcfc04d14eae281bf09cb5fc8b3"
+    },
+    {
+      "path": "docs/archives/taihua-editorial-rounds/round3/taihua-author.mjs",
+      "bytes": 33957,
+      "sha256": "f44cef22fc2cfff3942bca190e77cfcc3aec99abb727920be7ad9bc99a874f0c"
+    },
+    {
+      "path": "docs/archives/taihua-editorial-rounds/round3/taihua-elders.mjs",
+      "bytes": 9935,
+      "sha256": "cae45db792f15ecd77b16fbab3345cc3976cd1a32547512f4b2c9877f6830fe4"
+    },
+    {
+      "path": "docs/archives/taihua-editorial-rounds/round3/taihua-observation.mjs",
+      "bytes": 8313,
+      "sha256": "3da74cddbb54fd1a51712c03a6af35574ad8abcfc04d14eae281bf09cb5fc8b3"
+    },
+    {
+      "path": "docs/archives/taihua-v2-editorial-baseline/taihua-author.mjs",
+      "bytes": 30282,
+      "sha256": "ec3ca4ac5aa0c14cd5a10994c3f2f58103c0a1c45c6b2e4d1ad37bc152979484"
+    },
+    {
+      "path": "docs/archives/taihua-v2-editorial-baseline/taihua-elders.mjs",
+      "bytes": 9186,
+      "sha256": "6cf79098338a6ea58b4a562f8064b52c9fdb64fd1d3f183f0e0096f99f812242"
+    },
+    {
+      "path": "docs/archives/taihua-v2-editorial-baseline/taihua-observation.mjs",
+      "bytes": 8373,
+      "sha256": "092087b6d0b42c7c0d3090ac5085b27f066699f84f42f286ea929f0b83cecf54"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round1/twelfth-life-after.mjs",
+      "bytes": 7977,
+      "sha256": "325018306a0f23d1e4635c6ac359f0cac62646dc3b107c4cafc594622a855464"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round1/twelfth-life-author.mjs",
+      "bytes": 1582,
+      "sha256": "a0e3764750c05b285c3270d7f09d246a43b16cea2f243e162699bdb68bf990bd"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round1/twelfth-life-capital.mjs",
+      "bytes": 6318,
+      "sha256": "683015206c63e4185bd163dfa1c4a3f546843453bbe228c2adcbd90560790353"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round1/twelfth-life-defeat.mjs",
+      "bytes": 6653,
+      "sha256": "58e45580c42d106d6d626ac82a71b1408921d1e8b9413c8d7e17e0551b7a9f1e"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round1/twelfth-life-names.mjs",
+      "bytes": 3732,
+      "sha256": "825c5c6a7ddbb1fdda9335661503d50b8e95a88965c3180a7441c09d2e044179"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round1/twelfth-life-seat.mjs",
+      "bytes": 5998,
+      "sha256": "40c7a6eb4b69b7ce84af9c7bd8081c26322c9d5bf0a98242caa6cacd68d38456"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round1/twelfth-life-six.mjs",
+      "bytes": 4771,
+      "sha256": "c333c699ad53176deba53b39e601e1db7cd02dd0be1f232ce8b1c8655412b76b"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round1/twelfth-life-teacher.mjs",
+      "bytes": 8628,
+      "sha256": "0e1081efb48fc2a574958be15702bcf69d87f7d02a7d32e35ebdafa30b4e8dff"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round1/twelfth-life-youth.mjs",
+      "bytes": 5983,
+      "sha256": "5b33088838f44923632d2d0ae7ce0036229a595d896e2baaf21fee2d6ae96969"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round2/twelfth-life-after.mjs",
+      "bytes": 7974,
+      "sha256": "1650fd19b4ab454179e8158b5f1c95a1d2c90fd0a9bd70c3d4817ee1f3d21547"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round2/twelfth-life-author.mjs",
+      "bytes": 1582,
+      "sha256": "a0e3764750c05b285c3270d7f09d246a43b16cea2f243e162699bdb68bf990bd"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round2/twelfth-life-capital.mjs",
+      "bytes": 6354,
+      "sha256": "f63e36211a0d37335725eed4ff3c27fa704689a23d304e6de97a0cc8b8c7c8d6"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round2/twelfth-life-defeat.mjs",
+      "bytes": 6693,
+      "sha256": "ae002eeb6af0439fc5f4d09675faaab7a685f8021cf5c16a6e79059448469f3d"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round2/twelfth-life-names.mjs",
+      "bytes": 3750,
+      "sha256": "16a83af1c0a7d9ca06cdacbec34b4c4ca827837e7a2b7c22fb32b94da97b36f7"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round2/twelfth-life-seat.mjs",
+      "bytes": 5998,
+      "sha256": "40c7a6eb4b69b7ce84af9c7bd8081c26322c9d5bf0a98242caa6cacd68d38456"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round2/twelfth-life-six.mjs",
+      "bytes": 4810,
+      "sha256": "fff03cca2b84acf95d3edfca53f9001755361bdf529384c9295b4d127a58b9ad"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round2/twelfth-life-teacher.mjs",
+      "bytes": 8779,
+      "sha256": "e653b6403e5a0e5ae767d68dda997f28fdde522929c02418bed9e64f5170ce0b"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round2/twelfth-life-youth.mjs",
+      "bytes": 6043,
+      "sha256": "65489a838dc2f0b3f679dc624541390477b13814cb6272e85e182d1247f35daa"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round3/twelfth-life-after.mjs",
+      "bytes": 8603,
+      "sha256": "c3cd48d92288d8150d5bee880fd50e53ae2347a10390faac709fcc50d76abd9e"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round3/twelfth-life-author.mjs",
+      "bytes": 1582,
+      "sha256": "a0e3764750c05b285c3270d7f09d246a43b16cea2f243e162699bdb68bf990bd"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round3/twelfth-life-capital.mjs",
+      "bytes": 6354,
+      "sha256": "f63e36211a0d37335725eed4ff3c27fa704689a23d304e6de97a0cc8b8c7c8d6"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round3/twelfth-life-defeat.mjs",
+      "bytes": 7938,
+      "sha256": "f1d1e43bb04425f6535a3954061b690a4b69fc7f4db5f3d2cf6437ab672dc269"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round3/twelfth-life-names.mjs",
+      "bytes": 3750,
+      "sha256": "16a83af1c0a7d9ca06cdacbec34b4c4ca827837e7a2b7c22fb32b94da97b36f7"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round3/twelfth-life-seat.mjs",
+      "bytes": 6158,
+      "sha256": "2d95afbfb43abebd604a66b32eb770f014135beaf646c0255fd4181dba377eab"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round3/twelfth-life-six.mjs",
+      "bytes": 4810,
+      "sha256": "fff03cca2b84acf95d3edfca53f9001755361bdf529384c9295b4d127a58b9ad"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round3/twelfth-life-teacher.mjs",
+      "bytes": 8869,
+      "sha256": "9a811b1d4685f8ed76c3c0d3fd22779047d6e670a1e6bb0e3629cfb460f03e5e"
+    },
+    {
+      "path": "docs/archives/twelfth-life-editorial-rounds/round3/twelfth-life-youth.mjs",
+      "bytes": 6043,
+      "sha256": "65489a838dc2f0b3f679dc624541390477b13814cb6272e85e182d1247f35daa"
+    },
+    {
+      "path": "docs/archives/twelfth-life-v2-editorial-baseline/twelfth-life-after.mjs",
+      "bytes": 7878,
+      "sha256": "85c9c5e6904503fdf1454ef7c4e15478397fdbfd071ccc4e3c8b07b0f8581769"
+    },
+    {
+      "path": "docs/archives/twelfth-life-v2-editorial-baseline/twelfth-life-author.mjs",
+      "bytes": 1548,
+      "sha256": "400175dc31468f509e4a76230f8481467b44ecb895dd90331c10bb336a4ca4ca"
+    },
+    {
+      "path": "docs/archives/twelfth-life-v2-editorial-baseline/twelfth-life-capital.mjs",
+      "bytes": 6279,
+      "sha256": "ebe43d76e4004bde4575eb44eca36132debbe8c2e12deb4fc57717f8122651c2"
+    },
+    {
+      "path": "docs/archives/twelfth-life-v2-editorial-baseline/twelfth-life-defeat.mjs",
+      "bytes": 5814,
+      "sha256": "be800a64b1487c084ced568ff06de51e45fba79d56eadf250823db291ba0c99b"
+    },
+    {
+      "path": "docs/archives/twelfth-life-v2-editorial-baseline/twelfth-life-names.mjs",
+      "bytes": 3732,
+      "sha256": "825c5c6a7ddbb1fdda9335661503d50b8e95a88965c3180a7441c09d2e044179"
+    },
+    {
+      "path": "docs/archives/twelfth-life-v2-editorial-baseline/twelfth-life-seat.mjs",
+      "bytes": 5998,
+      "sha256": "40c7a6eb4b69b7ce84af9c7bd8081c26322c9d5bf0a98242caa6cacd68d38456"
+    },
+    {
+      "path": "docs/archives/twelfth-life-v2-editorial-baseline/twelfth-life-six.mjs",
+      "bytes": 4771,
+      "sha256": "c333c699ad53176deba53b39e601e1db7cd02dd0be1f232ce8b1c8655412b76b"
+    },
+    {
+      "path": "docs/archives/twelfth-life-v2-editorial-baseline/twelfth-life-teacher.mjs",
+      "bytes": 8475,
+      "sha256": "a61abc6b93558a8cc79cb563217ef3098cbfdb518282a5fc7c6a06fd7d7c2598"
+    },
+    {
+      "path": "docs/archives/twelfth-life-v2-editorial-baseline/twelfth-life-youth.mjs",
+      "bytes": 5983,
+      "sha256": "5b33088838f44923632d2d0ae7ce0036229a595d896e2baaf21fee2d6ae96969"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/.gitignore",
+      "bytes": 53,
+      "sha256": "2a83e7e11386308a004b30f9ab6e859edc6cebf3d31a6d0312f031cffb070b3e"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/index.html",
+      "bytes": 634,
+      "sha256": "e64896daec23d35590201eea5fd1309c07614018b4062a26ae9e451c0d093273"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/legacy.html",
+      "bytes": 502,
+      "sha256": "9920c523085fd2a33feefe9b1063b425e235b8fb75334f2503d263f20c36200b"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/package.json",
+      "bytes": 583,
+      "sha256": "781a04a70cb13c920b7f9ac9ad30a24ad7b3be71612e12ec3ca56ef07164577c"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/playwright.config.ts",
+      "bytes": 527,
+      "sha256": "9edf9a61001a56fcbde50c868f31bdb0bc35a3e3c6a58788d08efe4822900130"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/public/sw.js",
+      "bytes": 1012,
+      "sha256": "b45c698e17cdfd1f335e9bba4c8cfddb1db81de215d5985d6f120eb6f2d08f8b"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/scripts/compile-story.mjs",
+      "bytes": 916,
+      "sha256": "e104db679b54c9c4c535b0a8f7a9c366a8e5542aeb0bdb34c540dfaffbe64f3b"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/scripts/research.mjs",
+      "bytes": 1200,
+      "sha256": "10bf649f2e6df6839ef982caa7121935b7a0d01cdd7359e73311e1ae55405c5e"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/scripts/serve.mjs",
+      "bytes": 1254,
+      "sha256": "b7aa58647a9e901b43ac2071e9683178ed99086452e46b5550bed8a0848de8e5"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/scripts/snapshot-v4.mjs",
+      "bytes": 1020,
+      "sha256": "d44336c29f5758cff9a84371648dbbbcf3d8abccd70bf4ebf111b6fd5263ba89"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/scripts/validate-dialogue.mjs",
+      "bytes": 2722,
+      "sha256": "4d6700721542972c94c64e591773872ddaf54b70a4c2b80d83fccf21cacfe49f"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/src/knowledge.ts",
+      "bytes": 2402,
+      "sha256": "b0014de248d5dcb0079db46e2efbadf1cf8b64f1497885ec2040c77bd8d11e3a"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/src/legacy-main.ts",
+      "bytes": 15675,
+      "sha256": "5580ca69dcb21bbdca13366f2412c5cc130c3853d63ebc07b9a65b242d41f6ea"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/src/legacy-styles.css",
+      "bytes": 10986,
+      "sha256": "7ed1102ff0c676eb33c7f172bfc24c5a48fe5dcfda39f1d4b4fb235df504fcd4"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/src/main.ts",
+      "bytes": 15666,
+      "sha256": "27b2662be94de0ef1da262b960f5bd1e1a04cc2c5282c5e99f65172ed91a3215"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/src/player.ts",
+      "bytes": 21607,
+      "sha256": "30e8cb212f96c7c628e9b6b3feded5cc82223925720b6ea9ceac80fb5df23fa9"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/src/presentation.ts",
+      "bytes": 2375,
+      "sha256": "ec1af6b78f1ceca7da3386d97ad679787c668f202260335e6d0e1306c65985be"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/src/runtime.ts",
+      "bytes": 4309,
+      "sha256": "ce20fcf97fe3b244b9a1da7fb01c0fa3b230e3d0bf20035b4c216ab790e55b3d"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/src/stage.css",
+      "bytes": 15395,
+      "sha256": "4f6d288d1da51179a9a874788b26d9a07a4414321e24184b754a221aeac56e6b"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/src/storage.ts",
+      "bytes": 803,
+      "sha256": "f07f4553cc0f9d857c507123bfa60f16b0c38d615fe40992dd8fd227f4de5a53"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/src/styles.css",
+      "bytes": 10986,
+      "sha256": "7ed1102ff0c676eb33c7f172bfc24c5a48fe5dcfda39f1d4b4fb235df504fcd4"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/src/tokens.css",
+      "bytes": 498,
+      "sha256": "4b450fa6d9af5f1fc819ea115a2c3d7a01ad300ed3eed79e0461a3e685dee2cf"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/src/vite-env.d.ts",
+      "bytes": 38,
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/src/vn-runtime.ts",
+      "bytes": 8525,
+      "sha256": "67038fa818044b2fa5b5d26235dd948f96cd83a8699620b7dcb1987afdbefae6"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/src/vn-ui.ts",
+      "bytes": 4576,
+      "sha256": "dccecc3712fa827c91b465d78f20420425e7237457623d17778b45b885754b1b"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/story/duel.ink",
+      "bytes": 18941,
+      "sha256": "aa5650e8ea910a6060602a1290a934c90fdda4b59996a9d9e5336fd13b190be0"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/story/main.ink",
+      "bytes": 41772,
+      "sha256": "921800bad5e1d321ba18b0ed5e0bd29d66e0f9588861444ad1880dfcaf3a87af"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/tests/game.spec.ts",
+      "bytes": 8559,
+      "sha256": "3dacc02e8000a6d5de2cf1f3b72e9baa4a76314d394268dcf3f7abcece904b77"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/tests/player.spec.ts",
+      "bytes": 19304,
+      "sha256": "3dec7fbff7cf774de702e8e6ad188e46d75534f5caae6c7314e8db6172a17b6a"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/tests/routes.ts",
+      "bytes": 712,
+      "sha256": "83ae8d4acda7db4bed7e68bf055b224405968f15499864decf89b7aac8f958e8"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/tests/runtime.test.ts",
+      "bytes": 4472,
+      "sha256": "0b0cdd61b84b55e7d264fd766ee5672823becae25cf1f9985dfb5f08579d0d49"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/tests/vn-routes.ts",
+      "bytes": 422,
+      "sha256": "f35f37955a743fc45f795bc88db32da87d32b3bbcf5c1008cb4d92178f08c361"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/tests/vn-runtime.test.ts",
+      "bytes": 7556,
+      "sha256": "aa004363408ed5f429eddd70f0d4ceb25e8a62ef6f5d59cc4e79866cff6c3c30"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/tsconfig.json",
+      "bytes": 273,
+      "sha256": "8cf1fa994dfba825f65667d1242dfeb78bdfc344ed07dbd7230ec877c0f8b652"
+    },
+    {
+      "path": "docs/archives/v4-source-20261015/vite.config.ts",
+      "bytes": 251,
+      "sha256": "da6b980e30fa64c514279dbd3113c5b743e7b593d2cc23f5d10e16597dfdea5e"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/.gitignore",
+      "bytes": 53,
+      "sha256": "2a83e7e11386308a004b30f9ab6e859edc6cebf3d31a6d0312f031cffb070b3e"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/gallery.html",
+      "bytes": 334,
+      "sha256": "7fe5599cd6008b384e6ef21841a483d8063c903aecb5ba6288d9822d1ac28db6"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/half-step.html",
+      "bytes": 634,
+      "sha256": "e64896daec23d35590201eea5fd1309c07614018b4062a26ae9e451c0d093273"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/index.html",
+      "bytes": 639,
+      "sha256": "24b92a6e21c6ad11b6e5c27c1bda66b12275ec3f13204c9fb7b14a944ccb63cc"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/legacy.html",
+      "bytes": 502,
+      "sha256": "9920c523085fd2a33feefe9b1063b425e235b8fb75334f2503d263f20c36200b"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/package.json",
+      "bytes": 647,
+      "sha256": "a55f4b8982b418b42adf731eccd4a8e4daa3b84570fe13cf2cbc9459f939c48e"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/playwright.config.ts",
+      "bytes": 527,
+      "sha256": "9edf9a61001a56fcbde50c868f31bdb0bc35a3e3c6a58788d08efe4822900130"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/public/sw.js",
+      "bytes": 1121,
+      "sha256": "df4cd31e65b1793aea00675b67a3e34b8d7f15e7972f9985ddfeda6ea2ef03ea"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/scripts/audit-v5.mjs",
+      "bytes": 4965,
+      "sha256": "6525a80748d1f9decce2da45adc91f8667c37d1882d836d10d275b73f82b1d12"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/scripts/baseline-v6.mjs",
+      "bytes": 1920,
+      "sha256": "062a43ce89fdac7df7deb40c4292b8da45a37330d68f980336d77300c683e7d2"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/scripts/compile-story.mjs",
+      "bytes": 1081,
+      "sha256": "9adbece1dc725341f82631fb88781f913161fa65d055e68e68e9c7d1205641fa"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/scripts/index-lore.mjs",
+      "bytes": 2642,
+      "sha256": "cbcf469184588cf16fc117ccd361ffbc4ce262a4fe0292a9bb8979d9bd83144d"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/scripts/offline-manifest.mjs",
+      "bytes": 560,
+      "sha256": "e2e0151c394a91ac83aa54c24597e4bfe54c8e7c52b1ff6c6264a7c7a5fc4791"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/scripts/research.mjs",
+      "bytes": 1200,
+      "sha256": "10bf649f2e6df6839ef982caa7121935b7a0d01cdd7359e73311e1ae55405c5e"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/scripts/serve.mjs",
+      "bytes": 1254,
+      "sha256": "b7aa58647a9e901b43ac2071e9683178ed99086452e46b5550bed8a0848de8e5"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/scripts/snapshot-v4.mjs",
+      "bytes": 1020,
+      "sha256": "d44336c29f5758cff9a84371648dbbbcf3d8abccd70bf4ebf111b6fd5263ba89"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/scripts/validate-dialogue.mjs",
+      "bytes": 2849,
+      "sha256": "937338662711f248ee1ce55e8b2b5e8c1aa3146ee0ec0773b9104148442e7a53"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/src/art-preview.ts",
+      "bytes": 1130,
+      "sha256": "de33c1cfcea36804ad8d99b664d5816554578eedc063a63bb8a9527f4ba8889b"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/src/campaign-catalog.ts",
+      "bytes": 10203,
+      "sha256": "70ed42d140fb1e848171a73f0112075ca39962124fce9487e2c4251655426dd0"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/src/catalog.ts",
+      "bytes": 860,
+      "sha256": "864402c7c01e39e7eca22869a3644f62dd2de67d7023359178926527392af006"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/src/edition.ts",
+      "bytes": 432,
+      "sha256": "360674bf6c5996430fc07ef42586ccdfe74e91854b998059cb574150dd2fb386"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/src/knowledge.ts",
+      "bytes": 2402,
+      "sha256": "b0014de248d5dcb0079db46e2efbadf1cf8b64f1497885ec2040c77bd8d11e3a"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/src/legacy-main.ts",
+      "bytes": 15675,
+      "sha256": "5580ca69dcb21bbdca13366f2412c5cc130c3853d63ebc07b9a65b242d41f6ea"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/src/legacy-styles.css",
+      "bytes": 10986,
+      "sha256": "7ed1102ff0c676eb33c7f172bfc24c5a48fe5dcfda39f1d4b4fb235df504fcd4"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/src/main.ts",
+      "bytes": 15666,
+      "sha256": "27b2662be94de0ef1da262b960f5bd1e1a04cc2c5282c5e99f65172ed91a3215"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/src/player.ts",
+      "bytes": 23296,
+      "sha256": "2249aafa3c91cc34fe0775f2d1f488e3fb0dcba967c3898faa95f5a894b80329"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/src/presentation.ts",
+      "bytes": 2375,
+      "sha256": "ec1af6b78f1ceca7da3386d97ad679787c668f202260335e6d0e1306c65985be"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/src/runtime.ts",
+      "bytes": 4309,
+      "sha256": "ce20fcf97fe3b244b9a1da7fb01c0fa3b230e3d0bf20035b4c216ab790e55b3d"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/src/stage.css",
+      "bytes": 19866,
+      "sha256": "d94f9600ddf405160ff5e92dad7df1cd5725905d3cbe541255fb13aa09a4dbba"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/src/storage.ts",
+      "bytes": 803,
+      "sha256": "f07f4553cc0f9d857c507123bfa60f16b0c38d615fe40992dd8fd227f4de5a53"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/src/styles.css",
+      "bytes": 10986,
+      "sha256": "7ed1102ff0c676eb33c7f172bfc24c5a48fe5dcfda39f1d4b4fb235df504fcd4"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/src/tokens.css",
+      "bytes": 498,
+      "sha256": "4b450fa6d9af5f1fc819ea115a2c3d7a01ad300ed3eed79e0461a3e685dee2cf"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/src/vite-env.d.ts",
+      "bytes": 38,
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/src/vn-runtime.ts",
+      "bytes": 9169,
+      "sha256": "e7044fdd778a0d26c3b35e2137378a8de0d48f8998f41a2e82f1d4ff061eae51"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/src/vn-ui.ts",
+      "bytes": 5736,
+      "sha256": "63ce11a05f5f9ab2afd275c2803c6633cb126613fd63137f2f8aa7a0ac1c2e5a"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign.ink",
+      "bytes": 170424,
+      "sha256": "daacfc805bdd01129808bcecfc9ca78e6679c339d3581131e2113040aed8499e"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/00-quay.ink",
+      "bytes": 9862,
+      "sha256": "cb04e7dfdf1527263016b77c942591e06c8703292f0f2dea6243f1498766df33"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/01-hall.ink",
+      "bytes": 12939,
+      "sha256": "aef1c57d6470ef71177f70693be18cf52d1c0ce43f48b860c2a7d69286453874"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/01b-last-lesson.ink",
+      "bytes": 3377,
+      "sha256": "59685159b6f31b4f10bde52e2a489a7434fd4412335c6a6f514a2578f2e0335a"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/02-inn.ink",
+      "bytes": 10151,
+      "sha256": "fad62e1eaab8fdb7ac86cc0bfa8e33d90532722aa2a92ad320d4e34483c1a6c8"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/02b-stall.ink",
+      "bytes": 3115,
+      "sha256": "a6f5de2aab7009fe4338427f91282c17bd1ed5f77540eead8eded1b2845929e6"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/02c-farewell.ink",
+      "bytes": 2826,
+      "sha256": "d3195027ab703dc7d5a30c24d6d26e946d255ba7c455ba59080732764c99fac4"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/03-land.ink",
+      "bytes": 9475,
+      "sha256": "6e168ce4e0ef41a887c9d6e43c0d55cff2865088df570e8539fb57e60c41c91d"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/03-water.ink",
+      "bytes": 9494,
+      "sha256": "fafe05280d642d2d76e01f324843afbae6f7f0d636b42c9b9db0420c1b88df35"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/03b-shoes.ink",
+      "bytes": 2737,
+      "sha256": "aa8112013a5e9bfc7c841b78d9d6173a16cb502a40f56d5fa715ef743ba79eaa"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/03c-reeds.ink",
+      "bytes": 2864,
+      "sha256": "3d260a5b60a413b68af5f9ba3ffc0cdcd2c24e693af6346722e449a2b866d8b6"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/04-land.ink",
+      "bytes": 8795,
+      "sha256": "90ea288c2220ce08d6343692a71b3a657366c98a17609d621affb46872c50a0b"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/04-water.ink",
+      "bytes": 10383,
+      "sha256": "ccd99ca37ea048d10c8ed4a0000306da543bb49056ca800c7e34b4469534f28e"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/05-workshop.ink",
+      "bytes": 12055,
+      "sha256": "e60cb9e2af97a96629126e62bd693fb933f4dc00396c9440e022b5d5f3e72032"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/05b-practice.ink",
+      "bytes": 3115,
+      "sha256": "f3c72c05bbe6c310c18b388dd6048bd4f2f76a2a3f5092fd200964ab2a3e455f"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/05c-repair.ink",
+      "bytes": 2742,
+      "sha256": "7c917a2fea7d44f014b69dacf11a260b7c18ab4abc43dafc7a1cf4a2d6edb9bf"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/06-arena.ink",
+      "bytes": 11364,
+      "sha256": "1f8e443a8d624dbf02cf1b7c15fd2cb6736320d5cff24faba9a33658d59f5f09"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/07-levee.ink",
+      "bytes": 11850,
+      "sha256": "266cc7423346e907cf440a7c0669517dd8673c580165593499c8379437310f0c"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/07b-missing.ink",
+      "bytes": 2854,
+      "sha256": "d6c18606af3a54882217629256c245f3c92d36846a517459bd5ab5524a34c1c1"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/07c-last-boat.ink",
+      "bytes": 2846,
+      "sha256": "a1bb598267ac3d5eab2dd11da52b9872c3af255324f19e253e9e322f82b12fda"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/08-storm.ink",
+      "bytes": 13041,
+      "sha256": "efcbf638dd9ef8e60123c00d11cb37ef58c4a8bf43504b19c3e4abe195850787"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/09-after.ink",
+      "bytes": 20395,
+      "sha256": "2e70f1739077ba885e0325c56c4247d323914cd3cab33282ee8bfedd58b93f69"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/09b-compensation.ink",
+      "bytes": 3036,
+      "sha256": "3fd83938ffa431c9c708eaff48b1e2ad43891e0b81395be498b8c45643d5c483"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/author.mjs",
+      "bytes": 80323,
+      "sha256": "2d567c0bfa373b3921365ebeecf4f7f9cfefa20521c4690220c67aca134eb39f"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/campaign/interludes.mjs",
+      "bytes": 14437,
+      "sha256": "c2c611210cdc46e1cfa83435c184ea6761494f3064da6b7b54a3caf3cbe033db"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/duel.ink",
+      "bytes": 18941,
+      "sha256": "aa5650e8ea910a6060602a1290a934c90fdda4b59996a9d9e5336fd13b190be0"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/story/main.ink",
+      "bytes": 41772,
+      "sha256": "921800bad5e1d321ba18b0ed5e0bd29d66e0f9588861444ad1880dfcaf3a87af"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/tests/campaign-routes.ts",
+      "bytes": 489,
+      "sha256": "a17b7fd954e6fd7a29ca1fbaf6f4a978f8c7b92f21c0bb641110f161b47b62f1"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/tests/campaign-visual.spec.ts",
+      "bytes": 3564,
+      "sha256": "3103c27829094c130c561fa8abc296c7142c38864186827430373efbaf3cd457"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/tests/campaign.spec.ts",
+      "bytes": 8774,
+      "sha256": "3c8c73203c8b336cf243807c00e5fce3a90136eab6ebb175195950ef298afddb"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/tests/campaign.test.ts",
+      "bytes": 4494,
+      "sha256": "5b353fb8cad2d30f04c9488ed0e011d54b8966a0999e045c47b36060a99d3ee5"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/tests/game.spec.ts",
+      "bytes": 8559,
+      "sha256": "3dacc02e8000a6d5de2cf1f3b72e9baa4a76314d394268dcf3f7abcece904b77"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/tests/player.spec.ts",
+      "bytes": 19446,
+      "sha256": "5fda7cbea287455a0e1cacedc6127007dbda3a6ac0dbba495b4025abed6f9cbf"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/tests/routes.ts",
+      "bytes": 712,
+      "sha256": "83ae8d4acda7db4bed7e68bf055b224405968f15499864decf89b7aac8f958e8"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/tests/runtime.test.ts",
+      "bytes": 4472,
+      "sha256": "0b0cdd61b84b55e7d264fd766ee5672823becae25cf1f9985dfb5f08579d0d49"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/tests/vn-routes.ts",
+      "bytes": 422,
+      "sha256": "f35f37955a743fc45f795bc88db32da87d32b3bbcf5c1008cb4d92178f08c361"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/tests/vn-runtime.test.ts",
+      "bytes": 7556,
+      "sha256": "aa004363408ed5f429eddd70f0d4ceb25e8a62ef6f5d59cc4e79866cff6c3c30"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/tsconfig.json",
+      "bytes": 273,
+      "sha256": "8cf1fa994dfba825f65667d1242dfeb78bdfc344ed07dbd7230ec877c0f8b652"
+    },
+    {
+      "path": "docs/archives/v6-baseline-20261015/vite.config.ts",
+      "bytes": 306,
+      "sha256": "d2fa8d673475e49d48136186bfac944b8cde835ed11fb30895269f18c2d39893"
+    },
+    {
+      "path": "docs/audits/independent-final/canon-early-probe.mjs",
+      "bytes": 1641,
+      "sha256": "f663a06eb8e1cdc2535bdc89d05cee09a961be4a1165df4403f09032da272ad4"
+    },
+    {
+      "path": "docs/audits/independent-final/canon-late-finalize.mjs",
+      "bytes": 11337,
+      "sha256": "4ce2c2863352d6f0e6f219c9ff14770cd11bf067e26f1335b08daebbb8dfab49"
+    },
+    {
+      "path": "docs/audits/independent-final/canon-late-replay.mjs",
+      "bytes": 2855,
+      "sha256": "c77090a12b9bb2f32694487c0130417f14ab88cb542129d8ffd8582dff97b50b"
+    },
+    {
+      "path": "dongting.html",
+      "bytes": 519,
+      "sha256": "a9de5f2b59b2b9cb58ac5acad2b80442a4c3ba16303655263397ac168c91cf67"
+    },
+    {
+      "path": "gallery.html",
+      "bytes": 334,
+      "sha256": "7fe5599cd6008b384e6ef21841a483d8063c903aecb5ba6288d9822d1ac28db6"
+    },
+    {
+      "path": "half-step.html",
+      "bytes": 634,
+      "sha256": "e64896daec23d35590201eea5fd1309c07614018b4062a26ae9e451c0d093273"
+    },
+    {
+      "path": "index.html",
+      "bytes": 635,
+      "sha256": "ccae0c083ce85a16e268fc43dd8cd7c8659b237dfcaa4661a7304fb224c8d4c1"
+    },
+    {
+      "path": "jade-thieves-v1.html",
+      "bytes": 404,
+      "sha256": "cd55bdfa58ad0beb3e5b354817ae4adac7bfe36fa3e81efc7b9c1ef8fa82fbf2"
+    },
+    {
+      "path": "jade-thieves.html",
+      "bytes": 398,
+      "sha256": "48aa59a5273debd031288f8832e571df478c86e6e1ca3740b52503718e5fb74a"
+    },
+    {
+      "path": "jade-v1.html",
+      "bytes": 401,
+      "sha256": "c0b20eef7ca2886cc8113bef7f9e6f1198d90e4e3055882c140aa444c2e1c07f"
+    },
+    {
+      "path": "jade.html",
+      "bytes": 395,
+      "sha256": "e1628654585457dd97b95b4e7d810c5489860ff62896f8f4a2b41afc7460adc4"
+    },
+    {
+      "path": "kuhe-v1.html",
+      "bytes": 619,
+      "sha256": "c478cefe479f90c690e00632e68d9da8e83feb8350a7ec006317c2b55a6cc005"
+    },
+    {
+      "path": "kuhe-v2.html",
+      "bytes": 631,
+      "sha256": "60d967c5f6d15c4b568e7895b56c63208fe72863dcd590c4e24c9b895f674def"
+    },
+    {
+      "path": "kuhe.html",
+      "bytes": 614,
+      "sha256": "a63ac6f3d55fac4f4bdaef6563d1e54115b7c9f5d0c2fa3d07238492ca775577"
+    },
+    {
+      "path": "legacy.html",
+      "bytes": 501,
+      "sha256": "aec345c7663e2966854da537faa84e59f60417a669c9d70fcd7a85d5854650f4"
+    },
+    {
+      "path": "longmen-v1.html",
+      "bytes": 542,
+      "sha256": "b99c93a9c7d8f0f7c4d4c4299e8d9f236e24827148681f9d8985647e7621e31b"
+    },
+    {
+      "path": "longmen-v2.html",
+      "bytes": 541,
+      "sha256": "de9d58c2ce93d731c1726dab26247bf82901874118c032aa47209f1a5b1459ec"
+    },
+    {
+      "path": "longmen.html",
+      "bytes": 522,
+      "sha256": "4d23f1834b8ca5e7a0dea8d8e64954a93905033390ae3ad61a09516bbfa6c5e7"
+    },
+    {
+      "path": "luhua.html",
+      "bytes": 397,
+      "sha256": "7eb6230f21e8014df6d96ab35a27d4cae7ca91f455b40e078a8c43fd3bd27b3a"
+    },
+    {
+      "path": "luoyang.html",
+      "bytes": 396,
+      "sha256": "1cd857f261ac4f337a87303607bbc32280bd1f62f019eb2bdb32d0f195817f84"
+    },
+    {
+      "path": "north-notes.html",
+      "bytes": 387,
+      "sha256": "f41c8e700aea3008ee7ee5c166d252090bd75b2af6fd3d550ef8e37d07ac366a"
+    },
+    {
+      "path": "north-v1.html",
+      "bytes": 387,
+      "sha256": "d826c360db7a921ec7e24e5e72aea6276bc9ee7652d03bff94a58252463e3bce"
+    },
+    {
+      "path": "north-v2.html",
+      "bytes": 396,
+      "sha256": "274c80a29156f8d90ba7352a19c23d193daf6eed749fcaa149beed1ca8ed7ca1"
+    },
+    {
+      "path": "north.html",
+      "bytes": 387,
+      "sha256": "d826c360db7a921ec7e24e5e72aea6276bc9ee7652d03bff94a58252463e3bce"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 39513,
+      "sha256": "cdec7b59f93e7133e5f02f5b3870de89fe3c5a00867b3a23846102da17eb6342"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1316,
+      "sha256": "ea376d2f9573aa136f73566d7c382e602c5cdb0a39af31e9f53f1bfbcfc1e620"
+    },
+    {
+      "path": "playwright.config.ts",
+      "bytes": 527,
+      "sha256": "9edf9a61001a56fcbde50c868f31bdb0bc35a3e3c6a58788d08efe4822900130"
+    },
+    {
+      "path": "public/sw.js",
+      "bytes": 3584,
+      "sha256": "b0d1c6cf8bfd6e91e2703f83dfc3f6016145c4501c8dff657f50afe0b2aa5ec5"
+    },
+    {
+      "path": "qian-kun-v1.html",
+      "bytes": 402,
+      "sha256": "94ed72a3773af3e32a1a2e00893329b31944660db11539e87a1672040bd94466"
+    },
+    {
+      "path": "qian-kun-v2.html",
+      "bytes": 411,
+      "sha256": "fb9eb6ffb814d68d405441b0214c3eafe308604ac90371c9fabec95fe7bfac14"
+    },
+    {
+      "path": "qian-kun.html",
+      "bytes": 402,
+      "sha256": "94ed72a3773af3e32a1a2e00893329b31944660db11539e87a1672040bd94466"
+    },
+    {
+      "path": "qingshi-v1.html",
+      "bytes": 397,
+      "sha256": "2fde8e6ba498b15e454de8039c33083f4d1b6ecd0176c516883ba3c8b97b453a"
+    },
+    {
+      "path": "qingshi-v2.html",
+      "bytes": 406,
+      "sha256": "96ab2a1b59b807919f4f61f6ea56f6204c1ca9b117a47ef4dd15874c5c980f8a"
+    },
+    {
+      "path": "qingshi.html",
+      "bytes": 398,
+      "sha256": "b773dce6ff1518906dadbe257010b966d3ff81bf17ae65002b31b872c79c6de8"
+    },
+    {
+      "path": "scripts/archive-evidence.py",
+      "bytes": 2834,
+      "sha256": "99a85f30752567331fb364dadc0580bf34b22a86d65d566d238d6dd62d331cdb"
+    },
+    {
+      "path": "scripts/audit-delayed-choices-v6.mjs",
+      "bytes": 3813,
+      "sha256": "4b7d6abcd27a6233cc3ade2b15147cb996e3f87e7f64bb804f926b47ff452937"
+    },
+    {
+      "path": "scripts/audit-ending-staging-v6.mjs",
+      "bytes": 2626,
+      "sha256": "57dc61657de0f4a7da120d8a1af18c0d5bccf67070d650076f5de75b529c96fc"
+    },
+    {
+      "path": "scripts/audit-named-characters-v6.mjs",
+      "bytes": 4770,
+      "sha256": "63a22c72d0c20cff07c78a5e79c351cf6acf19d26594dfcffffee6e778494338"
+    },
+    {
+      "path": "scripts/audit-offline-bundles-v6.mjs",
+      "bytes": 2757,
+      "sha256": "fcc823eed89e9cbf6549dde0a33cc025d43da0a015a145af3b393fc763dd2efe"
+    },
+    {
+      "path": "scripts/audit-production-v6.mjs",
+      "bytes": 6918,
+      "sha256": "a318eff80bc2a8d39e8a0730a14cd97dc3329f3adea09be4fa8ccd8a42ba0788"
+    },
+    {
+      "path": "scripts/audit-v5.mjs",
+      "bytes": 4965,
+      "sha256": "6525a80748d1f9decce2da45adc91f8667c37d1882d836d10d275b73f82b1d12"
+    },
+    {
+      "path": "scripts/audit-v6.mjs",
+      "bytes": 5109,
+      "sha256": "4fb6c92850421478d1a40cdd625bf98f1f42122237c7962b692f50f61a1f8b7b"
+    },
+    {
+      "path": "scripts/audit-v7-boring-probes.mjs",
+      "bytes": 5957,
+      "sha256": "ba8bf1d118483fc24bc15f204839637e7dbf38d96def775b67781a4793d6826c"
+    },
+    {
+      "path": "scripts/audit-v7-ending-coverage.mjs",
+      "bytes": 5639,
+      "sha256": "3d0b70a2bfea500e207a1c41f2fb09e65f7871b9269bfc0bb5039e75f1193e5b"
+    },
+    {
+      "path": "scripts/audit-v7-narration-runs.mjs",
+      "bytes": 4974,
+      "sha256": "0063d0cc16de36936e11bdb651352e766c5e81db9516f6c12a4d63b974cb17e9"
+    },
+    {
+      "path": "scripts/audit-v7-opening.mjs",
+      "bytes": 3330,
+      "sha256": "692e068f6ab78f089ce9055b24dc4f5f74f9f88a7cd3cf4853620dbd0fddf7ff"
+    },
+    {
+      "path": "scripts/audit-v7-orphan-vars.mjs",
+      "bytes": 3402,
+      "sha256": "cab393b4c479f2cd263439e4e4e643b9f61bd7c6113fa5b822d1206078aac8e4"
+    },
+    {
+      "path": "scripts/audit-v7-passive-run.mjs",
+      "bytes": 3350,
+      "sha256": "22fd02fc2df70d60b12a5d3cb986148efffeef3527f812974101c2f32a258507"
+    },
+    {
+      "path": "scripts/audit-v7-spec-metrics.mjs",
+      "bytes": 3298,
+      "sha256": "fff384ee3eddb4f0161195354dac8e442ee63fcbd8593bf96e36f330d13ebcb6"
+    },
+    {
+      "path": "scripts/audit-v7-works.mjs",
+      "bytes": 3374,
+      "sha256": "12bd9c1c33f2738d7c9ad19b48f8e540b0bed26c5bac9e376c2bef2be5a33599"
+    },
+    {
+      "path": "scripts/baseline-v6.mjs",
+      "bytes": 1920,
+      "sha256": "062a43ce89fdac7df7deb40c4292b8da45a37330d68f980336d77300c683e7d2"
+    },
+    {
+      "path": "scripts/build-art-manifest-v6.py",
+      "bytes": 13864,
+      "sha256": "5df823a510b0b984d8fb6bb096a536e5aabaf3bf3eed93c49cb5c6ab37d03888"
+    },
+    {
+      "path": "scripts/collect-art-usage-v6.mjs",
+      "bytes": 5887,
+      "sha256": "06fe7774a18f43a22d9343b48bbd2f84131ac6565f03ba8f1c8113ffcebc0d13"
+    },
+    {
+      "path": "scripts/compile-story.mjs",
+      "bytes": 4545,
+      "sha256": "38e1e07c857e493000c5ea4114b5455719d62a96d6c61cc5af03be34328da435"
+    },
+    {
+      "path": "scripts/independent-art-audit.py",
+      "bytes": 2984,
+      "sha256": "b91041989820275fc5d35a7b81dbd19dcb5333c03594d032f27f0dd6ed7a0137"
+    },
+    {
+      "path": "scripts/independent-runtime-audit.mjs",
+      "bytes": 6446,
+      "sha256": "99cfcca3ddb911ea4c672338274a29fa348abfde6e09c728a59e98ebb0340695"
+    },
+    {
+      "path": "scripts/index-lore.mjs",
+      "bytes": 2642,
+      "sha256": "cbcf469184588cf16fc117ccd361ffbc4ce262a4fe0292a9bb8979d9bd83144d"
+    },
+    {
+      "path": "scripts/measure-project.py",
+      "bytes": 3293,
+      "sha256": "82d3e698e0aba50d4ca59f852bf0e35043120ab80f9080881892387cedfc4e76"
+    },
+    {
+      "path": "scripts/offline-manifest.mjs",
+      "bytes": 3025,
+      "sha256": "b82816099fed497d9bd54ee01df014cdee035a7fc1da000fa134c913b4ff8b32"
+    },
+    {
+      "path": "scripts/public-snapshot.py",
+      "bytes": 6451,
+      "sha256": "342c7da725dc186207227ba284666f917bf3ce03c024bdaa81ed906257cc5460"
+    },
+    {
+      "path": "scripts/research.mjs",
+      "bytes": 1200,
+      "sha256": "10bf649f2e6df6839ef982caa7121935b7a0d01cdd7359e73311e1ae55405c5e"
+    },
+    {
+      "path": "scripts/serve.mjs",
+      "bytes": 1254,
+      "sha256": "b7aa58647a9e901b43ac2071e9683178ed99086452e46b5550bed8a0848de8e5"
+    },
+    {
+      "path": "scripts/snapshot-v4.mjs",
+      "bytes": 1020,
+      "sha256": "d44336c29f5758cff9a84371648dbbbcf3d8abccd70bf4ebf111b6fd5263ba89"
+    },
+    {
+      "path": "scripts/validate-dialogue.mjs",
+      "bytes": 3626,
+      "sha256": "6fcea6e179cf00fc295e7571d21d5e8735ff4bfc36f528a5e24ee2538089b527"
+    },
+    {
+      "path": "sea-tide-v1.html",
+      "bytes": 398,
+      "sha256": "6c0345ffbb0188c6075dbe2e50e641fa60714c2befad23d439c2aae0b5f3490e"
+    },
+    {
+      "path": "sea-tide.html",
+      "bytes": 398,
+      "sha256": "6c0345ffbb0188c6075dbe2e50e641fa60714c2befad23d439c2aae0b5f3490e"
+    },
+    {
+      "path": "sea-v1.html",
+      "bytes": 401,
+      "sha256": "24d3491323fd86dca6c0d6141228d9bf60978edb69d48b2789d45b2b6eaf54f9"
+    },
+    {
+      "path": "sea.html",
+      "bytes": 401,
+      "sha256": "24d3491323fd86dca6c0d6141228d9bf60978edb69d48b2789d45b2b6eaf54f9"
+    },
+    {
+      "path": "seven-questions-v1.html",
+      "bytes": 401,
+      "sha256": "7f171cafff762262bedf44c1c771e167e9d6e9c3d6ff26d2dca6bad3fb4184fa"
+    },
+    {
+      "path": "seven-questions.html",
+      "bytes": 401,
+      "sha256": "7f171cafff762262bedf44c1c771e167e9d6e9c3d6ff26d2dca6bad3fb4184fa"
+    },
+    {
+      "path": "src/art-preview.ts",
+      "bytes": 3460,
+      "sha256": "0c529aca5a0ca6b9b8695ad06aba5e30e8b142bce1eafe016ef6b2f2fa099a0a"
+    },
+    {
+      "path": "src/beyond-ranking-catalog.ts",
+      "bytes": 2785,
+      "sha256": "6f1935cab27d581a352a70a6628cabf4a2cf5252eee9d50ae6e3eaae3afdbf1a"
+    },
+    {
+      "path": "src/campaign-catalog.ts",
+      "bytes": 10324,
+      "sha256": "1722f3cd2a69af65a06823c5ccfa4de3e9ac990c9f7888b2a782304acc307fe4"
+    },
+    {
+      "path": "src/campaign-v6-catalog.ts",
+      "bytes": 4405,
+      "sha256": "91188fb3a2cb6e98d2b245ba97a7009c86fade04ef94ba17fd371a6f3ae9b010"
+    },
+    {
+      "path": "src/catalog.ts",
+      "bytes": 1455,
+      "sha256": "18bf14d956c2e61d5c42812012b3f7669335f304877b675ad1a0921edf681b53"
+    },
+    {
+      "path": "src/cg-catalog.ts",
+      "bytes": 1889,
+      "sha256": "0c5267a7edb7a316a94d16d5e138909d932207a060d827f3d3f52c884f714de0"
+    },
+    {
+      "path": "src/chronicle-access.ts",
+      "bytes": 1928,
+      "sha256": "1aa24a580b67080d20819078761de4a0065550ef284437d83bf4263b69e3c74b"
+    },
+    {
+      "path": "src/chronicle-catalog.ts",
+      "bytes": 34962,
+      "sha256": "c55da9fba7dc6f15e09c6c0968243187d0fc35e114c813a5c5b2515f947b6c5b"
+    },
+    {
+      "path": "src/dead-ranking-catalog.ts",
+      "bytes": 7001,
+      "sha256": "554ac667510b6c4e5da4ab7064e369c99af12681a0e6f27264c3ec1c4a160067"
+    },
+    {
+      "path": "src/edition.ts",
+      "bytes": 6342,
+      "sha256": "8ad0acb271af853d7379565a4311d0789559667966391318f06183e076c7cde1"
+    },
+    {
+      "path": "src/editorial-baselines.ts",
+      "bytes": 4805,
+      "sha256": "8f73984be085149fdb96047440d2f4a2075771f7e90de4727b7e5764a832d40b"
+    },
+    {
+      "path": "src/generated/bamboo.json",
+      "bytes": 31993,
+      "sha256": "33144d4d35bca6f5283933feb381e859885861645ac09ab24b8c653abb699e8b"
+    },
+    {
+      "path": "src/generated/beyond-ranking.json",
+      "bytes": 36872,
+      "sha256": "cde9f312076068bc9b63cff919f657667f8299694bf04baee3f323847c947a63"
+    },
+    {
+      "path": "src/generated/campaign-v5-1.0.0.json",
+      "bytes": 249707,
+      "sha256": "b0c071f9cf69c22817edf712d92cd9002c9373e92905e721cb7a1a29755c63ec"
+    },
+    {
+      "path": "src/generated/campaign-v6-before-ending-staging.json",
+      "bytes": 356824,
+      "sha256": "f9fbb2de979b17ef702ed09606578772d0605fc8e4ad4675da5b792a20d957a8"
+    },
+    {
+      "path": "src/generated/campaign-v6.json",
+      "bytes": 357145,
+      "sha256": "8c199458e449d3fde8710eabe1c9594b0392d2066f1601f5181297128dee48b6"
+    },
+    {
+      "path": "src/generated/campaign.json",
+      "bytes": 249707,
+      "sha256": "b0c071f9cf69c22817edf712d92cd9002c9373e92905e721cb7a1a29755c63ec"
+    },
+    {
+      "path": "src/generated/dead-ranking.json",
+      "bytes": 138988,
+      "sha256": "0cba7ac64b2e068757855c8bfcaa609b93c362d60951f07819eb6efb0222d6cc"
+    },
+    {
+      "path": "src/generated/dongting.json",
+      "bytes": 48708,
+      "sha256": "a91a3d86a60a3838a933a1bb71db48ba91e910b9a7f53ffc6bc8d8cf345bc368"
+    },
+    {
+      "path": "src/generated/duel-1.0.0.json",
+      "bytes": 27804,
+      "sha256": "9e47b5c19a40f0e51c716a0ba098a8cfd8c929c3cf7a92f13d9f980b92787694"
+    },
+    {
+      "path": "src/generated/duel.json",
+      "bytes": 27804,
+      "sha256": "b04dcba85094ed405f7d9da2d9c65816fff185511b484f0297a3baae5531fec2"
+    },
+    {
+      "path": "src/generated/independent-pre-audit/dead-ranking.json",
+      "bytes": 136438,
+      "sha256": "1626b38af67215696383187321ba37e29953f7feead8131b151ee056a5174809"
+    },
+    {
+      "path": "src/generated/independent-pre-audit/dongting.json",
+      "bytes": 47909,
+      "sha256": "62fd8a2c1c3e7ae25715598eec8baec8e65d8356529dcfc112ba42dc694318ab"
+    },
+    {
+      "path": "src/generated/independent-pre-audit/jade.json",
+      "bytes": 119504,
+      "sha256": "85f6bd38192e80f02ef675fea9c6685bf38a8a038a15d52057e105df5acb16b0"
+    },
+    {
+      "path": "src/generated/independent-pre-audit/longmen.json",
+      "bytes": 105199,
+      "sha256": "693c99d871d4f1ba8b669bd05b93733492821fa79981cc3fae1fecd29fe5e99e"
+    },
+    {
+      "path": "src/generated/independent-pre-audit/luhua.json",
+      "bytes": 96443,
+      "sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099"
+    },
+    {
+      "path": "src/generated/independent-pre-audit/north.json",
+      "bytes": 118530,
+      "sha256": "c1ea622badd0efa7517cd646238d996ebc77255773a3b3292bc937ec58d22d48"
+    },
+    {
+      "path": "src/generated/independent-pre-audit/qian-kun.json",
+      "bytes": 103195,
+      "sha256": "b9f7218723b6c7ab3c43d5b020bfc84aecb34b0f1efdd764f68efd072dfa3beb"
+    },
+    {
+      "path": "src/generated/independent-pre-audit/sea.json",
+      "bytes": 89832,
+      "sha256": "c7192b4fe96828648fef52c076315bbd20ac5fa3baf7b3117c983061443456f3"
+    },
+    {
+      "path": "src/generated/independent-pre-audit/seven-questions.json",
+      "bytes": 125496,
+      "sha256": "a5edda263294a00aae1aab2c6e8277150d288dce0b128a699a29d8f417d02f9d"
+    },
+    {
+      "path": "src/generated/independent-pre-audit/twelfth-life.json",
+      "bytes": 130471,
+      "sha256": "631b74e3fc8c80883769c37f6ce6bfb7c2a2ed80e77f99b4160932b5caeaf57a"
+    },
+    {
+      "path": "src/generated/independent-pre-audit/twelfth.json",
+      "bytes": 70927,
+      "sha256": "6be09fe05fc2df85fced816bc68dba68761c0c3d9c20189c5fdbc637661afb2e"
+    },
+    {
+      "path": "src/generated/independent-pre-audit/white-stone.json",
+      "bytes": 50698,
+      "sha256": "97f3f5e5c4503feaef8702fcaf461149ff20d9e97ecf2f8eb7f0b4f2c2c95b62"
+    },
+    {
+      "path": "src/generated/independent-pre-audit/xuanmen.json",
+      "bytes": 42318,
+      "sha256": "269360246c95c3fc17fb615685b7635b83e8efcd85d0ca75765b57e4fc048bad"
+    },
+    {
+      "path": "src/generated/jade-before-cg.json",
+      "bytes": 96904,
+      "sha256": "25132ce9ac800d2420099b6ee1a704f8c8808ca2174ad0ba54031ea3a036bd54"
+    },
+    {
+      "path": "src/generated/jade-thieves-before-cg.json",
+      "bytes": 76162,
+      "sha256": "00a25968d52f761abab6e3e5dcec337c08f0fc26d1e4cb2aa4bee7f740827d2e"
+    },
+    {
+      "path": "src/generated/jade-thieves-v1.json",
+      "bytes": 76401,
+      "sha256": "2a82781050ff0fcf2aefb4f91fb9c3a0d3180b38b308509e7ae994479ff4721f"
+    },
+    {
+      "path": "src/generated/jade-thieves.json",
+      "bytes": 94663,
+      "sha256": "0b0895a8ca463ff9405570287dee102805c7a33be1c41001015f78751fadbe9b"
+    },
+    {
+      "path": "src/generated/jade-v1.json",
+      "bytes": 97056,
+      "sha256": "333c337a3a24483353b623343b06aea2a0b0e0e7488fed2fc630b6d486b43593"
+    },
+    {
+      "path": "src/generated/jade.json",
+      "bytes": 119986,
+      "sha256": "15286916bf700681b252fc9ccf2411e22312853913f6e4f999cd40c4342bf63f"
+    },
+    {
+      "path": "src/generated/kuhe-v1.json",
+      "bytes": 78381,
+      "sha256": "0db4c79d56b4bcb1dbe67dd99db9640bcc272f2b282c4c69ac95d3e69784c53a"
+    },
+    {
+      "path": "src/generated/kuhe-v2.json",
+      "bytes": 78828,
+      "sha256": "cdec7e0e8bb4a6c3904278c1e523a1af8e9519012bb107191798619256702dba"
+    },
+    {
+      "path": "src/generated/kuhe.json",
+      "bytes": 90562,
+      "sha256": "8a38c754945eef2c639e1173319363074c2be59be8bdae2e9bd80466d7b6c782"
+    },
+    {
+      "path": "src/generated/longmen-v1.json",
+      "bytes": 72127,
+      "sha256": "648aad6c1bd5fb00b28ad0ee8a25c7aed069e506f662f57d745b67081d2cc9b0"
+    },
+    {
+      "path": "src/generated/longmen-v2.json",
+      "bytes": 90945,
+      "sha256": "defa8d5958677bc820c70a3e532909ca406a48521625ff235ac31a7789cbe58e"
+    },
+    {
+      "path": "src/generated/longmen.json",
+      "bytes": 105208,
+      "sha256": "477d6c53d45dd8485c28fd9dcd9ca6027a52004d61790aca7d5347f663f1ec89"
+    },
+    {
+      "path": "src/generated/luhua.json",
+      "bytes": 99408,
+      "sha256": "da48471815a1a8cab070524de762f917288669759f6ad35320172d1f62444b2a"
+    },
+    {
+      "path": "src/generated/luoyang.json",
+      "bytes": 31121,
+      "sha256": "4c35605bd5f396fe5e01aac65fadd4f615bbb3a50d6acc85fb5c7b9bae450419"
+    },
+    {
+      "path": "src/generated/north-notes.json",
+      "bytes": 22509,
+      "sha256": "a03a6f206b63021f88a615d4589d9da30c2ec66d113cfba754a9788ee633ff17"
+    },
+    {
+      "path": "src/generated/north-v1.json",
+      "bytes": 94145,
+      "sha256": "dff07857f0bdec586e07b3f0bf9fd709e00308be8288d77e00476915ecca4a02"
+    },
+    {
+      "path": "src/generated/north-v2.json",
+      "bytes": 94492,
+      "sha256": "2456c8b3e365837492c039c457e7bc46e6933f89df6dd57e955de4b05254ac67"
+    },
+    {
+      "path": "src/generated/north.json",
+      "bytes": 118671,
+      "sha256": "5e10d2b73529ad78558e0c8c29661e4a15c1f6a74cf22cf7ea3d631e93782350"
+    },
+    {
+      "path": "src/generated/qian-kun-v1.json",
+      "bytes": 75203,
+      "sha256": "13d7ea5815b8b5015635fe799e5858b2e70721647720db03dc02ab4c7de810df"
+    },
+    {
+      "path": "src/generated/qian-kun-v2.json",
+      "bytes": 76176,
+      "sha256": "9ace994454860592868502a7ef806b78124f22ba6bae69e70d9855a10a80fc12"
+    },
+    {
+      "path": "src/generated/qian-kun.json",
+      "bytes": 103195,
+      "sha256": "2241a5b2f6eb8fa579338322330200a5520be554f147774d1eaf8dc667e188a3"
+    },
+    {
+      "path": "src/generated/qingshi-v1.json",
+      "bytes": 112039,
+      "sha256": "ed390e1dccdcea7d32f32f0287904174ed6af21239a21e7aaf1f40d37ddd72f6"
+    },
+    {
+      "path": "src/generated/qingshi-v2.json",
+      "bytes": 112169,
+      "sha256": "61000c248de1bd7839f783e3dd5ee26bc05b71fead533e3231ebe6f3bc2e4bfa"
+    },
+    {
+      "path": "src/generated/qingshi.json",
+      "bytes": 129580,
+      "sha256": "744ec03d02883390cbc7fb3ca34cf8b3508c245ce7a213f602b14f344f26bbb7"
+    },
+    {
+      "path": "src/generated/sea-before-rigging.json",
+      "bytes": 70886,
+      "sha256": "4061e07b8c3865937b8b83e6954c11d147f7faba237fcadad2c80d0ea7066dbd"
+    },
+    {
+      "path": "src/generated/sea-tide-after-child.json",
+      "bytes": 74124,
+      "sha256": "7f08941a6f629300196762f9f1af1bbf5f92cb0078c62b152a1da988d413629e"
+    },
+    {
+      "path": "src/generated/sea-tide-before-child.json",
+      "bytes": 74122,
+      "sha256": "d5e375e49654f92d5a5c0c4f50c696c18149543f3afcbb5ff2ca7660ecee24f5"
+    },
+    {
+      "path": "src/generated/sea-tide-before-rigging.json",
+      "bytes": 64203,
+      "sha256": "5eb442173277b4b85fc540b8805013d2b8c7ebfa549556122499c1dcd53a8471"
+    },
+    {
+      "path": "src/generated/sea-tide-v1.json",
+      "bytes": 64347,
+      "sha256": "2c5d168105b00e52f0181bc9a64f050c66e6e450249a39dfc7cbc73bfe246375"
+    },
+    {
+      "path": "src/generated/sea-tide.json",
+      "bytes": 81142,
+      "sha256": "1ec4161b9bb090d706ef4553ef56e203364f0285dfb1812edf88e41a4d6747b3"
+    },
+    {
+      "path": "src/generated/sea-v1.json",
+      "bytes": 71108,
+      "sha256": "cdf7e31ae6af2d0ee606715bcdf5ff85ce0adfe1f0b92f3e3ddf573ed3378cca"
+    },
+    {
+      "path": "src/generated/sea.json",
+      "bytes": 89859,
+      "sha256": "3a83225f2dc444f478d14f7044f01e7e9cc411864c304a973129d6659b56315b"
+    },
+    {
+      "path": "src/generated/seven-questions-after-books-cg.json",
+      "bytes": 114266,
+      "sha256": "e7caa65fa5970db4c440a6895a88b18cc7f58d91912cae02a77a7c8b9bc45402"
+    },
+    {
+      "path": "src/generated/seven-questions-before-books-cg.json",
+      "bytes": 114113,
+      "sha256": "f18de35a5898444111db7f9541f55e646cc8d3b3e20e5a04d8c0216de3d1eae5"
+    },
+    {
+      "path": "src/generated/seven-questions-v1.json",
+      "bytes": 111795,
+      "sha256": "2763e894391f75703da0e3b021b30455cf5234134c7c15cd2760d83b044a2791"
+    },
+    {
+      "path": "src/generated/seven-questions.json",
+      "bytes": 125777,
+      "sha256": "e3aac7f5b3ca322f82f47de4cf4e03115ef74f05e3eafde68f66e3a36af7e280"
+    },
+    {
+      "path": "src/generated/story.json",
+      "bytes": 50077,
+      "sha256": "211e4c3e084a995eff39f8b431875a659266960c1850d970afbd8a41130abaa4"
+    },
+    {
+      "path": "src/generated/taihua-v1.json",
+      "bytes": 75950,
+      "sha256": "59e7f5e688ba05c396434b3426eb18ba8894fe2d7578dc8e15eaaa8a5ec24e98"
+    },
+    {
+      "path": "src/generated/taihua-v2.json",
+      "bytes": 117398,
+      "sha256": "fd05ba04a02970c12bf905b6ddee379035f0b91b2c76bd82aaf4cc0b801be482"
+    },
+    {
+      "path": "src/generated/taihua.json",
+      "bytes": 135325,
+      "sha256": "663f6334a5660b64cf5270c4c27e694ea7cafadd2a9173b6a6be001d21e75872"
+    },
+    {
+      "path": "src/generated/twelfth-life-before-cg.json",
+      "bytes": 107907,
+      "sha256": "f12fef9efa1ceb27d3162608bfd3247c020def3f4d54bf7c2c9bffc978607987"
+    },
+    {
+      "path": "src/generated/twelfth-life-v1.json",
+      "bytes": 107727,
+      "sha256": "718d15fbcd9e54cb6d69ce67faaf1f926eb7183f39ae0f5593c2878c546d31ff"
+    },
+    {
+      "path": "src/generated/twelfth-life-v2.json",
+      "bytes": 107990,
+      "sha256": "5be356f88c363df1cb7fb84bd397aa9a4210a7ba951519ef47762bf4cc55d528"
+    },
+    {
+      "path": "src/generated/twelfth-life.json",
+      "bytes": 130468,
+      "sha256": "88b09a5bac7d009de7ffd9fd51aee5811b69338657247f3d79254ba4f565ce9f"
+    },
+    {
+      "path": "src/generated/twelfth.json",
+      "bytes": 70936,
+      "sha256": "d47717346b56a8c02ccd557ed89c4587223400a2a3a169a955a09fe4eb08c6a0"
+    },
+    {
+      "path": "src/generated/two-swords-before-art.json",
+      "bytes": 91927,
+      "sha256": "02a7a45ff212fb842dd10ccfb97a5f6971d4039d3ede1d9b77dec3f196a81367"
+    },
+    {
+      "path": "src/generated/two-swords-v1.json",
+      "bytes": 92116,
+      "sha256": "6a52c1423e46511aa23d17e0471ce855bb0f5f2f5450612b9e50299e3070c475"
+    },
+    {
+      "path": "src/generated/two-swords.json",
+      "bytes": 100604,
+      "sha256": "802f27aad2ffbeb1127fe4d4d8dbbf572468aae274c10875df3c93626e7825c8"
+    },
+    {
+      "path": "src/generated/white-stone.json",
+      "bytes": 50994,
+      "sha256": "0198d0e0b949a7f2729113830fae34a6488a92e5930150b7ae1fa0954d8bfab2"
+    },
+    {
+      "path": "src/generated/xuanmen.json",
+      "bytes": 42408,
+      "sha256": "075d66262459a02d7551d074e9a9d340ca0726330935a06cf8ec390473a2706d"
+    },
+    {
+      "path": "src/heng-portraits.ts",
+      "bytes": 497,
+      "sha256": "a3461d86d3bccb0eeb5c3379ed0b441825ad7e6abfe5d20ed0bd7573f9ce07ac"
+    },
+    {
+      "path": "src/jade-catalog.ts",
+      "bytes": 6941,
+      "sha256": "ee7fbc0f5a39ce62862c155cd8afc73f283645a44c95cbf3f973e5ab9c193273"
+    },
+    {
+      "path": "src/jade-thieves-catalog.ts",
+      "bytes": 5669,
+      "sha256": "72f78795edbb4b4a729a848819e2b89e83bbaad33067ed5ff2bdd46e01b39ce4"
+    },
+    {
+      "path": "src/knowledge.ts",
+      "bytes": 2402,
+      "sha256": "b0014de248d5dcb0079db46e2efbadf1cf8b64f1497885ec2040c77bd8d11e3a"
+    },
+    {
+      "path": "src/kuhe-catalog.ts",
+      "bytes": 4238,
+      "sha256": "76776aebd1af822dc4fcfc9de8800eeb9134c902b49b5f09ec7f780de41ff765"
+    },
+    {
+      "path": "src/kuhe-v2-catalog.ts",
+      "bytes": 1498,
+      "sha256": "a881705e3d33bfdd7951f48ffc4ba6b3a5d16fa254b677bff28477effa447ad3"
+    },
+    {
+      "path": "src/legacy-main.ts",
+      "bytes": 15679,
+      "sha256": "9b264e5a4357cdb607c4ffdbac771bce04945c5b8e29d618a65cb31443319b4f"
+    },
+    {
+      "path": "src/legacy-styles.css",
+      "bytes": 10986,
+      "sha256": "7ed1102ff0c676eb33c7f172bfc24c5a48fe5dcfda39f1d4b4fb235df504fcd4"
+    },
+    {
+      "path": "src/library.css",
+      "bytes": 10587,
+      "sha256": "fb4318718b5eebe7da52592c0b21fdcab902bf01d27d86773b13a5df74100cec"
+    },
+    {
+      "path": "src/library.ts",
+      "bytes": 11644,
+      "sha256": "f0ec9fac3048ed9932c05706acb18a2a9f7a23963c5c3ae1588e58f2b5827d1c"
+    },
+    {
+      "path": "src/luhua-catalog.ts",
+      "bytes": 8056,
+      "sha256": "b9d09d118c9c39ac5889bd68341b4bcc880d8e41d191e1052a7db730a7714560"
+    },
+    {
+      "path": "src/luoyang-catalog.ts",
+      "bytes": 6635,
+      "sha256": "fc0d5318d251fda01420af48d4831707df2d01513e54bfb06fd196dd9951148d"
+    },
+    {
+      "path": "src/main.ts",
+      "bytes": 15671,
+      "sha256": "d25bb2861736fc48ed10897ae0ff9768c5a841a9ac574434c3fc1f4f407609db"
+    },
+    {
+      "path": "src/north-catalog.ts",
+      "bytes": 6189,
+      "sha256": "d8f15f98735862a27c86ac73af52a5cb3485bd2747eab7e0d8ec85134766653c"
+    },
+    {
+      "path": "src/north-notes-catalog.ts",
+      "bytes": 3175,
+      "sha256": "a61c8b45e8a4da109391b8cde76f90f050abf1a3fd27ff74763054b19433227d"
+    },
+    {
+      "path": "src/npc-archetypes.ts",
+      "bytes": 745,
+      "sha256": "72229dfd8283b1b577c1a84df0f326d24e95d63a0c1eac46e1a63d31ddd5a33a"
+    },
+    {
+      "path": "src/player.ts",
+      "bytes": 28128,
+      "sha256": "9d9b886f8beda7c01930ecb79506d08c1cbfd3689c60c45ea1fd33892099aa63"
+    },
+    {
+      "path": "src/presentation.ts",
+      "bytes": 2375,
+      "sha256": "ec1af6b78f1ceca7da3386d97ad679787c668f202260335e6d0e1306c65985be"
+    },
+    {
+      "path": "src/qian-kun-catalog.ts",
+      "bytes": 6910,
+      "sha256": "90eafa17c6c680044f63ec99711494f6a7c2770611700014254cb47dc5140b06"
+    },
+    {
+      "path": "src/qingshi-catalog.ts",
+      "bytes": 9044,
+      "sha256": "30ddb2a3b286d549fde509e845b6054618e93565cddb047da7b13226243f59ed"
+    },
+    {
+      "path": "src/runtime.ts",
+      "bytes": 4309,
+      "sha256": "ce20fcf97fe3b244b9a1da7fb01c0fa3b230e3d0bf20035b4c216ab790e55b3d"
+    },
+    {
+      "path": "src/sea-catalog.ts",
+      "bytes": 6193,
+      "sha256": "beab70cdf37db83d34e121d627832677c2333cf974182db09b7083094db2b68a"
+    },
+    {
+      "path": "src/sea-tide-catalog.ts",
+      "bytes": 6081,
+      "sha256": "468cb3b39a19f31360f43a2b776cb3e4b6764fadf345d6413e4d5ad374292403"
+    },
+    {
+      "path": "src/seven-questions-catalog.ts",
+      "bytes": 7024,
+      "sha256": "38cf16a6681c8d2b0a0695f3f109b8c490836405cf6b4b8ea4f1489cf6e2db6d"
+    },
+    {
+      "path": "src/stage.css",
+      "bytes": 28932,
+      "sha256": "f876e6ca881263340f2afd24596702479f435d44ce3dbe242bf8345c9bc2f1ef"
+    },
+    {
+      "path": "src/storage.ts",
+      "bytes": 1172,
+      "sha256": "f2ea90f43151808c61154d960694e5533e5d687a0a37b87f8fcd66ff63f1ef1e"
+    },
+    {
+      "path": "src/styles.css",
+      "bytes": 10986,
+      "sha256": "7ed1102ff0c676eb33c7f172bfc24c5a48fe5dcfda39f1d4b4fb235df504fcd4"
+    },
+    {
+      "path": "src/taihua-v2-catalog.ts",
+      "bytes": 3407,
+      "sha256": "3cd051a94f65139ff63688db13b7458328439effe47c5e5ddeb0843e46b9cd63"
+    },
+    {
+      "path": "src/tokens.css",
+      "bytes": 498,
+      "sha256": "4b450fa6d9af5f1fc819ea115a2c3d7a01ad300ed3eed79e0461a3e685dee2cf"
+    },
+    {
+      "path": "src/twelfth-life-catalog.ts",
+      "bytes": 8503,
+      "sha256": "d2514b503261cf0307e4df48c5cebe2eededad06b6878f203ab343914f00c34e"
+    },
+    {
+      "path": "src/twelfth-life-v2-catalog.ts",
+      "bytes": 835,
+      "sha256": "55f27010f88d963d4a9875263f09fbfcfa8fd1e403549ec374e9b5a68c67797d"
+    },
+    {
+      "path": "src/two-swords-catalog.ts",
+      "bytes": 6758,
+      "sha256": "6d3d8620f51ce784e5117906d8639328c770f10feafb240bcb73253312af125d"
+    },
+    {
+      "path": "src/vite-env.d.ts",
+      "bytes": 38,
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+    },
+    {
+      "path": "src/vn-runtime.ts",
+      "bytes": 13554,
+      "sha256": "23a324ef63d868fb4dee9d524b823c4306eb6178463365cf54f43ff6a0599d91"
+    },
+    {
+      "path": "src/vn-ui.ts",
+      "bytes": 8549,
+      "sha256": "2154ed56681efa290af84e1e3e7a52be57818d30516ad66e6abbd47f7eb16f47"
+    },
+    {
+      "path": "src/white-stone-catalog.ts",
+      "bytes": 5345,
+      "sha256": "8dbcfee1ea8a44e584609587df626b5a73d502ef4beed3fc84af0a536a05f9cc"
+    },
+    {
+      "path": "src/work-index.ts",
+      "bytes": 3763,
+      "sha256": "f7138c119f2d45dd9ef1d270d9046ed18709af067cf26ce20017c5980513f15a"
+    },
+    {
+      "path": "src/works-registry.ts",
+      "bytes": 20010,
+      "sha256": "06ce0ed5ddff5116c0780d3cfadd30fe179ab82b988bbf09bf2bfbf032137a15"
+    },
+    {
+      "path": "src/xuanmen-catalog.ts",
+      "bytes": 4487,
+      "sha256": "8b2e4c2053c2dda9eac28a3e2c9e5b610838f0da959bd097844956116d4eb3d7"
+    },
+    {
+      "path": "story/archive/north-v2/north-after.mjs",
+      "bytes": 9879,
+      "sha256": "4f050801a2e24884138c3f1350616aafb69017979906b16b404be6a2892097eb"
+    },
+    {
+      "path": "story/archive/north-v2/north-author.mjs",
+      "bytes": 1394,
+      "sha256": "8fae80ef9d57491819ffb2a7a1ff35e592917d0c890c51937909195ff82f5729"
+    },
+    {
+      "path": "story/archive/north-v2/north-duels.mjs",
+      "bytes": 5913,
+      "sha256": "1eb4a73d9bc44b29506b67791a85e4d191b133f35a5b76d15291200eaf43a522"
+    },
+    {
+      "path": "story/archive/north-v2/north-rain.mjs",
+      "bytes": 10054,
+      "sha256": "46085b814643bb39de9cfc6e94054182c9df214eda60f0344d22eadc14065add"
+    },
+    {
+      "path": "story/archive/north-v2/north-road.mjs",
+      "bytes": 10458,
+      "sha256": "288f5a376b40127b50213b1519e635e54f808591b3504a4127959cd48f65073f"
+    },
+    {
+      "path": "story/archive/north-v2/north-yard.mjs",
+      "bytes": 8576,
+      "sha256": "5774c4f85ea2df7930981659d96c438c27135740f4de7fdb44427f6a39a00e32"
+    },
+    {
+      "path": "story/archive/qian-kun-v2/qian-kun-after.mjs",
+      "bytes": 6419,
+      "sha256": "21d008061533d500206d5afc94339bf5d4299c5e714718672e4306b18479388f"
+    },
+    {
+      "path": "story/archive/qian-kun-v2/qian-kun-author.mjs",
+      "bytes": 1413,
+      "sha256": "ce12222243b6cc85998f6ec174b696404287ca0c2d86138e7dcf734969c3f1a8"
+    },
+    {
+      "path": "story/archive/qian-kun-v2/qian-kun-clouds.mjs",
+      "bytes": 5819,
+      "sha256": "fb2cb29073f45ddaf9ba858a42dd4aed36c7e1ba0c1d9305612444cd2bd22d6e"
+    },
+    {
+      "path": "story/archive/qian-kun-v2/qian-kun-head.mjs",
+      "bytes": 6348,
+      "sha256": "102919d550c12a99bbbb07e41a9948b88bf1f96e41f483fe233e1e86f5185664"
+    },
+    {
+      "path": "story/archive/qian-kun-v2/qian-kun-slow.mjs",
+      "bytes": 8291,
+      "sha256": "07607638e4056f47da5501f16fb7dd7f6e6707d6de1ef7e213f71d055630df73"
+    },
+    {
+      "path": "story/archive/qian-kun-v2/qian-kun-young.mjs",
+      "bytes": 7620,
+      "sha256": "e52d5dc238362937a154a19a2f00a58eb8c9d3dea1a2a3a802a32f921b3787c9"
+    },
+    {
+      "path": "story/bamboo-author.mjs",
+      "bytes": 14283,
+      "sha256": "b8114a3bf302e839f12890bed5c3ff75daaa945fefff27608cc6c84f676085fe"
+    },
+    {
+      "path": "story/bamboo.ink",
+      "bytes": 23156,
+      "sha256": "2717db75690b33e4dfa1d4824b401f5890434d987deb54e9f70f7464b74d5d18"
+    },
+    {
+      "path": "story/beyond-ranking-author.mjs",
+      "bytes": 16207,
+      "sha256": "93dd9673eddddd2f998213cdd41575aa0698aa1492aa1f66288fe61fd8073bf5"
+    },
+    {
+      "path": "story/beyond-ranking.ink",
+      "bytes": 26047,
+      "sha256": "a2e091c12584b87c356bda40e9b1828b8481730cc6006d1e6ca7aa67de2277a3"
+    },
+    {
+      "path": "story/campaign-v6-before-ending-staging.ink",
+      "bytes": 252572,
+      "sha256": "76977c62fafa1f307bbcfe6c619c2428883bcf483441bdb5c20c4efc6b2d9ff7"
+    },
+    {
+      "path": "story/campaign-v6.ink",
+      "bytes": 252893,
+      "sha256": "557ac4bd381814640eb8fd562bad171896f0b4d5ca1c05d7d33ccc7092b008bd"
+    },
+    {
+      "path": "story/campaign.ink",
+      "bytes": 170424,
+      "sha256": "daacfc805bdd01129808bcecfc9ca78e6679c339d3581131e2113040aed8499e"
+    },
+    {
+      "path": "story/campaign/00-quay.ink",
+      "bytes": 9862,
+      "sha256": "cb04e7dfdf1527263016b77c942591e06c8703292f0f2dea6243f1498766df33"
+    },
+    {
+      "path": "story/campaign/01-hall.ink",
+      "bytes": 12939,
+      "sha256": "aef1c57d6470ef71177f70693be18cf52d1c0ce43f48b860c2a7d69286453874"
+    },
+    {
+      "path": "story/campaign/01b-last-lesson.ink",
+      "bytes": 3377,
+      "sha256": "59685159b6f31b4f10bde52e2a489a7434fd4412335c6a6f514a2578f2e0335a"
+    },
+    {
+      "path": "story/campaign/02-inn.ink",
+      "bytes": 10151,
+      "sha256": "fad62e1eaab8fdb7ac86cc0bfa8e33d90532722aa2a92ad320d4e34483c1a6c8"
+    },
+    {
+      "path": "story/campaign/02b-stall.ink",
+      "bytes": 3115,
+      "sha256": "a6f5de2aab7009fe4338427f91282c17bd1ed5f77540eead8eded1b2845929e6"
+    },
+    {
+      "path": "story/campaign/02c-farewell.ink",
+      "bytes": 2826,
+      "sha256": "d3195027ab703dc7d5a30c24d6d26e946d255ba7c455ba59080732764c99fac4"
+    },
+    {
+      "path": "story/campaign/03-land.ink",
+      "bytes": 9475,
+      "sha256": "6e168ce4e0ef41a887c9d6e43c0d55cff2865088df570e8539fb57e60c41c91d"
+    },
+    {
+      "path": "story/campaign/03-water.ink",
+      "bytes": 9494,
+      "sha256": "fafe05280d642d2d76e01f324843afbae6f7f0d636b42c9b9db0420c1b88df35"
+    },
+    {
+      "path": "story/campaign/03b-shoes.ink",
+      "bytes": 2737,
+      "sha256": "aa8112013a5e9bfc7c841b78d9d6173a16cb502a40f56d5fa715ef743ba79eaa"
+    },
+    {
+      "path": "story/campaign/03c-reeds.ink",
+      "bytes": 2864,
+      "sha256": "3d260a5b60a413b68af5f9ba3ffc0cdcd2c24e693af6346722e449a2b866d8b6"
+    },
+    {
+      "path": "story/campaign/04-land.ink",
+      "bytes": 8795,
+      "sha256": "90ea288c2220ce08d6343692a71b3a657366c98a17609d621affb46872c50a0b"
+    },
+    {
+      "path": "story/campaign/04-water.ink",
+      "bytes": 10383,
+      "sha256": "ccd99ca37ea048d10c8ed4a0000306da543bb49056ca800c7e34b4469534f28e"
+    },
+    {
+      "path": "story/campaign/05-workshop.ink",
+      "bytes": 12055,
+      "sha256": "e60cb9e2af97a96629126e62bd693fb933f4dc00396c9440e022b5d5f3e72032"
+    },
+    {
+      "path": "story/campaign/05b-practice.ink",
+      "bytes": 3115,
+      "sha256": "f3c72c05bbe6c310c18b388dd6048bd4f2f76a2a3f5092fd200964ab2a3e455f"
+    },
+    {
+      "path": "story/campaign/05c-repair.ink",
+      "bytes": 2742,
+      "sha256": "7c917a2fea7d44f014b69dacf11a260b7c18ab4abc43dafc7a1cf4a2d6edb9bf"
+    },
+    {
+      "path": "story/campaign/06-arena.ink",
+      "bytes": 11364,
+      "sha256": "1f8e443a8d624dbf02cf1b7c15fd2cb6736320d5cff24faba9a33658d59f5f09"
+    },
+    {
+      "path": "story/campaign/07-levee.ink",
+      "bytes": 11850,
+      "sha256": "266cc7423346e907cf440a7c0669517dd8673c580165593499c8379437310f0c"
+    },
+    {
+      "path": "story/campaign/07b-missing.ink",
+      "bytes": 2854,
+      "sha256": "d6c18606af3a54882217629256c245f3c92d36846a517459bd5ab5524a34c1c1"
+    },
+    {
+      "path": "story/campaign/07c-last-boat.ink",
+      "bytes": 2846,
+      "sha256": "a1bb598267ac3d5eab2dd11da52b9872c3af255324f19e253e9e322f82b12fda"
+    },
+    {
+      "path": "story/campaign/08-storm.ink",
+      "bytes": 13041,
+      "sha256": "efcbf638dd9ef8e60123c00d11cb37ef58c4a8bf43504b19c3e4abe195850787"
+    },
+    {
+      "path": "story/campaign/09-after.ink",
+      "bytes": 20395,
+      "sha256": "2e70f1739077ba885e0325c56c4247d323914cd3cab33282ee8bfedd58b93f69"
+    },
+    {
+      "path": "story/campaign/09b-compensation.ink",
+      "bytes": 3036,
+      "sha256": "3fd83938ffa431c9c708eaff48b1e2ad43891e0b81395be498b8c45643d5c483"
+    },
+    {
+      "path": "story/campaign/author.mjs",
+      "bytes": 80322,
+      "sha256": "95c0d9ba93221a9f38fe5bb7bc00101f479ea60a393bdfc3f140f2d512cf365a"
+    },
+    {
+      "path": "story/campaign/interludes.mjs",
+      "bytes": 14437,
+      "sha256": "c2c611210cdc46e1cfa83435c184ea6761494f3064da6b7b54a3caf3cbe033db"
+    },
+    {
+      "path": "story/campaign/v6-after.mjs",
+      "bytes": 12552,
+      "sha256": "ed704af8f0a05ed12b5c6390de509631051ab09982b7bef02a40bb08517a9c10"
+    },
+    {
+      "path": "story/campaign/v6-author.mjs",
+      "bytes": 7015,
+      "sha256": "6b1999e549e96f89362b0f9b2bba896ae46edb2c8270f84224da4307e13469a2"
+    },
+    {
+      "path": "story/campaign/v6-canon-scenes.mjs",
+      "bytes": 14050,
+      "sha256": "3594be5eef309e82050cdde719182c6121413a83d9b049256d399ab4e14dd24f"
+    },
+    {
+      "path": "story/campaign/v6-ending-direction.mjs",
+      "bytes": 925,
+      "sha256": "3f4efcc9c15f3c2ac355a7e88997ea2d299601d16c28a8db87dd3260fb29b4b7"
+    },
+    {
+      "path": "story/campaign/v6-scenes.mjs",
+      "bytes": 17625,
+      "sha256": "bec137aabefd110e383963a891b992258ae958005f7c5b261c033fc705293bb5"
+    },
+    {
+      "path": "story/chronicle-writer.mjs",
+      "bytes": 1731,
+      "sha256": "8ccf2265de92635da48126014bb9d47a9bc011073db6bce34356f687e410ec46"
+    },
+    {
+      "path": "story/dead-ranking-after.mjs",
+      "bytes": 14609,
+      "sha256": "ed70ff46bee12c984ecde7deb28adba4ce2176334ced0dd709ec4dbceb595d3c"
+    },
+    {
+      "path": "story/dead-ranking-author.mjs",
+      "bytes": 1377,
+      "sha256": "004b9d6544be60779fda2b5ac594375f30b57dfaa618286d6f7f79765d2fe987"
+    },
+    {
+      "path": "story/dead-ranking-bouts.mjs",
+      "bytes": 11191,
+      "sha256": "23bc2088f90837f7f724a86243b5b95fa580b606823adf22dc436e962b0549db"
+    },
+    {
+      "path": "story/dead-ranking-case.mjs",
+      "bytes": 10849,
+      "sha256": "1a78476f472a28aea5226bf4225b4be6e42f6e9065c81725f0fe472496bee059"
+    },
+    {
+      "path": "story/dead-ranking-council.mjs",
+      "bytes": 10939,
+      "sha256": "f756498bb352920272a7285ca76eb543d4c5b51489fc9701faed19c9a72e2bca"
+    },
+    {
+      "path": "story/dead-ranking-people.mjs",
+      "bytes": 17871,
+      "sha256": "cd7b6529fa6c2400cce66a2e1e976ec59bdfe417f121e94754a1fca95aa5a0f0"
+    },
+    {
+      "path": "story/dead-ranking.ink",
+      "bytes": 101328,
+      "sha256": "60d3a6603ebaefa82a7e39862e5bd02dfc5f7dd16338381ead100764cc4808a8"
+    },
+    {
+      "path": "story/dongting-author.mjs",
+      "bytes": 20583,
+      "sha256": "fc849eabd0ea8e06a38a6fe1ade42eddc26e6ab1ae02ad0f432dde14b55bd5d5"
+    },
+    {
+      "path": "story/dongting.ink",
+      "bytes": 34491,
+      "sha256": "0c189a1d4d030cf42d79bf2b255b3bc4abb316d63a08fba1f8e00b4b21cb01df"
+    },
+    {
+      "path": "story/drafts/jade-thieves/jade-thieves-aftermath.mjs",
+      "bytes": 14354,
+      "sha256": "004bfe6c14423a9a2a1149e385dffdcff71d66c0d6ff0b8b78e21d131e917ea6"
+    },
+    {
+      "path": "story/drafts/jade-thieves/jade-thieves-author.mjs",
+      "bytes": 1471,
+      "sha256": "519d4f6a35c85db61195401be19a058ef7d3ee422db4ef4fcad8f6329fc14102"
+    },
+    {
+      "path": "story/drafts/jade-thieves/jade-thieves-editorial.ink",
+      "bytes": 66164,
+      "sha256": "f02e2a359e6c49050e785202d1cb5045389c316e34e541b928c895203ccee759"
+    },
+    {
+      "path": "story/drafts/jade-thieves/jade-thieves-flight.mjs",
+      "bytes": 9082,
+      "sha256": "9e294b13d85f4e778f96f26dbbc95db0d1559b1e3a10a9064043197fd67603f8"
+    },
+    {
+      "path": "story/drafts/jade-thieves/jade-thieves-temple.mjs",
+      "bytes": 11543,
+      "sha256": "b7f7808344af4ef711f336e20f565a9505a0df2a22118cf294d369810afb32fd"
+    },
+    {
+      "path": "story/drafts/jade-thieves/jade-thieves-vault.mjs",
+      "bytes": 6942,
+      "sha256": "a1011d0e7657517c30f1fd1224a98a0fe800731b65626172892b062a40acddcd"
+    },
+    {
+      "path": "story/drafts/jade-thieves/round1/jade-thieves-aftermath.mjs",
+      "bytes": 11216,
+      "sha256": "719a5787a5bed1aef7d1e930bb6461bd74189db03843ccd96e98f4d1e06d1af5"
+    },
+    {
+      "path": "story/drafts/jade-thieves/round1/jade-thieves-author.mjs",
+      "bytes": 1454,
+      "sha256": "475a9b429a596f1136821b54e269cc50ffd250ee87cc696a549ddf2b72590d20"
+    },
+    {
+      "path": "story/drafts/jade-thieves/round1/jade-thieves-editorial.ink",
+      "bytes": 57356,
+      "sha256": "3bb18c9187e4324feb07c0c6b79cbe20ed1ca226e22a619bc2ac440700da2587"
+    },
+    {
+      "path": "story/drafts/jade-thieves/round1/jade-thieves-flight.mjs",
+      "bytes": 8829,
+      "sha256": "15548e75d69a14e8d7dac1bcb1e48903848017bdcd8b628fc87946ae4d9169c5"
+    },
+    {
+      "path": "story/drafts/jade-thieves/round1/jade-thieves-temple.mjs",
+      "bytes": 9281,
+      "sha256": "2e5ebe1798805ffe199c258c3fd66338ceca646ed92cd59b5ad2b8980c7129bc"
+    },
+    {
+      "path": "story/drafts/jade-thieves/round1/jade-thieves-vault.mjs",
+      "bytes": 6741,
+      "sha256": "4800b27bc17341523ed5b1f50dad14047ec7972de56a97b63062b6596157732d"
+    },
+    {
+      "path": "story/drafts/jade-thieves/round2/jade-thieves-aftermath.mjs",
+      "bytes": 11216,
+      "sha256": "719a5787a5bed1aef7d1e930bb6461bd74189db03843ccd96e98f4d1e06d1af5"
+    },
+    {
+      "path": "story/drafts/jade-thieves/round2/jade-thieves-author.mjs",
+      "bytes": 1454,
+      "sha256": "475a9b429a596f1136821b54e269cc50ffd250ee87cc696a549ddf2b72590d20"
+    },
+    {
+      "path": "story/drafts/jade-thieves/round2/jade-thieves-editorial.ink",
+      "bytes": 59037,
+      "sha256": "455a013fdd31f96c37a20d29828428a6236b40b8a572dba7bc17d923941abf67"
+    },
+    {
+      "path": "story/drafts/jade-thieves/round2/jade-thieves-flight.mjs",
+      "bytes": 8829,
+      "sha256": "15548e75d69a14e8d7dac1bcb1e48903848017bdcd8b628fc87946ae4d9169c5"
+    },
+    {
+      "path": "story/drafts/jade-thieves/round2/jade-thieves-temple.mjs",
+      "bytes": 9730,
+      "sha256": "b0667446fd5eccf6c570499f8f6d2ac175f6c33d83569a2bdc8ca4a6307d08a5"
+    },
+    {
+      "path": "story/drafts/jade-thieves/round2/jade-thieves-vault.mjs",
+      "bytes": 6930,
+      "sha256": "7aa593ccfec1800ed1a89340c98db00bee26f34fdd330254fe525f862761ebf5"
+    },
+    {
+      "path": "story/drafts/jade-thieves/round3/jade-thieves-aftermath.mjs",
+      "bytes": 14081,
+      "sha256": "b89d138539abd4881f77ee00637a4d3a3bf63989ca9977db98f82b9304a5fff2"
+    },
+    {
+      "path": "story/drafts/jade-thieves/round3/jade-thieves-author.mjs",
+      "bytes": 1471,
+      "sha256": "519d4f6a35c85db61195401be19a058ef7d3ee422db4ef4fcad8f6329fc14102"
+    },
+    {
+      "path": "story/drafts/jade-thieves/round3/jade-thieves-editorial.ink",
+      "bytes": 66164,
+      "sha256": "f02e2a359e6c49050e785202d1cb5045389c316e34e541b928c895203ccee759"
+    },
+    {
+      "path": "story/drafts/jade-thieves/round3/jade-thieves-flight.mjs",
+      "bytes": 8829,
+      "sha256": "15548e75d69a14e8d7dac1bcb1e48903848017bdcd8b628fc87946ae4d9169c5"
+    },
+    {
+      "path": "story/drafts/jade-thieves/round3/jade-thieves-temple.mjs",
+      "bytes": 11543,
+      "sha256": "b7f7808344af4ef711f336e20f565a9505a0df2a22118cf294d369810afb32fd"
+    },
+    {
+      "path": "story/drafts/jade-thieves/round3/jade-thieves-vault.mjs",
+      "bytes": 6942,
+      "sha256": "a1011d0e7657517c30f1fd1224a98a0fe800731b65626172892b062a40acddcd"
+    },
+    {
+      "path": "story/drafts/jade/jade-after.mjs",
+      "bytes": 11805,
+      "sha256": "a3749b0f269755088a91beab8d2ce3bb6459295ee548cda0a34971522583b2c1"
+    },
+    {
+      "path": "story/drafts/jade/jade-author.mjs",
+      "bytes": 1304,
+      "sha256": "8a4de9b9ec805a7abf5a68f387d4563b60d664cd3ddc7c2c7c665ecad23925bc"
+    },
+    {
+      "path": "story/drafts/jade/jade-buy.mjs",
+      "bytes": 9193,
+      "sha256": "32d7febcf0ad0321b0af022e2c88ab520332187f39b2afcfaf7586b31b94b9ed"
+    },
+    {
+      "path": "story/drafts/jade/jade-editorial.ink",
+      "bytes": 79033,
+      "sha256": "73b145f4bb0ea0c07aa1bf784b6ded62b59e9071ab2b4fa4a7ac9b994c079ab4"
+    },
+    {
+      "path": "story/drafts/jade/jade-grain.mjs",
+      "bytes": 10451,
+      "sha256": "c6371e7134d1c554d000d0c88791a2397385ce66c807d472f0cafe6fcb0edbe4"
+    },
+    {
+      "path": "story/drafts/jade/jade-night.mjs",
+      "bytes": 12303,
+      "sha256": "bdef52eb5a2de11ec309eaf18ac9c0e201af18d59263045f3f94877ef53462fb"
+    },
+    {
+      "path": "story/drafts/jade/jade-stores.mjs",
+      "bytes": 9661,
+      "sha256": "a51177460e300752b6126a482ebcb4d3b30195f412aeb9ea54e2381c4300da88"
+    },
+    {
+      "path": "story/drafts/jade/round1/jade-after.mjs",
+      "bytes": 10886,
+      "sha256": "8a50fd7796ea09d8f8c2706132a99c04c9b7c93b7e7d37e6e66748b1356578c6"
+    },
+    {
+      "path": "story/drafts/jade/round1/jade-author.mjs",
+      "bytes": 1292,
+      "sha256": "b952783b064cd188896a8961e50287cfcb89aa3472e1ab27a750c858a9a79090"
+    },
+    {
+      "path": "story/drafts/jade/round1/jade-buy.mjs",
+      "bytes": 8324,
+      "sha256": "c54e78b377d7452420df18210dd7716a3d8c5bdfce585f12b9abd35269e8e79c"
+    },
+    {
+      "path": "story/drafts/jade/round1/jade-editorial.ink",
+      "bytes": 72638,
+      "sha256": "fe83282b6c48492e8491f7943bdf09518a3b530d28211925864915f5716e9593"
+    },
+    {
+      "path": "story/drafts/jade/round1/jade-grain.mjs",
+      "bytes": 10085,
+      "sha256": "ead70bb4c8f74d6742ce981c4dcf9c66e19d07232b662bba44b3a74b2f6a4f96"
+    },
+    {
+      "path": "story/drafts/jade/round1/jade-night.mjs",
+      "bytes": 10787,
+      "sha256": "fc7da6f865162741329f2f86bd9eb004b9f0c8ad55695fccff510023197cb401"
+    },
+    {
+      "path": "story/drafts/jade/round1/jade-stores.mjs",
+      "bytes": 8753,
+      "sha256": "d46a4ef2944cafb7362b8f1a84952faf86416eed7661ab3bfddbdabc28891b01"
+    },
+    {
+      "path": "story/drafts/jade/round2/jade-after.mjs",
+      "bytes": 10940,
+      "sha256": "882c817f11328992935584c3b684ceac6fa3173a2a1a89c7e24c055621fddb19"
+    },
+    {
+      "path": "story/drafts/jade/round2/jade-author.mjs",
+      "bytes": 1292,
+      "sha256": "b952783b064cd188896a8961e50287cfcb89aa3472e1ab27a750c858a9a79090"
+    },
+    {
+      "path": "story/drafts/jade/round2/jade-buy.mjs",
+      "bytes": 8519,
+      "sha256": "a9457b6bae50f77ea08b8b7f6275b40cfb31f93e1e7779dd91dfbed9e6477bab"
+    },
+    {
+      "path": "story/drafts/jade/round2/jade-editorial.ink",
+      "bytes": 73120,
+      "sha256": "d243fe614fb7ee4da11019a2b85c5d994a8478d2ae4848dfc795ea722d940398"
+    },
+    {
+      "path": "story/drafts/jade/round2/jade-grain.mjs",
+      "bytes": 10121,
+      "sha256": "6e3206881cae08c38cfa87d1ec03079ef7bf41ab14e3ab5ff8747261970cbcc4"
+    },
+    {
+      "path": "story/drafts/jade/round2/jade-night.mjs",
+      "bytes": 10796,
+      "sha256": "22eeb30a989dfcadb22d1b7c9f4ff97242f6f4ae1956c829efd6bc4f28da4f64"
+    },
+    {
+      "path": "story/drafts/jade/round2/jade-stores.mjs",
+      "bytes": 8855,
+      "sha256": "f759dc5edbf22bdbe2d6b02eed93b97bceb8573faa782b2422c6d1508ddde20c"
+    },
+    {
+      "path": "story/drafts/jade/round3/jade-after.mjs",
+      "bytes": 11805,
+      "sha256": "a3749b0f269755088a91beab8d2ce3bb6459295ee548cda0a34971522583b2c1"
+    },
+    {
+      "path": "story/drafts/jade/round3/jade-author.mjs",
+      "bytes": 1304,
+      "sha256": "8a4de9b9ec805a7abf5a68f387d4563b60d664cd3ddc7c2c7c665ecad23925bc"
+    },
+    {
+      "path": "story/drafts/jade/round3/jade-buy.mjs",
+      "bytes": 9193,
+      "sha256": "32d7febcf0ad0321b0af022e2c88ab520332187f39b2afcfaf7586b31b94b9ed"
+    },
+    {
+      "path": "story/drafts/jade/round3/jade-editorial.ink",
+      "bytes": 79033,
+      "sha256": "73b145f4bb0ea0c07aa1bf784b6ded62b59e9071ab2b4fa4a7ac9b994c079ab4"
+    },
+    {
+      "path": "story/drafts/jade/round3/jade-grain.mjs",
+      "bytes": 10451,
+      "sha256": "c6371e7134d1c554d000d0c88791a2397385ce66c807d472f0cafe6fcb0edbe4"
+    },
+    {
+      "path": "story/drafts/jade/round3/jade-night.mjs",
+      "bytes": 12303,
+      "sha256": "bdef52eb5a2de11ec309eaf18ac9c0e201af18d59263045f3f94877ef53462fb"
+    },
+    {
+      "path": "story/drafts/jade/round3/jade-stores.mjs",
+      "bytes": 9661,
+      "sha256": "a51177460e300752b6126a482ebcb4d3b30195f412aeb9ea54e2381c4300da88"
+    },
+    {
+      "path": "story/drafts/kuhe-editorial-author.mjs",
+      "bytes": 34983,
+      "sha256": "dc7a6ec457b0d97edf4344bb79cff3746ad64a4b176c1e50b40ae20e709dc5ef"
+    },
+    {
+      "path": "story/drafts/kuhe-editorial.ink",
+      "bytes": 61204,
+      "sha256": "e92501f8edc0f9991c64790bb2744494481105711dbc3da987587acabf7cfc32"
+    },
+    {
+      "path": "story/drafts/longmen/longmen-author.mjs",
+      "bytes": 25334,
+      "sha256": "a6d168f617c31fa669eb826efc57f375d986b57c2a98472271113da08c87768c"
+    },
+    {
+      "path": "story/drafts/longmen/longmen-editorial.ink",
+      "bytes": 68658,
+      "sha256": "4e1c8bce1fa1b54938396ef41e5126832f8481b23e7825246c411b683e2982e0"
+    },
+    {
+      "path": "story/drafts/longmen/longmen-night.mjs",
+      "bytes": 8047,
+      "sha256": "75754aafea8f99af46e761162d308b296627ca893fbb2553351b85367dcc7668"
+    },
+    {
+      "path": "story/drafts/longmen/longmen-scenes.mjs",
+      "bytes": 8418,
+      "sha256": "ed8be56f3f5173d137af72f6997df85a1445b1b2fe4c6554ded45512bc23b6ad"
+    },
+    {
+      "path": "story/drafts/north/north-after.mjs",
+      "bytes": 12325,
+      "sha256": "0156373b150bc2cd4ba93cbf7137c31389ff30b42f2b2542bd0e830b6babcfa1"
+    },
+    {
+      "path": "story/drafts/north/north-author.mjs",
+      "bytes": 1423,
+      "sha256": "abb7a4b0b74e3a3f58eb473951337caf29f29f2ee75c0a46a6e7926102231437"
+    },
+    {
+      "path": "story/drafts/north/north-duels.mjs",
+      "bytes": 7463,
+      "sha256": "ae50e279371973f4c1a4c30cdd22674bcba2d91087b5e4394b38005953717c41"
+    },
+    {
+      "path": "story/drafts/north/north-editorial.ink",
+      "bytes": 77138,
+      "sha256": "d6133cdd316778f3727f995cef344677560ee4546c69d5ae0697577741bbe52e"
+    },
+    {
+      "path": "story/drafts/north/north-rain.mjs",
+      "bytes": 13518,
+      "sha256": "5e3be714f7c7b358f0f7833c5dacf3a9a7ec988d80fcc8b35e4912998e055f02"
+    },
+    {
+      "path": "story/drafts/north/north-road.mjs",
+      "bytes": 12638,
+      "sha256": "a65880bb481e1530539861408e52056cca740e27c5a23edbe8549590195e3466"
+    },
+    {
+      "path": "story/drafts/north/north-yard.mjs",
+      "bytes": 9129,
+      "sha256": "f171e8f24a27858401f2c8ae9cc1b8c60e1fa503ea69b365f86d9066e173b904"
+    },
+    {
+      "path": "story/drafts/north/round1/north-after.mjs",
+      "bytes": 9957,
+      "sha256": "6b7c91d9ca55c89a8a54a5f1f54c8fc20911fe6e2c2836058999903d2abaf6cb"
+    },
+    {
+      "path": "story/drafts/north/round1/north-author.mjs",
+      "bytes": 1423,
+      "sha256": "abb7a4b0b74e3a3f58eb473951337caf29f29f2ee75c0a46a6e7926102231437"
+    },
+    {
+      "path": "story/drafts/north/round1/north-duels.mjs",
+      "bytes": 5913,
+      "sha256": "1eb4a73d9bc44b29506b67791a85e4d191b133f35a5b76d15291200eaf43a522"
+    },
+    {
+      "path": "story/drafts/north/round1/north-editorial.ink",
+      "bytes": 70170,
+      "sha256": "357f7bcc774b5e49f8218ef42013a001e987cbeb846ba2f67ca13d89a5b7b705"
+    },
+    {
+      "path": "story/drafts/north/round1/north-rain.mjs",
+      "bytes": 10350,
+      "sha256": "a8a52a0e1e3ea745d394d4453b074f50c9fff32b6d5c1e9e0f6564b1a0c8ddfd"
+    },
+    {
+      "path": "story/drafts/north/round1/north-road.mjs",
+      "bytes": 10536,
+      "sha256": "77e198766f1357289762853e0ee812a44e013c911cb0d1bc8644652a8dd9cc56"
+    },
+    {
+      "path": "story/drafts/north/round1/north-yard.mjs",
+      "bytes": 8585,
+      "sha256": "68198564bb86057fdd6963b273e4ed66ab159b34e96ec90b316b9f16492f8253"
+    },
+    {
+      "path": "story/drafts/north/round2/north-after.mjs",
+      "bytes": 10134,
+      "sha256": "2a703e38bed0c4377cd89131451e162b8517503c31832f6b1ec1c90d03fe140f"
+    },
+    {
+      "path": "story/drafts/north/round2/north-author.mjs",
+      "bytes": 1423,
+      "sha256": "abb7a4b0b74e3a3f58eb473951337caf29f29f2ee75c0a46a6e7926102231437"
+    },
+    {
+      "path": "story/drafts/north/round2/north-duels.mjs",
+      "bytes": 6048,
+      "sha256": "ce2bbaee0f226bd26688f5d9f2d956d554972d4e51442e86e901f377aaf7017b"
+    },
+    {
+      "path": "story/drafts/north/round2/north-editorial.ink",
+      "bytes": 72497,
+      "sha256": "e5c5e4bb12eeb049c4165cc7594b64518e8f88105e2b246a373885ab8e749cab"
+    },
+    {
+      "path": "story/drafts/north/round2/north-rain.mjs",
+      "bytes": 10686,
+      "sha256": "88421877c9df4c505a90054333d149db68d46a150e982c45862ff2bca8de3349"
+    },
+    {
+      "path": "story/drafts/north/round2/north-road.mjs",
+      "bytes": 10734,
+      "sha256": "700881669844a5e4716302f8cd60fa496593b11d006f41b952f8cf7764dc67ca"
+    },
+    {
+      "path": "story/drafts/north/round2/north-yard.mjs",
+      "bytes": 8894,
+      "sha256": "33774afdccef33ec2293c9fc3fbffed11a32e61a8f004e22e639d2e22db9d8ad"
+    },
+    {
+      "path": "story/drafts/north/round3/north-after.mjs",
+      "bytes": 10756,
+      "sha256": "c77685ff18f8fe1e7ded7854c4e5ad1e046839000a46a382df8dcb877738aa91"
+    },
+    {
+      "path": "story/drafts/north/round3/north-author.mjs",
+      "bytes": 1423,
+      "sha256": "abb7a4b0b74e3a3f58eb473951337caf29f29f2ee75c0a46a6e7926102231437"
+    },
+    {
+      "path": "story/drafts/north/round3/north-duels.mjs",
+      "bytes": 6191,
+      "sha256": "13699c15bc043a19ae51146755b06d462b600ec20ee2b728238e8c0a4ec82167"
+    },
+    {
+      "path": "story/drafts/north/round3/north-editorial.ink",
+      "bytes": 77138,
+      "sha256": "d6133cdd316778f3727f995cef344677560ee4546c69d5ae0697577741bbe52e"
+    },
+    {
+      "path": "story/drafts/north/round3/north-rain.mjs",
+      "bytes": 11981,
+      "sha256": "955d46cd09fb219499b4e71fb73c8847db8171393b20d8761801e8a591e0ac6d"
+    },
+    {
+      "path": "story/drafts/north/round3/north-road.mjs",
+      "bytes": 11784,
+      "sha256": "4a7d54d94f0f1ddcaba5aa44201097d10aede27c2fd748504d18ea5b8205b418"
+    },
+    {
+      "path": "story/drafts/north/round3/north-yard.mjs",
+      "bytes": 8894,
+      "sha256": "33774afdccef33ec2293c9fc3fbffed11a32e61a8f004e22e639d2e22db9d8ad"
+    },
+    {
+      "path": "story/drafts/qian-kun/qian-kun-after.mjs",
+      "bytes": 10235,
+      "sha256": "794c94888a8821cb0d5a5f50b02a42dd3ae52bd044b02ad6b73653427cfaa5d1"
+    },
+    {
+      "path": "story/drafts/qian-kun/qian-kun-author.mjs",
+      "bytes": 1457,
+      "sha256": "d7a6f71118ca05a485b4ddb8e3e74e8c2a080a683c52ea1cec2ce8ea244b37cc"
+    },
+    {
+      "path": "story/drafts/qian-kun/qian-kun-clouds.mjs",
+      "bytes": 7579,
+      "sha256": "cbdf9599e34373195760508c015c27d57c8cfcbd10f8d4e702b6323fd7f02074"
+    },
+    {
+      "path": "story/drafts/qian-kun/qian-kun-editorial.ink",
+      "bytes": 68379,
+      "sha256": "6dc13c3a88985e2577d86c4ce029dcc9dcecd355fdbb78467d65d0df148b3d5a"
+    },
+    {
+      "path": "story/drafts/qian-kun/qian-kun-head.mjs",
+      "bytes": 7864,
+      "sha256": "7ba98ae6785a3e84e21ae3a3ee9b0acaa5db933fceb33018714f57ca552b04bd"
+    },
+    {
+      "path": "story/drafts/qian-kun/qian-kun-slow.mjs",
+      "bytes": 12032,
+      "sha256": "46b1696c27607aee422f5eba5557dd592155a4dac8142ee7de32fc375c8fcd29"
+    },
+    {
+      "path": "story/drafts/qian-kun/qian-kun-young.mjs",
+      "bytes": 8549,
+      "sha256": "a837550dc4d7164b04acb5f4112c101f1fb718f44aa5a7ae31642a46c37b6001"
+    },
+    {
+      "path": "story/drafts/qian-kun/round1/qian-kun-after.mjs",
+      "bytes": 6676,
+      "sha256": "8c1727663e9dda1b09a48903b5b9978f6ac013253330d002d77ef59425685c50"
+    },
+    {
+      "path": "story/drafts/qian-kun/round1/qian-kun-author.mjs",
+      "bytes": 1443,
+      "sha256": "ff936260034d7aa42ad54eee3d386dd9681278dfbe66ece7c37f3d8e6d2a1faa"
+    },
+    {
+      "path": "story/drafts/qian-kun/round1/qian-kun-clouds.mjs",
+      "bytes": 5782,
+      "sha256": "83141b4b3e04df7e7193f676e1e13871d417f138dc19b8695dfee3920a8e415c"
+    },
+    {
+      "path": "story/drafts/qian-kun/round1/qian-kun-editorial.ink",
+      "bytes": 56718,
+      "sha256": "f028ca8e8dd2cbd3d0bc8705ab9054883968eadd78b9a15751aa3e1f591fa01b"
+    },
+    {
+      "path": "story/drafts/qian-kun/round1/qian-kun-head.mjs",
+      "bytes": 6572,
+      "sha256": "4c17068c946aa78fb548f09f8a580198afde57a4ff60903ecb548c60a00e0f01"
+    },
+    {
+      "path": "story/drafts/qian-kun/round1/qian-kun-slow.mjs",
+      "bytes": 8297,
+      "sha256": "f8657395605212cac4132d22795bef2cb8cae78c477fbcb7a2197be22e35074e"
+    },
+    {
+      "path": "story/drafts/qian-kun/round1/qian-kun-young.mjs",
+      "bytes": 7614,
+      "sha256": "a5030553211f45e00cc3a2cabf8580445dc4622f2eeccc24f968e48cb882d41a"
+    },
+    {
+      "path": "story/drafts/qian-kun/round2/qian-kun-after.mjs",
+      "bytes": 6816,
+      "sha256": "dd54f60520282e75c7c2282f88309596dd9cdfe8112883f72276733d34efa6fb"
+    },
+    {
+      "path": "story/drafts/qian-kun/round2/qian-kun-author.mjs",
+      "bytes": 1443,
+      "sha256": "ff936260034d7aa42ad54eee3d386dd9681278dfbe66ece7c37f3d8e6d2a1faa"
+    },
+    {
+      "path": "story/drafts/qian-kun/round2/qian-kun-clouds.mjs",
+      "bytes": 5861,
+      "sha256": "376d7bd61a1884503f8b9e281f8978a9b95549de549c46d212136be8fd496636"
+    },
+    {
+      "path": "story/drafts/qian-kun/round2/qian-kun-editorial.ink",
+      "bytes": 59597,
+      "sha256": "4e369936080e89ffc7ed084f0ee0014e01bcb83e592f4ec2f58e0728175333be"
+    },
+    {
+      "path": "story/drafts/qian-kun/round2/qian-kun-head.mjs",
+      "bytes": 6839,
+      "sha256": "798b1f8c949bf572923564572f402bcb452e931dfa2085c922c965b54efc0c1d"
+    },
+    {
+      "path": "story/drafts/qian-kun/round2/qian-kun-slow.mjs",
+      "bytes": 8519,
+      "sha256": "29133cf3262d96f701e70735669b7c5227a713aebe5a53503d96222a3665fd1e"
+    },
+    {
+      "path": "story/drafts/qian-kun/round2/qian-kun-young.mjs",
+      "bytes": 8131,
+      "sha256": "3ce60b3f10894bc9661807df1e86e5d9638ad703327e9dbe81a81252e1f7d7ee"
+    },
+    {
+      "path": "story/drafts/qian-kun/round3/qian-kun-after.mjs",
+      "bytes": 9935,
+      "sha256": "ab5d2550bc4338e8bf73f26fb117659af104f70d0eb334a36008b16a7cd62170"
+    },
+    {
+      "path": "story/drafts/qian-kun/round3/qian-kun-author.mjs",
+      "bytes": 1457,
+      "sha256": "d7a6f71118ca05a485b4ddb8e3e74e8c2a080a683c52ea1cec2ce8ea244b37cc"
+    },
+    {
+      "path": "story/drafts/qian-kun/round3/qian-kun-clouds.mjs",
+      "bytes": 6267,
+      "sha256": "4d0d3fa5557920c61ea9c90771cfd6d5cabfad5b1cc505637cd16b61eda41904"
+    },
+    {
+      "path": "story/drafts/qian-kun/round3/qian-kun-editorial.ink",
+      "bytes": 68379,
+      "sha256": "6dc13c3a88985e2577d86c4ce029dcc9dcecd355fdbb78467d65d0df148b3d5a"
+    },
+    {
+      "path": "story/drafts/qian-kun/round3/qian-kun-head.mjs",
+      "bytes": 7184,
+      "sha256": "51b890e0b5018619876fed9573f3c22636c9fb4a029870c6f9e80490f723b80b"
+    },
+    {
+      "path": "story/drafts/qian-kun/round3/qian-kun-slow.mjs",
+      "bytes": 10247,
+      "sha256": "9e7c931835e7c7ae1e2e985f2b9a8401419f2a0feab504ee818a590838bc8188"
+    },
+    {
+      "path": "story/drafts/qian-kun/round3/qian-kun-young.mjs",
+      "bytes": 8224,
+      "sha256": "269186b1f76fb67fb1f9606f2c725f2bd372c813d76cf9c67a206bacaba13e1a"
+    },
+    {
+      "path": "story/drafts/qingshi/qingshi-author.mjs",
+      "bytes": 2110,
+      "sha256": "05edc42b84b2971cc18de2b46a76db60dc6228c4f61624102e10bb3cb8a7db0e"
+    },
+    {
+      "path": "story/drafts/qingshi/qingshi-career.mjs",
+      "bytes": 21818,
+      "sha256": "71f3db893a37fc9dfd5e319eb5a2d08bf246c03ba526917deea4df281f65119c"
+    },
+    {
+      "path": "story/drafts/qingshi/qingshi-editorial.ink",
+      "bytes": 87975,
+      "sha256": "6791bf16c3647898f56576126331821a87fb4ce80ee7e050b3b1258dcfefedb3"
+    },
+    {
+      "path": "story/drafts/qingshi/qingshi-last.mjs",
+      "bytes": 15364,
+      "sha256": "aca3543fa9ee02a58b24823037eeb51a07201410fbc21c317fa6ec9446857587"
+    },
+    {
+      "path": "story/drafts/qingshi/qingshi-youth.mjs",
+      "bytes": 14422,
+      "sha256": "5f440a283a5222dae779cb8601019cf9f9c01c934fd5e40079ae5e9cdcaecc32"
+    },
+    {
+      "path": "story/drafts/taihua/taihua-author.mjs",
+      "bytes": 33957,
+      "sha256": "f44cef22fc2cfff3942bca190e77cfcc3aec99abb727920be7ad9bc99a874f0c"
+    },
+    {
+      "path": "story/drafts/taihua/taihua-editorial.ink",
+      "bytes": 88878,
+      "sha256": "5ce8bdc8ce92034f26736e832fda8079d0ddaa9ef335fe4f46d6f74158d1b09b"
+    },
+    {
+      "path": "story/drafts/taihua/taihua-elders.mjs",
+      "bytes": 9935,
+      "sha256": "cae45db792f15ecd77b16fbab3345cc3976cd1a32547512f4b2c9877f6830fe4"
+    },
+    {
+      "path": "story/drafts/taihua/taihua-observation.mjs",
+      "bytes": 9371,
+      "sha256": "8f8ae14bad39712d4bd4c782faf268e49b91fd69e4b6165b092387b923139dba"
+    },
+    {
+      "path": "story/drafts/twelfth-life/twelfth-life-after.mjs",
+      "bytes": 8603,
+      "sha256": "c3cd48d92288d8150d5bee880fd50e53ae2347a10390faac709fcc50d76abd9e"
+    },
+    {
+      "path": "story/drafts/twelfth-life/twelfth-life-author.mjs",
+      "bytes": 1582,
+      "sha256": "a0e3764750c05b285c3270d7f09d246a43b16cea2f243e162699bdb68bf990bd"
+    },
+    {
+      "path": "story/drafts/twelfth-life/twelfth-life-capital.mjs",
+      "bytes": 6354,
+      "sha256": "f63e36211a0d37335725eed4ff3c27fa704689a23d304e6de97a0cc8b8c7c8d6"
+    },
+    {
+      "path": "story/drafts/twelfth-life/twelfth-life-defeat.mjs",
+      "bytes": 7938,
+      "sha256": "f1d1e43bb04425f6535a3954061b690a4b69fc7f4db5f3d2cf6437ab672dc269"
+    },
+    {
+      "path": "story/drafts/twelfth-life/twelfth-life-editorial.ink",
+      "bytes": 83941,
+      "sha256": "acf2c519e57f199d29a66f30017dd0c039571c4b6e842a1c2e677436e366872e"
+    },
+    {
+      "path": "story/drafts/twelfth-life/twelfth-life-names.mjs",
+      "bytes": 3750,
+      "sha256": "16a83af1c0a7d9ca06cdacbec34b4c4ca827837e7a2b7c22fb32b94da97b36f7"
+    },
+    {
+      "path": "story/drafts/twelfth-life/twelfth-life-seat.mjs",
+      "bytes": 6158,
+      "sha256": "2d95afbfb43abebd604a66b32eb770f014135beaf646c0255fd4181dba377eab"
+    },
+    {
+      "path": "story/drafts/twelfth-life/twelfth-life-six.mjs",
+      "bytes": 4810,
+      "sha256": "fff03cca2b84acf95d3edfca53f9001755361bdf529384c9295b4d127a58b9ad"
+    },
+    {
+      "path": "story/drafts/twelfth-life/twelfth-life-teacher.mjs",
+      "bytes": 8869,
+      "sha256": "9a811b1d4685f8ed76c3c0d3fd22779047d6e670a1e6bb0e3629cfb460f03e5e"
+    },
+    {
+      "path": "story/drafts/twelfth-life/twelfth-life-youth.mjs",
+      "bytes": 6043,
+      "sha256": "65489a838dc2f0b3f679dc624541390477b13814cb6272e85e182d1247f35daa"
+    },
+    {
+      "path": "story/duel.ink",
+      "bytes": 18941,
+      "sha256": "aa5650e8ea910a6060602a1290a934c90fdda4b59996a9d9e5336fd13b190be0"
+    },
+    {
+      "path": "story/jade-after.mjs",
+      "bytes": 14036,
+      "sha256": "07149939335081dd685785f05425ef5ed40d131b0cfeb54543f89877d80e1c8c"
+    },
+    {
+      "path": "story/jade-author.mjs",
+      "bytes": 1278,
+      "sha256": "b3ec39a44759127ff16b1e033dab16ce26fcb09e24b4b94b0d2e274ca9aa3b35"
+    },
+    {
+      "path": "story/jade-before-cg.ink",
+      "bytes": 72102,
+      "sha256": "0c44a624a652ff467ea6314dd67c1eed30091c2cb40420252bb55c53d0c7d09a"
+    },
+    {
+      "path": "story/jade-buy.mjs",
+      "bytes": 9193,
+      "sha256": "32d7febcf0ad0321b0af022e2c88ab520332187f39b2afcfaf7586b31b94b9ed"
+    },
+    {
+      "path": "story/jade-grain.mjs",
+      "bytes": 10701,
+      "sha256": "5251a1ac5a27e1eac135872c54f707edf183fcf8fe9281e6e5793fd52554e64a"
+    },
+    {
+      "path": "story/jade-night.mjs",
+      "bytes": 13796,
+      "sha256": "18663181f1a9ae35b562291ab34670243820c7f80dce474e38da79198845113c"
+    },
+    {
+      "path": "story/jade-stores.mjs",
+      "bytes": 10741,
+      "sha256": "910a8b84f8508019a24532cd799741bd2e9206dae80f6e928641c1f43107428c"
+    },
+    {
+      "path": "story/jade-thieves-aftermath.mjs",
+      "bytes": 14354,
+      "sha256": "004bfe6c14423a9a2a1149e385dffdcff71d66c0d6ff0b8b78e21d131e917ea6"
+    },
+    {
+      "path": "story/jade-thieves-author.mjs",
+      "bytes": 1437,
+      "sha256": "b5bc47530042667b9bdd11a30ed93045a2b2b26ad4a79b9738cd8aa4581a59b1"
+    },
+    {
+      "path": "story/jade-thieves-before-cg.ink",
+      "bytes": 54382,
+      "sha256": "6a2233e94f3eacb30a383c0e1e31ce4730be0925a5f2a51308fd07161c0aa785"
+    },
+    {
+      "path": "story/jade-thieves-flight.mjs",
+      "bytes": 9082,
+      "sha256": "9e294b13d85f4e778f96f26dbbc95db0d1559b1e3a10a9064043197fd67603f8"
+    },
+    {
+      "path": "story/jade-thieves-temple.mjs",
+      "bytes": 11543,
+      "sha256": "b7f7808344af4ef711f336e20f565a9505a0df2a22118cf294d369810afb32fd"
+    },
+    {
+      "path": "story/jade-thieves-v1.ink",
+      "bytes": 54533,
+      "sha256": "3e988b8d281273df6bbb07fbbdae6acdbe0b984963c0f0caf3d7402b1136da2c"
+    },
+    {
+      "path": "story/jade-thieves-vault.mjs",
+      "bytes": 6942,
+      "sha256": "a1011d0e7657517c30f1fd1224a98a0fe800731b65626172892b062a40acddcd"
+    },
+    {
+      "path": "story/jade-thieves.ink",
+      "bytes": 67147,
+      "sha256": "8116f005907612988e4e9a2c30bb0293a334329e03adbb2bcbbda551ee46e744"
+    },
+    {
+      "path": "story/jade-v1.ink",
+      "bytes": 72199,
+      "sha256": "06d5e0c466125d18fe34a2b12f4ebf30e3f8c42b4119e0cf91e93b111461e62c"
+    },
+    {
+      "path": "story/jade.ink",
+      "bytes": 87400,
+      "sha256": "e242d20eef3d56112c83543e0b892dcdef9480d9b048911ed2fe015be0e9906b"
+    },
+    {
+      "path": "story/kuhe-author.mjs",
+      "bytes": 36086,
+      "sha256": "a944b016ed02aded7b65040eb9fc4d89e1394d056c61d1a85fdbe3ab700b7231"
+    },
+    {
+      "path": "story/kuhe-v1.ink",
+      "bytes": 55627,
+      "sha256": "ff9209be726e6009cf66695274cfff49cb3b41f005238df5708f34ffc17bf194"
+    },
+    {
+      "path": "story/kuhe-v2.ink",
+      "bytes": 55975,
+      "sha256": "afbf06c1501553dfa32d3843703c20eaddec40cc65273e67e964e93573585ee6"
+    },
+    {
+      "path": "story/kuhe.ink",
+      "bytes": 63498,
+      "sha256": "5d327e57a6b946667687618951c967dcd16189cfc324032210b82d710dba612c"
+    },
+    {
+      "path": "story/longmen-author.mjs",
+      "bytes": 27709,
+      "sha256": "f394cc0e5fac80fb21d3147d24a3409d2203aeeef2d17954711167ab4ac25c19"
+    },
+    {
+      "path": "story/longmen-night.mjs",
+      "bytes": 8047,
+      "sha256": "75754aafea8f99af46e761162d308b296627ca893fbb2553351b85367dcc7668"
+    },
+    {
+      "path": "story/longmen-scenes.mjs",
+      "bytes": 9125,
+      "sha256": "db54db65433165526e3d62b7df8c3417bdb8499bdb2423037fa6675eea1ab019"
+    },
+    {
+      "path": "story/longmen-v1.ink",
+      "bytes": 50846,
+      "sha256": "8b061e7d47d0f0f8a42b8fedeaf7b647204276f433a0504f9fd2e55212f17897"
+    },
+    {
+      "path": "story/longmen-v2.ink",
+      "bytes": 64354,
+      "sha256": "20869c4b727240cfc0e36d2b4f9494753891d1b59bf4d5552a75e6249ce72e7c"
+    },
+    {
+      "path": "story/longmen.ink",
+      "bytes": 73744,
+      "sha256": "5d1655148c2e6e0532bd8f3b74a3cdd4140ea03b6d1f5507adf5a2b6711c98bd"
+    },
+    {
+      "path": "story/luhua-after.mjs",
+      "bytes": 12390,
+      "sha256": "fe2521b8895a64b6c55a8b1a503cb3173f76f8cd3aa1701673685d94a805be5d"
+    },
+    {
+      "path": "story/luhua-author.mjs",
+      "bytes": 1331,
+      "sha256": "7af35abc500a45849d5945e430f0279adbf402af8c85ec1f7457d2aab3273edf"
+    },
+    {
+      "path": "story/luhua-mountain.mjs",
+      "bytes": 7064,
+      "sha256": "7a8044190a16abcf983ea9c86d73fdb50bb9d4562628c6d6363424e6699a4955"
+    },
+    {
+      "path": "story/luhua-seat.mjs",
+      "bytes": 5718,
+      "sha256": "8e48b29d40180b4ff03e4ee0d7dcfb2b25b837d15557004ca96d8c70f06aa4b1"
+    },
+    {
+      "path": "story/luhua-seven.mjs",
+      "bytes": 6045,
+      "sha256": "0ad8a82cb79fbfe1bc9e38812cd03d0226e729f363fe56bcb3811d34292c5794"
+    },
+    {
+      "path": "story/luhua-tide.mjs",
+      "bytes": 8680,
+      "sha256": "893e04c08fd2bf66f2bb3c3457cffc15262438e33a7a1cd47c28873be4102484"
+    },
+    {
+      "path": "story/luhua-young.mjs",
+      "bytes": 7748,
+      "sha256": "0ec0e9cc0c934e10408f1ab7916f41de66ac2a0d5ede69670b744a158607cb1a"
+    },
+    {
+      "path": "story/luhua.ink",
+      "bytes": 72173,
+      "sha256": "eb9ef8127de3477d2ba21983c98c9927869fa567913a909292d951163068e761"
+    },
+    {
+      "path": "story/luoyang-author.mjs",
+      "bytes": 14858,
+      "sha256": "364eb8278f903a0f58cca8e412898a9f193e8ac59617b61364b27e1917b9316c"
+    },
+    {
+      "path": "story/luoyang.ink",
+      "bytes": 22320,
+      "sha256": "1407d6d873631a3721f386e1fb947666883065c08a77ef0caa1591bab743946f"
+    },
+    {
+      "path": "story/main.ink",
+      "bytes": 41772,
+      "sha256": "921800bad5e1d321ba18b0ed5e0bd29d66e0f9588861444ad1880dfcaf3a87af"
+    },
+    {
+      "path": "story/north-after.mjs",
+      "bytes": 12466,
+      "sha256": "1493714ee8bedc49e639679a06bcd7a214270392a1dc591c33c6e2b3f39b8c5f"
+    },
+    {
+      "path": "story/north-author.mjs",
+      "bytes": 1396,
+      "sha256": "e789ffb59f5ae352bf8bae92cc42e5b0e9f0c6b41c9b6f9ecd247508e6706413"
+    },
+    {
+      "path": "story/north-duels.mjs",
+      "bytes": 7463,
+      "sha256": "ae50e279371973f4c1a4c30cdd22674bcba2d91087b5e4394b38005953717c41"
+    },
+    {
+      "path": "story/north-notes-author.mjs",
+      "bytes": 10602,
+      "sha256": "8ee5376bc0c2f2f4e060257de4bf0866bbb14e3b4c4244c5d49967818a6581e5"
+    },
+    {
+      "path": "story/north-notes.ink",
+      "bytes": 15893,
+      "sha256": "2ee0704cd912b449bb5d42e0ab7999af529b9658ec30c42ee5e319a061d82d16"
+    },
+    {
+      "path": "story/north-rain.mjs",
+      "bytes": 13518,
+      "sha256": "5e3be714f7c7b358f0f7833c5dacf3a9a7ec988d80fcc8b35e4912998e055f02"
+    },
+    {
+      "path": "story/north-road.mjs",
+      "bytes": 12638,
+      "sha256": "a65880bb481e1530539861408e52056cca740e27c5a23edbe8549590195e3466"
+    },
+    {
+      "path": "story/north-v1.ink",
+      "bytes": 69519,
+      "sha256": "427d81d50c479a510e393c51d5e74e5cadcf2552a6019eb47db075eec255c2bb"
+    },
+    {
+      "path": "story/north-v2.ink",
+      "bytes": 69778,
+      "sha256": "a50ac78446e7ebd3b942a40576b11618f50f63d7828933f6991112dd773b3a1a"
+    },
+    {
+      "path": "story/north-yard.mjs",
+      "bytes": 9129,
+      "sha256": "f171e8f24a27858401f2c8ae9cc1b8c60e1fa503ea69b365f86d9066e173b904"
+    },
+    {
+      "path": "story/north.ink",
+      "bytes": 86189,
+      "sha256": "70a66d521cbcf74414b53764dd748bebd9f11079d7187fab3fba2d5c7d53122d"
+    },
+    {
+      "path": "story/production-direction-v6.mjs",
+      "bytes": 5587,
+      "sha256": "726d4eba5ca8bffc530c29c69c51d89bc366dbd48c9a16ba003c402e0f7d47f1"
+    },
+    {
+      "path": "story/production-direction-v7.mjs",
+      "bytes": 3401,
+      "sha256": "d515d5c9ed8f6cc1e5aa8410a2f2e121babe780238de6f4977220504414a3442"
+    },
+    {
+      "path": "story/qian-kun-after.mjs",
+      "bytes": 10235,
+      "sha256": "794c94888a8821cb0d5a5f50b02a42dd3ae52bd044b02ad6b73653427cfaa5d1"
+    },
+    {
+      "path": "story/qian-kun-author.mjs",
+      "bytes": 1427,
+      "sha256": "6cf32b2d23e02ba5a70b6c0f88c25f89fa925d5401f4598ee271209fc483dfc1"
+    },
+    {
+      "path": "story/qian-kun-clouds.mjs",
+      "bytes": 7579,
+      "sha256": "cbdf9599e34373195760508c015c27d57c8cfcbd10f8d4e702b6323fd7f02074"
+    },
+    {
+      "path": "story/qian-kun-head.mjs",
+      "bytes": 7864,
+      "sha256": "7ba98ae6785a3e84e21ae3a3ee9b0acaa5db933fceb33018714f57ca552b04bd"
+    },
+    {
+      "path": "story/qian-kun-slow.mjs",
+      "bytes": 12032,
+      "sha256": "95454ab4330c76ff119106a12b91502c2a954b4c33d1e4bf47974acb993d2a6b"
+    },
+    {
+      "path": "story/qian-kun-v1.ink",
+      "bytes": 55130,
+      "sha256": "c883e603fa56b9b8641c8accb42eb9f0d6026deb97e6ea375b4bd7f3eca39540"
+    },
+    {
+      "path": "story/qian-kun-v2.ink",
+      "bytes": 56048,
+      "sha256": "d09b130fd52464b7de215271f4b0ff7ef559f4ef6408fd23a458bee6cbfea527"
+    },
+    {
+      "path": "story/qian-kun-young.mjs",
+      "bytes": 8549,
+      "sha256": "a837550dc4d7164b04acb5f4112c101f1fb718f44aa5a7ae31642a46c37b6001"
+    },
+    {
+      "path": "story/qian-kun.ink",
+      "bytes": 74981,
+      "sha256": "de8bfbae4f4574048934c3db61bd77d3cb5c6975840b67d22d6bd4bcd34be91c"
+    },
+    {
+      "path": "story/qingshi-author.mjs",
+      "bytes": 2081,
+      "sha256": "0d4cbc6af7ce586f7d8ae60b5fdeaada02b9f58c0135d3283e8492d8ffdba62a"
+    },
+    {
+      "path": "story/qingshi-career.mjs",
+      "bytes": 21818,
+      "sha256": "71f3db893a37fc9dfd5e319eb5a2d08bf246c03ba526917deea4df281f65119c"
+    },
+    {
+      "path": "story/qingshi-last.mjs",
+      "bytes": 15364,
+      "sha256": "aca3543fa9ee02a58b24823037eeb51a07201410fbc21c317fa6ec9446857587"
+    },
+    {
+      "path": "story/qingshi-v1.ink",
+      "bytes": 79452,
+      "sha256": "8c300886e48b822539c82cb036c4dd56c4533cd8b2c22dc3feb05376a606d2db"
+    },
+    {
+      "path": "story/qingshi-v2.ink",
+      "bytes": 79538,
+      "sha256": "f36a9152b6bcdc1cefbf59054e972c3540901c8439bd0e4e4f7f4c4736a447d0"
+    },
+    {
+      "path": "story/qingshi-youth.mjs",
+      "bytes": 14422,
+      "sha256": "5f440a283a5222dae779cb8601019cf9f9c01c934fd5e40079ae5e9cdcaecc32"
+    },
+    {
+      "path": "story/qingshi.ink",
+      "bytes": 91328,
+      "sha256": "8e2ce42eb05d281bafdd930b0920736a6138d81e5a4247ec3cd13dc63bb0adda"
+    },
+    {
+      "path": "story/sea-asking.mjs",
+      "bytes": 9524,
+      "sha256": "aee0a9e720231abb3489b3fc19e605bdbbe04082b3ffb4f71f65b46d2a69663c"
+    },
+    {
+      "path": "story/sea-author.mjs",
+      "bytes": 1072,
+      "sha256": "b3d80a49c5632b14fe51cafc0aa6f1e2855f446a5e7946e46464c967557299c6"
+    },
+    {
+      "path": "story/sea-before-rigging.ink",
+      "bytes": 52492,
+      "sha256": "24f74d8bf0a5858bb40472f8e01334797cc926e988efc5c01dc991d068e153dd"
+    },
+    {
+      "path": "story/sea-crossing.mjs",
+      "bytes": 9625,
+      "sha256": "bdc9fa54d3e823618be0ab98b48592deaccf0c21e322610efc3296ff26775bee"
+    },
+    {
+      "path": "story/sea-legacy.mjs",
+      "bytes": 10268,
+      "sha256": "888658d70669e7a06ba01594c0b8af7043d177a72416c43f49a5ea5545542ff5"
+    },
+    {
+      "path": "story/sea-teaching.mjs",
+      "bytes": 12243,
+      "sha256": "00ab74b8bf3a8756ce70f30c21d8ed2227fb9fb65df8e3b1dc3fba86bad1fc46"
+    },
+    {
+      "path": "story/sea-tide-author.mjs",
+      "bytes": 1227,
+      "sha256": "1cc4dc354c1587b45eb968dae9ffb4165303decef66507e917f55513bb642625"
+    },
+    {
+      "path": "story/sea-tide-before-child.ink",
+      "bytes": 53542,
+      "sha256": "2066c6503891ee14ea4281e08d877e8495fa7d2d3832a6fe41e5b64b7dc6cbb9"
+    },
+    {
+      "path": "story/sea-tide-before-rigging.ink",
+      "bytes": 46805,
+      "sha256": "e0e05e393b8203792c3a819021f873d862748ec18df4c3148129ffba93216ad6"
+    },
+    {
+      "path": "story/sea-tide-entry.mjs",
+      "bytes": 7363,
+      "sha256": "bcd845f165c76ea90b74cf9e2171b8b3302a57f53fa925d54c0562877f862b79"
+    },
+    {
+      "path": "story/sea-tide-rescue.mjs",
+      "bytes": 10336,
+      "sha256": "ba3434f423993ebd903f108d89aaf32fa68c6d11fb1629152ce540808f9e2201"
+    },
+    {
+      "path": "story/sea-tide-seats.mjs",
+      "bytes": 19713,
+      "sha256": "59a13bf413d3180ffd86db70e485c5153f88ceacfaf8f48b383728f57f509ff9"
+    },
+    {
+      "path": "story/sea-tide-v1.ink",
+      "bytes": 46894,
+      "sha256": "a13c3476c5eceefd26c14b92ed83ed008bbbf6986a1b2893b607d35023aee3f2"
+    },
+    {
+      "path": "story/sea-tide.ink",
+      "bytes": 58192,
+      "sha256": "66dd84f45613134834a63b9f0ec2eb636d8dc547003acde97deb0ceadcde52dc"
+    },
+    {
+      "path": "story/sea-v1.ink",
+      "bytes": 52637,
+      "sha256": "2d9350f36cfbff82a53eb7bb9132a1f380aed5b022e1715b22775c7c4ee10b3d"
+    },
+    {
+      "path": "story/sea.ink",
+      "bytes": 65550,
+      "sha256": "d08373ec13c3fa9a91df7ee462358d319f5a2e81d4ef317faac2651d653712c4"
+    },
+    {
+      "path": "story/seven-questions-author.mjs",
+      "bytes": 1257,
+      "sha256": "daadfa112dbf81a4af3e8ff56147fa95224d944ab9373478936439e7a6be3c46"
+    },
+    {
+      "path": "story/seven-questions-before-books-cg.ink",
+      "bytes": 84049,
+      "sha256": "62ced8c41260598e8051beb9af079eadb89c730874d4975f787987087b0c38db"
+    },
+    {
+      "path": "story/seven-questions-inquiry.mjs",
+      "bytes": 10558,
+      "sha256": "e08f8f90a754eee11f77607aa99de9a0baba879f21ab326018c2e7bd63964228"
+    },
+    {
+      "path": "story/seven-questions-opening.mjs",
+      "bytes": 8240,
+      "sha256": "2a8e8b1eddf9f6a8070f0b01156d40c571fd5e1a5a0c70e87cbfd3fdc160f5ab"
+    },
+    {
+      "path": "story/seven-questions-resolution.mjs",
+      "bytes": 17749,
+      "sha256": "7d041ef3fab5c4c868fa3752e5785c48f229dfe0db46cfda2cfc6f5538fd9e8c"
+    },
+    {
+      "path": "story/seven-questions-split.mjs",
+      "bytes": 14810,
+      "sha256": "899200d0df034d4ba76e9a095009fa800ee81bca9dc1198cd561d907c470e178"
+    },
+    {
+      "path": "story/seven-questions-tables.mjs",
+      "bytes": 6700,
+      "sha256": "43af40cc894662077eecadd90253fb68519621d5dec517d02c9ac003af2fef7c"
+    },
+    {
+      "path": "story/seven-questions-v1.ink",
+      "bytes": 82442,
+      "sha256": "c788b74ec54af765beac3ed5d482271101e41cee307fe351e7cee0481a6215a4"
+    },
+    {
+      "path": "story/seven-questions.ink",
+      "bytes": 91396,
+      "sha256": "725095717de81551cc0ff518cf9523d5eff532227226a37d441c10fd1ffa445a"
+    },
+    {
+      "path": "story/taihua-author.mjs",
+      "bytes": 34502,
+      "sha256": "4af40f79c77759d3775d54db9039cd1507b67c512c54ad610cb6459b319e8a5c"
+    },
+    {
+      "path": "story/taihua-elders.mjs",
+      "bytes": 11090,
+      "sha256": "f3e286dd4f0fcda728259064f5eff448e942535e114c9da3096cac47da279d75"
+    },
+    {
+      "path": "story/taihua-observation.mjs",
+      "bytes": 9371,
+      "sha256": "8f8ae14bad39712d4bd4c782faf268e49b91fd69e4b6165b092387b923139dba"
+    },
+    {
+      "path": "story/taihua-v1.ink",
+      "bytes": 52168,
+      "sha256": "f61de7f912d58bb7a82e83b85164e8cfe371b8bf7a2babcdd578f226fa45e9fd"
+    },
+    {
+      "path": "story/taihua-v2.ink",
+      "bytes": 82362,
+      "sha256": "c2467279f9c0c429900fb190d8c7972a713173d3c118be4b0ed36f27fba4bdbd"
+    },
+    {
+      "path": "story/taihua.ink",
+      "bytes": 93486,
+      "sha256": "3a265be818fa4d5cdd222df55457e83d45e07a0eac2949a263c5fd1b82b1b802"
+    },
+    {
+      "path": "story/twelfth-author.mjs",
+      "bytes": 29283,
+      "sha256": "fba2078dade1368789340c30dac76feae59c584796c3ba960f3a83fba9ec3b4f"
+    },
+    {
+      "path": "story/twelfth-life-after.mjs",
+      "bytes": 10391,
+      "sha256": "2d21f1042498f3bc9023d073ef7e4146b63af2a440dbb9ab07b53fdcc9d796eb"
+    },
+    {
+      "path": "story/twelfth-life-author.mjs",
+      "bytes": 1548,
+      "sha256": "400175dc31468f509e4a76230f8481467b44ecb895dd90331c10bb336a4ca4ca"
+    },
+    {
+      "path": "story/twelfth-life-before-cg.ink",
+      "bytes": 78923,
+      "sha256": "d9a53866cf1913c03ba1f2e4b49560051ec333276794774d344e7a37fa28bca7"
+    },
+    {
+      "path": "story/twelfth-life-capital.mjs",
+      "bytes": 7062,
+      "sha256": "3ff4874e62c9f94df6d7f2737ac8592d146255f0b2bf1891e6374808ea425844"
+    },
+    {
+      "path": "story/twelfth-life-defeat.mjs",
+      "bytes": 8194,
+      "sha256": "4a3cf5476a32a8070228b7474abc648129ec8652d73699330eea4b6e669ddd8f"
+    },
+    {
+      "path": "story/twelfth-life-names.mjs",
+      "bytes": 3750,
+      "sha256": "16a83af1c0a7d9ca06cdacbec34b4c4ca827837e7a2b7c22fb32b94da97b36f7"
+    },
+    {
+      "path": "story/twelfth-life-seat.mjs",
+      "bytes": 8189,
+      "sha256": "22117ced2504e53d936bce1ca0eb265c10807c87540a3d3d1ac50da592212b1f"
+    },
+    {
+      "path": "story/twelfth-life-six.mjs",
+      "bytes": 5122,
+      "sha256": "bc846b6332b6941cc5eb9aa8cb369b4e573f7a91691c02872d2ef37f4b7a62b9"
+    },
+    {
+      "path": "story/twelfth-life-teacher.mjs",
+      "bytes": 9670,
+      "sha256": "fb44ca746f2e4fbe432e401ccb00b4a32b26105b32a5ae1c605e81e7344266a3"
+    },
+    {
+      "path": "story/twelfth-life-v1.ink",
+      "bytes": 78754,
+      "sha256": "363bc235c070c05163f3f75dcbd7d1b4d43171b503eca44390c7324221f745d8"
+    },
+    {
+      "path": "story/twelfth-life-v2.ink",
+      "bytes": 78973,
+      "sha256": "4e0ee737cb3da7f29a049a71baaced555b51d40fbf82a4adfac10ceb412381f2"
+    },
+    {
+      "path": "story/twelfth-life-youth.mjs",
+      "bytes": 6043,
+      "sha256": "65489a838dc2f0b3f679dc624541390477b13814cb6272e85e182d1247f35daa"
+    },
+    {
+      "path": "story/twelfth-life.ink",
+      "bytes": 93680,
+      "sha256": "9b26b78ac27089e8aee11151f5a2309ed6e84b3ef73772ed418502b30ade45f1"
+    },
+    {
+      "path": "story/twelfth.ink",
+      "bytes": 50285,
+      "sha256": "ca0d29761de0c2d836d3a0f66a608bd043b6fa8b6e2b9c5254d47b374044ff40"
+    },
+    {
+      "path": "story/two-swords-author.mjs",
+      "bytes": 880,
+      "sha256": "45bd8c3633acae65c85db4b60e8e0c6c8485a6a08b8bfa306eaa30aaf511dad4"
+    },
+    {
+      "path": "story/two-swords-before-art.ink",
+      "bytes": 67192,
+      "sha256": "6c164c4eb84d6e5984fdb9466608e48f0d6f3fdc7273fb8afe0ca05b0c618c84"
+    },
+    {
+      "path": "story/two-swords-books.mjs",
+      "bytes": 14858,
+      "sha256": "80b8d331d8b87f21c9e388f1bb4b20754f113cccc97ff6e69720a7220e65dbc7"
+    },
+    {
+      "path": "story/two-swords-later.mjs",
+      "bytes": 10834,
+      "sha256": "cca7dde5b3bac58319d74db9fbc626b62110343c9ad423287bfa85c8b6eaaf0c"
+    },
+    {
+      "path": "story/two-swords-origin.mjs",
+      "bytes": 18225,
+      "sha256": "bf351b8f7f2f98efb47e32a53583f01515f656916a4b38541923de7c5b7dad00"
+    },
+    {
+      "path": "story/two-swords-v1.ink",
+      "bytes": 67313,
+      "sha256": "8a33ed47785dd6e6068287221c331f4722976788c490600bde60a2efe770c652"
+    },
+    {
+      "path": "story/two-swords.ink",
+      "bytes": 73110,
+      "sha256": "c64eb12a38c60385d9d54dde879bdec415650e547c4cbb1115bce2baa319105d"
+    },
+    {
+      "path": "story/white-stone-author.mjs",
+      "bytes": 24046,
+      "sha256": "b98587426955f344518a7d2d321f7c30e0a2a509554f8935cfdde0fbbb4f50c3"
+    },
+    {
+      "path": "story/white-stone.ink",
+      "bytes": 37035,
+      "sha256": "2f8ce8422e567d1b87f1ce7636a94450c3b14512988b36297efd4300f32bd59d"
+    },
+    {
+      "path": "story/xuanmen-author.mjs",
+      "bytes": 20534,
+      "sha256": "f90cbd15449013422c7f9545e0c83f9947143cf8b636dd54b892bc91820efc69"
+    },
+    {
+      "path": "story/xuanmen.ink",
+      "bytes": 30556,
+      "sha256": "0db8d06251afa29c9ce77061478da31c7d77d998d21eb638e5f089e23095a358"
+    },
+    {
+      "path": "taihua-v1.html",
+      "bytes": 397,
+      "sha256": "7b4504e3e48ea7a7ba08efee404266e0d015380100722cf26b916051d1b340ee"
+    },
+    {
+      "path": "taihua-v2.html",
+      "bytes": 588,
+      "sha256": "3bdbb46ca905375cb6ff0aef3bb84da911d53cc839e6775a1ef2d66cb124383e"
+    },
+    {
+      "path": "taihua.html",
+      "bytes": 569,
+      "sha256": "b18f85011c06ec2aca1f96a7372a939d24217d8f0b0e11fe57cfbb905867274e"
+    },
+    {
+      "path": "tests/art-manifest.spec.ts",
+      "bytes": 2829,
+      "sha256": "a626595858c46eb5f0bfee6f59cee0e8d81a557e9f7d32d0b08d71cf535fcb99"
+    },
+    {
+      "path": "tests/beyond-ranking.spec.ts",
+      "bytes": 8531,
+      "sha256": "1cb484dd88b5c2b6921955366b470ce8f1b5ae70918cec305865685a3551d674"
+    },
+    {
+      "path": "tests/beyond-ranking.test.ts",
+      "bytes": 5034,
+      "sha256": "0acc10ffbd76155a09d0b56f54915031bfedbf37ec7eb733c568bf058d0b9324"
+    },
+    {
+      "path": "tests/campaign-routes.ts",
+      "bytes": 489,
+      "sha256": "a17b7fd954e6fd7a29ca1fbaf6f4a978f8c7b92f21c0bb641110f161b47b62f1"
+    },
+    {
+      "path": "tests/campaign-v6-ending-staging.spec.ts",
+      "bytes": 13339,
+      "sha256": "18782664380feb0331b5ebc4614762bdb39a35ef92f80cab0730fc05a6aa912d"
+    },
+    {
+      "path": "tests/campaign-v6-ending-staging.test.ts",
+      "bytes": 5333,
+      "sha256": "8e4101251aa82aa5b8ac91aae72b382cf2ca8186a4e6208b8592870db7902847"
+    },
+    {
+      "path": "tests/campaign-v6-storage.spec.ts",
+      "bytes": 6156,
+      "sha256": "5895b1cc66156616c93179488e2deffd416020e02ae68ddf23555964cb602168"
+    },
+    {
+      "path": "tests/campaign-v6.spec.ts",
+      "bytes": 4546,
+      "sha256": "58e2d3d299465e63a65c38af2db435a1199c935fb2eea6c502d306bc874e780f"
+    },
+    {
+      "path": "tests/campaign-v6.test.ts",
+      "bytes": 10402,
+      "sha256": "6811701c39ba56bf203ad1c002851c381fc01f1463d5c589aad320a621cb01a7"
+    },
+    {
+      "path": "tests/campaign-visual.spec.ts",
+      "bytes": 4090,
+      "sha256": "97bc3830513960a010074062ea8c32d97fb48b70bf57c39db67e2b6182323906"
+    },
+    {
+      "path": "tests/campaign.spec.ts",
+      "bytes": 9463,
+      "sha256": "6f37a9d9dfc721debf1dd8f1fc6ab34e268db9672f800d61eb84a2fbbc2506c7"
+    },
+    {
+      "path": "tests/campaign.test.ts",
+      "bytes": 4571,
+      "sha256": "898b4d65fc72bfe3fee2f0ff4b94ce61a7b8f9bf5cbfe71406fe9305c03d316f"
+    },
+    {
+      "path": "tests/child-reuse.spec.ts",
+      "bytes": 9538,
+      "sha256": "e4e837f1855ded2f7335d392e66245bb8c6b33c1b36215def0e987ccaba53d13"
+    },
+    {
+      "path": "tests/child-reuse.test.ts",
+      "bytes": 4699,
+      "sha256": "6763d40c1fc453e6e2b130186d27164d78c32e044c3115539506fc827b29e2ee"
+    },
+    {
+      "path": "tests/dead-ranking.spec.ts",
+      "bytes": 7551,
+      "sha256": "8515c0031cbedc99e55150abc7956160bd677c8ac24740e74f696150c0045a4a"
+    },
+    {
+      "path": "tests/dead-ranking.test.ts",
+      "bytes": 7213,
+      "sha256": "4c631b29f0e94179c57d0e5ba96365f3ea9ee3e0fcedb294bb749366f0b0f923"
+    },
+    {
+      "path": "tests/default-entry.spec.ts",
+      "bytes": 11163,
+      "sha256": "626e44d1e68038c4780191da670081122735f3fbc3507eb02d01037501f56597"
+    },
+    {
+      "path": "tests/default-entry.test.ts",
+      "bytes": 5691,
+      "sha256": "ae21291e6318f4306aeb0cbbfe6f2fa15934ae95284d760082c4db9f046b685f"
+    },
+    {
+      "path": "tests/dongting.spec.ts",
+      "bytes": 2263,
+      "sha256": "68bb8a9dd0c9af9581ffae5f2a8e9334a5e1f01e7ea5a29815d946ca966b6928"
+    },
+    {
+      "path": "tests/dongting.test.ts",
+      "bytes": 3844,
+      "sha256": "4f21bfa5c8f92dc37f082b827cfb6da587c214692d099e33c9e21c48598e218f"
+    },
+    {
+      "path": "tests/editorial-save-migration.spec.ts",
+      "bytes": 10529,
+      "sha256": "3836ccd17a3ce9b707def8a921670a5e551fa6dfbf73d40c43556a065dead151"
+    },
+    {
+      "path": "tests/editorial-save-migration.test.ts",
+      "bytes": 5574,
+      "sha256": "78de266a34a27769ef6b98f995c377f3650f913127342128a1d2ee0dacde4d39"
+    },
+    {
+      "path": "tests/evidence-path.ts",
+      "bytes": 758,
+      "sha256": "86d444e43a6692dbff77174065bc0353d5c63227a81746098a22a0358ec1411b"
+    },
+    {
+      "path": "tests/frozen-baselines-policy.test.ts",
+      "bytes": 1485,
+      "sha256": "3f4877a44620a2816007fb5a8a1c60faa6dbcbf43b1cf3ec92e23b002d7193db"
+    },
+    {
+      "path": "tests/frozen-baselines.ts",
+      "bytes": 5704,
+      "sha256": "1ab56e42b7e507da7d4ebd1121cdf17f3dd6e01575c26f41bbafb537d4e69a52"
+    },
+    {
+      "path": "tests/game.spec.ts",
+      "bytes": 8622,
+      "sha256": "23fc2246984dc0fec76c16f805a97c75e96d24f9dbd7af11f84f3b2f063b7b2b"
+    },
+    {
+      "path": "tests/heng-art.spec.ts",
+      "bytes": 10599,
+      "sha256": "0900544a74bbbc38cf3edf9b1ca0c8cc5ac2bc380d654ee46ab1a3c64c2d1cb3"
+    },
+    {
+      "path": "tests/heng-art.test.ts",
+      "bytes": 7047,
+      "sha256": "1147a06a0d92584e458c2b1d67b13f28104de5e96355e8640c27cd4d6fd37474"
+    },
+    {
+      "path": "tests/historical-baselines-policy.test.ts",
+      "bytes": 2242,
+      "sha256": "96542cebb08e70bfa65eef512d347ec66a2d97e8ce054253c8edb67708e8d5db"
+    },
+    {
+      "path": "tests/historical-baselines.ts",
+      "bytes": 2227,
+      "sha256": "a86a5d93da75fb926d1bd32d079d584994865be2503cfd1312c76672727ba541"
+    },
+    {
+      "path": "tests/independent-canon-early.test.ts",
+      "bytes": 2797,
+      "sha256": "bc591d7d138e601044a21b87c9b2abbf4e0114d8354d7d50b66602da0949dcf0"
+    },
+    {
+      "path": "tests/independent-canon-late.test.ts",
+      "bytes": 7587,
+      "sha256": "9945d7e8f362107f1e936f3afa158ff9398ea04ca279b8ed1149fa03093d0443"
+    },
+    {
+      "path": "tests/jade-editorial-cold-offline.spec.ts",
+      "bytes": 4824,
+      "sha256": "4b5a4e1e4ac7720a0238aac889cbb4033a01957d2e96d1191aa2f2fb89da0138"
+    },
+    {
+      "path": "tests/jade-editorial-draft.test.ts",
+      "bytes": 12212,
+      "sha256": "39c5eaa0efba4a96bc0a0a790ebe573505c643a2f484ea27965dcda98cf4db38"
+    },
+    {
+      "path": "tests/jade-editorial-integrity.spec.ts",
+      "bytes": 7482,
+      "sha256": "42e00738f81832394f467a767cedffcc8963f6b6d0209bf7d282aab48a802f82"
+    },
+    {
+      "path": "tests/jade-editorial-stage.spec.ts",
+      "bytes": 3275,
+      "sha256": "e53102179fc9deab1b7f2ac412ab7c2214bd3d611de780273051cae98ccf3fa2"
+    },
+    {
+      "path": "tests/jade-editorial.spec.ts",
+      "bytes": 9853,
+      "sha256": "08b76f1e291133a9e52526671c49fa438bdc01790359ee10f67383f569844f1c"
+    },
+    {
+      "path": "tests/jade-editorial.test.ts",
+      "bytes": 12788,
+      "sha256": "9bd6227a022247bf066b81c377774cee4d4452b938f0f928ece64d1a8b4d40ef"
+    },
+    {
+      "path": "tests/jade-reusable-fixtures.ts",
+      "bytes": 1415,
+      "sha256": "255f0445e71e17f0bafcc9a2435e3fefd38276382a20398e30249b81264ce110"
+    },
+    {
+      "path": "tests/jade-reusable.spec.ts",
+      "bytes": 7148,
+      "sha256": "2e08bcd28be7189afdfde7960f2904bed99114971b3146fe57ee5adbf4664ccb"
+    },
+    {
+      "path": "tests/jade-reusable.test.ts",
+      "bytes": 4743,
+      "sha256": "bdb299153383cae3a7fb8daf032f7643d88ce9d14f049f41ae4b0dc69c3e68d7"
+    },
+    {
+      "path": "tests/jade-thieves-editorial-cold-offline.spec.ts",
+      "bytes": 4938,
+      "sha256": "f68b939ef045013eb11b89b88541e6f1ec0176aa3bba584459ed94f5d1f46815"
+    },
+    {
+      "path": "tests/jade-thieves-editorial-draft.test.ts",
+      "bytes": 12623,
+      "sha256": "5710cfe06fee2fee34e1e796e97be67e533a56c87a9e3b451255d0405a213d7e"
+    },
+    {
+      "path": "tests/jade-thieves-editorial-integrity.spec.ts",
+      "bytes": 7488,
+      "sha256": "3bafe596a1642726567d0b45100433e58ba359691d49ef9aafdcf9a11c36731f"
+    },
+    {
+      "path": "tests/jade-thieves-editorial-stage.spec.ts",
+      "bytes": 3078,
+      "sha256": "ae2b2bb87980e1c3485a87018d94da67d8ea7fef59ebcdd24f764d74af7e8c4a"
+    },
+    {
+      "path": "tests/jade-thieves-editorial.spec.ts",
+      "bytes": 8290,
+      "sha256": "da2677cc83a7ec88ce6970f673a8586bc7e2f723e1eac650d46eb858cc1a0615"
+    },
+    {
+      "path": "tests/jade-thieves-editorial.test.ts",
+      "bytes": 13459,
+      "sha256": "6d8ee7fd52a97698843845973b139e1a2a1452a684690da8750938d4a2ecf4fd"
+    },
+    {
+      "path": "tests/jade-thieves.spec.ts",
+      "bytes": 8340,
+      "sha256": "3047db6762a0ca439a50dc2133e2cf98b9ef19182e5f53c90bb57b95abaa825d"
+    },
+    {
+      "path": "tests/jade-thieves.test.ts",
+      "bytes": 6479,
+      "sha256": "91bebc82c3177618ce71e758e196ae84b7c3c216a5ea0be2a99ec8c10cff5759"
+    },
+    {
+      "path": "tests/jade.spec.ts",
+      "bytes": 9602,
+      "sha256": "43a42b85fb0f1f534941e1d5fa7dc5ab34b4a579fb32a0947dc3aeba7683f75d"
+    },
+    {
+      "path": "tests/jade.test.ts",
+      "bytes": 6598,
+      "sha256": "8e1de85fca806dce05fe96cb56b877c213019bdade93e23ecb47434c01ef34f5"
+    },
+    {
+      "path": "tests/kuhe-editorial-draft.test.ts",
+      "bytes": 4590,
+      "sha256": "7f3798209b745998f168cb9995e7946f1ba77281353a0d0722cc4f78899aab58"
+    },
+    {
+      "path": "tests/kuhe-editorial-integrity.spec.ts",
+      "bytes": 4807,
+      "sha256": "0d74f7593dd070abf20d49b25b61a9679bcd18b54b025e63215f104814e229cd"
+    },
+    {
+      "path": "tests/kuhe-editorial.spec.ts",
+      "bytes": 9925,
+      "sha256": "37760af5ec324c8b701173f289d48342a212a83207414e180f4a6f47e2e75b38"
+    },
+    {
+      "path": "tests/kuhe-editorial.test.ts",
+      "bytes": 5915,
+      "sha256": "d086c0f2f191274edfff43b57aae8d0625e23850b1935ab8776ecc68a04cf702"
+    },
+    {
+      "path": "tests/kuhe-v2.spec.ts",
+      "bytes": 8885,
+      "sha256": "612ca3e6f30cdae0470527b2d85fdf87a57631e43560aff4596239b31c2e1655"
+    },
+    {
+      "path": "tests/kuhe-v2.test.ts",
+      "bytes": 5154,
+      "sha256": "6000d7adc95fc2e4670329edb4c25de03ad3998348d4e5f56358a031e2acc342"
+    },
+    {
+      "path": "tests/kuhe.spec.ts",
+      "bytes": 6030,
+      "sha256": "3ae07a3820676c76847f36056276a1a357432ab24e36a131497fc3fe8f6d09df"
+    },
+    {
+      "path": "tests/kuhe.test.ts",
+      "bytes": 5016,
+      "sha256": "7bd70c715fb39535061da453146d52002c811c6cf797838b5beea80394dd638e"
+    },
+    {
+      "path": "tests/library.spec.ts",
+      "bytes": 10947,
+      "sha256": "4abc2fb241ebf94edd52d3b29ab913c262596e13b7399e5badbd231725d13eb2"
+    },
+    {
+      "path": "tests/library.test.ts",
+      "bytes": 6860,
+      "sha256": "e40dc225b29d77de4f08e1a1f4e3a7fad3d6393d053cc589364d5a4eb0170830"
+    },
+    {
+      "path": "tests/longmen-editorial-cold-offline.spec.ts",
+      "bytes": 4587,
+      "sha256": "0993ee4f806d0d9fb1174b470fce6dfb6fce87a8d2cfde3332946c267495b962"
+    },
+    {
+      "path": "tests/longmen-editorial-draft.test.ts",
+      "bytes": 5496,
+      "sha256": "3507c52f7780ae72b862e7fc0beb0ca2993a52abf2b84a1c0343ea4008752307"
+    },
+    {
+      "path": "tests/longmen-editorial-integrity.spec.ts",
+      "bytes": 7314,
+      "sha256": "4de9d78ad0bd715e28b4db8ada8af4b303e6226edb665ec38e66dec2350b4309"
+    },
+    {
+      "path": "tests/longmen-editorial.spec.ts",
+      "bytes": 9508,
+      "sha256": "4d49d9362039e718e9372ebae30be8c8bc43ccc54c9117e5752664b7a5ad6467"
+    },
+    {
+      "path": "tests/longmen-editorial.test.ts",
+      "bytes": 7933,
+      "sha256": "6a52840bd1f9e0fb3ae28ff0a25aac7878d784d7921c82456847954973256c9b"
+    },
+    {
+      "path": "tests/longmen-v2.spec.ts",
+      "bytes": 9330,
+      "sha256": "d04e1378cfae4e8f389a5b2e167ce18c5f1d2af5190dcbd45e23f9edfdccddd6"
+    },
+    {
+      "path": "tests/longmen-v2.test.ts",
+      "bytes": 5563,
+      "sha256": "c3cebaffb0f8ed09dd87726597f9b92bb901117b4394a601e4d0f6aba3771d23"
+    },
+    {
+      "path": "tests/longmen.spec.ts",
+      "bytes": 3859,
+      "sha256": "ea47a60d74b3610d7c3da12033ee91fc71f06b02eed9d693e9a01b91c7a612f1"
+    },
+    {
+      "path": "tests/longmen.test.ts",
+      "bytes": 5449,
+      "sha256": "a67295e9633f42fed156ea046613fea922d3dec13b09beaae7aaa6294c76d807"
+    },
+    {
+      "path": "tests/luhua.spec.ts",
+      "bytes": 6280,
+      "sha256": "8745f1276e87d1ab4d4e42d392b0adc18be8de5b7b9084b1b5da8f97ec548ba8"
+    },
+    {
+      "path": "tests/luhua.test.ts",
+      "bytes": 6278,
+      "sha256": "15486b4c7f4541a4f26f88e6d914267df2dedd9fd9cef60dde05d7f21515a794"
+    },
+    {
+      "path": "tests/luoyang-bamboo.spec.ts",
+      "bytes": 8058,
+      "sha256": "ebd0f842bedc079fa4a146b00f6aa0ddac827e8fe4b27632f212c7bb9fc023db"
+    },
+    {
+      "path": "tests/luoyang-bamboo.test.ts",
+      "bytes": 5165,
+      "sha256": "92d486ad66d97e7d09d9b2b1f4a6966fa3239ef92aadc6e8d0244c39e87f45df"
+    },
+    {
+      "path": "tests/north-editorial-cold-offline.spec.ts",
+      "bytes": 4153,
+      "sha256": "d8b0cf0aecacc5869d4990ef20855e613afe5ec935f945a3fe1097671c38c7be"
+    },
+    {
+      "path": "tests/north-editorial-draft.test.ts",
+      "bytes": 9864,
+      "sha256": "875f174ad6b7a7ae5cb4ca19035fdb0b15b55e2617b2082513a020a40fdab152"
+    },
+    {
+      "path": "tests/north-editorial.spec.ts",
+      "bytes": 13491,
+      "sha256": "0d6d2c44472a288e0e7e18c09cf4ac0c85ec8f034ad1fef161d963c51522cde9"
+    },
+    {
+      "path": "tests/north-editorial.test.ts",
+      "bytes": 12024,
+      "sha256": "74ca66235b8748fa2d4bd143d865435302d4400b9b35d5ac8fb6e9e5e1a8a4c1"
+    },
+    {
+      "path": "tests/north.spec.ts",
+      "bytes": 5442,
+      "sha256": "2c59af8b3ec6c0ce957a6b6d80571306bb0e4601a0ea2c8bdd1c2b5b46e18b57"
+    },
+    {
+      "path": "tests/north.test.ts",
+      "bytes": 6144,
+      "sha256": "61061382f9b8a2a5ee9ed29a24661e337df65b6a6c043aa0df8c4433e38562f5"
+    },
+    {
+      "path": "tests/offline-reliability.spec.ts",
+      "bytes": 1311,
+      "sha256": "eebf176f54751add6dd9ff5dc3a571e3bf73d8880ea02df56d4b3981b502a95b"
+    },
+    {
+      "path": "tests/offline-work-gate.test.ts",
+      "bytes": 2087,
+      "sha256": "b2909f262b8d088a6a98e57b0de39c509d4f1208e835a4e8b1b2b071d2bd5961"
+    },
+    {
+      "path": "tests/offline-work-pack.spec.ts",
+      "bytes": 4584,
+      "sha256": "e16020514170092f3ed2404d0924fa6a686afa1c3416a9bb6e300ae60eb954ef"
+    },
+    {
+      "path": "tests/player.spec.ts",
+      "bytes": 19522,
+      "sha256": "c71ffddf53eedeb7d645274fd421adf88240797542031ac7adbdd8a43b3f4714"
+    },
+    {
+      "path": "tests/playthrough.spec.ts",
+      "bytes": 5823,
+      "sha256": "ced8f72e3e8a2ab7107062ceea6b9e131c9a6d02f3d438abd1ddac5a39649b1e"
+    },
+    {
+      "path": "tests/portrait-fallback.spec.ts",
+      "bytes": 1896,
+      "sha256": "2f04b74df084e33d31c7e1bfd296091abda0342b6ecd8f9e958e9d84355b995a"
+    },
+    {
+      "path": "tests/qian-kun-editorial-cold-offline.spec.ts",
+      "bytes": 4480,
+      "sha256": "1edf86d098f68d90fe98d00ad8931c18d45edb11b63e1e36327c83fc52191802"
+    },
+    {
+      "path": "tests/qian-kun-editorial-draft.test.ts",
+      "bytes": 11599,
+      "sha256": "ee95765697b564d62f70a7a4518868275a343b3b0d8390ca6957a2f417e39d50"
+    },
+    {
+      "path": "tests/qian-kun-editorial.spec.ts",
+      "bytes": 12173,
+      "sha256": "cc8ac43ef17f5a9245c8fe2c489c5b1f431e09c2c0d767d54676f78f0543d196"
+    },
+    {
+      "path": "tests/qian-kun-editorial.test.ts",
+      "bytes": 14081,
+      "sha256": "8aa05377da3a026b96f63f89092a2e5b4ff9046e2f6e6e76c2290f23b030798b"
+    },
+    {
+      "path": "tests/qian-kun.spec.ts",
+      "bytes": 11892,
+      "sha256": "8840a940decf8b593772971d562d5e94510e6d8ddd41a80216b6c516952fed36"
+    },
+    {
+      "path": "tests/qian-kun.test.ts",
+      "bytes": 8596,
+      "sha256": "2b5b95f2b9fe3c4a57e67426769c817e1712de218931f4993c140934e3aad375"
+    },
+    {
+      "path": "tests/qingshi-editorial-cold-offline.spec.ts",
+      "bytes": 4594,
+      "sha256": "66d07f05201b853454a3286479554ac3186f2476a0145f0686f8fcef98879719"
+    },
+    {
+      "path": "tests/qingshi-editorial-draft.test.ts",
+      "bytes": 7025,
+      "sha256": "d0c3a0cfbd99e1dce26af45eadc454370762965dc46078fb8cf254f3ce917479"
+    },
+    {
+      "path": "tests/qingshi-editorial-integrity.spec.ts",
+      "bytes": 7221,
+      "sha256": "ee06b4fff27e810cc0a8ee3c3899875f5cc343f9ea972b7327e385603faac01a"
+    },
+    {
+      "path": "tests/qingshi-editorial.spec.ts",
+      "bytes": 13226,
+      "sha256": "6045afdd17334e712f6b75061a84dfbb85a14e26f9ddd0d4d06504295f5ca026"
+    },
+    {
+      "path": "tests/qingshi-editorial.test.ts",
+      "bytes": 8147,
+      "sha256": "8e780c04185ac0e9af81affd8804595e7c02b9136cf9ab6790e67715773253b8"
+    },
+    {
+      "path": "tests/qingshi-v2.spec.ts",
+      "bytes": 12504,
+      "sha256": "fc17792b1e88e9e0f0c4ce6aaa5782ed1b6379dbee750137818c38299690f312"
+    },
+    {
+      "path": "tests/qingshi-v2.test.ts",
+      "bytes": 4120,
+      "sha256": "bc7f9205cec4f08ec7161a51472222562f5fce1258c66ff0ab2bbbbaf6f5db46"
+    },
+    {
+      "path": "tests/qingshi.spec.ts",
+      "bytes": 6742,
+      "sha256": "9edf04c5f1ab1a99e72dd9504aa2b307b58fbf69b83360395718261fd9b9b28b"
+    },
+    {
+      "path": "tests/qingshi.test.ts",
+      "bytes": 6455,
+      "sha256": "9b950e2a976b9950028c8b43775cec62c5ca15173a8b8fdb2f73155e690fa016"
+    },
+    {
+      "path": "tests/routes.ts",
+      "bytes": 712,
+      "sha256": "83ae8d4acda7db4bed7e68bf055b224405968f15499864decf89b7aac8f958e8"
+    },
+    {
+      "path": "tests/royal-letters-cg.spec.ts",
+      "bytes": 9733,
+      "sha256": "40b17f40aa0f1ef1bce4c8df30e9cc1fc8956e6f4f53b0f9abedf225dbe2e529"
+    },
+    {
+      "path": "tests/royal-letters-cg.test.ts",
+      "bytes": 5294,
+      "sha256": "a08661202db0bfb3ff267cb4a6d0369a1d553c2d4991c1e27871ec14aaf9c6e3"
+    },
+    {
+      "path": "tests/runtime.test.ts",
+      "bytes": 4549,
+      "sha256": "51af6b67dad1a0286b0f14629275157b177d2cd2093852ca378cba4737afcee5"
+    },
+    {
+      "path": "tests/sea-editorial.spec.ts",
+      "bytes": 11755,
+      "sha256": "e4309f025c1a3cbe3233412f764c8ba0a1f2d159f194573b80fe2797946f719c"
+    },
+    {
+      "path": "tests/sea-editorial.test.ts",
+      "bytes": 7617,
+      "sha256": "427d3e9be1060bf3ce7a4717887ec5c6818de74ebb4d11a971542ea0ee31e4c5"
+    },
+    {
+      "path": "tests/sea-rigging.spec.ts",
+      "bytes": 9900,
+      "sha256": "4ad868459cc38bd38ad415e3407888b2c6a231c1dae0d43a1e3dcc742a285731"
+    },
+    {
+      "path": "tests/sea-rigging.test.ts",
+      "bytes": 5419,
+      "sha256": "1a2ac8ff4696b6e78983dc55cca291af77191e7c72ff5eb2d512301997d87f55"
+    },
+    {
+      "path": "tests/sea-tide-editorial.spec.ts",
+      "bytes": 12448,
+      "sha256": "a1fe0fbd2564675156ebf6c46b9fdcd12caf6f3c19ae38ba3a628434d351245b"
+    },
+    {
+      "path": "tests/sea-tide-editorial.test.ts",
+      "bytes": 9057,
+      "sha256": "c4bafdfaf34079d64d612904b1f6ff1c6b1f16f8aa6baa8202da574f39930262"
+    },
+    {
+      "path": "tests/sea-tide-v1.test.ts",
+      "bytes": 5664,
+      "sha256": "9c7c8bdd8dbef3ea3eeb79a438f3ebe857631b4caaea9f391745eb7e1fd28295"
+    },
+    {
+      "path": "tests/sea-tide.spec.ts",
+      "bytes": 7537,
+      "sha256": "e01f44dbde2f239a4f1355847ce62bc0c5ccc0bc1941b2788b18e95ce7f3a859"
+    },
+    {
+      "path": "tests/sea-tide.test.ts",
+      "bytes": 5696,
+      "sha256": "18a6f2d2426adc6ecb67cc7a4da5d1cebbb80798f5b0be004f1a9cff9a9f38bf"
+    },
+    {
+      "path": "tests/sea-v1.test.ts",
+      "bytes": 5194,
+      "sha256": "8c9da203017d47bbf5fe671af15d5f47947b91e4ce9dbcf4c5ee32e42d70ca1a"
+    },
+    {
+      "path": "tests/sea.spec.ts",
+      "bytes": 5414,
+      "sha256": "49a2398f9c3c8a7a5bf381c60dd593d2b66189d36bf15e1ae84b37e4a6b73c33"
+    },
+    {
+      "path": "tests/sea.test.ts",
+      "bytes": 5286,
+      "sha256": "0238c2f99051098d9358d2c54e9a21087a1f9164dfd5e64cf76dc6dc40d2abf0"
+    },
+    {
+      "path": "tests/service-worker-cache-drain.ts",
+      "bytes": 1794,
+      "sha256": "f450f7d95a48f477d8ad3ca4eae21a5171faefa1d20c602d10b1e2841ef9cac4"
+    },
+    {
+      "path": "tests/service-worker-update.test.ts",
+      "bytes": 2623,
+      "sha256": "260a957fdb8840c08838a20f7f165177314abdb90271c82afdff6313e1d4d3b5"
+    },
+    {
+      "path": "tests/seven-editorial-archive.spec.ts",
+      "bytes": 3303,
+      "sha256": "846d9fea738587cae8ca50349ede82838fcab8c4a58e66063cb71285743db623"
+    },
+    {
+      "path": "tests/seven-questions.spec.ts",
+      "bytes": 7553,
+      "sha256": "01c1c34ac9a51b9c6e9aa0a2a470d18ff7b127b9a89570e31437a94d6c9f493f"
+    },
+    {
+      "path": "tests/seven-questions.test.ts",
+      "bytes": 10054,
+      "sha256": "7ed242843f07f090201e2d9a0f35bf7778a054930bbdfa3be467cac394b4ef95"
+    },
+    {
+      "path": "tests/shell-update.spec.ts",
+      "bytes": 3650,
+      "sha256": "009c3bb7474f5260a9b068aeda636d0e1774841237c19d8a00a4122523332598"
+    },
+    {
+      "path": "tests/short-landscape.spec.ts",
+      "bytes": 3672,
+      "sha256": "4b1b5ad34898165cdb16367dd4a183fd4b7ebfc75d1778ee985c59b15f65750a"
+    },
+    {
+      "path": "tests/storage-failure.spec.ts",
+      "bytes": 3484,
+      "sha256": "8227fda6d3695b0200b0f072c71c29f6bd1e989044e45e3697bf39acf6ec2e4e"
+    },
+    {
+      "path": "tests/storage-reliability.test.ts",
+      "bytes": 1685,
+      "sha256": "b73f750d03b079fcfe2e321a9878b8a0d26cf881289eeefc93e13e2fcda5b3f3"
+    },
+    {
+      "path": "tests/swords-art.spec.ts",
+      "bytes": 11302,
+      "sha256": "6aa610d9401556b61f3fbe906048ccb0882f5406254c57fab769146b571c9647"
+    },
+    {
+      "path": "tests/swords-art.test.ts",
+      "bytes": 7303,
+      "sha256": "e069f8b6ace8b95b668c34aeab37fb6fd7b36bfeb2a493bb971afea944e121d9"
+    },
+    {
+      "path": "tests/taihua-editorial-cold-offline.spec.ts",
+      "bytes": 4640,
+      "sha256": "bb8b2654fb627c7916def070dce18912ecd0315123ffd0e50f0223df0cccdb51"
+    },
+    {
+      "path": "tests/taihua-editorial-draft.test.ts",
+      "bytes": 11570,
+      "sha256": "e564194dab0ff7cba1d81bc3240991727108ea3f6287a854f92094093e77fce0"
+    },
+    {
+      "path": "tests/taihua-editorial-integrity.spec.ts",
+      "bytes": 7558,
+      "sha256": "de4ac1e3a562f3085dc188c86c3a966f3fd8950aa33da7aa5353dbf9237207d5"
+    },
+    {
+      "path": "tests/taihua-editorial-stage.spec.ts",
+      "bytes": 2294,
+      "sha256": "91295292312672f0ec49e217dae9fad440cb3132e49b4e9c90249be6de96731c"
+    },
+    {
+      "path": "tests/taihua-v1.spec.ts",
+      "bytes": 3028,
+      "sha256": "613724c59a8e8a2af0dbd66170c064c59d1838f6809a850253f7b6e7f07628a7"
+    },
+    {
+      "path": "tests/taihua-v1.test.ts",
+      "bytes": 1661,
+      "sha256": "757ca4317d6b57f7bb6276750ef7e38ea172d9ed324cc3c770e82e4baf55b1a7"
+    },
+    {
+      "path": "tests/taihua-v2-upgrade.spec.ts",
+      "bytes": 7651,
+      "sha256": "f1f2726e1a223e0583800c70108aa9ce9c2bf30fe6ce9f804988ed85c936f03b"
+    },
+    {
+      "path": "tests/taihua-v2.spec.ts",
+      "bytes": 7804,
+      "sha256": "1480d158cc45fb4e553bc74e5e9d0569a6d57aebe76f827e4b9149386ecd03d3"
+    },
+    {
+      "path": "tests/taihua-v2.test.ts",
+      "bytes": 9352,
+      "sha256": "e3b7d0e5ea0280e2e279208c22e096e65377f35c058f13604f71a0b86b308d3e"
+    },
+    {
+      "path": "tests/taihua.spec.ts",
+      "bytes": 8345,
+      "sha256": "4b6292ce7080e961ffb0c1de71f200a130a661cac68bddb14053d32a34ffc9ba"
+    },
+    {
+      "path": "tests/taihua.test.ts",
+      "bytes": 12093,
+      "sha256": "0fb9cae5faecdd7921f8f356313d6de37d3316eae7498236f0861d61f9d3f32b"
+    },
+    {
+      "path": "tests/twelfth-life-editorial-cold-offline.spec.ts",
+      "bytes": 4936,
+      "sha256": "61238423148a63758a1abdb48961bbaab74fef398cd09fa6549db4be28d20d6d"
+    },
+    {
+      "path": "tests/twelfth-life-editorial-draft.test.ts",
+      "bytes": 11706,
+      "sha256": "6cd5937a98cd8aa75123b0279e331b327fca06c0b634d33736fe47ff278e1349"
+    },
+    {
+      "path": "tests/twelfth-life-editorial-integrity.spec.ts",
+      "bytes": 7566,
+      "sha256": "22b5ca341c6e8802896b1b2900a5a1ca3f627b7607d7a1d1e83f8c3122b433b1"
+    },
+    {
+      "path": "tests/twelfth-life-editorial-stage.spec.ts",
+      "bytes": 3083,
+      "sha256": "d095c763fca43bd362930dc80bcc3e1af212ffcb52b27dde68af83fac8dbbd32"
+    },
+    {
+      "path": "tests/twelfth-life-editorial.spec.ts",
+      "bytes": 3327,
+      "sha256": "f8f83fff5636a5b5ae57e0c7e2fe716a4e8b40275adf83a115ff4901905d39c6"
+    },
+    {
+      "path": "tests/twelfth-life-editorial.test.ts",
+      "bytes": 12477,
+      "sha256": "65d742bb87a7934c0bf80cf52fbff3cd746483a78db750ddb17bf2068406c2ae"
+    },
+    {
+      "path": "tests/twelfth-life-v2.spec.ts",
+      "bytes": 12418,
+      "sha256": "e917c42ca6970b5a27c2bc89cd7f5f81e9e6546dc33ff831f0a9190d348fd3a6"
+    },
+    {
+      "path": "tests/twelfth-life-v2.test.ts",
+      "bytes": 3601,
+      "sha256": "4ef26442b7fd8bbea5165b4edbd67f48f24e09c344a549f169e82cef0ac14edd"
+    },
+    {
+      "path": "tests/twelfth-life.spec.ts",
+      "bytes": 8207,
+      "sha256": "44bfe3770fa430993cefa61b124f8d7de9a2d4e542c6c1dd840cb75830bdeecf"
+    },
+    {
+      "path": "tests/twelfth-life.test.ts",
+      "bytes": 6342,
+      "sha256": "720a86cc7002d9276a82b093c0c7e5d40ef12036cb79d138199a691da2942ce7"
+    },
+    {
+      "path": "tests/twelfth.spec.ts",
+      "bytes": 2581,
+      "sha256": "4c3370a947aa23321e55bea4d73df665c46fdb35a157be91cc89ce69fa0728c3"
+    },
+    {
+      "path": "tests/twelfth.test.ts",
+      "bytes": 4830,
+      "sha256": "51ced55f1cb6700d0a5ce8ed28df704578f16226245fb186ab0f5b58dbe151b7"
+    },
+    {
+      "path": "tests/two-swords.spec.ts",
+      "bytes": 8362,
+      "sha256": "04d2f0f2fce08dbb59bb012f3985b982965529b114f17efaabbc3ba444a7e6f5"
+    },
+    {
+      "path": "tests/two-swords.test.ts",
+      "bytes": 7541,
+      "sha256": "c4dffd2ea1d2c7ffa7bd840354c8bb191e1c8cd1c770f0437542bc6a5b017b58"
+    },
+    {
+      "path": "tests/v6-cg.spec.ts",
+      "bytes": 5212,
+      "sha256": "0ea7f7bc15093bb8b7272351cea3ab76d0610377d3eb3f9e988e76235ad40142"
+    },
+    {
+      "path": "tests/v6-compat.spec.ts",
+      "bytes": 1673,
+      "sha256": "c7764dcf9c5f0f8c7d5510cc70d53be041fddda97c3277cc9a56978773efc96d"
+    },
+    {
+      "path": "tests/v6-compat.test.ts",
+      "bytes": 1415,
+      "sha256": "27a2d42e62d13ae255149a388747b81c6422f3894bdbd3e01c8cb5ee9caca47b"
+    },
+    {
+      "path": "tests/v6-gallery.spec.ts",
+      "bytes": 1157,
+      "sha256": "8c9182d9eebe5de7b097fadc4a82c03b01adf63103cf4c36e9f4d58c652f9682"
+    },
+    {
+      "path": "tests/v6-portrait-states.spec.ts",
+      "bytes": 2201,
+      "sha256": "0ce99eff17e45f77010fb376dcf3eeb1b39695609b91055db1189039ace18dd1"
+    },
+    {
+      "path": "tests/vn-routes.ts",
+      "bytes": 422,
+      "sha256": "f35f37955a743fc45f795bc88db32da87d32b3bbcf5c1008cb4d92178f08c361"
+    },
+    {
+      "path": "tests/vn-runtime.test.ts",
+      "bytes": 7633,
+      "sha256": "545d83ae305981f5ae53941eae7ff078f2783d14e3769a79daff7c395facdd8a"
+    },
+    {
+      "path": "tests/white-stone.spec.ts",
+      "bytes": 5551,
+      "sha256": "eaf8c04a31a17503279569772a4f5d63ddcbbbb06d42bc3eaa48ab0a7775380d"
+    },
+    {
+      "path": "tests/white-stone.test.ts",
+      "bytes": 4469,
+      "sha256": "c297fc55afda4e08dbcf71ee69c09d44b21f14d2172c59530ae6ba26e49b893e"
+    },
+    {
+      "path": "tests/xuanmen.spec.ts",
+      "bytes": 5229,
+      "sha256": "843d0649dd4d782048bc72c22ad66a395e725559c11f1201498c4e9d212775bd"
+    },
+    {
+      "path": "tests/xuanmen.test.ts",
+      "bytes": 4307,
+      "sha256": "7360c2136a360bf8769cf87b62f260482858a735bf8b56ba9b606dd5d6356fe2"
+    },
+    {
+      "path": "tide-v5.html",
+      "bytes": 637,
+      "sha256": "d896babc2c7e8b677ae100e5b91ce4165634e3d40e3da985ca19094c0929080e"
+    },
+    {
+      "path": "tide-v6.html",
+      "bytes": 619,
+      "sha256": "e9c32e71b63bc514a37004dae5b4dcb5cc5e5f93a2e2638aa1ef206c58edfba7"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 273,
+      "sha256": "8cf1fa994dfba825f65667d1242dfeb78bdfc344ed07dbd7230ec877c0f8b652"
+    },
+    {
+      "path": "twelfth-life-v1.html",
+      "bytes": 397,
+      "sha256": "5202f9c3a0a59388a4448579fba10268e2706dd60319e13fa0d4ef424a374e8f"
+    },
+    {
+      "path": "twelfth-life-v2.html",
+      "bytes": 406,
+      "sha256": "0023be9d42fefda472142b11b4121c33b033867e66f8a3c6946b788bb97ff664"
+    },
+    {
+      "path": "twelfth-life.html",
+      "bytes": 400,
+      "sha256": "6f2d4ef794b55310ce15464cf09d262c287873421a8b4e06afd78fe1afffe232"
+    },
+    {
+      "path": "twelfth.html",
+      "bytes": 507,
+      "sha256": "093decd8fe064932970fa8b0ccc57ebc674393a88278df95f39f9a3e5ebbe385"
+    },
+    {
+      "path": "two-swords-v1.html",
+      "bytes": 401,
+      "sha256": "17bff2f8ad524c348cad500ddd4980e97376cdd132bb52224a81f2aa1490afc8"
+    },
+    {
+      "path": "two-swords.html",
+      "bytes": 401,
+      "sha256": "17bff2f8ad524c348cad500ddd4980e97376cdd132bb52224a81f2aa1490afc8"
+    },
+    {
+      "path": "vite.config.ts",
+      "bytes": 1513,
+      "sha256": "8ea7e955df394fc208570ba7ca905b88585dd6f9f47b1ee25832e11809ccfa00"
+    },
+    {
+      "path": "white-stone.html",
+      "bytes": 387,
+      "sha256": "c367779701d341cec06327f65b12e395a6a3138ba20f4cfe995bac603ade2589"
+    },
+    {
+      "path": "xuanmen.html",
+      "bytes": 410,
+      "sha256": "340aaadf16d5e12c38fce88121f530e1d19314998e61cd449dfb57c5aeaac431"
+    }
+  ],
+  "privateBoundary": "109 ignored local archive source files SHA-pinned by audit index, not claimed present in Git tree"
+}

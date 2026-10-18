@@ -1,0 +1,104 @@
+{
+  "currentRC": "fcef368840ab9d69795b481f2a42b9a0491affc8",
+  "priorRC": "ec53af4ec75f352b52ba6a85bd818510b890dc10",
+  "allSourcePathsCompared": 868,
+  "onlySourceChange": [
+    "src/player.ts"
+  ],
+  "sameRuntimeCatalogScriptsGeneratedAndArt": true,
+  "runtimeContentHashesVerified": [
+    {
+      "path": "src/generated/kuhe.json",
+      "sha256": "8a38c754945eef2c639e1173319363074c2be59be8bdae2e9bd80466d7b6c782"
+    },
+    {
+      "path": "src/generated/qingshi.json",
+      "sha256": "744ec03d02883390cbc7fb3ca34cf8b3508c245ce7a213f602b14f344f26bbb7"
+    },
+    {
+      "path": "src/generated/two-swords.json",
+      "sha256": "802f27aad2ffbeb1127fe4d4d8dbbf572468aae274c10875df3c93626e7825c8"
+    },
+    {
+      "path": "src/generated/seven-questions.json",
+      "sha256": "e3aac7f5b3ca322f82f47de4cf4e03115ef74f05e3eafde68f66e3a36af7e280"
+    },
+    {
+      "path": "src/generated/jade-thieves.json",
+      "sha256": "0b0895a8ca463ff9405570287dee102805c7a33be1c41001015f78751fadbe9b"
+    },
+    {
+      "path": "src/generated/jade.json",
+      "sha256": "15286916bf700681b252fc9ccf2411e22312853913f6e4f999cd40c4342bf63f"
+    },
+    {
+      "path": "src/generated/sea.json",
+      "sha256": "3a83225f2dc444f478d14f7044f01e7e9cc411864c304a973129d6659b56315b"
+    },
+    {
+      "path": "src/generated/sea-tide.json",
+      "sha256": "1ec4161b9bb090d706ef4553ef56e203364f0285dfb1812edf88e41a4d6747b3"
+    },
+    {
+      "path": "src/generated/north.json",
+      "sha256": "5e10d2b73529ad78558e0c8c29661e4a15c1f6a74cf22cf7ea3d631e93782350"
+    },
+    {
+      "path": "src/generated/qian-kun.json",
+      "sha256": "2241a5b2f6eb8fa579338322330200a5520be554f147774d1eaf8dc667e188a3"
+    },
+    {
+      "path": "src/generated/north-notes.json",
+      "sha256": "a03a6f206b63021f88a615d4589d9da30c2ec66d113cfba754a9788ee633ff17"
+    },
+    {
+      "path": "src/generated/dead-ranking.json",
+      "sha256": "0cba7ac64b2e068757855c8bfcaa609b93c362d60951f07819eb6efb0222d6cc"
+    },
+    {
+      "path": "src/generated/luhua.json",
+      "sha256": "da48471815a1a8cab070524de762f917288669759f6ad35320172d1f62444b2a"
+    },
+    {
+      "path": "src/generated/twelfth-life.json",
+      "sha256": "88b09a5bac7d009de7ffd9fd51aee5811b69338657247f3d79254ba4f565ce9f"
+    },
+    {
+      "path": "src/generated/luoyang.json",
+      "sha256": "4c35605bd5f396fe5e01aac65fadd4f615bbb3a50d6acc85fb5c7b9bae450419"
+    },
+    {
+      "path": "src/generated/bamboo.json",
+      "sha256": "33144d4d35bca6f5283933feb381e859885861645ac09ab24b8c653abb699e8b"
+    },
+    {
+      "path": "src/generated/xuanmen.json",
+      "sha256": "075d66262459a02d7551d074e9a9d340ca0726330935a06cf8ec390473a2706d"
+    },
+    {
+      "path": "src/generated/white-stone.json",
+      "sha256": "0198d0e0b949a7f2729113830fae34a6488a92e5930150b7ae1fa0954d8bfab2"
+    },
+    {
+      "path": "src/generated/beyond-ranking.json",
+      "sha256": "cde9f312076068bc9b63cff919f657667f8299694bf04baee3f323847c947a63"
+    },
+    {
+      "path": "src/generated/taihua.json",
+      "sha256": "663f6334a5660b64cf5270c4c27e694ea7cafadd2a9173b6a6be001d21e75872"
+    },
+    {
+      "path": "src/generated/longmen.json",
+      "sha256": "477d6c53d45dd8485c28fd9dcd9ca6027a52004d61790aca7d5347f663f1ec89"
+    },
+    {
+      "path": "src/generated/dongting.json",
+      "sha256": "a91a3d86a60a3838a933a1bb71db48ba91e910b9a7f53ffc6bc8d8cf345bc368"
+    },
+    {
+      "path": "src/generated/twelfth.json",
+      "sha256": "d47717346b56a8c02ccd557ed89c4587223400a2a3a169a955a09fe4eb08c6a0"
+    }
+  ],
+  "scope": "Runtime story/choice/art evidence remains byte-bound to identical inputs. Browser and whole-player claims require the new full suite. Performance measurements remain explicitly attributed to the old RC."
+}

@@ -1,0 +1,11 @@
+{
+  "sourceRC": "ec53af4ec75f352b52ba6a85bd818510b890dc10",
+  "npmCiExit": 0,
+  "buildExit": 0,
+  "unitPassed": 474,
+  "unitFailed": 0,
+  "unitExit": 0,
+  "generatedManifestDifferences": [],
+  "missingPrivateBaselineCount": 40,
+  "publicArchiveIntegrity": "PARTIAL, intentional excluded private baseline warnings; live source/resource omission still fails"
+}

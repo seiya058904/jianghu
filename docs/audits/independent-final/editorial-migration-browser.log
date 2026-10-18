@@ -1,0 +1,15 @@
+
+Running 7 tests using 1 worker
+
+(node:52064) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\editorial-save-migration.spec.ts:21:1 › real pre-audit auto is corrected, raw manual and downloaded backup stay byte exact (569ms)
+  ok 2 tests\editorial-save-migration.spec.ts:42:1 › old manual load and file import preserve original bytes while applying corrected text (398ms)
+  ok 3 tests\editorial-save-migration.spec.ts:60:1 › failed editorial backup cannot replace either old auto or occupied manual slot (440ms)
+  ok 4 tests\editorial-save-migration.spec.ts:84:1 › auto-only quota keeps authentic old auto and a downloadable original backup (424ms)
+  ok 5 tests\editorial-save-migration.spec.ts:99:1 › import backup failure preserves the current session and raw auto (286ms)
+  ok 6 tests\editorial-save-migration.spec.ts:117:1 › ordinary current manual replacement does not require or accumulate migration backups (338ms)
+  ok 7 tests\editorial-save-migration.spec.ts:135:1 › root and subpath work downloads retain old-save compatibility through cold offline reload (1.7s)
+
+  7 passed (5.0s)
+BROWSER_EXIT=0
