@@ -64,7 +64,7 @@ function render(complete = true) {
   document.body.dataset.edition = isChronicle?'chronicle':isCampaign?'campaign':'halfstep';
   document.body.dataset.contentVersion = isCampaign?campaignEdition.version:'';
   dialog().addEventListener('close', () => { inputUntil = 0; dialogReturn?.isConnected ? dialogReturn.focus() : document.querySelector<HTMLElement>('[data-action="saves"]')?.focus(); syncControls(); });
-  if (mode === 'play') { present(complete); if(pendingDraftBackup&&!persist())startupError=''; }
+  if (mode === 'play') { present(complete); if(pendingDraftBackup&&(campaignEdition.previousContent||campaignEdition.editorialContent)&&!persist())startupError=''; }
 }
 function persist() {
   if (!session) return false;
