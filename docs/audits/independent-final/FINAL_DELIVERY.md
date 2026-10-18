@@ -1,10 +1,10 @@
 # Jianghu / 宋世江湖 · 独立全面审计与交付
 
-**总状态：新SW修复本地完整验收通过；修复版尚未发布，正式旧SW升级复验待完成。F18 PARTIAL／F24 BLOCKED。**
+**总状态：INCOMPLETE；产品已完成部署及线上验收，28 PASS／1 PARTIAL／1 BLOCKED／0 FAIL。F18性能PARTIAL、F24作者库体积BLOCKED。**
 
 本稿依据委托 §17 整理。当前冻结RC为 `113872382f2697f94bbf8f5dc3c62692641cf731`：修复SW更新后旧HTTP缓存首页干扰离线入口，产品仅public/sw.js变化、dist仅sw.js变化，三份相关测试同步增强。新build exit0，CI环境474/474单测exit0；完整492项E2E已单run通过：492/492、0失败／跳过／flaky／重试、exit0、19.2分钟，8 workers，五类逐文件指纹运行后全部核同（`rc-sw-e2e-summary.json`）。d62f完整492/492、exit0、19.0分钟及a04完整492/492均保留为历史证据，不能代替本次新RC。旧ec53完整491／1、fcef中止286／1、首次公共CI473／1及真实旧SW离线失败分别保留，不拼接通过数。
 
-正式67eb的Verify／Pages、351个artifact与HTTPS文件逐字节一致及鲜Chrome交互已有实证；它们不覆盖旧SW原地更新的失败，也不代表后继SW修复RC已正式部署。
+修复产品已随公共 `f48614493ec4340355602f77d64b19c02220781e` 正常快进部署，Verify／Pages均success；对应CI artifact与正式HTTPS351/351逐字节相同，鲜Chrome26入口及真实67eb持久窗口严格升级后离线阅读通过。后续仅同产品代码的公开回执文档同步、最终SHA云端／线上复核及私有收尾；最终精确公共SHA另由父最终私有receipt绑定，避免文档自指SHA循环。
 
 ## 一、原典改编与可玩性
 
@@ -48,7 +48,7 @@
 |历史a04完整E2E，rc-acceptance-e2e.log|492/492，0失败/跳过/flaky/重试，exit0|单run36.5分钟；原断言／次数／超时不变，五类指纹运行后逐项一致。|
 |首次公共f1d4b377推送及云端检查|普通push成功；Verify39101353779、Pages39101353730均FAILED|Pages473/474，GHA测试通道预期错误；后继67eb已云端通过，不抹去首次失败。|
 |历史d62f完整E2E，rc-ci-e2e-summary.json|492/492，0失败／跳过／flaky／重试，exit0，19.0分钟|单run、8 workers、五类指纹未变；不代替当前SW RC。|
-|SW HTTP缓存专项|VM 6/6、root／subpath浏览器原2失败→修后2通过|独立8阶段机制probe与真实旧SW失败分级，修复版正式升级尚待验证。|
+|SW HTTP缓存专项|VM 6/6、root／subpath原2失败→修后2通过；正式67eb→f486持久窗口PASS|严格旧SW redundant／active及controller activated后，断网库16卡、龙门lm_borrow_1→2，errors/http均空。|
 |当前113 SW完整E2E，rc-sw-e2e-summary.json|492/492，0失败／跳过／flaky／重试，exit0，19.2分钟|单run、8 workers，五类全部hash运行后核同；原断言／次数／超时未削弱。|
 
 图像183个栅格解码／alpha、27条catalog立绘、23篇双尺寸开局和重点真实舞台已核；699个候选资源绑定不等于699次可见触发，有CG遮挡及override记录。移动尺寸、焦点／键盘／确认流程有浏览器证据，物理移动设备与读屏器另列未验证。
@@ -72,23 +72,23 @@
 
 完整历史bundle为项目外 `../Jianghu-independent-20261018/jianghu-author-before-slim.bundle`，1,118,742,731字节，独立复核SHA-256 `1a52a555021588f4134237aaa5dfc3c926de00b7021cc84842dfc49e1088e9d7`，`git bundle verify` 确认complete history及6 refs，见 [git-bundle-verify.log](git-bundle-verify.log)。完整Git维护副本与6655对象／refs的逐项记录见 [git-maintenance-backup.json](git-maintenance-backup.json)；refs SHA `4e7f0a3bd6ea5f7e94936eaa5d4f14a9d58cc602e2602d06f4337f3689c83e53`，对象清单SHA `19bbab566261aba178802f6e724774a483efe84b1b46dc37d056e90d9d017ca2`。恢复应先在项目外新目录clone完整bundle、核refs，再按PNG清单复制并验SHA；不要直接覆盖当前作者库。
 
-首次推送前公共9885dfed快照的中间预审为2,250文件／73,556,666字节，最大文件 `docs/art/ASSET_MANIFEST_V6.json` 4,221,144字节（文本JSON）；既有公开 `ferry.png` 2,701,831字节按原hash精确保留。这些**不是首次公共f1d4b377或最终发布HEAD的计量**；最终文档同步后须重新写真实数。
+已发布f486快照真实计量为2,451文件／88,697,548字节，最大文件 `docs/art/ASSET_MANIFEST_V6.json` 4,221,144字节；既有公开 `ferry.png` 2,701,831字节按原hash精确保留。此计量绑定已验证f486，后续同产品回执文档同步后的最终公共HEAD数量及字节另记，不将其冒作最终值。
 
 小于1GiB目标尚未完成。普通无过期repack已在隔离副本和作者库完成；作者库维护前后6655对象/refs/fsck核同，节省25,627,219 bytes。该步骤仍不足以达标，未重写历史。**仅若最终需要替换作者库／每日库或重写既有历史，才需另行明确批准该动作。** 这项阻断不撤销已经授权的正常公共main快进发布，也不要求对普通发布重复确认。
 
 ## 四、Git／发布
 
-作者基线 `master@7a2c22f74c46d74f07af8bd1a45893ec15daa49b`；当前冻结验收RC为 `113872382f2697f94bbf8f5dc3c62692641cf731`。首次f1d4b377推送后云端测试失败；后继公共 `67eb150348013c06bdf328a95589395b3c987aa0` 已普通FF发布，Verify39103362100／Pages39103362099均success。该部署来源d62产品；当前SW修复版尚未正式发布。
+作者基线 `master@7a2c22f74c46d74f07af8bd1a45893ec15daa49b`；产品冻结RC `113872382f2697f94bbf8f5dc3c62692641cf731`，发布作者来源2a2。公共67eb→`f48614493ec4340355602f77d64b19c02220781e` 普通FF push exit0；精确Verify39105624826、Pages39105624823均success。首次f1d4b377云端失败与67eb旧V6窗口失败保留历史，不再作为当前产品部署待定。
 
 公共main基线 `a6e5d5947ce2d06c6c2ab83e1cfd515c95191959`，与作者历史无共同祖先。公开快照在隔离clone上沿真实main作**普通增量／快进推送**；原典全文、私档、候选原图、env/key、巨量历史证据不公开。未改冻结预期哈希，未强推、未新增LICENSE；已授权的普通FF发布可在门禁完成后继续，无需再问一次。
 
-正式67eb的 [Verify39103362100](https://github.com/seiya058904/jianghu/actions/runs/39103362100) 与 [Pages39103362099](https://github.com/seiya058904/jianghu/actions/runs/39103362099) 均成功，351个CI artifact文件与正式HTTPS逐字节相同。鲜Chrome双尺寸26入口／交互／刷新通过；但发布前保留的真实V6旧SW窗口原地更新后离线index失败。此失败使旧SW升级项仍待收敛，不能被鲜窗口结果覆盖。新RC完整回归及正式67eb→修复版持久窗口升级／离线结果仍待后续回执，见 [RELEASE_VALIDATION.md](RELEASE_VALIDATION.md)。
+正式f486的 [Verify39105624826](https://github.com/seiya058904/jianghu/actions/runs/39105624826) 与 [Pages39105624823](https://github.com/seiya058904/jianghu/actions/runs/39105624823) 均成功。对应CI artifact与正式HTTPS351/351文件、37,008,548字节全同，artifact tar SHA-256 `3b08472977212f10cd412312ddd77e82fab388a1b2cf7cba317f24275dbb3e99`。鲜Chrome双尺寸26入口／交互／刷新PASS、ONLINE_EXIT0，error／console／http／requestfailed均空；真实67eb持久profile→f486等待严格生命周期屏障8791ms后，断网作品库16卡、龙门lm_borrow_1推进到2，errors／http均空。见 [RELEASE_VALIDATION.md](RELEASE_VALIDATION.md) 及项目外artifact-online-sw-accepted.json、online-sw-accepted/result.json、live-update-post67eb-strict/result.json。此处回读实际回执，不声称本代理重跑。
 
-正式URL：[作品库](https://seiya058904.github.io/jianghu/)、[龙门](https://seiya058904.github.io/jianghu/longmen.html)、[死人争榜](https://seiya058904.github.io/jianghu/dead-ranking.html)、[山河璧](https://seiya058904.github.io/jianghu/jade.html)、[芦花渡](https://seiya058904.github.io/jianghu/luhua.html)。正式67eb鲜Chrome证据与旧V6升级失败分别登记；当前SW修复尚不能标这些线上入口已更新成功。
+正式URL：[作品库](https://seiya058904.github.io/jianghu/)、[龙门](https://seiya058904.github.io/jianghu/longmen.html)、[死人争榜](https://seiya058904.github.io/jianghu/dead-ranking.html)、[山河璧](https://seiya058904.github.io/jianghu/jade.html)、[芦花渡](https://seiya058904.github.io/jianghu/luhua.html)。鲜Chrome入口／交互与67eb持久SW更新各有正式f486证据；历史V6窗口失败不删除，受控真实a6→113根／子路径复验和正式67eb→f486升级分别陈述。
 
 ## 五、最终验收矩阵
 
-单一状态表为 [FINAL_ACCEPTANCE.md](FINAL_ACCEPTANCE.md)，最终分类数以实际收敛为准。d62历史完整492、67eb云端及鲜窗口均有通过记录；真实旧V6 SW更新后离线失败仍保留，当前113 SW修复完整492已通过，修复版正式部署与持久窗口升级仍待完成。F24仍BLOCKED，F18仍PARTIAL；不得宣称30/30或FULLY VERIFIED & DEPLOYED。
+单一状态表为 [FINAL_ACCEPTANCE.md](FINAL_ACCEPTANCE.md)：**28 PASS／1 PARTIAL／1 BLOCKED／0 FAIL，总体INCOMPLETE**。当前113完整492与正式f486部署、351文件artifact／HTTPS核同、鲜窗口26入口及67eb持久窗口严格升级均已通过。F18性能PARTIAL、F24作者库体积BLOCKED；不得宣称30/30或全部边界已验证。
 
 外部项一律 **EXTERNAL NOT VERIFIED**：真人试读、真人阅读耗时、真人审美／愿意投入时长、Android真机、Safari、Firefox、读屏器。自动化、代理实际看图与真人试玩不是同一证据等级。
 
@@ -100,8 +100,8 @@
 - 原始检查：当前RC使用 `rc-sw-build.log`、`rc-sw-tests.log`、`rc-sw-input-delta.json`、`rc-sw-e2e-summary.json` 及五类 `rc-sw-*-manifest.json`。669产品指纹 `e4bf0b54b8d9035ce9f384d8c221924451dca84769073d8c9eb43c8cbce816c9`；165测试 `bfeaee87e401c565829946dc38d65b33f7412b476679a12e8c212b77ffc3a0d6`；869部署源 `afd05b04a097e6ea9756f58ae8a0dd3c1e58fc9965f5625dc9af9971f0e14594`；351dist `797a6a2d1c252c45eadd59585a32cd23a636b129b7445c5cb387efebad538ded`；918审读路径 `68b5ee0c6c69b4f77f40672fbef3cd24c84ab11ae260798672bd8d487e7189b8`。`rc-ci-e2e-summary.json` 只绑定旧d62的492/492；全部旧失败、中止及历史通过原始证据保留。
 - 恢复依据：BEFORE／AFTER逐文件清单、PNG恢复清单与完整bundle验证；全尺寸原图和完整浏览器JSON／截图保存在项目外 `../Jianghu-independent-20261018/`，库内只留≤800px精选WebP与纯文本索引。路径及哈希是恢复凭据，不是删除候选素材或改写历史的授权。
 
-本稿不会以文档齐全或鲜窗口通过替代旧SW升级验收。当前113 SW修复已完整492通过，仍需正式部署后持久窗口更新／下载／断网入口结果；体积与设备边界仍未关闭。
+产品部署与当前指定线上验收已完成；剩余公开工作是同产品代码的回执文档同步和最终SHA云端／线上复核，私有收尾仍须绑定最终计量。体积与设备边界继续如实保留。
 
-私有提案完整性补证：最新中间候选为0f58来源→f1f8候选，478项私有附加文件边界保留，当前作者根未替换、提案无remote、公共镜像不含私档。先前be56235→ada1ecf的2,527追踪路径、918pins、478项56,019,899字节及329,656,131逻辑／338,310,184 allocation／.git49,834,415字节只是 [daily-candidate-validation.json](daily-candidate-validation.json) 所载历史快照，**不是最新候选或最终计量**。SW修复和最终回执文档还须同步与外置复验；候选低于1GiB不表示作者根F24达标，也不构成切库授权。
+私有提案完整性补证：最新候选28a023…来自作者2a2、产品代码113，2,594追踪路径及478项私有附加文件保留，冷CI环境单测474/474 exit0；不是仅有旧d62验证。当前作者根未替换、提案无remote、公共镜像不含私档。末回执文档同步及最终候选计量待项目外closing核验；旧329MB与0f58→f1f8等均为历史快照，不能当最终值。候选低于1GiB不表示作者根F24达标，也不构成切库授权。
 
-生命周期与跨平台复核补充：首次正式V6窗口只证明调用update并刷出新player、收到包ready后离线失败；原async身份guard未可靠确认新SW接管，已关闭无cache dump，不唯一追认层。另有严格Promise(old redundant/active与controller activated)的真实a6 Git冷建四case：原策略根/子路径均复现，113两路径根/index16卡与龙门1→2、page/HTTP0，actual-v6-upgrade-summary/result可核。当前正式67eb持久profile已改同生命周期屏障，后继修复部署尚待信号。67eb CI artifact↔正式HTTPS确351/351原字节同；Linux CI↔Windows d62只有347/351原字节同，4个offline清单仅数组顺序不同，排序逐项相同，无增缺或重复，ci-windows-first-artifact-comparison.json。公开本地Windows351同作者Windows是另一独立结论。
+生命周期与跨平台复核补充：首次正式V6窗口只证明调用update并刷出新player、收到包ready后离线失败；原async身份guard未可靠确认新SW接管，已关闭无cache dump，不唯一追认层。另有严格Promise(old redundant/active与controller activated)的真实a6 Git冷建四case：原策略根/子路径均复现，113两路径根/index16卡与龙门1→2、page/HTTP0，actual-v6-upgrade-summary/result可核。正式67eb持久profile已用同生命周期屏障更新至f486并PASS，旧redundant、active与controller均activated，断网库16卡与龙门1→2成功；历史67eb的原V6窗口失败仍按其不完整guard边界保留。67eb CI artifact↔正式HTTPS确351/351原字节同；Linux CI↔Windows d62只有347/351原字节同，4个offline清单仅数组顺序不同，排序逐项相同，无增缺或重复，ci-windows-first-artifact-comparison.json。公开本地Windows351同作者Windows是另一独立结论。

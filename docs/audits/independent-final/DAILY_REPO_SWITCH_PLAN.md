@@ -55,3 +55,9 @@ Move-Item -LiteralPath '.-author-history-20261018' -Destination '.'
 原458项之外已额外保留20份未公开的中间日志，共478项。最终同步使用完整作者HEAD重新读取path/mode/OID，严格拒绝tracked删除和未保全用户文件；最终结果由外置回执绑定。采用前若出现新用户文件或候选/作者有变化，停止并先补全保全与验证。
 
 当前提案进展：另有0f58ca1→f1f8adca3f8aa191fe0660f25cd27360f9ea0986中间快照，2556追踪+478私档，冷CI模式ci/build/4740、869/918/351均核同其d62输入（外置daily-ci-current-validation.json）。该证据明确INTERMEDIATE_COLD_CI_ONLY_NOT_FINAL_ADOPTABLE；113 SW新产品和最终文档仍须同步及再验证，最终大小由外置daily-final-verify绑定，不能称旧329MB为最后方案。
+
+## 最新113冷验证已完成（尚非最终文档快照）
+
+候选28a023adb54c433f0e433f1603ed2e256778b3eb与作者2a2c403801fd6af8fb22529a9e9590883a3fc01d的2594追踪路径/TREE d2e4714ab3ed42797cc8f330255e1a776a0d7b1f完全相同，另478私档保全，无未识别用户文件。CI/GHA环境真实冷npm ci/build/test全0，474通过0失败/跳过/缺基线warning；869源、918审读源、351Windows构建逐文件同113，原典与11候选哈希不变。见daily-sw-validation.json及daily-sw-npm-ci.log、daily-sw-build.log、daily-sw-test.log。
+
+因此113新产品已重建复验。最终仅文档提交完成后，仍会将最终作者TREE同步候选并严格核原字节/模式/全部额外文件，最后实测体积以外置daily-final-verify.json为准；28a不是已经采用或最终批准对象。当前完整作者根F24仍BLOCKED，尚未执行两次Move。

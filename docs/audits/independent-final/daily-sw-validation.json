@@ -1,0 +1,245 @@
+{
+  "measuredAt": "2026-10-18T06:56:33.332193+00:00",
+  "authorCommit": "2a2c403801fd6af8fb22529a9e9590883a3fc01d",
+  "candidateHead": "28a023adb54c433f0e433f1603ed2e256778b3eb",
+  "candidateTree": "d2e4714ab3ed42797cc8f330255e1a776a0d7b1f",
+  "adopted": false,
+  "remoteConfigured": false,
+  "commands": [
+    {
+      "stage": "npm-ci",
+      "argv": [
+        "npm",
+        "ci"
+      ],
+      "startedAt": "2026-10-18T06:54:55.990619+00:00",
+      "finishedAt": "2026-10-18T06:55:02.937728+00:00",
+      "exitCode": 0,
+      "log": "../Jianghu-independent-20261018\\daily-sw-npm-ci.log",
+      "logSha256": "fcfacc81f0235ee2b33cd97ad52b531132c91869a1736b41a67c9fd1d02f2500"
+    },
+    {
+      "stage": "build",
+      "argv": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "startedAt": "2026-10-18T06:55:02.943165+00:00",
+      "finishedAt": "2026-10-18T06:55:07.324223+00:00",
+      "exitCode": 0,
+      "log": "../Jianghu-independent-20261018\\daily-sw-build.log",
+      "logSha256": "fe702a3a5333af1da1719167111240de337447d025e1e05384582db8cfb4cfe5"
+    },
+    {
+      "stage": "test",
+      "argv": [
+        "npm",
+        "test"
+      ],
+      "startedAt": "2026-10-18T06:55:07.328411+00:00",
+      "finishedAt": "2026-10-18T06:56:22.812565+00:00",
+      "exitCode": 0,
+      "log": "../Jianghu-independent-20261018\\daily-sw-test.log",
+      "logSha256": "6e77f6c87468d43fd1c47ba39c7a7ff17d6757d544bb32e0f015c9f11cb9f3f4"
+    }
+  ],
+  "ciEnvironment": {
+    "CI": "true",
+    "GITHUB_ACTIONS": "true",
+    "proxiesCleared": true,
+    "evidenceRoot": "../Jianghu-independent-20261018\\daily-sw-evidence"
+  },
+  "backups": [
+    {
+      "source": "../Jianghu-independent-20261018\\daily-repo-proposal\\node_modules",
+      "destination": "../Jianghu-independent-20261018\\daily-sw-node_modules-before-20261018-145455"
+    },
+    {
+      "source": "../Jianghu-independent-20261018\\daily-repo-proposal\\dist",
+      "destination": "../Jianghu-independent-20261018\\daily-sw-dist-before-20261018-145455"
+    }
+  ],
+  "scope": "SW113 private proposal cold CI evidence at author2a2c403; not final document HEAD, no adoption, no publishing, no final proposal measurement.",
+  "treeExact": true,
+  "headExact": true,
+  "all-source": {
+    "count": 869,
+    "mismatches": [],
+    "allExact": true,
+    "manifestFingerprint": "afd05b04a097e6ea9756f58ae8a0dd3c1e58fc9965f5625dc9af9971f0e14594",
+    "frozenSourceCommit": "113872382f2697f94bbf8f5dc3c62692641cf731"
+  },
+  "audited-source": {
+    "count": 918,
+    "mismatches": [],
+    "allExact": true,
+    "manifestFingerprint": "68b5ee0c6c69b4f77f40672fbef3cd24c84ab11ae260798672bd8d487e7189b8",
+    "frozenSourceCommit": "113872382f2697f94bbf8f5dc3c62692641cf731"
+  },
+  "dist": {
+    "count": 351,
+    "mismatches": [],
+    "allExact": true,
+    "manifestFingerprint": "797a6a2d1c252c45eadd59585a32cd23a636b129b7445c5cb387efebad538ded",
+    "frozenSourceCommit": "113872382f2697f94bbf8f5dc3c62692641cf731",
+    "unlistedActual": [],
+    "missingActual": [],
+    "pathSetExact": true
+  },
+  "extras": {
+    "count": 478,
+    "mismatches": [],
+    "allExact": true,
+    "expectedCount478": true,
+    "notTracked": true,
+    "allStillIgnored": true
+  },
+  "canon": {
+    "bytes": 579299,
+    "sha256": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393",
+    "exact": true
+  },
+  "candidates": {
+    "count": 11,
+    "paths": [
+      "docs/art/candidates-2026-10-17/dr-faceroom2.webp",
+      "docs/art/candidates-2026-10-17/dr-faceroom3.webp",
+      "docs/art/candidates-2026-10-17/dr-zhou.webp",
+      "docs/art/candidates-2026-10-17/nq-qin-13.webp",
+      "docs/art/candidates-2026-10-17/nq-qin-60s.webp",
+      "docs/art/candidates-2026-10-17/nq-qin-80s.webp",
+      "docs/art/candidates-2026-10-17/qs-xu-age92-alt.webp",
+      "docs/art/candidates-2026-10-17/ss-xie-alt.webp",
+      "docs/art/candidates-2026-10-17/st-shen-12.webp",
+      "docs/art/candidates-2026-10-17/st-shen-49.webp",
+      "docs/art/candidates-2026-10-17/st-shen-63.webp"
+    ],
+    "allTrackedPinsVerifiedThroughAuditedTree": true,
+    "proofs": [
+      {
+        "path": "docs/art/candidates-2026-10-17/dr-faceroom2.webp",
+        "bytes": 106986,
+        "sha256": "2b529e338d4f74ceae50796316606a9e2797fadf5bc143336018869b7c2a869b",
+        "gitBlobExact": true
+      },
+      {
+        "path": "docs/art/candidates-2026-10-17/dr-faceroom3.webp",
+        "bytes": 124254,
+        "sha256": "12c2b4b4057143d2606bc7d9f8e447b26687126fed796a675c4e14f15bc24493",
+        "gitBlobExact": true
+      },
+      {
+        "path": "docs/art/candidates-2026-10-17/dr-zhou.webp",
+        "bytes": 86810,
+        "sha256": "32779d7c86e78e172a87fb1bea67ed6c2be129c9fd3e24d5012c026397281f06",
+        "gitBlobExact": true
+      },
+      {
+        "path": "docs/art/candidates-2026-10-17/nq-qin-13.webp",
+        "bytes": 109870,
+        "sha256": "28f562f0c2ae14e407bf8c2dde0edd346c289a11ba32f92a9226a952cf16f947",
+        "gitBlobExact": true
+      },
+      {
+        "path": "docs/art/candidates-2026-10-17/nq-qin-60s.webp",
+        "bytes": 139732,
+        "sha256": "434a71a5b502b4f6fede3fa449c825328a4babad695117f4c39287e3424a8009",
+        "gitBlobExact": true
+      },
+      {
+        "path": "docs/art/candidates-2026-10-17/nq-qin-80s.webp",
+        "bytes": 120956,
+        "sha256": "ee36fe687379524f071c058f7b32f5d078b81655e99f4e359af17ed4545c8a56",
+        "gitBlobExact": true
+      },
+      {
+        "path": "docs/art/candidates-2026-10-17/qs-xu-age92-alt.webp",
+        "bytes": 141714,
+        "sha256": "71b599b9f5e37208497a0c2276950c64fd0d77396c9d7317e88fad4eba7422c1",
+        "gitBlobExact": true
+      },
+      {
+        "path": "docs/art/candidates-2026-10-17/ss-xie-alt.webp",
+        "bytes": 120068,
+        "sha256": "f3d9f7e3ff35266e73e7929915c1ad37ffc9133afc7a8fb22cade13521e495c3",
+        "gitBlobExact": true
+      },
+      {
+        "path": "docs/art/candidates-2026-10-17/st-shen-12.webp",
+        "bytes": 109664,
+        "sha256": "d4c13c50d3ca6f4ba8f10fb4a10a588b26714e4a5339a54fbd6817a6e1ee9be0",
+        "gitBlobExact": true
+      },
+      {
+        "path": "docs/art/candidates-2026-10-17/st-shen-49.webp",
+        "bytes": 116034,
+        "sha256": "916c6cdc110a3fd1565ae66987cae208eb5300d18e5453220b5b1da98f0919bf",
+        "gitBlobExact": true
+      },
+      {
+        "path": "docs/art/candidates-2026-10-17/st-shen-63.webp",
+        "bytes": 138544,
+        "sha256": "8a3f0ba50f608a24aae703b426d99faf87328033f13da3554d03e6794e66eceb",
+        "gitBlobExact": true
+      }
+    ]
+  },
+  "trackedStatus": "",
+  "generatedDiff": "",
+  "testSummary": {
+    "tests": [
+      "474"
+    ],
+    "pass": [
+      "474"
+    ],
+    "fail": [
+      "0"
+    ],
+    "cancelled": [
+      "0"
+    ],
+    "skipped": [
+      "0"
+    ],
+    "todo": [
+      "0"
+    ]
+  },
+  "missingBaselineWarnings": [],
+  "missingBaselineReportExists": false,
+  "rawSummaryTail": [
+    "✔ static metadata catches duplicate IDs, unknown commands and missing endings (99.4694ms)",
+    "✔ all reachable states close; immediate replies differ; conditional replies and script coverage (7953.5821ms)",
+    "✔ White Stone preserves distinct eras, snow loss, old-person inquiry, uncopyable teacher and two fixed crowns (130.3117ms)",
+    "✔ Admitting the missing step and letting the second person see failure have independent later recalls (62.4299ms)",
+    "✔ All 8192 finite binary paths cover every authored beat, option and ending, with valid distinct stage files (32398.8219ms)",
+    "✔ Xuanmen keeps nine duties, simultaneous stop, disciple-first breakthrough and mortal narrator boundaries (107.9576ms)",
+    "✔ One input changes the later handover and a second independently changes medicine staffing, without changing the duel (38.7535ms)",
+    "✔ All 2048 finite binary paths reach both ends and every declared beat, with real asset files and distinct simultaneous faces (36261.7009ms)",
+    "ℹ tests 474",
+    "ℹ suites 0",
+    "ℹ pass 474",
+    "ℹ fail 0",
+    "ℹ cancelled 0",
+    "ℹ skipped 0",
+    "ℹ todo 0",
+    "ℹ duration_ms 72674.4499"
+  ],
+  "passed": true,
+  "trackedRawBlobVerification": {
+    "count": 2594,
+    "mismatches": [],
+    "allExact": true
+  },
+  "unexpectedNonIgnoredUntracked": "",
+  "runtimeRC": "113872382f2697f94bbf8f5dc3c62692641cf731",
+  "strictClosingVerification": {
+    "exitCode": 0,
+    "report": "../Jianghu-independent-20261018\\daily-sw-finalize-verify.json",
+    "measurementPerformed": false,
+    "finalDocumentHead": false
+  },
+  "releaseBoundary": "SW113 code cold CI evidence at fixed author2a2c403; final release/document HEAD and proposal measurement remain separate; proposal not adopted."
+}

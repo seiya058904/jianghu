@@ -4,19 +4,20 @@
 
 作者起点master@7a2c22f74c46d74f07af8bd1a45893ec15daa49b，公开main起点a6e5d5947ce2d06c6c2ab83e1cfd515c95191959，两个谱系无共同祖先。认证所有者seiya058904；公共隔离clone从真实main普通增量，不force、不将作者完整历史推公开、不改remote。
 
-## 已完成的两次普通推送
+## 已完成的三次普通推送
 
 |顺序|实际普通快进|真实结果|
 |---|---|---|
 |首次，13:40 +08|a6e5d59 → f1d4b377ec317e964c4a4ff79ae74aa826aa9642|push0；Verify39101353779/Pages39101353730均FAILED，单测473/474，未部署|
 |CI修复，14:14 +08|f1d4b37 → 67eb150348013c06bdf328a95589395b3c987aa0|push0；Verify39103362100/Pages39103362099均SUCCESS，真实部署已发生|
+|SW修复，14:53 +08|67eb150 → f48614493ec4340355602f77d64b19c02220781e|push0；Verify39105624826/Pages39105624823均SUCCESS，产品部署及正式线上验收已完成|
 
 回执normal-push-ci-fixed.json与cloud-ci-fixed-success.json。第一次失败保留cloud-first-*；唯一unit测试把GHA有意stdout注解错当stderr，修订仅unit，两显式环境×原六模式，产品helper不改。第二次成功不覆盖第一次失败。
 
 - 已成功[Verify39103362100](https://github.com/seiya058904/jianghu/actions/runs/39103362100)。
 - 已成功[Pages39103362099](https://github.com/seiya058904/jianghu/actions/runs/39103362099)。
 
-## 已成功站点验证与新发现的升级P1
+## 历史站点验证与已修复的升级P1
 
 67eb的Pages artifact下载保存，**351/351正式HTTPS文件与该云端artifact逐字节相同**，pages-artifact-ci-fixed.json。与Windows d62构建比较是347/351字节相同；四个offline*.json仅URL数组顺序不同、排序后逐项完全一致、计数相同且无增缺，ci-windows-first-artifact-comparison.json。这是跨OS遍历顺序差异，不能写成Windows351全同云端；以云端artifact作为正式线上逐字节验收基准。
 
@@ -26,25 +27,27 @@
 
 ENG06：默认addAll可复制HTTP缓存中的旧HTML，导航fetch也可在断网时优先返回旧HTTP HTML。原shell两用例只改HTML为maxage3600即2/2失败，113仅改SW三处cache策略后原断言2/2通过；VM6、全474、80编辑子集均0。独立8阶段机制probe与真实a6 Git字节回归分开记录。
 
-真实旧字节回归先安全提取a6并冷ci/build0。根/子路径×原/修4case，用显式Promise确认旧worker redundant、新active/controller activated后才继续：原2例仍旧HTML/离线失败，修2例install已新HTML，根/index各16卡、龙门lm_borrow_1→2、page/HTTP均0。actual-v6-upgrade-summary/result与旧dist/extract清单可核；不冒充再次原正式已闭V6窗口。修复版正式部署后的真实67eb持久profile升级仍须完成。
+真实旧字节回归先安全提取a6并冷ci/build0。根/子路径×原/修4case，用显式Promise确认旧worker redundant、新active/controller activated后才继续：原2例仍旧HTML/离线失败，修2例install已新HTML，根/index各16卡、龙门lm_borrow_1→2、page/HTTP均0。actual-v6-upgrade-summary/result与旧dist/extract清单可核；不冒充再次原正式已闭V6窗口。正式67eb持久profile→f486升级亦已通过，详见下节。
 
-## 当前113公开代码冷检出（未push）
+## 已完成的113产品发布与正式验收
 
-隔离本地HEAD **4d14cda0eb131d1f1496671129aefa7992142d06**；策展来源113，2420允许文件/86413768B，最大文字JSON4221144B。privacy0、159MD/426本地链接0；CI=true/GITHUB_ACTIONS=true冷npmci/build/全474均0，全部plan无漂移、869部署源与351Windows dist同rc-sw冻结指纹，public-sw-cold-validation.json。40私有基线缺席路径明确允许告警，公开归档完整性仍PARTIAL，不是假称作者跳过。
+历史冷检出HEAD为4d14cda0eb131d1f1496671129aefa7992142d06，113代码plan2420文件/86413768B，CI环境ci/build/474均0；public-sw-cold-validation.json保留该输入。随后从作者2a2c403801fd6af8fb22529a9e9590883a3fc01d同步回执，公共f48614493ec4340355602f77d64b19c02220781e已普通FF发布（normal-push-sw-accepted.json）。已验证f486快照2451文件/88,697,548B、最大文本JSON4,221,144B；这些不是后续docs-only Q的最终统计。40私有基线缺席路径明确告警，公开归档完整性仍PARTIAL。
 
-当前4d14为隔离本地代码提交，完整492门禁及最终文档同步后才普通追加；不以67eb的旧云绿代表新113已发布。最终公开文件数量/HEAD会随已提交回执文档增加，现值明确是中间快照。
+精确[Verify39105624826](https://github.com/seiya058904/jianghu/actions/runs/39105624826)及[Pages39105624823](https://github.com/seiya058904/jianghu/actions/runs/39105624823)均success，cloud-sw-accepted-success.json核其headSha=f486。对应CI artifact与正式HTTPS351/351文件、37,008,548B逐字节相同，pages-artifact-sw-accepted.json；tar SHA-256为3b08472977212f10cd412312ddd77e82fab388a1b2cf7cba317f24275dbb3e99。鲜Chrome26入口/交互/刷新PASS（online-sw-accepted.json），errors/http/consoleErrors/requestFailures均空，ONLINE_EXIT0。
 
-## 待完成的最终步骤
+正式67eb持久profile→f486严格升级：旧worker redundant、新active及controller activated，等待8791ms；断网作品库16卡、龙门lm_borrow_1→lm_borrow_2，errors/http均空，外置live-update-post67eb-strict/result.json。此为真实持久窗口更新，独立于鲜Chrome及受控真实a6四case；历史原V6已闭窗口失败仍按原边界保留。本节为回读实际回执，未声称文档审阅者再次执行。
+
+## 产品发布闭环与最后文档收尾
 
 |项|当前边界|
 |---|---|
 |同RC完整492|PASS：rc-sw-e2e-summary独立核492/492、exit0与全部五类结束后文件hash；0失败/跳过/flaky/重试|
-|最终普通FF|新fetch核main仍67eb、祖先关系、最终策展/隐私/链接审查、普通push，无force|
-|精确新SHA云门禁|等待其Verify/Pages success；下载该Pages run artifact并全文件HTTPS比较|
-|正式修复浏览器|双档26入口/真实两选择/刷新/图片/console/network重新验收|
-|真实旧SW正式原地升级|live-update-post67eb-strict已复用真实持久profile；新Pages成功后才写实际SHA信号，显式Promise等旧redundant及active/controller activated，真实typing结束再推进，断网16卡+龙门|
+|产品普通FF|PASS：67eb→f486，push0，无force；normal-push-sw-accepted.json|
+|产品精确云门禁|PASS：f486两run success，对应artifact/HTTPS351全同|
+|正式修复浏览器|PASS：f486双档26入口/真实两选择/刷新/图片/console/network|
+|真实旧SW正式原地升级|PASS：67eb持久profile→f486严格生命周期屏障8791ms，断网16卡+龙门1→2|
 |最后作者/公开状态与体积|最终两HEAD/clean status、原典SHA、完整恢复bundle、候选TREE/私档保全与外置实际测量|
 
-首个成功修复部署后写真实回执，再同步公开文档提交并等待其最终SHA的CI/Pages、artifact和线上。作者私有侧保存最后精确公共SHA；公开侧保留上一已完成产品回执及最新Actions入口，避免文档自身SHA无限写入自身。文档提交间产品/测试/工作流/869部署源与实际构建不得改变。
+产品f486部署与上述指定线上验收已经完成。后续仅同步公开回执文档形成docs-only Q，再等待Q精确Verify/Pages并核对应artifact与线上；尚未产生的Q不得预报通过。作者私有最终receipt记录最后公共SHA，公开侧保留已完成f486产品回执与最新Actions入口，避免文档自身SHA无限写入自身。各docs-only提交间产品/测试/工作流/869部署源与实际构建必须不变。总体仍INCOMPLETE：F18性能PARTIAL、F24作者库体积BLOCKED，非产品部署仍待执行。
 
-正式[作品库](https://seiya058904.github.io/jianghu/)，已在67eb真测[龙门](https://seiya058904.github.io/jianghu/longmen.html)、[死人](https://seiya058904.github.io/jianghu/dead-ranking.html)、[太华](https://seiya058904.github.io/jianghu/taihua.html)、[山河璧](https://seiya058904.github.io/jianghu/jade.html)、[芦花渡](https://seiya058904.github.io/jianghu/luhua.html)等；新修复最终验收仍待后继回执。
+正式[作品库](https://seiya058904.github.io/jianghu/)、[龙门](https://seiya058904.github.io/jianghu/longmen.html)、[死人](https://seiya058904.github.io/jianghu/dead-ranking.html)、[太华](https://seiya058904.github.io/jianghu/taihua.html)、[山河璧](https://seiya058904.github.io/jianghu/jade.html)、[芦花渡](https://seiya058904.github.io/jianghu/luhua.html)等已在f486鲜Chrome检查；旧SW更新另有真实持久窗口证据，外部设备与真人边界不由此转为PASS。

@@ -106,3 +106,9 @@ git -C $recovery fsck --full
 候选ada1ecf与作者be56235的2527追踪路径/TREE精确一致，另478私档/日志、918审计源、11候选与原典双根字节核同；冷ci/build/474单测均0、缺基线warning0。实测329,656,131逻辑B /338,310,184 allocation B/.git49,834,415B，含依赖及构建，见daily-candidate-validation.json。最终云端文档同步后再以外置daily-final-verify.json绑定最终HEAD/TREE及大小；旧259MB不得当最新数字。原作者目录仍未交换，F24仍BLOCKED。
 
 候选又有0f58→f1f8中间冷CI通过，但113已改产品SW，最终方案必须同步113与最后文档后重建复验，再外置测量。现329MB也只是be562/ada历史快照，不代表最终候选或当前作者根目录。
+
+## 最新113候选与备份核同
+
+113产品已在28a候选真实冷CI模式重建并474通过，来源2a2、2594追踪+478保全、869/918/351逐文件同冻结113，见daily-sw-validation.json和三份daily-sw原始日志。后续仅最终文档同步；最终候选体积与HEAD/TREE以外置daily-final-verify.json为准，不使用上述旧259MB/329MB替代实测。当前作者根仍未替换。
+
+final-original-recovery-recheck.json实际于06:59UTC重新读取原始bundle、2121张外置PNG和46个不可变完整Git备份文件：Length/SHA全部一致、无额外/缺失。最终新增提交另作增量bundle，原完整bundle/不可变备份保持原字节。最终外置closing-author-measure会计入所有最终文档和Git对象，不逆改BEFORE或伪造当时AFTER。

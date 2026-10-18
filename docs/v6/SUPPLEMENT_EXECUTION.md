@@ -131,3 +131,14 @@ beyond-ranking98拍/9问/18选项，五组辅助触点到齐，严格A16/B6/C0/D
 当前产品RC fcef368840ab9d69795b481f2a42b9a0491affc8：build0、作者474/474、编辑80/80（子集）、player+新旧迁移24/24。ec53完整491/1失败已保留，唯一Half Step首次写回时序已一行收窄并保持原断言；新整个492独立重跑，尚不报完整PASS。公开隔离冷ci/build/test474绿、351dist逐hash同作者，尚未push。2121历史PNG有外置逐项SHA，普通Git压缩对象/refs/fsck核同；作者当前根仍>1GiB，F24 BLOCKED，未采用每日库替换提案。
 
 以上是执行时点，不改写前面历史。最终单一状态与精确发布回执见 [独立30项矩阵](../audits/independent-final/FINAL_ACCEPTANCE.md)、[最终QA](../audits/independent-final/FINAL_QA.md)、[发布回执](../audits/independent-final/RELEASE_VALIDATION.md)。不将旧297/471或专项相加代替本轮完整结果；真人/真机/Safari/Firefox仍外部未验证。
+
+
+## 2026-10-18 独立终审与正式产品发布闭环（前文保留历史）
+
+产品RC `113872382f2697f94bbf8f5dc3c62692641cf731` 已完成build退出0、CI环境474/474单测退出0、80/80编辑子集退出0，以及单次完整492/492浏览器验收（8 workers、19.2分钟、0失败／跳过／flaky／重试，结束后五类文件hash全同）。80项包含于474项，不相加；d62/a04旧全量与更早失败／中止结果分别保留，不拼批。当前完整审阅口径为715手写路径+203生成／锁文件，共918审计路径；原典、旧稿来源字节和旧预期hash不改。以上更新前段“执行中快照”，不回写其中旧时点。
+
+公共提交 `f48614493ec4340355602f77d64b19c02220781e` 已普通快进推送并正式部署，[Verify39105624826](https://github.com/seiya058904/jianghu/actions/runs/39105624826)与[Pages39105624823](https://github.com/seiya058904/jianghu/actions/runs/39105624823)均success。351个正式HTTPS文件与该CI artifact逐字节相同，鲜Chrome双档26入口通过；Windows与Linux构建仅347/351原字节相同，4份offline清单只URL数组顺序不同，不能混称Windows351全同云端。
+
+先前已关闭的真实V6窗口离线失败仍保留，原guard未可靠证明新SW已激活，不补造缓存dump或归因。严格本地a6真旧Git字节四case保留原策略2fail／修后2pass；正式67eb持久窗口升级至f486时另以Promise等待旧worker redundant及active/controller activated，实际8791ms，断网作品库16卡、龙门lm_borrow_1→lm_borrow_2通过。三者证据分开，不以鲜窗口绿掩盖旧失败。
+
+文学／美术定性仍PARTIAL；F18本机性能PARTIAL，F24作者根含.git仍BLOCKED，未采用每日库切换。真人试读／耗时、Android真机、Safari／Firefox、读屏器仍EXTERNAL NOT VERIFIED。后续纯文档提交尚未发布，不能预写其云端通过。单一当前裁定及原始证据见[独立30项矩阵](../audits/independent-final/FINAL_ACCEPTANCE.md)、[最终QA](../audits/independent-final/FINAL_QA.md)、[发布回执](../audits/independent-final/RELEASE_VALIDATION.md)、[正式升级记录](../audits/independent-final/formal-sw-update-fixed.json)。

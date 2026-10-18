@@ -4,7 +4,7 @@
 
 [在线作品库](https://seiya058904.github.io/jianghu/) · [文档导航](docs/README.md) · [独立终审基线](docs/audits/independent-final/BASELINE.md) · [本轮验收](docs/audits/independent-final/FINAL_ACCEPTANCE.md)
 
-2026-10-18 正在执行独立终审与安全增量发布。当前 RC、完整测试、公开 SHA 与未验证项目以本轮验收为准，旧版“17/17”不是本轮结论。历史记录保留于 [V7 矩阵](docs/v7/V7_ACCEPTANCE_MATRIX.md)。
+2026-10-18 独立审查后的产品已正式发布：公共提交 `f48614493ec4340355602f77d64b19c02220781e` 的 [Verify](https://github.com/seiya058904/jianghu/actions/runs/39105624826) 与 [Pages](https://github.com/seiya058904/jianghu/actions/runs/39105624823) 均成功。对应产品 RC `1138723` 构建退出0、单测474/474、编辑80/80（单测子集），单次完整浏览器492/492通过；351个正式文件与CI artifact逐字节相同，鲜Chrome双档26入口及真实旧67eb窗口升级后的离线作品库／龙门推进通过。详见[发布回执](docs/audits/independent-final/RELEASE_VALIDATION.md)与[本轮验收](docs/audits/independent-final/FINAL_ACCEPTANCE.md)。后续纯文档提交尚未发布，不预写其云端结果；旧版“17/17”保留于 [V7 历史矩阵](docs/v7/V7_ACCEPTANCE_MATRIX.md)，不替代本轮结论。
 
 ## 从哪里开始
 
@@ -71,4 +71,4 @@ E2E 前清空可能影响 localhost 就绪探测的 HTTP/HTTPS/ALL 代理。构�
 
 ## 已知边界
 
-真人试读、阅读耗时、Android 真机、Safari、Firefox、读屏器未被本机 Chrome 自动化替代。冻结原创旧篇仍有记录在案的 P2 文字问题。陆清婉现行中年含笑状态暂用同年龄干净中性立绘，保留文字语气；没有把回退称为新表情素材。作者目录 1GiB 目标必须包含 .git，未达时不得报完成。
+真人试读、阅读耗时、Android 真机、Safari、Firefox、读屏器未被本机 Chrome 自动化替代。冻结原创旧篇仍有记录在案的 P2 文字问题。陆清婉现行中年含笑状态暂用同年龄干净中性立绘，保留文字语气；没有把回退称为新表情素材。文学与美术的定性边界仍为 PARTIAL；性能 F18 为 PARTIAL，作者目录含 .git 的 1GiB 目标 F24 仍为 BLOCKED。

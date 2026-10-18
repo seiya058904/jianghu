@@ -40,3 +40,9 @@
 父实际打开查看正式截图：作品库1440首屏，标题/推荐入口/筛选/16作品与主背景可辨；死人争榜390完成两选择的实际舞台，立绘、榜序年龄、选后动作与对白/继续按钮可读，无横溢。精选WebP为online-67eb-library-1440.webp、online-67eb-dead-ranking-390.webp（docs/evidence/independent-final，宽≤800）；原PNG留项目外online-first-success。26入口完整结果online-ci-fixed.json与351artifact线上字节核验另列。它们证明67eb新UI已真实上线，不能代替其真实旧SW离线失败或后续113的升级终态。
 
 父已实际查看严格真实a6→113子路径断网龙门推进截图（800×700），许重山分层/工坊背景/第七刀对白/继续按钮均可读，真实lm_borrow_1→2；精选browser-actual-a6-fixed-subpath-advance.webp为原800宽WebP、520516B，非正式站点截图。JSON逐生命周期与原/修失败成功分开，不以合成探针代真实旧Git版本回归。
+
+## 正式f486实见与严格离线边界（2026-10-18 15:10 +08）
+
+父直接查看正式旧67eb→f486窗口断网龙门推进图：lm_borrow_1→2，许重山、工坊背景、第七刀对白、继续按钮均完整可读。另看fresh Chrome死人争榜390两次选择后的舞台，立绘/动作/正文可读，无横溢；对应JSON online-sw-accepted、formal-sw-update-fixed。两张精选是online-f486-offline-longmen.webp与online-f486-dead-ranking-390.webp，宽≤800，原PNG外置。
+
+断网作品库16卡、标题与交互通过；仅下载龙门包时，首页装饰hero背景可退成纯色。这不是已缓存全部作品/装饰美术的承诺；已下载作品的实际场景、人物和推进通过。旧实际V6窗口失败仍保留，只有严格生命周期probe证明激活终态。当前113源完整492/492后SW已变，本文开头早期指纹是历史快照，最终五份rc-sw manifest与FINAL_QA为准。

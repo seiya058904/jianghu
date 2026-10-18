@@ -1,22 +1,22 @@
 # V7 历史验收矩阵与独立终审接续
 
-> **2026-10-18 独立终审接续**：本表以下内容保留原轮次语境。此前17/17与471/471不能代替本次结果；当前修复、最终RC的492项完整E2E、真实发布与体积结论见 [F01–F30验收](../audits/independent-final/FINAL_ACCEPTANCE.md)。本次涉及V7-02/03首页发布、V7-09/10回响矛盾、V7-11/12现行立绘回退、V7-14/15存储/离线/完整回归、V7-16/17文档与版本隔离，均重新取证。最终完整run结束前不沿用本表PASS。
+> **2026-10-18 独立终审接续**：下方各轮原文保留历史语境。此前17/17与471/471不能代替本次结果；当前产品、发布与未关闭边界以 [F01–F30验收](../audits/independent-final/FINAL_ACCEPTANCE.md)及[发布回执](../audits/independent-final/RELEASE_VALIDATION.md)为准，不将文学／美术定性或外部验证统称全部完成。
 
-## 2026-10-18 接续复核（当前）
+## 2026-10-18 接续复核（当前产品已发布）
 
-本轮产品代码RC `fcef368840ab9d69795b481f2a42b9a0491affc8`，前一验收RC `a04d36a665416f45297a5c2a0191863bd0f44316` 增加测试侧后台写同步（13原spec85/85，原断言/次数/超时保留）；以下为受影响行的当前接续，后文第六轮原文只作历史。最终F01–F30为单一交付裁定，不借旧PASS补本轮空项。
+产品冻结RC `113872382f2697f94bbf8f5dc3c62692641cf731`：build退出0，CI环境474/474单测、80/80编辑子集均退出0；单次完整492/492、8 workers、19.2分钟，0失败／跳过／flaky／重试，结束后五类文件hash全同，见 [rc-sw-e2e-summary.json](../audits/independent-final/rc-sw-e2e-summary.json)。d62、a04及更早轮次结果保留为历史，不拼接通过数。
 
-
-当前冻结点113872382f2697f94bbf8f5dc3c62692641cf731，CI模式474/80与build均0，新完整492/492、8workers、19.2分钟单run已exit0，0失败/跳过/flaky/重试、五类文件hash结束后全同。上一d62完整4920为历史；67eb Verify/Pages实际success、351artifact/HTTPS同、26鲜Chrome入口通过，但发布前旧正式SW升级后离线index失败。ENG06三点HTTPcache修后原两case通过，正式持久升级窗口待后继部署信号，不能借旧全绿关闭。
+正式公共提交 `f48614493ec4340355602f77d64b19c02220781e` 的 [Verify39105624826](https://github.com/seiya058904/jianghu/actions/runs/39105624826)／[Pages39105624823](https://github.com/seiya058904/jianghu/actions/runs/39105624823) 均成功；351个CI artifact文件与正式HTTPS逐字节相同，鲜Chrome双档26入口通过。真实67eb持久窗口明确等待旧worker redundant及active/controller activated（8791ms），更新后断网作品库16卡、龙门 `lm_borrow_1→lm_borrow_2` 均通过，见 [formal-sw-update-fixed.json](../audits/independent-final/formal-sw-update-fixed.json)。此前已关闭V6窗口的离线失败与激活证明不足仍保留；严格本地a6真旧字节四case和本次正式67eb升级是分开的证据。后续纯文档提交尚未发布，不预写其结果。
 
 |V7行|本轮当前状态|新增一手证据/边界|
 |---|---|---|
 |01 原典|PASS（本地回源）|五规则+22组全文回源，CE/CL逐项复核含最后龙门修句；两份canon-review及CANON_22_STORIES；原典SHA未变|
-|02/03 首页与分区|PASS（67eb正式实测）|正式作品库16作品/23现行，根/index双档与26入口实开，online-ci-fixed；新RC仅SW修订，发布终态另列|
+|02/03 首页与分区|PASS（f486正式实测）|16作品/23现行，根/index双档与26入口实开；online-sw-accepted.json，正式部署351文件与CI artifact全同|
 |09/10 节奏与回响|PARTIAL（质量边界明确）|23篇采样最长无选择20拍、首选≤8拍；66原典反例；996CID中981严格其余CID相同对照。不能把即时口吻算长程大分支，未声称旧对白比例指标全部达标|
 |11/12 美术演出|PARTIAL（P1已闭，P2保留）|183图decode/alpha、27catalog全文；现行Lu清背景fallback两版实见，16新资产双档舞台复核；庞持锚闲站/模板人物/专属战态仍有P2，不等于全角色动作已完善|
-|14/15 游玩/存档/离线|PARTIAL（新SW冻结点全量/正式升级待完成）|113 build/474/80均0；旧d62完整4920和早期迁移/离线均保留。真实旧正式SW更新离线index失败触发ENG06，原HTTPcache反例两case修后2pass，新完整492/492单run exit0已证，正式升级待后继部署不报PASS|
-|16/17 文档与发布边界|PARTIAL（发布回执待执行）|全树Markdown本轮已扫0本地断链；完整源码索引、外置截图/hash、公开隐私扫描、普通增量克隆；不把未推送当上线；F24仍BLOCKED|
+|13 文学编辑|PARTIAL（审阅完成，定性边界保留）|六旗舰与23/23篇具体三精彩三薄弱、人物弧及修／留理由已记录；不能以内部审阅或自动路线通过替代真人文学评价|
+|14/15 游玩/存档/离线|PASS（113全量与f486正式升级）|build/474/80均0，单次完整492/492退出0；真实67eb→f486严格激活屏障后断网16卡、龙门1→2；旧V6失败和本地a6先2fail后2pass均独立保留|
+|16/17 文档与发布边界|PARTIAL（产品已上线，纯文档收尾另核）|f486两云门禁、351 CI↔HTTPS与鲜窗口／持久升级通过；后续纯文档提交未发布。F18性能PARTIAL、F24作者含.git体积BLOCKED，外部真人／真机／Safari／Firefox等仍NOT VERIFIED|
 
 > 委托 §12 的 17 项 P0。**本表每行只给一个当前结论**，不用「之前未验证、后来可能过了」掩盖。
 > 状态口径：`PASS`（有路径级可复现证据）/ `PARTIAL`（部分证据，缺口已列明）/ `FAIL`（证据反向或未达标）/ `BLOCKED`（需外部资源）/ `EXTERNAL NOT VERIFIED`（须外部人或真机）。

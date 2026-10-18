@@ -1,6 +1,6 @@
 # 独立问题台账
 
-本轮独立发现、失败复现、作者源修复与反例复核分开记录。原典、归档来源与旧预期哈希未改。
+本轮独立发现、失败复现、作者源修复与反例复核分开记录。原典、归档来源与旧预期哈希未改。当前产品f486（已测RC113）所有确认P0/P1已关闭；F01–F30为28 PASS、1 PARTIAL（F18）、0 FAIL、1 BLOCKED（F24），最后docs-only Q精确云端/线上回执另待，不预写Q成功。
 
 | 范围 | 发现与修复 | 当前证据 |
 |---|---|---|
@@ -10,7 +10,7 @@
 | 离线 | 按篇下载漏新版shell脚本；ready前等待不受超时保护 | `shell-update-browser.log`根/小写子路径2/2；`offline-reliability.spec.ts`通过 |
 | 冻结契约 | 任意缺失被降为warning；公共编辑草稿直接读私档；旧伴篇断言锁住合法现行修订 | 严格缺席白名单、真实七份Git旧字节、`engineering-preservation-proof.json`；17份旧清单未改，专项64/64 |
 | 视觉 | 陆清婉中年含笑图带大块残留背景 | 仅现行版使用干净同龄中性图，旧版不改；`portrait-visible-browser.log`2/2及精选对照图 |
-| 发布/文档 | 线上仍V6默认首页、README/导航互相矛盾、旧规程诱导强推 | 根文档与安全增量脚本已修；实际云端/上线结果待最终发布记录 |
+| 发布/文档 | 线上仍V6默认首页、README/导航互相矛盾、旧规程诱导强推 | 根文档与安全增量脚本已修；f486精确云门禁与线上351/26入口/严格旧SW升级均通过，见末节；最后docs Q另验 |
 
 工程和故事修订由不同审阅者再次检查，见`engineering-final-counterreview.md`。18份改动作者源的行数、part/stage/choose/go/fact/end、CID与赋值锚点保持一致；这证明结构未漂移，不证明所有文学感受。
 
@@ -31,7 +31,7 @@
 
 RC1/2/3完整浏览器运行均主动中止并保留日志及aborted说明，不能相加为最终通过。当时冻结RC为ec53af4ec75f352b52ba6a85bd818510b890dc10；后续完整回归与云端发布状态统一见FINAL_QA/RELEASE_VALIDATION。迁移首次浏览器4/6中的两失败来自测试未点击已有槽的确认替换、及初始DOM未ready抓null；已修测试实走流程，最终7/7，不伪造为首次全绿。
 
-## ec53完整回归新发现（FIXED，等待新全量）
+## 历史ec53完整回归新发现（后继113完整全量已通过）
 
 ENG-05 / P1：tests/player.spec.ts:153原断言发现Half Step旧样章自动档在启动渲染时提前写回。ENG-04将pendingDraftBackup所有类型都立即persist，破坏原本仅真实advance才迁移的旧样章时序。原raw仍在备份，旧手动槽未覆盖，但不符合既有行为。完整run继续结束后将guard收窄为previousContent或editorialContent；不改原断言，新RC须重新完整492。
 
@@ -42,7 +42,7 @@ ENG-05 / P1：tests/player.spec.ts:153原断言发现Half Step旧样章自动档
 North root在导航返回后删除缓存，原SW fetch的event.waitUntil(cache.put)仍未完成，随后重新填回导致下载前false断言失败；并未走到产品离线失败。可控独立Chrome在load/networkidle返回仍有真实pending写时复现，真实fetch waitUntil屏障证明等待原写承诺后缺失/下载/离线全成功。当前full286/1停止原日志保留，工程先同步North/QianKun/offline-work-pack，再完整核对并覆盖共13份同型spec前置IO；原断言/次数/超时保留。最终a04共13spec85/85定向通过，后继整492单run继续，详fixture-cache-*.json。
 
 
-## 当前最终本地关闭（2026-10-18 13:36 +08）
+## 历史a04本地关闭（2026-10-18 13:36 +08）
 
 a04单次完整492/492、0失败/跳过/flaky/重试、E2E_EXIT0。原HalfStep:153与North root/subpath前置、所有13同型spec均在本次整run通过。五类指纹结束后未变，确认P0/P1已关闭；保留旧失败日志与P2/性能/设备/F24边界。完整证明rc-acceptance-e2e-summary.json，发布仍须RELEASE_VALIDATION实证。
 
@@ -55,10 +55,20 @@ a04单次完整492/492、0失败/跳过/flaky/重试、E2E_EXIT0。原HalfStep:1
 
 仅CI通道unit测试47行修订；显式两环境×原六模式及CI模式全474、80编辑子集均exit0。新完整492/492单run、8workers、19.0分钟、零失败/跳过/flaky/重试、E2E_EXIT0；rc-ci-e2e-summary.json独立核JSON与五类全部运行后文件hash。QA03本地根因与回归关闭；首次公共473/474及无部署事实保留，云端正式发布仍须新SHA实际Verify/Pages与线上验收。
 
-## ENG-06 / P1：正式旧SW升级后HTTP缓存旧首页（局部已修，最终待验）
+## ENG-06 / P1：正式旧SW升级后HTTP缓存旧首页（已关闭：f486正式验证）
 
-67eb真实Verify/Pages均success，351云端artifact与HTTPS相同、鲜Chrome26入口通过；发布前真实V6旧SW窗口虽更新新脚本并下载龙门成功，断网index仍旧campaign动态导入失败。窗口已关闭无缓存dump，不唯一追认其层状态。受控根/子路径旧HTTP首页maxage3600使原2case均失败；独立8stage分离addAll与导航两处HTTPcache通路。1138723只改SW三处cache策略，原2case修后2pass、VM6/6、CI全474与80编辑子集均0；新整492与正式67eb→fixed持久窗口尚待完成。详sw-http-cache-review.md与原始失败，不以先前d62全绿掩盖新P1。
+67eb真实Verify/Pages均success，351云端artifact与HTTPS相同、鲜Chrome26入口通过；发布前真实V6旧SW窗口虽更新新脚本并下载龙门成功，断网index仍旧campaign动态导入失败。窗口已关闭无缓存dump，不唯一追认其层状态。受控根/子路径旧HTTP首页maxage3600使原2case均失败；独立8stage分离addAll与导航两处HTTPcache通路。1138723只改SW三处cache策略，原2case修后2pass、VM6/6、CI全474与80编辑子集均0；113新整492/492已通过，正式67eb→f486严格持久窗口亦已通过，详末节。详sw-http-cache-review.md与原始失败，不以先前d62全绿掩盖新P1。
 
 ## 113最终本地全量（2026-10-18 14:48 +08）
 
-新完整492/492、8workers、19.2分钟、E2E_EXIT0，0失败/跳过/flaky/重试，原断言/超时保留；rc-sw-e2e-summary独立逐结果与五类运行后hash核同。ENG06现有2强回归、严格实际a6旧字节四case及此整run均通过；正式67eb→修复新部署的持久窗口尚待后继Pages信号，发布状态以RELEASE_VALIDATION为准。
+新完整492/492、8workers、19.2分钟、E2E_EXIT0，0失败/跳过/flaky/重试，原断言/超时保留；rc-sw-e2e-summary独立逐结果与五类运行后hash核同。ENG06现有2强回归、严格实际a6旧字节四case及此整run均通过；随后正式67eb→f486持久窗口已等真实生命周期屏障并通过，详下节；原失败与旧身份guard限制不删除。
+
+## f486正式产品关闭回执与最后文档边界
+
+[普通FF回执](normal-push-sw-accepted.json)记录67eb→f48614493ec4340355602f77d64b19c02220781e push0、无force；[精确云端结果](cloud-sw-accepted-success.json)记录Verify39105624826及Pages39105624823均success且headSha=f486。产品代码对应113，build0、CI474/474、编辑80/80、完整492/492单run19.2分钟、0失败/跳过/flaky/重试、exit0及五类运行后hash核同全部保留。
+
+[351文件回执](pages-artifact-sw-accepted.json)逐项CIartifact↔正式HTTPS原字节同，总37,008,548B，tar SHA3b08472977212f10cd412312ddd77e82fab388a1b2cf7cba317f24275dbb3e99；[鲜窗口](online-sw-accepted.json)实际26入口PASS，console/page/HTTP/requestfailed均空。WinLinux347/351原字节同与4清单数组顺序差异仍另列；它不降低CIartifact↔HTTPS351/351的逐字节要求。
+
+[严格正式旧窗口](formal-sw-update-fixed.json)复用真实67eb persistent profile，等旧worker redundant、新active/controller activated共8791ms后再继续；新库HTML、断网16卡、龙门lm_borrow_1→lm_borrow_2、errors/http空、PASS。ENG06关闭。旧正式V6失败窗口已关闭且无cache dump，早先async对象身份guard不可靠；本次是真实67eb→f486，另有严格真实a6 Git四case，均不伪称原已闭V6正式窗口复跑。
+
+未关闭P0/P1=0；F18性能PARTIAL、F24体积BLOCKED，P2与外部设备/真人边界仍保留。后续仅文档/回执提交Q还需精确新run与线上复核，不从f486产品通过预写Q通过；父用私有receipt记录最终Q，避免公有SHA自引用。

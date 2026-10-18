@@ -1,0 +1,41 @@
+{
+  "publicCommit": "f48614493ec4340355602f77d64b19c02220781e",
+  "comparedAt": "2026-10-18T07:05:13.887178+00:00",
+  "ciAndFormalHTTPSByteExact": 351,
+  "windowsAndCIByteExact": 347,
+  "fourOrderOnlyOfflineArrays": [
+    {
+      "path": "offline-manifest.json",
+      "sameSortedURLs": true,
+      "duplicates": 0,
+      "ciSHA256": "9b4724f8207aecebc0b3b8959f81925c4bb79043c5dfec2e8d7a8b4ca250ac04",
+      "windowsSHA256": "8967944b37d8f25ed7f028c55ae6cd86cc18d72c22f8005a32ea98fae41abbde"
+    },
+    {
+      "path": "offline-sea-tide.json",
+      "sameSortedURLs": true,
+      "duplicates": 0,
+      "ciSHA256": "00c9934b1a53e89119a63428561b077ac5870a6a5e2cd673c443b8583abeb8d7",
+      "windowsSHA256": "fa6da8d2c317d67d1e08e076edf86633a1ebaae7ef349a5e14c0c028d415854f"
+    },
+    {
+      "path": "offline-seven-questions.json",
+      "sameSortedURLs": true,
+      "duplicates": 0,
+      "ciSHA256": "02523f86700ebad23ea2e43d67fad17b4665201c499b290b045837b00cab0e43",
+      "windowsSHA256": "2b93a63c5fc84db6825b7a7a569d14bdad2cbf92dce4f9d8f2f5d5d12e98f4e8"
+    },
+    {
+      "path": "offline-tide-v6.json",
+      "sameSortedURLs": true,
+      "duplicates": 0,
+      "ciSHA256": "580fd5a39fcb00a10d9740eb0eb64902aafc5e6d0ae6857cfd909cf93b4c6e4b",
+      "windowsSHA256": "812cee694f8b8cb42126c97a3e0bc3d4e28e256cd7fb80473980b5652a5f4f98"
+    }
+  ],
+  "ciPrevious67ebToFixedF486ChangedOnly": [
+    "sw.js"
+  ],
+  "frozenRC": "113872382f2697f94bbf8f5dc3c62692641cf731",
+  "frozenWindowsDistFingerprint": "797a6a2d1c252c45eadd59585a32cd23a636b129b7445c5cb387efebad538ded"
+}

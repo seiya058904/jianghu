@@ -1,0 +1,49 @@
+{
+  "base": "https://seiya058904.github.io/jianghu/",
+  "oldPreparedAt": "2026-10-18T06:41:07.528Z",
+  "publicCommit": "f48614493ec4340355602f77d64b19c02220781e",
+  "errors": [],
+  "http": [],
+  "oldVersion": "longmen-3.0.0",
+  "oldScripts": [
+    "https://seiya058904.github.io/jianghu/assets/modulepreload-polyfill-P2Xu9kJm.js",
+    "https://seiya058904.github.io/jianghu/assets/chronicle-catalog-56xv3GiH.js",
+    "https://seiya058904.github.io/jianghu/assets/catalog-BtET8AA6.js",
+    "https://seiya058904.github.io/jianghu/assets/work-index-BmvMq2vW.js",
+    "https://seiya058904.github.io/jianghu/assets/ink-DJNFVVIJ.js",
+    "https://seiya058904.github.io/jianghu/assets/player-z58nGABJ.js"
+  ],
+  "lifecycleBarrier": {
+    "old": "redundant",
+    "active": "activated",
+    "controller": "activated",
+    "waitedMs": 8791
+  },
+  "updatedScripts": [
+    "https://seiya058904.github.io/jianghu/assets/modulepreload-polyfill-P2Xu9kJm.js",
+    "https://seiya058904.github.io/jianghu/assets/chronicle-catalog-56xv3GiH.js",
+    "https://seiya058904.github.io/jianghu/assets/catalog-BtET8AA6.js",
+    "https://seiya058904.github.io/jianghu/assets/work-index-BmvMq2vW.js",
+    "https://seiya058904.github.io/jianghu/assets/ink-DJNFVVIJ.js",
+    "https://seiya058904.github.io/jianghu/assets/player-z58nGABJ.js"
+  ],
+  "cachedHTMLBeforeOffline": [
+    {
+      "key": "jianghu-v6-shell-0.1",
+      "url": "https://seiya058904.github.io/jianghu/",
+      "html": "<!doctype html><html lang=\"zh-CN\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\"><meta name=\"theme-color\" content=\"#1f4a3d\"><meta name=\"description\" content=\"Jianghu · 宋世江湖 · 互动武侠纪事集。从《太华试序》开始，读一段原典里的真实人物与胜负。\"><title>Jianghu · 宋世江湖 · 互动纪事集</title><link rel=\"icon\" type=\"image/svg+xml\" href=\"./seal.svg\"><link rel=\"preload\" as=\"image\" href=\"./art/v6/cg-taihua-six.webp\">  <script type=\"module\" crossorigin src=\"./assets/main-sGjqMVMY.js\"></script>\n  <link rel=\"modulepreload\" crossorigin href=\"./assets/modulepreload-polyfill-P2Xu9kJm.js\">\n  <link rel=\"modulepreload\" crossorigin href=\"./assets/chronicle-catalog-56xv3GiH.js\">\n  <link rel=\"modulepreload\" crossorigin href=\"./assets/work-index-BmvMq2vW.js\">\n  <link rel=\"stylesheet\" crossorigin href=\"./assets/main-u1alis0-.css\">\n</head><body><div id=\"app\"></div></body></html>\n"
+    },
+    {
+      "key": "jianghu-v6-shell-0.1",
+      "url": "https://seiya058904.github.io/jianghu/index.html",
+      "html": "<!doctype html><html lang=\"zh-CN\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\"><meta name=\"theme-color\" content=\"#1f4a3d\"><meta name=\"description\" content=\"Jianghu · 宋世江湖 · 互动武侠纪事集。从《太华试序》开始，读一段原典里的真实人物与胜负。\"><title>Jianghu · 宋世江湖 · 互动纪事集</title><link rel=\"icon\" type=\"image/svg+xml\" href=\"./seal.svg\"><link rel=\"preload\" as=\"image\" href=\"./art/v6/cg-taihua-six.webp\">  <script type=\"module\" crossorigin src=\"./assets/main-sGjqMVMY.js\"></script>\n  <link rel=\"modulepreload\" crossorigin href=\"./assets/modulepreload-polyfill-P2Xu9kJm.js\">\n  <link rel=\"modulepreload\" crossorigin href=\"./assets/chronicle-catalog-56xv3GiH.js\">\n  <link rel=\"modulepreload\" crossorigin href=\"./assets/work-index-BmvMq2vW.js\">\n  <link rel=\"stylesheet\" crossorigin href=\"./assets/main-u1alis0-.css\">\n</head><body><div id=\"app\"></div></body></html>\n"
+    }
+  ],
+  "offlineTitle": "Jianghu · 宋世江湖 · 互动纪事集",
+  "offlineCards": 16,
+  "offlineStoryVersion": "longmen-3.0.0",
+  "offlineStoryBeat": "lm_borrow_1",
+  "afterAdvance": "lm_borrow_2",
+  "status": "PASS",
+  "finishedAt": "2026-10-18T07:01:45.435Z"
+}

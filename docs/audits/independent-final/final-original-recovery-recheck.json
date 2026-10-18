@@ -1,0 +1,21 @@
+{
+  "verifiedAt": "2026-10-18T06:59:12.946159+00:00",
+  "fullBundle": {
+    "path": "../Jianghu-independent-20261018/jianghu-author-before-slim.bundle",
+    "bytes": 1118742731,
+    "sha256": "1a52a555021588f4134237aaa5dfc3c926de00b7021cc84842dfc49e1088e9d7"
+  },
+  "pngArchive": {
+    "files": 2121,
+    "bytes": 1683183225,
+    "allSourceManifestLengthsAndSHA256Match": true,
+    "manifestSHA256": "d91d4560548d1f36f44433e42e1e592e49c759abb53dce6ce94c482f5903267d"
+  },
+  "immutableGitBackup": {
+    "files": 46,
+    "bytes": 1148834794,
+    "allOriginalFileLengthsAndSHA256Match": true,
+    "directory": "../Jianghu-independent-20261018/git-complete-before-maintenance.git"
+  },
+  "boundary": "Read-only recheck of original preserved recovery assets; final incremental commits are backed up separately after final author HEAD."
+}
