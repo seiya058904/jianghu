@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-10-18T06:38:04.107809+00:00",
+  "total": 351,
+  "byteExact": 347,
+  "differences": [
+    {
+      "path": "offline-manifest.json",
+      "ciBytes": 1709,
+      "windowsBytes": 1709,
+      "ciSHA256": "9b4724f8207aecebc0b3b8959f81925c4bb79043c5dfec2e8d7a8b4ca250ac04",
+      "windowsSHA256": "8967944b37d8f25ed7f028c55ae6cd86cc18d72c22f8005a32ea98fae41abbde",
+      "sameJSONValue": false,
+      "sameSortedArray": true,
+      "ciCount": 69,
+      "windowsCount": 69,
+      "onlyInCI": [],
+      "onlyInWindows": [],
+      "ciDuplicateURLs": 0,
+      "windowsDuplicateURLs": 0
+    },
+    {
+      "path": "offline-sea-tide.json",
+      "ciBytes": 768,
+      "windowsBytes": 768,
+      "ciSHA256": "00c9934b1a53e89119a63428561b077ac5870a6a5e2cd673c443b8583abeb8d7",
+      "windowsSHA256": "fa6da8d2c317d67d1e08e076edf86633a1ebaae7ef349a5e14c0c028d415854f",
+      "sameJSONValue": false,
+      "sameSortedArray": true,
+      "ciCount": 25,
+      "windowsCount": 25,
+      "onlyInCI": [],
+      "onlyInWindows": [],
+      "ciDuplicateURLs": 0,
+      "windowsDuplicateURLs": 0
+    },
+    {
+      "path": "offline-seven-questions.json",
+      "ciBytes": 808,
+      "windowsBytes": 808,
+      "ciSHA256": "02523f86700ebad23ea2e43d67fad17b4665201c499b290b045837b00cab0e43",
+      "windowsSHA256": "2b93a63c5fc84db6825b7a7a569d14bdad2cbf92dce4f9d8f2f5d5d12e98f4e8",
+      "sameJSONValue": false,
+      "sameSortedArray": true,
+      "ciCount": 25,
+      "windowsCount": 25,
+      "onlyInCI": [],
+      "onlyInWindows": [],
+      "ciDuplicateURLs": 0,
+      "windowsDuplicateURLs": 0
+    },
+    {
+      "path": "offline-tide-v6.json",
+      "ciBytes": 1629,
+      "windowsBytes": 1629,
+      "ciSHA256": "580fd5a39fcb00a10d9740eb0eb64902aafc5e6d0ae6857cfd909cf93b4c6e4b",
+      "windowsSHA256": "812cee694f8b8cb42126c97a3e0bc3d4e28e256cd7fb80473980b5652a5f4f98",
+      "sameJSONValue": false,
+      "sameSortedArray": true,
+      "ciCount": 63,
+      "windowsCount": 63,
+      "onlyInCI": [],
+      "onlyInWindows": [],
+      "ciDuplicateURLs": 0,
+      "windowsDuplicateURLs": 0
+    }
+  ]
+}

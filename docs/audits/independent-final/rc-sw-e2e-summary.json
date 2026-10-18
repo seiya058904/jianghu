@@ -1,0 +1,48 @@
+{
+  "sourceCommit": "113872382f2697f94bbf8f5dc3c62692641cf731",
+  "finishedVerificationAt": "2026-10-18T06:48:30.525574+00:00",
+  "singleFullRun": true,
+  "stats": {
+    "startTime": "2026-10-18T06:28:52.813Z",
+    "duration": 1149092.732,
+    "expected": 492,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "suiteTests": 492,
+  "exitCode": 0,
+  "retries": 0,
+  "errors": [],
+  "jsonSHA256": "8aa4c9d4c19fa76773ffb7deffa43441c2744ecef291d1a5e307ef19a2219d8c",
+  "logSHA256": "c344ba4109dbd083a3b48181161483f44c38d36f1301a8b1b65b63bf036e99a1",
+  "fingerprintsAfterEntireRun": {
+    "product": {
+      "files": 669,
+      "fingerprint": "e4bf0b54b8d9035ce9f384d8c221924451dca84769073d8c9eb43c8cbce816c9",
+      "allFileHashesUnchanged": true
+    },
+    "tests": {
+      "files": 165,
+      "fingerprint": "bfeaee87e401c565829946dc38d65b33f7412b476679a12e8c212b77ffc3a0d6",
+      "allFileHashesUnchanged": true
+    },
+    "all-source": {
+      "files": 869,
+      "fingerprint": "afd05b04a097e6ea9756f58ae8a0dd3c1e58fc9965f5625dc9af9971f0e14594",
+      "allFileHashesUnchanged": true
+    },
+    "dist": {
+      "files": 351,
+      "fingerprint": "797a6a2d1c252c45eadd59585a32cd23a636b129b7445c5cb387efebad538ded",
+      "allFileHashesUnchanged": true
+    },
+    "audited-source": {
+      "files": 918,
+      "fingerprint": "68b5ee0c6c69b4f77f40672fbef3cd24c84ab11ae260798672bd8d487e7189b8",
+      "allFileHashesUnchanged": true
+    }
+  },
+  "rawJSONOutside": "../Jianghu-independent-20261018/rc-sw-e2e.json",
+  "scope": "One original complete 492-test run; no batch stitching or assertion/count/timeout weakening."
+}

@@ -1,0 +1,31 @@
+{
+  "sourceCommit": "113872382f2697f94bbf8f5dc3c62692641cf731",
+  "previousRC": "d62f99f09f71bf895e63dc93757df45fa033200d",
+  "auditedSourceChanged": [
+    "public/sw.js",
+    "tests/offline-work-gate.test.ts",
+    "tests/service-worker-update.test.ts",
+    "tests/shell-update.spec.ts"
+  ],
+  "auditedSourceCount": 918,
+  "auditedSourceFingerprint": "68b5ee0c6c69b4f77f40672fbef3cd24c84ab11ae260798672bd8d487e7189b8",
+  "differences": {
+    "product": [
+      "public/sw.js"
+    ],
+    "tests": [
+      "tests/offline-work-gate.test.ts",
+      "tests/service-worker-update.test.ts",
+      "tests/shell-update.spec.ts"
+    ],
+    "all-source": [
+      "public/sw.js",
+      "tests/offline-work-gate.test.ts",
+      "tests/service-worker-update.test.ts",
+      "tests/shell-update.spec.ts"
+    ],
+    "dist": [
+      "dist/sw.js"
+    ]
+  }
+}

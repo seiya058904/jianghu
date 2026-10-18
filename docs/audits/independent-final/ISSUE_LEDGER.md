@@ -54,3 +54,11 @@ a04单次完整492/492、0失败/跳过/flaky/重试、E2E_EXIT0。原HalfStep:1
 ## 新冻结d62完整本地关闭（2026-10-18 14:13 +08）
 
 仅CI通道unit测试47行修订；显式两环境×原六模式及CI模式全474、80编辑子集均exit0。新完整492/492单run、8workers、19.0分钟、零失败/跳过/flaky/重试、E2E_EXIT0；rc-ci-e2e-summary.json独立核JSON与五类全部运行后文件hash。QA03本地根因与回归关闭；首次公共473/474及无部署事实保留，云端正式发布仍须新SHA实际Verify/Pages与线上验收。
+
+## ENG-06 / P1：正式旧SW升级后HTTP缓存旧首页（局部已修，最终待验）
+
+67eb真实Verify/Pages均success，351云端artifact与HTTPS相同、鲜Chrome26入口通过；发布前真实V6旧SW窗口虽更新新脚本并下载龙门成功，断网index仍旧campaign动态导入失败。窗口已关闭无缓存dump，不唯一追认其层状态。受控根/子路径旧HTTP首页maxage3600使原2case均失败；独立8stage分离addAll与导航两处HTTPcache通路。1138723只改SW三处cache策略，原2case修后2pass、VM6/6、CI全474与80编辑子集均0；新整492与正式67eb→fixed持久窗口尚待完成。详sw-http-cache-review.md与原始失败，不以先前d62全绿掩盖新P1。
+
+## 113最终本地全量（2026-10-18 14:48 +08）
+
+新完整492/492、8workers、19.2分钟、E2E_EXIT0，0失败/跳过/flaky/重试，原断言/超时保留；rc-sw-e2e-summary独立逐结果与五类运行后hash核同。ENG06现有2强回归、严格实际a6旧字节四case及此整run均通过；正式67eb→修复新部署的持久窗口尚待后继Pages信号，发布状态以RELEASE_VALIDATION为准。

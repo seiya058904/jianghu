@@ -4,9 +4,9 @@
 
 ## 已完成验证与最终绑定
 
-最近已实际验证的候选来源为作者 `be56235d07d776694263bcf613843225bcd8eb15`，候选HEAD `ada1ecf218716c6f96b309506f4cd5091f8aea0f`。2,527追踪路径字节和mode TREE完全一致：`90e70443cc72294ded0ebf900978916d84fb3783`。另保留478个ignored文件（原458项55,787,329B及20份本轮中间日志，共56,019,899B）；作者全根除依赖/build/纯缓存外3,005路径由追踪+额外保全完整覆盖，没有遗漏或宽泛临时例外。
+历史be56235阶段已实际验证的候选来源为作者 `be56235d07d776694263bcf613843225bcd8eb15`，候选HEAD `ada1ecf218716c6f96b309506f4cd5091f8aea0f`。2,527追踪路径字节和mode TREE完全一致：`90e70443cc72294ded0ebf900978916d84fb3783`。另保留478个ignored文件（原458项55,787,329B及20份本轮中间日志，共56,019,899B）；作者全根除依赖/build/纯缓存外3,005路径由追踪+额外保全完整覆盖，没有遗漏或宽泛临时例外。
 
-冷npm ci、build均exit0；单测474/474、0失败/跳过、无缺私档warning；918审计源、原典固定SHA、11候选全部双根逐字节匹配。当前候选实测逻辑329,656,131B、AllocationSize338,310,184B、.git49,834,415B（含依赖和构建），见 `daily-candidate-validation.json` 与三份daily-candidate日志。此为最近已测代码/私档快照，后续仅云端回执等文档更新。
+冷npm ci、build均exit0；单测474/474、0失败/跳过、无缺私档warning；918审计源、原典固定SHA、11候选全部双根逐字节匹配。当前候选实测逻辑329,656,131B、AllocationSize338,310,184B、.git49,834,415B（含依赖和构建），见 `daily-candidate-validation.json` 与三份daily-candidate日志。此为最近已测代码/私档快照，在该旧时点原计划仅同步云端回执等文档；随后113实际改变了产品SW，故新RC还须同步重建/验证，不再是仅文档更新。
 
 **采用前绑定最终外置回执**：最终作者文档提交后，重新同步其精确追踪TREE，仍保留全部额外私档；最终候选HEAD/TREE、最终作者HEAD/TREE、全部源/原典/候选/额外文件与同算法体积记录在作者私有侧 `../Jianghu-independent-20261018/daily-final-verify.json`，不把此文档自身SHA写进自身。最终回复给出该实测与可点击路径，批准须绑定该回执。旧fcef/259MB报告仅是历史验证，不是最终提案大小。
 
@@ -49,7 +49,9 @@ Move-Item -LiteralPath '.-author-history-20261018' -Destination '.'
 
 本计划未执行任何Move、删除、remote配置或历史重写。当前F24完整作者目录仍BLOCKED，最终方案是否采用等待单独确认。
 
-私有提案完整性补证：除原Git追踪TREE外，另复制458项原ignored文件，共55787329bytes（109历史源码、118其它私档、原始交付ZIP、本机元数据与历史证据）。源/副本逐项SHA一致、原文件未改、Git tracking/ignored状态不变；全部917审读源码已在提案逐hash一致。见daily-ignored-preservation.json。259MB旧测量早于此补全，不能当最终候选体积；最终文档同步与重测后再收敛。当前作者根未替换，公开镜像未包含这些私档。
+私有提案完整性补证：除原Git追踪TREE外，另复制458项原ignored文件，共55787329bytes（109历史源码、118其它私档、原始交付ZIP、本机元数据与历史证据）。源/副本逐项SHA一致、原文件未改、Git tracking/ignored状态不变；该早期时点全部917审读源码已在提案逐hash一致（历史，现为918）。见daily-ignored-preservation.json。259MB旧测量早于此补全，不能当最终候选体积；最终文档同步与重测后再收敛。当前作者根未替换，公开镜像未包含这些私档。
 
 
 原458项之外已额外保留20份未公开的中间日志，共478项。最终同步使用完整作者HEAD重新读取path/mode/OID，严格拒绝tracked删除和未保全用户文件；最终结果由外置回执绑定。采用前若出现新用户文件或候选/作者有变化，停止并先补全保全与验证。
+
+当前提案进展：另有0f58ca1→f1f8adca3f8aa191fe0660f25cd27360f9ea0986中间快照，2556追踪+478私档，冷CI模式ci/build/4740、869/918/351均核同其d62输入（外置daily-ci-current-validation.json）。该证据明确INTERMEDIATE_COLD_CI_ONLY_NOT_FINAL_ADOPTABLE；113 SW新产品和最终文档仍须同步及再验证，最终大小由外置daily-final-verify绑定，不能称旧329MB为最后方案。

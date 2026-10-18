@@ -1,0 +1,10 @@
+
+added 21 packages, and audited 22 packages in 2s
+
+8 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PUBLIC_HEAD=4d14cda0eb131d1f1496671129aefa7992142d06; SOURCE_RC=113872382f2697f94bbf8f5dc3c62692641cf731; CI=true; GITHUB_ACTIONS=true
+
+INSTALL_EXIT=0

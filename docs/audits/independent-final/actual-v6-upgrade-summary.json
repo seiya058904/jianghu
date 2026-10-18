@@ -1,0 +1,143 @@
+{
+  "probeExit": 0,
+  "expectedOriginalFailures": 2,
+  "fixedPasses": 2,
+  "installExit": 0,
+  "buildExit": 0,
+  "scope": "Controlled localhost actual archived a6 bytes to113; not a repeat of closed formal V6 Pages window",
+  "lifecycleBarrier": "page.evaluate single Promise polls actual old redundant/new active activated/controller activated; no object identity or async waitForFunction guard",
+  "preservedAttempts": [
+    "attempt1: typing first click assertion corrected using actual browser reduced-motion preference",
+    "attempt2: initial object identity guard, full scripts/results/logs/screens preserved",
+    "attempt3: async waitForFunction predicate returned before lifecycle requirement; explicit postcondition assertions rejected all4; original scripts/results/log preserved"
+  ],
+  "cases": [
+    {
+      "base": "http://127.0.0.1:10609/",
+      "strategy": "original",
+      "status": "FAIL",
+      "lifecycle": {
+        "oldState": "redundant",
+        "activeState": "activated",
+        "controllerState": "activated"
+      },
+      "oldRootHTMLSHA256": "750f4f644b804fac50a2f777922aa808e019ae1f922e3ec091d4642d285e0f44",
+      "newRootHTMLSHA256": "7bad06316683800889f0d5e86f534ae8cd17e7bcc13bb155f14c03d7b09e8b3c",
+      "firstBeat": null,
+      "afterAdvance": null,
+      "failedStage": "offline",
+      "cacheStages": {
+        "cacheOld": [
+          "750f4f644b804fac50a2f777922aa808e019ae1f922e3ec091d4642d285e0f44",
+          "750f4f644b804fac50a2f777922aa808e019ae1f922e3ec091d4642d285e0f44"
+        ],
+        "cacheAfterInstall": [
+          "750f4f644b804fac50a2f777922aa808e019ae1f922e3ec091d4642d285e0f44",
+          "750f4f644b804fac50a2f777922aa808e019ae1f922e3ec091d4642d285e0f44"
+        ],
+        "cacheAfterDownload": [
+          "750f4f644b804fac50a2f777922aa808e019ae1f922e3ec091d4642d285e0f44",
+          "750f4f644b804fac50a2f777922aa808e019ae1f922e3ec091d4642d285e0f44"
+        ]
+      },
+      "newEntryRequests": 0
+    },
+    {
+      "base": "http://127.0.0.1:10609/",
+      "strategy": "fixed",
+      "status": "PASS",
+      "lifecycle": {
+        "oldState": "redundant",
+        "activeState": "activated",
+        "controllerState": "activated"
+      },
+      "oldRootHTMLSHA256": "750f4f644b804fac50a2f777922aa808e019ae1f922e3ec091d4642d285e0f44",
+      "newRootHTMLSHA256": "7bad06316683800889f0d5e86f534ae8cd17e7bcc13bb155f14c03d7b09e8b3c",
+      "firstBeat": "lm_borrow_1",
+      "afterAdvance": "lm_borrow_2",
+      "failedStage": null,
+      "cacheStages": {
+        "cacheOld": [
+          "750f4f644b804fac50a2f777922aa808e019ae1f922e3ec091d4642d285e0f44",
+          "750f4f644b804fac50a2f777922aa808e019ae1f922e3ec091d4642d285e0f44"
+        ],
+        "cacheAfterInstall": [
+          "7bad06316683800889f0d5e86f534ae8cd17e7bcc13bb155f14c03d7b09e8b3c",
+          "7bad06316683800889f0d5e86f534ae8cd17e7bcc13bb155f14c03d7b09e8b3c"
+        ],
+        "cacheAfterDownload": [
+          "7bad06316683800889f0d5e86f534ae8cd17e7bcc13bb155f14c03d7b09e8b3c",
+          "7bad06316683800889f0d5e86f534ae8cd17e7bcc13bb155f14c03d7b09e8b3c"
+        ]
+      },
+      "newEntryRequests": 4
+    },
+    {
+      "base": "http://127.0.0.1:10609/jianghu/",
+      "strategy": "original",
+      "status": "FAIL",
+      "lifecycle": {
+        "oldState": "redundant",
+        "activeState": "activated",
+        "controllerState": "activated"
+      },
+      "oldRootHTMLSHA256": "750f4f644b804fac50a2f777922aa808e019ae1f922e3ec091d4642d285e0f44",
+      "newRootHTMLSHA256": "7bad06316683800889f0d5e86f534ae8cd17e7bcc13bb155f14c03d7b09e8b3c",
+      "firstBeat": null,
+      "afterAdvance": null,
+      "failedStage": "offline",
+      "cacheStages": {
+        "cacheOld": [
+          "750f4f644b804fac50a2f777922aa808e019ae1f922e3ec091d4642d285e0f44",
+          "750f4f644b804fac50a2f777922aa808e019ae1f922e3ec091d4642d285e0f44"
+        ],
+        "cacheAfterInstall": [
+          "750f4f644b804fac50a2f777922aa808e019ae1f922e3ec091d4642d285e0f44",
+          "750f4f644b804fac50a2f777922aa808e019ae1f922e3ec091d4642d285e0f44"
+        ],
+        "cacheAfterDownload": [
+          "750f4f644b804fac50a2f777922aa808e019ae1f922e3ec091d4642d285e0f44",
+          "750f4f644b804fac50a2f777922aa808e019ae1f922e3ec091d4642d285e0f44"
+        ]
+      },
+      "newEntryRequests": 0
+    },
+    {
+      "base": "http://127.0.0.1:10609/jianghu/",
+      "strategy": "fixed",
+      "status": "PASS",
+      "lifecycle": {
+        "oldState": "redundant",
+        "activeState": "activated",
+        "controllerState": "activated"
+      },
+      "oldRootHTMLSHA256": "750f4f644b804fac50a2f777922aa808e019ae1f922e3ec091d4642d285e0f44",
+      "newRootHTMLSHA256": "7bad06316683800889f0d5e86f534ae8cd17e7bcc13bb155f14c03d7b09e8b3c",
+      "firstBeat": "lm_borrow_1",
+      "afterAdvance": "lm_borrow_2",
+      "failedStage": null,
+      "cacheStages": {
+        "cacheOld": [
+          "750f4f644b804fac50a2f777922aa808e019ae1f922e3ec091d4642d285e0f44",
+          "750f4f644b804fac50a2f777922aa808e019ae1f922e3ec091d4642d285e0f44"
+        ],
+        "cacheAfterInstall": [
+          "7bad06316683800889f0d5e86f534ae8cd17e7bcc13bb155f14c03d7b09e8b3c",
+          "7bad06316683800889f0d5e86f534ae8cd17e7bcc13bb155f14c03d7b09e8b3c"
+        ],
+        "cacheAfterDownload": [
+          "7bad06316683800889f0d5e86f534ae8cd17e7bcc13bb155f14c03d7b09e8b3c",
+          "7bad06316683800889f0d5e86f534ae8cd17e7bcc13bb155f14c03d7b09e8b3c"
+        ]
+      },
+      "newEntryRequests": 4
+    }
+  ],
+  "fileHashes": {
+    "actual-v6-upgrade-probe.mjs": "5e091dd2d8de5268d64e929c73a57261593c10e9e917a8d60aace5639c6bc3d7",
+    "actual-v6-upgrade-result.json": "37522cb2a5111c712b2fd3a0f6b0cc2b6d85215db9c22f830759cb3484db424d",
+    "actual-v6-upgrade-probe.log": "beea7c4b748567da9186557a3c2a2060df91c719030b45a03a0d372b747e8fa1",
+    "actual-v6-upgrade-old-dist-manifest.json": "91dc455c88e962ea4fc48db2f804865eddb0cf23720046179031c9f3bc2e2a7e",
+    "actual-v6-upgrade-extract.json": "433489b99c405b6eddac5a5ea41d2b869ad0d78d3880e6efa0661be67b3bb837"
+  }
+}

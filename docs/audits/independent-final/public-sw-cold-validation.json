@@ -1,0 +1,28 @@
+{
+  "verifiedAt": "2026-10-18T06:33:38.235906+00:00",
+  "sourceCommit": "113872382f2697f94bbf8f5dc3c62692641cf731",
+  "publicHead": "4d14cda0eb131d1f1496671129aefa7992142d06",
+  "trackedFiles": 2420,
+  "trackedBytes": 86413768,
+  "exits": {
+    "install": 0,
+    "build": 0,
+    "tests": 0
+  },
+  "allPlanBytesUnchanged": true,
+  "equivalence": {
+    "all-source": {
+      "files": 869,
+      "fingerprint": "afd05b04a097e6ea9756f58ae8a0dd3c1e58fc9965f5625dc9af9971f0e14594",
+      "allBytesMatchFrozenRC": true
+    },
+    "dist": {
+      "files": 351,
+      "fingerprint": "797a6a2d1c252c45eadd59585a32cd23a636b129b7445c5cb387efebad538ded",
+      "allBytesMatchFrozenRC": true
+    }
+  },
+  "generatedDiff": [],
+  "trackedStatusClean": true,
+  "boundary": "Isolated public cold npm ci/build/test in actual GITHUB_ACTIONS environment. Private canon/archive integrity remains partial by explicit allowlist."
+}

@@ -1,0 +1,7 @@
+{
+  "previousSnapshotPreservedOutside": "../Jianghu-independent-20261018/measurement-a04-preserved",
+  "currentSnapshotOutside": "../Jianghu-independent-20261018/measurement-rc113-prepublish",
+  "measurementOutputOutsideRoot": true,
+  "sourceRC": "113872382f2697f94bbf8f5dc3c62692641cf731",
+  "rootReportCopyOccursAfterScan": "Copying inventory and subsequent commits changes file totals; final external closing scan after final commits is the authority for final reply."
+}

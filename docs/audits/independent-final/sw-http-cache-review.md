@@ -13,3 +13,5 @@
 父代理完整回读4文件与差异，独立工程复核另记录。check_index_coverage本次Transport closed，采用直接源码回读，不声称图已覆盖。FILE_AUDIT_INDEX只刷新这4条hash/实际行数，手写715、生成203、总918口径不变。正式67eb→后继修复的独立真实SW窗口已提前准备，并保留持久profile与升级前后CacheStorage HTML诊断；尚未发部署信号，不预报通过。
 
 工程独立复核已完整回读相同4源并核SHA，确认导航仅绕过HTTP缓存、其它资源原fetch策略保留，原URL/拒绝/其它作品/marker2等断言不削弱。只做有界回填时序探查，未经复现的并发假设不作为新增确认缺陷。
+
+严格生命周期补证：实际a6公开Git源码外置冷npmci/build均0，使用真实旧V6页面/JS/素材/SW，不合成故事或16卡。根/子路径×原策略/113修复4case均用单一page.evaluate Promise，确认old redundant、新active/controller activated后才继续：原2例仍旧HTML/离线导入失败，修2例install完成已新HTML，根/index各16卡、龙门lm_borrow_1→2、页面/HTTP均0error。actual-v6-upgrade-summary.json/result.json、原始log与旧dist/extract可核；脚本外置SHA5e091dd2d8de5268d64e929c73a57261593c10e9e917a8d60aace5639c6bc3d7。旧探针async waitForFunction对象身份guard不可靠，attempt2/3完整保留；旧正式已闭窗口的激活等待也不能反证为已完成，本证据是本地真旧字节回归，不冒充原正式窗口复跑。正式67eb持久profile已保留并改用相同显式Promise生命周期屏障，另等待真实typing结束与beat变化，尚未发后继部署信号。

@@ -1,6 +1,6 @@
 # 公共策展快照与正常增量历史
 
-作者基线 `7a2c22f74c46d74f07af8bd1a45893ec15daa49b`，远端main基线 `a6e5d5947ce2d06c6c2ab83e1cfd515c95191959`，两者无共同祖先。当前冻结RC为 `d62f99f09f71bf895e63dc93757df45fa033200d`，CI环境474/80子集与完整492单run均exit0；产品/351dist与a04相同。隔离公共克隆从真实main继续；未切作者orphan、未改远端、未force。
+作者基线 `7a2c22f74c46d74f07af8bd1a45893ec15daa49b`，远端main基线 `a6e5d5947ce2d06c6c2ab83e1cfd515c95191959`，两者无共同祖先。当前冻结RC为 `113872382f2697f94bbf8f5dc3c62692641cf731`；build/CI474/80均exit0，新完整492/492单run已exit0、19.2分钟，五类运行后hash核同。上一d62完整4920只作历史，新部署仅sw.js变化。隔离公共克隆从真实main继续；未切作者orphan、未改远端、未force。
 
 ## 明确来源与边界
 
@@ -31,3 +31,5 @@ a04早期代码预审（历史中间快照）：2,250允许文件，73,556,666 b
 公开复现边界补充：docs目录中的三份历史阶段辅助.mjs不在公开扩展名白名单（plan excluded可逐项看到）；当前回归反例及运行时审计入口保留在tests/scripts，不能把公开镜像称作包含作者全部私有审阅材料。109份ignored私档历史源码只在作者审计及每日库额外保全清单中，不进入Git archive或公开发布。
 
 当前d62代码同步：隔离公共67eb150348013c06bdf328a95589395b3c987aa0、2388文件/85238633B，冷CI环境npm ci/build/474均0，869源与351dist同冻结RC；public-ci-cold-validation.json支持当前输入。首次普通f1推送成功但两workflow失败未部署；最终文档同步/正常追加/云端/在线回执另据RELEASE_VALIDATION，不能以中间快照称最终公开HEAD。
+
+新SW代码策展plan：2420文件/86413768B，隔离本地4d14cda（未push），public-plan-sw-code.json（外置）；全部hash/禁入/秘密/原典窗口0命中、159MD/426本地链接0问题。冷CI环境ci/build0、474独立运行。67eb真实发布成功但旧SW升级后离线首页P1已证，最终修复版推送/云端/真实升级仍须RELEASE_VALIDATION，不能沿用旧终态。

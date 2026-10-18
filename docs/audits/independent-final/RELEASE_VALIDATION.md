@@ -1,39 +1,50 @@
 # 发布验证：当前状态与逐次回执
 
-作者原始基线 `master@7a2c22f74c46d74f07af8bd1a45893ec15daa49b`，公开main原始基线 `a6e5d5947ce2d06c6c2ab83e1cfd515c95191959`，无共同祖先。认证和仓库所有者seiya058904。作者完整历史不向公开推送；公开隔离克隆从main正常增量，不force。
+当前产品冻结RC **113872382f2697f94bbf8f5dc3c62692641cf731**；build、CI环境474/474单测、80/80编辑子集均exit0，新完整492/492、8workers、19.2分钟单run已通过，0失败/跳过/flaky/重试、E2E_EXIT0，五类结束后文件hash全部核同。旧d62与a04的完整4920分别保留，不能代新终态。产品与部署文件相对d62只改变SW，三份测试增强，rc-sw-input-delta及五manifest明确全部路径。
 
-## 当前验收点
+作者起点master@7a2c22f74c46d74f07af8bd1a45893ec15daa49b，公开main起点a6e5d5947ce2d06c6c2ab83e1cfd515c95191959，两个谱系无共同祖先。认证所有者seiya058904；公共隔离clone从真实main普通增量，不force、不将作者完整历史推公开、不改remote。
 
-新冻结RC `d62f99f09f71bf895e63dc93757df45fa033200d`：build0，CI=true/GITHUB_ACTIONS=true的474/474单测与80/80编辑子集均exit0。新完整492/492单run通过，8workers、19.0分钟、零失败/跳过/flaky/重试、E2E_EXIT0。实际JSON独立解析与五类运行后文件hash全核同，见rc-ci-e2e-summary.json；原断言/超时未削弱。产品669、dist351与前一a04完整492PASS输入逐字节相同，只有unit告警测试的输入改变。rc-ci五类manifest与input-equivalence给出边界，前一a04完整PASS只保留为历史，新终态另有完整run。
+## 已完成的两次普通推送
 
-## 已完成的首次普通推送与真实云端失败
+|顺序|实际普通快进|真实结果|
+|---|---|---|
+|首次，13:40 +08|a6e5d59 → f1d4b377ec317e964c4a4ff79ae74aa826aa9642|push0；Verify39101353779/Pages39101353730均FAILED，单测473/474，未部署|
+|CI修复，14:14 +08|f1d4b37 → 67eb150348013c06bdf328a95589395b3c987aa0|push0；Verify39103362100/Pages39103362099均SUCCESS，真实部署已发生|
 
-2026-10-18 13:40:21 +08 普通 `git push origin codex/independent-final-publish:main`：a6e5d59→`f1d4b377ec317e964c4a4ff79ae74aa826aa9642`，exit0，来源作者be56235。源/公共历史保持独立，没有force、remote改配或覆盖他人提交。实际remote已核同。该次公开2384文件/85232229B，源代码与已经完整验收的a04相同。
+回执normal-push-ci-fixed.json与cloud-ci-fixed-success.json。第一次失败保留cloud-first-*；唯一unit测试把GHA有意stdout注解错当stderr，修订仅unit，两显式环境×原六模式，产品helper不改。第二次成功不覆盖第一次失败。
 
-- [Verify](https://github.com/seiya058904/jianghu/actions/runs/39101353779)：failure。
-- [Pages](https://github.com/seiya058904/jianghu/actions/runs/39101353730)：failure，unit473/474，未上传/部署站点。
+- 已成功[Verify39103362100](https://github.com/seiya058904/jianghu/actions/runs/39103362100)。
+- 已成功[Pages39103362099](https://github.com/seiya058904/jianghu/actions/runs/39103362099)。
 
-唯一失败：historical-baselines-policy断言只在stderr找缺席告警；产品测试helper在GITHUB_ACTIONS按原设计写stdout的::warning注解。子进程exit0/null均正确。保留cloud-first-pages-failed.log/cloud-first-failure.json，以及本地同环境先复现失败的ci-warning-original-actions.log。修订仅限unit：两显式环境×原六模式，原status/null/throws均保留，新增精确双通道和缺席report核验；见ci-warning-channel-review。不是修改产品输出来讨好测试，不假报首次云绿。
+## 已成功站点验证与新发现的升级P1
 
-## 当前公开修订冷检出
+67eb的Pages artifact下载保存，**351/351正式HTTPS文件与该云端artifact逐字节相同**，pages-artifact-ci-fixed.json。与Windows d62构建比较是347/351字节相同；四个offline*.json仅URL数组顺序不同、排序后逐项完全一致、计数相同且无增缺，ci-windows-first-artifact-comparison.json。这是跨OS遍历顺序差异，不能写成Windows351全同云端；以云端artifact作为正式线上逐字节验收基准。
 
-隔离本地HEAD `67eb150348013c06bdf328a95589395b3c987aa0`，来源d62，已于2026-10-18 14:14:52 +08普通FF追加push，远端实时核同。2388允许文件/85238633B；隐私与原典窗口探针0命中，未加LICENSE。CI=true/GITHUB_ACTIONS=true下冷npm ci0/build0/474单测0，全部2388plan文件无漂移、869部署源/测试与351dist逐hash同冻结RC。证据public-ci-cold-validation.json与public-ci-install/build/tests.log。
+鲜Chrome双档1440/390共26入口实际通过，推荐/旧版/作品库、11篇开局，太华/龙门/死人两真实选择及刷新恢复，console/pageerror/HTTP/requestfailed/image decode/横溢均0，online-ci-fixed.json。父实际查看桌面首页和手机死人舞台，精选WebP及VISUAL_PLAYTHROUGH可核。
 
-公开缺席40个原典/docs archives基线路径已逐项核准并告警；它们不是40个测试失败，也不是作者侧跳过。作者完整冻结字节仍断言；公开归档完整性明确PARTIAL。完整原典Git blob在此前公开对象库缺席检查与逐文本窗口探针互补；最终公开HEAD还须重核，见public-history-canon-check.json、PUBLIC_SNAPSHOT_MANIFEST.md。
+但发布前保留的真实V6正式窗口调用update、刷出新player并收到龙门下载ready后，断网index仍旧campaign模块导入失败；online-old-sw-v6-failure.json。原异步身份guard未可靠证明新SW激活，且窗口已关闭无cache dump，**不能唯一追认当时缓存层或宣称已完整等激活**。此失败触发独立HTTPcache反例，不以鲜上下文通过掩盖升级问题。
 
-## 最终发布与正式线上（尚待执行）
+ENG06：默认addAll可复制HTTP缓存中的旧HTML，导航fetch也可在断网时优先返回旧HTTP HTML。原shell两用例只改HTML为maxage3600即2/2失败，113仅改SW三处cache策略后原断言2/2通过；VM6、全474、80编辑子集均0。独立8阶段机制probe与真实a6 Git字节回归分开记录。
 
-|项|当前证据/待完成点|
+真实旧字节回归先安全提取a6并冷ci/build0。根/子路径×原/修4case，用显式Promise确认旧worker redundant、新active/controller activated后才继续：原2例仍旧HTML/离线失败，修2例install已新HTML，根/index各16卡、龙门lm_borrow_1→2、page/HTTP均0。actual-v6-upgrade-summary/result与旧dist/extract清单可核；不冒充再次原正式已闭V6窗口。修复版正式部署后的真实67eb持久profile升级仍须完成。
+
+## 当前113公开代码冷检出（未push）
+
+隔离本地HEAD **4d14cda0eb131d1f1496671129aefa7992142d06**；策展来源113，2420允许文件/86413768B，最大文字JSON4221144B。privacy0、159MD/426本地链接0；CI=true/GITHUB_ACTIONS=true冷npmci/build/全474均0，全部plan无漂移、869部署源与351Windows dist同rc-sw冻结指纹，public-sw-cold-validation.json。40私有基线缺席路径明确允许告警，公开归档完整性仍PARTIAL，不是假称作者跳过。
+
+当前4d14为隔离本地代码提交，完整492门禁及最终文档同步后才普通追加；不以67eb的旧云绿代表新113已发布。最终公开文件数量/HEAD会随已提交回执文档增加，现值明确是中间快照。
+
+## 待完成的最终步骤
+
+|项|当前边界|
 |---|---|
-|最终RC全量与不变性|PASS：d62新完整492/492，独立JSON/runner exit0及全部五类文件hash已核同|
-|已完成修复普通FF|f1→67eb150普通push exit0，normal-push-ci-fixed.json；精确Verify39103362100/Pages39103362099已启动，待成功，不预报上线|
-|最终公共SHA/作者对应SHA|由正常提交与推送回执记录，两个SHA不应硬凑相同|
-|精确最终Verify与Pages|必须等该SHA两workflow success；旧失败不能拿以后可能绿掩盖|
-|CI artifact与正式在线字节|下载精确Pages run artifact，安全提取，逐文件HTTPS对照全部部署文件；不拿Windows构建代云端artifact|
-|正式Chrome双档/深链/交互|26入口、真实开局及太华/龙门/死人两选择与刷新，检查console/network/image decode/横溢；未执行不得PASS|
-|真实旧SW原地更新/断网|长窗口旧正式SW+龙门包已提前独立准备，首次新Pages成功才发实际publicCommit信号；短2h等待窗因CI失败未发信号过期，见online-short-window-expired.json，不当产品SW更新失败|
-|最后作者/公开状态与占用|最终git status/两HEAD、原典SHA、外置收尾测量、最终恢复bundle及每日提案全保全另验|
+|同RC完整492|PASS：rc-sw-e2e-summary独立核492/492、exit0与全部五类结束后文件hash；0失败/跳过/flaky/重试|
+|最终普通FF|新fetch核main仍67eb、祖先关系、最终策展/隐私/链接审查、普通push，无force|
+|精确新SHA云门禁|等待其Verify/Pages success；下载该Pages run artifact并全文件HTTPS比较|
+|正式修复浏览器|双档26入口/真实两选择/刷新/图片/console/network重新验收|
+|真实旧SW正式原地升级|live-update-post67eb-strict已复用真实持久profile；新Pages成功后才写实际SHA信号，显式Promise等旧redundant及active/controller activated，真实typing结束再推进，断网16卡+龙门|
+|最后作者/公开状态与体积|最终两HEAD/clean status、原典SHA、完整恢复bundle、候选TREE/私档保全与外置实际测量|
 
-正式地址：[作品库](https://seiya058904.github.io/jianghu/)。实际验收清单包括taihua、twelfth-life、jade-thieves/jade、qingshi、longmen、dead-ranking、luhua、north、sea-tide及tide-v6；HTTP200不能单独证明可玩。
+首个成功修复部署后写真实回执，再同步公开文档提交并等待其最终SHA的CI/Pages、artifact和线上。作者私有侧保存最后精确公共SHA；公开侧保留上一已完成产品回执及最新Actions入口，避免文档自身SHA无限写入自身。文档提交间产品/测试/工作流/869部署源与实际构建不得改变。
 
-首个成功产品发布后才写其真实回执，再同步文档提交并等待那个最终SHA的CI/Pages和artifact/浏览器验收。作者私有侧保存最后精确公共SHA；公开侧保留上一已完成产品回执和最新Actions入口，避免文档自身SHA写入自身无限提交。所有文档提交之间，产品/测试/工作流/部署源/构建的实际hash必须不变。
+正式[作品库](https://seiya058904.github.io/jianghu/)，已在67eb真测[龙门](https://seiya058904.github.io/jianghu/longmen.html)、[死人](https://seiya058904.github.io/jianghu/dead-ranking.html)、[太华](https://seiya058904.github.io/jianghu/taihua.html)、[山河璧](https://seiya058904.github.io/jianghu/jade.html)、[芦花渡](https://seiya058904.github.io/jianghu/luhua.html)等；新修复最终验收仍待后继回执。

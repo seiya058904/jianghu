@@ -1,0 +1,206 @@
+{
+  "sourceCommit": "113872382f2697f94bbf8f5dc3c62692641cf731",
+  "reportMtimeUTC": "2026-10-18T06:49:40.889776+00:00",
+  "previousRows": 6984,
+  "currentRows": 7289,
+  "newConservativePaths": 305,
+  "allOriginalNonAfterProofFieldsByteValuesPreserved": true,
+  "currentCSVBytes": 3257800,
+  "currentCSVSHA256": "874d5984d08c66b4f88be06094657bee4d0c879520ff163c4bf605016c727435",
+  "afterInventorySHA256": "f07499d50a628ea645c03c075781ef29b9b4e7969a4bc47a9e629456bd0938de",
+  "snapshot": {
+    "head": "113872382f2697f94bbf8f5dc3c62692641cf731",
+    "all_bytes": 1410755160,
+    "allocated_bytes": 1419718624,
+    "git_bytes": 1127612741,
+    "worktree_bytes": 283142419,
+    "all_GiB": 1.3138681277632713,
+    "all_GB_decimal": 1.41075516,
+    "under_1GiB": false,
+    "files": 5094,
+    "groups": {
+      "(root)": {
+        "files": 77,
+        "logical_bytes": 24611858,
+        "allocated_bytes": 24685936
+      },
+      ".git": {
+        "files": 303,
+        "logical_bytes": 1127612741,
+        "allocated_bytes": 1128112192
+      },
+      ".github": {
+        "files": 2,
+        "logical_bytes": 5259,
+        "allocated_bytes": 8192
+      },
+      ".impeccable": {
+        "files": 7,
+        "logical_bytes": 3448762,
+        "allocated_bytes": 3461120
+      },
+      ".workbuddy": {
+        "files": 3,
+        "logical_bytes": 32583,
+        "allocated_bytes": 40960
+      },
+      "dist": {
+        "files": 351,
+        "logical_bytes": 37008548,
+        "allocated_bytes": 37802496
+      },
+      "docs": {
+        "files": 2170,
+        "logical_bytes": 79743383,
+        "allocated_bytes": 83425608
+      },
+      "node_modules": {
+        "files": 1343,
+        "logical_bytes": 92095984,
+        "allocated_bytes": 94307952
+      },
+      "public": {
+        "files": 177,
+        "logical_bytes": 29524923,
+        "allocated_bytes": 29872360
+      },
+      "scripts": {
+        "files": 30,
+        "logical_bytes": 125273,
+        "allocated_bytes": 180224
+      },
+      "src": {
+        "files": 123,
+        "logical_bytes": 7622881,
+        "allocated_bytes": 7865368
+      },
+      "story": {
+        "files": 317,
+        "logical_bytes": 7787555,
+        "allocated_bytes": 8462336
+      },
+      "test-results": {
+        "files": 1,
+        "logical_bytes": 45,
+        "allocated_bytes": 48
+      },
+      "test-results-jade-editorial": {
+        "files": 1,
+        "logical_bytes": 45,
+        "allocated_bytes": 48
+      },
+      "test-results-jade-editorial-extra": {
+        "files": 1,
+        "logical_bytes": 45,
+        "allocated_bytes": 48
+      },
+      "test-results-jade-second-editorial-extra": {
+        "files": 1,
+        "logical_bytes": 45,
+        "allocated_bytes": 48
+      },
+      "test-results-jade-v2-editorial": {
+        "files": 1,
+        "logical_bytes": 45,
+        "allocated_bytes": 48
+      },
+      "test-results-kuhe-editorial-final": {
+        "files": 1,
+        "logical_bytes": 45,
+        "allocated_bytes": 48
+      },
+      "test-results-kuhe-editorial-sw-final": {
+        "files": 1,
+        "logical_bytes": 45,
+        "allocated_bytes": 48
+      },
+      "test-results-kuhe-v2-offline-fixed": {
+        "files": 2,
+        "logical_bytes": 12964,
+        "allocated_bytes": 16480
+      },
+      "test-results-longmen-editorial": {
+        "files": 1,
+        "logical_bytes": 45,
+        "allocated_bytes": 48
+      },
+      "test-results-longmen-editorial-day4": {
+        "files": 1,
+        "logical_bytes": 45,
+        "allocated_bytes": 48
+      },
+      "test-results-longmen-editorial-extra": {
+        "files": 2,
+        "logical_bytes": 12421,
+        "allocated_bytes": 16480
+      },
+      "test-results-north-v3-extra": {
+        "files": 1,
+        "logical_bytes": 45,
+        "allocated_bytes": 48
+      },
+      "test-results-north-v3-notes": {
+        "files": 1,
+        "logical_bytes": 45,
+        "allocated_bytes": 48
+      },
+      "test-results-qingshi-editorial-choice-final": {
+        "files": 1,
+        "logical_bytes": 45,
+        "allocated_bytes": 48
+      },
+      "test-results-qingshi-editorial-cold": {
+        "files": 1,
+        "logical_bytes": 45,
+        "allocated_bytes": 48
+      },
+      "test-results-qingshi-editorial-extra": {
+        "files": 1,
+        "logical_bytes": 45,
+        "allocated_bytes": 48
+      },
+      "test-results-qingshi-editorial-first": {
+        "files": 1,
+        "logical_bytes": 45,
+        "allocated_bytes": 48
+      },
+      "test-results-royal-editorial": {
+        "files": 3,
+        "logical_bytes": 18699,
+        "allocated_bytes": 24728
+      },
+      "test-results-royal-editorial-extra": {
+        "files": 1,
+        "logical_bytes": 45,
+        "allocated_bytes": 48
+      },
+      "test-results-royal-editorial-v1": {
+        "files": 1,
+        "logical_bytes": 45,
+        "allocated_bytes": 48
+      },
+      "test-results-taihua-editorial": {
+        "files": 1,
+        "logical_bytes": 45,
+        "allocated_bytes": 48
+      },
+      "test-results-taihua-editorial-extra": {
+        "files": 1,
+        "logical_bytes": 45,
+        "allocated_bytes": 48
+      },
+      "test-results-taihua-editorial-stage": {
+        "files": 1,
+        "logical_bytes": 45,
+        "allocated_bytes": 48
+      },
+      "tests": {
+        "files": 164,
+        "logical_bytes": 1090426,
+        "allocated_bytes": 1435232
+      }
+    },
+    "allocation_method": "FILE_STANDARD_INFO.AllocationSize, excludes directory metadata and shared-object deduplication"
+  },
+  "boundary": "AFTER is the measured pre-publication RC113 snapshot; report copies/CSV growth/later commits are counted by final external closing scan."
+}

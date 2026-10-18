@@ -1,13 +1,13 @@
 {
-  "head": "a04d36a665416f45297a5c2a0191863bd0f44316",
-  "all_bytes": 1403277661,
-  "allocated_bytes": 1411713320,
-  "git_bytes": 1123264381,
-  "worktree_bytes": 280013280,
-  "all_GiB": 1.3069041641429067,
-  "all_GB_decimal": 1.403277661,
+  "head": "113872382f2697f94bbf8f5dc3c62692641cf731",
+  "all_bytes": 1410755160,
+  "allocated_bytes": 1419718624,
+  "git_bytes": 1127612741,
+  "worktree_bytes": 283142419,
+  "all_GiB": 1.3138681277632713,
+  "all_GB_decimal": 1.41075516,
   "under_1GiB": false,
-  "files": 4789,
+  "files": 5094,
   "groups": {
     "(root)": {
       "files": 77,
@@ -15,9 +15,9 @@
       "allocated_bytes": 24685936
     },
     ".git": {
-      "files": 63,
-      "logical_bytes": 1123264381,
-      "allocated_bytes": 1123357464
+      "files": 303,
+      "logical_bytes": 1127612741,
+      "allocated_bytes": 1128112192
     },
     ".github": {
       "files": 2,
@@ -36,13 +36,13 @@
     },
     "dist": {
       "files": 351,
-      "logical_bytes": 37008232,
+      "logical_bytes": 37008548,
       "allocated_bytes": 37802496
     },
     "docs": {
-      "files": 2105,
-      "logical_bytes": 76616666,
-      "allocated_bytes": 80175032
+      "files": 2170,
+      "logical_bytes": 79743383,
+      "allocated_bytes": 83425608
     },
     "node_modules": {
       "files": 1343,
@@ -51,7 +51,7 @@
     },
     "public": {
       "files": 177,
-      "logical_bytes": 29524607,
+      "logical_bytes": 29524923,
       "allocated_bytes": 29872360
     },
     "scripts": {
@@ -186,7 +186,7 @@
     },
     "tests": {
       "files": 164,
-      "logical_bytes": 1088636,
+      "logical_bytes": 1090426,
       "allocated_bytes": 1435232
     }
   },
