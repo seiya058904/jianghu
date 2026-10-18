@@ -1,5 +1,7 @@
 # Jianghu / 宋世江湖 · 独立全面审计与交付
 
+最后公共SHA已完成验收：ef598cd5ed709e86a05007403bd2776bcfdfedf0，两云success、351线上核同、鲜Chrome26通过。最终时点与私有收尾记录只保存在私有审计目录（不随公开快照发布）；下文各阶段快照保留原时间与边界。
+
 **总状态：INCOMPLETE；产品已完成部署及线上验收，28 PASS／1 PARTIAL／1 BLOCKED／0 FAIL。F18性能PARTIAL、F24作者库体积BLOCKED。**
 
 本稿依据委托 §17 整理。当前冻结RC为 `113872382f2697f94bbf8f5dc3c62692641cf731`：修复SW更新后旧HTTP缓存首页干扰离线入口，产品仅public/sw.js变化、dist仅sw.js变化，三份相关测试同步增强。新build exit0，CI环境474/474单测exit0；完整492项E2E已单run通过：492/492、0失败／跳过／flaky／重试、exit0、19.2分钟，8 workers，五类逐文件指纹运行后全部核同（`rc-sw-e2e-summary.json`）。d62f完整492/492、exit0、19.0分钟及a04完整492/492均保留为历史证据，不能代替本次新RC。旧ec53完整491／1、fcef中止286／1、首次公共CI473／1及真实旧SW离线失败分别保留，不拼接通过数。

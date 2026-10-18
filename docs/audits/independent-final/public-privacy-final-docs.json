@@ -1,0 +1,19 @@
+{
+  "sourceCommit": "c425597805f8fb032426641d19b8226cebeff866",
+  "publicBefore": "f48614493ec4340355602f77d64b19c02220781e",
+  "manifestFiles": 2466,
+  "manifestBytes": 89033123,
+  "manifestHashMismatches": [],
+  "forbiddenPaths": [],
+  "patternFindings": [],
+  "canonScan": {
+    "window": 512,
+    "stride": 128,
+    "whitespaceRemoved": true,
+    "testedSamples": 1461,
+    "findings": [],
+    "boundary": "Disclosure probes, not proof against every possible encoding or paraphrase. Public authored adaptations intentionally retain brief canonical facts."
+  },
+  "binaryFiles": 204,
+  "binaryReview": "Existing public art plus independently viewed runtime WebP. No ZIP/bundle/key or candidate original included. No OCR claim."
+}

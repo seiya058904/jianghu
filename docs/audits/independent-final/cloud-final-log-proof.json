@@ -1,0 +1,26 @@
+[
+  {
+    "name": "verify",
+    "run": 39106753895,
+    "bytes": 228897,
+    "sha256": "36461668688b83fcf622770dee0a578d09aaaf8a63bdbf61d153ae28949f44ca",
+    "countLines": [
+      "Build and unit suite\tUnit and narrative-contract tests\t2026-10-18T07:18:42.6920170Z ℹ tests 474",
+      "Build and unit suite\tUnit and narrative-contract tests\t2026-10-18T07:18:42.6920774Z ℹ pass 474",
+      "Build and unit suite\tUnit and narrative-contract tests\t2026-10-18T07:18:42.6920975Z ℹ fail 0",
+      "Build and unit suite\tUnit and narrative-contract tests\t2026-10-18T07:18:42.6921389Z ℹ skipped 0"
+    ]
+  },
+  {
+    "name": "pages",
+    "run": 39106753840,
+    "bytes": 246580,
+    "sha256": "cf6e1f29e269f193edf38bc195d3477dc30cf6ec29f10902a6d6a0e5a42fd994",
+    "countLines": [
+      "Build static site\tVerify all unit and editorial contracts before publishing\t2026-10-18T07:17:52.8621979Z ℹ tests 474",
+      "Build static site\tVerify all unit and editorial contracts before publishing\t2026-10-18T07:17:52.8622431Z ℹ pass 474",
+      "Build static site\tVerify all unit and editorial contracts before publishing\t2026-10-18T07:17:52.8622638Z ℹ fail 0",
+      "Build static site\tVerify all unit and editorial contracts before publishing\t2026-10-18T07:17:52.8640532Z ℹ skipped 0"
+    ]
+  }
+]

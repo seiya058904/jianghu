@@ -1,0 +1,10 @@
+{
+  "checkedAt": "2026-10-18T07:12:37.489378+00:00",
+  "publicCommit": "ef598cd5ed709e86a05007403bd2776bcfdfedf0",
+  "canonBytes": 579299,
+  "canonSHA256": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393",
+  "protectedCopyByteExact": true,
+  "publicEntireObjectDatabaseOriginalBlobCheck": "d7d51de4a39e4a176d0fbf1f3c20ead4104dde98 missing",
+  "forbiddenTrackedPaths": [],
+  "licenseChanges": []
+}

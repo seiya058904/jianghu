@@ -1,0 +1,15 @@
+{
+  "proofs": {
+    "all-source": {
+      "count": 869,
+      "fingerprint": "afd05b04a097e6ea9756f58ae8a0dd3c1e58fc9965f5625dc9af9971f0e14594",
+      "mismatches": []
+    },
+    "dist": {
+      "count": 351,
+      "fingerprint": "797a6a2d1c252c45eadd59585a32cd23a636b129b7445c5cb387efebad538ded",
+      "mismatches": []
+    }
+  },
+  "canonOriginalGitBlobMissing": "d7d51de4a39e4a176d0fbf1f3c20ead4104dde98 missing"
+}

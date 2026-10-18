@@ -1,5 +1,7 @@
 # 体积测量与恢复（最后提交后另作外置收尾实测）
 
+最后公共SHA已完成验收：ef598cd5ed709e86a05007403bd2776bcfdfedf0，两云success、351线上核同、鲜Chrome26通过。最终时点与私有收尾记录只保存在私有审计目录（不随公开快照发布）；下文各阶段快照保留原时间与边界。
+
 **F24：BLOCKED。** 当前RC113全量验收后、发布前快照为 **1,410,755,160逻辑bytes / 1,419,718,624逐文件allocation bytes**，均超过1GiB。113完整492/492、0失败/跳过/flaky/重试、exit0已结束；量化与交付无关的历史对象仍保留。本报告、RISK CSV及后续提交会改变占用，最终回复使用最后提交/关闭进程后的项目外closing-author-measure原始实测，不能把此快照当最终即时目录。
 
 ## 当前AFTER快照与口径
@@ -112,3 +114,13 @@ git -C $recovery fsck --full
 113产品已在28a候选真实冷CI模式重建并474通过，来源2a2、2594追踪+478保全、869/918/351逐文件同冻结113，见daily-sw-validation.json和三份daily-sw原始日志。后续仅最终文档同步；最终候选体积与HEAD/TREE以外置daily-final-verify.json为准，不使用上述旧259MB/329MB替代实测。当前作者根仍未替换。
 
 final-original-recovery-recheck.json实际于06:59UTC重新读取原始bundle、2121张外置PNG和46个不可变完整Git备份文件：Length/SHA全部一致、无额外/缺失。最终新增提交另作增量bundle，原完整bundle/不可变备份保持原字节。最终外置closing-author-measure会计入所有最终文档和Git对象，不逆改BEFORE或伪造当时AFTER。
+
+
+---
+
+> **2026-10-18 交换后的最终实测（追加，不修改上文历史数字）**
+>
+> 日用根 `Jianghu`（含 .git/node_modules/dist，完整日常使用状态）：逻辑 336,030,358 B（0.313 GiB）、逐文件 AllocationSize 345,100,448 B（0.321 GiB），两项均 < 1,073,741,824 ⇒ F24 的日用根目标 PASS。
+> 旧作者完整历史根 `Jianghu-author-history-20261018`：逻辑 1,422,855,814 B、AllocationSize 1,432,052,864 B（1.33 GiB，有意保留，不计入日用目标）。
+> 口径不变：不含目录/MFT 元数据、卷去重与磁盘空闲变化；外置 bundle、2,121 张 PNG、完整旧 `.git` 副本仍占磁盘，保留空间不等于释放空间。
+> 原始实测 JSON：项目外 `Jianghu-independent-20261018\daily-switch-20261018\size-new-daily-at-switch.json` 与 `size-author-history.json`；私有采用回执留在私有审计目录，不随公开快照发布。

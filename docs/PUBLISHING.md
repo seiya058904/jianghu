@@ -1,46 +1,81 @@
 # 安全公开发布流程
 
-作者完整仓库与公共main是不同谱系。公共main在起点为a6e5d5947ce2d06c6c2ab83e1cfd515c95191959；此值只是2026-10-18基线，每次发布必须重新fetch。**更新不需要强推**：从远端当前main继续正常增量历史。
+## 0. 模型：私有日用谱系 + 公共策展镜像
 
-## 1. 发布前提
+- 本机日用仓库 `Jianghu` 是**私有 Git 谱系**，保存原典、私档、完整证据与全部历史。
+- 公开仓库 `https://github.com/seiya058904/jianghu` 的 `main` 是**策展镜像**：只从私有已提交版本里取经过允许清单筛选的追踪文件，重新在公共 `main` 上形成普通增量提交。
+- 两套历史**不共享线性祖先**。不要 merge／rebase／reset 对方分支，不要把私有分支推到公开 `main`，不要 force push。两个 HEAD SHA 不同是镜像的正常事实，不是同步失败。
+- 公开发布永远发生在**另一个隔离公共检出**里；私有日用仓库本身不换历史、不重置工作区。
 
-明确用户授权；作者RC构建、全部单测/编辑契约、完整浏览器套件和相关视觉检查通过。记录源提交、产品文件manifest、dist哈希和真实退出码；失败保留日志。源变更后重新冻结验证。
+## 1. 只读查看公共状态（fetch-only remote）
 
-本轮审计与当前结论见 [独立终审](audits/independent-final/BASELINE.md)及[发布验证](audits/independent-final/RELEASE_VALIDATION.md)。未看到云端最终成功和线上实走前不得称已上线。
-
-## 2. 允许与排除
-
-scripts/public-snapshot.py只读取指定Git提交中的追踪对象；先按明确的源码/资源/测试/文档扩展名与目录构造候选清单，再排除以下项。最终逐文件plan必须人工审查，脚本不是通用保密判断器。
-
-- 排除宋世江湖.md全文、docs/archives、.workbuddy、.impeccable、候选原图目录、.env、私钥、ZIP/bundle备份和海量原始截图。
-- 保留当前源码、生成数据、历史故事兼容源、运行美术、锁文件、测试/CI、必要文字证据和精选小WebP。
-- 仅从已验证RC取源，不将未追踪临时文件复制进去。
-- 文档与文字证据中的本机绝对路径在公共一侧脱敏；不重写可执行源码、冻结预期哈希或剧情字节。隐私扫描必须同时检查文件名、正文、压缩包和秘密模式，不能只查原典文件名。
-- 不新增LICENSE，不把公开可读视为额外再许可。
-
-既有公开运行素材 `public/art/ferry.png` 为 2,701,831 字节。仅在源文件 SHA-256 等于脚本登记值、且与当前公共检出的同路径逐字节相等时保留；这不允许新增或替换大图。其它超过 1,000,000 字节的二进制继续阻断。
-
-## 3. 隔离检出与差异预览
-
-先核author工作区、HEAD、原典哈希、remote URL、认证用户和远端当前main。保留完整历史bundle与必要私档备份，不在作者工作区切孤儿分支或清索引。
-
-在项目外创建新的公共克隆，基于刚fetch的main建codex/前缀发布分支。克隆目标须是全新明确路径，不能覆盖已有用户目录。
-
-示例参数须替换为本次真实RC和隔离路径：
+私有日用仓库配置了一个仅供查看的公开 remote：
 
 ```bash
-git clone --single-branch --branch main https://github.com/seiya058904/jianghu.git <public-checkout>
-git -C <public-checkout> switch -c codex/independent-final-publish
-python scripts/public-snapshot.py --source-ref <AUTHOR_RC_SHA> --destination <public-checkout> --plan <external-plan.json>
+git fetch github-public                                  # 只读
+git log --oneline -5 github-public/main                  # 公共最近提交
+git rev-parse github-public/main                         # 公共 main SHA
+git remote -v                                            # fetch URL 是 GitHub，push URL 是 disabled://
 ```
 
-plan记录源SHA、发布前SHA、新增/变更/移除清单、每文件字节与SHA、脱敏项、排除项和总量。检查原典、私档、秘密、候选原图、超大二进制、符号链接、未知新增文件和旧公开追踪残留。差异可接受后才用完全相同参数加--apply。
+推送阻断是双保险：`github-public` 的 push URL 被设为不可用协议，且 `.git/hooks/pre-push` 会拒绝任何指向公开仓库的推送。**不要**用真实推送去“验证”阻断；用 `git remote get-url --push github-public` 与 dry-run 即可。不要给私有分支设置公开 upstream。
 
-脚本只在干净公共Git根目录应用明确清单；只移除隔离公共检出里不在允许集的已追踪文件，不触碰作者完整仓库。plan必须在两个检出之外。
+## 2. 一键入口
 
-## 4. 公共冷检出复验
+```powershell
+scripts/publish-public.ps1 -Help            # 用法与退出码
+scripts/publish-public.ps1 -DryRun          # 默认行为：只读 fetch + 生成计划 + 隐私审计
+scripts/publish-public.ps1 -Publish         # 明确授权的真实发布（普通快进）
+```
 
-在公共检出中执行：
+- 干运行**绝不写远端**，只创建项目外临时公共检出和计划文件，结束时清理自己创建的临时目录。
+- 发布模式必须显式 `-Publish`；要求私有工作区干净、源提交就是当前 HEAD，否则拒绝。
+- 私有新增改动应先审计、测试并正常提交；快照只读**已提交**版本，不读未追踪文件、缓存或正在编辑的工作文件。
+- 没有经审阅的公开增量时返回 `NO_PUBLIC_CHANGE`：不制造空提交、不盲目推送刷新 Actions。
+
+退出码：`0` 成功或无需发布，`2` 预检／环境失败，`3` 隐私或策略阻断（含未批准的删除），`4` 公共检出冷验证失败，`5` 远端已前进或无法快进，`6` CI／线上验收失败，`7` 参数或授权不足。
+
+## 3. 发布策略（policy version 2，fail-closed）
+
+计划由 `scripts/public-snapshot.py` 生成，逐路径判定为 **candidate / excluded / blocked** 三类，并且对每个候选同时检查**路径、内容与体积**。
+
+允许范围（显式目录 + 显式扩展名）：
+
+| 范围 | 允许类型 |
+|---|---|
+| 根目录 | `.html`、`.md`，以及 7 个固定配置文件（package/lock/tsconfig/vite/playwright/gitattributes/gitignore） |
+| `src/` | `.ts` `.css` `.json` |
+| `story/` | `.mjs` `.ink` `.json` `.md` |
+| `public/` | `.js` `.json` `.svg` `.webp` `.png` `.txt` `.ico` |
+| `scripts/` | `.mjs` `.py` `.ps1` `.sh` |
+| `tests/` | `.ts` `.json` |
+| `docs/` | `.md` `.json` `.log` `.txt` `.csv` `.webp` |
+| `.github/workflows/` | `.yml` `.yaml` |
+
+必须排除（永不公开）：
+
+- `宋世江湖.md` 原典全文及其副本；
+- `docs/archives/**` 私有冻结来源字节；
+- 私有清理／切换／恢复记录、私档清单、recycle/switch journal、仓库清单（精确路径与判定规则写在策略脚本和私有边界记录中，公开文档不展开）；
+- `.workbuddy/`、`.impeccable/`、`docs/art/candidates-*` 候选原图；
+- `.env`／凭据／私钥／ZIP／bundle／数据库／可执行文件；`docs/` 下的可执行探针脚本；
+- 本机绝对路径、账号或机器信息（文档内脱敏；源码／Ink／生成物／运行资产内出现即阻断）。
+
+fail-closed 规则：
+
+- **未分类路径 = BLOCKED**：新增顶层目录、未知扩展名、未知根文件都停在计划阶段，必须先审阅并更新策略。
+- 文档类文件（`md/txt/log/csv` 与 `docs/` 下 `json`）里的本机绝对路径会被脱敏；源码、Ink、生成物、运行资产、测试和脚本**从不自动改写**，出现机器路径即阻断。
+- 新引入私有记录标识（清理／回滚日志、私档清单、切换 journal、旧谱系目录名等）阻断，防止把新的私有操作记录混进镜像。
+- 符号链接／特殊文件、路径逃逸、大小写重复、压缩私档、密钥模式、`>1MB` 未登记二进制一律阻断。
+- 已登记例外仅 `public/art/ferry.png` 的精确字节；不允许新增或替换大图。
+- 删除必须显式：计划里的 `removed` 每一项都要用 `--allow-remove` 批准并在提交说明写出理由；否则 `--apply` 拒绝，避免默默删除远端仅有的有效文件。
+- 计划必须新鲜：`--apply` 复核源 SHA、公共 HEAD、计划摘要与干净状态；公共 `main` 被他人推进时停止并重新计划。
+
+本轮（2026-10-18）起，公开镜像不再携带私有清理／切换记录。此前公开历史已携带的审计目录内容不回写、不改写历史；本轮以普通删除提交从镜像移除一份私有切换计划，理由写在提交说明中。
+
+## 4. 隔离公共检出与冷验证
+
+发布脚本在项目外临时目录 `git clone --single-branch --branch main` 公共仓库，并核对 clone HEAD 与 `ls-remote` 的 `main` 一致，然后：
 
 ```bash
 npm ci
@@ -50,38 +85,27 @@ git diff --exit-code -- story src/generated
 git diff --check
 ```
 
-运行必要浏览器冒烟/资源解码，确认相同源码构建的资源与作者RC一致。私有冻结基线缺席必须产生可识别warning和missing清单，其余验证正常通过；公开不能声称证明了完整原典或私档字节。
-
-仅将已审查文件和必要日志加入公共提交；对被.gitignore忽略的文字证据定向git add -f，不能无差别强加原图和私档。
+公共检出缺少原典与 `docs/archives` 时，冻结基线缺席是**明确 warning／部分验证**，不代表完整字节已验证；源码或运行资源意外缺失必须失败。只有通过冷验证的同一份公共树才允许提交。
 
 ## 5. 普通快进发布
 
-提交以当前远端main为祖先。推送前再次fetch并检查远端没有被他人推进，然后普通推送：
+- 在隔离公共检出建 `codex/public-publish-<源SHA前7位>` 分支，普通提交（提交说明包含源 SHA、策略版本与计划 SHA-256）。
+- 推送前重新 `fetch`，确认 `origin/main` 仍等于计划里的 `publicBefore`，且是本地提交的祖先；否则 `CONFLICT/BLOCKED` 停止，重新取最新 HEAD 重新计算差异。
+- 推送：`git push origin HEAD:main`。禁止 `--force`、`--force-with-lease`、删除远端分支。
 
-```bash
-git -C <public-checkout> push origin <publish-branch>:main
-```
+## 6. Actions 与线上验收
 
-非快进拒绝时重新fetch，在隔离检出合并/重做同步，不加force或force-with-lease。不能把作者master直接推到公开main，不能替换远端历史。
+- 用 `gh run list --commit <新公共SHA>` 等到该 SHA 的 **Verify** 与 **Deploy site to GitHub Pages** 都到 `completed/success`；任一失败即报告失败，不写“已上线”。
+- 下载该 SHA 的 Pages artifact，与线上 assets／sw／offline 清单比字节。
+- 真实浏览器冷上下文打开作品库、推荐顺序和多个深链，实际点选、看图片解码、刷新与存档、基本移动布局；**HTTP 200 或仅触发 Actions 不算上线验收**。
+- 记录：源 SHA、公共前后 SHA、plan SHA-256、两个 run URL、线上检查结论与未核边界。
 
-保留作者RC、公共前后SHA、同步manifest checksum和差异。两个SHA不同是策展镜像的正常事实。
+## 7. 私有冻结基线
 
-## 6. Actions与线上验收
+`tests/frozen-baselines.ts` 仅对明确排除的 `宋世江湖.md` 与 `docs/archives` 子路径允许缺席告警；缺失 `src/story/public` 等必须失败。告警合并进 `docs/evidence/v6/frozen-baselines-missing.json` 并显示在 CI summary。公开侧只能声称“部分字节验证”。`tests/historical-baselines.ts` 的旧字节预期不因公开排除而降低。
 
-在**确切公共SHA**上查看Verify与Deploy site to GitHub Pages直到最终success或确定失败。发布workflow自身执行完整单测/编辑契约及生成物一致性门禁，验证失败不上传部署。
+## 8. 体积与回滚
 
-下载该SHA的Pages构建artifact，比较正式线上assets/sw/offline清单字节。真实Chrome冷上下文打开作品库、推荐顺序和多个深链，实际点选并检查控制台、图片解码、移动布局、根/子路径离线及旧缓存切换。HTTP200、仅触发Actions、仅本机build都不是上线验收。
-
-### 6.1 私有冻结基线
-
-tests/frozen-baselines.ts仅对明确排除的宋世江湖.md和docs/archives子路径允许缺席告警；缺失src/story/public等必须失败。告警合并入docs/evidence/v6/frozen-baselines-missing.json并显示在CI summary。
-
-tests/historical-baselines.ts针对本轮精修涉及的七份历史身份使用真实起点Git字节与严格来源manifest，先检查现行路径仍在。原预期清单不改，现行剧情行为另验。作者本机完整断言；公共因有意排除私档为部分字节验证。
-
-## 7. 瘦身与恢复
-
-历史PNG已逐件复制、验SHA、移出工作区并普通停止追踪，未删Git历史。[归档索引与恢复](evidence/README.md)。完整原图和Git bundle在作者项目外保留，公共镜像不携带。
-
-1GiB目标同时计工作区、依赖、构建与.git；scripts/measure-project.py按同一口径报告逻辑字节与文件allocation。仅移走截图不会回收历史对象，未达标就明确BLOCKED/FAIL。历史改写、无可恢复删除、替换作者库、强推、删reflog/objects仍需单独授权；不能为体积数字擅自执行。
-
-回滚优先普通revert或修复提交，保留发布历史。外部权限/服务故障阻断时记录精确点，不能假报已推送或上线。
+- 1GiB 目标同时计工作区、依赖、构建与 `.git`；`scripts/measure-project.py` 按同一口径报告逻辑字节与文件 allocation。不靠忽略截图或临时卸依赖造达标。
+- 回滚优先普通 `revert` 或修复提交，保留发布历史；不改写公开历史、不删 reflog/objects。
+- 外部权限／认证／服务故障时记录精确阻断点，不假报已推送或上线。

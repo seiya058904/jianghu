@@ -1,0 +1,779 @@
+{
+  "publicCommit": "ef598cd5ed709e86a05007403bd2776bcfdfedf0",
+  "startedAt": "2026-10-18T07:19:07.852Z",
+  "browser": "155.0.8059.40",
+  "pages": [
+    {
+      "file": "",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "inputs": [],
+      "title": "Jianghu · 宋世江湖 · 互动纪事集",
+      "version": null,
+      "imageFailures": []
+    },
+    {
+      "file": "index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "inputs": [],
+      "title": "Jianghu · 宋世江湖 · 互动纪事集",
+      "version": null,
+      "imageFailures": []
+    },
+    {
+      "file": "taihua.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "inputs": [
+        {
+          "beat": "th_called_1",
+          "action": "advance"
+        },
+        {
+          "beat": "th_called_2",
+          "action": "advance"
+        },
+        {
+          "beat": "th_called_3",
+          "action": "advance"
+        },
+        {
+          "beat": "th_called_4",
+          "action": "advance"
+        },
+        {
+          "beat": "th_called_5",
+          "action": "advance"
+        },
+        {
+          "beat": "th_called_6",
+          "action": "advance"
+        },
+        {
+          "beat": "th_called_7",
+          "action": "advance"
+        },
+        {
+          "beat": "th_called_8",
+          "cid": "th_care",
+          "text": "先把水盆移到师兄够得着的地方。"
+        },
+        {
+          "beat": "th_called_9",
+          "action": "advance"
+        },
+        {
+          "beat": "th_called_10",
+          "action": "advance"
+        },
+        {
+          "beat": "th_called_11",
+          "action": "advance"
+        },
+        {
+          "beat": "th_called_12",
+          "action": "advance"
+        },
+        {
+          "beat": "th_packing_1",
+          "action": "advance"
+        },
+        {
+          "beat": "th_packing_2",
+          "action": "advance"
+        },
+        {
+          "beat": "th_packing_3",
+          "action": "advance"
+        },
+        {
+          "beat": "th_packing_4",
+          "action": "advance"
+        },
+        {
+          "beat": "th_packing_5",
+          "action": "advance"
+        },
+        {
+          "beat": "th_packing_6",
+          "action": "advance"
+        },
+        {
+          "beat": "th_packing_7",
+          "cid": "th_promise",
+          "text": "答应回来把每一场亲眼看到的讲给师兄。"
+        }
+      ],
+      "title": "Jianghu · 太华试序",
+      "version": "taihua-3.0.0",
+      "imageFailures": [],
+      "firstBeat": "th_called_1",
+      "stageImageFailures": [],
+      "afterBeat": "th_packing_8",
+      "actualChoices": 2,
+      "reloadRestored": true
+    },
+    {
+      "file": "twelfth-life.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "inputs": [],
+      "title": "Jianghu · 第十二席 · 赵承晏",
+      "version": "twelfth-life-3.0.0",
+      "imageFailures": [],
+      "firstBeat": "rl_three_wins_1",
+      "stageImageFailures": []
+    },
+    {
+      "file": "jade-thieves.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "inputs": [],
+      "title": "Jianghu · 山河璧·密库双贼",
+      "version": "jade-thieves-2.0.0",
+      "imageFailures": [],
+      "firstBeat": "jt_threshold_1",
+      "stageImageFailures": []
+    },
+    {
+      "file": "jade.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "inputs": [],
+      "title": "Jianghu · 山河璧·十三文",
+      "version": "jade-2.0.0",
+      "imageFailures": [],
+      "firstBeat": "jd_cat_1",
+      "stageImageFailures": []
+    },
+    {
+      "file": "qingshi.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "inputs": [],
+      "title": "Jianghu · 青石五友·守一天",
+      "version": "qingshi-3.0.0",
+      "imageFailures": [],
+      "firstBeat": "qs_grain_1",
+      "stageImageFailures": []
+    },
+    {
+      "file": "longmen.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "inputs": [
+        {
+          "beat": "lm_borrow_1",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_borrow_2",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_borrow_3",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_borrow_4",
+          "cid": "lm_ask_use",
+          "text": "承认只记了次序，请他先让我摆出这一刀。"
+        },
+        {
+          "beat": "lm_borrow_5",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_borrow_6",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_borrow_7",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_old_blade_1",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_old_blade_2",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_old_blade_3",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_old_blade_4",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_old_blade_5",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_old_blade_6",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_old_blade_7",
+          "cid": "lm_ask_wound",
+          "text": "问旧伤现在怎样影响他，不把战绩当没受过伤。"
+        }
+      ],
+      "title": "Jianghu · 龙门问刀",
+      "version": "longmen-3.0.0",
+      "imageFailures": [],
+      "firstBeat": "lm_borrow_1",
+      "stageImageFailures": [],
+      "afterBeat": "lm_old_blade_9",
+      "actualChoices": 2,
+      "reloadRestored": true
+    },
+    {
+      "file": "dead-ranking.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "inputs": [
+        {
+          "beat": "dr_dead_letter_1",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_dead_letter_2",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_dead_letter_3",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_dead_letter_4",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_dead_letter_5",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_dead_letter_6",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_dead_letter_7",
+          "cid": "dr_ask_letter_hand",
+          "text": "先问老人究竟认得什么，不拿一句字不像便替死者断定又是假。"
+        },
+        {
+          "beat": "dr_dead_letter_8",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_dead_letter_9",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_dead_letter_10",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_old_dream_1",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_old_dream_2",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_old_dream_3",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_old_dream_4",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_old_dream_5",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_old_dream_6",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_old_dream_7",
+          "cid": "dr_pickup_training",
+          "text": "把剑拿起，陪徒弟接一轮；还会出手，也不必为做了榜房人就宣称从未想赢。"
+        }
+      ],
+      "title": "Jianghu · 死人争榜",
+      "version": "dead-ranking-1.0.0",
+      "imageFailures": [],
+      "firstBeat": "dr_dead_letter_1",
+      "stageImageFailures": [],
+      "afterBeat": "dr_old_dream_9",
+      "actualChoices": 2,
+      "reloadRestored": true
+    },
+    {
+      "file": "luhua.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "inputs": [],
+      "title": "Jianghu · 照水刀 · 芦花渡",
+      "version": "luhua-1.0.0",
+      "imageFailures": [],
+      "firstBeat": "lh_eleven_1",
+      "stageImageFailures": []
+    },
+    {
+      "file": "north.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "inputs": [],
+      "title": "Jianghu · 三师一枪",
+      "version": "north-3.0.0",
+      "imageFailures": [],
+      "firstBeat": "nq_hundred_twenty_seven_1",
+      "stageImageFailures": []
+    },
+    {
+      "file": "sea-tide.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "inputs": [],
+      "title": "Jianghu · 海路两世·归潮岛",
+      "version": "sea-tide-2.0.0",
+      "imageFailures": [],
+      "firstBeat": "st_first_boat_1",
+      "stageImageFailures": []
+    },
+    {
+      "file": "tide-v6.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "inputs": [],
+      "title": "Jianghu · 潮生有约",
+      "version": "tide-promise-2.0.0",
+      "imageFailures": [],
+      "firstBeat": "c_cargo_1",
+      "stageImageFailures": []
+    },
+    {
+      "file": "",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "inputs": [],
+      "title": "Jianghu · 宋世江湖 · 互动纪事集",
+      "version": null,
+      "imageFailures": []
+    },
+    {
+      "file": "index.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "inputs": [],
+      "title": "Jianghu · 宋世江湖 · 互动纪事集",
+      "version": null,
+      "imageFailures": []
+    },
+    {
+      "file": "taihua.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "inputs": [
+        {
+          "beat": "th_called_1",
+          "action": "advance"
+        },
+        {
+          "beat": "th_called_2",
+          "action": "advance"
+        },
+        {
+          "beat": "th_called_3",
+          "action": "advance"
+        },
+        {
+          "beat": "th_called_4",
+          "action": "advance"
+        },
+        {
+          "beat": "th_called_5",
+          "action": "advance"
+        },
+        {
+          "beat": "th_called_6",
+          "action": "advance"
+        },
+        {
+          "beat": "th_called_7",
+          "action": "advance"
+        },
+        {
+          "beat": "th_called_8",
+          "cid": "th_care",
+          "text": "先把水盆移到师兄够得着的地方。"
+        },
+        {
+          "beat": "th_called_9",
+          "action": "advance"
+        },
+        {
+          "beat": "th_called_10",
+          "action": "advance"
+        },
+        {
+          "beat": "th_called_11",
+          "action": "advance"
+        },
+        {
+          "beat": "th_called_12",
+          "action": "advance"
+        },
+        {
+          "beat": "th_packing_1",
+          "action": "advance"
+        },
+        {
+          "beat": "th_packing_2",
+          "action": "advance"
+        },
+        {
+          "beat": "th_packing_3",
+          "action": "advance"
+        },
+        {
+          "beat": "th_packing_4",
+          "action": "advance"
+        },
+        {
+          "beat": "th_packing_5",
+          "action": "advance"
+        },
+        {
+          "beat": "th_packing_6",
+          "action": "advance"
+        },
+        {
+          "beat": "th_packing_7",
+          "cid": "th_promise",
+          "text": "答应回来把每一场亲眼看到的讲给师兄。"
+        }
+      ],
+      "title": "Jianghu · 太华试序",
+      "version": "taihua-3.0.0",
+      "imageFailures": [],
+      "firstBeat": "th_called_1",
+      "stageImageFailures": [],
+      "afterBeat": "th_packing_8",
+      "actualChoices": 2,
+      "reloadRestored": true
+    },
+    {
+      "file": "twelfth-life.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "inputs": [],
+      "title": "Jianghu · 第十二席 · 赵承晏",
+      "version": "twelfth-life-3.0.0",
+      "imageFailures": [],
+      "firstBeat": "rl_three_wins_1",
+      "stageImageFailures": []
+    },
+    {
+      "file": "jade-thieves.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "inputs": [],
+      "title": "Jianghu · 山河璧·密库双贼",
+      "version": "jade-thieves-2.0.0",
+      "imageFailures": [],
+      "firstBeat": "jt_threshold_1",
+      "stageImageFailures": []
+    },
+    {
+      "file": "jade.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "inputs": [],
+      "title": "Jianghu · 山河璧·十三文",
+      "version": "jade-2.0.0",
+      "imageFailures": [],
+      "firstBeat": "jd_cat_1",
+      "stageImageFailures": []
+    },
+    {
+      "file": "qingshi.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "inputs": [],
+      "title": "Jianghu · 青石五友·守一天",
+      "version": "qingshi-3.0.0",
+      "imageFailures": [],
+      "firstBeat": "qs_grain_1",
+      "stageImageFailures": []
+    },
+    {
+      "file": "longmen.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "inputs": [
+        {
+          "beat": "lm_borrow_1",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_borrow_2",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_borrow_3",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_borrow_4",
+          "cid": "lm_ask_use",
+          "text": "承认只记了次序，请他先让我摆出这一刀。"
+        },
+        {
+          "beat": "lm_borrow_5",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_borrow_6",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_borrow_7",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_old_blade_1",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_old_blade_2",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_old_blade_3",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_old_blade_4",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_old_blade_5",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_old_blade_6",
+          "action": "advance"
+        },
+        {
+          "beat": "lm_old_blade_7",
+          "cid": "lm_ask_wound",
+          "text": "问旧伤现在怎样影响他，不把战绩当没受过伤。"
+        }
+      ],
+      "title": "Jianghu · 龙门问刀",
+      "version": "longmen-3.0.0",
+      "imageFailures": [],
+      "firstBeat": "lm_borrow_1",
+      "stageImageFailures": [],
+      "afterBeat": "lm_old_blade_9",
+      "actualChoices": 2,
+      "reloadRestored": true
+    },
+    {
+      "file": "dead-ranking.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "inputs": [
+        {
+          "beat": "dr_dead_letter_1",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_dead_letter_2",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_dead_letter_3",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_dead_letter_4",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_dead_letter_5",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_dead_letter_6",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_dead_letter_7",
+          "cid": "dr_ask_letter_hand",
+          "text": "先问老人究竟认得什么，不拿一句字不像便替死者断定又是假。"
+        },
+        {
+          "beat": "dr_dead_letter_8",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_dead_letter_9",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_dead_letter_10",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_old_dream_1",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_old_dream_2",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_old_dream_3",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_old_dream_4",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_old_dream_5",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_old_dream_6",
+          "action": "advance"
+        },
+        {
+          "beat": "dr_old_dream_7",
+          "cid": "dr_pickup_training",
+          "text": "把剑拿起，陪徒弟接一轮；还会出手，也不必为做了榜房人就宣称从未想赢。"
+        }
+      ],
+      "title": "Jianghu · 死人争榜",
+      "version": "dead-ranking-1.0.0",
+      "imageFailures": [],
+      "firstBeat": "dr_dead_letter_1",
+      "stageImageFailures": [],
+      "afterBeat": "dr_old_dream_9",
+      "actualChoices": 2,
+      "reloadRestored": true
+    },
+    {
+      "file": "luhua.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "inputs": [],
+      "title": "Jianghu · 照水刀 · 芦花渡",
+      "version": "luhua-1.0.0",
+      "imageFailures": [],
+      "firstBeat": "lh_eleven_1",
+      "stageImageFailures": []
+    },
+    {
+      "file": "north.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "inputs": [],
+      "title": "Jianghu · 三师一枪",
+      "version": "north-3.0.0",
+      "imageFailures": [],
+      "firstBeat": "nq_hundred_twenty_seven_1",
+      "stageImageFailures": []
+    },
+    {
+      "file": "sea-tide.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "inputs": [],
+      "title": "Jianghu · 海路两世·归潮岛",
+      "version": "sea-tide-2.0.0",
+      "imageFailures": [],
+      "firstBeat": "st_first_boat_1",
+      "stageImageFailures": []
+    },
+    {
+      "file": "tide-v6.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "inputs": [],
+      "title": "Jianghu · 潮生有约",
+      "version": "tide-promise-2.0.0",
+      "imageFailures": [],
+      "firstBeat": "c_cargo_1",
+      "stageImageFailures": []
+    }
+  ],
+  "errors": [],
+  "http": [],
+  "consoleErrors": [],
+  "requestFailures": [],
+  "status": "PASS",
+  "finishedAt": "2026-10-18T07:20:40.808Z"
+}

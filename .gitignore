@@ -23,3 +23,7 @@ docs/evidence/**/*.png
 docs/evidence/**/*.jpg
 docs/evidence/**/*.jpeg
 art-handoff*.zip
+
+# 本地策略脚本/回归测试的 Python 字节码缓存
+__pycache__/
+*.pyc
