@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, writeFileSync } from 'node:fs';
@@ -25,7 +26,7 @@ test('complete three routes; every beat restores current dialogue, cast, choices
     report[ending] = { beats: s.frames.length, decisions: i, firstDecisionAtBeat: s.frames.findIndex(b => b.choices.length > 0) + 1, characters: s.frames.reduce((n,b) => n + [...b.text].length,0), averageBeatLength: Number((lengths.reduce((n,v)=>n+v,0)/lengths.length).toFixed(1)), maxBeatLength: Math.max(...lengths) };
     assert.ok(lengths.every(n => n <= 120));
   }
-  writeFileSync('docs/evidence/dialogue-metrics.json', JSON.stringify(report,null,2));
+  writeFileSync(evidencePath('docs/evidence/dialogue-metrics.json'), JSON.stringify(report,null,2));
 });
 
 test('save damage, forged runtime/presentation, illegal advances and repeated choices are rejected', () => {
@@ -104,5 +105,5 @@ test('all reachable states close; immediate replies differ; conditional replies 
   }
   walk(new VNRuntime());
   assert.deepEqual([...beats].sort(),declaredBeats.sort()); assert.deepEqual([...ids].sort(),declaredIds.sort()); assert.deepEqual([...ends].sort(),Object.keys(endings).sort());
-  writeFileSync('docs/evidence/dialogue-coverage.json',JSON.stringify({states:visited.size,boundaries,edges,beats:beats.size,choiceIds:ids.size,endings:[...ends]},null,2));
+  writeFileSync(evidencePath('docs/evidence/dialogue-coverage.json'),JSON.stringify({states:visited.size,boundaries,edges,beats:beats.size,choiceIds:ids.size,endings:[...ends]},null,2));
 });

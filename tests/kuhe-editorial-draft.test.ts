@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -24,5 +25,5 @@ test('512 sampled draft paths reach every authored beat and both personal ending
  const ids=new Set<string>(),options=new Set<string>(),endings=new Set<string>();let longest=0;
  for(let seed=1;seed<=512;seed++){const r=run([],seed*139);let gap=0;for(const f of r.s.frames){ids.add(f.id);if(f.choices.length){f.choices.forEach(c=>options.add(c.id));gap=0}else longest=Math.max(longest,++gap)}endings.add(r.s.frame.ending!);assert.ok(r.text.indexOf('他自己来找药师')<r.text.indexOf('第二日正午')||!r.text.includes('他自己来找药师'))}
  assert.deepEqual([...ids].sort(),[...source.matchAll(/# beat:(\S+)/g)].map(m=>m[1]).sort());assert.equal(options.size,40);assert.equal(endings.size,2);
- writeFileSync('docs/evidence/v6/kuhe-editorial-draft-audit.json',JSON.stringify({status:'THREE_INTERNAL_ROUNDS_DIRECTION_CHECK_SEPARATE',editorialRounds:3,sourceBeats:ids.size,options:options.size,endings:[...endings],sampledPaths:512,exhaustive:false,longestPassiveGap:longest,compilerWarnings:compiler.warnings,limits:'Draft has no production-direction pass or browser entry; not three editorial rounds or final acceptance.'},null,2)+'\n');
+ writeFileSync(evidencePath('docs/evidence/v6/kuhe-editorial-draft-audit.json'),JSON.stringify({status:'THREE_INTERNAL_ROUNDS_DIRECTION_CHECK_SEPARATE',editorialRounds:3,sourceBeats:ids.size,options:options.size,endings:[...endings],sampledPaths:512,exhaustive:false,longestPassiveGap:longest,compilerWarnings:compiler.warnings,limits:'Draft has no production-direction pass or browser entry; not three editorial rounds or final acceptance.'},null,2)+'\n');
 });

@@ -43,7 +43,7 @@ Running 18 tests using 1 worker
       12 | });
       13 | test('migration quota failure keeps the original auto and allows both original and current progress exports',async({page})=>{
       14 |  const old=reach(previous,campaignRoutes.lost),raw=JSON.stringify(old.save());await page.emulateMedia({reducedMotion:'reduce'});await page.addInitScript(({raw,prefix})=>{localStorage.setItem(prefix+'auto',raw);Storage.prototype.setItem=function(){throw new DOMException('quota','QuotaExceededError')}},{raw,prefix});await page.goto('/tide-v6.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',old.frame.id);await expect(page.locator('.toast')).toContainText('浏览器未能保存');expect(await page.evaluate(prefix=>localStorage.getItem(prefix+'auto'),prefix)).toBe(raw);await page.getByRole('button',{name:'存档',exact:true}).click();const original=page.waitForEvent('download');await page.locator('[data-action="slot-export"][data-slot="auto"]').click();expect(readFileSync((await(await original).path())!,'utf8')).toBe(raw);const current=page.waitForEvent('download');await page.getByRole('button',{name:'导出本次进度',exact:true}).click();expect(JSON.parse(readFileSync((await(await current).path())!,'utf8')).presentation.stage.scene).toBe('v6_end_lost');
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:11:424
+        at .\tests\campaign-v6-ending-staging.spec.ts:11:424
 
     Error Context: test-results\campaign-v6-ending-staging-14bfb-en-keeps-an-original-backup\error-context.md
 

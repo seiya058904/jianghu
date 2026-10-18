@@ -37,7 +37,7 @@
 
 ## 美术资产与提示词
 
-内置image_gen工具生成，格式转为WebP（1536×1024，无改画面）：`public/art/v6/reusable-snow-courtyard.webp`，454746字节，SHA256 `EBA70BF0101F0B07BC313877399B750341D3BB044532EA98A40E664557E600A2`。原始PNG保留于 `C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-53d92022-3879-4459-9f19-4c1467feb30d.png`。此图是通用背景，不计独立剧情CG。
+内置image_gen工具生成，格式转为WebP（1536×1024，无改画面）：`public/art/v6/reusable-snow-courtyard.webp`，454746字节，SHA256 `EBA70BF0101F0B07BC313877399B750341D3BB044532EA98A40E664557E600A2`。原始PNG保留于 `[author-local-path]`。此图是通用背景，不计独立剧情CG。
 
 最终生成提示词：
 

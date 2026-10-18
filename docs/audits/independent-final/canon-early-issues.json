@@ -1,0 +1,72 @@
+{
+  "scope": "canon groups 01-14 plus 5 world rules",
+  "issues": [
+    {
+      "id": "CE01",
+      "priority": "P1",
+      "file": "story/sea-legacy.mjs",
+      "line": 27,
+      "beat": "sr_seventh_4",
+      "canon": "7346-7352",
+      "problem": "Luo Tianhai personally answered about third generation after his canonical death.",
+      "fix": "Contemporary student handoff, no prediction of descendants.",
+      "status": "SOURCE_FIXED_RUNTIME_PENDING_PARENT_BUILD"
+    },
+    {
+      "id": "CE02",
+      "priority": "P1",
+      "file": "story/white-stone-author.mjs",
+      "line": 88,
+      "beat": "ws_old_palm_10",
+      "canon": "9694-9710",
+      "problem": "Narration denied Dongxuan personally acknowledging today Qi was higher immediately after he said so.",
+      "fix": "Separate Fahui unscored encounter from Dongxuan today acknowledgment.",
+      "status": "SOURCE_FIXED_RUNTIME_PENDING_PARENT_BUILD"
+    },
+    {
+      "id": "CE03",
+      "priority": "P2",
+      "file": "story/xuanmen-author.mjs",
+      "line": 93,
+      "beat": "xm_another_court",
+      "problem": "Asked identity branch recalled other opening option.",
+      "fix": "True branch remembers asking identity; false retains mud recollection. Deferred envy recorded later in handwritten account.",
+      "status": "SOURCE_FIXED_RUNTIME_PENDING_PARENT_BUILD"
+    },
+    {
+      "id": "CE04",
+      "priority": "P2",
+      "file": "story/white-stone-author.mjs",
+      "line": 56,
+      "beat": "ws_eastward_letter;ws_two_old_swords;ws_first_crown",
+      "problem": "Cross-era POV and cross-opponent choice memories falsely attributed actions to present interlocutors.",
+      "fix": "Prior generations old records, explicitly Dongxuan encounter, and guest quoting Qi old record rather than attributing custodian writing to Gongsun.",
+      "status": "SOURCE_FIXED_RUNTIME_PENDING_PARENT_BUILD"
+    },
+    {
+      "id": "CE05",
+      "priority": "P2",
+      "file": "story/seven-questions-resolution.mjs",
+      "line": 49,
+      "beat": "sq_converge_9",
+      "problem": "Valley route default court flag triggered unplayed courtyard handoff recollection.",
+      "fix": "Inline sq_route==2 conditional; valley text requests separate witnessed accounts.",
+      "status": "SOURCE_FIXED_RUNTIME_PENDING_PARENT_BUILD"
+    },
+    {
+      "id": "CE06",
+      "priority": "P2",
+      "file": "src/works-registry.ts",
+      "line": 56,
+      "problem": "Taihua win/loss order, Jinling refuses change caricature, snow duration vs elder survival, Sea starting POV inaccurate.",
+      "fix": "Parent owns current library summaries.",
+      "status": "HANDED_TO_PARENT"
+    }
+  ],
+  "regression": {
+    "command": "node --experimental-strip-types --test tests/independent-canon-early.test.ts",
+    "before": "5 tests, 0 pass, 5 fail, exit 1",
+    "log": "canon-early-before-fix.log",
+    "after": "PENDING parent compilation"
+  }
+}

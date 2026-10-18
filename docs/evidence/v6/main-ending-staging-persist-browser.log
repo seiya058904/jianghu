@@ -41,7 +41,7 @@ Running 15 tests using 1 worker
       20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
       21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
       22 |  }
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:19:306
+        at .\tests\campaign-v6-ending-staging.spec.ts:19:306
 
     Error Context: test-results\campaign-v6-ending-staging-b6d8b-opriate-view-at-seven-sizes\error-context.md
 
@@ -58,7 +58,7 @@ Running 15 tests using 1 worker
       20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
       21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
       22 |  }
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:19:306
+        at .\tests\campaign-v6-ending-staging.spec.ts:19:306
 
     Error Context: test-results\campaign-v6-ending-staging-79847-opriate-view-at-seven-sizes\error-context.md
 
@@ -75,7 +75,7 @@ Running 15 tests using 1 worker
       20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
       21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
       22 |  }
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:19:306
+        at .\tests\campaign-v6-ending-staging.spec.ts:19:306
 
     Error Context: test-results\campaign-v6-ending-staging-f8737-opriate-view-at-seven-sizes\error-context.md
 

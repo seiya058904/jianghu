@@ -129,13 +129,21 @@ VAR xm_after = 0
 九席不是九个人的荣耀，是九件不能没人做的事。 # beat:xm_three_years_4 # scene:xm_hall # cast:xm_lu,xm_wugou # speaker:xm_lu # mood:xm_lu=neutral
 真改成最能打的九个，药还是得有人送。别说得像药自己会上山。 # beat:xm_three_years_5 # scene:xm_hall # cast:xm_lu,xm_wugou # speaker:xm_wugou # mood:xm_wugou=amused
 你笑了一下，没将第九改称第九高手。掌门也不会因坐了那个位置，便自动成为全山第一。 # beat:xm_three_years_6 # scene:xm_hall # cast:xm_lu,xm_wugou # speaker:narrator # fact:xm_seat
+{
+- xm_medicine:
+头几日你留在伤药处。药的分量是宋知微定的，你只管把人名和去处对上——这件事后来没人替你记，我替你记着。 # beat:xm_three_years_7 # scene:xm_hall # cast:xm_lu,xm_wugou # speaker:xm_wugou # mood:xm_wugou=amused
+三年后再排九件事，谁管哪一件，仍按当时谁真的站在那里，不按谁的名字排在前面。 # beat:xm_three_years_8 # scene:xm_hall # cast:xm_lu,xm_wugou # speaker:narrator
+- else:
+你那天先去的是经阁。缺页那件事后来还有人问你；药那边，是宋知微自己撑到天黑的。 # beat:xm_three_years_9 # scene:xm_hall # cast:xm_lu,xm_wugou # speaker:xm_wugou # mood:xm_wugou=neutral
+这个先后留了下来，没有人把它说成你当时已经算准了轻重。 # beat:xm_three_years_10 # scene:xm_hall # cast:xm_lu,xm_wugou # speaker:narrator
+}
 * [先把七院藏谱副本互通，找别院的人来认自己抄不明白的字。 # cid:xm_copy_methods]
   ~ xm_copy = true
-  你在封面写好院名，翻开里面，又将那几个以为同义的字圈出来。副本一样多，不代表已抄对。 # beat:xm_three_years_7 # scene:xm_hall # cast:xm_lu,xm_wugou # speaker:narrator
+  你在封面写好院名，翻开里面，又将那几个以为同义的字圈出来。副本一样多，不代表已抄对。 # beat:xm_three_years_11 # scene:xm_hall # cast:xm_lu,xm_wugou # speaker:narrator
   -> another_court
 * [先领内院年轻人去别院住，要求他们回来讲那条路为什么能走。 # cid:xm_send_students]
   ~ xm_copy = false
-  一个弟子问是否要改投别脉。你说先去住，别急着拿没学过的东西替人分高下。他把带来的那本小谱也带上了。 # beat:xm_three_years_8 # scene:xm_hall # cast:xm_lu,xm_wugou # speaker:narrator
+  一个弟子问是否要改投别脉。你说先去住，别急着拿没学过的东西替人分高下。他把带来的那本小谱也带上了。 # beat:xm_three_years_12 # scene:xm_hall # cast:xm_lu,xm_wugou # speaker:narrator
   -> another_court
 
 === another_court ===
@@ -151,21 +159,49 @@ VAR xm_after = 0
 张玄度讲另院起手，说到第三处忽然停下，回头又问了住过那里的弟子。你等他讲清，没有替他把停顿说成已全会了。 # beat:xm_another_court_7 # scene:xm_court # cast:xm_xuandu # speaker:narrator
 我回去再问一遍。 # beat:xm_another_court_8 # scene:xm_court # cast:xm_xuandu # speaker:xm_xuandu # mood:xm_xuandu=neutral
 }
+{
+- xm_ask:
+孟玄策、何青崖进山，您先问他们在别处做什么，不问名次。这一条是从哪儿来的？ # beat:xm_another_court_9 # scene:xm_court # cast:xm_xuandu # speaker:xm_xuandu # mood:xm_xuandu=neutral
+从泥地里来的。那日我先问那位老人是谁，才知道旧榜上的名字，不能替今日认人。 # beat:xm_another_court_10 # scene:xm_court # cast:xm_xuandu # speaker:you
+要试手，仍先问本人愿不愿；这条规矩此后一直挂在排位置之前。 # beat:xm_another_court_11 # scene:xm_court # cast:xm_xuandu # speaker:narrator
+- else:
+有人拿一份旧总谱来问最前一列那个名字，您答不上来。我在旁边听着，也答不上。 # beat:xm_another_court_12 # scene:xm_court # cast:xm_xuandu # speaker:xm_xuandu # mood:xm_xuandu=uneasy
+当年我只问了师父在汉水边怎么躺。 # beat:xm_another_court_13 # scene:xm_court # cast:xm_xuandu # speaker:you
+孟玄策、何青崖进山时，山里便只能照着他们今日的手来判，纸上的名次帮不上忙。 # beat:xm_another_court_14 # scene:xm_court # cast:xm_xuandu # speaker:narrator
+}
+{
+- xm_plain:
+访客簿上那两行是您自己记的，一字没添。别院的老人都拿它教我们：败了就是败了，不替它找一个方便的说法。 # beat:xm_another_court_15 # scene:xm_court # cast:xm_xuandu # speaker:xm_xuandu # mood:xm_xuandu=neutral
+有人问起那位无名老人，你把簿子递过去，没有另添一句话。 # beat:xm_another_court_16 # scene:xm_court # cast:xm_xuandu # speaker:narrator
+- else:
+访客簿上那一页您后来不翻了。我原以为您是不想再看见那一负。 # beat:xm_another_court_17 # scene:xm_court # cast:xm_xuandu # speaker:xm_xuandu # mood:xm_xuandu=neutral
+十四前那个没落下的字，你也没把它说成年轻时不得不这么做。 # beat:xm_another_court_18 # scene:xm_court # cast:xm_xuandu # speaker:narrator
+}
+{
+- xm_ground:
+您教我们看那一掌，先叫站到石阶上。为什么先看地方，不先看招式？ # beat:xm_another_court_19 # scene:xm_court # cast:xm_xuandu # speaker:xm_xuandu # mood:xm_xuandu=neutral
+因为我在平地上就想错了一回。 # beat:xm_another_court_20 # scene:xm_court # cast:xm_xuandu # speaker:you
+湿地与退路只容那么宽，这一战发生在什么地方，比谁多了哪一招更要紧。 # beat:xm_another_court_21 # scene:xm_court # cast:xm_xuandu # speaker:narrator
+- else:
+您教我们看那一掌，先问对面身后还站着谁。这一句，您是从哪儿学来的？ # beat:xm_another_court_22 # scene:xm_court # cast:xm_xuandu # speaker:xm_xuandu # mood:xm_xuandu=neutral
+从喉咙里。我当年先想喊侧路。 # beat:xm_another_court_23 # scene:xm_court # cast:xm_xuandu # speaker:you
+两位高手也都站在一群人中间；这一条你没有替后来的门人省掉。 # beat:xm_another_court_24 # scene:xm_court # cast:xm_xuandu # speaker:narrator
+}
 * [让他把没问明白的带回去，今日少练一遍，不替徒弟抢着答完。 # cid:xm_let_him_ask]
   ~ xm_allow = true
-  他真走了。院里一下安静，你抬手试刚才未完的一剑，仍须自己把它练到落脚。 # beat:xm_another_court_9 # scene:xm_court # cast:xm_xuandu # speaker:narrator
+  他真走了。院里一下安静，你抬手试刚才未完的一剑，仍须自己把它练到落脚。 # beat:xm_another_court_25 # scene:xm_court # cast:xm_xuandu # speaker:narrator
   -> seventy
 * [先请他做给你看，再让他自己去问；你也承认有一处不知为何这样转。 # cid:xm_try_first]
   ~ xm_allow = false
-  师父也有不知道的？ # beat:xm_another_court_10 # scene:xm_court # cast:xm_xuandu # speaker:xm_xuandu # mood:xm_xuandu=amused
-  你若全知道，明日便别来问。 # beat:xm_another_court_11 # scene:xm_court # cast:xm_xuandu # speaker:you
-  他笑完才肯重做，没有因你承认不知道便省了脚下那一步。 # beat:xm_another_court_12 # scene:xm_court # cast:xm_xuandu # speaker:narrator
+  师父也有不知道的？ # beat:xm_another_court_26 # scene:xm_court # cast:xm_xuandu # speaker:xm_xuandu # mood:xm_xuandu=amused
+  你若全知道，明日便别来问。 # beat:xm_another_court_27 # scene:xm_court # cast:xm_xuandu # speaker:you
+  他笑完才肯重做，没有因你承认不知道便省了脚下那一步。 # beat:xm_another_court_28 # scene:xm_court # cast:xm_xuandu # speaker:narrator
   -> seventy
 
 === seventy ===
 陆松年百余岁临终，还问九个人是否都在，那时第一代已少了两人。 # beat:xm_seventy_1 # scene:xm_lamp # cast:xm_lu # speaker:narrator
 补。别只选最强的。 # beat:xm_seventy_2 # scene:xm_lamp # cast:xm_lu # speaker:xm_lu # mood:xm_lu=neutral
-这句话留下，你的师父没有留下。七十岁，你已是天下最顶尖的入化人物之一；九十岁，比七十又深许多。十年，又十年，那道门仍在前头。 # beat:xm_seventy_3 # scene:xm_lamp # cast:none # speaker:narrator
+这句话留下，你的师父没有留下。七十岁，你已是天下最顶尖的入化人物之一；九十岁，比七十又深许多。收徒、送葬、扫阶、教剑，十年，又十年，那道门仍在前头。 # beat:xm_seventy_3 # scene:xm_lamp # cast:none # speaker:narrator
 有一阵，你听见别人说迟早，心里便松一下。后来连那一下，也不愿再靠了。近，不等于一定能到。 # beat:xm_seventy_4 # scene:xm_lamp # cast:none # speaker:narrator
 旧录也记着一件更早的事：张玄度六十八岁，认真看过紫霄许无尘的剑，回来告诉你，这个人会进去。许三十余平平，四十以后一年一个样。 # beat:xm_seventy_5 # scene:xm_court # cast:xm_xuandu # speaker:narrator # look:xm_xuandu=elder
 他说这句话时，还没有后来那夜的拆手。你当日问他看见什么，他比了两下，没替许无尘定一个明年。 # beat:xm_seventy_6 # scene:xm_court # cast:xm_xuandu # speaker:narrator
@@ -214,13 +250,29 @@ VAR xm_after = 0
 山里有两个人，不是把两张名帖叠起来便成。副本有人认，别院有人住，空下的差事有人再问，留下的东西才没有只随一个人去。 # beat:xm_empty_seat_8 # scene:xm_lamp # cast:none # speaker:narrator
 后来百余年，只要当代最高人物肯入总谱，武当前五几乎未缺。张玄度曾进前三，许无尘入前五，周玄照一代又有旧谱第二；退谱、闭关、禁榜仍会留下纸面空白。 # beat:xm_empty_seat_9 # scene:xm_lamp # cast:none # speaker:narrator
 这些是传承后来证成的事，并非你在泥地里便全看见的未来。你手录的字，已越来越抖。 # beat:xm_empty_seat_10 # scene:xm_lamp # cast:none # speaker:narrator
+{
+- xm_envy:
+那一页手录您没另抄，也没在整理旧录时抽掉。张玄度返真那夜的嫉妒，和第二天那三个字，落在同一叠纸上。 # beat:xm_empty_seat_11 # scene:xm_lamp # cast:xm_wugou # speaker:xm_wugou # mood:xm_wugou=uneasy
+你答他：难看的东西也归他自己，不必先擦干净才留给后人。 # beat:xm_empty_seat_12 # scene:xm_lamp # cast:xm_wugou # speaker:narrator
+- else:
+拆手那夜您先收了灯，第二天去找徒弟。整理手录时，还是把那一夜的嫉妒补记下来了。 # beat:xm_empty_seat_13 # scene:xm_lamp # cast:xm_wugou # speaker:xm_wugou # mood:xm_wugou=neutral
+你翻到后补的那行，旁边记着写下的日子。它不是当夜落笔，也没有把嫉妒改成只是没看清。 # beat:xm_empty_seat_14 # scene:xm_lamp # cast:xm_wugou # speaker:narrator
+}
+{
+- xm_job:
+有个空席空了两年。来问的人先报三位胜绩极盛的名字，您先问的是同一句：这件事今日谁在接。 # beat:xm_empty_seat_15 # scene:xm_lamp # cast:xm_wugou # speaker:xm_wugou # mood:xm_wugou=neutral
+对方答不出，只得回去再问一次。 # beat:xm_empty_seat_16 # scene:xm_lamp # cast:xm_wugou # speaker:narrator
+- else:
+有个空席空了两年，您先去问退下的老人哪一处最容易断，把他们的失手也留下。报上来的名字便少一个。 # beat:xm_empty_seat_17 # scene:xm_lamp # cast:xm_wugou # speaker:xm_wugou # mood:xm_wugou=calm
+宁可空着，也不是先找一个名字坐进去。 # beat:xm_empty_seat_18 # scene:xm_lamp # cast:xm_wugou # speaker:narrator
+}
 * [把旧录里各处如何接手留给后来人读，允许他们按今日重新分工。 # cid:xm_leave_duties]
   ~ xm_after = 1
-  年轻人来问一处旧调度，你先问今日路断在哪里。他去画现在的路，没把三十一岁张无垢那一笔照抄成永远不改。 # beat:xm_empty_seat_11 # scene:xm_lamp # cast:none # speaker:narrator
+  年轻人来问一处旧调度，你先问今日路断在哪里。他去画现在的路，没把三十一岁张无垢那一笔照抄成永远不改。 # beat:xm_empty_seat_19 # scene:xm_lamp # cast:xm_wugou # speaker:narrator
   -> last_day
 * [请后来人留一页空处，记尚未接妥的差事，不急着写满九个名字。 # cid:xm_leave_blank]
   ~ xm_after = 2
-  有人嫌空页不好看。你说先留着。他隔日带来需要补问的两件事，没有为了整齐先选一个人坐进去。 # beat:xm_empty_seat_12 # scene:xm_lamp # cast:none # speaker:narrator
+  有人嫌空页不好看。你说先留着。他隔日带来需要补问的两件事，没有为了整齐先选一个人坐进去。 # beat:xm_empty_seat_20 # scene:xm_lamp # cast:xm_wugou # speaker:narrator
   -> last_day
 
 === last_day ===

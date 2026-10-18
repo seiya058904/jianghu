@@ -1,11 +1,11 @@
 {
   "tool": "built-in image_gen",
-  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-980c2c1f-09c8-47d6-8e27-db6758325d97.png",
+  "source": "[author-local-path]",
   "prompt": "Use case: visual novel expression and gesture edit. Preserve EXACT reference character identity, facial anatomy, age, gender, costume colors/materials, hair, and fine naturalistic watercolor/ink rendering. Same30-year-old male rice merchant heir Rong Jibai. A clear reluctant amused smile, chin tilted slightly aside, grip relaxed on existing wooden staff. Identical cream and gold trim robe, dark teal sash, bronze hair clasp and young adult face. No royal crown. Meaningful expression and gesture change, same portrait framing as reference, one character only, no other person. True transparent alpha background, no colored panel, no scenery, no floor, no cast shadow rectangle. No signature, no text, no watermark.",
-  "reference": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v5/rong.webp",
-  "output": "D:\\xia zai\\AI project\\Project in Iteration\\Jianghu\\public\\art\\v6\\rong-amused-v2.webp",
+  "reference": "./public/art/v5/rong.webp",
+  "output": ".\\public\\art\\v6\\rong-amused-v2.webp",
   "review": "Same original PNG converted preserving aspect ratio. Actual gallery decode and visual review recorded in docs/evidence/v6/portrait-proportions-browser.log (16 passed); screenshot docs/evidence/v6/portrait-v6_rong-amused.png.",
-  "initialWebPOutput": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/rong-amused.webp",
-  "initialWebPArchived": "D:\\xia zai\\AI project\\Project in Iteration\\Jianghu\\docs\\v6\\art-candidates\\rong-amused.webp",
+  "initialWebPOutput": "./public/art/v6/rong-amused.webp",
+  "initialWebPArchived": ".\\docs\\v6\\art-candidates\\rong-amused.webp",
   "formatRepair": "Original PNG retained. Resize within 560x840 while preserving native aspect ratio, no repainting, no new generation. Earlier fixed 560x840 conversion stretched this half-body source."
 }

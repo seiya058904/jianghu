@@ -38,6 +38,12 @@ jobs:
       - name: Build story sources, type-check and bundle
         run: npm run build
 
+      - name: Verify all unit and editorial contracts before publishing
+        run: npm test
+
+      - name: Require reproducible story artifacts
+        run: git diff --exit-code -- story src/generated
+
       - name: Report build output
         run: |
           echo "dist files: $(find dist -type f | wc -l)"

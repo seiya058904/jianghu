@@ -26,6 +26,9 @@ export const qingshiCharacters:Record<string,Person>={
 };
 // Equal-aspect medium framing keeps full-body resources readable beside the
 // inherited half-body sprites. Gallery files remain complete and unstretched.
+qingshiCharacters.qs_chen.portrait={file:'v6/qs-chen.webp',position:'center top',size:'contain',kind:'dedicated'};
+qingshiCharacters.qs_han.portrait={file:'v6/qs-han.webp',position:'center top',size:'contain',kind:'dedicated'};
+qingshiCharacters.qs_song.portrait={file:'v6/qs-song.webp',position:'center top',size:'contain',kind:'dedicated'};
 for(const person of Object.values(qingshiCharacters))if(person.portrait.file.startsWith('v6/'))person.portrait.size='auto 150%';
 export const qingshiScenes={
  qs_yard17:{name:'青石镇 · 粮仓矮墙',time:'许长安十七岁',art:'v6/grain-yard.webp'},
@@ -49,7 +52,7 @@ export const qingshiScenes={
  qs_army84:{name:'定塞驻军 · 后门',time:'八十四岁 · 新卒',art:'v6/reusable-stone-inner-gate.webp'},
  qs_wall92:{name:'定塞城 · 城防',time:'九十二岁 · 头两日',art:'v6/reusable-stone-inner-gate.webp'},
  qs_room92:{name:'定塞 · 值房',time:'第二日夜至第三日晨',art:'v6/longmen-hall.webp'},
- qs_stairs92:{name:'定塞内门 · 石阶',time:'第三日上午',art:'v6/reusable-stone-inner-gate.webp'},
+ qs_stairs92:{name:'定塞内门 · 石阶',time:'第三日上午',art:'v6/qs-stairs92.webp'},
  qs_after:{name:'定塞至青石 · 后人所记',time:'许长安身后',art:'v5/dawn.webp'},
 };
 export const qingshiEndings={qs_records:'五个人的旧录',qs_heirs:'下一道门'};

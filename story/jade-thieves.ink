@@ -231,13 +231,19 @@ VAR jt_kept_ordinary = false
 旧木桥中段松了。沈先过去一半，脚下木条向河侧翘，江从桥头扑前一步，抓她后背衣带，把人拉回还能落脚的横梁。 # beat:jt_broken_span_1 # scene:jt_bridge # cast:none # speaker:narrator
 第二次江救沈。桥那端有人喊你们把玉抛来，沈却先伸手拉江的腕，没拿已经站稳的一步先走。 # beat:jt_broken_span_2 # scene:jt_bridge # cast:none # speaker:narrator
 追兵的暗器随后到了。沈用随身短刃挡开贴近江颈侧的一枚，另一枚擦过她衣袖。江看见袖上新口子，原先预备问的话忽然说不出来。 # beat:jt_broken_span_3 # scene:jt_bridge # cast:none # speaker:narrator
+{
+- jt_shared_turn:
+分岔先等的那一步，后来在桥上又出现过一次。两个人都没说破，脚步却都慢了半拍。 # beat:jt_broken_span_4 # scene:jt_bridge # cast:none # speaker:narrator
+- else:
+各留的退路一次也没用上。夜里桥前遇见时，谁也没提这一晚原本可以不遇见。 # beat:jt_broken_span_5 # scene:jt_bridge # cast:none # speaker:narrator
+}
 * [沈先压住伤处，让江递布系住袖边，再从低处涉水。 # cid:jt_bind_sleeve]
   ~ jt_bound_wound = true
-  江从衣里拆布，沈压住伤处让他系紧，勒得不算好看，至少不让血继续洇。你们绕到浅水，鞋湿透了，桥上的人再追时已得另找下脚处。 # beat:jt_broken_span_4 # scene:jt_bridge # cast:none # speaker:narrator
+  江从衣里拆布，沈压住伤处让他系紧，勒得不算好看，至少不让血继续洇。你们绕到浅水，鞋湿透了，桥上的人再追时已得另找下脚处。 # beat:jt_broken_span_6 # scene:jt_bridge # cast:none # speaker:narrator
   -> temple_laugh
 * [江先扶沈退到树后挡住来路，沈自己压布，告诉他哪边还能使力。 # cid:jt_move_to_bank]
   ~ jt_bound_wound = false
-  你们退到岸边树后，包布递到沈手里。她自己压住伤处，告诉江哪边还使得上力，才借他一只手继续走。 # beat:jt_broken_span_5 # scene:jt_bridge # cast:none # speaker:narrator
+  你们退到岸边树后，包布递到沈手里。她自己压住伤处，告诉江哪边还使得上力，才借他一只手继续走。 # beat:jt_broken_span_7 # scene:jt_bridge # cast:none # speaker:narrator
   -> temple_laugh
 
 === temple_laugh ===
@@ -557,24 +563,30 @@ VAR jt_kept_ordinary = false
 === last_question ===
 木箱还在，真玉仍旧得不像宝。江抬眼问，璧还在么。 # beat:jt_last_question_1 # scene:jt_mountainpass # cast:none # speaker:narrator
 {
-- jt_pov == 1:
-在。 # beat:jt_last_question_2 # scene:jt_mountainpass # cast:jt_jiang # speaker:you
-那就行。 # beat:jt_last_question_3 # scene:jt_mountainpass # cast:jt_jiang # speaker:jt_jiang # mood:jt_jiang=uneasy
-什么叫那就行？ # beat:jt_last_question_4 # scene:jt_mountainpass # cast:jt_jiang # speaker:you
-折腾这么久，总不能人和东西都没了。 # beat:jt_last_question_5 # scene:jt_mountainpass # cast:jt_jiang # speaker:jt_jiang # mood:jt_jiang=neutral
-闭嘴。 # beat:jt_last_question_6 # scene:jt_mountainpass # cast:jt_jiang # speaker:you
-你那边的人要杀我，我这边也要杀你。早知道，第一次密库里就该各走各的。 # beat:jt_last_question_7 # scene:jt_mountainpass # cast:jt_jiang # speaker:jt_jiang # mood:jt_jiang=neutral
-你没有回答。他停了一会儿，又看你。 # beat:jt_last_question_8 # scene:jt_mountainpass # cast:jt_jiang # speaker:narrator
-不过。也还行。 # beat:jt_last_question_9 # scene:jt_mountainpass # cast:jt_jiang # speaker:jt_jiang # mood:jt_jiang=intent
+- jt_last_action == 1:
+先压住的那一只手，到最后也没有换成数箱子的手。这一件，她后来没有对任何人讲过。 # beat:jt_last_question_2 # scene:jt_mountainpass # cast:none # speaker:narrator
 - else:
-在。 # beat:jt_last_question_10 # scene:jt_mountainpass # cast:jt_shen # speaker:jt_shen # mood:jt_shen=neutral
-那就行。 # beat:jt_last_question_11 # scene:jt_mountainpass # cast:jt_shen # speaker:you
-什么叫那就行？ # beat:jt_last_question_12 # scene:jt_mountainpass # cast:jt_shen # speaker:jt_shen # mood:jt_shen=sharp
-折腾这么久，总不能人和东西都没了。 # beat:jt_last_question_13 # scene:jt_mountainpass # cast:jt_shen # speaker:you
-闭嘴。 # beat:jt_last_question_14 # scene:jt_mountainpass # cast:jt_shen # speaker:jt_shen # mood:jt_shen=neutral
-你那边的人要杀我，我这边也要杀你。早知道，第一次密库里就该各走各的。 # beat:jt_last_question_15 # scene:jt_mountainpass # cast:jt_shen # speaker:you
-她没有答。你再看她，声音已比自己想的小。 # beat:jt_last_question_16 # scene:jt_mountainpass # cast:jt_shen # speaker:narrator
-不过。也还行。 # beat:jt_last_question_17 # scene:jt_mountainpass # cast:jt_shen # speaker:you
+石后那一点阴影里放出了药与布。能做的都做了，没能做的，从这一天起由她一个人记。 # beat:jt_last_question_3 # scene:jt_mountainpass # cast:none # speaker:narrator
+}
+{
+- jt_pov == 1:
+在。 # beat:jt_last_question_4 # scene:jt_mountainpass # cast:jt_jiang # speaker:you
+那就行。 # beat:jt_last_question_5 # scene:jt_mountainpass # cast:jt_jiang # speaker:jt_jiang # mood:jt_jiang=uneasy
+什么叫那就行？ # beat:jt_last_question_6 # scene:jt_mountainpass # cast:jt_jiang # speaker:you
+折腾这么久，总不能人和东西都没了。 # beat:jt_last_question_7 # scene:jt_mountainpass # cast:jt_jiang # speaker:jt_jiang # mood:jt_jiang=neutral
+闭嘴。 # beat:jt_last_question_8 # scene:jt_mountainpass # cast:jt_jiang # speaker:you
+你那边的人要杀我，我这边也要杀你。早知道，第一次密库里就该各走各的。 # beat:jt_last_question_9 # scene:jt_mountainpass # cast:jt_jiang # speaker:jt_jiang # mood:jt_jiang=neutral
+你没有回答。他停了一会儿，又看你。 # beat:jt_last_question_10 # scene:jt_mountainpass # cast:jt_jiang # speaker:narrator
+不过。也还行。 # beat:jt_last_question_11 # scene:jt_mountainpass # cast:jt_jiang # speaker:jt_jiang # mood:jt_jiang=intent
+- else:
+在。 # beat:jt_last_question_12 # scene:jt_mountainpass # cast:jt_shen # speaker:jt_shen # mood:jt_shen=neutral
+那就行。 # beat:jt_last_question_13 # scene:jt_mountainpass # cast:jt_shen # speaker:you
+什么叫那就行？ # beat:jt_last_question_14 # scene:jt_mountainpass # cast:jt_shen # speaker:jt_shen # mood:jt_shen=sharp
+折腾这么久，总不能人和东西都没了。 # beat:jt_last_question_15 # scene:jt_mountainpass # cast:jt_shen # speaker:you
+闭嘴。 # beat:jt_last_question_16 # scene:jt_mountainpass # cast:jt_shen # speaker:jt_shen # mood:jt_shen=neutral
+你那边的人要杀我，我这边也要杀你。早知道，第一次密库里就该各走各的。 # beat:jt_last_question_17 # scene:jt_mountainpass # cast:jt_shen # speaker:you
+她没有答。你再看她，声音已比自己想的小。 # beat:jt_last_question_18 # scene:jt_mountainpass # cast:jt_shen # speaker:narrator
+不过。也还行。 # beat:jt_last_question_19 # scene:jt_mountainpass # cast:jt_shen # speaker:you
 }
 -> gone
 

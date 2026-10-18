@@ -48,7 +48,7 @@ Running 8 tests using 1 worker
       15 |  await page.goto(root+'tide-v6.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await page.locator('#advance-button').click();s.advance();await page.goto(root+'index.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(await page.evaluate(p=>JSON.parse(localStorage.getItem(p+'auto')!).commands,v2)).toEqual(s.commands);
       16 |  expect(await page.evaluate(({p,keys})=>Object.fromEntries(keys.map(k=>[k,localStorage.getItem(p+k)])),{p:v1,keys:Object.keys(kept)})).toEqual(kept);await page.getByRole('button',{name:'Jianghu 封面',exact:true}).click();await page.getByRole('link',{name:'旧版《潮生有约》与原存档',exact:true}).click();await expect(page.locator('body')).toHaveAttribute('data-content-version','tide-promise-1.0.0');await page.getByRole('button',{name:/继续这一程/}).click();await expect(page.locator('#app')).toHaveAttribute('data-beat',old.frame.id);await expect(page.locator('#dialogue-visible')).toHaveText(old.frame.text);
       17 |  await page.getByRole('button',{name:'存档',exact:true}).click();const download=page.waitForEvent('download');await page.locator('[data-action="slot-export"][data-slot="slot1"]').click();expect(readFileSync((await(await download).path())!,'utf8')).toBe(raw);await page.keyboard.press('Escape');await page.getByRole('button',{name:'Jianghu 封面',exact:true}).click();await page.getByRole('link',{name:'返回《潮生有约》',exact:true}).click();await page.getByRole('button',{name:/继续这一程/}).click();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(await page.evaluate(()=>[localStorage.getItem('jianghu:vn:v2:preserve'),localStorage.getItem('jianghu:v1:preserve')])).toEqual(['half-kept','reader-kept']);
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\default-entry.spec.ts:14:160
+        at .\tests\default-entry.spec.ts:14:160
 
     Error Context: test-results\default-entry-Default-V6-r-1571b-irect-archive-resume-export\error-context.md
 
@@ -75,7 +75,7 @@ Running 8 tests using 1 worker
       15 |  await page.goto(root+'tide-v6.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await page.locator('#advance-button').click();s.advance();await page.goto(root+'index.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(await page.evaluate(p=>JSON.parse(localStorage.getItem(p+'auto')!).commands,v2)).toEqual(s.commands);
       16 |  expect(await page.evaluate(({p,keys})=>Object.fromEntries(keys.map(k=>[k,localStorage.getItem(p+k)])),{p:v1,keys:Object.keys(kept)})).toEqual(kept);await page.getByRole('button',{name:'Jianghu 封面',exact:true}).click();await page.getByRole('link',{name:'旧版《潮生有约》与原存档',exact:true}).click();await expect(page.locator('body')).toHaveAttribute('data-content-version','tide-promise-1.0.0');await page.getByRole('button',{name:/继续这一程/}).click();await expect(page.locator('#app')).toHaveAttribute('data-beat',old.frame.id);await expect(page.locator('#dialogue-visible')).toHaveText(old.frame.text);
       17 |  await page.getByRole('button',{name:'存档',exact:true}).click();const download=page.waitForEvent('download');await page.locator('[data-action="slot-export"][data-slot="slot1"]').click();expect(readFileSync((await(await download).path())!,'utf8')).toBe(raw);await page.keyboard.press('Escape');await page.getByRole('button',{name:'Jianghu 封面',exact:true}).click();await page.getByRole('link',{name:'返回《潮生有约》',exact:true}).click();await page.getByRole('button',{name:/继续这一程/}).click();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(await page.evaluate(()=>[localStorage.getItem('jianghu:vn:v2:preserve'),localStorage.getItem('jianghu:v1:preserve')])).toEqual(['half-kept','reader-kept']);
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\default-entry.spec.ts:14:160
+        at .\tests\default-entry.spec.ts:14:160
 
     Error Context: test-results\default-entry-Default-V6-i-1631d-irect-archive-resume-export\error-context.md
 
@@ -102,7 +102,7 @@ Running 8 tests using 1 worker
       15 |  await page.goto(root+'tide-v6.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await page.locator('#advance-button').click();s.advance();await page.goto(root+'index.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(await page.evaluate(p=>JSON.parse(localStorage.getItem(p+'auto')!).commands,v2)).toEqual(s.commands);
       16 |  expect(await page.evaluate(({p,keys})=>Object.fromEntries(keys.map(k=>[k,localStorage.getItem(p+k)])),{p:v1,keys:Object.keys(kept)})).toEqual(kept);await page.getByRole('button',{name:'Jianghu 封面',exact:true}).click();await page.getByRole('link',{name:'旧版《潮生有约》与原存档',exact:true}).click();await expect(page.locator('body')).toHaveAttribute('data-content-version','tide-promise-1.0.0');await page.getByRole('button',{name:/继续这一程/}).click();await expect(page.locator('#app')).toHaveAttribute('data-beat',old.frame.id);await expect(page.locator('#dialogue-visible')).toHaveText(old.frame.text);
       17 |  await page.getByRole('button',{name:'存档',exact:true}).click();const download=page.waitForEvent('download');await page.locator('[data-action="slot-export"][data-slot="slot1"]').click();expect(readFileSync((await(await download).path())!,'utf8')).toBe(raw);await page.keyboard.press('Escape');await page.getByRole('button',{name:'Jianghu 封面',exact:true}).click();await page.getByRole('link',{name:'返回《潮生有约》',exact:true}).click();await page.getByRole('button',{name:/继续这一程/}).click();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(await page.evaluate(()=>[localStorage.getItem('jianghu:vn:v2:preserve'),localStorage.getItem('jianghu:v1:preserve')])).toEqual(['half-kept','reader-kept']);
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\default-entry.spec.ts:14:160
+        at .\tests\default-entry.spec.ts:14:160
 
     Error Context: test-results\default-entry-Default-V6-s-a3176-irect-archive-resume-export\error-context.md
 
@@ -129,7 +129,7 @@ Running 8 tests using 1 worker
       15 |  await page.goto(root+'tide-v6.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await page.locator('#advance-button').click();s.advance();await page.goto(root+'index.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(await page.evaluate(p=>JSON.parse(localStorage.getItem(p+'auto')!).commands,v2)).toEqual(s.commands);
       16 |  expect(await page.evaluate(({p,keys})=>Object.fromEntries(keys.map(k=>[k,localStorage.getItem(p+k)])),{p:v1,keys:Object.keys(kept)})).toEqual(kept);await page.getByRole('button',{name:'Jianghu 封面',exact:true}).click();await page.getByRole('link',{name:'旧版《潮生有约》与原存档',exact:true}).click();await expect(page.locator('body')).toHaveAttribute('data-content-version','tide-promise-1.0.0');await page.getByRole('button',{name:/继续这一程/}).click();await expect(page.locator('#app')).toHaveAttribute('data-beat',old.frame.id);await expect(page.locator('#dialogue-visible')).toHaveText(old.frame.text);
       17 |  await page.getByRole('button',{name:'存档',exact:true}).click();const download=page.waitForEvent('download');await page.locator('[data-action="slot-export"][data-slot="slot1"]').click();expect(readFileSync((await(await download).path())!,'utf8')).toBe(raw);await page.keyboard.press('Escape');await page.getByRole('button',{name:'Jianghu 封面',exact:true}).click();await page.getByRole('link',{name:'返回《潮生有约》',exact:true}).click();await page.getByRole('button',{name:/继续这一程/}).click();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(await page.evaluate(()=>[localStorage.getItem('jianghu:vn:v2:preserve'),localStorage.getItem('jianghu:v1:preserve')])).toEqual(['half-kept','reader-kept']);
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\default-entry.spec.ts:14:160
+        at .\tests\default-entry.spec.ts:14:160
 
     Error Context: test-results\default-entry-Default-V6-s-5d9cf-irect-archive-resume-export\error-context.md
 
@@ -146,7 +146,7 @@ Running 8 tests using 1 worker
       22 | });
       23 |
       24 | for(const [label,root]of [['root','http://127.0.0.1:4173/'],['subpath','http://127.0.0.1:4175/Jianghu/']])test(`Default V6 ${label}: download replaces stale root/index HTML and cold story chunks, retaining other offline data`,async({browser})=>{
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\default-entry.spec.ts:21:560
+        at .\tests\default-entry.spec.ts:21:560
 
     Error Context: test-results\default-entry-Default-V6-c-9cd64-e-and-usable-at-seven-sizes\error-context.md
 

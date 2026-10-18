@@ -1,8 +1,8 @@
 {
   "tool": "built-in image_gen",
-  "target": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-cb3a4091-13a1-4f93-8406-af03f7666566.png",
-  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-d81fe1ec-791a-41d1-9f57-01ee9d4d0581.png",
+  "target": "[author-local-path]",
+  "source": "[author-local-path]",
   "prompt": "Use case: identity-preserve. Edit target is the supplied production sprite. Preserve this exact man's identity, hairstyle, facial hair except requested aging, all costume details except requested treated bandage, watercolor ink illustration style, warm neutral lighting, centered full head to mid thighs framing and true transparent alpha. Change only the requested expression, gesture, or age: After a non-graphic battle injury to his anatomical RIGHT shoulder (viewer LEFT): add a visible pale linen wrap over the right shoulder with a small muted dried blood patch, right upper arm held close to body, right hand lowered loosely, face pale and strained with brow drawn and lips pressed. Keep the rope coiled over the anatomical left forearm (viewer right). The wound is treated, no exposed flesh, no gore, no missing body parts. Preserve identity and all other clothing. No scenery, no ground shadow, no text, no frame, no logo, no particles, no additional figures.",
-  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/dt-chen-hurt.webp",
+  "output": "./public/art/v6/dt-chen-hurt.webp",
   "review": "Pending visual review and story mapping"
 }

@@ -1,6 +1,6 @@
 {
   "tool": "built-in image_gen",
-  "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-9e1a8df5-a42e-43a3-a247-f1ccc607c643.png",
+  "source": "[author-local-path]",
   "output": "public/art/v6/npc-seasoned-traveler.webp",
   "prompt": "Use case: reusable transparent NPC portrait sprite for a mature Chinese wuxia visual novel. One seasoned male traveler around 46, average height lean compact body, weathered angular Chinese/Central Asian subtly mixed features, black shoulder length hair with a few gray strands loosely bound, no beard, alert restrained neutral expression. Wears worn charcoal dark layered traveling tunic with simple offset fastening and narrow fabric belt, dark cloth trousers and practical boots; plain old clothes, no official insignia. Empty hands relaxed down at sides, no weapon, no sheath, no staff, no bag. Full body head to boots with margins, three-quarter facing viewer right. Naturalistic refined ink and watercolor illustration, mature non-idol face, subtle fabric textures, muted charcoal and gray brown colors. A generic adult traveler usable as messenger, fighter, guide or stranger, no unique symbolic identity and no plot-specific emotion, injury, battle action or scenery. True transparent alpha background, no floor, no cast shadow rectangle, no text, signature, seal, watermark, border or UI.",
   "transparent": true,

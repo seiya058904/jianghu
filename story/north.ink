@@ -148,17 +148,23 @@ VAR nq_legacy = 0
 走可以。今夜最后一班，你别再一听错就替我接。 # beat:nq_letter_3 # scene:nq_school # cast:nq_zhou,nq_yuan # speaker:nq_yuan # mood:nq_yuan=intent
 我站后面。 # beat:nq_letter_4 # scene:nq_school # cast:nq_zhou,nq_yuan # speaker:you
 你站哪儿都行，嘴先借我用一晚。 # beat:nq_letter_5 # scene:nq_school # cast:nq_zhou,nq_yuan # speaker:nq_yuan # mood:nq_yuan=neutral
+{
+- nq_night_rest:
+那盏灯你还记得留给我。这回换我给你备干粮，别又寅时摸黑赶路。 # beat:nq_letter_6 # scene:nq_school # cast:nq_zhou,nq_yuan # speaker:nq_yuan # mood:nq_yuan=neutral
+- else:
+第七下肩先提就收枪——你这毛病总算记住了。我这灯倒也没白端几年。 # beat:nq_letter_7 # scene:nq_school # cast:nq_zhou,nq_yuan # speaker:nq_yuan # mood:nq_yuan=neutral
+}
 * [多留五日陪阿原真正带一班，错过原拟同行车，另付路费持信去楚处求见。 # cid:nq_teach_before_departure]
   ~ nq_handoff = true
-  你错过原拟同行的车，另走一段路。阿原第一晚还等你接话，第五晚终于自己叫人站进去。 # beat:nq_letter_6 # scene:nq_school # cast:nq_zhou,nq_yuan # speaker:narrator
-  走吧。他若教歪，我还没死，看得见。 # beat:nq_letter_7 # scene:nq_school # cast:nq_zhou,nq_yuan # speaker:nq_zhou # mood:nq_zhou=amused
-  你笑着把信放好，向两个人道别。 # beat:nq_letter_8 # scene:nq_school # cast:nq_zhou,nq_yuan # speaker:narrator
+  你错过原拟同行的车，另走一段路。阿原第一晚还等你接话，第五晚终于自己叫人站进去。 # beat:nq_letter_8 # scene:nq_school # cast:nq_zhou,nq_yuan # speaker:narrator
+  走吧。他若教歪，我还没死，看得见。 # beat:nq_letter_9 # scene:nq_school # cast:nq_zhou,nq_yuan # speaker:nq_zhou # mood:nq_zhou=amused
+  你笑着把信放好，向两个人道别。 # beat:nq_letter_10 # scene:nq_school # cast:nq_zhou,nq_yuan # speaker:narrator
   -> chu_first
 * [照原拟车期先持信去求见，留下谱，请阿原与师父重新排课，承认这次没能陪。 # cid:nq_depart_with_letter]
   ~ nq_handoff = false
-  这回我先走。那班缺的工，回信说给我，不能全算你们应该接。 # beat:nq_letter_9 # scene:nq_school # cast:nq_zhou,nq_yuan # speaker:you
-  我先帮师父带。等我真能自己开，再说开我的夜班。 # beat:nq_letter_10 # scene:nq_school # cast:nq_zhou,nq_yuan # speaker:nq_yuan # mood:nq_yuan=intent
-  你按时赶上车，回头时，馆门已为下一班打开。 # beat:nq_letter_11 # scene:nq_school # cast:nq_zhou,nq_yuan # speaker:narrator
+  这回我先走。那班缺的工，回信说给我，不能全算你们应该接。 # beat:nq_letter_11 # scene:nq_school # cast:nq_zhou,nq_yuan # speaker:you
+  我先帮师父带。等我真能自己开，再说开我的夜班。 # beat:nq_letter_12 # scene:nq_school # cast:nq_zhou,nq_yuan # speaker:nq_yuan # mood:nq_yuan=intent
+  你按时赶上车，回头时，馆门已为下一班打开。 # beat:nq_letter_13 # scene:nq_school # cast:nq_zhou,nq_yuan # speaker:narrator
   -> chu_first
 
 === chu_first ===
@@ -230,15 +236,21 @@ VAR nq_legacy = 0
 - else:
 当年你先走，阿原先帮周师父带旧班，自己的夜课推了半年。老人多带这半年，阿原也错过那年回乡探亲的空档。你补寄工钱，他说收，但半年和那一趟路不是收钱便没发生；后来自己终于开班，先立一条出门要当面交课。 # beat:nq_thirty_six_6 # scene:nq_chuyard # cast:nq_chu # speaker:narrator
 }
+{
+- nq_failure_open:
+你的回信也照旧先写自己哪里没走通。两边都肯把没会的先摆出来，信才一直有得写。 # beat:nq_thirty_six_7 # scene:nq_chuyard # cast:nq_chu # speaker:narrator
+- else:
+你回信仍先试完再寄。有一封迟了半月，就为等一个自己还没证出的解法。 # beat:nq_thirty_six_8 # scene:nq_chuyard # cast:nq_chu # speaker:narrator
+}
 * [认真接阿原自己改过的课，别只用北榜经验把同门讲回还得等你。 # cid:nq_answer_yuan_method]
   ~ nq_yuan_reply = true
-  你试了一次，发现他留给慢脚学生的那半步真有用。回信没抄自己新学的大枪，只把有一处仍会卡肩的地方问清。 # beat:nq_thirty_six_7 # scene:nq_chuyard # cast:nq_chu # speaker:narrator
-  纸翻过来，背面还有半张。北榜只许你看正面么？ # beat:nq_thirty_six_8 # scene:nq_chuyard # cast:nq_chu # speaker:nq_chu # mood:nq_chu=intent
-  你刚才把折角压住了，展开一看，正是阿原自己补的慢脚一栏。 # beat:nq_thirty_six_9 # scene:nq_chuyard # cast:nq_chu # speaker:narrator
+  你试了一次，发现他留给慢脚学生的那半步真有用。回信没抄自己新学的大枪，只把有一处仍会卡肩的地方问清。 # beat:nq_thirty_six_9 # scene:nq_chuyard # cast:nq_chu # speaker:narrator
+  纸翻过来，背面还有半张。北榜只许你看正面么？ # beat:nq_thirty_six_10 # scene:nq_chuyard # cast:nq_chu # speaker:nq_chu # mood:nq_chu=intent
+  你刚才把折角压住了，展开一看，正是阿原自己补的慢脚一栏。 # beat:nq_thirty_six_11 # scene:nq_chuyard # cast:nq_chu # speaker:narrator
   -> yuan_reply_route
 * [写信约阿原旁听他的夜班，等他回定日子再回馆，少练几日自己的长枪。 # cid:nq_visit_yuan_class]
   ~ nq_yuan_reply = false
-  信里只问他哪晚方便，没有替全馆订日子。阿原回定下月一晚，叫你别赶头班，夜里这班脚慢，正好看仔细。 # beat:nq_thirty_six_10 # scene:nq_chuyard # cast:nq_chu # speaker:narrator
+  信里只问他哪晚方便，没有替全馆订日子。阿原回定下月一晚，叫你别赶头班，夜里这班脚慢，正好看仔细。 # beat:nq_thirty_six_12 # scene:nq_chuyard # cast:nq_chu # speaker:narrator
   -> yuan_reply_route
 
 === yuan_reply_route ===
@@ -300,14 +312,20 @@ VAR nq_legacy = 0
 今天够了。 # beat:nq_one_seventy_two_5 # scene:nq_riverfield # cast:nq_xue # speaker:nq_xue # mood:nq_xue=intent
 我还能打。 # beat:nq_one_seventy_two_6 # scene:nq_riverfield # cast:nq_xue # speaker:you
 我知道，所以才不打。你现在不是想赢，是想把那一下抢回来。再三百招，只会更急。 # beat:nq_one_seventy_two_7 # scene:nq_riverfield # cast:nq_xue # speaker:nq_xue # mood:nq_xue=neutral
+{
+- nq_return_room:
+你递进的去处都留着自己回得来的脚位。楚院那条规矩，隔着三十年仍在替你省力。 # beat:nq_one_seventy_two_8 # scene:nq_riverfield # cast:nq_xue # speaker:narrator
+- else:
+这一阵你几处抢入都没留退脚。薛的重棍一压，你才想起楚师早骂过这一手。 # beat:nq_one_seventy_two_9 # scene:nq_riverfield # cast:nq_xue # speaker:narrator
+}
 * [放下今天非抢回一招不可的念头，带真正输过的一场回去。 # cid:nq_let_loss_stand]
   ~ nq_xue_stop = true
-  你让虎口松开，痛才一阵阵清楚起来。薛没因你肯收就把棍退半寸改成平，今天这一场仍是你败。 # beat:nq_one_seventy_two_8 # scene:nq_riverfield # cast:nq_xue # speaker:narrator
+  你让虎口松开，痛才一阵阵清楚起来。薛没因你肯收就把棍退半寸改成平，今天这一场仍是你败。 # beat:nq_one_seventy_two_10 # scene:nq_riverfield # cast:nq_xue # speaker:narrator
   -> after_staff
 * [请他说明那只松开的手，听完也停，不借问话偷换成第二场。 # cid:nq_ask_loosened_hand]
   ~ nq_xue_stop = false
-  你近枪要我还是双手重棍，我偏不替你拿着。 # beat:nq_one_seventy_two_9 # scene:nq_riverfield # cast:nq_xue # speaker:nq_xue # mood:nq_xue=neutral
-  你低头看自己还想抓紧的手，终于把枪搁下。今天接不上的，不必靠再流一次血才有资格回去想。 # beat:nq_one_seventy_two_10 # scene:nq_riverfield # cast:nq_xue # speaker:narrator
+  你近枪要我还是双手重棍，我偏不替你拿着。 # beat:nq_one_seventy_two_11 # scene:nq_riverfield # cast:nq_xue # speaker:nq_xue # mood:nq_xue=neutral
+  你低头看自己还想抓紧的手，终于把枪搁下。今天接不上的，不必靠再流一次血才有资格回去想。 # beat:nq_one_seventy_two_12 # scene:nq_riverfield # cast:nq_xue # speaker:narrator
   -> after_staff
 
 === after_staff ===
@@ -315,6 +333,12 @@ VAR nq_legacy = 0
 你从第一招就在输。你一直想证明正面能过，薛云山一生最不怕这个。 # beat:nq_after_staff_2 # scene:nq_chuyard # cast:nq_chu # speaker:nq_chu # mood:nq_chu=intent
 五十八到六十一，用三年才从第五到第四。外人说慢了，老师却知你第一次真开始拆自己。 # beat:nq_after_staff_3 # scene:nq_chuyard # cast:nq_chu # speaker:narrator
 六十一，终南访友，路遇大雨，山道塌一段。你绕入山中一座废大半的旧观，檐下有人修木椅。你只想借宿一夜，明日照常练枪。 # beat:nq_after_staff_4 # scene:nq_chuyard # cast:nq_chu # speaker:narrator
+{
+- nq_xue_method == 1:
+你把放开一路逼他抬棍的走法也讲给楚师。他只问：放开的果真是路，还是让出来的方便？你答不出，当夜又在院里走了一遍。 # beat:nq_after_staff_5 # scene:nq_chuyard # cast:nq_chu # speaker:narrator
+- else:
+你把看棍尾再起的走法讲给楚师。他说看是会看了，肯等第二回吗。你说上回已在等，他说那就再看十年。 # beat:nq_after_staff_6 # scene:nq_chuyard # cast:nq_chu # speaker:narrator
+}
 -> wood_chair
 
 === wood_chair ===
@@ -324,16 +348,28 @@ VAR nq_legacy = 0
 斧在门后。那根带钉的别劈。 # beat:nq_wood_chair_4 # scene:nq_rainporch # cast:nq2_mender # speaker:nq2_mender # mood:nq2_mender=neutral
 你俯身才看见钉头锈进木里，先把它另拣出来。 # beat:nq_wood_chair_5 # scene:nq_rainporch # cast:nq2_mender # speaker:narrator
 北榜第四秦天岳，把枪靠好，替陌生老人劈半个时辰柴。雨落在门外，老人仍慢慢对着那处椅脚，没有问你现在第几。 # beat:nq_wood_chair_6 # scene:nq_rainporch # cast:nq2_mender # speaker:narrator
+{
+- nq_next_honest:
+周师说等着，等着便有人。你在檐下劈柴，忽然信了这句——前面的人，未必长成你想的样子。 # beat:nq_wood_chair_7 # scene:nq_rainporch # cast:nq2_mender # speaker:narrator
+- else:
+前路仍不知道该问谁。你先把今晚的柴劈完，明日照常练枪。 # beat:nq_wood_chair_8 # scene:nq_rainporch # cast:nq2_mender # speaker:narrator
+}
+{
+- nq_xue_stop:
+虎口那道裂到雨里发胀，你没有为抢回一招再添新的。带回来的伤就一处，想的东西倒是很多。 # beat:nq_wood_chair_9 # scene:nq_rainporch # cast:nq2_mender # speaker:narrator
+- else:
+薛松手那一下你问明白了才走。这一路想的就是那个问题，没靠新伤陪想。 # beat:nq_wood_chair_10 # scene:nq_rainporch # cast:nq2_mender # speaker:narrator
+}
 * [把湿柴先分开，留自己今夜够用的一份，也给老人明早添得着。 # cid:nq_split_own_share]
   ~ nq_wood_share = true
-  你劈惯了，却仍先剔出钉眼旁裂的一块，免得火里乱爆。老人叫放靠里，不夸北榜第四肯做小事，只问锅边还缺不缺。 # beat:nq_wood_chair_7 # scene:nq_rainporch # cast:nq2_mender # speaker:narrator
-  够这一夜。明早我再看。 # beat:nq_wood_chair_8 # scene:nq_rainporch # cast:nq2_mender # speaker:you
+  你劈惯了，却仍先剔出钉眼旁裂的一块，免得火里乱爆。老人叫放靠里，不夸北榜第四肯做小事，只问锅边还缺不缺。 # beat:nq_wood_chair_11 # scene:nq_rainporch # cast:nq2_mender # speaker:narrator
+  够这一夜。明早我再看。 # beat:nq_wood_chair_12 # scene:nq_rainporch # cast:nq2_mender # speaker:you
   -> too_heavy
 * [劈完先挪开挡手的木屑，请老人有地方放正椅子，不抢着替他修。 # cid:nq_help_chair_space]
   ~ nq_wood_share = false
-  你伸手想扶，他叫先别压那边。木椅还没接好，你这一帮反倒会把新口又扯开。 # beat:nq_wood_chair_9 # scene:nq_rainporch # cast:nq2_mender # speaker:narrator
-  放这里。会劈柴，就先把柴放稳。 # beat:nq_wood_chair_10 # scene:nq_rainporch # cast:nq2_mender # speaker:nq2_mender # mood:nq2_mender=intent
-  你应一声，没在破观里同一把椅子争谁更强。 # beat:nq_wood_chair_11 # scene:nq_rainporch # cast:nq2_mender # speaker:narrator
+  你伸手想扶，他叫先别压那边。木椅还没接好，你这一帮反倒会把新口又扯开。 # beat:nq_wood_chair_13 # scene:nq_rainporch # cast:nq2_mender # speaker:narrator
+  放这里。会劈柴，就先把柴放稳。 # beat:nq_wood_chair_14 # scene:nq_rainporch # cast:nq2_mender # speaker:nq2_mender # mood:nq2_mender=intent
+  你应一声，没在破观里同一把椅子争谁更强。 # beat:nq_wood_chair_15 # scene:nq_rainporch # cast:nq2_mender # speaker:narrator
   -> too_heavy
 
 === too_heavy ===
@@ -367,15 +403,21 @@ VAR nq_legacy = 0
 想。 # beat:nq_third_teacher_7 # scene:nq_rainporch # cast:nq2_heng # speaker:you
 那就留下。你仍是六合门的人，我教你这一段。 # beat:nq_third_teacher_8 # scene:nq_rainporch # cast:nq2_heng # speaker:nq2_heng # mood:nq2_heng=neutral
 他没有给你改太极辈序。收下之后第一件事，却叫三个月不许碰枪：你一拿，便变成秦天岳；他先要看看没有枪还剩什么。 # beat:nq_third_teacher_9 # scene:nq_rainporch # cast:nq2_heng # speaker:narrator
+{
+- nq_asked_more:
+你没再说会。十四岁那三招替你把这两个字收了一辈子。 # beat:nq_third_teacher_10 # scene:nq_rainporch # cast:nq2_heng # speaker:narrator
+- else:
+没等他问，你先请他试。六合馆的老规矩：熟和会差哪儿，枪比嘴清楚。 # beat:nq_third_teacher_11 # scene:nq_rainporch # cast:nq2_heng # speaker:narrator
+}
 * [给六合馆说清自己留下重学、暂不碰枪，归期不定，别让他们替你撑一个还什么都会的名。 # cid:nq_write_relearn]
   ~ nq_relearn_plain = true
-  信写到六十一还不会，你停了一阵，终于没划掉。你也写明老师不叫改门，让问艺别先替你订满。 # beat:nq_third_teacher_10 # scene:nq_rainporch # cast:nq2_heng # speaker:narrator
-  阿原回信，没有问你伤哪儿，只说把未定的约暂缓。他让一名总不敢开口的晚辈也读了那句还有不会。 # beat:nq_third_teacher_11 # scene:nq_rainporch # cast:nq2_heng # speaker:narrator
+  信写到六十一还不会，你停了一阵，终于没划掉。你也写明老师不叫改门，让问艺别先替你订满。 # beat:nq_third_teacher_12 # scene:nq_rainporch # cast:nq2_heng # speaker:narrator
+  阿原回信，没有问你伤哪儿，只说把未定的约暂缓。他让一名总不敢开口的晚辈也读了那句还有不会。 # beat:nq_third_teacher_13 # scene:nq_rainporch # cast:nq2_heng # speaker:narrator
   -> without_spear
 * [先报平安与拜新师，不细说三月离枪，把不知怎样解释的放到回去当面讲。 # cid:nq_write_safe_only]
   ~ nq_relearn_plain = false
-  你没说谎，只省了最难写的一段。馆里知道你学新功，却不知道回程要等多久，也替你留着几场问艺。 # beat:nq_third_teacher_12 # scene:nq_rainporch # cast:nq2_heng # speaker:narrator
-  来山中的人看见枪总靠着不用，猜是不是右臂旧伤又重。话传得比你预备留到回去的解释快。 # beat:nq_third_teacher_13 # scene:nq_rainporch # cast:nq2_heng # speaker:narrator
+  你没说谎，只省了最难写的一段。馆里知道你学新功，却不知道回程要等多久，也替你留着几场问艺。 # beat:nq_third_teacher_14 # scene:nq_rainporch # cast:nq2_heng # speaker:narrator
+  来山中的人看见枪总靠着不用，猜是不是右臂旧伤又重。话传得比你预备留到回去的解释快。 # beat:nq_third_teacher_15 # scene:nq_rainporch # cast:nq2_heng # speaker:narrator
   -> without_spear
 
 === without_spear ===
@@ -446,6 +488,12 @@ VAR nq_legacy = 0
 - else:
 你一度想记住逼退一步时手腕的样子，第二日照样却连五十招也撑不住。老人换到院子的另一头，你才把那页照抄的手势折掉，从新距离试。 # beat:nq_sixty_four_7 # scene:nq_oldyard # cast:nq2_heng # speaker:narrator
 }
+{
+- nq_mender_plain:
+下山后你对阿原说起那日问名。他说难怪你回信绕着写——原来那晚你连对方是谁都没敢猜。 # beat:nq_sixty_four_8 # scene:nq_oldyard # cast:nq2_heng # speaker:narrator
+- else:
+当日你先认三枪没走进去才问的名。后来在山中每回被压下，都先认这一句，再谈下一枪。 # beat:nq_sixty_four_9 # scene:nq_oldyard # cast:nq2_heng # speaker:narrator
+}
 -> two_firsts
 
 === two_firsts ===
@@ -453,15 +501,21 @@ VAR nq_legacy = 0
 与韩镇北三次问枪，先一百七十余你胜，再一百二十余他自收，第三约百招，他问现在每枪为何比从前少。你答师父也这么说。他猜周定川、楚怀锋，你都摇头，他便不再问。 # beat:nq_two_firsts_2 # scene:nq_northfield # cast:nq_hanbei # speaker:narrator
 少的不是手里没了枪。来，把这半步接完。 # beat:nq_two_firsts_3 # scene:nq_northfield # cast:nq_hanbei # speaker:nq_hanbei # mood:nq_hanbei=intent
 他没有为自己这回早收就把先前的问艺都略作一句不如。你也没让第三位师父的名字盖掉前两位。 # beat:nq_two_firsts_4 # scene:nq_northfield # cast:nq_hanbei # speaker:narrator
+{
+- nq_chu_limit:
+楚师那句以后不要来了，你守着。每年托人带一封不问教的路信，他回得短，你都留着。 # beat:nq_two_firsts_5 # scene:nq_northfield # cast:nq_hanbei # speaker:narrator
+- else:
+后来你又去看过楚师两回，坐坐便走，不带一张请教的脸。他骂你闲坐，茶照旧给你晾着。 # beat:nq_two_firsts_6 # scene:nq_northfield # cast:nq_hanbei # speaker:narrator
+}
 * [接完他指出的半步，让三次问艺都留着各自真正发生的事。 # cid:nq_take_han_step]
   ~ nq_han_step = true
-  枪一搭，他仍能逼你挪脚。你把那一点接住再放开，不为第三次只百招便催对方早点停。 # beat:nq_two_firsts_5 # scene:nq_northfield # cast:nq_hanbei # speaker:narrator
-  这回别数着想省我几招。 # beat:nq_two_firsts_6 # scene:nq_northfield # cast:nq_hanbei # speaker:nq_hanbei # mood:nq_hanbei=amused
+  枪一搭，他仍能逼你挪脚。你把那一点接住再放开，不为第三次只百招便催对方早点停。 # beat:nq_two_firsts_7 # scene:nq_northfield # cast:nq_hanbei # speaker:narrator
+  这回别数着想省我几招。 # beat:nq_two_firsts_8 # scene:nq_northfield # cast:nq_hanbei # speaker:nq_hanbei # mood:nq_hanbei=amused
   -> ordinary_day
 * [请他再从原先那一路进，看少掉的力是否仍能接得住真正的来枪。 # cid:nq_show_less_gun]
   ~ nq_han_step = false
-  他没替你留空，旧路也不再原样。你真接过才知道少了不等于把人放过去，枪在手里，下一步仍得走。 # beat:nq_two_firsts_7 # scene:nq_northfield # cast:nq_hanbei # speaker:narrator
-  这回是少，不是散。 # beat:nq_two_firsts_8 # scene:nq_northfield # cast:nq_hanbei # speaker:nq_hanbei # mood:nq_hanbei=neutral
+  他没替你留空，旧路也不再原样。你真接过才知道少了不等于把人放过去，枪在手里，下一步仍得走。 # beat:nq_two_firsts_9 # scene:nq_northfield # cast:nq_hanbei # speaker:narrator
+  这回是少，不是散。 # beat:nq_two_firsts_10 # scene:nq_northfield # cast:nq_hanbei # speaker:nq_hanbei # mood:nq_hanbei=neutral
   -> ordinary_day
 
 === ordinary_day ===
@@ -469,15 +523,21 @@ VAR nq_legacy = 0
 我这一枪又错？ # beat:nq_ordinary_day_2 # scene:nq_school # cast:nq_young # speaker:nq_young # mood:nq_young=uneasy
 你忽然想起多年前那句枪自己去了。这一瞬很短，弟子还在等你看他，院里下一班也还要照常开。 # beat:nq_ordinary_day_3 # scene:nq_school # cast:nq_young # speaker:narrator
 次日腰仍疼，仍练。连你自己也说不清哪一天入化，几年后江湖才渐渐认，柳成章说已入化多年且深。回头也找不出一个能报明的确日。 # beat:nq_ordinary_day_4 # scene:nq_school # cast:nq_young # speaker:narrator
+{
+- nq_pupil_plain:
+这一回你也先让他自己说卡在哪儿。当年那句你先记自己这只手，如今不用想就做出来了。 # beat:nq_ordinary_day_5 # scene:nq_school # cast:nq_young # speaker:narrator
+- else:
+你先听完他自己试过的两种握法才开口。跟阿原学来的耐心，如今用在新来的身上。 # beat:nq_ordinary_day_6 # scene:nq_school # cast:nq_young # speaker:narrator
+}
 * [先答眼前弟子，看他怎样进，不急着把自己那一瞬说成全班都得会的道理。 # cid:nq_reply_to_pupil]
   ~ nq_ordinary_reply = true
-  你再来。先看你自己的脚。 # beat:nq_ordinary_day_5 # scene:nq_school # cast:nq_young # speaker:you
-  你让他重走，身体没有因知道刚才像什么便忽然不再腰痛。可他试第二遍时，你没有拿一个进字堵住他的问。 # beat:nq_ordinary_day_6 # scene:nq_school # cast:nq_young # speaker:narrator
+  你再来。先看你自己的脚。 # beat:nq_ordinary_day_7 # scene:nq_school # cast:nq_young # speaker:you
+  你让他重走，身体没有因知道刚才像什么便忽然不再腰痛。可他试第二遍时，你没有拿一个进字堵住他的问。 # beat:nq_ordinary_day_8 # scene:nq_school # cast:nq_young # speaker:narrator
   -> han_gate
 * [请弟子照样再进，自己再接一次，不凭一瞬便给年月填上确定日子。 # cid:nq_try_once_again]
   ~ nq_ordinary_reply = false
-  他再进，脚也变了。你接住的是眼前这一枪，不是重复一个能给后人抄成开悟时刻的姿势。 # beat:nq_ordinary_day_7 # scene:nq_school # cast:nq_young # speaker:narrator
-  这回肩别先紧，再来。 # beat:nq_ordinary_day_8 # scene:nq_school # cast:nq_young # speaker:you
+  他再进，脚也变了。你接住的是眼前这一枪，不是重复一个能给后人抄成开悟时刻的姿势。 # beat:nq_ordinary_day_9 # scene:nq_school # cast:nq_young # speaker:narrator
+  这回肩别先紧，再来。 # beat:nq_ordinary_day_10 # scene:nq_school # cast:nq_young # speaker:you
   -> han_gate
 
 === han_gate ===
@@ -485,15 +545,21 @@ VAR nq_legacy = 0
 河洛韩家旧场，前三十招你未真进他三尺，他也不抢。第三十一，金刀横切。你不再像十余年前硬压刀背，枪头自然下沉，让刀沿枪滑过，尖已自下递入。韩第一次退。 # beat:nq_han_gate_2 # scene:nq_hanyard # cast:nq_hanshi # speaker:narrator
 再近一些。 # beat:nq_han_gate_3 # scene:nq_hanyard # cast:nq_hanshi # speaker:nq_hanshi # mood:nq_hanshi=intent
 第八十七，他忽用最短一路，连抢七步七刀。你退六步，第七步，没有退。 # beat:nq_han_gate_4 # scene:nq_hanyard # cast:nq_hanshi # speaker:narrator
+{
+- nq_ordinary_reply:
+开打前你仍先看他的脚。对弟子说过的那句，自己上场也一样算数。 # beat:nq_han_gate_5 # scene:nq_hanyard # cast:nq_hanshi # speaker:narrator
+- else:
+你请他照样先进。接住的才是眼前这一刀，不是昨日院里那一瞬的重复。 # beat:nq_han_gate_6 # scene:nq_hanyard # cast:nq_hanshi # speaker:narrator
+}
 * [枪柄落地竖杆，顺第八刀压弯的势转回枪尾，不以再退一步续旧局。 # cid:nq_stand_seventh]
   ~ nq_han_method = 1
-  第八刀落在杆中，弯势传入掌。你顺它转杆，尾自另一侧扫来，韩只能退开。 # beat:nq_han_gate_5 # scene:nq_hanyard # cast:nq_hanshi # speaker:narrator
-  第九十五，两人重新拉远，他忽然笑，说进了。你没问进什么，眼前下一刀却仍得真接。 # beat:nq_han_gate_6 # scene:nq_hanyard # cast:nq_hanshi # speaker:narrator
+  第八刀落在杆中，弯势传入掌。你顺它转杆，尾自另一侧扫来，韩只能退开。 # beat:nq_han_gate_7 # scene:nq_hanyard # cast:nq_hanshi # speaker:narrator
+  第九十五，两人重新拉远，他忽然笑，说进了。你没问进什么，眼前下一刀却仍得真接。 # beat:nq_han_gate_8 # scene:nq_hanyard # cast:nq_hanshi # speaker:narrator
   -> one_thirty_two
 * [先接住杆中弯起的力，让枪尾从侧面回，不在近处硬与刀比直。 # cid:nq_turn_bending_pole]
   ~ nq_han_method = 2
-  枪柄点地，长枪竖起，接住第八刀。你没替那一下弯求一个永远不动的稳，顺着转，枪尾逼得韩退。 # beat:nq_han_gate_7 # scene:nq_hanyard # cast:nq_hanshi # speaker:narrator
-  第九十五，他说进了，笑意却不替你挡随后更凶的刀。 # beat:nq_han_gate_8 # scene:nq_hanyard # cast:nq_hanshi # speaker:narrator
+  枪柄点地，长枪竖起，接住第八刀。你没替那一下弯求一个永远不动的稳，顺着转，枪尾逼得韩退。 # beat:nq_han_gate_9 # scene:nq_hanyard # cast:nq_hanshi # speaker:narrator
+  第九十五，他说进了，笑意却不替你挡随后更凶的刀。 # beat:nq_han_gate_10 # scene:nq_hanyard # cast:nq_hanshi # speaker:narrator
   -> one_thirty_two
 
 === one_thirty_two ===
@@ -505,15 +571,21 @@ VAR nq_legacy = 0
 你站得最近。 # beat:nq_one_thirty_two_6 # scene:nq_hanyard # cast:nq_hanshi # speaker:you
 近才看得见。把胳膊给我，别等血滴到我刀鞘里。 # beat:nq_one_thirty_two_7 # scene:nq_hanyard # cast:nq_hanshi # speaker:nq_hanshi # mood:nq_hanshi=intent
 他收好刀，先替你摁住伤口，等人拿布来。你要问的那句，只好留到包扎时。 # beat:nq_one_thirty_two_8 # scene:nq_hanyard # cast:nq_hanshi # speaker:narrator
+{
+- nq_han_step:
+第三场接完的那半步，此刻仍在你脚底。少的力没有散，今日这条枪是接得完的。 # beat:nq_one_thirty_two_9 # scene:nq_hanyard # cast:nq_hanshi # speaker:narrator
+- else:
+他那句这回是少，不是散，你此刻才真验完：少了的力，接得住真来枪。 # beat:nq_one_thirty_two_10 # scene:nq_hanyard # cast:nq_hanshi # speaker:narrator
+}
 * [认他的见闻，不以赢过门外一人就叫他从此不能再指自己的差。 # cid:nq_keep_gate_witness]
   ~ nq_han_witness = true
-  你请他看刚才左臂被点的地方，那里仍有血。他没因认输便改口说本来让你，指了你肩前还可早换的一线。 # beat:nq_one_thirty_two_9 # scene:nq_hanyard # cast:nq_hanshi # speaker:narrator
-  你听完，自己试一下，才去包臂。 # beat:nq_one_thirty_two_10 # scene:nq_hanyard # cast:nq_hanshi # speaker:narrator
+  你请他看刚才左臂被点的地方，那里仍有血。他没因认输便改口说本来让你，指了你肩前还可早换的一线。 # beat:nq_one_thirty_two_11 # scene:nq_hanyard # cast:nq_hanshi # speaker:narrator
+  你听完，自己试一下，才去包臂。 # beat:nq_one_thirty_two_12 # scene:nq_hanyard # cast:nq_hanshi # speaker:narrator
   -> qinghe
 * [把更深处留给以后真问，今日先承认这场若少半寸便仍会被他近刀逼住。 # cid:nq_ask_inside_later]
   ~ nq_han_witness = false
-  你们把刀与枪从停处再慢移一次，胸前一寸与肩外四寸并没因赢输便变成整整一层轻重。 # beat:nq_one_thirty_two_11 # scene:nq_hanyard # cast:nq_hanshi # speaker:narrator
-  往前走。别回来把今天说成你随手就赢。 # beat:nq_one_thirty_two_12 # scene:nq_hanyard # cast:nq_hanshi # speaker:nq_hanshi # mood:nq_hanshi=neutral
+  你们把刀与枪从停处再慢移一次，胸前一寸与肩外四寸并没因赢输便变成整整一层轻重。 # beat:nq_one_thirty_two_13 # scene:nq_hanyard # cast:nq_hanshi # speaker:narrator
+  往前走。别回来把今天说成你随手就赢。 # beat:nq_one_thirty_two_14 # scene:nq_hanyard # cast:nq_hanshi # speaker:nq_hanshi # mood:nq_hanshi=neutral
   -> qinghe
 
 === qinghe ===
@@ -535,25 +607,43 @@ VAR nq_legacy = 0
 === one_forty_one ===
 第一百四十一，你自停：再这样三十招内要输。清和没替你判输，只说那便换。 # beat:nq_one_forty_one_1 # scene:nq_wudang # cast:nq_qinghe # speaker:narrator
 你短握，左手前移，长枪打成半枪半棍。二十余招真拉回来，一百六十三枪尾撞藤，首次震开；枪头回转，直入胸前。 # beat:nq_one_forty_one_2 # scene:nq_wudang # cast:nq_qinghe # speaker:narrator
+{
+- nq_han_witness:
+韩指过的肩前那一线，今日在藤条下又露了一回。被人看过的地方，藏不住。 # beat:nq_one_forty_one_3 # scene:nq_wudang # cast:nq_qinghe # speaker:narrator
+- else:
+你想起韩收刀后仍肯指你差处。今日被藤条压着，你也把看见的说出口，不拿赢过门外的人当遮掩。 # beat:nq_one_forty_one_4 # scene:nq_wudang # cast:nq_qinghe # speaker:narrator
+}
+{
+- nq_han_method == 1:
+第八刀顺杆转的那一下，今日变半枪半棍时又用了一次：不与眼前的力比直，顺着它换自己的路。 # beat:nq_one_forty_one_5 # scene:nq_wudang # cast:nq_qinghe # speaker:narrator
+- else:
+枪尾从侧面回的那一路，今日半枪半棍里又露了一回。韩家旧场教的，武当山上仍旧使得。 # beat:nq_one_forty_one_6 # scene:nq_wudang # cast:nq_qinghe # speaker:narrator
+}
 * [顺着半枪半棍真争这一线，承认变过仍未必越过眼前的人。 # cid:nq_continue_real_change]
   ~ nq_qinghe_change = 1
-  清和松藤，右手两指搭杆，旁带半寸。你忽觉整杆没有可发的力，左手两指已停喉前。 # beat:nq_one_forty_one_3 # scene:nq_wudang # cast:nq_qinghe # speaker:narrator
-  一百六十四，败。你行礼受教，没为自己确曾拉回来二十招便多添一场平。 # beat:nq_one_forty_one_4 # scene:nq_wudang # cast:nq_qinghe # speaker:narrator
+  清和松藤，右手两指搭杆，旁带半寸。你忽觉整杆没有可发的力，左手两指已停喉前。 # beat:nq_one_forty_one_7 # scene:nq_wudang # cast:nq_qinghe # speaker:narrator
+  一百六十四，败。你行礼受教，没为自己确曾拉回来二十招便多添一场平。 # beat:nq_one_forty_one_8 # scene:nq_wudang # cast:nq_qinghe # speaker:narrator
   -> one_sixty_four
 * [不追已经松掉的藤条，试着接他的手，仍被先占的那半寸带尽。 # cid:nq_follow_unheld_cane]
   ~ nq_qinghe_change = 2
-  你看见他松手，已不算被旧动作骗住；可两指贴杆带半寸时，你的力仍落不到可续处。另手停喉前。 # beat:nq_one_forty_one_5 # scene:nq_wudang # cast:nq_qinghe # speaker:narrator
-  一百六十四，败。看见与能接住，今日仍是两件事。你收枪行礼。 # beat:nq_one_forty_one_6 # scene:nq_wudang # cast:nq_qinghe # speaker:narrator
+  你看见他松手，已不算被旧动作骗住；可两指贴杆带半寸时，你的力仍落不到可续处。另手停喉前。 # beat:nq_one_forty_one_9 # scene:nq_wudang # cast:nq_qinghe # speaker:narrator
+  一百六十四，败。看见与能接住，今日仍是两件事。你收枪行礼。 # beat:nq_one_forty_one_10 # scene:nq_wudang # cast:nq_qinghe # speaker:narrator
   -> one_sixty_four
 
 === one_sixty_four ===
 受教。 # beat:nq_one_sixty_four_1 # scene:nq_wudang # cast:nq_qinghe # speaker:you
 后来问北榜第一与玄门第九差多少，你只说玄门的第九不是天下第九。你没有把藤条算成一件能买来便胜过枪的神兵，也没有在一场问艺后替清和补全天下绝对名次。 # beat:nq_one_sixty_four_2 # scene:nq_wudang # cast:nq_qinghe # speaker:narrator
 {
-- nq_qinghe_place:
-赴旧园前，你没再对着袖上的一寸想赢法，先把清和准你走进的距离重试。枪到原处时自己停住，留下一条不必急着抢的路。 # beat:nq_one_sixty_four_3 # scene:nq_wudang # cast:nq_qinghe # speaker:narrator
+- nq_qinghe_change == 1:
+那二十余招半枪半棍，后来进了你自己的谱。变过仍输，比没变过输得值。 # beat:nq_one_sixty_four_3 # scene:nq_wudang # cast:nq_qinghe # speaker:narrator
 - else:
-赴旧园前，你还想从那一寸破袖接出后半枪。试到晚饭时，才认清那日清和是为看枪而晚退；你收起旧图，次晨重新画双方脚位。 # beat:nq_one_sixty_four_4 # scene:nq_wudang # cast:nq_qinghe # speaker:narrator
+那日你看见松藤仍接不住。看见与能接住中间那一段，你后来走了很多年。 # beat:nq_one_sixty_four_4 # scene:nq_wudang # cast:nq_qinghe # speaker:narrator
+}
+{
+- nq_qinghe_place:
+赴旧园前，你没再对着袖上的一寸想赢法，先把清和准你走进的距离重试。枪到原处时自己停住，留下一条不必急着抢的路。 # beat:nq_one_sixty_four_5 # scene:nq_wudang # cast:nq_qinghe # speaker:narrator
+- else:
+赴旧园前，你还想从那一寸破袖接出后半枪。试到晚饭时，才认清那日清和是为看枪而晚退；你收起旧图，次晨重新画双方脚位。 # beat:nq_one_sixty_four_6 # scene:nq_wudang # cast:nq_qinghe # speaker:narrator
 }
 -> gu_garden
 
@@ -582,29 +672,41 @@ VAR nq_legacy = 0
 平？ # beat:nq_one_twenty_eight_4 # scene:nq_garden # cast:nq_gu # speaker:nq_gu # mood:nq_gu=amused
 还没有。 # beat:nq_one_twenty_eight_5 # scene:nq_garden # cast:nq_gu # speaker:you
 那继续。 # beat:nq_one_twenty_eight_6 # scene:nq_garden # cast:nq_gu # speaker:nq_gu # mood:nq_gu=intent
+{
+- nq_stop_plain:
+你先撤那一步，与当年对周师收枪是同一样东西：不把没分完的胜负抢先说成自己的。 # beat:nq_one_twenty_eight_7 # scene:nq_garden # cast:nq_gu # speaker:narrator
+- else:
+你先撤那一步，收在方才真看见的那条线上——二十二岁学会的，先说清自己看见什么，再谈谁赢。 # beat:nq_one_twenty_eight_8 # scene:nq_garden # cast:nq_gu # speaker:narrator
+}
 * [继续真争，不用两边都是三寸就先领一场同高的名。 # cid:nq_continue_without_claim]
   ~ nq_gu_continue = true
-  二百七十后，你枪反比先前更整，连续逼他退五步。不是因马上要输就先乱给人看，今天你已走到比来时更深的地方。 # beat:nq_one_twenty_eight_7 # scene:nq_garden # cast:nq_gu # speaker:narrator
+  二百七十后，你枪反比先前更整，连续逼他退五步。不是因马上要输就先乱给人看，今天你已走到比来时更深的地方。 # beat:nq_one_twenty_eight_9 # scene:nq_garden # cast:nq_gu # speaker:narrator
   -> three_hundred_one
 * [继续看他何时肯出剑，别把刚才同时停的那一瞬当后面也会同时。 # cid:nq_watch_next_timing]
   ~ nq_gu_continue = false
-  你变过了，二百七十后更整，也逼他退五步。可一场里看见一次还不够，真正到毫厘时，身体仍会替你先作一个旧日最合理的准备。 # beat:nq_one_twenty_eight_8 # scene:nq_garden # cast:nq_gu # speaker:narrator
+  你变过了，二百七十后更整，也逼他退五步。可一场里看见一次还不够，真正到毫厘时，身体仍会替你先作一个旧日最合理的准备。 # beat:nq_one_twenty_eight_10 # scene:nq_garden # cast:nq_gu # speaker:narrator
   -> three_hundred_one
 
 === three_hundred_one ===
 第三百零一，你封死左路，顾只能从右出，枪已在等。剑却故意晚半拍，等你势先走才贴枪过。你连化五剑，第六才稳，想反压，他偏不出第七，先收半寸。 # beat:nq_three_hundred_one_1 # scene:nq_garden # cast:nq_gu # speaker:narrator
 你枪已为那一剑先动。就这一点，他进，剑停左胸，枪回到他右肩外，仍差七寸。 # beat:nq_three_hundred_one_2 # scene:nq_garden # cast:nq_gu # speaker:narrator
 第三百零八。你收枪认输，他说只一手，你答一手也是输。今日高半筹的是顾，两人并不差一个境界；方才每次真改过的枪仍在，那七寸也仍在。 # beat:nq_three_hundred_one_3 # scene:nq_garden # cast:nq_gu # speaker:narrator
+{
+- nq_gu_begin == 1:
+你封他退路的那一手，整场都还在。最后差的不是局，是那一剑晚来的半拍。 # beat:nq_three_hundred_one_4 # scene:nq_garden # cast:nq_gu # speaker:narrator
+- else:
+你等他真够得着才收的耐心，整场都还在。最后差的不是等，是你先替第七剑动了。 # beat:nq_three_hundred_one_5 # scene:nq_garden # cast:nq_gu # speaker:narrator
+}
 * [先重走三百零一的先动，不急着替未来会超过讨一份今日胜利。 # cid:nq_ask_three_oh_one]
   ~ nq_gu_question = true
-  这里先换手，还是先撤？ # beat:nq_three_hundred_one_4 # scene:nq_garden # cast:nq_gu # speaker:you
-  先把为什么已替第七剑动了走给自己看。 # beat:nq_three_hundred_one_5 # scene:nq_garden # cast:nq_gu # speaker:nq_gu # mood:nq_gu=intent
-  你把枪移回原处。手仍有最后收回的热，今日那半拍却已值得再想。 # beat:nq_three_hundred_one_6 # scene:nq_garden # cast:nq_gu # speaker:narrator
+  这里先换手，还是先撤？ # beat:nq_three_hundred_one_6 # scene:nq_garden # cast:nq_gu # speaker:you
+  先把为什么已替第七剑动了走给自己看。 # beat:nq_three_hundred_one_7 # scene:nq_garden # cast:nq_gu # speaker:nq_gu # mood:nq_gu=intent
+  你把枪移回原处。手仍有最后收回的热，今日那半拍却已值得再想。 # beat:nq_three_hundred_one_8 # scene:nq_garden # cast:nq_gu # speaker:narrator
   -> years_win
 * [让他说明为何晚那一点，不用天赋高便不该输把他的岁月一并略掉。 # cid:nq_let_gu_explain]
   ~ nq_gu_question = false
-  你等的是该从那里出的剑。我偏晚一点。 # beat:nq_three_hundred_one_7 # scene:nq_garden # cast:nq_gu # speaker:nq_gu # mood:nq_gu=neutral
-  你并非没见过欺与变，今日输的也不是傻。到了最后，他在你刚开始想的地方确已多走一段。 # beat:nq_three_hundred_one_8 # scene:nq_garden # cast:nq_gu # speaker:narrator
+  你等的是该从那里出的剑。我偏晚一点。 # beat:nq_three_hundred_one_9 # scene:nq_garden # cast:nq_gu # speaker:nq_gu # mood:nq_gu=neutral
+  你并非没见过欺与变，今日输的也不是傻。到了最后，他在你刚开始想的地方确已多走一段。 # beat:nq_three_hundred_one_10 # scene:nq_garden # cast:nq_gu # speaker:narrator
   -> years_win
 
 === years_win ===
@@ -614,14 +716,20 @@ VAR nq_legacy = 0
 柳把杯沿放回桌上，笑着摇头；你也笑了，手指还在桌下试那一下晚来的换手。 # beat:nq_years_win_4 # scene:nq_garden # cast:nq_gu,nq_liu # speaker:narrator
 他觉得你改得快，敢扔，往后会超过。有人说客气，他问为何要同你客气。问到你，你只说先把今日这一剑想明白。往后并未写定的一场，不替今天赢输倒账。 # beat:nq_years_win_5 # scene:nq_garden # cast:nq_gu,nq_liu # speaker:narrator
 后来人说当日顾高半筹，不是天资胜，是岁月胜。你也没让后来讲这场问艺的人少提顾。 # beat:nq_years_win_6 # scene:nq_garden # cast:nq_gu,nq_liu # speaker:narrator
+{
+- nq_gu_continue:
+柳问起那五步连退，你说那是今日真走到的深处，不是回本。顾在旁点头，没替你谦让掉。 # beat:nq_years_win_7 # scene:nq_garden # cast:nq_gu,nq_liu # speaker:narrator
+- else:
+柳问起那五步连退，你说身体到最后仍替你先作了旧日准备。顾说能看见这个，就不算白输。 # beat:nq_years_win_8 # scene:nq_garden # cast:nq_gu,nq_liu # speaker:narrator
+}
 * [把顾的晚半拍和自己的先动一起记，不把后来的赞许盖在输字上。 # cid:nq_keep_gu_in_notes]
   ~ nq_gu_notes = true
-  你写到三百零八，仍写败。旁边留下第七剑没有出的那一下，给后来人真能试的地方，不替他们先写总有一天都能赢。 # beat:nq_years_win_7 # scene:nq_garden # cast:nq_gu,nq_liu # speaker:narrator
+  你写到三百零八，仍写败。旁边留下第七剑没有出的那一下，给后来人真能试的地方，不替他们先写总有一天都能赢。 # beat:nq_years_win_9 # scene:nq_garden # cast:nq_gu,nq_liu # speaker:narrator
   -> last_tea
 * [请柳从旁再试着指出自己先动的时刻，容一个旁观者也真有看见。 # cid:nq_try_with_liu]
   ~ nq_gu_notes = false
-  柳拿一根细枝慢比，你试回枪，才发现方才只盯着自己的换手。他看见的不是全部，却也不是因为自己没拿枪就都不算。 # beat:nq_years_win_8 # scene:nq_garden # cast:nq_gu,nq_liu # speaker:narrator
-  你肯先听完，我今日这盏酒才没白等。 # beat:nq_years_win_9 # scene:nq_garden # cast:nq_gu,nq_liu # speaker:nq_liu # mood:nq_liu=amused
+  柳拿一根细枝慢比，你试回枪，才发现方才只盯着自己的换手。他看见的不是全部，却也不是因为自己没拿枪就都不算。 # beat:nq_years_win_10 # scene:nq_garden # cast:nq_gu,nq_liu # speaker:narrator
+  你肯先听完，我今日这盏酒才没白等。 # beat:nq_years_win_11 # scene:nq_garden # cast:nq_gu,nq_liu # speaker:nq_liu # mood:nq_liu=amused
   -> last_tea
 
 === last_tea ===
@@ -629,15 +737,21 @@ VAR nq_legacy = 0
 你笑，又问返真。老人喝口茶，说远，远到现在最好别想。你沉默一阵，说那就先练。 # beat:nq_last_tea_2 # scene:nq_oldyard # cast:nq2_heng # speaker:narrator
 对。茶凉了，倒你自己杯里，别兑我这盏。 # beat:nq_last_tea_3 # scene:nq_oldyard # cast:nq2_heng # speaker:nq2_heng # mood:nq2_heng=amused # cg:none # camera:portrait
 你摸壶底，还温着。老人把自己的杯子护到另一边，你笑着收手，添过茶，才去扫门边积着的叶。 # beat:nq_last_tea_4 # scene:nq_oldyard # cast:nq2_heng # speaker:narrator
+{
+- nq_gu_question:
+八十余岁整理旧页，你才把后来顾园三百零一那半拍，与七十六岁茶席的先练并记。那年茶席尚没有顾园这一场，后来问过的账，也仍须自己慢慢对。 # beat:nq_last_tea_5 # scene:nq_oldyard # cast:nq2_heng # speaker:narrator
+- else:
+八十余岁整理旧页，你才把顾那句偏晚一点，与七十六岁茶席的先练并记。那年尚未在顾园听过这句话；后来多出的那一段，也不是天赋两个字能略掉的。 # beat:nq_last_tea_6 # scene:nq_oldyard # cast:nq2_heng # speaker:narrator
+}
 * [摸一摸行李中早已留下的旧扶手，记得这人先叫自己劈柴。 # cid:nq_take_chair_piece]
   ~ nq_chair_keep = true
-  那块旧扶手，是当年离旧观时老人扔给你，叫留着烧火的。你没烧，后来也一直没烧。 # beat:nq_last_tea_5 # scene:nq_oldyard # cast:nq2_heng # speaker:narrator
-  你摸过磨旧的边，不把一块木头另编成太极秘谱。 # beat:nq_last_tea_6 # scene:nq_oldyard # cast:nq2_heng # speaker:narrator
+  那块旧扶手，是当年离旧观时老人扔给你，叫留着烧火的。你没烧，后来也一直没烧。 # beat:nq_last_tea_7 # scene:nq_oldyard # cast:nq2_heng # speaker:narrator
+  你摸过磨旧的边，不把一块木头另编成太极秘谱。 # beat:nq_last_tea_8 # scene:nq_oldyard # cast:nq2_heng # speaker:narrator
   -> three_objects
 * [记住他今日仍只叫继续练，不替师徒最后见面补一段知道是诀别的大话。 # cid:nq_keep_ordinary_words]
   ~ nq_chair_keep = false
-  你离去时不知道这会是最后一面。多年后仍能记住茶与一句先练，没必要让自己当年多会一层预知。 # beat:nq_last_tea_7 # scene:nq_oldyard # cast:nq2_heng # speaker:narrator
-  旧观椅扶手早在行李里，老人曾叫烧火，你没烧，它也没有因此变成法器。 # beat:nq_last_tea_8 # scene:nq_oldyard # cast:nq2_heng # speaker:narrator
+  你离去时不知道这会是最后一面。多年后仍能记住茶与一句先练，没必要让自己当年多会一层预知。 # beat:nq_last_tea_9 # scene:nq_oldyard # cast:nq2_heng # speaker:narrator
+  旧观椅扶手早在行李里，老人曾叫烧火，你没烧，它也没有因此变成法器。 # beat:nq_last_tea_10 # scene:nq_oldyard # cast:nq2_heng # speaker:narrator
   -> three_objects
 
 === three_objects ===
@@ -645,16 +759,22 @@ VAR nq_legacy = 0
 周老师一生没进北榜，是不是天赋还差一点？ # beat:nq_three_objects_2 # scene:nq_gunroom # cast:nq_yuan,nq_young # speaker:nq_young # mood:nq_young=uneasy
 没有周定川，哪来的秦天岳？ # beat:nq_three_objects_3 # scene:nq_gunroom # cast:nq_yuan,nq_young # speaker:you
 你声音沉下去。他没料你为一个地方宗师这样认真，阿原在旁把旧枪扶正，没替他说只是不懂事便略过那一句。 # beat:nq_three_objects_4 # scene:nq_gunroom # cast:nq_yuan,nq_young # speaker:narrator
+{
+- nq_first_count:
+你教他数。不数，怎么知道有没有变好——这句话你十三岁说过，如今原样递下去。 # beat:nq_three_objects_5 # scene:nq_gunroom # cast:nq_yuan,nq_young # speaker:narrator
+- else:
+你叫他先问肩为什么抬。当年老人两指一点的地方，如今轮到你站在旁边看。 # beat:nq_three_objects_6 # scene:nq_gunroom # cast:nq_yuan,nq_young # speaker:narrator
+}
 * [带后辈真练一轮扎拦拿，再让他自己说三位老师各教过什么。 # cid:nq_end_teach]
   ~ nq_legacy = 1
-  你少去一场外地的邀约，旧枪仍留架上，拿来馆里现用的练枪。年轻人本以为听完三段传奇便能回去，你叫他先站到纸前，别破。 # beat:nq_three_objects_5 # scene:nq_gunroom # cast:nq_yuan,nq_young # speaker:narrator
-  这一轮我也来。你别把他从第一下错就全替了。 # beat:nq_three_objects_6 # scene:nq_gunroom # cast:nq_yuan,nq_young # speaker:nq_yuan # mood:nq_yuan=amused
-  你点头，先看那只还没稳的手。 # beat:nq_three_objects_7 # scene:nq_gunroom # cast:nq_yuan,nq_young # speaker:narrator
+  你少去一场外地的邀约，旧枪仍留架上，拿来馆里现用的练枪。年轻人本以为听完三段传奇便能回去，你叫他先站到纸前，别破。 # beat:nq_three_objects_7 # scene:nq_gunroom # cast:nq_yuan,nq_young # speaker:narrator
+  这一轮我也来。你别把他从第一下错就全替了。 # beat:nq_three_objects_8 # scene:nq_gunroom # cast:nq_yuan,nq_young # speaker:nq_yuan # mood:nq_yuan=amused
+  你点头，先看那只还没稳的手。 # beat:nq_three_objects_9 # scene:nq_gunroom # cast:nq_yuan,nq_young # speaker:narrator
   -> what_to_leave
 * [带后辈去问旧馆仍记得老师的人，把三件物旁的来处留给真正见过的人说。 # cid:nq_end_visits]
   ~ nq_legacy = 2
-  你少亲带一班，交给阿原，自己带年轻人去旧馆里坐。他想先摆总谱第十一的名，你叫收回，让对方先讲周老师当年怎样骂人。 # beat:nq_three_objects_8 # scene:nq_gunroom # cast:nq_yuan,nq_young # speaker:narrator
-  一趟不能同时到所有地方，楚师的旧门你另托人约，不把自己的三句话算成已替各家都见过。 # beat:nq_three_objects_9 # scene:nq_gunroom # cast:nq_yuan,nq_young # speaker:narrator
+  你少亲带一班，交给阿原，自己带年轻人去旧馆里坐。他想先摆总谱第十一的名，你叫收回，让对方先讲周老师当年怎样骂人。 # beat:nq_three_objects_10 # scene:nq_gunroom # cast:nq_yuan,nq_young # speaker:narrator
+  一趟不能同时到所有地方，楚师的旧门你另托人约，不把自己的三句话算成已替各家都见过。 # beat:nq_three_objects_11 # scene:nq_gunroom # cast:nq_yuan,nq_young # speaker:narrator
   -> what_to_leave
 
 === what_to_leave ===
@@ -685,10 +805,16 @@ VAR nq_legacy = 0
 又一名新来的后生问这三件究竟哪位师父最要紧，你只说师父的东西。不是分不清名字，是不肯用最后一位的高处把前面的路划没。 # beat:nq_one_more_spear_1 # scene:nq_gunroom # cast:nq_young # speaker:narrator
 秦天岳到今日仍未返真。十三肯重新第一枪，六十一也肯，晚来的人不必先等你走到一个已经写好的尽头，才敢把自己的枪举起。 # beat:nq_one_more_spear_2 # scene:nq_gunroom # cast:nq_young # speaker:narrator
 {
+- nq_chair_keep:
+那块扶手你仍没烧。后来人也摸过它，没人把它说成法器。 # beat:nq_one_more_spear_3 # scene:nq_gunroom # cast:nq_young # speaker:narrator
+- else:
+扶手仍在行李里，你仍没烧。它记得的只是一句先练，这样就够。 # beat:nq_one_more_spear_4 # scene:nq_gunroom # cast:nq_young # speaker:narrator
+}
+{
 - nq_legacy == 1:
-纸轻轻动，没破。你没有替他把这一枪叫作天赋，只叫他再来一回，自己也重新站好。 # beat:nq_one_more_spear_3 # scene:nq_gunroom # cast:nq_young # speaker:narrator # ending:nq_first_again
+纸轻轻动，没破。你没有替他把这一枪叫作天赋，只叫他再来一回，自己也重新站好。 # beat:nq_one_more_spear_5 # scene:nq_gunroom # cast:nq_young # speaker:narrator # ending:nq_first_again
 -> END
 - else:
-这一趟回来，年轻人已会说三个人的名字，也会说自己没亲眼见过哪一段。枪房仍留三处，后来人的问话终于不必只从最高那一席开始。 # beat:nq_one_more_spear_4 # scene:nq_gunroom # cast:nq_young # speaker:narrator # ending:nq_three_names
+这一趟回来，年轻人已会说三个人的名字，也会说自己没亲眼见过哪一段。枪房仍留三处，后来人的问话终于不必只从最高那一席开始。 # beat:nq_one_more_spear_6 # scene:nq_gunroom # cast:nq_young # speaker:narrator # ending:nq_three_names
 -> END
 }

@@ -1,0 +1,291 @@
+{
+ "generatedBy": "node --experimental-strip-types scripts/audit-v7-opening.mjs",
+ "currentEditions": 23,
+ "rows": [
+  {
+   "slug": "bamboo",
+   "beats": 110,
+   "firstNpcBeat": 3,
+   "firstPlayerBeat": 4,
+   "firstChoiceBeat": 7,
+   "narratorBeats": 51,
+   "narratorRatio": 0.4636,
+   "dialogueRatio": 0.5364,
+   "longestPassiveRun": 14
+  },
+  {
+   "slug": "beyond-ranking",
+   "beats": 118,
+   "firstNpcBeat": 2,
+   "firstPlayerBeat": 2,
+   "firstChoiceBeat": 8,
+   "narratorBeats": 37,
+   "narratorRatio": 0.3136,
+   "dialogueRatio": 0.6864,
+   "longestPassiveRun": 13
+  },
+  {
+   "slug": "dead-ranking",
+   "beats": 387,
+   "firstNpcBeat": 3,
+   "firstPlayerBeat": 8,
+   "firstChoiceBeat": 7,
+   "narratorBeats": 227,
+   "narratorRatio": 0.5866,
+   "dialogueRatio": 0.4134,
+   "longestPassiveRun": 19
+  },
+  {
+   "slug": "dongting",
+   "beats": 167,
+   "firstNpcBeat": 2,
+   "firstPlayerBeat": 7,
+   "firstChoiceBeat": 6,
+   "narratorBeats": 69,
+   "narratorRatio": 0.4132,
+   "dialogueRatio": 0.5868,
+   "longestPassiveRun": 19
+  },
+  {
+   "slug": "jade",
+   "beats": 322,
+   "firstNpcBeat": 1,
+   "firstPlayerBeat": 4,
+   "firstChoiceBeat": 6,
+   "narratorBeats": 193,
+   "narratorRatio": 0.5994,
+   "dialogueRatio": 0.4006,
+   "longestPassiveRun": 12
+  },
+  {
+   "slug": "jade-thieves",
+   "beats": 320,
+   "firstNpcBeat": 8,
+   "firstPlayerBeat": 9,
+   "firstChoiceBeat": 2,
+   "narratorBeats": 186,
+   "narratorRatio": 0.5813,
+   "dialogueRatio": 0.4188,
+   "longestPassiveRun": 30
+  },
+  {
+   "slug": "kuhe",
+   "beats": 326,
+   "firstNpcBeat": 2,
+   "firstPlayerBeat": 3,
+   "firstChoiceBeat": 6,
+   "narratorBeats": 151,
+   "narratorRatio": 0.4632,
+   "dialogueRatio": 0.5368,
+   "longestPassiveRun": 22
+  },
+  {
+   "slug": "longmen",
+   "beats": 356,
+   "firstNpcBeat": 2,
+   "firstPlayerBeat": 2,
+   "firstChoiceBeat": 4,
+   "narratorBeats": 154,
+   "narratorRatio": 0.4326,
+   "dialogueRatio": 0.5674,
+   "longestPassiveRun": 40
+  },
+  {
+   "slug": "luhua",
+   "beats": 304,
+   "firstNpcBeat": 2,
+   "firstPlayerBeat": 2,
+   "firstChoiceBeat": 4,
+   "narratorBeats": 180,
+   "narratorRatio": 0.5921,
+   "dialogueRatio": 0.4079,
+   "longestPassiveRun": 31
+  },
+  {
+   "slug": "luoyang",
+   "beats": 86,
+   "firstNpcBeat": 3,
+   "firstPlayerBeat": 3,
+   "firstChoiceBeat": 6,
+   "narratorBeats": 47,
+   "narratorRatio": 0.5465,
+   "dialogueRatio": 0.4535,
+   "longestPassiveRun": 11
+  },
+  {
+   "slug": "north",
+   "beats": 342,
+   "firstNpcBeat": 3,
+   "firstPlayerBeat": 4,
+   "firstChoiceBeat": 7,
+   "narratorBeats": 205,
+   "narratorRatio": 0.5994,
+   "dialogueRatio": 0.4006,
+   "longestPassiveRun": 15
+  },
+  {
+   "slug": "north-notes",
+   "beats": 77,
+   "firstNpcBeat": 3,
+   "firstPlayerBeat": 4,
+   "firstChoiceBeat": 3,
+   "narratorBeats": 31,
+   "narratorRatio": 0.4026,
+   "dialogueRatio": 0.5974,
+   "longestPassiveRun": 15
+  },
+  {
+   "slug": "qian-kun",
+   "beats": 318,
+   "firstNpcBeat": 3,
+   "firstPlayerBeat": 6,
+   "firstChoiceBeat": 7,
+   "narratorBeats": 168,
+   "narratorRatio": 0.5283,
+   "dialogueRatio": 0.4717,
+   "longestPassiveRun": 22
+  },
+  {
+   "slug": "qingshi",
+   "beats": 447,
+   "firstNpcBeat": 2,
+   "firstPlayerBeat": 4,
+   "firstChoiceBeat": 5,
+   "narratorBeats": 200,
+   "narratorRatio": 0.4474,
+   "dialogueRatio": 0.5526,
+   "longestPassiveRun": 26
+  },
+  {
+   "slug": "sea",
+   "beats": 257,
+   "firstNpcBeat": 4,
+   "firstPlayerBeat": 12,
+   "firstChoiceBeat": 5,
+   "narratorBeats": 137,
+   "narratorRatio": 0.5331,
+   "dialogueRatio": 0.4669,
+   "longestPassiveRun": 18
+  },
+  {
+   "slug": "sea-tide",
+   "beats": 239,
+   "firstNpcBeat": 3,
+   "firstPlayerBeat": 8,
+   "firstChoiceBeat": 4,
+   "narratorBeats": 135,
+   "narratorRatio": 0.5649,
+   "dialogueRatio": 0.4351,
+   "longestPassiveRun": 22
+  },
+  {
+   "slug": "seven-questions",
+   "beats": 382,
+   "firstNpcBeat": 1,
+   "firstPlayerBeat": 8,
+   "firstChoiceBeat": 7,
+   "narratorBeats": 190,
+   "narratorRatio": 0.4974,
+   "dialogueRatio": 0.5026,
+   "longestPassiveRun": 16
+  },
+  {
+   "slug": "taihua",
+   "beats": 465,
+   "firstNpcBeat": 2,
+   "firstPlayerBeat": 2,
+   "firstChoiceBeat": 8,
+   "narratorBeats": 193,
+   "narratorRatio": 0.4151,
+   "dialogueRatio": 0.5849,
+   "longestPassiveRun": 43
+  },
+  {
+   "slug": "twelfth",
+   "beats": 236,
+   "firstNpcBeat": 2,
+   "firstPlayerBeat": 6,
+   "firstChoiceBeat": 5,
+   "narratorBeats": 83,
+   "narratorRatio": 0.3517,
+   "dialogueRatio": 0.6483,
+   "longestPassiveRun": 15
+  },
+  {
+   "slug": "twelfth-life",
+   "beats": 393,
+   "firstNpcBeat": 2,
+   "firstPlayerBeat": 5,
+   "firstChoiceBeat": 6,
+   "narratorBeats": 222,
+   "narratorRatio": 0.5649,
+   "dialogueRatio": 0.4351,
+   "longestPassiveRun": 24
+  },
+  {
+   "slug": "two-swords",
+   "beats": 334,
+   "firstNpcBeat": 1,
+   "firstPlayerBeat": 5,
+   "firstChoiceBeat": 4,
+   "narratorBeats": 154,
+   "narratorRatio": 0.4611,
+   "dialogueRatio": 0.5389,
+   "longestPassiveRun": 16
+  },
+  {
+   "slug": "white-stone",
+   "beats": 168,
+   "firstNpcBeat": 4,
+   "firstPlayerBeat": 6,
+   "firstChoiceBeat": 5,
+   "narratorBeats": 107,
+   "narratorRatio": 0.6369,
+   "dialogueRatio": 0.3631,
+   "longestPassiveRun": 16
+  },
+  {
+   "slug": "xuanmen",
+   "beats": 142,
+   "firstNpcBeat": 3,
+   "firstPlayerBeat": 6,
+   "firstChoiceBeat": 4,
+   "narratorBeats": 89,
+   "narratorRatio": 0.6268,
+   "dialogueRatio": 0.3732,
+   "longestPassiveRun": 25
+  }
+ ],
+ "summary": {
+  "dialogueAtLeast65": [
+   "beyond-ranking"
+  ],
+  "firstChoiceWithin8": [
+   "bamboo",
+   "beyond-ranking",
+   "dead-ranking",
+   "dongting",
+   "jade",
+   "jade-thieves",
+   "kuhe",
+   "longmen",
+   "luhua",
+   "luoyang",
+   "north",
+   "north-notes",
+   "qian-kun",
+   "qingshi",
+   "sea",
+   "sea-tide",
+   "seven-questions",
+   "taihua",
+   "twelfth",
+   "twelfth-life",
+   "two-swords",
+   "white-stone",
+   "xuanmen"
+  ],
+  "longestPassiveRunMax": 43,
+  "dialogueRatioMin": 0.3631
+ }
+}

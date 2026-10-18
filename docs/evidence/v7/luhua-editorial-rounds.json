@@ -1,0 +1,121 @@
+{
+ "work": "luhua",
+ "rounds": [
+  {
+   "round": 1,
+   "focus": "戏剧结构、因果与节奏",
+   "records": [
+    {
+     "round": 1,
+     "file": "story/luhua-tide.mjs",
+     "beat": "lh_jiangling_1-",
+     "originalLineOrAction": "庞叫众人散开，自己独对。/ 第十五篙，篙端停喉。庞垂下双手……（旁白两句带过全场面）",
+     "diagnosis": "全篇最锋利的'师徒差距'名场面（canon 34920-34926）里庞震海零台词，十二围与十五篙停喉全靠旁白概括",
+     "changedLineOrAction": "庞震海两条现场台词（退阵令'围到这个岁数的人，是替他歇气'+败后'十五招，我连他第二篙的来处都没看清'）；cast 增 lh_pang",
+     "whyItIsBetter": "canon 明写他'亲口令众人退下'，现在令与认负都有声音来源；梁隔岸观照的'路榜与南榜宗师的距离'由庞亲口坐实",
+     "choicePayoffBefore": "无",
+     "choicePayoffAfter": "无",
+     "sourceCanonRange": "宋世江湖.md 34913-34930",
+     "testEvidence": "tests/luhua.test.ts 5/5 PASS（cast≤3 维持，'十三篙/第十五篙'锚保留）",
+     "unresolvedIssue": "无"
+    },
+    {
+     "round": 1,
+     "file": "story/luhua-mountain.mjs",
+     "beat": "lh_road_two_2",
+     "originalLineOrAction": "六十五，胜陈震，升第六。再问锁湖枪邓长魁，先败，再平，才胜，升第五。",
+     "diagnosis": "三年三战压缩为纯名次播报，无任何枪刀具体质感",
+     "changedLineOrAction": "'隔年再平——枪圈收短半尺，你进不去'",
+     "whyItIsBetter": "三战各有一句具体约束（枪圈距离），不再只是排名变化；不增拍数",
+     "choicePayoffBefore": "无",
+     "choicePayoffAfter": "无",
+     "sourceCanonRange": "34965-34968",
+     "testEvidence": "5/5 PASS",
+     "unresolvedIssue": "无"
+    },
+    {
+     "round": 1,
+     "file": "story/luhua-*.mjs",
+     "beat": "全篇结构复核",
+     "originalLineOrAction": "六事件单元（师门/问席/沈老七/黑潮/青城/南榜）",
+     "diagnosis": "复核确认：开场 8 拍内有第一选择；每次时间跳跃均有具体锚（六十三冬一件厚衣、八十四两碗酒）；蒙太奇段（road_two/town_names/south_gate）每段均嵌至少一个活人台词或具体动作，不属于'连续播报'",
+     "changedLineOrAction": "无（保留）",
+     "whyItIsBetter": "—",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "34836-35057 全节",
+     "testEvidence": "512 路径采样、gap≤18、decisions==25 均过",
+     "unresolvedIssue": "无"
+    }
+   ]
+  },
+  {
+   "round": 2,
+   "focus": "NPC 声线、对话与人物关系",
+   "records": [
+    {
+     "round": 2,
+     "file": "src/luhua-catalog.ts + story/luhua-tide.mjs",
+     "beat": "lh_jiangling",
+     "originalLineOrAction": "庞震海新增入目录（荆楚二十四雄第九·九江铁手）",
+     "diagnosis": "原目录缺此角色，场面无法上舞台",
+     "changedLineOrAction": "catalog 新增 lh_pang（复用 npc-martial-adult-b 立绘）",
+     "whyItIsBetter": "名场面获得真实舞台焦点而非纯画外叙述",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "34913-34930",
+     "testEvidence": "compile 0 warnings，5/5 PASS",
+     "unresolvedIssue": "无"
+    },
+    {
+     "round": 2,
+     "file": "story/luhua-*.mjs",
+     "beat": "声线盲测（去名抽 5 句）",
+     "originalLineOrAction": "'我爹欠你一条命。他腿坏了，我来还。'（十一岁梁）/'你拿什么还？'（孟）/'都退下。围到这个岁数的人，是替他歇气。'（庞）/'去学走路。'（沈）/'菜叶掉一片，拾就是。杵在这儿，后头谁也过不去。'（成都卖菜人）",
+     "diagnosis": "五句均可辨认身份与阶层；孟守川的骂与疼、沈鹤汀的短句令、庞的骄与服、阿泊/阿航的工具行话均不互换",
+     "changedLineOrAction": "无（保留）",
+     "whyItIsBetter": "—",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "—",
+     "testEvidence": "人工抽检",
+     "unresolvedIssue": "无"
+    }
+   ]
+  },
+  {
+   "round": 3,
+   "focus": "互动选择、武学真实、演出与原典复测",
+   "records": [
+    {
+     "round": 3,
+     "file": "story/luhua-*.mjs",
+     "beat": "34 项原典数字核对",
+     "originalLineOrAction": "48岁收徒/106合/四比三/79招杀魏虎/十三篙退杜昆/十五篙停喉/74招败方天螯/沉11船/170余平/226招胜/120余招胜罗百仞/184招/三寸/63岁孟百岁逝/72招逼右手/许99/五年青城/235招慢刀/179招败卢/240余平程云鹤/84岁入南36/73年/最高32/97退席",
+     "diagnosis": "逐项对照原典 34836-35057 全部吻合；赵崇山'岸上还能多打几十招'、孟'三十以前越像我越好'、许'你自己能上岸了'、厉沈'很近/比我远一点'等原句均在",
+     "changedLineOrAction": "无",
+     "whyItIsBetter": "—",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "34836-35057",
+     "testEvidence": "transcript 断言清单全过",
+     "unresolvedIssue": "无"
+    },
+    {
+     "round": 3,
+     "file": "story/luhua-*.mjs",
+     "beat": "关键选择后果对测",
+     "originalLineOrAction": "shared_retreat（阿泊手伤/错学期 vs 多守一阵）、relief（阿航接人成 vs 梁折返+修一月）、count_boats、south_loss/tang_next",
+     "diagnosis": "A/B 对测确认：选择改变 10+ 拍后的人物状态、他人评价与墓前独白（lh_first_work/master_real 替换台词而非追加回顾）；无'你当初选了A'式结尾清点",
+     "changedLineOrAction": "无",
+     "whyItIsBetter": "—",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "—",
+     "testEvidence": "tests 15/18 断言组（choice-pair 测试）全过",
+     "unresolvedIssue": "无"
+    }
+   ]
+  }
+ ]
+}

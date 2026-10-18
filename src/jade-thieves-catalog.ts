@@ -10,10 +10,12 @@ export const jadeThievesCharacters:Record<string,Person>={
  jt_apprentice:p('匠徒','准备南去学艺的人 · 原典留白人物','愿跑一回，也要知道风险。自己的下一程不是永远给两个同行者送箱；对外接头与否影响后来被卷入的伤损。','v6/npc-young-laborer.webp','porter'),
  jt_pawnbroker:p('当铺掌柜','南方小城','见黑青破角便压低当价，后来以玉压账。他没有被玩家变成亲历内廷旧案的鉴宝大师。','v5/npc-clerk-male.webp','clerk'),
 };
+jadeThievesCharacters.jt_shen.portrait={file:'v6/jt-shen.webp',position:'center top',size:'auto 150%',kind:'dedicated'};
+jadeThievesCharacters.jt_jiang.portrait={file:'v6/jt-jiang.webp',position:'center top',size:'auto 150%',kind:'dedicated'};
 const s=(name:string,time:string,art:string)=>({name,time,art});
 export const jadeThievesScenes={
  jt2_temple_reveal:s('破庙 · 对面的人','各自带来的命令','v5/hall.webp'),
- jt_vault:s('庄园 · 密库','拍卖前一夜 · 两条来路','v6/longmen-hall.webp'),jt_wall:s('庄园 · 外墙','空盒之后','v6/longmen-backyard.webp'),jt_market:s('江南 · 地下席外','次日 · 传闻开价','v5/inn.webp'),jt_auction:s('庄园 · 拍卖场','当夜 · 四次换手','v6/longmen-hall.webp'),
+ jt_vault:s('庄园 · 密库','拍卖前一夜 · 两条来路','v6/jt-vault.webp'),jt_wall:s('庄园 · 外墙','空盒之后','v6/longmen-backyard.webp'),jt_market:s('江南 · 地下席外','次日 · 传闻开价','v5/inn.webp'),jt_auction:s('庄园 · 拍卖场','当夜 · 四次换手','v6/longmen-hall.webp'),
  jt_kitchen:s('庄园 · 膳房退路','各自留的路没有接上','v5/inn.webp'),jt_sidehall:s('庄园 · 侧廊','认过的门闩','v6/qingxi-veranda.webp'),jt_road:s('三百里 · 途中','不同追兵与不同谎话','v5/ridge.webp'),jt_bridge:s('旧木桥 · 河岸','第二次拉回','v5/reeds.webp'),jt_temple:s('废庙 · 避雨','真物仍不答人','v5/hall.webp'),
  jt_lodging:s('暂住处 · 夜与晨','第三个月及数日后','v5/inn.webp'),jt_temple_reveal:s('破庙 · 对面的人','身份与命令已明','v5/hall.webp'),jt_workshop:s('旧匠住处','做得更漂亮的数月','v6/longmen-backyard.webp'),jt_exchange:s('城外 · 假消息','第一次真假互换','v5/ridge.webp'),jt_mountainpass:s('南行山道 · 窄口','半年以后','v6/reusable-stone-valley.webp'),jt_afterpass:s('山道 · 此后的路','江十七死后 · 视角归沈','v6/reusable-stone-valley.webp'),jt_pawn:s('南方小城 · 当铺','后来 · 药钱用尽','v5/inn.webp'),jt_hidden:s('南方 · 无名岁月','沈玉娘隐居及后人所见','v5/dawn.webp'),
 };

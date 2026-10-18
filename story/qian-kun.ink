@@ -131,17 +131,23 @@ VAR qk_boat_method = 0
 上次第三十七剑很好。我想了半年。 # beat:qk_twenty_nine_4 # scene:qk_swordyard # cast:qk_xue # speaker:you
 那一剑，我练十二年。 # beat:qk_twenty_nine_5 # scene:qk_swordyard # cast:qk_xue # speaker:qk_xue # mood:qk_xue=uneasy
 你认真点头，真觉得这句话更说明它好。 # beat:qk_twenty_nine_6 # scene:qk_swordyard # cast:qk_xue # speaker:narrator
+{
+- qk_plain_question:
+听不懂便直问，你连薛百川的剑也这么问。他说你问得笨，答得却比谁都全——笨问题省下的暗话，后来都变成了正招。 # beat:qk_twenty_nine_7 # scene:qk_swordyard # cast:qk_xue # speaker:narrator
+- else:
+掌要真接过才算赞好，灯也得自己走去拿。你把这两件事一起带下山：见人先接手，借物当面还。 # beat:qk_twenty_nine_8 # scene:qk_swordyard # cast:qk_xue # speaker:narrator
+}
 * [把十二年也认真听进去，称好不是说自己半年便替他走完。 # cid:qk_praise_twelve_years]
   ~ qk_xue_praise = true
-  所以很好。 # beat:qk_twenty_nine_7 # scene:qk_swordyard # cast:qk_xue # speaker:you
-  你这人……算了。下次来，别只盯第三十七剑。 # beat:qk_twenty_nine_8 # scene:qk_swordyard # cast:qk_xue # speaker:qk_xue # mood:qk_xue=amused
-  你答应，又问眼前这一剑的回处，他只得把剑重新拿起。 # beat:qk_twenty_nine_9 # scene:qk_swordyard # cast:qk_xue # speaker:narrator
+  所以很好。 # beat:qk_twenty_nine_9 # scene:qk_swordyard # cast:qk_xue # speaker:you
+  你这人……算了。下次来，别只盯第三十七剑。 # beat:qk_twenty_nine_10 # scene:qk_swordyard # cast:qk_xue # speaker:qk_xue # mood:qk_xue=amused
+  你答应，又问眼前这一剑的回处，他只得把剑重新拿起。 # beat:qk_twenty_nine_11 # scene:qk_swordyard # cast:qk_xue # speaker:narrator
   -> forty_three
 * [请他真接自己想半年的那一下，让赞许落在能问能改的地方。 # cid:qk_show_half_year]
   ~ qk_xue_praise = false
-  他没照你脑里的三十七剑来，你那一手便又变。你退半步，他先笑，叫你还有得想。 # beat:qk_twenty_nine_10 # scene:qk_swordyard # cast:qk_xue # speaker:narrator
-  好。下回还能打么？ # beat:qk_twenty_nine_11 # scene:qk_swordyard # cast:qk_xue # speaker:you
-  你先把今日这一句听完。 # beat:qk_twenty_nine_12 # scene:qk_swordyard # cast:qk_xue # speaker:qk_xue # mood:qk_xue=amused
+  他没照你脑里的三十七剑来，你那一手便又变。你退半步，他先笑，叫你还有得想。 # beat:qk_twenty_nine_12 # scene:qk_swordyard # cast:qk_xue # speaker:narrator
+  好。下回还能打么？ # beat:qk_twenty_nine_13 # scene:qk_swordyard # cast:qk_xue # speaker:you
+  你先把今日这一句听完。 # beat:qk_twenty_nine_14 # scene:qk_swordyard # cast:qk_xue # speaker:qk_xue # mood:qk_xue=amused
   -> forty_three
 
 === forty_three ===
@@ -150,15 +156,21 @@ VAR qk_boat_method = 0
 方才想什么？ # beat:qk_forty_three_3 # scene:qk_oldtrial # cast:qk_oldmaster # speaker:qk_oldmaster # mood:qk_oldmaster=intent
 什么也没想。 # beat:qk_forty_three_4 # scene:qk_oldtrial # cast:qk_oldmaster # speaker:you
 老者看你一会，抹开袖口，指了指方才掌从哪里穿过。你低头去找，自己腰间也一层汗，脚仍停在那半步上。 # beat:qk_forty_three_5 # scene:qk_oldtrial # cast:qk_oldmaster # speaker:narrator
+{
+- qk_xue_praise:
+十二年的那一剑，你后来仍认。这一掌没处用旧应法时，你先想的不是自己丢脸，是那半掌里也许也压着谁没说出的年数。 # beat:qk_forty_three_6 # scene:qk_oldtrial # cast:qk_oldmaster # speaker:narrator
+- else:
+请他真接、让赞许落在能改的地方——对薛百川如此，对眼前这位老宗师也一样。停手后你问的第一句，仍是这一掌从哪里改。 # beat:qk_forty_three_7 # scene:qk_oldtrial # cast:qk_oldmaster # speaker:narrator
+}
 * [再慢接刚才来掌，看看真从哪里穿出去，不急着给这一掌找一部新谱。 # cid:qk_test_current_hand]
   ~ qk_natural_test = true
-  他换一点方向，你也得跟着变。刚才那半步没变成可以不看眼前人、逢掌便用的绝招。 # beat:qk_forty_three_6 # scene:qk_oldtrial # cast:qk_oldmaster # speaker:narrator
-  这回也看见了，再来。 # beat:qk_forty_three_7 # scene:qk_oldtrial # cast:qk_oldmaster # speaker:qk_oldmaster # mood:qk_oldmaster=neutral
+  他换一点方向，你也得跟着变。刚才那半步没变成可以不看眼前人、逢掌便用的绝招。 # beat:qk_forty_three_8 # scene:qk_oldtrial # cast:qk_oldmaster # speaker:narrator
+  这回也看见了，再来。 # beat:qk_forty_three_9 # scene:qk_oldtrial # cast:qk_oldmaster # speaker:qk_oldmaster # mood:qk_oldmaster=neutral
   -> tomorrow
 * [问他为什么停，肯听一个被自己逼退的人怎样看这一掌。 # cid:qk_ask_old_master]
   ~ qk_natural_test = false
-  你没再把那几种都拿出来，来得却不晚。 # beat:qk_forty_three_8 # scene:qk_oldtrial # cast:qk_oldmaster # speaker:qk_oldmaster # mood:qk_oldmaster=intent
-  你又试，发现要把刚才的自然摆给人看时，自己反多添一点。老人叫你别忙着解释，先走。 # beat:qk_forty_three_9 # scene:qk_oldtrial # cast:qk_oldmaster # speaker:narrator
+  你没再把那几种都拿出来，来得却不晚。 # beat:qk_forty_three_10 # scene:qk_oldtrial # cast:qk_oldmaster # speaker:qk_oldmaster # mood:qk_oldmaster=intent
+  你又试，发现要把刚才的自然摆给人看时，自己反多添一点。老人叫你别忙着解释，先走。 # beat:qk_forty_three_11 # scene:qk_oldtrial # cast:qk_oldmaster # speaker:narrator
   -> tomorrow
 
 === tomorrow ===
@@ -167,17 +179,23 @@ VAR qk_boat_method = 0
 高兴也能练么？ # beat:qk_tomorrow_3 # scene:qk_oldyard # cast:qk2_heng_later # speaker:you
 能。先坐一会！ # beat:qk_tomorrow_4 # scene:qk_oldyard # cast:qk2_heng_later # speaker:qk2_heng_later # mood:qk2_heng_later=neutral
 他骂完，自己也笑。你坐下，茶还没凉，又盯着杯子被推过来时手腕怎样松。 # beat:qk_tomorrow_5 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
+{
+- qk_natural_test:
+再慢接一遍，你发现那半步没有变成绝招。当夜师父试出你入化，你说与这一掌无关；他说本来就该无关。 # beat:qk_tomorrow_6 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
+- else:
+问他为何停，他说你没再把那几套都拿出来。你把这句记下——被自己逼退的人，有时比赢你的人看得清。 # beat:qk_tomorrow_7 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
+}
 * [喝完这杯，承认今天不是非拿出下一件功课才算没有浪费。 # cid:qk_sit_half_cup]
   ~ qk_half_cup = true
-  你真喝完，没有边喝边比一掌。师父看你终于空着双手，问茶好不好，你说有点苦，他说泡久了。 # beat:qk_tomorrow_6 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
-  下次短些。 # beat:qk_tomorrow_7 # scene:qk_oldyard # cast:qk2_heng_later # speaker:you
-  这件你倒知道。 # beat:qk_tomorrow_8 # scene:qk_oldyard # cast:qk2_heng_later # speaker:qk2_heng_later # mood:qk2_heng_later=amused
+  你真喝完，没有边喝边比一掌。师父看你终于空着双手，问茶好不好，你说有点苦，他说泡久了。 # beat:qk_tomorrow_8 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
+  下次短些。 # beat:qk_tomorrow_9 # scene:qk_oldyard # cast:qk2_heng_later # speaker:you
+  这件你倒知道。 # beat:qk_tomorrow_10 # scene:qk_oldyard # cast:qk2_heng_later # speaker:qk2_heng_later # mood:qk2_heng_later=amused
   -> seventeen_days
 * [说自己也高兴，只是还想知道往后，不让师父把笑等成半日差事。 # cid:qk_tell_real_joy]
   ~ qk_half_cup = false
-  我高兴。也想练。 # beat:qk_tomorrow_9 # scene:qk_oldyard # cast:qk2_heng_later # speaker:you
-  看见了。喝完再想，别把茶也练凉了。 # beat:qk_tomorrow_10 # scene:qk_oldyard # cast:qk2_heng_later # speaker:qk2_heng_later # mood:qk2_heng_later=amused
-  你端起，热得又放回。他说慢些，这回是在说真茶。 # beat:qk_tomorrow_11 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
+  我高兴。也想练。 # beat:qk_tomorrow_11 # scene:qk_oldyard # cast:qk2_heng_later # speaker:you
+  看见了。喝完再想，别把茶也练凉了。 # beat:qk_tomorrow_12 # scene:qk_oldyard # cast:qk2_heng_later # speaker:qk2_heng_later # mood:qk2_heng_later=amused
+  你端起，热得又放回。他说慢些，这回是在说真茶。 # beat:qk_tomorrow_13 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
   -> seventeen_days
 
 === seventeen_days ===
@@ -187,14 +205,20 @@ VAR qk_boat_method = 0
 你这不是答了还没答！ # beat:qk_seventeen_days_4 # scene:qk_mountain # cast:qk_huashan # speaker:qk_huashan # mood:qk_huashan=sharp
 他气得发笑，开门先叫你起身。你坐久了，腿麻，站到一半又扶住门框。老人等你缓过来，才把袖口扎紧。 # beat:qk_seventeen_days_5 # scene:qk_mountain # cast:qk_huashan # speaker:narrator
 站稳了再来，别叫我一掌把你送回门外坐着。 # beat:qk_seventeen_days_6 # scene:qk_mountain # cast:qk_huashan # speaker:qk_huashan # mood:qk_huashan=sharp
+{
+- qk_half_cup:
+那杯茶你喝完了才走。华山门外十七日，你也照旧坐得住——等一个真肯出手的人，本来就不必手里先攥着一件功课。 # beat:qk_seventeen_days_7 # scene:qk_mountain # cast:qk_huashan # speaker:narrator
+- else:
+高兴，也想练——这话你没骗师父。山上等十七日，你把想练的那几处都想了一遍；第十八日骂你的人，等的是你这个人，不是你的功课。 # beat:qk_seventeen_days_8 # scene:qk_mountain # cast:qk_huashan # speaker:narrator
+}
 * [能问就认真接，不能问的以后仍不替别人改成欠自己一场。 # cid:qk_receive_real_refusal]
   ~ qk_refusal = true
-  他终于起手，你没因等够日子便先赢半招。第一下就得回身去接，门外那十七日没有替你多长一只手。 # beat:qk_seventeen_days_7 # scene:qk_mountain # cast:qk_huashan # speaker:narrator
+  他终于起手，你没因等够日子便先赢半招。第一下就得回身去接，门外那十七日没有替你多长一只手。 # beat:qk_seventeen_days_9 # scene:qk_mountain # cast:qk_huashan # speaker:narrator
   -> accounts
 * [先说自己进了以后不知该问哪里，肯把十年迷惘也放在这场里。 # cid:qk_name_what_seeking]
   ~ qk_refusal = false
-  那先别拿一套已会的把我的手堵死。 # beat:qk_seventeen_days_8 # scene:qk_mountain # cast:qk_huashan # speaker:qk_huashan # mood:qk_huashan=intent
-  你收住要先展示的掌，眼前那人真来，才觉得自己等的是这一步还没见过。 # beat:qk_seventeen_days_9 # scene:qk_mountain # cast:qk_huashan # speaker:narrator
+  那先别拿一套已会的把我的手堵死。 # beat:qk_seventeen_days_10 # scene:qk_mountain # cast:qk_huashan # speaker:qk_huashan # mood:qk_huashan=intent
+  你收住要先展示的掌，眼前那人真来，才觉得自己等的是这一步还没见过。 # beat:qk_seventeen_days_11 # scene:qk_mountain # cast:qk_huashan # speaker:narrator
   -> accounts
 
 === accounts ===
@@ -268,21 +292,27 @@ VAR qk_boat_method = 0
 不是。是我先前没看见。 # beat:qk_sixty_eight_4 # scene:qk_youngyard # cast:qk_boy # speaker:you
 几十年里祖师的对、师父的对、总谱名宿的对，都被你当自己的对。到了这里，哪有永远不变的一种，只有这个人、此刻、这一手。 # beat:qk_sixty_eight_5 # scene:qk_youngyard # cast:qk_boy # speaker:narrator
 {
-- qk_first_waist:
-你想起十四岁把脚补对以后，教习还得托住自己的肘。眼前少年也是整只手在走，你请他把肩与肘一同慢给自己看，陪他多走两轮。 # beat:qk_sixty_eight_6 # scene:qk_youngyard # cast:qk_boy # speaker:narrator
+- qk_watch_slow:
+先接别人真走完的一步再答——你把这习惯用在了这少年身上。肩骨不同不是你看出来的，是他走给你看的：看了半年，今日才真看见。 # beat:qk_sixty_eight_6 # scene:qk_youngyard # cast:qk_boy # speaker:narrator
 - else:
-你想起十四岁请教习从另一侧接的那一回，便也换到少年的侧面。他从这里能自己回身，旧谱正面的那张图却画不出这条路，你另铺一页给带班的人。 # beat:qk_sixty_eight_7 # scene:qk_youngyard # cast:qk_boy # speaker:narrator
+几套抢着来的应法你逐一试掉过，也肯让旧谱空着。这孩子的肩不合旧谱，正因你肯让那一页空着，才看得见他真的怎么走。 # beat:qk_sixty_eight_7 # scene:qk_youngyard # cast:qk_boy # speaker:narrator
+}
+{
+- qk_first_waist:
+你想起十四岁把脚补对以后，教习还得托住自己的肘。眼前少年也是整只手在走，你请他把肩与肘一同慢给自己看，陪他多走两轮。 # beat:qk_sixty_eight_8 # scene:qk_youngyard # cast:qk_boy # speaker:narrator
+- else:
+你想起十四岁请教习从另一侧接的那一回，便也换到少年的侧面。他从这里能自己回身，旧谱正面的那张图却画不出这条路，你另铺一页给带班的人。 # beat:qk_sixty_eight_9 # scene:qk_youngyard # cast:qk_boy # speaker:narrator
 }
 * [让他照自己的肩再走，问哪里仍紧，不把今天一遍顺又变成不能再问的正确。 # cid:qk_let_boy_try]
   ~ qk_boy_try = true
-  第二遍，他敢指出另一处仍卡。你没有为自己刚想通就说不可能，陪他把脚下再松一点。 # beat:qk_sixty_eight_8 # scene:qk_youngyard # cast:qk_boy # speaker:narrator
-  这回能从这里回来。 # beat:qk_sixty_eight_9 # scene:qk_youngyard # cast:qk_boy # speaker:qk_boy # mood:qk_boy=amused
-  我看见了。 # beat:qk_sixty_eight_10 # scene:qk_youngyard # cast:qk_boy # speaker:you
+  第二遍，他敢指出另一处仍卡。你没有为自己刚想通就说不可能，陪他把脚下再松一点。 # beat:qk_sixty_eight_10 # scene:qk_youngyard # cast:qk_boy # speaker:narrator
+  这回能从这里回来。 # beat:qk_sixty_eight_11 # scene:qk_youngyard # cast:qk_boy # speaker:qk_boy # mood:qk_boy=amused
+  我看见了。 # beat:qk_sixty_eight_12 # scene:qk_youngyard # cast:qk_boy # speaker:you
   -> enter_return
 * [当着同门说是自己原先看错，再让他练，别叫半年的错全留在孩子名下。 # cid:qk_admit_before_class]
   ~ qk_boy_try = false
-  同门听完，先把旁边那句又错了收回。少年仍得自己练，却终于不用先向整院解释为何总不能同别人一样。 # beat:qk_sixty_eight_11 # scene:qk_youngyard # cast:qk_boy # speaker:narrator
-  这回你自己走，我接。 # beat:qk_sixty_eight_12 # scene:qk_youngyard # cast:qk_boy # speaker:you
+  同门听完，先把旁边那句又错了收回。少年仍得自己练，却终于不用先向整院解释为何总不能同别人一样。 # beat:qk_sixty_eight_13 # scene:qk_youngyard # cast:qk_boy # speaker:narrator
+  这回你自己走，我接。 # beat:qk_sixty_eight_14 # scene:qk_youngyard # cast:qk_boy # speaker:you
   -> enter_return
 
 === enter_return ===
@@ -291,6 +321,12 @@ VAR qk_boat_method = 0
 这回还问明日练什么？ # beat:qk_enter_return_3 # scene:qk_oldyard # cast:qk2_heng_later # speaker:qk2_heng_later # mood:qk2_heng_later=amused
 问。也想先笑一会。 # beat:qk_enter_return_4 # scene:qk_oldyard # cast:qk2_heng_later # speaker:you
 他让你坐，终于没再骂正常人该高兴半日。 # beat:qk_enter_return_5 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
+{
+- qk_boy_try:
+那少年后来又指过一处仍紧的地方。当夜你敢同师父说打一场，也有胆认哪一步自己还卡——敢指出老师看错，是他先教会你的。 # beat:qk_enter_return_6 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
+- else:
+你当着同门认过看错，这话说出口并不难了。当夜找师父打一场，你也不是去证明超过，只是把还没问完的地方问完。 # beat:qk_enter_return_7 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
+}
 -> trouble
 
 === trouble ===
@@ -334,16 +370,22 @@ VAR qk_boat_method = 0
 八十余，再找师父。他一百四十上下，身子自然衰老，武道反更深。空手一百、两百不分，三百后老人少动，三百七十余，你首次把他逼进自己真能掌握的局。 # beat:qk_eighty_teacher_1 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
 师父停，你也立刻停。他问为何不继续，你说再打应会赢。他问因为老，你难得知道这句话得仔细答。 # beat:qk_eighty_teacher_2 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
 有多少因为我老？ # beat:qk_eighty_teacher_3 # scene:qk_oldyard # cast:qk2_heng_later # speaker:qk2_heng_later # mood:qk2_heng_later=intent
+{
+- qk_unwon:
+没赢仍是没赢——这条线你守到了自己师父面前。这一场停手，你说的仍是应会赢，不是已经赢。 # beat:qk_eighty_teacher_4 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
+- else:
+请那位老人指自己学到哪，他指不出了；眼前师父还指得出。你等着这一场停处，先问走到了哪里，再问为何不继续。 # beat:qk_eighty_teacher_5 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
+}
 * [承认有一部分，却不把自己多年真走过的也谦让成只有老师老。 # cid:qk_admit_age_part]
   ~ qk_teacher_honest = true
-  有一部分。但换回二十年前，我觉得也能赢。 # beat:qk_eighty_teacher_4 # scene:qk_oldyard # cast:qk2_heng_later # speaker:you
-  这句才像话。 # beat:qk_eighty_teacher_5 # scene:qk_oldyard # cast:qk2_heng_later # speaker:qk2_heng_later # mood:qk2_heng_later=amused
-  你松一口气，没替他年轻时编一个永远不能被弟子越过的自己。 # beat:qk_eighty_teacher_6 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
+  有一部分。但换回二十年前，我觉得也能赢。 # beat:qk_eighty_teacher_6 # scene:qk_oldyard # cast:qk2_heng_later # speaker:you
+  这句才像话。 # beat:qk_eighty_teacher_7 # scene:qk_oldyard # cast:qk2_heng_later # speaker:qk2_heng_later # mood:qk2_heng_later=amused
+  你松一口气，没替他年轻时编一个永远不能被弟子越过的自己。 # beat:qk_eighty_teacher_8 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
   -> already_exceeded
 * [说出刚才哪一处已能掌握，再承认老师老是因素之一，不拿两句好听话绕过去。 # cid:qk_name_real_position]
   ~ qk_teacher_honest = false
-  身子老，是一部分。可刚才那里，换您二十年前，我也觉得能走进去。 # beat:qk_eighty_teacher_7 # scene:qk_oldyard # cast:qk2_heng_later # speaker:you
-  这句才像话。你若只替我留面子，我还得再教你问的是什么。 # beat:qk_eighty_teacher_8 # scene:qk_oldyard # cast:qk2_heng_later # speaker:qk2_heng_later # mood:qk2_heng_later=amused
+  身子老，是一部分。可刚才那里，换您二十年前，我也觉得能走进去。 # beat:qk_eighty_teacher_9 # scene:qk_oldyard # cast:qk2_heng_later # speaker:you
+  这句才像话。你若只替我留面子，我还得再教你问的是什么。 # beat:qk_eighty_teacher_10 # scene:qk_oldyard # cast:qk2_heng_later # speaker:qk2_heng_later # mood:qk2_heng_later=amused
   -> already_exceeded
 
 === already_exceeded ===
@@ -357,13 +399,19 @@ VAR qk_boat_method = 0
 你站住，看看茶，再看看老人。他没指路，先指你刚空出来的座。 # beat:qk_already_exceeded_8 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
 师父把你叫回去坐完这盏茶。又过些时日，真正坐稳总谱第一，你翻太极旧册，向门中老人问周祖可还活着。 # beat:qk_already_exceeded_9 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
 周道玄，太极旧掌，居终南混元院。宁无极晚年私评十人以他居首，那不是另一张公开总谱；旧册也没有替你约下一场问武。 # beat:qk_already_exceeded_10 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
+{
+- qk_teacher_honest:
+有一部分，但二十年前我也能赢——师父要的正是这样一句。后来向门中老人问周祖，你也一样直说：是去问武，不是去领一个名号。 # beat:qk_already_exceeded_11 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
+- else:
+哪一处已能掌握、哪一处是老师老，你当场分开说了。后来翻旧册问周祖，你也是先把真知道的与没证的一一分开。 # beat:qk_already_exceeded_12 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
+}
 * [先把要出门的日子与待问事项交清，再去终南，不把管事留在找人的路上。 # cid:qk_clear_before_mountain]
   ~ qk_mountain_handoff = true
-  你肯慢半日，出门时还是忍不住快。管事叫你回头，最后只确认你走哪条山路、回话送哪处驿，不再问你能不能顺手看账。 # beat:qk_already_exceeded_11 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
+  你肯慢半日，出门时还是忍不住快。管事叫你回头，最后只确认你走哪条山路、回话送哪处驿，不再问你能不能顺手看账。 # beat:qk_already_exceeded_13 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
   -> nine_days
 * [先赶这一程山路，将去处与未答的事托驿回报，承担不能当面说清的来回。 # cid:qk_send_route_back]
   ~ qk_mountain_handoff = false
-  你没消失，却一到路上又给一柄剑多留半日。回报迟了一班驿，管事得重排会面；你回来还有一下午要补，不能用正在问更高处将它省掉。 # beat:qk_already_exceeded_12 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
+  你没消失，却一到路上又给一柄剑多留半日。回报迟了一班驿，管事得重排会面；你回来还有一下午要补，不能用正在问更高处将它省掉。 # beat:qk_already_exceeded_14 # scene:qk_oldyard # cast:qk2_heng_later # speaker:narrator
   -> nine_days
 
 === nine_days ===
@@ -419,16 +467,28 @@ VAR qk_boat_method = 0
 不知道。 # beat:qk_one_oh_two_5 # scene:qk_mixedyard # cast:qk_zhou # speaker:qk_zhou # mood:qk_zhou=neutral
 您也不知道？ # beat:qk_one_oh_two_6 # scene:qk_mixedyard # cast:qk_zhou # speaker:you
 我为什么会知道？ # beat:qk_one_oh_two_7 # scene:qk_mixedyard # cast:qk_zhou # speaker:qk_zhou # mood:qk_zhou=amused
+{
+- qk_zhou_change == 1:
+一百零二招你都真打了。坐一下午想的那一半不知，是真正剩下来的问题——不是替哪一轮找的说法。 # beat:qk_one_oh_two_8 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
+- else:
+从被带来的位置换不出去，你便从那里接着问。坐一下午想的那一半不知，因此不是输了不服，是那一处还没走通。 # beat:qk_one_oh_two_9 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
+}
+{
+- qk_outside:
+榜外还没有——这一句周听进去了。七十三招停手，他没有因你是总谱第一便少停半刻，你也没有因等了九日便说这一停该算你胜。 # beat:qk_one_oh_two_10 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
+- else:
+真接一回、看没见的地方——你要的从起手便是这一样。所以七十三招停时，你先问多少，不是问赢了没。 # beat:qk_one_oh_two_11 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
+}
 * [把陆天行、张玄衡、慧空逐个问，听他每一个不知道的范围。 # cid:qk_ask_named_people]
   ~ qk_named_unknown = true
-  你问一个，他多半答不知道。你终于忍不住说怎么什么都不知道。 # beat:qk_one_oh_two_8 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
-  因为我没把他们一个个杀了。 # beat:qk_one_oh_two_9 # scene:qk_mixedyard # cast:qk_zhou # speaker:qk_zhou # mood:qk_zhou=intent
-  你认真想，觉得有理。这不是说每个较艺都得杀人，而是不能把不同人不同日的问手磨成永不变的一条线。 # beat:qk_one_oh_two_10 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
+  你问一个，他多半答不知道。你终于忍不住说怎么什么都不知道。 # beat:qk_one_oh_two_12 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
+  因为我没把他们一个个杀了。 # beat:qk_one_oh_two_13 # scene:qk_mixedyard # cast:qk_zhou # speaker:qk_zhou # mood:qk_zhou=intent
+  你认真想，觉得有理。这不是说每个较艺都得杀人，而是不能把不同人不同日的问手磨成永不变的一条线。 # beat:qk_one_oh_two_14 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
   -> many_unknowns
 * [问他怎样才肯下一个已知的断语，不让不知道也变成绝对高深。 # cid:qk_ask_what_known]
   ~ qk_named_unknown = false
-  我没把那些人一个个杀了，何来每样情形都知道。 # beat:qk_one_oh_two_11 # scene:qk_mixedyard # cast:qk_zhou # speaker:qk_zhou # mood:qk_zhou=neutral
-  你想起自己在海上、平地也会不同，点头。老人肯说没见过，不等于他藏着一张全知的榜只不肯给你。 # beat:qk_one_oh_two_12 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
+  我没把那些人一个个杀了，何来每样情形都知道。 # beat:qk_one_oh_two_15 # scene:qk_mixedyard # cast:qk_zhou # speaker:qk_zhou # mood:qk_zhou=neutral
+  你想起自己在海上、平地也会不同，点头。老人肯说没见过，不等于他藏着一张全知的榜只不肯给你。 # beat:qk_one_oh_two_16 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
   -> many_unknowns
 
 === many_unknowns ===
@@ -442,13 +502,19 @@ VAR qk_boat_method = 0
 你眼更亮，仍问谁才真第一。他指山，一峰外还有一峰，到了自以最高处，周围全是云，只能说没看见更高。 # beat:qk_many_unknowns_8 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
 那把云扒开看看？ # beat:qk_many_unknowns_9 # scene:qk_mixedyard # cast:qk_zhou # speaker:you
 这句倒不像蠢话。 # beat:qk_many_unknowns_10 # scene:qk_mixedyard # cast:qk_zhou # speaker:qk_zhou # mood:qk_zhou=amused
+{
+- qk_named_unknown:
+逐个问、听他答不知道，你问到无生客也没停下。周答我，难——这一个字他没绕开，你也没把它记成一个回答。 # beat:qk_many_unknowns_11 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
+- else:
+怎样才肯下断语——你问的其实是法子。所以他指山说没看见更高时，你信这句话本身，比信山上有没有人更多些。 # beat:qk_many_unknowns_12 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
+}
 * [把没看见留成还可继续问的地方，不替云里每一座山先排好。 # cid:qk_keep_unseen]
   ~ qk_cloud = true
-  你没有就此不想争胜，只是下次真碰见谁，还得把眼前一掌走完。周把童子方才挪回去的茶叫来，自己也坐。 # beat:qk_many_unknowns_11 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
+  你没有就此不想争胜，只是下次真碰见谁，还得把眼前一掌走完。周把童子方才挪回去的茶叫来，自己也坐。 # beat:qk_many_unknowns_13 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
   -> overseas_sword
 * [还想去看，却先问哪里确有见闻，别把一句也许当已定的地名。 # cid:qk_ask_next_path]
   ~ qk_cloud = false
-  你收回要马上指图的手。周看见，反而在临别时叫住，说有一段旧见闻，或许值得听，但他也没有全看见。 # beat:qk_many_unknowns_12 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
+  你收回要马上指图的手。周看见，反而在临别时叫住，说有一段旧见闻，或许值得听，但他也没有全看见。 # beat:qk_many_unknowns_14 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
   -> overseas_sword
 
 === overseas_sword ===
@@ -457,16 +523,22 @@ VAR qk_boat_method = 0
 祖师现在能三剑斩一位返真后段么？ # beat:qk_overseas_sword_3 # scene:qk_mixedyard # cast:qk_zhou # speaker:you
 不能。若那句话是真的，他做到的，我现在还做不到。 # beat:qk_overseas_sword_4 # scene:qk_mixedyard # cast:qk_zhou # speaker:qk_zhou # mood:qk_zhou=intent
 周没有宣布必强于自己，也不知性别、来处、存活。天外仙只是后来人口耳称呼，近两百岁、大宗出身或夸言，都是无证的猜。旧册真留的，不过海外剑者言三剑可取命。 # beat:qk_overseas_sword_5 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
+{
+- qk_cloud:
+云里每一座山你没先排好。海外剑者三剑那一段，你也照旧只记听过——没看见的，仍在可问的那一边。 # beat:qk_overseas_sword_6 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
+- else:
+先问确有见闻处——周才肯多说这一段。那位师伯祖的海外旧事，便是你把指图的手收回来才换来的。 # beat:qk_overseas_sword_7 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
+}
 * [把来源与不知道的一并记，别把一个三剑传成已经核定的顶点。 # cid:qk_record_rumor_bounds]
   ~ qk_rumor_plain = true
-  说过三剑，是老人留下的话，不是我见过三剑。 # beat:qk_overseas_sword_6 # scene:qk_mixedyard # cast:qk_zhou # speaker:you
-  这句记着。别明日出门就有人听成我替你指了一个名字。 # beat:qk_overseas_sword_7 # scene:qk_mixedyard # cast:qk_zhou # speaker:qk_zhou # mood:qk_zhou=intent
-  你问往哪，他指远处，说先有海，再往后，不知道。 # beat:qk_overseas_sword_8 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
+  说过三剑，是老人留下的话，不是我见过三剑。 # beat:qk_overseas_sword_8 # scene:qk_mixedyard # cast:qk_zhou # speaker:you
+  这句记着。别明日出门就有人听成我替你指了一个名字。 # beat:qk_overseas_sword_9 # scene:qk_mixedyard # cast:qk_zhou # speaker:qk_zhou # mood:qk_zhou=intent
+  你问往哪，他指远处，说先有海，再往后，不知道。 # beat:qk_overseas_sword_10 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
   -> other_old_people
 * [先问真能走的方向，承认海后未定，不用猜一个门派补全故事。 # cid:qk_ask_first_sea]
   ~ qk_rumor_plain = false
-  那边。先有海，再往后不知道。 # beat:qk_overseas_sword_9 # scene:qk_mixedyard # cast:qk_zhou # speaker:qk_zhou # mood:qk_zhou=neutral
-  你看着那个方向，没当他已经交一条走到某个最终对手门前的路。想去仍想，没见也仍没见。 # beat:qk_overseas_sword_10 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
+  那边。先有海，再往后不知道。 # beat:qk_overseas_sword_11 # scene:qk_mixedyard # cast:qk_zhou # speaker:qk_zhou # mood:qk_zhou=neutral
+  你看着那个方向，没当他已经交一条走到某个最终对手门前的路。想去仍想，没见也仍没见。 # beat:qk_overseas_sword_12 # scene:qk_mixedyard # cast:qk_zhou # speaker:narrator
   -> other_old_people
 
 === other_old_people ===
@@ -522,7 +594,13 @@ VAR qk_boat_method = 0
 船不是地上的一块砖。 # beat:qk_wet_again_6 # scene:qk_boat # cast:qk_ye # speaker:qk_ye # mood:qk_ye=neutral
 你拿纸画下方才认准的钉眼和脚位，旁记“此船此刻”。叶看完，叫你也记上船头当时朝哪边，别只剩那一枚钉眼。 # beat:qk_wet_again_7 # scene:qk_boat # cast:qk_ye # speaker:narrator
 }
-后来评叶无涯，你说陆地不知道，海上打不过。不是把海上五十一偷算成岸上也有一场已定结果，更没把这次掉水写成装作摔下去试他。 # beat:qk_wet_again_8 # scene:qk_boat # cast:qk_ye # speaker:narrator
+{
+- qk_rope:
+接绳那一下你没有推让。绳就是绳——海已赢了五十一招，不必连递过来的手也一起拒掉。 # beat:qk_wet_again_8 # scene:qk_boat # cast:qk_ye # speaker:narrator
+- else:
+先游离险处再接绳，上船那一步你让能踩的脚真落稳。后来教渡口弟子，你头一句也是这个：先落稳，再谈下一掌。 # beat:qk_wet_again_9 # scene:qk_boat # cast:qk_ye # speaker:narrator
+}
+后来评叶无涯，你说陆地不知道，海上打不过。不是把海上五十一偷算成岸上也有一场已定结果，更没把这次掉水写成装作摔下去试他。 # beat:qk_wet_again_10 # scene:qk_boat # cast:qk_ye # speaker:narrator
 -> other_inquiries
 
 === other_inquiries ===

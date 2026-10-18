@@ -1,0 +1,35 @@
+path,sha256,line_count,reviewed_ranges,status,evidence
+story/taihua-author.mjs,4af40f79c77759d3775d54db9039cd1507b67c512c54ad610cb6459b319e8a5c,400,1-400,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/longmen-author.mjs,e03bd74bdcc99647a582430adc59e01aa41f1f079852c308fbca4af72bf536c8,270,1-270,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/kuhe-author.mjs,a944b016ed02aded7b65040eb9fc4d89e1394d056c61d1a85fdbe3ab700b7231,363,1-363,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/luoyang-author.mjs,364eb8278f903a0f58cca8e412898a9f193e8ac59617b61364b27e1917b9316c,125,1-125,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/bamboo-author.mjs,b8114a3bf302e839f12890bed5c3ff75daaa945fefff27608cc6c84f676085fe,122,1-122,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/sea-author.mjs,b3d80a49c5632b14fe51cafc0aa6f1e2855f446a5e7946e46464c967557299c6,11,1-11,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/sea-tide-author.mjs,1cc4dc354c1587b45eb968dae9ffb4165303decef66507e917f55513bb642625,11,1-11,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/xuanmen-author.mjs,f90cbd15449013422c7f9545e0c83f9947143cf8b636dd54b892bc91820efc69,170,1-170,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/white-stone-author.mjs,b98587426955f344518a7d2d321f7c30e0a2a509554f8935cfdde0fbbb4f50c3,193,1-193,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/two-swords-author.mjs,45bd8c3633acae65c85db4b60e8e0c6c8485a6a08b8bfa306eaa30aaf511dad4,8,1-8,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/seven-questions-author.mjs,daadfa112dbf81a4af3e8ff56147fa95224d944ab9373478936439e7a6be3c46,10,1-10,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/chronicle-writer.mjs,8ccf2265de92635da48126014bb9d47a9bc011073db6bce34356f687e410ec46,13,1-13,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/taihua-observation.mjs,8f8ae14bad39712d4bd4c782faf268e49b91fd69e4b6165b092387b923139dba,81,1-81,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/taihua-elders.mjs,f3e286dd4f0fcda728259064f5eff448e942535e114c9da3096cac47da279d75,99,1-99,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/longmen-scenes.mjs,db54db65433165526e3d62b7df8c3417bdb8499bdb2423037fa6675eea1ab019,98,1-98,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/longmen-night.mjs,75754aafea8f99af46e761162d308b296627ca893fbb2553351b85367dcc7668,80,1-80,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/sea-crossing.mjs,bdc9fa54d3e823618be0ab98b48592deaccf0c21e322610efc3296ff26775bee,80,1-80,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/sea-asking.mjs,aee0a9e720231abb3489b3fc19e605bdbbe04082b3ffb4f71f65b46d2a69663c,82,1-82,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/sea-teaching.mjs,00ab74b8bf3a8756ce70f30c21d8ed2227fb9fb65df8e3b1dc3fba86bad1fc46,94,1-94,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/sea-legacy.mjs,888658d70669e7a06ba01594c0b8af7043d177a72416c43f49a5ea5545542ff5,74,1-74,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/sea-tide-entry.mjs,bcd845f165c76ea90b74cf9e2171b8b3302a57f53fa925d54c0562877f862b79,66,1-66,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/sea-tide-rescue.mjs,ba3434f423993ebd903f108d89aaf32fa68c6d11fb1629152ce540808f9e2201,78,1-78,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/sea-tide-seats.mjs,59a13bf413d3180ffd86db70e485c5153f88ceacfaf8f48b383728f57f509ff9,150,1-150,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/two-swords-origin.mjs,bf351b8f7f2f98efb47e32a53583f01515f656916a4b38541923de7c5b7dad00,184,1-184,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/two-swords-books.mjs,80b8d331d8b87f21c9e388f1bb4b20754f113cccc97ff6e69720a7220e65dbc7,137,1-137,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/two-swords-later.mjs,cca7dde5b3bac58319d74db9fbc626b62110343c9ad423287bfa85c8b6eaaf0c,74,1-74,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/seven-questions-opening.mjs,2a8e8b1eddf9f6a8070f0b01156d40c571fd5e1a5a0c70e87cbfd3fdc160f5ab,81,1-81,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/seven-questions-inquiry.mjs,e08f8f90a754eee11f77607aa99de9a0baba879f21ab326018c2e7bd63964228,94,1-94,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/seven-questions-tables.mjs,43af40cc894662077eecadd90253fb68519621d5dec517d02c9ac003af2fef7c,58,1-58,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/seven-questions-split.mjs,899200d0df034d4ba76e9a095009fa800ee81bca9dc1198cd561d907c470e178,139,1-139,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+story/seven-questions-resolution.mjs,7d041ef3fab5c4c868fa3752e5785c48f229dfe0db46cfda2cfc6f5538fd9e8c,140,1-140,REVIEWED,Current source text read; canon-early-review.md. Post-edit source hash; compiler pending parent.
+宋世江湖.md,2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393,35314,1-14849,PARTIAL,Current text read; no art or all-branch claim.
+src/works-registry.ts,06ce0ed5ddff5116c0780d3cfadd30fe179ab82b988bbf09bf2bfbf032137a15,287,1-287,REVIEWED,Current text read; no art or all-branch claim.
+src/chronicle-catalog.ts,c55da9fba7dc6f15e09c6c0968243187d0fc35e114c813a5c5b2515f947b6c5b,260,1-21;147-166;183-190;209-242;247-260,PARTIAL,Current text read; no art or all-branch claim.

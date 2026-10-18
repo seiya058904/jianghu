@@ -1,0 +1,1028 @@
+{
+  "method": "Read-only inkjs Story runtime, first option except listed CID overrides; not browser playthrough.",
+  "results": [
+    {
+      "slug": "sea",
+      "label": "dead-future",
+      "choices": [
+        {
+          "text": "先踩实脚下，接住这一掌再转身。",
+          "tags": [
+            "cid:sr_wait_weight"
+          ]
+        },
+        {
+          "text": "问船人，过了眼前这班还能转到哪里。",
+          "tags": [
+            "cid:sr_ask_farther"
+          ]
+        },
+        {
+          "text": "去外港问转船，先跟船工把这一箱搬上去。",
+          "tags": [
+            "cid:sr_take_open_route"
+          ]
+        },
+        {
+          "text": "把缆交给阿汀，自己去拦推人的手。",
+          "tags": [
+            "cid:sr_trust_line"
+          ]
+        },
+        {
+          "text": "把岸上人让到缆外，自己接来拳，不借别人会跌水的地方逼胜。",
+          "tags": [
+            "cid:sr_give_step"
+          ]
+        },
+        {
+          "text": "留下来真学蓬莱的步与兵器，不只数祖师胜过几个。",
+          "tags": [
+            "cid:sr_ask_local_method"
+          ]
+        },
+        {
+          "text": "拾起剑，请他再试刚才卸腕的半掌。",
+          "tags": [
+            "cid:sr_ask_lost_grip"
+          ]
+        },
+        {
+          "text": "问怎样往更强处去，承认自己此刻仍最想打赢。",
+          "tags": [
+            "cid:sr_ask_route_to_strong"
+          ]
+        },
+        {
+          "text": "请阿汀帮找住处与大夫，先承认站不住，不在码头硬演强者。",
+          "tags": [
+            "cid:sr_accept_help"
+          ]
+        },
+        {
+          "text": "把阿罗真写在药包旁，再写下新名罗天海。",
+          "tags": [
+            "cid:sr_say_old_name"
+          ]
+        },
+        {
+          "text": "先认他一步能进到哪里，接住第一轮真招，再把自己的问递过去。",
+          "tags": [
+            "cid:sr_answer_with_distance"
+          ]
+        },
+        {
+          "text": "照对方指的地方继续找，不拿一场胜当所有中原武人的同一种答复。",
+          "tags": [
+            "cid:sr_go_find_more"
+          ]
+        },
+        {
+          "text": "把两次败里同一处没接住的变化再摆出来，不拿后来一平擦掉以前。",
+          "tags": [
+            "cid:sr_admit_repeat"
+          ]
+        },
+        {
+          "text": "照老人的住处上山，请问手，也请问自己的路。",
+          "tags": [
+            "cid:sr_seek_zhao_plain"
+          ]
+        },
+        {
+          "text": "实说因为他比自己强，愿意从这里学起。",
+          "tags": [
+            "cid:sr_zhao_stronger"
+          ]
+        },
+        {
+          "text": "下山后开个小馆，让普通学生把每天真能做的练习带回来，先听他们怎样用。",
+          "tags": [
+            "cid:sr_teach_daily"
+          ]
+        },
+        {
+          "text": "再出门问手前，把下一班怎样接清楚，留下自己会回来的日子。",
+          "tags": [
+            "cid:sr_leave_class_in_turn"
+          ]
+        },
+        {
+          "text": "不追着给招取名，先接眼前的人，把这一下真正走完。",
+          "tags": [
+            "cid:sr_follow_person"
+          ]
+        },
+        {
+          "text": "请两名学生各把自己能续的一步走出来，再谈新门要留下什么。",
+          "tags": [
+            "cid:sr_rule_try"
+          ]
+        },
+        {
+          "text": "有人要称第七大派时，先问自己不在以后谁还能继续教。",
+          "tags": [
+            "cid:sr_ask_next_teacher"
+          ]
+        },
+        {
+          "text": "晚年少接远行，把能教的日子留在院中，亲眼看别人怎样不再照你走。",
+          "tags": [
+            "cid:sr_late_teach"
+          ]
+        },
+        {
+          "text": "留旧友再坐一阵，明早的课照常，不把这一夜急着写成后世定论。",
+          "tags": [
+            "cid:sr_keep_old_visit"
+          ]
+        },
+        {
+          "text": "让他把来历与疑处一并留下，卷可以读，不能替祖师编一个已经证明的终局。",
+          "tags": [
+            "cid:sr_pages_as_question"
+          ]
+        }
+      ],
+      "beats": [
+        {
+          "text": "你先问了自己不在以后谁教。第三代宗主出返真那年，有人说这主意下得早；你只答，门是接出来的，不是称出来的。",
+          "tags": [
+            "beat:sr_seventh_4",
+            "scene:sr_newhall",
+            "cast:sr_carpenter,sr_seller",
+            "speaker:narrator"
+          ]
+        }
+      ],
+      "ending": {
+        "text": "你留下的院门没有把人关在你的那一步。后来有人问祖师最会什么，学生先走出自己的拳，再说：他肯看我们重来。",
+        "tags": [
+          "beat:sr_after_life_5",
+          "scene:sr_afterhall",
+          "cast:none",
+          "speaker:narrator",
+          "ending:sr_open_courtyard"
+        ]
+      },
+      "totalBeats": 210
+    },
+    {
+      "slug": "white-stone",
+      "label": "denied-win",
+      "choices": [
+        {
+          "text": "将每次接不上处另记，先告诉同来的人自己还不知道什么。",
+          "tags": [
+            "cid:ws_note_break"
+          ]
+        },
+        {
+          "text": "将缺处如实留给内议，不用自己的顺手写成祖传最后一步。",
+          "tags": [
+            "cid:ws_keep_gap"
+          ]
+        },
+        {
+          "text": "先为一脉找第二个能理解的人，向老人讲明并非叫人照抄全部秘谱。",
+          "tags": [
+            "cid:ws_find_second"
+          ]
+        },
+        {
+          "text": "把另一脉看懂了什么留在卷后，而不只记谁又学了一式。",
+          "tags": [
+            "cid:ws_record_reason"
+          ]
+        },
+        {
+          "text": "先问少林后山法晦能否见，得到不见外客的答复，就在山下住。",
+          "tags": [
+            "cid:ws_ask_old_name"
+          ]
+        },
+        {
+          "text": "将这一场停在双方都收手的地方，继续问别山上一代还剩谁。",
+          "tags": [
+            "cid:ws_keep_no_result"
+          ]
+        },
+        {
+          "text": "向他谢今日肯试，不用年轻二十年这个未知假设抹掉他现在的深处。",
+          "tags": [
+            "cid:ws_ask_today"
+          ]
+        },
+        {
+          "text": "有人问是否天下第一，只答天下太大，没有刚好全见过。",
+          "tags": [
+            "cid:ws_keep_unknown"
+          ]
+        },
+        {
+          "text": "请顾指出自己刚才先看哪块地，不替他报出你记得的那一块。",
+          "tags": [
+            "cid:ws_ask_own_stone"
+          ]
+        },
+        {
+          "text": "留下原先在哪些地方硬凑的记录，供后来者辨认，不把自己的删法又立成唯一练法。",
+          "tags": [
+            "cid:ws_keep_life_notes"
+          ]
+        },
+        {
+          "text": "在旧录后留下确定与未定的边界，不把祖师未归的年份当作已死之年。",
+          "tags": [
+            "cid:ws_keep_limits"
+          ]
+        },
+        {
+          "text": "旧谱第一退下后，先在自己总抢快的一处停，问不抢时这一剑还能如何接。",
+          "tags": [
+            "cid:ws_ask_slow_hand"
+          ]
+        },
+        {
+          "text": "携帖去山外，约好回来先讲一个看懂的变化与一个没问明白的问题。",
+          "tags": [
+            "cid:ws_go_observe"
+          ]
+        }
+      ],
+      "beats": [
+        {
+          "text": "今日是你高。",
+          "tags": [
+            "beat:ws_old_palm_4",
+            "scene:ws_trial",
+            "cast:ws_dongxuan",
+            "speaker:ws_dongxuan",
+            "mood:ws_dongxuan=neutral"
+          ]
+        },
+        {
+          "text": "山外后来传的是\"今日是你高\"，他自己从未这么认过。",
+          "tags": [
+            "beat:ws_old_palm_10",
+            "scene:ws_trial",
+            "cast:ws_dongxuan",
+            "speaker:narrator"
+          ]
+        }
+      ],
+      "ending": {
+        "text": "你出谷时有人问昆仑到底多少人。你答只知道今日亲见的这些，转而问他的来路。那人讲起山道新换的过法，你第一次没有先问那地方谁最强。",
+        "tags": [
+          "beat:ws_today_after_2",
+          "scene:ws_snow",
+          "cast:none",
+          "speaker:narrator",
+          "ending:ws_outside_after"
+        ]
+      },
+      "totalBeats": 128
+    },
+    {
+      "slug": "xuanmen",
+      "label": "wrong-memory",
+      "choices": [
+        {
+          "text": "先问老人是谁，承认昨日见过二十一剑，仍没看懂今日。",
+          "tags": [
+            "cid:xm_ask_his_name"
+          ]
+        },
+        {
+          "text": "在访客簿记俞断剑、自己十四招负，不拿老人无名替两场遮过去。",
+          "tags": [
+            "cid:xm_keep_result"
+          ]
+        },
+        {
+          "text": "先将诸院能通的侧路交给张无垢，和他逐处点明换班的人。",
+          "tags": [
+            "cid:xm_make_handover"
+          ]
+        },
+        {
+          "text": "请每处回一张接班条，让伤药与经阁都知道下一个人到了没有。",
+          "tags": [
+            "cid:xm_send_receipt"
+          ]
+        },
+        {
+          "text": "看师父怎样借湿地、石阶和石苍旧伤，记得这一战发生在什么地方。",
+          "tags": [
+            "cid:xm_watch_feet"
+          ]
+        },
+        {
+          "text": "去伤药处认回需要的人，把私事交给同伴，自己留下等最后一班。",
+          "tags": [
+            "cid:xm_help_medicine"
+          ]
+        },
+        {
+          "text": "先把七院藏谱副本互通，找别院的人来认自己抄不明白的字。",
+          "tags": [
+            "cid:xm_copy_methods"
+          ]
+        },
+        {
+          "text": "让他把没问明白的带回去，今日少练一遍，不替徒弟抢着答完。",
+          "tags": [
+            "cid:xm_let_him_ask"
+          ]
+        },
+        {
+          "text": "在自己的手录写下嫉妒，不将那一夜涂成从未有过的欢喜。",
+          "tags": [
+            "cid:xm_write_envy"
+          ]
+        },
+        {
+          "text": "九席有空时，先问还有哪件事没人接，再问候选人会不会做。",
+          "tags": [
+            "cid:xm_ask_successor"
+          ]
+        },
+        {
+          "text": "把旧录里各处如何接手留给后来人读，允许他们按今日重新分工。",
+          "tags": [
+            "cid:xm_leave_duties"
+          ]
+        }
+      ],
+      "beats": [
+        {
+          "text": "从泥地里来的。那日我只问了师父在汉水边怎么躺。",
+          "tags": [
+            "beat:xm_another_court_10",
+            "scene:xm_court",
+            "cast:xm_xuandu",
+            "speaker:you"
+          ]
+        }
+      ],
+      "ending": {
+        "text": "后来翻旧录的门人，将一页旧分工放在今日新图旁边。他没照旧路搬药，先去问新接班的人是否真到了；页上仍留着张无垢那个并非第九高手的名字。",
+        "tags": [
+          "beat:xm_last_day_6",
+          "scene:xm_archive",
+          "cast:none",
+          "speaker:narrator",
+          "ending:xm_handover_after"
+        ]
+      },
+      "totalBeats": 105
+    },
+    {
+      "slug": "seven-questions",
+      "label": "valley-default",
+      "choices": [
+        {
+          "text": "先同禾生核金陵副报，再请他带原件一起去问另一家。",
+          "tags": [
+            "cid:sq_joint_jinling"
+          ]
+        },
+        {
+          "text": "在待核项写明所见来源，让传言与死伤名单分开。",
+          "tags": [
+            "cid:sq_keep_unknown"
+          ]
+        },
+        {
+          "text": "把旧痕与新试分放两侧，按陆所指处记，不自行下归属。",
+          "tags": [
+            "cid:sq_hold_both"
+          ]
+        },
+        {
+          "text": "带共同核问的人去送试痕副报，愿多走一趟。",
+          "tags": [
+            "cid:sq_send_with_witness"
+          ]
+        },
+        {
+          "text": "先把真内容与后加扉页并排给门外人看，再请他们让路。",
+          "tags": [
+            "cid:sq_compare_front"
+          ]
+        },
+        {
+          "text": "从侧门接出抄手，不往两剑中间插，自己让掉近处观剑位置。",
+          "tags": [
+            "cid:sq_take_side"
+          ]
+        },
+        {
+          "text": "将两次验痕一起送出，金陵和南岳各留一份过程。",
+          "tags": [
+            "cid:sq_add_second_test"
+          ]
+        },
+        {
+          "text": "先把周最后所见按原话抄给共同收件人，不添自己猜的姓名。",
+          "tags": [
+            "cid:sq_keep_last_words"
+          ]
+        },
+        {
+          "text": "按共同收件的约定，去金陵一侧接问件，不擅坐空椅。",
+          "tags": [
+            "cid:sq_sit_by_jinling"
+          ]
+        },
+        {
+          "text": "把入化前门人的问题递入问件：不能照练，那能先知道哪些风险？",
+          "tags": [
+            "cid:sq_ask_access"
+          ]
+        },
+        {
+          "text": "把散开的问件收齐，仍按原题交回，不用止斗一剑替代答复。",
+          "tags": [
+            "cid:sq_return_questions"
+          ]
+        },
+        {
+          "text": "先把年轻门人所问的风险说明递给主张附注的人，自己候一个可带走的答复。",
+          "tags": [
+            "cid:sq_deliver_risk"
+          ]
+        },
+        {
+          "text": "分别抄明萧与闻人的线索，不把两人履历并成一个无所不能的凶手。",
+          "tags": [
+            "cid:sq_link_without_merge"
+          ]
+        },
+        {
+          "text": "去问真走过旧河的人，标能撤过的溪沟，院中转报请同门接。",
+          "tags": [
+            "cid:sq_walk_water"
+          ]
+        },
+        {
+          "text": "随混编队赴伏牛，担撤路和返程传讯，嵩阳由留守者接。",
+          "tags": [
+            "cid:sq_follow_valley"
+          ]
+        },
+        {
+          "text": "先把离树最近的伤者交过去，自己留低处接下一人。",
+          "tags": [
+            "cid:sq_pass_first"
+          ]
+        },
+        {
+          "text": "守住已认的接应点，放过近处观高手的机会。",
+          "tags": [
+            "cid:sq_stay_receiving"
+          ]
+        },
+        {
+          "text": "先确认最后一班已过沟，再向后方报空，不催慧寂为抢胜离开弟子。",
+          "tags": [
+            "cid:sq_last_bank"
+          ]
+        },
+        {
+          "text": "先带伤者离开余火，假本与地图留给有余手的人收。",
+          "tags": [
+            "cid:sq_take_wounded"
+          ]
+        },
+        {
+          "text": "返程只报亲见的谷中撤退与地图，院中情况等留守人核，不造自己赶回时辰。",
+          "tags": [
+            "cid:sq_report_seen_valley"
+          ]
+        },
+        {
+          "text": "等陆回到外廊再递水，先留退处，不上前拦着问招。",
+          "tags": [
+            "cid:sq_receive_later"
+          ]
+        },
+        {
+          "text": "把两路亲见和后闻分栏，再让同伴核自己的姓名，不抢一份全知通报。",
+          "tags": [
+            "cid:sq_separate_witness"
+          ]
+        },
+        {
+          "text": "经录事转问还未归的人与物在哪里，不把听见一段怨恨当成已问全案。",
+          "tags": [
+            "cid:sq_ask_missing_people"
+          ]
+        },
+        {
+          "text": "逐卷核回来源、封存与接手，不拿看见三卷便替另四签全。",
+          "tags": [
+            "cid:sq_check_each_volume"
+          ]
+        },
+        {
+          "text": "接下混编传讯的常差，把前两卷与核过的风险说明送到真收件人手里。",
+          "tags": [
+            "cid:sq_choose_carriers"
+          ]
+        },
+        {
+          "text": "按同伴答应的两趟或八月交班，自己补余下的行程与课，不用旧恩情压人。",
+          "tags": [
+            "cid:sq_keep_companion_time"
+          ]
+        },
+        {
+          "text": "交清最后一份，回自己的常差，不拿这次听见的话替别人许成就。",
+          "tags": [
+            "cid:sq_return_receipt"
+          ]
+        }
+      ],
+      "beats": [
+        {
+          "text": "接了你交接的那一班已歇下。合报时，别再叫淋过水的人重跑一遍。",
+          "tags": [
+            "beat:sq_converge_9",
+            "scene:sq_return",
+            "cast:sq_hesheng,sq_asheng",
+            "speaker:sq_asheng",
+            "mood:sq_asheng=neutral"
+          ]
+        }
+      ],
+      "ending": {
+        "text": "你把前两卷送出鹿门，同行的人会换，收件处也会换。有人只想抢先抄一句，你便等他把附注翻开，再说哪处还须问老师。到八月，接班者真站在路口，你没有让所有人永远等着同一个人回来。",
+        "tags": [
+          "beat:sq_afterwards_9",
+          "scene:sq_after",
+          "cast:none",
+          "speaker:narrator",
+          "ending:sq_shared_road"
+        ]
+      },
+      "totalBeats": 254
+    },
+    {
+      "slug": "taihua",
+      "label": "first",
+      "choices": [
+        {
+          "text": "先把水盆移到师兄够得着的地方。",
+          "tags": [
+            "cid:th_care"
+          ]
+        },
+        {
+          "text": "答应回来把每一场亲眼看到的讲给师兄。",
+          "tags": [
+            "cid:th_promise"
+          ]
+        },
+        {
+          "text": "低声问她：胡桃好吃，还是改步好玩？",
+          "tags": [
+            "cid:th_tease"
+          ]
+        },
+        {
+          "text": "判断慕容已三次进左，下次也有机会；先把自己看到的优势说清。",
+          "tags": [
+            "cid:th_predict_fast"
+          ]
+        },
+        {
+          "text": "在纸边画三次入口与第四次落脚，待自己败过一场后还留着对照。",
+          "tags": [
+            "cid:th_draw_left"
+          ]
+        },
+        {
+          "text": "再追一个身位，逼她露出停步。",
+          "tags": [
+            "cid:th_rush"
+          ]
+        },
+        {
+          "text": "承认自己仍在抖，不把胜场说得轻松。",
+          "tags": [
+            "cid:th_admit"
+          ]
+        },
+        {
+          "text": "拿护腕摆出双方的脚位，把失败也讲全。",
+          "tags": [
+            "cid:th_demonstrate"
+          ]
+        },
+        {
+          "text": "先认自己以为破袖便快分胜负，再看明澄为什么没退最后两步。",
+          "tags": [
+            "cid:th_watch_torn_sleeve"
+          ]
+        },
+        {
+          "text": "不拿看见他弃剑便来劝已经尽力，留他先走完，再到门口看。",
+          "tags": [
+            "cid:th_leave_xie_room"
+          ]
+        },
+        {
+          "text": "替明澄拿住汤碗，留门口一条退路。",
+          "tags": [
+            "cid:th_tray"
+          ]
+        },
+        {
+          "text": "承认自己也想看，别把停手全推给他们。",
+          "tags": [
+            "cid:th_no_result"
+          ]
+        },
+        {
+          "text": "约沈照微轮战后再拆那半息，不约让招。",
+          "tags": [
+            "cid:th_practice"
+          ]
+        },
+        {
+          "text": "并看三十七、四十一、四十八次退法，判断他是否每回都在让出同一个地方。",
+          "tags": [
+            "cid:th_read_retreats"
+          ]
+        },
+        {
+          "text": "看他拾剑后的落脚，不把未追写成慈悲；先问自己若在那一步会不会停。",
+          "tags": [
+            "cid:th_read_unstable"
+          ]
+        },
+        {
+          "text": "不催自己抢胜，守过前几十手再找机会。",
+          "tags": [
+            "cid:th_patience"
+          ]
+        },
+        {
+          "text": "认她这次改了路，问她从哪里看出你的习惯。",
+          "tags": [
+            "cid:th_credit_shen"
+          ]
+        },
+        {
+          "text": "把输了的一场也从第一步讲给他。",
+          "tags": [
+            "cid:th_keep_promise"
+          ]
+        },
+        {
+          "text": "问霍停云：你想赢到哪里才算够？",
+          "tags": [
+            "cid:th_ask_huo"
+          ]
+        },
+        {
+          "text": "将看不明的三处各记下来，不因只懂一点就把余下全写成深不可测。",
+          "tags": [
+            "cid:th_name_unknown"
+          ]
+        },
+        {
+          "text": "记剑真到与身体后移的先后，先不把半寸当作只需背熟的量。",
+          "tags": [
+            "cid:th_draw_half_distance"
+          ]
+        },
+        {
+          "text": "等行礼后请张指自己还想走的方向，承认不懂，不求把门槛一句讲完。",
+          "tags": [
+            "cid:th_ask_stop"
+          ]
+        },
+        {
+          "text": "只问糕还有没有，不替任何人解释旧伤。",
+          "tags": [
+            "cid:th_plain"
+          ]
+        },
+        {
+          "text": "将四息也记入这一场，不把没挥剑的一段当作两人都在歇。",
+          "tags": [
+            "cid:th_keep_four_breaths"
+          ]
+        },
+        {
+          "text": "将季亲口认先记下，别以两人俱能伤为由擅改平。",
+          "tags": [
+            "cid:th_keep_true_stop"
+          ]
+        },
+        {
+          "text": "承认自己更早便看不懂，请霍说第一手在找什么。",
+          "tags": [
+            "cid:th_public_question"
+          ]
+        },
+        {
+          "text": "将自己仍看不清的早一步摆给张问，不急求穆的那一剑，肯只从自己的回身走起。",
+          "tags": [
+            "cid:th_show_front_page"
+          ]
+        },
+        {
+          "text": "向谢问他哪里以为已明白，肯听霍先拆掉开头，不拿自己也旁观过便替他说懂。",
+          "tags": [
+            "cid:th_tell_meal_question"
+          ]
+        },
+        {
+          "text": "留下半日，与同辈复手，再陪受伤师兄下山。",
+          "tags": [
+            "cid:th_together"
+          ]
+        },
+        {
+          "text": "先接重箱到第一处交接，只把药包留给师兄。",
+          "tags": [
+            "cid:th_carry"
+          ]
+        }
+      ],
+      "beats": [
+        {
+          "text": "第一百零二手，她封你肩，你脚下一错，以肩抵入；她的手也停在你颈侧。",
+          "tags": [
+            "beat:th_centre_2",
+            "scene:th_stone",
+            "cast:th_shen",
+            "speaker:narrator"
+          ]
+        },
+        {
+          "text": "这一回，你败。",
+          "tags": [
+            "beat:th_sima_result_6",
+            "scene:th_round",
+            "cast:th_sima,th_shen",
+            "speaker:narrator"
+          ]
+        }
+      ],
+      "ending": {
+        "text": "回山后，你和师兄把这半日续成两个人能做的练习。下一届的约不保证再赢，却有具体的人、有收信的地址，也有需要你真正到场的一天。",
+        "tags": [
+          "beat:th_ending_24",
+          "scene:th_home",
+          "cast:th_bro",
+          "speaker:narrator",
+          "ending:th_company"
+        ]
+      },
+      "totalBeats": 308
+    },
+    {
+      "slug": "longmen",
+      "label": "first",
+      "choices": [
+        {
+          "text": "承认只记了次序，请他先让我摆出这一刀。",
+          "tags": [
+            "cid:lm_ask_use"
+          ]
+        },
+        {
+          "text": "问旧伤现在怎样影响他，不把战绩当没受过伤。",
+          "tags": [
+            "cid:lm_ask_wound"
+          ]
+        },
+        {
+          "text": "先问一个武当道人为何还认得宋老的旧刀。",
+          "tags": [
+            "cid:lm_ask_qinghe_friend"
+          ]
+        },
+        {
+          "text": "先看左脚，试着把落点压回旧谱的位置。",
+          "tags": [
+            "cid:lm_old_watch_foot"
+          ]
+        },
+        {
+          "text": "先收右肘，不强追先前定好的刀头。",
+          "tags": [
+            "cid:lm_old_close_elbow"
+          ]
+        },
+        {
+          "text": "承认三下都没接住，再问自己还能怎么练。",
+          "tags": [
+            "cid:lm_old_ask_twenty"
+          ]
+        },
+        {
+          "text": "借刀以后，先练停住一步，不赶着连完十七刀。",
+          "tags": [
+            "cid:lm_practice_slow"
+          ]
+        },
+        {
+          "text": "留在镇河门，带初入门的人试起手，走传承一线。",
+          "tags": [
+            "cid:lm_route_school"
+          ]
+        },
+        {
+          "text": "把木刀放低，与他一同走退线，先让身体知道哪儿能停。",
+          "tags": [
+            "cid:lm_show_lane"
+          ]
+        },
+        {
+          "text": "让同门别再喊野榜，输了也照样行礼。",
+          "tags": [
+            "cid:lm_stop_mock"
+          ]
+        },
+        {
+          "text": "照实报一百一十九合，不拿旧伤替许解释。",
+          "tags": [
+            "cid:lm_name_loss"
+          ]
+        },
+        {
+          "text": "请同门分抬，自己只接绳的一头。",
+          "tags": [
+            "cid:lm_share_frame"
+          ]
+        },
+        {
+          "text": "守住侧门，把人退回去，错过中间几招也认。",
+          "tags": [
+            "cid:lm_guard_line"
+          ]
+        },
+        {
+          "text": "把剑原样递还，不先说败得光荣之类宽慰。",
+          "tags": [
+            "cid:lm_return_sword"
+          ]
+        },
+        {
+          "text": "把第三十六照实读，不借末席恭维地方前辈。",
+          "tags": [
+            "cid:lm_correct_label"
+          ]
+        },
+        {
+          "text": "把水给刚下场的两位，各问一次要不要帮忙。",
+          "tags": [
+            "cid:lm_offer_water"
+          ]
+        },
+        {
+          "text": "先接住弟子和剑鞘，错过后几剑也不挤回去。",
+          "tags": [
+            "cid:lm_help_sheath"
+          ]
+        },
+        {
+          "text": "问许重山，我借刀时那一刀也在先定终点么？",
+          "tags": [
+            "cid:lm_ask_first"
+          ]
+        },
+        {
+          "text": "从脚说起：想起自己出刀后两脚挤住，明早请许推一推。",
+          "tags": [
+            "cid:lm_night_foot"
+          ]
+        },
+        {
+          "text": "不讨一个今日必能进榜的改口，问余下还愿怎样练。",
+          "tags": [
+            "cid:lm_he_ask_remaining"
+          ]
+        },
+        {
+          "text": "请许再推一回，自己从刚才没接上的地方重做，耽误一些收拾行装的时辰。",
+          "tags": [
+            "cid:lm_repeat_with_push"
+          ]
+        },
+        {
+          "text": "还刀，办完门里的交代，再随石惊川走一段。",
+          "tags": [
+            "cid:lm_travel_choice"
+          ]
+        },
+        {
+          "text": "回门里照实讲撤酒缘故，不替罗老编一场没打过的胜。",
+          "tags": [
+            "cid:lm_keep_record"
+          ]
+        }
+      ],
+      "beats": [
+        {
+          "text": "你想借镇河门一把木刀，到秋会上换人试手。许重山没把刀递过来，先问你第七刀砍谁。",
+          "tags": [
+            "beat:lm_borrow_1",
+            "scene:lm_hall",
+            "cast:lm_xu",
+            "speaker:narrator"
+          ]
+        },
+        {
+          "text": "第七刀……接在第六刀后面。",
+          "tags": [
+            "beat:lm_borrow_2",
+            "scene:lm_hall",
+            "cast:lm_xu",
+            "speaker:you"
+          ]
+        },
+        {
+          "text": "许重山垂下木刀。这句话没有把宋老第七刀的问题抹掉，却让他重新听见一个原先没问过的后半句。",
+          "tags": [
+            "beat:lm_qinghe_third_5",
+            "scene:lm_qingheyard",
+            "cast:lm_qinghe,lm_xu",
+            "speaker:narrator"
+          ]
+        },
+        {
+          "text": "你说第七刀砍什么，他现在也答不出。换一句。",
+          "tags": [
+            "beat:lm_route_first_day_3",
+            "scene:lm_hall",
+            "cast:lm_xu",
+            "speaker:lm_xu",
+            "mood:lm_xu=neutral"
+          ]
+        },
+        {
+          "text": "第一百一十九合，剑越过刀背半寸，停在肋下；许的刀几乎同时到石右肩。",
+          "tags": [
+            "beat:lm_xu_bout_2",
+            "scene:lm_challenge",
+            "cast:lm_xu,lm_shi",
+            "speaker:narrator"
+          ]
+        },
+        {
+          "text": "一百一十九合照实记了，没拿旧伤垫一句。后来罗天庆记贺老的十九、三十二、四十一，也都这样一招一合记着。",
+          "tags": [
+            "beat:lm_sore_6",
+            "scene:lm_hall",
+            "cast:lm_xu,lm_luo",
+            "speaker:narrator"
+          ]
+        },
+        {
+          "text": "你看见第一剑，没有看全后八剑。后来不能替自己说成九剑全懂。",
+          "tags": [
+            "beat:lm_wooden_10",
+            "scene:lm_nine",
+            "cast:lm_zhang_v2,lm_shi,lm_fan",
+            "speaker:narrator"
+          ]
+        },
+        {
+          "text": "你也想说一句九剑如何，话到口边才想起，自己究竟亲眼看了几下。",
+          "tags": [
+            "beat:lm_night_outer_4",
+            "scene:lm_nightouter",
+            "cast:lm_xu,lm_shi",
+            "speaker:narrator"
+          ]
+        },
+        {
+          "text": "白日他只接九剑，话里却没有把那个肯连问的人轻轻略过去。你将杯端近一点，问起自己。",
+          "tags": [
+            "beat:lm_night_private_3",
+            "scene:lm_nightprivate",
+            "cast:lm_zhang_v2",
+            "speaker:narrator"
+          ]
+        }
+      ],
+      "ending": {
+        "text": "后来回镇河门，你先把沿途答应的杂事办完，再问能不能借一把出门用的木刀。许让你取出借刀册，你在旧名字下写了新的归期。",
+        "tags": [
+          "beat:lm_ending_6",
+          "scene:lm_fiveyears",
+          "cast:none",
+          "speaker:narrator",
+          "ending:lm_travel"
+        ]
+      },
+      "totalBeats": 229
+    }
+  ]
+}

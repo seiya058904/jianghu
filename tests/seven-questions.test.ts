@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -42,7 +43,7 @@ test('Seven Questions full two routes retain canon losses, fourteen houses, dist
   assert.throws(()=>restoreVN(JSON.stringify(r.s.save()),{content,version:'two-swords-1.0.0'}),/作品或版本不兼容/);
   assert.ok(!r.s.frames.some(f=>f.stage.cast.some(id=>id.startsWith('ss_'))),'different era does not reuse previous book actors');
   assert.ok(!r.s.frames.filter(f=>f.stage.scene==='sq_after').some(f=>f.stage.cast.length),'posthumous record has no standing dead elder');
-  writeFileSync(`docs/evidence/v6/seven-questions-${r.s.frame.ending}-transcript.txt`,r.text);
+  writeFileSync(evidencePath(`docs/evidence/v6/seven-questions-${r.s.frame.ending}-transcript.txt`),r.text);
  }
 });
 test('Seven Questions single half-day preparation changes health in each route while fixed deaths remain fixed',()=>{
@@ -70,5 +71,5 @@ test('Seven Questions sampled paths cover all authored beats and options without
  const visited=new Set<string>(),choices=new Set<string>(),endings=new Set<string>();let longest=0;
  for(let seed=1;seed<=512;seed++){let state=Math.imul(seed,2654435761)>>>0;const r=run(ids=>{state=(Math.imul(state,1664525)+1013904223)>>>0;return ids[state>>>31]});for(const f of r.s.frames){visited.add(f.id);f.choices.forEach(c=>choices.add(c.id));assert.ok(f.stage.cast.length<=3)}endings.add(r.s.frame.ending!);longest=Math.max(longest,r.longest)}
  const declared=[...readFileSync('story/seven-questions.ink','utf8').matchAll(/# beat:(\S+)/g)].map(m=>m[1]);assert.deepEqual([...visited].sort(),declared.sort());assert.equal(choices.size,62);assert.equal(endings.size,2);
- writeFileSync('docs/evidence/v6/seven-questions-content-audit.json',JSON.stringify({status:'SECOND_BOOK_V2_INTERNAL_EDITORIAL_NOT_FINAL_ACCEPTANCE',sourceBeats:declared.length,visited:visited.size,choiceOptions:choices.size,decisionsByRoute:{valley:27,courtyard:26},sampledPaths:512,exhaustive:false,longestPassiveGap:longest,limits:'Three internal editorial purposes recorded in SEVEN_QUESTIONS_V2_EDITORIAL.md. Fire, injury and fourteen-chair visual staging, dedicated identities, special action/CG, first-book editorial work and external acceptance remain incomplete. No human playtime claim.'},null,2));assert.ok(longest<=18,`longest passive gap ${longest}`);
+ writeFileSync(evidencePath('docs/evidence/v6/seven-questions-content-audit.json'),JSON.stringify({status:'SECOND_BOOK_V2_INTERNAL_EDITORIAL_NOT_FINAL_ACCEPTANCE',sourceBeats:declared.length,visited:visited.size,choiceOptions:choices.size,decisionsByRoute:{valley:27,courtyard:26},sampledPaths:512,exhaustive:false,longestPassiveGap:longest,limits:'Three internal editorial purposes recorded in SEVEN_QUESTIONS_V2_EDITORIAL.md. Fire, injury and fourteen-chair visual staging, dedicated identities, special action/CG, first-book editorial work and external acceptance remain incomplete. No human playtime claim.'},null,2));assert.ok(longest<=18,`longest passive gap ${longest}`);
 });

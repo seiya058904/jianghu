@@ -251,15 +251,21 @@ VAR rl_late = 0
 你回京气一月，却真一年没添新功。陆听说腰太硬那一段，特意将门边箱子移开，留出够你走圈的地方。 # beat:rl_white_valley_5 # scene:rl_whitevalley # cast:rl_kunlun # speaker:narrator
 高人只说最简单的没好。我没添一个字。 # beat:rl_white_valley_6 # scene:rl_whitevalley # cast:rl2_lu,rl_kunlun # speaker:rl2_lu # mood:rl2_lu=amused
 你不服，又知道她没添错。 # beat:rl_white_valley_7 # scene:rl_whitevalley # cast:rl2_lu,rl_kunlun # speaker:narrator
+{
+- rl_unknown_step:
+你把武当没记清的那一步也写进册里，带给中年人看。他翻到未记清三个字那一行，点了点头，没替你补一个名字。 # beat:rl_white_valley_8 # scene:rl_whitevalley # cast:rl2_lu,rl_kunlun # speaker:narrator
+- else:
+两处记不清的脚你都各走了一遍，把差处原样记下。中年人看了一眼，仍不替你判哪个对。 # beat:rl_white_valley_9 # scene:rl_whitevalley # cast:rl2_lu,rl_kunlun # speaker:narrator
+}
 * [认她留下的空处真能用，先练完，再抱怨昆仑半日路费贵。 # cid:rl_thank_space]
   ~ rl_lu_space = true
-  我又没收路费。 # beat:rl_white_valley_8 # scene:rl_whitevalley # cast:rl2_lu,rl_kunlun # speaker:rl2_lu # mood:rl2_lu=neutral
-  你走过那半圈，才发现早先几只箱真被自己越堆越近。 # beat:rl_white_valley_9 # scene:rl_whitevalley # cast:rl2_lu,rl_kunlun # speaker:narrator
+  我又没收路费。 # beat:rl_white_valley_10 # scene:rl_whitevalley # cast:rl2_lu,rl_kunlun # speaker:rl2_lu # mood:rl2_lu=neutral
+  你走过那半圈，才发现早先几只箱真被自己越堆越近。 # beat:rl_white_valley_11 # scene:rl_whitevalley # cast:rl2_lu,rl_kunlun # speaker:narrator
   -> fair_seat
 * [请她看这回腰究竟还僵不僵，不要求她忽然懂哪门掌法。 # cid:rl_offer_show_step]
   ~ rl_lu_space = false
-  我看得见你一转便皱眉。先歇一下，不用连疼也叫我相信是秘传。 # beat:rl_white_valley_10 # scene:rl_whitevalley # cast:rl2_lu,rl_kunlun # speaker:rl2_lu # mood:rl2_lu=intent
-  你终于笑出来，停在门边喝水。 # beat:rl_white_valley_11 # scene:rl_whitevalley # cast:rl2_lu,rl_kunlun # speaker:narrator
+  我看得见你一转便皱眉。先歇一下，不用连疼也叫我相信是秘传。 # beat:rl_white_valley_12 # scene:rl_whitevalley # cast:rl2_lu,rl_kunlun # speaker:rl2_lu # mood:rl2_lu=intent
+  你终于笑出来，停在门边喝水。 # beat:rl_white_valley_13 # scene:rl_whitevalley # cast:rl2_lu,rl_kunlun # speaker:narrator
   -> fair_seat
 -> fair_seat
 
@@ -302,18 +308,24 @@ VAR rl_late = 0
 拿书后的第四日再回去，云中散人已经跑了。你站在空门前，想报官，又怕身份露，只能认。 # beat:rl_closed_breath_3 # scene:rl_river # cast:rl_attendant # speaker:narrator
 先回去。您再说功夫难，也得先能喘气。 # beat:rl_closed_breath_4 # scene:rl_river # cast:rl_attendant # speaker:rl_attendant # mood:rl_attendant=intent
 他扶你走，没把差点倒下的那一回也说成百日将成的征兆。 # beat:rl_closed_breath_5 # scene:rl_river # cast:rl_attendant # speaker:narrator
+{
+- rl_scam_question:
+你把那本《玄天闭气神功》又翻最后一遍：当初问过学哪一段，他答妙处都在书中。问过的问题没有救你，只让你比旁人早一天认出这是假的。 # beat:rl_closed_breath_6 # scene:rl_river # cast:rl_attendant # speaker:narrator
+- else:
+按普通人资质求教的那些话还在耳边。他连普通人也没打算教——这一点，你认得比别人都晚。 # beat:rl_closed_breath_7 # scene:rl_river # cast:rl_attendant # speaker:narrator
+}
 * [回府自己先把二十两与河边说完，连最不愿讲的夸天赋也不藏。 # cid:rl_admit_scam_first]
   ~ rl_scam_plain = true
-  原来最贵的那句，是说你不像王爷也有天分。 # beat:rl_closed_breath_6 # scene:rl_river # cast:rl2_lu,rl_attendant # speaker:rl2_lu # mood:rl2_lu=amused
-  以后这事能少提么？ # beat:rl_closed_breath_7 # scene:rl_river # cast:rl2_lu,rl_attendant # speaker:you
-  看你以后收什么信。 # beat:rl_closed_breath_8 # scene:rl_river # cast:rl2_lu,rl_attendant # speaker:rl2_lu # mood:rl2_lu=neutral
-  笑归笑，她先问河边有没有真伤着。你肯说，药与歇息便不用让她追着每个人猜。 # beat:rl_closed_breath_9 # scene:rl_river # cast:rl2_lu,rl_attendant # speaker:narrator
+  原来最贵的那句，是说你不像王爷也有天分。 # beat:rl_closed_breath_8 # scene:rl_river # cast:rl2_lu,rl_attendant # speaker:rl2_lu # mood:rl2_lu=amused
+  以后这事能少提么？ # beat:rl_closed_breath_9 # scene:rl_river # cast:rl2_lu,rl_attendant # speaker:you
+  看你以后收什么信。 # beat:rl_closed_breath_10 # scene:rl_river # cast:rl2_lu,rl_attendant # speaker:rl2_lu # mood:rl2_lu=neutral
+  笑归笑，她先问河边有没有真伤着。你肯说，药与歇息便不用让她追着每个人猜。 # beat:rl_closed_breath_11 # scene:rl_river # cast:rl2_lu,rl_attendant # speaker:narrator
   -> chen_first
 * [先把经过写给陆，再当面听她问；怕开口又拿功夫难替自己圆，宁可多写一夜。 # cid:rl_write_whole_mishap]
   ~ rl_scam_plain = false
-  她读完，你已经把门边神功包好。陆没替你藏，也没当众叫来一府人听笑话。 # beat:rl_closed_breath_10 # scene:rl_river # cast:rl2_lu,rl_attendant # speaker:narrator
-  玄天闭气以后练得怎样，我还要问的。 # beat:rl_closed_breath_11 # scene:rl_river # cast:rl2_lu,rl_attendant # speaker:rl2_lu # mood:rl2_lu=amused
-  你写一夜，脸仍红，倒终于能喘匀了说是被骗。陆将经过折进空信封，只记买书二十两，没把神功另放回名家那箱。 # beat:rl_closed_breath_12 # scene:rl_river # cast:rl2_lu,rl_attendant # speaker:narrator
+  她读完，你已经把门边神功包好。陆没替你藏，也没当众叫来一府人听笑话。 # beat:rl_closed_breath_12 # scene:rl_river # cast:rl2_lu,rl_attendant # speaker:narrator
+  玄天闭气以后练得怎样，我还要问的。 # beat:rl_closed_breath_13 # scene:rl_river # cast:rl2_lu,rl_attendant # speaker:rl2_lu # mood:rl2_lu=amused
+  你写一夜，脸仍红，倒终于能喘匀了说是被骗。陆将经过折进空信封，只记买书二十两，没把神功另放回名家那箱。 # beat:rl_closed_breath_14 # scene:rl_river # cast:rl2_lu,rl_attendant # speaker:narrator
   -> chen_first
 
 === chen_first ===
@@ -328,16 +340,22 @@ VAR rl_late = 0
 钱都收了。先说，我要骂王爷，别治罪。 # beat:rl_chen_first_9 # scene:rl_chenyard # cast:rl_chen # speaker:rl_chen # mood:rl_chen=uneasy
 不治。说话算话。 # beat:rl_chen_first_10 # scene:rl_chenyard # cast:rl_chen # speaker:you
 第三日，他叫你把刚歪的脚挪回来，语气比从前还凶。 # beat:rl_chen_first_11 # scene:rl_chenyard # cast:rl_chen # speaker:narrator
+{
+- rl_ten_years:
+三年，比少林老人说的十年短。这一回你没有先讨价还价。 # beat:rl_chen_first_12 # scene:rl_chenyard # cast:rl_chen # speaker:narrator
+- else:
+三年。你仍先问了一句中途遇见更高明的怎么办，才应下。 # beat:rl_chen_first_13 # scene:rl_chenyard # cast:rl_chen # speaker:narrator
+}
 * [答应三年，先请他把看会、请教与偷换训练怎样区分讲清，自己也得守得住。 # cid:rl_ask_chen_limits]
   ~ rl_chen_limits = true
-  不懂便来问，别瞒着另练。不是叫你三年闭眼。 # beat:rl_chen_first_12 # scene:rl_chenyard # cast:rl_chen # speaker:rl_chen # mood:rl_chen=neutral
-  他让你站，你没从这个约定里抠出今晚还可添半套剑的空子。 # beat:rl_chen_first_13 # scene:rl_chenyard # cast:rl_chen # speaker:narrator
+  不懂便来问，别瞒着另练。不是叫你三年闭眼。 # beat:rl_chen_first_14 # scene:rl_chenyard # cast:rl_chen # speaker:rl_chen # mood:rl_chen=neutral
+  他让你站，你没从这个约定里抠出今晚还可添半套剑的空子。 # beat:rl_chen_first_15 # scene:rl_chenyard # cast:rl_chen # speaker:narrator
   -> seal_books
 * [答应三年，将最想换功的时刻也告诉他，愿意当场被问练了没有。 # cid:rl_offer_true_account]
   ~ rl_chen_limits = false
-  那我要问得勤。你别过两日又说只是在想。 # beat:rl_chen_first_14 # scene:rl_chenyard # cast:rl_chen # speaker:rl_chen # mood:rl_chen=amused
-  想也会说。 # beat:rl_chen_first_15 # scene:rl_chenyard # cast:rl_chen # speaker:you
-  陈看你一次，才拿起最普通的短拳架。 # beat:rl_chen_first_16 # scene:rl_chenyard # cast:rl_chen # speaker:narrator
+  那我要问得勤。你别过两日又说只是在想。 # beat:rl_chen_first_16 # scene:rl_chenyard # cast:rl_chen # speaker:rl_chen # mood:rl_chen=amused
+  想也会说。 # beat:rl_chen_first_17 # scene:rl_chenyard # cast:rl_chen # speaker:you
+  陈看你一次，才拿起最普通的短拳架。 # beat:rl_chen_first_18 # scene:rl_chenyard # cast:rl_chen # speaker:narrator
   -> seal_books
 
 === seal_books ===
@@ -370,18 +388,24 @@ VAR rl_late = 0
 你说只是想起来，我却不知道脑中这一式同陈教的接在何处。叫他来，先把你真走的分清。 # beat:rl_first_year_5 # scene:rl_chenyard # cast:rl_chen,rl2_lu # speaker:rl2_lu # mood:rl2_lu=uneasy
 箱仍封着。你在空处把记得的旧式走给陈看，多花两夜重理哪些正同旧习纠缠。早先看成那场会的好处还在，这两夜却须现在补上，陈原约另一班的晚练也得挪开。 # beat:rl_first_year_6 # scene:rl_chenyard # cast:rl_chen,rl2_lu # speaker:narrator
 }
-约定的三年期满，你已四十出头。重走旧学，最爱的剑也有一半不想用。陈问还换老师么。 # beat:rl_first_year_7 # scene:rl_chenyard # cast:rl_chen # speaker:narrator
-想。不过不换。 # beat:rl_first_year_8 # scene:rl_chenyard # cast:rl_chen # speaker:you
-前半句少说也行。 # beat:rl_first_year_9 # scene:rl_chenyard # cast:rl_chen # speaker:rl_chen # mood:rl_chen=amused
-你开始真打普通人的架。第一年四胜三负，输了五十余未入任何正式榜的馆师，对方来请罪，你想摆宴，陈拦：送一两，明日便成收钱演戏。 # beat:rl_first_year_10 # scene:rl_chenyard # cast:rl_chen # speaker:narrator
-你什么也没做。非正式五镇十杰从第十、第七到一度第五，陈都叫别当真；你揭他年轻第一，他答所以才知道。 # beat:rl_first_year_11 # scene:rl_chenyard # cast:rl_chen # speaker:narrator
+{
+- rl_chen_limits:
+三年的界线是你自己问清的。看会归看会，请教归请教，陈从没需要猜你哪晚又添了半套。 # beat:rl_first_year_7 # scene:rl_chenyard # cast:rl_chen,rl2_lu # speaker:narrator
+- else:
+最想换功的时刻你答应过当场被问。三年里被问中的那几回，你都认了。 # beat:rl_first_year_8 # scene:rl_chenyard # cast:rl_chen,rl2_lu # speaker:narrator
+}
+约定的三年期满，你已四十出头。重走旧学，最爱的剑也有一半不想用。陈问还换老师么。 # beat:rl_first_year_9 # scene:rl_chenyard # cast:rl_chen # speaker:narrator
+想。不过不换。 # beat:rl_first_year_10 # scene:rl_chenyard # cast:rl_chen # speaker:you
+前半句少说也行。 # beat:rl_first_year_11 # scene:rl_chenyard # cast:rl_chen # speaker:rl_chen # mood:rl_chen=amused
+你开始真打普通人的架。第一年四胜三负，输了五十余未入任何正式榜的馆师，对方来请罪，你想摆宴，陈拦：送一两，明日便成收钱演戏。 # beat:rl_first_year_12 # scene:rl_chenyard # cast:rl_chen # speaker:narrator
+你什么也没做。非正式五镇十杰从第十、第七到一度第五，陈都叫别当真；你揭他年轻第一，他答所以才知道。 # beat:rl_first_year_13 # scene:rl_chenyard # cast:rl_chen # speaker:narrator
 * [让来请罪的馆师按平日离去，不设宴不补礼；输的一场照实留在自己的记录。 # cid:rl_keep_plain_defeat]
   ~ rl_plain_losses = true
-  他仍行礼，出门还是不放心。你忍着不追出去许一生无事，许完也不能让府里每个人就此永不多想。 # beat:rl_first_year_12 # scene:rl_chenyard # cast:rl_chen # speaker:narrator
+  他仍行礼，出门还是不放心。你忍着不追出去许一生无事，许完也不能让府里每个人就此永不多想。 # beat:rl_first_year_14 # scene:rl_chenyard # cast:rl_chen # speaker:narrator
   -> private_xue
 * [先拦下随从已备的礼，让他们知道好心也会坏真胜负，再让馆师照常回去。 # cid:rl_stop_helpers_gifts]
   ~ rl_plain_losses = false
-  礼箱停在门里。你没让对方领着一份自己不敢拒的钱回馆，再叫他证明没收过补偿。 # beat:rl_first_year_13 # scene:rl_chenyard # cast:rl_chen # speaker:narrator
+  礼箱停在门里。你没让对方领着一份自己不敢拒的钱回馆，再叫他证明没收过补偿。 # beat:rl_first_year_15 # scene:rl_chenyard # cast:rl_chen # speaker:narrator
   -> private_xue
 -> private_xue
 
@@ -483,6 +507,12 @@ VAR rl_late = 0
 - else:
 再问帖有了回话：这一回先不约，馆里的课不能再挪。你把帖子收起，给顾的话只有不催；那次真胜仍留在记录里，没有靠一场硬凑的重赛替自己盖信字。 # beat:rl_tax_after_7 # scene:rl_veranda # cast:rl2_lu,rl_gu # speaker:narrator
 }
+{
+- rl_no_gifts:
+薛馆至今没收过王府一份礼。外头再说您买通谁，先得对不上这本账。 # beat:rl_tax_after_8 # scene:rl_veranda # cast:rl2_lu,rl_gu # speaker:rl_gu # mood:rl_gu=neutral
+- else:
+当日拦下的喝彩，后来替薛家挡了不止一回闲话。赢的人不必谢王府，这话是您先立下的。 # beat:rl_tax_after_9 # scene:rl_veranda # cast:rl2_lu,rl_gu # speaker:rl_gu # mood:rl_gu=neutral
+}
 -> capital_one
 
 === capital_one ===
@@ -552,14 +582,20 @@ VAR rl_late = 0
 胖了。退了，不少。 # beat:rl_capital_four_4 # scene:rl_princeyard # cast:rl_chen,rl2_lu,rl_gu # speaker:rl_chen # mood:rl_chen=sharp
 练什么？ # beat:rl_capital_four_5 # scene:rl_princeyard # cast:rl_chen,rl2_lu,rl_gu # speaker:you
 站。四年没正经打，不站练什么？ # beat:rl_capital_four_6 # scene:rl_princeyard # cast:rl_chen,rl2_lu,rl_gu # speaker:rl_chen # mood:rl_chen=neutral
+{
+- rl_no_press:
+你没提当年在北地想再留一封帖子的事。这一回陈怎么骂，你都接着。 # beat:rl_capital_four_7 # scene:rl_princeyard # cast:rl_chen,rl2_lu,rl_gu # speaker:narrator
+- else:
+老枪师徒弟第四遍才走对的那一回，你在陈这里后来也见着了自己的第四遍。 # beat:rl_capital_four_8 # scene:rl_princeyard # cast:rl_chen,rl2_lu,rl_gu # speaker:narrator
+}
 * [先按现在能站的来，不拿四年前曾能接多少要求今日的身体。 # cid:rl_accept_current_body]
   ~ rl_recover_plain = true
-  你站得比自己记的短，脚先酸。陈让歇，没为你这回终于肯听便多说已经追回一半。 # beat:rl_capital_four_7 # scene:rl_princeyard # cast:rl_chen,rl2_lu,rl_gu # speaker:narrator
+  你站得比自己记的短，脚先酸。陈让歇，没为你这回终于肯听便多说已经追回一半。 # beat:rl_capital_four_9 # scene:rl_princeyard # cast:rl_chen,rl2_lu,rl_gu # speaker:narrator
   -> recover_years
 * [将腰腕这几年怎么疼也说清，请陈照眼下排练，不瞒到真接不住才认。 # cid:rl_show_all_soreness]
   ~ rl_recover_plain = false
-  能说清，比你硬说没事强。练的时候还得再看。 # beat:rl_capital_four_8 # scene:rl_princeyard # cast:rl_chen,rl2_lu,rl_gu # speaker:rl_chen # mood:rl_chen=intent
-  你将袖口束好，从第一步走，没有给四年另起一门新功。 # beat:rl_capital_four_9 # scene:rl_princeyard # cast:rl_chen,rl2_lu,rl_gu # speaker:narrator
+  能说清，比你硬说没事强。练的时候还得再看。 # beat:rl_capital_four_10 # scene:rl_princeyard # cast:rl_chen,rl2_lu,rl_gu # speaker:rl_chen # mood:rl_chen=intent
+  你将袖口束好，从第一步走，没有给四年另起一门新功。 # beat:rl_capital_four_11 # scene:rl_princeyard # cast:rl_chen,rl2_lu,rl_gu # speaker:narrator
   -> recover_years
 
 === recover_years ===
@@ -567,6 +603,18 @@ VAR rl_late = 0
 十五岁一直跟你，有机会么？府榜？ # beat:rl_recover_years_2 # scene:rl_chenyard # cast:rl_chen,rl2_lu # speaker:you
 又来了。四十多问小榜，也许。现在就是现在。 # beat:rl_recover_years_3 # scene:rl_chenyard # cast:rl_chen,rl2_lu # speaker:rl_chen # mood:rl_chen=sharp
 陆在旁等你喝药，没替过去写一条一生不断练的捷径。你站起，还是走今日这一回。 # beat:rl_recover_years_4 # scene:rl_chenyard # cast:rl_chen,rl2_lu # speaker:narrator
+{
+- rl_stand_page:
+你站的第一回，仍照沈履平那页的底子。这些年，最上那一页没换过。 # beat:rl_recover_years_5 # scene:rl_chenyard # cast:rl_chen,rl2_lu # speaker:narrator
+- else:
+沈履平那页早不知压到哪层箱底。你站到一半，脚跟又歪回老地方，自己先觉出来了。 # beat:rl_recover_years_6 # scene:rl_chenyard # cast:rl_chen,rl2_lu # speaker:narrator
+}
+{
+- rl_circle_again:
+腰那处你照八卦老人教的问题自查一遍：这一转是不是又拿肩带了。歇归歇，查归查。 # beat:rl_recover_years_7 # scene:rl_chenyard # cast:rl_chen,rl2_lu # speaker:narrator
+- else:
+腰一扭你便歇满半月。先认累这一课，你如今用得比谁都熟。 # beat:rl_recover_years_8 # scene:rl_chenyard # cast:rl_chen,rl2_lu # speaker:narrator
+}
 -> fifty_two
 
 === fifty_two ===
@@ -600,14 +648,26 @@ VAR rl_late = 0
 先走书面，再另核旁观。按当时答应的。 # beat:rl_five_years_7 # scene:rl_veranda # cast:qw_xue,rl_gu,rl2_lu # speaker:rl_gu # mood:rl_gu=intent
 你照办，多等几日，不再为自己想赶修榜便叫他这一回一定亲自来。 # beat:rl_five_years_8 # scene:rl_veranda # cast:qw_xue,rl_gu,rl2_lu # speaker:narrator
 }
+{
+- rl_records_first:
+您当年把旧五版翻了个遍才来问手。如今榜房查您，用的也是这套法子。 # beat:rl_five_years_9 # scene:rl_veranda # cast:qw_xue,rl_gu,rl2_lu # speaker:rl_gu # mood:rl_gu=neutral
+- else:
+这份履历送榜房前，长史先替您核过一遍，孙师傅也看过。没人能挑出哪一格是自己填的。 # beat:rl_five_years_10 # scene:rl_veranda # cast:qw_xue,rl_gu,rl2_lu # speaker:rl_gu # mood:rl_gu=neutral
+}
+{
+- rl_plain_losses:
+薛家说起当年那一负，从没欠过王府一份礼。旁人想借他作保，他答：我赢的是一场拳，不是一份人情。 # beat:rl_five_years_11 # scene:rl_veranda # cast:qw_xue,rl_gu,rl2_lu # speaker:narrator
+- else:
+当年拦下的礼虽没送出去，府里的人情却替他挡过几回。他提起来只肯说：胜负是场上的事。 # beat:rl_five_years_12 # scene:rl_veranda # cast:qw_xue,rl_gu,rl2_lu # speaker:narrator
+}
 * [让每家只说自家的真战，不将一位肯作证变成全青溪都必须信的保证。 # cid:rl_leave_each_record]
   ~ rl_each_record = true
-  以前你要一句都没让，如今总算能听十个人各说一点。 # beat:rl_five_years_9 # scene:rl_veranda # cast:rl2_lu # speaker:rl2_lu # mood:rl2_lu=neutral
-  你笑，说仍会心急，她答知道，所以才还问。 # beat:rl_five_years_10 # scene:rl_veranda # cast:rl2_lu # speaker:narrator
+  以前你要一句都没让，如今总算能听十个人各说一点。 # beat:rl_five_years_13 # scene:rl_veranda # cast:rl2_lu # speaker:rl2_lu # mood:rl2_lu=neutral
+  你笑，说仍会心急，她答知道，所以才还问。 # beat:rl_five_years_14 # scene:rl_veranda # cast:rl2_lu # speaker:narrator
   -> knee_victory
 * [把王府这份交出，等别处自己核，不先派人去提醒老人哪一年该怎样记。 # cid:rl_wait_independent_check]
   ~ rl_each_record = false
-  等的人是你，翻旧册的人有自己的次序。你原想再催，顾将尚未核回的一格给你看，没替你填上稳字。 # beat:rl_five_years_11 # scene:rl_veranda # cast:rl2_lu # speaker:narrator
+  等的人是你，翻旧册的人有自己的次序。你原想再催，顾将尚未核回的一格给你看，没替你填上稳字。 # beat:rl_five_years_15 # scene:rl_veranda # cast:rl2_lu # speaker:narrator
   -> knee_victory
 
 === knee_victory ===
@@ -615,14 +675,20 @@ VAR rl_late = 0
 榜房问怎么看，你沉默很久，说别当成全胜。石反恼，你这是看不起我？ # beat:rl_knee_victory_2 # scene:rl_laterpublic # cast:qw_shi # speaker:narrator
 我打了，输也认。我的膝，不是叫你替我把一场删去。 # beat:rl_knee_victory_3 # scene:rl_laterpublic # cast:qw_shi # speaker:qw_shi # mood:qw_shi=sharp
 最后照实写赵承晏胜、石横旧伤中发。胜与旧伤都留，谁也不替另一件抵掉。 # beat:rl_knee_victory_4 # scene:rl_laterpublic # cast:qw_shi # speaker:narrator
+{
+- rl_watch_exact:
+履历上候看就是候看。当年顾退回贺信改的那一个字，如今没人能在这一栏挑出错。 # beat:rl_knee_victory_5 # scene:rl_laterpublic # cast:qw_shi # speaker:narrator
+- else:
+石横约来的下一战，比一个改掉的字更能作证。履历平实，没有一格是贺客写出来的。 # beat:rl_knee_victory_6 # scene:rl_laterpublic # cast:qw_shi # speaker:narrator
+}
 * [向石承认胜确是真的、膝也确实发作，自己的顾虑不能代他改作没输。 # cid:rl_accept_both_lines]
   ~ rl_knee_both = true
-  我想把分量说清，方才先替你说了。 # beat:rl_knee_victory_5 # scene:rl_laterpublic # cast:qw_shi # speaker:you
-  写清就好。下回还能来，我自己说。 # beat:rl_knee_victory_6 # scene:rl_laterpublic # cast:qw_shi # speaker:qw_shi # mood:qw_shi=intent
+  我想把分量说清，方才先替你说了。 # beat:rl_knee_victory_7 # scene:rl_laterpublic # cast:qw_shi # speaker:you
+  写清就好。下回还能来，我自己说。 # beat:rl_knee_victory_8 # scene:rl_laterpublic # cast:qw_shi # speaker:qw_shi # mood:qw_shi=intent
   -> two_vacancies
 * [请榜房将石自己的回答同记，不抢着替伤者决定这一场应算几分。 # cid:rl_leave_his_answer]
   ~ rl_knee_both = false
-  石说完才坐，你没为让他歇便替他把最后一句收掉。那页不只有你一人的心意。 # beat:rl_knee_victory_7 # scene:rl_laterpublic # cast:qw_shi # speaker:narrator
+  石说完才坐，你没为让他歇便替他把最后一句收掉。那页不只有你一人的心意。 # beat:rl_knee_victory_9 # scene:rl_laterpublic # cast:qw_shi # speaker:narrator
   -> two_vacancies
 
 === two_vacancies ===
@@ -631,13 +697,19 @@ VAR rl_late = 0
 六候选，潘世荣稳取十一。最后主要争你、周伏生、卫庆。周正面可能稍高，却归青溪才年余；卫履历久，近三年两负且有争议。 # beat:rl_two_vacancies_3 # scene:rl_boardroom # cast:rl_boardelder # speaker:narrator
 看的是这一版，眼下这段人。不是理论上从没病过、从没耽误过的你。 # beat:rl_two_vacancies_4 # scene:rl_boardroom # cast:rl_boardelder # speaker:rl_boardelder # mood:rl_boardelder=intent
 你在门外，不能替七位老人把这一日的争论先写成自己的胜。 # beat:rl_two_vacancies_5 # scene:rl_boardroom # cast:rl_boardelder # speaker:narrator
+{
+- rl_knee_both:
+石横退榜那日只说：膝是我的，当年那掌也是真的。你点头，两人都没再多说。 # beat:rl_two_vacancies_6 # scene:rl_boardroom # cast:rl_boardelder # speaker:narrator
+- else:
+石横退榜的呈文里，他自己的回答同你的胜绩写在一页。他交上去时你不在场，也不必在场。 # beat:rl_two_vacancies_7 # scene:rl_boardroom # cast:rl_boardelder # speaker:narrator
+}
 * [不请府人再递话，只补别人真问到的战绩；留在外面等他们争完。 # cid:rl_wait_without_rank_help]
   ~ rl_rank_wait = true
-  顾收好你随口要催的半句。门内有人问近五年打几场，外面的你听不全，只能等真正核过的人去答。 # beat:rl_two_vacancies_6 # scene:rl_boardroom # cast:rl_boardelder # speaker:narrator
+  顾收好你随口要催的半句。门内有人问近五年打几场，外面的你听不全，只能等真正核过的人去答。 # beat:rl_two_vacancies_8 # scene:rl_boardroom # cast:rl_boardelder # speaker:narrator
   -> four_three
 * [交齐所问的材料便回练场，约落定再来，不让门口一府人站着也成催促。 # cid:rl_return_to_practice]
   ~ rl_rank_wait = false
-  你回去仍练不静，走到半套停一次。陆没有说照你这些年辛苦必定是你，只陪你等该来的一封。 # beat:rl_two_vacancies_7 # scene:rl_boardroom # cast:rl_boardelder # speaker:narrator
+  你回去仍练不静，走到半套停一次。陆没有说照你这些年辛苦必定是你，只陪你等该来的一封。 # beat:rl_two_vacancies_9 # scene:rl_boardroom # cast:rl_boardelder # speaker:narrator
   -> four_three
 
 === four_three ===
@@ -648,6 +720,30 @@ VAR rl_late = 0
 王爷…… # beat:rl_four_three_5 # scene:rl_board # cast:rl_gu # speaker:rl_gu # mood:rl_gu=uneasy
 今日先别叫。 # beat:rl_four_three_6 # scene:rl_board # cast:rl_gu # speaker:you
 顾停下，与你一起站在人群后。你没有因此变成别的身份，只在这行名字前，终于不必先带一个封号。 # beat:rl_four_three_7 # scene:rl_board # cast:rl_gu # speaker:narrator
+{
+- rl_scribe_plain:
+文河如今自己带新人交班了。他说您当年肯听完他那句不敢，比教十遍都管用。 # beat:rl_four_three_8 # scene:rl_board # cast:rl_gu # speaker:rl_gu # mood:rl_gu=neutral
+- else:
+文河带新人的第一课，就是您亲看的那次交班：漏了时日，重说一遍。 # beat:rl_four_three_9 # scene:rl_board # cast:rl_gu # speaker:rl_gu # mood:rl_gu=neutral
+}
+{
+- rl_each_record:
+各家自己核自己的年月，册子送到老人们手上时，没有一格是王府替人填的。 # beat:rl_four_three_10 # scene:rl_board # cast:rl_gu # speaker:narrator
+- else:
+王府那份交出去后你便没再过问。核回的那一格，是别人按自己的次序翻出来的。 # beat:rl_four_three_11 # scene:rl_board # cast:rl_gu # speaker:narrator
+}
+{
+- rl_letter_check:
+这封回信又是先问人方便。您四十七封那年的规矩，守到今天。 # beat:rl_four_three_12 # scene:rl_board # cast:rl_gu # speaker:rl_gu # mood:rl_gu=neutral
+- else:
+可拒可不回，您回回都写。臣当年那句话，您抄了半辈子。 # beat:rl_four_three_13 # scene:rl_board # cast:rl_gu # speaker:rl_gu # mood:rl_gu=neutral
+}
+{
+- rl_gu_anger:
+当年您把不甘心说给臣听，臣没能接住。今日这一行名字，总算接住了。 # beat:rl_four_three_14 # scene:rl_board # cast:rl_gu # speaker:rl_gu # mood:rl_gu=neutral
+- else:
+当年您写赵晏两字要出门那一夜，臣追出去半条街没敢拦。今日不必再追。 # beat:rl_four_three_15 # scene:rl_board # cast:rl_gu # speaker:rl_gu # mood:rl_gu=neutral
+}
 -> three_readers
 
 === three_readers ===
@@ -655,15 +751,21 @@ VAR rl_late = 0
 收我的做什么？ # beat:rl_three_readers_2 # scene:rl_afterpalace # cast:rl_emperor # speaker:you
 父皇给的王爵，宫里有册。这张没有。 # beat:rl_three_readers_3 # scene:rl_afterpalace # cast:rl_emperor # speaker:rl_emperor # mood:rl_emperor=intent
 你忽然不能接上方才那一长串。{rl_brother_night:兄长拿着榜纸，问还收着当年找回的玉佩没有。你答收着。他便将这张也仔细折好。|兄长看纸许久，问你当年讲的站步，如今还得每日站么。你说仍得站，他点头，才将匣往自己身边移。} # beat:rl_three_readers_4 # scene:rl_afterpalace # cast:rl_emperor # speaker:narrator
+{
+- rl_no_edict:
+出宫那日没有旨意，只有兄长那句「朕帮不了」。如今这张纸，正是从那句话里自己长出来的。 # beat:rl_three_readers_5 # scene:rl_afterpalace # cast:rl_emperor # speaker:narrator
+- else:
+玉佩那夜说完，兄弟间许多旧话都清了。这张榜递进宫时，兄长先看名字，没先看封号。 # beat:rl_three_readers_6 # scene:rl_afterpalace # cast:rl_emperor # speaker:narrator
+}
 * [让他留下这张，回青溪另取一份；想起这一张终于是自己真走过的一段。 # cid:rl_let_brother_keep]
   ~ rl_brother_copy = true
-  你把手收回，兄长把匣盖合上，没说藏进宫里才算它有分量。 # beat:rl_three_readers_5 # scene:rl_afterpalace # cast:rl_emperor # speaker:narrator
+  你把手收回，兄长把匣盖合上，没说藏进宫里才算它有分量。 # beat:rl_three_readers_7 # scene:rl_afterpalace # cast:rl_emperor # speaker:narrator
   -> wife_board
 * [先把谢兄长听自己那些年的话说完，再说明这张宫里留，自己仍要回去练。 # cid:rl_finish_plain_thanks]
   ~ rl_brother_copy = false
-  十二还没坐热，又要走？ # beat:rl_three_readers_6 # scene:rl_afterpalace # cast:rl_emperor # speaker:rl_emperor # mood:rl_emperor=amused
-  正因为坐上了，不能不练。 # beat:rl_three_readers_7 # scene:rl_afterpalace # cast:rl_emperor # speaker:you
-  他笑着摆手，让你回去。 # beat:rl_three_readers_8 # scene:rl_afterpalace # cast:rl_emperor # speaker:narrator
+  十二还没坐热，又要走？ # beat:rl_three_readers_8 # scene:rl_afterpalace # cast:rl_emperor # speaker:rl_emperor # mood:rl_emperor=amused
+  正因为坐上了，不能不练。 # beat:rl_three_readers_9 # scene:rl_afterpalace # cast:rl_emperor # speaker:you
+  他笑着摆手，让你回去。 # beat:rl_three_readers_10 # scene:rl_afterpalace # cast:rl_emperor # speaker:narrator
   -> wife_board
 
 === wife_board ===
@@ -671,22 +773,46 @@ VAR rl_late = 0
 陈扫榜只嗯。你等夸，他说十二个人最后一个吹什么；你脸黑，他才添不过，真进了。 # beat:rl_wife_board_2 # scene:rl2_swordroom # cast:rl2_lu,rl_chen # speaker:narrator
 今日听得见这四个字，就别再叫我换四十个。 # beat:rl_wife_board_3 # scene:rl2_swordroom # cast:rl2_lu,rl_chen # speaker:rl_chen # mood:rl_chen=amused
 三月后你问第十一近来如何，陈闭眼，说我就知道。你辩只了解，他叫滚。陆在旁笑，没替你再找一位能教到第十一的老师。 # beat:rl_wife_board_4 # scene:rl2_swordroom # cast:rl2_lu,rl_chen # speaker:narrator
+{
+- rl_sword_plain:
+门边那柄还在老地方。你练完就放回去，倒比架上这些活得久。 # beat:rl_wife_board_5 # scene:rl2_swordroom # cast:rl2_lu,rl_chen # speaker:rl2_lu # mood:rl2_lu=amused
+- else:
+如今倒肯把用的挂出来了。收了三十年，也该轮着见见光。 # beat:rl_wife_board_6 # scene:rl2_swordroom # cast:rl2_lu,rl_chen # speaker:rl2_lu # mood:rl2_lu=neutral
+}
+{
+- rl_lu_space:
+走圈那块空地还在原处，箱子没再堆回去。你练完才想起来，这地方是她当年一句没提就腾的。 # beat:rl_wife_board_7 # scene:rl2_swordroom # cast:rl2_lu,rl_chen # speaker:narrator
+- else:
+门边的空处如今又宽了些。她仍是那句老话：先歇一下，不用连疼也叫人相信是秘传。 # beat:rl_wife_board_8 # scene:rl2_swordroom # cast:rl2_lu,rl_chen # speaker:narrator
+}
 * [把三年封过的旧册当收藏收好，再同陆看一遍，别因上榜又称从此每门都该补。 # cid:rl_keep_old_boxes]
   ~ rl_late_boxes = true
-  她指玄天闭气那包，你连忙说这一册不在名家收藏里。 # beat:rl_wife_board_5 # scene:rl2_swordroom # cast:rl2_lu,rl_chen # speaker:narrator
-  二十两，也真买过。 # beat:rl_wife_board_6 # scene:rl2_swordroom # cast:rl2_lu,rl_chen # speaker:rl2_lu # mood:rl2_lu=amused
-  你认，仍将那包放回，留着她以后再笑。 # beat:rl_wife_board_7 # scene:rl2_swordroom # cast:rl2_lu,rl_chen # speaker:narrator
+  她指玄天闭气那包，你连忙说这一册不在名家收藏里。 # beat:rl_wife_board_9 # scene:rl2_swordroom # cast:rl2_lu,rl_chen # speaker:narrator
+  二十两，也真买过。 # beat:rl_wife_board_10 # scene:rl2_swordroom # cast:rl2_lu,rl_chen # speaker:rl2_lu # mood:rl2_lu=amused
+  你认，仍将那包放回，留着她以后再笑。 # beat:rl_wife_board_11 # scene:rl2_swordroom # cast:rl2_lu,rl_chen # speaker:narrator
   -> four_on_seat
 * [邀陆听这一版中自己最想讲的一负，自己讲，不再只等她问第十二赢没有。 # cid:rl_share_true_losses]
   ~ rl_late_boxes = false
-  你从前讲买剑能讲半个时辰。今日讲输，也肯这么长了？ # beat:rl_wife_board_8 # scene:rl2_swordroom # cast:rl2_lu,rl_chen # speaker:rl2_lu # mood:rl2_lu=neutral
-  这回你还听么？ # beat:rl_wife_board_9 # scene:rl2_swordroom # cast:rl2_lu,rl_chen # speaker:you
-  听。先坐下，别讲一半又说练剑去。 # beat:rl_wife_board_10 # scene:rl2_swordroom # cast:rl2_lu,rl_chen # speaker:rl2_lu # mood:rl2_lu=amused
+  你从前讲买剑能讲半个时辰。今日讲输，也肯这么长了？ # beat:rl_wife_board_12 # scene:rl2_swordroom # cast:rl2_lu,rl_chen # speaker:rl2_lu # mood:rl2_lu=neutral
+  这回你还听么？ # beat:rl_wife_board_13 # scene:rl2_swordroom # cast:rl2_lu,rl_chen # speaker:you
+  听。先坐下，别讲一半又说练剑去。 # beat:rl_wife_board_14 # scene:rl2_swordroom # cast:rl2_lu,rl_chen # speaker:rl2_lu # mood:rl2_lu=amused
   -> four_on_seat
 
 === four_on_seat ===
 在第十二四年，两守问手，一胜一平；问第十一，败。王府事更重，年龄与旧伤都来，下一小校前，你主动退。 # beat:rl_four_on_seat_1 # scene:rl_public # cast:none # speaker:narrator
 一生正式最高青溪十二手第十二，只一版，没有十一，没有府榜。身上练来的不会随退席一同消失，没做到的也不因别人懂得赞叹便在旧册里长出一行。 # beat:rl_four_on_seat_2 # scene:rl_public # cast:none # speaker:narrator
+{
+- rl_late_boxes:
+封过的旧册照旧当收藏。玄天闭气那包仍在陆的笑柄清单上，谁也没动。 # beat:rl_four_on_seat_3 # scene:rl_public # cast:none # speaker:narrator
+- else:
+讲给陆听的那一负后来又讲过几回。输过的地方，比收着的册子经讲。 # beat:rl_four_on_seat_4 # scene:rl_public # cast:none # speaker:narrator
+}
+{
+- rl_brother_copy:
+宫里那张之外，青溪还另取过一份；一张在兄长处，一张在你自己的旧册里。 # beat:rl_four_on_seat_5 # scene:rl_public # cast:none # speaker:narrator
+- else:
+榜纸只宫里一份，你回青溪时并不觉得少什么。 # beat:rl_four_on_seat_6 # scene:rl_public # cast:none # speaker:narrator
+}
 -> chen_last
 
 === chen_last ===
@@ -697,14 +823,20 @@ VAR rl_late = 0
 老人也笑，喘一阵，说你如今总像练武的人了。 # beat:rl_chen_last_5 # scene:rl_chenroom # cast:rl_chen # speaker:narrator
 以前像找师父的。 # beat:rl_chen_last_6 # scene:rl_chenroom # cast:rl_chen # speaker:rl_chen # mood:rl_chen=amused
 你在床边，没再拿返真与名宿来同这一句较高低。 # beat:rl_chen_last_7 # scene:rl_chenroom # cast:rl_chen # speaker:narrator
-三日后，陈三平去世。封过的谱还在，门边空出的练处也还在；明日脚该落在哪里，再没有他骂一声便能替你先听见。 # beat:rl_chen_last_8 # scene:rl_chenroom # cast:none # speaker:narrator
+{
+- rl_recover_plain:
+这些年你报给他的疼处没有一次是假的，他排的课也就真合你的身体。此刻他喘着，你坐得近，这些年没有一晚是演的。 # beat:rl_chen_last_8 # scene:rl_chenroom # cast:rl_chen # speaker:narrator
+- else:
+你连哪一处阴雨天疼都报过。他闭着眼也知道你今日会先酸的是腕，骂起来一句没偏。 # beat:rl_chen_last_9 # scene:rl_chenroom # cast:rl_chen # speaker:narrator
+}
+三日后，陈三平去世。封过的谱还在，门边空出的练处也还在；明日脚该落在哪里，再没有他骂一声便能替你先听见。 # beat:rl_chen_last_10 # scene:rl_chenroom # cast:none # speaker:narrator
 * [照他教的走完普通短拳，将仍不稳的一步留给自己明日再问，不编他临终暗授绝学。 # cid:rl_keep_chen_question]
   ~ rl_chen_after = true
-  你走，自己停下。{rl_child_step:你把后脚挪回那一点，想起十二岁请孙真碰的那一下；眼前仍得自己重新站。|你将后半套慢慢做完，想起十二岁请孙先别夸的那回；今日没人等着夸，仍要练下去。}陆在门边等你收完，才将水递来。 # beat:rl_chen_last_9 # scene:rl_chenroom # cast:none # speaker:narrator
+  你走，自己停下。{rl_child_step:你把后脚挪回那一点，想起十二岁请孙真碰的那一下；眼前仍得自己重新站。|你将后半套慢慢做完，想起十二岁请孙先别夸的那回；今日没人等着夸，仍要练下去。}陆在门边等你收完，才将水递来。 # beat:rl_chen_last_11 # scene:rl_chenroom # cast:none # speaker:narrator
   -> sun_late
 * [同陈馆里的人说清他教你的那一段，让各自记得的都能留下，不把整间馆改成只供王爷怀念。 # cid:rl_tell_chen_pupils]
   ~ rl_chen_after = false
-  有人说他待孩子没这么凶，你听完笑，又红了眼。对你最准的老师，也有没被你一人看全的一生。 # beat:rl_chen_last_10 # scene:rl_chenroom # cast:none # speaker:narrator
+  有人说他待孩子没这么凶，你听完笑，又红了眼。对你最准的老师，也有没被你一人看全的一生。 # beat:rl_chen_last_12 # scene:rl_chenroom # cast:none # speaker:narrator
   -> sun_late
 
 === sun_late ===
@@ -712,17 +844,23 @@ VAR rl_late = 0
 不错。知道多高了？ # beat:rl_sun_late_2 # scene:rl_oldyard # cast:rl_sun # speaker:rl_sun # mood:rl_sun=amused
 知道一点。第十二。 # beat:rl_sun_late_3 # scene:rl_oldyard # cast:rl_sun # speaker:you
 他笑，你也笑。那晚院门外的孩子，还在你的记忆里，可今日不必再叫另一个孩子跪着回答昨天到底让没让。 # beat:rl_sun_late_4 # scene:rl_oldyard # cast:rl_sun # speaker:narrator
+{
+- rl_chen_after:
+陈教的普通短拳你至今仍走。不稳的那步留到明日，问谁不知道，先问自己。 # beat:rl_sun_late_5 # scene:rl_oldyard # cast:rl_sun # speaker:narrator
+- else:
+陈馆里的人仍照各自的记得说他。你路过练场，有年轻人照他骂人的调子喊你站直，你没治罪，站直了。 # beat:rl_sun_late_6 # scene:rl_oldyard # cast:rl_sun # speaker:narrator
+}
 * [下回看会带一位年轻宗亲，请他先说哪里没看懂，别先问六家谁最强。 # cid:rl_ask_young_to_watch]
   ~ rl_late = 1
-  年轻人问陈什么榜。你答哪张正式榜都没进过，仍是教自己最合适的一个。{rl_boy_space:他要行礼应是，你先把座位挪开，叫他坐着问，不必急着顺你的话。|你停住准备再解释的那一句，让他把尚不懂说完；当年送陪练少年回场时咽过的话，这回仍咽住。} # beat:rl_sun_late_5 # scene:rl_oldyard # cast:rl_sun # speaker:narrator
-  他还不懂，你叫下次到场亲看，不用今日先背一遍就算懂。 # beat:rl_sun_late_6 # scene:rl_oldyard # cast:rl_sun # speaker:narrator
+  年轻人问陈什么榜。你答哪张正式榜都没进过，仍是教自己最合适的一个。{rl_boy_space:他要行礼应是，你先把座位挪开，叫他坐着问，不必急着顺你的话。|你停住准备再解释的那一句，让他把尚不懂说完；当年送陪练少年回场时咽过的话，这回仍咽住。} # beat:rl_sun_late_7 # scene:rl_oldyard # cast:rl_sun # speaker:narrator
+  他还不懂，你叫下次到场亲看，不用今日先背一遍就算懂。 # beat:rl_sun_late_8 # scene:rl_oldyard # cast:rl_sun # speaker:narrator
   -> later_letters
 * [将一场没看明白的问手写信请教，请陆先读自己是否又在求一门新功，而非真问那场。 # cid:rl_write_with_lu]
   ~ rl_late = 2
-  这回没百日大器，也没五百两。 # beat:rl_sun_late_7 # scene:rl_oldyard # cast:rl2_lu,rl_sun # speaker:rl2_lu # mood:rl2_lu=amused
-  你还真逐字找？ # beat:rl_sun_late_8 # scene:rl_oldyard # cast:rl2_lu,rl_sun # speaker:you
-  不找，你又嫌我根本没听。 # beat:rl_sun_late_9 # scene:rl_oldyard # cast:rl2_lu,rl_sun # speaker:rl2_lu # mood:rl2_lu=neutral
-  你把空着那处指给她，她没替你编懂，等你自己把问题写清。 # beat:rl_sun_late_10 # scene:rl_oldyard # cast:rl2_lu,rl_sun # speaker:narrator
+  这回没百日大器，也没五百两。 # beat:rl_sun_late_9 # scene:rl_oldyard # cast:rl2_lu,rl_sun # speaker:rl2_lu # mood:rl2_lu=amused
+  你还真逐字找？ # beat:rl_sun_late_10 # scene:rl_oldyard # cast:rl2_lu,rl_sun # speaker:you
+  不找，你又嫌我根本没听。 # beat:rl_sun_late_11 # scene:rl_oldyard # cast:rl2_lu,rl_sun # speaker:rl2_lu # mood:rl2_lu=neutral
+  你把空着那处指给她，她没替你编懂，等你自己把问题写清。 # beat:rl_sun_late_12 # scene:rl_oldyard # cast:rl2_lu,rl_sun # speaker:narrator
   -> later_letters
 
 === later_letters ===

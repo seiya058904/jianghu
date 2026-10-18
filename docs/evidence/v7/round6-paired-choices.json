@@ -1,0 +1,1556 @@
+[
+ {
+  "work": "taihua",
+  "sourceCID": "th_care",
+  "value": 1,
+  "referenceChoicePath": "th_care#0>th_promise#0>th_tease#0>th_predict_fast#0>th_draw_left#0>th_rush#0>th_admit#0>th_demonstrate#0>th_watch_torn_sleeve#0>th_leave_xie_room#0>th_tray#0>th_no_result#0>th_practice#0>th_read_retreats#0>th_read_unstable#0>th_patience#0>th_credit_shen#0>th_keep_promise#0>th_ask_huo#0>th_name_unknown#0>th_draw_half_distance#0>th_ask_stop#0>th_plain#0>th_keep_four_breaths#0>th_keep_true_stop#0>th_public_question#0>th_show_front_page#0>th_tell_meal_question#0>th_together#0>th_carry#0",
+  "variantChoicePath": "th_ask#1>th_promise#0>th_tease#0>th_predict_fast#0>th_draw_left#0>th_rush#0>th_admit#0>th_demonstrate#0>th_watch_torn_sleeve#0>th_leave_xie_room#0>th_tray#0>th_no_result#0>th_practice#0>th_read_retreats#0>th_read_unstable#0>th_patience#0>th_credit_shen#0>th_keep_promise#0>th_ask_huo#0>th_name_unknown#0>th_draw_half_distance#0>th_ask_stop#0>th_plain#0>th_keep_four_breaths#0>th_keep_true_stop#0>th_public_question#0>th_show_front_page#0>th_tell_meal_question#0>th_together#0>th_carry#0",
+  "firstDivergenceBeat": "th_called_13",
+  "laterBeatIds": [
+   "th_called_13",
+   "th_called_14",
+   "th_called_15",
+   "th_called_16"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "th_called_13",
+    "refText": "(not on ref path)",
+    "varText": "我怕补进去，反而让人觉得你该硬撑上去。"
+   },
+   {
+    "beat": "th_called_14",
+    "refText": "(not on ref path)",
+    "varText": "我的膝盖不是拿你输赢治的。"
+   },
+   {
+    "beat": "th_called_15",
+    "refText": "(not on ref path)",
+    "varText": "他把护腕塞进你手里，却没有替你绑好。"
+   },
+   {
+    "beat": "th_called_16",
+    "refText": "(not on ref path)",
+    "varText": "你打你的。我退了，就是退了。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "th_company",
+  "varEnding": "th_company",
+  "humanReview": "high-value: care 分支改变首夜汇报与护腕回响；promise 改变是否复盘；tease 改变沈照微初见路径（respect_shen 链）",
+  "canonCompatible": true
+ },
+ {
+  "work": "taihua",
+  "sourceCID": "th_promise",
+  "value": 1,
+  "referenceChoicePath": "th_care#0>th_promise#0>th_tease#0>th_predict_fast#0>th_draw_left#0>th_rush#0>th_admit#0>th_demonstrate#0>th_watch_torn_sleeve#0>th_leave_xie_room#0>th_tray#0>th_no_result#0>th_practice#0>th_read_retreats#0>th_read_unstable#0>th_patience#0>th_credit_shen#0>th_keep_promise#0>th_ask_huo#0>th_name_unknown#0>th_draw_half_distance#0>th_ask_stop#0>th_plain#0>th_keep_four_breaths#0>th_keep_true_stop#0>th_public_question#0>th_show_front_page#0>th_tell_meal_question#0>th_together#0>th_carry#0",
+  "variantChoicePath": "th_care#0>th_quiet#1>th_tease#0>th_predict_fast#0>th_draw_left#0>th_rush#0>th_admit#0>th_demonstrate#0>th_watch_torn_sleeve#0>th_leave_xie_room#0>th_tray#0>th_no_result#0>th_practice#0>th_read_retreats#0>th_read_unstable#0>th_patience#0>th_credit_shen#0>th_keep_promise#0>th_ask_huo#0>th_name_unknown#0>th_draw_half_distance#0>th_ask_stop#0>th_plain#0>th_keep_four_breaths#0>th_keep_true_stop#0>th_public_question#0>th_show_front_page#0>th_tell_meal_question#0>th_together#0>th_carry#0",
+  "firstDivergenceBeat": "th_packing_12",
+  "laterBeatIds": [
+   "th_packing_12",
+   "th_packing_13",
+   "th_packing_14",
+   "th_packing_15"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "th_packing_12",
+    "refText": "(not on ref path)",
+    "varText": "我再练到天亮，明日只会多个打哈欠的人。"
+   },
+   {
+    "beat": "th_packing_13",
+    "refText": "(not on ref path)",
+    "varText": "总算有一句像练过二十年的。"
+   },
+   {
+    "beat": "th_packing_14",
+    "refText": "(not on ref path)",
+    "varText": "你吹了灯，黑暗里仍听见师兄解开又绑紧药布的声音。"
+   },
+   {
+    "beat": "th_packing_15",
+    "refText": "(not on ref path)",
+    "varText": "有事叫我。我睡得未必着。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "th_company",
+  "varEnding": "th_company",
+  "humanReview": "high-value: care 分支改变首夜汇报与护腕回响；promise 改变是否复盘；tease 改变沈照微初见路径（respect_shen 链）",
+  "canonCompatible": true
+ },
+ {
+  "work": "taihua",
+  "sourceCID": "th_tease",
+  "value": 1,
+  "referenceChoicePath": "th_care#0>th_promise#0>th_tease#0>th_predict_fast#0>th_draw_left#0>th_rush#0>th_admit#0>th_demonstrate#0>th_watch_torn_sleeve#0>th_leave_xie_room#0>th_tray#0>th_no_result#0>th_practice#0>th_read_retreats#0>th_read_unstable#0>th_patience#0>th_credit_shen#0>th_keep_promise#0>th_ask_huo#0>th_name_unknown#0>th_draw_half_distance#0>th_ask_stop#0>th_plain#0>th_keep_four_breaths#0>th_keep_true_stop#0>th_public_question#0>th_show_front_page#0>th_tell_meal_question#0>th_together#0>th_carry#0",
+  "variantChoicePath": "th_care#0>th_promise#0>th_bow#1>th_predict_fast#0>th_draw_left#0>th_rush#0>th_admit#0>th_demonstrate#0>th_watch_torn_sleeve#0>th_leave_xie_room#0>th_tray#0>th_no_result#0>th_practice#0>th_read_retreats#0>th_read_unstable#0>th_patience#0>th_credit_shen#0>th_keep_promise#0>th_ask_huo#0>th_name_unknown#0>th_draw_half_distance#0>th_ask_stop#0>th_plain#0>th_keep_four_breaths#0>th_keep_true_stop#0>th_public_question#0>th_show_front_page#0>th_tell_meal_question#0>th_together#0>th_carry#0",
+  "firstDivergenceBeat": "th_first_morning_18",
+  "laterBeatIds": [
+   "th_first_morning_18",
+   "th_first_morning_19",
+   "th_first_morning_20",
+   "th_fache_open_1"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "th_first_morning_18",
+    "refText": "(not on ref path)",
+    "varText": "既然进了场，按真本事来。"
+   },
+   {
+    "beat": "th_first_morning_19",
+    "refText": "(not on ref path)",
+    "varText": "好。待会儿你若被绕晕了，也不算我欺负你。"
+   },
+   {
+    "beat": "th_first_morning_20",
+    "refText": "(not on ref path)",
+    "varText": "她把袖口收齐，脚跟却没有停在你预想的那条线上。"
+   },
+   {
+    "beat": "th_fache_open_1",
+    "refText": "第一日上午第一场，少林法彻三十六，对八卦慕容景生三十二。你尚未被叫上场，先把刚捏紧的护腕放松。",
+    "varText": "第一日上午第一场，少林法彻三十六，对八卦慕容景生三十二。你尚未被叫上场，先把刚捏紧的护腕放松。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "th_company",
+  "varEnding": "th_company",
+  "humanReview": "high-value: care 分支改变首夜汇报与护腕回响；promise 改变是否复盘；tease 改变沈照微初见路径（respect_shen 链）",
+  "canonCompatible": true
+ },
+ {
+  "work": "twelfth-life",
+  "sourceCID": "rl_raise_boy",
+  "value": 1,
+  "referenceChoicePath": "rl_raise_boy#0>rl_ask_actual_step#0>rl_choose_working_sword#0>rl_ask_old_records#0>rl_check_letter_roads#0>rl_accept_not_teaching#0>rl_keep_standing_page#0>rl_finish_standing#0>rl_mark_unknown_step#0>rl_circle_one_more#0>rl_thank_space#0>rl_tell_gu_anger#0>rl_explain_silver#0>rl_admit_scam_first#0>rl_ask_chen_limits#0>rl_sort_together#0>rl_keep_plain_defeat#0>rl_keep_opponent_words#0>rl_leave_edict_behind#0>rl_name_xue_gap#0>rl_leave_no_gift#0>rl_tax_ask_family#0>rl_train_rotating_help#0>rl_sit_brother#0>rl_let_scribe_finish#0>rl_accept_current_body#0>rl_keep_watch_word#0>rl_leave_each_record#0>rl_accept_both_lines#0>rl_wait_without_rank_help#0>rl_let_brother_keep#0>rl_keep_old_boxes#0>rl_keep_chen_question#0>rl_ask_young_to_watch#0",
+  "variantChoicePath": "rl_stop_question#1>rl_ask_actual_step#0>rl_choose_working_sword#0>rl_ask_old_records#0>rl_check_letter_roads#0>rl_accept_not_teaching#0>rl_keep_standing_page#0>rl_finish_standing#0>rl_mark_unknown_step#0>rl_circle_one_more#0>rl_thank_space#0>rl_tell_gu_anger#0>rl_explain_silver#0>rl_admit_scam_first#0>rl_ask_chen_limits#0>rl_sort_together#0>rl_keep_plain_defeat#0>rl_keep_opponent_words#0>rl_leave_edict_behind#0>rl_name_xue_gap#0>rl_leave_no_gift#0>rl_tax_ask_family#0>rl_train_rotating_help#0>rl_sit_brother#0>rl_let_scribe_finish#0>rl_accept_current_body#0>rl_keep_watch_word#0>rl_leave_each_record#0>rl_accept_both_lines#0>rl_wait_without_rank_help#0>rl_let_brother_keep#0>rl_keep_old_boxes#0>rl_keep_chen_question#0>rl_ask_young_to_watch#0",
+  "firstDivergenceBeat": "rl_three_wins_9",
+  "laterBeatIds": [
+   "rl_three_wins_9",
+   "rl_three_wins_10",
+   "rl_first_thorn_1",
+   "rl_first_thorn_2"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "rl_three_wins_9",
+    "refText": "(not on ref path)",
+    "varText": "少年退回去时，又行了一礼。你想叫他别行，嘴张开，忽然不知道这句会不会让他更不敢走。"
+   },
+   {
+    "beat": "rl_three_wins_10",
+    "refText": "(not on ref path)",
+    "varText": "孙师傅，昨日那三场，我到底赢了多少？"
+   },
+   {
+    "beat": "rl_first_thorn_1",
+    "refText": "等别人敢打你的时候，你会知道。",
+    "varText": "等别人敢打你的时候，你会知道。"
+   },
+   {
+    "beat": "rl_first_thorn_2",
+    "refText": "你记起九岁讨绝招，他叫先放对左脚；十岁再问，另一只也要先放对。十一岁你学会不问，十二岁反而有更多话不知道该怎样问。",
+    "varText": "你记起九岁讨绝招，他叫先放对左脚；十岁再问，另一只也要先放对。十一岁你学会不问，十二岁反而有更多话不知道该怎样问。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "rl_watch_after",
+  "varEnding": "rl_watch_after",
+  "humanReview": "high-value: raise_boy 12岁处理陪练少年→孙毅回应；ask_actual_step 学法差异贯穿 chen_after；working_sword→sword_plain→after 回响",
+  "canonCompatible": true
+ },
+ {
+  "work": "twelfth-life",
+  "sourceCID": "rl_ask_actual_step",
+  "value": 1,
+  "referenceChoicePath": "rl_raise_boy#0>rl_ask_actual_step#0>rl_choose_working_sword#0>rl_ask_old_records#0>rl_check_letter_roads#0>rl_accept_not_teaching#0>rl_keep_standing_page#0>rl_finish_standing#0>rl_mark_unknown_step#0>rl_circle_one_more#0>rl_thank_space#0>rl_tell_gu_anger#0>rl_explain_silver#0>rl_admit_scam_first#0>rl_ask_chen_limits#0>rl_sort_together#0>rl_keep_plain_defeat#0>rl_keep_opponent_words#0>rl_leave_edict_behind#0>rl_name_xue_gap#0>rl_leave_no_gift#0>rl_tax_ask_family#0>rl_train_rotating_help#0>rl_sit_brother#0>rl_let_scribe_finish#0>rl_accept_current_body#0>rl_keep_watch_word#0>rl_leave_each_record#0>rl_accept_both_lines#0>rl_wait_without_rank_help#0>rl_let_brother_keep#0>rl_keep_old_boxes#0>rl_keep_chen_question#0>rl_ask_young_to_watch#0",
+  "variantChoicePath": "rl_raise_boy#0>rl_repeat_without_praise#1>rl_choose_working_sword#0>rl_ask_old_records#0>rl_check_letter_roads#0>rl_accept_not_teaching#0>rl_keep_standing_page#0>rl_finish_standing#0>rl_mark_unknown_step#0>rl_circle_one_more#0>rl_thank_space#0>rl_tell_gu_anger#0>rl_explain_silver#0>rl_admit_scam_first#0>rl_ask_chen_limits#0>rl_sort_together#0>rl_keep_plain_defeat#0>rl_keep_opponent_words#0>rl_leave_edict_behind#0>rl_name_xue_gap#0>rl_leave_no_gift#0>rl_tax_ask_family#0>rl_train_rotating_help#0>rl_sit_brother#0>rl_let_scribe_finish#0>rl_accept_current_body#0>rl_keep_watch_word#0>rl_leave_each_record#0>rl_accept_both_lines#0>rl_wait_without_rank_help#0>rl_let_brother_keep#0>rl_keep_old_boxes#0>rl_keep_chen_question#0>rl_ask_young_to_watch#0",
+  "firstDivergenceBeat": "rl_first_thorn_7",
+  "laterBeatIds": [
+   "rl_first_thorn_7",
+   "rl_first_thorn_8",
+   "rl_married_swords_1",
+   "rl_married_swords_2"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "rl_first_thorn_7",
+    "refText": "(not on ref path)",
+    "varText": "不夸也得听见。别光等我说错，你便又不肯走。"
+   },
+   {
+    "beat": "rl_first_thorn_8",
+    "refText": "(not on ref path)",
+    "varText": "你脸一热，仍把后半套打完。"
+   },
+   {
+    "beat": "rl_married_swords_1",
+    "refText": "十八岁以后，受封、婚事、王府与庄田渐渐塞满日子。陆清婉嫁来，不习武，却很快认得你每逢兵器铺便慢下来的脚。",
+    "varText": "十八岁以后，受封、婚事、王府与庄田渐渐塞满日子。陆清婉嫁来，不习武，却很快认得你每逢兵器铺便慢下来的脚。"
+   },
+   {
+    "beat": "rl_married_swords_2",
+    "refText": "这柄也没有？",
+    "varText": "这柄也没有？"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "rl_watch_after",
+  "varEnding": "rl_watch_after",
+  "humanReview": "high-value: raise_boy 12岁处理陪练少年→孙毅回应；ask_actual_step 学法差异贯穿 chen_after；working_sword→sword_plain→after 回响",
+  "canonCompatible": true
+ },
+ {
+  "work": "twelfth-life",
+  "sourceCID": "rl_choose_working_sword",
+  "value": 1,
+  "referenceChoicePath": "rl_raise_boy#0>rl_ask_actual_step#0>rl_choose_working_sword#0>rl_ask_old_records#0>rl_check_letter_roads#0>rl_accept_not_teaching#0>rl_keep_standing_page#0>rl_finish_standing#0>rl_mark_unknown_step#0>rl_circle_one_more#0>rl_thank_space#0>rl_tell_gu_anger#0>rl_explain_silver#0>rl_admit_scam_first#0>rl_ask_chen_limits#0>rl_sort_together#0>rl_keep_plain_defeat#0>rl_keep_opponent_words#0>rl_leave_edict_behind#0>rl_name_xue_gap#0>rl_leave_no_gift#0>rl_tax_ask_family#0>rl_train_rotating_help#0>rl_sit_brother#0>rl_let_scribe_finish#0>rl_accept_current_body#0>rl_keep_watch_word#0>rl_leave_each_record#0>rl_accept_both_lines#0>rl_wait_without_rank_help#0>rl_let_brother_keep#0>rl_keep_old_boxes#0>rl_keep_chen_question#0>rl_ask_young_to_watch#0",
+  "variantChoicePath": "rl_raise_boy#0>rl_ask_actual_step#0>rl_show_collection#1>rl_ask_old_records#0>rl_check_letter_roads#0>rl_accept_not_teaching#0>rl_keep_standing_page#0>rl_finish_standing#0>rl_mark_unknown_step#0>rl_circle_one_more#0>rl_thank_space#0>rl_tell_gu_anger#0>rl_explain_silver#0>rl_admit_scam_first#0>rl_ask_chen_limits#0>rl_sort_together#0>rl_keep_plain_defeat#0>rl_keep_opponent_words#0>rl_leave_edict_behind#0>rl_name_xue_gap#0>rl_leave_no_gift#0>rl_tax_ask_family#0>rl_train_rotating_help#0>rl_sit_brother#0>rl_let_scribe_finish#0>rl_accept_current_body#0>rl_keep_watch_word#0>rl_leave_each_record#0>rl_accept_both_lines#0>rl_wait_without_rank_help#0>rl_let_brother_keep#0>rl_keep_old_boxes#0>rl_keep_chen_question#0>rl_ask_young_to_watch#0",
+  "firstDivergenceBeat": "rl_married_swords_11",
+  "laterBeatIds": [
+   "rl_married_swords_11",
+   "rl_married_swords_12",
+   "rl_four_months_1",
+   "rl_four_months_2"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "rl_married_swords_11",
+    "refText": "(not on ref path)",
+    "varText": "你讲。我听。听完别又说今日已同剑待了半个时辰，便算练过。"
+   },
+   {
+    "beat": "rl_married_swords_12",
+    "refText": "(not on ref path)",
+    "varText": "你正要回嘴，看她把门边空处让给你，自己也笑了。"
+   },
+   {
+    "beat": "rl_four_months_1",
+    "refText": "二十二，整整四个月没摸剑。孙只让走基础步，半个时辰，腿便酸。",
+    "varText": "二十二，整整四个月没摸剑。孙只让走基础步，半个时辰，腿便酸。"
+   },
+   {
+    "beat": "rl_four_months_2",
+    "refText": "怎么会？",
+    "varText": "怎么会？"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "rl_watch_after",
+  "varEnding": "rl_watch_after",
+  "humanReview": "high-value: raise_boy 12岁处理陪练少年→孙毅回应；ask_actual_step 学法差异贯穿 chen_after；working_sword→sword_plain→after 回响",
+  "canonCompatible": true
+ },
+ {
+  "work": "jade-thieves",
+  "sourceCID": "jt_be_shen",
+  "value": 1,
+  "referenceChoicePath": "jt_be_shen#0>jt_read_exit#0>jt_work_together#0>jt_give_name#0>jt_watch_pass#0>jt_wait_real#0>jt_change_load#0>jt_share_next_turn#0>jt_bind_sleeve#0>jt_share_bread#0>jt_check_before_asking#0>jt_hold_distance#0>jt_go_by_work#0>jt_polish_lines#0>jt_hide_apprentice#0>jt_share_ordinary#0>jt_clear_other_cart#0>jt_open_inside#0>jt_press_wound#0>jt_take_living_work#0>jt_ask_today_work#0>jt_leave_ordinary#0",
+  "variantChoicePath": "jt_be_jiang#1>jt_read_exit#0>jt_work_together#0>jt_give_name#0>jt_watch_pass#0>jt_wait_real#0>jt_change_load#0>jt_share_next_turn#0>jt_bind_sleeve#0>jt_share_bread#0>jt_check_before_asking#0>jt_hold_distance#0>jt_go_by_work#0>jt_polish_lines#0>jt_hide_apprentice#0>jt_share_ordinary#0>jt_clear_other_cart#0>jt_open_inside#0>jt_press_wound#0>jt_take_living_work#0>jt_ask_today_work#0>jt_leave_ordinary#0",
+  "firstDivergenceBeat": "jt_threshold_4",
+  "laterBeatIds": [
+   "jt_threshold_4",
+   "jt_viewpoint_1",
+   "jt_viewpoint_7",
+   "jt_viewpoint_8"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "jt_threshold_4",
+    "refText": "(not on ref path)",
+    "varText": "你把绳扣压回梁后。地道口刚亮一线，有个人先你一步到了盒边。"
+   },
+   {
+    "beat": "jt_viewpoint_1",
+    "refText": "夜 · 富商庄园密库。两条路在同一只盒子前碰上，谁都没先叫守卫。",
+    "varText": "夜 · 富商庄园密库。两条路在同一只盒子前碰上，谁都没先叫守卫。"
+   },
+   {
+    "beat": "jt_viewpoint_7",
+    "refText": "(not on ref path)",
+    "varText": "你是江十七，家里排行十七，盗门出身。父亲二十年前死于争璧，长辈说皇家杀人、璧本归江湖。你问皇家拿到怎么算，老人竟说算他们偷得好。你信过他的旧事，却一直没学会把这"
+   },
+   {
+    "beat": "jt_viewpoint_8",
+    "refText": "(not on ref path)",
+    "varText": "眼前女子的衣料是常走商会的人才肯花的钱，身法却不肯把背留给你。你不能只看一眼便知道她受谁的命。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "jt_unmarked_life",
+  "varEnding": "jt_unmarked_life",
+  "humanReview": "high-value: 密库/拍卖/追人选择改变信任线",
+  "canonCompatible": true
+ },
+ {
+  "work": "jade-thieves",
+  "sourceCID": "jt_read_exit",
+  "value": 1,
+  "referenceChoicePath": "jt_be_shen#0>jt_read_exit#0>jt_work_together#0>jt_give_name#0>jt_watch_pass#0>jt_wait_real#0>jt_change_load#0>jt_share_next_turn#0>jt_bind_sleeve#0>jt_share_bread#0>jt_check_before_asking#0>jt_hold_distance#0>jt_go_by_work#0>jt_polish_lines#0>jt_hide_apprentice#0>jt_share_ordinary#0>jt_clear_other_cart#0>jt_open_inside#0>jt_press_wound#0>jt_take_living_work#0>jt_ask_today_work#0>jt_leave_ordinary#0",
+  "variantChoicePath": "jt_be_shen#0>jt_read_box#1>jt_work_together#0>jt_give_name#0>jt_watch_pass#0>jt_wait_real#0>jt_change_load#0>jt_share_next_turn#0>jt_bind_sleeve#0>jt_share_bread#0>jt_check_before_asking#0>jt_hold_distance#0>jt_go_by_work#0>jt_polish_lines#0>jt_hide_apprentice#0>jt_share_ordinary#0>jt_clear_other_cart#0>jt_open_inside#0>jt_press_wound#0>jt_take_living_work#0>jt_ask_today_work#0>jt_leave_ordinary#0",
+  "firstDivergenceBeat": "jt_viewpoint_13",
+  "laterBeatIds": [
+   "jt_viewpoint_13",
+   "jt_empty_box_1",
+   "jt_empty_box_2",
+   "jt_empty_box_3"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "jt_viewpoint_13",
+    "refText": "(not on ref path)",
+    "varText": "盒底干净，尘却在旁边留一道浅印。东西确实临时挪过。你省下一回无用的找，侧墙那条路却没细看。"
+   },
+   {
+    "beat": "jt_empty_box_1",
+    "refText": "盒盖开了。空的。真璧临时换过地方，这一趟谁也没拿到。门外靴尖停在砖缝旁，火光从缝里斜进来。",
+    "varText": "盒盖开了。空的。真璧临时换过地方，这一趟谁也没拿到。门外靴尖停在砖缝旁，火光从缝里斜进来。"
+   },
+   {
+    "beat": "jt_empty_box_2",
+    "refText": "空盒也守两个人。这盒子倒比我们有身价。",
+    "varText": "空盒也守两个人。这盒子倒比我们有身价。"
+   },
+   {
+    "beat": "jt_empty_box_3",
+    "refText": "先出去再说。",
+    "varText": "先出去再说。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "jt_unmarked_life",
+  "varEnding": "jt_unmarked_life",
+  "humanReview": "high-value: 密库/拍卖/追人选择改变信任线",
+  "canonCompatible": true
+ },
+ {
+  "work": "jade-thieves",
+  "sourceCID": "jt_work_together",
+  "value": 1,
+  "referenceChoicePath": "jt_be_shen#0>jt_read_exit#0>jt_work_together#0>jt_give_name#0>jt_watch_pass#0>jt_wait_real#0>jt_change_load#0>jt_share_next_turn#0>jt_bind_sleeve#0>jt_share_bread#0>jt_check_before_asking#0>jt_hold_distance#0>jt_go_by_work#0>jt_polish_lines#0>jt_hide_apprentice#0>jt_share_ordinary#0>jt_clear_other_cart#0>jt_open_inside#0>jt_press_wound#0>jt_take_living_work#0>jt_ask_today_work#0>jt_leave_ordinary#0",
+  "variantChoicePath": "jt_be_shen#0>jt_read_exit#0>jt_go_alone#1>jt_give_name#0>jt_watch_pass#0>jt_wait_real#0>jt_change_load#0>jt_share_next_turn#0>jt_bind_sleeve#0>jt_share_bread#0>jt_check_before_asking#0>jt_hold_distance#0>jt_go_by_work#0>jt_polish_lines#0>jt_hide_apprentice#0>jt_share_ordinary#0>jt_clear_other_cart#0>jt_open_inside#0>jt_press_wound#0>jt_take_living_work#0>jt_ask_today_work#0>jt_leave_ordinary#0",
+  "firstDivergenceBeat": "jt_empty_box_11",
+  "laterBeatIds": [
+   "jt_empty_box_11",
+   "jt_empty_box_12",
+   "jt_first_escape_1",
+   "jt_first_escape_2"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "jt_empty_box_11",
+    "refText": "(not on ref path)",
+    "varText": "你先转身走，另一人没追着抓你。出了砖墙，才发现守卫换过班，旧的安静处已有人。你躲在檐下，听见另一侧也有衣摆擦墙。"
+   },
+   {
+    "beat": "jt_empty_box_12",
+    "refText": "(not on ref path)",
+    "varText": "两个人都出来了，却各自留着半条只够自己认的路。"
+   },
+   {
+    "beat": "jt_first_escape_1",
+    "refText": "庄园外墙，远处的席还在摆。墙内有人催明夜开席的杂役搬桌。你们只知道盒子空了，还得在真货上台前找出它被换去了哪里。",
+    "varText": "庄园外墙，远处的席还在摆。墙内有人催明夜开席的杂役搬桌。你们只知道盒子空了，还得在真货上台前找出它被换去了哪里。"
+   },
+   {
+    "beat": "jt_first_escape_2",
+    "refText": "为什么要这东西？",
+    "varText": "为什么要这东西？"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "jt_unmarked_life",
+  "varEnding": "jt_unmarked_life",
+  "humanReview": "high-value: 密库/拍卖/追人选择改变信任线",
+  "canonCompatible": true
+ },
+ {
+  "work": "jade",
+  "sourceCID": "jd_ask_origin",
+  "value": 1,
+  "referenceChoicePath": "jd_ask_origin#0>jd_show_hand#0>jd_sort_old_names#0>jd_send_objects_separate#0>jd_bring_archive#0>jd_answer_pickle#0>jd_keep_surface#0>jd_match_route#0>jd_tell_empty#0>jd_keep_material_record#0>jd_take_duty#0>jd_receive_people#0>jd_finish_shift#0>jd_note_usable#0>jd_copy_use#0>jd_ask_present#0>jd_help_water#0>jd_stay_grain#0>jd_hold_cart_turn#0>jd_keep_people_lane#0>jd_fold_wet_canvas#0>jd_send_grain_status#0>jd_close_local_shift#0>jd_keep_two_witnesses#0>jd_offer_paid_shift#0>jd_choose_storework#0>jd_return_wedding_copy#0>jd_name_best_work#0>jd_keep_old_breaks#0",
+  "variantChoicePath": "jd_offer_price#1>jd_show_hand#0>jd_sort_old_names#0>jd_send_objects_separate#0>jd_bring_archive#0>jd_answer_pickle#0>jd_keep_surface#0>jd_match_route#0>jd_tell_empty#0>jd_keep_material_record#0>jd_take_duty#0>jd_receive_people#0>jd_finish_shift#0>jd_note_usable#0>jd_copy_use#0>jd_ask_present#0>jd_help_water#0>jd_stay_grain#0>jd_hold_cart_turn#0>jd_keep_people_lane#0>jd_fold_wet_canvas#0>jd_send_grain_status#0>jd_close_local_shift#0>jd_keep_two_witnesses#0>jd_offer_paid_shift#0>jd_choose_storework#0>jd_return_wedding_copy#0>jd_name_best_work#0>jd_keep_old_breaks#0",
+  "firstDivergenceBeat": "jd_cat_10",
+  "laterBeatIds": [
+   "jd_cat_10",
+   "jd_cat_11",
+   "jd_cat_12",
+   "jd_thirteen_1"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "jd_cat_10",
+    "refText": "(not on ref path)",
+    "varText": "卖么？我先问价，不白拿你的压缸石。"
+   },
+   {
+    "beat": "jd_cat_11",
+    "refText": "(not on ref path)",
+    "varText": "二十文。"
+   },
+   {
+    "beat": "jd_cat_12",
+    "refText": "(not on ref path)",
+    "varText": "你摸遍衣袋，铜钱只数出十三。何老板望着你的手，已经猜到下一句不是再称两份菜。"
+   },
+   {
+    "beat": "jd_thirteen_1",
+    "refText": "何老板要二十文，你全身十三。你说十三，他说二十，再说十三，他把玉放回缸盖。",
+    "varText": "何老板要二十文，你全身十三。你说十三，他说二十，再说十三，他把玉放回缸盖。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "jd_storework",
+  "varEnding": "jd_storework",
+  "humanReview": "high-value: 粮班/守岗双线决定后日木牌与阿荞回响",
+  "canonCompatible": true
+ },
+ {
+  "work": "jade",
+  "sourceCID": "jd_show_hand",
+  "value": 1,
+  "referenceChoicePath": "jd_ask_origin#0>jd_show_hand#0>jd_sort_old_names#0>jd_send_objects_separate#0>jd_bring_archive#0>jd_answer_pickle#0>jd_keep_surface#0>jd_match_route#0>jd_tell_empty#0>jd_keep_material_record#0>jd_take_duty#0>jd_receive_people#0>jd_finish_shift#0>jd_note_usable#0>jd_copy_use#0>jd_ask_present#0>jd_help_water#0>jd_stay_grain#0>jd_hold_cart_turn#0>jd_keep_people_lane#0>jd_fold_wet_canvas#0>jd_send_grain_status#0>jd_close_local_shift#0>jd_keep_two_witnesses#0>jd_offer_paid_shift#0>jd_choose_storework#0>jd_return_wedding_copy#0>jd_name_best_work#0>jd_keep_old_breaks#0",
+  "variantChoicePath": "jd_ask_origin#0>jd_confirm_names#1>jd_sort_old_names#0>jd_send_objects_separate#0>jd_bring_archive#0>jd_answer_pickle#0>jd_keep_surface#0>jd_match_route#0>jd_tell_empty#0>jd_keep_material_record#0>jd_take_duty#0>jd_receive_people#0>jd_finish_shift#0>jd_note_usable#0>jd_copy_use#0>jd_ask_present#0>jd_help_water#0>jd_stay_grain#0>jd_hold_cart_turn#0>jd_keep_people_lane#0>jd_fold_wet_canvas#0>jd_send_grain_status#0>jd_close_local_shift#0>jd_keep_two_witnesses#0>jd_offer_paid_shift#0>jd_choose_storework#0>jd_return_wedding_copy#0>jd_name_best_work#0>jd_keep_old_breaks#0",
+  "firstDivergenceBeat": "jd_thirteen_11",
+  "laterBeatIds": [
+   "jd_thirteen_11",
+   "jd_thirteen_12",
+   "jd_thirteen_13",
+   "jd_marriage_letter_1"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "jd_thirteen_11",
+    "refText": "(not on ref path)",
+    "varText": "我听过成亲，不知道姑娘名字，不能先替她写一个。"
+   },
+   {
+    "beat": "jd_thirteen_12",
+    "refText": "(not on ref path)",
+    "varText": "这句倒比你夸玉像先生。名字去问我媳妇，别问猫。"
+   },
+   {
+    "beat": "jd_thirteen_13",
+    "refText": "(not on ref path)",
+    "varText": "他收下十三文，把玉交你，婚书仍得由你真写，不是用一句许诺把差额白抹掉。"
+   },
+   {
+    "beat": "jd_marriage_letter_1",
+    "refText": "次日，你先核两家的名字和吉日，把婚书交到何家。回屋又洗三日，盐垢才去。图却越洗越不对：有些河走错，有些位置又准得不像随手刻花。你想的是图，不是绝学。",
+    "varText": "次日，你先核两家的名字和吉日，把婚书交到何家。回屋又洗三日，盐垢才去。图却越洗越不对：有些河走错，有些位置又准得不像随手刻花。你想的是图，不是绝学。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "jd_storework",
+  "varEnding": "jd_storework",
+  "humanReview": "high-value: 粮班/守岗双线决定后日木牌与阿荞回响",
+  "canonCompatible": true
+ },
+ {
+  "work": "jade",
+  "sourceCID": "jd_sort_old_names",
+  "value": 1,
+  "referenceChoicePath": "jd_ask_origin#0>jd_show_hand#0>jd_sort_old_names#0>jd_send_objects_separate#0>jd_bring_archive#0>jd_answer_pickle#0>jd_keep_surface#0>jd_match_route#0>jd_tell_empty#0>jd_keep_material_record#0>jd_take_duty#0>jd_receive_people#0>jd_finish_shift#0>jd_note_usable#0>jd_copy_use#0>jd_ask_present#0>jd_help_water#0>jd_stay_grain#0>jd_hold_cart_turn#0>jd_keep_people_lane#0>jd_fold_wet_canvas#0>jd_send_grain_status#0>jd_close_local_shift#0>jd_keep_two_witnesses#0>jd_offer_paid_shift#0>jd_choose_storework#0>jd_return_wedding_copy#0>jd_name_best_work#0>jd_keep_old_breaks#0",
+  "variantChoicePath": "jd_ask_origin#0>jd_show_hand#0>jd_follow_repair#1>jd_send_objects_separate#0>jd_bring_archive#0>jd_answer_pickle#0>jd_keep_surface#0>jd_match_route#0>jd_tell_empty#0>jd_keep_material_record#0>jd_take_duty#0>jd_receive_people#0>jd_finish_shift#0>jd_note_usable#0>jd_copy_use#0>jd_ask_present#0>jd_help_water#0>jd_stay_grain#0>jd_hold_cart_turn#0>jd_keep_people_lane#0>jd_fold_wet_canvas#0>jd_send_grain_status#0>jd_close_local_shift#0>jd_keep_two_witnesses#0>jd_offer_paid_shift#0>jd_choose_storework#0>jd_return_wedding_copy#0>jd_name_best_work#0>jd_keep_old_breaks#0",
+  "firstDivergenceBeat": "jd_marriage_letter_8",
+  "laterBeatIds": [
+   "jd_marriage_letter_8",
+   "jd_marriage_letter_9",
+   "jd_half_year_1",
+   "jd_half_year_2"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "jd_marriage_letter_8",
+    "refText": "(not on ref path)",
+    "varText": "修补信给了一个真物的痕，不给全部用途。堂兄把旧物清册找来，让你逐条对，不拿像那个角便说每条传闻都真。"
+   },
+   {
+    "beat": "jd_marriage_letter_9",
+    "refText": "(not on ref path)",
+    "varText": "找到你这块以前，何老板的婚书倒是我们手里最像完整来历的东西。"
+   },
+   {
+    "beat": "jd_half_year_1",
+    "refText": "半年，残破内府抄件终于翻出九库总验、山河璧一，下面还有璧半、册半。你一夜没睡，天亮还要去叫堂兄，他先把你推回凳上。",
+    "varText": "半年，残破内府抄件终于翻出九库总验、山河璧一，下面还有璧半、册半。你一夜没睡，天亮还要去叫堂兄，他先把你推回凳上。"
+   },
+   {
+    "beat": "jd_half_year_2",
+    "refText": "先坐。你想拿着它去敲谁的门？",
+    "varText": "先坐。你想拿着它去敲谁的门？"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "jd_storework",
+  "varEnding": "jd_storework",
+  "humanReview": "high-value: 粮班/守岗双线决定后日木牌与阿荞回响",
+  "canonCompatible": true
+ },
+ {
+  "work": "qingshi",
+  "sourceCID": "qs_admit_ribs",
+  "value": 1,
+  "referenceChoicePath": "qs_admit_ribs#0>qs_ask_stand#0>qs_chen_teach#0>qs_han_letter#0>qs_song_words#0>qs_zhao_home#0>qs_pay_wine#0>qs_ask_real_list#0>qs_rest_leg#0>qs_repeat_wait#0>qs_admit_blind#0>qs_return_each#0>qs_rehearse_exit#0>qs_watch_shields#0>qs_call_oldman#0>qs_ask_young_wei#0>qs_finish_chop#0>qs_cut_copy#0>qs_keep_class#0>qs_plan_carriage#0>qs_pay_driver#0>qs_home_accounts#0>qs_walk_defense#0>qs_runner_repeat#0>qs_count_living#0>qs_share_limit#0>qs_send_record#0>qs_name_four#0>qs_call_gate#0>qs_epilogue_roll#0",
+  "variantChoicePath": "qs_hide_ribs#1>qs_ask_stand#0>qs_chen_teach#0>qs_han_letter#0>qs_song_words#0>qs_zhao_home#0>qs_pay_wine#0>qs_ask_real_list#0>qs_rest_leg#0>qs_repeat_wait#0>qs_admit_blind#0>qs_return_each#0>qs_rehearse_exit#0>qs_watch_shields#0>qs_call_oldman#0>qs_ask_young_wei#0>qs_finish_chop#0>qs_cut_copy#0>qs_keep_class#0>qs_plan_carriage#0>qs_pay_driver#0>qs_home_accounts#0>qs_walk_defense#0>qs_runner_repeat#0>qs_count_living#0>qs_share_limit#0>qs_send_record#0>qs_name_four#0>qs_call_gate#0>qs_epilogue_roll#0",
+  "firstDivergenceBeat": "qs_grain_10",
+  "laterBeatIds": [
+   "qs_grain_10",
+   "qs_grain_11",
+   "qs_grain_12",
+   "qs_feng_1"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "qs_grain_10",
+    "refText": "(not on ref path)",
+    "varText": "只是粮扛多了。"
+   },
+   {
+    "beat": "qs_grain_11",
+    "refText": "(not on ref path)",
+    "varText": "粮袋长拳头了？"
+   },
+   {
+    "beat": "qs_grain_12",
+    "refText": "(not on ref path)",
+    "varText": "陈虎把你的碗往身前推近一点，没再追问；韩小七给你夹菜时，偏偏先夹最大的一块。"
+   },
+   {
+    "beat": "qs_feng_1",
+    "refText": "旧事 · 十四岁。你曾抱着一袋粟站在冯老六门前，父亲提两只鸡，还答应替他修半间漏雨的屋顶。",
+    "varText": "旧事 · 十四岁。你曾抱着一袋粟站在冯老六门前，父亲提两只鸡，还答应替他修半间漏雨的屋顶。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "qs_records",
+  "varEnding": "qs_records",
+  "humanReview": "high-value: 少年承诺链(chen_teach 等)决定 92 岁旧刀分支 qs_chen_word",
+  "canonCompatible": true
+ },
+ {
+  "work": "qingshi",
+  "sourceCID": "qs_ask_stand",
+  "value": 1,
+  "referenceChoicePath": "qs_admit_ribs#0>qs_ask_stand#0>qs_chen_teach#0>qs_han_letter#0>qs_song_words#0>qs_zhao_home#0>qs_pay_wine#0>qs_ask_real_list#0>qs_rest_leg#0>qs_repeat_wait#0>qs_admit_blind#0>qs_return_each#0>qs_rehearse_exit#0>qs_watch_shields#0>qs_call_oldman#0>qs_ask_young_wei#0>qs_finish_chop#0>qs_cut_copy#0>qs_keep_class#0>qs_plan_carriage#0>qs_pay_driver#0>qs_home_accounts#0>qs_walk_defense#0>qs_runner_repeat#0>qs_count_living#0>qs_share_limit#0>qs_send_record#0>qs_name_four#0>qs_call_gate#0>qs_epilogue_roll#0",
+  "variantChoicePath": "qs_admit_ribs#0>qs_ask_branch#1>qs_chen_teach#0>qs_han_letter#0>qs_song_words#0>qs_zhao_home#0>qs_pay_wine#0>qs_ask_real_list#0>qs_rest_leg#0>qs_repeat_wait#0>qs_admit_blind#0>qs_return_each#0>qs_rehearse_exit#0>qs_watch_shields#0>qs_call_oldman#0>qs_ask_young_wei#0>qs_finish_chop#0>qs_cut_copy#0>qs_keep_class#0>qs_plan_carriage#0>qs_pay_driver#0>qs_home_accounts#0>qs_walk_defense#0>qs_runner_repeat#0>qs_count_living#0>qs_share_limit#0>qs_send_record#0>qs_name_four#0>qs_call_gate#0>qs_epilogue_roll#0",
+  "firstDivergenceBeat": "qs_feng_11",
+  "laterBeatIds": [
+   "qs_feng_11",
+   "qs_feng_12",
+   "qs_feng_13",
+   "qs_feng_14"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "qs_feng_11",
+    "refText": "(not on ref path)",
+    "varText": "你找他，还是找我？"
+   },
+   {
+    "beat": "qs_feng_12",
+    "refText": "(not on ref path)",
+    "varText": "找您。他赶路去了。"
+   },
+   {
+    "beat": "qs_feng_13",
+    "refText": "(not on ref path)",
+    "varText": "那就别叫我一天赶完他二十年的路。起来。"
+   },
+   {
+    "beat": "qs_feng_14",
+    "refText": "(not on ref path)",
+    "varText": "你还是得从地上站起，才有机会再问。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "qs_records",
+  "varEnding": "qs_records",
+  "humanReview": "high-value: 少年承诺链(chen_teach 等)决定 92 岁旧刀分支 qs_chen_word",
+  "canonCompatible": true
+ },
+ {
+  "work": "qingshi",
+  "sourceCID": "qs_chen_teach",
+  "value": 1,
+  "referenceChoicePath": "qs_admit_ribs#0>qs_ask_stand#0>qs_chen_teach#0>qs_han_letter#0>qs_song_words#0>qs_zhao_home#0>qs_pay_wine#0>qs_ask_real_list#0>qs_rest_leg#0>qs_repeat_wait#0>qs_admit_blind#0>qs_return_each#0>qs_rehearse_exit#0>qs_watch_shields#0>qs_call_oldman#0>qs_ask_young_wei#0>qs_finish_chop#0>qs_cut_copy#0>qs_keep_class#0>qs_plan_carriage#0>qs_pay_driver#0>qs_home_accounts#0>qs_walk_defense#0>qs_runner_repeat#0>qs_count_living#0>qs_share_limit#0>qs_send_record#0>qs_name_four#0>qs_call_gate#0>qs_epilogue_roll#0",
+  "variantChoicePath": "qs_admit_ribs#0>qs_ask_stand#0>qs_chen_build#1>qs_han_letter#0>qs_song_words#0>qs_zhao_home#0>qs_pay_wine#0>qs_ask_real_list#0>qs_rest_leg#0>qs_repeat_wait#0>qs_admit_blind#0>qs_return_each#0>qs_rehearse_exit#0>qs_watch_shields#0>qs_call_oldman#0>qs_ask_young_wei#0>qs_finish_chop#0>qs_cut_copy#0>qs_keep_class#0>qs_plan_carriage#0>qs_pay_driver#0>qs_home_accounts#0>qs_walk_defense#0>qs_runner_repeat#0>qs_count_living#0>qs_share_limit#0>qs_send_record#0>qs_name_four#0>qs_call_gate#0>qs_epilogue_roll#0",
+  "firstDivergenceBeat": "qs_wall_10",
+  "laterBeatIds": [
+   "qs_wall_10",
+   "qs_wall_11",
+   "qs_wall_12",
+   "qs_han_promise_1"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "qs_wall_10",
+    "refText": "(not on ref path)",
+    "varText": "门板我会抬，起手未必教得好。先答应修门。"
+   },
+   {
+    "beat": "qs_wall_11",
+    "refText": "(not on ref path)",
+    "varText": "成，门得耐踢。穷人家学徒可不能一来先赔门钱。"
+   },
+   {
+    "beat": "qs_wall_12",
+    "refText": "(not on ref path)",
+    "varText": "你们各用脚量了一步，韩小七说馆还没开，脚印倒先欠了仓东家一院。"
+   },
+   {
+    "beat": "qs_han_promise_1",
+    "refText": "你们守馆，我走镖。一路走到京城。",
+    "varText": "你们守馆，我走镖。一路走到京城。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "qs_records",
+  "varEnding": "qs_records",
+  "humanReview": "high-value: 少年承诺链(chen_teach 等)决定 92 岁旧刀分支 qs_chen_word",
+  "canonCompatible": true
+ },
+ {
+  "work": "dead-ranking",
+  "sourceCID": "dr_ask_letter_hand",
+  "value": 1,
+  "referenceChoicePath": "dr_ask_letter_hand#0>dr_pickup_training#0>dr_liang_private#0>dr_borrow_chase#0>dr_keep_claim_separate#0>dr_watch_actual_person#0>dr_turn_small#0>dr_ask_reopen_plain#0>dr_ask_actual_test#0>dr_wait_until_land#0>dr_leave_visit_time#0>dr_ask_zhao_direct#0>dr_ask_each_responsibility#0>dr_keep_two_accounts#0>dr_tell_three_first#0>dr_face_one_by_one#0>dr_face_let_askers_in#0>dr_face_write_own_words#0>dr_ask_each_seen#0>dr_ask_old_workers#0>dr_wait_for_gu#0>dr_ask_own_words#0>dr_follow_land_money#0>dr_ask_knowledge_not_seizure#0>dr_eyes_zhou#0>dr_zhou_read_whole#0>dr_zhou_leave_space#0>dr_read_names_to_people#0>dr_tell_life_with_limits#0>dr_give_unfinished_letter#0>dr_keep_wudeng_name#0>dr_career_teach#0>dr_room_let_next_answer#0",
+  "variantChoicePath": "dr_ask_old_visit#1>dr_pickup_training#0>dr_liang_private#0>dr_borrow_chase#0>dr_keep_claim_separate#0>dr_watch_actual_person#0>dr_turn_small#0>dr_ask_reopen_plain#0>dr_ask_actual_test#0>dr_wait_until_land#0>dr_leave_visit_time#0>dr_ask_zhao_direct#0>dr_ask_each_responsibility#0>dr_keep_two_accounts#0>dr_tell_three_first#0>dr_face_one_by_one#0>dr_face_let_askers_in#0>dr_face_write_own_words#0>dr_ask_each_seen#0>dr_ask_old_workers#0>dr_wait_for_gu#0>dr_ask_own_words#0>dr_follow_land_money#0>dr_ask_knowledge_not_seizure#0>dr_eyes_zhou#0>dr_zhou_read_whole#0>dr_zhou_leave_space#0>dr_read_names_to_people#0>dr_tell_life_with_limits#0>dr_give_unfinished_letter#0>dr_keep_wudeng_name#0>dr_career_teach#0>dr_room_let_next_answer#0",
+  "firstDivergenceBeat": "dr_dead_letter_11",
+  "laterBeatIds": [
+   "dr_dead_letter_11",
+   "dr_dead_letter_12",
+   "dr_old_dream_1",
+   "dr_old_dream_2"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "dr_dead_letter_11",
+    "refText": "(not on ref path)",
+    "varText": "四十四，年轻得很。气得骂完要我迟早往前写，一个月后白水渡便出事。"
+   },
+   {
+    "beat": "dr_dead_letter_12",
+    "refText": "(not on ref path)",
+    "varText": "你记下他的怒，不把生气当杀人证据。徒弟替你压住将卷起的一角，终于没再急着留座。"
+   },
+   {
+    "beat": "dr_old_dream_1",
+    "refText": "你也有过争榜的时候。十七初到榜房抄字，二十陆教你编榜；那时学剑不坏，却被一个四十多的药商三十七招胜，回去三个月，再问六十一，仍败。",
+    "varText": "你也有过争榜的时候。十七初到榜房抄字，二十陆教你编榜；那时学剑不坏，却被一个四十多的药商三十七招胜，回去三个月，再问六十一，仍败。"
+   },
+   {
+    "beat": "dr_old_dream_2",
+    "refText": "第三次想去，人已急病死。你再也不知道以后能不能赢，来这里抄、查、跟老人出门，真正核战绩已十六年。武功没丢，只不再真争。",
+    "varText": "第三次想去，人已急病死。你再也不知道以后能不能赢，来这里抄、查、跟老人出门，真正核战绩已十六年。武功没丢，只不再真争。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "dr_room_after",
+  "varEnding": "dr_room_after",
+  "humanReview": "high-value: face_alone/askers/recorded 改变记载与九月议程",
+  "canonCompatible": true
+ },
+ {
+  "work": "dead-ranking",
+  "sourceCID": "dr_pickup_training",
+  "value": 1,
+  "referenceChoicePath": "dr_ask_letter_hand#0>dr_pickup_training#0>dr_liang_private#0>dr_borrow_chase#0>dr_keep_claim_separate#0>dr_watch_actual_person#0>dr_turn_small#0>dr_ask_reopen_plain#0>dr_ask_actual_test#0>dr_wait_until_land#0>dr_leave_visit_time#0>dr_ask_zhao_direct#0>dr_ask_each_responsibility#0>dr_keep_two_accounts#0>dr_tell_three_first#0>dr_face_one_by_one#0>dr_face_let_askers_in#0>dr_face_write_own_words#0>dr_ask_each_seen#0>dr_ask_old_workers#0>dr_wait_for_gu#0>dr_ask_own_words#0>dr_follow_land_money#0>dr_ask_knowledge_not_seizure#0>dr_eyes_zhou#0>dr_zhou_read_whole#0>dr_zhou_leave_space#0>dr_read_names_to_people#0>dr_tell_life_with_limits#0>dr_give_unfinished_letter#0>dr_keep_wudeng_name#0>dr_career_teach#0>dr_room_let_next_answer#0",
+  "variantChoicePath": "dr_ask_letter_hand#0>dr_show_old_loss#1>dr_liang_private#0>dr_borrow_chase#0>dr_keep_claim_separate#0>dr_watch_actual_person#0>dr_turn_small#0>dr_ask_reopen_plain#0>dr_ask_actual_test#0>dr_wait_until_land#0>dr_leave_visit_time#0>dr_ask_zhao_direct#0>dr_ask_each_responsibility#0>dr_keep_two_accounts#0>dr_tell_three_first#0>dr_face_one_by_one#0>dr_face_let_askers_in#0>dr_face_write_own_words#0>dr_ask_each_seen#0>dr_ask_old_workers#0>dr_wait_for_gu#0>dr_ask_own_words#0>dr_follow_land_money#0>dr_ask_knowledge_not_seizure#0>dr_eyes_zhou#0>dr_zhou_read_whole#0>dr_zhou_leave_space#0>dr_read_names_to_people#0>dr_tell_life_with_limits#0>dr_give_unfinished_letter#0>dr_keep_wudeng_name#0>dr_career_teach#0>dr_room_let_next_answer#0",
+  "firstDivergenceBeat": "dr_old_dream_11",
+  "laterBeatIds": [
+   "dr_old_dream_11",
+   "dr_old_dream_12",
+   "dr_liang_house_1",
+   "dr_liang_house_2"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "dr_old_dream_11",
+    "refText": "(not on ref path)",
+    "varText": "你走到六十一招常停的位置，仍找不出一个能叫死去的人照样回答的下一步。徒弟没再替你说今日一定能赢，只问刚才怎么换。"
+   },
+   {
+    "beat": "dr_old_dream_12",
+    "refText": "(not on ref path)",
+    "varText": "来，你真接一次。"
+   },
+   {
+    "beat": "dr_liang_house_1",
+    "refText": "来信十九日后，江汉第二十一断江掌梁启山夜约出城，清晨回，右臂肿得抬不起来。你上门，他先看一眼门外弟子，才亲口说输了，谢藏锋。",
+    "varText": "来信十九日后，江汉第二十一断江掌梁启山夜约出城，清晨回，右臂肿得抬不起来。你上门，他先看一眼门外弟子，才亲口说输了，谢藏锋。"
+   },
+   {
+    "beat": "dr_liang_house_2",
+    "refText": "看清脸？",
+    "varText": "看清脸？"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "dr_room_after",
+  "varEnding": "dr_room_after",
+  "humanReview": "high-value: face_alone/askers/recorded 改变记载与九月议程",
+  "canonCompatible": true
+ },
+ {
+  "work": "dead-ranking",
+  "sourceCID": "dr_liang_private",
+  "value": 1,
+  "referenceChoicePath": "dr_ask_letter_hand#0>dr_pickup_training#0>dr_liang_private#0>dr_borrow_chase#0>dr_keep_claim_separate#0>dr_watch_actual_person#0>dr_turn_small#0>dr_ask_reopen_plain#0>dr_ask_actual_test#0>dr_wait_until_land#0>dr_leave_visit_time#0>dr_ask_zhao_direct#0>dr_ask_each_responsibility#0>dr_keep_two_accounts#0>dr_tell_three_first#0>dr_face_one_by_one#0>dr_face_let_askers_in#0>dr_face_write_own_words#0>dr_ask_each_seen#0>dr_ask_old_workers#0>dr_wait_for_gu#0>dr_ask_own_words#0>dr_follow_land_money#0>dr_ask_knowledge_not_seizure#0>dr_eyes_zhou#0>dr_zhou_read_whole#0>dr_zhou_leave_space#0>dr_read_names_to_people#0>dr_tell_life_with_limits#0>dr_give_unfinished_letter#0>dr_keep_wudeng_name#0>dr_career_teach#0>dr_room_let_next_answer#0",
+  "variantChoicePath": "dr_ask_letter_hand#0>dr_pickup_training#0>dr_liang_open#1>dr_borrow_chase#0>dr_keep_claim_separate#0>dr_watch_actual_person#0>dr_turn_small#0>dr_ask_reopen_plain#0>dr_ask_actual_test#0>dr_wait_until_land#0>dr_leave_visit_time#0>dr_ask_zhao_direct#0>dr_ask_each_responsibility#0>dr_keep_two_accounts#0>dr_tell_three_first#0>dr_face_one_by_one#0>dr_face_let_askers_in#0>dr_face_write_own_words#0>dr_ask_each_seen#0>dr_ask_old_workers#0>dr_wait_for_gu#0>dr_ask_own_words#0>dr_follow_land_money#0>dr_ask_knowledge_not_seizure#0>dr_eyes_zhou#0>dr_zhou_read_whole#0>dr_zhou_leave_space#0>dr_read_names_to_people#0>dr_tell_life_with_limits#0>dr_give_unfinished_letter#0>dr_keep_wudeng_name#0>dr_career_teach#0>dr_room_let_next_answer#0",
+  "firstDivergenceBeat": "dr_liang_house_9",
+  "laterBeatIds": [
+   "dr_liang_house_9",
+   "dr_liang_house_10",
+   "dr_liang_house_11",
+   "dr_liang_memory_1"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "dr_liang_house_9",
+    "refText": "(not on ref path)",
+    "varText": "弟子在旁认过位置，口述不再只压在你一支笔里。消息也传得快，城里第二日便有人笑梁败给死人。"
+   },
+   {
+    "beat": "dr_liang_house_10",
+    "refText": "(not on ref path)",
+    "varText": "我说给能核的人，不是给他们说书的。"
+   },
+   {
+    "beat": "dr_liang_house_11",
+    "refText": "(not on ref path)",
+    "varText": "你没有为公开便能核得快，就说他该把那些笑也一起受了。"
+   },
+   {
+    "beat": "dr_liang_memory_1",
+    "refText": "这里暂借梁的口述回到城外。你是那名自称谢藏锋的持剑者；脸仍未被看清，梁记得的只够复原他眼前这一段，不是周砚忽然亲历当夜。",
+    "varText": "这里暂借梁的口述回到城外。你是那名自称谢藏锋的持剑者；脸仍未被看清，梁记得的只够复原他眼前这一段，不是周砚忽然亲历当夜。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "dr_room_after",
+  "varEnding": "dr_room_after",
+  "humanReview": "high-value: face_alone/askers/recorded 改变记载与九月议程",
+  "canonCompatible": true
+ },
+ {
+  "work": "longmen",
+  "sourceCID": "lm_ask_use",
+  "value": 1,
+  "referenceChoicePath": "lm_ask_use#0>lm_ask_wound#0>lm_ask_qinghe_friend#0>lm_old_watch_foot#0>lm_old_close_elbow#0>lm_old_ask_twenty#0>lm_practice_slow#0>lm_route_school#0>lm_show_lane#0>lm_stop_mock#0>lm_name_loss#0>lm_share_frame#0>lm_guard_line#0>lm_return_sword#0>lm_correct_label#0>lm_offer_water#0>lm_help_sheath#0>lm_ask_first#0>lm_night_foot#0>lm_he_ask_remaining#0>lm_repeat_with_push#0>lm_travel_choice#0>lm_keep_record#0",
+  "variantChoicePath": "lm_try_first#1>lm_ask_wound#0>lm_ask_qinghe_friend#0>lm_old_watch_foot#0>lm_old_close_elbow#0>lm_old_ask_twenty#0>lm_practice_slow#0>lm_route_school#0>lm_show_lane#0>lm_stop_mock#0>lm_name_loss#0>lm_share_frame#0>lm_guard_line#0>lm_return_sword#0>lm_correct_label#0>lm_offer_water#0>lm_help_sheath#0>lm_ask_first#0>lm_night_foot#0>lm_he_ask_remaining#0>lm_repeat_with_push#0>lm_travel_choice#0>lm_keep_record#0",
+  "firstDivergenceBeat": "lm_borrow_8",
+  "laterBeatIds": [
+   "lm_borrow_8",
+   "lm_borrow_9",
+   "lm_borrow_10",
+   "lm_old_blade_1"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "lm_borrow_8",
+    "refText": "(not on ref path)",
+    "varText": "我说不清，先试。若柱子是个人，我想逼他退。"
+   },
+   {
+    "beat": "lm_borrow_9",
+    "refText": "(not on ref path)",
+    "varText": "你连着劈出，木刀收不住，差点带着右脚撞柱。"
+   },
+   {
+    "beat": "lm_borrow_10",
+    "refText": "(not on ref path)",
+    "varText": "人会走。柱子今日倒让你省了一场输。"
+   },
+   {
+    "beat": "lm_old_blade_1",
+    "refText": "许重山把你刀背按低，目光转向墙上那把旧刀。他说自己十四岁，也只会把十七刀接得响。",
+    "varText": "许重山把你刀背按低，目光转向墙上那把旧刀。他说自己十四岁，也只会把十七刀接得响。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "lm_travel",
+  "varEnding": "lm_travel",
+  "humanReview": "high-value: future=1/2 决定结尾复手或留馆",
+  "canonCompatible": true
+ },
+ {
+  "work": "longmen",
+  "sourceCID": "lm_ask_wound",
+  "value": 1,
+  "referenceChoicePath": "lm_ask_use#0>lm_ask_wound#0>lm_ask_qinghe_friend#0>lm_old_watch_foot#0>lm_old_close_elbow#0>lm_old_ask_twenty#0>lm_practice_slow#0>lm_route_school#0>lm_show_lane#0>lm_stop_mock#0>lm_name_loss#0>lm_share_frame#0>lm_guard_line#0>lm_return_sword#0>lm_correct_label#0>lm_offer_water#0>lm_help_sheath#0>lm_ask_first#0>lm_night_foot#0>lm_he_ask_remaining#0>lm_repeat_with_push#0>lm_travel_choice#0>lm_keep_record#0",
+  "variantChoicePath": "lm_ask_use#0>lm_ask_left#1>lm_ask_qinghe_friend#0>lm_old_watch_foot#0>lm_old_close_elbow#0>lm_old_ask_twenty#0>lm_practice_slow#0>lm_route_school#0>lm_show_lane#0>lm_stop_mock#0>lm_name_loss#0>lm_share_frame#0>lm_guard_line#0>lm_return_sword#0>lm_correct_label#0>lm_offer_water#0>lm_help_sheath#0>lm_ask_first#0>lm_night_foot#0>lm_he_ask_remaining#0>lm_repeat_with_push#0>lm_travel_choice#0>lm_keep_record#0",
+  "firstDivergenceBeat": "lm_old_blade_13",
+  "laterBeatIds": [
+   "lm_old_blade_13",
+   "lm_old_blade_14",
+   "lm_old_blade_15",
+   "lm_qinghe_1"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "lm_old_blade_13",
+    "refText": "(not on ref path)",
+    "varText": "第六十一合胜杜平川那一下，我想学。"
+   },
+   {
+    "beat": "lm_old_blade_14",
+    "refText": "(not on ref path)",
+    "varText": "你想学换左手，还是想学临时还能怎么走？"
+   },
+   {
+    "beat": "lm_old_blade_15",
+    "refText": "(not on ref path)",
+    "varText": "他把木刀交到你左手。你连第一刀都走不顺，那一下胜场忽然离得很远。"
+   },
+   {
+    "beat": "lm_qinghe_1",
+    "refText": "去年清和道人来，看宋老旧居，不是来替我出名。",
+    "varText": "去年清和道人来，看宋老旧居，不是来替我出名。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "lm_travel",
+  "varEnding": "lm_travel",
+  "humanReview": "high-value: future=1/2 决定结尾复手或留馆",
+  "canonCompatible": true
+ },
+ {
+  "work": "longmen",
+  "sourceCID": "lm_ask_qinghe_friend",
+  "value": 1,
+  "referenceChoicePath": "lm_ask_use#0>lm_ask_wound#0>lm_ask_qinghe_friend#0>lm_old_watch_foot#0>lm_old_close_elbow#0>lm_old_ask_twenty#0>lm_practice_slow#0>lm_route_school#0>lm_show_lane#0>lm_stop_mock#0>lm_name_loss#0>lm_share_frame#0>lm_guard_line#0>lm_return_sword#0>lm_correct_label#0>lm_offer_water#0>lm_help_sheath#0>lm_ask_first#0>lm_night_foot#0>lm_he_ask_remaining#0>lm_repeat_with_push#0>lm_travel_choice#0>lm_keep_record#0",
+  "variantChoicePath": "lm_ask_use#0>lm_ask_wound#0>lm_ask_qinghe_ninth#1>lm_old_watch_foot#0>lm_old_close_elbow#0>lm_old_ask_twenty#0>lm_practice_slow#0>lm_route_school#0>lm_show_lane#0>lm_stop_mock#0>lm_name_loss#0>lm_share_frame#0>lm_guard_line#0>lm_return_sword#0>lm_correct_label#0>lm_offer_water#0>lm_help_sheath#0>lm_ask_first#0>lm_night_foot#0>lm_he_ask_remaining#0>lm_repeat_with_push#0>lm_travel_choice#0>lm_keep_record#0",
+  "firstDivergenceBeat": "lm_qinghe_10",
+  "laterBeatIds": [
+   "lm_qinghe_10",
+   "lm_qinghe_11",
+   "lm_qinghe_12",
+   "lm_qinghe_yard_1"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "lm_qinghe_10",
+    "refText": "(not on ref path)",
+    "varText": "第九和河中第一，总不是一张纸上两个数？"
+   },
+   {
+    "beat": "lm_qinghe_11",
+    "refText": "(not on ref path)",
+    "varText": "不是。我拿木刀，他只取藤条；我那时只想接住，哪先知道差多少。"
+   },
+   {
+    "beat": "lm_qinghe_12",
+    "refText": "(not on ref path)",
+    "varText": "他转过木刀。你要听的是他亲自接过的三下。"
+   },
+   {
+    "beat": "lm_qinghe_yard_1",
+    "refText": "旧事 · 许重山五十六岁这一年。眼下的判断，属于站在旧院里的许重山。",
+    "varText": "旧事 · 许重山五十六岁这一年。眼下的判断，属于站在旧院里的许重山。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "lm_travel",
+  "varEnding": "lm_travel",
+  "humanReview": "high-value: future=1/2 决定结尾复手或留馆",
+  "canonCompatible": true
+ },
+ {
+  "work": "luhua",
+  "sourceCID": "lh_ask_first_work",
+  "value": 1,
+  "referenceChoicePath": "lh_ask_first_work#0>lh_go_with_meng#0>lh_rehearse_retreat#0>lh_follow_jiao_line#0>lh_return_to_own_people#0>lh_ask_whole_boat#0>lh_watch_chen_rope#0>lh_take_present_hand#0>lh_help_chen_side#0>lh_ask_without_blade#0>lh_kneel_and_listen#0>lh_defend_actual#0>lh_take_one_use#0>lh_finish_wei_words#0>lh_name_own_defeat#0>lh_train_relief#0>lh_count_return_boats#0>lh_teach_after_winter#0>lh_try_when_seen#0>lh_walk_market_load#0>lh_hear_both_carries#0>lh_keep_lu_loss#0>lh_answer_tang_next#0>lh_stay_teaching#0>lh_give_next_hand#0",
+  "variantChoicePath": "lh_show_stance#1>lh_go_with_meng#0>lh_rehearse_retreat#0>lh_follow_jiao_line#0>lh_return_to_own_people#0>lh_ask_whole_boat#0>lh_watch_chen_rope#0>lh_take_present_hand#0>lh_help_chen_side#0>lh_ask_without_blade#0>lh_kneel_and_listen#0>lh_defend_actual#0>lh_take_one_use#0>lh_finish_wei_words#0>lh_name_own_defeat#0>lh_train_relief#0>lh_count_return_boats#0>lh_teach_after_winter#0>lh_try_when_seen#0>lh_walk_market_load#0>lh_hear_both_carries#0>lh_keep_lu_loss#0>lh_answer_tang_next#0>lh_stay_teaching#0>lh_give_next_hand#0",
+  "firstDivergenceBeat": "lh_eleven_7",
+  "laterBeatIds": [
+   "lh_eleven_7",
+   "lh_eleven_8",
+   "lh_changsha_1",
+   "lh_changsha_2"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "lh_eleven_7",
+    "refText": "(not on ref path)",
+    "varText": "你才摆好，肩便先僵。孟拿木刀轻碰，你退半步。"
+   },
+   {
+    "beat": "lh_eleven_8",
+    "refText": "(not on ref path)",
+    "varText": "收你，是来学，不是把自己赔给我。先学这一步。"
+   },
+   {
+    "beat": "lh_changsha_1",
+    "refText": "二十余，长沙码头，你替卖药老人出头，打伤顺水帮小头目。那一下痛快，第二日整条货路却被卡住。阿泊想学修船，今日原有一班拆旧船的活，如今也只能站在岸上看药货与木料一",
+    "varText": "二十余，长沙码头，你替卖药老人出头，打伤顺水帮小头目。那一下痛快，第二日整条货路却被卡住。阿泊想学修船，今日原有一班拆旧船的活，如今也只能站在岸上看药货与木料一"
+   },
+   {
+    "beat": "lh_changsha_2",
+    "refText": "你替我说了话，我谢。可我还得把货送到，不是打完便能不卖。",
+    "varText": "你替我说了话，我谢。可我还得把货送到，不是打完便能不卖。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "lh_hall_after",
+  "varEnding": "lh_hall_after",
+  "humanReview": "voice-check: 庞震海新台词两分支均在",
+  "canonCompatible": true
+ },
+ {
+  "work": "dongting",
+  "sourceCID": "dt_check_rope",
+  "value": 1,
+  "referenceChoicePath": "dt_check_rope#0>dt_float_ready#0>dt_accept_recusal#0>dt_name_tasks#0>dt_share_channel#0>dt_rest_worker#0>dt_take_positions#0>dt_save_company#0>dt_help_chen#0>dt_chen_own_record#0>dt_set_days#0",
+  "variantChoicePath": "dt_hurry_rope#1>dt_float_ready#0>dt_accept_recusal#0>dt_name_tasks#0>dt_share_channel#0>dt_rest_worker#0>dt_take_positions#0>dt_save_company#0>dt_help_chen#0>dt_chen_own_record#0>dt_set_days#0",
+  "firstDivergenceBeat": "dt_third_step_10",
+  "laterBeatIds": [
+   "dt_third_step_10",
+   "dt_third_step_11",
+   "dt_third_step_12",
+   "dt_third_step_13"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "dt_third_step_10",
+    "refText": "(not on ref path)",
+    "varText": "绳来了——等一下！"
+   },
+   {
+    "beat": "dt_third_step_11",
+    "refText": "(not on ref path)",
+    "varText": "你脚踝一紧，只好坐倒解圈。赵没有等你乱完，已经把梁拉上船。"
+   },
+   {
+    "beat": "dt_third_step_12",
+    "refText": "(not on ref path)",
+    "varText": "先别站。轮到你把自己套住，船上就少一只好手。"
+   },
+   {
+    "beat": "dt_third_step_13",
+    "refText": "(not on ref path)",
+    "varText": "你听见了，没有把脚边那圈绳踢到别人脚下。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "dt_company",
+  "varEnding": "dt_company",
+  "humanReview": "voice-check: 汪苇声口两分支均在",
+  "canonCompatible": true
+ },
+ {
+  "work": "north",
+  "sourceCID": "nq_try_lower",
+  "value": 1,
+  "referenceChoicePath": "nq_try_lower#0>nq_ask_more#0>nq_stop_before_shake#0>nq_show_other_foot#0>nq_leave_today_open#0>nq_ask_next_honest#0>nq_teach_before_departure#0>nq_trace_first_loss#0>nq_leave_return#0>nq_send_real_failure#0>nq_answer_yuan_method#0>nq_accept_teacher_limit#0>nq_force_lifting_room#0>nq_let_loss_stand#0>nq_split_own_share#0>nq_ask_mender_name#0>nq_write_relearn#0>nq_try_no_display#0>nq_meet_pupil_plain#0>nq_take_han_step#0>nq_reply_to_pupil#0>nq_stand_seventh#0>nq_keep_gate_witness#0>nq_read_chosen_place#0>nq_continue_real_change#0>nq_close_real_space#0>nq_continue_without_claim#0>nq_ask_three_oh_one#0>nq_keep_gu_in_notes#0>nq_take_chair_piece#0>nq_end_teach#0",
+  "variantChoicePath": "nq_ask_shoulder#1>nq_ask_more#0>nq_stop_before_shake#0>nq_show_other_foot#0>nq_leave_today_open#0>nq_ask_next_honest#0>nq_teach_before_departure#0>nq_trace_first_loss#0>nq_leave_return#0>nq_send_real_failure#0>nq_answer_yuan_method#0>nq_accept_teacher_limit#0>nq_force_lifting_room#0>nq_let_loss_stand#0>nq_split_own_share#0>nq_ask_mender_name#0>nq_write_relearn#0>nq_try_no_display#0>nq_meet_pupil_plain#0>nq_take_han_step#0>nq_reply_to_pupil#0>nq_stand_seventh#0>nq_keep_gate_witness#0>nq_read_chosen_place#0>nq_continue_real_change#0>nq_close_real_space#0>nq_continue_without_claim#0>nq_ask_three_oh_one#0>nq_keep_gu_in_notes#0>nq_take_chair_piece#0>nq_end_teach#0",
+  "firstDivergenceBeat": "nq_hundred_twenty_seven_9",
+  "laterBeatIds": [
+   "nq_hundred_twenty_seven_9",
+   "nq_before_dawn_1",
+   "nq_before_dawn_2",
+   "nq_before_dawn_3"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "nq_hundred_twenty_seven_9",
+    "refText": "(not on ref path)",
+    "varText": "你慢下来，竹竿尖反比刚才晃。老人用两指在你肩前一点，你才察觉自己每次要证明能刺得远，先把这里顶了出去。"
+   },
+   {
+    "beat": "nq_before_dawn_1",
+    "refText": "他叫周定川，定北枪，六十余岁，地方成名三十年，盛时十余年本地公开问艺未败。几个府榜首都问过他的枪，河朔人说北榜是天下的，周老是河朔自己的。",
+    "varText": "他叫周定川，定北枪，六十余岁，地方成名三十年，盛时十余年本地公开问艺未败。几个府榜首都问过他的枪，河朔人说北榜是天下的，周老是河朔自己的。"
+   },
+   {
+    "beat": "nq_before_dawn_2",
+    "refText": "他只给你白蜡枪，叫明日卯时到城西六合馆，晚一步别来。第二日寅时，你已站在门外。比你大两岁的阿原来开门，险些把你当昨夜没回家的。",
+    "varText": "他只给你白蜡枪，叫明日卯时到城西六合馆，晚一步别来。第二日寅时，你已站在门外。比你大两岁的阿原来开门，险些把你当昨夜没回家的。"
+   },
+   {
+    "beat": "nq_before_dawn_3",
+    "refText": "卯时！我还当进了贼，门闩差点砸你脚上。",
+    "varText": "卯时！我还当进了贼，门闩差点砸你脚上。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "nq_first_again",
+  "varEnding": "nq_first_again",
+  "humanReview": "risk-check: 21 孤儿接线后的重点变量",
+  "canonCompatible": true
+ },
+ {
+  "work": "qian-kun",
+  "sourceCID": "qk_show_waist",
+  "value": 1,
+  "referenceChoicePath": "qk_show_waist#0>qk_ask_return#0>qk_leave_plain_receipt#0>qk_ask_false_step#0>qk_keep_plain_question#0>qk_praise_twelve_years#0>qk_test_current_hand#0>qk_sit_half_cup#0>qk_receive_real_refusal#0>qk_let_manager_speak#0>qk_watch_before_answer#0>qk_let_boy_try#0>qk_name_who_can_ask#0>qk_keep_unwon#0>qk_admit_age_part#0>qk_clear_before_mountain#0>qk_ask_outside_rank#0>qk_try_changed_choice#0>qk_ask_named_people#0>qk_keep_unseen#0>qk_record_rumor_bounds#0>qk_follow_deck_pitch#0>qk_take_rope_then_again#0>qk_keep_missing_bouts#0>qk_leave_open_school#0",
+  "variantChoicePath": "qk_test_same_step#1>qk_ask_return#0>qk_leave_plain_receipt#0>qk_ask_false_step#0>qk_keep_plain_question#0>qk_praise_twelve_years#0>qk_test_current_hand#0>qk_sit_half_cup#0>qk_receive_real_refusal#0>qk_let_manager_speak#0>qk_watch_before_answer#0>qk_let_boy_try#0>qk_name_who_can_ask#0>qk_keep_unwon#0>qk_admit_age_part#0>qk_clear_before_mountain#0>qk_ask_outside_rank#0>qk_try_changed_choice#0>qk_ask_named_people#0>qk_keep_unseen#0>qk_record_rumor_bounds#0>qk_follow_deck_pitch#0>qk_take_rope_then_again#0>qk_keep_missing_bouts#0>qk_leave_open_school#0",
+  "firstDivergenceBeat": "qk_short_inch_11",
+  "laterBeatIds": [
+   "qk_short_inch_11",
+   "qk_short_inch_12",
+   "qk_four_weapons_1",
+   "qk_four_weapons_2"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "qk_short_inch_11",
+    "refText": "(not on ref path)",
+    "varText": "来掌不同，你得再让半步。原来第五掌少转那半分，也不是从此永远留给自己的空处。"
+   },
+   {
+    "beat": "qk_short_inch_12",
+    "refText": "(not on ref path)",
+    "varText": "先练，别等会又忘了吃饭。那也是你自己一张嘴。"
+   },
+   {
+    "beat": "qk_four_weapons_1",
+    "refText": "你第二日依言先拿钱，再去买盐，回来让许师姐把盐和零钱一同过目。三日后，多年不收徒的司马衡来。不让打太极，先丢棍、刀、枪、剑，每样半个时辰。你都不会，拿到手却先找",
+    "varText": "你第二日依言先拿钱，再去买盐，回来让许师姐把盐和零钱一同过目。三日后，多年不收徒的司马衡来。不让打太极，先丢棍、刀、枪、剑，每样半个时辰。你都不会，拿到手却先找"
+   },
+   {
+    "beat": "qk_four_weapons_2",
+    "refText": "最喜欢哪样？",
+    "varText": "最喜欢哪样？"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "qk_open_lesson",
+  "varEnding": "qk_open_lesson",
+  "humanReview": "risk-check: 同上",
+  "canonCompatible": true
+ },
+ {
+  "work": "two-swords",
+  "sourceCID": "ss_pull_body",
+  "value": 1,
+  "referenceChoicePath": "ss_pull_body#0>ss_keep_old_use#0>ss_show_flat#0>ss_question_after#0>ss_explain_leave#0>ss_send_plain#0>ss_help_roof#0>ss_no_name#0>ss_lineage_first#0>ss_show_change#0>ss_meet_spine#0>ss_keep_after#0>ss_clear_passage#0>ss_read_whole#0>ss_ask_old_return#0>ss_help_copyist#0>ss_record_loss#0>ss_ask_copy_work#0>ss_go_with_books#0>ss_try_mountain_lesson#0>ss_keep_question#0>ss_try_newstudent#0>ss_structure_test#0>ss_return_promised#0",
+  "variantChoicePath": "ss_clear_stone#1>ss_keep_old_use#0>ss_show_flat#0>ss_question_after#0>ss_explain_leave#0>ss_send_plain#0>ss_help_roof#0>ss_no_name#0>ss_lineage_first#0>ss_show_change#0>ss_meet_spine#0>ss_keep_after#0>ss_clear_passage#0>ss_read_whole#0>ss_ask_old_return#0>ss_help_copyist#0>ss_record_loss#0>ss_ask_copy_work#0>ss_go_with_books#0>ss_try_mountain_lesson#0>ss_keep_question#0>ss_try_newstudent#0>ss_structure_test#0>ss_return_promised#0",
+  "firstDivergenceBeat": "ss_ridge_9",
+  "laterBeatIds": [
+   "ss_ridge_9",
+   "ss_ridge_10",
+   "ss_ridge_11",
+   "ss_ridge_12"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "ss_ridge_9",
+    "refText": "(not on ref path)",
+    "varText": "先别再收右脚。左脚落我踩住的这块。"
+   },
+   {
+    "beat": "ss_ridge_10",
+    "refText": "(not on ref path)",
+    "varText": "你一手没松，等他真正踩稳才往回拉。碎石滚下去许久，没听见落底。"
+   },
+   {
+    "beat": "ss_ridge_11",
+    "refText": "(not on ref path)",
+    "varText": "平地上从没这样。"
+   },
+   {
+    "beat": "ss_ridge_12",
+    "refText": "(not on ref path)",
+    "varText": "这里不是平地。先回来。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "ss_mountain_lesson",
+  "varEnding": "ss_mountain_lesson",
+  "humanReview": "echo-check: 8 处回响",
+  "canonCompatible": true
+ },
+ {
+  "work": "seven-questions",
+  "sourceCID": "sq_joint_jinling",
+  "value": 1,
+  "referenceChoicePath": "sq_joint_jinling#0>sq_keep_unknown#0>sq_hold_both#0>sq_send_with_witness#0>sq_compare_front#0>sq_take_side#0>sq_add_second_test#0>sq_keep_last_words#0>sq_sit_by_jinling#0>sq_ask_access#0>sq_return_questions#0>sq_deliver_risk#0>sq_link_without_merge#0>sq_walk_water#0>sq_follow_valley#0>sq_pass_first#0>sq_stay_receiving#0>sq_last_bank#0>sq_take_wounded#0>sq_report_seen_valley#0>sq_receive_later#0>sq_separate_witness#0>sq_ask_missing_people#0>sq_check_each_volume#0>sq_choose_carriers#0>sq_keep_companion_time#0>sq_return_receipt#0",
+  "variantChoicePath": "sq_joint_nanyue#1>sq_keep_unknown#0>sq_hold_both#0>sq_send_with_witness#0>sq_compare_front#0>sq_take_side#0>sq_add_second_test#0>sq_keep_last_words#0>sq_sit_by_jinling#0>sq_ask_access#0>sq_return_questions#0>sq_deliver_risk#0>sq_link_without_merge#0>sq_walk_water#0>sq_follow_valley#0>sq_pass_first#0>sq_stay_receiving#0>sq_last_bank#0>sq_take_wounded#0>sq_report_seen_valley#0>sq_receive_later#0>sq_separate_witness#0>sq_ask_missing_people#0>sq_check_each_volume#0>sq_choose_carriers#0>sq_keep_companion_time#0>sq_return_receipt#0",
+  "firstDivergenceBeat": "sq_receipt_12",
+  "laterBeatIds": [
+   "sq_receipt_12",
+   "sq_receipt_13",
+   "sq_receipt_14",
+   "sq_receipt_15"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "sq_receipt_12",
+    "refText": "(not on ref path)",
+    "varText": "你这份写了路，我跟你核。金陵原件也带来，别把他们没收过的那句当没发生。"
+   },
+   {
+    "beat": "sq_receipt_13",
+    "refText": "(not on ref path)",
+    "varText": "行。我先去西渡找老程，他那日撑船。过了酉时他便收橹，你跟紧些。"
+   },
+   {
+    "beat": "sq_receipt_14",
+    "refText": "(not on ref path)",
+    "varText": "我拿收件簿。先等等——这是去年的，谁把今年那本垫桌脚了？"
+   },
+   {
+    "beat": "sq_receipt_15",
+    "refText": "(not on ref path)",
+    "varText": "阿笙约你一起认副报上那处岔路，自己的那一栏由她出面说明，不让你白背她的名。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "sq_shared_road",
+  "varEnding": "sq_shared_road",
+  "humanReview": "risk-check: 16/26 重点变量",
+  "canonCompatible": true
+ },
+ {
+  "work": "xuanmen",
+  "sourceCID": "xm_ask_his_name",
+  "value": 1,
+  "referenceChoicePath": "xm_ask_his_name#0>xm_keep_result#0>xm_make_handover#0>xm_send_receipt#0>xm_watch_feet#0>xm_help_medicine#0>xm_copy_methods#0>xm_let_him_ask#0>xm_write_envy#0>xm_ask_successor#0>xm_leave_duties#0",
+  "variantChoicePath": "xm_ask_his_mud#1>xm_keep_result#0>xm_make_handover#0>xm_send_receipt#0>xm_watch_feet#0>xm_help_medicine#0>xm_copy_methods#0>xm_let_him_ask#0>xm_write_envy#0>xm_ask_successor#0>xm_leave_duties#0",
+  "firstDivergenceBeat": "xm_mud_8",
+  "laterBeatIds": [
+   "xm_mud_8",
+   "xm_mud_9",
+   "xm_old_name_1",
+   "xm_old_name_2"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "xm_mud_8",
+    "refText": "(not on ref path)",
+    "varText": "比你离水近一点。衣裳还得多晾一日。"
+   },
+   {
+    "beat": "xm_mud_9",
+    "refText": "(not on ref path)",
+    "varText": "你笑不出来，又觉得师父竟肯说，泥里的这一刻便不必藏到只有你知道。"
+   },
+   {
+    "beat": "xm_old_name_1",
+    "refText": "夜里师父说完旧事，你把刚抄的榜纸折回去。那个人并未因退榜而衰弱，昨日的名宿也没有因一败便从未会剑。",
+    "varText": "夜里师父说完旧事，你把刚抄的榜纸折回去。那个人并未因退榜而衰弱，昨日的名宿也没有因一败便从未会剑。"
+   },
+   {
+    "beat": "xm_old_name_2",
+    "refText": "以后来一个没有名次的，我们怎么接？",
+    "varText": "以后来一个没有名次的，我们怎么接？"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "xm_handover_after",
+  "varEnding": "xm_handover_after",
+  "humanReview": "history-form: 百年蒙太奇",
+  "canonCompatible": true
+ },
+ {
+  "work": "white-stone",
+  "sourceCID": "ws_note_break",
+  "value": 1,
+  "referenceChoicePath": "ws_note_break#0>ws_keep_gap#0>ws_find_second#0>ws_record_reason#0>ws_ask_old_name#0>ws_keep_no_result#0>ws_ask_today#0>ws_keep_unknown#0>ws_ask_own_stone#0>ws_keep_life_notes#0>ws_keep_limits#0>ws_ask_slow_hand#0>ws_go_observe#0",
+  "variantChoicePath": "ws_note_shape#1>ws_keep_gap#0>ws_find_second#0>ws_record_reason#0>ws_ask_old_name#0>ws_keep_no_result#0>ws_ask_today#0>ws_keep_unknown#0>ws_ask_own_stone#0>ws_keep_life_notes#0>ws_keep_limits#0>ws_ask_slow_hand#0>ws_go_observe#0",
+  "firstDivergenceBeat": "ws_twelve_days_9",
+  "laterBeatIds": [
+   "ws_twelve_days_9",
+   "ws_last_step_1",
+   "ws_last_step_2",
+   "ws_last_step_5"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "ws_twelve_days_9",
+    "refText": "(not on ref path)",
+    "varText": "老人点一次，你补一次，纸上渐满。问回那一处时，他已需要先歇。你把问题折在最上面，没敢说都懂了。"
+   },
+   {
+    "beat": "ws_last_step_1",
+    "refText": "十二日太短。老人去世时，你会形，会口诀，也知道怎么练。最后那一段究竟应当是什么，却没有因此跟着留在纸上。",
+    "varText": "十二日太短。老人去世时，你会形，会口诀，也知道怎么练。最后那一段究竟应当是什么，却没有因此跟着留在纸上。"
+   },
+   {
+    "beat": "ws_last_step_2",
+    "refText": "你们又试了三年，才真正承认：断了一截。不是全失，也不是多抄几遍便能将缺处补齐。",
+    "varText": "你们又试了三年，才真正承认：断了一截。不是全失，也不是多抄几遍便能将缺处补齐。"
+   },
+   {
+    "beat": "ws_last_step_5",
+    "refText": "你带去的不只一卷抄本，还有一处承认不会的停顿。",
+    "varText": "你带去的不只一卷抄本，还有一处承认不会的停顿。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "ws_outside_after",
+  "varEnding": "ws_outside_after",
+  "humanReview": "history-form: 旧史体单声道(见 PLAYTHROUGH_REVIEW 10.1)",
+  "canonCompatible": true
+ },
+ {
+  "work": "beyond-ranking",
+  "sourceCID": "br_ask_witness",
+  "value": 1,
+  "referenceChoicePath": "br_ask_witness#0>br_keep_missing#0>br_ask_first_two#0>br_correct_third#0>br_ask_fourteen#0>br_ask_deleted_palm#0>br_ask_hl_years#0>br_ask_ning_place#0>br_explain_to_reader#0",
+  "variantChoicePath": "br_ask_public#1>br_keep_missing#0>br_ask_first_two#0>br_correct_third#0>br_ask_fourteen#0>br_ask_deleted_palm#0>br_ask_hl_years#0>br_ask_ning_place#0>br_explain_to_reader#0",
+  "firstDivergenceBeat": "br_yellow_page_13",
+  "laterBeatIds": [
+   "br_yellow_page_13",
+   "br_yellow_page_14",
+   "br_yellow_page_15",
+   "br_yellow_page_16"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "br_yellow_page_13",
+    "refText": "(not on ref path)",
+    "varText": "你们的总谱，什么时候归我写了？"
+   },
+   {
+    "beat": "br_yellow_page_14",
+    "refText": "(not on ref path)",
+    "varText": "我以为既然排了……"
+   },
+   {
+    "beat": "br_yellow_page_15",
+    "refText": "(not on ref path)",
+    "varText": "纸有先后。拿着纸便有权力改榜？中间还隔着我没答应的一步。"
+   },
+   {
+    "beat": "br_yellow_page_16",
+    "refText": "(not on ref path)",
+    "varText": "同门把那张原想送出山的净纸，又收了回去。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "br_reader_after",
+  "varEnding": "br_reader_after",
+  "humanReview": "history-form: 资料型,二周目差异为资料页排序",
+  "canonCompatible": true
+ },
+ {
+  "work": "sea",
+  "sourceCID": "sr_wait_weight",
+  "value": 1,
+  "referenceChoicePath": "sr_wait_weight#0>sr_ask_farther#0>sr_take_open_route#0>sr_trust_line#0>sr_give_step#0>sr_ask_local_method#0>sr_ask_lost_grip#0>sr_ask_route_to_strong#0>sr_accept_help#0>sr_say_old_name#0>sr_answer_with_distance#0>sr_go_find_more#0>sr_admit_repeat#0>sr_seek_zhao_plain#0>sr_zhao_stronger#0>sr_teach_daily#0>sr_leave_class_in_turn#0>sr_follow_person#0>sr_rule_try#0>sr_admit_young_gate#0>sr_late_teach#0>sr_keep_old_visit#0>sr_pages_as_question#0",
+  "variantChoicePath": "sr_release_full#1>sr_ask_farther#0>sr_take_open_route#0>sr_trust_line#0>sr_give_step#0>sr_ask_local_method#0>sr_ask_lost_grip#0>sr_ask_route_to_strong#0>sr_accept_help#0>sr_say_old_name#0>sr_answer_with_distance#0>sr_go_find_more#0>sr_admit_repeat#0>sr_seek_zhao_plain#0>sr_zhao_stronger#0>sr_teach_daily#0>sr_leave_class_in_turn#0>sr_follow_person#0>sr_rule_try#0>sr_admit_young_gate#0>sr_late_teach#0>sr_keep_old_visit#0>sr_pages_as_question#0",
+  "firstDivergenceBeat": "sr_old_first_7",
+  "laterBeatIds": [
+   "sr_old_first_7",
+   "sr_first_name_1",
+   "sr_first_name_2",
+   "sr_first_name_3"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "sr_old_first_7",
+    "refText": "(not on ref path)",
+    "varText": "你让掉一处似乎够近的落点。老人的掌从那儿穿过，没碰到你预备给他的肩；你从外侧回，手停到他已难再转的一线。"
+   },
+   {
+    "beat": "sr_first_name_1",
+    "refText": "日落，老人自己停手。",
+    "varText": "日落，老人自己停手。"
+   },
+   {
+    "beat": "sr_first_name_2",
+    "refText": "我输了。",
+    "varText": "我输了。"
+   },
+   {
+    "beat": "sr_first_name_3",
+    "refText": "下一次总谱重修，陆玄都第一，五十三岁。旧录把接下来十余年的问手合记：十二位够分量的人，十胜两平，没有一败。有人夸那一代没有第二，你却没从这句话里再长出一座新山。",
+    "varText": "下一次总谱重修，陆玄都第一，五十三岁。旧录把接下来十余年的问手合记：十二位够分量的人，十胜两平，没有一败。有人夸那一代没有第二，你却没从这句话里再长出一座新山。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "sr_open_courtyard",
+  "varEnding": "sr_open_courtyard",
+  "humanReview": "risk-check: 孤儿接线重点",
+  "canonCompatible": true
+ },
+ {
+  "work": "sea-tide",
+  "sourceCID": "st_take_rail",
+  "value": 1,
+  "referenceChoicePath": "st_take_rail#0>st_swim_breath#0>st_learn_shared_knot#0>st_practice_exchange#0>st_follow_motion#0>st_set_transfer_line#0>st_call_clear_gap#0>st_take_next_carry#0>st_admit_rush#0>st_ask_rank#0>st_test_flat_step#0>st_watch_next_space#0>st_ask_condition#0>st_prepare_shared_post#0>st_pay_waiting#0>st_listen_seven_years#0>st_repair_talk#0>st_life_teach#0>st_enter_light#0>st_ask_again_small#0>st_say_unknown#0",
+  "variantChoicePath": "st_wait_wave#1>st_swim_breath#0>st_learn_shared_knot#0>st_practice_exchange#0>st_follow_motion#0>st_set_transfer_line#0>st_call_clear_gap#0>st_take_next_carry#0>st_admit_rush#0>st_ask_rank#0>st_test_flat_step#0>st_watch_next_space#0>st_ask_condition#0>st_prepare_shared_post#0>st_pay_waiting#0>st_listen_seven_years#0>st_repair_talk#0>st_life_teach#0>st_enter_light#0>st_ask_again_small#0>st_say_unknown#0",
+  "firstDivergenceBeat": "st_first_boat_7",
+  "laterBeatIds": [
+   "st_first_boat_7",
+   "st_first_boat_8",
+   "st_first_boat_9",
+   "st_trial_1"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "st_first_boat_7",
+    "refText": "(not on ref path)",
+    "varText": "老人把你身旁的空桶推远一点，自己仍扶着舷。船身回落，你才把脚移到刚才放桶的地方。"
+   },
+   {
+    "beat": "st_first_boat_8",
+    "refText": "(not on ref path)",
+    "varText": "我现在能看了。"
+   },
+   {
+    "beat": "st_first_boat_9",
+    "refText": "(not on ref path)",
+    "varText": "楼又不走。"
+   },
+   {
+    "beat": "st_trial_1",
+    "refText": "东极群岛更偏南、更深，大小四十余岛，常住的十余座。归潮岛有山、有田、三处大港。船上的老人说，北去蓬莱还得换船；你到的这座岛，山脚已有人把田分成一格一格。",
+    "varText": "东极群岛更偏南、更深，大小四十余岛，常住的十余座。归潮岛有山、有田、三处大港。船上的老人说，北去蓬莱还得换船；你到的这座岛，山脚已有人把田分成一格一格。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "st_next_step",
+  "varEnding": "st_next_step",
+  "humanReview": "risk-check: sea-tide 归档对相关",
+  "canonCompatible": true
+ },
+ {
+  "work": "kuhe",
+  "sourceCID": "kh_let_sleep",
+  "value": 1,
+  "referenceChoicePath": "kh_let_sleep#0>kh_send_medicine#0>kh_admit_fear#0>kh_report_short#0>kh_walk_detour#0>kh_name_patient#0>kh_mark_return#0>kh_call_names#0>kh_show_wrist#0>kh_plan_second#0>kh_watch_place#0>kh_hold_beds#0>kh_ask_old#0>kh_clear_path#0>kh_record_limit#0>kh_prepare_litter#0>kh_save_runner#0>kh_admit_gap#0>kh_write_known#0>kh_choose_care#0",
+  "variantChoicePath": "kh_ask_route#1>kh_send_medicine#0>kh_admit_fear#0>kh_report_short#0>kh_walk_detour#0>kh_name_patient#0>kh_mark_return#0>kh_call_names#0>kh_show_wrist#0>kh_plan_second#0>kh_watch_place#0>kh_hold_beds#0>kh_ask_old#0>kh_clear_path#0>kh_record_limit#0>kh_prepare_litter#0>kh_save_runner#0>kh_admit_gap#0>kh_write_known#0>kh_choose_care#0",
+  "firstDivergenceBeat": "kh_cloth_10",
+  "laterBeatIds": [
+   "kh_cloth_10",
+   "kh_cloth_11",
+   "kh_cloth_12",
+   "kh_message_1"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "kh_cloth_10",
+    "refText": "(not on ref path)",
+    "varText": "走的是哪条路？要是想不起来，就先不说。"
+   },
+   {
+    "beat": "kh_cloth_11",
+    "refText": "(not on ref path)",
+    "varText": "少年连“西边”也没说完，气已乱了。你退到门外，药师把门轻轻掩上。"
+   },
+   {
+    "beat": "kh_cloth_12",
+    "refText": "(not on ref path)",
+    "varText": "先出去。他喘成这样，今日不能再问了。"
+   },
+   {
+    "beat": "kh_message_1",
+    "refText": "凉州那个门派立过六十余年，七十三人，死了六十八。你照着送来的名册点药包，五个活着的，都是杂役和孩子。",
+    "varText": "凉州那个门派立过六十余年，七十三人，死了六十八。你照着送来的名册点药包，五个活着的，都是杂役和孩子。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "kh_care",
+  "varEnding": "kh_care",
+  "humanReview": "frozen-ink: kuhe.ink 非冻结对象(冻结的是 kuhe-v2)",
+  "canonCompatible": true
+ },
+ {
+  "work": "twelfth",
+  "sourceCID": "qw_plain_trial",
+  "value": 1,
+  "referenceChoicePath": "qw_plain_trial#0>qw_leave_room#0>qw_no_false_witness#0>qw_wait_bow#0>qw_return_gift#0>qw_read_papers#0>qw_quiet_guard#0>qw_guard_school#0>qw_test_fast#0>qw_ask_person#0>qw_both_facts#0>qw_submit_seen#0>qw_no_extra_seal#0>qw_name_only#0>qw_ask_teacher#0>qw_school_choice#0>qw_date#0>qw_mourn_plain#0",
+  "variantChoicePath": "qw_contract_trial#1>qw_leave_room#0>qw_no_false_witness#0>qw_wait_bow#0>qw_return_gift#0>qw_read_papers#0>qw_quiet_guard#0>qw_guard_school#0>qw_test_fast#0>qw_ask_person#0>qw_both_facts#0>qw_submit_seen#0>qw_no_extra_seal#0>qw_name_only#0>qw_ask_teacher#0>qw_school_choice#0>qw_date#0>qw_mourn_plain#0",
+  "firstDivergenceBeat": "qw_paid_10",
+  "laterBeatIds": [
+   "qw_paid_10",
+   "qw_paid_11",
+   "qw_paid_12",
+   "qw_paid_13"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "qw_paid_10",
+    "refText": "(not on ref path)",
+    "varText": "先说清受伤怎么领，谁喊停。讲完我才试，不然心里总先算哪一下贵。"
+   },
+   {
+    "beat": "qw_paid_11",
+    "refText": "(not on ref path)",
+    "varText": "你想来领钱，还是来立规矩？"
+   },
+   {
+    "beat": "qw_paid_12",
+    "refText": "(not on ref path)",
+    "varText": "想领能养馆的钱。活也得真做，不能出了事再问怎么算。"
+   },
+   {
+    "beat": "qw_paid_13",
+    "refText": "(not on ref path)",
+    "varText": "他恼了一会儿，仍让顾廷安写下。你试过一架，没替自己的迟疑装成胆气。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "qw_school",
+  "varEnding": "qw_school",
+  "humanReview": "companion: 旧馆师视角短篇",
+  "canonCompatible": true
+ },
+ {
+  "work": "bamboo",
+  "sourceCID": "bb_ask_own_place",
+  "value": 1,
+  "referenceChoicePath": "bb_ask_own_place#0>bb_ask_which_less#0>bb_ask_han_record#0>bb_ask_both_heads#0>bb_press_unseen#0>bb_ask_if_fought#0>bb_leave_question_open#0",
+  "variantChoicePath": "bb_challenge_old_story#1>bb_ask_which_less#0>bb_ask_han_record#0>bb_ask_both_heads#0>bb_press_unseen#0>bb_ask_if_fought#0>bb_leave_question_open#0",
+  "firstDivergenceBeat": "bb_closed_gate_11",
+  "laterBeatIds": [
+   "bb_closed_gate_11",
+   "bb_closed_gate_12",
+   "bb_closed_gate_13",
+   "bb_three_steps_1"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "bb_closed_gate_11",
+    "refText": "(not on ref path)",
+    "varText": "听过别人的路，明日仍得我自己出掌。柳老，能说一段您当年真不明白的么？"
+   },
+   {
+    "beat": "bb_closed_gate_12",
+    "refText": "(not on ref path)",
+    "varText": "有。追不上我师父那一段，够不够丢人？"
+   },
+   {
+    "beat": "bb_closed_gate_13",
+    "refText": "(not on ref path)",
+    "varText": "罗笑了一声，柳却先叫他别急着猜成轻功更快。"
+   },
+   {
+    "beat": "bb_three_steps_1",
+    "refText": "柳年轻时轻功高，师父带一段山路，无论他快慢，始终前三步。一路都在追，老人却根本没躲。",
+    "varText": "柳年轻时轻功高，师父带一段山路，无论他快慢，始终前三步。一路都在追，老人却根本没躲。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "bb_palm_after",
+  "varEnding": "bb_palm_after",
+  "humanReview": "history-form: 夜谈",
+  "canonCompatible": true
+ },
+ {
+  "work": "luoyang",
+  "sourceCID": "ly_ask_xu_first",
+  "value": 1,
+  "referenceChoicePath": "ly_ask_xu_first#0>ly_ask_when_gamble#0>ly_ask_cost_of_wait#0>ly_ask_see_what#0>ly_make_seat#0>ly_follow_half_chi#0>ly_ask_liu_road#0>ly_expect_stop#0>ly_return_trial#0",
+  "variantChoicePath": "ly_look_for_zhang#1>ly_ask_when_gamble#0>ly_ask_cost_of_wait#0>ly_ask_see_what#0>ly_make_seat#0>ly_follow_half_chi#0>ly_ask_liu_road#0>ly_expect_stop#0>ly_return_trial#0",
+  "firstDivergenceBeat": "ly_ten_li_9",
+  "laterBeatIds": [
+   "ly_ten_li_9",
+   "ly_shen_fifty_seven_1",
+   "ly_shen_fifty_seven_2",
+   "ly_shen_fifty_seven_3"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "ly_ten_li_9",
+    "refText": "(not on ref path)",
+    "varText": "章从另一棚认得河中来客，点头，仍先答身边的人。你没再挤去问他今日要压过谁，回到许旁边等第一场。"
+   },
+   {
+    "beat": "ly_shen_fifty_seven_1",
+    "refText": "沈长庚对北榜第二十九断门刀史天魁。四十招尚不逊色，五十以后，沈几次进手都要把旁处一并放掉。",
+    "varText": "沈长庚对北榜第二十九断门刀史天魁。四十招尚不逊色，五十以后，沈几次进手都要把旁处一并放掉。"
+   },
+   {
+    "beat": "ly_shen_fifty_seven_2",
+    "refText": "第五十七，刀背贴肋，沈收掌认输。下场看见你盯着他手，先把自己的茶拿走。",
+    "varText": "第五十七，刀背贴肋，沈收掌认输。下场看见你盯着他手，先把自己的茶拿走。"
+   },
+   {
+    "beat": "ly_shen_fifty_seven_3",
+    "refText": "没断。别又一脸等我说没事。",
+    "varText": "没断。别又一脸等我说没事。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "ly_trial_after",
+  "varEnding": "ly_trial_after",
+  "humanReview": "history-form: 武会志",
+  "canonCompatible": true
+ },
+ {
+  "work": "north-notes",
+  "sourceCID": "nn_ask_gun",
+  "value": 1,
+  "referenceChoicePath": "nn_ask_gun#0>nn_ask_stronger#0>nn_keep_questions#0>nn_name_three#0>nn_ask_shoulder#0>nn_keep_unfinished#0",
+  "variantChoicePath": "nn_ask_palm#1>nn_ask_stronger#0>nn_keep_questions#0>nn_name_three#0>nn_ask_shoulder#0>nn_keep_unfinished#0",
+  "firstDivergenceBeat": "nn_two_books_7",
+  "laterBeatIds": [
+   "nn_two_books_7",
+   "nn_two_books_8",
+   "nn_two_books_9",
+   "nn_different_pupils_1"
+  ],
+  "visibleDiff": [
+   {
+    "beat": "nn_two_books_7",
+    "refText": "(not on ref path)",
+    "varText": "他能想出别人没想的，为什么还要慢？"
+   },
+   {
+    "beat": "nn_two_books_8",
+    "refText": "(not on ref path)",
+    "varText": "看得快，就容易替眼前那人先长成自己想的样子。"
+   },
+   {
+    "beat": "nn_two_books_9",
+    "refText": "(not on ref path)",
+    "varText": "你在旁边记慢，却不把从此永远慢一步写成谁来都该照做的身法。"
+   },
+   {
+    "beat": "nn_different_pupils_1",
+    "refText": "一个总想自己来，一个总想先知道怎样最对。你把两句话换过来，未必就教得动另一个。",
+    "varText": "一个总想自己来，一个总想先知道怎样最对。你把两句话换过来，未必就教得动另一个。"
+   }
+  ],
+  "trueBranchSeen": true,
+  "falseBranchSeen": true,
+  "refEnding": "nn_unfinished_page",
+  "varEnding": "nn_unfinished_page",
+  "humanReview": "history-form: 札记体单声道",
+  "canonCompatible": true
+ }
+]

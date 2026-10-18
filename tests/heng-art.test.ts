@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -19,7 +20,7 @@ for(const w of works)test(`${w.slug} Heng V2: identical narrative/inputs/world, 
    assert.deepEqual(restoreVN(JSON.stringify(a.save()),{content:w.old,version:w.slug+'-1.0.0'}).save.presentation,a.save().presentation);
    if(a.frame.ending)break;if(a.frame.choices.length){const id=a.frame.choices[side].id;a.choose(id);b.choose(id)}else{a.advance();b.advance()}
   }assert.deepEqual(a.commands,b.commands);assert.throws(()=>restoreVN(JSON.stringify(a.save()),{content:w.content,version:w.slug+'-2.0.0'}),/版本/);assert.deepEqual(restoreVN(JSON.stringify(b.save()),{content:w.content,version:w.slug+'-2.0.0'}).session.frames,b.frames);output.push({side,frames:b.frames.length,ending:b.frame.ending});
- }writeFileSync(`docs/evidence/v6/heng-${w.slug}-version-proof.json`,JSON.stringify(output,null,2)+'\n');
+ }writeFileSync(evidencePath(`docs/evidence/v6/heng-${w.slug}-version-proof.json`),JSON.stringify(output,null,2)+'\n');
  const frozen=JSON.parse(readFileSync('docs/evidence/v6/heng-art-assets.json','utf8')).frozen;for(const [file,hash]of Object.entries(frozen)){const b=frozenBytes(file);if(!b)continue;assert.equal(createHash('sha256').update(b).digest('hex'),hash)}
 });
 
@@ -30,7 +31,7 @@ test('Heng is one explicit identity with two ages and three actual files per age
  const first=new VNRuntime(qian,'qian-kun-2.0.0');let later=false;while(true){if(first.frame.id==='qk_tomorrow_1')later=true;assert.ok(!first.frame.stage.cast.includes(later?'qk2_heng_earlier':'qk2_heng_later'));if(first.frame.ending)break;first.frame.choices.length?first.choose(first.frame.choices[0].id):first.advance()}
  for(const [slug,data,version]of [['north',north,'north-2.0.0'],['qian-kun',qian,'qian-kun-2.0.0'],['north-notes',notes,'north-notes-1.0.0']] as const){let random=171;const visited=new Set<string>();for(let run=0;run<256;run++){const s=new VNRuntime(data,version);while(true){visited.add(s.frame.id);for(const id of s.frame.stage.cast)if(characters[id].canonicalIdentity==='sima-heng'){if(!seen.has(id))seen.set(id,new Set());seen.get(id)!.add(resolvePortrait(id,s.frame.stage.moods[id]??'neutral',s.frame.stage.looks?.[id])!.file)}if(s.frame.ending)break;if(s.frame.choices.length){random=(Math.imul(random,1664525)+1013904223)>>>0;s.choose(s.frame.choices[(random>>>16)%s.frame.choices.length].id)}else s.advance()}}const declared=[...readFileSync(`story/${['north','qian-kun'].includes(slug)?slug+'-v2':slug}.ink`,'utf8').matchAll(/# beat:(\S+)/g)].map(m=>m[1]);assert.deepEqual([...visited].sort(),declared.sort())}
  assert.equal(seen.get('qk2_heng_earlier')!.size,3);assert.equal(seen.get('qk2_heng_later')!.size,3);assert.deepEqual(seen.get('nn_heng'),seen.get('nq2_heng'));assert.equal(resolvePortrait('nq_heng')!.file,'v5/npc-elder-male.webp');assert.equal(resolvePortrait('qk_heng')!.file,'v5/npc-elder-male.webp');
- writeFileSync('docs/evidence/v6/heng-identity-usage.json',JSON.stringify({canonicalIdentity:'sima-heng',actorAliases:Object.fromEntries([...seen].map(([id,f])=>[id,[...f]])),sampledPathsPerWork:256,exhaustive:false},null,2)+'\n');
+ writeFileSync(evidencePath('docs/evidence/v6/heng-identity-usage.json'),JSON.stringify({canonicalIdentity:'sima-heng',actorAliases:Object.fromEntries([...seen].map(([id,f])=>[id,[...f]])),sampledPathsPerWork:256,exhaustive:false},null,2)+'\n');
 });
 
 test('Both plain tea CGs last two frames and every focused camera clears on the next frame',()=>{

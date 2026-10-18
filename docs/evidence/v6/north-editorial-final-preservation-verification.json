@@ -74,12 +74,12 @@
     {
       "baselinePath": "story/north-notes.ink",
       "actualPath": "story/north-notes.ink",
-      "sha256": "5a4c2c9683b96025394ea6e7e647489fc2146c796a8f1c0506502e21700926c1"
+      "sha256": "c65de81e2ab6799b7085b1a872dbf14040a266c4d97c6329a392912a24efe123"
     },
     {
       "baselinePath": "src/generated/north-notes.json",
       "actualPath": "src/generated/north-notes.json",
-      "sha256": "d7024c9015d1287f57a4d2b9d52bfc40a38edfc70995c4146d5066e71f15d7a6"
+      "sha256": "b5e8bfad820a2be41344ec3a3ab100eddbca388904a87953c9e6ebc1b43bfc1e"
     },
     {
       "baselinePath": "\u5b8b\u4e16\u6c5f\u6e56.md",

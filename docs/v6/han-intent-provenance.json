@@ -1,8 +1,8 @@
 {
   "tool": "built-in image_gen",
-  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-6f25db16-1a48-4325-984e-77f701e3989e.png",
+  "source": "[author-local-path]",
   "prompt": "Use case: visual novel expression and gesture edit. Preserve EXACT reference character identity, facial anatomy, age, gender, costume colors/materials, hair, and fine naturalistic watercolor/ink rendering. Same61-year-old male teacher Han Lushi. Intent grave teaching expression, brows drawn and lips speaking, inclining slightly forward, right hand firmly holding bamboo walking staff and left hand safely tucked inside robe sleeve, not lifting or clenching the old injured left hand. Same green robe and face. Meaningful expression and gesture change, same portrait framing as reference, one character only, no other person. True transparent alpha background, no colored panel, no scenery, no floor, no cast shadow rectangle. No signature, no text, no watermark.",
-  "reference": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v5/han.webp",
-  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/han-intent.webp",
+  "reference": "./public/art/v5/han.webp",
+  "output": "./public/art/v6/han-intent.webp",
   "review": "Reviewed against seen original: identity, costume, age/gender and anatomy preserved; state is suitable for reuse across scenes. Qiao final variant has empty resting hands and right wrist supported. Mapped only to v6 actors; original v5 presentation preserved. Final browser screenshot review pending."
 }

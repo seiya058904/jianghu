@@ -1,0 +1,194 @@
+{
+  "head": "7a2c22f74c46d74f07af8bd1a45893ec15daa49b",
+  "all_bytes": 1411602358,
+  "allocated_bytes": 1419716864,
+  "git_bytes": 1146641100,
+  "worktree_bytes": 264961258,
+  "all_GiB": 1.3146571423858404,
+  "all_GB_decimal": 1.411602358,
+  "under_1GiB": false,
+  "files": 4621,
+  "groups": {
+    "(root)": {
+      "files": 77,
+      "logical_bytes": 24642759,
+      "allocated_bytes": 24718336
+    },
+    ".git": {
+      "files": 97,
+      "logical_bytes": 1146641100,
+      "allocated_bytes": 1146780048
+    },
+    ".github": {
+      "files": 2,
+      "logical_bytes": 5259,
+      "allocated_bytes": 8192
+    },
+    ".impeccable": {
+      "files": 7,
+      "logical_bytes": 3448762,
+      "allocated_bytes": 3461120
+    },
+    ".workbuddy": {
+      "files": 3,
+      "logical_bytes": 32583,
+      "allocated_bytes": 40960
+    },
+    "dist": {
+      "files": 338,
+      "logical_bytes": 35777674,
+      "allocated_bytes": 36545536
+    },
+    "docs": {
+      "files": 1934,
+      "logical_bytes": 64039735,
+      "allocated_bytes": 67291272
+    },
+    "node_modules": {
+      "files": 1343,
+      "logical_bytes": 92095984,
+      "allocated_bytes": 94307952
+    },
+    "public": {
+      "files": 177,
+      "logical_bytes": 29524607,
+      "allocated_bytes": 29872360
+    },
+    "scripts": {
+      "files": 30,
+      "logical_bytes": 123845,
+      "allocated_bytes": 180224
+    },
+    "src": {
+      "files": 109,
+      "logical_bytes": 6375884,
+      "allocated_bytes": 6591512
+    },
+    "story": {
+      "files": 317,
+      "logical_bytes": 7786264,
+      "allocated_bytes": 8462336
+    },
+    "test-results": {
+      "files": 1,
+      "logical_bytes": 45,
+      "allocated_bytes": 48
+    },
+    "test-results-jade-editorial": {
+      "files": 1,
+      "logical_bytes": 45,
+      "allocated_bytes": 48
+    },
+    "test-results-jade-editorial-extra": {
+      "files": 1,
+      "logical_bytes": 45,
+      "allocated_bytes": 48
+    },
+    "test-results-jade-second-editorial-extra": {
+      "files": 1,
+      "logical_bytes": 45,
+      "allocated_bytes": 48
+    },
+    "test-results-jade-v2-editorial": {
+      "files": 1,
+      "logical_bytes": 45,
+      "allocated_bytes": 48
+    },
+    "test-results-kuhe-editorial-final": {
+      "files": 1,
+      "logical_bytes": 45,
+      "allocated_bytes": 48
+    },
+    "test-results-kuhe-editorial-sw-final": {
+      "files": 1,
+      "logical_bytes": 45,
+      "allocated_bytes": 48
+    },
+    "test-results-kuhe-v2-offline-fixed": {
+      "files": 2,
+      "logical_bytes": 12964,
+      "allocated_bytes": 16480
+    },
+    "test-results-longmen-editorial": {
+      "files": 1,
+      "logical_bytes": 45,
+      "allocated_bytes": 48
+    },
+    "test-results-longmen-editorial-day4": {
+      "files": 1,
+      "logical_bytes": 45,
+      "allocated_bytes": 48
+    },
+    "test-results-longmen-editorial-extra": {
+      "files": 2,
+      "logical_bytes": 12421,
+      "allocated_bytes": 16480
+    },
+    "test-results-north-v3-extra": {
+      "files": 1,
+      "logical_bytes": 45,
+      "allocated_bytes": 48
+    },
+    "test-results-north-v3-notes": {
+      "files": 1,
+      "logical_bytes": 45,
+      "allocated_bytes": 48
+    },
+    "test-results-qingshi-editorial-choice-final": {
+      "files": 1,
+      "logical_bytes": 45,
+      "allocated_bytes": 48
+    },
+    "test-results-qingshi-editorial-cold": {
+      "files": 1,
+      "logical_bytes": 45,
+      "allocated_bytes": 48
+    },
+    "test-results-qingshi-editorial-extra": {
+      "files": 1,
+      "logical_bytes": 45,
+      "allocated_bytes": 48
+    },
+    "test-results-qingshi-editorial-first": {
+      "files": 1,
+      "logical_bytes": 45,
+      "allocated_bytes": 48
+    },
+    "test-results-royal-editorial": {
+      "files": 3,
+      "logical_bytes": 18699,
+      "allocated_bytes": 24728
+    },
+    "test-results-royal-editorial-extra": {
+      "files": 1,
+      "logical_bytes": 45,
+      "allocated_bytes": 48
+    },
+    "test-results-royal-editorial-v1": {
+      "files": 1,
+      "logical_bytes": 45,
+      "allocated_bytes": 48
+    },
+    "test-results-taihua-editorial": {
+      "files": 1,
+      "logical_bytes": 45,
+      "allocated_bytes": 48
+    },
+    "test-results-taihua-editorial-extra": {
+      "files": 1,
+      "logical_bytes": 45,
+      "allocated_bytes": 48
+    },
+    "test-results-taihua-editorial-stage": {
+      "files": 1,
+      "logical_bytes": 45,
+      "allocated_bytes": 48
+    },
+    "tests": {
+      "files": 160,
+      "logical_bytes": 1062918,
+      "allocated_bytes": 1398368
+    }
+  },
+  "allocation_method": "FILE_STANDARD_INFO.AllocationSize, excludes directory metadata and shared-object deduplication"
+}

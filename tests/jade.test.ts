@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -11,7 +12,7 @@ test('Jade full second-volume paths keep thirteen coins, nine actual store outco
   for(const phrase of ['二十文','十三文','婚书','洗三日','半年','璧半、册半','一股酱味','它本来就是拿来找库','第一库挖开，塌了','第二库','酒窖','第三库进水','第四','木架','第五','药','第六库','第七库','第八库','第九库','军械','玉丢不算大事，库丢才算','近百招','第一次','银补脱','残片','第七粮守住','第九真璧碎','不大不小的官','二十文没卖成','二十余年后','皇家赝品'])assert.ok(r.text.includes(phrase),phrase);
   assert.deepEqual(restoreVN(JSON.stringify(r.s.save()),edition).session.frames,r.s.frames);assert.throws(()=>restoreVN(JSON.stringify(r.s.save()),{content,version:'jade-thieves-1.0.0'}),/作品或版本不兼容/);
   assert.ok(!r.s.frames.some(f=>f.stage.cast.some(id=>id.startsWith('jt_'))),'previous century’s thieves do not walk into Lu’s present');
-  writeFileSync(`docs/evidence/v6/jade-editorial-archive-v1-${r.s.frame.ending}-transcript.txt`,r.text);
+  writeFileSync(evidencePath(`docs/evidence/v6/jade-editorial-archive-v1-${r.s.frame.ending}-transcript.txt`),r.text);
  }
 });
 test('Jade single surface decision has an explicit three-day private cost and changes witnessed middle scenes',()=>{
@@ -41,5 +42,5 @@ test('Jade sampled branches cover all authored beats and options with bounded re
  const visited=new Set<string>(),choices=new Set<string>(),endings=new Set<string>();let longest=0;
  for(let seed=1;seed<=512;seed++){let state=Math.imul(seed,2654435761)>>>0;const r=run(ids=>{state=(Math.imul(state,1664525)+1013904223)>>>0;return ids[state>>>31]});for(const f of r.s.frames){visited.add(f.id);f.choices.forEach(c=>choices.add(c.id));assert.ok(f.stage.cast.length<=3)}endings.add(r.s.frame.ending!);longest=Math.max(longest,r.longest)}
  const declared=[...readFileSync('story/jade-v1.ink','utf8').matchAll(/# beat:(\S+)/g)].map(m=>m[1]);assert.deepEqual([...visited].sort(),declared.sort());assert.equal(choices.size,66);assert.equal(endings.size,2);
- writeFileSync('docs/evidence/v6/jade-editorial-archive-v1-content-audit.json',JSON.stringify({status:'SECOND_VOLUME_PRODUCTION_DRAFT_NOT_FINAL',sourceBeats:declared.length,visited:visited.size,choiceOptions:choices.size,decisionsPerRoute:28,sampledPaths:512,exhaustive:false,longestPassiveGap:longest,limits:'Actual shop/store interiors, broken-object layers, dedicated protagonists, action/CG, full three editorial rounds and human playtime remain incomplete.'},null,2));assert.ok(longest<=18,`longest passive gap ${longest}`);
+ writeFileSync(evidencePath('docs/evidence/v6/jade-editorial-archive-v1-content-audit.json'),JSON.stringify({status:'SECOND_VOLUME_PRODUCTION_DRAFT_NOT_FINAL',sourceBeats:declared.length,visited:visited.size,choiceOptions:choices.size,decisionsPerRoute:28,sampledPaths:512,exhaustive:false,longestPassiveGap:longest,limits:'Actual shop/store interiors, broken-object layers, dedicated protagonists, action/CG, full three editorial rounds and human playtime remain incomplete.'},null,2));assert.ok(longest<=18,`longest passive gap ${longest}`);
 });

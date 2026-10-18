@@ -1,6 +1,26 @@
 {
-  "name": "jianghu", "version": "1.0.0", "private": true, "type": "module",
-  "scripts": {"dev":"vite --host 127.0.0.1", "start":"node scripts/serve.mjs", "story:build":"node scripts/compile-story.mjs", "build":"npm run story:build && tsc --noEmit && vite build && node scripts/offline-manifest.mjs", "preview":"vite preview --host 127.0.0.1", "test":"npm run story:build && node --experimental-strip-types --test tests/runtime.test.ts tests/vn-runtime.test.ts tests/campaign.test.ts tests/v6-compat.test.ts tests/taihua.test.ts tests/taihua-v2.test.ts tests/taihua-v1.test.ts tests/campaign-v6.test.ts tests/campaign-v6-ending-staging.test.ts tests/longmen.test.ts tests/longmen-v2.test.ts tests/longmen-editorial.test.ts tests/dongting.test.ts tests/twelfth.test.ts tests/kuhe.test.ts tests/kuhe-v2.test.ts tests/kuhe-editorial.test.ts tests/qingshi.test.ts tests/qingshi-v2.test.ts tests/qingshi-editorial.test.ts tests/two-swords.test.ts tests/seven-questions.test.ts tests/jade-thieves.test.ts tests/jade-thieves-editorial.test.ts tests/jade.test.ts tests/jade-editorial.test.ts tests/sea.test.ts tests/sea-v1.test.ts tests/sea-editorial.test.ts tests/sea-tide.test.ts tests/sea-tide-v1.test.ts tests/sea-tide-editorial.test.ts tests/child-reuse.test.ts tests/north.test.ts tests/north-editorial.test.ts tests/qian-kun.test.ts tests/qian-kun-editorial.test.ts tests/dead-ranking.test.ts tests/luhua.test.ts tests/twelfth-life.test.ts tests/twelfth-life-v2.test.ts tests/twelfth-life-editorial.test.ts tests/royal-letters-cg.test.ts tests/swords-art.test.ts tests/sea-rigging.test.ts tests/jade-reusable.test.ts tests/heng-art.test.ts tests/default-entry.test.ts tests/offline-work-gate.test.ts tests/luoyang-bamboo.test.ts tests/xuanmen.test.ts tests/white-stone.test.ts tests/beyond-ranking.test.ts", "test:e2e":"playwright test"},
-  "dependencies":{"inkjs":"2.4.0"},
-  "devDependencies":{"vite":"8.3.4","typescript":"7.0.2","@playwright/test":"1.64.1"}
+  "name": "jianghu",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "start": "node scripts/serve.mjs",
+    "story:build": "node scripts/compile-story.mjs",
+    "build": "npm run story:build && tsc --noEmit && vite build && node scripts/offline-manifest.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "npm run story:build && node --experimental-strip-types --test tests/*.test.ts",
+    "test:e2e": "playwright test",
+    "audit:v7": "node --experimental-strip-types scripts/audit-v7-works.mjs && node --experimental-strip-types scripts/audit-v7-opening.mjs && node --experimental-strip-types scripts/audit-v7-passive-run.mjs && node --experimental-strip-types scripts/audit-v7-narration-runs.mjs && node --experimental-strip-types scripts/audit-v7-ending-coverage.mjs && node --experimental-strip-types scripts/audit-v7-boring-probes.mjs",
+    "test:editorial": "node --experimental-strip-types --test tests/*-draft.test.ts",
+    "audit:independent": "node --experimental-strip-types scripts/independent-runtime-audit.mjs && python scripts/independent-art-audit.py"
+  },
+  "dependencies": {
+    "inkjs": "2.4.0"
+  },
+  "devDependencies": {
+    "vite": "8.3.4",
+    "typescript": "7.0.2",
+    "@playwright/test": "1.64.1"
+  }
 }

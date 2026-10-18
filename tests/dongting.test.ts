@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -19,19 +20,22 @@ test('Dongting two life outcomes retain the 106/79 bouts, 4–3 recusal and Chen
  }
  assert.doesNotMatch(company.text,/我站不起来/);assert.match(cargo.text,/脚还在下面/);
  assert.match(company.text,/留下来还那批损货的工债/);assert.match(cargo.text,/你保住主运粮线/);
- writeFileSync('docs/evidence/v6/dongting-company-transcript.txt',company.text);
- writeFileSync('docs/evidence/v6/dongting-cargo-transcript.txt',cargo.text);
+ writeFileSync(evidencePath('docs/evidence/v6/dongting-company-transcript.txt'),company.text);
+ writeFileSync(evidencePath('docs/evidence/v6/dongting-cargo-transcript.txt'),cargo.text);
 });
 test('Dongting early spare rope and rest materially change a later rescue injury',()=>{
  const good=run(),short=run(['dt_cargo_tight']),tired=run(['dt_make_cargo']);
  assert.doesNotMatch(good.text,/我站不起来/);assert.match(short.text,/我站不起来/);assert.match(tired.text,/我站不起来/);
  assert.match(good.text,/汪苇的脚还撑得住/);assert.doesNotMatch(short.text,/汪苇的脚还撑得住/);
  const common=run(['dt_share_channel','dt_take_positions']);assert.match(common.text,/听见你报内/);
- const unsignalled=run(['dt_keep_channel']);assert.match(unsignalled.text,/我方才分不清谁在喊/);
+ const unsignalled=run(['dt_keep_channel']);
+ assert.match(unsignalled.text,/听见你报船在内/);
+ assert.match(unsignalled.text,/没练熟内外交错的口令/);
+ assert.doesNotMatch(unsignalled.text,/我方才分不清谁在喊/);
 });
 test('Dongting reaches every authored branch in a bounded sample; acting cast excludes merely mentioned elders',()=>{
  const visited=new Set<string>(),cast=new Set<string>();let state=0x7563,longest=0;
  for(let i=0;i<160;i++){const r=run([],()=>{state=(Math.imul(state,1664525)+1013904223)>>>0;return state>>>16});longest=Math.max(longest,r.longest);r.s.frames.forEach(f=>{visited.add(f.id);f.stage.cast.forEach(id=>cast.add(id))})}
  const declared=[...readFileSync('story/dongting.ink','utf8').matchAll(/# beat:(\S+)/g)].map(m=>m[1]);assert.deepEqual([...visited].sort(),declared.sort());assert.equal(cast.size,10);
- writeFileSync('docs/evidence/v6/dongting-content-audit.json',JSON.stringify({status:'DRAFT_NOT_FINAL',sourceBeats:declared.length,visited:visited.size,cast:[...cast],decisionPoints:11,sampledPaths:160,exhaustive:false,longestPassiveGap:longest,limits:'Pending dedicated art, entry, browser playthrough, and editorial rounds.'},null,2));
+ writeFileSync(evidencePath('docs/evidence/v6/dongting-content-audit.json'),JSON.stringify({status:'DRAFT_NOT_FINAL',sourceBeats:declared.length,visited:visited.size,cast:[...cast],decisionPoints:11,sampledPaths:160,exhaustive:false,longestPassiveGap:longest,limits:'Pending dedicated art, entry, browser playthrough, and editorial rounds.'},null,2));
 });

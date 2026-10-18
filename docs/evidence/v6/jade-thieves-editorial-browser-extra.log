@@ -85,7 +85,7 @@ Running 56 tests using 1 worker
          |                                                                                                                                                                                                                                                                              ^
       18 | });
       19 |
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\jade-thieves-editorial-integrity.spec.ts:17:270
+        at .\tests\jade-thieves-editorial-integrity.spec.ts:17:270
 
     Error Context: test-results-jade-editorial-extra\jade-thieves-editorial-int-2c63e-emain-linked-at-seven-sizes\error-context.md
 

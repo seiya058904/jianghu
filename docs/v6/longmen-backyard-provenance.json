@@ -1,7 +1,7 @@
 {
   "tool": "built-in image_gen",
-  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-d2f43c27-f702-47cb-9402-83c22de67082.png",
+  "source": "[author-local-path]",
   "prompt": "Use case: historical-scene. Production illustrated environment background for Jianghu Chinese wuxia visual novel. Wide landscape3:2. A modest enclosed rear courtyard of a local martial school, shaded by one old broad tree. Flat worn gray stone paving, plain plaster walls and low dark timber tiled eaves. A side gate on the left, a low wooden frame and three simple chairs at the far wall; ample unobstructed central space for close formal martial sparring. Clear daylight with a patch of dappled shade. No temple statues, no grand palace, no mountain cliffs. Eye-level three-quarter view. Fine muted naturalistic watercolor and ink illustration, historically grounded timber and stone, tactile understated brushwork, atmospheric depth, coherent restrained Jianghu visual world. Bottom foreground visually quiet for HTML dialogue. No people, no silhouettes, no text, no logos, no UI, no watermark, no magical effects.",
-  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/longmen-backyard.webp",
+  "output": "./public/art/v6/longmen-backyard.webp",
   "review": "Reviewed native image: coherent timber/stone or lake working space, empty foreground, no named figure or text. Mapped to matching chronicle scenes. Fair uses one image for several related scenes and is counted once."
 }

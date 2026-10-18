@@ -44,19 +44,25 @@ VAR qw_date = false
 不是……只是今日—— # beat:qw_private_xue_4 # scene:qw_private # cast:qw_zhao,qw_xue,qw_gu # speaker:qw_xue # mood:qw_xue=uneasy
 就是。 # beat:qw_private_xue_5 # scene:qw_private # cast:qw_zhao,qw_xue,qw_gu # speaker:qw_zhao # mood:qw_zhao=neutral
 他没让你替自己说可惜。薛直站在原处，汗比真正打完还多。 # beat:qw_private_xue_6 # scene:qw_private # cast:qw_zhao,qw_xue,qw_gu # speaker:narrator
+{
+- qw_plain:
+那封另赏你终究没碰。后来薛直留手，你也不拿一场没打成的试手往自己脸上贴——钱的干净与手的干净，在王庄是同一件事。 # beat:qw_private_xue_7 # scene:qw_private # cast:qw_zhao,qw_xue,qw_gu # speaker:narrator
+- else:
+受伤怎么算、谁喊停，白纸黑字先写下了。所以方才薛直收不住那一停，也没有人需要再猜这算谁的错。 # beat:qw_private_xue_8 # scene:qw_private # cast:qw_zhao,qw_xue,qw_gu # speaker:narrator
+}
 * [把侍立的人请远一点，让两人自己收场。 # cid:qw_leave_room]
   ~ qw_space = true
-  门口我守。各位退两步，别替谁接话。 # beat:qw_private_xue_7 # scene:qw_private # cast:qw_zhao,qw_xue,qw_gu # speaker:you
-  你守得了王爷出事？ # beat:qw_private_xue_8 # scene:qw_private # cast:qw_zhao,qw_xue,qw_gu # speaker:qw_gu # mood:qw_gu=sharp
-  我守这一道门。别的职责还请长史自己定，不拿一个小门口全推给我。 # beat:qw_private_xue_9 # scene:qw_private # cast:qw_zhao,qw_xue,qw_gu # speaker:you
-  顾廷安没答应全撤，只让最近的两人站开。 # beat:qw_private_xue_10 # scene:qw_private # cast:qw_zhao,qw_xue,qw_gu # speaker:narrator
+  门口我守。各位退两步，别替谁接话。 # beat:qw_private_xue_9 # scene:qw_private # cast:qw_zhao,qw_xue,qw_gu # speaker:you
+  你守得了王爷出事？ # beat:qw_private_xue_10 # scene:qw_private # cast:qw_zhao,qw_xue,qw_gu # speaker:qw_gu # mood:qw_gu=sharp
+  我守这一道门。别的职责还请长史自己定，不拿一个小门口全推给我。 # beat:qw_private_xue_11 # scene:qw_private # cast:qw_zhao,qw_xue,qw_gu # speaker:you
+  顾廷安没答应全撤，只让最近的两人站开。 # beat:qw_private_xue_12 # scene:qw_private # cast:qw_zhao,qw_xue,qw_gu # speaker:narrator
   -> ask_board
 * [不替薛师傅表胆量，只递水，按例结束这次试手。 # cid:qw_offer_water]
   ~ qw_space = false
-  水在这里。今日没打成，我也不替两位往外报胜负。 # beat:qw_private_xue_11 # scene:qw_private # cast:qw_zhao,qw_xue,qw_gu # speaker:you
-  这句话请记着。 # beat:qw_private_xue_12 # scene:qw_private # cast:qw_zhao,qw_xue,qw_gu # speaker:qw_xue # mood:qw_xue=calm
-  我记。我也不说自己本来能赢。 # beat:qw_private_xue_13 # scene:qw_private # cast:qw_zhao,qw_xue,qw_gu # speaker:qw_zhao # mood:qw_zhao=uneasy
-  你把木凳放回去，没请一群人围着等王爷想开。 # beat:qw_private_xue_14 # scene:qw_private # cast:qw_zhao,qw_xue,qw_gu # speaker:narrator
+  水在这里。今日没打成，我也不替两位往外报胜负。 # beat:qw_private_xue_13 # scene:qw_private # cast:qw_zhao,qw_xue,qw_gu # speaker:you
+  这句话请记着。 # beat:qw_private_xue_14 # scene:qw_private # cast:qw_zhao,qw_xue,qw_gu # speaker:qw_xue # mood:qw_xue=calm
+  我记。我也不说自己本来能赢。 # beat:qw_private_xue_15 # scene:qw_private # cast:qw_zhao,qw_xue,qw_gu # speaker:qw_zhao # mood:qw_zhao=uneasy
+  你把木凳放回去，没请一群人围着等王爷想开。 # beat:qw_private_xue_16 # scene:qw_private # cast:qw_zhao,qw_xue,qw_gu # speaker:narrator
   -> ask_board
 
 === ask_board ===
@@ -66,19 +72,25 @@ VAR qw_date = false
 若有，府里那些亲笔拳谱又该开一箱。 # beat:qw_ask_board_4 # scene:qw_veranda # cast:qw_zhao,qw_chen,qw_lu # speaker:qw_lu # mood:qw_lu=calm
 别提拳谱。没烧就好，我也没说今日再换老师。 # beat:qw_ask_board_5 # scene:qw_veranda # cast:qw_zhao,qw_chen,qw_lu # speaker:qw_zhao # mood:qw_zhao=sharp
 你想起他方才那几手，明明比不少同业认真，仍不能替薛直证明心里没怕。 # beat:qw_ask_board_6 # scene:qw_veranda # cast:qw_zhao,qw_chen,qw_lu # speaker:narrator
+{
+- qw_space:
+那日你把闲人请远两步，赵承晏与薛直的话才真说完。此后每一次公开问手，你仍先看场边站的是谁。 # beat:qw_ask_board_7 # scene:qw_veranda # cast:qw_zhao,qw_chen,qw_lu # speaker:narrator
+- else:
+你只递过一碗水，没有替任何人表过胆量。所以后来薛直怕什么、赵承晏急什么，你都还得像今日这样，一句句问出来。 # beat:qw_ask_board_8 # scene:qw_veranda # cast:qw_zhao,qw_chen,qw_lu # speaker:narrator
+}
 * [承认我只敢替自己作证，不能替所有对手保证。 # cid:qw_no_false_witness]
   ~ qw_truth = true
-  我能说自己没让。别人那一下怎么想，得他自己说，也得后来仍敢这么说。 # beat:qw_ask_board_7 # scene:qw_veranda # cast:qw_zhao,qw_chen,qw_lu # speaker:you
-  所以还得等。 # beat:qw_ask_board_8 # scene:qw_veranda # cast:qw_zhao,qw_chen,qw_lu # speaker:qw_zhao # mood:qw_zhao=uneasy
-  不止等。也得有人看见，真的赢了您，日子没有变坏。 # beat:qw_ask_board_9 # scene:qw_veranda # cast:qw_zhao,qw_chen,qw_lu # speaker:you
-  这回他说到地方了。王爷先试着输。 # beat:qw_ask_board_10 # scene:qw_veranda # cast:qw_zhao,qw_chen,qw_lu # speaker:qw_chen # mood:qw_chen=calm
+  我能说自己没让。别人那一下怎么想，得他自己说，也得后来仍敢这么说。 # beat:qw_ask_board_9 # scene:qw_veranda # cast:qw_zhao,qw_chen,qw_lu # speaker:you
+  所以还得等。 # beat:qw_ask_board_10 # scene:qw_veranda # cast:qw_zhao,qw_chen,qw_lu # speaker:qw_zhao # mood:qw_zhao=uneasy
+  不止等。也得有人看见，真的赢了您，日子没有变坏。 # beat:qw_ask_board_11 # scene:qw_veranda # cast:qw_zhao,qw_chen,qw_lu # speaker:you
+  这回他说到地方了。王爷先试着输。 # beat:qw_ask_board_12 # scene:qw_veranda # cast:qw_zhao,qw_chen,qw_lu # speaker:qw_chen # mood:qw_chen=calm
   -> public_bout
 * [先问他，最想知道的是多强，还是哪一句夸奖是真的。 # cid:qw_person_first]
   ~ qw_truth = false
-  若今日有人不看身份认真打，您想先问什么？ # beat:qw_ask_board_11 # scene:qw_veranda # cast:qw_zhao,qw_chen,qw_lu # speaker:you
-  我想知道他赢了我，还敢不敢明日开门。 # beat:qw_ask_board_12 # scene:qw_veranda # cast:qw_zhao,qw_chen,qw_lu # speaker:qw_zhao # mood:qw_zhao=uneasy
-  那便先让明日照常。别今夜又送一封把人吓着的厚礼。 # beat:qw_ask_board_13 # scene:qw_veranda # cast:qw_zhao,qw_chen,qw_lu # speaker:qw_lu # mood:qw_lu=calm
-  赵承晏没再用一声我不追究，替别人把余下十年说完。 # beat:qw_ask_board_14 # scene:qw_veranda # cast:qw_zhao,qw_chen,qw_lu # speaker:narrator
+  若今日有人不看身份认真打，您想先问什么？ # beat:qw_ask_board_13 # scene:qw_veranda # cast:qw_zhao,qw_chen,qw_lu # speaker:you
+  我想知道他赢了我，还敢不敢明日开门。 # beat:qw_ask_board_14 # scene:qw_veranda # cast:qw_zhao,qw_chen,qw_lu # speaker:qw_zhao # mood:qw_zhao=uneasy
+  那便先让明日照常。别今夜又送一封把人吓着的厚礼。 # beat:qw_ask_board_15 # scene:qw_veranda # cast:qw_zhao,qw_chen,qw_lu # speaker:qw_lu # mood:qw_lu=calm
+  赵承晏没再用一声我不追究，替别人把余下十年说完。 # beat:qw_ask_board_16 # scene:qw_veranda # cast:qw_zhao,qw_chen,qw_lu # speaker:narrator
   -> public_bout
 
 === public_bout ===
@@ -89,17 +101,23 @@ VAR qw_date = false
 薛师傅，再这样，我现在认输。 # beat:qw_public_bout_5 # scene:qw_public # cast:qw_zhao,qw_xue,qw_gu # speaker:qw_zhao # mood:qw_zhao=sharp
 那得罪了。 # beat:qw_public_bout_6 # scene:qw_public # cast:qw_zhao,qw_xue,qw_gu # speaker:qw_xue # mood:qw_xue=sharp
 这回一百四十余招，赵承晏败得清楚。你离得近，能看见他要扶住膝盖，又自己站直。 # beat:qw_public_bout_7 # scene:qw_public # cast:qw_zhao,qw_xue,qw_gu # speaker:narrator
+{
+- qw_truth:
+我能说自己没让——薛直今日这一胜，场边有人作证。往后敢不敢一直照实说，仍得等他自己走过，也等他日子没有因此变坏。 # beat:qw_public_bout_8 # scene:qw_public # cast:qw_zhao,qw_xue,qw_gu # speaker:narrator
+- else:
+您想先问什么——那一句你替赵承晏问出过。今日他败得清楚，明日照常开门，便算那句答案在了。 # beat:qw_public_bout_9 # scene:qw_public # cast:qw_zhao,qw_xue,qw_gu # speaker:narrator
+}
 * [等行礼完，再按事先说好的方式扶他。 # cid:qw_wait_bow]
   ~ qw_waited = true
-  先行礼。回去要人扶，照例叫我，不急在这一息。 # beat:qw_public_bout_8 # scene:qw_public # cast:qw_zhao,qw_xue,qw_gu # speaker:you
-  我能走。今日记薛师傅胜。 # beat:qw_public_bout_9 # scene:qw_public # cast:qw_zhao,qw_xue,qw_gu # speaker:qw_zhao # mood:qw_zhao=calm
-  记着。往后也别忽然说我那天侥幸。 # beat:qw_public_bout_10 # scene:qw_public # cast:qw_zhao,qw_xue,qw_gu # speaker:qw_xue # mood:qw_xue=intent
+  先行礼。回去要人扶，照例叫我，不急在这一息。 # beat:qw_public_bout_10 # scene:qw_public # cast:qw_zhao,qw_xue,qw_gu # speaker:you
+  我能走。今日记薛师傅胜。 # beat:qw_public_bout_11 # scene:qw_public # cast:qw_zhao,qw_xue,qw_gu # speaker:qw_zhao # mood:qw_zhao=calm
+  记着。往后也别忽然说我那天侥幸。 # beat:qw_public_bout_12 # scene:qw_public # cast:qw_zhao,qw_xue,qw_gu # speaker:qw_xue # mood:qw_xue=intent
   -> nothing
 * [先上前问要不要扶，再退开，别替他宣布没伤。 # cid:qw_go_support]
   ~ qw_waited = false
-  要扶么？疼就说，不用为了外头这些人撑住。 # beat:qw_public_bout_11 # scene:qw_public # cast:qw_zhao,qw_xue,qw_gu # speaker:you
-  先让我把礼行完。 # beat:qw_public_bout_12 # scene:qw_public # cast:qw_zhao,qw_xue,qw_gu # speaker:qw_zhao # mood:qw_zhao=sharp
-  你退回半步。顾廷安看了你一眼，没有因为你问得好听就说做得没错。 # beat:qw_public_bout_13 # scene:qw_public # cast:qw_zhao,qw_xue,qw_gu # speaker:narrator
+  要扶么？疼就说，不用为了外头这些人撑住。 # beat:qw_public_bout_13 # scene:qw_public # cast:qw_zhao,qw_xue,qw_gu # speaker:you
+  先让我把礼行完。 # beat:qw_public_bout_14 # scene:qw_public # cast:qw_zhao,qw_xue,qw_gu # speaker:qw_zhao # mood:qw_zhao=sharp
+  你退回半步。顾廷安看了你一眼，没有因为你问得好听就说做得没错。 # beat:qw_public_bout_15 # scene:qw_public # cast:qw_zhao,qw_xue,qw_gu # speaker:narrator
   -> nothing
 
 === nothing ===
@@ -108,18 +126,24 @@ VAR qw_date = false
 送一两银，明日就说薛直收钱演戏。 # beat:qw_nothing_3 # scene:qw_veranda # cast:qw_chen,qw_lu,qw_gu # speaker:qw_chen # mood:qw_chen=sharp
 东西封回库。也别换个名目，说明明没送礼，只是多买他十年的东西。 # beat:qw_nothing_4 # scene:qw_veranda # cast:qw_chen,qw_lu,qw_gu # speaker:qw_lu # mood:qw_lu=neutral
 你端着未拆的那封钱，知道这次不是把钱递给对的人，便能办妥。 # beat:qw_nothing_5 # scene:qw_veranda # cast:qw_chen,qw_lu,qw_gu # speaker:narrator # fact:qw_public
+{
+- qw_waited:
+先行礼、再扶人——这个次序你没有坏过。后来他在公开处每退一步，你都仍按约好的方式伸手，不把扶与输搅在一起。 # beat:qw_nothing_6 # scene:qw_veranda # cast:qw_chen,qw_lu,qw_gu # speaker:narrator
+- else:
+要扶么——你问过，也被顶回过。此后赵承晏疼不疼，都先由他自己说；你只记亲眼看见的那一步。 # beat:qw_nothing_7 # scene:qw_veranda # cast:qw_chen,qw_lu,qw_gu # speaker:narrator
+}
 * [亲自把谢仪封回库，让领物的人知道没有暗中补偿。 # cid:qw_return_gift]
   ~ qw_closed_gift = true
-  我还库。照出入簿写，没送便写没送，不添一句另有安排。 # beat:qw_nothing_6 # scene:qw_veranda # cast:qw_chen,qw_lu,qw_gu # speaker:you
-  交接的两个人都记名。谁以后又替王爷热心，先来找我。 # beat:qw_nothing_7 # scene:qw_veranda # cast:qw_chen,qw_lu,qw_gu # speaker:qw_gu # mood:qw_gu=calm
-  你没拿那封钱出门，也没拿不出门换一份懂事的赏。 # beat:qw_nothing_8 # scene:qw_veranda # cast:qw_chen,qw_lu,qw_gu # speaker:narrator
+  我还库。照出入簿写，没送便写没送，不添一句另有安排。 # beat:qw_nothing_8 # scene:qw_veranda # cast:qw_chen,qw_lu,qw_gu # speaker:you
+  交接的两个人都记名。谁以后又替王爷热心，先来找我。 # beat:qw_nothing_9 # scene:qw_veranda # cast:qw_chen,qw_lu,qw_gu # speaker:qw_gu # mood:qw_gu=calm
+  你没拿那封钱出门，也没拿不出门换一份懂事的赏。 # beat:qw_nothing_10 # scene:qw_veranda # cast:qw_chen,qw_lu,qw_gu # speaker:narrator
   -> tax
 * [把库单交回王爷，让这份不送成为他自己说的话。 # cid:qw_ask_prince_decide]
   ~ qw_closed_gift = false
-  我能照做，不能替王爷永远把不送这句话说在前头。请他亲自签回库。 # beat:qw_nothing_9 # scene:qw_veranda # cast:qw_chen,qw_lu,qw_gu # speaker:you
-  又得他费一次神。 # beat:qw_nothing_10 # scene:qw_veranda # cast:qw_chen,qw_lu,qw_gu # speaker:qw_gu # mood:qw_gu=sharp
-  该费。往后还要费很多次。 # beat:qw_nothing_11 # scene:qw_veranda # cast:qw_chen,qw_lu,qw_gu # speaker:qw_lu # mood:qw_lu=calm
-  赵承晏签了。笔比送礼时拿得慢，没有把麻烦全丢给陈三平。 # beat:qw_nothing_12 # scene:qw_veranda # cast:qw_chen,qw_lu,qw_gu # speaker:narrator
+  我能照做，不能替王爷永远把不送这句话说在前头。请他亲自签回库。 # beat:qw_nothing_11 # scene:qw_veranda # cast:qw_chen,qw_lu,qw_gu # speaker:you
+  又得他费一次神。 # beat:qw_nothing_12 # scene:qw_veranda # cast:qw_chen,qw_lu,qw_gu # speaker:qw_gu # mood:qw_gu=sharp
+  该费。往后还要费很多次。 # beat:qw_nothing_13 # scene:qw_veranda # cast:qw_chen,qw_lu,qw_gu # speaker:qw_lu # mood:qw_lu=calm
+  赵承晏签了。笔比送礼时拿得慢，没有把麻烦全丢给陈三平。 # beat:qw_nothing_14 # scene:qw_veranda # cast:qw_chen,qw_lu,qw_gu # speaker:narrator
   -> tax
 
 === tax ===
@@ -127,17 +151,23 @@ VAR qw_date = false
 我什么也没做！ # beat:qw_tax_2 # scene:qw_veranda # cast:qw_zhao,qw_gu # speaker:qw_zhao # mood:qw_zhao=sharp
 也正因为您没动，才有人替您的名头动。 # beat:qw_tax_3 # scene:qw_veranda # cast:qw_zhao,qw_gu # speaker:qw_gu # mood:qw_gu=uneasy
 赵承晏要亲去查明。你能随他看，也能留在府里回话；不能只靠一句知道王爷为人便替公事定论。 # beat:qw_tax_4 # scene:qw_veranda # cast:qw_zhao,qw_gu # speaker:narrator
+{
+- qw_closed_gift:
+那封谢仪照出入簿写没送，是你亲手封回的库。如今这桩税案传成报复，你至少知道：账上翻不出半两送出去的钱。 # beat:qw_tax_5 # scene:qw_veranda # cast:qw_zhao,qw_gu # speaker:narrator
+- else:
+不送是王爷自己签下的。所以今日外面传成报复，赵承晏也只得自己去查明——那句话是他说的，没人替他挡。 # beat:qw_tax_6 # scene:qw_veranda # cast:qw_zhao,qw_gu # speaker:narrator
+}
 * [随行只看正常文书，不代官署下判断。 # cid:qw_read_papers]
   ~ qw_paper_seen = true
-  我跟去，看见什么写什么。王府的口气少放一点，不把查清说成谁不该查。 # beat:qw_tax_5 # scene:qw_veranda # cast:qw_zhao,qw_gu # speaker:you
-  好。税的事照税的规矩，不能为了证明我没报复，反而让他们不敢办。 # beat:qw_tax_6 # scene:qw_veranda # cast:qw_zhao,qw_gu # speaker:qw_zhao # mood:qw_zhao=intent
-  你亲眼看了案由与日期。正常查税并没有因为传闻就变成不存在。 # beat:qw_tax_7 # scene:qw_veranda # cast:qw_zhao,qw_gu # speaker:narrator
+  我跟去，看见什么写什么。王府的口气少放一点，不把查清说成谁不该查。 # beat:qw_tax_7 # scene:qw_veranda # cast:qw_zhao,qw_gu # speaker:you
+  好。税的事照税的规矩，不能为了证明我没报复，反而让他们不敢办。 # beat:qw_tax_8 # scene:qw_veranda # cast:qw_zhao,qw_gu # speaker:qw_zhao # mood:qw_zhao=intent
+  你亲眼看了案由与日期。正常查税并没有因为传闻就变成不存在。 # beat:qw_tax_9 # scene:qw_veranda # cast:qw_zhao,qw_gu # speaker:narrator
   -> guard_faces
 * [留府接住来问的人，只传确定的查明结果。 # cid:qw_keep_door]
   ~ qw_paper_seen = false
-  我留门口。不知道的就说不知道，不先用王府保你没事挡住每个人。 # beat:qw_tax_8 # scene:qw_veranda # cast:qw_zhao,qw_gu # speaker:you
-  我把结果送回。没等到，不许你自己先说处理好了。 # beat:qw_tax_9 # scene:qw_veranda # cast:qw_zhao,qw_gu # speaker:qw_gu # mood:qw_gu=calm
-  后来赵承晏当面回述那件正常税务，你才把查明二字传出去，不说自己亲眼看过卷宗。 # beat:qw_tax_10 # scene:qw_veranda # cast:qw_zhao,qw_gu # speaker:narrator
+  我留门口。不知道的就说不知道，不先用王府保你没事挡住每个人。 # beat:qw_tax_10 # scene:qw_veranda # cast:qw_zhao,qw_gu # speaker:you
+  我把结果送回。没等到，不许你自己先说处理好了。 # beat:qw_tax_11 # scene:qw_veranda # cast:qw_zhao,qw_gu # speaker:qw_gu # mood:qw_gu=calm
+  后来赵承晏当面回述那件正常税务，你才把查明二字传出去，不说自己亲眼看过卷宗。 # beat:qw_tax_12 # scene:qw_veranda # cast:qw_zhao,qw_gu # speaker:narrator
   -> guard_faces
 
 === guard_faces ===
@@ -145,36 +175,48 @@ VAR qw_date = false
 都撤！ # beat:qw_guard_faces_2 # scene:qw_public # cast:qw_zhao,qw_gu # speaker:qw_zhao # mood:qw_zhao=sharp
 撤干净，王爷真出事，算谁的？ # beat:qw_guard_faces_3 # scene:qw_public # cast:qw_zhao,qw_gu # speaker:qw_gu # mood:qw_gu=uneasy
 你认得门边那位昨日还在府里当值的人。他假装不认得你，连鞋都拿反了。 # beat:qw_guard_faces_4 # scene:qw_public # cast:qw_zhao,qw_gu # speaker:narrator
+{
+- qw_paper_seen:
+案由与日期你亲眼看过一遍。此刻满街熟面孔，你比谁都分得清：哪一样是正常差事，哪一样是替名头热心。 # beat:qw_guard_faces_5 # scene:qw_public # cast:qw_zhao,qw_gu # speaker:narrator
+- else:
+查明二字你等本人回述才传出去过。如今半条街都是府里的人，你更不敢替任何一张脸担保来意。 # beat:qw_guard_faces_6 # scene:qw_public # cast:qw_zhao,qw_gu # speaker:narrator
+}
 * [劝顾廷安把接应退到不围住对手的位置，仍讲清谁负责。 # cid:qw_quiet_guard]
   ~ qw_guard_clear = true
-  别把半街都变成府门。能照应的留远处，谁接哪一处仍由长史自己报。 # beat:qw_guard_faces_5 # scene:qw_public # cast:qw_zhao,qw_gu # speaker:you
-  你们都觉得远一点就算没带？ # beat:qw_guard_faces_6 # scene:qw_public # cast:qw_zhao,qw_gu # speaker:qw_gu # mood:qw_gu=sharp
-  不是。只是别让每个来试手的人，先像进一次衙门。 # beat:qw_guard_faces_7 # scene:qw_public # cast:qw_zhao,qw_gu # speaker:you
-  他没全听你的，也没把自己的职责撤掉。 # beat:qw_guard_faces_8 # scene:qw_public # cast:qw_zhao,qw_gu # speaker:narrator
+  别把半街都变成府门。能照应的留远处，谁接哪一处仍由长史自己报。 # beat:qw_guard_faces_7 # scene:qw_public # cast:qw_zhao,qw_gu # speaker:you
+  你们都觉得远一点就算没带？ # beat:qw_guard_faces_8 # scene:qw_public # cast:qw_zhao,qw_gu # speaker:qw_gu # mood:qw_gu=sharp
+  不是。只是别让每个来试手的人，先像进一次衙门。 # beat:qw_guard_faces_9 # scene:qw_public # cast:qw_zhao,qw_gu # speaker:you
+  他没全听你的，也没把自己的职责撤掉。 # beat:qw_guard_faces_10 # scene:qw_public # cast:qw_zhao,qw_gu # speaker:narrator
   -> pause
 * [先向王爷说明我只管陪练，不替长史许诺全撤。 # cid:qw_prince_guard]
   ~ qw_guard_clear = false
-  我能保证自己不围场，不能替长史把护卫都许成没人。 # beat:qw_guard_faces_9 # scene:qw_public # cast:qw_zhao,qw_gu # speaker:you
-  一个两个，都说不归自己。 # beat:qw_guard_faces_10 # scene:qw_public # cast:qw_zhao,qw_gu # speaker:qw_zhao # mood:qw_zhao=sharp
-  归我的这一步，我认。别的若我替人说了，您明日更不知道谁会来。 # beat:qw_guard_faces_11 # scene:qw_public # cast:qw_zhao,qw_gu # speaker:you
-  他仍恼，顾廷安却第一次没催你立刻退到旁边。 # beat:qw_guard_faces_12 # scene:qw_public # cast:qw_zhao,qw_gu # speaker:narrator
+  我能保证自己不围场，不能替长史把护卫都许成没人。 # beat:qw_guard_faces_11 # scene:qw_public # cast:qw_zhao,qw_gu # speaker:you
+  一个两个，都说不归自己。 # beat:qw_guard_faces_12 # scene:qw_public # cast:qw_zhao,qw_gu # speaker:qw_zhao # mood:qw_zhao=sharp
+  归我的这一步，我认。别的若我替人说了，您明日更不知道谁会来。 # beat:qw_guard_faces_13 # scene:qw_public # cast:qw_zhao,qw_gu # speaker:you
+  他仍恼，顾廷安却第一次没催你立刻退到旁边。 # beat:qw_guard_faces_14 # scene:qw_public # cast:qw_zhao,qw_gu # speaker:narrator
   -> pause
 
 === pause ===
 其后朝局骤紧，皇帝病重。赵承晏被留在京中四年，练功零碎，不能像把书停在某一页一样，等有空再接着读。 # beat:qw_pause_1 # scene:qw_veranda # cast:qw_gu,qw_lu # speaker:narrator
 这不是辞了便再聘一个教头的事。你自己的馆，也得先说清这一段。 # beat:qw_pause_2 # scene:qw_veranda # cast:qw_gu,qw_lu # speaker:qw_gu # mood:qw_gu=neutral
 他仍想练，哪日能练却不由他想。你留或回，都别装作两边能同时照常。 # beat:qw_pause_3 # scene:qw_veranda # cast:qw_gu,qw_lu # speaker:qw_lu # mood:qw_lu=calm
+{
+- qw_guard_clear:
+接应退到不围住对手的位置——那一次算成了半件。后来四年京中零碎练功，你记的每一架，都没有先替人清场。 # beat:qw_pause_4 # scene:qw_veranda # cast:qw_gu,qw_lu # speaker:narrator
+- else:
+归我的这一步我认——那句说出口，顾廷安便没再催你。往后你要留下的与要退开的，都照这一句分。 # beat:qw_pause_5 # scene:qw_veranda # cast:qw_gu,qw_lu # speaker:narrator
+}
 * [回乡守住自己的馆，按约寄回可做陪练的日期。 # cid:qw_guard_school]
   ~ qw_home = true
-  我回去。馆里的课不能等四年才说还开不开，府里能来的日子我提前报。 # beat:qw_pause_4 # scene:qw_veranda # cast:qw_gu,qw_lu # speaker:you
-  那固定俸钱先停，来的日子另算。 # beat:qw_pause_5 # scene:qw_veranda # cast:qw_gu,qw_lu # speaker:qw_gu # mood:qw_gu=calm
-  你把少掉的那份钱认下。回乡之后，开门、收徒、交租，也没有一件因为你在府里做过事便免了。 # beat:qw_pause_6 # scene:qw_veranda # cast:qw_gu,qw_lu # speaker:narrator
+  我回去。馆里的课不能等四年才说还开不开，府里能来的日子我提前报。 # beat:qw_pause_6 # scene:qw_veranda # cast:qw_gu,qw_lu # speaker:you
+  那固定俸钱先停，来的日子另算。 # beat:qw_pause_7 # scene:qw_veranda # cast:qw_gu,qw_lu # speaker:qw_gu # mood:qw_gu=calm
+  你把少掉的那份钱认下。回乡之后，开门、收徒、交租，也没有一件因为你在府里做过事便免了。 # beat:qw_pause_8 # scene:qw_veranda # cast:qw_gu,qw_lu # speaker:narrator
   -> return52
 * [留京教普通侍卫，承认自家馆只能托人代守。 # cid:qw_guard_palace]
   ~ qw_home = false
-  我留下教侍卫。不是坐等王爷有空，把别人的一日也等没了。 # beat:qw_pause_7 # scene:qw_veranda # cast:qw_gu,qw_lu # speaker:you
-  那有课便按课记，王爷不来，也不是你没干活。 # beat:qw_pause_8 # scene:qw_veranda # cast:qw_gu,qw_lu # speaker:qw_gu # mood:qw_gu=intent
-  你托人守馆，钱能寄回，自己却不能每次都到场。来信先问的，渐渐不再是谁赢了哪一场。 # beat:qw_pause_9 # scene:qw_veranda # cast:qw_gu,qw_lu # speaker:narrator
+  我留下教侍卫。不是坐等王爷有空，把别人的一日也等没了。 # beat:qw_pause_9 # scene:qw_veranda # cast:qw_gu,qw_lu # speaker:you
+  那有课便按课记，王爷不来，也不是你没干活。 # beat:qw_pause_10 # scene:qw_veranda # cast:qw_gu,qw_lu # speaker:qw_gu # mood:qw_gu=intent
+  你托人守馆，钱能寄回，自己却不能每次都到场。来信先问的，渐渐不再是谁赢了哪一场。 # beat:qw_pause_11 # scene:qw_veranda # cast:qw_gu,qw_lu # speaker:narrator
   -> return52
 
 === return52 ===
@@ -227,17 +269,23 @@ VAR qw_date = false
 这场别当成全胜。 # beat:qw_stone55_3 # scene:qw_wound # cast:qw_zhao,qw_shi # speaker:qw_zhao # mood:qw_zhao=uneasy
 看不起我？输了就是输了，膝伤也确实发了！ # beat:qw_stone55_4 # scene:qw_wound # cast:qw_zhao,qw_shi # speaker:qw_shi # mood:qw_shi=sharp
 纸在你手里。你能先把两件事都写上，也能只留自己的所见，等本人来核；不能替他们删掉不利的一半。 # beat:qw_stone55_5 # scene:qw_wound # cast:qw_zhao,qw_shi # speaker:narrator # fact:qw_55
+{
+- qw_person:
+最难等的是什么——他答过你一回：想不起小时候想做的事。今日纸上这一胜一伤，你也不再替任何一栏先想好轻重。 # beat:qw_stone55_6 # scene:qw_wound # cast:qw_zhao,qw_shi # speaker:narrator
+- else:
+往后陪练怎样排，你问在先。所以今日赵胜石伤两栏并存，你照常按能练的日子写，没有借这一胜加码。 # beat:qw_stone55_7 # scene:qw_wound # cast:qw_zhao,qw_shi # speaker:narrator
+}
 * [写赵胜，也写旧伤中发，请两人各看自己那一段。 # cid:qw_both_facts]
   ~ qw_both = true
-  两件事一起写。不是王爷善让一胜，也不是石师傅忽然不该算输。 # beat:qw_stone55_6 # scene:qw_wound # cast:qw_zhao,qw_shi # speaker:you
-  我也正想这样。给我看。 # beat:qw_stone55_7 # scene:qw_wound # cast:qw_zhao,qw_shi # speaker:qw_zhao # mood:qw_zhao=calm
-  伤在哪一步，我自己补。别用一句膝不好把前面全盖了。 # beat:qw_stone55_8 # scene:qw_wound # cast:qw_zhao,qw_shi # speaker:qw_shi # mood:qw_shi=intent
+  两件事一起写。不是王爷善让一胜，也不是石师傅忽然不该算输。 # beat:qw_stone55_8 # scene:qw_wound # cast:qw_zhao,qw_shi # speaker:you
+  我也正想这样。给我看。 # beat:qw_stone55_9 # scene:qw_wound # cast:qw_zhao,qw_shi # speaker:qw_zhao # mood:qw_zhao=calm
+  伤在哪一步，我自己补。别用一句膝不好把前面全盖了。 # beat:qw_stone55_10 # scene:qw_wound # cast:qw_zhao,qw_shi # speaker:qw_shi # mood:qw_shi=intent
   -> board58
 * [先只交我亲眼见的换脚与停步，不替两人定轻重。 # cid:qw_personal_note]
   ~ qw_both = false
-  我写看见的脚步。胜与伤怎样并记，请两位本人核清，不由我用一句话压。 # beat:qw_stone55_9 # scene:qw_wound # cast:qw_zhao,qw_shi # speaker:you
-  那胜也补上，伤也补上。不是让你只留一张谁也看不出什么的纸。 # beat:qw_stone55_10 # scene:qw_wound # cast:qw_zhao,qw_shi # speaker:qw_zhao # mood:qw_zhao=intent
-  他亲自补足两项。你没有拿谨慎，假装自己已经替所有人负完责任。 # beat:qw_stone55_11 # scene:qw_wound # cast:qw_zhao,qw_shi # speaker:narrator
+  我写看见的脚步。胜与伤怎样并记，请两位本人核清，不由我用一句话压。 # beat:qw_stone55_11 # scene:qw_wound # cast:qw_zhao,qw_shi # speaker:you
+  那胜也补上，伤也补上。不是让你只留一张谁也看不出什么的纸。 # beat:qw_stone55_12 # scene:qw_wound # cast:qw_zhao,qw_shi # speaker:qw_zhao # mood:qw_zhao=intent
+  他亲自补足两项。你没有拿谨慎，假装自己已经替所有人负完责任。 # beat:qw_stone55_13 # scene:qw_wound # cast:qw_zhao,qw_shi # speaker:narrator
   -> board58
 
 === board58 ===
@@ -247,17 +295,23 @@ VAR qw_date = false
 他们讲我两败，讲得像此前一生都不值一看。 # beat:qw_board58_4 # scene:qw_board # cast:qw_pan,qw_zhou,qw_wei # speaker:qw_wei # mood:qw_wei=uneasy
 都该看。可你们要旁人看自己，也别只让人看最好看的那一段。 # beat:qw_board58_5 # scene:qw_board # cast:qw_pan,qw_zhou,qw_wei # speaker:qw_pan # mood:qw_pan=calm
 你有些年在乡里，有些年在府中。拿到手的纸，不能都当自己亲眼证明。 # beat:qw_board58_6 # scene:qw_board # cast:qw_pan,qw_zhou,qw_wei # speaker:narrator
+{
+- qw_both:
+赵胜、伤发两栏并记，是五十五岁那年定下的写法。今日议榜的纸上，你也照此分栏，不混成一句谁都能念的结论。 # beat:qw_board58_7 # scene:qw_board # cast:qw_pan,qw_zhou,qw_wei # speaker:narrator
+- else:
+只交亲眼见的换脚与停步——他们当日各补各的那一栏。今日这叠履历，你也照旧等本人核清再并。 # beat:qw_board58_8 # scene:qw_board # cast:qw_pan,qw_zhou,qw_wei # speaker:narrator
+}
 * [只交自己真在场的记录，缺的年份留空。 # cid:qw_submit_seen]
   ~ qw_seen = true
-  在场的我签，不在的留空。那四年，不拿王府俸簿当每天都真打的证据。 # beat:qw_board58_7 # scene:qw_board # cast:qw_pan,qw_zhou,qw_wei # speaker:you
-  也请别拿我在外的四年，当每天都没打。 # beat:qw_board58_8 # scene:qw_board # cast:qw_pan,qw_zhou,qw_wei # speaker:qw_zhou # mood:qw_zhou=intent
-  我没见的，不替你写成没练。 # beat:qw_board58_9 # scene:qw_board # cast:qw_pan,qw_zhou,qw_wei # speaker:you
+  在场的我签，不在的留空。那四年，不拿王府俸簿当每天都真打的证据。 # beat:qw_board58_9 # scene:qw_board # cast:qw_pan,qw_zhou,qw_wei # speaker:you
+  也请别拿我在外的四年，当每天都没打。 # beat:qw_board58_10 # scene:qw_board # cast:qw_pan,qw_zhou,qw_wei # speaker:qw_zhou # mood:qw_zhou=intent
+  我没见的，不替你写成没练。 # beat:qw_board58_11 # scene:qw_board # cast:qw_pan,qw_zhou,qw_wei # speaker:you
   -> not_your_vote
 * [把见过与听来的一起交，每项明确注明来源。 # cid:qw_submit_sourced]
   ~ qw_seen = false
-  亲历的我署名，转述的写是谁说，不把两者混成一张都亲眼见过的纸。 # beat:qw_board58_10 # scene:qw_board # cast:qw_pan,qw_zhou,qw_wei # speaker:you
-  那几场争议也照这样。不许别人只拿最省字的一句讲我。 # beat:qw_board58_11 # scene:qw_board # cast:qw_pan,qw_zhou,qw_wei # speaker:qw_wei # mood:qw_wei=calm
-  你把来源写在每页头上，没有靠多递几页替任何人添一票。 # beat:qw_board58_12 # scene:qw_board # cast:qw_pan,qw_zhou,qw_wei # speaker:narrator
+  亲历的我署名，转述的写是谁说，不把两者混成一张都亲眼见过的纸。 # beat:qw_board58_12 # scene:qw_board # cast:qw_pan,qw_zhou,qw_wei # speaker:you
+  那几场争议也照这样。不许别人只拿最省字的一句讲我。 # beat:qw_board58_13 # scene:qw_board # cast:qw_pan,qw_zhou,qw_wei # speaker:qw_wei # mood:qw_wei=calm
+  你把来源写在每页头上，没有靠多递几页替任何人添一票。 # beat:qw_board58_14 # scene:qw_board # cast:qw_pan,qw_zhou,qw_wei # speaker:narrator
   -> not_your_vote
 
 === not_your_vote ===
@@ -265,18 +319,24 @@ VAR qw_date = false
 王爷问，能不能再添一份府里的具结。 # beat:qw_not_your_vote_2 # scene:qw_board # cast:qw_gu,qw_zhou # speaker:qw_gu # mood:qw_gu=uneasy
 他们议的若是敢不敢，府里多一张保书，究竟是在帮谁？ # beat:qw_not_your_vote_3 # scene:qw_board # cast:qw_gu,qw_zhou # speaker:qw_zhou # mood:qw_zhou=sharp
 你不是第八个议榜人，也不能替王府保证往后没人借名头热心。 # beat:qw_not_your_vote_4 # scene:qw_board # cast:qw_gu,qw_zhou # speaker:narrator
+{
+- qw_seen:
+在场的签、不在的留空——周伏生那句请别拿我在外的四年当每天没打，你答过：我没见的，不替你写成没练。 # beat:qw_not_your_vote_5 # scene:qw_board # cast:qw_gu,qw_zhou # speaker:narrator
+- else:
+来源写在每页头上——这一叠今日也照此交。谁亲历、谁转述，议榜人不必猜。 # beat:qw_not_your_vote_6 # scene:qw_board # cast:qw_gu,qw_zhou # speaker:narrator
+}
 * [不添王府保书，只交已核过的真实记录。 # cid:qw_no_extra_seal]
   ~ qw_no_seal = true
-  不添。那一纸也不能证明十年后谁都不怕。既然等真结果，就让记录自己站。 # beat:qw_not_your_vote_5 # scene:qw_board # cast:qw_gu,qw_zhou # speaker:you
-  我照这句回。 # beat:qw_not_your_vote_6 # scene:qw_board # cast:qw_gu,qw_zhou # speaker:qw_gu # mood:qw_gu=calm
-  他没有向你保证王爷一定满意，仍带着那点不满意走回府里。 # beat:qw_not_your_vote_7 # scene:qw_board # cast:qw_gu,qw_zhou # speaker:narrator
+  不添。那一纸也不能证明十年后谁都不怕。既然等真结果，就让记录自己站。 # beat:qw_not_your_vote_7 # scene:qw_board # cast:qw_gu,qw_zhou # speaker:you
+  我照这句回。 # beat:qw_not_your_vote_8 # scene:qw_board # cast:qw_gu,qw_zhou # speaker:qw_gu # mood:qw_gu=calm
+  他没有向你保证王爷一定满意，仍带着那点不满意走回府里。 # beat:qw_not_your_vote_9 # scene:qw_board # cast:qw_gu,qw_zhou # speaker:narrator
   -> named
 * [把问题交回王爷，要求这次也由他亲口说不干预。 # cid:qw_return_request]
   ~ qw_no_seal = false
-  让王爷自己决定不加。不能每一回都由旁人替他挡住，他只等一个好结果。 # beat:qw_not_your_vote_8 # scene:qw_board # cast:qw_gu,qw_zhou # speaker:you
-  你倒会给我添路。 # beat:qw_not_your_vote_9 # scene:qw_board # cast:qw_gu,qw_zhou # speaker:qw_gu # mood:qw_gu=sharp
-  这趟我陪你走。不是只在门口说完便等别人办。 # beat:qw_not_your_vote_10 # scene:qw_board # cast:qw_gu,qw_zhou # speaker:you
-  你们走了一趟，未带新的保书回来。 # beat:qw_not_your_vote_11 # scene:qw_board # cast:qw_gu,qw_zhou # speaker:narrator
+  让王爷自己决定不加。不能每一回都由旁人替他挡住，他只等一个好结果。 # beat:qw_not_your_vote_10 # scene:qw_board # cast:qw_gu,qw_zhou # speaker:you
+  你倒会给我添路。 # beat:qw_not_your_vote_11 # scene:qw_board # cast:qw_gu,qw_zhou # speaker:qw_gu # mood:qw_gu=sharp
+  这趟我陪你走。不是只在门口说完便等别人办。 # beat:qw_not_your_vote_12 # scene:qw_board # cast:qw_gu,qw_zhou # speaker:you
+  你们走了一趟，未带新的保书回来。 # beat:qw_not_your_vote_13 # scene:qw_board # cast:qw_gu,qw_zhou # speaker:narrator
   -> named
 
 === named ===
@@ -287,16 +347,22 @@ VAR qw_date = false
 我不觉得自己就一定弱。可他们要看的本地那几年，我确实没有这么多。 # beat:qw_named_5 # scene:qw_board # cast:qw_zhao,qw_gu,qw_zhou # speaker:qw_zhou # mood:qw_zhou=uneasy
 我知道。这一席有苦练，也有修榜的时机。 # beat:qw_named_6 # scene:qw_board # cast:qw_zhao,qw_gu,qw_zhou # speaker:qw_zhao # mood:qw_zhao=neutral
 你没在门外听见那两日的每一句争论，更没有替谁举过一只手。 # beat:qw_named_7 # scene:qw_board # cast:qw_zhao,qw_gu,qw_zhou # speaker:narrator # fact:qw_seat
+{
+- qw_no_seal:
+那一纸保书最终没有添。新榜贴出的这一行，因此只有一个练武的人名，不带王府半句保。 # beat:qw_named_8 # scene:qw_board # cast:qw_zhao,qw_gu,qw_zhou # speaker:narrator
+- else:
+不干预是王爷亲口说的。新榜这一行贴出来时，你们谁也不必再替谁挡一句话。 # beat:qw_named_9 # scene:qw_board # cast:qw_zhao,qw_gu,qw_zhou # speaker:narrator
+}
 * [在人群里叫他的姓名，不先替这场贴上王府喜事。 # cid:qw_name_only]
-  赵承晏，自己的那一行，看清了？ # beat:qw_named_8 # scene:qw_board # cast:qw_zhao,qw_gu,qw_zhou # speaker:you
-  看清了。你别比我还响。 # beat:qw_named_9 # scene:qw_board # cast:qw_zhao,qw_gu,qw_zhou # speaker:qw_zhao # mood:qw_zhao=amused
-  下次真走到场上，我还是要赢。 # beat:qw_named_10 # scene:qw_board # cast:qw_zhao,qw_gu,qw_zhou # speaker:qw_zhou # mood:qw_zhou=calm
-  赵点头，没有拿第十二去堵他。 # beat:qw_named_11 # scene:qw_board # cast:qw_zhao,qw_gu,qw_zhou # speaker:narrator
+  赵承晏，自己的那一行，看清了？ # beat:qw_named_10 # scene:qw_board # cast:qw_zhao,qw_gu,qw_zhou # speaker:you
+  看清了。你别比我还响。 # beat:qw_named_11 # scene:qw_board # cast:qw_zhao,qw_gu,qw_zhou # speaker:qw_zhao # mood:qw_zhao=amused
+  下次真走到场上，我还是要赢。 # beat:qw_named_12 # scene:qw_board # cast:qw_zhao,qw_gu,qw_zhou # speaker:qw_zhou # mood:qw_zhou=calm
+  赵点头，没有拿第十二去堵他。 # beat:qw_named_13 # scene:qw_board # cast:qw_zhao,qw_gu,qw_zhou # speaker:narrator
   -> people_after
 * [不抢着恭喜，让他自己把那张榜看够。 # cid:qw_space_after]
-  我在这边等。不替你先收起来，也不替你往京里报。 # beat:qw_named_12 # scene:qw_board # cast:qw_zhao,qw_gu,qw_zhou # speaker:you
-  好。今天让我再看一会儿。 # beat:qw_named_13 # scene:qw_board # cast:qw_zhao,qw_gu,qw_zhou # speaker:qw_zhao # mood:qw_zhao=calm
-  你向旁边挪了半步，留出他与自己姓名之间的那一点空。 # beat:qw_named_14 # scene:qw_board # cast:qw_zhao,qw_gu,qw_zhou # speaker:narrator
+  我在这边等。不替你先收起来，也不替你往京里报。 # beat:qw_named_14 # scene:qw_board # cast:qw_zhao,qw_gu,qw_zhou # speaker:you
+  好。今天让我再看一会儿。 # beat:qw_named_15 # scene:qw_board # cast:qw_zhao,qw_gu,qw_zhou # speaker:qw_zhao # mood:qw_zhao=calm
+  你向旁边挪了半步，留出他与自己姓名之间的那一点空。 # beat:qw_named_16 # scene:qw_board # cast:qw_zhao,qw_gu,qw_zhou # speaker:narrator
   -> people_after
 
 === people_after ===

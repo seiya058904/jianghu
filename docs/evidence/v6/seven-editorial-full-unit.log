@@ -467,7 +467,7 @@ test at tests\seven-questions.test.ts:12:1
     '约定的那天，同伴按期离开。余下的回信由你跑，课由你补；来借书的人催到门口时，你才知道自己答应的剩下这一份有多重。\n' +
     '你把前两卷送出鹿门，同行的人会换，收件处也会换。有人只想抢先抄一句，你便等他把附注翻开，再说哪处还须问老师。到八月，接班者真站在路口，你没有让所有人永远等着同一个人回来。'
 
-      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/seven-questions.test.ts:17:20)
+      at TestContext.<anonymous> (file:///[author-local-path]
       at Test.runInAsyncScope (node:async_hooks:227:14)
       at Test.run (node:internal/test_runner/test:1201:25)
       at Test.start (node:internal/test_runner/test:1096:17)

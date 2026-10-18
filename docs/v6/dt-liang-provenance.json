@@ -1,7 +1,7 @@
 {
   "tool": "built-in image_gen",
-  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-3ae9fa38-fd67-4d7f-9660-b86e23d4496b.png",
+  "source": "[author-local-path]",
   "prompt": "Use case: stylized-concept. Production transparent sprite for Chinese historical wuxia visual novel Jianghu. Single character only. Liang Zhaoshui 梁照水, age47, experienced lake boat protector, thick sturdy muscular build, broad sun-weathered face, dark warm eyes, rounded broad nose, heavy brows, short cropped black beard with just a few gray hairs, black hair in a practical short topknot wrapped with faded cloth. Deep desaturated teal short outer coat over light linen cross collar, wide slate cloth belt, dark wrist wraps and work-worn trousers. Holds a simple sheathed short dao close against his left hip, other hand open and relaxed. Neutral serious expression with a trace of restless impatience. No noble jewelry. Full head to mid thighs, both hands and elbows and full hair safely inside frame, centered three-quarter view with complete readable silhouette. Detailed muted naturalistic watercolor and ink illustration, realistic mature face and anatomy, carefully drawn fabric and hands, warm neutral soft even lighting. Genuine transparent alpha background, no scenery, no ground shadow, no text, no frame, no glow, no logo, no additional figures. Maintain restrained Jianghu illustrated style and clearly individual face identity.",
-  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/dt-liang.webp",
+  "output": "./public/art/v6/dt-liang.webp",
   "review": "Pending visual review and formal story mapping"
 }

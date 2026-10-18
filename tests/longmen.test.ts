@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -16,8 +17,8 @@ test('Longmen two endings preserve fixed bouts, sourced recollection and the fiv
   assert.throws(()=>restoreVN(JSON.stringify(r.s.save()),{content,version:'taihua-1.0.0'}),/作品或版本不兼容/);
  }
  assert.match(travel.text,/送剑那一段/);assert.match(home.text,/轮到你留在门口/);
- writeFileSync('docs/evidence/v6/longmen-travel-transcript.txt',travel.text);
- writeFileSync('docs/evidence/v6/longmen-home-transcript.txt',home.text);
+ writeFileSync(evidencePath('docs/evidence/v6/longmen-travel-transcript.txt'),travel.text);
+ writeFileSync(evidencePath('docs/evidence/v6/longmen-home-transcript.txt'),home.text);
 });
 test('Longmen paired spectator duty changes what was witnessed; early overwork and lifting carries a later limit',()=>{
  const safe=run(ids=>ids[0]);const strained=run(ids=>ids.includes('lm_travel_choice')?'lm_travel_choice':ids[1]);
@@ -38,7 +39,7 @@ test('Longmen sampled paths cover authored nodes without inventing a hidden conv
  }
  const declared=[...readFileSync('story/longmen-v1.ink','utf8').matchAll(/# beat:(\S+)/g)].map(m=>m[1]);
  assert.deepEqual([...visited].sort(),declared.sort());assert.equal(people.size,9);
- writeFileSync('docs/evidence/v6/longmen-content-audit.json',JSON.stringify({status:'DRAFT_NOT_FINAL',sourceBeats:declared.length,visited:visited.size,decisionPointsPerRoute:20,choiceOptions:42,cast:[...people],sampledPaths:128,exhaustive:false,longestPassiveGap:longest,limits:'Expanded supplement scenes require production browser and full editorial review; not final acceptance.'},null,2));
+ writeFileSync(evidencePath('docs/evidence/v6/longmen-content-audit.json'),JSON.stringify({status:'DRAFT_NOT_FINAL',sourceBeats:declared.length,visited:visited.size,decisionPointsPerRoute:20,choiceOptions:42,cast:[...people],sampledPaths:128,exhaustive:false,longestPassiveGap:longest,limits:'Expanded supplement scenes require production browser and full editorial review; not final acceptance.'},null,2));
 });
 test('Longmen playable Qinghe recollection explicitly switches age and viewpoint while all three cane results stay fixed',()=>{
  for(const side of [0,1]){

@@ -39,7 +39,7 @@
 
 原始需求：
 
-- D:/下载/Jianghu-Codex-v6-8EE5B8B7E5A694E796B8E6A3BCE788AEE5A588E5A79EE8ADBBE690A4E88D.md
-- D:/下载/Jianghu-Codex-v6-99E5A089E685B8E9B9-AEE496B1E6968EE5B894E796BFE8BEB8E595.md
+- [author-local-path]
+- [author-local-path]
 
 本地提交已获授权；没有推送、发布、部署或修改远程配置。用户要求紧急停止，因此目标暂停，接手者恢复后继续未完成验收。

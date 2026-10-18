@@ -44,17 +44,23 @@ VAR ss_last_kept = false
 城里那一块平地，它仍能站住。 # beat:ss_first_step_3 # scene:ss_mountain # cast:ss_pupil # speaker:you
 那我岂不是多学了一样，回家还得多扫一处地才能练？ # beat:ss_first_step_4 # scene:ss_mountain # cast:ss_pupil # speaker:ss_pupil # mood:ss_pupil=amused
 他把鞋底泥刮在石边，真去借一块平整的地方。你手里两张纸，一张画旧步，一张画山路。 # beat:ss_first_step_5 # scene:ss_mountain # cast:ss_pupil # speaker:narrator
+{
+- ss_help_body:
+雨停后你想，那一下敢用劲，是因为先把自己的脚跟扎进泥里。要接住人，先问自己站住了没有。 # beat:ss_first_step_6 # scene:ss_mountain # cast:ss_pupil # speaker:narrator
+- else:
+那块石被你踩实了才敢交给人。后来教人接剑，你也总先找自己落得稳的那一处。 # beat:ss_first_step_7 # scene:ss_mountain # cast:ss_pupil # speaker:narrator
+}
 * [先花一课让他比较旧步在平地为何仍稳，留下两种适用处。 # cid:ss_keep_old_use]
   ~ ss_old_use = true
-  两张都留。不是今天有了新步，昨日便全错。 # beat:ss_first_step_6 # scene:ss_mountain # cast:ss_pupil # speaker:you
-  学徒在纸边画了一小方院子，又怕画得比他家还大。你让他在院子那边画出原来的收脚，斜路这边另画一条；两张画完，午课只剩半个时辰。 # beat:ss_first_step_7 # scene:ss_mountain # cast:ss_pupil # speaker:narrator
-  这处不收钱借我站就好。您别先替我添一座院。 # beat:ss_first_step_8 # scene:ss_mountain # cast:ss_pupil # speaker:ss_pupil # mood:ss_pupil=amused
+  两张都留。不是今天有了新步，昨日便全错。 # beat:ss_first_step_8 # scene:ss_mountain # cast:ss_pupil # speaker:you
+  学徒在纸边画了一小方院子，又怕画得比他家还大。你让他在院子那边画出原来的收脚，斜路这边另画一条；两张画完，午课只剩半个时辰。 # beat:ss_first_step_9 # scene:ss_mountain # cast:ss_pupil # speaker:narrator
+  这处不收钱借我站就好。您别先替我添一座院。 # beat:ss_first_step_10 # scene:ss_mountain # cast:ss_pupil # speaker:ss_pupil # mood:ss_pupil=amused
   -> six_years
 * [先陪他把雨后山步练熟，平地旧步的解释等回门再补。 # cid:ss_train_new_ground]
   ~ ss_old_use = false
-  今天先把回家的路走稳。那张旧步我带回门里，请人重新演给你看。 # beat:ss_first_step_9 # scene:ss_mountain # cast:ss_pupil # speaker:you
-  那您得带回来。我不想每回换地方，都像从没练过。 # beat:ss_first_step_10 # scene:ss_mountain # cast:ss_pupil # speaker:ss_pupil # mood:ss_pupil=intent
-  你在旧步旁写了个“问”字。学徒抢过笔，又在后面添一小横，像给没回来的课记账。 # beat:ss_first_step_11 # scene:ss_mountain # cast:ss_pupil # speaker:narrator
+  今天先把回家的路走稳。那张旧步我带回门里，请人重新演给你看。 # beat:ss_first_step_11 # scene:ss_mountain # cast:ss_pupil # speaker:you
+  那您得带回来。我不想每回换地方，都像从没练过。 # beat:ss_first_step_12 # scene:ss_mountain # cast:ss_pupil # speaker:ss_pupil # mood:ss_pupil=intent
+  你在旧步旁写了个“问”字。学徒抢过笔，又在后面添一小横，像给没回来的课记账。 # beat:ss_first_step_13 # scene:ss_mountain # cast:ss_pupil # speaker:narrator
   -> six_years
 
 === six_years ===
@@ -84,17 +90,23 @@ VAR ss_last_kept = false
 不能用，便再改。 # beat:ss_fifteen_4 # scene:ss_hall # cast:ss_xiezhibai,ss_recorder # speaker:you
 再下一代呢？ # beat:ss_fifteen_5 # scene:ss_hall # cast:ss_xiezhibai,ss_recorder # speaker:ss_xiezhibai # mood:ss_xiezhibai=intent
 他把录剑人手下的旧式抽出，压在新页旁。纸边错了一寸，他亲手对齐。你看着一张张纸，最怕的却是每个后来者都得先向这张桌子求一次许可。 # beat:ss_fifteen_6 # scene:ss_hall # cast:ss_xiezhibai,ss_recorder # speaker:narrator
+{
+- ss_show_compare:
+平地到斜板那半分失稳，后来写进了别录的按语。先给旧式一个能站住的地方，再看它到哪里开始不够。 # beat:ss_fifteen_7 # scene:ss_hall # cast:ss_xiezhibai,ss_recorder # speaker:narrator
+- else:
+斜板先演那一回，让缺处自己露出来。你没替旧式辩护，只把两条路各自到头的位置记下。 # beat:ss_fifteen_8 # scene:ss_hall # cast:ss_xiezhibai,ss_recorder # speaker:narrator
+}
 * [请他正面回答，明知旧式不合适，是否仍要弟子照练。 # cid:ss_question_after]
-  只怕以后改得太多，今日便让他在斜路上再收一次脚？ # beat:ss_fifteen_7 # scene:ss_hall # cast:ss_xiezhibai,ss_recorder # speaker:you
-  我没叫他再往崖边走。 # beat:ss_fifteen_8 # scene:ss_hall # cast:ss_xiezhibai,ss_recorder # speaker:ss_xiezhibai # mood:ss_xiezhibai=uneasy
-  可原式若只剩一道不能改的门令，教他的人会怎样讲？ # beat:ss_fifteen_9 # scene:ss_hall # cast:ss_xiezhibai,ss_recorder # speaker:you
-  谢知白也沉默了。录剑人的笔悬到墨将干，仍等他答这一次。 # beat:ss_fifteen_10 # scene:ss_hall # cast:ss_xiezhibai,ss_recorder # speaker:narrator
+  只怕以后改得太多，今日便让他在斜路上再收一次脚？ # beat:ss_fifteen_9 # scene:ss_hall # cast:ss_xiezhibai,ss_recorder # speaker:you
+  我没叫他再往崖边走。 # beat:ss_fifteen_10 # scene:ss_hall # cast:ss_xiezhibai,ss_recorder # speaker:ss_xiezhibai # mood:ss_xiezhibai=uneasy
+  可原式若只剩一道不能改的门令，教他的人会怎样讲？ # beat:ss_fifteen_11 # scene:ss_hall # cast:ss_xiezhibai,ss_recorder # speaker:you
+  谢知白也沉默了。录剑人的笔悬到墨将干，仍等他答这一次。 # beat:ss_fifteen_12 # scene:ss_hall # cast:ss_xiezhibai,ss_recorder # speaker:narrator
   -> separate_record
 * [让录剑人按你写的去教，自己先不站旁边补话。 # cid:ss_ask_teacher]
-  请他照这几页带一个新人。我先不答。 # beat:ss_fifteen_11 # scene:ss_hall # cast:ss_xiezhibai,ss_recorder # speaker:you
-  录剑人到第二处便问原式从何而来。你几乎要接话，谢知白抬手拦住。 # beat:ss_fifteen_12 # scene:ss_hall # cast:ss_xiezhibai,ss_recorder # speaker:narrator
-  你不在的那日，他也会问。今日先听完。 # beat:ss_fifteen_13 # scene:ss_hall # cast:ss_xiezhibai,ss_recorder # speaker:ss_xiezhibai # mood:ss_xiezhibai=intent
-  你忍住了。录剑人拿笔点着第二行，仍等你的答复。你把准备好的下一册放回膝上，先补这一行。 # beat:ss_fifteen_14 # scene:ss_hall # cast:ss_xiezhibai,ss_recorder # speaker:narrator
+  请他照这几页带一个新人。我先不答。 # beat:ss_fifteen_13 # scene:ss_hall # cast:ss_xiezhibai,ss_recorder # speaker:you
+  录剑人到第二处便问原式从何而来。你几乎要接话，谢知白抬手拦住。 # beat:ss_fifteen_14 # scene:ss_hall # cast:ss_xiezhibai,ss_recorder # speaker:narrator
+  你不在的那日，他也会问。今日先听完。 # beat:ss_fifteen_15 # scene:ss_hall # cast:ss_xiezhibai,ss_recorder # speaker:ss_xiezhibai # mood:ss_xiezhibai=intent
+  你忍住了。录剑人拿笔点着第二行，仍等你的答复。你把准备好的下一册放回膝上，先补这一行。 # beat:ss_fifteen_16 # scene:ss_hall # cast:ss_xiezhibai,ss_recorder # speaker:narrator
   -> separate_record
 
 === separate_record ===
@@ -173,23 +185,29 @@ VAR ss_last_kept = false
 下一剑在哪？ # beat:ss_later_shen_3 # scene:ss_lateshen # cast:ss_olderpupil # speaker:you
 他说了一个位置。你指向还没动的人，问怎么已经知道。慢走一遍，第一剑的尽处生第二，第三又从第二继续，不是每次都先摆回原架。 # beat:ss_later_shen_4 # scene:ss_lateshen # cast:ss_olderpupil # speaker:narrator
 {
-- ss_old_use:
-我留了那张平地和斜路的图。不是让他们只照新式背一遍，是想他们知道什么时候别照。 # beat:ss_later_shen_5 # scene:ss_lateshen # cast:ss_olderpupil # speaker:ss_olderpupil # mood:ss_olderpupil=intent
-那就让他们试。图上没下今日的雨。 # beat:ss_later_shen_6 # scene:ss_lateshen # cast:ss_olderpupil # speaker:you
-他自己先落脚，等年轻人看清才叫第二个来。 # beat:ss_later_shen_7 # scene:ss_lateshen # cast:ss_olderpupil # speaker:narrator
+- ss_roof:
+那处雨檐后来再没漏过。少演的一遍你自己记在课稿上，次日补走，没有因为出过力就免了。 # beat:ss_later_shen_5 # scene:ss_lateshen # cast:ss_olderpupil # speaker:narrator
 - else:
-当年等您回门带来的那页，我仍收着。今天能在山路讲明白，回院里却又少一句。 # beat:ss_later_shen_8 # scene:ss_lateshen # cast:ss_olderpupil # speaker:ss_olderpupil # mood:ss_olderpupil=uneasy
-少就再问。别怕你教了几十年，便不能再当一次问的人。 # beat:ss_later_shen_9 # scene:ss_lateshen # cast:ss_olderpupil # speaker:you
-他约好次晨去平坪再试，今日不把没补的那句算作学生没悟性。 # beat:ss_later_shen_10 # scene:ss_lateshen # cast:ss_olderpupil # speaker:narrator
+工匠补檐那两日，你的课一课没停。钱从自己束脩里出，倒省下一个拿活换名声的先例。 # beat:ss_later_shen_6 # scene:ss_lateshen # cast:ss_olderpupil # speaker:narrator
+}
+{
+- ss_old_use:
+我留了那张平地和斜路的图。不是让他们只照新式背一遍，是想他们知道什么时候别照。 # beat:ss_later_shen_7 # scene:ss_lateshen # cast:ss_olderpupil # speaker:ss_olderpupil # mood:ss_olderpupil=intent
+那就让他们试。图上没下今日的雨。 # beat:ss_later_shen_8 # scene:ss_lateshen # cast:ss_olderpupil # speaker:you
+他自己先落脚，等年轻人看清才叫第二个来。 # beat:ss_later_shen_9 # scene:ss_lateshen # cast:ss_olderpupil # speaker:narrator
+- else:
+当年等您回门带来的那页，我仍收着。今天能在山路讲明白，回院里却又少一句。 # beat:ss_later_shen_10 # scene:ss_lateshen # cast:ss_olderpupil # speaker:ss_olderpupil # mood:ss_olderpupil=uneasy
+少就再问。别怕你教了几十年，便不能再当一次问的人。 # beat:ss_later_shen_11 # scene:ss_lateshen # cast:ss_olderpupil # speaker:you
+他约好次晨去平坪再试，今日不把没补的那句算作学生没悟性。 # beat:ss_later_shen_12 # scene:ss_lateshen # cast:ss_olderpupil # speaker:narrator
 }
 * [答不知新剑名，只请年轻人先说出自己为何收剑。 # cid:ss_no_name]
-  没名字。先别急着记，先问为什么。 # beat:ss_later_shen_11 # scene:ss_lateshen # cast:ss_olderpupil # speaker:you
-  那我回去又得多带纸。他们以为来一趟，只须领个好听剑名。 # beat:ss_later_shen_12 # scene:ss_lateshen # cast:ss_olderpupil # speaker:ss_olderpupil # mood:ss_olderpupil=amused
-  你笑着将那叠纸还他。他仍拿在手里，等最年轻的弟子把刚才第二步问完。 # beat:ss_later_shen_13 # scene:ss_lateshen # cast:ss_olderpupil # speaker:narrator
+  没名字。先别急着记，先问为什么。 # beat:ss_later_shen_13 # scene:ss_lateshen # cast:ss_olderpupil # speaker:you
+  那我回去又得多带纸。他们以为来一趟，只须领个好听剑名。 # beat:ss_later_shen_14 # scene:ss_lateshen # cast:ss_olderpupil # speaker:ss_olderpupil # mood:ss_olderpupil=amused
+  你笑着将那叠纸还他。他仍拿在手里，等最年轻的弟子把刚才第二步问完。 # beat:ss_later_shen_15 # scene:ss_lateshen # cast:ss_olderpupil # speaker:narrator
   -> lin
 * [让弟子亲走，叫身旁的人说哪一处看不清。 # cid:ss_walk_again]
-  我再走，你们仍得自己试。只看懂我手里这三下，回去还找不到你的下一剑。 # beat:ss_later_shen_14 # scene:ss_lateshen # cast:ss_olderpupil # speaker:you
-  年轻人请你慢到第二处，老弟子也蹲下看脚。门外雨又来了一阵，没人急着把新剑挂成门匾。 # beat:ss_later_shen_15 # scene:ss_lateshen # cast:ss_olderpupil # speaker:narrator
+  我再走，你们仍得自己试。只看懂我手里这三下，回去还找不到你的下一剑。 # beat:ss_later_shen_16 # scene:ss_lateshen # cast:ss_olderpupil # speaker:you
+  年轻人请你慢到第二处，老弟子也蹲下看脚。门外雨又来了一阵，没人急着把新剑挂成门匾。 # beat:ss_later_shen_17 # scene:ss_lateshen # cast:ss_olderpupil # speaker:narrator
   -> lin
 
 === lin ===
@@ -257,17 +275,23 @@ VAR ss_last_kept = false
 === duel_change ===
 数十合后，你们都知道对方不肯只用一套开头。谢收的是下一条能走的线，并不每次都把剑摆回胸前；你变化再多，也得顾住这一口气之后站在哪里。 # beat:ss_duel_change_1 # scene:ss_duel # cast:ss_xietingsong # speaker:narrator
 日影移到坪外，观剑弟子往后一退，露出一块刚才被人挡着的湿石。谢换步，你眼前有一处能追他的肩，也有一处能护住自己后路。 # beat:ss_duel_change_2 # scene:ss_duel # cast:ss_xietingsong # speaker:narrator
+{
+- ss_duel_read == 1:
+搭脊那一线的紧，你在收剑后仍记得。等力转再换线，慢了半息，却换来能续的下一剑。 # beat:ss_duel_change_3 # scene:ss_duel # cast:ss_xietingsong # speaker:narrator
+- else:
+袖外那一掠让开了一剑，也让你退到远处重新起手。近有近的接法，远有远的难处，你后来都写进了谱。 # beat:ss_duel_change_4 # scene:ss_duel # cast:ss_xietingsong # speaker:narrator
+}
 * [先把后路接上，再从他换身的一刻追出下一剑。 # cid:ss_keep_after]
-  你没有立刻追肩，剑先回到能接的位置。谢从另一侧进，碰到的不是刚才那条空线，只得重新改腕。 # beat:ss_duel_change_3 # scene:ss_duel # cast:ss_xietingsong # speaker:narrator
-  回来的，不全是旧架。 # beat:ss_duel_change_4 # scene:ss_duel # cast:ss_xietingsong # speaker:you
-  你总算肯亲口说了。 # beat:ss_duel_change_5 # scene:ss_duel # cast:ss_xietingsong # speaker:ss_xietingsong # mood:ss_xietingsong=intent
-  下一剑你仍从新落点生出，他也没有再要你站回原地。 # beat:ss_duel_change_6 # scene:ss_duel # cast:ss_xietingsong # speaker:narrator
+  你没有立刻追肩，剑先回到能接的位置。谢从另一侧进，碰到的不是刚才那条空线，只得重新改腕。 # beat:ss_duel_change_5 # scene:ss_duel # cast:ss_xietingsong # speaker:narrator
+  回来的，不全是旧架。 # beat:ss_duel_change_6 # scene:ss_duel # cast:ss_xietingsong # speaker:you
+  你总算肯亲口说了。 # beat:ss_duel_change_7 # scene:ss_duel # cast:ss_xietingsong # speaker:ss_xietingsong # mood:ss_xietingsong=intent
+  下一剑你仍从新落点生出，他也没有再要你站回原地。 # beat:ss_duel_change_8 # scene:ss_duel # cast:ss_xietingsong # speaker:narrator
   -> three_hundred
 * [从眼前落点继续，但先让开湿石，不拿一条险路赌他来不及改。 # cid:ss_make_next]
-  你换到干处，放掉抢肩的一瞬。谢的剑擦身过去，袖摆一荡，下一剑由你在近处接上。 # beat:ss_duel_change_7 # scene:ss_duel # cast:ss_xietingsong # speaker:narrator
-  机会放了？ # beat:ss_duel_change_8 # scene:ss_duel # cast:ss_xietingsong # speaker:ss_xietingsong # mood:ss_xietingsong=neutral
-  换了一处还能走的。 # beat:ss_duel_change_9 # scene:ss_duel # cast:ss_xietingsong # speaker:you
-  他回剑来试，你又得重新接。放过一招，没有让后面每一招都自动站稳。 # beat:ss_duel_change_10 # scene:ss_duel # cast:ss_xietingsong # speaker:narrator
+  你换到干处，放掉抢肩的一瞬。谢的剑擦身过去，袖摆一荡，下一剑由你在近处接上。 # beat:ss_duel_change_9 # scene:ss_duel # cast:ss_xietingsong # speaker:narrator
+  机会放了？ # beat:ss_duel_change_10 # scene:ss_duel # cast:ss_xietingsong # speaker:ss_xietingsong # mood:ss_xietingsong=neutral
+  换了一处还能走的。 # beat:ss_duel_change_11 # scene:ss_duel # cast:ss_xietingsong # speaker:you
+  他回剑来试，你又得重新接。放过一招，没有让后面每一招都自动站稳。 # beat:ss_duel_change_12 # scene:ss_duel # cast:ss_xietingsong # speaker:narrator
   -> three_hundred
 
 === three_hundred ===
@@ -344,16 +368,22 @@ VAR ss_last_kept = false
 阿棠冲到楼口，看见抄手被倒下的木架挡住。你多年留下的课堂稿在另一边低架上，老师却喊亲批旧录已经上不去。 # beat:ss_fire_3 # scene:ss_fire # cast:ss_tang,ss_librarian # speaker:narrator
 别从梁下穿！这一侧先退出来！ # beat:ss_fire_4 # scene:ss_fire # cast:ss_tang,ss_librarian # speaker:ss_librarian # mood:ss_librarian=sharp
 梁上传来一声裂响，门外有人喊水桶到了。阿棠顶住架子，腾不出手来接。 # beat:ss_fire_5 # scene:ss_fire # cast:ss_tang,ss_librarian # speaker:narrator
+{
+- ss_own_notes == 1:
+火光映过来时，你课稿上那一条还压在廊下：先看她留好的下一剑解决什么，再谈自己的改法。 # beat:ss_fire_6 # scene:ss_fire # cast:ss_tang,ss_librarian # speaker:narrator
+- else:
+火光映过来时，你课稿上那一条还压在廊下：自己露出的肋前，注明明日仍要走。 # beat:ss_fire_7 # scene:ss_fire # cast:ss_tang,ss_librarian # speaker:narrator
+}
 * [先同阿棠接出被挡的抄手，放下自己的课堂稿。 # cid:ss_help_copyist]
   ~ ss_saved_notes = false
-  这头给我。纸先别去拿，叫外面的人接。 # beat:ss_fire_6 # scene:ss_fire # cast:ss_tang,ss_librarian # speaker:you
-  你们把人从架下拖开，阿棠隔着衣袖护住他。老师在门外接上，你再回头，低架上的纸已经卷进火里。 # beat:ss_fire_7 # scene:ss_fire # cast:ss_tang,ss_librarian # speaker:narrator
-  出来！别拿剩两页当还能再走一回的路。 # beat:ss_fire_8 # scene:ss_fire # cast:ss_tang,ss_librarian # speaker:ss_tang # mood:ss_tang=intent
+  这头给我。纸先别去拿，叫外面的人接。 # beat:ss_fire_8 # scene:ss_fire # cast:ss_tang,ss_librarian # speaker:you
+  你们把人从架下拖开，阿棠隔着衣袖护住他。老师在门外接上，你再回头，低架上的纸已经卷进火里。 # beat:ss_fire_9 # scene:ss_fire # cast:ss_tang,ss_librarian # speaker:narrator
+  出来！别拿剩两页当还能再走一回的路。 # beat:ss_fire_10 # scene:ss_fire # cast:ss_tang,ss_librarian # speaker:ss_tang # mood:ss_tang=intent
   -> ashes
 * [抱出低架课堂稿，叫阿棠从侧廊接人，听见回声才退。 # cid:ss_delegate_and_save]
   ~ ss_saved_notes = true
-  侧廊接人！我取这一包，出来在门口应我。 # beat:ss_fire_9 # scene:ss_fire # cast:ss_tang,ss_librarian # speaker:you
-  你把近处纸包抱低，没再碰那些够不到的亲批。阿棠的应声从木架后传来，你边退边看侧廊有没有人接上。 # beat:ss_fire_10 # scene:ss_fire # cast:ss_tang,ss_librarian # speaker:narrator
+  侧廊接人！我取这一包，出来在门口应我。 # beat:ss_fire_11 # scene:ss_fire # cast:ss_tang,ss_librarian # speaker:you
+  你把近处纸包抱低，没再碰那些够不到的亲批。阿棠的应声从木架后传来，你边退边看侧廊有没有人接上。 # beat:ss_fire_12 # scene:ss_fire # cast:ss_tang,ss_librarian # speaker:narrator
   -> ashes
 
 === ashes ===
@@ -388,16 +418,22 @@ VAR ss_last_kept = false
 里面有照岳留下的，也肯给？ # beat:ss_three_months_4 # scene:ss_cart # cast:ss_nyelder,ss_librarian,ss_tang # speaker:ss_librarian # mood:ss_librarian=neutral
 这是你们的。 # beat:ss_three_months_5 # scene:ss_cart # cast:ss_nyelder,ss_librarian,ss_tang # speaker:ss_nyelder # mood:ss_nyelder=calm
 你站在车边，看着本来以为只剩自己记得的一行又出现在纸上。笔不是当年那支，字也不是当年那层墨，仍是有人一直替它留着的那一份。 # beat:ss_three_months_6 # scene:ss_cart # cast:ss_nyelder,ss_librarian,ss_tang # speaker:narrator
+{
+- ss_loss_open:
+报失册上你那一栏写得最短：失了，现存抄自何本，注明。先生翻到那页，笔这次落了下去。 # beat:ss_three_months_7 # scene:ss_cart # cast:ss_nyelder,ss_librarian,ss_tang # speaker:narrator
+- else:
+你交自己那份时，先说明哪几页未核。先生点头收下，没让你把没看过的当作看过。 # beat:ss_three_months_8 # scene:ss_cart # cast:ss_nyelder,ss_librarian,ss_tang # speaker:narrator
+}
 * [问南岳长老另一套是谁抄、从哪页核，不替来人先讲一段恩情。 # cid:ss_ask_copy_work]
-  这套回来，山里那套谁还在核？ # beat:ss_three_months_7 # scene:ss_cart # cast:ss_nyelder,ss_librarian,ss_tang # speaker:you
-  几个人还等我回去接课。送了箱子，他们可没准我把课也送没。 # beat:ss_three_months_8 # scene:ss_cart # cast:ss_nyelder,ss_librarian,ss_tang # speaker:ss_nyelder # mood:ss_nyelder=amused
-  这话我得让先生也听见。 # beat:ss_three_months_9 # scene:ss_cart # cast:ss_nyelder,ss_librarian,ss_tang # speaker:ss_tang # mood:ss_tang=neutral
-  长老笑，让你把哪一箱最急写在车单上。 # beat:ss_three_months_10 # scene:ss_cart # cast:ss_nyelder,ss_librarian,ss_tang # speaker:narrator
+  这套回来，山里那套谁还在核？ # beat:ss_three_months_9 # scene:ss_cart # cast:ss_nyelder,ss_librarian,ss_tang # speaker:you
+  几个人还等我回去接课。送了箱子，他们可没准我把课也送没。 # beat:ss_three_months_10 # scene:ss_cart # cast:ss_nyelder,ss_librarian,ss_tang # speaker:ss_nyelder # mood:ss_nyelder=amused
+  这话我得让先生也听见。 # beat:ss_three_months_11 # scene:ss_cart # cast:ss_nyelder,ss_librarian,ss_tang # speaker:ss_tang # mood:ss_tang=neutral
+  长老笑，让你把哪一箱最急写在车单上。 # beat:ss_three_months_12 # scene:ss_cart # cast:ss_nyelder,ss_librarian,ss_tang # speaker:narrator
   -> open_boxes
 * [把最难开口的话问出来，归还以后，怕不怕被再叫支派。 # cid:ss_ask_branch]
-  这些回来，会不会又有人拿它说南岳只是金陵一支？ # beat:ss_three_months_11 # scene:ss_cart # cast:ss_nyelder,ss_librarian,ss_tang # speaker:you
-  我们已经走出去了。 # beat:ss_three_months_12 # scene:ss_cart # cast:ss_nyelder,ss_librarian,ss_tang # speaker:ss_nyelder # mood:ss_nyelder=intent
-  本门老师伸手去接，没托稳书脊，又换了两只手。长老等他抱住，才去取下一册。 # beat:ss_three_months_13 # scene:ss_cart # cast:ss_nyelder,ss_librarian,ss_tang # speaker:narrator
+  这些回来，会不会又有人拿它说南岳只是金陵一支？ # beat:ss_three_months_13 # scene:ss_cart # cast:ss_nyelder,ss_librarian,ss_tang # speaker:you
+  我们已经走出去了。 # beat:ss_three_months_14 # scene:ss_cart # cast:ss_nyelder,ss_librarian,ss_tang # speaker:ss_nyelder # mood:ss_nyelder=intent
+  本门老师伸手去接，没托稳书脊，又换了两只手。长老等他抱住，才去取下一册。 # beat:ss_three_months_15 # scene:ss_cart # cast:ss_nyelder,ss_librarian,ss_tang # speaker:narrator
   -> open_boxes
 
 === open_boxes ===
@@ -557,48 +593,60 @@ VAR ss_last_kept = false
 可最后还在这里碰上。 # beat:ss_guihong_trial_4 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:ss_nyold # mood:ss_nyold=calm
 两人对视，没有谁把桌上另一半纸扫回别人怀里。你不是这一天忽然参透两宗最高剑学，只是终于知道自己这些年在记哪一个问题。 # beat:ss_guihong_trial_5 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:narrator
 {
-- ss_path == 1:
-山下等你接课的学生托人来问归期。你先前随回赠车走的路，后来成了往返两地的常差，不是拜过另一座祖堂便能替两家定一套新辈序。 # beat:ss_guihong_trial_6 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:narrator
-这页核完我回。来不及赶的那堂，请原班老师接，不再等我一句快了。 # beat:ss_guihong_trial_7 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:you
-你把老师的名字写回去，给学生一个确能找到的人。 # beat:ss_guihong_trial_8 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:narrator
+- ss_gui_method == 1:
+散会后你想，结构留的是机会，机会却要人自己走进去。那一页后手没赶上的地方，你回去补了注。 # beat:ss_guihong_trial_6 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:narrator
 - else:
-楼里等你核借录的人来信，问这次归鸿要收正录还是另附。你原先选择留下的差事，五十年后仍要按看过、未看过逐页交清。 # beat:ss_guihong_trial_9 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:narrator
-两种都写。用在哪儿、从哪儿改，也写。不替任何一位老人先宣布今天并成一家。 # beat:ss_guihong_trial_10 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:you
-你把两边核过的姓名留在页尾，未核处仍开着。 # beat:ss_guihong_trial_11 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:narrator
+散会后你想，从眼前生没错，错在忘了下一口气也得接上。你把那片空处画进图里，往两地各寄了一份。 # beat:ss_guihong_trial_7 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:narrator
+}
+{
+- ss_path == 1:
+山下等你接课的学生托人来问归期。你先前随回赠车走的路，后来成了往返两地的常差，不是拜过另一座祖堂便能替两家定一套新辈序。 # beat:ss_guihong_trial_8 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:narrator
+这页核完我回。来不及赶的那堂，请原班老师接，不再等我一句快了。 # beat:ss_guihong_trial_9 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:you
+你把老师的名字写回去，给学生一个确能找到的人。 # beat:ss_guihong_trial_10 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:narrator
+- else:
+楼里等你核借录的人来信，问这次归鸿要收正录还是另附。你原先选择留下的差事，五十年后仍要按看过、未看过逐页交清。 # beat:ss_guihong_trial_11 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:narrator
+两种都写。用在哪儿、从哪儿改，也写。不替任何一位老人先宣布今天并成一家。 # beat:ss_guihong_trial_12 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:you
+你把两边核过的姓名留在页尾，未核处仍开着。 # beat:ss_guihong_trial_13 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:narrator
 }
 * [先兑现已排的课或借录交接，不为自己多听一场而让别人空等。 # cid:ss_return_promised]
   ~ ss_last_kept = true
-  最后一场问剑还没结束，你已起身交清手里一页。年轻人问你难道不想再看。 # beat:ss_guihong_trial_12 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:narrator
-  你把等候的那封信给他看，约他若记下最后一场，往后寄来。信里那个人等着接你的班，落款旁还写了值日时辰。 # beat:ss_guihong_trial_13 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:narrator
+  最后一场问剑还没结束，你已起身交清手里一页。年轻人问你难道不想再看。 # beat:ss_guihong_trial_14 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:narrator
+  你把等候的那封信给他看，约他若记下最后一场，往后寄来。信里那个人等着接你的班，落款旁还写了值日时辰。 # beat:ss_guihong_trial_15 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:narrator
   -> afterwards
 * [留下再看一场，先付代课或补差的实钱，不把代价转给未答应的人。 # cid:ss_stay_one_bout]
   ~ ss_last_kept = false
-  我还想看。先问代课的肯不肯，钱照给，不拿一句老交情抵。 # beat:ss_guihong_trial_14 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:you
-  回信肯接，你才坐下。阿棠知道以后写来一句，你年轻时欠三页纸，如今总算知道欠的是谁的一下午。 # beat:ss_guihong_trial_15 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:narrator
-  你留的这一回值得，补差也确实从自己的束脩里少了一份。 # beat:ss_guihong_trial_16 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:narrator
+  我还想看。先问代课的肯不肯，钱照给，不拿一句老交情抵。 # beat:ss_guihong_trial_16 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:you
+  回信肯接，你才坐下。阿棠知道以后写来一句，你年轻时欠三页纸，如今总算知道欠的是谁的一下午。 # beat:ss_guihong_trial_17 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:narrator
+  你留的这一回值得，补差也确实从自己的束脩里少了一份。 # beat:ss_guihong_trial_18 # scene:ss_guiboard # cast:ss_jlold,ss_nyold # speaker:narrator
   -> afterwards
 
 === afterwards ===
 临走，年轻门人替你系紧装谱的包，发现里头还夹着没写完的回信。你请他路过两地时带去，先问了他原定的行程；他指着包说，信能带，半箱谱你自己背。 # beat:ss_afterwards_1 # scene:ss_afterward # cast:none # speaker:narrator
 {
-- ss_saved_notes:
-当年救出的课堂稿还在。阿棠后来补的批注又密了几层，有几处竟把你原先最得意的句子划掉。你把那几处也传给学生，没有因纸经过火就准它永远正确。 # beat:ss_afterwards_2 # scene:ss_afterward # cast:none # speaker:narrator
+- ss_last_kept:
+那场最后问剑，后来有人抄成整段寄来。你边看边想，幸好先交清的那一页，没有欠着等它的人。 # beat:ss_afterwards_2 # scene:ss_afterward # cast:none # speaker:narrator
 - else:
-当年课堂稿没救回来。你重抄的版本留了一个缺页记号，阿棠自己的那半边另署姓名。学生问两页为何不一样，你让他们看见不是一人记住了全部。 # beat:ss_afterwards_3 # scene:ss_afterward # cast:none # speaker:narrator
+多看的那一场没有白坐，补差也真少了一份束脩。你把这笔账记在心里，往后不拿交情抵别人的时辰。 # beat:ss_afterwards_3 # scene:ss_afterward # cast:none # speaker:narrator
+}
+{
+- ss_saved_notes:
+当年救出的课堂稿还在。阿棠后来补的批注又密了几层，有几处竟把你原先最得意的句子划掉。你把那几处也传给学生，没有因纸经过火就准它永远正确。 # beat:ss_afterwards_4 # scene:ss_afterward # cast:none # speaker:narrator
+- else:
+当年课堂稿没救回来。你重抄的版本留了一个缺页记号，阿棠自己的那半边另署姓名。学生问两页为何不一样，你让他们看见不是一人记住了全部。 # beat:ss_afterwards_5 # scene:ss_afterward # cast:none # speaker:narrator
 }
 {
 - ss_saved_notes and not ss_passage:
-阿棠那三个月代笔的页角仍有她口述后改过的字。后来手养好，她自己走了山路，没让你把那一伤写成从此不能持剑的一生。 # beat:ss_afterwards_4 # scene:ss_afterward # cast:none # speaker:narrator
+阿棠那三个月代笔的页角仍有她口述后改过的字。后来手养好，她自己走了山路，没让你把那一伤写成从此不能持剑的一生。 # beat:ss_afterwards_6 # scene:ss_afterward # cast:none # speaker:narrator
 - else:
-阿棠后来自己上过山，回楼教过课。你们仍会为一页先写哪句话争起来，没人只因为那夜互相接过一回，便从此说什么都一样。 # beat:ss_afterwards_5 # scene:ss_afterward # cast:none # speaker:narrator
+阿棠后来自己上过山，回楼教过课。你们仍会为一页先写哪句话争起来，没人只因为那夜互相接过一回，便从此说什么都一样。 # beat:ss_afterwards_7 # scene:ss_afterward # cast:none # speaker:narrator
 }
-更后的旧录里，金陵重开别录，南岳保住改式的来历；两家都出过返真、总谱与南榜人物，最终各列八家。沈在金陵旧系未被抹去，南岳祖堂的少学金陵也未删。 # beat:ss_afterwards_6 # scene:ss_afterward # cast:none # speaker:narrator
-有人问源头是不是同一脉，两边都认。再问如今，答案仍是两家。后世顾南陵与沈孤鸿又会为商号的事争剑，那时还有另一代人的难处。 # beat:ss_afterwards_7 # scene:ss_afterward # cast:none # speaker:narrator
+更后的旧录里，金陵重开别录，南岳保住改式的来历；两家都出过返真、总谱与南榜人物，最终各列八家。沈在金陵旧系未被抹去，南岳祖堂的少学金陵也未删。 # beat:ss_afterwards_8 # scene:ss_afterward # cast:none # speaker:narrator
+有人问源头是不是同一脉，两边都认。再问如今，答案仍是两家。后世顾南陵与沈孤鸿又会为商号的事争剑，那时还有另一代人的难处。 # beat:ss_afterwards_9 # scene:ss_afterward # cast:none # speaker:narrator
 {
 - ss_path == 1:
-你回到山下，把归鸿那一瞬讲给仍会走错的学生。纸留着，路也去走；有人晚来一课，你先问他雨后从哪条石阶上来。那些改变能教下去，才不是只活在你自己的一剑里。 # beat:ss_afterwards_8 # scene:ss_afterward # cast:none # speaker:narrator # ending:ss_mountain_lesson
+你回到山下，把归鸿那一瞬讲给仍会走错的学生。纸留着，路也去走；有人晚来一课，你先问他雨后从哪条石阶上来。那些改变能教下去，才不是只活在你自己的一剑里。 # beat:ss_afterwards_10 # scene:ss_afterward # cast:none # speaker:narrator # ending:ss_mountain_lesson
 -> END
 - else:
-你回楼，将两份归鸿放在能一同借出的地方。门人来问哪本更正，你请他带剑到坪上；旧页有人认，新路也有人真去试。楼里的东西留住了，门外的人仍能把它带走。 # beat:ss_afterwards_9 # scene:ss_afterward # cast:none # speaker:narrator # ending:ss_library_lesson
+你回楼，将两份归鸿放在能一同借出的地方。门人来问哪本更正，你请他带剑到坪上；旧页有人认，新路也有人真去试。楼里的东西留住了，门外的人仍能把它带走。 # beat:ss_afterwards_11 # scene:ss_afterward # cast:none # speaker:narrator # ending:ss_library_lesson
 -> END
 }

@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -33,7 +34,7 @@ test('Two Swords separates three viewpoints, fixed losses and both personal care
   assert.throws(()=>restoreVN(JSON.stringify(r.s.save()),{content,version:'qingshi-1.0.0'}),/作品或版本不兼容/);
   const late=r.s.frames.findIndex(f=>f.id==='ss_rain_work_1');assert.ok(late>0);assert.ok(!r.s.frames.slice(late).some(f=>f.stage.cast.some(id=>['ss_pupil','ss_xiezhibai','ss_olderpupil','ss_xietingsong'].includes(id))));
   const elder=r.s.frames.findIndex(f=>f.id==='ss_years_later_1');assert.ok(!r.s.frames.slice(elder).some(f=>f.stage.cast.includes('ss_tang')),'young companion is conveyed through letters after thirty years');
-  writeFileSync(`docs/evidence/v6/two-swords-editorial-${r.s.frame.ending}-transcript.txt`,r.text);
+  writeFileSync(evidencePath(`docs/evidence/v6/two-swords-editorial-${r.s.frame.ending}-transcript.txt`),r.text);
  }
 });
 test('Two Swords one early passage choice changes later rescue injury without changing canon destruction',()=>{
@@ -53,6 +54,6 @@ test('Two Swords sampled alternatives cover every authored beat and choice with 
  const visited=new Set<string>(),choices=new Set<string>(),endings=new Set<string>();let longest=0;
  for(let seed=1;seed<=512;seed++){let state=Math.imul(seed,2654435761)>>>0;const r=run(ids=>{state=(Math.imul(state,1664525)+1013904223)>>>0;return ids[state>>>31]});for(const f of r.s.frames){visited.add(f.id);f.choices.forEach(c=>choices.add(c.id));assert.ok(f.stage.cast.length<=3)}endings.add(r.s.frame.ending!);longest=Math.max(longest,r.longest)}
  const declared=[...readFileSync('story/two-swords.ink','utf8').matchAll(/# beat:(\S+)/g)].map(m=>m[1]);assert.deepEqual([...visited].sort(),declared.sort());assert.equal(choices.size,50);assert.equal(endings.size,2);
- writeFileSync('docs/evidence/v6/two-swords-content-audit.json',JSON.stringify({status:'FIRST_BOOK_V2_INTERNAL_EDIT_NOT_FINAL',sourceBeats:declared.length,visited:visited.size,choiceOptions:choices.size,sampledPaths:512,exhaustive:false,longestPassiveGap:longest,limits:'Second book exists separately; this bounded sample is not exhaustive. Age-matched companion identity, sword action, external literary acceptance and human reading-time remain unverified.'},null,2));
+ writeFileSync(evidencePath('docs/evidence/v6/two-swords-content-audit.json'),JSON.stringify({status:'FIRST_BOOK_V2_INTERNAL_EDIT_NOT_FINAL',sourceBeats:declared.length,visited:visited.size,choiceOptions:choices.size,sampledPaths:512,exhaustive:false,longestPassiveGap:longest,limits:'Second book exists separately; this bounded sample is not exhaustive. Age-matched companion identity, sword action, external literary acceptance and human reading-time remain unverified.'},null,2));
  assert.ok(longest<=18,`longest passive gap ${longest}`);
 });

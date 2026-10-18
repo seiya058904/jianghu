@@ -1,7 +1,7 @@
 {
   "status": "DRAFT_NOT_FINAL",
-  "sourceBeats": 236,
-  "visited": 236,
+  "sourceBeats": 258,
+  "visited": 258,
   "speakingCast": [
     "qw_gu",
     "qw_zhao",
@@ -18,6 +18,6 @@
   "decisionPoints": 18,
   "sampledPaths": 168,
   "exhaustive": false,
-  "longestPassiveGap": 10,
+  "longestPassiveGap": 11,
   "limits": "Pending browser age validation, art completion and three editorial rounds."
 }

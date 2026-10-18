@@ -1,11 +1,11 @@
 {
   "status": "FULL_LIFE_DRAFT_NOT_FINAL",
-  "sourceBeats": 256,
-  "visited": 256,
+  "sourceBeats": 306,
+  "visited": 306,
   "choiceOptions": 50,
   "decisionsPerRoute": 25,
   "sampledPaths": 512,
   "exhaustive": false,
-  "longestPassiveGap": 15,
+  "longestPassiveGap": 18,
   "limits": "Reusable templates are not dedicated age or combat art approval; ship geometry, character actions, CGs and three editorial rounds remain incomplete. No external timed play or physical Android proof."
 }

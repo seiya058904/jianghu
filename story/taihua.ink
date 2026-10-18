@@ -217,32 +217,44 @@ VAR carried = false
 谢临川前两战五十二招、四十一招连胜，第三问明澄。少林这位三十七，前两战一胜一平；华山想前三的剑，遇上看着不显眼的和尚。 # beat:th_ming_open_1 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:narrator
 第三十七，明澄右袖破；四十九，肩口又破线。六十，已逼坪边，再退两步便出界。 # beat:th_ming_open_2 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:narrator
 谢忽然更快，一剑压肩，一剑封侧，第三剑要入中。你看见破袖，又看见明澄的脚没有往后抬。 # beat:th_ming_open_3 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:narrator
+{
+- shared:
+昨夜在床沿摆过的脚位，此刻全用上了：谁先到、差多少，你看得比同排的人都细。 # beat:th_ming_open_4 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:narrator
+- else:
+昨夜那一下你没有复盘。此刻看破袖与脚，你只能凭今天的眼睛从头数。 # beat:th_ming_open_5 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:narrator
+}
 * [先认自己以为破袖便快分胜负，再看明澄为什么没退最后两步。 # cid:th_watch_torn_sleeve]
   ~ ming_distance = true
-  第一剑擦肩，第二剑被手背带偏。明澄已经迎进，你刚才以为应当后退的地方，变成短掌能到的位置。 # beat:th_ming_open_4 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:narrator
+  第一剑擦肩，第二剑被手背带偏。明澄已经迎进，你刚才以为应当后退的地方，变成短掌能到的位置。 # beat:th_ming_open_6 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:narrator
   -> ming_close
 * [看谢第三剑还需多少距离，不先替明澄叫险，也不先认他必有后招。 # cid:th_watch_last_distance]
   ~ ming_distance = false
-  前两剑将人逼近坪边，第三剑尚未走足，明澄反从那一段没长成的距离里进来了。你看见肩、肘与掌同到。 # beat:th_ming_open_5 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:narrator
+  前两剑将人逼近坪边，第三剑尚未走足，明澄反从那一段没长成的距离里进来了。你看见肩、肘与掌同到。 # beat:th_ming_open_7 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:narrator
   -> ming_close
 
 === ming_close ===
 长剑失去距离。谢几乎不犹豫弃剑，剑未落地，右手并指向喉；明澄左掌停心口，两人同时止。 # beat:th_ming_close_1 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:narrator
 主座上穆玄真已看清先后。 # beat:th_ming_close_2 # scene:th_mingtrial # cast:th_mu # speaker:narrator # look:th_mu=v2
 和尚先。 # beat:th_ming_close_3 # scene:th_mingtrial # cast:th_mu # speaker:th_mu # mood:th_mu=neutral
-谢低头看掌，亲口认输。明澄合掌说剑很好，他回再晚半息便不是这句，和尚笑说早半息也一样。 # beat:th_ming_close_4 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:narrator
-我输。刚才那三剑，我还要想。 # beat:th_ming_close_5 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:th_xie # mood:th_xie=uneasy
-你想。我先补一碗饭。 # beat:th_ming_close_6 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:th_ming # mood:th_ming=amused
-那晚谢只吃半碗。你路过侧院，他正在重走，司马承一也到了。 # beat:th_ming_close_7 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:narrator
+{
+- ming_distance:
+你认过自己以为破袖便快分胜负——此刻两人同时止，你才看见明澄迎进的半步是那错觉换来的。 # beat:th_ming_close_4 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:narrator
+- else:
+第三剑的距离你看到底了：差的那一线，不是勇气也不是险，是量出来的。 # beat:th_ming_close_5 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:narrator
+}
+谢低头看掌，亲口认输。明澄合掌说剑很好，他回再晚半息便不是这句，和尚笑说早半息也一样。 # beat:th_ming_close_6 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:narrator
+我输。刚才那三剑，我还要想。 # beat:th_ming_close_7 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:th_xie # mood:th_xie=uneasy
+你想。我先补一碗饭。 # beat:th_ming_close_8 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:th_ming # mood:th_ming=amused
+那晚谢只吃半碗。你路过侧院，他正在重走，司马承一也到了。 # beat:th_ming_close_9 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:narrator
 * [不拿看见他弃剑便来劝已经尽力，留他先走完，再到门口看。 # cid:th_leave_xie_room]
   ~ xie_room = true
-  你退到门外。谢把你刚才站的那一处也走进去，剑到中途，自己停下来重摆。 # beat:th_ming_close_8 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:narrator
+  你退到门外。谢把你刚才站的那一处也走进去，剑到中途，自己停下来重摆。 # beat:th_ming_close_10 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:narrator
   -> supper
 * [问他愿不愿夜后再讲第三剑的距离，今晚先不围着一场真负判他哪句该服。 # cid:th_ask_xie_later]
   ~ xie_room = false
-  等我自己走过。你想问，先别说我明明占着。 # beat:th_ming_close_9 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:th_xie # mood:th_xie=sharp
-  好。 # beat:th_ming_close_10 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:you
-  你站远些，将刚才想问的留到他肯讲的时候。 # beat:th_ming_close_11 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:narrator
+  等我自己走过。你想问，先别说我明明占着。 # beat:th_ming_close_11 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:th_xie # mood:th_xie=sharp
+  好。 # beat:th_ming_close_12 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:you
+  你站远些，将刚才想问的留到他肯讲的时候。 # beat:th_ming_close_13 # scene:th_mingtrial # cast:th_xie,th_ming # speaker:narrator
   -> supper
 
 === supper ===
@@ -349,13 +361,19 @@ VAR carried = false
 为什么不进？ # beat:th_huo_fifty_three_4 # scene:th_huotrial # cast:th_huo,th_xie # speaker:th_xie # mood:th_xie=sharp
 刚才那一步不稳。 # beat:th_huo_fifty_three_5 # scene:th_huotrial # cast:th_huo,th_xie # speaker:th_huo # mood:th_huo=intent
 谢知道不是让。对方真认为那半步不能进，没为看见一个能赢的样子便抢到底。 # beat:th_huo_fifty_three_6 # scene:th_huotrial # cast:th_huo,th_xie # speaker:narrator # fact:th_53
+{
+- huo_feet:
+三处退法并看过一回，此刻霍停在那里，你至少认得出：这不是来不及，是他早站到了要去的地方。 # beat:th_huo_fifty_three_7 # scene:th_huotrial # cast:th_huo,th_xie # speaker:narrator
+- else:
+你追过谢下一剑的落点。此刻霍仍站在那里——你追的那处空，正是他先占去的地方。 # beat:th_huo_fifty_three_8 # scene:th_huotrial # cast:th_huo,th_xie # speaker:narrator
+}
 * [看他拾剑后的落脚，不把未追写成慈悲；先问自己若在那一步会不会停。 # cid:th_read_unstable]
   ~ read_stop = true
-  你想起追沈时那一口急气。若只图眼前得手，停下原来比再进难。你没拿这个感触替霍先断胜。 # beat:th_huo_fifty_three_7 # scene:th_huotrial # cast:th_huo,th_xie # speaker:narrator
+  你想起追沈时那一口急气。若只图眼前得手，停下原来比再进难。你没拿这个感触替霍先断胜。 # beat:th_huo_fifty_three_9 # scene:th_huotrial # cast:th_huo,th_xie # speaker:narrator
   -> huo_close
 * [仍看谢怎样重接，不因被人说不稳就把他后面几十招一并当成无用。 # cid:th_keep_both_swords]
   ~ read_stop = false
-  谢重新站定，剑仍认真。霍没追的那一下，不等于他可以从这一场真较艺里先退出去。 # beat:th_huo_fifty_three_8 # scene:th_huotrial # cast:th_huo,th_xie # speaker:narrator
+  谢重新站定，剑仍认真。霍没追的那一下，不等于他可以从这一场真较艺里先退出去。 # beat:th_huo_fifty_three_10 # scene:th_huotrial # cast:th_huo,th_xie # speaker:narrator
   -> huo_close
 
 === huo_close ===
@@ -365,10 +383,16 @@ VAR carried = false
 有一点。 # beat:th_huo_close_4 # scene:th_huotrial # cast:th_xie,th_huo,th_ming # speaker:th_ming # mood:th_ming=neutral
 谢抬起眼。明澄仍笑着，手里捏住破袖的一头。过了一会儿，谢把剑往膝上横稳，又从第五十三招说起。 # beat:th_huo_close_5 # scene:th_huotrial # cast:th_xie,th_huo,th_ming # speaker:narrator
 {
-- layout_draw:
-法彻那页仍在。你添上第五十三，但没将两场画作一模一样：一个等第四次左入，一个把下一剑的去处逐步占走。第一日少看的下一场，没给你补回来，这页如今有了真能对照的两场。 # beat:th_huo_close_6 # scene:th_huotrial # cast:th_xie,th_huo,th_ming # speaker:narrator
+- read_stop:
+若在那一步你会不会停——你问过自己，答不出便没替霍先断胜。此刻他弃剑拾剑的样子，你仍在想那半步。 # beat:th_huo_close_6 # scene:th_huotrial # cast:th_xie,th_huo,th_ming # speaker:narrator
 - else:
-你在“第四回左门没了”下面添一行：霍没退时，谢下一剑没了。只有两句话，细处还得重问；你没有为没画便从别人纸上补出一幅亲眼看全的图。 # beat:th_huo_close_7 # scene:th_huotrial # cast:th_xie,th_huo,th_ming # speaker:narrator
+谢重新接剑的那些招你没有跳过。霍没追的那一下与谢后面几十招，你都分开记着。 # beat:th_huo_close_7 # scene:th_huotrial # cast:th_xie,th_huo,th_ming # speaker:narrator
+}
+{
+- layout_draw:
+法彻那页仍在。你添上第五十三，但没将两场画作一模一样：一个等第四次左入，一个把下一剑的去处逐步占走。第一日少看的下一场，没给你补回来，这页如今有了真能对照的两场。 # beat:th_huo_close_8 # scene:th_huotrial # cast:th_xie,th_huo,th_ming # speaker:narrator
+- else:
+你在“第四回左门没了”下面添一行：霍没退时，谢下一剑没了。只有两句话，细处还得重问；你没有为没画便从别人纸上补出一幅亲眼看全的图。 # beat:th_huo_close_9 # scene:th_huotrial # cast:th_xie,th_huo,th_ming # speaker:narrator
 }
 -> round_open
 
@@ -504,15 +528,21 @@ VAR carried = false
 九年前我尚未入化。 # beat:th_ji_hui_6 # scene:th_jihui # cast:th_ji,th_huijue # speaker:th_ji # mood:th_ji=neutral
 所以才说深。 # beat:th_ji_hui_7 # scene:th_jihui # cast:th_ji,th_huijue # speaker:th_huijue # mood:th_huijue=amused
 最终记平，不把旁观者猜的半线另写成胜负。 # beat:th_ji_hui_8 # scene:th_jihui # cast:th_ji,th_huijue # speaker:narrator
+{
+- old_unknown:
+手停何处、脚落何处、距离剩多少——三格里仍空着的两格，你此刻看着季与慧觉，也照旧空着。 # beat:th_ji_hui_9 # scene:th_jihui # cast:th_ji,th_huijue # speaker:narrator
+- else:
+明澄认得的那一点起手，你记下了。此刻季与慧觉停在同一处，你也只在自己认得的那一段里看。 # beat:th_ji_hui_10 # scene:th_jihui # cast:th_ji,th_huijue # speaker:narrator
+}
 * [记剑真到与身体后移的先后，先不把半寸当作只需背熟的量。 # cid:th_draw_half_distance]
   ~ half_distance = true
-  纸上少画一条，留慧觉如何知道该退的那一格。谢看了一眼，说自己正卡在那里。 # beat:th_ji_hui_9 # scene:th_jihui # cast:th_ji,th_huijue # speaker:narrator
+  纸上少画一条，留慧觉如何知道该退的那一格。谢看了一眼，说自己正卡在那里。 # beat:th_ji_hui_11 # scene:th_jihui # cast:th_ji,th_huijue # speaker:narrator
   -> zhang_lu
 * [向谢承认眼睛看见剑偏，仍不知道那两指如何到了剑脊。 # cid:th_admit_eye_only]
   ~ half_distance = false
-  我看见了，也没懂。 # beat:th_ji_hui_10 # scene:th_jihui # cast:th_xie,th_ji,th_huijue # speaker:th_xie # mood:th_xie=uneasy
-  那先别互相装会。 # beat:th_ji_hui_11 # scene:th_jihui # cast:th_xie,th_ji,th_huijue # speaker:you
-  谢的目光仍追着慧觉收回的手。你们都没添下一句，纸上那两指旁边，墨迹已经干了。 # beat:th_ji_hui_12 # scene:th_jihui # cast:th_xie,th_ji,th_huijue # speaker:narrator
+  我看见了，也没懂。 # beat:th_ji_hui_12 # scene:th_jihui # cast:th_xie,th_ji,th_huijue # speaker:th_xie # mood:th_xie=uneasy
+  那先别互相装会。 # beat:th_ji_hui_13 # scene:th_jihui # cast:th_xie,th_ji,th_huijue # speaker:you
+  谢的目光仍追着慧觉收回的手。你们都没添下一句，纸上那两指旁边，墨迹已经干了。 # beat:th_ji_hui_14 # scene:th_jihui # cast:th_xie,th_ji,th_huijue # speaker:narrator
   -> zhang_lu
 
 === zhang_lu ===
@@ -522,17 +552,23 @@ VAR carried = false
 到这里。 # beat:th_zhang_lu_4 # scene:th_old # cast:th_zhang,th_luqi # speaker:th_zhang # mood:th_zhang=intent
 承让。 # beat:th_zhang_lu_5 # scene:th_old # cast:th_zhang,th_luqi # speaker:th_luqi # mood:th_luqi=neutral
 两人收剑，场下那句快入化，原来已说九年。张回头问今日还快么，老人答仍快，他笑，那就再九年。老人这回没笑，只说好。 # beat:th_zhang_lu_6 # scene:th_old # cast:th_zhang,th_luqi # speaker:narrator
+{
+- half_distance:
+剑真到与身后移的先后——张与陆这几次拍剑，你也在找那个先后，不只找半寸。 # beat:th_zhang_lu_7 # scene:th_old # cast:th_zhang,th_luqi # speaker:narrator
+- else:
+那两指如何到剑脊，你与谢都没看懂。此刻张与陆的每一拍，你也不敢说自己看懂了。 # beat:th_zhang_lu_8 # scene:th_old # cast:th_zhang,th_luqi # speaker:narrator
+}
 * [等行礼后请张指自己还想走的方向，承认不懂，不求把门槛一句讲完。 # cid:th_ask_stop]
   ~ ask_limit = true
-  晚辈以为还能进这一处，可以问么？ # beat:th_zhang_lu_7 # scene:th_old # cast:th_zhang,th_luqi # speaker:you
-  你先走给我看。 # beat:th_zhang_lu_8 # scene:th_old # cast:th_zhang,th_luqi # speaker:th_zhang # mood:th_zhang=neutral
-  你比三处，他都不许只用手指。站到真能落脚的地方，才发现自己刚才随口说的那一处，还缺一个回身。 # beat:th_zhang_lu_9 # scene:th_old # cast:th_zhang,th_luqi # speaker:narrator
-  先记这里。看不见，不用添神秘。 # beat:th_zhang_lu_10 # scene:th_old # cast:th_zhang,th_luqi # speaker:th_zhang # mood:th_zhang=neutral
+  晚辈以为还能进这一处，可以问么？ # beat:th_zhang_lu_9 # scene:th_old # cast:th_zhang,th_luqi # speaker:you
+  你先走给我看。 # beat:th_zhang_lu_10 # scene:th_old # cast:th_zhang,th_luqi # speaker:th_zhang # mood:th_zhang=neutral
+  你比三处，他都不许只用手指。站到真能落脚的地方，才发现自己刚才随口说的那一处，还缺一个回身。 # beat:th_zhang_lu_11 # scene:th_old # cast:th_zhang,th_luqi # speaker:narrator
+  先记这里。看不见，不用添神秘。 # beat:th_zhang_lu_12 # scene:th_old # cast:th_zhang,th_luqi # speaker:th_zhang # mood:th_zhang=neutral
   -> chestnut
 * [不挤到长辈身前，先画看不清的脚位，留空，不以想象补一条最后的路。 # cid:th_note_stop]
   ~ ask_limit = false
-  季闻鹤路过，叫空着也好，下回未必同一条线。你本想立刻照他的话又添一句，想了想，仍留那一格白。 # beat:th_zhang_lu_11 # scene:th_old # cast:th_zhang,th_luqi # speaker:narrator
-  看见拍剑，不等于知道每一剑如何变了。 # beat:th_zhang_lu_12 # scene:th_old # cast:th_zhang,th_luqi # speaker:you
+  季闻鹤路过，叫空着也好，下回未必同一条线。你本想立刻照他的话又添一句，想了想，仍留那一格白。 # beat:th_zhang_lu_13 # scene:th_old # cast:th_zhang,th_luqi # speaker:narrator
+  看见拍剑，不等于知道每一剑如何变了。 # beat:th_zhang_lu_14 # scene:th_old # cast:th_zhang,th_luqi # speaker:you
   -> chestnut
 
 === chestnut ===
@@ -560,13 +596,19 @@ VAR carried = false
 正序六席轮战后，决定首席只剩季与陆。慧觉同陆一百四十余平，季同慧觉一百零三平，都不因最后谁第一便改记成输。 # beat:th_old_final_1 # scene:th_oldfinal # cast:th_ji,th_luqi # speaker:narrator
 午后云散，季前三十剑峻直高，四十后华山痕迹渐淡。第六十三，剑到陆左肩，手从剑下穿，季收：若不收，自己的剑也许能伤，陆手却先入胸。 # beat:th_old_final_2 # scene:th_oldfinal # cast:th_ji,th_luqi # speaker:narrator
 又一回，两人整整四息不动。第五息陆退、季出，你才发觉静候中也早有彼此不能随便去的路。 # beat:th_old_final_3 # scene:th_oldfinal # cast:th_ji,th_luqi # speaker:narrator
+{
+- plain:
+你只问过糕还有没有。此刻看两位定首席，你也没有替任何一人的旧伤或年岁先写一个解释。 # beat:th_old_final_4 # scene:th_oldfinal # cast:th_ji,th_luqi # speaker:narrator
+- else:
+青序与正序的败场你并排记着。此刻季与陆谁先谁后，你也只照真实那一剑记。 # beat:th_old_final_5 # scene:th_oldfinal # cast:th_ji,th_luqi # speaker:narrator
+}
 * [将四息也记入这一场，不把没挥剑的一段当作两人都在歇。 # cid:th_keep_four_breaths]
   ~ four_breaths = true
-  你原来数的全是看得见的出手，这四息让纸上的空处也有了必须问的缘由。 # beat:th_old_final_4 # scene:th_oldfinal # cast:th_ji,th_luqi # speaker:narrator
+  你原来数的全是看得见的出手，这四息让纸上的空处也有了必须问的缘由。 # beat:th_old_final_6 # scene:th_oldfinal # cast:th_ji,th_luqi # speaker:narrator
   -> left_thirteen
 * [试着判断自己若站季的位置还能往哪里，承认未动也会被对方的去处约住。 # cid:th_watch_can_move]
   ~ four_breaths = false
-  你刚想到一处，场中第五息已过去。不能把自己慢想四息的一点，算成真能同他们换下一剑。 # beat:th_old_final_5 # scene:th_oldfinal # cast:th_ji,th_luqi # speaker:narrator
+  你刚想到一处，场中第五息已过去。不能把自己慢想四息的一点，算成真能同他们换下一剑。 # beat:th_old_final_7 # scene:th_oldfinal # cast:th_ji,th_luqi # speaker:narrator
   -> left_thirteen
 
 === left_thirteen ===
@@ -574,13 +616,19 @@ VAR carried = false
 陆忽迎前，两人都没先收。最后一刻同时换，季剑滑开，陆手穿剑柄边，一掌轻停肩头；剑停陆腰外。 # beat:th_left_thirteen_2 # scene:th_oldfinal # cast:th_ji,th_luqi # speaker:narrator
 你先。 # beat:th_left_thirteen_3 # scene:th_oldfinal # cast:th_ji,th_luqi # speaker:th_ji # mood:th_ji=intent
 季自己收，陆行礼。报席声从坪边传来，昆仑青正双首。谢在膝上握紧手指，直到季走回席前，才让出身边的位置。 # beat:th_left_thirteen_4 # scene:th_oldfinal # cast:th_ji,th_luqi # speaker:narrator
+{
+- four_breaths:
+那四息你也记了。此刻谢坐在你旁边，你递纸给他时，连没有出剑的空处也一并指给他看。 # beat:th_left_thirteen_5 # scene:th_oldfinal # cast:th_ji,th_luqi # speaker:narrator
+- else:
+你没把自己慢想的四息算进去。此刻替谢递纸，也只递真实看得见的那些。 # beat:th_left_thirteen_6 # scene:th_oldfinal # cast:th_ji,th_luqi # speaker:narrator
+}
 * [将季亲口认先记下，别以两人俱能伤为由擅改平。 # cid:th_keep_true_stop]
   ~ old_stop_plain = true
-  谢看着长辈收剑，没为盼他首席便先替那一掌说轻。你也没有替谢解释他此刻该怎样自豪。 # beat:th_left_thirteen_5 # scene:th_oldfinal # cast:th_ji,th_luqi # speaker:narrator
+  谢看着长辈收剑，没为盼他首席便先替那一掌说轻。你也没有替谢解释他此刻该怎样自豪。 # beat:th_left_thirteen_7 # scene:th_oldfinal # cast:th_ji,th_luqi # speaker:narrator
   -> six_open
 * [看行礼后的两人还在指哪一处，记住正式胜负之外，他们也还会继续问。 # cid:th_watch_after_bow]
   ~ old_stop_plain = false
-  季指左手那一路，陆点头。两人仍有不同意见，认输没有叫后一段疑问一同止住。 # beat:th_left_thirteen_6 # scene:th_oldfinal # cast:th_ji,th_luqi # speaker:narrator
+  季指左手那一路，陆点头。两人仍有不同意见，认输没有叫后一段疑问一同止住。 # beat:th_left_thirteen_8 # scene:th_oldfinal # cast:th_ji,th_luqi # speaker:narrator
   -> six_open
 
 === six_open ===
@@ -591,19 +639,25 @@ VAR carried = false
 第四手已经没有原先那条路。 # beat:th_six_open_5 # scene:th_old # cast:th_huo,th_zhang # speaker:th_zhang # mood:th_zhang=neutral # cg:none
 弟子到了第六手才知道。 # beat:th_six_open_6 # scene:th_old # cast:th_huo,th_zhang # speaker:th_huo # mood:th_huo=uneasy
 霍没有把剑再抬起来。你听见半寸，却说不出是哪一个半寸。 # beat:th_six_open_7 # scene:th_old # cast:th_huo,th_zhang # speaker:narrator # fact:th_six
+{
+- old_stop_plain:
+季亲口认的那一下先记着。霍问的这十手，你也只照真实落处听，不替谁先折算成座次。 # beat:th_six_open_8 # scene:th_old # cast:th_huo,th_zhang # speaker:narrator
+- else:
+季与陆行礼后仍在互指哪一处——你记着这个样子。此刻霍问十手，你也等他自己说出想找什么。 # beat:th_six_open_9 # scene:th_old # cast:th_huo,th_zhang # speaker:narrator
+}
 * [承认自己更早便看不懂，请霍说第一手在找什么。 # cid:th_public_question]
   ~ open_question = true
-  你第四手失路。我第一手就在追剑尖，能先从那里问么？ # beat:th_six_open_8 # scene:th_old # cast:th_huo,th_zhang # speaker:you
-  我想先把他带到右边。他没过去。 # beat:th_six_open_9 # scene:th_old # cast:th_huo,th_zhang # speaker:th_huo # mood:th_huo=calm
-  我当时以为他退了。 # beat:th_six_open_10 # scene:th_old # cast:th_huo,th_zhang # speaker:you
-  我当时也这样以为。 # beat:th_six_open_11 # scene:th_old # cast:th_huo,th_zhang # speaker:th_huo # mood:th_huo=neutral
-  这句话让问题落到一只脚上，却没有让你忽然懂完那六手。 # beat:th_six_open_12 # scene:th_old # cast:th_huo,th_zhang # speaker:narrator
+  你第四手失路。我第一手就在追剑尖，能先从那里问么？ # beat:th_six_open_10 # scene:th_old # cast:th_huo,th_zhang # speaker:you
+  我想先把他带到右边。他没过去。 # beat:th_six_open_11 # scene:th_old # cast:th_huo,th_zhang # speaker:th_huo # mood:th_huo=calm
+  我当时以为他退了。 # beat:th_six_open_12 # scene:th_old # cast:th_huo,th_zhang # speaker:you
+  我当时也这样以为。 # beat:th_six_open_13 # scene:th_old # cast:th_huo,th_zhang # speaker:th_huo # mood:th_huo=neutral
+  这句话让问题落到一只脚上，却没有让你忽然懂完那六手。 # beat:th_six_open_14 # scene:th_old # cast:th_huo,th_zhang # speaker:narrator
   -> mu_front
 * [不围住霍追问，把疑问留给自己和同门。 # cid:th_private_question]
   ~ open_question = false
-  我先记着。不把刚听见的“半寸”当成已经会了。 # beat:th_six_open_13 # scene:th_old # cast:th_huo,th_zhang # speaker:you
-  我也要记。 # beat:th_six_open_14 # scene:th_old # cast:th_huo,th_zhang # speaker:th_huo # mood:th_huo=calm
-  他蹲下，把场边一块被踩歪的小石放回。你留给他的安静，比再一句佩服具体。 # beat:th_six_open_15 # scene:th_old # cast:th_huo,th_zhang # speaker:narrator
+  我先记着。不把刚听见的“半寸”当成已经会了。 # beat:th_six_open_15 # scene:th_old # cast:th_huo,th_zhang # speaker:you
+  我也要记。 # beat:th_six_open_16 # scene:th_old # cast:th_huo,th_zhang # speaker:th_huo # mood:th_huo=calm
+  他蹲下，把场边一块被踩歪的小石放回。你留给他的安静，比再一句佩服具体。 # beat:th_six_open_17 # scene:th_old # cast:th_huo,th_zhang # speaker:narrator
   -> mu_front
 
 === mu_front ===
@@ -654,44 +708,50 @@ VAR carried = false
 先说饭。我不想三年后还端着凉汤。 # beat:th_after_six_4 # scene:th_steps # cast:th_shen,th_ming,th_sima # speaker:th_ming # mood:th_ming=neutral
 你手里的纸有第一场脚位，也有正序看不懂的空白。师兄的行李尚在屋内，你自己的路也还没定。 # beat:th_after_six_5 # scene:th_steps # cast:th_shen,th_ming,th_sima # speaker:narrator
 {
-- rematch:
-你约的复手，我记得。回山前先说来不来，不占你的正式序次。 # beat:th_after_six_6 # scene:th_steps # cast:th_shen,th_ming,th_sima # speaker:th_shen # mood:th_shen=neutral
-{respect_shen:也不拿第五第六堵你。|上回说暂时不想听，不等于把先前的约算没了。} # beat:th_after_six_7 # scene:th_steps # cast:th_shen,th_ming,th_sima # speaker:you
-{respect_shen:堵不住。你已经试过。|那就当面说。我今日也有自己要找的人。} # beat:th_after_six_8 # scene:th_steps # cast:th_shen,th_ming,th_sima # speaker:th_shen # mood:th_shen=intent
+- meal_question:
+谢那句我以为他第五十三才开始，你如今也用得上：自己看不懂的地方，也从头想，不拿旁听过当看懂。 # beat:th_after_six_6 # scene:th_steps # cast:th_shen,th_ming,th_sima # speaker:narrator
 - else:
-你没欠我一场私打。正式的账，三年后再说。 # beat:th_after_six_9 # scene:th_steps # cast:th_shen,th_ming,th_sima # speaker:th_shen # mood:th_shen=neutral
-那我也别欠一封没地址的信。写哪里？ # beat:th_after_six_10 # scene:th_steps # cast:th_shen,th_ming,th_sima # speaker:you
-她接过纸，在留白的边上写下能收到信的地方。 # beat:th_after_six_11 # scene:th_steps # cast:th_shen,th_ming,th_sima # speaker:narrator
+那晚你先陪众人把饭吃完。此刻自己的纸仍空着几格，你也没从别人碗里抢一句评语来填。 # beat:th_after_six_7 # scene:th_steps # cast:th_shen,th_ming,th_sima # speaker:narrator
+}
+{
+- rematch:
+你约的复手，我记得。回山前先说来不来，不占你的正式序次。 # beat:th_after_six_8 # scene:th_steps # cast:th_shen,th_ming,th_sima # speaker:th_shen # mood:th_shen=neutral
+{respect_shen:也不拿第五第六堵你。|上回说暂时不想听，不等于把先前的约算没了。} # beat:th_after_six_9 # scene:th_steps # cast:th_shen,th_ming,th_sima # speaker:you
+{respect_shen:堵不住。你已经试过。|那就当面说。我今日也有自己要找的人。} # beat:th_after_six_10 # scene:th_steps # cast:th_shen,th_ming,th_sima # speaker:th_shen # mood:th_shen=intent
+- else:
+你没欠我一场私打。正式的账，三年后再说。 # beat:th_after_six_11 # scene:th_steps # cast:th_shen,th_ming,th_sima # speaker:th_shen # mood:th_shen=neutral
+那我也别欠一封没地址的信。写哪里？ # beat:th_after_six_12 # scene:th_steps # cast:th_shen,th_ming,th_sima # speaker:you
+她接过纸，在留白的边上写下能收到信的地方。 # beat:th_after_six_13 # scene:th_steps # cast:th_shen,th_ming,th_sima # speaker:narrator
 }
 {
 - huo_question:
-回山以后，你第一场的起手，画一页寄我。 # beat:th_after_six_12 # scene:th_steps # cast:th_huo,th_shen,th_ming # speaker:th_huo # mood:th_huo=intent
-我追着沈照微跑那一场？你看过了。 # beat:th_after_six_13 # scene:th_steps # cast:th_huo,th_shen,th_ming # speaker:you
-有一面没看见。一页，多了先不看。 # beat:th_after_six_14 # scene:th_steps # cast:th_huo,th_shen,th_ming # speaker:th_huo # mood:th_huo=neutral
-他把自己起手的两步画在纸背，画到第二步停了很久，才把能收信的门人名字写上。 # beat:th_after_six_15 # scene:th_steps # cast:th_huo,th_shen,th_ming # speaker:narrator
+回山以后，你第一场的起手，画一页寄我。 # beat:th_after_six_14 # scene:th_steps # cast:th_huo,th_shen,th_ming # speaker:th_huo # mood:th_huo=intent
+我追着沈照微跑那一场？你看过了。 # beat:th_after_six_15 # scene:th_steps # cast:th_huo,th_shen,th_ming # speaker:you
+有一面没看见。一页，多了先不看。 # beat:th_after_six_16 # scene:th_steps # cast:th_huo,th_shen,th_ming # speaker:th_huo # mood:th_huo=neutral
+他把自己起手的两步画在纸背，画到第二步停了很久，才把能收信的门人名字写上。 # beat:th_after_six_17 # scene:th_steps # cast:th_huo,th_shen,th_ming # speaker:narrator
 - else:
-你问我甘不甘，我还是不甘。回去前再找霍试半晌，不记青序。 # beat:th_after_six_16 # scene:th_steps # cast:th_huo,th_shen,th_ming # speaker:th_ming # mood:th_ming=intent
-还打一百七十一手？ # beat:th_after_six_17 # scene:th_steps # cast:th_huo,th_shen,th_ming # speaker:you
-不数。数到一百，我又只顾着想能不能撑过上一回了。 # beat:th_after_six_18 # scene:th_steps # cast:th_huo,th_shen,th_ming # speaker:th_ming # mood:th_ming=amused
+你问我甘不甘，我还是不甘。回去前再找霍试半晌，不记青序。 # beat:th_after_six_18 # scene:th_steps # cast:th_huo,th_shen,th_ming # speaker:th_ming # mood:th_ming=intent
+还打一百七十一手？ # beat:th_after_six_19 # scene:th_steps # cast:th_huo,th_shen,th_ming # speaker:you
+不数。数到一百，我又只顾着想能不能撑过上一回了。 # beat:th_after_six_20 # scene:th_steps # cast:th_huo,th_shen,th_ming # speaker:th_ming # mood:th_ming=amused
 }
 * [留下半日，与同辈复手，再陪受伤师兄下山。 # cid:th_together]
   ~ future = 1
-  今日不抢早路。我还有半日，够把两件答应的事做完。 # beat:th_after_six_19 # scene:th_steps # cast:th_huo,th_shen,th_ming # speaker:you
-  那我把汤先放下，省得又没人端。 # beat:th_after_six_20 # scene:th_steps # cast:th_huo,th_shen,th_ming # speaker:th_ming # mood:th_ming=amused
-  我来。你们先把昨日那一下摆出来。 # beat:th_after_six_21 # scene:th_steps # cast:th_sima,th_huo,th_shen # speaker:th_sima # mood:th_sima=neutral
+  今日不抢早路。我还有半日，够把两件答应的事做完。 # beat:th_after_six_21 # scene:th_steps # cast:th_huo,th_shen,th_ming # speaker:you
+  那我把汤先放下，省得又没人端。 # beat:th_after_six_22 # scene:th_steps # cast:th_huo,th_shen,th_ming # speaker:th_ming # mood:th_ming=amused
+  我来。你们先把昨日那一下摆出来。 # beat:th_after_six_23 # scene:th_steps # cast:th_sima,th_huo,th_shen # speaker:th_sima # mood:th_sima=neutral
   -> last_pack
 * [先陪师兄回山，把不懂的留作自己的课业，并写明回信之期。 # cid:th_letter]
   ~ future = 2
-  这次不留下。我想先练清自己看见的，也该把师兄带回去。 # beat:th_after_six_22 # scene:th_steps # cast:th_sima,th_huo,th_shen # speaker:you
-  {rematch:那今晨这一次取消，我另找人。改约也写清，别把先约过的略掉。|不来就写不来。别等三年才让人猜。} # beat:th_after_six_23 # scene:th_steps # cast:th_sima,th_huo,th_shen # speaker:th_shen # mood:th_shen=calm
-  回山一个月内写第一封。没练明白，也写没明白。 # beat:th_after_six_24 # scene:th_steps # cast:th_sima,th_huo,th_shen # speaker:you
+  这次不留下。我想先练清自己看见的，也该把师兄带回去。 # beat:th_after_six_24 # scene:th_steps # cast:th_sima,th_huo,th_shen # speaker:you
+  {rematch:那今晨这一次取消，我另找人。改约也写清，别把先约过的略掉。|不来就写不来。别等三年才让人猜。} # beat:th_after_six_25 # scene:th_steps # cast:th_sima,th_huo,th_shen # speaker:th_shen # mood:th_shen=calm
+  回山一个月内写第一封。没练明白，也写没明白。 # beat:th_after_six_26 # scene:th_steps # cast:th_sima,th_huo,th_shen # speaker:you
   -> last_pack
 * {front_page} [将半日留给张玄岳的一炷香指点，请同门先整理行李，午后仍同师兄下山。 # cid:th_guidance]
   ~ future = 3
-  同辈这一回我不在。问前辈也只问眼前这一脚，不求替我补完穆宗主的剑。 # beat:th_after_six_25 # scene:th_steps # cast:th_sima,th_huo,th_shen # speaker:you
-  好。三年后另约，我可不因你听过前辈就少问一场。 # beat:th_after_six_26 # scene:th_steps # cast:th_sima,th_huo,th_shen # speaker:th_sima # mood:th_sima=intent
-  你把时辰与地点写在纸上。半日只有一回，错过的复手不再另算自己也到过。 # beat:th_after_six_27 # scene:th_steps # cast:th_sima,th_huo,th_shen # speaker:narrator
-  {rematch:你当面将原约改去问张。沈没说无妨，只答自己先走；那半息今天不拆了，你得在信里把改约也说清。|你没另约成沈这一回，也不拿一句同辈再见替她许下今天会等。} # beat:th_after_six_28 # scene:th_steps # cast:th_sima,th_huo,th_shen # speaker:narrator
+  同辈这一回我不在。问前辈也只问眼前这一脚，不求替我补完穆宗主的剑。 # beat:th_after_six_27 # scene:th_steps # cast:th_sima,th_huo,th_shen # speaker:you
+  好。三年后另约，我可不因你听过前辈就少问一场。 # beat:th_after_six_28 # scene:th_steps # cast:th_sima,th_huo,th_shen # speaker:th_sima # mood:th_sima=intent
+  你把时辰与地点写在纸上。半日只有一回，错过的复手不再另算自己也到过。 # beat:th_after_six_29 # scene:th_steps # cast:th_sima,th_huo,th_shen # speaker:narrator
+  {rematch:你当面将原约改去问张。沈没说无妨，只答自己先走；那半息今天不拆了，你得在信里把改约也说清。|你没另约成沈这一回，也不拿一句同辈再见替她许下今天会等。} # beat:th_after_six_30 # scene:th_steps # cast:th_sima,th_huo,th_shen # speaker:narrator
   -> last_pack
 
 === last_pack ===

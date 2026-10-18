@@ -1,0 +1,55 @@
+{
+  "protectedLedgersComparedToHEAD": 17,
+  "changedLedgers": [],
+  "archives": [
+    {
+      "path": "story/north.ink",
+      "gitShowExit": 0,
+      "matchesGitObject": true,
+      "matchesManifestHash": true,
+      "matchesManifestBytes": true
+    },
+    {
+      "path": "src/generated/north.json",
+      "gitShowExit": 0,
+      "matchesGitObject": true,
+      "matchesManifestHash": true,
+      "matchesManifestBytes": true
+    },
+    {
+      "path": "story/north-after.mjs",
+      "gitShowExit": 0,
+      "matchesGitObject": true,
+      "matchesManifestHash": true,
+      "matchesManifestBytes": true
+    },
+    {
+      "path": "story/twelfth.ink",
+      "gitShowExit": 0,
+      "matchesGitObject": true,
+      "matchesManifestHash": true,
+      "matchesManifestBytes": true
+    },
+    {
+      "path": "src/generated/twelfth.json",
+      "gitShowExit": 0,
+      "matchesGitObject": true,
+      "matchesManifestHash": true,
+      "matchesManifestBytes": true
+    },
+    {
+      "path": "src/generated/sea.json",
+      "gitShowExit": 0,
+      "matchesGitObject": true,
+      "matchesManifestHash": true,
+      "matchesManifestBytes": true
+    },
+    {
+      "path": "story/qian-kun-slow.mjs",
+      "gitShowExit": 0,
+      "matchesGitObject": true,
+      "matchesManifestHash": true,
+      "matchesManifestBytes": true
+    }
+  ]
+}

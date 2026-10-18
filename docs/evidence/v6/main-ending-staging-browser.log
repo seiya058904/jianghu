@@ -63,7 +63,7 @@ Running 15 tests using 1 worker
       19 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);for(const text of ['收好这一程','再试另一种回应','回到封面']){const box=await page.getByRole('button',{name:text,exact:true}).boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy()}
       20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
       21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:18:179
+        at .\tests\campaign-v6-ending-staging.spec.ts:18:179
 
     Error Context: test-results\campaign-v6-ending-staging-b6d8b-opriate-view-at-seven-sizes\error-context.md
 
@@ -104,7 +104,7 @@ Running 15 tests using 1 worker
       19 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);for(const text of ['收好这一程','再试另一种回应','回到封面']){const box=await page.getByRole('button',{name:text,exact:true}).boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy()}
       20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
       21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:18:179
+        at .\tests\campaign-v6-ending-staging.spec.ts:18:179
 
     Error Context: test-results\campaign-v6-ending-staging-a00aa-opriate-view-at-seven-sizes\error-context.md
 
@@ -147,7 +147,7 @@ Running 15 tests using 1 worker
       19 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);for(const text of ['收好这一程','再试另一种回应','回到封面']){const box=await page.getByRole('button',{name:text,exact:true}).boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy()}
       20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
       21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:18:179
+        at .\tests\campaign-v6-ending-staging.spec.ts:18:179
 
     Error Context: test-results\campaign-v6-ending-staging-326a1-opriate-view-at-seven-sizes\error-context.md
 
@@ -188,7 +188,7 @@ Running 15 tests using 1 worker
       19 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);for(const text of ['收好这一程','再试另一种回应','回到封面']){const box=await page.getByRole('button',{name:text,exact:true}).boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy()}
       20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
       21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:18:179
+        at .\tests\campaign-v6-ending-staging.spec.ts:18:179
 
     Error Context: test-results\campaign-v6-ending-staging-76f07-opriate-view-at-seven-sizes\error-context.md
 
@@ -229,7 +229,7 @@ Running 15 tests using 1 worker
       19 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);for(const text of ['收好这一程','再试另一种回应','回到封面']){const box=await page.getByRole('button',{name:text,exact:true}).boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy()}
       20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
       21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:18:179
+        at .\tests\campaign-v6-ending-staging.spec.ts:18:179
 
     Error Context: test-results\campaign-v6-ending-staging-79847-opriate-view-at-seven-sizes\error-context.md
 
@@ -275,7 +275,7 @@ Running 15 tests using 1 worker
       19 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);for(const text of ['收好这一程','再试另一种回应','回到封面']){const box=await page.getByRole('button',{name:text,exact:true}).boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy()}
       20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
       21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:18:179
+        at .\tests\campaign-v6-ending-staging.spec.ts:18:179
 
     Error Context: test-results\campaign-v6-ending-staging-44a03-opriate-view-at-seven-sizes\error-context.md
 
@@ -304,7 +304,7 @@ Running 15 tests using 1 worker
       19 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);for(const text of ['收好这一程','再试另一种回应','回到封面']){const box=await page.getByRole('button',{name:text,exact:true}).boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy()}
       20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
       21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:18:179
+        at .\tests\campaign-v6-ending-staging.spec.ts:18:179
 
     Error Context: test-results\campaign-v6-ending-staging-f8737-opriate-view-at-seven-sizes\error-context.md
 
@@ -345,7 +345,7 @@ Running 15 tests using 1 worker
       19 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);for(const text of ['收好这一程','再试另一种回应','回到封面']){const box=await page.getByRole('button',{name:text,exact:true}).boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy()}
       20 |   if(ending==='apart')await expect(page.locator('#actors .actor')).toHaveCount(0);if(ending==='together5')await expect(page.locator('[data-character="v6_zhaoli"]')).toHaveCount(0);if(ending==='lost'){await expect(page.locator('[data-character="v6_liu"]')).toHaveCount(1);await expect(page.locator('#actors .actor:visible')).toHaveCount(3)}
       21 |   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/main-ending-staging-${ending}-${width}.png`});await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',current.frame.id);
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\campaign-v6-ending-staging.spec.ts:18:179
+        at .\tests\campaign-v6-ending-staging.spec.ts:18:179
 
     Error Context: test-results\campaign-v6-ending-staging-b7f00-opriate-view-at-seven-sizes\error-context.md
 

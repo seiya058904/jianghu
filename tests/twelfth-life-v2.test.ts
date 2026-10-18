@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -21,5 +22,5 @@ test('Royal life both personal outcomes keep words and commands while sorting le
 test('512 sampled Royal life alternatives reach every beat and all five actual Lu sprite files',()=>{
  const beats=new Set<string>(),options=new Set<string>(),files=new Set<string>();for(let seed=1;seed<=512;seed++){let r=Math.imul(seed,2654435761)>>>0;const s=new VNRuntime(content,'twelfth-life-2.0.0');while(true){const f=s.frame;beats.add(f.id);f.choices.forEach(c=>options.add(c.id));if(f.stage.cast.includes('rl2_lu'))files.add(resolvePortrait('rl2_lu',f.stage.moods.rl2_lu,f.stage.looks?.rl2_lu)!.file);if(f.ending)break;if(f.choices.length){r=(Math.imul(r,1664525)+1013904223)>>>0;s.choose(f.choices[r>>>31].id)}else s.advance()}}
  assert.deepEqual([...beats].sort(),[...readFileSync('story/twelfth-life-v2.ink','utf8').matchAll(/# beat:(\S+)/g)].map(m=>m[1]).sort());assert.equal(files.size,5);assert.equal(options.size,66);
- writeFileSync('docs/evidence/v6/twelfth-life-v2-content-audit.json',JSON.stringify({status:'CHARACTER_ART_INCREMENT_NOT_FINAL',beats:beats.size,options:options.size,sampledPaths:512,exhaustive:false,LuActualImages:[...files],limits:'Three ages plus middle-age neutral/amused/firm. Same person as archive Lu, not extra NPC. Character identity audit only; royalLetters CG is checked separately. Other principal identities and full literary review remain incomplete.'},null,2));
+ writeFileSync(evidencePath('docs/evidence/v6/twelfth-life-v2-content-audit.json'),JSON.stringify({status:'CHARACTER_ART_INCREMENT_NOT_FINAL',beats:beats.size,options:options.size,sampledPaths:512,exhaustive:false,LuActualImages:[...files],limits:'Three ages plus middle-age neutral/amused/firm. Same person as archive Lu, not extra NPC. Character identity audit only; royalLetters CG is checked separately. Other principal identities and full literary review remain incomplete.'},null,2));
 });

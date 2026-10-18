@@ -1,8 +1,8 @@
 {
   "tool": "built-in image_gen",
-  "target": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-8f6c2a8f-8d58-462d-9b3d-92e6f870f603.png",
-  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-63550f02-9442-4a55-b84d-05a1df07f35b.png",
+  "target": "[author-local-path]",
+  "source": "[author-local-path]",
   "prompt": "Use case: identity-preserve. Edit target: the provided neutral production character sprite. Create a new expression and subtle pose state for the exact same character. Preserve face identity, apparent age, facial hair, hairstyle, clothing and all cloth wear, belt and weapon identity, full head to mid thighs framing, watercolor ink style and warm even light. Change only: Focused instructive intent: brow visibly furrowed, eyes fixed forward, mouth firm; right hand holds the wooden dao more deliberately away from the body as a stopped demonstration, blade still pointing down. Left shoulder remains slightly guarded. Preserve genuine transparent alpha and complete silhouette. No setting, no text, no particles, no logo, no new props, no additional figures.",
-  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/lm-xu-intent.webp",
+  "output": "./public/art/v6/lm-xu-intent.webp",
   "review": "Pending model visual review and story mapping"
 }

@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import {test,expect} from '@playwright/test';
 import {readFileSync,writeFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
@@ -18,5 +19,5 @@ for(const [label,root]of [['root','http://127.0.0.1:4173/'],['subpath','http://1
  })),{assets:manifest.assets.slice(offset,offset+12),root});
   for(const row of result){const expected=manifest.assets.find(a=>a.file===row.file)!;expect(row.status,row.file).toBe(200);expect(row.sha256,row.file).toBe(expected.technical.sha256);expect(row.bytes,row.file).toBe(expected.technical.bytes);expect([row.width,row.height],row.file).toEqual([expected.technical.width,expected.technical.height])}rows.push(...result);
  }
- expect(errors).toEqual([]);writeFileSync(`docs/evidence/v6/asset-manifest-browser-${label}.json`,JSON.stringify({status:'ALL_RASTER_BYTES_AND_BROWSER_DECODE_VERIFIED',assetFingerprint:fingerprint,root,files:rows.length,rows,errors,limits:'Image fetch and decode only; no claim of per-scene crop, expression quality, identity/canon correctness, offline completeness or human aesthetic acceptance.'},null,2)+'\n');
+ expect(errors).toEqual([]);writeFileSync(evidencePath(`docs/evidence/v6/asset-manifest-browser-${label}.json`),JSON.stringify({status:'ALL_RASTER_BYTES_AND_BROWSER_DECODE_VERIFIED',assetFingerprint:fingerprint,root,files:rows.length,rows,errors,limits:'Image fetch and decode only; no claim of per-scene crop, expression quality, identity/canon correctness, offline completeness or human aesthetic acceptance.'},null,2)+'\n');
 });

@@ -1,7 +1,7 @@
 {
   "tool": "built-in image_gen",
-  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-d657c966-da41-4b00-8f1d-1ba25d48d175.png",
+  "source": "[author-local-path]",
   "prompt": "Use case: historical-scene. Production illustrated environment background for Jianghu Chinese wuxia visual novel. Wide landscape3:2. An EMPTY flat cargo boat deck on a broad inland Chinese lake, no cargo aboard. A thick mast near the right side, low gunwales, worn planks, a wooden mooring post and short loose coils of hemp rope neatly by the side. Low lake waves, reeds and hazy distant western shore. Eye-level three-quarter view with foreground deck broad enough for two people to spar; boat edges and mast are visually clear. Soft overcast daylight, muted lake blue and jade, natural water rather than an ocean storm. No steamship, no fantasy giant warship. Fine muted naturalistic watercolor and ink illustration, historically grounded timber and stone, tactile understated brushwork, atmospheric depth, coherent restrained Jianghu visual world. Bottom foreground visually quiet for HTML dialogue. No people, no silhouettes, no text, no logos, no UI, no watermark, no magical effects.",
-  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/dongting-deck.webp",
+  "output": "./public/art/v6/dongting-deck.webp",
   "review": "Reviewed native image: coherent timber/stone or lake working space, empty foreground, no named figure or text. Mapped to matching chronicle scenes. Fair uses one image for several related scenes and is counted once."
 }

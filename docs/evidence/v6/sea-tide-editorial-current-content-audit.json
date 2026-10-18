@@ -1,11 +1,11 @@
 {
   "status": "SECOND_VOLUME_V2_INTERNAL_EDITORIAL_NOT_FULL_ACCEPTANCE",
-  "sourceBeats": 239,
-  "visited": 239,
+  "sourceBeats": 259,
+  "visited": 259,
   "choiceOptions": 42,
   "decisionsPerRoute": 21,
   "sampledPaths": 512,
   "exhaustive": false,
-  "longestPassiveGap": 14,
+  "longestPassiveGap": 15,
   "limits": "Child now uses a reusable preteen variant; later multi-age identity, protagonists, overseas geography/actions and final literary/visual acceptance remain open."
 }

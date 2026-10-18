@@ -1,0 +1,8 @@
+{
+  "action": "BASELINE_ADVANCED_INTENTIONALLY",
+  "round": "V7 round 5 (orphan-variable wiring)",
+  "date": "2026 round-5 session",
+  "what": "tests/swords-art.test.ts 'exact previous bytes' walk for seven-questions now compares the two V6 archives (seven-questions-before-books-cg.json vs new seven-questions-after-books-cg.json, extracted from commit 3219320) instead of pinning the live generated file. Live seven-questions.json remains covered by tests 2-4 (CG/camera behavior, restore rejection, 512-path sampling against story/seven-questions.ink).",
+  "why": "V7 round-5 wired 16 orphan variables with themed echoes into seven-questions (commit b21041d), an intentional task-mandated content change. The V6 walk asserted presentation-only differences against the pre-books-cg draft, which no content edit could ever satisfy. No test was deleted; the historical presentation-only verification is preserved against the same archive pair it originally verified.",
+  "notChanged": ["story archive inks", "frozen art asset hashes (frozenBeforePresentation)", "two-swords-v1 archive pair"]
+}

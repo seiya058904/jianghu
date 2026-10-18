@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import {test,expect} from '@playwright/test';
 import {writeFileSync} from 'node:fs';
 import {VNRuntime} from '../src/vn-runtime.ts';
@@ -16,12 +17,12 @@ for(const route of [0,1])test(`Two Swords actual full first-book route ${route}`
  await page.setViewportSize({width:route?390:1440,height:route?844:900});await page.goto('/');await page.getByRole('button',{name:'选篇',exact:true}).click();await page.getByRole('link',{name:'一剑两脉 · 旧本归还',exact:true}).click();await page.getByRole('button',{name:'抓住山路上的那只手',exact:true}).click();
  const s=new VNRuntime(content,'two-swords-2.0.0'),scenes=new Set<string>();let choices=0;
  while(!s.frame.ending){await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await expect(page.locator('#dialogue-visible')).toHaveText(s.frame.text);
-  if(!scenes.has(s.frame.stage.scene)){scenes.add(s.frame.stage.scene);if(['ss_ridge','ss_duel','ss_fire','ss_cart','ss_guiboard'].includes(s.frame.stage.scene))await page.screenshot({path:`docs/evidence/v6/two-swords-editorial-${s.frame.stage.scene}-${route}.png`})}
+  if(!scenes.has(s.frame.stage.scene)){scenes.add(s.frame.stage.scene);if(['ss_ridge','ss_duel','ss_fire','ss_cart','ss_guiboard'].includes(s.frame.stage.scene))await page.screenshot({path:evidencePath(`docs/evidence/v6/two-swords-editorial-${s.frame.stage.scene}-${route}.png`)})}
   if(s.frame.choices.length){const id=s.frame.choices[route].id;await page.locator(`[data-choice="${id}"]`).click();s.choose(id);choices++}else{await page.locator('#advance-button').click();s.advance()}
  }
- await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(choices).toBe(24);await expect(page.locator('#ending-actions')).toContainText(route?'两本一同借':'山下还有一课');await page.screenshot({path:`docs/evidence/v6/two-swords-editorial-ending-${route}.png`});
+ await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(choices).toBe(24);await expect(page.locator('#ending-actions')).toContainText(route?'两本一同借':'山下还有一课');await page.screenshot({path:evidencePath(`docs/evidence/v6/two-swords-editorial-ending-${route}.png`)});
  await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(await page.evaluate(()=>localStorage.getItem('jianghu:campaign:tide:v1:sentinel'))).toBe('v5-kept');expect(await page.evaluate(()=>localStorage.getItem('jianghu:chronicle:qingshi:v1:sentinel'))).toBe('qingshi-kept');expect(errors).toEqual([]);
- writeFileSync(`docs/evidence/v6/two-swords-editorial-browser-${route}.json`,JSON.stringify({actualBrowserInputs:true,externalHuman:false,beats:s.frames.length,choices,ending:s.frame.ending,scenes:[...scenes],errors},null,2));
+ writeFileSync(evidencePath(`docs/evidence/v6/two-swords-editorial-browser-${route}.json`),JSON.stringify({actualBrowserInputs:true,externalHuman:false,beats:s.frames.length,choices,ending:s.frame.ending,scenes:[...scenes],errors},null,2));
 });
 test('Two Swords downloads unvisited late chapter for root and subpath offline use',async({browser})=>{
  for(const root of ['http://127.0.0.1:4173/','http://127.0.0.1:4175/Jianghu/']){
@@ -36,7 +37,7 @@ test('Two Swords three-generation scenes fit all seven viewports with usable con
   const context=await browser.newContext({reducedMotion:'reduce'}),page=await context.newPage();await page.addInitScript(raw=>{localStorage.setItem('jianghu:chronicle:two-swords:v2:auto',raw);localStorage.setItem('jianghu:chronicle:two-swords:v2:settings',JSON.stringify({speed:0,reduced:true,size:24}))},JSON.stringify(s.save()));
   for(const [width,height]of [[360,800],[390,844],[412,915],[800,360],[1366,768],[1440,900],[1920,1080]]){await page.setViewportSize({width,height});await page.goto('/two-swords.html#play');await expect(page.locator('#app')).toHaveAttribute('data-beat',target);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
    for(const locator of ['#dialogue-panel','#advance-button']){const box=await page.locator(locator).boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy()}
-   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/two-swords-editorial-layout-${target}-${width}.png`});
+   if([360,800,1440].includes(width))await page.screenshot({path:evidencePath(`docs/evidence/v6/two-swords-editorial-layout-${target}-${width}.png`)});
   }await context.close();
  }
 });

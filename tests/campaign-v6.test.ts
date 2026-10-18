@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -16,7 +17,7 @@ test('v6 preview preserves eight reachable ending families while all three chapt
   assert.ok(!r.s.frames.some(frame=>frame.id.startsWith('c_ordinary_day')));
   assert.equal(new Set(r.s.frames.filter(f=>/^c6_v6_after_(harbor|name|together|teacher|captain|apart|scar|lost)_/.test(f.id)).map(f=>f.id.split('_').slice(0,4).join('_'))).size,1);
   routes[ending]={beats:r.s.frames.length,decisions:r.decisions,longestPassiveGap:r.longest,scenes:r.scenes};
-  writeFileSync(`docs/evidence/v6/main-draft-transcript-${ending}.txt`,r.text);
+  writeFileSync(evidencePath(`docs/evidence/v6/main-draft-transcript-${ending}.txt`),r.text);
  }
  const stay=walk(['route_stay']);
  assert.equal(stay.s.frame.ending,'harbor');assert.ok(stay.scenes.includes('v6_stay')&&stay.scenes.includes('v6_staycare'));
@@ -25,7 +26,7 @@ test('v6 preview preserves eight reachable ending families while all three chapt
  const injured=walk(['route_stay','v6_tie_flag']);
  assert.match(injured.text,/我的手不能爬/);assert.doesNotMatch(injured.text,/才向高杆走去/);
  routes.stay={beats:stay.s.frames.length,decisions:stay.decisions,longestPassiveGap:stay.longest,scenes:stay.scenes};
- writeFileSync('docs/evidence/v6/main-draft-three-route-audit.json',JSON.stringify({status:'DRAFT_NOT_FINAL',version:edition.version,routes,limits:'Node playthroughs and paired consequences only; new art, browser paths and editorial rounds pending.'},null,2));
+ writeFileSync(evidencePath('docs/evidence/v6/main-draft-three-route-audit.json'),JSON.stringify({status:'DRAFT_NOT_FINAL',version:edition.version,routes,limits:'Node playthroughs and paired consequences only; new art, browser paths and editorial rounds pending.'},null,2));
 });
 test('v6 preview samples route variants without a dead end and reports genuinely unvisited source nodes',()=>{
  const seen=new Set<string>();let state=0x16a4b5;
@@ -33,7 +34,7 @@ test('v6 preview samples route variants without a dead end and reports genuinely
  const declared=[...readFileSync('story/campaign-v6.ink','utf8').matchAll(/# beat:(\S+)/g)].map(m=>m[1]);
  const missed=declared.filter(id=>!seen.has(id));
  assert.ok(seen.size>1000);assert.ok(missed.length<50,`missed ${missed.length} nodes need targeted routes`);
- writeFileSync('docs/evidence/v6/main-draft-coverage.json',JSON.stringify({sampledPaths:160,exhaustive:false,declared:declared.length,visited:seen.size,missed},null,2));
+ writeFileSync(evidencePath('docs/evidence/v6/main-draft-coverage.json'),JSON.stringify({sampledPaths:160,exhaustive:false,declared:declared.length,visited:seen.size,missed},null,2));
 });
 
 test('five distinct canon incidents change later practical outcomes while holding the other choices fixed',()=>{
@@ -56,7 +57,7 @@ test('five distinct canon incidents change later practical outcomes while holdin
   assert.ok(early>=0&&late>early+20,`${pair.choice}: payoff must occur after intervening play`);
   ledger.push({onlyChangedChoice:pair.choice,sourceBeat:changed.s.frames[early].id,payoffBeat:changed.s.frames[late].id,interveningFrames:late-early-1,baseline:frames(baseline),counterfactual:frames(changed)});
  }
- writeFileSync('docs/evidence/v6/main-canon-paired-consequences.json',JSON.stringify({method:'Same first-choice path except one named early decision; compare later scene with all other choices fixed.',pairs:ledger},null,2));
+ writeFileSync(evidencePath('docs/evidence/v6/main-canon-paired-consequences.json'),JSON.stringify({method:'Same first-choice path except one named early decision; compare later scene with all other choices fixed.',pairs:ledger},null,2));
 });
 
 test('early injuries accumulate across chapters: each single contribution can change a prepared rescue into the scar outcome',()=>{
@@ -111,5 +112,5 @@ test('thirty manually reviewed main decisions retain exclusive later consequence
  }
  const plain=walk(['route_stay']),advanced=walk(['route_stay','v6_advance_wage']);
  assert.doesNotMatch(plain.text,/会场把那笔路费还馆里了/);assert.match(advanced.text,/会场把那笔路费还馆里了/);
- writeFileSync('docs/evidence/v6/main-reviewed-causal-ledger.json',JSON.stringify({status:'PAIRED_REGRESSIONS_PASS_NOT_EXTERNAL_PLAYTEST',decisions:30,highWeight:results.filter(r=>r.weight==='high').length,method:ledger.method,excluded:ledger.excluded,results},null,2));
+ writeFileSync(evidencePath('docs/evidence/v6/main-reviewed-causal-ledger.json'),JSON.stringify({status:'PAIRED_REGRESSIONS_PASS_NOT_EXTERNAL_PLAYTEST',decisions:30,highWeight:results.filter(r=>r.weight==='high').length,method:ledger.method,excluded:ledger.excluded,results},null,2));
 });

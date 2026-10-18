@@ -1,7 +1,7 @@
 {
   "tool": "built-in image_gen",
-  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-b5a6d5f4-c433-4d41-93cb-22448fc23d59.png",
+  "source": "[author-local-path]",
   "prompt": "Production historical environment for Chinese wuxia visual novel Jianghu: a working rice merchant courtyard by an inland river town. Three stacks of rice sacks under a deep tiled eave, empty low accounts table with closed ledger and brush, two wooden handcarts, spare ladder against a high dry rack. Late afternoon, ordinary workplace with empty foreground for a meeting. Wide landscape3:2 naturalistic watercolor and fine ink, restrained earthy hues, believable architecture. No people, no silhouettes, no writing, no signature or text anywhere, no logos, no UI, no watermark, no magic.",
-  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/grain-yard.webp",
+  "output": "./public/art/v6/grain-yard.webp",
   "review": "Visually reviewed: age, identity or generic type, anatomy and meaningful pose/environment differences checked; mapped to matching production metadata. Independent NPC ownership and same-stage collisions audited. Browser final screenshot review remains pending."
 }

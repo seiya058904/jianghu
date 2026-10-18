@@ -1,0 +1,203 @@
+{
+ "generatedBy": "node --experimental-strip-types scripts/audit-v7-orphan-vars.mjs",
+ "judgement": "orphan = declared + assigned by at least one option, but never read by any condition, so its value can never change a later beat",
+ "rows": [
+  {
+   "slug": "bamboo",
+   "title": "竹院夜论",
+   "declared": 7,
+   "readInCondition": 7,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "beyond-ranking",
+   "title": "榜纸之外·宁无极旧录",
+   "declared": 9,
+   "readInCondition": 9,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "dead-ranking",
+   "title": "死人争榜",
+   "declared": 33,
+   "readInCondition": 33,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "dongting",
+   "title": "照水刀 · 问席",
+   "declared": 11,
+   "readInCondition": 11,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "jade",
+   "title": "山河璧 · 十三文",
+   "declared": 31,
+   "readInCondition": 31,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "jade-thieves",
+   "title": "山河璧 · 密库双贼",
+   "declared": 22,
+   "readInCondition": 22,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "kuhe",
+   "title": "枯河谷 · 门后有人",
+   "declared": 20,
+   "readInCondition": 20,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "longmen",
+   "title": "龙门问刀",
+   "declared": 20,
+   "readInCondition": 20,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "luhua",
+   "title": "照水刀 · 芦花渡",
+   "declared": 25,
+   "readInCondition": 25,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "luoyang",
+   "title": "洛阳龙虎风云会",
+   "declared": 9,
+   "readInCondition": 9,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "north",
+   "title": "北枪与乾坤 · 三师一枪",
+   "declared": 31,
+   "readInCondition": 31,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "north-notes",
+   "title": "北枪与乾坤 · 师门夜话",
+   "declared": 6,
+   "readInCondition": 6,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "qian-kun",
+   "title": "北枪与乾坤 · 不会算账",
+   "declared": 25,
+   "readInCondition": 25,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "qingshi",
+   "title": "青石五友 · 守一天",
+   "declared": 26,
+   "readInCondition": 26,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "sea",
+   "title": "海路两世 · 中原以外",
+   "declared": 22,
+   "readInCondition": 22,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "sea-tide",
+   "title": "海路两世 · 归潮岛",
+   "declared": 21,
+   "readInCondition": 21,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "seven-questions",
+   "title": "一剑两脉 · 门外七问",
+   "declared": 26,
+   "readInCondition": 26,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "taihua",
+   "title": "太华试序 · 三年之约",
+   "declared": 31,
+   "readInCondition": 31,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "twelfth",
+   "title": "第十二席",
+   "declared": 15,
+   "readInCondition": 15,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "twelfth-life",
+   "title": "第十二席 · 赵承晏",
+   "declared": 34,
+   "readInCondition": 34,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "two-swords",
+   "title": "一剑两脉 · 旧本归还",
+   "declared": 17,
+   "readInCondition": 17,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "white-stone",
+   "title": "白石谷外",
+   "declared": 13,
+   "readInCondition": 13,
+   "orphanCount": 0,
+   "orphan": []
+  },
+  {
+   "slug": "xuanmen",
+   "title": "玄门旧史·九席与返真不绝",
+   "declared": 11,
+   "readInCondition": 11,
+   "orphanCount": 0,
+   "orphan": []
+  }
+ ],
+ "summary": {
+  "editions": 23,
+  "totalDeclared": 465,
+  "totalOrphan": 0,
+  "worst": [
+   "bamboo:0/7",
+   "beyond-ranking:0/9",
+   "dead-ranking:0/33",
+   "dongting:0/11",
+   "jade:0/31",
+   "jade-thieves:0/22"
+  ]
+ }
+}

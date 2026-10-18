@@ -1,0 +1,620 @@
+{
+  "kind": "B_RUNTIME_NOT_BROWSER_OR_HUMAN_ACCEPTANCE",
+  "walksPerEdition": 80,
+  "coverage": "deterministic novelty-guided samples and per-observed-choice paired replay; not exhaustive all state combinations",
+  "works": [
+    {
+      "slug": "kuhe",
+      "version": "kuhe-3.0.0",
+      "contentSHA256": "8a38c754945eef2c639e1173319363074c2be59be8bdae2e9bd80466d7b6c782",
+      "walks": 80,
+      "firstChoice": 6,
+      "longestPassiveIncludingEnding": 16,
+      "declaredEndings": [
+        "kh_care",
+        "kh_record"
+      ],
+      "reachedEndings": [
+        "kh_care",
+        "kh_record"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 336,
+      "visitedBeats": 330,
+      "unvisitedBeats": [
+        "kh_retreat_9",
+        "kh_retreat_10",
+        "kh_retreat_13",
+        "kh_retreat_14",
+        "kh_aftercare_16",
+        "kh_aftercare_17"
+      ],
+      "choices": 40,
+      "variables": 20
+    },
+    {
+      "slug": "qingshi",
+      "version": "qingshi-3.0.0",
+      "contentSHA256": "744ec03d02883390cbc7fb3ca34cf8b3508c245ce7a213f602b14f344f26bbb7",
+      "walks": 80,
+      "firstChoice": 5,
+      "longestPassiveIncludingEnding": 16,
+      "declaredEndings": [
+        "qs_heirs",
+        "qs_records"
+      ],
+      "reachedEndings": [
+        "qs_heirs",
+        "qs_records"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 461,
+      "visitedBeats": 457,
+      "unvisitedBeats": [
+        "qs_home_visit_3",
+        "qs_home_visit_4",
+        "qs_home_visit_11",
+        "qs_home_visit_12"
+      ],
+      "choices": 60,
+      "variables": 26
+    },
+    {
+      "slug": "two-swords",
+      "version": "two-swords-2.0.0",
+      "contentSHA256": "802f27aad2ffbeb1127fe4d4d8dbbf572468aae274c10875df3c93626e7825c8",
+      "walks": 80,
+      "firstChoice": 4,
+      "longestPassiveIncludingEnding": 15,
+      "declaredEndings": [
+        "ss_library_lesson",
+        "ss_mountain_lesson"
+      ],
+      "reachedEndings": [
+        "ss_library_lesson",
+        "ss_mountain_lesson"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 350,
+      "visitedBeats": 350,
+      "unvisitedBeats": [],
+      "choices": 50,
+      "variables": 17
+    },
+    {
+      "slug": "seven-questions",
+      "version": "seven-questions-2.0.0",
+      "contentSHA256": "e3aac7f5b3ca322f82f47de4cf4e03115ef74f05e3eafde68f66e3a36af7e280",
+      "walks": 80,
+      "firstChoice": 7,
+      "longestPassiveIncludingEnding": 14,
+      "declaredEndings": [
+        "sq_open_lesson",
+        "sq_shared_road"
+      ],
+      "reachedEndings": [
+        "sq_open_lesson",
+        "sq_shared_road"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 416,
+      "visitedBeats": 405,
+      "unvisitedBeats": [
+        "sq_tree_17",
+        "sq_tree_18",
+        "sq_hui_turn_11",
+        "sq_hui_turn_12",
+        "sq_false_base_7",
+        "sq_false_base_9",
+        "sq_courtyard_fire_2",
+        "sq_courtyard_fire_3",
+        "sq_courtyard_fire_4",
+        "sq_courtyard_fire_8",
+        "sq_courtyard_fire_9"
+      ],
+      "choices": 62,
+      "variables": 26
+    },
+    {
+      "slug": "jade-thieves",
+      "version": "jade-thieves-2.0.0",
+      "contentSHA256": "0b0895a8ca463ff9405570287dee102805c7a33be1c41001015f78751fadbe9b",
+      "walks": 80,
+      "firstChoice": 2,
+      "longestPassiveIncludingEnding": 16,
+      "declaredEndings": [
+        "jt_private_account",
+        "jt_unmarked_life"
+      ],
+      "reachedEndings": [
+        "jt_private_account",
+        "jt_unmarked_life"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 324,
+      "visitedBeats": 321,
+      "unvisitedBeats": [
+        "jt_not_fighting_2",
+        "jt_not_fighting_3",
+        "jt_not_fighting_4"
+      ],
+      "choices": 45,
+      "variables": 22
+    },
+    {
+      "slug": "jade",
+      "version": "jade-2.0.0",
+      "contentSHA256": "15286916bf700681b252fc9ccf2411e22312853913f6e4f999cd40c4342bf63f",
+      "walks": 80,
+      "firstChoice": 6,
+      "longestPassiveIncludingEnding": 10,
+      "declaredEndings": [
+        "jd_archivework",
+        "jd_storework"
+      ],
+      "reachedEndings": [
+        "jd_archivework",
+        "jd_storework"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 360,
+      "visitedBeats": 342,
+      "unvisitedBeats": [
+        "jd_fourth_route_13",
+        "jd_sixth_11",
+        "jd_grain_night_6",
+        "jd_two_fighters_9",
+        "jd_two_fighters_10",
+        "jd_grain_sparks_5",
+        "jd_grain_sparks_6",
+        "jd_grain_sparks_7",
+        "jd_grain_held_7",
+        "jd_grain_held_9",
+        "jd_grain_held_11",
+        "jd_night_reports_3",
+        "jd_night_reports_7",
+        "jd_night_reports_8",
+        "jd_night_reports_9",
+        "jd_night_reports_11",
+        "jd_night_reports_13",
+        "jd_night_reports_15"
+      ],
+      "choices": 68,
+      "variables": 31
+    },
+    {
+      "slug": "sea",
+      "version": "sea-2.0.0",
+      "contentSHA256": "3a83225f2dc444f478d14f7044f01e7e9cc411864c304a973129d6659b56315b",
+      "walks": 80,
+      "firstChoice": 5,
+      "longestPassiveIncludingEnding": 14,
+      "declaredEndings": [
+        "sr_next_harbor",
+        "sr_open_courtyard"
+      ],
+      "reachedEndings": [
+        "sr_next_harbor",
+        "sr_open_courtyard"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 287,
+      "visitedBeats": 287,
+      "unvisitedBeats": [],
+      "choices": 46,
+      "variables": 22
+    },
+    {
+      "slug": "sea-tide",
+      "version": "sea-tide-2.0.0",
+      "contentSHA256": "1ec4161b9bb090d706ef4553ef56e203364f0285dfb1812edf88e41a4d6747b3",
+      "walks": 80,
+      "firstChoice": 4,
+      "longestPassiveIncludingEnding": 16,
+      "declaredEndings": [
+        "st_next_step",
+        "st_next_watch"
+      ],
+      "reachedEndings": [
+        "st_next_step",
+        "st_next_watch"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 259,
+      "visitedBeats": 259,
+      "unvisitedBeats": [],
+      "choices": 42,
+      "variables": 21
+    },
+    {
+      "slug": "north",
+      "version": "north-3.0.0",
+      "contentSHA256": "5e10d2b73529ad78558e0c8c29661e4a15c1f6a74cf22cf7ea3d631e93782350",
+      "walks": 80,
+      "firstChoice": 7,
+      "longestPassiveIncludingEnding": 14,
+      "declaredEndings": [
+        "nq_first_again",
+        "nq_three_names"
+      ],
+      "reachedEndings": [
+        "nq_first_again",
+        "nq_three_names"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 384,
+      "visitedBeats": 384,
+      "unvisitedBeats": [],
+      "choices": 62,
+      "variables": 31
+    },
+    {
+      "slug": "qian-kun",
+      "version": "qian-kun-3.0.0",
+      "contentSHA256": "2241a5b2f6eb8fa579338322330200a5520be554f147774d1eaf8dc667e188a3",
+      "walks": 80,
+      "firstChoice": 7,
+      "longestPassiveIncludingEnding": 18,
+      "declaredEndings": [
+        "qk_open_lesson",
+        "qk_open_mountain"
+      ],
+      "reachedEndings": [
+        "qk_open_lesson",
+        "qk_open_mountain"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 344,
+      "visitedBeats": 344,
+      "unvisitedBeats": [],
+      "choices": 50,
+      "variables": 25
+    },
+    {
+      "slug": "north-notes",
+      "version": "north-notes-1.0.0",
+      "contentSHA256": "a03a6f206b63021f88a615d4589d9da30c2ec66d113cfba754a9788ee633ff17",
+      "walks": 80,
+      "firstChoice": 3,
+      "longestPassiveIncludingEnding": 13,
+      "declaredEndings": [
+        "nn_different_starts",
+        "nn_unfinished_page"
+      ],
+      "reachedEndings": [
+        "nn_different_starts",
+        "nn_unfinished_page"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 77,
+      "visitedBeats": 77,
+      "unvisitedBeats": [],
+      "choices": 12,
+      "variables": 6
+    },
+    {
+      "slug": "dead-ranking",
+      "version": "dead-ranking-1.0.0",
+      "contentSHA256": "7f0e349540384b0215eea51f165244483bc9001de543e067cc7c63e6ee3fe0eb",
+      "walks": 80,
+      "firstChoice": 7,
+      "longestPassiveIncludingEnding": 18,
+      "declaredEndings": [
+        "dr_road_after",
+        "dr_room_after"
+      ],
+      "reachedEndings": [
+        "dr_road_after",
+        "dr_room_after"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 428,
+      "visitedBeats": 428,
+      "unvisitedBeats": [],
+      "choices": 72,
+      "variables": 33
+    },
+    {
+      "slug": "luhua",
+      "version": "luhua-1.0.0",
+      "contentSHA256": "7ca89cef981c8816cd00a3df538a655cad936079f1cb4b2cc7b713169431b72c",
+      "walks": 80,
+      "firstChoice": 4,
+      "longestPassiveIncludingEnding": 18,
+      "declaredEndings": [
+        "lh_coast_after",
+        "lh_hall_after"
+      ],
+      "reachedEndings": [
+        "lh_coast_after",
+        "lh_hall_after"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 306,
+      "visitedBeats": 306,
+      "unvisitedBeats": [],
+      "choices": 50,
+      "variables": 25
+    },
+    {
+      "slug": "twelfth-life",
+      "version": "twelfth-life-3.0.0",
+      "contentSHA256": "88b09a5bac7d009de7ffd9fd51aee5811b69338657247f3d79254ba4f565ce9f",
+      "walks": 80,
+      "firstChoice": 6,
+      "longestPassiveIncludingEnding": 18,
+      "declaredEndings": [
+        "rl_letter_after",
+        "rl_watch_after"
+      ],
+      "reachedEndings": [
+        "rl_letter_after",
+        "rl_watch_after"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 439,
+      "visitedBeats": 439,
+      "unvisitedBeats": [],
+      "choices": 68,
+      "variables": 34
+    },
+    {
+      "slug": "luoyang",
+      "version": "luoyang-1.0.0",
+      "contentSHA256": "4c35605bd5f396fe5e01aac65fadd4f615bbb3a50d6acc85fb5c7b9bae450419",
+      "walks": 80,
+      "firstChoice": 6,
+      "longestPassiveIncludingEnding": 9,
+      "declaredEndings": [
+        "ly_post_after",
+        "ly_trial_after"
+      ],
+      "reachedEndings": [
+        "ly_post_after",
+        "ly_trial_after"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 100,
+      "visitedBeats": 100,
+      "unvisitedBeats": [],
+      "choices": 18,
+      "variables": 9
+    },
+    {
+      "slug": "bamboo",
+      "version": "bamboo-1.0.0",
+      "contentSHA256": "33144d4d35bca6f5283933feb381e859885861645ac09ab24b8c653abb699e8b",
+      "walks": 80,
+      "firstChoice": 7,
+      "longestPassiveIncludingEnding": 11,
+      "declaredEndings": [
+        "bb_palm_after",
+        "bb_tea_after"
+      ],
+      "reachedEndings": [
+        "bb_palm_after",
+        "bb_tea_after"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 110,
+      "visitedBeats": 110,
+      "unvisitedBeats": [],
+      "choices": 14,
+      "variables": 7
+    },
+    {
+      "slug": "xuanmen",
+      "version": "xuanmen-1.0.0",
+      "contentSHA256": "075d66262459a02d7551d074e9a9d340ca0726330935a06cf8ec390473a2706d",
+      "walks": 80,
+      "firstChoice": 4,
+      "longestPassiveIncludingEnding": 14,
+      "declaredEndings": [
+        "xm_blank_after",
+        "xm_handover_after"
+      ],
+      "reachedEndings": [
+        "xm_blank_after",
+        "xm_handover_after"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 142,
+      "visitedBeats": 142,
+      "unvisitedBeats": [],
+      "choices": 22,
+      "variables": 11
+    },
+    {
+      "slug": "white-stone",
+      "version": "white-stone-1.0.0",
+      "contentSHA256": "0198d0e0b949a7f2729113830fae34a6488a92e5930150b7ae1fa0954d8bfab2",
+      "walks": 80,
+      "firstChoice": 5,
+      "longestPassiveIncludingEnding": 13,
+      "declaredEndings": [
+        "ws_outside_after",
+        "ws_receiving_after"
+      ],
+      "reachedEndings": [
+        "ws_outside_after",
+        "ws_receiving_after"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 168,
+      "visitedBeats": 168,
+      "unvisitedBeats": [],
+      "choices": 26,
+      "variables": 13
+    },
+    {
+      "slug": "beyond-ranking",
+      "version": "beyond-ranking-1.0.0",
+      "contentSHA256": "cde9f312076068bc9b63cff919f657667f8299694bf04baee3f323847c947a63",
+      "walks": 80,
+      "firstChoice": 8,
+      "longestPassiveIncludingEnding": 13,
+      "declaredEndings": [
+        "br_reader_after",
+        "br_record_after"
+      ],
+      "reachedEndings": [
+        "br_reader_after",
+        "br_record_after"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 130,
+      "visitedBeats": 130,
+      "unvisitedBeats": [],
+      "choices": 18,
+      "variables": 9
+    },
+    {
+      "slug": "taihua",
+      "version": "taihua-3.0.0",
+      "contentSHA256": "663f6334a5660b64cf5270c4c27e694ea7cafadd2a9173b6a6be001d21e75872",
+      "walks": 80,
+      "firstChoice": 8,
+      "longestPassiveIncludingEnding": 16,
+      "declaredEndings": [
+        "th_company",
+        "th_guidance",
+        "th_letter"
+      ],
+      "reachedEndings": [
+        "th_company",
+        "th_letter"
+      ],
+      "unreachedEndings": [
+        "th_guidance"
+      ],
+      "authoredBeats": 485,
+      "visitedBeats": 439,
+      "unvisitedBeats": [
+        "th_after_six_27",
+        "th_after_six_28",
+        "th_after_six_29",
+        "th_after_six_30",
+        "th_last_pack_11",
+        "th_last_pack_12",
+        "th_ending_6",
+        "th_ending_7",
+        "th_ending_8",
+        "th_ending_9",
+        "th_ending_10",
+        "th_ending_11",
+        "th_ending_12",
+        "th_ending_19",
+        "th_ending_20",
+        "th_ending_21",
+        "th_ending_26",
+        "th_ending_27",
+        "th_ending_28",
+        "th_ending_36",
+        "th_guidance_trial_1",
+        "th_guidance_trial_2",
+        "th_guidance_trial_3",
+        "th_guidance_trial_4",
+        "th_guidance_trial_5",
+        "th_guidance_trial_6",
+        "th_guidance_trial_7",
+        "th_guidance_trial_8",
+        "th_guidance_trial_9",
+        "th_guidance_continue_1",
+        "th_guidance_continue_2",
+        "th_guidance_continue_3",
+        "th_guidance_continue_4",
+        "th_guidance_continue_5",
+        "th_guidance_continue_6",
+        "th_guidance_continue_7",
+        "th_guidance_continue_8",
+        "th_guidance_continue_9",
+        "th_guidance_continue_10",
+        "th_guidance_continue_11",
+        "th_guidance_continue_12",
+        "th_guidance_continue_13",
+        "th_guidance_continue_14",
+        "th_guidance_continue_15",
+        "th_guidance_continue_16",
+        "th_guidance_continue_17"
+      ],
+      "choices": 61,
+      "variables": 31
+    },
+    {
+      "slug": "longmen",
+      "version": "longmen-3.0.0",
+      "contentSHA256": "693c99d871d4f1ba8b669bd05b93733492821fa79981cc3fae1fecd29fe5e99e",
+      "walks": 80,
+      "firstChoice": 4,
+      "longestPassiveIncludingEnding": 20,
+      "declaredEndings": [
+        "lm_home",
+        "lm_travel"
+      ],
+      "reachedEndings": [
+        "lm_home",
+        "lm_travel"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 376,
+      "visitedBeats": 367,
+      "unvisitedBeats": [
+        "lm_leave_16",
+        "lm_leave_17",
+        "lm_leave_18",
+        "lm_leave_19",
+        "lm_leave_25",
+        "lm_ending_3",
+        "lm_ending_4",
+        "lm_ending_7",
+        "lm_ending_8"
+      ],
+      "choices": 50,
+      "variables": 20
+    },
+    {
+      "slug": "dongting",
+      "version": "dongting-1.0.0",
+      "contentSHA256": "cbe564117b97183ed3dd65073873318218a56f5afb031506908caa69e8e8e30d",
+      "walks": 80,
+      "firstChoice": 6,
+      "longestPassiveIncludingEnding": 13,
+      "declaredEndings": [
+        "dt_cargo",
+        "dt_company"
+      ],
+      "reachedEndings": [
+        "dt_cargo",
+        "dt_company"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 167,
+      "visitedBeats": 167,
+      "unvisitedBeats": [],
+      "choices": 22,
+      "variables": 11
+    },
+    {
+      "slug": "twelfth",
+      "version": "twelfth-1.0.0",
+      "contentSHA256": "d47717346b56a8c02ccd557ed89c4587223400a2a3a169a955a09fe4eb08c6a0",
+      "walks": 80,
+      "firstChoice": 5,
+      "longestPassiveIncludingEnding": 11,
+      "declaredEndings": [
+        "qw_palace",
+        "qw_school"
+      ],
+      "reachedEndings": [
+        "qw_palace",
+        "qw_school"
+      ],
+      "unreachedEndings": [],
+      "authoredBeats": 258,
+      "visitedBeats": 258,
+      "unvisitedBeats": [],
+      "choices": 36,
+      "variables": 15
+    }
+  ]
+}

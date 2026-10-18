@@ -8,7 +8,12 @@ for(const work of works){
  const owners=works.filter(other=>JSON.parse(readFileSync(`dist/offline-${other.slug}.json`,'utf8')).includes(url)).map(other=>other.slug);assert.deepEqual(owners,[work.slug],`Primary data assigned to wrong work: ${primary}`);rows.push({work:work.slug,primary:url,owners});
 }
 const mainEntryFiles=JSON.parse(readFileSync('dist/offline-tide-v6.json','utf8'));
-for(const entry of ['./','./index.html','./tide-v6.html'])assert.ok(mainEntryFiles.includes(entry),`Main V6 package omitted ${entry}`);
+// V7: `/` and `/index.html` are the works collection shell, not a story entry.
+// The original main story keeps its own URL and its own package.
+assert.ok(mainEntryFiles.includes('./tide-v6.html'),'Main V6 package omitted ./tide-v6.html');
+const shellFiles=JSON.parse(readFileSync('dist/offline-manifest.json','utf8'));
+for(const entry of ['./','./index.html'])assert.ok(shellFiles.includes(entry),`Library shell omitted ${entry}`);
+assert.ok(!mainEntryFiles.includes('./index.html'),'The library shell must not travel inside the V6 story package');
 const frozenFiles=[];
 for(const [work,prefix]of [['jade-thieves-v1','jade-thieves-before-cg-'],['jade-v1','jade-before-cg-'],['tide-v6','campaign-v6-before-ending-staging-'],['twelfth-life-v2','twelfth-life-before-cg-'],['two-swords-v1','two-swords-before-art-'],['seven-questions','seven-questions-before-books-cg-'],['sea-v1','sea-before-rigging-'],['sea-tide-v1','sea-tide-before-rigging-'],['sea-tide','sea-tide-before-child-']]){
  const file=files.find(file=>file.startsWith(prefix)&&file.endsWith('.js'));assert.ok(file,prefix);assert.ok(JSON.parse(readFileSync(`dist/offline-${work}.json`,'utf8')).includes('./assets/'+file),`${work} omitted frozen migration data`);frozenFiles.push({work,file});

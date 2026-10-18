@@ -1,7 +1,7 @@
 {
   "mode": "built-in image_gen",
   "file": "public/art/v6/cg-royal-letters.webp",
-  "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-d907ffea-d096-4389-b838-1aff7de0e946.png",
+  "source": "[author-local-path]",
   "references": [
     "public/art/v6/rl-lu-mid.webp",
     "public/art/v6/reusable-study.webp"

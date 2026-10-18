@@ -1,0 +1,766 @@
+{
+  "kind": "inkjs runtime; not browser",
+  "cases": [
+    {
+      "id": "CL01",
+      "slug": "dead-ranking",
+      "input": "src/generated/dead-ranking.json",
+      "sha256": "1626b38af67215696383187321ba37e29953f7feead8131b151ee056a5174809",
+      "overrides": [
+        "dr_ask_what_she_knows"
+      ],
+      "default": "first available choice",
+      "beats": 312,
+      "ending": "dr_room_after",
+      "confirmed": true,
+      "matches": [
+        {
+          "beat": "dr_three_parts_8",
+          "text": "三人还没有在沈面前真走一遍。你手里仍只有三份口述与三条自己复原出来的路——纸上的手脚眼拼起来才最像，人也一样。"
+        }
+      ],
+      "choices": [
+        "dr_ask_letter_hand",
+        "dr_pickup_training",
+        "dr_liang_private",
+        "dr_borrow_chase",
+        "dr_keep_claim_separate",
+        "dr_watch_actual_person",
+        "dr_turn_small",
+        "dr_ask_reopen_plain",
+        "dr_ask_what_she_knows",
+        "dr_wait_until_land",
+        "dr_leave_visit_time",
+        "dr_ask_zhao_direct",
+        "dr_ask_each_responsibility",
+        "dr_keep_two_accounts",
+        "dr_tell_three_first",
+        "dr_face_one_by_one",
+        "dr_face_let_askers_in",
+        "dr_face_write_own_words",
+        "dr_ask_each_seen",
+        "dr_ask_old_workers",
+        "dr_wait_for_gu",
+        "dr_ask_own_words",
+        "dr_follow_land_money",
+        "dr_ask_knowledge_not_seizure",
+        "dr_eyes_zhou",
+        "dr_zhou_read_whole",
+        "dr_zhou_leave_space",
+        "dr_read_names_to_people",
+        "dr_tell_life_with_limits",
+        "dr_give_unfinished_letter",
+        "dr_keep_wudeng_name",
+        "dr_career_teach",
+        "dr_room_let_next_answer"
+      ]
+    },
+    {
+      "id": "CL02",
+      "slug": "dead-ranking",
+      "input": "src/generated/dead-ranking.json",
+      "sha256": "1626b38af67215696383187321ba37e29953f7feead8131b151ee056a5174809",
+      "overrides": [
+        "dr_face_all_together"
+      ],
+      "default": "first available choice",
+      "beats": 311,
+      "ending": "dr_room_after",
+      "confirmed": true,
+      "matches": [
+        {
+          "beat": "dr_three_faces_1_1",
+          "text": "第二间是青蒲剑赵问川与杜青禾。赵六十九招真败，他问的第一句仍不是名字。"
+        },
+        {
+          "beat": "dr_three_faces_2_1",
+          "text": "第三间是伏波刀何定远，一百一十四。严松进门之前先洗了手，坐下仍是那副郎中样子。"
+        },
+        {
+          "beat": "dr_three_faces_after_1",
+          "text": "三间屋走完，你把六个人的话带回榜房。陆观棋将三份帖按主人分好，等你先说今日听的是哪一层。"
+        }
+      ],
+      "choices": [
+        "dr_ask_letter_hand",
+        "dr_pickup_training",
+        "dr_liang_private",
+        "dr_borrow_chase",
+        "dr_keep_claim_separate",
+        "dr_watch_actual_person",
+        "dr_turn_small",
+        "dr_ask_reopen_plain",
+        "dr_ask_actual_test",
+        "dr_wait_until_land",
+        "dr_leave_visit_time",
+        "dr_ask_zhao_direct",
+        "dr_ask_each_responsibility",
+        "dr_keep_two_accounts",
+        "dr_tell_three_first",
+        "dr_face_all_together",
+        "dr_face_let_askers_in",
+        "dr_face_write_own_words",
+        "dr_ask_each_seen",
+        "dr_ask_old_workers",
+        "dr_wait_for_gu",
+        "dr_ask_own_words",
+        "dr_follow_land_money",
+        "dr_ask_knowledge_not_seizure",
+        "dr_eyes_zhou",
+        "dr_zhou_read_whole",
+        "dr_zhou_leave_space",
+        "dr_read_names_to_people",
+        "dr_tell_life_with_limits",
+        "dr_give_unfinished_letter",
+        "dr_keep_wudeng_name",
+        "dr_career_teach",
+        "dr_room_let_next_answer"
+      ]
+    },
+    {
+      "id": "CL03",
+      "slug": "dead-ranking",
+      "input": "src/generated/dead-ranking.json",
+      "sha256": "1626b38af67215696383187321ba37e29953f7feead8131b151ee056a5174809",
+      "overrides": [],
+      "default": "first available choice",
+      "beats": 311,
+      "ending": "dr_room_after",
+      "confirmed": true,
+      "matches": [
+        {
+          "beat": "dr_paid_witness_1",
+          "text": "你要查的，无非葛九衡。他早年同谢藏锋学过几年剑，因盗财被逐，走的是年轻底子，连照夜剑的门都没摸到。"
+        }
+      ],
+      "choices": [
+        "dr_ask_letter_hand",
+        "dr_pickup_training",
+        "dr_liang_private",
+        "dr_borrow_chase",
+        "dr_keep_claim_separate",
+        "dr_watch_actual_person",
+        "dr_turn_small",
+        "dr_ask_reopen_plain",
+        "dr_ask_actual_test",
+        "dr_wait_until_land",
+        "dr_leave_visit_time",
+        "dr_ask_zhao_direct",
+        "dr_ask_each_responsibility",
+        "dr_keep_two_accounts",
+        "dr_tell_three_first",
+        "dr_face_one_by_one",
+        "dr_face_let_askers_in",
+        "dr_face_write_own_words",
+        "dr_ask_each_seen",
+        "dr_ask_old_workers",
+        "dr_wait_for_gu",
+        "dr_ask_own_words",
+        "dr_follow_land_money",
+        "dr_ask_knowledge_not_seizure",
+        "dr_eyes_zhou",
+        "dr_zhou_read_whole",
+        "dr_zhou_leave_space",
+        "dr_read_names_to_people",
+        "dr_tell_life_with_limits",
+        "dr_give_unfinished_letter",
+        "dr_keep_wudeng_name",
+        "dr_career_teach",
+        "dr_room_let_next_answer"
+      ]
+    },
+    {
+      "id": "CL04",
+      "slug": "jade",
+      "input": "src/generated/jade.json",
+      "sha256": "85f6bd38192e80f02ef675fea9c6685bf38a8a038a15d52057e105df5acb16b0",
+      "overrides": [],
+      "default": "first available choice",
+      "beats": 234,
+      "ending": "jd_storework",
+      "confirmed": true,
+      "matches": [
+        {
+          "beat": "jd_family_return_9",
+          "text": "你帮院外那些人找到接报处，后来他们都记得去哪儿问。比围着一块碎片猜强。"
+        }
+      ],
+      "choices": [
+        "jd_ask_origin",
+        "jd_show_hand",
+        "jd_sort_old_names",
+        "jd_send_objects_separate",
+        "jd_bring_archive",
+        "jd_answer_pickle",
+        "jd_keep_surface",
+        "jd_match_route",
+        "jd_tell_empty",
+        "jd_keep_material_record",
+        "jd_take_duty",
+        "jd_receive_people",
+        "jd_finish_shift",
+        "jd_note_usable",
+        "jd_copy_use",
+        "jd_ask_present",
+        "jd_help_water",
+        "jd_stay_grain",
+        "jd_hold_cart_turn",
+        "jd_keep_people_lane",
+        "jd_fold_wet_canvas",
+        "jd_send_grain_status",
+        "jd_close_local_shift",
+        "jd_keep_two_witnesses",
+        "jd_offer_paid_shift",
+        "jd_choose_storework",
+        "jd_return_wedding_copy",
+        "jd_name_best_work",
+        "jd_keep_old_breaks"
+      ]
+    },
+    {
+      "id": "CL05",
+      "slug": "twelfth",
+      "input": "src/generated/twelfth.json",
+      "sha256": "6be09fe05fc2df85fced816bc68dba68761c0c3d9c20189c5fdbc637661afb2e",
+      "overrides": [],
+      "default": "first available choice",
+      "beats": 178,
+      "ending": "qw_school",
+      "confirmed": true,
+      "matches": [
+        {
+          "beat": "qw_public_bout_8",
+          "text": "我能说自己没让——这话今日仍只有半句能用。薛直这一败没人作证，得等他自己哪日敢说，也等他日子没有因此变坏。"
+        }
+      ],
+      "choices": [
+        "qw_plain_trial",
+        "qw_leave_room",
+        "qw_no_false_witness",
+        "qw_wait_bow",
+        "qw_return_gift",
+        "qw_read_papers",
+        "qw_quiet_guard",
+        "qw_guard_school",
+        "qw_test_fast",
+        "qw_ask_person",
+        "qw_both_facts",
+        "qw_submit_seen",
+        "qw_no_extra_seal",
+        "qw_name_only",
+        "qw_ask_teacher",
+        "qw_school_choice",
+        "qw_date",
+        "qw_mourn_plain"
+      ]
+    },
+    {
+      "id": "CL06",
+      "slug": "twelfth-life",
+      "input": "src/generated/twelfth-life.json",
+      "sha256": "631b74e3fc8c80883769c37f6ce6bfb7c2a2ed80e77f99b4160932b5caeaf57a",
+      "overrides": [],
+      "default": "first available choice",
+      "beats": 342,
+      "ending": "rl_watch_after",
+      "confirmed": true,
+      "matches": [
+        {
+          "beat": "rl_recover_years_5",
+          "text": "你站的第一回，仍照沈履平那页的底子。四十多年，最上那一页没换过。"
+        }
+      ],
+      "choices": [
+        "rl_raise_boy",
+        "rl_ask_actual_step",
+        "rl_choose_working_sword",
+        "rl_ask_old_records",
+        "rl_check_letter_roads",
+        "rl_accept_not_teaching",
+        "rl_keep_standing_page",
+        "rl_finish_standing",
+        "rl_mark_unknown_step",
+        "rl_circle_one_more",
+        "rl_thank_space",
+        "rl_tell_gu_anger",
+        "rl_explain_silver",
+        "rl_admit_scam_first",
+        "rl_ask_chen_limits",
+        "rl_sort_together",
+        "rl_keep_plain_defeat",
+        "rl_keep_opponent_words",
+        "rl_leave_edict_behind",
+        "rl_name_xue_gap",
+        "rl_leave_no_gift",
+        "rl_tax_ask_family",
+        "rl_train_rotating_help",
+        "rl_sit_brother",
+        "rl_let_scribe_finish",
+        "rl_accept_current_body",
+        "rl_keep_watch_word",
+        "rl_leave_each_record",
+        "rl_accept_both_lines",
+        "rl_wait_without_rank_help",
+        "rl_let_brother_keep",
+        "rl_keep_old_boxes",
+        "rl_keep_chen_question",
+        "rl_ask_young_to_watch"
+      ]
+    },
+    {
+      "id": "CL07",
+      "slug": "qian-kun",
+      "input": "src/generated/qian-kun.json",
+      "sha256": "b9f7218723b6c7ab3c43d5b020bfc84aecb34b0f1efdd764f68efd072dfa3beb",
+      "overrides": [
+        "qk_show_half_year"
+      ],
+      "default": "first available choice",
+      "beats": 256,
+      "ending": "qk_open_lesson",
+      "confirmed": true,
+      "matches": [
+        {
+          "beat": "qk_forty_three_7",
+          "text": "请他真接、让赞许落在能改的地方——对薛百川如此，对眼前这位老宗师也一样。你落败后问的第一句，仍是这一掌从哪里改。"
+        }
+      ],
+      "choices": [
+        "qk_show_waist",
+        "qk_ask_return",
+        "qk_leave_plain_receipt",
+        "qk_ask_false_step",
+        "qk_keep_plain_question",
+        "qk_show_half_year",
+        "qk_test_current_hand",
+        "qk_sit_half_cup",
+        "qk_receive_real_refusal",
+        "qk_let_manager_speak",
+        "qk_watch_before_answer",
+        "qk_let_boy_try",
+        "qk_name_who_can_ask",
+        "qk_keep_unwon",
+        "qk_admit_age_part",
+        "qk_clear_before_mountain",
+        "qk_ask_outside_rank",
+        "qk_try_changed_choice",
+        "qk_ask_named_people",
+        "qk_keep_unseen",
+        "qk_record_rumor_bounds",
+        "qk_follow_deck_pitch",
+        "qk_take_rope_then_again",
+        "qk_keep_missing_bouts",
+        "qk_leave_open_school"
+      ]
+    },
+    {
+      "id": "CL08",
+      "slug": "luhua",
+      "input": "src/generated/luhua.json",
+      "sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099",
+      "overrides": [
+        "lh_follow_plain_turns"
+      ],
+      "default": "first available choice",
+      "beats": 232,
+      "ending": "lh_hall_after",
+      "confirmed": true,
+      "matches": [
+        {
+          "beat": "lh_mountain_fifth_9",
+          "text": "成都那年你多半站在路边看。市口哪一处最难让，你说不出，只记得哪一式最难接。"
+        }
+      ],
+      "choices": [
+        "lh_ask_first_work",
+        "lh_go_with_meng",
+        "lh_rehearse_retreat",
+        "lh_follow_jiao_line",
+        "lh_return_to_own_people",
+        "lh_ask_whole_boat",
+        "lh_watch_chen_rope",
+        "lh_take_present_hand",
+        "lh_help_chen_side",
+        "lh_ask_without_blade",
+        "lh_kneel_and_listen",
+        "lh_defend_actual",
+        "lh_take_one_use",
+        "lh_finish_wei_words",
+        "lh_name_own_defeat",
+        "lh_train_relief",
+        "lh_count_return_boats",
+        "lh_teach_after_winter",
+        "lh_try_when_seen",
+        "lh_follow_plain_turns",
+        "lh_hear_both_carries",
+        "lh_keep_lu_loss",
+        "lh_answer_tang_next",
+        "lh_stay_teaching",
+        "lh_give_next_hand"
+      ]
+    },
+    {
+      "id": "CL09",
+      "slug": "luhua",
+      "input": "src/generated/luhua.json",
+      "sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099",
+      "overrides": [
+        "lh_return_wounded_first"
+      ],
+      "default": "first available choice",
+      "beats": 232,
+      "ending": "lh_hall_after",
+      "confirmed": true,
+      "matches": [
+        {
+          "beat": "lh_mainship_after_9",
+          "text": "你先送了左翼伤者，回舟由别人替你核过。主船那一战听到后半段，你仍会想起有一艘没人来报。"
+        }
+      ],
+      "choices": [
+        "lh_ask_first_work",
+        "lh_go_with_meng",
+        "lh_rehearse_retreat",
+        "lh_follow_jiao_line",
+        "lh_return_to_own_people",
+        "lh_ask_whole_boat",
+        "lh_watch_chen_rope",
+        "lh_take_present_hand",
+        "lh_help_chen_side",
+        "lh_ask_without_blade",
+        "lh_kneel_and_listen",
+        "lh_defend_actual",
+        "lh_take_one_use",
+        "lh_finish_wei_words",
+        "lh_name_own_defeat",
+        "lh_train_relief",
+        "lh_return_wounded_first",
+        "lh_teach_after_winter",
+        "lh_try_when_seen",
+        "lh_walk_market_load",
+        "lh_hear_both_carries",
+        "lh_keep_lu_loss",
+        "lh_answer_tang_next",
+        "lh_stay_teaching",
+        "lh_give_next_hand"
+      ]
+    },
+    {
+      "id": "CL10",
+      "slug": "luhua",
+      "input": "src/generated/luhua.json",
+      "sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099",
+      "overrides": [
+        "lh_ask_gap_later"
+      ],
+      "default": "first available choice",
+      "beats": 232,
+      "ending": "lh_hall_after",
+      "confirmed": true,
+      "matches": [
+        {
+          "beat": "lh_late_after_10",
+          "text": "赤蛇滩我先抢过近处，焦多接了两下；江陵我眼睛跟着人群走，魏隆那次没有问完。写进教法的是另一条路：先说清，再靠近。"
+        }
+      ],
+      "choices": [
+        "lh_ask_first_work",
+        "lh_go_with_meng",
+        "lh_rehearse_retreat",
+        "lh_follow_jiao_line",
+        "lh_return_to_own_people",
+        "lh_ask_whole_boat",
+        "lh_watch_chen_rope",
+        "lh_take_present_hand",
+        "lh_help_chen_side",
+        "lh_ask_without_blade",
+        "lh_kneel_and_listen",
+        "lh_defend_actual",
+        "lh_take_one_use",
+        "lh_ask_gap_later",
+        "lh_name_own_defeat",
+        "lh_train_relief",
+        "lh_count_return_boats",
+        "lh_teach_after_winter",
+        "lh_try_when_seen",
+        "lh_walk_market_load",
+        "lh_hear_both_carries",
+        "lh_keep_lu_loss",
+        "lh_answer_tang_next",
+        "lh_stay_teaching",
+        "lh_give_next_hand"
+      ]
+    },
+    {
+      "id": "CL11",
+      "slug": "luhua",
+      "input": "src/generated/luhua.json",
+      "sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099",
+      "overrides": [
+        "lh_wait_full_record"
+      ],
+      "default": "first available choice",
+      "beats": 231,
+      "ending": "lh_hall_after",
+      "confirmed": true,
+      "matches": [
+        {
+          "beat": "lh_late_after_22",
+          "text": "等过一阵。卢那一段我在门里演得比原样利落，唐的下一回我留到纸上，堂里因此少看了一次一个人怎样输。"
+        }
+      ],
+      "choices": [
+        "lh_ask_first_work",
+        "lh_go_with_meng",
+        "lh_rehearse_retreat",
+        "lh_follow_jiao_line",
+        "lh_return_to_own_people",
+        "lh_ask_whole_boat",
+        "lh_watch_chen_rope",
+        "lh_take_present_hand",
+        "lh_help_chen_side",
+        "lh_ask_without_blade",
+        "lh_kneel_and_listen",
+        "lh_defend_actual",
+        "lh_take_one_use",
+        "lh_finish_wei_words",
+        "lh_name_own_defeat",
+        "lh_train_relief",
+        "lh_count_return_boats",
+        "lh_teach_after_winter",
+        "lh_try_when_seen",
+        "lh_walk_market_load",
+        "lh_hear_both_carries",
+        "lh_keep_lu_loss",
+        "lh_wait_full_record",
+        "lh_stay_teaching",
+        "lh_give_next_hand"
+      ]
+    },
+    {
+      "id": "CL12",
+      "slug": "luhua",
+      "input": "src/generated/luhua.json",
+      "sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099",
+      "overrides": [
+        "lh_share_road_first"
+      ],
+      "default": "first available choice",
+      "beats": 232,
+      "ending": "lh_hall_after",
+      "confirmed": true,
+      "matches": [
+        {
+          "beat": "lh_late_after_18",
+          "text": "留过。黑竹寨那趟药，我也只到了问清楚一段；门人来问，我便只能让他们自己再走一趟。"
+        }
+      ],
+      "choices": [
+        "lh_ask_first_work",
+        "lh_go_with_meng",
+        "lh_rehearse_retreat",
+        "lh_follow_jiao_line",
+        "lh_return_to_own_people",
+        "lh_ask_whole_boat",
+        "lh_watch_chen_rope",
+        "lh_take_present_hand",
+        "lh_help_chen_side",
+        "lh_ask_without_blade",
+        "lh_kneel_and_listen",
+        "lh_defend_actual",
+        "lh_take_one_use",
+        "lh_finish_wei_words",
+        "lh_name_own_defeat",
+        "lh_train_relief",
+        "lh_count_return_boats",
+        "lh_teach_after_winter",
+        "lh_try_when_seen",
+        "lh_walk_market_load",
+        "lh_share_road_first",
+        "lh_keep_lu_loss",
+        "lh_answer_tang_next",
+        "lh_stay_teaching",
+        "lh_give_next_hand"
+      ]
+    },
+    {
+      "id": "CL13",
+      "slug": "luhua",
+      "input": "src/generated/luhua.json",
+      "sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099",
+      "overrides": [
+        "lh_thank_other_school"
+      ],
+      "default": "first available choice",
+      "beats": 233,
+      "ending": "lh_hall_after",
+      "confirmed": true,
+      "matches": [
+        {
+          "beat": "lh_two_bowls_7",
+          "text": "最末也是南榜。赤蛇滩那声低头，我没跟门人讲过。他们仍以为走到了某一步，前头的人便不会再漏。"
+        }
+      ],
+      "choices": [
+        "lh_ask_first_work",
+        "lh_go_with_meng",
+        "lh_rehearse_retreat",
+        "lh_follow_jiao_line",
+        "lh_thank_other_school",
+        "lh_ask_whole_boat",
+        "lh_watch_chen_rope",
+        "lh_take_present_hand",
+        "lh_help_chen_side",
+        "lh_ask_without_blade",
+        "lh_kneel_and_listen",
+        "lh_defend_actual",
+        "lh_take_one_use",
+        "lh_finish_wei_words",
+        "lh_name_own_defeat",
+        "lh_train_relief",
+        "lh_count_return_boats",
+        "lh_teach_after_winter",
+        "lh_try_when_seen",
+        "lh_walk_market_load",
+        "lh_hear_both_carries",
+        "lh_keep_lu_loss",
+        "lh_answer_tang_next",
+        "lh_stay_teaching",
+        "lh_give_next_hand"
+      ]
+    },
+    {
+      "id": "CL14",
+      "slug": "luhua",
+      "input": "src/generated/luhua.json",
+      "sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099",
+      "overrides": [
+        "lh_try_after_water"
+      ],
+      "default": "first available choice",
+      "beats": 231,
+      "ending": "lh_hall_after",
+      "confirmed": false,
+      "matches": [],
+      "choices": [
+        "lh_ask_first_work",
+        "lh_go_with_meng",
+        "lh_rehearse_retreat",
+        "lh_follow_jiao_line",
+        "lh_return_to_own_people",
+        "lh_try_after_water",
+        "lh_watch_chen_rope",
+        "lh_take_present_hand",
+        "lh_help_chen_side",
+        "lh_ask_without_blade",
+        "lh_kneel_and_listen",
+        "lh_defend_actual",
+        "lh_take_one_use",
+        "lh_finish_wei_words",
+        "lh_name_own_defeat",
+        "lh_train_relief",
+        "lh_count_return_boats",
+        "lh_teach_after_winter",
+        "lh_try_when_seen",
+        "lh_walk_market_load",
+        "lh_hear_both_carries",
+        "lh_keep_lu_loss",
+        "lh_answer_tang_next",
+        "lh_stay_teaching",
+        "lh_give_next_hand"
+      ]
+    },
+    {
+      "id": "CL15",
+      "slug": "luhua",
+      "input": "src/generated/luhua.json",
+      "sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099",
+      "overrides": [
+        "lh_keep_both_results"
+      ],
+      "default": "first available choice",
+      "beats": 231,
+      "ending": "lh_hall_after",
+      "confirmed": true,
+      "matches": [
+        {
+          "beat": "lh_learn_sea_6",
+          "text": "江陵那一手你收得干净，也留成了自己最顺的一处。海上第一回靠船，手先回到它上面，慢了一息。"
+        }
+      ],
+      "choices": [
+        "lh_ask_first_work",
+        "lh_go_with_meng",
+        "lh_rehearse_retreat",
+        "lh_follow_jiao_line",
+        "lh_return_to_own_people",
+        "lh_ask_whole_boat",
+        "lh_watch_chen_rope",
+        "lh_keep_both_results",
+        "lh_help_chen_side",
+        "lh_ask_without_blade",
+        "lh_kneel_and_listen",
+        "lh_defend_actual",
+        "lh_take_one_use",
+        "lh_finish_wei_words",
+        "lh_name_own_defeat",
+        "lh_train_relief",
+        "lh_count_return_boats",
+        "lh_teach_after_winter",
+        "lh_try_when_seen",
+        "lh_walk_market_load",
+        "lh_hear_both_carries",
+        "lh_keep_lu_loss",
+        "lh_answer_tang_next",
+        "lh_stay_teaching",
+        "lh_give_next_hand"
+      ]
+    },
+    {
+      "id": "CL16",
+      "slug": "luhua",
+      "input": "src/generated/luhua.json",
+      "sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099",
+      "overrides": [
+        "lh_walk_raft_again"
+      ],
+      "default": "first available choice",
+      "beats": 232,
+      "ending": "lh_hall_after",
+      "confirmed": true,
+      "matches": [
+        {
+          "beat": "lh_third_sea_6",
+          "text": "阿航仍要先看你一眼再动手。你没把黑礁错在哪一处告诉他，这一眼便省不下来。"
+        }
+      ],
+      "choices": [
+        "lh_ask_first_work",
+        "lh_go_with_meng",
+        "lh_rehearse_retreat",
+        "lh_follow_jiao_line",
+        "lh_return_to_own_people",
+        "lh_ask_whole_boat",
+        "lh_watch_chen_rope",
+        "lh_take_present_hand",
+        "lh_help_chen_side",
+        "lh_ask_without_blade",
+        "lh_kneel_and_listen",
+        "lh_defend_actual",
+        "lh_take_one_use",
+        "lh_finish_wei_words",
+        "lh_walk_raft_again",
+        "lh_train_relief",
+        "lh_count_return_boats",
+        "lh_teach_after_winter",
+        "lh_try_when_seen",
+        "lh_walk_market_load",
+        "lh_hear_both_carries",
+        "lh_keep_lu_loss",
+        "lh_answer_tang_next",
+        "lh_stay_teaching",
+        "lh_give_next_hand"
+      ]
+    }
+  ]
+}

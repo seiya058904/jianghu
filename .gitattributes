@@ -1,2 +1,8 @@
 # Preserve existing source and canon bytes in the initial safety baseline.
 * -text
+
+# Raw Windows audit logs/manifests retain their original CRLF bytes. Check real
+# trailing whitespace while accepting the line terminator in these text records.
+docs/audits/independent-final/** whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Node's unedited failure diagnostics contain padded blank lines.
+docs/audits/independent-final/*.log -whitespace

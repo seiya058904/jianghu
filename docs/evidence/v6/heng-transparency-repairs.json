@@ -5,19 +5,19 @@
       "file": "public/art/v6/heng-earlier-intent-v2.webp",
       "prompt": "Remove the background from this exact Sima Heng portrait. This is a precise transparency repair, not a character redesign. Preserve the man, his focused facial expression, age, hair, beard, blue-grey robe, sash, hands, pose, scale and framing pixel-faithfully. Delete ALL black, grey, glowing, cloudy or vignette-like material outside the actual hair/clothing/body silhouette. Every area outside the person's natural silhouette must be fully transparent alpha0, including both upper corners and the spaces beside the hair and shoulders. No background shadow, black triangles, halo, matte rectangle, floor or new props. Keep softly antialiased edges only immediately against the silhouette; do not feather a broad grey cloud behind him. TRUE transparent RGBA cutout at1024x1536.",
       "references": [
-        "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-513226ba-8d45-47c2-bc5e-a91ef1bc95cc.png"
+        "[author-local-path]"
       ],
       "supersedes": "public/art/v6/heng-earlier-intent.webp",
-      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-625fb243-c312-4b60-8a95-d3124bab3cd6.png"
+      "source": "[author-local-path]"
     },
     {
       "file": "public/art/v6/heng-earlier-amused-v2.webp",
       "prompt": "Repair transparency ONLY for this exact portrait of earlier-elderly Sima Heng smiling slightly. Keep his face identity, small closed-mouth amused smile, grey hair with dark streaks, short beard, blue-grey robe, rust sash, hands, pose, scale and framing unchanged. Remove ALL black or grey painted material, halo, shadow-cloud and vignette outside the real person. Outside the natural hair, body and clothing silhouette, alpha must be0 including both upper corners and all empty spaces beside his head and shoulders. No background matte or black triangular patches. Only a narrow naturally antialiased silhouette edge. No new detail, props, action, altered costume or scene. TRUE transparent RGBA cutout,1024x1536. Preserve the existing naturalistic painted style without adding new patterns or changing the cloth texture.",
       "references": [
-        "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-502aaa37-f43c-4a51-91aa-3f6db46838cf.png"
+        "[author-local-path]"
       ],
       "supersedes": "public/art/v6/heng-earlier-amused.webp",
-      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-6217fccd-a07a-49f5-bce8-9cc1d91e6886.png"
+      "source": "[author-local-path]"
     }
   ]
 }

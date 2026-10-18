@@ -1,7 +1,7 @@
 {
   "status": "VERSIONED_PRODUCTION_CONTENT_VERIFIED_NOT_FULL_GOAL_ACCEPTANCE",
-  "declared": 322,
-  "visited": 322,
+  "declared": 360,
+  "visited": 360,
   "options": 68,
   "endings": [
     "jd_storework",
@@ -12,6 +12,6 @@
     "records": 28
   },
   "samples": 512,
-  "longestPassiveGap": 9,
+  "longestPassiveGap": 10,
   "exhaustive": false
 }

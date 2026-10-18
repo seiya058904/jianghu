@@ -14,13 +14,33 @@ import qianKunV2 from '../src/generated/qian-kun-v2.json' with {type:'json'};
 import qianKunV1 from '../src/generated/qian-kun-v1.json' with {type:'json'};
 import {campaignV6Chapters} from '../src/campaign-v6-catalog.ts';
 
-test('Default roots and explicit index select real V6 content, chapters, saved-progress namespace and offline pack',async()=>{
+test('V7 collection root is the works library; only /tide-v6.html selects the original V6 main story',async()=>{
  const previous=globalThis.location;
- try{for(const [i,path]of ['/','/index.html','/Jianghu/','/Jianghu/index.html','/tide-v6.html'].entries()){
-  globalThis.location={pathname:path} as Location;
-  const m=await import(`../src/edition.ts?default-entry=${i}`);
-  assert.equal(m.isV6Edition,true);assert.strictEqual(m.campaignEdition.content,v6);assert.equal(m.campaignEdition.version,'tide-promise-2.0.0');assert.equal(m.edition.prefix,'jianghu:campaign:tide:v2:');assert.equal(m.edition.offlineWork,'tide-v6');assert.deepEqual(m.edition.chapters,campaignV6Chapters);assert.ok(m.campaignEdition.previousContent);
- }}finally{globalThis.location=previous}
+ try{
+  let i=0;
+  for(const path of ['/','/index.html','/Jianghu/','/Jianghu/index.html']){
+   globalThis.location={pathname:path} as Location;
+   const m=await import(`../src/edition.ts?library-entry=${i++}`);
+   assert.equal(m.isLibraryPage,true,path);
+   assert.equal(m.isV6Edition,false,path);
+   assert.equal(m.isChronicle,false,path);
+   assert.equal(m.campaignEdition.content,undefined,`${path} must not load campaign data`);
+   assert.equal(m.campaignEdition.version,'tide-promise-1.0.0',path);
+  }
+  let j=0;
+  for(const path of ['/tide-v6.html','/Jianghu/tide-v6.html']){
+   globalThis.location={pathname:path} as Location;
+   const m=await import(`../src/edition.ts?v6-entry=${j++}`);
+   assert.equal(m.isV6Edition,true,path);
+   assert.equal(m.isLibraryPage,false,path);
+   assert.strictEqual(m.campaignEdition.content,v6,path);
+   assert.equal(m.campaignEdition.version,'tide-promise-2.0.0',path);
+   assert.equal(m.edition.prefix,'jianghu:campaign:tide:v2:',path);
+   assert.equal(m.edition.offlineWork,'tide-v6',path);
+   assert.deepEqual(m.edition.chapters,campaignV6Chapters,path);
+   assert.ok(m.campaignEdition.previousContent,path);
+  }
+ }finally{globalThis.location=previous}
 });
 
 test('Qian Kun current and both archives select exact independent content and namespaces on root and subpath',async()=>{

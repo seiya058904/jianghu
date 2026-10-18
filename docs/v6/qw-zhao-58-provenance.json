@@ -1,8 +1,8 @@
 {
   "tool": "built-in image_gen",
-  "target": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-e4a2fbad-afed-4eb6-8866-3118ac784614.png",
-  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-b33c9282-0955-4fd0-bd07-e9e3228e88f1.png",
+  "target": "[author-local-path]",
+  "source": "[author-local-path]",
   "prompt": "Use case: identity-preserve. Edit target is the supplied production sprite. Preserve this exact man's identity, hairstyle, facial hair except requested aging, all costume details except requested treated bandage, watercolor ink illustration style, warm neutral lighting, centered full head to mid thighs framing and true transparent alpha. Change only the requested expression, gesture, or age: Age this same man from44 to58, fourteen years later: clearly salt-and-pepper temples and moustache, a mildly receding hairline, visible crow's feet, forehead and nasolabial lines, more mature hands. Same recognizable round face and brown eyes, still capable and upright. Preserve exactly the same restrained indigo clothing design, jade pin and discreet buckle, wooden practice saber and full body pose. Neutral thoughtful expression, not a ninety-year-old, no frailty, no noble glamour. No other changes. No scenery, no ground shadow, no text, no frame, no logo, no particles, no additional figures.",
-  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/qw-zhao-58.webp",
+  "output": "./public/art/v6/qw-zhao-58.webp",
   "review": "Pending visual review and story mapping"
 }

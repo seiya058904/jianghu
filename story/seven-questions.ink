@@ -78,17 +78,23 @@ VAR sq_kept_time = false
 不是。 # beat:sq_four_houses_6 # scene:sq_four # cast:sq_lu,sq_gu # speaker:sq_lu # mood:sq_lu=neutral
 凭什么？ # beat:sq_four_houses_7 # scene:sq_four # cast:sq_lu,sq_gu # speaker:sq_gu # mood:sq_gu=neutral
 陆青崖借他的剑，叫人取来已验过伤口的兽骨。你在旁边接空匣，只看见剑形、落点似乎一样，不敢凭眼熟抢着替任何一方答。 # beat:sq_four_houses_8 # scene:sq_four # cast:sq_lu,sq_gu # speaker:narrator
+{
+- sq_sources:
+你这页把谁亲耳、谁转述分开了。议事省了半场架。 # beat:sq_four_houses_9 # scene:sq_four # cast:sq_lu,sq_gu # speaker:sq_gu # mood:sq_gu=intent
+- else:
+急送的传言整句抄上，说明未核。四家到了先看说明，没人把它当已证的话传。 # beat:sq_four_houses_10 # scene:sq_four # cast:sq_lu,sq_gu # speaker:narrator
+}
 * [把旧痕与新试分放两侧，按陆所指处记，不自行下归属。 # cid:sq_hold_both]
   ~ sq_bone = true
-  旧痕这一侧，新试那一侧。落点由谁验过，也请留名。 # beat:sq_four_houses_9 # scene:sq_four # cast:sq_lu,sq_gu # speaker:you
-  再记深浅。 # beat:sq_four_houses_10 # scene:sq_four # cast:sq_lu,sq_gu # speaker:sq_lu # mood:sq_lu=intent
-  你才看见两道相似的痕，不能只靠描一个轮廓给山外的人看。 # beat:sq_four_houses_11 # scene:sq_four # cast:sq_lu,sq_gu # speaker:narrator
+  旧痕这一侧，新试那一侧。落点由谁验过，也请留名。 # beat:sq_four_houses_11 # scene:sq_four # cast:sq_lu,sq_gu # speaker:you
+  再记深浅。 # beat:sq_four_houses_12 # scene:sq_four # cast:sq_lu,sq_gu # speaker:sq_lu # mood:sq_lu=intent
+  你才看见两道相似的痕，不能只靠描一个轮廓给山外的人看。 # beat:sq_four_houses_13 # scene:sq_four # cast:sq_lu,sq_gu # speaker:narrator
   -> bone
 * [请陆再指出多出来的位置，把自己看不懂的留作追问。 # cid:sq_ask_margin]
   ~ sq_bone = false
-  晚辈看着像，您说不是，差的是哪里？ # beat:sq_four_houses_12 # scene:sq_four # cast:sq_lu,sq_gu # speaker:you
-  像的地方已经够多人说。看多送的这一寸。 # beat:sq_four_houses_13 # scene:sq_four # cast:sq_lu,sq_gu # speaker:sq_lu # mood:sq_lu=neutral
-  顾没拦你问。你重新放平尺，才把那处在纸上单列。 # beat:sq_four_houses_14 # scene:sq_four # cast:sq_lu,sq_gu # speaker:narrator
+  晚辈看着像，您说不是，差的是哪里？ # beat:sq_four_houses_14 # scene:sq_four # cast:sq_lu,sq_gu # speaker:you
+  像的地方已经够多人说。看多送的这一寸。 # beat:sq_four_houses_15 # scene:sq_four # cast:sq_lu,sq_gu # speaker:sq_lu # mood:sq_lu=neutral
+  顾没拦你问。你重新放平尺，才把那处在纸上单列。 # beat:sq_four_houses_16 # scene:sq_four # cast:sq_lu,sq_gu # speaker:narrator
   -> bone
 
 === bone ===
@@ -97,15 +103,21 @@ VAR sq_kept_time = false
 那失踪的人，还是要找。 # beat:sq_bone_3 # scene:sq_four # cast:sq_lu,sq_gu # speaker:sq_gu # mood:sq_gu=uneasy
 找。不是替谁先免了这一件。 # beat:sq_bone_4 # scene:sq_four # cast:sq_lu,sq_gu # speaker:sq_lu # mood:sq_lu=neutral
 顾把剑收回，剑令没摘。屋中暂时不拔剑了，朱名册上的二十四人却仍没有少。 # beat:sq_bone_5 # scene:sq_four # cast:sq_lu,sq_gu # speaker:narrator
+{
+- sq_bone:
+旧痕新试两栏并排的记法，这回又用上了：真迹一栏，添字一栏。季老弟子照着验，半刻就认出扉页是后加的。 # beat:sq_bone_6 # scene:sq_four # cast:sq_lu,sq_gu # speaker:narrator
+- else:
+你把看不懂的那处仍留作追问。黑市这一卷上，陆前辈指过的多余一寸，你在扉页纸纹上找到了同类的一处。 # beat:sq_bone_7 # scene:sq_four # cast:sq_lu,sq_gu # speaker:narrator
+}
 * [带共同核问的人去送试痕副报，愿多走一趟。 # cid:sq_send_with_witness]
   ~ sq_witness = true
-  这份两家各看过，送时请同行。 # beat:sq_bone_6 # scene:sq_four # cast:sq_lu,sq_gu # speaker:you
-  禾生把纸压进匣，阿笙在门外等你交代收件处。你们多等半刻，不用到了下一家再从头争是谁只抄了自家那半边。 # beat:sq_bone_7 # scene:sq_four # cast:sq_lu,sq_gu # speaker:narrator
+  这份两家各看过，送时请同行。 # beat:sq_bone_8 # scene:sq_four # cast:sq_lu,sq_gu # speaker:you
+  禾生把纸压进匣，阿笙在门外等你交代收件处。你们多等半刻，不用到了下一家再从头争是谁只抄了自家那半边。 # beat:sq_bone_9 # scene:sq_four # cast:sq_lu,sq_gu # speaker:narrator
   -> new_copy
 * [先送急报，双方亲见者另约下一站补问，不伪造共同到场。 # cid:sq_send_urgent]
   ~ sq_witness = false
-  我先走。谁亲见、谁未见，按现在写。 # beat:sq_bone_8 # scene:sq_four # cast:sq_lu,sq_gu # speaker:you
-  你赶上当晚的渡。到了金陵，仍得留一日候两份核名，没人因为你走得快就能替未见者签字。 # beat:sq_bone_9 # scene:sq_four # cast:sq_lu,sq_gu # speaker:narrator
+  我先走。谁亲见、谁未见，按现在写。 # beat:sq_bone_10 # scene:sq_four # cast:sq_lu,sq_gu # speaker:you
+  你赶上当晚的渡。到了金陵，仍得留一日候两份核名，没人因为你走得快就能替未见者签字。 # beat:sq_bone_11 # scene:sq_four # cast:sq_lu,sq_gu # speaker:narrator
   -> new_copy
 
 === new_copy ===
@@ -133,15 +145,21 @@ VAR sq_kept_time = false
 你要查书，先把门里的人退开。 # beat:sq_warehouse_2 # scene:sq_warehouse # cast:sq_gu,sq_shen # speaker:sq_gu # mood:sq_gu=sharp
 人退了，书与证人若又没了，谁给我一句等过？ # beat:sq_warehouse_3 # scene:sq_warehouse # cast:sq_gu,sq_shen # speaker:sq_shen # mood:sq_shen=sharp
 两剑越走越近。你抱着副报在仓外，看见一名抄手跌在门槛边，旁人一挤，他又要被推回去。 # beat:sq_warehouse_4 # scene:sq_warehouse # cast:sq_gu,sq_shen # speaker:narrator
+{
+- sq_front:
+门外的人看过真内容与后加扉页的并排，让路时多问了一句：添字的是谁。 # beat:sq_warehouse_5 # scene:sq_warehouse # cast:sq_gu,sq_shen # speaker:narrator
+- else:
+你先劝两边收兵抬人。扉页那行字还在你袖中，进屋再核。 # beat:sq_warehouse_6 # scene:sq_warehouse # cast:sq_gu,sq_shen # speaker:narrator
+}
 * [从侧门接出抄手，不往两剑中间插，自己让掉近处观剑位置。 # cid:sq_take_side]
   ~ sq_saved_scribe = true
-  手给我，别翻回门槛。 # beat:sq_warehouse_5 # scene:sq_warehouse # cast:sq_gu,sq_shen # speaker:you
-  阿笙抵住后面的人，禾生在门外接。你退出一段，眼前只剩两柄剑的影子，不再能把每一手写成亲见。 # beat:sq_warehouse_6 # scene:sq_warehouse # cast:sq_gu,sq_shen # speaker:narrator
+  手给我，别翻回门槛。 # beat:sq_warehouse_7 # scene:sq_warehouse # cast:sq_gu,sq_shen # speaker:you
+  阿笙抵住后面的人，禾生在门外接。你退出一段，眼前只剩两柄剑的影子，不再能把每一手写成亲见。 # beat:sq_warehouse_8 # scene:sq_warehouse # cast:sq_gu,sq_shen # speaker:narrator
   -> hands
 * [先叫门内人腾出退处，交给当值者接抄手，自己留在门外报来客。 # cid:sq_call_clear]
   ~ sq_saved_scribe = false
-  门槛边有人。接过去，后面先别挤！ # beat:sq_warehouse_7 # scene:sq_warehouse # cast:sq_gu,sq_shen # speaker:you
-  当值者答了，抄手终于被拉开。你留在能报门的位置，掌门的剑仍不是你能上去分开的两根木条。 # beat:sq_warehouse_8 # scene:sq_warehouse # cast:sq_gu,sq_shen # speaker:narrator
+  门槛边有人。接过去，后面先别挤！ # beat:sq_warehouse_9 # scene:sq_warehouse # cast:sq_gu,sq_shen # speaker:you
+  当值者答了，抄手终于被拉开。你留在能报门的位置，掌门的剑仍不是你能上去分开的两根木条。 # beat:sq_warehouse_10 # scene:sq_warehouse # cast:sq_gu,sq_shen # speaker:narrator
   -> hands
 
 === hands ===
@@ -190,15 +208,21 @@ VAR sq_kept_time = false
 两人一起低头，阿笙先笑，禾生把那张纸抽出来重新抄，没把自己弄湿的事算在哪家门主头上。 # beat:sq_chairs_5 # scene:sq_chairs # cast:sq_hesheng,sq_asheng # speaker:narrator
 六大六位皆到：慧寂、张玄初、司马归元、慕容破岳、公孙照雪、陆青崖，六人皆返真。八家当家八位也来，妙澄与罗承岳已返真；其余几位仍在门外，不把山中退隐旧人混进这一代的数。 # beat:sq_chairs_6 # scene:sq_chairs # cast:sq_hesheng,sq_asheng # speaker:narrator
 八家名帖依次收齐：六合燕横江、峨眉妙澄、青城许问岑、金陵顾南陵、南岳沈孤鸿、河东裴照庭、太玄闻道尘、天海宗罗承岳。你把天海那张另辨一次，不与海天门混写。 # beat:sq_chairs_7 # scene:sq_chairs # cast:sq_hesheng,sq_asheng # speaker:narrator
+{
+- sq_saved_scribe:
+仓门口先捞人的是你。搬椅子这等粗活，禾生倒不敢再嫌你笨手。 # beat:sq_chairs_8 # scene:sq_chairs # cast:sq_hesheng,sq_asheng # speaker:sq_asheng # mood:sq_asheng=amused
+- else:
+禾生把椅子腿又扶正了一次。他记得门槛边那一下是谁喊的人接。 # beat:sq_chairs_9 # scene:sq_chairs # cast:sq_hesheng,sq_asheng # speaker:narrator
+}
 * [按共同收件的约定，去金陵一侧接问件，不擅坐空椅。 # cid:sq_sit_by_jinling]
   ~ sq_seat_side = 1
-  顾把你送过的那页放到手边，没让你因为帮过忙就替他对全院讲话。禾生压低声音问，你的纸角这回还湿不湿。 # beat:sq_chairs_8 # scene:sq_chairs # cast:sq_hesheng,sq_asheng # speaker:narrator
-  你先把量椅子的尺收起来。 # beat:sq_chairs_9 # scene:sq_chairs # cast:sq_hesheng,sq_asheng # speaker:you
+  顾把你送过的那页放到手边，没让你因为帮过忙就替他对全院讲话。禾生压低声音问，你的纸角这回还湿不湿。 # beat:sq_chairs_10 # scene:sq_chairs # cast:sq_hesheng,sq_asheng # speaker:narrator
+  你先把量椅子的尺收起来。 # beat:sq_chairs_11 # scene:sq_chairs # cast:sq_hesheng,sq_asheng # speaker:you
   -> first_argument
 * [去南岳一侧接问件，请阿笙把待核项带到同一桌。 # cid:sq_sit_by_nanyue]
   ~ sq_seat_side = 2
-  沈指了一处门边给你放纸。阿笙已经把外路来报压好，还替你留了能把湿鞋换下的半张席。 # beat:sq_chairs_10 # scene:sq_chairs # cast:sq_hesheng,sq_asheng # speaker:narrator
-  这不算上座，借你坐一会儿。上座还得自己去搬。 # beat:sq_chairs_11 # scene:sq_chairs # cast:sq_hesheng,sq_asheng # speaker:sq_asheng # mood:sq_asheng=amused
+  沈指了一处门边给你放纸。阿笙已经把外路来报压好，还替你留了能把湿鞋换下的半张席。 # beat:sq_chairs_12 # scene:sq_chairs # cast:sq_hesheng,sq_asheng # speaker:narrator
+  这不算上座，借你坐一会儿。上座还得自己去搬。 # beat:sq_chairs_13 # scene:sq_chairs # cast:sq_hesheng,sq_asheng # speaker:sq_asheng # mood:sq_asheng=amused
   -> first_argument
 
 === first_argument ===
@@ -210,16 +234,22 @@ VAR sq_kept_time = false
 他点六大六位，再看八家：这一代已算盛，当家八人也只有两位返真。哪一场谁更强，不能解释几十年、一百年以后谁的传承总能接上。 # beat:sq_first_argument_6 # scene:sq_chairs # cast:sq_gu,sq_hui # speaker:narrator
 返真若靠一卷书，天下早有几百返真了。真正拉开差距的，是高人死前，有没有第二个人接住他的东西。 # beat:sq_first_argument_7 # scene:sq_chairs # cast:sq_gu,sq_hui # speaker:sq_hui # mood:sq_hui=neutral
 闻道尘许久不语。太玄出过宁无极，他比年轻的你更知道，没有下一人接住是什么重量。 # beat:sq_first_argument_8 # scene:sq_chairs # cast:sq_gu,sq_hui # speaker:narrator
+{
+- sq_last_words:
+那句六个蒙面、一个露脸、右手少小指，各桌都在对。谁先对上人，谁先开口。 # beat:sq_first_argument_9 # scene:sq_chairs # cast:sq_yan,sq_gu,sq_hui # speaker:sq_yan # mood:sq_yan=intent
+- else:
+证言原件在共同录事处封着。有几桌想借抄对线索，放出去的只是副本。 # beat:sq_first_argument_10 # scene:sq_chairs # cast:sq_yan,sq_gu,sq_hui # speaker:narrator
+}
 * [把入化前门人的问题递入问件：不能照练，那能先知道哪些风险？ # cid:sq_ask_access]
   ~ sq_access_question = true
-  不把我当走到了那个位置的人。但若只告诉我不能看，我下回见到假扉页，仍不知道哪句在骗人。 # beat:sq_first_argument_9 # scene:sq_chairs # cast:sq_gu,sq_hui # speaker:you
-  慧寂将问件递给录事。顾盯着它放到哪一叠，直到录事在末尾添上待议，才靠回椅背。 # beat:sq_first_argument_10 # scene:sq_chairs # cast:sq_gu,sq_hui # speaker:narrator
+  不把我当走到了那个位置的人。但若只告诉我不能看，我下回见到假扉页，仍不知道哪句在骗人。 # beat:sq_first_argument_11 # scene:sq_chairs # cast:sq_yan,sq_gu,sq_hui # speaker:you
+  慧寂将问件递给录事。顾盯着它放到哪一叠，直到录事在末尾添上待议，才靠回椅背。 # beat:sq_first_argument_12 # scene:sq_chairs # cast:sq_yan,sq_gu,sq_hui # speaker:narrator
   -> ninety_six
 * [问传承怎样交到第二人手里，愿先记真正授课的步骤。 # cid:sq_ask_receiver]
   ~ sq_access_question = false
-  如果师父记得清，弟子接不住，留下全本也还是会断么？ # beat:sq_first_argument_11 # scene:sq_chairs # cast:sq_gu,sq_hui # speaker:you
-  会。所以教的人要在，学的人也得真走。抄录能留下问路的地方，不能替他走。 # beat:sq_first_argument_12 # scene:sq_chairs # cast:sq_gu,sq_hui # speaker:sq_hui # mood:sq_hui=intent
-  你翻回原单，原来只写交到哪家，旁边又添一格问由谁带读。 # beat:sq_first_argument_13 # scene:sq_chairs # cast:sq_gu,sq_hui # speaker:narrator
+  如果师父记得清，弟子接不住，留下全本也还是会断么？ # beat:sq_first_argument_13 # scene:sq_chairs # cast:sq_yan,sq_gu,sq_hui # speaker:you
+  会。所以教的人要在，学的人也得真走。抄录能留下问路的地方，不能替他走。 # beat:sq_first_argument_14 # scene:sq_chairs # cast:sq_yan,sq_gu,sq_hui # speaker:sq_hui # mood:sq_hui=intent
+  你翻回原单，原来只写交到哪家，旁边又添一格问由谁带读。 # beat:sq_first_argument_15 # scene:sq_chairs # cast:sq_yan,sq_gu,sq_hui # speaker:narrator
   -> ninety_six
 
 === ninety_six ===
@@ -405,15 +435,21 @@ VAR sq_kept_time = false
 少林这一代不差。 # beat:sq_hui_turn_4 # scene:sq_valley # cast:sq_hui,sq_wenren # speaker:sq_wenren # mood:sq_wenren=intent
 你也没有退太多。 # beat:sq_hui_turn_5 # scene:sq_valley # cast:sq_hui,sq_wenren # speaker:sq_hui # mood:sq_hui=neutral
 闻人转身入火，燕要追。慧寂说他要我们追。片刻，前方山壁崩落，碎石把刚才那条路盖住。 # beat:sq_hui_turn_6 # scene:sq_valley # cast:sq_hui,sq_wenren # speaker:narrator
+{
+- sq_valley_call == 1:
+慧寂转身前，你守的接应口已把最后一批人送过沟。他对闻人宿那一掌退开的半步，你在口上看得分明。 # beat:sq_hui_turn_7 # scene:sq_valley # cast:sq_hui,sq_wenren # speaker:narrator
+- else:
+对岸的空位你早喊清。慧寂转身时，树脚仍有一个人站在能接的位置上。 # beat:sq_hui_turn_8 # scene:sq_valley # cast:sq_hui,sq_wenren # speaker:narrator
+}
 * [先带伤者离开余火，假本与地图留给有余手的人收。 # cid:sq_take_wounded]
   ~ sq_valley_after = 1
-  人先到外口。那一箱有人核，别让伤的人还背它。 # beat:sq_hui_turn_7 # scene:sq_valley # cast:sq_hui,sq_wenren # speaker:you
-  同行录事把箱带接过去，另一班已往外找路。你只接近处这一段，没因危局已过便让走慢的人自己跟。 # beat:sq_hui_turn_8 # scene:sq_valley # cast:sq_hui,sq_wenren # speaker:narrator
+  人先到外口。那一箱有人核，别让伤的人还背它。 # beat:sq_hui_turn_9 # scene:sq_valley # cast:sq_hui,sq_wenren # speaker:you
+  同行录事把箱带接过去，另一班已往外找路。你只接近处这一段，没因危局已过便让走慢的人自己跟。 # beat:sq_hui_turn_10 # scene:sq_valley # cast:sq_hui,sq_wenren # speaker:narrator
   -> false_base
 * [帮录事封存假本与新地图，伤者交给已答应接的人再走。 # cid:sq_register_false]
   ~ sq_valley_after = 2
-  这份图上是哪里？先别跟前一张并着摺。 # beat:sq_hui_turn_9 # scene:sq_valley # cast:sq_hui,sq_wenren # speaker:you
-  同伴答应接人，你才蹲下看图。纸上画的不是更深山寨，是离开不久的嵩阳旧院。 # beat:sq_hui_turn_10 # scene:sq_valley # cast:sq_hui,sq_wenren # speaker:narrator
+  这份图上是哪里？先别跟前一张并着摺。 # beat:sq_hui_turn_11 # scene:sq_valley # cast:sq_hui,sq_wenren # speaker:you
+  同伴答应接人，你才蹲下看图。纸上画的不是更深山寨，是离开不久的嵩阳旧院。 # beat:sq_hui_turn_12 # scene:sq_valley # cast:sq_hui,sq_wenren # speaker:narrator
   -> false_base
 
 === false_base ===
@@ -426,13 +462,25 @@ VAR sq_kept_time = false
 - else:
 阿笙同你认过外路副报，知道你所说的那处接应点。她分一人回院，一人往外截急队，没有让所有人都跟着同一声回去跑。 # beat:sq_false_base_5 # scene:sq_return # cast:sq_wen # speaker:narrator
 }
+{
+- sq_stayed_tree:
+从树脚撤下来的人里，没有一个是没人接就自己趟水的。你守的那一段交班时，一只手都没少。 # beat:sq_false_base_6 # scene:sq_return # cast:sq_wen # speaker:narrator
+- else:
+你回头看退路时，接应已交给应了声的门人。方才走空的树脚，此刻也有别人站着。 # beat:sq_false_base_7 # scene:sq_return # cast:sq_wen # speaker:narrator
+}
+{
+- sq_valley_after == 1:
+你在谷里先带出来的伤者已到外口自己的铺上。抬架空出来的速度，比谁预想的都快。 # beat:sq_false_base_8 # scene:sq_return # cast:sq_wen # speaker:narrator
+- else:
+封存的假本与新图在东门内当值处。有录事来对图，你指了那句先别并摺。 # beat:sq_false_base_9 # scene:sq_return # cast:sq_wen # speaker:narrator
+}
 * [返程只报亲见的谷中撤退与地图，院中情况等留守人核，不造自己赶回时辰。 # cid:sq_report_seen_valley]
-  谷中弟子已撤，假图所指嵩阳。院里现在怎样，我不知道。 # beat:sq_false_base_6 # scene:sq_return # cast:sq_wen # speaker:you
-  急报先走，你随慢队回。途中才收到十四路已开始回流的复信，你没把自己写成那一声令所有门主折返的人。 # beat:sq_false_base_7 # scene:sq_return # cast:sq_wen # speaker:narrator
+  谷中弟子已撤，假图所指嵩阳。院里现在怎样，我不知道。 # beat:sq_false_base_10 # scene:sq_return # cast:sq_wen # speaker:you
+  急报先走，你随慢队回。途中才收到十四路已开始回流的复信，你没把自己写成那一声令所有门主折返的人。 # beat:sq_false_base_11 # scene:sq_return # cast:sq_wen # speaker:narrator
   -> east_gate
 * [把急报交快脚，自己护伤者走慢路，接信人和分行时刻各留一份。 # cid:sq_split_carriers]
-  我们从这里分。你先到，报出哪一班在后，不说全队已到。 # beat:sq_false_base_8 # scene:sq_return # cast:sq_wen # speaker:you
-  快脚答了便走。你回头接慢的一班，远处火光没有因为有人先报平安就熄掉。 # beat:sq_false_base_9 # scene:sq_return # cast:sq_wen # speaker:narrator
+  我们从这里分。你先到，报出哪一班在后，不说全队已到。 # beat:sq_false_base_12 # scene:sq_return # cast:sq_wen # speaker:you
+  快脚答了便走。你回头接慢的一班，远处火光没有因为有人先报平安就熄掉。 # beat:sq_false_base_13 # scene:sq_return # cast:sq_wen # speaker:narrator
   -> east_gate
 
 === quiet_court ===
@@ -495,27 +543,45 @@ VAR sq_kept_time = false
 后门我在。你们交过来，不必每回再喊南岳的人肯不肯接。 # beat:sq_courtyard_fire_10 # scene:sq_court_fire # cast:sq_asheng # speaker:sq_asheng # mood:sq_asheng=intent
 她认你原先同核的那一份，也认现在这一班的应声，把抄手送到廊外才去接下一匣。 # beat:sq_courtyard_fire_11 # scene:sq_court_fire # cast:sq_asheng # speaker:narrator
 }
+{
+- sq_court_duty:
+后门那班转接，一直有人应。你喊的位置没有空过。 # beat:sq_courtyard_fire_12 # scene:sq_court_fire # cast:none # speaker:narrator
+- else:
+院边交接桌上的来向记录还连着。谁从哪道门出来，桌上都有一笔。 # beat:sq_courtyard_fire_13 # scene:sq_court_fire # cast:none # speaker:narrator
+}
 * [把正封已接与副件毁损分别报清，不因人救出便写一切无失。 # cid:sq_mark_missing]
   ~ sq_court_after = 1
-  正封已出，副件缺一角，伤的人另列。回来的录事先核哪份，按这张找。 # beat:sq_courtyard_fire_12 # scene:sq_court_fire # cast:none # speaker:you
-  你报出后门那一班，终于不是全院人互相喊都有人收。 # beat:sq_courtyard_fire_13 # scene:sq_court_fire # cast:none # speaker:narrator
+  正封已出，副件缺一角，伤的人另列。回来的录事先核哪份，按这张找。 # beat:sq_courtyard_fire_14 # scene:sq_court_fire # cast:none # speaker:you
+  你报出后门那一班，终于不是全院人互相喊都有人收。 # beat:sq_courtyard_fire_15 # scene:sq_court_fire # cast:none # speaker:narrator
   -> court_report
 * [先请下一班接手，让淋水呛烟的人休息，自己带完整交接去前院。 # cid:sq_relieved_shift]
   ~ sq_court_after = 2
-  你们歇。哪箱谁接，我来报。不叫刚从烟里出来的人再跑一遍证明自己。 # beat:sq_courtyard_fire_14 # scene:sq_court_fire # cast:none # speaker:you
-  接班者认了名，你才离门。托盘还在廊柱边，杯子倒了，桌却没有再空着等一个没回来的人。 # beat:sq_courtyard_fire_15 # scene:sq_court_fire # cast:none # speaker:narrator
+  你们歇。哪箱谁接，我来报。不叫刚从烟里出来的人再跑一遍证明自己。 # beat:sq_courtyard_fire_16 # scene:sq_court_fire # cast:none # speaker:you
+  接班者认了名，你才离门。托盘还在廊柱边，杯子倒了，桌却没有再空着等一个没回来的人。 # beat:sq_courtyard_fire_17 # scene:sq_court_fire # cast:none # speaker:narrator
   -> court_report
 
 === court_report ===
 华山先识南逃路线为假，陆青崖即折返；昆仑从另一面截回，武当接鸽讯，天海宗循水路最快。十四家一夜回流，同光会反被堵在三面。 # beat:sq_court_report_1 # scene:sq_return # cast:none # speaker:narrator
 你留下的一张收转簿只接其中一段。各路有各路的判断，不是门主们忽然都等着你喊一声才肯回头。 # beat:sq_court_report_2 # scene:sq_return # cast:none # speaker:narrator
+{
+- sq_court_after == 2:
+接班者认了名才离门。托盘还在廊柱边，杯子倒了，桌却没有再空着等一个没回来的人。 # beat:sq_court_report_3 # scene:sq_return # cast:none # speaker:narrator
+- else:
+正封已接、副件缺一角、伤者另列——合报按你那张单子先核了哪份在后。 # beat:sq_court_report_4 # scene:sq_return # cast:none # speaker:narrator
+}
+{
+- sq_fire_people:
+后门退出来的人连人带匣都点了数。你喊的那一声，后来在合报里写成一处有名字的接应点。 # beat:sq_court_report_5 # scene:sq_return # cast:none # speaker:narrator
+- else:
+封匣交给了可认的值房人。回头接抄手那一段，你没能亲眼看完——看见的人替你补上了那一笔。 # beat:sq_court_report_6 # scene:sq_return # cast:none # speaker:narrator
+}
 * [先交院中自己亲见的时辰与抢卷经过，伏牛情形等随队者核。 # cid:sq_report_seen_court]
-  我在嵩阳，这一夜见到的在这里。谷中谁先过沟，我没有看过。 # beat:sq_court_report_3 # scene:sq_return # cast:none # speaker:you
-  你写亲见两字时终于不用猜。快脚后来带来溪沟那一份，纸上有先送弟子的原话。 # beat:sq_court_report_4 # scene:sq_return # cast:none # speaker:narrator
+  我在嵩阳，这一夜见到的在这里。谷中谁先过沟，我没有看过。 # beat:sq_court_report_7 # scene:sq_return # cast:none # speaker:you
+  你写亲见两字时终于不用猜。快脚后来带来溪沟那一份，纸上有先送弟子的原话。 # beat:sq_court_report_8 # scene:sq_return # cast:none # speaker:narrator
   -> east_gate
 * [去前门接最先回院的传讯人，先安置伤者，谷中慢队另留接应。 # cid:sq_pair_arrivals]
-  伤的先坐。哪段我未见，等你们喘过来再问。 # beat:sq_court_report_5 # scene:sq_return # cast:none # speaker:you
-  最先回来的两名传讯人鞋上满是泥，只带来谷中已撤的急讯。你给后来的伤队留好抬架，东门忽然有人喊让路。 # beat:sq_court_report_6 # scene:sq_return # cast:none # speaker:narrator
+  伤的先坐。哪段我未见，等你们喘过来再问。 # beat:sq_court_report_9 # scene:sq_return # cast:none # speaker:you
+  最先回来的两名传讯人鞋上满是泥，只带来谷中已撤的急讯。你给后来的伤队留好抬架，东门忽然有人喊让路。 # beat:sq_court_report_10 # scene:sq_return # cast:none # speaker:narrator
   -> east_gate
 
 === east_gate ===
@@ -555,18 +621,30 @@ VAR sq_kept_time = false
 随队者讲伏牛旧河早断，许问岑先识假图；两侧火石齐下，慧寂先震树过沟送弟子。闻人现身，燕、许、闻三人围攻六十余招仍没扳回。 # beat:sq_converge_4 # scene:sq_return # cast:sq_hesheng,sq_asheng # speaker:narrator
 等弟子全部撤过，慧寂才转身。两位返真六十余招同时伤及彼此，闻人吐血入火，慧寂阻追，前方山壁旋即崩落。你在院里没见那座树桥，记时也留下随队者的姓名。 # beat:sq_converge_5 # scene:sq_return # cast:sq_hesheng,sq_asheng # speaker:narrator
 }
+{
+- sq_seat_side == 1:
+你坐的那侧带回来的纸，烟味淡些。我这张被雨泡过，先并你的。 # beat:sq_converge_6 # scene:sq_return # cast:sq_hesheng,sq_asheng # speaker:sq_hesheng # mood:sq_hesheng=neutral
+- else:
+南岳侧的问件是你收的。这张先对谁的字，你定。 # beat:sq_converge_7 # scene:sq_return # cast:sq_hesheng,sq_asheng # speaker:sq_asheng # mood:sq_asheng=neutral
+}
+{
+- sq_court_after == 1:
+嵩阳那页写着副件缺一角。我们两张并上，正好把缺的那行补出来。 # beat:sq_converge_8 # scene:sq_return # cast:sq_hesheng,sq_asheng # speaker:sq_hesheng # mood:sq_hesheng=neutral
+- else:
+{sq_route == 2:接了你交接的那一班已歇下。合报时，别再叫淋过水的人重跑一遍。|伏牛慢队已经回院。谷中那页先给录事，院里这一页另请留守者核，别叫你一个人替两路都签。} # beat:sq_converge_9 # scene:sq_return # cast:sq_hesheng,sq_asheng # speaker:sq_asheng # mood:sq_asheng=neutral
+}
 * [把两路亲见和后闻分栏，再让同伴核自己的姓名，不抢一份全知通报。 # cid:sq_separate_witness]
   ~ sq_final_sources = true
-  我不在的那段，写谁见，不只写我听懂。 # beat:sq_converge_6 # scene:sq_return # cast:sq_hesheng,sq_asheng # speaker:you
-  等会儿，我刚换了笔尖。你慢些报，第三个人名又扎破纸了。 # beat:sq_converge_7 # scene:sq_return # cast:sq_hesheng,sq_asheng # speaker:sq_hesheng # mood:sq_hesheng=amused
-  给他留点地方，后面还得写欠我的鞋钱。 # beat:sq_converge_8 # scene:sq_return # cast:sq_hesheng,sq_asheng # speaker:sq_asheng # mood:sq_asheng=neutral
-  你们还真算了一回鞋钱，抄到第三行，才一起发现这几日头一回能为这种小事争。 # beat:sq_converge_9 # scene:sq_return # cast:sq_hesheng,sq_asheng # speaker:narrator
+  我不在的那段，写谁见，不只写我听懂。 # beat:sq_converge_10 # scene:sq_return # cast:sq_hesheng,sq_asheng # speaker:you
+  等会儿，我刚换了笔尖。你慢些报，第三个人名又扎破纸了。 # beat:sq_converge_11 # scene:sq_return # cast:sq_hesheng,sq_asheng # speaker:sq_hesheng # mood:sq_hesheng=amused
+  给他留点地方，后面还得写欠我的鞋钱。 # beat:sq_converge_12 # scene:sq_return # cast:sq_hesheng,sq_asheng # speaker:sq_asheng # mood:sq_asheng=neutral
+  你们还真算了一回鞋钱，抄到第三行，才一起发现这几日头一回能为这种小事争。 # beat:sq_converge_13 # scene:sq_return # cast:sq_hesheng,sq_asheng # speaker:narrator
   -> middle_chairs
 * [先对照还有谁未回，已归的人各留亲见副报，夜里再整理两路。 # cid:sq_first_missing]
   ~ sq_final_sources = false
-  我先去找那一班。你们把自己那页留下，回来再合。 # beat:sq_converge_10 # scene:sq_return # cast:sq_hesheng,sq_asheng # speaker:you
-  西廊那班我去问。你去东边，回来就在这儿碰头。 # beat:sq_converge_11 # scene:sq_return # cast:sq_hesheng,sq_asheng # speaker:sq_asheng # mood:sq_asheng=intent
-  禾生替你圈出已回两名，你少绕一条巷，才在外廊接到走慢的抄手。后半夜归卷，三人的墨各有一层。 # beat:sq_converge_12 # scene:sq_return # cast:sq_hesheng,sq_asheng # speaker:narrator
+  我先去找那一班。你们把自己那页留下，回来再合。 # beat:sq_converge_14 # scene:sq_return # cast:sq_hesheng,sq_asheng # speaker:you
+  西廊那班我去问。你去东边，回来就在这儿碰头。 # beat:sq_converge_15 # scene:sq_return # cast:sq_hesheng,sq_asheng # speaker:sq_asheng # mood:sq_asheng=intent
+  禾生替你圈出已回两名，你少绕一条巷，才在外廊接到走慢的抄手。后半夜归卷，三人的墨各有一层。 # beat:sq_converge_16 # scene:sq_return # cast:sq_hesheng,sq_asheng # speaker:narrator
   -> middle_chairs
 
 === middle_chairs ===
@@ -580,15 +658,21 @@ VAR sq_kept_time = false
 会。 # beat:sq_middle_chairs_8 # scene:sq_chairs # cast:sq_xiao,sq_lu,sq_sima # speaker:sq_sima # mood:sq_sima=neutral
 萧一愣，像所有答复都预备过，偏没留这一句的位置。 # beat:sq_middle_chairs_9 # scene:sq_chairs # cast:sq_xiao,sq_lu,sq_sima # speaker:narrator
 你把太极所有谱都抄出去，太极还是太极。谱是死的，人是活的。 # beat:sq_middle_chairs_10 # scene:sq_chairs # cast:sq_xiao,sq_lu,sq_sima # speaker:sq_sima # mood:sq_sima=intent
+{
+- sq_two_names:
+两条线索始终分开抄。此刻一个坐在椅里，一个下落另有卷宗——两页纸对上了，谁也没替谁并成一个人。 # beat:sq_middle_chairs_11 # scene:sq_chairs # cast:sq_xiao,sq_lu,sq_sima # speaker:narrator
+- else:
+旧河道那张图上的疑问，查路队回话到了。木进人出的口子，与萧南逃的路线对上了一段。 # beat:sq_middle_chairs_12 # scene:sq_chairs # cast:sq_xiao,sq_lu,sq_sima # speaker:narrator
+}
 * [经录事转问还未归的人与物在哪里，不把听见一段怨恨当成已问全案。 # cid:sq_ask_missing_people]
   ~ sq_asked_people = true
-  青石驿失踪的见证人，案中还未归的卷，都另列着。请继续问。 # beat:sq_middle_chairs_11 # scene:sq_chairs # cast:sq_xiao,sq_lu,sq_sima # speaker:you
-  录事念到失踪者，萧抬了抬眼，没有答。闻道尘让录事坐下，把那一项移到最前，继续问。 # beat:sq_middle_chairs_12 # scene:sq_chairs # cast:sq_xiao,sq_lu,sq_sima # speaker:narrator
+  青石驿失踪的见证人，案中还未归的卷，都另列着。请继续问。 # beat:sq_middle_chairs_13 # scene:sq_chairs # cast:sq_xiao,sq_lu,sq_sima # speaker:you
+  录事念到失踪者，萧抬了抬眼，没有答。闻道尘让录事坐下，把那一项移到最前，继续问。 # beat:sq_middle_chairs_14 # scene:sq_chairs # cast:sq_xiao,sq_lu,sq_sima # speaker:narrator
   -> three_volumes
 * [把他所述身世交给当值录事核，自己先清点归回的封匣，仍留未归栏。 # cid:sq_keep_testimony]
   ~ sq_asked_people = false
-  这些话记下，不能替先前的伤亡结案。我先去看接回的物。 # beat:sq_middle_chairs_13 # scene:sq_chairs # cast:sq_xiao,sq_lu,sq_sima # speaker:you
-  你到外廊逐匣对封。里面有真卷，有证词，也有一路从假扉页抄出的错话；没有因为凶手坐下，纸就自己分得清。 # beat:sq_middle_chairs_14 # scene:sq_chairs # cast:sq_xiao,sq_lu,sq_sima # speaker:narrator
+  这些话记下，不能替先前的伤亡结案。我先去看接回的物。 # beat:sq_middle_chairs_15 # scene:sq_chairs # cast:sq_xiao,sq_lu,sq_sima # speaker:you
+  你到外廊逐匣对封。里面有真卷，有证词，也有一路从假扉页抄出的错话；没有因为凶手坐下，纸就自己分得清。 # beat:sq_middle_chairs_16 # scene:sq_chairs # cast:sq_xiao,sq_lu,sq_sima # speaker:narrator
   -> three_volumes
 
 === three_volumes ===
@@ -597,17 +681,23 @@ VAR sq_kept_time = false
 这次交接，不能还只写七卷两个字。 # beat:sq_three_volumes_3 # scene:sq_records # cast:sq_disciple,sq_wen # speaker:you # cg:none
 分卷验。哪一卷哪一人接，都验。 # beat:sq_three_volumes_4 # scene:sq_records # cast:sq_disciple,sq_wen # speaker:sq_disciple # mood:sq_disciple=neutral
 半个江湖被闹动，真正拿走的却不到一半。抄单要重开，死者名册却不会因这件事有多荒唐就变轻。 # beat:sq_three_volumes_5 # scene:sq_records # cast:sq_disciple,sq_wen # speaker:narrator
+{
+- sq_final_sources:
+两路亲见与后闻分了栏。前三卷这一页，谁亲见、谁听报，栏里写得清楚，没人再问哪句是你的猜想。 # beat:sq_three_volumes_6 # scene:sq_records # cast:sq_disciple,sq_wen # speaker:narrator
+- else:
+已归的人各留了副报。去找未归那一班之前，合报的架子先立住了。 # beat:sq_three_volumes_7 # scene:sq_records # cast:sq_disciple,sq_wen # speaker:narrator
+}
 * [逐卷核回来源、封存与接手，不拿看见三卷便替另四签全。 # cid:sq_check_each_volume]
   ~ sq_each_volume = true
-  前三卷回收，后四另交。原来的“尽失”，保留当时为何那样报，下面添复核结果。 # beat:sq_three_volumes_6 # scene:sq_records # cast:sq_disciple,sq_wen # speaker:you
-  旧单也给我。这行尽失是我写的，我在下面改，不能让你替我签。 # beat:sq_three_volumes_7 # scene:sq_records # cast:sq_disciple,sq_wen # speaker:sq_disciple # mood:sq_disciple=intent
-  两条收件路在鹿门汇合，各自留下见证，不让一份新齐单替代全部来路。 # beat:sq_three_volumes_8 # scene:sq_records # cast:sq_disciple,sq_wen # speaker:narrator
+  前三卷回收，后四另交。原来的“尽失”，保留当时为何那样报，下面添复核结果。 # beat:sq_three_volumes_8 # scene:sq_records # cast:sq_disciple,sq_wen # speaker:you
+  旧单也给我。这行尽失是我写的，我在下面改，不能让你替我签。 # beat:sq_three_volumes_9 # scene:sq_records # cast:sq_disciple,sq_wen # speaker:sq_disciple # mood:sq_disciple=intent
+  两条收件路在鹿门汇合，各自留下见证，不让一份新齐单替代全部来路。 # beat:sq_three_volumes_10 # scene:sq_records # cast:sq_disciple,sq_wen # speaker:narrator
   -> distribution
 * [先核各家抄读名单，缺卷处仍列待验，请验卷者当面向自己交接。 # cid:sq_prepare_readers]
   ~ sq_each_volume = false
-  抄录的人先备，未验的四卷别催他们先背一份并不存在的齐本。 # beat:sq_three_volumes_9 # scene:sq_records # cast:sq_disciple,sq_wen # speaker:you
-  我验到哪一卷就报哪一卷，不叫你白等一个全字。 # beat:sq_three_volumes_10 # scene:sq_records # cast:sq_disciple,sq_wen # speaker:sq_disciple # mood:sq_disciple=neutral
-  你给抄手留了能先做的空页，后四卷仍等另一弟子带来，没用忙起来挡住缺件。 # beat:sq_three_volumes_11 # scene:sq_records # cast:sq_disciple,sq_wen # speaker:narrator
+  抄录的人先备，未验的四卷别催他们先背一份并不存在的齐本。 # beat:sq_three_volumes_11 # scene:sq_records # cast:sq_disciple,sq_wen # speaker:you
+  我验到哪一卷就报哪一卷，不叫你白等一个全字。 # beat:sq_three_volumes_12 # scene:sq_records # cast:sq_disciple,sq_wen # speaker:sq_disciple # mood:sq_disciple=neutral
+  你给抄手留了能先做的空页，后四卷仍等另一弟子带来，没用忙起来挡住缺件。 # beat:sq_three_volumes_13 # scene:sq_records # cast:sq_disciple,sq_wen # speaker:narrator
   -> distribution
 
 === distribution ===
@@ -633,17 +723,29 @@ VAR sq_kept_time = false
 - else:
 那日先去包手，问件交过几次人，末尾被蹭掉一行。你找到手上缠布的年轻人，请他重新讲一遍；他这回问得比纸上更细，录事只好再搬一张凳。 # beat:sq_distribution_10 # scene:sq_chairs # cast:sq_wen,sq_gu # speaker:narrator
 }
+{
+- sq_asked_people:
+失踪见证人与未归卷另列的那栏，散会时仍开着。录事按它继续问，没并进已结的案里。 # beat:sq_distribution_11 # scene:sq_chairs # cast:sq_wen,sq_gu # speaker:narrator
+- else:
+他所述身世已交当值录事核。你清点归匣时，那一栏仍未销。 # beat:sq_distribution_12 # scene:sq_chairs # cast:sq_wen,sq_gu # speaker:narrator
+}
+{
+- sq_each_volume:
+七卷回收逐卷核过。议约里那句各抄一份，落笔时没人再拿一句尽失充数。 # beat:sq_distribution_13 # scene:sq_chairs # cast:sq_wen,sq_gu # speaker:narrator
+- else:
+抄读名单先备好，缺卷处仍列待验。十四家签字时，都知道自己签的不是一份齐本。 # beat:sq_distribution_14 # scene:sq_chairs # cast:sq_wen,sq_gu # speaker:narrator
+}
 * [接下混编传讯的常差，把前两卷与核过的风险说明送到真收件人手里。 # cid:sq_choose_carriers]
   ~ sq_career = 1
-  我去送。哪处只收了书、还没有人讲，回报也请留这一项。 # beat:sq_distribution_11 # scene:sq_chairs # cast:sq_wen,sq_gu # speaker:you
-  往南的先停一日。那边带读的人还没到，我把回信催来，你一并带。 # beat:sq_distribution_12 # scene:sq_chairs # cast:sq_wen,sq_gu # speaker:sq_wen # mood:sq_wen=neutral
-  你改了自己的行期，不替两位同伴一并答应全年都上路。 # beat:sq_distribution_13 # scene:sq_chairs # cast:sq_wen,sq_gu # speaker:narrator
+  我去送。哪处只收了书、还没有人讲，回报也请留这一项。 # beat:sq_distribution_15 # scene:sq_chairs # cast:sq_wen,sq_gu # speaker:you
+  往南的先停一日。那边带读的人还没到，我把回信催来，你一并带。 # beat:sq_distribution_16 # scene:sq_chairs # cast:sq_wen,sq_gu # speaker:sq_wen # mood:sq_wen=neutral
+  你改了自己的行期，不替两位同伴一并答应全年都上路。 # beat:sq_distribution_17 # scene:sq_chairs # cast:sq_wen,sq_gu # speaker:narrator
   -> agreement
 * [留鹿门接抄读和入门课，给借阅者留能追问的去处，不越阶教高卷。 # cid:sq_choose_reading]
   ~ sq_career = 2
-  我留。前两卷里我也不明白的，请授课者讲，不拿管钥匙当自己已经会。 # beat:sq_distribution_14 # scene:sq_chairs # cast:sq_wen,sq_gu # speaker:you
-  钥匙也别最后只交给一户人。规矩要让后来借的人能问。 # beat:sq_distribution_15 # scene:sq_chairs # cast:sq_wen,sq_gu # speaker:sq_gu # mood:sq_gu=intent
-  你接的是书与人之间的常课，不是把自己坐成第十五把掌门椅。 # beat:sq_distribution_16 # scene:sq_chairs # cast:sq_wen,sq_gu # speaker:narrator
+  我留。前两卷里我也不明白的，请授课者讲，不拿管钥匙当自己已经会。 # beat:sq_distribution_18 # scene:sq_chairs # cast:sq_wen,sq_gu # speaker:you
+  钥匙也别最后只交给一户人。规矩要让后来借的人能问。 # beat:sq_distribution_19 # scene:sq_chairs # cast:sq_wen,sq_gu # speaker:sq_gu # mood:sq_gu=intent
+  你接的是书与人之间的常课，不是把自己坐成第十五把掌门椅。 # beat:sq_distribution_20 # scene:sq_chairs # cast:sq_wen,sq_gu # speaker:narrator
   -> agreement
 
 === agreement ===

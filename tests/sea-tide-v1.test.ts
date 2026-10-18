@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -9,7 +10,7 @@ function run(pick:(ids:string[])=>string){const s=new VNRuntime(content,edition.
 const route=(overrides:string[]=[])=>run(ids=>ids.find(id=>overrides.includes(id))??ids[0]);
 test('Sea Tide full lives preserve entry, rescue, forties nine hands, failed seat and sixty-three appointment',()=>{
  for(const side of [0,1]){const r=run(ids=>ids[side]);assert.equal(r.s.frame.ending,side?'st_next_watch':'st_next_step');for(const phrase of ['十二岁','五日','吐了三日','四十余岛','三处大港','四十七个','十六个','外院六年','十七岁','船却沉了','十八岁','连续七日','二十九岁','十一艘','三艘撞礁','二十余人','木梁把你压','三步','最后一个离船','半年后','近三十','两人都未入化','一百零六合','北榜第十四','四十多','九十余','第二招','第五招','第七招','第九招','棍仍在外侧','四十九岁','候选五人','自认第二','周望海','三个月','七年','七条','九条','六十三','第九席','百余岁','一根手指','确切境界','总谱第三','不知道','所见之海，非海之尽'])assert.ok(r.text.includes(phrase),phrase);
- assert.deepEqual(restoreVN(JSON.stringify(r.s.save()),edition).session.frames,r.s.frames);assert.throws(()=>restoreVN(JSON.stringify(r.s.save()),{content,version:'sea-1.0.0'}),/作品或版本不兼容/);writeFileSync(`docs/evidence/v6/sea-tide-editorial-v1-${r.s.frame.ending}-transcript.txt`,r.text);
+ assert.deepEqual(restoreVN(JSON.stringify(r.s.save()),edition).session.frames,r.s.frames);assert.throws(()=>restoreVN(JSON.stringify(r.s.save()),{content,version:'sea-1.0.0'}),/作品或版本不兼容/);writeFileSync(evidencePath(`docs/evidence/v6/sea-tide-editorial-v1-${r.s.frame.ending}-transcript.txt`),r.text);
  const nine=r.s.frames.findIndex(f=>f.stage.scene==='st_teacourt'),seat=r.s.frames.findIndex(f=>f.id==='st_sixty_three_1');assert.ok(nine>0&&seat>nine);assert.ok(!r.s.frames.some(f=>f.stage.cast.some(id=>id.startsWith('sr_'))));
  }
 });
@@ -27,5 +28,5 @@ test('Sea Tide two duties lead to sustained different personal aftermath and app
 });
 test('Sea Tide sampled routes visit all authored beats and choices with bounded reading gaps',()=>{
  const visited=new Set<string>(),choices=new Set<string>(),ends=new Set<string>();let longest=0;for(let seed=1;seed<=512;seed++){let state=Math.imul(seed,2654435761)>>>0;const r=run(ids=>{state=(Math.imul(state,1664525)+1013904223)>>>0;return ids[state>>>31]});r.s.frames.forEach(f=>{visited.add(f.id);f.choices.forEach(c=>choices.add(c.id));assert.ok(f.stage.cast.length<=3)});ends.add(r.s.frame.ending!);longest=Math.max(longest,r.longest)}
- const beats=[...readFileSync('story/sea-tide-v1.ink','utf8').matchAll(/# beat:(\S+)/g)].map(m=>m[1]);assert.deepEqual([...visited].sort(),beats.sort());assert.equal(choices.size,42);assert.equal(ends.size,2);assert.ok(longest<=18,`gap ${longest}`);writeFileSync('docs/evidence/v6/sea-tide-editorial-v1-content-audit.json',JSON.stringify({status:'SECOND_VOLUME_DRAFT_NOT_FINAL',sourceBeats:beats.length,visited:visited.size,choiceOptions:choices.size,decisionsPerRoute:21,sampledPaths:512,exhaustive:false,longestPassiveGap:longest,limits:'Youth is a temporary generic template, not reviewed age12 art; storm vessel geography/action/CG, dedicated people and three editorial rounds remain incomplete.'},null,2));
+ const beats=[...readFileSync('story/sea-tide-v1.ink','utf8').matchAll(/# beat:(\S+)/g)].map(m=>m[1]);assert.deepEqual([...visited].sort(),beats.sort());assert.equal(choices.size,42);assert.equal(ends.size,2);assert.ok(longest<=18,`gap ${longest}`);writeFileSync(evidencePath('docs/evidence/v6/sea-tide-editorial-v1-content-audit.json'),JSON.stringify({status:'SECOND_VOLUME_DRAFT_NOT_FINAL',sourceBeats:beats.length,visited:visited.size,choiceOptions:choices.size,decisionsPerRoute:21,sampledPaths:512,exhaustive:false,longestPassiveGap:longest,limits:'Youth is a temporary generic template, not reviewed age12 art; storm vessel geography/action/CG, dedicated people and three editorial rounds remain incomplete.'},null,2));
 });

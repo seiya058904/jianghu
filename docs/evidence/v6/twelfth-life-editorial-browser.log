@@ -65,7 +65,7 @@ Running 29 tests using 2 workers
       12 |  expect(choices).toBe(33);await expect(page.locator('#ending-actions')).toContainText(side?'一封没有求绝学的信':'一起看清一场');await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await decoded(page);await page.screenshot({path:`docs/evidence/v6/twelfth-life-editorial-archive-v1-ending-${side}.png`});expect(await page.evaluate(()=>localStorage.getItem('jianghu:chronicle:twelfth:v1:sentinel'))).toBe('companion-kept');expect(await page.evaluate(()=>localStorage.getItem('jianghu:campaign:tide:v1:sentinel'))).toBe('v5-kept');expect(errors).toEqual([]);
       13 | });
       14 | test('Twelfth Life downloads late Sun resources unvisited, offline at root and subpath',async({browser})=>{
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\twelfth-life.spec.ts:11:60
+        at .\tests\twelfth-life.spec.ts:11:60
 
     Error Context: test-results-royal-editorial\twelfth-life-Twelfth-Life--16752-osthumous-epilogue-distinct\error-context.md
 
@@ -92,7 +92,7 @@ Running 29 tests using 2 workers
       12 |  expect(choices).toBe(33);await expect(page.locator('#ending-actions')).toContainText(side?'一封没有求绝学的信':'一起看清一场');await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await decoded(page);await page.screenshot({path:`docs/evidence/v6/twelfth-life-editorial-archive-v1-ending-${side}.png`});expect(await page.evaluate(()=>localStorage.getItem('jianghu:chronicle:twelfth:v1:sentinel'))).toBe('companion-kept');expect(await page.evaluate(()=>localStorage.getItem('jianghu:campaign:tide:v1:sentinel'))).toBe('v5-kept');expect(errors).toEqual([]);
       13 | });
       14 | test('Twelfth Life downloads late Sun resources unvisited, offline at root and subpath',async({browser})=>{
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\twelfth-life.spec.ts:11:60
+        at .\tests\twelfth-life.spec.ts:11:60
 
     Error Context: test-results-royal-editorial\twelfth-life-Twelfth-Life--76dbb-osthumous-epilogue-distinct\error-context.md
 

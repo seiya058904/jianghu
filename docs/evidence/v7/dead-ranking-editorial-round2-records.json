@@ -1,0 +1,48 @@
+{
+ "round": 2,
+ "focus": "NPC 声线、对话与人物关系",
+ "records": [
+  {
+   "round": 2,
+   "file": "story/dead-ranking-case.mjs",
+   "beat": "dr_paid_witness",
+   "originalLineOrAction": "旁白代述家主立场",
+   "diagnosis": "受益人家主全篇零台词，'冷下脸'没有声音来源",
+   "changedLineOrAction": "~intent/~sharp 两段防御性台词（抢答底细、自辩差事）",
+   "whyItIsBetter": "与梁启山（老子说了输了）、顾临川（怕丢人）一样，本案每个既得利益者现在都有自己开口的方式",
+   "choicePayoffBefore": "无",
+   "choicePayoffAfter": "无",
+   "sourceCanonRange": "22318-22371",
+   "testEvidence": "6/6 PASS",
+   "unresolvedIssue": "无"
+  },
+  {
+   "round": 2,
+   "file": "story/dead-ranking-after.mjs",
+   "beat": "dr_new_duties",
+   "originalLineOrAction": "dr_next 单句'不认还能记，亲口说赢又不能定？'",
+   "diagnosis": "新抄手只有一句笼统困惑，三个判例答不上话",
+   "changedLineOrAction": "三问三答（第二件呢？/那记什么？）",
+   "whyItIsBetter": "徒弟式提问（从 uneasy 到承接衣钵）与后文 room/road_lesson 的 dr_next 成长线衔接",
+   "choicePayoffBefore": "无",
+   "choicePayoffAfter": "无",
+   "sourceCanonRange": "23596-23651",
+   "testEvidence": "6/6 PASS",
+   "unresolvedIssue": "无"
+  },
+  {
+   "round": 2,
+   "file": "story/dead-ranking-*.mjs",
+   "beat": "全篇声线盲测",
+   "originalLineOrAction": "—",
+   "diagnosis": "抽 4 句去名盲测：'老子说了输了'（梁）、'怕丢人'（顾）、'写十七年没人听'（谢无灯）、'我不躲这个。别只把无灯当带头的'（杜）均可辨认；严松医馆流程语、沈霁娘短句锐评亦不与其余互换",
+   "changedLineOrAction": "无（保留）",
+   "whyItIsBetter": "六位主要说话人（周砚/陆/沈/顾/三弟子）各有职业语域与长短句习惯，无需改写",
+   "choicePayoffBefore": "—",
+   "choicePayoffAfter": "—",
+   "sourceCanonRange": "—",
+   "testEvidence": "人工抽检记录于本文件",
+   "unresolvedIssue": "无"
+  }
+ ]
+}

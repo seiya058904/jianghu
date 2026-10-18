@@ -1,0 +1,62 @@
+{
+  "browser": "155.0.8059.40",
+  "reason": "Browser plugin not available; repository Playwright workflow used",
+  "pages": [
+    {
+      "url": "https://seiya058904.github.io/jianghu/",
+      "status": 200,
+      "title": "Jianghu · 潮生有约",
+      "version": "tide-promise-2.0.0",
+      "text": "Jianghu\n江湖\n选篇\n存档\n设置\n潮生有约\n\n想赢一场，\n也想让他们都回来。\n\n木剑、米袋、一场地方武会。\n说出口的承诺，要一起带到岸上。\n\n启程 · 青蒲渡\n\n陆路与水路，各有相逢。\n\n宋世江湖 · 潮生有约\n\n旧版《潮生有约》与原存档\n纪事《太华试序》\n旧篇《半步之约》\n旧篇《渡口无碑》",
+      "errors": []
+    },
+    {
+      "url": "https://seiya058904.github.io/jianghu/taihua.html",
+      "status": 200,
+      "title": "Jianghu · 太华试序",
+      "version": "taihua-3.0.0",
+      "text": "Jianghu\n江湖\n选篇\n存档\n设置\n太华试序 · 三年之约\n\n练了二十年，\n你还想准备几日？\n\n三十一岁，你替受伤同门上场。\n一场真胜之后，还有一场真败。\n\n接过替补的护腕\n\n原典纪事 · 三十一岁的陆青珩 · 六门内部旧会\n\n上一版及旧存档\n\n旧稿及旧存档\n\n昆仑旧史 · 白石谷外\n\n宋世江湖 · 太华试序 · 三年之约\n\n回到《潮生有约》\nv5 原版与旧存档",
+      "errors": []
+    },
+    {
+      "url": "https://seiya058904.github.io/jianghu/twelfth-life.html",
+      "status": 200,
+      "title": "Jianghu · 第十二席 · 赵承晏",
+      "version": "twelfth-life-3.0.0",
+      "text": "Jianghu\n江湖\n选篇\n存档\n设置\n第十二席 · 赵承晏\n\n赢了三场，\n却不知道真赢了没有。\n\n十二岁的一夜，半生的一张榜。\n从找最强老师，到肯让别人真赢自己。\n\n回院取那块玉佩\n\n原典纪事 · 赵承晏 · 十二岁起，末页明确切身后旧册 · 真输与末席 · 半生相伴\n\n陪练篇 · 馆师视角\n\n上一版及旧存档\n\n旧稿及旧存档\n\n宋世江湖 · 第十二席 · 赵承晏\n\n回到《潮生有约》\nv5 原版与旧存档",
+      "errors": []
+    },
+    {
+      "url": "https://seiya058904.github.io/jianghu/jade-thieves.html",
+      "status": 200,
+      "title": "Jianghu · 山河璧·密库双贼",
+      "version": "jade-thieves-2.0.0",
+      "text": "Jianghu\n江湖\n选篇\n存档\n设置\n山河璧 · 密库双贼\n\n都说它无价。\n你先看看怎么出去。\n\n一只空盒，两种来路。\n假的比真的漂亮，名字却还是真的。\n\n听清密库门外的脚步\n\n原典纪事 · 沈玉娘首程；通关后可从江十七再走 · 两条来路 · 一路同行\n\n第二卷 · 十三文\n\n旧稿及旧存档\n\n宋世江湖 · 山河璧 · 密库双贼\n\n回到《潮生有约》\nv5 原版与旧存档",
+      "errors": []
+    },
+    {
+      "url": "https://seiya058904.github.io/jianghu/qingshi.html",
+      "status": 200,
+      "title": "Jianghu · 青石五友·守一天",
+      "version": "qingshi-3.0.0",
+      "text": "Jianghu\n江湖\n选篇\n存档\n设置\n青石五友 · 守一天\n\n先练厉害一点。\n明日，还在这里见。\n\n五个人的年轻话，\n一个人用了七十余年去答。\n\n坐上粮仓后的矮墙\n\n原典纪事 · 十七岁至九十二岁的许长安 · 五人旧约 · 一生的回响\n\n上一版及旧存档\n\n旧稿及旧存档\n\n宋世江湖 · 青石五友 · 守一天\n\n回到《潮生有约》\nv5 原版与旧存档",
+      "errors": []
+    },
+    {
+      "url": "https://seiya058904.github.io/jianghu/longmen.html",
+      "status": 200,
+      "title": "Jianghu · 龙门问刀",
+      "version": "longmen-3.0.0",
+      "text": "Jianghu\n江湖\n选篇\n存档\n设置\n龙门问刀\n\n第七刀，\n你到底想砍什么？\n\n跟着镇河门赴会，先认一次真败。\n九剑以后，选自己的去处。\n\n去借那把木刀\n\n原典纪事 · 镇河门随行门人 · 两条门路 · 九剑与当夜私谈\n\n上一版及旧存档\n\n旧稿及旧存档\n\n五年后 · 洛阳龙虎风云会\n\n宋世江湖 · 龙门问刀\n\n回到《潮生有约》\nv5 原版与旧存档",
+      "errors": []
+    },
+    {
+      "url": "https://seiya058904.github.io/jianghu/dead-ranking.html",
+      "status": 200,
+      "title": "Jianghu · 死人争榜",
+      "version": "dead-ranking-1.0.0",
+      "text": "Jianghu\n江湖\n选篇\n存档\n设置\n死人争榜\n\n死去十八年的人，\n要把第七拿回来。\n\n三场真胜。一个旧名字。\n当有人亲口认败，来的人究竟是谁？\n\n再看一遍落款\n\n原典纪事 · 榜房周砚 · 中后段另有现场视角 · 制作中 · 六事件单元与两个人后日\n\n宋世江湖 · 死人争榜\n\n回到《潮生有约》\nv5 原版与旧存档",
+      "errors": []
+    }
+  ]
+}

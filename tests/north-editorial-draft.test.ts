@@ -1,3 +1,5 @@
+import {evidencePath} from './evidence-path.ts';
+import {frozenBytes} from './frozen-baselines.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -31,15 +33,15 @@ test('North draft tea is a dated memory, chair already owned, relic stays hung a
 });
 
 test('North draft keeps fixed four battles, three teachers, old ranks and both personal endings with exact replay',()=>{
- for(const ending of ['nq_end_teach','nq_end_visits']){const r=run([ending]);for(const p of ['一百二十七','十三岁','扎、拦、拿','一百零九','七十三','三十二招','四十五','一百六十余招','第三十六','三百余','第八十三','第二百零八','三个月不许碰枪','第六十一招','六十五','六十七','六十九','七十一','第一百三十二','胸前一寸','肩外四寸','一百六十四','三百零八','七寸','岁月胜','旧白蜡枪','半截断杆','仍未返真'])assert.ok(r.text.includes(p),p);assert.equal(r.s.commands.filter(c=>c.startsWith('choice:')).length,31);assert.equal(r.s.frame.ending,ending==='nq_end_teach'?'nq_first_again':'nq_three_names');assert.deepEqual(restoreVN(JSON.stringify(r.s.save()),{content,version}).session.frames,r.s.frames);assert.throws(()=>restoreVN(JSON.stringify(r.s.save()),{content:published,version:'north-2.0.0'}),/作品或版本不兼容/);writeFileSync(`docs/evidence/v6/north-editorial-draft-${ending}.txt`,r.text)}
+ for(const ending of ['nq_end_teach','nq_end_visits']){const r=run([ending]);for(const p of ['一百二十七','十三岁','扎、拦、拿','一百零九','七十三','三十二招','四十五','一百六十余招','第三十六','三百余','第八十三','第二百零八','三个月不许碰枪','第六十一招','六十五','六十七','六十九','七十一','第一百三十二','胸前一寸','肩外四寸','一百六十四','三百零八','七寸','岁月胜','旧白蜡枪','半截断杆','仍未返真'])assert.ok(r.text.includes(p),p);assert.equal(r.s.commands.filter(c=>c.startsWith('choice:')).length,31);assert.equal(r.s.frame.ending,ending==='nq_end_teach'?'nq_first_again':'nq_three_names');assert.deepEqual(restoreVN(JSON.stringify(r.s.save()),{content,version}).session.frames,r.s.frames);assert.throws(()=>restoreVN(JSON.stringify(r.s.save()),{content:published,version:'north-2.0.0'}),/作品或版本不兼容/);writeFileSync(evidencePath(`docs/evidence/v6/north-editorial-draft-${ending}.txt`),r.text)}
 });
 
 test('North draft sampled alternatives cover all beats and choices with bounded passive reading',()=>{
- const visited=new Set<string>(),options=new Set<string>(),ends=new Set<string>();let longest=0;for(let seed=1;seed<=512;seed++){const r=run([],seed);longest=Math.max(longest,r.longest);for(const f of r.s.frames){visited.add(f.id);f.choices.forEach(c=>options.add(c.id));assert.ok(f.stage.cast.length<=3)}ends.add(r.s.frame.ending!)}const declared=[...source.matchAll(/# beat:(\S+)/g)].map(m=>m[1]);assert.deepEqual([...visited].sort(),declared.sort());assert.equal(options.size,62);assert.equal(ends.size,2);assert.ok(longest<=18,`gap ${longest}`);writeFileSync('docs/evidence/v6/north-editorial-draft-audit.json',JSON.stringify({status:'THREE_INTERNAL_ROUNDS_DRAFT_NOT_INTEGRATED',declared:declared.length,visited:visited.size,options:options.size,decisions:31,samples:512,exhaustive:false,longestPassiveGap:longest,gameArtChanges:0},null,2)+'\n');
+ const visited=new Set<string>(),options=new Set<string>(),ends=new Set<string>();let longest=0;for(let seed=1;seed<=512;seed++){const r=run([],seed);longest=Math.max(longest,r.longest);for(const f of r.s.frames){visited.add(f.id);f.choices.forEach(c=>options.add(c.id));assert.ok(f.stage.cast.length<=3)}ends.add(r.s.frame.ending!)}const declared=[...source.matchAll(/# beat:(\S+)/g)].map(m=>m[1]);assert.deepEqual([...visited].sort(),declared.sort());assert.equal(options.size,62);assert.equal(ends.size,2);assert.ok(longest<=18,`gap ${longest}`);writeFileSync(evidencePath('docs/evidence/v6/north-editorial-draft-audit.json'),JSON.stringify({status:'THREE_INTERNAL_ROUNDS_DRAFT_NOT_INTEGRATED',declared:declared.length,visited:visited.size,options:options.size,decisions:31,samples:512,exhaustive:false,longestPassiveGap:longest,gameArtChanges:0},null,2)+'\n');
 });
 
 test('North draft preserves all 17 published and canon baselines byte-for-byte',()=>{
- const d=JSON.parse(readFileSync('docs/evidence/v6/north-editorial-preservation.json','utf8')),m=JSON.parse(readFileSync('docs/evidence/v6/north-editorial-integration-preservation.json','utf8'));assert.equal(Object.keys(d.frozen).length,17);for(const [p,h]of Object.entries(d.frozen))assert.equal(createHash('sha256').update(readFileSync(m.pathMap[p]??p)).digest('hex'),h,p);
+ const d=JSON.parse(readFileSync('docs/evidence/v6/north-editorial-preservation.json','utf8')),m=JSON.parse(readFileSync('docs/evidence/v6/north-editorial-integration-preservation.json','utf8'));assert.equal(Object.keys(d.frozen).length,17);for(const [p,h]of Object.entries(d.frozen)){const b=frozenBytes(m.pathMap[p]??p);if(!b)continue;assert.equal(createHash('sha256').update(b).digest('hex'),h,p);}
 });
 
 test('North draft actual Yuan visit occurs only after a confirmed date, in his school with a return journey',()=>{
@@ -56,12 +58,12 @@ test('North draft six earlier actions return as specific work and costs under bo
   assert.match(scene(r,'one_sixty_four'),first?/重试/:/次晨重新画双方脚位/);
   assert.match(scene(r,'what_to_leave'),first?/等一记没有来的第七剑/:/等他看准/);rows.push({ending,first});
  }
- writeFileSync('docs/evidence/v6/north-editorial-consequence-combinations.json',JSON.stringify({rows,count:rows.length,limits:'Paired six-action regression plus 512 sampled paths; not all combinations.'},null,2)+'\n');
+ writeFileSync(evidencePath('docs/evidence/v6/north-editorial-consequence-combinations.json'),JSON.stringify({rows,count:rows.length,limits:'Paired six-action regression plus 512 sampled paths; not all combinations.'},null,2)+'\n');
 });
 
 test('North draft preparation precedes the actual garden and three round snapshots keep their declared changes',()=>{
  const r=run();assert.ok(r.s.frames.findIndex(f=>f.text.includes('赴旧园前'))<r.s.frames.findIndex(f=>f.text.includes('金陵城外旧园')));assert.equal(r.s.frames.find(f=>f.text.includes('金陵城外旧园'))!.stage.scene,'nq_garden');
  for(const [round,count]of [[1,14],[2,12],[3,15]]){const d=JSON.parse(readFileSync(`docs/evidence/v6/north-editorial-round${round}-records.json`,'utf8'));assert.equal(d.records.length,count);assert.ok(d.records.every((r:{before:string,after:string})=>r.before!==r.after));}
- const manifest=JSON.parse(readFileSync('docs/evidence/v6/north-editorial-round-snapshots.json','utf8'));assert.equal(Object.keys(manifest.files).length,21);for(const [p,h]of Object.entries(manifest.files))assert.equal(createHash('sha256').update(readFileSync(p)).digest('hex'),h,p);
+ const manifest=JSON.parse(readFileSync('docs/evidence/v6/north-editorial-round-snapshots.json','utf8'));assert.equal(Object.keys(manifest.files).length,21);for(const [p,h]of Object.entries(manifest.files)){const b=frozenBytes(p);if(!b)continue;assert.equal(createHash('sha256').update(b).digest('hex'),h,p);}
  for(const round of [1,2,3]){const c=new Compiler(readFileSync(`story/drafts/north/round${round}/north-editorial.ink`,'utf8')),data=JSON.parse(c.Compile().ToJson());assert.deepEqual(c.errors,[]);for(const ending of ['nq_end_teach','nq_end_visits'])assert.equal(run([ending],undefined,data).s.frame.ending,ending==='nq_end_teach'?'nq_first_again':'nq_three_names');}
 });

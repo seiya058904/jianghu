@@ -8,7 +8,7 @@ export const taihuaV2Characters:Record<string,Person>={
 };
 const s=(name:string,time:string,art:string)=>({name,time,art});
 export const taihuaV2Scenes={
- th_firstwatch:s('藏云台 · 第一场旁观','第一日上午 · 四十八招','v6/taihua-court.webp'),th_mingtrial:s('藏云台 · 明澄与谢','青序第三试 · 袖破与近身','v6/taihua-court.webp'),th_huotrial:s('藏云台 · 霍与谢','第二轮 · 第五十三招不是终局','v6/taihua-court.webp'),th_youngorder:s('藏云台 · 青序收席','六席落定 · 各有胜负','v6/taihua-court.webp'),th_oldfirst:s('藏云台 · 正序初看','翌日 · 年长不自动入化','v6/taihua-court.webp'),th_jihui:s('藏云台 · 季与慧觉','第五十一与一百零三','v6/taihua-court.webp'),th_oldfinal:s('藏云台 · 正序争首','午后云散 · 左手十三剑','v6/taihua-court.webp'),th_mufront:s('石栏旁 · 两老复手','闭会前 · 宗主只走一剑','v6/taihua-court.webp'),th_lastmeal:s('六家后院 · 最后一夜','不大宴 · 一桌未说完的话','v6/taihua-guest.webp'),th_guidanceyard:s('散席后的石坪边','一炷香 · 错过同辈半日','v6/taihua-court.webp'),
+ th_firstwatch:s('藏云台 · 第一场旁观','第一日上午 · 四十八招','v6/taihua-court.webp'),th_mingtrial:s('藏云台 · 明澄与谢','青序第三试 · 袖破与近身','v6/taihua-court.webp'),th_huotrial:s('藏云台 · 霍与谢','第二轮 · 第五十三招不是终局','v6/taihua-court.webp'),th_youngorder:s('藏云台 · 青序收席','六席落定 · 各有胜负','v6/taihua-court.webp'),th_oldfirst:s('藏云台 · 正序初看','翌日 · 年长不自动入化','v6/taihua-court.webp'),th_jihui:s('藏云台 · 季与慧觉','第五十一与一百零三','v6/taihua-court.webp'),th_oldfinal:s('藏云台 · 正序争首','午后云散 · 左手十三剑','v6/taihua-court.webp'),th_mufront:s('石栏旁 · 两老复手','闭会前 · 宗主只走一剑','v6/th-mufront.webp'),th_lastmeal:s('六家后院 · 最后一夜','不大宴 · 一桌未说完的话','v6/taihua-guest.webp'),th_guidanceyard:s('散席后的石坪边','一炷香 · 错过同辈半日','v6/taihua-court.webp'),
 };
 export const taihuaV2Facts={
  th_48:{name:'第四次左门',text:'法彻36对慕容景生32，前三次左入，第四次内错半步，48掌停胸，少林胜。先前优势也是真的，但不能只凭前三十便判定最后。'},

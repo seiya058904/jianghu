@@ -1,0 +1,1405 @@
+{
+  "baseline": "7a2c22f74c46d74f07af8bd1a45893ec15daa49b",
+  "scope": "canon groups 15-22 / twelve current editions",
+  "counts": {
+    "confirmed_fixed": 25,
+    "p1": 24,
+    "p2": 1,
+    "editorial_opportunity": 1
+  },
+  "issues": [
+    {
+      "id": "CL01",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "dead-ranking",
+      "path": "story/dead-ranking-people.mjs",
+      "line": 66,
+      "beats": [
+        "dr_three_parts_8"
+      ],
+      "problem": "已当院亲试三人，却回忆仍未亲试。",
+      "minimal_repair": "改记本次亲试及沈可确认的有限范围。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [
+          "dr_ask_what_she_knows"
+        ],
+        "case_name": "CL01",
+        "full_original_sequence": [
+          "dr_ask_letter_hand",
+          "dr_pickup_training",
+          "dr_liang_private",
+          "dr_borrow_chase",
+          "dr_keep_claim_separate",
+          "dr_watch_actual_person",
+          "dr_turn_small",
+          "dr_ask_reopen_plain",
+          "dr_ask_what_she_knows",
+          "dr_wait_until_land",
+          "dr_leave_visit_time",
+          "dr_ask_zhao_direct",
+          "dr_ask_each_responsibility",
+          "dr_keep_two_accounts",
+          "dr_tell_three_first",
+          "dr_face_one_by_one",
+          "dr_face_let_askers_in",
+          "dr_face_write_own_words",
+          "dr_ask_each_seen",
+          "dr_ask_old_workers",
+          "dr_wait_for_gu",
+          "dr_ask_own_words",
+          "dr_follow_land_money",
+          "dr_ask_knowledge_not_seizure",
+          "dr_eyes_zhou",
+          "dr_zhou_read_whole",
+          "dr_zhou_leave_space",
+          "dr_read_names_to_people",
+          "dr_tell_life_with_limits",
+          "dr_give_unfinished_letter",
+          "dr_keep_wudeng_name",
+          "dr_career_teach",
+          "dr_room_let_next_answer"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL02",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "dead-ranking",
+      "path": "story/dead-ranking-people.mjs",
+      "line": 113,
+      "beats": [
+        "dr_three_faces_1_1",
+        "dr_three_faces_2_1",
+        "dr_three_faces_after_1"
+      ],
+      "problem": "六人同桌后改写成第二间、第三间、三间屋走完。",
+      "minimal_repair": "同拍按dr_face_alone分别记屋或同桌；严松已到场不再二次进门。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [
+          "dr_face_all_together"
+        ],
+        "case_name": "CL02",
+        "full_original_sequence": [
+          "dr_ask_letter_hand",
+          "dr_pickup_training",
+          "dr_liang_private",
+          "dr_borrow_chase",
+          "dr_keep_claim_separate",
+          "dr_watch_actual_person",
+          "dr_turn_small",
+          "dr_ask_reopen_plain",
+          "dr_ask_actual_test",
+          "dr_wait_until_land",
+          "dr_leave_visit_time",
+          "dr_ask_zhao_direct",
+          "dr_ask_each_responsibility",
+          "dr_keep_two_accounts",
+          "dr_tell_three_first",
+          "dr_face_all_together",
+          "dr_face_let_askers_in",
+          "dr_face_write_own_words",
+          "dr_ask_each_seen",
+          "dr_ask_old_workers",
+          "dr_wait_for_gu",
+          "dr_ask_own_words",
+          "dr_follow_land_money",
+          "dr_ask_knowledge_not_seizure",
+          "dr_eyes_zhou",
+          "dr_zhou_read_whole",
+          "dr_zhou_leave_space",
+          "dr_read_names_to_people",
+          "dr_tell_life_with_limits",
+          "dr_give_unfinished_letter",
+          "dr_keep_wudeng_name",
+          "dr_career_teach",
+          "dr_room_let_next_answer"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL03",
+      "priority": "P2",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "dead-ranking",
+      "path": "story/dead-ranking-case.mjs",
+      "line": 53,
+      "beats": [
+        "dr_paid_witness_1"
+      ],
+      "problem": "葛九衡同谢学剑的句法可能错读师徒，原典是同门。",
+      "minimal_repair": "明确与谢藏锋同门学过几年剑。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [],
+        "case_name": "CL03",
+        "full_original_sequence": [
+          "dr_ask_letter_hand",
+          "dr_pickup_training",
+          "dr_liang_private",
+          "dr_borrow_chase",
+          "dr_keep_claim_separate",
+          "dr_watch_actual_person",
+          "dr_turn_small",
+          "dr_ask_reopen_plain",
+          "dr_ask_actual_test",
+          "dr_wait_until_land",
+          "dr_leave_visit_time",
+          "dr_ask_zhao_direct",
+          "dr_ask_each_responsibility",
+          "dr_keep_two_accounts",
+          "dr_tell_three_first",
+          "dr_face_one_by_one",
+          "dr_face_let_askers_in",
+          "dr_face_write_own_words",
+          "dr_ask_each_seen",
+          "dr_ask_old_workers",
+          "dr_wait_for_gu",
+          "dr_ask_own_words",
+          "dr_follow_land_money",
+          "dr_ask_knowledge_not_seizure",
+          "dr_eyes_zhou",
+          "dr_zhou_read_whole",
+          "dr_zhou_leave_space",
+          "dr_read_names_to_people",
+          "dr_tell_life_with_limits",
+          "dr_give_unfinished_letter",
+          "dr_keep_wudeng_name",
+          "dr_career_teach",
+          "dr_room_let_next_answer"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL04",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "jade",
+      "path": "story/jade-after.mjs",
+      "line": 23,
+      "beats": [
+        "jd_family_return_9"
+      ],
+      "problem": "粮路玩家未做档路接报，却被阿荞称已完成。",
+      "minimal_repair": "区分jd_post，再按jd_grain_after回记核车或灶棚接手。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [],
+        "case_name": "CL04",
+        "full_original_sequence": [
+          "jd_ask_origin",
+          "jd_show_hand",
+          "jd_sort_old_names",
+          "jd_send_objects_separate",
+          "jd_bring_archive",
+          "jd_answer_pickle",
+          "jd_keep_surface",
+          "jd_match_route",
+          "jd_tell_empty",
+          "jd_keep_material_record",
+          "jd_take_duty",
+          "jd_receive_people",
+          "jd_finish_shift",
+          "jd_note_usable",
+          "jd_copy_use",
+          "jd_ask_present",
+          "jd_help_water",
+          "jd_stay_grain",
+          "jd_hold_cart_turn",
+          "jd_keep_people_lane",
+          "jd_fold_wet_canvas",
+          "jd_send_grain_status",
+          "jd_close_local_shift",
+          "jd_keep_two_witnesses",
+          "jd_offer_paid_shift",
+          "jd_choose_storework",
+          "jd_return_wedding_copy",
+          "jd_name_best_work",
+          "jd_keep_old_breaks"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL05",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "twelfth",
+      "path": "story/twelfth-author.mjs",
+      "line": 62,
+      "beats": [
+        "qw_public_bout_8"
+      ],
+      "problem": "公开赵败薛胜被写成薛败且没人见。",
+      "minimal_repair": "明确薛胜有人作证，将将来的压力与今日战绩分开。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [],
+        "case_name": "CL05",
+        "full_original_sequence": [
+          "qw_plain_trial",
+          "qw_leave_room",
+          "qw_no_false_witness",
+          "qw_wait_bow",
+          "qw_return_gift",
+          "qw_read_papers",
+          "qw_quiet_guard",
+          "qw_guard_school",
+          "qw_test_fast",
+          "qw_ask_person",
+          "qw_both_facts",
+          "qw_submit_seen",
+          "qw_no_extra_seal",
+          "qw_name_only",
+          "qw_ask_teacher",
+          "qw_school_choice",
+          "qw_date",
+          "qw_mourn_plain"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL06",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "twelfth-life",
+      "path": "story/twelfth-life-capital.mjs",
+      "line": 60,
+      "beats": [
+        "rl_recover_years_5"
+      ],
+      "problem": "五十岁左右回忆三十二岁后所得沈页为四十多年。",
+      "minimal_repair": "改这些年，不虚增取得时间。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [],
+        "case_name": "CL06",
+        "full_original_sequence": [
+          "rl_raise_boy",
+          "rl_ask_actual_step",
+          "rl_choose_working_sword",
+          "rl_ask_old_records",
+          "rl_check_letter_roads",
+          "rl_accept_not_teaching",
+          "rl_keep_standing_page",
+          "rl_finish_standing",
+          "rl_mark_unknown_step",
+          "rl_circle_one_more",
+          "rl_thank_space",
+          "rl_tell_gu_anger",
+          "rl_explain_silver",
+          "rl_admit_scam_first",
+          "rl_ask_chen_limits",
+          "rl_sort_together",
+          "rl_keep_plain_defeat",
+          "rl_keep_opponent_words",
+          "rl_leave_edict_behind",
+          "rl_name_xue_gap",
+          "rl_leave_no_gift",
+          "rl_tax_ask_family",
+          "rl_train_rotating_help",
+          "rl_sit_brother",
+          "rl_let_scribe_finish",
+          "rl_accept_current_body",
+          "rl_keep_watch_word",
+          "rl_leave_each_record",
+          "rl_accept_both_lines",
+          "rl_wait_without_rank_help",
+          "rl_let_brother_keep",
+          "rl_keep_old_boxes",
+          "rl_keep_chen_question",
+          "rl_ask_young_to_watch"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL07",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "qian-kun",
+      "path": "story/qian-kun-slow.mjs",
+      "line": 8,
+      "beats": [
+        "qk_forty_three_7"
+      ],
+      "problem": "逼老宗师退五步自停，后文称司马落败。",
+      "minimal_repair": "改停手后，不新造胜负。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [
+          "qk_show_half_year"
+        ],
+        "case_name": "CL07",
+        "full_original_sequence": [
+          "qk_show_waist",
+          "qk_ask_return",
+          "qk_leave_plain_receipt",
+          "qk_ask_false_step",
+          "qk_keep_plain_question",
+          "qk_show_half_year",
+          "qk_test_current_hand",
+          "qk_sit_half_cup",
+          "qk_receive_real_refusal",
+          "qk_let_manager_speak",
+          "qk_watch_before_answer",
+          "qk_let_boy_try",
+          "qk_name_who_can_ask",
+          "qk_keep_unwon",
+          "qk_admit_age_part",
+          "qk_clear_before_mountain",
+          "qk_ask_outside_rank",
+          "qk_try_changed_choice",
+          "qk_ask_named_people",
+          "qk_keep_unseen",
+          "qk_record_rumor_bounds",
+          "qk_follow_deck_pitch",
+          "qk_take_rope_then_again",
+          "qk_keep_missing_bouts",
+          "qk_leave_open_school"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL08",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "luhua",
+      "path": "story/luhua-mountain.mjs",
+      "line": 60,
+      "beats": [
+        "lh_mountain_fifth_9"
+      ],
+      "problem": "送货人已让玩家接担，杜却称只站路边。",
+      "minimal_repair": "保留随行接窄路真担，提醒新货负荷另看。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [
+          "lh_follow_plain_turns"
+        ],
+        "case_name": "CL08",
+        "full_original_sequence": [
+          "lh_ask_first_work",
+          "lh_go_with_meng",
+          "lh_rehearse_retreat",
+          "lh_follow_jiao_line",
+          "lh_return_to_own_people",
+          "lh_ask_whole_boat",
+          "lh_watch_chen_rope",
+          "lh_take_present_hand",
+          "lh_help_chen_side",
+          "lh_ask_without_blade",
+          "lh_kneel_and_listen",
+          "lh_defend_actual",
+          "lh_take_one_use",
+          "lh_finish_wei_words",
+          "lh_name_own_defeat",
+          "lh_train_relief",
+          "lh_count_return_boats",
+          "lh_teach_after_winter",
+          "lh_try_when_seen",
+          "lh_follow_plain_turns",
+          "lh_hear_both_carries",
+          "lh_keep_lu_loss",
+          "lh_answer_tang_next",
+          "lh_stay_teaching",
+          "lh_give_next_hand"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL09",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "luhua",
+      "path": "story/luhua-tide.mjs",
+      "line": 67,
+      "beats": [
+        "lh_mainship_after_9"
+      ],
+      "problem": "阿航已报最后一舟，后文凭空说有舟无人报。",
+      "minimal_repair": "明确阿航已核，自己未逐舟亲见，回去问修船事项。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [
+          "lh_return_wounded_first"
+        ],
+        "case_name": "CL09",
+        "full_original_sequence": [
+          "lh_ask_first_work",
+          "lh_go_with_meng",
+          "lh_rehearse_retreat",
+          "lh_follow_jiao_line",
+          "lh_return_to_own_people",
+          "lh_ask_whole_boat",
+          "lh_watch_chen_rope",
+          "lh_take_present_hand",
+          "lh_help_chen_side",
+          "lh_ask_without_blade",
+          "lh_kneel_and_listen",
+          "lh_defend_actual",
+          "lh_take_one_use",
+          "lh_finish_wei_words",
+          "lh_name_own_defeat",
+          "lh_train_relief",
+          "lh_return_wounded_first",
+          "lh_teach_after_winter",
+          "lh_try_when_seen",
+          "lh_walk_market_load",
+          "lh_hear_both_carries",
+          "lh_keep_lu_loss",
+          "lh_answer_tang_next",
+          "lh_stay_teaching",
+          "lh_give_next_hand"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL10",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "luhua",
+      "path": "story/luhua-after.mjs",
+      "line": 51,
+      "beats": [
+        "lh_late_after_10"
+      ],
+      "problem": "jiao/wei混合组合被统一else伪造抢近与未问完。",
+      "minimal_repair": "两个flag独立同拍回记；另约魏不等于追人群失约。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [
+          "lh_ask_gap_later"
+        ],
+        "case_name": "CL10",
+        "full_original_sequence": [
+          "lh_ask_first_work",
+          "lh_go_with_meng",
+          "lh_rehearse_retreat",
+          "lh_follow_jiao_line",
+          "lh_return_to_own_people",
+          "lh_ask_whole_boat",
+          "lh_watch_chen_rope",
+          "lh_take_present_hand",
+          "lh_help_chen_side",
+          "lh_ask_without_blade",
+          "lh_kneel_and_listen",
+          "lh_defend_actual",
+          "lh_take_one_use",
+          "lh_ask_gap_later",
+          "lh_name_own_defeat",
+          "lh_train_relief",
+          "lh_count_return_boats",
+          "lh_teach_after_winter",
+          "lh_try_when_seen",
+          "lh_walk_market_load",
+          "lh_hear_both_carries",
+          "lh_keep_lu_loss",
+          "lh_answer_tang_next",
+          "lh_stay_teaching",
+          "lh_give_next_hand"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL11",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "luhua",
+      "path": "story/luhua-after.mjs",
+      "line": 60,
+      "beats": [
+        "lh_late_after_22"
+      ],
+      "problem": "south_loss/tang_next混合组合被写成隐败和消极等榜。",
+      "minimal_repair": "分别记卢照实演败或访不同路数；唐下一回或先走完半年约。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [
+          "lh_wait_full_record"
+        ],
+        "case_name": "CL11",
+        "full_original_sequence": [
+          "lh_ask_first_work",
+          "lh_go_with_meng",
+          "lh_rehearse_retreat",
+          "lh_follow_jiao_line",
+          "lh_return_to_own_people",
+          "lh_ask_whole_boat",
+          "lh_watch_chen_rope",
+          "lh_take_present_hand",
+          "lh_help_chen_side",
+          "lh_ask_without_blade",
+          "lh_kneel_and_listen",
+          "lh_defend_actual",
+          "lh_take_one_use",
+          "lh_finish_wei_words",
+          "lh_name_own_defeat",
+          "lh_train_relief",
+          "lh_count_return_boats",
+          "lh_teach_after_winter",
+          "lh_try_when_seen",
+          "lh_walk_market_load",
+          "lh_hear_both_carries",
+          "lh_keep_lu_loss",
+          "lh_wait_full_record",
+          "lh_stay_teaching",
+          "lh_give_next_hand"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL12",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "luhua",
+      "path": "story/luhua-after.mjs",
+      "line": 57,
+      "beats": [
+        "lh_late_after_18"
+      ],
+      "problem": "两条药路选项都实走，else却否认走过。",
+      "minimal_repair": "逐flag回忆三处迟疑及窄石；先送眼前药仍保留长期修路问题。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [
+          "lh_share_road_first"
+        ],
+        "case_name": "CL12",
+        "full_original_sequence": [
+          "lh_ask_first_work",
+          "lh_go_with_meng",
+          "lh_rehearse_retreat",
+          "lh_follow_jiao_line",
+          "lh_return_to_own_people",
+          "lh_ask_whole_boat",
+          "lh_watch_chen_rope",
+          "lh_take_present_hand",
+          "lh_help_chen_side",
+          "lh_ask_without_blade",
+          "lh_kneel_and_listen",
+          "lh_defend_actual",
+          "lh_take_one_use",
+          "lh_finish_wei_words",
+          "lh_name_own_defeat",
+          "lh_train_relief",
+          "lh_count_return_boats",
+          "lh_teach_after_winter",
+          "lh_try_when_seen",
+          "lh_walk_market_load",
+          "lh_share_road_first",
+          "lh_keep_lu_loss",
+          "lh_answer_tang_next",
+          "lh_stay_teaching",
+          "lh_give_next_hand"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL13",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "luhua",
+      "path": "story/luhua-after.mjs",
+      "line": 29,
+      "beats": [
+        "lh_two_bowls_7"
+      ],
+      "problem": "谢救师者选项被贬为从未讲师会失手、门人全误解。",
+      "minimal_repair": "墓前回忆五湖援手及谢过真人，不编造门人错误。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [
+          "lh_thank_other_school"
+        ],
+        "case_name": "CL13",
+        "full_original_sequence": [
+          "lh_ask_first_work",
+          "lh_go_with_meng",
+          "lh_rehearse_retreat",
+          "lh_follow_jiao_line",
+          "lh_thank_other_school",
+          "lh_ask_whole_boat",
+          "lh_watch_chen_rope",
+          "lh_take_present_hand",
+          "lh_help_chen_side",
+          "lh_ask_without_blade",
+          "lh_kneel_and_listen",
+          "lh_defend_actual",
+          "lh_take_one_use",
+          "lh_finish_wei_words",
+          "lh_name_own_defeat",
+          "lh_train_relief",
+          "lh_count_return_boats",
+          "lh_teach_after_winter",
+          "lh_try_when_seen",
+          "lh_walk_market_load",
+          "lh_hear_both_carries",
+          "lh_keep_lu_loss",
+          "lh_answer_tang_next",
+          "lh_stay_teaching",
+          "lh_give_next_hand"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL14",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "luhua",
+      "path": "story/luhua-seat.mjs",
+      "line": 25,
+      "beats": [
+        "lh_third_day_4",
+        "lh_third_day_5",
+        "lh_third_day_6"
+      ],
+      "problem": "水龙手蒋衡被误写篙，和赵崇山混用。",
+      "minimal_repair": "改掌路/掌落处，保留看整船与盯一点的差别。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [],
+        "case_name": "CL14",
+        "full_original_sequence": [
+          "lh_ask_first_work",
+          "lh_go_with_meng",
+          "lh_rehearse_retreat",
+          "lh_follow_jiao_line",
+          "lh_return_to_own_people",
+          "lh_ask_whole_boat",
+          "lh_watch_chen_rope",
+          "lh_take_present_hand",
+          "lh_help_chen_side",
+          "lh_ask_without_blade",
+          "lh_kneel_and_listen",
+          "lh_defend_actual",
+          "lh_take_one_use",
+          "lh_finish_wei_words",
+          "lh_name_own_defeat",
+          "lh_train_relief",
+          "lh_count_return_boats",
+          "lh_teach_after_winter",
+          "lh_try_when_seen",
+          "lh_walk_market_load",
+          "lh_hear_both_carries",
+          "lh_keep_lu_loss",
+          "lh_answer_tang_next",
+          "lh_stay_teaching",
+          "lh_give_next_hand"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL15",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "luhua",
+      "path": "story/luhua-tide.mjs",
+      "line": 33,
+      "beats": [
+        "lh_learn_sea_6"
+      ],
+      "problem": "洞庭蒋的choice回响错称江陵，且否认已保留一负一平。",
+      "minimal_repair": "明确洞庭问席两场；false如实保留一负一平，不造执招失误。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [
+          "lh_keep_both_results"
+        ],
+        "case_name": "CL15",
+        "full_original_sequence": [
+          "lh_ask_first_work",
+          "lh_go_with_meng",
+          "lh_rehearse_retreat",
+          "lh_follow_jiao_line",
+          "lh_return_to_own_people",
+          "lh_ask_whole_boat",
+          "lh_watch_chen_rope",
+          "lh_keep_both_results",
+          "lh_help_chen_side",
+          "lh_ask_without_blade",
+          "lh_kneel_and_listen",
+          "lh_defend_actual",
+          "lh_take_one_use",
+          "lh_finish_wei_words",
+          "lh_name_own_defeat",
+          "lh_train_relief",
+          "lh_count_return_boats",
+          "lh_teach_after_winter",
+          "lh_try_when_seen",
+          "lh_walk_market_load",
+          "lh_hear_both_carries",
+          "lh_keep_lu_loss",
+          "lh_answer_tang_next",
+          "lh_stay_teaching",
+          "lh_give_next_hand"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL16",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "luhua",
+      "path": "story/luhua-tide.mjs",
+      "line": 45,
+      "beats": [
+        "lh_third_sea_6"
+      ],
+      "problem": "已在双浮舟走交接，后来被写成未告诉阿航哪里错。",
+      "minimal_repair": "回记平水双舟试过、海浪更乱须确认，不否认学习。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [
+          "lh_walk_raft_again"
+        ],
+        "case_name": "CL16",
+        "full_original_sequence": [
+          "lh_ask_first_work",
+          "lh_go_with_meng",
+          "lh_rehearse_retreat",
+          "lh_follow_jiao_line",
+          "lh_return_to_own_people",
+          "lh_ask_whole_boat",
+          "lh_watch_chen_rope",
+          "lh_take_present_hand",
+          "lh_help_chen_side",
+          "lh_ask_without_blade",
+          "lh_kneel_and_listen",
+          "lh_defend_actual",
+          "lh_take_one_use",
+          "lh_finish_wei_words",
+          "lh_walk_raft_again",
+          "lh_train_relief",
+          "lh_count_return_boats",
+          "lh_teach_after_winter",
+          "lh_try_when_seen",
+          "lh_walk_market_load",
+          "lh_hear_both_carries",
+          "lh_keep_lu_loss",
+          "lh_answer_tang_next",
+          "lh_stay_teaching",
+          "lh_give_next_hand"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL17",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "north",
+      "path": "story/north-after.mjs",
+      "line": 60,
+      "beats": [
+        "nq_last_tea_5",
+        "nq_last_tea_6"
+      ],
+      "problem": "76岁茶席回想尚未发生的总谱9对11顾园之战。",
+      "minimal_repair": "明示80余整理旧页时并记两件事，76茶席未闻顾园。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [],
+        "case_name": "CL17",
+        "full_original_sequence": [
+          "nq_try_lower",
+          "nq_ask_more",
+          "nq_stop_before_shake",
+          "nq_show_other_foot",
+          "nq_leave_today_open",
+          "nq_ask_next_honest",
+          "nq_teach_before_departure",
+          "nq_trace_first_loss",
+          "nq_leave_return",
+          "nq_send_real_failure",
+          "nq_answer_yuan_method",
+          "nq_accept_teacher_limit",
+          "nq_force_lifting_room",
+          "nq_let_loss_stand",
+          "nq_split_own_share",
+          "nq_ask_mender_name",
+          "nq_write_relearn",
+          "nq_try_no_display",
+          "nq_meet_pupil_plain",
+          "nq_take_han_step",
+          "nq_reply_to_pupil",
+          "nq_stand_seventh",
+          "nq_keep_gate_witness",
+          "nq_read_chosen_place",
+          "nq_continue_real_change",
+          "nq_close_real_space",
+          "nq_continue_without_claim",
+          "nq_ask_three_oh_one",
+          "nq_keep_gu_in_notes",
+          "nq_take_chair_piece",
+          "nq_end_teach"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL18",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "luhua",
+      "path": "story/luhua-mountain.mjs",
+      "line": 18,
+      "beats": [
+        "lh_road_two_4",
+        "lh_road_two_5"
+      ],
+      "problem": "陈震47岁劫船伤右肩，65回忆误为左肩。",
+      "minimal_repair": "两分支均改右肩。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [],
+        "case_name": "CL18",
+        "full_original_sequence": [
+          "lh_ask_first_work",
+          "lh_go_with_meng",
+          "lh_rehearse_retreat",
+          "lh_follow_jiao_line",
+          "lh_return_to_own_people",
+          "lh_ask_whole_boat",
+          "lh_watch_chen_rope",
+          "lh_take_present_hand",
+          "lh_help_chen_side",
+          "lh_ask_without_blade",
+          "lh_kneel_and_listen",
+          "lh_defend_actual",
+          "lh_take_one_use",
+          "lh_finish_wei_words",
+          "lh_name_own_defeat",
+          "lh_train_relief",
+          "lh_count_return_boats",
+          "lh_teach_after_winter",
+          "lh_try_when_seen",
+          "lh_walk_market_load",
+          "lh_hear_both_carries",
+          "lh_keep_lu_loss",
+          "lh_answer_tang_next",
+          "lh_stay_teaching",
+          "lh_give_next_hand"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL19",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "luhua",
+      "path": "story/luhua-after.mjs",
+      "line": 54,
+      "beats": [
+        "lh_late_after_14"
+      ],
+      "problem": "defend/once混合组合伪造不服与责怪对手研究自己，逆选项原意。",
+      "minimal_repair": "两flag独立回记真守、让破处、受一次限制与询问被研究。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [
+          "lh_ask_why_only_once"
+        ],
+        "case_name": "CL19",
+        "full_original_sequence": [
+          "lh_ask_first_work",
+          "lh_go_with_meng",
+          "lh_rehearse_retreat",
+          "lh_follow_jiao_line",
+          "lh_return_to_own_people",
+          "lh_ask_whole_boat",
+          "lh_watch_chen_rope",
+          "lh_take_present_hand",
+          "lh_help_chen_side",
+          "lh_ask_without_blade",
+          "lh_kneel_and_listen",
+          "lh_defend_actual",
+          "lh_ask_why_only_once",
+          "lh_finish_wei_words",
+          "lh_name_own_defeat",
+          "lh_train_relief",
+          "lh_count_return_boats",
+          "lh_teach_after_winter",
+          "lh_try_when_seen",
+          "lh_walk_market_load",
+          "lh_hear_both_carries",
+          "lh_keep_lu_loss",
+          "lh_answer_tang_next",
+          "lh_stay_teaching",
+          "lh_give_next_hand"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL20",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "dongting",
+      "path": "story/dongting-author.mjs",
+      "line": 176,
+      "beats": [
+        "dt_repair_10"
+      ],
+      "problem": "救人+活绳+休息成功，汪苇脚健康，参与选择仍说脚不能用。",
+      "minimal_repair": "按健康三条件同拍区分能搬与伤后坐理索，不抹伤路线。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [
+          "dt_set_people"
+        ],
+        "case_name": "CL20",
+        "full_original_sequence": [
+          "dt_check_rope",
+          "dt_float_ready",
+          "dt_accept_recusal",
+          "dt_name_tasks",
+          "dt_share_channel",
+          "dt_rest_worker",
+          "dt_take_positions",
+          "dt_save_company",
+          "dt_help_chen",
+          "dt_chen_own_record",
+          "dt_set_people"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL21",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "dead-ranking",
+      "path": "story/dead-ranking-after.mjs",
+      "line": 93,
+      "beats": [
+        "dr_later_teacher_5",
+        "dr_later_teacher_6",
+        "dr_last_page_5"
+      ],
+      "problem": "road lesson复用1/2数字，却按room lesson回忆答第一句/示范；road1又被统一写成留宿一夜。",
+      "minimal_repair": "在原拍按career区分两种lesson，外县尾声再按lesson区分站位或留夜。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [
+          "dr_career_visit"
+        ],
+        "case_name": "CL21",
+        "full_original_sequence": [
+          "dr_ask_letter_hand",
+          "dr_pickup_training",
+          "dr_liang_private",
+          "dr_borrow_chase",
+          "dr_keep_claim_separate",
+          "dr_watch_actual_person",
+          "dr_turn_small",
+          "dr_ask_reopen_plain",
+          "dr_ask_actual_test",
+          "dr_wait_until_land",
+          "dr_leave_visit_time",
+          "dr_ask_zhao_direct",
+          "dr_ask_each_responsibility",
+          "dr_keep_two_accounts",
+          "dr_tell_three_first",
+          "dr_face_one_by_one",
+          "dr_face_let_askers_in",
+          "dr_face_write_own_words",
+          "dr_ask_each_seen",
+          "dr_ask_old_workers",
+          "dr_wait_for_gu",
+          "dr_ask_own_words",
+          "dr_follow_land_money",
+          "dr_ask_knowledge_not_seizure",
+          "dr_eyes_zhou",
+          "dr_zhou_read_whole",
+          "dr_zhou_leave_space",
+          "dr_read_names_to_people",
+          "dr_tell_life_with_limits",
+          "dr_give_unfinished_letter",
+          "dr_keep_wudeng_name",
+          "dr_career_visit",
+          "dr_road_separate_views"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-sweep-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL22",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "dead-ranking",
+      "path": "story/dead-ranking-case.mjs",
+      "line": 74,
+      "beats": [
+        "dr_living_benefit_10"
+      ],
+      "problem": "直接追钱+继业门人现场组合被倒写成从接路反推。",
+      "minimal_repair": "钱路与问话对象两个flag独立内联，四组合如实记。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [
+          "dr_ask_in_front_of_heirs"
+        ],
+        "case_name": "CL22",
+        "full_original_sequence": [
+          "dr_ask_letter_hand",
+          "dr_pickup_training",
+          "dr_liang_private",
+          "dr_borrow_chase",
+          "dr_keep_claim_separate",
+          "dr_watch_actual_person",
+          "dr_turn_small",
+          "dr_ask_reopen_plain",
+          "dr_ask_actual_test",
+          "dr_wait_until_land",
+          "dr_leave_visit_time",
+          "dr_ask_zhao_direct",
+          "dr_ask_each_responsibility",
+          "dr_keep_two_accounts",
+          "dr_tell_three_first",
+          "dr_face_one_by_one",
+          "dr_face_let_askers_in",
+          "dr_face_write_own_words",
+          "dr_ask_each_seen",
+          "dr_ask_old_workers",
+          "dr_wait_for_gu",
+          "dr_ask_own_words",
+          "dr_follow_land_money",
+          "dr_ask_in_front_of_heirs",
+          "dr_eyes_zhou",
+          "dr_zhou_read_whole",
+          "dr_zhou_leave_space",
+          "dr_read_names_to_people",
+          "dr_tell_life_with_limits",
+          "dr_give_unfinished_letter",
+          "dr_keep_wudeng_name",
+          "dr_career_teach",
+          "dr_room_let_next_answer"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-sweep-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL23",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "dead-ranking",
+      "path": "story/dead-ranking-people.mjs",
+      "line": 8,
+      "beats": [
+        "dr_shen_three_6",
+        "dr_shen_three_7",
+        "dr_shen_three_8"
+      ],
+      "problem": "仅第二或第三剑异选也统一说第一剑交承重左脚。",
+      "minimal_repair": "三次复原按各自变量逐项说，不由任意异选推断另场行动。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [
+          "dr_leave_false_opening"
+        ],
+        "case_name": "CL23",
+        "full_original_sequence": [
+          "dr_ask_letter_hand",
+          "dr_pickup_training",
+          "dr_liang_private",
+          "dr_borrow_chase",
+          "dr_keep_claim_separate",
+          "dr_leave_false_opening",
+          "dr_turn_small",
+          "dr_ask_reopen_plain",
+          "dr_ask_actual_test",
+          "dr_wait_until_land",
+          "dr_leave_visit_time",
+          "dr_ask_zhao_direct",
+          "dr_ask_each_responsibility",
+          "dr_keep_two_accounts",
+          "dr_tell_three_first",
+          "dr_face_one_by_one",
+          "dr_face_let_askers_in",
+          "dr_face_write_own_words",
+          "dr_ask_each_seen",
+          "dr_ask_old_workers",
+          "dr_wait_for_gu",
+          "dr_ask_own_words",
+          "dr_follow_land_money",
+          "dr_ask_knowledge_not_seizure",
+          "dr_eyes_zhou",
+          "dr_zhou_read_whole",
+          "dr_zhou_leave_space",
+          "dr_read_names_to_people",
+          "dr_tell_life_with_limits",
+          "dr_give_unfinished_letter",
+          "dr_keep_wudeng_name",
+          "dr_career_teach",
+          "dr_room_let_next_answer"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-sweep-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL24",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "luhua",
+      "path": "story/luhua-seven.mjs",
+      "line": 34,
+      "beats": [
+        "lh_seventy_odd_7",
+        "lh_seventy_odd_8"
+      ],
+      "problem": "先稳送再折返、等药铺核人都是实作，混合else却称两件都半、图省事。",
+      "minimal_repair": "逐flag说接匣与核药先后，先浅教是复盘接手次序，不凭空责备懒。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [
+          "lh_finish_box_then_return"
+        ],
+        "case_name": "CL24",
+        "full_original_sequence": [
+          "lh_ask_first_work",
+          "lh_go_with_meng",
+          "lh_rehearse_retreat",
+          "lh_follow_jiao_line",
+          "lh_return_to_own_people",
+          "lh_ask_whole_boat",
+          "lh_watch_chen_rope",
+          "lh_take_present_hand",
+          "lh_help_chen_side",
+          "lh_finish_box_then_return",
+          "lh_kneel_and_listen",
+          "lh_defend_actual",
+          "lh_take_one_use",
+          "lh_finish_wei_words",
+          "lh_name_own_defeat",
+          "lh_train_relief",
+          "lh_count_return_boats",
+          "lh_teach_after_winter",
+          "lh_try_when_seen",
+          "lh_walk_market_load",
+          "lh_hear_both_carries",
+          "lh_keep_lu_loss",
+          "lh_answer_tang_next",
+          "lh_stay_teaching",
+          "lh_give_next_hand"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-sweep-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL25",
+      "priority": "P1",
+      "status": "FIXED_RUNTIME_VERIFIED",
+      "slug": "dongting",
+      "path": "story/dongting-author.mjs",
+      "line": 141,
+      "beats": [
+        "dt_raid_return_13",
+        "dt_raid_return_14"
+      ],
+      "problem": "先报停试/系舟处或已报本船在内，统一else却当从未报过船位。",
+      "minimal_repair": "逐flag分明已听到的报告与尚未配熟/未接到的内外口令，承认报告仍不充分的真实限制。",
+      "regression": {
+        "default": "first available choice",
+        "overrides": [
+          "dt_go_report"
+        ],
+        "case_name": "CL25",
+        "full_original_sequence": [
+          "dt_check_rope",
+          "dt_float_ready",
+          "dt_accept_recusal",
+          "dt_name_tasks",
+          "dt_share_channel",
+          "dt_rest_worker",
+          "dt_go_report",
+          "dt_save_company",
+          "dt_help_chen",
+          "dt_chen_own_record",
+          "dt_set_days"
+        ]
+      },
+      "evidence": [
+        "canon-late-regression-sweep-before.log",
+        "canon-late-regression-after.log",
+        "canon-late-structure-check.json",
+        "canon-late-runtime-structure.json"
+      ],
+      "browser": "NOT VERIFIED by this sub-audit"
+    },
+    {
+      "id": "CL-EDIT-01",
+      "priority": "P2",
+      "status": "DESIGN_OPPORTUNITY",
+      "path": "story/north-notes-author.mjs",
+      "line": 86,
+      "beats": [
+        "nn_notes_remain_1"
+      ],
+      "problem": "互相继承对方的选择与记忆接近实现术语，弱于其他实物档页语言。",
+      "minimal_repair": "可原拍替为各页只记各自亲历，未见的事不替对方填。",
+      "reason_not_changed": "无事实或运行时错误，最终冻结后不再动源；独立编辑机会保留。"
+    }
+  ]
+}

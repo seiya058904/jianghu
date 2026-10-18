@@ -1,10 +1,10 @@
 {
   "status": "AUXILIARY_PLAYABLE_DRAFT_NOT_FINAL",
-  "beats": 114,
+  "beats": 142,
   "decisions": 11,
   "options": 22,
   "exhaustiveBinaryPaths": 2048,
-  "longestPassiveGap": 13,
+  "longestPassiveGap": 14,
   "newArt": 0,
   "limits": "Original historical facts fixed; dialogue, staffing replies and two later readers are canon-compatible additions. Borrowed portrait templates are not dedicated identities; no new true CG or three-round editorial acceptance."
 }

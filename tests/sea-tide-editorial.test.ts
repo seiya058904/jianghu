@@ -1,3 +1,5 @@
+import {historicalBytes} from './historical-baselines.ts';
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {writeFileSync} from 'node:fs';
@@ -16,13 +18,13 @@ function at(id:string){const s=new VNRuntime(current,version);while(s.frame.id!=
 
 test('Sea Tide V2 256 combinations of eight dimensions preserve public history and 21 decisions',()=>{
  const rows=[];for(let mask=0;mask<256;mask++){const choices=dimensions.map((pair,i)=>pair[(mask>>i)&1]),r=run(choices);assert.equal(r.s.commands.filter(c=>c.startsWith('choice:')).length,21);for(const phrase of ['十二岁','五日','吐了三日','四十七个','十六个','外院六年','十七岁','十八岁','连续七日','二十九岁','十一艘','三艘撞礁','二十余人','木梁把你压','三步','最后一个离船','半年后','近三十','两人都未入化','一百零六合','北榜第十四','四十多','九十余','第二招','第五招','第七招','第九招','棍仍在外侧','四十九岁','候选五人','自认第二','定下来的却是周望海','七年','七条','九条','十四年后，六十三岁','第九席','一根手指','确切境界','总谱第三','不知道'])assert.ok(r.text.includes(phrase),phrase);assert.equal(r.s.frame.ending,(mask&128)?'st_next_watch':'st_next_step');assert.equal(r.text.includes('腕上的伤养了两个月'),Boolean(mask&2));assert.ok(r.s.frames.findIndex(f=>f.stage.scene==='st_teacourt')<r.s.frames.findIndex(f=>f.id==='st_sixty_three_1'));assert.deepEqual(restoreVN(JSON.stringify(r.s.save()),edition).session.frames,r.s.frames);rows.push({mask,choices,frames:r.s.frames.length,ending:r.s.frame.ending})}
- writeFileSync('docs/evidence/v6/sea-tide-editorial-branch-audit.json',JSON.stringify({scope:'All 256 combinations of eight named dimensions, other choices first legal. Not exhaustive over 21 decisions.',rows},null,2)+'\n');
+ writeFileSync(evidencePath('docs/evidence/v6/sea-tide-editorial-branch-audit.json'),JSON.stringify({scope:'All 256 combinations of eight named dimensions, other choices first legal. Not exhaustive over 21 decisions.',rows},null,2)+'\n');
 });
 
 test('Sea Tide V2 fixes the V1 fictitious overnight bill for a prepared handoff and retains the actual failed-handoff costs',()=>{
  const legacy=run(['st_rehearse_handoff'],archive,'sea-tide-1.0.0');assert.match(legacy.text,/昨天多候的一夜/);const rows=[];
  for(const shared of [true,false])for(const paid of [true,false]){const choices=[shared?'st_prepare_shared_post':'st_prepare_fast_post',paid?'st_pay_waiting':'st_rehearse_handoff'],r=run(choices),text=r.s.frames.filter(f=>f.id.startsWith('st_handoff_account_')).map(f=>f.text).join('\n');if(shared){assert.match(text,paid?/账上没有候夜/:/今日没人候夜/);assert.doesNotMatch(text,/候夜和次日少接|照实付昨夜与短工/)}else assert.match(text,paid?/候夜和次日少接的短工/:/照实付昨夜与短工/);rows.push({shared,paid,actualSettlement:text})}
- writeFileSync('docs/evidence/v6/sea-tide-editorial-settlement-audit.json',JSON.stringify({V1preparedRehearsalErroneouslyBilledNight:true,V2rows:rows},null,2)+'\n');
+ writeFileSync(evidencePath('docs/evidence/v6/sea-tide-editorial-settlement-audit.json'),JSON.stringify({V1preparedRehearsalErroneouslyBilledNight:true,V2rows:rows},null,2)+'\n');
 });
 
 test('Sea Tide V2 childhood knot does not decide adult injury, and both learned tide styles remain constrained by the fixed mast',()=>{
@@ -38,8 +40,8 @@ test('Sea Tide V2 both childhood gestures return in both late duties at a late p
  const cg=at('st_outer_years_1');assert.equal(cg.frame.stage.cg,'rigging');cg.advance();assert.equal(cg.frame.stage.cg,'rigging');cg.advance();assert.equal(cg.frame.stage.cg,undefined);const question=at('st_outer_years_4');assert.equal(question.frame.stage.camera,'portrait');assert.deepEqual(question.frame.stage.cast,['st_coach']);question.advance();assert.equal(question.frame.stage.camera,undefined);
 });
 
-test('Sea Tide V1 bytes, older raw staging and the unchanged Sea V2/canon remain protected',()=>{
- assert.equal(seaTideCharacters.st_boatkeeper.portrait.file,'v5/npc-boatwoman.webp');assert.equal(seaTideCharacters.st2_boatkeeper.portrait.file,'v5/npc-elder-male.webp');assert.equal(seaTideCharacters.st2_boatkeeper.canonicalIdentity,'st_boatkeeper');const ledger=frozenJson<{sha256:Record<string,string>}>('docs/archives/sea-tide-v1-editorial-baseline/manifest.json');if(ledger)for(const [path,key]of [['src/generated/sea-tide-v1.json','src/generated/sea-tide.json'],['story/sea-tide-v1.ink','story/sea-tide.ink'],['src/generated/sea.json','src/generated/sea.json'],['宋世江湖.md','宋世江湖.md']] as [string,string][]){const b=frozenBytes(path);if(b)assert.equal(createHash('sha256').update(b).digest('hex'),ledger.sha256[key],`${path} must stay byte-identical to the recorded ${key}`)}const s=new VNRuntime(before,'sea-tide-1.0.0');while(s.frame.id!=='st_outer_years_1')s.frame.choices.length?s.choose(s.frame.choices[0].id):s.advance();assert.equal(restoreVN(JSON.stringify(s.save()),{content:archive,previousContent:before,version:'sea-tide-1.0.0'}).migration,'illustration-staging');assert.throws(()=>restoreVN(JSON.stringify(s.save()),edition),/版本/);assert.throws(()=>restoreVN(JSON.stringify({...s.save(),storyContentVersion:version}),edition),/状态/);
+test('Sea Tide V1 bytes, older raw staging and historical Sea V2/canon remain protected',()=>{
+ assert.equal(seaTideCharacters.st_boatkeeper.portrait.file,'v5/npc-boatwoman.webp');assert.equal(seaTideCharacters.st2_boatkeeper.portrait.file,'v5/npc-elder-male.webp');assert.equal(seaTideCharacters.st2_boatkeeper.canonicalIdentity,'st_boatkeeper');const ledger=frozenJson<{sha256:Record<string,string>}>('docs/archives/sea-tide-v1-editorial-baseline/manifest.json');if(ledger)for(const [path,key]of [['src/generated/sea-tide-v1.json','src/generated/sea-tide.json'],['story/sea-tide-v1.ink','story/sea-tide.ink'],['src/generated/sea.json','src/generated/sea.json'],['宋世江湖.md','宋世江湖.md']] as [string,string][]){const b=historicalBytes(path);if(b)assert.equal(createHash('sha256').update(b).digest('hex'),ledger.sha256[key],`${path} must stay byte-identical to the recorded ${key}`)}const s=new VNRuntime(before,'sea-tide-1.0.0');while(s.frame.id!=='st_outer_years_1')s.frame.choices.length?s.choose(s.frame.choices[0].id):s.advance();assert.equal(restoreVN(JSON.stringify(s.save()),{content:archive,previousContent:before,version:'sea-tide-1.0.0'}).migration,'illustration-staging');assert.throws(()=>restoreVN(JSON.stringify(s.save()),edition),/版本/);assert.throws(()=>restoreVN(JSON.stringify({...s.save(),storyContentVersion:version}),edition),/状态/);
 });
 
 test('Sea Tide current and V1 archive load distinct content and namespaces while first-volume Sea stays V2',async()=>{

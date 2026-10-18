@@ -1,0 +1,107 @@
+{
+ "work": "xuanmen+white-stone",
+ "rounds": [
+  {
+   "round": 1,
+   "focus": "戏剧结构、因果与节奏（两篇连审）",
+   "records": [
+    {
+     "round": 1,
+     "file": "story/xuanmen-author.mjs",
+     "beat": "xm_seventy（say 蒙太奇）",
+     "originalLineOrAction": "七十岁…九十岁，比七十又深许多。十年，又十年，那道门仍在前头。",
+     "diagnosis": "数十年求索压缩为纯抽象排比，无具体年月锚",
+     "changedLineOrAction": "嵌入'收徒、送葬、扫阶、教剑'四个具体动作",
+     "whyItIsBetter": "百余年等待有了可看见的日常，而非两个数字；不增拍数",
+     "choicePayoffBefore": "无",
+     "choicePayoffAfter": "无",
+     "sourceCanonRange": "宋世江湖.md 7788-8251",
+     "testEvidence": "tests/xuanmen.test.ts 3/3 PASS（'没有留下'锚保留）",
+     "unresolvedIssue": "无"
+    },
+    {
+     "round": 1,
+     "file": "story/xuanmen-author.mjs + story/white-stone-author.mjs",
+     "beat": "全篇结构复核",
+     "originalLineOrAction": "xuanmen：泥地(23)→太和之变(40余)→九席(+3年)→石阶→许玄度(70-141)→身后；white-stone：雪灾十二日→白石之议→祁玄岳问山→顾寒声→守卷人→公孙无我→当代弟子",
+     "diagnosis": "复核确认：跨代/跨百年全部用显式年代卡与视角切换（'此刻你是''视角换成''时代再换'），无角色暗中不老或凭空目击；石苍之战的地点细节（石阶/湿地/旧伤/身后同伴）按原典落在打法里",
+     "changedLineOrAction": "无（保留）",
+     "whyItIsBetter": "—",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "7788-8251 / 8252-11849",
+     "testEvidence": "两篇 transcript 断言、POV 舞台隔离断言（死者不再上台/祁玄岳不在自己场次）全过",
+     "unresolvedIssue": "无"
+    },
+    {
+     "round": 1,
+     "file": "story/white-stone-author.mjs",
+     "beat": "ws_eastward_letter",
+     "originalLineOrAction": "你说不用，自己想找已经在里面走了几十年的人。",
+     "diagnosis": "句子缠夹（'想找已经'连读歧义）",
+     "changedLineOrAction": "'你说不用——自己想找的，是已经在里面走了几十年的人。'",
+     "whyItIsBetter": "祁玄岳'不找返真门外的第一、找门里的人'的动机一次读清",
+     "choicePayoffBefore": "无",
+     "choicePayoffAfter": "无",
+     "sourceCanonRange": "9062-9600",
+     "testEvidence": "3/3 PASS",
+     "unresolvedIssue": "无"
+    }
+   ]
+  },
+  {
+   "round": 2,
+   "focus": "NPC 声线",
+   "records": [
+    {
+     "round": 2,
+     "file": "story/xuanmen-author.mjs + story/white-stone-author.mjs",
+     "beat": "声线盲测（去名 6 句）",
+     "originalLineOrAction": "'路我知道。换班的人是谁？'（张无垢）/'武当差的不是人多。差的是一个真正走进去的人。'（石苍）/'真改成最能打的九个，药还是得有人送。别说得像药自己会上山。'（张无垢）/'今日是你高。'（司马洞玄）/'不像。'（法晦）/'我……先照您的脚。'（顾寒声）",
+     "diagnosis": "张无垢的实务短句两次出现均同声口；石苍一句立威；法晦两字答与司马洞玄的认真长答区分；顾寒声的迟疑 ellipsis 与其'怕不像'呼应",
+     "changedLineOrAction": "无（保留）",
+     "whyItIsBetter": "—",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "—",
+     "testEvidence": "人工抽检",
+     "unresolvedIssue": "无"
+    }
+   ]
+  },
+  {
+   "round": 3,
+   "focus": "原典复测与演出",
+   "records": [
+    {
+     "round": 3,
+     "file": "story/*.mjs",
+     "beat": "canon 数字核对",
+     "originalLineOrAction": "xuanmen：29/19/17招、近两百招、右肩中掌左臂受伤、同时停、+3年九席、张守一141、张玄度68看剑、17年后许无尘返真、嫉妒/太好了；white-stone：十二日、三年、九十七手、十一场六胜五未定、三日后闭门一月、十九日/前十八日/六十余招、两个入化、又练十年、三个月没练、遗录不得照练、第二次坐旧总谱第一、宁有宁的尺度、夏千秋总谱第五、谢青云三月后返江南少七式",
+     "diagnosis": "逐项对照原典全部吻合；'祁玄岳无确定死期''无生之乱不请出山也不宣布死'的历史未明处均未自造",
+     "changedLineOrAction": "无",
+     "whyItIsBetter": "—",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "7788-11849",
+     "testEvidence": "两篇 transcript 断言清单全过",
+     "unresolvedIssue": "无"
+    },
+    {
+     "round": 3,
+     "file": "story/white-stone-author.mjs",
+     "beat": "ws_snow 石苍台词复检",
+     "originalLineOrAction": "canon 8152：石苍站太和宫前所说=改编 xm_stone_stop 两句",
+     "diagnosis": "'武当差的不是人多。差的是一个真正走进去的人。'与原典一致；'极近返真不是夸人话而是一整层武林'的红线（不把门槛写成游戏等级）保持",
+     "changedLineOrAction": "无",
+     "whyItIsBetter": "—",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "7890/8152",
+     "testEvidence": "3/3 PASS",
+     "unresolvedIssue": "无"
+    }
+   ]
+  }
+ ]
+}

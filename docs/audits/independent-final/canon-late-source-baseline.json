@@ -1,0 +1,442 @@
+[
+  {
+    "path": "story/beyond-ranking-author.mjs",
+    "sha256": "93dd9673eddddd2f998213cdd41575aa0698aa1492aa1f66288fe61fd8073bf5",
+    "line_count": 156,
+    "reviewed_ranges": "1-156",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/chronicle-writer.mjs",
+    "sha256": "8ccf2265de92635da48126014bb9d47a9bc011073db6bce34356f687e410ec46",
+    "line_count": 13,
+    "reviewed_ranges": "1-13",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/dead-ranking-after.mjs",
+    "sha256": "97a44e1580434adbed09aeb65efb1cbd77654ceba5718ce380f22a005ae75f33",
+    "line_count": 104,
+    "reviewed_ranges": "1-104",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/dead-ranking-author.mjs",
+    "sha256": "004b9d6544be60779fda2b5ac594375f30b57dfaa618286d6f7f79765d2fe987",
+    "line_count": 12,
+    "reviewed_ranges": "1-12",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/dead-ranking-bouts.mjs",
+    "sha256": "23bc2088f90837f7f724a86243b5b95fa580b606823adf22dc436e962b0549db",
+    "line_count": 91,
+    "reviewed_ranges": "1-91",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/dead-ranking-case.mjs",
+    "sha256": "766b906b7808adc92810923320d362520b32faeeb7d0e404d463a79c620b458d",
+    "line_count": 77,
+    "reviewed_ranges": "1-77",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/dead-ranking-council.mjs",
+    "sha256": "f756498bb352920272a7285ca76eb543d4c5b51489fc9701faed19c9a72e2bca",
+    "line_count": 75,
+    "reviewed_ranges": "1-75",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/dead-ranking-people.mjs",
+    "sha256": "2fb1446105b356ddefd829dc5b51a897eee7001156e3c3961f331c64d345210f",
+    "line_count": 147,
+    "reviewed_ranges": "1-147",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/dongting-author.mjs",
+    "sha256": "6390506c32396ba051515f13ffbc3665bb3b5ac6878096752511fc1068dd5ae4",
+    "line_count": 199,
+    "reviewed_ranges": "1-199",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/jade-after.mjs",
+    "sha256": "350134572bd38edba7a7db66a384bce2e50887bdf162d5a61c43454c234f3849",
+    "line_count": 94,
+    "reviewed_ranges": "1-94",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/jade-author.mjs",
+    "sha256": "b3ec39a44759127ff16b1e033dab16ce26fcb09e24b4b94b0d2e274ca9aa3b35",
+    "line_count": 10,
+    "reviewed_ranges": "1-10",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/jade-buy.mjs",
+    "sha256": "32d7febcf0ad0321b0af022e2c88ab520332187f39b2afcfaf7586b31b94b9ed",
+    "line_count": 84,
+    "reviewed_ranges": "1-84",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/jade-grain.mjs",
+    "sha256": "5251a1ac5a27e1eac135872c54f707edf183fcf8fe9281e6e5793fd52554e64a",
+    "line_count": 83,
+    "reviewed_ranges": "1-83",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/jade-night.mjs",
+    "sha256": "18663181f1a9ae35b562291ab34670243820c7f80dce474e38da79198845113c",
+    "line_count": 106,
+    "reviewed_ranges": "1-106",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/jade-stores.mjs",
+    "sha256": "910a8b84f8508019a24532cd799741bd2e9206dae80f6e928641c1f43107428c",
+    "line_count": 86,
+    "reviewed_ranges": "1-86",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/jade-thieves-aftermath.mjs",
+    "sha256": "004bfe6c14423a9a2a1149e385dffdcff71d66c0d6ff0b8b78e21d131e917ea6",
+    "line_count": 102,
+    "reviewed_ranges": "1-102",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/jade-thieves-author.mjs",
+    "sha256": "b5bc47530042667b9bdd11a30ed93045a2b2b26ad4a79b9738cd8aa4581a59b1",
+    "line_count": 13,
+    "reviewed_ranges": "1-13",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/jade-thieves-flight.mjs",
+    "sha256": "9e294b13d85f4e778f96f26dbbc95db0d1559b1e3a10a9064043197fd67603f8",
+    "line_count": 71,
+    "reviewed_ranges": "1-71",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/jade-thieves-temple.mjs",
+    "sha256": "b7f7808344af4ef711f336e20f565a9505a0df2a22118cf294d369810afb32fd",
+    "line_count": 116,
+    "reviewed_ranges": "1-116",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/jade-thieves-vault.mjs",
+    "sha256": "a1011d0e7657517c30f1fd1224a98a0fe800731b65626172892b062a40acddcd",
+    "line_count": 77,
+    "reviewed_ranges": "1-77",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/luhua-after.mjs",
+    "sha256": "fe7bba446335a324f6ef9d1a7ecf23fdf6cf65a5bfad8ee3b8a0cef76fa3d81d",
+    "line_count": 85,
+    "reviewed_ranges": "1-85",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/luhua-author.mjs",
+    "sha256": "7af35abc500a45849d5945e430f0279adbf402af8c85ec1f7457d2aab3273edf",
+    "line_count": 14,
+    "reviewed_ranges": "1-14",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/luhua-mountain.mjs",
+    "sha256": "2a7298a73b18c1066aad6925828deab63c5bb20506a076b8ad66b280b3be7408",
+    "line_count": 64,
+    "reviewed_ranges": "1-64",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/luhua-seat.mjs",
+    "sha256": "776a3cad5e52f5ddeb25e4cf095a53aa91c66d87acff6b90810a9156fb8cf317",
+    "line_count": 48,
+    "reviewed_ranges": "1-48",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/luhua-seven.mjs",
+    "sha256": "3c8ec20d0454d7bdeaed1141e174bc3d2e81c2d45947024968c6c90c655d4a98",
+    "line_count": 48,
+    "reviewed_ranges": "1-48",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/luhua-tide.mjs",
+    "sha256": "499f5d7773fbbeef5da9a8ff5e3f9071c6bf2e82c7d46c1df0a620337ffde8d8",
+    "line_count": 72,
+    "reviewed_ranges": "1-72",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/luhua-young.mjs",
+    "sha256": "0ec0e9cc0c934e10408f1ab7916f41de66ac2a0d5ede69670b744a158607cb1a",
+    "line_count": 55,
+    "reviewed_ranges": "1-55",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/north-after.mjs",
+    "sha256": "0156373b150bc2cd4ba93cbf7137c31389ff30b42f2b2542bd0e830b6babcfa1",
+    "line_count": 95,
+    "reviewed_ranges": "1-95",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/north-author.mjs",
+    "sha256": "e789ffb59f5ae352bf8bae92cc42e5b0e9f0c6b41c9b6f9ecd247508e6706413",
+    "line_count": 13,
+    "reviewed_ranges": "1-13",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/north-duels.mjs",
+    "sha256": "ae50e279371973f4c1a4c30cdd22674bcba2d91087b5e4394b38005953717c41",
+    "line_count": 64,
+    "reviewed_ranges": "1-64",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/north-notes-author.mjs",
+    "sha256": "8ee5376bc0c2f2f4e060257de4bf0866bbb14e3b4c4244c5d49967818a6581e5",
+    "line_count": 91,
+    "reviewed_ranges": "1-91",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/north-rain.mjs",
+    "sha256": "5e3be714f7c7b358f0f7833c5dacf3a9a7ec988d80fcc8b35e4912998e055f02",
+    "line_count": 120,
+    "reviewed_ranges": "1-120",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/north-road.mjs",
+    "sha256": "a65880bb481e1530539861408e52056cca740e27c5a23edbe8549590195e3466",
+    "line_count": 105,
+    "reviewed_ranges": "1-105",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/north-yard.mjs",
+    "sha256": "f171e8f24a27858401f2c8ae9cc1b8c60e1fa503ea69b365f86d9066e173b904",
+    "line_count": 93,
+    "reviewed_ranges": "1-93",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/qian-kun-after.mjs",
+    "sha256": "794c94888a8821cb0d5a5f50b02a42dd3ae52bd044b02ad6b73653427cfaa5d1",
+    "line_count": 80,
+    "reviewed_ranges": "1-80",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/qian-kun-author.mjs",
+    "sha256": "6cf32b2d23e02ba5a70b6c0f88c25f89fa925d5401f4598ee271209fc483dfc1",
+    "line_count": 13,
+    "reviewed_ranges": "1-13",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/qian-kun-clouds.mjs",
+    "sha256": "cbdf9599e34373195760508c015c27d57c8cfcbd10f8d4e702b6323fd7f02074",
+    "line_count": 62,
+    "reviewed_ranges": "1-62",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/qian-kun-head.mjs",
+    "sha256": "7ba98ae6785a3e84e21ae3a3ee9b0acaa5db933fceb33018714f57ca552b04bd",
+    "line_count": 67,
+    "reviewed_ranges": "1-67",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/qian-kun-slow.mjs",
+    "sha256": "46b1696c27607aee422f5eba5557dd592155a4dac8142ee7de32fc375c8fcd29",
+    "line_count": 95,
+    "reviewed_ranges": "1-95",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/qian-kun-young.mjs",
+    "sha256": "a837550dc4d7164b04acb5f4112c101f1fb718f44aa5a7ae31642a46c37b6001",
+    "line_count": 86,
+    "reviewed_ranges": "1-86",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/qingshi-author.mjs",
+    "sha256": "0d4cbc6af7ce586f7d8ae60b5fdeaada02b9f58c0135d3283e8492d8ffdba62a",
+    "line_count": 20,
+    "reviewed_ranges": "1-20",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/qingshi-career.mjs",
+    "sha256": "71f3db893a37fc9dfd5e319eb5a2d08bf246c03ba526917deea4df281f65119c",
+    "line_count": 198,
+    "reviewed_ranges": "1-198",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/qingshi-last.mjs",
+    "sha256": "aca3543fa9ee02a58b24823037eeb51a07201410fbc21c317fa6ec9446857587",
+    "line_count": 148,
+    "reviewed_ranges": "1-148",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/qingshi-youth.mjs",
+    "sha256": "5f440a283a5222dae779cb8601019cf9f9c01c934fd5e40079ae5e9cdcaecc32",
+    "line_count": 164,
+    "reviewed_ranges": "1-164",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/twelfth-author.mjs",
+    "sha256": "e845f17e36152857e7e6bee991ec53a079f20faac4de6fadb37b4f1d06bafadf",
+    "line_count": 295,
+    "reviewed_ranges": "1-295",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/twelfth-life-after.mjs",
+    "sha256": "2d21f1042498f3bc9023d073ef7e4146b63af2a440dbb9ab07b53fdcc9d796eb",
+    "line_count": 93,
+    "reviewed_ranges": "1-93",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/twelfth-life-author.mjs",
+    "sha256": "400175dc31468f509e4a76230f8481467b44ecb895dd90331c10bb336a4ca4ca",
+    "line_count": 15,
+    "reviewed_ranges": "1-15",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/twelfth-life-capital.mjs",
+    "sha256": "c6fad0c4291980659d7b370bad8fa685b4d5f3261a456aa60e458d543ad34bc1",
+    "line_count": 66,
+    "reviewed_ranges": "1-66",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/twelfth-life-defeat.mjs",
+    "sha256": "4a3cf5476a32a8070228b7474abc648129ec8652d73699330eea4b6e669ddd8f",
+    "line_count": 71,
+    "reviewed_ranges": "1-71",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/twelfth-life-names.mjs",
+    "sha256": "16a83af1c0a7d9ca06cdacbec34b4c4ca827837e7a2b7c22fb32b94da97b36f7",
+    "line_count": 40,
+    "reviewed_ranges": "1-40",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/twelfth-life-seat.mjs",
+    "sha256": "22117ced2504e53d936bce1ca0eb265c10807c87540a3d3d1ac50da592212b1f",
+    "line_count": 78,
+    "reviewed_ranges": "1-78",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/twelfth-life-six.mjs",
+    "sha256": "bc846b6332b6941cc5eb9aa8cb369b4e573f7a91691c02872d2ef37f4b7a62b9",
+    "line_count": 60,
+    "reviewed_ranges": "1-60",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/twelfth-life-teacher.mjs",
+    "sha256": "fb44ca746f2e4fbe432e401ccb00b4a32b26105b32a5ae1c605e81e7344266a3",
+    "line_count": 94,
+    "reviewed_ranges": "1-94",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "story/twelfth-life-youth.mjs",
+    "sha256": "65489a838dc2f0b3f679dc624541390477b13814cb6272e85e182d1247f35daa",
+    "line_count": 64,
+    "reviewed_ranges": "1-64",
+    "status": "SOURCE_READ",
+    "evidence": "canon-late-review.md; manual source reading in this audit"
+  },
+  {
+    "path": "宋世江湖.md",
+    "sha256": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393",
+    "line_count": 35314,
+    "reviewed_ranges": "1-357;14850-35314",
+    "status": "BOUNDED_FULL_SOURCE_READ",
+    "evidence": "canon-late-review.md; world rules and groups 15-22"
+  }
+]

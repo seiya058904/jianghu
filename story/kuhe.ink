@@ -46,17 +46,23 @@ VAR kh_future = 0
 太弱。 # beat:kh_message_3 # scene:kh_shelter # cast:kh_healer # speaker:you
 字是杀人的人留的。伤者叫什么，不由他来定。 # beat:kh_message_4 # scene:kh_shelter # cast:kh_healer # speaker:kh_healer # mood:kh_healer=neutral
 你把那两个字移到另一页。药和消息都要往外送，袋里只能先装一种。 # beat:kh_message_5 # scene:kh_shelter # cast:kh_healer # speaker:narrator
+{
+- kh_gentle:
+水凉了你换了一盆。没有口供的日子，药照配，名册照点——有些话等人自己长出来。 # beat:kh_message_6 # scene:kh_shelter # cast:kh_healer # speaker:narrator
+- else:
+"西边"两个字你也记下了。没问完的话留在门外，比逼出来的一整句经得住核。 # beat:kh_message_7 # scene:kh_shelter # cast:kh_healer # speaker:narrator
+}
 * [先送药，托同行者把未核实的消息另交门房。 # cid:kh_send_medicine]
   ~ kh_supply = true
-  药先走。消息我写清哪些亲见，哪些只是传来。 # beat:kh_message_6 # scene:kh_shelter # cast:kh_healer # speaker:you
-  两件事不必抢同一张嘴。交到谁手里，回来报名字。 # beat:kh_message_7 # scene:kh_shelter # cast:kh_healer # speaker:kh_healer # mood:kh_healer=intent
-  你第一次送出的信末尾，不是一个惊人的传闻，是收件人的姓名。 # beat:kh_message_8 # scene:kh_shelter # cast:kh_healer # speaker:narrator
+  药先走。消息我写清哪些亲见，哪些只是传来。 # beat:kh_message_8 # scene:kh_shelter # cast:kh_healer # speaker:you
+  两件事不必抢同一张嘴。交到谁手里，回来报名字。 # beat:kh_message_9 # scene:kh_shelter # cast:kh_healer # speaker:kh_healer # mood:kh_healer=intent
+  你第一次送出的信末尾，不是一个惊人的传闻，是收件人的姓名。 # beat:kh_message_10 # scene:kh_shelter # cast:kh_healer # speaker:narrator
   -> years
 * [先递伤亡名册，药包请药师当面另派人送。 # cid:kh_send_record]
   ~ kh_supply = false
-  我去报人名。药包少一个人搬，我现在请，不留到门口。 # beat:kh_message_9 # scene:kh_shelter # cast:kh_healer # speaker:you
-  那你就站这里等他来。别一说另派人，自己便走了。 # beat:kh_message_10 # scene:kh_shelter # cast:kh_healer # speaker:kh_healer # mood:kh_healer=intent
-  你等到另一位门人接过药，才把名册塞进干布。没有人因为分了两路，就少负一件事。 # beat:kh_message_11 # scene:kh_shelter # cast:kh_healer # speaker:narrator
+  我去报人名。药包少一个人搬，我现在请，不留到门口。 # beat:kh_message_11 # scene:kh_shelter # cast:kh_healer # speaker:you
+  那你就站这里等他来。别一说另派人，自己便走了。 # beat:kh_message_12 # scene:kh_shelter # cast:kh_healer # speaker:kh_healer # mood:kh_healer=intent
+  你等到另一位门人接过药，才把名册塞进干布。没有人因为分了两路，就少负一件事。 # beat:kh_message_13 # scene:kh_shelter # cast:kh_healer # speaker:narrator
   -> years
 
 === years ===
@@ -287,18 +293,24 @@ VAR kh_future = 0
 他说谁快了？ # beat:kh_sixty_5 # scene:kh_valley # cast:kh_peer,kh_hui,kh_meng # speaker:kh_peer # mood:kh_peer=uneasy
 我听见了，不知道。 # beat:kh_sixty_6 # scene:kh_valley # cast:kh_peer,kh_hui,kh_meng # speaker:you
 再往后，孟天枢的判断渐渐慢了一点。不是你看出他哪里能改，是三个人原来合上的空处，一次比一次难合。 # beat:kh_sixty_7 # scene:kh_valley # cast:kh_peer,kh_hui,kh_meng # speaker:narrator
+{
+- kh_saw_space:
+纸上那三个点后来被你画进撤路图。位置不是招式，却是你能记下、也能照做的东西。 # beat:kh_sixty_8 # scene:kh_valley # cast:kh_peer,kh_hui,kh_meng # speaker:narrator
+- else:
+那个问号一直在纸上。后来你带人，也先教一句"我看不清"，再教怎么看清。 # beat:kh_sixty_9 # scene:kh_valley # cast:kh_peer,kh_hui,kh_meng # speaker:narrator
+}
 * [把已收起的布重新铺好，给三位各留一处，不先喊赢。 # cid:kh_hold_beds]
   ~ kh_beds = true
-  三处都留着。药师，水还在原来位置。 # beat:kh_sixty_8 # scene:kh_valley # cast:kh_peer,kh_hui,kh_meng # speaker:you
-  我听见。你把来路清开，别叫担架找空位。 # beat:kh_sixty_9 # scene:kh_valley # cast:kh_healer,kh_peer,kh_hui # speaker:kh_healer # mood:kh_healer=intent
-  有人嫌你晦气，药师叫他把脚边的药箱挪到帐里。 # beat:kh_sixty_10 # scene:kh_valley # cast:kh_healer,kh_peer,kh_hui # speaker:narrator
+  三处都留着。药师，水还在原来位置。 # beat:kh_sixty_10 # scene:kh_valley # cast:kh_peer,kh_hui,kh_meng # speaker:you
+  我听见。你把来路清开，别叫担架找空位。 # beat:kh_sixty_11 # scene:kh_valley # cast:kh_healer,kh_peer,kh_hui # speaker:kh_healer # mood:kh_healer=intent
+  有人嫌你晦气，药师叫他把脚边的药箱挪到帐里。 # beat:kh_sixty_12 # scene:kh_valley # cast:kh_healer,kh_peer,kh_hui # speaker:narrator
   -> split
 * [先应了旁人的快赢了，见局势转变后重新腾床。 # cid:kh_answer_hope]
   ~ kh_beds = false
-  若能接住这一掌…… # beat:kh_sixty_11 # scene:kh_valley # cast:kh_healer,kh_peer,kh_hui # speaker:you
-  你话还没完，谷中三人的站位已变。药师把收起的布塞回来，让你先腾出三张床。 # beat:kh_sixty_12 # scene:kh_valley # cast:kh_healer,kh_peer,kh_hui # speaker:narrator
-  箱子搬开。赢了也有人要躺，三张都铺回去。 # beat:kh_sixty_13 # scene:kh_valley # cast:kh_healer,kh_peer,kh_hui # speaker:kh_healer # mood:kh_healer=sharp
-  你搬药箱时没有再往谷里看，错过的几手也不补写。 # beat:kh_sixty_14 # scene:kh_valley # cast:kh_healer,kh_peer,kh_hui # speaker:narrator
+  若能接住这一掌…… # beat:kh_sixty_13 # scene:kh_valley # cast:kh_healer,kh_peer,kh_hui # speaker:you
+  你话还没完，谷中三人的站位已变。药师把收起的布塞回来，让你先腾出三张床。 # beat:kh_sixty_14 # scene:kh_valley # cast:kh_healer,kh_peer,kh_hui # speaker:narrator
+  箱子搬开。赢了也有人要躺，三张都铺回去。 # beat:kh_sixty_15 # scene:kh_valley # cast:kh_healer,kh_peer,kh_hui # speaker:kh_healer # mood:kh_healer=sharp
+  你搬药箱时没有再往谷里看，错过的几手也不补写。 # beat:kh_sixty_16 # scene:kh_valley # cast:kh_healer,kh_peer,kh_hui # speaker:narrator
   -> split
 
 === split ===
@@ -337,17 +349,23 @@ VAR kh_future = 0
 你这边有伤。 # beat:kh_bell_11 # scene:kh_valley # cast:kh_meng,kh2_gui # speaker:kh2_gui # mood:kh2_gui=neutral
 还有这只手。 # beat:kh_bell_12 # scene:kh_valley # cast:kh_meng,kh2_gui # speaker:kh_meng # mood:kh_meng=neutral
 谷里许多人不认得他们。身旁最老的几位却站起来，叫出空劫、司马玄极、孟归藏三个名字。 # beat:kh_bell_13 # scene:kh_valley # cast:kh_meng,kh2_gui # speaker:narrator # cg:oldPillars # action:三位旧人 · 来路仍空着
+{
+- kh_restraint:
+"等消息"三个字你没有改口。钟响之后，这两字比任何一句准话都难说，也都更真。 # beat:kh_bell_14 # scene:kh_valley # cast:kh_meng,kh2_gui # speaker:narrator # cg:none
+- else:
+咽回去的那半句，你记在纸边。此后报信，你只写听见的事，不写盼着的事。 # beat:kh_bell_15 # scene:kh_valley # cast:kh_meng,kh2_gui # speaker:narrator
+}
 * [先让围观的人退开，留下三位来时的通路。 # cid:kh_clear_path]
   ~ kh_old_path = true
-  看得见也别围。让来路空着。 # beat:kh_bell_14 # scene:kh_valley # cast:kh_meng,kh2_gui # speaker:you # cg:none
-  你今日说的这句，待会儿也要做。 # beat:kh_bell_15 # scene:kh_valley # cast:kh_healer,kh_meng,kh2_gui # speaker:kh_healer # mood:kh_healer=intent
-  你沿谷口走回一遍，把自己放在石后，没跟着老人往里挪。 # beat:kh_bell_16 # scene:kh_valley # cast:kh_healer,kh_meng,kh2_gui # speaker:narrator
+  看得见也别围。让来路空着。 # beat:kh_bell_16 # scene:kh_valley # cast:kh_meng,kh2_gui # speaker:you
+  你今日说的这句，待会儿也要做。 # beat:kh_bell_17 # scene:kh_valley # cast:kh_healer,kh_meng,kh2_gui # speaker:kh_healer # mood:kh_healer=intent # cg:none
+  你沿谷口走回一遍，把自己放在石后，没跟着老人往里挪。 # beat:kh_bell_18 # scene:kh_valley # cast:kh_healer,kh_meng,kh2_gui # speaker:narrator
   -> kong_trial
 * [先问药师他们是什么席位，听见一句不是席位。 # cid:kh_ask_title]
   ~ kh_old_path = false
-  他们现在列哪一席？ # beat:kh_bell_17 # scene:kh_valley # cast:kh_healer,kh_meng,kh2_gui # speaker:you # cg:none
-  我给空劫备药的时候，你还没出生。他退首座四十多年了。 # beat:kh_bell_18 # scene:kh_valley # cast:kh_healer,kh_meng,kh2_gui # speaker:kh_healer # mood:kh_healer=sharp
-  你把写席位的那一栏留空，才发现身后的人已围近。让开通路又费了些工夫。 # beat:kh_bell_19 # scene:kh_valley # cast:kh_healer,kh_meng,kh2_gui # speaker:narrator
+  他们现在列哪一席？ # beat:kh_bell_19 # scene:kh_valley # cast:kh_healer,kh_meng,kh2_gui # speaker:you
+  我给空劫备药的时候，你还没出生。他退首座四十多年了。 # beat:kh_bell_20 # scene:kh_valley # cast:kh_healer,kh_meng,kh2_gui # speaker:kh_healer # mood:kh_healer=sharp
+  你把写席位的那一栏留空，才发现身后的人已围近。让开通路又费了些工夫。 # beat:kh_bell_21 # scene:kh_valley # cast:kh_healer,kh_meng,kh2_gui # speaker:narrator
   -> kong_trial
 
 === kong_trial ===
@@ -359,18 +377,24 @@ VAR kh_future = 0
 那一下，谁占了先？ # beat:kh_kong_trial_6 # scene:kh_valley # cast:kh_peer,kh2_kong,kh2_wusheng # speaker:kh_peer # mood:kh_peer=uneasy
 我只看见两个人都退了。 # beat:kh_kong_trial_7 # scene:kh_valley # cast:kh_peer,kh2_kong,kh2_wusheng # speaker:you
 五十余招后，老僧慢慢落下风。第八十二招胸口一道长痕，空劫退开，向另两人说了一句。 # beat:kh_kong_trial_8 # scene:kh_valley # cast:kh_peer,kh2_kong,kh2_wusheng # speaker:narrator # action:第八十二招 · 胸前见伤 # look:kh2_kong=wounded
-一起。 # beat:kh_kong_trial_9 # scene:kh_valley # cast:kh2_kong,kh2_xuan,kh2_gui # speaker:kh2_kong # mood:kh2_kong=neutral
+{
+- kh_old_path:
+来路空着那一段，后来真用上了。你退回石后时，路还是通的。 # beat:kh_kong_trial_9 # scene:kh_valley # cast:kh_peer,kh2_kong,kh2_wusheng # speaker:narrator
+- else:
+席位栏空着。三位老人的来路，比任何一栏都要宽。 # beat:kh_kong_trial_10 # scene:kh_valley # cast:kh_peer,kh2_kong,kh2_wusheng # speaker:narrator
+}
+一起。 # beat:kh_kong_trial_11 # scene:kh_valley # cast:kh2_kong,kh2_xuan,kh2_gui # speaker:kh2_kong # mood:kh2_kong=neutral
 * [写下第八十二招与这一句，不替他说故意让招。 # cid:kh_record_limit]
   ~ kh_record_honest = true
-  退了，胸口见伤。叫两位一同来。 # beat:kh_kong_trial_10 # scene:kh_valley # cast:kh2_kong,kh2_xuan,kh2_gui # speaker:you
-  就写这些？ # beat:kh_kong_trial_11 # scene:kh_valley # cast:kh_peer,kh2_kong,kh2_xuan # speaker:kh_peer # mood:kh_peer=neutral
-  这些是我看见的。为什么每一步这样走，留给真能解释的人。 # beat:kh_kong_trial_12 # scene:kh_valley # cast:kh_peer,kh2_kong,kh2_xuan # speaker:you
+  退了，胸口见伤。叫两位一同来。 # beat:kh_kong_trial_12 # scene:kh_valley # cast:kh2_kong,kh2_xuan,kh2_gui # speaker:you
+  就写这些？ # beat:kh_kong_trial_13 # scene:kh_valley # cast:kh_peer,kh2_kong,kh2_xuan # speaker:kh_peer # mood:kh_peer=neutral
+  这些是我看见的。为什么每一步这样走，留给真能解释的人。 # beat:kh_kong_trial_14 # scene:kh_valley # cast:kh_peer,kh2_kong,kh2_xuan # speaker:you
   -> three_old
 * [先把看招的纸交给同门，去确认接应的人能否听见退后。 # cid:kh_ask_breath]
   ~ kh_record_honest = false
-  纸先替我拿。若里头叫退，石后能不能听清？ # beat:kh_kong_trial_13 # scene:kh_valley # cast:kh_peer,kh2_kong,kh2_xuan # speaker:you
-  你叫一遍。 # beat:kh_kong_trial_14 # scene:kh_valley # cast:kh_peer,kh2_kong,kh2_xuan # speaker:kh_peer # mood:kh_peer=intent
-  你们隔着石头试了两次，不再把听不见也算大家心里有数。 # beat:kh_kong_trial_15 # scene:kh_valley # cast:kh_peer,kh2_kong,kh2_xuan # speaker:narrator
+  纸先替我拿。若里头叫退，石后能不能听清？ # beat:kh_kong_trial_15 # scene:kh_valley # cast:kh_peer,kh2_kong,kh2_xuan # speaker:you
+  你叫一遍。 # beat:kh_kong_trial_16 # scene:kh_valley # cast:kh_peer,kh2_kong,kh2_xuan # speaker:kh_peer # mood:kh_peer=intent
+  你们隔着石头试了两次，不再把听不见也算大家心里有数。 # beat:kh_kong_trial_17 # scene:kh_valley # cast:kh_peer,kh2_kong,kh2_xuan # speaker:narrator
   -> three_old
 
 === three_old ===
@@ -478,52 +502,58 @@ VAR kh_future = 0
 你这只腕也该拆布看看了。 # beat:kh_aftercare_2 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:kh_healer # mood:kh_healer=neutral
 她把你袖口掀起，同门蹲下，先把药盆放到你左手。 # beat:kh_aftercare_3 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:narrator
 {
-- not kh_named_patient or not kh_detour or not kh_repair_fear:
-这一月别提重物，写一阵就停。要替别人做事，先说你哪只手还疼。 # beat:kh_aftercare_4 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:kh_healer # mood:kh_healer=sharp
-你右腕一用力便紧，担架要换人，记录也得分段写。受过的伤没有因为活着回来就算清了。 # beat:kh_aftercare_5 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:narrator
+- kh_final_truth:
+待问的那一栏你留着没合。核录的人后来照它找到了三个亲见者。 # beat:kh_aftercare_4 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:narrator
 - else:
-皮擦破了，没伤到筋。你可接着写，抬人还是要另找一头。 # beat:kh_aftercare_6 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:kh_healer # mood:kh_healer=calm
-你试着握笔，右腕没有被一阵锐痛拉住，才把方才没写完的姓名补齐。 # beat:kh_aftercare_7 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:narrator
+姓名先于招式写完。哪封信交给谁，一栏一栏都对上了人。 # beat:kh_aftercare_5 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:narrator
+}
+{
+- not kh_named_patient or not kh_detour or not kh_repair_fear:
+这一月别提重物，写一阵就停。要替别人做事，先说你哪只手还疼。 # beat:kh_aftercare_6 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:kh_healer # mood:kh_healer=sharp
+你右腕一用力便紧，担架要换人，记录也得分段写。受过的伤没有因为活着回来就算清了。 # beat:kh_aftercare_7 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:narrator
+- else:
+皮擦破了，没伤到筋。你可接着写，抬人还是要另找一头。 # beat:kh_aftercare_8 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:kh_healer # mood:kh_healer=calm
+你试着握笔，右腕没有被一阵锐痛拉住，才把方才没写完的姓名补齐。 # beat:kh_aftercare_9 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:narrator
 }
 {
 - not kh_named_patient or not kh_detour or not kh_repair_fear:
 {
 - kh_hidden:
-你说还能用，我当真了。后面每次递东西都先递右边。 # beat:kh_aftercare_8 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:kh_peer # mood:kh_peer=neutral
-往后疼就说，不让你替我猜。 # beat:kh_aftercare_9 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:you
-他把“右腕忌重”写在你那只药袋上，字很大，没有替你藏。 # beat:kh_aftercare_10 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:narrator
+你说还能用，我当真了。后面每次递东西都先递右边。 # beat:kh_aftercare_10 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:kh_peer # mood:kh_peer=neutral
+往后疼就说，不让你替我猜。 # beat:kh_aftercare_11 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:you
+他把“右腕忌重”写在你那只药袋上，字很大，没有替你藏。 # beat:kh_aftercare_12 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:narrator
 - else:
-那时你说拧布疼，我才知道能换你下来。别等下一回全提不动才讲。 # beat:kh_aftercare_11 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:kh_peer # mood:kh_peer=neutral
-知道。我也会先问你。 # beat:kh_aftercare_12 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:you
-他把药袋放到左边，没再让你先伸疼的那只手。 # beat:kh_aftercare_13 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:narrator
+那时你说拧布疼，我才知道能换你下来。别等下一回全提不动才讲。 # beat:kh_aftercare_13 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:kh_peer # mood:kh_peer=neutral
+知道。我也会先问你。 # beat:kh_aftercare_14 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:you
+他把药袋放到左边，没再让你先伸疼的那只手。 # beat:kh_aftercare_15 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:narrator
 }
 - else:
 {
 - kh_hidden:
-还好没有伤筋。昨夜你盆沿歪着，我还以为你要把药倒掉。 # beat:kh_aftercare_14 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:kh_peer # mood:kh_peer=neutral
-手酸了也该换，往后我叫你。 # beat:kh_aftercare_15 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:you
+还好没有伤筋。昨夜你盆沿歪着，我还以为你要把药倒掉。 # beat:kh_aftercare_16 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:kh_peer # mood:kh_peer=neutral
+手酸了也该换，往后我叫你。 # beat:kh_aftercare_17 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:you
 - else:
-这回只是磨破了，也别拿肩带继续蹭。 # beat:kh_aftercare_16 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:kh_peer # mood:kh_peer=neutral
-你把新布垫在擦破的皮外，让他看过，才试着提空盆。 # beat:kh_aftercare_17 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:narrator
+这回只是磨破了，也别拿肩带继续蹭。 # beat:kh_aftercare_18 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:kh_peer # mood:kh_peer=neutral
+你把新布垫在擦破的皮外，让他看过，才试着提空盆。 # beat:kh_aftercare_19 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:narrator
 }
 }
 {
 - kh_clear_report:
-司马门人来收空药箱，认出你报过的三卷布。用掉多少便记多少，破布也收回去，交给缝垫的人。 # beat:kh_aftercare_18 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:narrator
+司马门人来收空药箱，认出你报过的三卷布。用掉多少便记多少，破布也收回去，交给缝垫的人。 # beat:kh_aftercare_20 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:narrator
 - else:
-司马门人拿着两张不合的布单来找你。出发时迟掉的那一趟还记在旁边，你得从东帐领布重新对起，没法只签一个数。 # beat:kh_aftercare_19 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:narrator
+司马门人拿着两张不合的布单来找你。出发时迟掉的那一趟还记在旁边，你得从东帐领布重新对起，没法只签一个数。 # beat:kh_aftercare_21 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:narrator
 }
 * [等亲见的前辈核对交手部分，自己负责伤员与撤路记录。 # cid:kh_write_known]
   ~ kh_late_duty = 1
-  我写这条路。谁从哪里回来，谁没有，我亲自走过。 # beat:kh_aftercare_20 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:you
-  那就画上石口。后来的人不能只读见胜负，抬架还卡在同一个地方。 # beat:kh_aftercare_21 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:kh_healer # mood:kh_healer=intent
-  你展开纸，第一次把自己没懂的交手留给别人，把自己懂的路认真画完。 # beat:kh_aftercare_22 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:narrator
+  我写这条路。谁从哪里回来，谁没有，我亲自走过。 # beat:kh_aftercare_22 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:you
+  那就画上石口。后来的人不能只读见胜负，抬架还卡在同一个地方。 # beat:kh_aftercare_23 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:kh_healer # mood:kh_healer=intent
+  你展开纸，第一次把自己没懂的交手留给别人，把自己懂的路认真画完。 # beat:kh_aftercare_24 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:narrator
   -> seventh
 * [把未完的记录交给有手力的人代写，自己留下做伤者日常照护。 # cid:kh_keep_beds]
   ~ kh_late_duty = 2
-  纸给他。我留下认药和时辰，伤好了再补我的那份。 # beat:kh_aftercare_23 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:you
-  后半夜缺人。你认不认得那几包药？先跟我换一次水。 # beat:kh_aftercare_24 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:kh_healer # mood:kh_healer=intent
-  你在帐边挂好小牌，写清自己的时辰，没把留下当作一句不必继续做的承诺。 # beat:kh_aftercare_25 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:narrator
+  纸给他。我留下认药和时辰，伤好了再补我的那份。 # beat:kh_aftercare_25 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:you
+  后半夜缺人。你认不认得那几包药？先跟我换一次水。 # beat:kh_aftercare_26 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:kh_healer # mood:kh_healer=intent
+  你在帐边挂好小牌，写清自己的时辰，没把留下当作一句不必继续做的承诺。 # beat:kh_aftercare_27 # scene:kh_camp # cast:kh_healer,kh_peer # speaker:narrator
   -> seventh
 
 === seventh ===

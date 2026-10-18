@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -19,7 +20,7 @@ test('Twelfth two personal careers preserve Xue’s real win, candidate status, 
   assert.ok(r.s.frames.slice(dead).every(frame=>!frame.stage.cast.includes('qw_chen')),'deceased teacher is never left on stage');
  }
  assert.match(school.text,/馆没空着/);assert.match(palace.text,/旧馆的几班课/);
- writeFileSync('docs/evidence/v6/twelfth-school-transcript.txt',school.text);writeFileSync('docs/evidence/v6/twelfth-palace-transcript.txt',palace.text);
+ writeFileSync(evidencePath('docs/evidence/v6/twelfth-school-transcript.txt'),school.text);writeFileSync(evidencePath('docs/evidence/v6/twelfth-palace-transcript.txt'),palace.text);
 });
 test('Twelfth middle-career duty changes the later school; physical overreach survives as a lesson rather than a magic recovery',()=>{
  const kept=run(ids=>ids[0]);
@@ -46,5 +47,5 @@ test('Twelfth sampled paths cover the authored branches and only actual speaking
  const seen=new Set<string>(),cast=new Set<string>();let state=0x445258,longest=0;
  for(let i=0;i<168;i++){const r=run(ids=>{state=(Math.imul(state,1664525)+1013904223)>>>0;return ids[state>>>31]});longest=Math.max(longest,r.longest);r.s.frames.forEach(frame=>{seen.add(frame.id);if(frame.speaker&&frame.speaker!=='you')cast.add(frame.speaker)})}
  const declared=[...readFileSync('story/twelfth.ink','utf8').matchAll(/# beat:(\S+)/g)].map(m=>m[1]);assert.deepEqual([...seen].sort(),declared.sort());assert.equal(cast.size,11);
- writeFileSync('docs/evidence/v6/twelfth-content-audit.json',JSON.stringify({status:'DRAFT_NOT_FINAL',sourceBeats:declared.length,visited:seen.size,speakingCast:[...cast],decisionPoints:18,sampledPaths:168,exhaustive:false,longestPassiveGap:longest,limits:'Pending browser age validation, art completion and three editorial rounds.'},null,2));
+ writeFileSync(evidencePath('docs/evidence/v6/twelfth-content-audit.json'),JSON.stringify({status:'DRAFT_NOT_FINAL',sourceBeats:declared.length,visited:seen.size,speakingCast:[...cast],decisionPoints:18,sampledPaths:168,exhaustive:false,longestPassiveGap:longest,limits:'Pending browser age validation, art completion and three editorial rounds.'},null,2));
 });

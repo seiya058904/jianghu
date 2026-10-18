@@ -19,7 +19,7 @@ test at tests\qingshi-v2.test.ts:15:1
   + undefined
   - null
 
-      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/qingshi-v2.test.ts:24:62)
+      at TestContext.<anonymous> (file:///[author-local-path]
       at Test.runInAsyncScope (node:async_hooks:227:14)
       at Test.run (node:internal/test_runner/test:1201:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:831:18)

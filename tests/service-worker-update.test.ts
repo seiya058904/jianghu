@@ -1,0 +1,22 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {runInNewContext} from 'node:vm';
+
+for(const scope of ['https://example.test/','https://example.test/jianghu/'])test(`work download refreshes the complete shell and keeps other works at ${scope}`,async()=>{
+  const handlers:Record<string,Function>={},jobs:Promise<unknown>[]=[],replies:{ok:boolean}[]=[],added:string[][]=[];
+  const oldOther=new URL('./sea.html',scope).href;
+  const stored=new Set([oldOther,new URL('./assets/library-old.js',scope).href]);
+  runInNewContext(readFileSync('public/sw.js','utf8'),{URL,self:{registration:{scope},addEventListener:(type:string,handler:Function)=>handlers[type]=handler},fetch:async(path:string)=>({ok:true,json:async()=>path==='./offline-manifest.json'?['./','./index.html','./assets/library-new.js','./assets/library-new.css']:['./taihua.html','./assets/taihua-new.js']}),caches:{open:async()=>({match:async(url:URL)=>stored.has(url.href),addAll:async(files:string[])=>{added.push([...files]);for(const file of files)stored.add(new URL(file,scope).href)}})}});
+  handlers.message({data:{type:'cache-work',work:'taihua'},ports:[{postMessage:(reply:{ok:boolean})=>replies.push(reply)}],waitUntil:(job:Promise<unknown>)=>jobs.push(job)});
+  await Promise.all(jobs);assert.equal(replies[0].ok,true);
+  for(const file of ['./','./index.html','./assets/library-new.js','./assets/library-new.css','./taihua.html','./assets/taihua-new.js'])assert.ok(added.flat().includes(file),file);
+  assert.ok(stored.has(oldOther),'other work cache must survive');
+});
+
+for(const failure of ['http','unsafe','cache'] as const)test(`shell download ${failure} failure cannot report success`,async()=>{
+  const handlers:Record<string,Function>={},jobs:Promise<unknown>[]=[],replies:{ok:boolean}[]=[];
+  runInNewContext(readFileSync('public/sw.js','utf8'),{URL,self:{registration:{scope:'https://example.test/jianghu/'},addEventListener:(type:string,handler:Function)=>handlers[type]=handler},fetch:async(path:string)=>({ok:!(failure==='http'&&path==='./offline-manifest.json'),json:async()=>path==='./offline-manifest.json'?(failure==='unsafe'?['./../outside.js']:['./','./index.html','./assets/library.js']):['./taihua.html']}),caches:{open:async()=>({match:async()=>null,addAll:async()=>{if(failure==='cache')throw new Error('quota')}})}});
+  handlers.message({data:{type:'cache-work',work:'taihua'},ports:[{postMessage:(reply:{ok:boolean})=>replies.push(reply)}],waitUntil:(job:Promise<unknown>)=>jobs.push(job)});
+  await Promise.all(jobs);assert.equal(replies[0].ok,false);
+});

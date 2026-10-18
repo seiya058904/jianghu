@@ -1,0 +1,48 @@
+{
+ "round": 1,
+ "focus": "戏剧结构、因果与节奏",
+ "records": [
+  {
+   "round": 1,
+   "file": "story/dead-ranking-after.mjs",
+   "beat": "dr_two_years_1-",
+   "originalLineOrAction": "案看似收好，你却没能把后以死论当作从此不必再问……继续查，又两年",
+   "diagnosis": "两年追查被六字旁白带过，周砚职业生涯最重的道德支点（榜可以错）没有承受任何阻力，属于'本应演成一场戏却被旁白概括'",
+   "changedLineOrAction": "徒弟质问查的是谁的案、陆观棋推访资簿（榜房一年走得了几个县，你自己填），时间卡后置",
+   "whyItIsBetter": "继续查案的决定现在要当面顶住徒弟的疑虑与资源成本，决定有了重量；时间跨度仍用显式叙述卡，不塞假对白",
+   "choicePayoffBefore": "无变化",
+   "choicePayoffAfter": "无变化（结构改写，不新增变量）",
+   "sourceCanonRange": "宋世江湖.md 23338-23415（四十九/五十节：谢没早死/又活十一年）",
+   "testEvidence": "tests/dead-ranking.test.ts 6/6 PASS after gap fix",
+   "unresolvedIssue": "无"
+  },
+  {
+   "round": 1,
+   "file": "story/dead-ranking-after.mjs",
+   "beat": "dr_new_duties_1-",
+   "originalLineOrAction": "第一年三件，三十招胜现第八，查是酒后争执、第八站都不稳……两人闭门，一方平一方我胜，无第三人，有战无定论（单行目录式播报）",
+   "diagnosis": "三个判例压缩成一拍播报，新抄手只得到一句总结性反问， evidential rulings 没有现场问答",
+   "changedLineOrAction": "改为 dr_next 逐件追问、周砚逐件裁决的三问答现场（酒局退回/旁观照记/闭门存疑）",
+   "whyItIsBetter": "三种证据裁决由对话承载，新抄手成为提问者而非听众；保留全部原典锚点短语（十二可靠旁观/有战无定论）",
+   "choicePayoffBefore": "无",
+   "choicePayoffAfter": "无",
+   "sourceCanonRange": "宋世江湖.md 23596-23651（五十四节：周砚接榜房）",
+   "testEvidence": "tests/dead-ranking.test.ts 6/6 PASS（先修 gap19：合并两年两拍）",
+   "unresolvedIssue": "无"
+  },
+  {
+   "round": 1,
+   "file": "story/dead-ranking-case.mjs",
+   "beat": "dr_paid_witness_1-",
+   "originalLineOrAction": "黑沙会争剑社商道多年，葛九衡早同谢学剑……眼前家主说查凶手支持，问产业便冷下脸（三拍旁白讲义）",
+   "diagnosis": "葛九衡背景、补剑手法、主谋尽死的结论全部由旁白讲授，家主本人没有声音，只结尾给一个表情",
+   "changedLineOrAction": "改为家主自己抢答葛九衡底细、自辩'会里定的差事'，周砚一句'比如，你。'逼出脸色变化",
+   "whyItIsBetter": "exposition 变成防御性口供，家主的既得利益立场从语气里出来；'证据不会自己长'保留为周砚笔记而非讲座",
+   "choicePayoffBefore": "无",
+   "choicePayoffAfter": "living_benefit 两个选项的进场语境更锋利（家主已自辩过一次）",
+   "sourceCanonRange": "宋世江湖.md 22318-22467（三十一/三十二/三十三节）",
+   "testEvidence": "锚点短语'补像谢的剑'保留，tests 6/6 PASS",
+   "unresolvedIssue": "无"
+  }
+ ]
+}

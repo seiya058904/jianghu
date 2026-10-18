@@ -1,5 +1,5 @@
 import {existsSync,mkdirSync,readFileSync,rmdirSync,statSync,writeFileSync} from 'node:fs';
-import {dirname} from 'node:path';
+import {dirname,posix} from 'node:path';
 
 /**
  * Access to "frozen baseline" bytes: the archival copies (the canon text and
@@ -75,7 +75,7 @@ function report(target: string): void {
 
 /** Recorded ledger paths may use Windows separators; normalise to POSIX. */
 export function asRepoPath(path: string): string {
-  return path.split('\\').join('/');
+  return posix.normalize(path.split('\\').join('/'));
 }
 
 /**
@@ -84,11 +84,11 @@ export function asRepoPath(path: string): string {
  */
 export function frozenBytes(target: string | null | undefined): Buffer | null {
   if (target === null || target === undefined || target === '') {
-    report(String(target));
-    return null;
+    throw new Error('Frozen baseline path is missing');
   }
   const path = asRepoPath(target);
   if (!existsSync(path)) {
+    if(path!=='宋世江湖.md'&&!path.startsWith('docs/archives/'))throw new Error(`Required frozen baseline missing: ${path}`);
     report(path);
     return null;
   }

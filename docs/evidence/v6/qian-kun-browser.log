@@ -33,8 +33,8 @@ Running 5 tests using 1 worker
        9 | test('actual North then Qian Kun completion unlocks real Notes reading and four teaching notes',async({page})=>{
       10 |  test.setTimeout(360000);await settings(page);const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('/north-notes.html');await expect(page.getByRole('button',{name:'翻开两册之间的夹页',exact:true})).toBeDisabled();await expect(page.locator('[data-reading-lock]')).toContainText('三师一枪');
       11 |  await page.goto('/north.html');await page.getByRole('button',{name:'把竹竿放低半寸',exact:true}).click();await walk(page,new VNRuntime(north,'north-1.0.0'),0);await page.getByRole('button',{name:'回到封面',exact:true}).click();await page.getByRole('link',{name:'双卷附篇 · 师门夜话',exact:true}).click();await expect(page.locator('[data-reading-lock]')).toContainText('不会算账');await expect(page.locator('[data-reading-lock]')).not.toContainText('三师一枪');
-        at walk (D:\xia zai\AI project\Project in Iteration\Jianghu\tests\qian-kun.spec.ts:8:323)
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\qian-kun.spec.ts:20:504
+        at walk (.\tests\qian-kun.spec.ts:8:323)
+        at .\tests\qian-kun.spec.ts:20:504
 
     Error Context: test-results\qian-kun\qian-kun-Notes-direct-URL--5a787--or-replace-preserved-saves\error-context.md
 

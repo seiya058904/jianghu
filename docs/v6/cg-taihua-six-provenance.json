@@ -1,11 +1,11 @@
 {
   "tool": "built-in image_gen",
-  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-c5c4d441-80b3-4670-999d-fe239da80dd5.png",
+  "source": "[author-local-path]",
   "prompt": "Use case: production story CG for Jianghu Chinese historical wuxia visual novel. Key story illustration: the end of a respectful six-exchange sword inquiry on the closed Taihua stone practice ground. Huo Tingyun, same33-year-old male in gray/navy clothes as reference1, on LEFT has stopped just starting to raise his straight jian sword; he recognizes he is too late. Zhang Xuanyue, same82-year-old white-haired long-bearded man in pale gray-blue robes as reference2, on RIGHT steady and composed, his straight steel jian tip safely halted in the air just BEFORE Huo chest, visibly no contact or wound. Only these two clear people, no public crowd, low mountain pines and quiet stone behind. Clean readable sword and hand anatomy. No magical aura or sparks, no dueling triumph pose. Preserve both exact identities, ages and costumes. Wide cinematic landscape3:2 with upper/middle faces and essential action visible; lower20 percent quiet for HTML dialogue. Match reference fine naturalistic ink illustration and tactile painterly rendering. Historically grounded Song-inspired clothing and architecture. No magical effects, no blood spray, no ornate UI, no text of ANY kind, no signature or artist mark in any corner, no watermark. Preserve exact referenced identities instead of inventing lookalikes.",
   "references": [
-    "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/th-huo.webp",
-    "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/npc-robed-elder.webp"
+    "./public/art/v6/th-huo.webp",
+    "./public/art/v6/npc-robed-elder.webp"
   ],
-  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/cg-taihua-six.webp",
+  "output": "./public/art/v6/cg-taihua-six.webp",
   "review": "Reviewed: reference identities, ages/costumes and action or injury stage match the selected scene. No generated readable plot text. Reuse within matching cast/age/physical conditions; separate script captions supply meaning. Already-generated output, no further CG requests after user reuse clarification. Actual trigger and exit are in production-direction-v6.mjs; responsive screenshot checks tracked separately."
 }

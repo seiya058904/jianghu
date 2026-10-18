@@ -19,7 +19,7 @@
 test at tests\taihua-editorial-draft.test.ts:31:1
 ✖ 512 sampled Taihua draft routes reach every authored beat,61 options and3 endings with canonical victories unchanged (17681.7606ms)
   AssertionError [ERR_ASSERTION]: gap19
-      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/taihua-editorial-draft.test.ts:33:157)
+      at TestContext.<anonymous> (file:///[author-local-path]
       at Test.runInAsyncScope (node:async_hooks:227:14)
       at Test.run (node:internal/test_runner/test:1201:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:831:18)

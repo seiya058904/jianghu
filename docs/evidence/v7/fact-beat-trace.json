@@ -1,0 +1,224 @@
+{
+ "kuhe": {
+  "facts": {
+   "kh_after": "kh_future_16"
+  },
+  "ends": {
+   "kh_care": "kh_future_17",
+   "kh_record": "kh_future_18"
+  }
+ },
+ "qingshi": {
+  "facts": {},
+  "ends": {
+   "qs_records": "qs_after_report_10",
+   "qs_heirs": "qs_after_report_11"
+  }
+ },
+ "two-swords": {
+  "facts": {},
+  "ends": {
+   "ss_mountain_lesson": "ss_afterwards_8",
+   "ss_library_lesson": "ss_afterwards_9"
+  }
+ },
+ "seven-questions": {
+  "facts": {},
+  "ends": {
+   "sq_shared_road": "sq_afterwards_9",
+   "sq_open_lesson": "sq_afterwards_10"
+  }
+ },
+ "jade-thieves": {
+  "facts": {
+   "jt_roles_v2": "jt_revealed_1"
+  },
+  "ends": {
+   "jt_unmarked_life": "jt_box_6",
+   "jt_private_account": "jt_box_7"
+  }
+ },
+ "jade": {
+  "facts": {},
+  "ends": {
+   "jd_storework": "jd_later_records_5",
+   "jd_archivework": "jd_later_records_6"
+  }
+ },
+ "sea": {
+  "facts": {},
+  "ends": {
+   "sr_open_courtyard": "sr_after_life_5",
+   "sr_next_harbor": "sr_after_life_6"
+  }
+ },
+ "sea-tide": {
+  "facts": {},
+  "ends": {
+   "st_next_step": "st_beyond_sea_3",
+   "st_next_watch": "st_beyond_sea_4"
+  }
+ },
+ "north": {
+  "facts": {},
+  "ends": {
+   "nq_first_again": "nq_one_more_spear_3",
+   "nq_three_names": "nq_one_more_spear_4"
+  }
+ },
+ "qian-kun": {
+  "facts": {},
+  "ends": {
+   "qk_open_lesson": "qk_best_no_end_3",
+   "qk_open_mountain": "qk_best_no_end_4"
+  }
+ },
+ "north-notes": {
+  "facts": {
+   "nn_two_doors": "nn_different_pupils_4",
+   "nn_qin_time": "nn_qin_visit_5",
+   "nn_sima_person": "nn_sima_person_4",
+   "nn_rumor_limit": "nn_notes_remain_2"
+  },
+  "ends": {
+   "nn_unfinished_page": "nn_notes_remain_3",
+   "nn_different_starts": "nn_notes_remain_4"
+  }
+ },
+ "dead-ranking": {
+  "facts": {},
+  "ends": {
+   "dr_room_after": "dr_last_page_9",
+   "dr_road_after": "dr_last_page_10"
+  }
+ },
+ "luhua": {
+  "facts": {
+   "lh_shen_name": "lh_seventy_odd_4"
+  },
+  "ends": {
+   "lh_hall_after": "lh_finish_4",
+   "lh_coast_after": "lh_finish_5"
+  }
+ },
+ "twelfth-life": {
+  "facts": {},
+  "ends": {
+   "rl_watch_after": "rl_old_book_5",
+   "rl_letter_after": "rl_old_book_6"
+  }
+ },
+ "luoyang": {
+  "facts": {
+   "ly_two_scales": "ly_one_oh_six_6",
+   "ly_stop": "ly_both_hands_6"
+  },
+  "ends": {
+   "ly_trial_after": "ly_road_after_2",
+   "ly_post_after": "ly_road_after_3"
+  }
+ },
+ "bamboo": {
+  "facts": {
+   "bb_paper": "bb_thirty_six_5",
+   "bb_han": "bb_han_twelve_6",
+   "bb_seen": "bb_north_south_8",
+   "bb_cup": "bb_tea_cup_5"
+  },
+  "ends": {
+   "bb_palm_after": "bb_night_ends_8",
+   "bb_tea_after": "bb_night_ends_9"
+  }
+ },
+ "xuanmen": {
+  "facts": {
+   "xm_unlisted": "xm_old_name_4",
+   "xm_nine_jobs": "xm_nine_mats_6",
+   "xm_stone_stop": "xm_simultaneous_6",
+   "xm_seat": "xm_three_years_6",
+   "xm_first": "xm_seventy_11",
+   "xm_empty": "xm_empty_seat_6"
+  },
+  "ends": {
+   "xm_handover_after": "xm_last_day_6",
+   "xm_blank_after": "xm_last_day_7"
+  }
+ },
+ "white-stone": {
+  "facts": {
+   "ws_snow_gap": "ws_white_council_6",
+   "ws_ninety_seven": "ws_thirteenth_day_9",
+   "ws_old_people": "ws_two_old_swords_9",
+   "ws_cannot_copy": "ws_six_students_9",
+   "ws_no_lifespan": "ws_forbidden_copy_8",
+   "ws_two_crowns": "ws_second_crown_7"
+  },
+  "ends": {
+   "ws_outside_after": "ws_today_after_2",
+   "ws_receiving_after": "ws_today_after_3"
+  }
+ },
+ "beyond-ranking": {
+  "facts": {
+   "br_alive_limit": "br_not_all_alive_5",
+   "br_first_two": "br_first_two_6",
+   "br_unplayed_third": "br_third_fourth_6",
+   "br_later_four": "br_seventh_eighth_7",
+   "br_last_two": "br_ninth_tenth_6"
+  },
+  "ends": {
+   "br_reader_after": "br_after_copy_2",
+   "br_record_after": "br_after_copy_3"
+  }
+ },
+ "taihua": {
+  "facts": {
+   "th_closed": "th_packing_7",
+   "th_48": "th_fache_close_4",
+   "th_first": "th_centre_6",
+   "th_53": "th_huo_fifty_three_6",
+   "th_order": "th_order_6",
+   "th_six": "th_six_open_7",
+   "th_mu_front": "th_mu_front_7"
+  },
+  "ends": {
+   "th_company": "th_ending_24",
+   "th_letter": "th_ending_37",
+   "th_guidance": "th_guidance_continue_17"
+  }
+ },
+ "longmen": {
+  "facts": {
+   "lm_seven": "lm_qinghe_return_4",
+   "lm_count": "lm_fortyseven_7",
+   "lm_nine": "lm_nine_7",
+   "lm_retire": "lm_fiveyears_5"
+  },
+  "ends": {
+   "lm_travel": "lm_ending_6",
+   "lm_home": "lm_ending_11"
+  }
+ },
+ "dongting": {
+  "facts": {
+   "dt_106": "dt_shore_5",
+   "dt_recall": "dt_old_feud_6",
+   "dt_vote": "dt_shore_after_5"
+  },
+  "ends": {
+   "dt_company": "dt_threeyears_10",
+   "dt_cargo": "dt_threeyears_13"
+  }
+ },
+ "twelfth": {
+  "facts": {
+   "qw_public": "qw_nothing_5",
+   "qw_55": "qw_stone55_5",
+   "qw_seat": "qw_named_7"
+  },
+  "ends": {
+   "qw_school": "qw_sun_9",
+   "qw_palace": "qw_sun_12"
+  }
+ }
+}

@@ -3,7 +3,7 @@
   "assets": [
     {
       "file": "public/art/v6/ss-xie.webp",
-      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-4de00079-3e0f-4b3e-ad41-25ef35381037.png",
+      "source": "[author-local-path]",
       "prompt": "Use case: stylized-concept. Asset type: reusable transparent character sprite for grounded Chinese historical wuxia visual novel Jianghu. Create Xie Zhibai, a Chinese male sword-school teacher in his seventies. This is a new distinct character identity, not an edit or a borrowed existing face. A broad slightly square face, full cheeks thinned by age, deeply creased forehead, wide-set attentive eyes, thick white eyebrows that angle mildly downward at their ends, a short rounded white beard, a subtly flattened broad nose. White-grey hair combed into a modest low knot, plain dark wooden pin. Average height and solid older frame, composed upright posture. Plain faded warm umber outer robe, ivory cross collar, muted dark olive narrow sash, cloth shoes. Empty hands relaxed naturally, fingers visible, one hand loosely resting over the other at waist, no meaningful gesture. Calm attentive neutral expression, neither scowling nor grinning. Full body head through shoes with generous transparent margins, three-quarter facing slightly left. Refined painterly naturalistic ink-and-watercolor period-game rendering, plausible mature face and fabric, restrained earthy colours, soft even light, not photographic, not chibi or idol fantasy. Stable everyday identity suitable for listening, discussion, waiting, teaching and disagreement if story text changes. Genuine transparent background with clean alpha; no scenery, floor, shadow plate, border, text, sect badge, jewelry, staff, sword, book, magic, glowing eyes, injuries, death, or special narrative symbolism. Portrait composition 1024x1536.",
       "processing": "Aspect-preserving resize to560x840 and WebP conversion only; alpha retained.",
       "bytes": 61432,
@@ -19,10 +19,10 @@
     },
     {
       "file": "public/art/v6/ss-xie-intent.webp",
-      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-30bb534f-ab72-4738-ae83-a82c9df4df88.png",
+      "source": "[author-local-path]",
       "prompt": "Use case: identity-preserve. Edit the supplied transparent Xie Zhibai character sprite. Preserve exactly this man's seventy-plus face identity, age, white hair and low knot, short rounded white beard, broad nose and face, brown robe/ivory collar/olive sash, full body proportions, hand-over-hand pose, shoes, lighting, framing, every garment edge and true transparent alpha. Change ONLY his facial expression to calmly intent and questioning: eyebrows draw slightly together, focused eyes look toward the off-frame conversational partner at left, lips closed and firmer, no anger, smile, shouting or new gesture. This is an everyday reusable concentration/disagreement expression, not a named event or outcome. No added object, scenery, coloured background, vignette, writing, emblem, injuries or effects. One same-sized full sprite with clean genuine transparency; no collage.",
       "references": [
-        "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-4de00079-3e0f-4b3e-ad41-25ef35381037.png"
+        "[author-local-path]"
       ],
       "processing": "Aspect-preserving resize to560x840 and WebP conversion only; alpha retained.",
       "bytes": 59918,
@@ -39,10 +39,10 @@
     },
     {
       "file": "public/art/v6/ss-xie-uneasy.webp",
-      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-eaa8c8a5-f766-4053-ae05-c7dd2c187ac1.png",
+      "source": "[author-local-path]",
       "prompt": "Use case: identity-preserve. Edit the supplied transparent Xie Zhibai character sprite. Preserve exactly this seventy-plus man's identity, facial structure, age and beard/hair, brown robe/ivory collar/olive sash, pose with one hand over the other, shoes, full-body framing, lighting and transparent alpha. Change ONLY his facial expression to visibly hesitant and concerned while listening: inner eyebrows lifted slightly, brow softly creased, eyes a little more open and attentive, corners of closed mouth mildly drawn down. Restrained adult uncertainty, no tears, tragedy, shock, open mouth, smile, or physical gesture. A reusable ordinary emotional state for many conversations after text changes. Do not alter face proportions, crop, hands, clothing, colour, age or head position. No scenery, vignette, coloured plate, writing, badges, injuries or effects. One isolated full sprite, genuinely transparent outside the character.",
       "references": [
-        "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-4de00079-3e0f-4b3e-ad41-25ef35381037.png"
+        "[author-local-path]"
       ],
       "processing": "Aspect-preserving resize to560x840 and WebP conversion only; alpha retained.",
       "bytes": 57272,
@@ -59,7 +59,7 @@
     },
     {
       "file": "public/art/v6/cg-working-books.webp",
-      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-8bf4732c-4a9f-4ebc-b5d4-e57a1c9b6065.png",
+      "source": "[author-local-path]",
       "prompt": "Use case: illustration-story. Asset type: one reusable landscape narrative still-life illustration for Jianghu, 1536x1024. The supplied image is a lighting/material/style reference only, not a request to reproduce the entire room. Show a medium-close view across an ordinary worn timber study table, a plain open thread-bound paper book near the upper middle, with a modest loose arrangement of closed cloth-covered books and folded blank papers continuing partly out of frame. A simple brush rest and small ordinary ink dish at an unobtrusive edge. Soft daylight from a paper window, warm timber and muted ivory/blue-grey cloth. Paper pages and book covers have NO writing, headings, diagrams, seals, symbols or numbers; no readable words anywhere. No exact inventory count should be inferable: the pile extends beyond the edges, with only one generic book open. No people or hands, no weapon, fire, ash, damage, blood, heraldry, special marked volume, magical effects or ending symbol. All objects are intact ordinary working copies. Detailed grounded painterly ink edges and naturalistic cloth/paper textures consistent with the reference and Jianghu art. The main open-book shape stays in the central upper half, bottom 30 percent quiet enough for external dialogue. This must work for comparing copies, reading notes, preparing a lesson, returning books or ordinary book work after plot edits; do not illustrate a particular named lost original or sacred relic. A full opaque illustration, not a UI, collage, promotional poster or background sprite sheet.",
       "references": [
         "public/art/v6/reusable-study.webp"

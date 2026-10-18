@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import {test,expect} from '@playwright/test';
 import {VNRuntime} from '../src/vn-runtime.ts';
 import content from '../src/generated/kuhe-v1.json' with {type:'json'};
@@ -13,7 +14,7 @@ for(const route of [0,1])test(`Kuhe actual browser full canonical route ${route}
  while(!story.frame.ending){
   await expect(page.locator('#app')).toHaveAttribute('data-beat',story.frame.id);
   if(['kh_bell_4','kh_three_old_2','kh_lock_6','kh_seventh_1'].includes(story.frame.id)&&!captured.has(story.frame.id)){
-   captured.add(story.frame.id);await page.screenshot({path:`docs/evidence/v6/kuhe-editorial-archive-v1-${story.frame.id}-${route}.png`});
+   captured.add(story.frame.id);await page.screenshot({path:evidencePath(`docs/evidence/v6/kuhe-editorial-archive-v1-${story.frame.id}-${route}.png`)});
   }
   if(story.frame.choices.length){
    const id=story.frame.choices[route].id;await page.locator(`[data-choice="${id}"]`).click();story.choose(id);
@@ -22,7 +23,7 @@ for(const route of [0,1])test(`Kuhe actual browser full canonical route ${route}
  await expect(page.locator('#app')).toHaveAttribute('data-beat',story.frame.id);
  await expect(page.locator('#ending-actions')).toContainText(route?'带着缺页':'灯下接更');
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
- await page.screenshot({path:`docs/evidence/v6/kuhe-editorial-archive-v1-ending-${route}.png`});
+ await page.screenshot({path:evidencePath(`docs/evidence/v6/kuhe-editorial-archive-v1-ending-${route}.png`)});
  await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',story.frame.id);
  expect(await page.evaluate(()=>localStorage.getItem('jianghu:campaign:tide:v1:sentinel'))).toBe('old-main');
  expect(errors).toEqual([]);
@@ -58,7 +59,7 @@ test('Kuhe corrected reusable elder, traveler and valley decode with readable pa
     expect(await page.locator('[data-character="kh_wusheng"]').getAttribute('style')).toContain('npc-seasoned-traveler.webp');
     const decoded=await page.evaluate(async()=>Promise.all(['./art/v6/npc-aged-monk.webp','./art/v6/npc-seasoned-traveler.webp','./art/v6/reusable-stone-valley.webp'].map(async src=>{const img=new Image();img.src=src;await img.decode();return img.naturalWidth>500&&img.naturalHeight>500})));expect(decoded).toEqual([true,true,true]);
    }
-   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/kuhe-editorial-archive-v1-reusable-${target}-${width}.png`});
+   if([360,800,1440].includes(width))await page.screenshot({path:evidencePath(`docs/evidence/v6/kuhe-editorial-archive-v1-reusable-${target}-${width}.png`)});
   }
   await context.close();
  }

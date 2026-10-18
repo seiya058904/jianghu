@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import {test,expect} from '@playwright/test';
 import {VNRuntime} from '../src/vn-runtime.ts';
 import content from '../src/generated/taihua-v1.json' with {type:'json'};
@@ -16,13 +17,13 @@ for(const route of [0,1])test(`Taihua complete actual browser path ${route}: ind
   await expect(page.locator('#app')).toHaveAttribute('data-beat',story.frame.id);
   const mood=story.frame.stage.moods.th_shen??'neutral';
   if(route===0&&story.frame.stage.cast.includes('th_shen')&&['neutral','amused','intent'].includes(mood)&&!portraitStates.has(mood)){
-   portraitStates.add(mood);await decodedStage(page);await page.screenshot({path:`docs/evidence/v6/taihua-editorial-archive-v1-shen-${mood}.png`});
+   portraitStates.add(mood);await decodedStage(page);await page.screenshot({path:evidencePath(`docs/evidence/v6/taihua-editorial-archive-v1-shen-${mood}.png`)});
   }
   if(story.frame.choices.length){
    const selected=story.frame.choices[route];
    const button=page.locator(`[data-choice="${selected.id}"]`);await expect(button).toBeEnabled();
    if(count===0)await decodedStage(page);
-   if(count===0)await page.screenshot({path:`docs/evidence/v6/taihua-editorial-archive-v1-first-choice-${route}.png`});
+   if(count===0)await page.screenshot({path:evidencePath(`docs/evidence/v6/taihua-editorial-archive-v1-first-choice-${route}.png`)});
    await button.click();story.choose(selected.id);count++;
   }else{const button=page.locator('#advance-button');await expect(button).toBeEnabled();await button.click();story.advance()}
  }
@@ -31,6 +32,6 @@ for(const route of [0,1])test(`Taihua complete actual browser path ${route}: ind
  await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',story.frame.id);
  expect(await page.evaluate(()=>localStorage.getItem('jianghu:campaign:tide:v1:sentinel'))).toBe('main-progress');
  expect(await page.evaluate(()=>localStorage.getItem('jianghu:vn:v2:sentinel'))).toBe('half-progress');
- await decodedStage(page);await page.screenshot({path:`docs/evidence/v6/taihua-editorial-archive-v1-ending-${route}.png`});expect(errors).toEqual([]);
+ await decodedStage(page);await page.screenshot({path:evidencePath(`docs/evidence/v6/taihua-editorial-archive-v1-ending-${route}.png`)});expect(errors).toEqual([]);
  if(route===0)expect(portraitStates.size).toBe(3);
 });

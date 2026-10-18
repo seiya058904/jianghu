@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import {test,expect} from '@playwright/test';
 import {VNRuntime} from '../src/vn-runtime';
 import frozen from '../src/generated/campaign-v5-1.0.0.json' with {type:'json'};
@@ -12,5 +13,5 @@ test('frozen v5 entry resumes actual old pending choice on root and subpath',asy
   await expect(page.locator('#dialogue-visible')).toContainText('过来，先松开');
   expect(await page.evaluate(()=>[localStorage.getItem('jianghu:vn:v2:auto'),localStorage.getItem('jianghu:v1:auto')])).toEqual(['preserve-halfstep','preserve-reader']);
  }
- expect(errors).toEqual([]);await page.screenshot({path:'docs/evidence/v6/main-current-20261016-v5-frozen-resume.png',animations:'disabled'});
+ expect(errors).toEqual([]);await page.screenshot({path:evidencePath('docs/evidence/v6/main-current-20261016-v5-frozen-resume.png'),animations:'disabled'});
 });

@@ -1,8 +1,8 @@
 {
   "tool": "built-in image_gen",
-  "target": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-771b98dd-9c4f-47df-8a75-0c3341a9c25f.png",
-  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-094baace-a413-453f-8424-8d9c246f4b88.png",
+  "target": "[author-local-path]",
+  "source": "[author-local-path]",
   "prompt": "Use case: identity-preserve. Edit target: the provided neutral production character sprite. Create a new expression and subtle pose state for the exact same character. Preserve face identity, apparent age, facial hair, hairstyle, clothing and all cloth wear, belt and weapon identity, full head to mid thighs framing, watercolor ink style and warm even light. Change only: Clearly amused dry humor: crow's feet crinkle, cheeks lift, a small visible smile under his white beard, brow softened; hands remain folded exactly as before. Preserve genuine transparent alpha and complete silhouette. No setting, no text, no particles, no logo, no new props, no additional figures.",
-  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/lm-he-amused.webp",
+  "output": "./public/art/v6/lm-he-amused.webp",
   "review": "Pending model visual review and story mapping"
 }

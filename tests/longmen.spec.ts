@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import {test,expect} from '@playwright/test';
 import {writeFileSync} from 'node:fs';
 import {VNRuntime} from '../src/vn-runtime.ts';
@@ -21,9 +22,9 @@ for(const route of [0,1])test(`Longmen library entry, real complete route ${rout
    if(s.frame.stage.scene==='lm_qingheyard'){
     await expect(page.locator('#scene-time')).toContainText('许重山五十六岁');
     await expect(page.locator('[data-character="lm_qinghe"]')).toBeVisible();
-    await page.screenshot({path:`docs/evidence/v6/longmen-editorial-archive-v1-qinghe-${route}.png`});
+    await page.screenshot({path:evidencePath(`docs/evidence/v6/longmen-editorial-archive-v1-qinghe-${route}.png`)});
    }
-   if(s.frame.stage.scene==='lm_fiveyears'){await expect(page.locator('#scene-time')).toContainText('五年后');await page.screenshot({path:`docs/evidence/v6/longmen-editorial-archive-v1-fiveyears-${route}.png`})}
+   if(s.frame.stage.scene==='lm_fiveyears'){await expect(page.locator('#scene-time')).toContainText('五年后');await page.screenshot({path:evidencePath(`docs/evidence/v6/longmen-editorial-archive-v1-fiveyears-${route}.png`)})}
   }
   if(s.frame.choices.length){const selected=s.frame.choices[route];const button=page.locator(`[data-choice="${selected.id}"]`);await expect(button).toBeEnabled();await button.click();s.choose(selected.id);decisions++}
   else{const button=page.locator('#advance-button');await expect(button).toBeEnabled();await button.click();s.advance()}
@@ -37,6 +38,6 @@ for(const route of [0,1])test(`Longmen library entry, real complete route ${rout
  await page.locator('#import-file').setInputFiles({name:'wrong-work.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({...s.save(),storyContentVersion:'taihua-1.0.0'}))});
  await expect(page.getByRole('dialog')).toContainText('作品或版本不兼容');
  expect(await page.evaluate(()=>localStorage.getItem('jianghu:chronicle:longmen:v1:auto'))).toBe(before);
- await page.keyboard.press('Escape');expect(errors).toEqual([]);await page.screenshot({path:`docs/evidence/v6/longmen-editorial-archive-v1-ending-${route}.png`});
- writeFileSync(`docs/evidence/v6/longmen-editorial-archive-v1-browser-${route}.json`,JSON.stringify({actualInputs:true,humanPlaytest:false,ending:s.frame.ending,decisions,beats:s.frames.length,scenes:[...scenes],errors},null,2));
+ await page.keyboard.press('Escape');expect(errors).toEqual([]);await page.screenshot({path:evidencePath(`docs/evidence/v6/longmen-editorial-archive-v1-ending-${route}.png`)});
+ writeFileSync(evidencePath(`docs/evidence/v6/longmen-editorial-archive-v1-browser-${route}.json`),JSON.stringify({actualInputs:true,humanPlaytest:false,ending:s.frame.ending,decisions,beats:s.frames.length,scenes:[...scenes],errors},null,2));
 });

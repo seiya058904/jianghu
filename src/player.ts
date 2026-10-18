@@ -1,6 +1,6 @@
 import {readingLock as workReadingLock} from './chronicle-access.ts';
 import {isCampaign,isChronicle,chronicle,campaignEdition,edition} from './edition.ts';
-import {chronicleWorks} from './chronicle-catalog.ts';
+import {indexHtml} from './work-index.ts';
 import './stage.css';
 import { VNRuntime, restoreVN, type Phase } from './vn-runtime.ts';
 import { characters, emotions, scenes, facts, endings, cgs } from './catalog.ts';
@@ -8,8 +8,9 @@ import { base, escape, button, header, cover, player, cast, choices, finish } fr
 
 const PREFIX = edition.prefix, LEGACY = 'jianghu:v1:';
 const app = document.querySelector<HTMLDivElement>('#app')!;
-const read = (key: string, prefix = PREFIX) => localStorage.getItem(prefix + key);
-const write = (key: string, value: string) => localStorage.setItem(PREFIX + key, value);
+const read = (key: string, prefix = PREFIX) => { try { return localStorage.getItem(prefix + key); } catch { return null; } };
+let observedAuto = read('auto');
+const write = (key: string, value: string) => { localStorage.setItem(PREFIX + key, value); if (key === 'auto') observedAuto = value; };
 type Settings = { size: number; dark: boolean; speed: number; reduced: boolean };
 type ControlState = Phase | 'presenting' | 'transition' | 'modalOpen';
 let settings: Settings = { size: 20, dark: false, speed: 18, reduced: false };
@@ -67,11 +68,12 @@ function render(complete = true) {
 }
 function persist() {
   if (!session) return false;
+  if (read('auto') !== observedAuto) { notify('另一标签页已更新本篇进度；当前进度未覆盖它，可在存档面板导出本次进度。'); return false; }
   try { if (pendingDraftBackup) { keepDraft(pendingDraftBackup); pendingDraftBackup = null; } write('auto', JSON.stringify(session.save())); return true; }
   catch { notify('浏览器未能保存；仍可游玩，请在存档面板导出本次进度。'); return false; }
 }
-function preserveAuto() { const raw = read('auto'); if (raw !== null) write('previous', raw); }
-function draftKeys() { return Object.keys(localStorage).filter(key => key.startsWith(PREFIX) && /^draft-[0-9]+(?:-[0-9]+)?$/.test(key.slice(PREFIX.length))).map(key => key.slice(PREFIX.length)); }
+function preserveAuto() { const raw = read('auto'); if (raw !== null) write('previous', raw); observedAuto = raw; }
+function draftKeys() { try { return Object.keys(localStorage).filter(key => key.startsWith(PREFIX) && /^draft-[0-9]+(?:-[0-9]+)?$/.test(key.slice(PREFIX.length))).map(key => key.slice(PREFIX.length)); } catch { return []; } }
 function keepDraft(raw: string) {
   if (draftKeys().some(key => read(key) === raw)) return;
   const stamp = Date.now(); let key = `draft-${stamp}`, suffix = 0;
@@ -170,8 +172,9 @@ function openDialog(title: string, html: string) {
 function permitEntry(){const reason=entryLock();if(reason){notify(reason);return false}return true}
 function begin() {
   if(!permitEntry())return;
-  const next = new VNRuntime(isCampaign ? campaignEdition.content : undefined, isCampaign ? campaignEdition.version : undefined); preserveAuto(); write('auto', JSON.stringify(next.save()));
+  const next = new VNRuntime(isCampaign ? campaignEdition.content : undefined, isCampaign ? campaignEdition.version : undefined); preserveAuto();
   session = next; mode = 'play'; auto = false; skipping = false; location.hash = 'play'; render(false); el('dialogue-panel').focus({ preventScroll: true });
+  persist();
 }
 function requestNew() {
   if(!permitEntry())return;
@@ -208,24 +211,30 @@ function showSettings() {
   if(edition.offlineWork)el('dialog-body').insertAdjacentHTML('beforeend',`<section class="entry"><h3>本篇离线游玩</h3><p>下载本篇所有场景和画像，断网后也能走尚未游玩的分支。其他作品按需下载。</p>${button(`下载《${edition.title}》离线资源`,'offline','secondary')}</section>`);
 }
 function showLibrary(){
-  openDialog('选一段江湖',`<p class="panel-intro">每篇各自保存进度。换一篇走，不会替你放弃原来的路。</p><section class="entry"><h3><a href="${base}">潮生有约</a></h3><p>陆路、水路、留守。赢一场，也要把说过的约带回来。</p></section>${chronicleWorks.map(work=>`<section class="entry"><h3><a href="${base}${work.file}">${work.title}</a></h3><p>${work.viewpoint} · ${work.note}</p></section>`).join('')}<section class="entry"><h3>旧篇与原存档</h3><p><a href="${base}tide-v5.html">潮生有约 · v5 原版</a></p><p><a href="${base}half-step.html">半步之约</a></p><p><a href="${base}legacy.html">渡口无碑</a></p></section>`);
+  openDialog('选一段江湖', indexHtml(base));
 }
 async function prepareOffline(){
   const button=dialog().querySelector<HTMLButtonElement>('[data-action="offline"]');if(button)button.disabled=true;
+  let expired=false,timer=0,channel:MessageChannel|undefined;
   try{
     if(!('serviceWorker' in navigator))throw new Error('unsupported');
     notify(`正在下载《${edition.title}》的离线资源……`);
-    const registration=await navigator.serviceWorker.ready;
-    const worker=registration.active;if(!worker)throw new Error('inactive');
-    await new Promise<void>((resolve,reject)=>{
-      const channel=new MessageChannel();
-      const timer=window.setTimeout(()=>{channel.port1.close();reject(new Error('timeout'))},30000);
-      channel.port1.onmessage=event=>{clearTimeout(timer);channel.port1.close();event.data?.ok?resolve():reject(new Error('download'))};
-      worker.postMessage({type:'cache-work',work:edition.offlineWork},[channel.port2]);
-    });
+    await Promise.race([
+      new Promise<never>((_,reject)=>{timer=window.setTimeout(()=>{expired=true;reject(new Error('timeout'))},30000)}),
+      (async()=>{
+        const registration=await navigator.serviceWorker.ready;
+        if(expired)throw new Error('timeout');
+        const worker=registration.active;if(!worker)throw new Error('inactive');
+        await new Promise<void>((resolve,reject)=>{
+          channel=new MessageChannel();
+          channel.port1.onmessage=event=>{event.data?.ok?resolve():reject(new Error('download'))};
+          worker.postMessage({type:'cache-work',work:edition.offlineWork},[channel.port2]);
+        });
+      })(),
+    ]);
     notify(`《${edition.title}》离线资源已备好，可断网继续；浏览器清理网站数据后需重新下载。`);
   }catch{notify('本篇离线资源未备齐；请联网后重试，当前存档保留。')}
-  finally{if(button?.isConnected)button.disabled=false}
+  finally{expired=true;clearTimeout(timer);channel?.port1.close();channel?.port2.close();if(button?.isConnected)button.disabled=false}
 }
 function knowledge() {
   const encounters=new Map<string,string>();

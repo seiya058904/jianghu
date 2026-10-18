@@ -47,7 +47,7 @@
 
 ## 本轮美术资源
 
-内置image_gen生成，原始文件保留在 `C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/`，两资源均已入工作区：
+内置image_gen生成，原始文件保留在 `[author-local-path]`，两资源均已入工作区：
 
 - `public/art/v6/lm-zhang.webp`，61,150字节，560×840 RGBA；原PNG `exec-15fdf076-b09e-444f-93b9-b9cc3f639326.png` 为1024×1536 RGBA。保留alpha，只缩放/转格式。原角色ID `lm_zhang` 的通用脸供冻结旧稿继续使用，新版 `lm_zhang_v2` 是同一人的版本外观ID，不计作另一个真实人物。
 - `public/art/v6/cg-longmen-night.webp`，228,976字节，1536×1024 RGB；原PNG `exec-5b9a7e22-2bf2-499d-b193-1cded64eb9ef.png`。参考现有贺专属与新章专属，实际检查两人面貌、衣装与年龄差；CG键 `longmenNight`，触发lm_night_private_2，lm_night_private_4退出，回到同院普通舞台。

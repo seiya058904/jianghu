@@ -1,8 +1,8 @@
 {
   "tool": "built-in image_gen",
-  "target": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-450284fd-636d-4645-948b-68595e7dd0f3.png",
-  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-f6a589ef-08a0-4e32-ab5c-6b1fb5e390cb.png",
+  "target": "[author-local-path]",
+  "source": "[author-local-path]",
   "prompt": "Use case: identity-preserve. Edit target: the provided neutral production character sprite. Create a new expression and subtle pose state for the exact same character. Preserve face identity, apparent age, facial hair, hairstyle, clothing and all cloth wear, belt and weapon identity, full head to mid thighs framing, watercolor ink style and warm even light. Change only: Focused martial intent: brows lower, gaze sharply forward, mouth set, left hand tightens on the sword scabbard, right hand slightly lifted ready for a formal bow before a bout. Sword remains fully sheathed. Preserve genuine transparent alpha and complete silhouette. No setting, no text, no particles, no logo, no new props, no additional figures.",
-  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/lm-shi-intent.webp",
+  "output": "./public/art/v6/lm-shi-intent.webp",
   "review": "Pending model visual review and story mapping"
 }

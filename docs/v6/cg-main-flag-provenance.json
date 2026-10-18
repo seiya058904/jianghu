@@ -1,11 +1,11 @@
 {
   "tool": "built-in image_gen",
-  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-d4f2eaad-6f84-488a-a232-05b716fef172.png",
+  "source": "[author-local-path]",
   "prompt": "Use case: production story CG for Jianghu Chinese historical wuxia visual novel. Key story illustration at a small riverside martial fair: He Mao, EXACT same42-year-old stocky carpenter with moustache, ochre headscarf, gray shirt and leather apron as reference1, kneels to steady a lowered cracked timber crossbar. Beside him Ren Geng, same young male blue-clad flag bearer with tied hair and worried face as reference2, has just returned safely to the ground and cradles his pinched RIGHT fingers in his other hand, no blood or graphic injury. Both stand/kneel safely at ground level. A red cloth flag lies slack across the foreground and the crack in wood is visible, no falling people. Empty fair fence behind in early daylight, sober consequence of trying a damaged pole. Preserve both faces/costumes and make distinct correct hand anatomy. Wide cinematic landscape3:2 with upper/middle faces and essential action visible; lower20 percent quiet for HTML dialogue. Match reference fine naturalistic ink illustration and tactile painterly rendering. Historically grounded Song-inspired clothing and architecture. No magical effects, no blood spray, no ornate UI, no text of ANY kind, no signature or artist mark in any corner, no watermark. Preserve exact referenced identities instead of inventing lookalikes.",
   "references": [
-    "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v5/he.webp",
-    "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v5/npc-youth-blue.webp"
+    "./public/art/v5/he.webp",
+    "./public/art/v5/npc-youth-blue.webp"
   ],
-  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/cg-main-flag.webp",
+  "output": "./public/art/v6/cg-main-flag.webp",
   "review": "Reviewed: reference identities, ages/costumes and action or injury stage match the selected scene. No generated readable plot text. Reuse within matching cast/age/physical conditions; separate script captions supply meaning. Already-generated output, no further CG requests after user reuse clarification. Actual trigger and exit are in production-direction-v6.mjs; responsive screenshot checks tracked separately."
 }

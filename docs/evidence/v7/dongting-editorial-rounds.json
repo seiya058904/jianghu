@@ -1,0 +1,93 @@
+{
+ "work": "dongting",
+ "rounds": [
+  {
+   "round": 1,
+   "focus": "戏剧结构（与 luhua 交叉审）",
+   "records": [
+    {
+     "round": 1,
+     "file": "story/dongting-author.mjs",
+     "beat": "dt_shore_after_1",
+     "originalLineOrAction": "七名旧豪议席，与你争着抬人、捞货的那一阵分开。",
+     "diagnosis": "指代含混（'那一阵'易读成时间而非劳务）",
+     "changedLineOrAction": "改为'与你这几日争着抬人、捞货的活分开来算'",
+     "whyItIsBetter": "议席与劳务两条账分清，直接为后续 dt_record 两张纸的裁决铺垫",
+     "choicePayoffBefore": "无",
+     "choicePayoffAfter": "无",
+     "sourceCanonRange": "34936-34952（四比三/孟不投）",
+     "testEvidence": "tests/dongting.test.ts 3/3 PASS",
+     "unresolvedIssue": "无"
+    },
+    {
+     "round": 1,
+     "file": "story/dongting-author.mjs",
+     "beat": "全篇结构复核",
+     "originalLineOrAction": "两年前复原→问席→劫船→议席→三年后",
+     "diagnosis": "复核确认：与 luhua 同事件（106合/79招/四比三/陈震十五）数字零冲突；玩家为听潮门普通帮工（兼容补写，ink 头注声明），不与梁视角抢戏；绳/分工/休息三组选择在 raid 结算处全部兑现为具体后果（活绳够到人/旧绳短一截/脚伤）",
+     "changedLineOrAction": "无（保留）",
+     "whyItIsBetter": "—",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "34836-35057 交叉",
+     "testEvidence": "3/3 PASS",
+     "unresolvedIssue": "无"
+    }
+   ]
+  },
+  {
+   "round": 2,
+   "focus": "NPC 声线",
+   "records": [
+    {
+     "round": 2,
+     "file": "story/dongting-author.mjs",
+     "beat": "dt_repair_1",
+     "originalLineOrAction": "dt_wang：'我还要回家，明日不能说谁上榜了，我便不用花钱吃饭。'（句法缠夹）",
+     "diagnosis": "汪苇的关切（工钱/回家）对，但句子拗口失真",
+     "changedLineOrAction": "'我还要回家。明日谁上榜，都轮不到替我买米。'",
+     "whyItIsBetter": "短句、米、家——与他在 dock 的'家里米却没多一碗'同一声口",
+     "choicePayoffBefore": "无",
+     "choicePayoffAfter": "无",
+     "sourceCanonRange": "—（兼容补写人物）",
+     "testEvidence": "3/3 PASS",
+     "unresolvedIssue": "无"
+    },
+    {
+     "round": 2,
+     "file": "story/dongting-author.mjs",
+     "beat": "声线盲测",
+     "originalLineOrAction": "'看归看，我不投自己徒弟。'（孟）/'跑第一的，回来也得接下一趟。'（陈）/'我还要回家。…替我买米。'（汪）/'你不是能替梁接魏虎的人'场景指令（旁白）",
+     "diagnosis": "三名主要说话人阶层/立场/句长区分清晰",
+     "changedLineOrAction": "无（保留）",
+     "whyItIsBetter": "—",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "—",
+     "testEvidence": "人工抽检",
+     "unresolvedIssue": "无"
+    }
+   ]
+  },
+  {
+   "round": 3,
+   "focus": "互动与原典复测",
+   "records": [
+    {
+     "round": 3,
+     "file": "story/dongting-author.mjs",
+     "beat": "dt_raid 结算链",
+     "originalLineOrAction": "dt_future==1/2 × dt_float × dt_rest 三层条件结算",
+     "diagnosis": "复核：每种组合均有独立可见后果（好绳断成两截/扶岸痛/夹脚），不是同义改写；mood 注入（dt_chen=hurt→calm）按 woundedStart/threeyears 边界正确",
+     "changedLineOrAction": "无",
+     "whyItIsBetter": "—",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "—",
+     "testEvidence": "3/3 PASS",
+     "unresolvedIssue": "无"
+    }
+   ]
+  }
+ ]
+}

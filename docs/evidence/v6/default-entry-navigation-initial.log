@@ -20,7 +20,7 @@ Running 1 test using 1 worker
       35 |  }
       36 | });
       37 |
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\default-entry.spec.ts:34:256
+        at .\tests\default-entry.spec.ts:34:256
 
     Error Context: test-results\default-entry-Library-and--6920a-ault-V6-at-root-and-subpath\error-context.md
 

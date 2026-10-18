@@ -29,11 +29,11 @@ VAR lh_late = 0
 === eleven ===
 包袱比你想的沉。十一岁，你背到洞庭西岸听潮门，门里的人问找谁，你只盯着四十八岁的孟守川。 # beat:lh_eleven_1 # scene:lh_school # cast:lh_meng # speaker:narrator
 我爹欠你一条命。他腿坏了，我来还。 # beat:lh_eleven_2 # scene:lh_school # cast:lh_meng # speaker:you
-你拿什么还？ # beat:lh_eleven_3 # scene:lh_school # cast:lh_meng # speaker:lh_meng # mood:lh_meng=intent
+你拿什么还？ # beat:lh_eleven_3 # scene:lh_school # cast:lh_meng # speaker:lh_meng # mood:lh_meng=intent # action:孟守川 · 先吃完这碗饭
 你想说会练刀，手却连包袱带也解不开。孟将它从肩上取下，叫你先把一碗饭吃完。这个最高旧洞庭第十二的师父，后来收你，也骂了你几十年。 # beat:lh_eleven_4 # scene:lh_school # cast:lh_meng # speaker:narrator
 * [先问今日能做什么，从扫院、认船和站步开始，不等一把刀便能还清命。 # cid:lh_ask_first_work]
   ~ lh_first_work = true
-  先把门边水扫出去。你爹没让你来替我再掉一回水。 # beat:lh_eleven_5 # scene:lh_school # cast:lh_meng # speaker:lh_meng # mood:lh_meng=amused
+  先把门边水扫出去。你爹没让你来替我再掉一回水。 # beat:lh_eleven_5 # scene:lh_school # cast:lh_meng # speaker:lh_meng # mood:lh_meng=amused # action:孟守川 · 你拿什么还
   你抬扫帚，孟看脚，叫先别把下一位进门的人也扫得滑倒。 # beat:lh_eleven_6 # scene:lh_school # cast:lh_meng # speaker:narrator
   -> changsha
 * [请师父看自己站一回，哪里不稳先改，不拿来还命便要求赶快教成。 # cid:lh_show_stance]
@@ -75,7 +75,7 @@ VAR lh_late = 0
 
 === red_snake ===
 赤蛇滩，焦在你身侧接舷。你还认得他当时落水的肩，今日来刃却从同一侧外头逼入，得由这只肩先替你挡住一段。 # beat:lh_red_snake_1 # scene:lh_redbank # cast:lh_jiao,lh_apo # speaker:narrator
-梁，退这边！ # beat:lh_red_snake_2 # scene:lh_redbank # cast:lh_jiao,lh_apo # speaker:lh_jiao # mood:lh_jiao=sharp
+梁，退这边！ # beat:lh_red_snake_2 # scene:lh_redbank # cast:lh_jiao,lh_apo # speaker:lh_jiao # mood:lh_jiao=sharp # action:焦定海 · 退这边
 你退，阿泊在船尾试着将近处的人送开。前面多一支弓能救急，这头一个能空出来的位置也能。 # beat:lh_red_snake_3 # scene:lh_redbank # cast:lh_jiao,lh_apo # speaker:narrator
 {
 - lh_shared_retreat:
@@ -155,28 +155,41 @@ VAR lh_late = 0
 第三日再问蒋。你将前两日从韩、陈、卓看来的临时揉进刀里，原来一追便满的肩前多出一段，蒋也得重新认。 # beat:lh_third_day_1 # scene:lh_trialboat # cast:dt_jiang # speaker:narrator
 这回不一样了。 # beat:lh_third_day_2 # scene:lh_trialboat # cast:dt_jiang # speaker:dt_jiang # mood:dt_jiang=intent
 你没有因此先当已经赢，掌一换，脚下还会动。打到双方都肯停，平，不把前一次败删去，也不把今日平偷偷领成胜。 # beat:lh_third_day_3 # scene:lh_trialboat # cast:dt_jiang # speaker:narrator
+{
+- lh_whole_boat:
+船一偏，你先看整条船，不只看蒋的掌路，肩前那一段因此比上一回多留得住。 # beat:lh_third_day_4 # scene:lh_trialboat # cast:dt_jiang # speaker:narrator
+这回你站的是船，不只盯我的掌。 # beat:lh_third_day_5 # scene:lh_trialboat # cast:dt_jiang # speaker:dt_jiang # mood:dt_jiang=intent
+- else:
+船一偏，你又只去找蒋的掌落在哪一处。蒋记下这一点，收手时没有替你藏起来。 # beat:lh_third_day_6 # scene:lh_trialboat # cast:dt_jiang # speaker:narrator
+}
 * [先接眼前这次新掌，平了也容对手下回继续改，不把新变化收成必胜招。 # cid:lh_take_present_hand]
   ~ lh_jiang_change = true
-  蒋追来，你再让；这一让没比从前多远，倒真留出下一个手还接得上的位置。 # beat:lh_third_day_4 # scene:lh_trialboat # cast:dt_jiang # speaker:narrator
-  先收，外头出事了。 # beat:lh_third_day_5 # scene:lh_trialboat # cast:dt_jiang # speaker:dt_jiang # mood:dt_jiang=amused
+  蒋追来，你再让；这一让没比从前多远，倒真留出下一个手还接得上的位置。 # beat:lh_third_day_7 # scene:lh_trialboat # cast:dt_jiang # speaker:narrator
+  先收，外头出事了。 # beat:lh_third_day_8 # scene:lh_trialboat # cast:dt_jiang # speaker:dt_jiang # mood:dt_jiang=amused
   -> raid_stops_trial
 * [将一负一平一起记在自己心里，收刀听船头的急报，不再追一个当场压过的结果。 # cid:lh_keep_both_results]
   ~ lh_jiang_change = false
-  你还没走出坪，急报已到。刀放下又得拿起，这次要接的却不是另一张问席帖。 # beat:lh_third_day_6 # scene:lh_trialboat # cast:dt_jiang # speaker:narrator
+  你还没走出坪，急报已到。刀放下又得拿起，这次要接的却不是另一张问席帖。 # beat:lh_third_day_9 # scene:lh_trialboat # cast:dt_jiang # speaker:narrator
   -> raid_stops_trial
 
 === raid_stops_trial ===
 铁牙余部劫船，问席即停。你和陈等候选、旧豪一同上船，翻鳞鬼魏虎逼到近舷，刀路不为较艺留一个败了便退的口。 # beat:lh_raid_stops_trial_1 # scene:lh_raid # cast:dt_weihu,dt_chen # speaker:narrator
 你争船上可站的一线，第七十九招杀魏虎。另一侧陈同魏苍血战百余，右肩中戟仍抓戟近身，以断索锁颈。 # beat:lh_raid_stops_trial_2 # scene:lh_raid # cast:dt_weihu,dt_chen # speaker:narrator
 他有自己守的一船，没人因这几日争同一椅便可等他那边先塌。 # beat:lh_raid_stops_trial_3 # scene:lh_raid # cast:dt_weihu,dt_chen # speaker:narrator
+{
+- lh_chen_rope:
+陈震换手那一下你在第三日真站进去接过，这回接他的位，少挤了半步，他从你这边过得去。 # beat:lh_raid_stops_trial_4 # scene:lh_raid # cast:dt_chen # speaker:narrator
+- else:
+陈震换手那一下你只在旁边看过一遍。这回接他的位多挤半步，他只能自己再撑一息。 # beat:lh_raid_stops_trial_5 # scene:lh_raid # cast:dt_chen # speaker:narrator
+}
 * [接回陈守的那侧，让他伤肩有人承下一段，不拿自己已杀匪便把全船说成已好。 # cid:lh_help_chen_side]
   ~ lh_raid_help = true
-  你去时，他仍紧握断索，直到接位的人真站好才松。陈没叫你记自己更勇，先问你那头有没有人接。 # beat:lh_raid_stops_trial_4 # scene:lh_raid # cast:dt_chen # speaker:narrator
-  有。先看你肩。 # beat:lh_raid_stops_trial_5 # scene:lh_raid # cast:dt_chen # speaker:you
+  你去时，他仍紧握断索，直到接位的人真站好才松。陈没叫你记自己更勇，先问你那头有没有人接。 # beat:lh_raid_stops_trial_6 # scene:lh_raid # cast:dt_chen # speaker:narrator
+  有。先看你肩。 # beat:lh_raid_stops_trial_7 # scene:lh_raid # cast:dt_chen # speaker:you
   -> four_three
 * [先把能走的货船送出乱线，再同陈对清哪边还缺人，不为多追一个匪头让船散。 # cid:lh_check_live_boats]
   ~ lh_raid_help = false
-  远处还有追声，你没去。近处船先离险，才有人接陈这侧。陈抬一抬伤肩，看你收刀，没问这回算不算多得一票。 # beat:lh_raid_stops_trial_6 # scene:lh_raid # cast:dt_chen # speaker:narrator
+  远处还有追声，你没去。近处船先离险，才有人接陈这侧。陈抬一抬伤肩，看你收刀，没问这回算不算多得一票。 # beat:lh_raid_stops_trial_8 # scene:lh_raid # cast:dt_chen # speaker:narrator
   -> four_three
 
 === four_three ===
@@ -236,14 +249,22 @@ VAR lh_late = 0
 您究竟是谁？ # beat:lh_seventy_odd_2 # scene:lh_reedboat # cast:lh_oldboat # speaker:you
 沈鹤汀，一苇横江。 # beat:lh_seventy_odd_3 # scene:lh_reedboat # cast:lh_oldboat # speaker:lh_oldboat # mood:lh_oldboat=intent
 江州沧浪门出身，四十余年前旧南第十九，右腿重伤主动退，后来二十余年隐水路。你拜问，他先说不抢孟的徒弟，只教一两手，学得会是你的事。 # beat:lh_seventy_odd_4 # scene:lh_reedboat # cast:lh_shen # speaker:narrator # fact:lh_shen_name
+{
+- lh_box_people and lh_child_listen:
+匣子送到了，孩子也没被你顺手抓回来。今天我讲的那一两手，讲深一点。 # beat:lh_seventy_odd_5 # scene:lh_reedboat # cast:lh_shen # speaker:lh_shen # mood:lh_shen=intent
+他没有把深讲当成夸你天分，只把你做过的那两件小事记在了要教的量上。 # beat:lh_seventy_odd_6 # scene:lh_reedboat # cast:lh_shen # speaker:narrator
+- else:
+{lh_box_people:匣在路上，你先问了人的去处。|你先送稳匣子，再折返问谁留下收尾。}{lh_child_listen:孩子那回，你退开让他把药讲完。|孩子那回，你请药铺来核，候了半日也没抓人。}先将这两次接手的先后走清，一两手从浅处教起。 # beat:lh_seventy_odd_7 # scene:lh_reedboat # cast:lh_shen # speaker:lh_shen # mood:lh_shen=amused
+你将当时先顾了谁、哪一段后来才接上依次说给他听。他不替你把花过的时辰省掉，也不将另一条走法一概说成没管人。 # beat:lh_seventy_odd_8 # scene:lh_reedboat # cast:lh_shen # speaker:narrator
+}
 * [先受禁听潮刀，再受熟招每场只能用一次，肯让别人专看自己哪里还只会同一招。 # cid:lh_take_one_use]
   ~ lh_once = true
-  卖鱼汉、府榜宗师、退榜人物，都不是给你那一下练熟后反复示范的木桩。你用过最熟的一刀，下一次真得从眼前的人再想。 # beat:lh_seventy_odd_5 # scene:lh_reedboat # cast:lh_shen # speaker:narrator
+  卖鱼汉、府榜宗师、退榜人物，都不是给你那一下练熟后反复示范的木桩。你用过最熟的一刀，下一次真得从眼前的人再想。 # beat:lh_seventy_odd_9 # scene:lh_reedboat # cast:lh_shen # speaker:narrator
   -> own_sleeve
 * [问别人如何研究自己的好招，再照一次之限真打，别把被认路当对方不该知道。 # cid:lh_ask_why_only_once]
   ~ lh_once = false
-  你也看别人的手，凭什么不许别人看你的？ # beat:lh_seventy_odd_6 # scene:lh_reedboat # cast:lh_shen # speaker:lh_shen # mood:lh_shen=amused
-  熟刀用过，身体还想再来。来掌又变，你终于不得不从没替自己预备好的那一截去接。 # beat:lh_seventy_odd_7 # scene:lh_reedboat # cast:lh_shen # speaker:narrator
+  你也看别人的手，凭什么不许别人看你的？ # beat:lh_seventy_odd_10 # scene:lh_reedboat # cast:lh_shen # speaker:lh_shen # mood:lh_shen=amused
+  熟刀用过，身体还想再来。来掌又变，你终于不得不从没替自己预备好的那一截去接。 # beat:lh_seventy_odd_11 # scene:lh_reedboat # cast:lh_shen # speaker:narrator
   -> own_sleeve
 
 === own_sleeve ===
@@ -256,22 +277,24 @@ VAR lh_late = 0
 -> jiangling
 
 === jiangling ===
-五十四，荆襄水陆会在江陵。你已由旧洞庭第十六升到第十一，四十余招胜府榜首魏隆，收刀时肩背仍热。 # beat:lh_jiangling_1 # scene:lh_jiangling # cast:lh_wei # speaker:narrator
-这一段是你自己长出来的。我还要再问。 # beat:lh_jiangling_2 # scene:lh_jiangling # cast:lh_wei # speaker:lh_wei # mood:lh_wei=intent
-外头忽然有人挤向另一场。沈十三篙退杜昆，总堂护法却认出了这个黑瘦艄公。荆楚第九庞震海到了，十二人围住他。 # beat:lh_jiangling_3 # scene:lh_jiangling # cast:lh_wei # speaker:narrator
-二十余招先退五个，再十余招，旧识陆天魁也退。其余人逐一退出，沈的脚下反而渐有空处。庞叫众人散开，自己独对。 # beat:lh_jiangling_4 # scene:lh_jiangling # cast:lh_wei # speaker:narrator
-第十五篙，篙端停喉。庞垂下双手，没让方才十二个人再替自己围回来。 # beat:lh_jiangling_5 # scene:lh_jiangling # cast:lh_wei # speaker:narrator
-人多，你看得见的地方却少了。 # beat:lh_jiangling_6 # scene:lh_jiangling # cast:lh_shen,lh_wei # speaker:lh_shen # mood:lh_shen=neutral
-你回自己那场同魏隆说完，不把另一边的十五篙算成自己又赢了一位荆楚名家。 # beat:lh_jiangling_7 # scene:lh_jiangling # cast:lh_shen,lh_wei # speaker:narrator
+五十四，荆襄水陆会在江陵。你已由旧洞庭第十六升到第十一，四十余招胜府榜首魏隆，收刀时肩背仍热。 # beat:lh_jiangling_1 # scene:lh_jiangling # cast:lh_wei,lh_shen,lh_pang # speaker:narrator
+这一段是你自己长出来的。我还要再问。 # beat:lh_jiangling_2 # scene:lh_jiangling # cast:lh_wei,lh_shen,lh_pang # speaker:lh_wei # mood:lh_wei=intent
+外头忽然有人挤向另一场。沈十三篙退杜昆，总堂护法却认出了这个黑瘦艄公。荆楚第九庞震海到了，十二人围住他。 # beat:lh_jiangling_3 # scene:lh_jiangling # cast:lh_wei,lh_shen,lh_pang # speaker:narrator
+二十余招先退五个，再十余招，旧识陆天魁也退。其余人逐一退出，沈的脚下反而渐有空处。 # beat:lh_jiangling_4 # scene:lh_jiangling # cast:lh_wei,lh_shen,lh_pang # speaker:narrator
+都退下。围到这个岁数的人，是替他歇气。 # beat:lh_jiangling_5 # scene:lh_jiangling # cast:lh_wei,lh_shen,lh_pang # speaker:lh_pang # mood:lh_pang=sharp
+庞震海拆了自家十二人的阵，独自提掌相对。第十五篙，篙端停喉。他垂下双手，没让方才的人再替自己围回来。 # beat:lh_jiangling_6 # scene:lh_jiangling # cast:lh_wei,lh_shen,lh_pang # speaker:narrator
+十五招，我连他第二篙的来处都没看清。 # beat:lh_jiangling_7 # scene:lh_jiangling # cast:lh_wei,lh_shen,lh_pang # speaker:lh_pang # mood:lh_pang=intent
+人多，你看得见的地方却少了。 # beat:lh_jiangling_8 # scene:lh_jiangling # cast:lh_wei,lh_shen,lh_pang # speaker:lh_shen # mood:lh_shen=neutral
+你回自己那场同魏隆说完，不把另一边的十五篙算成自己又赢了一位荆楚名家。 # beat:lh_jiangling_9 # scene:lh_jiangling # cast:lh_wei,lh_shen,lh_pang # speaker:narrator
 * [先与魏隆走完他要再问的一段，再去向沈请教围中怎样留空。 # cid:lh_finish_wei_words]
   ~ lh_wei_again = true
-  好。我还没问完，你眼睛就要跟着人群走了。 # beat:lh_jiangling_8 # scene:lh_jiangling # cast:lh_shen,lh_wei # speaker:lh_wei # mood:lh_wei=amused
-  他这回没抢近，你也不敢沿刚才那一刀照搬。 # beat:lh_jiangling_9 # scene:lh_jiangling # cast:lh_shen,lh_wei # speaker:narrator
+  好。我还没问完，你眼睛就要跟着人群走了。 # beat:lh_jiangling_10 # scene:lh_jiangling # cast:lh_wei,lh_shen,lh_pang # speaker:lh_wei # mood:lh_wei=amused
+  他这回没抢近，你也不敢沿刚才那一刀照搬。 # beat:lh_jiangling_11 # scene:lh_jiangling # cast:lh_wei,lh_shen,lh_pang # speaker:narrator
   -> black_reef
 * [把要问的落脚处记住，请魏隆另约一日；今日留在场边看退下的人怎样让路。 # cid:lh_ask_gap_later]
   ~ lh_wei_again = false
-  陆天魁伸手把一位后退者拉开。方才看着是十二处来势，退时也险些互撞。 # beat:lh_jiangling_10 # scene:lh_jiangling # cast:lh_shen,lh_wei # speaker:narrator
-  下回看人，得把他身边也看进去。 # beat:lh_jiangling_11 # scene:lh_jiangling # cast:lh_shen,lh_wei # speaker:you
+  陆天魁伸手把一位后退者拉开。方才看着是十二处来势，退时也险些互撞。 # beat:lh_jiangling_12 # scene:lh_jiangling # cast:lh_wei,lh_shen,lh_pang # speaker:narrator
+  下回看人，得把他身边也看进去。 # beat:lh_jiangling_13 # scene:lh_jiangling # cast:lh_wei,lh_shen,lh_pang # speaker:you
   -> black_reef
 
 === black_reef ===
@@ -296,16 +319,22 @@ VAR lh_late = 0
 别同它赌下一次还往同一边摆。看不准，就得给同船的人留得出手。 # beat:lh_learn_sea_2 # scene:lh_seatraining # cast:lh_ye,lh_ahang # speaker:lh_ye # mood:lh_ye=intent
 你再问方天螯，一百七十余招平。回到船上，手掌裂口浸了盐，阿航替你松开绑得太紧的布。 # beat:lh_learn_sea_3 # scene:lh_seatraining # cast:lh_ye,lh_ahang # speaker:narrator
 这一段靠船，让我自己接。你总站在那里，我会认你的背，却不会认浪。 # beat:lh_learn_sea_4 # scene:lh_seatraining # cast:lh_ye,lh_ahang # speaker:lh_ahang # mood:lh_ahang=neutral
+{
+- lh_jiang_change:
+洞庭问席再战蒋衡，你没有把记平的那一手收成必胜招。海上头一回靠船，你仍肯照眼前的浪再变一次。 # beat:lh_learn_sea_5 # scene:lh_seatraining # cast:lh_ye,lh_ahang # speaker:narrator
+- else:
+洞庭问席的一负一平，你原样记着，没有替自己抹掉先前那一败。海上头一回靠船，也得另记眼前的浪，不能只照搬那两场。 # beat:lh_learn_sea_6 # scene:lh_seatraining # cast:lh_ye,lh_ahang # speaker:narrator
+}
 * [让阿航亲接一段靠船，自己退到能回护的地方；晚一夜再复盘方的钩路。 # cid:lh_train_relief]
   ~ lh_relief = true
-  头一回接歪，第二回错过。你忍着不抢，第三回才见他自己把余绳放出。 # beat:lh_learn_sea_5 # scene:lh_seatraining # cast:lh_ye,lh_ahang # speaker:narrator
-  别点头了，先看我把人接全。 # beat:lh_learn_sea_6 # scene:lh_seatraining # cast:lh_ye,lh_ahang # speaker:lh_ahang # mood:lh_ahang=amused
-  你晚一夜拆方的钩法，等接替练完才重新上甲板试。 # beat:lh_learn_sea_7 # scene:lh_seatraining # cast:lh_ye,lh_ahang # speaker:narrator
+  头一回接歪，第二回错过。你忍着不抢，第三回才见他自己把余绳放出。 # beat:lh_learn_sea_7 # scene:lh_seatraining # cast:lh_ye,lh_ahang # speaker:narrator
+  别点头了，先看我把人接全。 # beat:lh_learn_sea_8 # scene:lh_seatraining # cast:lh_ye,lh_ahang # speaker:lh_ahang # mood:lh_ahang=amused
+  你晚一夜拆方的钩法，等接替练完才重新上甲板试。 # beat:lh_learn_sea_9 # scene:lh_seatraining # cast:lh_ye,lh_ahang # speaker:narrator
   -> third_sea
 * [自己先守最险的一段，让阿航看清钩法和救人空隙，再带他试较平的船边。 # cid:lh_hold_danger_first]
   ~ lh_relief = false
-  你把同一处钩路多试了数回，渐知道怎样不被它带向船首。阿航看得懂，却还没独自在乱浪里接过那一段。 # beat:lh_learn_sea_8 # scene:lh_seatraining # cast:lh_ye,lh_ahang # speaker:narrator
-  我记住你怎么做了。等轮到我，还是得真接。 # beat:lh_learn_sea_9 # scene:lh_seatraining # cast:lh_ye,lh_ahang # speaker:lh_ahang # mood:lh_ahang=intent
+  你把同一处钩路多试了数回，渐知道怎样不被它带向船首。阿航看得懂，却还没独自在乱浪里接过那一段。 # beat:lh_learn_sea_10 # scene:lh_seatraining # cast:lh_ye,lh_ahang # speaker:narrator
+  我记住你怎么做了。等轮到我，还是得真接。 # beat:lh_learn_sea_11 # scene:lh_seatraining # cast:lh_ye,lh_ahang # speaker:lh_ahang # mood:lh_ahang=intent
   -> third_sea
 
 === third_sea ===
@@ -314,25 +343,31 @@ VAR lh_late = 0
 前两回也算在里头。你今天这一刀，海里泡过了。 # beat:lh_third_sea_3 # scene:lh_qingyu # cast:lh_fang # speaker:lh_fang # mood:lh_fang=intent
 青屿左翼另有罗百仞，旧沿海路前位。你赶去之前，侧面一只普通舟忽然脱开船群。 # beat:lh_third_sea_4 # scene:lh_qingyu # cast:lh_fang # speaker:narrator
 {
-- lh_relief:
-阿航已到舟边，没在原处等你的手。余绳放过一段，再收，接住的是船上最后一个人的腰。 # beat:lh_third_sea_5 # scene:lh_qingyu # cast:lh_ahang # speaker:narrator
-这里我能接。你走你的。 # beat:lh_third_sea_6 # scene:lh_qingyu # cast:lh_ahang # speaker:lh_ahang # mood:lh_ahang=intent
-你照原来的线赶往左翼。昨日晚拆一夜的钩法，今天由另一双练过的手还给你这一段空处。 # beat:lh_third_sea_7 # scene:lh_qingyu # cast:lh_ahang # speaker:narrator
+- lh_defeat_plain:
+黑礁之后你把第七十四招以前怎样走错说给阿航听过。青屿这日他没有等你回头，自己先接上了那一段。 # beat:lh_third_sea_5 # scene:lh_qingyu # cast:lh_fang # speaker:narrator
 - else:
-阿航先照你平日的站处去接，浪把那一段推空。他退回来，向你喊自己接不到，没硬把满舟的人再往险处领。 # beat:lh_third_sea_8 # scene:lh_qingyu # cast:lh_ahang # speaker:narrator
-你折返，亲接一趟，船上的人都上来了。旁边一船的桨架撞坏，载货也浸了水，回岸要修一月。阿航留在损舟，接替尚未学完的地方终于落到他自己手上。 # beat:lh_third_sea_9 # scene:lh_qingyu # cast:lh_ahang # speaker:narrator
-人齐了。去左翼。回去这副架子我来修，你还得来陪我练。 # beat:lh_third_sea_10 # scene:lh_qingyu # cast:lh_ahang # speaker:lh_ahang # mood:lh_ahang=intent
+阿航同你在岸边两只浮舟上试过交接，知道平水也会错开。青屿这日浪更乱，他先看你一眼，确认这一回各自还能伸手到哪里。 # beat:lh_third_sea_6 # scene:lh_qingyu # cast:lh_fang # speaker:narrator
 }
-你到青屿左翼，一百二十余招胜罗百仞。刀从肩外换进，他想借浪抢回，你脚下先让了半步，刃已停在他不得不收势之处。 # beat:lh_third_sea_11 # scene:lh_qingyu # cast:lh_luo # speaker:narrator
-今日到此。 # beat:lh_third_sea_12 # scene:lh_qingyu # cast:lh_luo # speaker:lh_luo # mood:lh_luo=neutral
-远处主船的战声渐停。你人在左翼，只看见厉旗下的船开始收拢，没有隔着海替另一场数完每一刀。 # beat:lh_third_sea_13 # scene:lh_qingyu # cast:lh_luo # speaker:narrator
+{
+- lh_relief:
+阿航已到舟边，没在原处等你的手。余绳放过一段，再收，接住的是船上最后一个人的腰。 # beat:lh_third_sea_7 # scene:lh_qingyu # cast:lh_ahang # speaker:narrator
+这里我能接。你走你的。 # beat:lh_third_sea_8 # scene:lh_qingyu # cast:lh_ahang # speaker:lh_ahang # mood:lh_ahang=intent
+你照原来的线赶往左翼。昨日晚拆一夜的钩法，今天由另一双练过的手还给你这一段空处。 # beat:lh_third_sea_9 # scene:lh_qingyu # cast:lh_ahang # speaker:narrator
+- else:
+阿航先照你平日的站处去接，浪把那一段推空。他退回来，向你喊自己接不到，没硬把满舟的人再往险处领。 # beat:lh_third_sea_10 # scene:lh_qingyu # cast:lh_ahang # speaker:narrator
+你折返，亲接一趟，船上的人都上来了。旁边一船的桨架撞坏，载货也浸了水，回岸要修一月。阿航留在损舟，接替尚未学完的地方终于落到他自己手上。 # beat:lh_third_sea_11 # scene:lh_qingyu # cast:lh_ahang # speaker:narrator
+人齐了。去左翼。回去这副架子我来修，你还得来陪我练。 # beat:lh_third_sea_12 # scene:lh_qingyu # cast:lh_ahang # speaker:lh_ahang # mood:lh_ahang=intent
+}
+你到青屿左翼，一百二十余招胜罗百仞。刀从肩外换进，他想借浪抢回，你脚下先让了半步，刃已停在他不得不收势之处。 # beat:lh_third_sea_13 # scene:lh_qingyu # cast:lh_luo # speaker:narrator
+今日到此。 # beat:lh_third_sea_14 # scene:lh_qingyu # cast:lh_luo # speaker:lh_luo # mood:lh_luo=neutral
+远处主船的战声渐停。你人在左翼，只看见厉旗下的船开始收拢，没有隔着海替另一场数完每一刀。 # beat:lh_third_sea_15 # scene:lh_qingyu # cast:lh_luo # speaker:narrator
 * [先与阿航逐舟确认回来的人，再去听主船一战。 # cid:lh_count_return_boats]
   ~ lh_count_boats = true
-  报到最后一舟时你才坐下。听别人的惊险，不必抢在自己这边的人尚未接齐以前。 # beat:lh_third_sea_14 # scene:lh_qingyu # cast:lh_luo # speaker:narrator
+  报到最后一舟时你才坐下。听别人的惊险，不必抢在自己这边的人尚未接齐以前。 # beat:lh_third_sea_16 # scene:lh_qingyu # cast:lh_luo # speaker:narrator
   -> mainship_after
 * [先送左翼伤者进舱，请阿航核回舟，再去主船帮忙。 # cid:lh_return_wounded_first]
   ~ lh_count_boats = false
-  阿航报来最后一舟，你正替伤者托住臂下。两边都还有能做的事，谁先讲大胜倒不急。 # beat:lh_third_sea_15 # scene:lh_qingyu # cast:lh_luo # speaker:narrator
+  阿航报来最后一舟，你正替伤者托住臂下。两边都还有能做的事，谁先讲大胜倒不急。 # beat:lh_third_sea_17 # scene:lh_qingyu # cast:lh_luo # speaker:narrator
   -> mainship_after
 
 === mainship_after ===
@@ -344,12 +379,18 @@ VAR lh_late = 0
 两人都没入化。海上这一战的胜负足够重，不需要后来再添一个境界才成立。 # beat:lh_mainship_after_6 # scene:lh_seaafter # cast:lh_ye,lh_shen # speaker:narrator
 你由旧洞庭第十一升到第七。回岸，仍得看破舟与受伤的人，下一趟谁能走。 # beat:lh_mainship_after_7 # scene:lh_seaafter # cast:lh_ye,lh_shen # speaker:narrator
 {
-- lh_relief:
-明晚我再试那一段。你别又先替我站好。 # beat:lh_mainship_after_8 # scene:lh_seaafter # cast:lh_ahang,lh_ye,lh_shen # speaker:lh_ahang # mood:lh_ahang=amused
-你答应。他接过你递来的绳，自己检查磨损处。 # beat:lh_mainship_after_9 # scene:lh_seaafter # cast:lh_ahang,lh_ye,lh_shen # speaker:narrator
+- lh_count_boats:
+你把回舟逐条核到最后一艘才去听主船那一战。别人讲得再惊险，你这一边的人数是自己点过的。 # beat:lh_mainship_after_8 # scene:lh_seaafter # cast:lh_ye,lh_shen # speaker:narrator
 - else:
-一月修船，阿航亲装回桨架。你按约陪他练，没把海上那一趟自己折返救舟讲成从此只能由自己来。 # beat:lh_mainship_after_10 # scene:lh_seaafter # cast:lh_ahang,lh_ye,lh_shen # speaker:narrator
-这回我先。你在后头看。 # beat:lh_mainship_after_11 # scene:lh_seaafter # cast:lh_ahang,lh_ye,lh_shen # speaker:lh_ahang # mood:lh_ahang=neutral
+你先送了左翼伤者，阿航已报来最后一舟。主船那一战听到后半段，你仍记得自己没有逐舟亲见；回去要问清各船要修哪里，不能把他的核报说成自己的。 # beat:lh_mainship_after_9 # scene:lh_seaafter # cast:lh_ye,lh_shen # speaker:narrator
+}
+{
+- lh_relief:
+明晚我再试那一段。你别又先替我站好。 # beat:lh_mainship_after_10 # scene:lh_seaafter # cast:lh_ahang,lh_ye,lh_shen # speaker:lh_ahang # mood:lh_ahang=amused
+你答应。他接过你递来的绳，自己检查磨损处。 # beat:lh_mainship_after_11 # scene:lh_seaafter # cast:lh_ahang,lh_ye,lh_shen # speaker:narrator
+- else:
+一月修船，阿航亲装回桨架。你按约陪他练，没把海上那一趟自己折返救舟讲成从此只能由自己来。 # beat:lh_mainship_after_12 # scene:lh_seaafter # cast:lh_ahang,lh_ye,lh_shen # speaker:narrator
+这回我先。你在后头看。 # beat:lh_mainship_after_13 # scene:lh_seaafter # cast:lh_ahang,lh_ye,lh_shen # speaker:lh_ahang # mood:lh_ahang=neutral
 }
 -> winter_master
 
@@ -371,20 +412,26 @@ VAR lh_late = 0
   -> road_two
 
 === road_two ===
-六十五，胜陈震，升第六。再问锁湖枪邓长魁，先败，再平，才胜，升第五。每次赴约，带回的都不是同一个答案。 # beat:lh_road_two_1 # scene:lh_latermeet # cast:none # speaker:narrator
+六十五，胜陈震，升第六。再问锁湖枪邓长魁，先败；隔年再平——枪圈收短半尺，你进不去；又一年才胜，升第五。每次赴约，带回的都不是同一个答案。 # beat:lh_road_two_1 # scene:lh_latermeet # cast:none # speaker:narrator
 六十八，同第三两百余招平；七十一，升旧洞庭第二。师父没坐在场边了，你收刀仍会转头看一眼门口。 # beat:lh_road_two_2 # scene:lh_latermeet # cast:none # speaker:narrator
 七十二，沈只用左手，对你双手刀百余招，你竟逼不出右手。几次空处开过，你总要再确认，等认准，对方已经走完。 # beat:lh_road_two_3 # scene:lh_latermeet # cast:none # speaker:narrator
-你等的是机会，还是一个保证？ # beat:lh_road_two_4 # scene:lh_reedboat # cast:lh_shen # speaker:lh_shen # mood:lh_shen=intent
-你没答，把双手刀放下，手心还有一层汗。 # beat:lh_road_two_5 # scene:lh_reedboat # cast:lh_shen # speaker:narrator
+{
+- lh_raid_help:
+六十五岁那场，陈震抬过右肩——铁牙劫船那回，是你先去看他守的那一船，让他伤肩有人承下一段。他一直记得位置，今日两人都不必先把那件事说成欠。 # beat:lh_road_two_4 # scene:lh_latermeet # cast:none # speaker:narrator
+- else:
+六十五岁那场，陈震抬过右肩。当年你先把能走的货船送出乱线，那边后来才有人接他；他没提，你也没有补一句，这一场仍只按今日的手算。 # beat:lh_road_two_5 # scene:lh_latermeet # cast:none # speaker:narrator
+}
+你等的是机会，还是一个保证？ # beat:lh_road_two_6 # scene:lh_reedboat # cast:lh_shen # speaker:lh_shen # mood:lh_shen=intent
+你没答，把双手刀放下，手心还有一层汗。 # beat:lh_road_two_7 # scene:lh_reedboat # cast:lh_shen # speaker:narrator
 * [再约时见到便试，接受这一回也可能看错；不把犹豫藏进稳字里。 # cid:lh_try_when_seen]
   ~ lh_try_gap = true
-  我想等自己一定能接住，越等越晚。 # beat:lh_road_two_6 # scene:lh_reedboat # cast:lh_shen # speaker:you
-  知道这句，就别拿它来代替下一刀。 # beat:lh_road_two_7 # scene:lh_reedboat # cast:lh_shen # speaker:lh_shen # mood:lh_shen=neutral
+  我想等自己一定能接住，越等越晚。 # beat:lh_road_two_8 # scene:lh_reedboat # cast:lh_shen # speaker:you
+  知道这句，就别拿它来代替下一刀。 # beat:lh_road_two_9 # scene:lh_reedboat # cast:lh_shen # speaker:lh_shen # mood:lh_shen=neutral
   -> right_hand
 * [先把每一回还想确认的地方讲清，再让沈从相近的来势重新逼自己。 # cid:lh_say_what_waits]
   ~ lh_try_gap = false
-  你讲了三处，沈听完只摆出第一处。刀未进，你已经又想等第二个凭据。 # beat:lh_road_two_8 # scene:lh_reedboat # cast:lh_shen # speaker:narrator
-  还没动，你已经回去了一趟。 # beat:lh_road_two_9 # scene:lh_reedboat # cast:lh_shen # speaker:lh_shen # mood:lh_shen=amused
+  你讲了三处，沈听完只摆出第一处。刀未进，你已经又想等第二个凭据。 # beat:lh_road_two_10 # scene:lh_reedboat # cast:lh_shen # speaker:narrator
+  还没动，你已经回去了一趟。 # beat:lh_road_two_11 # scene:lh_reedboat # cast:lh_shen # speaker:lh_shen # mood:lh_shen=amused
   -> right_hand
 
 === right_hand ===
@@ -434,6 +481,14 @@ VAR lh_late = 0
 下山以后，别逢石头便问它该不该这么斜。 # beat:lh_mountain_fifth_4 # scene:lh_qingcheng # cast:lh_xu,lh_du # speaker:lh_du # mood:lh_du=amused
 七十九下山，五年不争，旧洞庭由第二落第四。杜海第一，陈震第二，邓长魁第三。你先胜陈，再胜杜；下一次修榜，列旧洞庭第一。 # beat:lh_mountain_fifth_5 # scene:lh_qingcheng # cast:lh_xu,lh_du # speaker:narrator
 多年对手仍各自来问，不因你终于到了前头就只剩恭贺。 # beat:lh_mountain_fifth_6 # scene:lh_qingcheng # cast:lh_xu,lh_du # speaker:narrator
+{
+- lh_market_walk:
+下山前你先答我一句：成都那年借的担，最难让的是哪一处。 # beat:lh_mountain_fifth_7 # scene:lh_qingcheng # cast:lh_xu,lh_du # speaker:lh_du # mood:lh_du=intent
+你答得上市口那一辆独轮车。杜清崖看鞋边泥水，没再问哪一式最难接，才放你走。 # beat:lh_mountain_fifth_8 # scene:lh_qingcheng # cast:lh_xu,lh_du # speaker:narrator
+- else:
+成都那年你随送货人走过一天，还接过那段窄路的担。今日若换一副担，别先替它说仍是原来的分量。 # beat:lh_mountain_fifth_9 # scene:lh_qingcheng # cast:lh_xu,lh_du # speaker:lh_du # mood:lh_du=amused
+你说得出当年接担时怎样给旁人让路。杜清崖点头，叫你下山再遇见不同的人与货，仍先看眼前。 # beat:lh_mountain_fifth_10 # scene:lh_qingcheng # cast:lh_xu,lh_du # speaker:narrator
+}
 -> south_gate
 
 === south_gate ===
@@ -471,10 +526,20 @@ VAR lh_late = 0
 === two_bowls ===
 八十四，前代南榜第三十六：听潮门，照水刀梁照水。十一岁入门，到这一行落定，七十三年。 # beat:lh_two_bowls_1 # scene:lh_grave # cast:none # speaker:narrator
 你独自去孟守川墓前，摆两碗酒。没有谁在这里替第十二与第三十六重新争高下。 # beat:lh_two_bowls_2 # scene:lh_grave # cast:none # speaker:narrator
-师父，三十六是最末。 # beat:lh_two_bowls_3 # scene:lh_grave # cast:none # speaker:you
-你端起自己那碗，风把袖口吹起，露出多年的旧痕。 # beat:lh_two_bowls_4 # scene:lh_grave # cast:none # speaker:narrator
-最末也是南榜。 # beat:lh_two_bowls_5 # scene:lh_grave # cast:none # speaker:you
-另一碗留在墓前。回去还要赴约，师父不能再听，你仍把今日的事说完。 # beat:lh_two_bowls_6 # scene:lh_grave # cast:none # speaker:narrator
+{
+- lh_first_work:
+师父，三十六是最末。你收我那年说，先学的是这一步。我后来一辈子都在学这一步。 # beat:lh_two_bowls_3 # scene:lh_grave # cast:none # speaker:you
+- else:
+师父，三十六是最末。你收我那年，我想的是快点学成还命。后来才知先要学的不是还，是我自己站不站得住。 # beat:lh_two_bowls_4 # scene:lh_grave # cast:none # speaker:you
+}
+你端起自己那碗，风把袖口吹起，露出多年的旧痕。 # beat:lh_two_bowls_5 # scene:lh_grave # cast:none # speaker:narrator
+{
+- lh_master_real:
+最末也是南榜。赤蛇滩那声低头，我讲给门人听了：站在前头的人会老、会漏、也可能死。我没让这件事等他们自己撞上才知道。 # beat:lh_two_bowls_6 # scene:lh_grave # cast:none # speaker:you
+- else:
+最末也是南榜。赤蛇滩救您的那一桨，出自五湖水会。我当面谢过救师的人，回去也让门人记清这个名字：师父会失手，他派的援手也是真的。 # beat:lh_two_bowls_7 # scene:lh_grave # cast:none # speaker:you
+}
+另一碗留在墓前。回去还要赴约，师父不能再听，你仍把今日的事说完。 # beat:lh_two_bowls_8 # scene:lh_grave # cast:none # speaker:narrator
 -> thirteen_years
 
 === thirteen_years ===
@@ -497,40 +562,93 @@ VAR lh_late = 0
 
 === late_after ===
 离开榜位以后，别人仍会来问今日这一刀。你能答的比少年时多，不能代人走的也比少年时认得清。 # beat:lh_late_after_1 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
+他们问，您这七十年最不肯省的是哪几件。 # beat:lh_late_after_2 # scene:lh_latehall # cast:lh_newstudent # speaker:lh_newstudent # mood:lh_newstudent=intent
+{
+- lh_market_listen and lh_child_listen:
+长沙那一路货、岳阳那包药，后来都怎样了。 # beat:lh_late_after_3 # scene:lh_latehall # cast:lh_newstudent # speaker:lh_newstudent # mood:lh_newstudent=neutral
+长沙是我先打伤人、整条货路卡住，我跟着师父挨处听才把出手的账讲开；岳阳的孩子先看见我腰里的刀，我退开挡门那一步，让他把拿了哪包、要给谁讲完。 # beat:lh_late_after_4 # scene:lh_latehall # cast:lh_newstudent # speaker:you
+- else:
+您年轻时出手，有没有过先解气、后算账的时候。 # beat:lh_late_after_5 # scene:lh_latehall # cast:lh_newstudent # speaker:lh_newstudent # mood:lh_newstudent=neutral
+有。长沙那一下我先解了气，货路卡住的情形是后来才听全的；岳阳的孩子当时只看见我腰里的刀。这两件我没在堂里省略。 # beat:lh_late_after_6 # scene:lh_latehall # cast:lh_newstudent # speaker:you
+}
+{
+- lh_jiao_line and lh_wei_again:
+赤蛇滩跟江陵那两回，您怎样让对面先把话说完。 # beat:lh_late_after_7 # scene:lh_latehall # cast:lh_newstudent # speaker:lh_newstudent # mood:lh_newstudent=neutral
+赤蛇滩我照焦定海喊的侧线接刃，没逼他先忘掉那半刀；江陵我先陪魏隆走完他要再问的一段，再去看退下的人怎样让路。这两桩都写进了我的教法。 # beat:lh_late_after_8 # scene:lh_latehall # cast:lh_newstudent # speaker:you
+- else:
+赤蛇滩与江陵，您当时分别顾了哪一处。 # beat:lh_late_after_9 # scene:lh_latehall # cast:lh_newstudent # speaker:lh_newstudent # mood:lh_newstudent=neutral
+{lh_jiao_line:赤蛇滩我照焦定海喊的侧线接刃。|赤蛇滩我先送开挡阿泊后退的人，焦多接两下，我回身再接舷。}{lh_wei_again:江陵我先陪魏隆走完再问的一段，才去请教。|江陵我另约魏隆，今日看退下的人怎样让路，再问的一段留待赴约。}当日顾到的与尚待做的，都得分清。 # beat:lh_late_after_10 # scene:lh_latehall # cast:lh_newstudent # speaker:you
+}
+{
+- lh_defend and lh_once:
+只许守的那半日，和熟招只许用一回的规矩，您受得住么。 # beat:lh_late_after_11 # scene:lh_latehall # cast:lh_newstudent # speaker:lh_newstudent # mood:lh_newstudent=neutral
+受住了。所以我后来先看门人哪里只会同一招：一个人若只剩一招能赢，那一招就是他最怕被拿走的地方。 # beat:lh_late_after_12 # scene:lh_latehall # cast:lh_newstudent # speaker:you
+- else:
+守的那半日与熟招限用一回，您各怎样练过。 # beat:lh_late_after_13 # scene:lh_latehall # cast:lh_newstudent # speaker:lh_newstudent # mood:lh_newstudent=neutral
+{lh_defend:只许守时，我收回心里要补的那一刀，真接他变过来的手。|只许守时，我先让开自己刻意露出的破处，守得出汗，没偷取那一胜。}{lh_once:熟招只用一回，下一次便得照眼前的人再想。|我先问别人怎样研究我的手，再照一次之限真打，不能因为被看清便怪别人。}门人也得真走过，不能只听我讲道理。 # beat:lh_late_after_14 # scene:lh_latehall # cast:lh_newstudent # speaker:you
+}
+{
+- lh_try_gap and lh_medicine_walk:
+门人问什么时候可以出手，您答得比从前短。为什么。 # beat:lh_late_after_15 # scene:lh_latehall # cast:lh_newstudent # speaker:lh_newstudent # mood:lh_newstudent=neutral
+因为我不再等一个一定能接住的保证——青城那趟药，我是走过窄石才知道的。剩下的话该他自己走一遍才听得进。 # beat:lh_late_after_16 # scene:lh_latehall # cast:lh_newstudent # speaker:you
+- else:
+沈前辈问的迟疑，与青城那趟药，您怎样分开讲。 # beat:lh_late_after_17 # scene:lh_latehall # cast:lh_newstudent # speaker:lh_newstudent # mood:lh_newstudent=neutral
+{lh_try_gap:沈再逼来时，我见到便试，也可能看错。|我先讲清还想确认的三处，沈只摆第一处，逼我认清自己又在等凭据。}{lh_medicine_walk:药路先听两边说清，再同岳走过窄石。|药路先同岳送完眼下这一趟，一前一后走过窄石，下一季谁修路仍得另问。}两回走过的都算，未问完的也不能省。 # beat:lh_late_after_18 # scene:lh_latehall # cast:lh_newstudent # speaker:you
+}
+{
+- lh_south_loss and lh_tang_next:
+卢百川那一败、唐九龄说的下回，您都留下来了吗。 # beat:lh_late_after_19 # scene:lh_latehall # cast:lh_newstudent # speaker:lh_newstudent # mood:lh_newstudent=neutral
+留了。卢那一段我照实演到脚下将尽，让新徒看这半步缺在哪；唐问下回我应了，候补那几年没把日子过成等榜房开口。 # beat:lh_late_after_20 # scene:lh_latehall # cast:lh_newstudent # speaker:you
+- else:
+候补那几年，与唐约过的下回，您各怎样走。 # beat:lh_late_after_21 # scene:lh_latehall # cast:lh_newstudent # speaker:lh_newstudent # mood:lh_newstudent=neutral
+{lh_south_loss:卢那一败，我照实演到脚下将尽，让新徒看这半步缺在哪。|候补以后，我去问不同路数的人，约定胜败都传回门里。}{lh_tang_next:唐的下回我应了，也让门人看见我刚胜唐又败陶。|我先走完半年约过的问艺，再讲唐的慢刀；他问能否赴旧约，我回养好就来。}没有哪一张新榜替我走完这些。 # beat:lh_late_after_22 # scene:lh_latehall # cast:lh_newstudent # speaker:you
+}
 {
 - lh_late == 1:
-这一班转刀，你陪了整月。一个孩子总把后脚钉住，小荻起初只催他再稳些；你请他自己到对面站，孩子的刀一来，他才知道该让哪里。 # beat:lh_late_after_2 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
-原来我也给他留死了。 # beat:lh_late_after_3 # scene:lh_latehall # cast:lh_newstudent # speaker:lh_newstudent # mood:lh_newstudent=amused
-你再带一遍。我看。 # beat:lh_late_after_4 # scene:lh_latehall # cast:lh_newstudent # speaker:you
-次月沿岸门人到了，带来一段你未亲历的问艺。他讲到自己走错，没先等你替他圆好。 # beat:lh_late_after_5 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
+这一班转刀，你陪了整月。一个孩子总把后脚钉住，小荻起初只催他再稳些；你请他自己到对面站，孩子的刀一来，他才知道该让哪里。 # beat:lh_late_after_23 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
+原来我也给他留死了。 # beat:lh_late_after_24 # scene:lh_latehall # cast:lh_newstudent # speaker:lh_newstudent # mood:lh_newstudent=amused
+你再带一遍。我看。 # beat:lh_late_after_25 # scene:lh_latehall # cast:lh_newstudent # speaker:you
+次月沿岸门人到了，带来一段你未亲历的问艺。他讲到自己走错，没先等你替他圆好。 # beat:lh_late_after_26 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
 - else:
-沿岸，新门人把你请到一条窄舟上。他练成的刀没有照抄旧教法，你看完，先请他讲为何要这样走。 # beat:lh_late_after_6 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
-堂里有一处停了三日。回来我们一起再看。 # beat:lh_late_after_7 # scene:lh_latehall # cast:lh_newstudent # speaker:lh_newstudent # mood:lh_newstudent=intent
-这是小荻后来捎来的话。你回馆，孩子们没有因为换过教者就停在原处等你；那一处还不通，你和小荻一起走到对面，让他们真试。 # beat:lh_late_after_8 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
+沿岸，新门人把你请到一条窄舟上。他练成的刀没有照抄旧教法，你看完，先请他讲为何要这样走。 # beat:lh_late_after_27 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
+堂里有一处停了三日。回来我们一起再看。 # beat:lh_late_after_28 # scene:lh_latehall # cast:lh_newstudent # speaker:lh_newstudent # mood:lh_newstudent=intent
+这是小荻后来捎来的话。你回馆，孩子们没有因为换过教者就停在原处等你；那一处还不通，你和小荻一起走到对面，让他们真试。 # beat:lh_late_after_29 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
 }
 * [把下一回领练交给小荻，留在旁边看他怎样回答新的来刀。 # cid:lh_give_next_hand]
   ~ lh_last_hand = true
-  我先带。你看漏了哪里再告诉我。 # beat:lh_late_after_9 # scene:lh_latehall # cast:lh_newstudent # speaker:lh_newstudent # mood:lh_newstudent=neutral
-  你坐下，把刀靠在手边，没替他先把所有来路排好。 # beat:lh_late_after_10 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
+  我先带。你看漏了哪里再告诉我。 # beat:lh_late_after_30 # scene:lh_latehall # cast:lh_newstudent # speaker:lh_newstudent # mood:lh_newstudent=neutral
+  你坐下，把刀靠在手边，没替他先把所有来路排好。 # beat:lh_late_after_31 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
   -> finish
 * [先亲自接住孩子要再试的一刀，再请小荻带下一段，让人看见你们怎样交手交班。 # cid:lh_answer_one_more]
   ~ lh_last_hand = false
-  你接过这一刀，叫孩子换一处来。小荻已走到另一边，接下来轮他，不必等你把堂里每一块地都站完。 # beat:lh_late_after_11 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
+  你接过这一刀，叫孩子换一处来。小荻已走到另一边，接下来轮他，不必等你把堂里每一块地都站完。 # beat:lh_late_after_32 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
   -> finish
 
 === finish ===
 日光移过门槛。堂里没有新榜揭起，刀仍有人接。 # beat:lh_finish_1 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
 {
-- lh_late == 1:
-你留下的那一月，已在这一班人的脚下长成各自不同的半步。 # beat:lh_finish_2 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
+- lh_last_hand:
+最后一回，你把领练交给小荻，自己坐在旁边看他怎样回答新的来刀。 # beat:lh_finish_2 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
 - else:
-沿岸带回的那段新刀，在堂里又被问了一遍。下一趟路，已有门人自己约好。 # beat:lh_finish_3 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
+最后一回，你亲手接住了孩子要再试的那一刀。小荻走到另一边，堂里的地你走完了自己那一份。 # beat:lh_finish_3 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
 }
 {
 - lh_late == 1:
-留堂之后，别人也开始能在你不出声时带完一段。 # beat:lh_finish_4 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator # ending:lh_hall_after
+你留下的那一月，已在这一班人的脚下长成各自不同的半步。 # beat:lh_finish_4 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
+- else:
+沿岸带回的那段新刀，在堂里又被问了一遍。下一趟路，已有门人自己约好。 # beat:lh_finish_5 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
+}
+{
+- lh_winter_teach:
+收刀时小荻问起师祖最后那件厚衣。你说他叫你出门带件厚的；他走以后，你先把孩子常看的那一段走完，才去赴约。 # beat:lh_finish_6 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
+- else:
+收刀时小荻问起师祖最后那件厚衣。你说那年冬他让你出门带件厚的，你按约走了；回来时门里几位已各带着孩子练，等你一起看。 # beat:lh_finish_7 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator
+}
+{
+- lh_late == 1:
+留堂之后，别人也开始能在你不出声时带完一段。 # beat:lh_finish_8 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator # ending:lh_hall_after
 -> END
 - else:
-出门归来，门里门外都已有各自往前走的人。 # beat:lh_finish_5 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator # ending:lh_coast_after
+出门归来，门里门外都已有各自往前走的人。 # beat:lh_finish_9 # scene:lh_latehall # cast:lh_newstudent # speaker:narrator # ending:lh_coast_after
 -> END
 }

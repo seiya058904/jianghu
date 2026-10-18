@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import {test,expect} from '@playwright/test';
 import {resolvePortrait} from '../src/catalog.ts';
 const people:[string,string[]][]=[
@@ -23,7 +24,7 @@ for(const [id,moods] of people)test(`${id}: three real reusable portrait states 
   expect(dimensions.w).toBeGreaterThanOrEqual(500);expect(dimensions.h).toBeGreaterThan(450);
   if(id==='v6_pei')expect(dimensions.w/dimensions.h).toBeGreaterThan(.95);
   if(id==='v6_rong'){expect(dimensions.w/dimensions.h).toBeGreaterThan(.8);expect(dimensions.w/dimensions.h).toBeLessThan(.9)}
-  await card.screenshot({path:`docs/evidence/v6/portrait-${id}-${mood}.png`});
+  await card.screenshot({path:evidencePath(`docs/evidence/v6/portrait-${id}-${mood}.png`)});
  }
  expect(files.size).toBe(3);expect(errors).toEqual([]);
 });

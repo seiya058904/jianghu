@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -25,7 +26,7 @@ for(const w of works)test(`${w.slug} reusable art: all sampled old snapshots pre
  }
  const expected=JSON.parse(readFileSync('docs/evidence/v6/jade-reusable-snapshot-scope.json','utf8')).find((r:{work:string})=>r.work===w.slug).changed;assert.deepEqual([...changed].sort(),expected);
  const declared=[...readFileSync(`story/${w.source}.ink`,'utf8').matchAll(/# beat:(\S+)/g)].map(m=>m[1]);assert.deepEqual([...visited].sort(),declared.sort());
- writeFileSync(`docs/evidence/v6/jade-reusable-${w.slug}-audit.json`,JSON.stringify({beats:visited.size,options:options.size,sampledPaths:256,exhaustive:false,changed:[...changed].sort(),representativeOldSnapshotMigrationVerified:true},null,2)+'\n');
+ writeFileSync(evidencePath(`docs/evidence/v6/jade-reusable-${w.slug}-audit.json`),JSON.stringify({beats:visited.size,options:options.size,sampledPaths:256,exhaustive:false,changed:[...changed].sort(),representativeOldSnapshotMigrationVerified:true},null,2)+'\n');
 });
 
 test('Jade reusable CGs exit before replies; both first-book viewpoints and next-frame cameras remain distinct',()=>{

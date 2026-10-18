@@ -1,9 +1,9 @@
 {
-  "beats": 326,
+  "beats": 336,
   "options": 40,
   "decisions": 20,
   "sampledPaths": 512,
   "exhaustive": false,
-  "longestPassiveGap": 15,
+  "longestPassiveGap": 16,
   "status": "THREE_INTERNAL_ROUNDS_NOT_FINAL_PROJECT_ACCEPTANCE"
 }

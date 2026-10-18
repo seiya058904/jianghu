@@ -15,7 +15,7 @@
 test at tests\kuhe-editorial-draft.test.ts:16:1
 ✖ Leave-camp choice has voluntary limited-duty return; single preparation changes have delayed concrete consequences (46.5803ms)
   AssertionError [ERR_ASSERTION]: kh_keep_beds: delayed consequence 10
-      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/kuhe-editorial-draft.test.ts:21:305)
+      at TestContext.<anonymous> (file:///[author-local-path]
       at Test.runInAsyncScope (node:async_hooks:227:14)
       at Test.run (node:internal/test_runner/test:1201:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:831:18)

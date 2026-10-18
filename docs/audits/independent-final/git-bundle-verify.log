@@ -1,0 +1,10 @@
+The bundle contains these 6 refs:
+24697329429791491d1daecc3f08465140efd5a9 refs/codex/turn-diffs/captures/1792291035422/e15c27f8-14e3-46fd-b0ef-7d6859a568d3/base
+0f3074d21cf1ca8317fb542e3017455a744d778e refs/codex/turn-diffs/checkpoints/4295f3dd79985ad8a3cfdd30508428cb/3e1ffc60e05e5949ac21804f72640d62/1792138378415/fc25baef-ccb8-4a87-b03f-2771e6827226
+7a2c22f74c46d74f07af8bd1a45893ec15daa49b refs/heads/master
+a6e5d5947ce2d06c6c2ab83e1cfd515c95191959 refs/heads/publish
+a6e5d5947ce2d06c6c2ab83e1cfd515c95191959 refs/remotes/origin/main
+7a2c22f74c46d74f07af8bd1a45893ec15daa49b HEAD
+The bundle records a complete history.
+The bundle uses this hash algorithm: sha1
+../Jianghu-independent-20261018/jianghu-author-before-slim.bundle is okay

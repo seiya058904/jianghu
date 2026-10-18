@@ -16,7 +16,7 @@
 test at tests\kuhe-editorial.test.ts:16:1
 ✖ Kuhe V3 single-input record, cloth and wrist changes are paid in later passages without reassigning fixed fates (23.6763ms)
   AssertionError [ERR_ASSERTION]: kh_make_strap
-      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/kuhe-editorial.test.ts:17:215)
+      at TestContext.<anonymous> (file:///[author-local-path]
       at Test.runInAsyncScope (node:async_hooks:227:14)
       at Test.run (node:internal/test_runner/test:1201:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:831:18)

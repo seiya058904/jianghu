@@ -21,7 +21,7 @@ Running 1 test using 1 worker
       36 |  }
       37 | });
       38 |
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\jade.spec.ts:35:375
+        at .\tests\jade.spec.ts:35:375
 
     Error Context: test-results\jade-paired-volumes-have-v-6bfeb-gation-at-seven-cover-sizes\error-context.md
 

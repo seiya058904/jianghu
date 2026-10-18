@@ -21,6 +21,9 @@ VAR dr_names_plain = false
 VAR dr_life_limits = false
 VAR dr_letter_private = false
 VAR dr_new_name = false
+VAR dr_face_alone = false
+VAR dr_faces_recorded = false
+VAR dr_face_askers = false
 VAR dr_first_sword = 0
 VAR dr_second_sword = 0
 VAR dr_third_sword = 0
@@ -58,15 +61,21 @@ VAR dr_lesson = 0
 偶尔。药商死早了，第四场还没打。 # beat:dr_old_dream_4 # scene:dr_practice # cast:dr_apprentice # speaker:you
 第三场也没打！ # beat:dr_old_dream_5 # scene:dr_practice # cast:dr_apprentice # speaker:dr_apprentice # mood:dr_apprentice=amused
 你抬眼，他缩一下，又忍不住笑。你也笑，那位老人再没有机会纠正你这句。 # beat:dr_old_dream_6 # scene:dr_practice # cast:dr_apprentice # speaker:narrator
+{
+- dr_letter_hand:
+陆认的是当年那封信，不是只认字。你把这问法记下了：先问人从哪里认起，再谈像不像。 # beat:dr_old_dream_7 # scene:dr_practice # cast:dr_apprentice # speaker:narrator
+- else:
+那场争榜你听完才走。旧录涉案一句之外，卷里因此多了一个真活过、真来拍过这张桌子的样子。 # beat:dr_old_dream_8 # scene:dr_practice # cast:dr_apprentice # speaker:narrator
+}
 * [把剑拿起，陪徒弟接一轮；还会出手，也不必为做了榜房人就宣称从未想赢。 # cid:dr_pickup_training]
   ~ dr_practice = true
-  他一进你退半步，剑便从他肩外回来。你叫他看脚，别因师父会写榜就以为这一手也只能写。 # beat:dr_old_dream_7 # scene:dr_practice # cast:dr_apprentice # speaker:narrator
-  这回练完，该查的信仍在那里等。 # beat:dr_old_dream_8 # scene:dr_practice # cast:dr_apprentice # speaker:narrator
+  他一进你退半步，剑便从他肩外回来。你叫他看脚，别因师父会写榜就以为这一手也只能写。 # beat:dr_old_dream_9 # scene:dr_practice # cast:dr_apprentice # speaker:narrator
+  这回练完，该查的信仍在那里等。 # beat:dr_old_dream_10 # scene:dr_practice # cast:dr_apprentice # speaker:narrator
   -> liang_house
 * [让徒弟照当年药商那条路进，自己重走一次，不把多年后那场没打完想成必胜。 # cid:dr_show_old_loss]
   ~ dr_practice = false
-  你走到六十一招常停的位置，仍找不出一个能叫死去的人照样回答的下一步。徒弟没再替你说今日一定能赢，只问刚才怎么换。 # beat:dr_old_dream_9 # scene:dr_practice # cast:dr_apprentice # speaker:narrator
-  来，你真接一次。 # beat:dr_old_dream_10 # scene:dr_practice # cast:dr_apprentice # speaker:you
+  你走到六十一招常停的位置，仍找不出一个能叫死去的人照样回答的下一步。徒弟没再替你说今日一定能赢，只问刚才怎么换。 # beat:dr_old_dream_11 # scene:dr_practice # cast:dr_apprentice # speaker:narrator
+  来，你真接一次。 # beat:dr_old_dream_12 # scene:dr_practice # cast:dr_apprentice # speaker:you
   -> liang_house
 
 === liang_house ===
@@ -121,13 +130,19 @@ VAR dr_lesson = 0
 === zhao_memory ===
 其后，二十七日的新报到房，第十六青蒲剑赵问川败，六十九招。这次口述里，那名自称谢藏锋者右脚更重，出手却像先等你把会走的路都送到面前。 # beat:dr_zhao_memory_1 # scene:dr_dayground # cast:dr_zhao # speaker:narrator
 仍是复原，不是凭你手里有三份纸便已知道三个名字。你暂借持剑者所能做的一步，面对赵还在变的来剑。 # beat:dr_zhao_memory_2 # scene:dr_dayground # cast:dr_zhao # speaker:narrator
+{
+- dr_claim_separate:
+梁亲认的那场负与对方自称，你分开记着。到赵这一份，卷上也是两行：一场真败，一个还未证明的人。 # beat:dr_zhao_memory_3 # scene:dr_dayground # cast:dr_zhao # speaker:narrator
+- else:
+自报三十招胜第十那位来客的事你还留着。徒弟再听旁人转述战绩，先问本人知不知道这一场。 # beat:dr_zhao_memory_4 # scene:dr_dayground # cast:dr_zhao # speaker:narrator
+}
 * [不急着演完整一套照夜剑，先看赵真正怎样递手，等他下一步露出。 # cid:dr_watch_actual_person]
   ~ dr_second_sword = 1
-  赵回剑时手比脚先回，你没有追那一截快。等他想从旧路再进，剑已经等在他这次真正会来的侧边。 # beat:dr_zhao_memory_3 # scene:dr_dayground # cast:dr_zhao # speaker:narrator
+  赵回剑时手比脚先回，你没有追那一截快。等他想从旧路再进，剑已经等在他这次真正会来的侧边。 # beat:dr_zhao_memory_5 # scene:dr_dayground # cast:dr_zhao # speaker:narrator
   -> sixty_nine
 * [留一个他会试的空，再从他真正试过的反应里换，不拿预想替他做完。 # cid:dr_leave_false_opening]
   ~ dr_second_sword = 2
-  赵没照你最先猜的来，你便把那一猜放掉。右脚接重，手从另一处续出，没有为一个像师父的姿势先停住眼前的人。 # beat:dr_zhao_memory_4 # scene:dr_dayground # cast:dr_zhao # speaker:narrator
+  赵没照你最先猜的来，你便把那一猜放掉。右脚接重，手从另一处续出，没有为一个像师父的姿势先停住眼前的人。 # beat:dr_zhao_memory_6 # scene:dr_dayground # cast:dr_zhao # speaker:narrator
   -> sixty_nine
 
 === sixty_nine ===
@@ -173,16 +188,36 @@ VAR dr_lesson = 0
 打法能变，十八年也能改习惯。 # beat:dr_shen_three_3 # scene:dr_shenyard # cast:dr_shen,dr_lu # speaker:you
 所以我没说他们不是谢藏锋。我说，不是一个人。 # beat:dr_shen_three_4 # scene:dr_shenyard # cast:dr_shen,dr_lu # speaker:dr_shen # mood:dr_shen=intent
 你原想接着问的那句停了，老人已将三页分开，不把一句像与不像揉成同一个结论。 # beat:dr_shen_three_5 # scene:dr_shenyard # cast:dr_shen,dr_lu # speaker:narrator
+{
+- dr_first_sword == 1 and dr_second_sword == 1 and dr_third_sword == 1:
+三场你都先看对面真正会怎样来。借追势、等递手、从刀背细处转开，纸上像一路，脚手与呼吸却各有不同。 # beat:dr_shen_three_6 # scene:dr_shenyard # cast:dr_shen,dr_lu # speaker:dr_shen # mood:dr_shen=intent
+她这么一说，你才发觉三次复原能相接，不等于真由同一个人走完。 # beat:dr_shen_three_7 # scene:dr_shenyard # cast:dr_shen,dr_lu # speaker:narrator
+- else:
+八十三那场，{dr_first_sword == 2:你把承重的左脚真交出去。|你借追来的力转回右侧。}六十九那场，{dr_second_sword == 2:你留空看他真怎样试。|你先等他真正递手。}一百一十四那场，{dr_third_sword == 2:你留着能停的一手。|你从刀背细处转开。}三种走法拼起来像，却不在同一只手里。 # beat:dr_shen_three_8 # scene:dr_shenyard # cast:dr_shen,dr_lu # speaker:dr_shen # mood:dr_shen=intent
+你原以为那三份纸抄得越齐越好，如今才知不齐本身就是一条线索。 # beat:dr_shen_three_9 # scene:dr_shenyard # cast:dr_shen,dr_lu # speaker:narrator
+}
+{
+- dr_first_sword == 2:
+八十三那一场，你把承重的左脚真交了出去。这一手写在纸上不好看，却是那夜还能站住的一处。 # beat:dr_shen_three_10 # scene:dr_shenyard # cast:dr_shen,dr_lu # speaker:narrator
+- else:
+八十三那一场，你借他追来的力转回右侧。这一手顺，顺得像打过很多回的人，而不是一个心虚的冒名者。 # beat:dr_shen_three_11 # scene:dr_shenyard # cast:dr_shen,dr_lu # speaker:narrator
+}
+{
+- dr_asked_reopen:
+陆那句大概不会，你没有替它圆成他们对了。旧案如今真在桌上，靠的是这三份口述，不是那句迟来的承认。 # beat:dr_shen_three_12 # scene:dr_shenyard # cast:dr_shen,dr_lu # speaker:narrator
+- else:
+白水旧卷是你亲手放回桌上的。查假与翻旧冤两件事，陆都没有让它们互相顶替。 # beat:dr_shen_three_13 # scene:dr_shenyard # cast:dr_shen,dr_lu # speaker:narrator
+}
 * [请她真试被找到的人，纸上差别是路，不先拿来判一个未到场的人。 # cid:dr_ask_actual_test]
   ~ dr_wants_test = true
-  找到，叫来。我问的是他今天怎样走，不叫你照三句话抓三个影。 # beat:dr_shen_three_6 # scene:dr_shenyard # cast:dr_shen,dr_lu # speaker:dr_shen # mood:dr_shen=neutral
-  她把刀横好，起身时先给坏腿留一步，不拿自己曾能进十四便说如今伤已不在。 # beat:dr_shen_three_7 # scene:dr_shenyard # cast:dr_shen,dr_lu # speaker:narrator
+  找到，叫来。我问的是他今天怎样走，不叫你照三句话抓三个影。 # beat:dr_shen_three_14 # scene:dr_shenyard # cast:dr_shen,dr_lu # speaker:dr_shen # mood:dr_shen=neutral
+  她把刀横好，起身时先给坏腿留一步，不拿自己曾能进十四便说如今伤已不在。 # beat:dr_shen_three_15 # scene:dr_shenyard # cast:dr_shen,dr_lu # speaker:narrator
   -> white_sand
 * [把她三次亲手问过的范围写清，不让外面传成她一眼便识天下所有假剑。 # cid:dr_ask_what_she_knows]
   ~ dr_wants_test = false
-  你还肯问范围，倒有一点像陆那烦人样。 # beat:dr_shen_three_8 # scene:dr_shenyard # cast:dr_shen,dr_lu # speaker:dr_shen # mood:dr_shen=amused
-  问第二遍，才省得以后问十八年。 # beat:dr_shen_three_9 # scene:dr_shenyard # cast:dr_shen,dr_lu # speaker:dr_lu # mood:dr_lu=neutral
-  你带三页出门，两人没因互呛一句便少讲今天该去哪里。 # beat:dr_shen_three_10 # scene:dr_shenyard # cast:dr_shen,dr_lu # speaker:narrator
+  你还肯问范围，倒有一点像陆那烦人样。 # beat:dr_shen_three_16 # scene:dr_shenyard # cast:dr_shen,dr_lu # speaker:dr_shen # mood:dr_shen=amused
+  问第二遍，才省得以后问十八年。 # beat:dr_shen_three_17 # scene:dr_shenyard # cast:dr_shen,dr_lu # speaker:dr_lu # mood:dr_lu=neutral
+  你带三页出门，两人没因互呛一句便少讲今天该去哪里。 # beat:dr_shen_three_18 # scene:dr_shenyard # cast:dr_shen,dr_lu # speaker:narrator
   -> white_sand
 
 === white_sand ===
@@ -210,16 +245,22 @@ VAR dr_lesson = 0
 是。没造假，留了手。 # beat:dr_doctor_3 # scene:dr_clinic # cast:dr_yan # speaker:dr_yan # mood:dr_yan=intent
 为何冒谢藏锋？ # beat:dr_doctor_4 # scene:dr_clinic # cast:dr_yan # speaker:you
 他不答，先提醒第三个人还没找。外头又来一个抱药的人，严接过看，不叫一场大案把整间医馆都停成等你讲话。 # beat:dr_doctor_5 # scene:dr_clinic # cast:dr_yan # speaker:narrator
+{
+- dr_boat_wait:
+白沙渡那一回你等他把船撑完才开口。到了医馆也一样：你要人认账，不等于要人先丢下手里正接着的活。 # beat:dr_doctor_6 # scene:dr_clinic # cast:dr_yan # speaker:narrator
+- else:
+江心那一问你问得直接，严松答得也直接。两个人都没有把想核的事，改成一船人陪着耽误。 # beat:dr_doctor_7 # scene:dr_clinic # cast:dr_yan # speaker:narrator
+}
 * [约好他能来而病人有人接的时辰，问话不等于他往后的活都须让开。 # cid:dr_leave_visit_time]
   ~ dr_clinic_time = true
-  后日有人替。我去。 # beat:dr_doctor_6 # scene:dr_clinic # cast:dr_yan # speaker:dr_yan # mood:dr_yan=neutral
-  到院里，何那场细节还得再问。 # beat:dr_doctor_7 # scene:dr_clinic # cast:dr_yan # speaker:you
-  你既找到我，我没打算只承认一半。先让我把今日的药配完。 # beat:dr_doctor_8 # scene:dr_clinic # cast:dr_yan # speaker:dr_yan # mood:dr_yan=amused
+  后日有人替。我去。 # beat:dr_doctor_8 # scene:dr_clinic # cast:dr_yan # speaker:dr_yan # mood:dr_yan=neutral
+  到院里，何那场细节还得再问。 # beat:dr_doctor_9 # scene:dr_clinic # cast:dr_yan # speaker:you
+  你既找到我，我没打算只承认一半。先让我把今日的药配完。 # beat:dr_doctor_10 # scene:dr_clinic # cast:dr_yan # speaker:dr_yan # mood:dr_yan=amused
   -> woodshop
 * [先问第三个人去处，把今天能确认的记下，其余当着对方也能核时再问。 # cid:dr_ask_next_name]
   ~ dr_clinic_time = false
-  严报杜青禾，棺材铺。你没有因他肯认何一场就让他替另两人都认完，出门前又问后日是否能来。 # beat:dr_doctor_9 # scene:dr_clinic # cast:dr_yan # speaker:narrator
-  能。你把哪一页要我当面说带来。 # beat:dr_doctor_10 # scene:dr_clinic # cast:dr_yan # speaker:dr_yan # mood:dr_yan=intent
+  严报杜青禾，棺材铺。你没有因他肯认何一场就让他替另两人都认完，出门前又问后日是否能来。 # beat:dr_doctor_11 # scene:dr_clinic # cast:dr_yan # speaker:narrator
+  能。你把哪一页要我当面说带来。 # beat:dr_doctor_12 # scene:dr_clinic # cast:dr_yan # speaker:dr_yan # mood:dr_yan=intent
   -> woodshop
 
 === woodshop ===
@@ -229,16 +270,22 @@ VAR dr_lesson = 0
 结果？ # beat:dr_woodshop_4 # scene:dr_woodshop # cast:dr_du # speaker:you
 没打。他不肯。 # beat:dr_woodshop_5 # scene:dr_woodshop # cast:dr_du # speaker:dr_du # mood:dr_du=neutral
 你把未打原样留着，不拿叫谢藏锋的第四封也添出第四场胜。杜将木屑拨开，问今天要他跟你去，还是等他把这一面刨平。 # beat:dr_woodshop_6 # scene:dr_woodshop # cast:dr_du # speaker:narrator
+{
+- dr_clinic_time:
+严约的是病人有人接的时辰。杜这一面也刨平了才起身——你请动的人，没有一个欠着半件事跟你走。 # beat:dr_woodshop_7 # scene:dr_woodshop # cast:dr_du # speaker:narrator
+- else:
+你没让严替另两人都认完。到杜这里，也是一帖一帖问，不把一个肯开口的人用成三个人的答案。 # beat:dr_woodshop_8 # scene:dr_woodshop # cast:dr_du # speaker:narrator
+}
 * [直接把赵六十九那份也推近，听他本人说，不让他只挑未打的一帖避过去。 # cid:dr_ask_zhao_direct]
   ~ dr_zhao_direct = true
-  这一份也得问。不是只来收一封没打的帖。 # beat:dr_woodshop_7 # scene:dr_woodshop # cast:dr_du # speaker:you
-  杜看你一会，没再将木头压在纸角，只说去沈前辈那里一起问。 # beat:dr_woodshop_8 # scene:dr_woodshop # cast:dr_du # speaker:narrator
-  我不躲这个。别只把无灯当带头的。 # beat:dr_woodshop_9 # scene:dr_woodshop # cast:dr_du # speaker:dr_du # mood:dr_du=intent
+  这一份也得问。不是只来收一封没打的帖。 # beat:dr_woodshop_9 # scene:dr_woodshop # cast:dr_du # speaker:you
+  杜看你一会，没再将木头压在纸角，只说去沈前辈那里一起问。 # beat:dr_woodshop_10 # scene:dr_woodshop # cast:dr_du # speaker:narrator
+  我不躲这个。别只把无灯当带头的。 # beat:dr_woodshop_11 # scene:dr_woodshop # cast:dr_du # speaker:dr_du # mood:dr_du=intent
   -> three_parts
 * [约三人当面，让沈各试，不先拿他递哪一张决定全部胜负归谁。 # cid:dr_ask_all_together]
   ~ dr_zhao_direct = false
-  好。都问，别只问谁先起头。 # beat:dr_woodshop_10 # scene:dr_woodshop # cast:dr_du # speaker:dr_du # mood:dr_du=neutral
-  他把刨子放下，你等他将柏木立好才走。门外要买棺材的人侧身让路，不知这位普通木工还会一手从未拿来开价的剑。 # beat:dr_woodshop_11 # scene:dr_woodshop # cast:dr_du # speaker:narrator
+  好。都问，别只问谁先起头。 # beat:dr_woodshop_12 # scene:dr_woodshop # cast:dr_du # speaker:dr_du # mood:dr_du=neutral
+  他把刨子放下，你等他将柏木立好才走。门外要买棺材的人侧身让路，不知这位普通木工还会一手从未拿来开价的剑。 # beat:dr_woodshop_13 # scene:dr_woodshop # cast:dr_du # speaker:narrator
   -> three_parts
 
 === three_parts ===
@@ -248,15 +295,27 @@ VAR dr_lesson = 0
 你学的变。 # beat:dr_three_parts_4 # scene:dr_shenyard # cast:dr_shen,dr_yan # speaker:dr_shen # mood:dr_shen=neutral
 杜天资最好，身子却普通。沈进一刀，他先看人，不急着演一整套；谢当年便没叫他死练，先叫看别人怎样出手。 # beat:dr_three_parts_5 # scene:dr_shenyard # cast:dr_shen,dr_du # speaker:narrator
 一个脚，一个手，一个眼。拼起来，才最像。 # beat:dr_three_parts_6 # scene:dr_shenyard # cast:dr_shen,dr_du # speaker:dr_shen # mood:dr_shen=intent
+{
+- dr_wants_test:
+三人当院各走了一遍，是沈自己看过的，不是你照着三份纸替他们分完。她说纸上是路，今天才是人。 # beat:dr_three_parts_7 # scene:dr_shenyard # cast:dr_shen,dr_du # speaker:narrator
+- else:
+你先前请沈只说亲历能确认的范围。今日三人已当院各走过一遍；这三回她能认，不等于她能替天下未到场的假剑作证。 # beat:dr_three_parts_8 # scene:dr_shenyard # cast:dr_shen,dr_du # speaker:narrator
+}
+{
+- dr_zhao_direct:
+赵六十九那份你没让杜绕过去。沈试手时问的次序，也照你这份直接：谁的场，谁自己认。 # beat:dr_three_parts_9 # scene:dr_shenyard # cast:dr_shen,dr_du # speaker:narrator
+- else:
+当面同试是你与杜谈定的。沈所以能一次看全三条路，靠的是没人先替他挑过哪一帖。 # beat:dr_three_parts_10 # scene:dr_shenyard # cast:dr_shen,dr_du # speaker:narrator
+}
 * [问谁出的主意，也让另两人自己回答，不替他们选一个最肯扛的。 # cid:dr_ask_each_responsibility]
   ~ dr_each_name = true
-  谢说我，严立即说一起，杜叫别争这个，都得担。 # beat:dr_three_parts_7 # scene:dr_shenyard # cast:dr_shen,dr_du # speaker:narrator
-  你把三种说法留在三个人面前，没有顺着最硬那一个替其余人删名。 # beat:dr_three_parts_8 # scene:dr_shenyard # cast:dr_shen,dr_du # speaker:narrator
+  谢说我，严立即说一起，杜叫别争这个，都得担。 # beat:dr_three_parts_11 # scene:dr_shenyard # cast:dr_shen,dr_du # speaker:narrator
+  你把三种说法留在三个人面前，没有顺着最硬那一个替其余人删名。 # beat:dr_three_parts_12 # scene:dr_shenyard # cast:dr_shen,dr_du # speaker:narrator
   -> seventeen_petitions
 * [问为何三人各只有一部分，让他们从师父实际教过的说起。 # cid:dr_ask_missing_whole]
   ~ dr_each_name = false
-  不是三份完整剑谱，是谢按他们各自能做的分教。说到冒名，谢仍先认自己起头，严接一起，杜说都要担。 # beat:dr_three_parts_9 # scene:dr_shenyard # cast:dr_shen,dr_du # speaker:narrator
-  沈把刀收好，三个人没有因拼得像便真变成一个可叫师父回来的身体。 # beat:dr_three_parts_10 # scene:dr_shenyard # cast:dr_shen,dr_du # speaker:narrator
+  不是三份完整剑谱，是谢按他们各自能做的分教。说到冒名，谢仍先认自己起头，严接一起，杜说都要担。 # beat:dr_three_parts_13 # scene:dr_shenyard # cast:dr_shen,dr_du # speaker:narrator
+  沈把刀收好，三个人没有因拼得像便真变成一个可叫师父回来的身体。 # beat:dr_three_parts_14 # scene:dr_shenyard # cast:dr_shen,dr_du # speaker:narrator
   -> seventeen_petitions
 
 === seventeen_petitions ===
@@ -264,33 +323,114 @@ VAR dr_lesson = 0
 最客气待查，最多旧案已结、无新证。之后再没有话。 # beat:dr_seventeen_petitions_2 # scene:dr_petitionroom # cast:dr_wudeng,dr_yan,dr_du # speaker:dr_yan # mood:dr_yan=intent
 写十七年，没人听。死人说话没人听，那就让他活回来。 # beat:dr_seventeen_petitions_3 # scene:dr_petitionroom # cast:dr_wudeng,dr_yan,dr_du # speaker:dr_wudeng # mood:dr_wudeng=sharp
 你看着箱子，没能立刻接出一句能把这些年都说轻的话。 # beat:dr_seventeen_petitions_4 # scene:dr_petitionroom # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
-还有找证据这一条。 # beat:dr_seventeen_petitions_5 # scene:dr_petitionroom # cast:dr_shen,dr_wudeng # speaker:dr_shen # mood:dr_shen=intent
-十八年！我们找了十八年！榜房当年把假写真！ # beat:dr_seventeen_petitions_6 # scene:dr_petitionroom # cast:dr_shen,dr_wudeng # speaker:dr_wudeng # mood:dr_wudeng=sharp
-那证明当年假。不是今天再造个假。 # beat:dr_seventeen_petitions_7 # scene:dr_petitionroom # cast:dr_shen,dr_wudeng # speaker:dr_shen # mood:dr_shen=neutral
-院里静下来，谢脸仍硬，没因一句正话便觉得十八年忽然短了。 # beat:dr_seventeen_petitions_8 # scene:dr_petitionroom # cast:dr_shen,dr_wudeng # speaker:narrator
+{
+- dr_each_name:
+起头的主意你让三个人自己答过：谢说我，严说一起，杜说都得担。这三句到今天也没被谁替谁删掉一个名。 # beat:dr_seventeen_petitions_5 # scene:dr_petitionroom # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
+- else:
+不是完整剑谱、是谢按各人能做的分教——这一段你说清过。三个人怎么走到冒名这一步，因此各自有一条自己的路可讲。 # beat:dr_seventeen_petitions_6 # scene:dr_petitionroom # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
+}
+还有找证据这一条。 # beat:dr_seventeen_petitions_7 # scene:dr_petitionroom # cast:dr_shen,dr_wudeng # speaker:dr_shen # mood:dr_shen=intent
+十八年！我们找了十八年！榜房当年把假写真！ # beat:dr_seventeen_petitions_8 # scene:dr_petitionroom # cast:dr_shen,dr_wudeng # speaker:dr_wudeng # mood:dr_wudeng=sharp
+那证明当年假。不是今天再造个假。 # beat:dr_seventeen_petitions_9 # scene:dr_petitionroom # cast:dr_shen,dr_wudeng # speaker:dr_shen # mood:dr_shen=neutral
+院里静下来，谢脸仍硬，没因一句正话便觉得十八年忽然短了。 # beat:dr_seventeen_petitions_10 # scene:dr_petitionroom # cast:dr_shen,dr_wudeng # speaker:narrator
 * [承认若无冒名旧案未必重查，也告诉他们这并不能抵掉各自冒名。 # cid:dr_keep_two_accounts]
   ~ dr_two_accounts = true
-  你们让它重开，是事实。冒名，也是事实。你师父的账不替你们抵，你们的错也不替他认那桩杀人。 # beat:dr_seventeen_petitions_9 # scene:dr_petitionroom # cast:dr_shen,dr_wudeng # speaker:you
-  严把箱盖先放一边，没叫谢马上感激。还得真查。 # beat:dr_seventeen_petitions_10 # scene:dr_petitionroom # cast:dr_shen,dr_wudeng # speaker:narrator
+  你们让它重开，是事实。冒名，也是事实。你师父的账不替你们抵，你们的错也不替他认那桩杀人。 # beat:dr_seventeen_petitions_11 # scene:dr_petitionroom # cast:dr_shen,dr_wudeng # speaker:you
+  严把箱盖先放一边，没叫谢马上感激。还得真查。 # beat:dr_seventeen_petitions_12 # scene:dr_petitionroom # cast:dr_shen,dr_wudeng # speaker:narrator
   -> identity_timing
 * [问他们今天要的是还一生还是再取第七，把旧案与新战绩当面分清。 # cid:dr_ask_what_needed]
   ~ dr_two_accounts = false
-  谢仍问现榜能不能回第七，你说旧录可改，现榜是今天的人。严问那三场呢，你答分别记，冒名也记。 # beat:dr_seventeen_petitions_11 # scene:dr_petitionroom # cast:dr_shen,dr_wudeng # speaker:narrator
-  那就都记。别只剩一个谢藏锋，后面三个又没了。 # beat:dr_seventeen_petitions_12 # scene:dr_petitionroom # cast:dr_du,dr_shen,dr_wudeng # speaker:dr_du # mood:dr_du=intent
+  谢仍问现榜能不能回第七，你说旧录可改，现榜是今天的人。严问那三场呢，你答分别记，冒名也记。 # beat:dr_seventeen_petitions_13 # scene:dr_petitionroom # cast:dr_shen,dr_wudeng # speaker:narrator
+  那就都记。别只剩一个谢藏锋，后面三个又没了。 # beat:dr_seventeen_petitions_14 # scene:dr_petitionroom # cast:dr_du,dr_shen,dr_wudeng # speaker:dr_du # mood:dr_du=intent
   -> identity_timing
 
 === identity_timing ===
 如今你已能说清三个名字与三场归属，但还有被冒名者的门人等答复，也有这三个人等自己开口。沈已经试过，谁也不能再把错认当成全部真相。 # beat:dr_identity_timing_1 # scene:dr_shenyard # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
 先叫谁知道，不改三战到底谁胜，却会改变他们怎样走到九月那张桌前。 # beat:dr_identity_timing_2 # scene:dr_shenyard # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
+{
+- dr_two_accounts:
+旧案重开与各自冒名，你当面分开说过。严把箱盖放到一边那一刻，听懂的不是宽恕，是两笔账都要真算。 # beat:dr_identity_timing_3 # scene:dr_shenyard # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
+- else:
+要还一生还是再取第七，你问过他们自己。旧录可改、现榜是今天的人——这句后来被重复时，谁也没有再混过一次。 # beat:dr_identity_timing_4 # scene:dr_shenyard # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
+}
 * [先给三人一夜当面商量，明早自己共同说明；被挑战门人多等半日，你去解释。 # cid:dr_tell_three_first]
   ~ dr_tell_three = true
-  你去挡那半日质疑，有人说榜房在替造假者护短。三人没有因此全肯跟你，却约定到会自己都站出来，不再让谢一句我做了便独揽。 # beat:dr_identity_timing_3 # scene:dr_shenyard # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
-  明早我们自己说。你别替我把木铺关了。 # beat:dr_identity_timing_4 # scene:dr_shenyard # cast:dr_wudeng,dr_yan,dr_du # speaker:dr_du # mood:dr_du=intent
-  -> white_water
+  你去挡那半日质疑，有人说榜房在替造假者护短。三人没有因此全肯跟你，却约定到会自己都站出来，不再让谢一句我做了便独揽。 # beat:dr_identity_timing_5 # scene:dr_shenyard # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
+  明早我们自己说。你别替我把木铺关了。 # beat:dr_identity_timing_6 # scene:dr_shenyard # cast:dr_wudeng,dr_yan,dr_du # speaker:dr_du # mood:dr_du=intent
+  -> three_faces
 * [先向被挑战的门人说明三场各归谁，再分别通知三人；该告知的真败不再让人等。 # cid:dr_tell_challenged_first]
   ~ dr_tell_three = false
-  门人当晚便有人到医馆、木铺问，杜听成榜房只要谢一人来顶，严的病人也被围问。你还没来得及当面解释，三个人已将各自的门关上。 # beat:dr_identity_timing_5 # scene:dr_shenyard # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
-  名字你说出去了。我也要听你说，我们到会到底由谁开口。 # beat:dr_identity_timing_6 # scene:dr_shenyard # cast:dr_wudeng,dr_yan,dr_du # speaker:dr_yan # mood:dr_yan=intent
+  门人当晚便有人到医馆、木铺问，杜听成榜房只要谢一人来顶，严的病人也被围问。你还没来得及当面解释，三个人已将各自的门关上。 # beat:dr_identity_timing_7 # scene:dr_shenyard # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
+  名字你说出去了。我也要听你说，我们到会到底由谁开口。 # beat:dr_identity_timing_8 # scene:dr_shenyard # cast:dr_wudeng,dr_yan,dr_du # speaker:dr_yan # mood:dr_yan=intent
+  -> three_faces
+
+=== three_faces ===
+请人这一节你走了三日。八十三招那一场的主人先到，右袖仍空着不使力；谢无灯把篙留在门外，进门先看那张凳，不先看你。 # beat:dr_three_faces_1 # scene:dr_faceroom # cast:dr_liang,dr_wudeng # speaker:narrator
+八十三招我认了。今日我不问你是不是他。 # beat:dr_three_faces_2 # scene:dr_faceroom # cast:dr_liang,dr_wudeng # speaker:dr_liang # mood:dr_liang=sharp # action:梁启山 · 右袖不使力
+我问，你听见满城笑我输给一个死了十八年的人，为什么一次都没站出来说不是。 # beat:dr_three_faces_3 # scene:dr_faceroom # cast:dr_liang,dr_wudeng # speaker:dr_liang # mood:dr_liang=intent
+说过一回。在渡口。 # beat:dr_three_faces_4 # scene:dr_faceroom # cast:dr_liang,dr_wudeng # speaker:dr_wudeng # mood:dr_wudeng=uneasy # action:谢无灯 · 渡口那一回
+跟谁说。 # beat:dr_three_faces_5 # scene:dr_faceroom # cast:dr_liang,dr_wudeng # speaker:dr_liang # mood:dr_liang=neutral
+跟一个不认识我的人。他一听就走，我便没有再讲第二回。 # beat:dr_three_faces_6 # scene:dr_faceroom # cast:dr_liang,dr_wudeng # speaker:dr_wudeng # mood:dr_wudeng=neutral
+堂里静下来。他答的是实话，而这一句实话，正把最难出口的那一段原封留在原处。 # beat:dr_three_faces_7 # scene:dr_faceroom # cast:dr_liang,dr_wudeng # speaker:narrator
+* [让三人各自单独进来，先听每个人自己肯认到哪一步，不叫后来的人在场把前一句冲淡。 # cid:dr_face_one_by_one]
+  ~ dr_face_alone = true
+  一个一个说。谁先讲的，我不带进下一间屋。 # beat:dr_three_faces_8 # scene:dr_faceroom # cast:dr_liang,dr_wudeng # speaker:you
+  那我先说完。别叫他们听见我怎么说。 # beat:dr_three_faces_9 # scene:dr_faceroom # cast:dr_liang,dr_wudeng # speaker:dr_wudeng # mood:dr_wudeng=intent # action:谢无灯 · 我先说完
+  你站在门边没有坐下。这一日三间屋，三个人的话不互相替，也不互相遮。 # beat:dr_three_faces_10 # scene:dr_faceroom # cast:dr_liang,dr_wudeng # speaker:narrator
+  -> three_faces_1
+* [六个人同一日到齐，谁冒了谁、各归哪一场，当着本人说清，不从三份体面里拼一个温和结论。 # cid:dr_face_all_together]
+  ~ dr_face_alone = false
+  都到齐。谁欠谁的，当着本人说。 # beat:dr_three_faces_11 # scene:dr_faceroom # cast:dr_liang,dr_wudeng # speaker:you
+  我也不必谢你替我留脸。 # beat:dr_three_faces_12 # scene:dr_faceroom # cast:dr_liang,dr_wudeng # speaker:dr_liang # mood:dr_liang=intent
+  六张凳一次摆满。你仍不替任何人先开口，只把三份帖按主人分开，放在桌上。 # beat:dr_three_faces_13 # scene:dr_faceroom # cast:dr_liang,dr_wudeng # speaker:narrator
+  -> three_faces_1
+
+=== three_faces_1 ===
+{dr_face_alone:第二间是青蒲剑赵问川与杜青禾。|接着是青蒲剑赵问川与杜青禾，当着同桌的人开口。}赵六十九招真败，他问的第一句仍不是名字。 # beat:dr_three_faces_1_1 # scene:dr_faceroom # cast:dr_zhao,dr_du # speaker:narrator
+你挑我，是我那一场好写？ # beat:dr_three_faces_1_2 # scene:dr_faceroom # cast:dr_zhao,dr_du # speaker:dr_zhao # mood:dr_zhao=intent # action:赵问川 · 好写那一场
+你名字笔画少。抄帖的夜里，写得快。 # beat:dr_three_faces_1_3 # scene:dr_faceroom # cast:dr_zhao,dr_du # speaker:dr_du # mood:dr_du=neutral # action:杜青禾 · 笔画少
+你就写了。 # beat:dr_three_faces_1_4 # scene:dr_faceroom # cast:dr_zhao,dr_du # speaker:dr_zhao # mood:dr_zhao=sharp
+写了。写完那一夜没睡，一直在想我凭哪一场挑人。 # beat:dr_three_faces_1_5 # scene:dr_faceroom # cast:dr_zhao,dr_du # speaker:dr_du # mood:dr_du=uneasy
+杜的粗手压在膝上。他没搬出沈前辈说过的那句天资最好替这一回开脱，也没说是谢让他挑的。 # beat:dr_three_faces_1_6 # scene:dr_faceroom # cast:dr_zhao,dr_du # speaker:narrator
+* [让三位真败者九月自己到长桌前讲被冒的经过，榜房不代他们陈述，宁可当日议程被拖长。 # cid:dr_face_let_askers_in]
+  ~ dr_face_askers = true
+  九月那张桌，你们自己去说，我不替你们讲。 # beat:dr_three_faces_1_7 # scene:dr_faceroom # cast:dr_zhao,dr_du # speaker:you
+  那我们说的话谁记。 # beat:dr_three_faces_1_8 # scene:dr_faceroom # cast:dr_zhao,dr_du # speaker:dr_zhao # mood:dr_zhao=intent
+  谁问谁记。可能记不全，也可能有人插嘴打断。 # beat:dr_three_faces_1_9 # scene:dr_faceroom # cast:dr_zhao,dr_du # speaker:you
+  赵没答应，只把手从袖里收回去，像先把这句话留着。堂上多三个开口的人，便不再是榜房念一遍、各家点头的一日。 # beat:dr_three_faces_1_10 # scene:dr_faceroom # cast:dr_zhao,dr_du # speaker:narrator
+  -> three_faces_2
+* [九月仍由榜房按证据念被冒的经过，三位真败者不必再当众复述一次自己怎样输给一个假名。 # cid:dr_face_keep_askers_out]
+  ~ dr_face_askers = false
+  九月我来念。你们不必再把那一场当众讲第二遍。 # beat:dr_three_faces_1_11 # scene:dr_faceroom # cast:dr_zhao,dr_du # speaker:you
+  那我今日说的算什么。 # beat:dr_three_faces_1_12 # scene:dr_faceroom # cast:dr_zhao,dr_du # speaker:dr_zhao # mood:dr_zhao=uneasy
+  记在你名下。到堂上念的是证，不是你。 # beat:dr_three_faces_1_13 # scene:dr_faceroom # cast:dr_zhao,dr_du # speaker:you
+  赵点头。他也知道，替他开口的人多一道，这件事便不再只从他嘴里出来。 # beat:dr_three_faces_1_14 # scene:dr_faceroom # cast:dr_zhao,dr_du # speaker:narrator
+  -> three_faces_2
+
+=== three_faces_2 ===
+{dr_face_alone:第三间是伏波刀何定远，一百一十四。严松进门之前先洗了手，坐下仍是那副郎中样子。|再由伏波刀何定远问严松，一百一十四。严松来时先洗过手，此刻坐在同一张桌旁，仍是那副郎中样子。} # beat:dr_three_faces_2_1 # scene:dr_faceroom # cast:dr_he,dr_yan # speaker:narrator
+那一场我认。我只问一句：你留手，是怕伤我，还是怕我死。 # beat:dr_three_faces_2_2 # scene:dr_faceroom # cast:dr_he,dr_yan # speaker:dr_he # mood:dr_he=intent # action:何定远 · 我只问一句
+两个都有。 # beat:dr_three_faces_2_3 # scene:dr_faceroom # cast:dr_he,dr_yan # speaker:dr_yan # mood:dr_yan=intent
+哪一个排在前头。 # beat:dr_three_faces_2_4 # scene:dr_faceroom # cast:dr_he,dr_yan # speaker:dr_he # mood:dr_he=neutral
+怕你死。说这一句比说怕伤你难。 # beat:dr_three_faces_2_5 # scene:dr_faceroom # cast:dr_he,dr_yan # speaker:dr_yan # mood:dr_yan=uneasy # action:严松 · 怕你死
+他没有替自己添一个医者仁心的名目。何听完不再问，刀留在门外没拿进来。 # beat:dr_three_faces_2_6 # scene:dr_faceroom # cast:dr_he,dr_yan # speaker:narrator
+-> three_faces_after
+
+=== three_faces_after ===
+{dr_face_alone:三间屋走完|六个人同桌说完}，你把六个人的话带回榜房。陆观棋将三份帖按主人分好，等你先说今日听的是哪一层。 # beat:dr_three_faces_after_1 # scene:dr_boardhouse # cast:dr_lu # speaker:narrator
+你听见什么了。 # beat:dr_three_faces_after_2 # scene:dr_boardhouse # cast:dr_lu # speaker:dr_lu # mood:dr_lu=intent # action:周砚 · 带回六个人的话
+三场真败，三个假名，和三个人自己说出的那半句。 # beat:dr_three_faces_after_3 # scene:dr_boardhouse # cast:dr_lu # speaker:you
+那半句是气话还是认错，你分得清。 # beat:dr_three_faces_after_4 # scene:dr_boardhouse # cast:dr_lu # speaker:dr_lu # mood:dr_lu=neutral
+你想起梁听完没再问，赵收帖时手停了一下，何为一句怕你死之后没有再开口。这三处都不改胜负，也都不是与案无关的闲话。 # beat:dr_three_faces_after_5 # scene:dr_boardhouse # cast:dr_lu # speaker:narrator
+* [把三人自己说的那半句原话记在各自名下，与三场真败并列，不改成榜房的评语。 # cid:dr_face_write_own_words]
+  ~ dr_faces_recorded = true
+  你写下怕丢人的位置、写了快那一夜的没睡、写了怕你死排在前头。纸上的三个人没有变成三个符号，也没有谁被写成一句谁都能填的恶。 # beat:dr_three_faces_after_6 # scene:dr_boardhouse # cast:dr_lu # speaker:narrator
+  记。他们自己的句子，别由你替他们润。 # beat:dr_three_faces_after_7 # scene:dr_boardhouse # cast:dr_lu # speaker:dr_lu # mood:dr_lu=intent
+  -> white_water
+* [只记三人当面对质这一节，各人的原话不逐句入卷，留给本人在九月自己讲。 # cid:dr_face_write_plain]
+  ~ dr_faces_recorded = false
+  你只落一行三人各与本人当面对质。陆点头，没催你把最扎眼的那几句也抄进来；可你也知道，九月那张桌上若无人肯再说一遍，这一行便只剩一个空架子。 # beat:dr_three_faces_after_8 # scene:dr_boardhouse # cast:dr_lu # speaker:narrator
+  肯把笔收一收，也是长进。 # beat:dr_three_faces_after_9 # scene:dr_boardhouse # cast:dr_lu # speaker:dr_lu # mood:dr_lu=amused
   -> white_water
 
 === white_water ===
@@ -374,20 +514,24 @@ VAR dr_lesson = 0
   -> paid_witness
 
 === paid_witness ===
-黑沙会争剑社商道多年，葛九衡早同谢学剑，因盗财被逐，只会年轻底子，不会后来走成的照夜剑。那夜别的人杀，他向显眼尸补像谢的剑，让第一眼先想到谢。 # beat:dr_paid_witness_1 # scene:dr_roadestate # cast:dr_householder # speaker:narrator
-公开结怨、被收买的活口、带血逃人，传闻便往这一个答案上长。你写证据自生，陆划证据换传闻：证据不会自己长。 # beat:dr_paid_witness_2 # scene:dr_roadestate # cast:dr_householder # speaker:narrator
-葛死，黑沙首脑也死，参与者大多死于内斗、清剿、仇杀。没有寨子还等你杀进去，今天接路、买田、占码头的人却在。眼前家主说查凶手支持，问产业便冷下脸。 # beat:dr_paid_witness_3 # scene:dr_roadestate # cast:dr_householder # speaker:narrator
+你要查的，无非葛九衡。他早年与谢藏锋同门学过几年剑，因盗财被逐，走的是年轻底子，连照夜剑的门都没摸到。 # beat:dr_paid_witness_1 # scene:dr_roadestate # cast:dr_householder # speaker:dr_householder # mood:dr_householder=intent
+你问他既然知道这些，那夜怎么没人拦。 # beat:dr_paid_witness_2 # scene:dr_roadestate # cast:dr_householder # speaker:narrator
+拦？那夜动手的另有其人。他只负责在最显眼的尸上补像谢的剑，让满城第一眼都想到死人——会里定的差事，他办得很周到。 # beat:dr_paid_witness_3 # scene:dr_roadestate # cast:dr_householder # speaker:dr_householder # mood:dr_householder=sharp
+公开结怨、被收买的活口、带血逃人，传闻便往这一个答案上长。你写证据自生，陆划证据换传闻：证据不会自己长。 # beat:dr_paid_witness_4 # scene:dr_roadestate # cast:dr_householder # speaker:narrator
+葛死了，黑沙首脑也死了，当年的人大多死于内斗、清剿、仇杀。没有寨子留给你杀进去。 # beat:dr_paid_witness_5 # scene:dr_roadestate # cast:dr_householder # speaker:dr_householder # mood:dr_householder=intent
+可今天接路、买田、占码头的还活着。比如，你。 # beat:dr_paid_witness_6 # scene:dr_roadestate # cast:dr_householder # speaker:you
+他脸上那点支持查凶的热心冷了下去。 # beat:dr_paid_witness_7 # scene:dr_roadestate # cast:dr_householder # speaker:narrator
 * [说明不来收地，问他家当时谁知道黑沙在后面，不因产业依法转就把这问也收回。 # cid:dr_ask_knowledge_not_seizure]
   ~ dr_house_plain = true
-  替死人洗干净，会脏几十个活人。 # beat:dr_paid_witness_4 # scene:dr_roadestate # cast:dr_householder # speaker:dr_householder # mood:dr_householder=sharp
-  脏不脏，不是我写出来的。当时谁知道？ # beat:dr_paid_witness_5 # scene:dr_roadestate # cast:dr_householder # speaker:you
-  他不再给你留座，门人将茶收走。你站着，把他肯确认与拒答的分别听完，不将拒答本身便写成参与杀人。 # beat:dr_paid_witness_6 # scene:dr_roadestate # cast:dr_householder # speaker:narrator
+  替死人洗干净，会脏几十个活人。 # beat:dr_paid_witness_8 # scene:dr_roadestate # cast:dr_householder # speaker:dr_householder # mood:dr_householder=sharp
+  脏不脏，不是我写出来的。当时谁知道？ # beat:dr_paid_witness_9 # scene:dr_roadestate # cast:dr_householder # speaker:you
+  他不再给你留座，门人将茶收走。你站着，把他肯确认与拒答的分别听完，不将拒答本身便写成参与杀人。 # beat:dr_paid_witness_10 # scene:dr_roadestate # cast:dr_householder # speaker:narrator
   -> living_benefit
 * [当着继业门人问转手的见闻，给他们说自己那时尚小的机会，也不免家主回答。 # cid:dr_ask_in_front_of_heirs]
   ~ dr_house_plain = false
-  门人想用府榜名头挡，你问那位高手当时亲见还是后来听父辈说。他终于退到自己真知道的一笔，家主脸色更难看。 # beat:dr_paid_witness_7 # scene:dr_roadestate # cast:dr_householder # speaker:narrator
-  我不替他记没亲见。您当时知道哪一段，也请自己说。 # beat:dr_paid_witness_8 # scene:dr_roadestate # cast:dr_householder # speaker:you
-  门开着，你却没有再得到送回渡口的车。 # beat:dr_paid_witness_9 # scene:dr_roadestate # cast:dr_householder # speaker:narrator
+  门人想用府榜名头挡，你问那位高手当时亲见还是后来听父辈说。他终于退到自己真知道的一笔，家主脸色更难看。 # beat:dr_paid_witness_11 # scene:dr_roadestate # cast:dr_householder # speaker:narrator
+  我不替他记没亲见。您当时知道哪一段，也请自己说。 # beat:dr_paid_witness_12 # scene:dr_roadestate # cast:dr_householder # speaker:you
+  门开着，你却没有再得到送回渡口的车。 # beat:dr_paid_witness_13 # scene:dr_roadestate # cast:dr_householder # speaker:narrator
   -> living_benefit
 
 === living_benefit ===
@@ -396,10 +540,28 @@ VAR dr_lesson = 0
 三个人到时真都会来？ # beat:dr_living_benefit_3 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:dr_apprentice # mood:dr_apprentice=uneasy
 门口已有赌盘、外地看客、想看死人进前十的人。你还得先把三个活人真请到那张桌边。 # beat:dr_living_benefit_4 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
 {
-- dr_tell_three:
-那一夜先让三人商量的约定还在，他们自己认过各要说哪一段。你替多等半日的门人解释过，也受了护短的骂；严先交代病客，杜要收好木铺，谢也还得送船，三个人约好次日才一同来，不是听你一句召集便无别的事。 # beat:dr_living_benefit_5 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
+- dr_each_seen and dr_old_worker:
+你一处一处分开问过，也给旧驿真当过差的人留了说没看清的余地。卷上因此写着好几个我没看见，而不是几个都看见了。 # beat:dr_living_benefit_5 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
 - else:
-你先公开三名，医馆、木铺被追问后关过门。如今你多跑两夜，一夜等严配完药，一夜在杜刨台边说明不是只找谢顶；谢也要听另两人亲口说自己来。你不催立刻信你，最后三人定自己一起到，重开的门却不等于先前围问没发生。 # beat:dr_living_benefit_6 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
+你没让看过其中一处的人替另外两处作证。有的问到了，有的仍只有一句他见过的路口，余人作不得证。 # beat:dr_living_benefit_6 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
+}
+{
+- dr_gu_wait and dr_gu_own_words:
+顾临川是被你等他自己把那三个字说出来的，不是被一句顾全门声带过去。怕丢人这一句在卷里没有被改成别的词。 # beat:dr_living_benefit_7 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
+- else:
+顾临川自己算到第十年才开口。你问的是那一日，也把怕丢人原样留着，没有替他补一个被迫无奈。 # beat:dr_living_benefit_8 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
+}
+{
+- dr_land_trace and dr_house_plain:
+收买活口那笔钱你追到了中人；接手产业那一家，你问过当时谁知道，也把他的拒答与确认分开记着。 # beat:dr_living_benefit_9 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
+- else:
+{dr_land_trace:收买活口那笔钱，你沿旧契追到中人。|旧契上那笔钱，你从接路往来反推回来。}{dr_house_plain:接手产业那一家，你问谁当时知道，不将拒答写成参与杀人。|继业门人当场分清亲见与父辈传话，家主也须回答自己知道哪一段。}确认与未答的，两样你都没省。 # beat:dr_living_benefit_10 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
+}
+{
+- dr_tell_three:
+那一夜先让三人商量的约定还在，他们自己认过各要说哪一段。你替多等半日的门人解释过，也受了护短的骂；严先交代病客，杜要收好木铺，谢也还得送船，三个人约好次日才一同来，不是听你一句召集便无别的事。 # beat:dr_living_benefit_11 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
+- else:
+你先公开三名，医馆、木铺被追问后关过门。如今你多跑两夜，一夜等严配完药，一夜在杜刨台边说明不是只找谢顶；谢也要听另两人亲口说自己来。你不催立刻信你，最后三人定自己一起到，重开的门却不等于先前围问没发生。 # beat:dr_living_benefit_12 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
 }
 -> which_eyes
 
@@ -470,6 +632,12 @@ VAR dr_lesson = 0
 只因谢已逼他把底全翻？是。年轻时觉得那已极大，后来才知还有更大。 # beat:dr_case_read_7 # scene:dr_council # cast:dr_gu,dr_lu # speaker:narrator
 没有被迫的幕后人从门外替他说话，也没有新战绩能抵掉这十八年。 # beat:dr_case_read_8 # scene:dr_council # cast:dr_gu,dr_lu # speaker:narrator
 {
+- dr_mid_response == 1:
+第十八这三年的胜负，是被人完整听过一遍才起的争辩。先听全再说话——院里今天多几个人学会了这一手。 # beat:dr_case_read_9 # scene:dr_council # cast:dr_gu,dr_lu # speaker:narrator
+- else:
+对手是谁、怎样负，你逐项答完才轮到下一项。门外再催，这一项也没有被跳过去。 # beat:dr_case_read_10 # scene:dr_council # cast:dr_gu,dr_lu # speaker:narrator
+}
+{
 - dr_pov == 2:
  -> wu_bow
 - else:
@@ -506,16 +674,22 @@ VAR dr_lesson = 0
 === after_bow ===
 很久，谢终于抬手。四人不再多说，谢只眼红，仍未哭。榜里没写这礼，周的私记留下了；它不升哪一席，也不等于十八年已抵。 # beat:dr_after_bow_1 # scene:dr_outeryard # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
 这一礼之后，视角回到周砚。桌边还有旧录与三场真胜负，你得回去把未完的事做完。 # beat:dr_after_bow_2 # scene:dr_outeryard # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
-有人叫谢藏锋算第几，陆答不算，他死了。翻案与复活两回事，十八年前第七仍是他的，今天二十四席却不为一个被以死论、未确认仍在此间活动的人留座。 # beat:dr_after_bow_3 # scene:dr_council # cast:dr_lu,dr_wudeng # speaker:narrator
-那我们那些场？ # beat:dr_after_bow_4 # scene:dr_council # cast:dr_lu,dr_wudeng # speaker:dr_wudeng # mood:dr_wudeng=uneasy
-分别记。冒名也分别记。 # beat:dr_after_bow_5 # scene:dr_council # cast:dr_lu,dr_wudeng # speaker:you
+{
+- dr_bow_response == 1:
+那一礼你没有人急着替谁回。严先抬手、杜跟上、谢自己走过这一刻——后来谁问起，这一段都还是他们自己的。 # beat:dr_after_bow_3 # scene:dr_outeryard # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
+- else:
+你把看见的照实记下，没有替这一刻添一个和解。该留的怨各人自己留着，纸上便只有一行亲见的礼。 # beat:dr_after_bow_4 # scene:dr_outeryard # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
+}
+有人叫谢藏锋算第几，陆答不算，他死了。翻案与复活两回事，十八年前第七仍是他的，今天二十四席却不为一个被以死论、未确认仍在此间活动的人留座。 # beat:dr_after_bow_5 # scene:dr_council # cast:dr_lu,dr_wudeng # speaker:narrator
+那我们那些场？ # beat:dr_after_bow_6 # scene:dr_council # cast:dr_lu,dr_wudeng # speaker:dr_wudeng # mood:dr_wudeng=uneasy
+分别记。冒名也分别记。 # beat:dr_after_bow_7 # scene:dr_council # cast:dr_lu,dr_wudeng # speaker:you
 * [当三人面逐场读回本人名字，也读冒名，不把谢一人推在前面承担全部。 # cid:dr_read_names_to_people]
   ~ dr_names_plain = true
-  梁八十三归谢无灯，赵六十九归杜青禾，何一百一十四归严松。三人听完，各自答是，没有谁能因自己本领更高便把另一个人的那场也拿走。 # beat:dr_after_bow_6 # scene:dr_council # cast:dr_lu,dr_wudeng # speaker:narrator
+  梁八十三归谢无灯，赵六十九归杜青禾，何一百一十四归严松。三人听完，各自答是，没有谁能因自己本领更高便把另一个人的那场也拿走。 # beat:dr_after_bow_8 # scene:dr_council # cast:dr_lu,dr_wudeng # speaker:narrator
   -> old_entry
 * [让三人各自说明哪场自己真做过，再把要承担的假名当面读清。 # cid:dr_let_each_answer]
   ~ dr_names_plain = false
-  谢认梁、杜认赵、严认何，各自也认用谢藏锋之名。你没因十七份申诉就用同一个感动替他们免答，也没因冒名便抹掉真赢。 # beat:dr_after_bow_7 # scene:dr_council # cast:dr_lu,dr_wudeng # speaker:narrator
+  谢认梁、杜认赵、严认何，各自也认用谢藏锋之名。你没因十七份申诉就用同一个感动替他们免答，也没因冒名便抹掉真赢。 # beat:dr_after_bow_9 # scene:dr_council # cast:dr_lu,dr_wudeng # speaker:narrator
   -> old_entry
 
 === old_entry ===
@@ -531,20 +705,48 @@ VAR dr_lesson = 0
 - else:
 梁送来一份签过的补述，人没来。他那段公开得快，也真被城里笑了月余，你当面去认没先说清传播的代价，没有要求他再站院里替你证明公信。他仍认负，今后细问先走书面，你得多派一趟人核回。 # beat:dr_old_entry_8 # scene:dr_council # cast:dr_lu,dr_wudeng # speaker:narrator
 }
+{
+- dr_face_askers:
+九月那日，梁、赵、何各自站起来说明自己被冒的那一场。堂上比往年多三张嘴，旧案那一项被拖到后半日；被冒这件事却是从本人嘴里出来的，不由你代说。 # beat:dr_old_entry_9 # scene:dr_council # cast:dr_lu,dr_wudeng # speaker:narrator
+- else:
+九月那日念的都是证。梁、赵、何在场，从头到尾没有开口；后来翻卷的人只见榜房的笔，与那一行三人各与本人当面对质。 # beat:dr_old_entry_10 # scene:dr_council # cast:dr_lu,dr_wudeng # speaker:narrator
+}
+{
+- dr_names_plain:
+梁八十三、赵六十九、何一百一十四逐场读回本人名字那一段，卷里有三人各自答是作底，后人翻不到一句代答。 # beat:dr_old_entry_11 # scene:dr_council # cast:dr_lu,dr_wudeng # speaker:narrator
+- else:
+哪场自己真做过、用的哪个假名，是三个人各自说明的。卷上因此各有各的笔迹，不是榜房一个声音念到底。 # beat:dr_old_entry_12 # scene:dr_council # cast:dr_lu,dr_wudeng # speaker:narrator
+}
 -> two_years
 
 === two_years ===
-案看似收好，你却没能把后以死论当作从此不必再问。衣与剑在下游，并没有尸。继续查，又两年，山寺客簿出现谢藏锋，日期是案后第七年。 # beat:dr_two_years_1 # scene:dr_boardhouse # cast:dr_lu # speaker:narrator
-再追，案后九年西南有人见姓谢瘦剑客；十一年，小镇医馆给谢藏锋治旧伤。至少所有人当他已死以后，他又活过十一年，后面怎样终老仍未能确证。 # beat:dr_two_years_2 # scene:dr_boardhouse # cast:dr_lu # speaker:narrator
-同在修榜后第二年，顾临川去世。临终信两行，榜可以错，不能明知错了还不改。你夹在卷首，不宣传，不刻碑，没让最后一句替他抵掉已由自己亲认的沉默。 # beat:dr_two_years_3 # scene:dr_boardhouse # cast:dr_lu # speaker:narrator
+案看似收好，徒弟把白水卷推回架上时都松了口气，你却叫住他：衣与剑在下游，并没有尸。 # beat:dr_two_years_1 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
+案结了。再查，查的是谁的案？ # beat:dr_two_years_2 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:dr_apprentice # mood:dr_apprentice=uneasy
+谢藏锋的。他还没死成。 # beat:dr_two_years_3 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:you
+陆观棋从旧册里抬头。你以为他要拦，他却把当月的访资簿推到你手边。 # beat:dr_two_years_4 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
+榜房一年走得了几个县，你自己填。填得下，就别指望明年今日便有结果。 # beat:dr_two_years_5 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:dr_lu # mood:dr_lu=intent
+你填了。此后又两年，山寺客簿出现谢藏锋，日期是案后第七年；再追，案后九年西南有人见姓谢瘦剑客，十一年，小镇医馆给谢藏锋治旧伤。至少所有人当他已死以后，他又活过十一年，后面怎样终老仍未能确证。 # beat:dr_two_years_6 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
+同在修榜后第二年，顾临川去世。临终信两行，榜可以错，不能明知错了还不改。你夹在卷首，不宣传，不刻碑，没让最后一句替他抵掉已由自己亲认的沉默。 # beat:dr_two_years_7 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
+{
+- dr_face_alone:
+梁、赵、何当初各自单独说完，没有第二个人在旁替他们作证。九月那张桌上他们肯复述的仍只有输赢，那半句留在三间关起来的屋里。 # beat:dr_two_years_8 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
+- else:
+六个人当初同日在场，说过的话有人可证。九月桌上再有人问谁被谁冒，你不必只靠自己一支笔去挡。 # beat:dr_two_years_9 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
+}
+{
+- dr_faces_recorded:
+三份帖旁还各自留着原话。后来有人翻到这一段，最先看见的不是三个假名，是三个人怎样把自己的那一句说出口。 # beat:dr_two_years_10 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
+- else:
+卷上只有一行当面对质。梁后来仍肯认输，赵仍收帖，可当日那半句没有被记下，九月之后便再没有第二处能引。 # beat:dr_two_years_11 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
+}
 * [把七、九、十一各自来源带给三人，告诉至少活过，不拿后无记录又补一个确定死日。 # cid:dr_tell_life_with_limits]
   ~ dr_life_limits = true
-  你把那几处一一读，谢听到十一，手在凳边停住。你没叫他为查得细先谢榜房，这十一年不是你今日赐给师父的寿命。 # beat:dr_two_years_4 # scene:dr_boardhouse # cast:dr_lu # speaker:narrator
+  你把那几处一一读，谢听到十一，手在凳边停住。你没叫他为查得细先谢榜房，这十一年不是你今日赐给师父的寿命。 # beat:dr_two_years_12 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
   -> living_eleven
 * [亲去找三人，先让他们听师父还有过路，再将核过与仍不知分开说，不只寄一份结论。 # cid:dr_tell_three_in_person]
   ~ dr_life_limits = false
-  三人都愣，谢先问为何没回。你没答不想见他们，也不替谢藏锋补一个自己没问到的苦衷。 # beat:dr_two_years_5 # scene:dr_boardhouse # cast:dr_lu # speaker:narrator
-  我不知道。能核的先在这里，后面我还会问。 # beat:dr_two_years_6 # scene:dr_boardhouse # cast:dr_lu # speaker:you
+  三人都愣，谢先问为何没回。你没答不想见他们，也不替谢藏锋补一个自己没问到的苦衷。 # beat:dr_two_years_13 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:narrator
+  我不知道。能核的先在这里，后面我还会问。 # beat:dr_two_years_14 # scene:dr_boardhouse # cast:dr_lu,dr_apprentice # speaker:you
   -> living_eleven
 
 === living_eleven ===
@@ -552,14 +754,20 @@ VAR dr_lesson = 0
 没有人能回答。几个月后，山寺又找出未寄的信，收无灯、严松、青禾。不知为何留寺，纸黄了，名字却不像冒名帖上的那一个。 # beat:dr_living_eleven_2 # scene:dr_boxroom # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
 信说年轻觉得名脏便什么都没，走远才知人还在、路还在；白水不是他，能清便好，不能也别把一生耗进去。最后不是要争第七。 # beat:dr_living_eleven_3 # scene:dr_boxroom # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
 别争我的榜，争我没做过的事。 # beat:dr_living_eleven_4 # scene:dr_boxroom # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
+{
+- dr_life_limits:
+七、九、十一各是哪一年、谁看见，你都分开读过。谢没有替师父多领一天，也只是从那天起，不再把活过的年头当成查错的错处。 # beat:dr_living_eleven_5 # scene:dr_boxroom # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
+- else:
+是你把能核的年头先送到三个人面前的。所以这封信拆开时，他们问的是为何不回，不是消息真假。 # beat:dr_living_eleven_6 # scene:dr_boxroom # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
+}
 * [把信交到三人手里，不将最后一句立刻读给院外等传奇的人。 # cid:dr_give_unfinished_letter]
   ~ dr_letter_private = true
-  你往旁让，严把折口展开又停，杜用粗手托住下沿。谢看了很久，没有再先问这纸能不能让谁进现榜。 # beat:dr_living_eleven_5 # scene:dr_boxroom # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
+  你往旁让，严把折口展开又停，杜用粗手托住下沿。谢看了很久，没有再先问这纸能不能让谁进现榜。 # beat:dr_living_eleven_7 # scene:dr_boxroom # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
   -> letter_cry
 * [问他们愿怎样留原信，副本才归卷，不把已经找到便当成可任你宣传。 # cid:dr_ask_how_keep_letter]
   ~ dr_letter_private = false
-  先让他看完。抄本给你，原件我们商量。 # beat:dr_living_eleven_6 # scene:dr_boxroom # cast:dr_wudeng,dr_yan,dr_du # speaker:dr_yan # mood:dr_yan=intent
-  你应下，没因自己查了两年就替他们把最后一页的去处也先定。 # beat:dr_living_eleven_7 # scene:dr_boxroom # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
+  先让他看完。抄本给你，原件我们商量。 # beat:dr_living_eleven_8 # scene:dr_boxroom # cast:dr_wudeng,dr_yan,dr_du # speaker:dr_yan # mood:dr_yan=intent
+  你应下，没因自己查了两年就替他们把最后一页的去处也先定。 # beat:dr_living_eleven_9 # scene:dr_boxroom # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
   -> letter_cry
 
 === letter_cry ===
@@ -567,6 +775,12 @@ VAR dr_lesson = 0
 十八年，有一半走错。 # beat:dr_letter_cry_2 # scene:dr_boxroom # cast:dr_wudeng,dr_yan,dr_du # speaker:dr_yan # mood:dr_yan=uneasy
 另一半没错。白水渡不是他，这没争错。 # beat:dr_letter_cry_3 # scene:dr_boxroom # cast:dr_wudeng,dr_yan,dr_du # speaker:dr_du # mood:dr_du=intent
 三个人安静下来。师父没被拖回江汉第七，却有活过的十一年终于不再全被夹进同一天的死里。 # beat:dr_letter_cry_4 # scene:dr_boxroom # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
+{
+- dr_letter_private:
+原信交在三人手里，院外那晚没有听见最后一个字。卷里后来收的是抄本，原件上三个人各自按过的手印还在。 # beat:dr_letter_cry_5 # scene:dr_boxroom # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
+- else:
+原件由他们商量着留，副本归卷。你记下这一条去处，没有因自己查了两年，就替最后一页多定一次。 # beat:dr_letter_cry_6 # scene:dr_boxroom # cast:dr_wudeng,dr_yan,dr_du # speaker:narrator
+}
 -> fifth_year
 
 === fifth_year ===
@@ -598,21 +812,30 @@ VAR dr_lesson = 0
 不矛盾？ # beat:dr_lu_last_6 # scene:dr_luroom # cast:dr_lu # speaker:you
 所以才要查。 # beat:dr_lu_last_7 # scene:dr_luroom # cast:dr_lu # speaker:dr_lu # mood:dr_lu=neutral
 他闭眼睡。 # beat:dr_lu_last_8 # scene:dr_luroom # cast:dr_lu # speaker:narrator
-第二日清晨没醒。你四十二，正式接榜房。开院门那天，没有一个新名次写给你，三间屋两间库却都真要有人接。 # beat:dr_lu_last_9 # scene:dr_luroom # cast:none # speaker:narrator
+{
+- dr_new_name:
+榜上记的是谢无灯与那根铁杆，不是又像了一次师传。徒弟照实写下的兵器那一行，后来没有人需要再改。 # beat:dr_lu_last_9 # scene:dr_luroom # cast:dr_lu # speaker:narrator
+- else:
+严与杜那两句不想打，你也照记。榜外不是被忘，是他们自己选下的位置——这话后来果然不必收回。 # beat:dr_lu_last_10 # scene:dr_luroom # cast:dr_lu # speaker:narrator
+}
+第二日清晨没醒。你四十二，正式接榜房。开院门那天，没有一个新名次写给你，三间屋两间库却都真要有人接。 # beat:dr_lu_last_11 # scene:dr_luroom # cast:none # speaker:narrator
 * [多留院里亲带新抄手，将查到与没查到当面教；外访让同门去，少去一段自己还想追的路。 # cid:dr_career_teach]
   ~ dr_career = 1
-  你把原订远访托给同门，留新抄手自己问一回。门外有人要将三十招胜第八直接送上榜，你叫年轻人先把对方也找来，不替他问完才叫他抄。 # beat:dr_lu_last_10 # scene:dr_luroom # cast:none # speaker:narrator
+  你把原订远访托给同门，留新抄手自己问一回。门外有人要将三十招胜第八直接送上榜，你叫年轻人先把对方也找来，不替他问完才叫他抄。 # beat:dr_lu_last_12 # scene:dr_luroom # cast:none # speaker:narrator
   -> new_duties
 * [多往外亲访，让不便远来的证人也能说；堂前交同门带新抄手，少亲看一班正在学的人。 # cid:dr_career_visit]
   ~ dr_career = 2
-  你托同门守当天的问事，自己到外县见不愿再赶来的人。新抄手想跟，你只带这一位，另班得由别人真教，不能说出门也算自己都教过了。 # beat:dr_lu_last_11 # scene:dr_luroom # cast:none # speaker:narrator
+  你托同门守当天的问事，自己到外县见不愿再赶来的人。新抄手想跟，你只带这一位，另班得由别人真教，不能说出门也算自己都教过了。 # beat:dr_lu_last_13 # scene:dr_luroom # cast:none # speaker:narrator
   -> new_duties
 
 === new_duties ===
-第一年三件，三十招胜现第八，查是酒后争执、第八站都不稳，不作正常较艺记；府榜高手负年轻人死不认，十二可靠旁观，胜负照记；两人闭门，一方平一方我胜，无第三人，有战无定论。 # beat:dr_new_duties_1 # scene:dr_boardhouse # cast:dr_next # speaker:narrator
-不认还能记，亲口说赢又不能定？ # beat:dr_new_duties_2 # scene:dr_boardhouse # cast:dr_next # speaker:dr_next # mood:dr_next=uneasy
-你先问这次有什么，不是拿上一回只记五个字当今天每次都够。 # beat:dr_new_duties_3 # scene:dr_boardhouse # cast:dr_next # speaker:you
-两边都来骂闭门那一行，你忽然觉得陆走早了。院门没有因你接了钥匙就会少来一句整个江湖都知道。 # beat:dr_new_duties_4 # scene:dr_boardhouse # cast:dr_next # speaker:narrator
+头一年三件递到桌前。第一件，自报三十招胜现第八；你去查，是酒后争执，第八站都站不稳。你把它退回去，不作较艺记。 # beat:dr_new_duties_1 # scene:dr_boardhouse # cast:dr_next # speaker:narrator
+第二件呢？府榜那位死不认输的。 # beat:dr_new_duties_2 # scene:dr_boardhouse # cast:dr_next # speaker:dr_next # mood:dr_next=uneasy
+十二可靠旁观，胜负照记。认不认，是他的脸面，不是证据。 # beat:dr_new_duties_3 # scene:dr_boardhouse # cast:dr_next # speaker:you
+第三件最麻烦：两人闭门，一个说平，一个说自己胜，无第三人。 # beat:dr_new_duties_4 # scene:dr_boardhouse # cast:dr_next # speaker:narrator
+那记什么？ # beat:dr_new_duties_5 # scene:dr_boardhouse # cast:dr_next # speaker:dr_next # mood:dr_next=neutral
+有战无定论。 # beat:dr_new_duties_6 # scene:dr_boardhouse # cast:dr_next # speaker:you
+两边都来骂闭门那一行，你忽然觉得陆走早了。院门没有因你接了钥匙就会少来一句整个江湖都知道。 # beat:dr_new_duties_7 # scene:dr_boardhouse # cast:dr_next # speaker:narrator
 {
 - dr_career == 1:
  -> room_lesson
@@ -658,10 +881,16 @@ VAR dr_lesson = 0
 你想起老人改证据为传闻，也想起若没有三人冒名，旧案大概永远洗不清。可若为同情把三个人拼成的谢重新写进现榜，又是一错。 # beat:dr_later_teacher_3 # scene:dr_shenyard # cast:dr_shen # speaker:narrator
 沈没有叫你为懂这句话就从此再不犯错，只催把门边绊她腿的小凳移开。你真去移了，不把她旧伤也说成今天讲得好便没有。 # beat:dr_later_teacher_4 # scene:dr_shenyard # cast:dr_shen # speaker:narrator
 {
-- dr_liang_private:
-梁愿意亲自接新抄手第二问，这些年仍会说当年败八十三。你先前多费一天换来的不是永远替榜房说好话，是他肯再把看见的交给一个肯等他说完的人。 # beat:dr_later_teacher_5 # scene:dr_shenyard # cast:dr_shen # speaker:narrator
+- dr_lesson == 1:
+{dr_career == 1:让抄手自己答第一句、你在旁接漏处|带抄手分别站到当时的位置，让每人只说亲见}——沈说的肯问第二遍，先得容眼前的人说出自己真知道的。 # beat:dr_later_teacher_5 # scene:dr_shenyard # cast:dr_shen # speaker:narrator
 - else:
-梁后来仍多用书面补述，输的八十三没改，话也没因你道歉就都改成愿当众讲。你守着先走书面再另核的约，让新抄手知道能记一场真负，不等于可以无限使用输者的难堪。 # beat:dr_later_teacher_6 # scene:dr_shenyard # cast:dr_shen # speaker:narrator
+{dr_career == 1:示范与原战你在场也分开，今天看见的，不替当天写。|抄手自己问停手细节，你陪他多住一晚，等到胜者背向时没见的那一句。}沈说不懂武、不懂人都不够，今天真做过的，也不能只剩一句查毕。 # beat:dr_later_teacher_6 # scene:dr_shenyard # cast:dr_shen # speaker:narrator
+}
+{
+- dr_liang_private:
+梁愿意亲自接新抄手第二问，这些年仍会说当年败八十三。你先前多费一天换来的不是永远替榜房说好话，是他肯再把看见的交给一个肯等他说完的人。 # beat:dr_later_teacher_7 # scene:dr_shenyard # cast:dr_shen # speaker:narrator
+- else:
+梁后来仍多用书面补述，输的八十三没改，话也没因你道歉就都改成愿当众讲。你守着先走书面再另核的约，让新抄手知道能记一场真负，不等于可以无限使用输者的难堪。 # beat:dr_later_teacher_8 # scene:dr_shenyard # cast:dr_shen # speaker:narrator
 }
 -> last_page
 
@@ -673,7 +902,7 @@ VAR dr_lesson = 0
 - dr_career == 1:
 来接班的人还记得自己第一次坐桌前怎样将话说错，也记得你没抢过笔说索性我来。后来一次新查推翻旧行，他让抄手亲手添后查不实，别人看得见原来错在哪里。 # beat:dr_last_page_4 # scene:dr_lateyard # cast:dr_next # speaker:narrator
 - else:
-来接班的人还记得外县那一夜，证人不必为腿脚慢便永远说不上话。后来一份旧说被重核，他派人去到说话者身边，也把自己当初信过的错留在卷上供人看见。 # beat:dr_last_page_5 # scene:dr_lateyard # cast:dr_next # speaker:narrator
+来接班的人还记得外县{dr_lesson == 1:分站位置问见闻的那一回|等慢问说完而多住的那一夜}，证人不必为腿脚慢便永远说不上话。后来一份旧说被重核，他派人去到说话者身边，也把自己当初信过的错留在卷上供人看见。 # beat:dr_last_page_5 # scene:dr_lateyard # cast:dr_next # speaker:narrator
 }
 这样还能告诉天下谁最强么？ # beat:dr_last_page_6 # scene:dr_lateyard # cast:dr_next # speaker:dr_next # mood:dr_next=uneasy
 天下那么大，你告诉得完？至少留谁来过、打过什么、哪样真、哪样后来证明错。 # beat:dr_last_page_7 # scene:dr_lateyard # cast:dr_next # speaker:you

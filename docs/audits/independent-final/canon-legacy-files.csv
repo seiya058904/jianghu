@@ -1,0 +1,19 @@
+path,sha256,line_count,reviewed_ranges,status,evidence
+scripts/compile-story.mjs,38e1e07c857e493000c5ea4114b5455719d62a96d6c61cc5af03be34328da435,62,1-62,FULL_SOURCE_READ,Direct UTF8 line-by-line read; no author import or compiler execution
+story/campaign/author.mjs,95c0d9ba93221a9f38fe5bb7bc00101f479ea60a393bdfc3f140f2d512cf365a,956,1-956,FULL_SOURCE_READ,Direct UTF8 line-by-line read; no author import or compiler execution
+story/campaign/interludes.mjs,c2c611210cdc46e1cfa83435c184ea6761494f3064da6b7b54a3caf3cbe033db,199,1-199,FULL_SOURCE_READ,Direct UTF8 line-by-line read; no author import or compiler execution
+story/campaign/v6-author.mjs,6b1999e549e96f89362b0f9b2bba896ae46edb2c8270f84224da4307e13469a2,70,1-70,FULL_SOURCE_READ,Direct UTF8 line-by-line read; no author import or compiler execution
+story/campaign/v6-scenes.mjs,bec137aabefd110e383963a891b992258ae958005f7c5b261c033fc705293bb5,203,1-203,FULL_SOURCE_READ,Direct UTF8 line-by-line read; no author import or compiler execution
+story/campaign/v6-after.mjs,ed704af8f0a05ed12b5c6390de509631051ab09982b7bef02a40bb08517a9c10,154,1-154,FULL_SOURCE_READ,Direct UTF8 line-by-line read; no author import or compiler execution
+story/campaign/v6-canon-scenes.mjs,3594be5eef309e82050cdde719182c6121413a83d9b049256d399ab4e14dd24f,147,1-147,FULL_SOURCE_READ,Direct UTF8 line-by-line read; no author import or compiler execution
+story/campaign/v6-ending-direction.mjs,3f4efcc9c15f3c2ac355a7e88997ea2d299601d16c28a8db87dd3260fb29b4b7,15,1-15,FULL_SOURCE_READ,Direct UTF8 line-by-line read; no author import or compiler execution
+story/main.ink,921800bad5e1d321ba18b0ed5e0bd29d66e0f9588861444ad1880dfcaf3a87af,458,1-458,FULL_SOURCE_READ,Direct UTF8 line-by-line read; no author import or compiler execution
+story/duel.ink,aa5650e8ea910a6060602a1290a934c90fdda4b59996a9d9e5336fd13b190be0,262,1-262,FULL_SOURCE_READ,Direct UTF8 line-by-line read; no author import or compiler execution
+tests/frozen-baselines.ts,1ab56e42b7e507da7d4ebd1121cdf17f3dd6e01575c26f41bbafb537d4e69a52,133,1-133,FULL_SOURCE_READ,Direct UTF8 line-by-line read; no author import or compiler execution
+tests/runtime.test.ts,51af6b67dad1a0286b0f14629275157b177d2cd2093852ca378cba4737afcee5,82,1-82,FULL_SOURCE_READ,Direct UTF8 line-by-line read; no author import or compiler execution
+tests/default-entry.test.ts,ae21291e6318f4306aeb0cbbfe6f2fa15934ae95284d760082c4db9f046b685f,65,1-65,FULL_SOURCE_READ,Direct UTF8 line-by-line read; no author import or compiler execution
+tests/vn-runtime.test.ts,545d83ae305981f5ae53941eae7ff078f2783d14e3769a79daff7c395facdd8a,109,1-105,PARTIAL_SOURCE_READ,Recovery/state and metadata tests read; remainder not claimed
+story/campaign.ink,daacfc805bdd01129808bcecfc9ca78e6679c339d3581131e2113040aed8499e,1797,regex structural scan only,STRUCTURE_SCAN_ONLY,Knot/CID/beat uniqueness and target resolution; generated Ink not counted as author full read
+story/campaign-v6.ink,557ac4bd381814640eb8fd562bad171896f0b4d5ca1c05d7d33ccc7092b008bd,2475,regex structural scan only,STRUCTURE_SCAN_ONLY,Knot/CID/beat uniqueness and target resolution; generated Ink not counted as author full read
+src/generated/campaign-v6.json,8c199458e449d3fde8710eabe1c9594b0392d2066f1601f5181297128dee48b6,1,read-only inkjs route execution; not text review,RUNTIME_PROBE_ONLY,"Read generated JSON, picked CID overrides with first-choice defaults elsewhere; exact matches in canon-legacy-review.md"
+src/generated/duel.json,b04dcba85094ed405f7d9da2d9c65816fff185511b484f0297a3baae5531fec2,1,read-only inkjs route execution; not text review,RUNTIME_PROBE_ONLY,"Read generated JSON, picked CID overrides with first-choice defaults elsewhere; exact matches in canon-legacy-review.md"

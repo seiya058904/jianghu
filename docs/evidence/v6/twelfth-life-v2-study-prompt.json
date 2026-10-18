@@ -1,7 +1,7 @@
 {
   "mode": "built-in image_gen",
   "file": "public/art/v6/reusable-study.webp",
-  "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-2b22ef5e-f8eb-4a55-849b-b01b89cee630.png",
+  "source": "[author-local-path]",
   "prompt": "Use case illustration-story. One reusable Chinese historical visual novel background, landscape 3:2. A modest, well-used scholar-household administrative study in a Song-inspired timber building. Broad plain wooden desk in the middle distance, small neat stacks of closed clothbound books with entirely blank unlettered covers, a few folded plain sheets, a simple brush rest and inkstone, low shelves and closed ordinary wooden storage chests. Paper-lattice window on the left with soft neutral daylight, calm muted warm wood and grey-green tones, believable everyday civilian interior. Empty open floor in the foreground for character sprites, eye-level medium-wide camera, no exaggerated symmetry. Painterly detailed anime-adjacent wuxia game environment, softly textured ink edges matching historical character illustrations, good legibility at mobile sizes. No people, no weapons, no royal throne, no heraldry, no map, no readable text, no calligraphy, no floating symbols, no candles arranged as ceremony, no weather-event or story-specific clue. Suitable for ordinary correspondence, sorting papers, discussion or keeping accounts across many chapters. Opaque complete background.",
   "processing": "WebP format conversion only; original retained"
 }

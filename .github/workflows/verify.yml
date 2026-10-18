@@ -41,6 +41,9 @@ jobs:
       - name: Unit and narrative-contract tests
         run: npm test
 
+      - name: Generated stories must reproduce the committed source
+        run: git diff --exit-code -- story src/generated
+
       - name: Report frozen baselines this checkout does not carry
         if: always()
         run: |

@@ -1,0 +1,769 @@
+TAP version 13
+# Subtest: CL21: career 1 lesson 1 recalls its own activity
+ok 1 - CL21: career 1 lesson 1 recalls its own activity
+  ---
+  duration_ms: 23.5514
+  type: 'test'
+  ...
+# Subtest: CL21: career 1 lesson 2 recalls its own activity
+ok 2 - CL21: career 1 lesson 2 recalls its own activity
+  ---
+  duration_ms: 13.8618
+  type: 'test'
+  ...
+# Subtest: CL21: career 2 lesson 1 recalls its own activity
+not ok 3 - CL21: career 2 lesson 1 recalls its own activity
+  ---
+  duration_ms: 13.3287
+  type: 'test'
+  location: '[author-local-path]
+  failureType: 'testCodeFailure'
+  error: |-
+    The input was expected to not match the regular expression /让抄手自己答第一句|示范与原战你在场也分开/. Input:
+    
+    '后来有一回，沈霁娘听人夸一眼认三谢，又说不是一眼，是真打过三次。问最要紧懂武还是懂人，她都说不够。\n' +
+      '肯承认可能看错。陆这辈子最烦，就是总问第二遍。\n' +
+      '你想起老人改证据为传闻，也想起若没有三人冒名，旧案大概永远洗不清。可若为同情把三个人拼成的谢重新写进现榜，又是一错。\n' +
+      '沈没有叫你为懂这句话就从此再不犯错，只催把门边绊她腿的小凳移开。你真去移了，不把她旧伤也说成今天讲得好便没有。\n' +
+      '让抄手自己答第一句、你在旁接漏处——沈说的肯问第二遍，你把这个机会先给了年轻人。\n' +
+      '梁愿意亲自接新抄手第二问，这些年仍会说当年败八十三。你先前多费一天换来的不是永远替榜房说好话，是他肯再把看见的交给一个肯等他说完的人。'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: |-
+    后来有一回，沈霁娘听人夸一眼认三谢，又说不是一眼，是真打过三次。问最要紧懂武还是懂人，她都说不够。
+    肯承认可能看错。陆这辈子最烦，就是总问第二遍。
+    你想起老人改证据为传闻，也想起若没有三人冒名，旧案大概永远洗不清。可若为同情把三个人拼成的谢重新写进现榜，又是一错。
+    沈没有叫你为懂这句话就从此再不犯错，只催把门边绊她腿的小凳移开。你真去移了，不把她旧伤也说成今天讲得好便没有。
+    让抄手自己答第一句、你在旁接漏处——沈说的肯问第二遍，你把这个机会先给了年轻人。
+    梁愿意亲自接新抄手第二问，这些年仍会说当年败八十三。你先前多费一天换来的不是永远替榜房说好话，是他肯再把看见的交给一个肯等他说完的人。
+  operator: 'doesNotMatch'
+  stack: |-
+    TestContext.<anonymous> (file:///[author-local-path]
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1201:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+    Test.postRun (node:internal/test_runner/test:1330:19)
+    Test.run (node:internal/test_runner/test:1258:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: CL21: career 2 lesson 2 recalls its own activity
+not ok 4 - CL21: career 2 lesson 2 recalls its own activity
+  ---
+  duration_ms: 13.8635
+  type: 'test'
+  location: '[author-local-path]
+  failureType: 'testCodeFailure'
+  error: |-
+    The input was expected to not match the regular expression /让抄手自己答第一句|示范与原战你在场也分开/. Input:
+    
+    '后来有一回，沈霁娘听人夸一眼认三谢，又说不是一眼，是真打过三次。问最要紧懂武还是懂人，她都说不够。\n' +
+      '肯承认可能看错。陆这辈子最烦，就是总问第二遍。\n' +
+      '你想起老人改证据为传闻，也想起若没有三人冒名，旧案大概永远洗不清。可若为同情把三个人拼成的谢重新写进现榜，又是一错。\n' +
+      '沈没有叫你为懂这句话就从此再不犯错，只催把门边绊她腿的小凳移开。你真去移了，不把她旧伤也说成今天讲得好便没有。\n' +
+      '示范与原战你在场也分开。沈说不懂武、不懂人都不够，你教抄手的头一条正是：今天看见的，不替当天写。\n' +
+      '梁愿意亲自接新抄手第二问，这些年仍会说当年败八十三。你先前多费一天换来的不是永远替榜房说好话，是他肯再把看见的交给一个肯等他说完的人。'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: |-
+    后来有一回，沈霁娘听人夸一眼认三谢，又说不是一眼，是真打过三次。问最要紧懂武还是懂人，她都说不够。
+    肯承认可能看错。陆这辈子最烦，就是总问第二遍。
+    你想起老人改证据为传闻，也想起若没有三人冒名，旧案大概永远洗不清。可若为同情把三个人拼成的谢重新写进现榜，又是一错。
+    沈没有叫你为懂这句话就从此再不犯错，只催把门边绊她腿的小凳移开。你真去移了，不把她旧伤也说成今天讲得好便没有。
+    示范与原战你在场也分开。沈说不懂武、不懂人都不够，你教抄手的头一条正是：今天看见的，不替当天写。
+    梁愿意亲自接新抄手第二问，这些年仍会说当年败八十三。你先前多费一天换来的不是永远替榜房说好话，是他肯再把看见的交给一个肯等他说完的人。
+  operator: 'doesNotMatch'
+  stack: |-
+    TestContext.<anonymous> (file:///[author-local-path]
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1201:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+    Test.postRun (node:internal/test_runner/test:1330:19)
+    Test.run (node:internal/test_runner/test:1258:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: CL22: money true and interview true retain separate methods
+ok 5 - CL22: money true and interview true retain separate methods
+  ---
+  duration_ms: 8.9482
+  type: 'test'
+  ...
+# Subtest: CL22: money true and interview false retain separate methods
+not ok 6 - CL22: money true and interview false retain separate methods
+  ---
+  duration_ms: 9.2587
+  type: 'test'
+  location: '[author-local-path]
+  failureType: 'testCodeFailure'
+  error: |-
+    The input was expected to not match the regular expression /你从接路往来反推回来/. Input:
+    
+    '你走回城里，鞋里又进了泥。受益不等于都参与凶杀，也不等于一提证言便可用十八年前依法转手堵住。肯说的人有，拒的人也在，整案不能只选最像一个大坏人的名字。\n' +
+      '案的要处终于核拢。九月大修前二十日，顾递信只有我到。你问会不会公开说，陆答不知道；即使反悔，现有证词也够翻案，唯有顾自己能决定是否还那份沉默。\n' +
+      '三个人到时真都会来？\n' +
+      '门口已有赌盘、外地看客、想看死人进前十的人。你还得先把三个活人真请到那张桌边。\n' +
+      '你一处一处分开问过，也给旧驿真当过差的人留了说没看清的余地。卷上因此写着好几个我没看见，而不是几个都看见了。\n' +
+      '顾临川是被你等他自己把那三个字说出来的，不是被一句顾全门声带过去。怕丢人这一句在卷里没有被改成别的词。\n' +
+      '旧契上那笔钱你从接路往来反推回来；门前那位家主要么没答，要么话里留着没说清的一段，两样你都没省。\n' +
+      '那一夜先让三人商量的约定还在，他们自己认过各要说哪一段。你替多等半日的门人解释过，也受了护短的骂；严先交代病客，杜要收好木铺，谢也还得送船，三个人约好次日才一同来，不是听你一句召集便无别的事。'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: |-
+    你走回城里，鞋里又进了泥。受益不等于都参与凶杀，也不等于一提证言便可用十八年前依法转手堵住。肯说的人有，拒的人也在，整案不能只选最像一个大坏人的名字。
+    案的要处终于核拢。九月大修前二十日，顾递信只有我到。你问会不会公开说，陆答不知道；即使反悔，现有证词也够翻案，唯有顾自己能决定是否还那份沉默。
+    三个人到时真都会来？
+    门口已有赌盘、外地看客、想看死人进前十的人。你还得先把三个活人真请到那张桌边。
+    你一处一处分开问过，也给旧驿真当过差的人留了说没看清的余地。卷上因此写着好几个我没看见，而不是几个都看见了。
+    顾临川是被你等他自己把那三个字说出来的，不是被一句顾全门声带过去。怕丢人这一句在卷里没有被改成别的词。
+    旧契上那笔钱你从接路往来反推回来；门前那位家主要么没答，要么话里留着没说清的一段，两样你都没省。
+    那一夜先让三人商量的约定还在，他们自己认过各要说哪一段。你替多等半日的门人解释过，也受了护短的骂；严先交代病客，杜要收好木铺，谢也还得送船，三个人约好次日才一同来，不是听你一句召集便无别的事。
+  operator: 'doesNotMatch'
+  stack: |-
+    TestContext.<anonymous> (file:///[author-local-path]
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1201:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+    Test.postRun (node:internal/test_runner/test:1330:19)
+    Test.run (node:internal/test_runner/test:1258:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: CL22: money false and interview true retain separate methods
+ok 7 - CL22: money false and interview true retain separate methods
+  ---
+  duration_ms: 8.9705
+  type: 'test'
+  ...
+# Subtest: CL22: money false and interview false retain separate methods
+not ok 8 - CL22: money false and interview false retain separate methods
+  ---
+  duration_ms: 11.2201
+  type: 'test'
+  location: '[author-local-path]
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+    
+      assert.ok(text.includes('继业门人'))
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///[author-local-path]
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1201:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+    Test.postRun (node:internal/test_runner/test:1330:19)
+    Test.run (node:internal/test_runner/test:1258:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: CL23: reconstructed swords 1/1/1 do not invent a different foot choice
+ok 9 - CL23: reconstructed swords 1/1/1 do not invent a different foot choice
+  ---
+  duration_ms: 8.8842
+  type: 'test'
+  ...
+# Subtest: CL23: reconstructed swords 1/1/2 do not invent a different foot choice
+not ok 10 - CL23: reconstructed swords 1/1/2 do not invent a different foot choice
+  ---
+  duration_ms: 8.395
+  type: 'test'
+  location: '[author-local-path]
+  failureType: 'testCodeFailure'
+  error: |-
+    The input was expected to not match the regular expression /有一场你把自己的重脚交出去了/. Input:
+    
+    '陆请来沈霁娘，秋水刀，六十八，头发白半，右腿旧伤走稍跛。旧江汉十七，最高十四，伤后自行退；真同谢藏锋问过三次，一胜、一负、一平。\n' +
+      '三份完整口述她看两日，第三日才说不是一个人。梁那份左脚吃重，赵那份右脚，何出剑前吸气。\n' +
+      '打法能变，十八年也能改习惯。\n' +
+      '所以我没说他们不是谢藏锋。我说，不是一个人。\n' +
+      '你原想接着问的那句停了，老人已将三页分开，不把一句像与不像揉成同一个结论。\n' +
+      '有一场你把自己的重脚交出去了，有一场你借了追来的力。三种走法不在同一只手里，这正是它拼起来才像的原因。\n' +
+      '你原以为那三份纸抄得越齐越好，如今才知不齐本身就是一条线索。\n' +
+      '八十三那一场，你借他追来的力转回右侧。这一手顺，顺得像打过很多回的人，而不是一个心虚的冒名者。\n' +
+      '陆那句大概不会，你没有替它圆成他们对了。旧案如今真在桌上，靠的是这三份口述，不是那句迟来的承认。\n' +
+      '找到，叫来。我问的是他今天怎样走，不叫你照三句话抓三个影。\n' +
+      '她把刀横好，起身时先给坏腿留一步，不拿自己曾能进十四便说如今伤已不在。'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: |-
+    陆请来沈霁娘，秋水刀，六十八，头发白半，右腿旧伤走稍跛。旧江汉十七，最高十四，伤后自行退；真同谢藏锋问过三次，一胜、一负、一平。
+    三份完整口述她看两日，第三日才说不是一个人。梁那份左脚吃重，赵那份右脚，何出剑前吸气。
+    打法能变，十八年也能改习惯。
+    所以我没说他们不是谢藏锋。我说，不是一个人。
+    你原想接着问的那句停了，老人已将三页分开，不把一句像与不像揉成同一个结论。
+    有一场你把自己的重脚交出去了，有一场你借了追来的力。三种走法不在同一只手里，这正是它拼起来才像的原因。
+    你原以为那三份纸抄得越齐越好，如今才知不齐本身就是一条线索。
+    八十三那一场，你借他追来的力转回右侧。这一手顺，顺得像打过很多回的人，而不是一个心虚的冒名者。
+    陆那句大概不会，你没有替它圆成他们对了。旧案如今真在桌上，靠的是这三份口述，不是那句迟来的承认。
+    找到，叫来。我问的是他今天怎样走，不叫你照三句话抓三个影。
+    她把刀横好，起身时先给坏腿留一步，不拿自己曾能进十四便说如今伤已不在。
+  operator: 'doesNotMatch'
+  stack: |-
+    TestContext.<anonymous> (file:///[author-local-path]
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1201:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+    Test.postRun (node:internal/test_runner/test:1330:19)
+    Test.run (node:internal/test_runner/test:1258:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: CL23: reconstructed swords 1/2/1 do not invent a different foot choice
+not ok 11 - CL23: reconstructed swords 1/2/1 do not invent a different foot choice
+  ---
+  duration_ms: 8.6509
+  type: 'test'
+  location: '[author-local-path]
+  failureType: 'testCodeFailure'
+  error: |-
+    The input was expected to not match the regular expression /有一场你把自己的重脚交出去了/. Input:
+    
+    '陆请来沈霁娘，秋水刀，六十八，头发白半，右腿旧伤走稍跛。旧江汉十七，最高十四，伤后自行退；真同谢藏锋问过三次，一胜、一负、一平。\n' +
+      '三份完整口述她看两日，第三日才说不是一个人。梁那份左脚吃重，赵那份右脚，何出剑前吸气。\n' +
+      '打法能变，十八年也能改习惯。\n' +
+      '所以我没说他们不是谢藏锋。我说，不是一个人。\n' +
+      '你原想接着问的那句停了，老人已将三页分开，不把一句像与不像揉成同一个结论。\n' +
+      '有一场你把自己的重脚交出去了，有一场你借了追来的力。三种走法不在同一只手里，这正是它拼起来才像的原因。\n' +
+      '你原以为那三份纸抄得越齐越好，如今才知不齐本身就是一条线索。\n' +
+      '八十三那一场，你借他追来的力转回右侧。这一手顺，顺得像打过很多回的人，而不是一个心虚的冒名者。\n' +
+      '陆那句大概不会，你没有替它圆成他们对了。旧案如今真在桌上，靠的是这三份口述，不是那句迟来的承认。\n' +
+      '找到，叫来。我问的是他今天怎样走，不叫你照三句话抓三个影。\n' +
+      '她把刀横好，起身时先给坏腿留一步，不拿自己曾能进十四便说如今伤已不在。'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: |-
+    陆请来沈霁娘，秋水刀，六十八，头发白半，右腿旧伤走稍跛。旧江汉十七，最高十四，伤后自行退；真同谢藏锋问过三次，一胜、一负、一平。
+    三份完整口述她看两日，第三日才说不是一个人。梁那份左脚吃重，赵那份右脚，何出剑前吸气。
+    打法能变，十八年也能改习惯。
+    所以我没说他们不是谢藏锋。我说，不是一个人。
+    你原想接着问的那句停了，老人已将三页分开，不把一句像与不像揉成同一个结论。
+    有一场你把自己的重脚交出去了，有一场你借了追来的力。三种走法不在同一只手里，这正是它拼起来才像的原因。
+    你原以为那三份纸抄得越齐越好，如今才知不齐本身就是一条线索。
+    八十三那一场，你借他追来的力转回右侧。这一手顺，顺得像打过很多回的人，而不是一个心虚的冒名者。
+    陆那句大概不会，你没有替它圆成他们对了。旧案如今真在桌上，靠的是这三份口述，不是那句迟来的承认。
+    找到，叫来。我问的是他今天怎样走，不叫你照三句话抓三个影。
+    她把刀横好，起身时先给坏腿留一步，不拿自己曾能进十四便说如今伤已不在。
+  operator: 'doesNotMatch'
+  stack: |-
+    TestContext.<anonymous> (file:///[author-local-path]
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1201:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+    Test.postRun (node:internal/test_runner/test:1330:19)
+    Test.run (node:internal/test_runner/test:1258:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: CL23: reconstructed swords 1/2/2 do not invent a different foot choice
+not ok 12 - CL23: reconstructed swords 1/2/2 do not invent a different foot choice
+  ---
+  duration_ms: 8.1757
+  type: 'test'
+  location: '[author-local-path]
+  failureType: 'testCodeFailure'
+  error: |-
+    The input was expected to not match the regular expression /有一场你把自己的重脚交出去了/. Input:
+    
+    '陆请来沈霁娘，秋水刀，六十八，头发白半，右腿旧伤走稍跛。旧江汉十七，最高十四，伤后自行退；真同谢藏锋问过三次，一胜、一负、一平。\n' +
+      '三份完整口述她看两日，第三日才说不是一个人。梁那份左脚吃重，赵那份右脚，何出剑前吸气。\n' +
+      '打法能变，十八年也能改习惯。\n' +
+      '所以我没说他们不是谢藏锋。我说，不是一个人。\n' +
+      '你原想接着问的那句停了，老人已将三页分开，不把一句像与不像揉成同一个结论。\n' +
+      '有一场你把自己的重脚交出去了，有一场你借了追来的力。三种走法不在同一只手里，这正是它拼起来才像的原因。\n' +
+      '你原以为那三份纸抄得越齐越好，如今才知不齐本身就是一条线索。\n' +
+      '八十三那一场，你借他追来的力转回右侧。这一手顺，顺得像打过很多回的人，而不是一个心虚的冒名者。\n' +
+      '陆那句大概不会，你没有替它圆成他们对了。旧案如今真在桌上，靠的是这三份口述，不是那句迟来的承认。\n' +
+      '找到，叫来。我问的是他今天怎样走，不叫你照三句话抓三个影。\n' +
+      '她把刀横好，起身时先给坏腿留一步，不拿自己曾能进十四便说如今伤已不在。'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: |-
+    陆请来沈霁娘，秋水刀，六十八，头发白半，右腿旧伤走稍跛。旧江汉十七，最高十四，伤后自行退；真同谢藏锋问过三次，一胜、一负、一平。
+    三份完整口述她看两日，第三日才说不是一个人。梁那份左脚吃重，赵那份右脚，何出剑前吸气。
+    打法能变，十八年也能改习惯。
+    所以我没说他们不是谢藏锋。我说，不是一个人。
+    你原想接着问的那句停了，老人已将三页分开，不把一句像与不像揉成同一个结论。
+    有一场你把自己的重脚交出去了，有一场你借了追来的力。三种走法不在同一只手里，这正是它拼起来才像的原因。
+    你原以为那三份纸抄得越齐越好，如今才知不齐本身就是一条线索。
+    八十三那一场，你借他追来的力转回右侧。这一手顺，顺得像打过很多回的人，而不是一个心虚的冒名者。
+    陆那句大概不会，你没有替它圆成他们对了。旧案如今真在桌上，靠的是这三份口述，不是那句迟来的承认。
+    找到，叫来。我问的是他今天怎样走，不叫你照三句话抓三个影。
+    她把刀横好，起身时先给坏腿留一步，不拿自己曾能进十四便说如今伤已不在。
+  operator: 'doesNotMatch'
+  stack: |-
+    TestContext.<anonymous> (file:///[author-local-path]
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1201:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+    Test.postRun (node:internal/test_runner/test:1330:19)
+    Test.run (node:internal/test_runner/test:1258:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: CL23: reconstructed swords 2/1/1 do not invent a different foot choice
+ok 13 - CL23: reconstructed swords 2/1/1 do not invent a different foot choice
+  ---
+  duration_ms: 7.9902
+  type: 'test'
+  ...
+# Subtest: CL23: reconstructed swords 2/1/2 do not invent a different foot choice
+ok 14 - CL23: reconstructed swords 2/1/2 do not invent a different foot choice
+  ---
+  duration_ms: 7.8421
+  type: 'test'
+  ...
+# Subtest: CL23: reconstructed swords 2/2/1 do not invent a different foot choice
+ok 15 - CL23: reconstructed swords 2/2/1 do not invent a different foot choice
+  ---
+  duration_ms: 8.0169
+  type: 'test'
+  ...
+# Subtest: CL23: reconstructed swords 2/2/2 do not invent a different foot choice
+ok 16 - CL23: reconstructed swords 2/2/2 do not invent a different foot choice
+  ---
+  duration_ms: 7.9985
+  type: 'test'
+  ...
+# Subtest: CL24: box true child true preserves actual work
+ok 17 - CL24: box true child true preserves actual work
+  ---
+  duration_ms: 6.1506
+  type: 'test'
+  ...
+# Subtest: CL24: box true child false preserves actual work
+not ok 18 - CL24: box true child false preserves actual work
+  ---
+  duration_ms: 6.144
+  type: 'test'
+  location: '[author-local-path]
+  failureType: 'testCodeFailure'
+  error: |-
+    The input was expected to not match the regular expression /两件都只做对一半|哪一手不再图省事/. Input:
+    
+    '真问沈老七，只有一根旧竹篙。你七十余招才逼他横篙一次，随即半截竹停眉心。你没因头衔比一个艄公响便多得一寸退处。\n' +
+      '您究竟是谁？\n' +
+      '沈鹤汀，一苇横江。\n' +
+      '江州沧浪门出身，四十余年前旧南第十九，右腿重伤主动退，后来二十余年隐水路。你拜问，他先说不抢孟的徒弟，只教一两手，学得会是你的事。\n' +
+      '匣子你问过，孩子你也问过，两件都只做对一半。那先讲浅的，等你哪一手不再图省事。\n' +
+      '你不服，可也答不出那半件到底差在哪。\n' +
+      '卖鱼汉、府榜宗师、退榜人物，都不是给你那一下练熟后反复示范的木桩。你用过最熟的一刀，下一次真得从眼前的人再想。'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: |-
+    真问沈老七，只有一根旧竹篙。你七十余招才逼他横篙一次，随即半截竹停眉心。你没因头衔比一个艄公响便多得一寸退处。
+    您究竟是谁？
+    沈鹤汀，一苇横江。
+    江州沧浪门出身，四十余年前旧南第十九，右腿重伤主动退，后来二十余年隐水路。你拜问，他先说不抢孟的徒弟，只教一两手，学得会是你的事。
+    匣子你问过，孩子你也问过，两件都只做对一半。那先讲浅的，等你哪一手不再图省事。
+    你不服，可也答不出那半件到底差在哪。
+    卖鱼汉、府榜宗师、退榜人物，都不是给你那一下练熟后反复示范的木桩。你用过最熟的一刀，下一次真得从眼前的人再想。
+  operator: 'doesNotMatch'
+  stack: |-
+    TestContext.<anonymous> (file:///[author-local-path]
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1201:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+    Test.postRun (node:internal/test_runner/test:1330:19)
+    Test.run (node:internal/test_runner/test:1258:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: CL24: box false child true preserves actual work
+not ok 19 - CL24: box false child true preserves actual work
+  ---
+  duration_ms: 6.88
+  type: 'test'
+  location: '[author-local-path]
+  failureType: 'testCodeFailure'
+  error: |-
+    The input was expected to not match the regular expression /两件都只做对一半|哪一手不再图省事/. Input:
+    
+    '真问沈老七，只有一根旧竹篙。你七十余招才逼他横篙一次，随即半截竹停眉心。你没因头衔比一个艄公响便多得一寸退处。\n' +
+      '您究竟是谁？\n' +
+      '沈鹤汀，一苇横江。\n' +
+      '江州沧浪门出身，四十余年前旧南第十九，右腿重伤主动退，后来二十余年隐水路。你拜问，他先说不抢孟的徒弟，只教一两手，学得会是你的事。\n' +
+      '匣子你问过，孩子你也问过，两件都只做对一半。那先讲浅的，等你哪一手不再图省事。\n' +
+      '你不服，可也答不出那半件到底差在哪。\n' +
+      '卖鱼汉、府榜宗师、退榜人物，都不是给你那一下练熟后反复示范的木桩。你用过最熟的一刀，下一次真得从眼前的人再想。'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: |-
+    真问沈老七，只有一根旧竹篙。你七十余招才逼他横篙一次，随即半截竹停眉心。你没因头衔比一个艄公响便多得一寸退处。
+    您究竟是谁？
+    沈鹤汀，一苇横江。
+    江州沧浪门出身，四十余年前旧南第十九，右腿重伤主动退，后来二十余年隐水路。你拜问，他先说不抢孟的徒弟，只教一两手，学得会是你的事。
+    匣子你问过，孩子你也问过，两件都只做对一半。那先讲浅的，等你哪一手不再图省事。
+    你不服，可也答不出那半件到底差在哪。
+    卖鱼汉、府榜宗师、退榜人物，都不是给你那一下练熟后反复示范的木桩。你用过最熟的一刀，下一次真得从眼前的人再想。
+  operator: 'doesNotMatch'
+  stack: |-
+    TestContext.<anonymous> (file:///[author-local-path]
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1201:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+    Test.postRun (node:internal/test_runner/test:1330:19)
+    Test.run (node:internal/test_runner/test:1258:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: CL24: box false child false preserves actual work
+not ok 20 - CL24: box false child false preserves actual work
+  ---
+  duration_ms: 6.0351
+  type: 'test'
+  location: '[author-local-path]
+  failureType: 'testCodeFailure'
+  error: |-
+    The input was expected to not match the regular expression /两件都只做对一半|哪一手不再图省事/. Input:
+    
+    '真问沈老七，只有一根旧竹篙。你七十余招才逼他横篙一次，随即半截竹停眉心。你没因头衔比一个艄公响便多得一寸退处。\n' +
+      '您究竟是谁？\n' +
+      '沈鹤汀，一苇横江。\n' +
+      '江州沧浪门出身，四十余年前旧南第十九，右腿重伤主动退，后来二十余年隐水路。你拜问，他先说不抢孟的徒弟，只教一两手，学得会是你的事。\n' +
+      '匣子你问过，孩子你也问过，两件都只做对一半。那先讲浅的，等你哪一手不再图省事。\n' +
+      '你不服，可也答不出那半件到底差在哪。\n' +
+      '卖鱼汉、府榜宗师、退榜人物，都不是给你那一下练熟后反复示范的木桩。你用过最熟的一刀，下一次真得从眼前的人再想。'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: |-
+    真问沈老七，只有一根旧竹篙。你七十余招才逼他横篙一次，随即半截竹停眉心。你没因头衔比一个艄公响便多得一寸退处。
+    您究竟是谁？
+    沈鹤汀，一苇横江。
+    江州沧浪门出身，四十余年前旧南第十九，右腿重伤主动退，后来二十余年隐水路。你拜问，他先说不抢孟的徒弟，只教一两手，学得会是你的事。
+    匣子你问过，孩子你也问过，两件都只做对一半。那先讲浅的，等你哪一手不再图省事。
+    你不服，可也答不出那半件到底差在哪。
+    卖鱼汉、府榜宗师、退榜人物，都不是给你那一下练熟后反复示范的木桩。你用过最熟的一刀，下一次真得从眼前的人再想。
+  operator: 'doesNotMatch'
+  stack: |-
+    TestContext.<anonymous> (file:///[author-local-path]
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1201:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+    Test.postRun (node:internal/test_runner/test:1330:19)
+    Test.run (node:internal/test_runner/test:1258:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: CL25: signal true positions true names the actual coordination limit
+ok 21 - CL25: signal true positions true names the actual coordination limit
+  ---
+  duration_ms: 2.9496
+  type: 'test'
+  ...
+# Subtest: CL25: signal true positions false names the actual coordination limit
+not ok 22 - CL25: signal true positions false names the actual coordination limit
+  ---
+  duration_ms: 3.3944
+  type: 'test'
+  location: '[author-local-path]
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+    
+      assert.ok(text.includes('停试'))
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///[author-local-path]
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1201:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+    Test.postRun (node:internal/test_runner/test:1330:19)
+    Test.run (node:internal/test_runner/test:1258:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: CL25: signal false positions true names the actual coordination limit
+not ok 23 - CL25: signal false positions true names the actual coordination limit
+  ---
+  duration_ms: 2.976
+  type: 'test'
+  location: '[author-local-path]
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+    
+      assert.ok(text.includes('内外'))
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///[author-local-path]
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1201:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+    Test.postRun (node:internal/test_runner/test:1330:19)
+    Test.run (node:internal/test_runner/test:1258:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: CL25: signal false positions false names the actual coordination limit
+not ok 24 - CL25: signal false positions false names the actual coordination limit
+  ---
+  duration_ms: 2.8522
+  type: 'test'
+  location: '[author-local-path]
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+    
+      assert.ok(text.includes('停试'))
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///[author-local-path]
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1201:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+    Test.postRun (node:internal/test_runner/test:1330:19)
+    Test.run (node:internal/test_runner/test:1258:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: CL01: later testimony does not invent or reverse the witnessed event
+ok 25 - CL01: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 7.8079
+  type: 'test'
+  ...
+# Subtest: CL02: later testimony does not invent or reverse the witnessed event
+ok 26 - CL02: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 7.5238
+  type: 'test'
+  ...
+# Subtest: CL03: later testimony does not invent or reverse the witnessed event
+ok 27 - CL03: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 7.6906
+  type: 'test'
+  ...
+# Subtest: CL04: later testimony does not invent or reverse the witnessed event
+ok 28 - CL04: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 6.1214
+  type: 'test'
+  ...
+# Subtest: CL05: later testimony does not invent or reverse the witnessed event
+ok 29 - CL05: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 4.3659
+  type: 'test'
+  ...
+# Subtest: CL06: later testimony does not invent or reverse the witnessed event
+ok 30 - CL06: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 8.1983
+  type: 'test'
+  ...
+# Subtest: CL07: later testimony does not invent or reverse the witnessed event
+ok 31 - CL07: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 6.0152
+  type: 'test'
+  ...
+# Subtest: CL08: later testimony does not invent or reverse the witnessed event
+ok 32 - CL08: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 6.1678
+  type: 'test'
+  ...
+# Subtest: CL09: later testimony does not invent or reverse the witnessed event
+ok 33 - CL09: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 5.449
+  type: 'test'
+  ...
+# Subtest: CL10: later testimony does not invent or reverse the witnessed event
+ok 34 - CL10: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 6.4928
+  type: 'test'
+  ...
+# Subtest: CL11: later testimony does not invent or reverse the witnessed event
+ok 35 - CL11: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 6.4155
+  type: 'test'
+  ...
+# Subtest: CL12: later testimony does not invent or reverse the witnessed event
+ok 36 - CL12: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 5.3492
+  type: 'test'
+  ...
+# Subtest: CL13: later testimony does not invent or reverse the witnessed event
+ok 37 - CL13: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 6.0382
+  type: 'test'
+  ...
+# Subtest: CL14: later testimony does not invent or reverse the witnessed event
+ok 38 - CL14: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 6.9358
+  type: 'test'
+  ...
+# Subtest: CL15: later testimony does not invent or reverse the witnessed event
+ok 39 - CL15: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 5.7776
+  type: 'test'
+  ...
+# Subtest: CL16: later testimony does not invent or reverse the witnessed event
+ok 40 - CL16: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 5.3945
+  type: 'test'
+  ...
+# Subtest: CL17: later testimony does not invent or reverse the witnessed event
+ok 41 - CL17: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 6.6076
+  type: 'test'
+  ...
+# Subtest: CL18: later testimony does not invent or reverse the witnessed event
+ok 42 - CL18: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 6.1322
+  type: 'test'
+  ...
+# Subtest: CL19: later testimony does not invent or reverse the witnessed event
+ok 43 - CL19: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 5.417
+  type: 'test'
+  ...
+# Subtest: CL20: later testimony does not invent or reverse the witnessed event
+ok 44 - CL20: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 2.844
+  type: 'test'
+  ...
+# Subtest: independent recall lh_clear_boat_tail/lh_ask_gap_later false/false
+ok 45 - independent recall lh_clear_boat_tail/lh_ask_gap_later false/false
+  ---
+  duration_ms: 5.4668
+  type: 'test'
+  ...
+# Subtest: independent recall lh_clear_boat_tail/lh_ask_gap_later false/true
+ok 46 - independent recall lh_clear_boat_tail/lh_ask_gap_later false/true
+  ---
+  duration_ms: 6.2019
+  type: 'test'
+  ...
+# Subtest: independent recall lh_clear_boat_tail/lh_ask_gap_later true/false
+ok 47 - independent recall lh_clear_boat_tail/lh_ask_gap_later true/false
+  ---
+  duration_ms: 5.3747
+  type: 'test'
+  ...
+# Subtest: independent recall lh_clear_boat_tail/lh_ask_gap_later true/true
+ok 48 - independent recall lh_clear_boat_tail/lh_ask_gap_later true/true
+  ---
+  duration_ms: 5.4606
+  type: 'test'
+  ...
+# Subtest: independent recall lh_ask_new_opponents/lh_wait_full_record false/false
+ok 49 - independent recall lh_ask_new_opponents/lh_wait_full_record false/false
+  ---
+  duration_ms: 5.9502
+  type: 'test'
+  ...
+# Subtest: independent recall lh_ask_new_opponents/lh_wait_full_record false/true
+ok 50 - independent recall lh_ask_new_opponents/lh_wait_full_record false/true
+  ---
+  duration_ms: 5.4148
+  type: 'test'
+  ...
+# Subtest: independent recall lh_ask_new_opponents/lh_wait_full_record true/false
+ok 51 - independent recall lh_ask_new_opponents/lh_wait_full_record true/false
+  ---
+  duration_ms: 5.3437
+  type: 'test'
+  ...
+# Subtest: independent recall lh_ask_new_opponents/lh_wait_full_record true/true
+ok 52 - independent recall lh_ask_new_opponents/lh_wait_full_record true/true
+  ---
+  duration_ms: 5.4557
+  type: 'test'
+  ...
+# Subtest: independent recall lh_say_what_waits/lh_share_road_first false/false
+ok 53 - independent recall lh_say_what_waits/lh_share_road_first false/false
+  ---
+  duration_ms: 5.5675
+  type: 'test'
+  ...
+# Subtest: independent recall lh_say_what_waits/lh_share_road_first false/true
+ok 54 - independent recall lh_say_what_waits/lh_share_road_first false/true
+  ---
+  duration_ms: 5.298
+  type: 'test'
+  ...
+# Subtest: independent recall lh_say_what_waits/lh_share_road_first true/false
+ok 55 - independent recall lh_say_what_waits/lh_share_road_first true/false
+  ---
+  duration_ms: 5.4166
+  type: 'test'
+  ...
+# Subtest: independent recall lh_say_what_waits/lh_share_road_first true/true
+ok 56 - independent recall lh_say_what_waits/lh_share_road_first true/true
+  ---
+  duration_ms: 5.6278
+  type: 'test'
+  ...
+# Subtest: independent recall lh_hold_without_show/lh_ask_why_only_once false/false
+ok 57 - independent recall lh_hold_without_show/lh_ask_why_only_once false/false
+  ---
+  duration_ms: 5.3055
+  type: 'test'
+  ...
+# Subtest: independent recall lh_hold_without_show/lh_ask_why_only_once false/true
+ok 58 - independent recall lh_hold_without_show/lh_ask_why_only_once false/true
+  ---
+  duration_ms: 5.2572
+  type: 'test'
+  ...
+# Subtest: independent recall lh_hold_without_show/lh_ask_why_only_once true/false
+ok 59 - independent recall lh_hold_without_show/lh_ask_why_only_once true/false
+  ---
+  duration_ms: 5.695
+  type: 'test'
+  ...
+# Subtest: independent recall lh_hold_without_show/lh_ask_why_only_once true/true
+ok 60 - independent recall lh_hold_without_show/lh_ask_why_only_once true/true
+  ---
+  duration_ms: 5.3227
+  type: 'test'
+  ...
+1..60
+# tests 60
+# suites 0
+# pass 47
+# fail 13
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 499.935

@@ -1,33 +1,34 @@
 {
-  "baseline": "6de661c",
-  "pathMap": {
-    "story/jade-author.mjs": "docs\\archives\\jade-v1-editorial-baseline\\jade-author.mjs",
-    "story/jade-buy.mjs": "docs\\archives\\jade-v1-editorial-baseline\\jade-buy.mjs",
-    "story/jade-stores.mjs": "docs\\archives\\jade-v1-editorial-baseline\\jade-stores.mjs",
-    "story/jade-grain.mjs": "docs\\archives\\jade-v1-editorial-baseline\\jade-grain.mjs",
-    "story/jade-night.mjs": "docs\\archives\\jade-v1-editorial-baseline\\jade-night.mjs",
-    "story/jade-after.mjs": "docs\\archives\\jade-v1-editorial-baseline\\jade-after.mjs",
-    "story/jade.ink": "story/jade-v1.ink",
-    "src/generated/jade.json": "src/generated/jade-v1.json",
-    "宋世江湖.md": "宋世江湖.md",
-    "story/jade-thieves.ink": "story/jade-thieves.ink",
-    "src/generated/jade-thieves.json": "src/generated/jade-thieves.json",
-    "story/jade-before-cg.ink": "story/jade-before-cg.ink",
-    "src/generated/jade-before-cg.json": "src/generated/jade-before-cg.json"
-  },
-  "frozen": {
-    "docs\\archives\\jade-v1-editorial-baseline\\jade-author.mjs": "f74f990e2e9017f5c448a8bc61300eb09d99c4fc40ac61d15933a041d2402506",
-    "docs\\archives\\jade-v1-editorial-baseline\\jade-buy.mjs": "92b9181a74123c4ab09529fae4ca51c5beacdab5c0ab50e81dfc140a66bfb6f9",
-    "docs\\archives\\jade-v1-editorial-baseline\\jade-stores.mjs": "f9ec2f52d6007fa8a8d2fdbb0a2939e029052d97ae85b3ba2579ee3f6db2c8f1",
-    "docs\\archives\\jade-v1-editorial-baseline\\jade-grain.mjs": "ead70bb4c8f74d6742ce981c4dcf9c66e19d07232b662bba44b3a74b2f6a4f96",
-    "docs\\archives\\jade-v1-editorial-baseline\\jade-night.mjs": "e64b229889f47b565c645bca07a5d7bf1398f1b41f8678c4b35ef790dca070eb",
-    "docs\\archives\\jade-v1-editorial-baseline\\jade-after.mjs": "8df056bec1194f73d5c46b1644f0345f812ba32ae1fcc279384ae4c41a722ff7",
-    "story/jade-v1.ink": "06d5e0c466125d18fe34a2b12f4ebf30e3f8c42b4119e0cf91e93b111461e62c",
-    "src/generated/jade-v1.json": "333c337a3a24483353b623343b06aea2a0b0e0e7488fed2fc630b6d486b43593",
-    "宋世江湖.md": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393",
-    "story/jade-thieves.ink": "25e3bdb08e32c06e58e0f6800995213589aab642af065f7cb6f4a5cf713b20d5",
-    "src/generated/jade-thieves.json": "e5dae6fd98c9928cfc443024aa745d2f805fca916937892dd616ff27308daf51",
-    "story/jade-before-cg.ink": "0c44a624a652ff467ea6314dd67c1eed30091c2cb40420252bb55c53d0c7d09a",
-    "src/generated/jade-before-cg.json": "25132ce9ac800d2420099b6ee1a704f8c8808ca2174ad0ba54031ea3a036bd54"
-  }
+ "baseline": "6de661c",
+ "pathMap": {
+  "story/jade-author.mjs": "docs\\archives\\jade-v1-editorial-baseline\\jade-author.mjs",
+  "story/jade-buy.mjs": "docs\\archives\\jade-v1-editorial-baseline\\jade-buy.mjs",
+  "story/jade-stores.mjs": "docs\\archives\\jade-v1-editorial-baseline\\jade-stores.mjs",
+  "story/jade-grain.mjs": "docs\\archives\\jade-v1-editorial-baseline\\jade-grain.mjs",
+  "story/jade-night.mjs": "docs\\archives\\jade-v1-editorial-baseline\\jade-night.mjs",
+  "story/jade-after.mjs": "docs\\archives\\jade-v1-editorial-baseline\\jade-after.mjs",
+  "story/jade.ink": "story/jade-v1.ink",
+  "src/generated/jade.json": "src/generated/jade-v1.json",
+  "宋世江湖.md": "宋世江湖.md",
+  "story/jade-thieves.ink": "story/jade-thieves.ink",
+  "src/generated/jade-thieves.json": "src/generated/jade-thieves.json",
+  "story/jade-before-cg.ink": "story/jade-before-cg.ink",
+  "src/generated/jade-before-cg.json": "src/generated/jade-before-cg.json"
+ },
+ "frozen": {
+  "docs\\archives\\jade-v1-editorial-baseline\\jade-author.mjs": "f74f990e2e9017f5c448a8bc61300eb09d99c4fc40ac61d15933a041d2402506",
+  "docs\\archives\\jade-v1-editorial-baseline\\jade-buy.mjs": "92b9181a74123c4ab09529fae4ca51c5beacdab5c0ab50e81dfc140a66bfb6f9",
+  "docs\\archives\\jade-v1-editorial-baseline\\jade-stores.mjs": "f9ec2f52d6007fa8a8d2fdbb0a2939e029052d97ae85b3ba2579ee3f6db2c8f1",
+  "docs\\archives\\jade-v1-editorial-baseline\\jade-grain.mjs": "ead70bb4c8f74d6742ce981c4dcf9c66e19d07232b662bba44b3a74b2f6a4f96",
+  "docs\\archives\\jade-v1-editorial-baseline\\jade-night.mjs": "e64b229889f47b565c645bca07a5d7bf1398f1b41f8678c4b35ef790dca070eb",
+  "docs\\archives\\jade-v1-editorial-baseline\\jade-after.mjs": "8df056bec1194f73d5c46b1644f0345f812ba32ae1fcc279384ae4c41a722ff7",
+  "story/jade-v1.ink": "06d5e0c466125d18fe34a2b12f4ebf30e3f8c42b4119e0cf91e93b111461e62c",
+  "src/generated/jade-v1.json": "333c337a3a24483353b623343b06aea2a0b0e0e7488fed2fc630b6d486b43593",
+  "宋世江湖.md": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393",
+  "story/jade-thieves.ink": "8116f005907612988e4e9a2c30bb0293a334329e03adbb2bcbbda551ee46e744",
+  "src/generated/jade-thieves.json": "0b0895a8ca463ff9405570287dee102805c7a33be1c41001015f78751fadbe9b",
+  "story/jade-before-cg.ink": "0c44a624a652ff467ea6314dd67c1eed30091c2cb40420252bb55c53d0c7d09a",
+  "src/generated/jade-before-cg.json": "25132ce9ac800d2420099b6ee1a704f8c8808ca2174ad0ba54031ea3a036bd54"
+ },
+ "note": " | ROUND5: story/jade-thieves.ink and src/generated/jade-thieves.json advanced intentionally by V7 round-5 orphan-variable wiring (jt_shared_turn, jt_last_action themed echoes); hashes re-recorded."
 }

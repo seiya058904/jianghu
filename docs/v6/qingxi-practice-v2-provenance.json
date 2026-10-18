@@ -1,10 +1,10 @@
 {
   "tool": "built-in image_gen",
-  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-0cafedaa-c9ab-49db-8484-6693d55e0f61.png",
+  "source": "[author-local-path]",
   "prompt": "Edit this existing historical courtyard illustration. Remove the tiny writing/signature marks at the bottom LEFT corner and seamlessly restore plain natural stone ground there. Preserve absolutely everything else: same courtyard, wooden training dao, bench, pine, architecture, daylight, camera framing and fine watercolor/ink texture. Landscape3:2. No people. Result must have no text, no signature, no watermark anywhere.",
-  "reference": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-de0a87d8-383b-436b-a058-ff6d57a8a613.png",
-  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/docs/v6/art-candidates/qingxi-practice-v2.webp",
+  "reference": "[author-local-path]",
+  "output": "./docs/v6/art-candidates/qingxi-practice-v2.webp",
   "review": "REJECTED: unwanted tiny signature-like marks remain in lower left corner. Not referenced by game scenes, not counted toward environment minimum.",
-  "initialOutput": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/qingxi-practice-v2.webp",
+  "initialOutput": "./public/art/v6/qingxi-practice-v2.webp",
   "archiveReason": "Rejected candidate preserved for traceability outside public so it is not shipped with the game."
 }

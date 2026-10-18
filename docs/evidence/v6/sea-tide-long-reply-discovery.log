@@ -22,7 +22,7 @@ Running 1 test using 1 worker
          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
       20 | });
       21 |
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\sea-tide.spec.ts:19:1352
+        at .\tests\sea-tide.spec.ts:19:1352
 
     Error Context: test-results\sea-tide-long-reply\sea-tide-Sea-Tide-cover-an-9ce0f-es-preserve-keyboard-access\error-context.md
 

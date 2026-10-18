@@ -1,0 +1,569 @@
+{
+ "generatedBy": "node --experimental-strip-types scripts/audit-v7-ending-coverage.mjs",
+ "walksPerEdition": 600,
+ "rows": [
+  {
+   "slug": "bamboo",
+   "title": "竹院夜论",
+   "version": "bamboo-1.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "bb_palm_after",
+    "bb_tea_after"
+   ],
+   "reached": [
+    "bb_palm_after",
+    "bb_tea_after"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 7,
+   "firstNpcLineStep": 3,
+   "firstTwoHanderStep": 3,
+   "firstNpcActionStep": 0,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "beyond-ranking",
+   "title": "榜纸之外·宁无极旧录",
+   "version": "beyond-ranking-1.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "br_reader_after",
+    "br_record_after"
+   ],
+   "reached": [
+    "br_reader_after",
+    "br_record_after"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 8,
+   "firstNpcLineStep": 4,
+   "firstTwoHanderStep": 4,
+   "firstNpcActionStep": 0,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "dead-ranking",
+   "title": "死人争榜",
+   "version": "dead-ranking-1.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "dr_road_after",
+    "dr_room_after"
+   ],
+   "reached": [
+    "dr_road_after",
+    "dr_room_after"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 7,
+   "firstNpcLineStep": 3,
+   "firstTwoHanderStep": 3,
+   "firstNpcActionStep": 123,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "dongting",
+   "title": "照水刀 · 问席",
+   "version": "dongting-1.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "dt_cargo",
+    "dt_company"
+   ],
+   "reached": [
+    "dt_cargo",
+    "dt_company"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 6,
+   "firstNpcLineStep": 2,
+   "firstTwoHanderStep": 2,
+   "firstNpcActionStep": 66,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "jade",
+   "title": "山河璧 · 十三文",
+   "version": "jade-2.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "jd_archivework",
+    "jd_storework"
+   ],
+   "reached": [
+    "jd_archivework",
+    "jd_storework"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 6,
+   "firstNpcLineStep": 1,
+   "firstTwoHanderStep": 45,
+   "firstNpcActionStep": 98,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "jade-thieves",
+   "title": "山河璧 · 密库双贼",
+   "version": "jade-thieves-2.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "jt_private_account",
+    "jt_unmarked_life"
+   ],
+   "reached": [
+    "jt_private_account",
+    "jt_unmarked_life"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 2,
+   "firstNpcLineStep": 7,
+   "firstTwoHanderStep": 114,
+   "firstNpcActionStep": 99,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "kuhe",
+   "title": "枯河谷 · 门后有人",
+   "version": "kuhe-3.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "kh_care",
+    "kh_record"
+   ],
+   "reached": [
+    "kh_care",
+    "kh_record"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 6,
+   "firstNpcLineStep": 2,
+   "firstTwoHanderStep": 21,
+   "firstNpcActionStep": 128,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "longmen",
+   "title": "龙门问刀",
+   "version": "longmen-3.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "lm_home",
+    "lm_travel"
+   ],
+   "reached": [
+    "lm_home",
+    "lm_travel"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 4,
+   "firstNpcLineStep": 3,
+   "firstTwoHanderStep": 29,
+   "firstNpcActionStep": 149,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "luhua",
+   "title": "照水刀 · 芦花渡",
+   "version": "luhua-1.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "lh_coast_after",
+    "lh_hall_after"
+   ],
+   "reached": [
+    "lh_coast_after",
+    "lh_hall_after"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 4,
+   "firstNpcLineStep": 3,
+   "firstTwoHanderStep": 8,
+   "firstNpcActionStep": 3,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "luoyang",
+   "title": "洛阳龙虎风云会",
+   "version": "luoyang-1.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "ly_post_after",
+    "ly_trial_after"
+   ],
+   "reached": [
+    "ly_post_after",
+    "ly_trial_after"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 6,
+   "firstNpcLineStep": 4,
+   "firstTwoHanderStep": 4,
+   "firstNpcActionStep": 0,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "north",
+   "title": "北枪与乾坤 · 三师一枪",
+   "version": "north-3.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "nq_first_again",
+    "nq_three_names"
+   ],
+   "reached": [
+    "nq_first_again",
+    "nq_three_names"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 7,
+   "firstNpcLineStep": 3,
+   "firstTwoHanderStep": 11,
+   "firstNpcActionStep": 130,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "north-notes",
+   "title": "北枪与乾坤 · 师门夜话",
+   "version": "north-notes-1.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "nn_different_starts",
+    "nn_unfinished_page"
+   ],
+   "reached": [
+    "nn_different_starts",
+    "nn_unfinished_page"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 3,
+   "firstNpcLineStep": 5,
+   "firstTwoHanderStep": 0,
+   "firstNpcActionStep": 0,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "qian-kun",
+   "title": "北枪与乾坤 · 不会算账",
+   "version": "qian-kun-3.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "qk_open_lesson",
+    "qk_open_mountain"
+   ],
+   "reached": [
+    "qk_open_lesson",
+    "qk_open_mountain"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 7,
+   "firstNpcLineStep": 3,
+   "firstTwoHanderStep": 3,
+   "firstNpcActionStep": 95,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "qingshi",
+   "title": "青石五友 · 守一天",
+   "version": "qingshi-3.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "qs_heirs",
+    "qs_records"
+   ],
+   "reached": [
+    "qs_heirs",
+    "qs_records"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 5,
+   "firstNpcLineStep": 2,
+   "firstTwoHanderStep": 2,
+   "firstNpcActionStep": 0,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "sea",
+   "title": "海路两世 · 中原以外",
+   "version": "sea-2.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "sr_next_harbor",
+    "sr_open_courtyard"
+   ],
+   "reached": [
+    "sr_next_harbor",
+    "sr_open_courtyard"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 5,
+   "firstNpcLineStep": 4,
+   "firstTwoHanderStep": 33,
+   "firstNpcActionStep": 72,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "sea-tide",
+   "title": "海路两世 · 归潮岛",
+   "version": "sea-tide-2.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "st_next_step",
+    "st_next_watch"
+   ],
+   "reached": [
+    "st_next_step",
+    "st_next_watch"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 4,
+   "firstNpcLineStep": 3,
+   "firstTwoHanderStep": 9,
+   "firstNpcActionStep": 23,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "seven-questions",
+   "title": "一剑两脉 · 门外七问",
+   "version": "seven-questions-2.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "sq_open_lesson",
+    "sq_shared_road"
+   ],
+   "reached": [
+    "sq_open_lesson",
+    "sq_shared_road"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 7,
+   "firstNpcLineStep": 1,
+   "firstTwoHanderStep": 1,
+   "firstNpcActionStep": 154,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "taihua",
+   "title": "太华试序 · 三年之约",
+   "version": "taihua-3.0.0",
+   "walks": 600,
+   "declaredCount": 3,
+   "reachedCount": 3,
+   "declared": [
+    "th_company",
+    "th_guidance",
+    "th_letter"
+   ],
+   "reached": [
+    "th_company",
+    "th_guidance",
+    "th_letter"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 8,
+   "firstNpcLineStep": 3,
+   "firstTwoHanderStep": 3,
+   "firstNpcActionStep": 256,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "twelfth",
+   "title": "第十二席",
+   "version": "twelfth-1.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "qw_palace",
+    "qw_school"
+   ],
+   "reached": [
+    "qw_palace",
+    "qw_school"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 5,
+   "firstNpcLineStep": 2,
+   "firstTwoHanderStep": 2,
+   "firstNpcActionStep": 124,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "twelfth-life",
+   "title": "第十二席 · 赵承晏",
+   "version": "twelfth-life-3.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "rl_letter_after",
+    "rl_watch_after"
+   ],
+   "reached": [
+    "rl_letter_after",
+    "rl_watch_after"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 6,
+   "firstNpcLineStep": 2,
+   "firstTwoHanderStep": 2,
+   "firstNpcActionStep": 0,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "two-swords",
+   "title": "一剑两脉 · 旧本归还",
+   "version": "two-swords-2.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "ss_library_lesson",
+    "ss_mountain_lesson"
+   ],
+   "reached": [
+    "ss_library_lesson",
+    "ss_mountain_lesson"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 4,
+   "firstNpcLineStep": 1,
+   "firstTwoHanderStep": 20,
+   "firstNpcActionStep": 48,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "white-stone",
+   "title": "白石谷外",
+   "version": "white-stone-1.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "ws_outside_after",
+    "ws_receiving_after"
+   ],
+   "reached": [
+    "ws_outside_after",
+    "ws_receiving_after"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 5,
+   "firstNpcLineStep": 4,
+   "firstTwoHanderStep": 0,
+   "firstNpcActionStep": 0,
+   "unsettledWalks": 0
+  },
+  {
+   "slug": "xuanmen",
+   "title": "玄门旧史·九席与返真不绝",
+   "version": "xuanmen-1.0.0",
+   "walks": 600,
+   "declaredCount": 2,
+   "reachedCount": 2,
+   "declared": [
+    "xm_blank_after",
+    "xm_handover_after"
+   ],
+   "reached": [
+    "xm_blank_after",
+    "xm_handover_after"
+   ],
+   "unreached": [],
+   "extra": [],
+   "firstChoiceStep": 4,
+   "firstNpcLineStep": 3,
+   "firstTwoHanderStep": 3,
+   "firstNpcActionStep": 0,
+   "unsettledWalks": 0
+  }
+ ],
+ "summary": {
+  "editions": 23,
+  "declaredTotal": 47,
+  "reachedTotal": 47,
+  "fullyCovered": [
+   "bamboo",
+   "beyond-ranking",
+   "dead-ranking",
+   "dongting",
+   "jade",
+   "jade-thieves",
+   "kuhe",
+   "longmen",
+   "luhua",
+   "luoyang",
+   "north",
+   "north-notes",
+   "qian-kun",
+   "qingshi",
+   "sea",
+   "sea-tide",
+   "seven-questions",
+   "taihua",
+   "twelfth",
+   "twelfth-life",
+   "two-swords",
+   "white-stone",
+   "xuanmen"
+  ],
+  "withUnreached": [],
+  "unsettled": []
+ }
+}

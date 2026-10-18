@@ -24,7 +24,7 @@ Running 1 test using 1 worker
       14 |  const cdp=await context.newCDPSession(page);await cdp.send('Network.clearBrowserCache');await cdp.detach();const fresh=await context.newPage();await fresh.addInitScript(prefix=>localStorage.setItem(prefix+'settings',JSON.stringify({speed:0,reduced:true})),work.prefix);await page.close();await context.setOffline(true);await fresh.goto(root+work.file);await fresh.getByRole('button',{name:work.start,exact:true}).click();const data=JSON.parse(readFileSync('src/generated/'+slug+'.json','utf8')),s=new VNRuntime(data,work.version);await expect(fresh.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await expect(fresh.locator('#dialogue-visible')).toHaveText(s.frame.text);if(s.frame.choices.length){await fresh.locator(`[data-choice="${s.frame.choices[0].id}"]`).click();s.choose(s.frame.choices[0].id)}else{await fresh.locator('#advance-button').click();s.advance()}await expect(fresh.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await context.close();
       15 | });
       16 |
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\offline-work-pack.spec.ts:13:421
+        at .\tests\offline-work-pack.spec.ts:13:421
 
     Error Context: test-results\offline-work-pack-download-a3769-uncached-story-data-on-root\error-context.md
 

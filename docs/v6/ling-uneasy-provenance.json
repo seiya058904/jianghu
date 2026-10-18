@@ -1,8 +1,8 @@
 {
   "tool": "built-in image_gen",
-  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-ba3d044d-3f8f-4b19-924f-35187eb5e49f.png",
+  "source": "[author-local-path]",
   "prompt": "Use case: visual novel expression and gesture edit. Preserve EXACT reference character identity, facial anatomy, age, gender, costume colors/materials, hair, and fine naturalistic watercolor/ink rendering. Same28-year-old female traveling doctor Ling Wei. Worried tired expression with mouth gently parted and eyebrows raised inward; one hand holding existing satchel strap and the other relaxed toward viewer in a careful stop gesture. Same sage green and ivory clothing, hairstyle, herbs and identity. Meaningful expression and gesture change, same portrait framing as reference, one character only, no other person. True transparent alpha background, no colored panel, no scenery, no floor, no cast shadow rectangle. No signature, no text, no watermark.",
-  "reference": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v5/ling.webp",
-  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/ling-uneasy.webp",
+  "reference": "./public/art/v5/ling.webp",
+  "output": "./public/art/v6/ling-uneasy.webp",
   "review": "Reviewed against seen original: identity, costume, age/gender and anatomy preserved; state is suitable for reuse across scenes. Qiao final variant has empty resting hands and right wrist supported. Mapped only to v6 actors; original v5 presentation preserved. Final browser screenshot review pending."
 }

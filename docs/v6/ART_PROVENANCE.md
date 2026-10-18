@@ -4,7 +4,7 @@
 
 ## taihua-night.webp
 
-源：`C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-60cc4d6e-5da3-4ad6-9004-abaf301d2fae.png`。用已安装ffmpeg等比例转WebP，1536宽，quality84；无图像内容修改。已目视确认空院、夜月、松枝、灯及汤碗，没有文字或人物。实际接入th_night与太华封面。
+源：`[author-local-path]`。用已安装ffmpeg等比例转WebP，1536宽，quality84；无图像内容修改。已目视确认空院、夜月、松枝、灯及汤碗，没有文字或人物。实际接入th_night与太华封面。
 
 完整生成提示：
 

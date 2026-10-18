@@ -1,5 +1,6 @@
 node_modules/
 test-results/
+test-results-*/
 playwright-report/
 *.log
 dist/
@@ -13,3 +14,12 @@ docs/archives/
 # archival baselines (the canon text, docs/archives). See docs/PUBLISHING.md.
 docs/evidence/v6/frozen-baselines-missing.json
 docs/evidence/v6/frozen-baselines-missing.json.lock/
+
+# 证据大文件禁入 git（2026-10-17 定，经用户授权）：
+# 历史上的 1977 张 PNG 截图（1.5GB）已把仓库历史撑到 1.1GB。今后
+# 验收/E2E 截图一律用 webp、宽度 ≤800px、落在 docs/evidence/ 下，
+# PNG/JPG 不再入库。真正的美术资产仍走 public/art/（webp）。
+docs/evidence/**/*.png
+docs/evidence/**/*.jpg
+docs/evidence/**/*.jpeg
+art-handoff*.zip

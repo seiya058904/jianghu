@@ -1,0 +1,370 @@
+TAP version 13
+# Subtest: CL21: career 1 lesson 1 recalls its own activity
+ok 1 - CL21: career 1 lesson 1 recalls its own activity
+  ---
+  duration_ms: 92.2879
+  type: 'test'
+  ...
+# Subtest: CL21: career 1 lesson 2 recalls its own activity
+ok 2 - CL21: career 1 lesson 2 recalls its own activity
+  ---
+  duration_ms: 33.6057
+  type: 'test'
+  ...
+# Subtest: CL21: career 2 lesson 1 recalls its own activity
+ok 3 - CL21: career 2 lesson 1 recalls its own activity
+  ---
+  duration_ms: 35.6353
+  type: 'test'
+  ...
+# Subtest: CL21: career 2 lesson 2 recalls its own activity
+ok 4 - CL21: career 2 lesson 2 recalls its own activity
+  ---
+  duration_ms: 36.9051
+  type: 'test'
+  ...
+# Subtest: CL22: money true and interview true retain separate methods
+ok 5 - CL22: money true and interview true retain separate methods
+  ---
+  duration_ms: 37.8185
+  type: 'test'
+  ...
+# Subtest: CL22: money true and interview false retain separate methods
+ok 6 - CL22: money true and interview false retain separate methods
+  ---
+  duration_ms: 20.2752
+  type: 'test'
+  ...
+# Subtest: CL22: money false and interview true retain separate methods
+ok 7 - CL22: money false and interview true retain separate methods
+  ---
+  duration_ms: 30.3246
+  type: 'test'
+  ...
+# Subtest: CL22: money false and interview false retain separate methods
+ok 8 - CL22: money false and interview false retain separate methods
+  ---
+  duration_ms: 24.274
+  type: 'test'
+  ...
+# Subtest: CL23: reconstructed swords 1/1/1 do not invent a different foot choice
+ok 9 - CL23: reconstructed swords 1/1/1 do not invent a different foot choice
+  ---
+  duration_ms: 18.7532
+  type: 'test'
+  ...
+# Subtest: CL23: reconstructed swords 1/1/2 do not invent a different foot choice
+ok 10 - CL23: reconstructed swords 1/1/2 do not invent a different foot choice
+  ---
+  duration_ms: 35.0756
+  type: 'test'
+  ...
+# Subtest: CL23: reconstructed swords 1/2/1 do not invent a different foot choice
+ok 11 - CL23: reconstructed swords 1/2/1 do not invent a different foot choice
+  ---
+  duration_ms: 19.5116
+  type: 'test'
+  ...
+# Subtest: CL23: reconstructed swords 1/2/2 do not invent a different foot choice
+ok 12 - CL23: reconstructed swords 1/2/2 do not invent a different foot choice
+  ---
+  duration_ms: 32.0908
+  type: 'test'
+  ...
+# Subtest: CL23: reconstructed swords 2/1/1 do not invent a different foot choice
+ok 13 - CL23: reconstructed swords 2/1/1 do not invent a different foot choice
+  ---
+  duration_ms: 17.8181
+  type: 'test'
+  ...
+# Subtest: CL23: reconstructed swords 2/1/2 do not invent a different foot choice
+ok 14 - CL23: reconstructed swords 2/1/2 do not invent a different foot choice
+  ---
+  duration_ms: 20.9471
+  type: 'test'
+  ...
+# Subtest: CL23: reconstructed swords 2/2/1 do not invent a different foot choice
+ok 15 - CL23: reconstructed swords 2/2/1 do not invent a different foot choice
+  ---
+  duration_ms: 17.0835
+  type: 'test'
+  ...
+# Subtest: CL23: reconstructed swords 2/2/2 do not invent a different foot choice
+ok 16 - CL23: reconstructed swords 2/2/2 do not invent a different foot choice
+  ---
+  duration_ms: 54.7944
+  type: 'test'
+  ...
+# Subtest: CL24: box true child true preserves actual work
+ok 17 - CL24: box true child true preserves actual work
+  ---
+  duration_ms: 13.714
+  type: 'test'
+  ...
+# Subtest: CL24: box true child false preserves actual work
+ok 18 - CL24: box true child false preserves actual work
+  ---
+  duration_ms: 19.6203
+  type: 'test'
+  ...
+# Subtest: CL24: box false child true preserves actual work
+ok 19 - CL24: box false child true preserves actual work
+  ---
+  duration_ms: 13.9835
+  type: 'test'
+  ...
+# Subtest: CL24: box false child false preserves actual work
+ok 20 - CL24: box false child false preserves actual work
+  ---
+  duration_ms: 13.2957
+  type: 'test'
+  ...
+# Subtest: CL25: signal true positions true names the actual coordination limit
+ok 21 - CL25: signal true positions true names the actual coordination limit
+  ---
+  duration_ms: 30.5338
+  type: 'test'
+  ...
+# Subtest: CL25: signal true positions false names the actual coordination limit
+ok 22 - CL25: signal true positions false names the actual coordination limit
+  ---
+  duration_ms: 6.7194
+  type: 'test'
+  ...
+# Subtest: CL25: signal false positions true names the actual coordination limit
+ok 23 - CL25: signal false positions true names the actual coordination limit
+  ---
+  duration_ms: 6.8998
+  type: 'test'
+  ...
+# Subtest: CL25: signal false positions false names the actual coordination limit
+ok 24 - CL25: signal false positions false names the actual coordination limit
+  ---
+  duration_ms: 6.3394
+  type: 'test'
+  ...
+# Subtest: CL01: later testimony does not invent or reverse the witnessed event
+ok 25 - CL01: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 20.1941
+  type: 'test'
+  ...
+# Subtest: CL02: later testimony does not invent or reverse the witnessed event
+ok 26 - CL02: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 18.7863
+  type: 'test'
+  ...
+# Subtest: CL03: later testimony does not invent or reverse the witnessed event
+ok 27 - CL03: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 23.3827
+  type: 'test'
+  ...
+# Subtest: CL04: later testimony does not invent or reverse the witnessed event
+ok 28 - CL04: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 13.7122
+  type: 'test'
+  ...
+# Subtest: CL05: later testimony does not invent or reverse the witnessed event
+ok 29 - CL05: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 18.3525
+  type: 'test'
+  ...
+# Subtest: CL06: later testimony does not invent or reverse the witnessed event
+ok 30 - CL06: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 16.6645
+  type: 'test'
+  ...
+# Subtest: CL07: later testimony does not invent or reverse the witnessed event
+ok 31 - CL07: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 13.4205
+  type: 'test'
+  ...
+# Subtest: CL08: later testimony does not invent or reverse the witnessed event
+ok 32 - CL08: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 19.4004
+  type: 'test'
+  ...
+# Subtest: CL09: later testimony does not invent or reverse the witnessed event
+ok 33 - CL09: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 11.8131
+  type: 'test'
+  ...
+# Subtest: CL10: later testimony does not invent or reverse the witnessed event
+ok 34 - CL10: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 13.7842
+  type: 'test'
+  ...
+# Subtest: CL11: later testimony does not invent or reverse the witnessed event
+ok 35 - CL11: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 16.6975
+  type: 'test'
+  ...
+# Subtest: CL12: later testimony does not invent or reverse the witnessed event
+ok 36 - CL12: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 13.0823
+  type: 'test'
+  ...
+# Subtest: CL13: later testimony does not invent or reverse the witnessed event
+ok 37 - CL13: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 22.1021
+  type: 'test'
+  ...
+# Subtest: CL14: later testimony does not invent or reverse the witnessed event
+ok 38 - CL14: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 21.8138
+  type: 'test'
+  ...
+# Subtest: CL15: later testimony does not invent or reverse the witnessed event
+ok 39 - CL15: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 26.6408
+  type: 'test'
+  ...
+# Subtest: CL16: later testimony does not invent or reverse the witnessed event
+ok 40 - CL16: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 20.7779
+  type: 'test'
+  ...
+# Subtest: CL17: later testimony does not invent or reverse the witnessed event
+ok 41 - CL17: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 14.8075
+  type: 'test'
+  ...
+# Subtest: CL18: later testimony does not invent or reverse the witnessed event
+ok 42 - CL18: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 14.2615
+  type: 'test'
+  ...
+# Subtest: CL19: later testimony does not invent or reverse the witnessed event
+ok 43 - CL19: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 12.1188
+  type: 'test'
+  ...
+# Subtest: CL20: later testimony does not invent or reverse the witnessed event
+ok 44 - CL20: later testimony does not invent or reverse the witnessed event
+  ---
+  duration_ms: 5.8825
+  type: 'test'
+  ...
+# Subtest: independent recall lh_clear_boat_tail/lh_ask_gap_later false/false
+ok 45 - independent recall lh_clear_boat_tail/lh_ask_gap_later false/false
+  ---
+  duration_ms: 21.0551
+  type: 'test'
+  ...
+# Subtest: independent recall lh_clear_boat_tail/lh_ask_gap_later false/true
+ok 46 - independent recall lh_clear_boat_tail/lh_ask_gap_later false/true
+  ---
+  duration_ms: 26.3908
+  type: 'test'
+  ...
+# Subtest: independent recall lh_clear_boat_tail/lh_ask_gap_later true/false
+ok 47 - independent recall lh_clear_boat_tail/lh_ask_gap_later true/false
+  ---
+  duration_ms: 12.5869
+  type: 'test'
+  ...
+# Subtest: independent recall lh_clear_boat_tail/lh_ask_gap_later true/true
+ok 48 - independent recall lh_clear_boat_tail/lh_ask_gap_later true/true
+  ---
+  duration_ms: 12.5607
+  type: 'test'
+  ...
+# Subtest: independent recall lh_ask_new_opponents/lh_wait_full_record false/false
+ok 49 - independent recall lh_ask_new_opponents/lh_wait_full_record false/false
+  ---
+  duration_ms: 11.3201
+  type: 'test'
+  ...
+# Subtest: independent recall lh_ask_new_opponents/lh_wait_full_record false/true
+ok 50 - independent recall lh_ask_new_opponents/lh_wait_full_record false/true
+  ---
+  duration_ms: 12.3664
+  type: 'test'
+  ...
+# Subtest: independent recall lh_ask_new_opponents/lh_wait_full_record true/false
+ok 51 - independent recall lh_ask_new_opponents/lh_wait_full_record true/false
+  ---
+  duration_ms: 22.9873
+  type: 'test'
+  ...
+# Subtest: independent recall lh_ask_new_opponents/lh_wait_full_record true/true
+ok 52 - independent recall lh_ask_new_opponents/lh_wait_full_record true/true
+  ---
+  duration_ms: 12.7501
+  type: 'test'
+  ...
+# Subtest: independent recall lh_say_what_waits/lh_share_road_first false/false
+ok 53 - independent recall lh_say_what_waits/lh_share_road_first false/false
+  ---
+  duration_ms: 12.9904
+  type: 'test'
+  ...
+# Subtest: independent recall lh_say_what_waits/lh_share_road_first false/true
+ok 54 - independent recall lh_say_what_waits/lh_share_road_first false/true
+  ---
+  duration_ms: 26.1818
+  type: 'test'
+  ...
+# Subtest: independent recall lh_say_what_waits/lh_share_road_first true/false
+ok 55 - independent recall lh_say_what_waits/lh_share_road_first true/false
+  ---
+  duration_ms: 12.1931
+  type: 'test'
+  ...
+# Subtest: independent recall lh_say_what_waits/lh_share_road_first true/true
+ok 56 - independent recall lh_say_what_waits/lh_share_road_first true/true
+  ---
+  duration_ms: 16.1182
+  type: 'test'
+  ...
+# Subtest: independent recall lh_hold_without_show/lh_ask_why_only_once false/false
+ok 57 - independent recall lh_hold_without_show/lh_ask_why_only_once false/false
+  ---
+  duration_ms: 11.5054
+  type: 'test'
+  ...
+# Subtest: independent recall lh_hold_without_show/lh_ask_why_only_once false/true
+ok 58 - independent recall lh_hold_without_show/lh_ask_why_only_once false/true
+  ---
+  duration_ms: 11.689
+  type: 'test'
+  ...
+# Subtest: independent recall lh_hold_without_show/lh_ask_why_only_once true/false
+ok 59 - independent recall lh_hold_without_show/lh_ask_why_only_once true/false
+  ---
+  duration_ms: 30.8962
+  type: 'test'
+  ...
+# Subtest: independent recall lh_hold_without_show/lh_ask_why_only_once true/true
+ok 60 - independent recall lh_hold_without_show/lh_ask_why_only_once true/true
+  ---
+  duration_ms: 18.9872
+  type: 'test'
+  ...
+1..60
+# tests 60
+# suites 0
+# pass 60
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1578.2984

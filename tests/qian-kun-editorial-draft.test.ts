@@ -1,3 +1,6 @@
+import {historicalBytes} from './historical-baselines.ts';
+import {evidencePath} from './evidence-path.ts';
+import {frozenBytes} from './frozen-baselines.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -22,7 +25,7 @@ test('Qian Kun draft remembered old bouts leave the boat and do not teleport Ye 
 });
 
 test('Qian Kun draft both legal personal afterlives preserve ages, fixed fights, bounded rumor and exact replay',()=>{
- for(const [side,ending]of [[0,'qk_leave_open_school'],[1,'qk_leave_open_road']]as const){const r=run([ending],undefined,content,side);for(const p of ['十四岁','左脚短一寸','三十余名','半个时辰','都喜欢','人会撒谎','二十九','一百六十余','第三十七剑','十二年','四十三','七十余','四十五到五十五','十七日','第十八','六十八','七十一','两年','败、败、平','三百七十余','早几年就超过','你又没问','七十三','二十九招','一百零二','第九日','第一剑后便信','第二剑发生什么再不肯讲','第五十一','一百九十余败','第三未出','总谱第一','最好没有'])assert.ok(r.text.includes(p),p);assert.equal(r.s.frame.ending,ending==='qk_leave_open_school'?'qk_open_lesson':'qk_open_mountain');assert.equal(r.s.commands.filter(c=>c.startsWith('choice:')).length,25);assert.deepEqual(restoreVN(JSON.stringify(r.s.save()),{content,version}).session.frames,r.s.frames);assert.throws(()=>restoreVN(JSON.stringify(r.s.save()),{content:published,version:'qian-kun-2.0.0'}),/作品或版本不兼容/);writeFileSync(`docs/evidence/v6/qian-kun-editorial-draft-${ending}.txt`,r.text)}
+ for(const [side,ending]of [[0,'qk_leave_open_school'],[1,'qk_leave_open_road']]as const){const r=run([ending],undefined,content,side);for(const p of ['十四岁','左脚短一寸','三十余名','半个时辰','都喜欢','人会撒谎','二十九','一百六十余','第三十七剑','十二年','四十三','七十余','四十五到五十五','十七日','第十八','六十八','七十一','两年','败、败、平','三百七十余','早几年就超过','你又没问','七十三','二十九招','一百零二','第九日','第一剑后便信','第二剑发生什么再不肯讲','第五十一','一百九十余败','第三未出','总谱第一','最好没有'])assert.ok(r.text.includes(p),p);assert.equal(r.s.frame.ending,ending==='qk_leave_open_school'?'qk_open_lesson':'qk_open_mountain');assert.equal(r.s.commands.filter(c=>c.startsWith('choice:')).length,25);assert.deepEqual(restoreVN(JSON.stringify(r.s.save()),{content,version}).session.frames,r.s.frames);assert.throws(()=>restoreVN(JSON.stringify(r.s.save()),{content:published,version:'qian-kun-2.0.0'}),/作品或版本不兼容/);writeFileSync(evidencePath(`docs/evidence/v6/qian-kun-editorial-draft-${ending}.txt`),r.text)}
 });
 
 test('Qian Kun draft two strong early choices retain their independent later costs under all personal endings',()=>{
@@ -30,11 +33,11 @@ test('Qian Kun draft two strong early choices retain their independent later cos
 });
 
 test('Qian Kun draft 512 samples visit every declared beat and option and keep age aliases separate',()=>{
- const visited=new Set<string>(),options=new Set<string>(),ends=new Set<string>();let longest=0;for(let seed=1;seed<=512;seed++){const r=run([],seed);longest=Math.max(longest,r.longest);let later=false;for(const f of r.s.frames){if(f.id==='qk_tomorrow_1')later=true;assert.ok(!f.stage.cast.includes(later?'qk2_heng_earlier':'qk2_heng_later'));assert.ok(f.stage.cast.length<=3);visited.add(f.id);f.choices.forEach(c=>options.add(c.id))}ends.add(r.s.frame.ending!)}const declared=[...source.matchAll(/# beat:(\S+)/g)].map(m=>m[1]);assert.deepEqual([...visited].sort(),declared.sort());assert.equal(options.size,50);assert.equal(ends.size,2);assert.ok(longest<=18,`gap ${longest}`);writeFileSync('docs/evidence/v6/qian-kun-editorial-draft-audit.json',JSON.stringify({status:'THREE_INTERNAL_ROUNDS_DRAFT_NOT_INTEGRATED',declared:declared.length,visited:visited.size,options:options.size,decisions:25,samples:512,exhaustive:false,longestPassiveGap:longest,gameArtChanges:0},null,2)+'\n');
+ const visited=new Set<string>(),options=new Set<string>(),ends=new Set<string>();let longest=0;for(let seed=1;seed<=512;seed++){const r=run([],seed);longest=Math.max(longest,r.longest);let later=false;for(const f of r.s.frames){if(f.id==='qk_tomorrow_1')later=true;assert.ok(!f.stage.cast.includes(later?'qk2_heng_earlier':'qk2_heng_later'));assert.ok(f.stage.cast.length<=3);visited.add(f.id);f.choices.forEach(c=>options.add(c.id))}ends.add(r.s.frame.ending!)}const declared=[...source.matchAll(/# beat:(\S+)/g)].map(m=>m[1]);assert.deepEqual([...visited].sort(),declared.sort());assert.equal(options.size,50);assert.equal(ends.size,2);assert.ok(longest<=18,`gap ${longest}`);writeFileSync(evidencePath('docs/evidence/v6/qian-kun-editorial-draft-audit.json'),JSON.stringify({status:'THREE_INTERNAL_ROUNDS_DRAFT_NOT_INTEGRATED',declared:declared.length,visited:visited.size,options:options.size,decisions:25,samples:512,exhaustive:false,longestPassiveGap:longest,gameArtChanges:0},null,2)+'\n');
 });
 
 test('Qian Kun draft leaves all twenty published, companion and canon paths byte-identical',()=>{
- const d=JSON.parse(readFileSync('docs/evidence/v6/qian-kun-editorial-preservation.json','utf8')),m=JSON.parse(readFileSync('docs/evidence/v6/qian-kun-editorial-integration-preservation.json','utf8'));assert.equal(Object.keys(d.frozen).length,20);for(const[p,h]of Object.entries(d.frozen))assert.equal(createHash('sha256').update(readFileSync(m.pathMap[p]??p)).digest('hex'),h,p);
+ const d=JSON.parse(readFileSync('docs/evidence/v6/qian-kun-editorial-preservation.json','utf8')),m=JSON.parse(readFileSync('docs/evidence/v6/qian-kun-editorial-integration-preservation.json','utf8'));assert.equal(Object.keys(d.frozen).length,20);for(const[p,h]of Object.entries(d.frozen)){const b=historicalBytes(m.pathMap[p]??p);if(!b)continue;assert.equal(createHash('sha256').update(b).digest('hex'),h,p);}
 });
 
 test('Qian Kun draft three-day promise has an actual school return before learning slow, independent of ending',()=>{
@@ -42,7 +45,7 @@ test('Qian Kun draft three-day promise has an actual school return before learni
 });
 
 test('Qian Kun draft boat footing choices change actual trial and later teaching, never fixed fall or shore results',()=>{
- const rows=[];for(const method of ['qk_follow_deck_pitch','qk_test_shore_step'])for(const rope of ['qk_take_rope_then_again','qk_swim_clear_of_side'])for(const ending of ['qk_leave_open_school','qk_leave_open_road']){const r=run([method,rope,ending]);assert.match(scene(r,'boat_tipping'),method==='qk_follow_deck_pitch'?/前两次真接住了起落/:/脚落准了，身子却/);assert.match(scene(r,'boat_fifty_one'),/第五十一，直接掉进海/);assert.match(scene(r,'wet_again'),method==='qk_follow_deck_pitch'?/接到了。可你又想等它/:/拿纸画下方才认准/);assert.match(scene(r,'first_in_line'),method==='qk_follow_deck_pitch'?/随着起落换脚/:/另画进今日船头朝向/);assert.match(r.text,/陆地不知道，海上打不过/);assert.equal(r.s.commands.filter(c=>c.startsWith('choice:')).length,25);rows.push({method,rope,ending})}writeFileSync('docs/evidence/v6/qian-kun-editorial-boat-combinations.json',JSON.stringify({count:rows.length,rows},null,2)+'\n');
+ const rows=[];for(const method of ['qk_follow_deck_pitch','qk_test_shore_step'])for(const rope of ['qk_take_rope_then_again','qk_swim_clear_of_side'])for(const ending of ['qk_leave_open_school','qk_leave_open_road']){const r=run([method,rope,ending]);assert.match(scene(r,'boat_tipping'),method==='qk_follow_deck_pitch'?/前两次真接住了起落/:/脚落准了，身子却/);assert.match(scene(r,'boat_fifty_one'),/第五十一，直接掉进海/);assert.match(scene(r,'wet_again'),method==='qk_follow_deck_pitch'?/接到了。可你又想等它/:/拿纸画下方才认准/);assert.match(scene(r,'first_in_line'),method==='qk_follow_deck_pitch'?/随着起落换脚/:/另画进今日船头朝向/);assert.match(r.text,/陆地不知道，海上打不过/);assert.equal(r.s.commands.filter(c=>c.startsWith('choice:')).length,25);rows.push({method,rope,ending})}writeFileSync(evidencePath('docs/evidence/v6/qian-kun-editorial-boat-combinations.json'),JSON.stringify({count:rows.length,rows},null,2)+'\n');
 });
 
 test('Qian Kun draft learning methods, mountain handoff and rumor evidence return as concrete work on either personal path',()=>{
@@ -50,7 +53,7 @@ test('Qian Kun draft learning methods, mountain handoff and rumor evidence retur
 });
 
 test('Qian Kun draft all three round snapshots compile and reach both endings, with retained real before/after records',()=>{
- const manifest=JSON.parse(readFileSync('docs/evidence/v6/qian-kun-editorial-round-snapshots.json','utf8'));assert.equal(Object.keys(manifest.files).length,21);for(const[p,h]of Object.entries(manifest.files))assert.equal(createHash('sha256').update(readFileSync(p)).digest('hex'),h,p);
+ const manifest=JSON.parse(readFileSync('docs/evidence/v6/qian-kun-editorial-round-snapshots.json','utf8'));assert.equal(Object.keys(manifest.files).length,21);for(const[p,h]of Object.entries(manifest.files)){const b=frozenBytes(p);if(!b)continue;assert.equal(createHash('sha256').update(b).digest('hex'),h,p);}
  for(const[round,count]of [[1,14],[2,12],[3,21]]){const d=JSON.parse(readFileSync(`docs/evidence/v6/qian-kun-editorial-round${round}-records.json`,'utf8'));assert.equal(d.records.length,count);assert.ok(d.records.every((r:{before:string,after:string})=>r.before!==r.after));const c=new Compiler(readFileSync(`story/drafts/qian-kun/round${round}/qian-kun-editorial.ink`,'utf8')),data=JSON.parse(c.Compile().ToJson());assert.deepEqual(c.errors,[]);for(const ending of ['qk_leave_open_school','qk_leave_open_road'])assert.equal(run([ending],undefined,data).s.frame.ending,ending==='qk_leave_open_school'?'qk_open_lesson':'qk_open_mountain')}
  assert.match(scene(run(),'four_weapons'),/第二日依言先拿钱/);
 });

@@ -1,0 +1,25 @@
+{
+ "gate": "B",
+ "status": "COMPLETE",
+ "works": {
+  "dead-ranking": "round1/2/3 done, 3 real edits",
+  "luhua": "round1/2/3 done, Pang Zhenhai voiced + catalog entry",
+  "dongting": "round1/2/3 done, cross-piece fixes",
+  "luoyang": "round1/2/3 done, roster trim + arm continuity",
+  "bamboo": "round1/2/3 done, arm continuity",
+  "xuanmen": "round1/2/3 done, decade anchors",
+  "white-stone": "round1/2/3 done, Qi motivation clarity",
+  "beyond-ranking": "round1/2/3 done, peer motive clarity",
+  "north-notes": "round1/2/3 done, relic referent fix"
+ },
+ "evidence": [
+  "docs/evidence/v7/dead-ranking-editorial-rounds.json",
+  "docs/evidence/v7/luhua-editorial-rounds.json",
+  "docs/evidence/v7/dongting-editorial-rounds.json",
+  "docs/evidence/v7/luoyang-bamboo-editorial-rounds.json",
+  "docs/evidence/v7/xuanmen-white-stone-editorial-rounds.json",
+  "docs/evidence/v7/beyond-ranking-north-notes-editorial-rounds.json"
+ ],
+ "sourceCommit": "see git log",
+ "remainingBlockers": []
+}

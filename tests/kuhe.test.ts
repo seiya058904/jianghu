@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -18,7 +19,7 @@ test('Kuhe full two personal endings preserve the staged battle, deaths, injurie
   assert.ok(!r.s.frames.find(f=>f.id==='kh_lock_6')!.stage.cast.includes('kh_gui'),'fallen Meng is not shown standing through the retreat order');
   assert.deepEqual(restoreVN(JSON.stringify(r.s.save()),edition).session.frames,r.s.frames);
   assert.throws(()=>restoreVN(JSON.stringify(r.s.save()),{content,version:'taihua-1.0.0'}),/作品或版本不兼容/);
-  writeFileSync(`docs/evidence/v6/kuhe-${r.s.frame.ending}-transcript.txt`,r.text);
+  writeFileSync(evidencePath(`docs/evidence/v6/kuhe-${r.s.frame.ending}-transcript.txt`),r.text);
  }
 });
 test('Kuhe paired early preparation changes later physical route and one-month work capacity, without rewriting canon',()=>{
@@ -51,6 +52,6 @@ test('Kuhe sampled branches reach all authored nodes, two endings and stable vis
  }
  const source=readFileSync('story/kuhe-v1.ink','utf8');const beats=[...source.matchAll(/# beat:(\S+)/g)].map(m=>m[1]);
  assert.deepEqual([...ids].sort(),beats.sort());assert.equal(choices.size,40);assert.equal(endings.size,2);
- writeFileSync('docs/evidence/v6/kuhe-content-audit.json',JSON.stringify({status:'PRODUCTION_DRAFT_NOT_FINAL',sourceBeats:beats.length,visited:ids.size,choiceOptions:choices.size,decisionPoints:20,sampledPaths:512,exhaustive:false,longestPassiveGap:longest,limits:'No external reader, no human playtime, elder identity art and CG pending; three editorial rounds not complete.'},null,2));
+ writeFileSync(evidencePath('docs/evidence/v6/kuhe-content-audit.json'),JSON.stringify({status:'PRODUCTION_DRAFT_NOT_FINAL',sourceBeats:beats.length,visited:ids.size,choiceOptions:choices.size,decisionPoints:20,sampledPaths:512,exhaustive:false,longestPassiveGap:longest,limits:'No external reader, no human playtime, elder identity art and CG pending; three editorial rounds not complete.'},null,2));
  assert.ok(longest<=18,`longest passive gap ${longest}`);
 });

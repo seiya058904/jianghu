@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -13,7 +14,7 @@ test('Jade first volume has two complete viewpoints with fixed empty box, mutual
   const death=r.s.frames.findIndex(f=>f.id==='jt_gone_1');assert.ok(death>0);assert.ok(!r.s.frames.slice(death).some(f=>f.stage.cast.includes('jt_jiang')||f.speaker==='jt_jiang'));
   assert.ok(r.s.frames[death+1].text.includes('你是带着木箱独行的沈玉娘'));
   assert.deepEqual(restoreVN(JSON.stringify(r.s.save()),edition).session.frames,r.s.frames);assert.throws(()=>restoreVN(JSON.stringify(r.s.save()),{content,version:'jade-1.0.0'}),/作品或版本不兼容/);
-  writeFileSync(`docs/evidence/v6/jade-thieves-editorial-archive-v1-${side?'jiang':'shen'}-transcript.txt`,r.text);
+  writeFileSync(evidencePath(`docs/evidence/v6/jade-thieves-editorial-archive-v1-${side?'jiang':'shen'}-transcript.txt`),r.text);
  }
 });
 test('Jade each viewpoint keeps the other hidden order and identity until the temple, including knowledge descriptions',()=>{
@@ -40,5 +41,5 @@ test('Jade first volume sampled alternatives reach every authored beat and all t
  const visited=new Set<string>(),choices=new Set<string>(),endings=new Set<string>();let longest=0;
  for(let seed=1;seed<=768;seed++){let state=Math.imul(seed,2654435761)>>>0;const r=run(ids=>{state=(Math.imul(state,1664525)+1013904223)>>>0;return ids[(state>>>16)%ids.length]});for(const f of r.s.frames){visited.add(f.id);f.choices.forEach(c=>choices.add(c.id));assert.ok(f.stage.cast.length<=3)}endings.add(r.s.frame.ending!);longest=Math.max(longest,r.longest)}
  const declared=[...readFileSync('story/jade-thieves-v1.ink','utf8').matchAll(/# beat:(\S+)/g)].map(m=>m[1]);assert.deepEqual([...visited].sort(),declared.sort());assert.equal(choices.size,43);assert.equal(endings.size,2);
- writeFileSync('docs/evidence/v6/jade-thieves-editorial-archive-v1-content-audit.json',JSON.stringify({status:'FIRST_VOLUME_PRODUCTION_DRAFT_NOT_FINAL',sourceBeats:declared.length,visited:visited.size,choiceOptions:choices.size,decisionsPerRoute:21,sampledPaths:768,exhaustive:false,longestPassiveGap:longest,limits:'Second volume unimplemented. Vault, bridge, temple, jade-state objects, active special action, CG and full editorial rounds remain incomplete; no human playtime claim.'},null,2));assert.ok(longest<=18,`longest passive gap ${longest}`);
+ writeFileSync(evidencePath('docs/evidence/v6/jade-thieves-editorial-archive-v1-content-audit.json'),JSON.stringify({status:'FIRST_VOLUME_PRODUCTION_DRAFT_NOT_FINAL',sourceBeats:declared.length,visited:visited.size,choiceOptions:choices.size,decisionsPerRoute:21,sampledPaths:768,exhaustive:false,longestPassiveGap:longest,limits:'Second volume unimplemented. Vault, bridge, temple, jade-state objects, active special action, CG and full editorial rounds remain incomplete; no human playtime claim.'},null,2));assert.ok(longest<=18,`longest passive gap ${longest}`);
 });

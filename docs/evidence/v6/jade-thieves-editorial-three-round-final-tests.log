@@ -47,7 +47,7 @@ test at tests\jade-thieves-editorial-draft.test.ts:54:1
     '出庙前你们重算路费。先前少住一宿省下的钱已经添过药，今日饼只买一块，分开仍嫌硬，江笑说下一回再换软的。\n' +
     '你们按约见人，先交一份订钱，余款等做成再结。老人听到皇家二字先皱眉，等看见玉，反倒愣住，指着那块银补问怎么成了这样。'
 
-      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/jade-thieves-editorial-draft.test.ts:55:435)
+      at TestContext.<anonymous> (file:///[author-local-path]
       at Test.runInAsyncScope (node:async_hooks:227:14)
       at Test.run (node:internal/test_runner/test:1201:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:831:18)

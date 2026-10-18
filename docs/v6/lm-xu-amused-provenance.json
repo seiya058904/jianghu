@@ -1,8 +1,8 @@
 {
   "tool": "built-in image_gen",
-  "target": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-8f6c2a8f-8d58-462d-9b3d-92e6f870f603.png",
-  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-bb96917a-1c28-4882-b1dd-3bd37df6b5a8.png",
+  "target": "[author-local-path]",
+  "source": "[author-local-path]",
   "prompt": "Use case: identity-preserve. Edit target: the provided neutral production character sprite. Create a new expression and subtle pose state for the exact same character. Preserve face identity, apparent age, facial hair, hairstyle, clothing and all cloth wear, belt and weapon identity, full head to mid thighs framing, watercolor ink style and warm even light. Change only: Small genuine amused smile after a pupil's awkward answer; mouth corners and cheeks clearly lifted, eyebrows slightly raised, eyes warm. Keep exact pose and wooden dao down. Preserve genuine transparent alpha and complete silhouette. No setting, no text, no particles, no logo, no new props, no additional figures.",
-  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/lm-xu-amused.webp",
+  "output": "./public/art/v6/lm-xu-amused.webp",
   "review": "Pending model visual review and story mapping"
 }

@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import {test,expect} from '@playwright/test';
 import {VNRuntime} from '../src/vn-runtime.ts';
 import content from '../src/generated/taihua.json' with {type:'json'};
@@ -18,13 +19,13 @@ for(const route of [0,1,2])test(`Taihua complete actual browser path ${route}: i
   if(['th_supper_8','th_mu_front_5','th_last_pack_1'].includes(story.frame.id)){await page.reload();await expect(page.locator('#dialogue-visible')).toHaveText(story.frame.text);expect(await page.evaluate(p=>JSON.parse(localStorage.getItem(p+'auto')!).commands,'jianghu:chronicle:taihua:v3:')).toEqual(story.commands)}
   const mood=story.frame.stage.moods.th_shen??'neutral';
   if(route===0&&story.frame.stage.cast.includes('th_shen')&&['neutral','amused','intent'].includes(mood)&&!portraitStates.has(mood)){
-   portraitStates.add(mood);await decodedStage(page);await page.screenshot({path:`docs/evidence/v6/taihua-editorial-shen-${mood}.png`});
+   portraitStates.add(mood);await decodedStage(page);await page.screenshot({path:evidencePath(`docs/evidence/v6/taihua-editorial-shen-${mood}.png`)});
   }
   if(story.frame.choices.length){
    const selected=route===2?(story.frame.choices.find(c=>c.id==='th_guidance')??story.frame.choices[0]):story.frame.choices[route];
    const button=page.locator(`[data-choice="${selected.id}"]`);await expect(button).toBeEnabled();
    if(count===0)await decodedStage(page);
-   if(count===0)await page.screenshot({path:`docs/evidence/v6/taihua-editorial-first-choice-${route}.png`});
+   if(count===0)await page.screenshot({path:evidencePath(`docs/evidence/v6/taihua-editorial-first-choice-${route}.png`)});
    await button.click();story.choose(selected.id);count++;
   }else{const button=page.locator('#advance-button');await expect(button).toBeEnabled();await button.click();story.advance()}
  }
@@ -34,7 +35,7 @@ for(const route of [0,1,2])test(`Taihua complete actual browser path ${route}: i
  await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',story.frame.id);
  expect(await page.evaluate(()=>localStorage.getItem('jianghu:campaign:tide:v1:sentinel'))).toBe('main-progress');
  expect(await page.evaluate(()=>localStorage.getItem('jianghu:vn:v2:sentinel'))).toBe('half-progress');
- await decodedStage(page);await page.screenshot({path:`docs/evidence/v6/taihua-editorial-ending-${route}.png`});expect(errors).toEqual([]);
+ await decodedStage(page);await page.screenshot({path:evidencePath(`docs/evidence/v6/taihua-editorial-ending-${route}.png`)});expect(errors).toEqual([]);
  if(route===0)expect(portraitStates.size).toBe(3);
 });
 test('Taihua actual new portrait, mobile and desktop reply layout, and night background',async({page})=>{
@@ -55,7 +56,7 @@ test('Taihua actual new portrait, mobile and desktop reply layout, and night bac
   expect(boxes.every(r=>r.x>=0&&r.right<=width+1&&r.y>=0&&r.bottom<=height+1)).toBe(true);
   expect(boxes[0].bottom).toBeLessThanOrEqual(boxes[1].y+1);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
-  await page.screenshot({path:`docs/evidence/v6/taihua-editorial-portrait-${width}x${height}.png`});
+  await page.screenshot({path:evidencePath(`docs/evidence/v6/taihua-editorial-portrait-${width}x${height}.png`)});
  }
  while(story.frame.stage.scene!=='th_night')story.frame.choices.length?story.choose(story.frame.choices[0].id):story.advance();
  // Import through the product: pagehide deliberately persists the live session on reload.
@@ -63,14 +64,16 @@ test('Taihua actual new portrait, mobile and desktop reply layout, and night bac
  await page.locator('#import-file').setInputFiles({name:'taihua-night.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(story.save()))});
  await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',story.frame.id);
  expect(await page.locator('.scene-background').getAttribute('style')).toContain('v6/taihua-night.webp');
- await page.screenshot({path:'docs/evidence/v6/taihua-editorial-night-1920.png'});
+ await page.screenshot({path:evidencePath('docs/evidence/v6/taihua-editorial-night-1920.png')});
 });
 test('Taihua resources are requested per work and an unvisited night scene loads offline on root and subpath',async({browser})=>{
  for(const root of ['http://127.0.0.1:4173/','http://127.0.0.1:4175/Jianghu/']){
   const context=await browser.newContext({reducedMotion:'reduce'});const page=await context.newPage();
   await page.goto(root);await page.evaluate(async()=>{await navigator.serviceWorker.ready});await page.reload();
   const cached=await page.evaluate(async()=>{const names=await caches.keys();return(await Promise.all(names.map(async name=>(await(await caches.open(name)).keys()).map(request=>request.url)))).flat()});
-  expect(cached.some(url=>url.includes('/art/v6/')||/\/assets\/taihua-/.test(url))).toBe(false);
+  // V7 首页是作品库 shell：封面（art/v6/*.webp）会在首页合法出现并被缓存。
+  // 「按作品请求」的断言据此收窄到该篇的 JS chunk——那些仍只应在进入 taihua.html 后出现。
+  expect(cached.some(url=>/\/assets\/taihua-/.test(url))).toBe(false);
   await page.goto(root+'taihua.html');await page.getByRole('button',{name:'设置',exact:true}).click();
   await page.getByRole('button',{name:'下载《太华试序 · 三年之约》离线资源',exact:true}).click();
   await expect(page.getByRole('dialog')).toContainText('离线资源已备好');await page.keyboard.press('Escape');

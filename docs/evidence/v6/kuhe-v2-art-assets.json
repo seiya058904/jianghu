@@ -1,6 +1,6 @@
 {
   "tool": "built-in image_gen",
-  "rawDirectory": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/",
+  "rawDirectory": "[author-local-path]",
   "packaging": "Sprites resized proportionally from1024x1536 to560x840; WebP quality88. Alpha preserved. CG1536x1024. Originals retained. No pixel painting or background removal outside image_gen.",
   "assets": [
     {
@@ -51,7 +51,11 @@
     {
       "file": "public/art/v6/cg-kuhe-old.webp",
       "raw": "exec-1d08f39e-4fb6-45e5-babe-5f9ea5a577d5.png",
-      "references": ["kh-kong original PNG", "kh-xuan original PNG", "kh-gui original PNG"],
+      "references": [
+        "kh-kong original PNG",
+        "kh-xuan original PNG",
+        "kh-gui original PNG"
+      ],
       "bytes": 416168,
       "prompt": "Create a landscape1536x1024 painterly semi-realistic Chinese wuxia visual-novel illustration, matching the three referenced identities precisely. Reference1 is the very thin bald barefoot old monk in faded almost-white simple robes. Reference2 is the tall slender long-white-haired and long-bearded old man in plain grey robes holding his ordinary thin bamboo staff. Reference3 is the SHORT slightly hunched broad-faced old man in warm brown and moss-green robes. Show all three together in a quiet rocky valley rest area in soft overcast afternoon light. Monk stands at left, grey elder stands at right holding his simple staff, short elder sits naturally on a LOW flat stone between them, making all three face/robe identities and the height/build differences readable. They are uninjured and calm, resting before further activity, looking toward the same off-camera arrival route. They are not posing as heroic statues and do not glow. No martial action, no significant symbolic gesture or exchanged object, no younger disciples needed in this resting scene. Wide eye-level three-person composition with visible stone ground and quiet distant valley walls, no named location or unique architecture. This image should be reusable for their gathering, quiet waiting and recollections by changing only dialogue. Preserve the exact three reference faces, clothes and ages. No weapons beyond the plain bamboo stick, blood, injury, dead bodies, magical effects, text, symbols, banners, temple emblems, UI, frame or watermark. Grounded natural colors and readable faces, not anime, not photographic."
     }

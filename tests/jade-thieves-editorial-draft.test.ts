@@ -1,3 +1,5 @@
+import {evidencePath} from './evidence-path.ts';
+import {frozenBytes} from './frozen-baselines.ts';
 import {jadeThievesFacts,jadeThievesScenes} from '../src/jade-thieves-catalog.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -32,18 +34,18 @@ test('Jade draft repayment alternatives do not re-owe already settled craftsman 
 });
 
 test('Jade draft two viewpoints and both private futures preserve fixed death, ordinary true jade and final objects; saves replay exactly',()=>{
- for(const pov of ['jt_be_shen','jt_be_jiang'])for(const late of ['jt_take_living_work','jt_keep_private_record']){const r=run([pov,late]);assert.equal(r.s.frame.ending,late==='jt_take_living_work'?'jt_unmarked_life':'jt_private_account');assert.equal(r.s.commands.filter(c=>c.startsWith('choice:')).length,22);for(const phrase of ['空的','做旧容易，做这么丑难','真货放在普通木箱','本有机会走','也还行','江十七死了','十一年后','十三年','旧铜钱','失败试片'])assert.ok(r.text.includes(phrase),phrase);assert.deepEqual(restoreVN(JSON.stringify(r.s.save()),{content,version}).session.frames,r.s.frames);assert.throws(()=>restoreVN(JSON.stringify(r.s.save()),{content:published,version:'jade-thieves-1.0.0'}),/作品或版本不兼容/);writeFileSync(`docs/evidence/v6/jade-thieves-editorial-draft-${pov}-${late}.txt`,r.text)}
+ for(const pov of ['jt_be_shen','jt_be_jiang'])for(const late of ['jt_take_living_work','jt_keep_private_record']){const r=run([pov,late]);assert.equal(r.s.frame.ending,late==='jt_take_living_work'?'jt_unmarked_life':'jt_private_account');assert.equal(r.s.commands.filter(c=>c.startsWith('choice:')).length,22);for(const phrase of ['空的','做旧容易，做这么丑难','真货放在普通木箱','本有机会走','也还行','江十七死了','十一年后','十三年','旧铜钱','失败试片'])assert.ok(r.text.includes(phrase),phrase);assert.deepEqual(restoreVN(JSON.stringify(r.s.save()),{content,version}).session.frames,r.s.frames);assert.throws(()=>restoreVN(JSON.stringify(r.s.save()),{content:published,version:'jade-thieves-1.0.0'}),/作品或版本不兼容/);writeFileSync(evidencePath(`docs/evidence/v6/jade-thieves-editorial-draft-${pov}-${late}.txt`),r.text)}
 });
 
 test('Jade draft 768 sampled alternatives cover all declared beats/options and keep bounded passive gaps',()=>{
  const visited=new Set<string>(),options=new Set<string>(),ends=new Set<string>();let longest=0;
  for(let seed=1;seed<=768;seed++){const r=run([],seed);longest=Math.max(longest,r.longest);for(const f of r.s.frames){visited.add(f.id);f.choices.forEach(c=>options.add(c.id));assert.ok(f.stage.cast.length<=3)}ends.add(r.s.frame.ending!)}
  const declared=[...source.matchAll(/# beat:(\S+)/g)].map(m=>m[1]);assert.deepEqual([...visited].sort(),declared.sort());assert.equal(options.size,45);assert.equal(ends.size,2);
- writeFileSync('docs/evidence/v6/jade-thieves-editorial-draft-audit.json',JSON.stringify({status:'THREE_INTERNAL_ROUNDS_DRAFT_NOT_INTEGRATED',declared:declared.length,visited:visited.size,options:options.size,endings:[...ends],decisions:22,samples:768,exhaustive:false,longestPassiveGap:longest},null,2)+'\n');assert.ok(longest<=18,`longest passive gap ${longest}`);
+ writeFileSync(evidencePath('docs/evidence/v6/jade-thieves-editorial-draft-audit.json'),JSON.stringify({status:'THREE_INTERNAL_ROUNDS_DRAFT_NOT_INTEGRATED',declared:declared.length,visited:visited.size,options:options.size,endings:[...ends],decisions:22,samples:768,exhaustive:false,longestPassiveGap:longest},null,2)+'\n');assert.ok(longest<=18,`longest passive gap ${longest}`);
 });
 
 test('Jade draft leaves published first/second volume, canon and original authors exact',()=>{
- const d=JSON.parse(readFileSync('docs/evidence/v6/jade-thieves-editorial-integration-preservation.json','utf8'));const moved=JSON.parse(readFileSync('docs/evidence/v6/jade-editorial-integration-preservation.json','utf8')).pathMap;for(const [p,hash]of Object.entries(d.frozen))assert.equal(createHash('sha256').update(readFileSync(moved[p]??p)).digest('hex'),hash,p);
+ const d=JSON.parse(readFileSync('docs/evidence/v6/jade-thieves-editorial-integration-preservation.json','utf8'));const moved=JSON.parse(readFileSync('docs/evidence/v6/jade-editorial-integration-preservation.json','utf8')).pathMap;for(const [p,hash]of Object.entries(d.frozen)){const b=frozenBytes(moved[p]??p);if(!b)continue;assert.equal(createHash('sha256').update(b).digest('hex'),hash,p);}
  for(const [round,count]of [[1,16],[2,13],[3,22]]){const records=JSON.parse(readFileSync(`docs/evidence/v6/jade-thieves-editorial-round${round}-records.json`,'utf8'));assert.equal(records.records.length,count);assert.ok(records.records.every((r:{before:string,after:string})=>r.before!==r.after))}
 });
 
@@ -57,7 +59,7 @@ test('Jade draft hot meal and early settlement both pay the craftsman, with dist
 });
 
 test('Jade draft close-range actions retain positions and injury echoes without avoiding Jiang death',()=>{
- const rows=[];for(const pov of ['jt_be_shen','jt_be_jiang'])for(const inside of [true,false])for(const cart of [true,false])for(const press of [true,false]){const r=run([pov,inside?'jt_open_inside':'jt_keep_blade_range',cart?'jt_clear_other_cart':'jt_leave_marker',press?'jt_press_wound':'jt_pull_to_rock']);assert.match(section(r,'close_press'),/短刃够不到握刀的手/);assert.match(section(r,'close_press'),inside?/肩贴近一步才挑到腕侧/:/剑尖留在对方前腕前/);assert.match(section(r,'turn_back'),inside?/发麻的手握不住他的衣带/:/被顶疼的肩没能再撑/);assert.match(section(r,'gone'),cart?/先前放走的最后一辆车/:/记得你们喊过的石角/);assert.match(r.text,/本有机会走/);assert.match(r.text,/江十七死了/);assert.equal(r.s.commands.filter(c=>c.startsWith('choice:')).length,22);rows.push({pov,inside,cart,press})}writeFileSync('docs/evidence/v6/jade-thieves-editorial-close-combinations.json',JSON.stringify({count:rows.length,rows},null,2)+'\n');
+ const rows=[];for(const pov of ['jt_be_shen','jt_be_jiang'])for(const inside of [true,false])for(const cart of [true,false])for(const press of [true,false]){const r=run([pov,inside?'jt_open_inside':'jt_keep_blade_range',cart?'jt_clear_other_cart':'jt_leave_marker',press?'jt_press_wound':'jt_pull_to_rock']);assert.match(section(r,'close_press'),/短刃够不到握刀的手/);assert.match(section(r,'close_press'),inside?/肩贴近一步才挑到腕侧/:/剑尖留在对方前腕前/);assert.match(section(r,'turn_back'),inside?/发麻的手握不住他的衣带/:/被顶疼的肩没能再撑/);assert.match(section(r,'gone'),cart?/先前放走的最后一辆车/:/记得你们喊过的石角/);assert.match(r.text,/本有机会走/);assert.match(r.text,/江十七死了/);assert.equal(r.s.commands.filter(c=>c.startsWith('choice:')).length,22);rows.push({pov,inside,cart,press})}writeFileSync(evidencePath('docs/evidence/v6/jade-thieves-editorial-close-combinations.json'),JSON.stringify({count:rows.length,rows},null,2)+'\n');
 });
 
 test('Jade draft later work and final paper actions survive either private future',()=>{

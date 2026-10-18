@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {writeFileSync} from 'node:fs';
@@ -19,7 +20,7 @@ test('Sea V2 seven consequential binary dimensions keep fixed history, 23 decisi
   assert.equal(r.s.frame.ending,(mask&32)?'sr_next_harbor':'sr_open_courtyard');const transition=r.s.frames.findIndex(f=>f.id==='sr_two_centuries_1');assert.ok(transition>0);assert.ok(r.s.frames.slice(transition).every(f=>!f.stage.cast.some(id=>['sr_oldmaster','sr_oldboat'].includes(id))));assert.deepEqual(restoreVN(JSON.stringify(r.s.save()),edition).session.frames,r.s.frames);
   rows.push({mask,selected,frames:r.s.frames.length,ending:r.s.frame.ending});
  }
- writeFileSync('docs/evidence/v6/sea-editorial-branch-audit.json',JSON.stringify({scope:'All 128 combinations of seven named dimensions; other choices use first legal option. Not exhaustive over all 23 decisions.',rows},null,2)+'\n');
+ writeFileSync(evidencePath('docs/evidence/v6/sea-editorial-branch-audit.json'),JSON.stringify({scope:'All 128 combinations of seven named dimensions; other choices use first legal option. Not exhaustive over all 23 decisions.',rows},null,2)+'\n');
 });
 
 test('Sea V2 shared cargo work has a shown initial time cost and later assistance, while self-managed goods keep the earlier visit but pay for a porter',()=>{

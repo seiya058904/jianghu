@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -19,7 +20,7 @@ test('Qingshi v2 512 sampled lives visit every authored beat and keep the knife 
   assert.ok(s.frames.filter(f=>f.stage.looks?.qs_xu==='age92close').every(f=>f.id==='qs_oldknife_6'));
  }
  assert.deepEqual([...visited].sort(),[...readFileSync('story/qingshi-v2.ink','utf8').matchAll(/# beat:(\S+)/g)].map(m=>m[1]).sort());assert.equal(options.size,58);assert.equal(endings.size,2);
- writeFileSync('docs/evidence/v6/qingshi-v2-content-audit.json',JSON.stringify({status:'ART_INCREMENT_NOT_FINAL',sourceBeats:visited.size,options:options.size,endings:[...endings],sampledPaths:512,exhaustive:false,newRasterFiles:1,CG:'oldKnife',reusedCameraImage:'v6/qs-xu-age92.webp',limits:'One still-life illustration and reused camera; four friends remain template art, no three-state or full-three-editorial-round claim.'},null,2));
+ writeFileSync(evidencePath('docs/evidence/v6/qingshi-v2-content-audit.json'),JSON.stringify({status:'ART_INCREMENT_NOT_FINAL',sourceBeats:visited.size,options:options.size,endings:[...endings],sampledPaths:512,exhaustive:false,newRasterFiles:1,CG:'oldKnife',reusedCameraImage:'v6/qs-xu-age92.webp',limits:'One still-life illustration and reused camera; four friends remain template art, no three-state or full-three-editorial-round claim.'},null,2));
 });
 test('Qingshi both lives keep all words and inputs, old knife CG and elder closeup restore without resurrecting anyone',()=>{
  for(const side of [0,1]){const current=new VNRuntime(content,'qingshi-2.0.0'),prior=new VNRuntime(old,'qingshi-1.0.0');

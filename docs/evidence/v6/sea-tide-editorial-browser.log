@@ -53,7 +53,7 @@ Running 23 tests using 3 workers
       20 | });
       21 |
       22 | test('Sea Tide V2 CG failure and dark reading retain exact dialogue and next input',async({browser})=>{
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\sea-tide-editorial.spec.ts:19:2154
+        at .\tests\sea-tide-editorial.spec.ts:19:2154
 
     Error Context: test-results\sea-tide-editorial-Sea-Tid-e82f6-y-texts-work-at-seven-sizes\error-context.md
 

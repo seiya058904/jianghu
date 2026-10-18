@@ -1,11 +1,11 @@
 {
   "tool": "built-in image_gen",
-  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-c18a3709-6560-4285-860f-88c9f8f3c5e7.png",
+  "source": "[author-local-path]",
   "prompt": "Use case: visual novel expression and gesture edit. Preserve EXACT reference character identity, facial anatomy, age, gender, costume colors/materials, hair, and fine naturalistic watercolor/ink rendering. Same36-year-old FEMALE escort leader Pei Yanqiu. Alert protective intent expression, eyebrows firm, mouth calling instructions, one open hand extended at chest height signaling companions to stop behind her. Keep mature woman face, plum robe, red scarf, leather shoulder guard and sheathed sword. Do not draw blade or change gender. Meaningful expression and gesture change, same portrait framing as reference, one character only, no other person. True transparent alpha background, no colored panel, no scenery, no floor, no cast shadow rectangle. No signature, no text, no watermark.",
-  "reference": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v5/pei.webp",
-  "output": "D:\\xia zai\\AI project\\Project in Iteration\\Jianghu\\public\\art\\v6\\pei-intent-v2.webp",
+  "reference": "./public/art/v5/pei.webp",
+  "output": ".\\public\\art\\v6\\pei-intent-v2.webp",
   "review": "Same original PNG converted preserving aspect ratio. Actual gallery decode and visual review recorded in docs/evidence/v6/portrait-proportions-browser.log (16 passed); screenshot docs/evidence/v6/portrait-v6_pei-intent.png.",
-  "initialWebPOutput": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/pei-intent.webp",
-  "initialWebPArchived": "D:\\xia zai\\AI project\\Project in Iteration\\Jianghu\\docs\\v6\\art-candidates\\pei-intent.webp",
+  "initialWebPOutput": "./public/art/v6/pei-intent.webp",
+  "initialWebPArchived": ".\\docs\\v6\\art-candidates\\pei-intent.webp",
   "formatRepair": "Original PNG retained. Resize within 560x840 while preserving native aspect ratio, no repainting, no new generation. Earlier fixed 560x840 conversion stretched this half-body source."
 }

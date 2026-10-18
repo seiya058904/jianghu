@@ -1,0 +1,48 @@
+{
+ "round": 3,
+ "focus": "互动选择、武学真实、演出与原典复测",
+ "records": [
+  {
+   "round": 3,
+   "file": "story/dead-ranking-bouts.mjs",
+   "beat": "dr_eighty_three/sixty_nine/one_fourteen",
+   "originalLineOrAction": "三场复原战斗",
+   "diagnosis": "复核：三场分别对应左脚吃重/右脚更重/出剑前吸气三种口述特征（canon 21188-21243 沈霁娘判词），战术选项非同义（借力转/承重接/观察/留空/松线/留停手），且含道德维度递进（第三场'留活路'）",
+   "changedLineOrAction": "无（保留）",
+   "whyItIsBetter": "—",
+   "choicePayoffBefore": "first/second/third_sword 各 1/2 双值均在 iff 读取（shenyard 三连判/单场回响）",
+   "choicePayoffAfter": "运行时双侧可达由 768 路径采样测试覆盖",
+   "sourceCanonRange": "20658-20967",
+   "testEvidence": "tests 6/6 PASS；transcript 断言含'第八十三/六十九/一百一十四'",
+   "unresolvedIssue": "无"
+  },
+  {
+   "round": 3,
+   "file": "story/dead-ranking-*.mjs",
+   "beat": "全篇原典数字核对",
+   "originalLineOrAction": "83/69/114 招、沈霁娘 68 岁最高 14 一胜一负一平、谢无灯 47 白沙渡、严松 51、杜青禾 44、旧战十二篇八假、七十多信不足五封、赢十一平第五/第六没输过/第五又胜第三、私斗黄昏至将明险胜半手、顾临川怕丢人",
+   "diagnosis": "逐项对照原典 20214-24155 行，全部吻合，零冲突",
+   "changedLineOrAction": "无",
+   "whyItIsBetter": "—",
+   "choicePayoffBefore": "—",
+   "choicePayoffAfter": "—",
+   "sourceCanonRange": "同上",
+   "testEvidence": "test 断言清单逐项通过",
+   "unresolvedIssue": "CG 缺口：三间问话屋对质、榜房大会为纯文字+cast/scene 舞台，无专属 CG——按委托列入待生成方案（见 DIRECTION_AND_ART_V7 更新）"
+  },
+  {
+   "round": 3,
+   "file": "tests/dead-ranking.test.ts",
+   "beat": "回归与结构",
+   "originalLineOrAction": "—",
+   "diagnosis": "新增 3 拍后最长被动段一度达 19（two_years 链），超 18 上限",
+   "changedLineOrAction": "合并 two_years 两拍总结旁白 → gap 17",
+   "whyItIsBetter": "—",
+   "choicePayoffBefore": "choices.size==72 未变（未增删选项）",
+   "choicePayoffAfter": "同左",
+   "sourceCanonRange": "—",
+   "testEvidence": "# pass 6 # fail 0；orphan audit dead-ranking 0/33",
+   "unresolvedIssue": "无"
+  }
+ ]
+}

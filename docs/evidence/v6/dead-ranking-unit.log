@@ -18,7 +18,7 @@
 test at tests\dead-ranking.test.ts:9:1
 ✖ Dead Ranking complete paths preserve actual three bouts, old case, separate real records and long aftermath (23.2669ms)
   AssertionError [ERR_ASSERTION]: 七十余里
-      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/dead-ranking.test.ts:10:608)
+      at TestContext.<anonymous> (file:///[author-local-path]
       at Test.runInAsyncScope (node:async_hooks:227:14)
       at Test.run (node:internal/test_runner/test:1201:25)
       at Test.start (node:internal/test_runner/test:1096:17)
@@ -37,7 +37,7 @@ test at tests\dead-ranking.test.ts:23:1
 
     assert.ok(zhou.s.frames.slice(death+1).every(f=>!f.stage.cast.includes('dr_lu')))
 
-      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/dead-ranking.test.ts:25:95)
+      at TestContext.<anonymous> (file:///[author-local-path]
       at Test.runInAsyncScope (node:async_hooks:227:14)
       at Test.run (node:internal/test_runner/test:1201:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:831:18)

@@ -17,8 +17,8 @@
 test at tests\swords-art.test.ts:13:25
 ✖ two-swords: exact previous bytes, all words/commands/variables and narrow presentation-only compatibility (51.5545ms)
   Error: 存档进度与演出状态不一致，未覆盖当前进度。
-      at restoreVN (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/src/vn-runtime.ts:143:19)
-      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/swords-art.test.ts:16:147)
+      at restoreVN (file:///[author-local-path]
+      at TestContext.<anonymous> (file:///[author-local-path]
       at Test.runInAsyncScope (node:async_hooks:227:14)
       at Test.run (node:internal/test_runner/test:1201:25)
       at Test.start (node:internal/test_runner/test:1096:17)
@@ -27,8 +27,8 @@ test at tests\swords-art.test.ts:13:25
 test at tests\swords-art.test.ts:13:25
 ✖ seven-questions: exact previous bytes, all words/commands/variables and narrow presentation-only compatibility (95.3366ms)
   Error: 存档进度与演出状态不一致，未覆盖当前进度。
-      at restoreVN (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/src/vn-runtime.ts:143:19)
-      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/swords-art.test.ts:16:147)
+      at restoreVN (file:///[author-local-path]
+      at TestContext.<anonymous> (file:///[author-local-path]
       at Test.runInAsyncScope (node:async_hooks:227:14)
       at Test.run (node:internal/test_runner/test:1201:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:831:18)

@@ -27,7 +27,10 @@ import '../story/xuanmen-author.mjs';
 import '../story/white-stone-author.mjs';
 import '../story/beyond-ranking-author.mjs';
 import {applyDirectionV6} from '../story/production-direction-v6.mjs';
+import {applyDirectionV7} from '../story/production-direction-v7.mjs';
+// V6 的表被冻结（north / qian-kun 的 preservation 断言钉了它的 SHA），新篇目的字幕放 V7 表。
 applyDirectionV6();
+applyDirectionV7();
 mkdirSync('src/generated',{recursive:true});
 for (const [file, output] of [['main', 'story'], ['duel', 'duel'],['campaign','campaign'],['taihua','taihua'],['campaign-v6','campaign-v6'],['longmen','longmen'],['dongting','dongting'],['twelfth','twelfth'],['kuhe','kuhe'],['qingshi','qingshi'],['two-swords','two-swords'],['seven-questions','seven-questions'],['jade-thieves','jade-thieves'],['jade','jade'],['sea','sea'],['sea-tide','sea-tide'],['north','north'],['qian-kun','qian-kun'],['north-notes','north-notes'],['dead-ranking','dead-ranking'],['luhua','luhua'],['twelfth-life','twelfth-life'],['luoyang','luoyang'],['bamboo','bamboo'],['xuanmen','xuanmen'],['white-stone','white-stone'],['beyond-ranking','beyond-ranking']]) {
   const source = readFileSync(`story/${file}.ink`, 'utf8');

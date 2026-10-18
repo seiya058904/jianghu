@@ -1,0 +1,21 @@
+✔ Every collection card points at a real registered edition and no edition is reachable twice or not at all (0.9932ms)
+✔ Estimated reading time is derived from the measured beat count of the current edition (4.8247ms)
+✔ All 22 canon groups are represented, and at least 18 canon plays are directly playable (9.9415ms)
+✔ Progress is per work and never shared across works or editions (0.5002ms)
+✔ The shared index lists the current editions first, archives separately and the original stories last (0.7183ms)
+✔ Card hooks are conflict lines, not encyclopaedia intros, and every work states who you play (0.1561ms)
+✔ work download refreshes the complete shell and keeps other works at https://example.test/ (1.7286ms)
+✔ work download refreshes the complete shell and keeps other works at https://example.test/jianghu/ (0.6702ms)
+✔ shell download http failure cannot report success (0.6506ms)
+✔ shell download unsafe failure cannot report success (0.574ms)
+✔ shell download cache failure cannot report success (1.0286ms)
+✔ legacy storage preserves old auto when backup fails and rejects stale tab writes (8.9086ms)
+✔ legacy reads degrade safely when storage access is denied (3.0604ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 113.1828

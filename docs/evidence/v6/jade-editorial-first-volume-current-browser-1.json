@@ -1,0 +1,28 @@
+{
+  "actualBrowserInputs": true,
+  "externalHuman": false,
+  "beats": 189,
+  "choices": 22,
+  "ending": "jt_private_account",
+  "viewpoint": "Jiang then Shen aftermath",
+  "scenes": [
+    "jt_vault",
+    "jt_wall",
+    "jt_market",
+    "jt_auction",
+    "jt_kitchen",
+    "jt_sidehall",
+    "jt_road",
+    "jt_bridge",
+    "jt_temple",
+    "jt_lodging",
+    "jt2_temple_reveal",
+    "jt_workshop",
+    "jt_exchange",
+    "jt_mountainpass",
+    "jt_afterpass",
+    "jt_pawn",
+    "jt_hidden"
+  ],
+  "errors": []
+}

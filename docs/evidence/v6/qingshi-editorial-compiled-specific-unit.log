@@ -28,7 +28,7 @@
 test at tests\qingshi-editorial.test.ts:31:1
 ✖ Qingshi V3 keeps all three age files, knife CG before breaking, closeup exit and posthumous withdrawal; V2 remains independent (17.9577ms)
   TypeError: Cannot read properties of undefined (reading 'stage')
-      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/qingshi-editorial.test.ts:32:382)
+      at TestContext.<anonymous> (file:///[author-local-path]
       at Test.runInAsyncScope (node:async_hooks:227:14)
       at Test.run (node:internal/test_runner/test:1201:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:831:18)

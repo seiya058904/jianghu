@@ -159,9 +159,9 @@ VAR dt_days = false
 
 === raid ===
 魏虎踏到船头，另一面是持戟的魏苍。梁喊出两人的名字，叫你别往兵刃之间站。 # beat:dt_raid_1 # scene:dt_raid # cast:dt_liang,dt_weihu,dt_wang # speaker:narrator
-货留下，人滚开！ # beat:dt_raid_2 # scene:dt_raid # cast:dt_liang,dt_weihu,dt_wang # speaker:dt_weihu # mood:dt_weihu=sharp
+货留下，人滚开！ # beat:dt_raid_2 # scene:dt_raid # cast:dt_liang,dt_weihu,dt_wang # speaker:dt_weihu # mood:dt_weihu=sharp # action:魏虎 · 踏到船头
 主绳截开！别让后头的船挤上来！ # beat:dt_raid_3 # scene:dt_raid # cast:dt_weicang,dt_liang,dt_weihu # speaker:dt_weicang # mood:dt_weicang=sharp
-这条船的人先退后舱！ # beat:dt_raid_4 # scene:dt_raid # cast:dt_weicang,dt_liang,dt_weihu # speaker:dt_liang # mood:dt_liang=intent
+这条船的人先退后舱！ # beat:dt_raid_4 # scene:dt_raid # cast:dt_weicang,dt_liang,dt_weihu # speaker:dt_liang # mood:dt_liang=intent # action:梁照水 · 退后舱
 刀把近处的路切开。你不是能替梁接魏虎的人，汪苇也不是。岸边一艘接人的小艇只容你带一队过去。 # beat:dt_raid_5 # scene:dt_raid # cast:dt_weicang,dt_liang,dt_weihu # speaker:narrator
 左边两个人掉进断缆，主船那边也在退粮！ # beat:dt_raid_6 # scene:dt_raid # cast:dt_wang,dt_weicang,dt_liang # speaker:dt_wang # mood:dt_wang=uneasy
 你早上留的绳、昨夜没歇的脚，都已不是纸上安排。 # beat:dt_raid_7 # scene:dt_raid # cast:dt_wang,dt_weicang,dt_liang # speaker:narrator
@@ -171,17 +171,29 @@ VAR dt_days = false
 - else:
 旧绳短了一截，末端沉进水里。要接那两个人，艇得更贴近断缆。 # beat:dt_raid_9 # scene:dt_raid # cast:dt_wang,dt_weicang,dt_liang # speaker:narrator
 }
+{
+- dt_rope_known:
+汪苇抛绳之前先踢开脚边那一圈。两年前你喊过的那一声先别拉，今天轮到他不必等人提醒。 # beat:dt_raid_10 # scene:dt_raid # cast:dt_wang,dt_weicang,dt_liang # speaker:narrator
+- else:
+汪苇抛绳时脚下又绕住一圈，旁边的人替他踢开。你两年前没有先解的那个结，今天换了一双手来解。 # beat:dt_raid_11 # scene:dt_raid # cast:dt_wang,dt_weicang,dt_liang # speaker:narrator
+}
+{
+- dt_names:
+喊到第二遍，汪苇已经在自己那一侧接上，没有回头找你在哪。谁站哪里，是开船之前就认过的。 # beat:dt_raid_12 # scene:dt_raid # cast:dt_wang,dt_weicang,dt_liang # speaker:narrator
+- else:
+你喊舱口时汪苇正朝落绳那头跑。他停住、换位、再起步，中间慢了一息；那一息里没有人能替他补上。 # beat:dt_raid_13 # scene:dt_raid # cast:dt_wang,dt_weicang,dt_liang # speaker:narrator
+}
 * [小艇先接断缆边的人，放弃这一批货。 # cid:dt_save_company]
   ~ dt_future = 1
-  先接那两位。货留主船，我不替没到的人说一定能救。 # beat:dt_raid_10 # scene:dt_raid # cast:dt_wang,dt_weicang,dt_liang # speaker:you
-  我接绳，你掌艇！ # beat:dt_raid_11 # scene:dt_raid # cast:dt_wang,dt_weicang,dt_liang # speaker:dt_wang # mood:dt_wang=intent
-  小艇转向，货船一角撞裂。你听见木板断开，没有把那声说成东西以后总有。 # beat:dt_raid_12 # scene:dt_raid # cast:dt_wang,dt_weicang,dt_liang # speaker:narrator
+  先接那两位。货留主船，我不替没到的人说一定能救。 # beat:dt_raid_14 # scene:dt_raid # cast:dt_wang,dt_weicang,dt_liang # speaker:you
+  我接绳，你掌艇！ # beat:dt_raid_15 # scene:dt_raid # cast:dt_wang,dt_weicang,dt_liang # speaker:dt_wang # mood:dt_wang=intent
+  小艇转向，货船一角撞裂。你听见木板断开，没有把那声说成东西以后总有。 # beat:dt_raid_16 # scene:dt_raid # cast:dt_wang,dt_weicang,dt_liang # speaker:narrator
   -> raid_return
 * [小艇保住主运粮线，请接人的队另行靠近。 # cid:dt_save_cargo]
   ~ dt_future = 2
-  主运粮线这边！落水的人叫别船来接，报位置，别只喊有人！ # beat:dt_raid_13 # scene:dt_raid # cast:dt_wang,dt_weicang,dt_liang # speaker:you
-  断缆左侧，两人，旧绳够不到！ # beat:dt_raid_14 # scene:dt_raid # cast:dt_wang,dt_weicang,dt_liang # speaker:dt_wang # mood:dt_wang=sharp
-  你护住一条粮道，也确实把接人的时机交给别船。没人能替你保证不会晚。 # beat:dt_raid_15 # scene:dt_raid # cast:dt_wang,dt_weicang,dt_liang # speaker:narrator
+  主运粮线这边！落水的人叫别船来接，报位置，别只喊有人！ # beat:dt_raid_17 # scene:dt_raid # cast:dt_wang,dt_weicang,dt_liang # speaker:you
+  断缆左侧，两人，旧绳够不到！ # beat:dt_raid_18 # scene:dt_raid # cast:dt_wang,dt_weicang,dt_liang # speaker:dt_wang # mood:dt_wang=sharp
+  你护住一条粮道，也确实把接人的时机交给别船。没人能替你保证不会晚。 # beat:dt_raid_19 # scene:dt_raid # cast:dt_wang,dt_weicang,dt_liang # speaker:narrator
   -> raid_return
 
 === raid_return ===
@@ -190,7 +202,7 @@ VAR dt_days = false
 {
 - dt_future == 1 and dt_float and dt_rest:
 你们把两人接上，汪苇的脚还撑得住。那船货损了，你手里的好绳也断成两截，往后的工钱得慢慢赔。 # beat:dt_raid_return_3 # scene:dt_raid # cast:dt_liang,dt_chen,dt_wang # speaker:narrator
-人到了。货的数我跟你一起报，不替你把答应送到的那批忘了。 # beat:dt_raid_return_4 # scene:dt_raid # cast:dt_liang,dt_chen,dt_wang # speaker:dt_wang # mood:dt_wang=uneasy
+人到了。货的数我跟你一起报，不替你把答应送到的那批忘了。 # beat:dt_raid_return_4 # scene:dt_raid # cast:dt_liang,dt_chen,dt_wang # speaker:dt_wang # mood:dt_wang=uneasy # action:汪苇 · 我站不起来
 - dt_future == 1:
 小艇靠得更近，汪苇接人时被断缆绊住。别船终于赶到，落水者都被拖回；他回到岸上，再想站便痛得扶住船沿。 # beat:dt_raid_return_5 # scene:dt_raid # cast:dt_liang,dt_chen,dt_wang # speaker:narrator
 我站不起来。别替我先说只是吓着。 # beat:dt_raid_return_6 # scene:dt_raid # cast:dt_liang,dt_chen,dt_wang # speaker:dt_wang # mood:dt_wang=uneasy
@@ -202,11 +214,11 @@ VAR dt_days = false
 }
 {
 - dt_chen_signal and dt_positions:
-听见你报内，我才知道让哪条艇过。那一声不是替你喊的，要照约定报给谁，都别换。 # beat:dt_raid_return_11 # scene:dt_raid # cast:dt_liang,dt_chen,dt_wang # speaker:dt_chen # mood:dt_chen=hurt
+听见你报内，我才知道让哪条艇过。那一声不是替你喊的，要照约定报给谁，都别换。 # beat:dt_raid_return_11 # scene:dt_raid # cast:dt_liang,dt_chen,dt_wang # speaker:dt_chen # mood:dt_chen=hurt # action:陈震 · 先托这头
 记着。你肩上先别再压索。 # beat:dt_raid_return_12 # scene:dt_raid # cast:dt_liang,dt_chen,dt_wang # speaker:you
 - else:
-我方才分不清谁在喊。你们若要接应，下次先报船，不要等人到了才认。 # beat:dt_raid_return_13 # scene:dt_raid # cast:dt_liang,dt_chen,dt_wang # speaker:dt_chen # mood:dt_chen=hurt
-这回没做成的，我写清，不拿后来有人救到抵掉。 # beat:dt_raid_return_14 # scene:dt_raid # cast:dt_liang,dt_chen,dt_wang # speaker:you
+{dt_positions:听见你报船在内，可我们没练熟内外交错的口令，我先收，才敢认哪条艇要过。|听见那边报停试与系舟处，{dt_chen_signal:却没接到我们约好的内外口令。|这边接应的内外位置仍得再问。}}下回报到对方真能接上，不只自己说完。 # beat:dt_raid_return_13 # scene:dt_raid # cast:dt_liang,dt_chen,dt_wang # speaker:dt_chen # mood:dt_chen=hurt
+这回说到哪句、哪边没接上，我分开写清，不拿后来有人救到抵掉。 # beat:dt_raid_return_14 # scene:dt_raid # cast:dt_liang,dt_chen,dt_wang # speaker:you
 }
 * [替陈震固定伤肩，先听他怎样抓住魏苍。 # cid:dt_help_chen]
   ~ dt_chen_help = true
@@ -222,27 +234,39 @@ VAR dt_days = false
   -> shore_after
 
 === shore_after ===
-七名旧豪议席，与你争着抬人、捞货的那一阵分开。孟守川在场，却没有举手。 # beat:dt_shore_after_1 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:narrator # cg:none
+七名旧豪议席，与你这几日争着抬人、捞货的活分开来算。孟守川在场，却没有举手。 # beat:dt_shore_after_1 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:narrator # cg:none
 四推梁，三推陈。梁四十七岁，第一次列洞庭十六豪第十六。 # beat:dt_shore_after_2 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:narrator
 三票。我听见了。 # beat:dt_shore_after_3 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:dt_chen # mood:dt_chen=hurt
 我的四票不是你的伤白受。船上那一段，我会照实讲。 # beat:dt_shore_after_4 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:dt_liang # mood:dt_liang=calm
 我自己也会讲。别只让人觉得，你肯替没入的人说一句公道话。 # beat:dt_shore_after_5 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:dt_chen # mood:dt_chen=hurt # fact:dt_vote
+{
+- dt_recusal:
+议席那日，几家候选早就知道孟守川不会举手，四票与三票是在这层明白上算完的。没有人把那张空凳当成还没落下的第五票。 # beat:dt_shore_after_6 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:narrator
+- else:
+议席那日仍有人往孟守川那边看，等一个不会来的举手。四票三票也算完了，那几个人的眼睛还多停了一息。 # beat:dt_shore_after_7 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:narrator
+}
+{
+- dt_chen_help:
+陈震后来提起那日，先说肩，再说你当时没有替他拔戟。锁颈那一段是他自己讲给你的，不是后来从别处听来的。 # beat:dt_shore_after_8 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:narrator
+- else:
+陈震后来提起那日，先问你当时在哪条艇上。他没怪你，可这一段的头一句，终究不是从他的伤说起。 # beat:dt_shore_after_9 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:narrator
+}
 * [让陈震先讲自己那条船，我只补亲眼见的部分。 # cid:dt_chen_own_record]
   ~ dt_record = true
-  您先讲。我没站在那边，不能把锁戟那段讲得比您还懂。 # beat:dt_shore_after_6 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:you
-  好。你补你的艇。掉了多少货、晚了哪一声，也写。 # beat:dt_shore_after_7 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:dt_chen # mood:dt_chen=hurt
-  他没有因为你客气就改说三票满意，只把该记的那一段记全。 # beat:dt_shore_after_8 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:narrator
+  您先讲。我没站在那边，不能把锁戟那段讲得比您还懂。 # beat:dt_shore_after_10 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:you
+  好。你补你的艇。掉了多少货、晚了哪一声，也写。 # beat:dt_shore_after_11 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:dt_chen # mood:dt_chen=hurt
+  他没有因为你客气就改说三票满意，只把该记的那一段记全。 # beat:dt_shore_after_12 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:narrator
   -> repair
 * [先分清入席记录和赔付清单，不拿一张替另一张。 # cid:dt_split_accounts]
   ~ dt_record = false
-  这张写谁入席，那张写谁该赔。陈先生的药，不能从没入席那行里扣。 # beat:dt_shore_after_9 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:you
-  两张都留。你们以后再争，这回的名字也不能改。 # beat:dt_shore_after_10 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:dt_meng # mood:dt_meng=intent
-  梁没有在赔付那张后面添第十六三个字。 # beat:dt_shore_after_11 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:narrator
+  这张写谁入席，那张写谁该赔。陈先生的药，不能从没入席那行里扣。 # beat:dt_shore_after_13 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:you
+  两张都留。你们以后再争，这回的名字也不能改。 # beat:dt_shore_after_14 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:dt_meng # mood:dt_meng=intent
+  梁没有在赔付那张后面添第十六三个字。 # beat:dt_shore_after_15 # scene:dt_after # cast:dt_meng,dt_liang,dt_chen # speaker:narrator
   -> repair
 
 === repair ===
 坏船回不了原样，工钱也不能等榜册写完才问。汪苇把家里要的那袋米放在脚边。 # beat:dt_repair_1 # scene:dt_after # cast:dt_wang,dt_liang,dt_chen # speaker:narrator
-我还要回家，明日不能说谁上榜了，我便不用花钱吃饭。 # beat:dt_repair_2 # scene:dt_after # cast:dt_wang,dt_liang,dt_chen # speaker:dt_wang # mood:dt_wang=uneasy
+我还要回家。明日谁上榜，都轮不到替我买米。 # beat:dt_repair_2 # scene:dt_after # cast:dt_wang,dt_liang,dt_chen # speaker:dt_wang # mood:dt_wang=uneasy
 {
 - dt_future == 1:
 这一批货没了。我出一份，你答应过的那份也得留，不由你一句下次帮忙便全算清。 # beat:dt_repair_3 # scene:dt_after # cast:dt_wang,dt_liang,dt_chen # speaker:dt_liang # mood:dt_liang=neutral
@@ -259,7 +283,7 @@ VAR dt_days = false
 * [先当面问各人愿担哪一份，不替别的门人许工日。 # cid:dt_set_people]
   ~ dt_days = false
   我先认自己能做的，再问别人。不是听潮门三个字，便谁都有空。 # beat:dt_repair_9 # scene:dt_after # cast:dt_wang,dt_liang,dt_chen # speaker:you
-  那先问我。我能坐着理索，脚不能用，不是人就全没用了。 # beat:dt_repair_10 # scene:dt_after # cast:dt_wang,dt_liang,dt_chen # speaker:dt_wang # mood:dt_wang=calm
+  那先问我。{dt_future == 1 and dt_float and dt_rest:我的脚撑住了，能搬也能理索，让我自己认能担哪一份。|我能坐着理索，脚不能用，不是人就全没用了。} # beat:dt_repair_10 # scene:dt_after # cast:dt_wang,dt_liang,dt_chen # speaker:dt_wang # mood:dt_wang=calm
   -> threeyears
 
 === threeyears ===
@@ -268,21 +292,33 @@ VAR dt_days = false
 会来。今日先把上回那根索拿出来，还欠一次拆手。 # beat:dt_threeyears_3 # scene:dt_three # cast:dt_liang,dt_chen # speaker:dt_liang # mood:dt_liang=amused
 两人争过同一把椅子，后来坐到同一张榜里。当年的末席与今日的第十五，都不替普通人的日子自动还账。 # beat:dt_threeyears_4 # scene:dt_three # cast:dt_liang,dt_chen # speaker:narrator
 {
+- dt_record:
+陈震那条船的经过由他自己开过一次口。后来引到这一段的人，抄的是他讲的话，不是榜房替他写的评语。 # beat:dt_threeyears_5 # scene:dt_three # cast:dt_liang,dt_chen # speaker:narrator
+- else:
+入席与赔付两张纸分得很清楚，陈震那一段却仍只有榜房一支笔。他后来自己在边上补过一次，没有替回正行。 # beat:dt_threeyears_6 # scene:dt_three # cast:dt_liang,dt_chen # speaker:narrator
+}
+{
+- dt_days:
+换药、理索、代守分成各自具体哪一日。有两回你到得比说的晚，也提前报过，没有人空等。 # beat:dt_threeyears_7 # scene:dt_three # cast:dt_liang,dt_chen # speaker:narrator
+- else:
+日子没有落成具体的，只写了各人肯担哪一份。有两回没人记得该谁去，汪苇等到天黑才见人来。 # beat:dt_threeyears_8 # scene:dt_three # cast:dt_liang,dt_chen # speaker:narrator
+}
+{
 - dt_future == 1:
-你先选的是接同行，便也留下来还那批损货的工债。不是每个新认识的人都愿替你说选得好，货主来催时，你还得自己开门。 # beat:dt_threeyears_5 # scene:dt_three # cast:dt_liang,dt_chen # speaker:narrator
+你先选的是接同行，便也留下来还那批损货的工债。不是每个新认识的人都愿替你说选得好，货主来催时，你还得自己开门。 # beat:dt_threeyears_9 # scene:dt_three # cast:dt_liang,dt_chen # speaker:narrator
 {
 - dt_float and dt_rest:
-今天我能搬，不是你再来替我搬。你去认箱子，别又认错一袋米。 # beat:dt_threeyears_6 # scene:dt_three # cast:dt_wang,dt_liang,dt_chen # speaker:dt_wang # mood:dt_wang=amused
-那根断绳的末端还挂在库门边，接过人，也确实赔过货。 # beat:dt_threeyears_7 # scene:dt_three # cast:dt_wang,dt_liang,dt_chen # speaker:narrator
+今天我能搬，不是你再来替我搬。你去认箱子，别又认错一袋米。 # beat:dt_threeyears_10 # scene:dt_three # cast:dt_wang,dt_liang,dt_chen # speaker:dt_wang # mood:dt_wang=amused
+那根断绳的末端还挂在库门边，接过人，也确实赔过货。 # beat:dt_threeyears_11 # scene:dt_three # cast:dt_wang,dt_liang,dt_chen # speaker:narrator
 - else:
-脚好了些，仍不能在晃船上站太久。我先理索，等好了再去。 # beat:dt_threeyears_8 # scene:dt_three # cast:dt_wang,dt_liang,dt_chen # speaker:dt_wang # mood:dt_wang=calm
-我听你的。不替你把这几个月说成一场值得的伤。 # beat:dt_threeyears_9 # scene:dt_three # cast:dt_wang,dt_liang,dt_chen # speaker:you
+脚好了些，仍不能在晃船上站太久。我先理索，等好了再去。 # beat:dt_threeyears_12 # scene:dt_three # cast:dt_wang,dt_liang,dt_chen # speaker:dt_wang # mood:dt_wang=calm
+我听你的。不替你把这几个月说成一场值得的伤。 # beat:dt_threeyears_13 # scene:dt_three # cast:dt_wang,dt_liang,dt_chen # speaker:you
 }
-你保住同行，也承担没保住货的余日。梁的第十六、陈的第十五是他们的路；你在船边留下的，是一个能追到你的名字和还在做的工。 # beat:dt_threeyears_10 # scene:dt_three # cast:dt_wang,dt_liang,dt_chen # speaker:narrator # ending:dt_company
+你保住同行，也承担没保住货的余日。梁的第十六、陈的第十五是他们的路；你在船边留下的，是一个能追到你的名字和还在做的工。 # beat:dt_threeyears_14 # scene:dt_three # cast:dt_wang,dt_liang,dt_chen # speaker:narrator # ending:dt_company
 -> END
 - else:
-你保住主运粮线，粮船有人接，也有人没能像从前那样站着领工钱。你按约来岸上换药、理索，不把送成一趟货当成对方该满意的理由。 # beat:dt_threeyears_11 # scene:dt_three # cast:dt_wang,dt_liang,dt_chen # speaker:narrator
-明日你若来晚，先报。我家的人也要安排出门，不是一直能坐着等。 # beat:dt_threeyears_12 # scene:dt_three # cast:dt_wang,dt_liang,dt_chen # speaker:dt_wang # mood:dt_wang=intent
-你把粮交到该到的人手里，也把受伤同行的名字留在自己的时日里。那场较艺已经落册，接下来照约出现，仍只能由你自己来做。 # beat:dt_threeyears_13 # scene:dt_three # cast:dt_wang,dt_liang,dt_chen # speaker:narrator # ending:dt_cargo
+你保住主运粮线，粮船有人接，也有人没能像从前那样站着领工钱。你按约来岸上换药、理索，不把送成一趟货当成对方该满意的理由。 # beat:dt_threeyears_15 # scene:dt_three # cast:dt_wang,dt_liang,dt_chen # speaker:narrator
+明日你若来晚，先报。我家的人也要安排出门，不是一直能坐着等。 # beat:dt_threeyears_16 # scene:dt_three # cast:dt_wang,dt_liang,dt_chen # speaker:dt_wang # mood:dt_wang=intent
+你把粮交到该到的人手里，也把受伤同行的名字留在自己的时日里。那场较艺已经落册，接下来照约出现，仍只能由你自己来做。 # beat:dt_threeyears_17 # scene:dt_three # cast:dt_wang,dt_liang,dt_chen # speaker:narrator # ending:dt_cargo
 -> END
 }

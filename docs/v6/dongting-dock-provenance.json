@@ -1,7 +1,7 @@
 {
   "tool": "built-in image_gen",
-  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-8e962b03-e723-4afd-b2be-e30e24bd4c96.png",
+  "source": "[author-local-path]",
   "prompt": "Use case: historical-scene. Production illustrated environment background for Jianghu Chinese wuxia visual novel. Wide landscape3:2. A working jetty on the western shore of Dongting lake. Sloping timber piers, a low rope shed with hanging hemp coils, rice sacks and two tied small ordinary cargo boats, shallow reed beds and broad calm inland water. The foreground is a generous flat wooden landing for character sprites; cargo and shed off to one side, lake opens on the other. Simple premodern Chinese waterside houses, daylight in desaturated jade and warm wood. No festival, no palace, no sea cliffs. Fine muted naturalistic watercolor and ink illustration, historically grounded timber and stone, tactile understated brushwork, atmospheric depth, coherent restrained Jianghu visual world. Bottom foreground visually quiet for HTML dialogue. No people, no silhouettes, no text, no logos, no UI, no watermark, no magical effects.",
-  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/dongting-dock.webp",
+  "output": "./public/art/v6/dongting-dock.webp",
   "review": "Reviewed native image: coherent timber/stone or lake working space, empty foreground, no named figure or text. Mapped to matching chronicle scenes. Fair uses one image for several related scenes and is counted once."
 }

@@ -43,16 +43,22 @@ VAR sr_legacy = 0
 我输了。 # beat:sr_first_name_2 # scene:sr_oldarena # cast:sr_oldmaster # speaker:sr_oldmaster # mood:sr_oldmaster=intent
 下一次总谱重修，陆玄都第一，五十三岁。旧录把接下来十余年的问手合记：十二位够分量的人，十胜两平，没有一败。有人夸那一代没有第二，你却没从这句话里再长出一座新山。 # beat:sr_first_name_3 # scene:sr_oldarena # cast:sr_oldmaster # speaker:narrator
 这十余年里，六十前后你登少林住十一日，下山说很好；太极十七日，八卦也去。各家最深处的结果没有公开，后世的六大格局当时还没有成形。你又走西域、塞北、岭南，终于到了海边。 # beat:sr_first_name_4 # scene:sr_oldarena # cast:sr_oldmaster # speaker:narrator
+{
+- sr_old_read == 1:
+那一日你先踩实了脚下才转。后来走西域、塞北、岭南，落脚处都还留着这一天的规矩：地稳了，手才敢让。 # beat:sr_first_name_5 # scene:sr_oldarena # cast:sr_oldmaster # speaker:narrator
+- else:
+绕到掌外那一步你记了半生。后来教人，头一件事便是让开对方以为必到的那一点——不是躲，是把回手的位置留给自己。 # beat:sr_first_name_6 # scene:sr_oldarena # cast:sr_oldmaster # speaker:narrator
+}
 * [问船人，过了眼前这班还能转到哪里。 # cid:sr_ask_farther]
   ~ sr_far_question = true
-  出去，还能转到哪里？ # beat:sr_first_name_5 # scene:sr_oldshore # cast:sr_oldboat # speaker:you
-  先过这一潮。下一处船有下一处船的主人，先生不是问我一声，就叫整片海都认得你。 # beat:sr_first_name_6 # scene:sr_oldshore # cast:sr_oldboat # speaker:sr_oldboat # mood:sr_oldboat=amused
-  他指向泊在外头的小船，浪把两船间的一段水反复抬起。 # beat:sr_first_name_7 # scene:sr_oldshore # cast:sr_oldboat # speaker:narrator
+  出去，还能转到哪里？ # beat:sr_first_name_7 # scene:sr_oldshore # cast:sr_oldboat # speaker:you
+  先过这一潮。下一处船有下一处船的主人，先生不是问我一声，就叫整片海都认得你。 # beat:sr_first_name_8 # scene:sr_oldshore # cast:sr_oldboat # speaker:sr_oldboat # mood:sr_oldboat=amused
+  他指向泊在外头的小船，浪把两船间的一段水反复抬起。 # beat:sr_first_name_9 # scene:sr_oldshore # cast:sr_oldboat # speaker:narrator
   -> beyond_map
 * [收起岸图，先看船人怎样等潮离岸。 # cid:sr_watch_tide]
   ~ sr_far_question = false
-  你看船工等潮，不再催快半盏茶。地图上最外一条岸，在眼前仍有新船从后面出来。 # beat:sr_first_name_8 # scene:sr_oldshore # cast:sr_oldboat # speaker:narrator
-  要去就等这班风。你在岸上多胜一场，浪也不会先照顾你一步。 # beat:sr_first_name_9 # scene:sr_oldshore # cast:sr_oldboat # speaker:sr_oldboat # mood:sr_oldboat=intent
+  你看船工等潮，不再催快半盏茶。地图上最外一条岸，在眼前仍有新船从后面出来。 # beat:sr_first_name_10 # scene:sr_oldshore # cast:sr_oldboat # speaker:narrator
+  要去就等这班风。你在岸上多胜一场，浪也不会先照顾你一步。 # beat:sr_first_name_11 # scene:sr_oldshore # cast:sr_oldboat # speaker:sr_oldboat # mood:sr_oldboat=intent
   -> beyond_map
 
 === beyond_map ===
@@ -60,11 +66,17 @@ VAR sr_legacy = 0
 有。 # beat:sr_beyond_map_2 # scene:sr_oldshore # cast:sr_oldboat # speaker:you
 谁？ # beat:sr_beyond_map_3 # scene:sr_oldshore # cast:sr_oldboat # speaker:sr_oldboat # mood:sr_oldboat=surprised
 不知道。中原这么大，外面只会更大。 # beat:sr_beyond_map_4 # scene:sr_oldshore # cast:sr_oldboat # speaker:you
+{
+- sr_far_question:
+出去还能转到哪里——这一问后来真有人替你答了。蓬莱旧卷里那七年，起头便是另一班船的主人接的话。 # beat:sr_beyond_map_5 # scene:sr_oldshore # cast:sr_oldboat # speaker:narrator
+- else:
+你先看了船工怎样等潮。几年后到蓬莱，也先看岛上的人怎样过日子，才问他们的剑。 # beat:sr_beyond_map_6 # scene:sr_oldshore # cast:sr_oldboat # speaker:narrator
+}
 * [去外港问转船，先跟船工把这一箱搬上去。 # cid:sr_take_open_route]
-  箱子不好下手，船工让你换到低的一头。你照做，脚下的船板随着第二个人上来，往下一沉。 # beat:sr_beyond_map_5 # scene:sr_oldshore # cast:sr_oldboat # speaker:narrator
+  箱子不好下手，船工让你换到低的一头。你照做，脚下的船板随着第二个人上来，往下一沉。 # beat:sr_beyond_map_7 # scene:sr_oldshore # cast:sr_oldboat # speaker:narrator
   -> seven_years
 * [先把岸图收进油布，按船人说的时辰到潮线外等。 # cid:sr_leave_closed_map]
-  你把图叠小，油布边角压进包内。船人叫到第二声，你才发现他喊的是这班船，不是你的名字。 # beat:sr_beyond_map_6 # scene:sr_oldshore # cast:sr_oldboat # speaker:narrator
+  你把图叠小，油布边角压进包内。船人叫到第二声，你才发现他喊的是这班船，不是你的名字。 # beat:sr_beyond_map_8 # scene:sr_oldshore # cast:sr_oldboat # speaker:narrator
   -> seven_years
 
 === seven_years ===
@@ -125,16 +137,22 @@ VAR sr_legacy = 0
 好。到了港，我报哪家脚夫还在。你自己接，别又只顾着问武馆。 # beat:sr_forty_three_12 # scene:sr_port # cast:sr_teacher,sr_boatman # speaker:sr_boatman # mood:sr_boatman=neutral
 阿汀先去交船钱。你收好箱单，武馆的人还在门外等，今日的拜访来得及。 # beat:sr_forty_three_13 # scene:sr_port # cast:sr_teacher,sr_boatman # speaker:narrator
 }
+{
+- sr_port_space:
+岸边让出的那一步，后来你写进开馆的头一课：不借别人会跌的地方赢。那年在码头腾出的不是一步，是往后每一个学你这门的人落脚的规矩。 # beat:sr_forty_three_14 # scene:sr_port # cast:sr_teacher,sr_boatman # speaker:narrator
+- else:
+先请到平地再问手，你连着三场都这么开口。蓬莱认真问你是谁，不只因为你赢，也因为每一场你都先把地方让清了。 # beat:sr_forty_three_15 # scene:sr_port # cast:sr_teacher,sr_boatman # speaker:narrator
+}
 * [留下来真学蓬莱的步与兵器，不只数祖师胜过几个。 # cid:sr_ask_local_method]
   ~ sr_local_practice = true
-  先让我看你们怎么走这一步。旧卷可以晚一点再抄。 # beat:sr_forty_three_14 # scene:sr_port # cast:sr_teacher,sr_boatman # speaker:you
-  那明日来，不替你祖师先赢今天这一次。 # beat:sr_forty_three_15 # scene:sr_port # cast:sr_teacher,sr_boatman # speaker:sr_teacher # mood:sr_teacher=intent
-  阿汀把原来给你问好的下一班船划掉，先问你新住处的租钱还够不够。 # beat:sr_forty_three_16 # scene:sr_port # cast:sr_teacher,sr_boatman # speaker:narrator
+  先让我看你们怎么走这一步。旧卷可以晚一点再抄。 # beat:sr_forty_three_16 # scene:sr_port # cast:sr_teacher,sr_boatman # speaker:you
+  那明日来，不替你祖师先赢今天这一次。 # beat:sr_forty_three_17 # scene:sr_port # cast:sr_teacher,sr_boatman # speaker:sr_teacher # mood:sr_teacher=intent
+  阿汀把原来给你问好的下一班船划掉，先问你新住处的租钱还够不够。 # beat:sr_forty_three_18 # scene:sr_port # cast:sr_teacher,sr_boatman # speaker:narrator
   -> five_years
 * [照旧卷找今日仍在教的地方，自己去问手，让旧名字成为真正见人的路。 # cid:sr_test_old_record]
   ~ sr_local_practice = false
-  旧卷能指去处，不能让今天的主人先认你。你一处处敲门，遇见已改过的练法，又回来问为什么。 # beat:sr_forty_three_17 # scene:sr_port # cast:sr_teacher,sr_boatman # speaker:narrator
-  我倒知道你这回留了。只看你每天出去挨问的地方，换得比船还勤。 # beat:sr_forty_three_18 # scene:sr_port # cast:sr_teacher,sr_boatman # speaker:sr_boatman # mood:sr_boatman=amused
+  旧卷能指去处，不能让今天的主人先认你。你一处处敲门，遇见已改过的练法，又回来问为什么。 # beat:sr_forty_three_19 # scene:sr_port # cast:sr_teacher,sr_boatman # speaker:narrator
+  我倒知道你这回留了。只看你每天出去挨问的地方，换得比船还勤。 # beat:sr_forty_three_20 # scene:sr_port # cast:sr_teacher,sr_boatman # speaker:sr_boatman # mood:sr_boatman=amused
   -> five_years
 
 === five_years ===
@@ -192,17 +210,23 @@ VAR sr_legacy = 0
 你没有当夜顿悟。四十岁离蓬莱时，这句仍跟着。阿汀替你问好了转船：船人所谓西海是旧称，由中原要先出东海、再经蓬莱转去远海诸国，不是沿中原西岸寻一条近路。 # beat:sr_win_after_2 # scene:sr_islandshore # cast:sr_canghe,sr_boatman # speaker:narrator
 你来时认的那条潮，五年后也得重问。到了那边，先认能回信的港。 # beat:sr_win_after_3 # scene:sr_islandshore # cast:sr_canghe,sr_boatman # speaker:sr_boatman # mood:sr_boatman=intent
 一个多月海程，泉州登陆。你原想上岸便看看地方武馆，身子却先不答应，最后是被人抬下船。 # beat:sr_win_after_4 # scene:sr_islandshore # cast:sr_canghe,sr_boatman # speaker:narrator
+{
+- sr_canghe_answer == 1:
+赢完呢——这一问你没能接上。海上一个多月，你没有答出；四十岁离岛，它仍跟着你，只是从逼问变成一张真买下的船票。 # beat:sr_win_after_5 # scene:sr_islandshore # cast:sr_canghe,sr_boatman # speaker:narrator
+- else:
+从这一句想起的问法你留着。后来每赢一场，都先往下多问一层；到真上船那日，你说得出的仍只有一句，却已经是你自己的。 # beat:sr_win_after_6 # scene:sr_islandshore # cast:sr_canghe,sr_boatman # speaker:narrator
+}
 * [请阿汀帮找住处与大夫，先承认站不住，不在码头硬演强者。 # cid:sr_accept_help]
   ~ sr_illness_plain = true
-  先别问武馆。我现在走过去，怕要叫人以为是来讨一张床。 # beat:sr_win_after_5 # scene:sr_islandshore # cast:sr_canghe,sr_boatman # speaker:you
-  肯早说，床也少替你走一段路。 # beat:sr_win_after_6 # scene:sr_islandshore # cast:sr_canghe,sr_boatman # speaker:sr_boatman # mood:sr_boatman=amused
-  你躺下，连想笑都嫌胸口费力。 # beat:sr_win_after_7 # scene:sr_islandshore # cast:sr_canghe,sr_boatman # speaker:narrator
+  先别问武馆。我现在走过去，怕要叫人以为是来讨一张床。 # beat:sr_win_after_7 # scene:sr_islandshore # cast:sr_canghe,sr_boatman # speaker:you
+  肯早说，床也少替你走一段路。 # beat:sr_win_after_8 # scene:sr_islandshore # cast:sr_canghe,sr_boatman # speaker:sr_boatman # mood:sr_boatman=amused
+  你躺下，连想笑都嫌胸口费力。 # beat:sr_win_after_9 # scene:sr_islandshore # cast:sr_canghe,sr_boatman # speaker:narrator
   -> twelve_days
 * [先把船上该交的活说明，再请人抬到住处；不叫自己的病把整船货一并停在岸边。 # cid:sr_settle_ship_first]
   ~ sr_illness_plain = false
-  你交完话，刚站一下便又坐回去。阿汀叫人抬你，自己先去接船务，这两件终于不用都挤在你一只发软的手里。 # beat:sr_win_after_8 # scene:sr_islandshore # cast:sr_canghe,sr_boatman # speaker:narrator
-  今日若有人要问手，告诉他等我能端稳一碗汤。 # beat:sr_win_after_9 # scene:sr_islandshore # cast:sr_canghe,sr_boatman # speaker:you
-  汤我替你问。船上的账，可得醒着同我对。 # beat:sr_win_after_10 # scene:sr_islandshore # cast:sr_canghe,sr_boatman # speaker:sr_boatman # mood:sr_boatman=amused
+  你交完话，刚站一下便又坐回去。阿汀叫人抬你，自己先去接船务，这两件终于不用都挤在你一只发软的手里。 # beat:sr_win_after_10 # scene:sr_islandshore # cast:sr_canghe,sr_boatman # speaker:narrator
+  今日若有人要问手，告诉他等我能端稳一碗汤。 # beat:sr_win_after_11 # scene:sr_islandshore # cast:sr_canghe,sr_boatman # speaker:you
+  汤我替你问。船上的账，可得醒着同我对。 # beat:sr_win_after_12 # scene:sr_islandshore # cast:sr_canghe,sr_boatman # speaker:sr_boatman # mood:sr_boatman=amused
   -> twelve_days
 
 === twelve_days ===
@@ -211,22 +235,28 @@ VAR sr_legacy = 0
 我以为凉了。 # beat:sr_twelve_days_3 # scene:sr_quanzhou # cast:sr_innkeeper # speaker:you
 才从锅里舀的，哪里就凉。喝完把碗放这里，我得给外头那桌上菜。 # beat:sr_twelve_days_4 # scene:sr_quanzhou # cast:sr_innkeeper # speaker:sr_innkeeper # mood:sr_innkeeper=neutral
 {
-- sr_line_shared:
-五年前那一下午对过的箱单，后来转船一直这样分。病时阿汀照单把物件和路钱交到店里，自己照开船。你少请一趟脚夫；醒来时，箱单折在药碗旁，末一只已由店家画了点。 # beat:sr_twelve_days_5 # scene:sr_quanzhou # cast:sr_innkeeper # speaker:narrator
+- sr_illness_plain:
+早早认了站不住，床与汤都近。后来你向学生讲第一步，也先讲这个：先认自己此刻在哪里，才谈往哪里去。 # beat:sr_twelve_days_5 # scene:sr_quanzhou # cast:sr_innkeeper # speaker:narrator
 - else:
-按五年前说的，物件与路钱一直由你点收。如今站不起来，临时请店家接；阿汀得开本船，另请脚夫搬物、候一宿的费用从你行资里出。他仍帮你找好住处，把脚夫的姓名也留在箱单上。 # beat:sr_twelve_days_6 # scene:sr_quanzhou # cast:sr_innkeeper # speaker:narrator
+船务没因你病停一日。十二日里你躺着仍把账目逐笔对了——认输的病与该交的话，你从那时起就分得清。 # beat:sr_twelve_days_6 # scene:sr_quanzhou # cast:sr_innkeeper # speaker:narrator
+}
+{
+- sr_line_shared:
+五年前那一下午对过的箱单，后来转船一直这样分。病时阿汀照单把物件和路钱交到店里，自己照开船。你少请一趟脚夫；醒来时，箱单折在药碗旁，末一只已由店家画了点。 # beat:sr_twelve_days_7 # scene:sr_quanzhou # cast:sr_innkeeper # speaker:narrator
+- else:
+按五年前说的，物件与路钱一直由你点收。如今站不起来，临时请店家接；阿汀得开本船，另请脚夫搬物、候一宿的费用从你行资里出。他仍帮你找好住处，把脚夫的姓名也留在箱单上。 # beat:sr_twelve_days_8 # scene:sr_quanzhou # cast:sr_innkeeper # speaker:narrator
 }
 * [把阿罗真写在药包旁，再写下新名罗天海。 # cid:sr_say_old_name]
   ~ sr_name_first = true
-  你写得工整，店家照字又念一遍，没笑你的口音。门里汉文谱从小读，真到街上，原来连一个药包也得两个人肯听完。 # beat:sr_twelve_days_7 # scene:sr_quanzhou # cast:sr_innkeeper # speaker:narrator
-  这是旧名。我自己再取个汉名，往后叫罗天海。 # beat:sr_twelve_days_8 # scene:sr_quanzhou # cast:sr_innkeeper # speaker:you
-  你自己取的，我两个都记。今日先把汤喝完。 # beat:sr_twelve_days_9 # scene:sr_quanzhou # cast:sr_innkeeper # speaker:sr_innkeeper # mood:sr_innkeeper=amused
+  你写得工整，店家照字又念一遍，没笑你的口音。门里汉文谱从小读，真到街上，原来连一个药包也得两个人肯听完。 # beat:sr_twelve_days_9 # scene:sr_quanzhou # cast:sr_innkeeper # speaker:narrator
+  这是旧名。我自己再取个汉名，往后叫罗天海。 # beat:sr_twelve_days_10 # scene:sr_quanzhou # cast:sr_innkeeper # speaker:you
+  你自己取的，我两个都记。今日先把汤喝完。 # beat:sr_twelve_days_11 # scene:sr_quanzhou # cast:sr_innkeeper # speaker:sr_innkeeper # mood:sr_innkeeper=amused
   -> name
 * [报出新取的汉名罗天海，也告诉她旧名阿罗真。 # cid:sr_choose_han_name]
   ~ sr_name_first = false
-  罗天海。阿罗真也是我，别把旧名那份药另算一个人。 # beat:sr_twelve_days_10 # scene:sr_quanzhou # cast:sr_innkeeper # speaker:you
-  那我记同一页。多写个名字，不多算一碗汤。 # beat:sr_twelve_days_11 # scene:sr_quanzhou # cast:sr_innkeeper # speaker:sr_innkeeper # mood:sr_innkeeper=amused
-  她把两名并排，药包押在纸角。你还想解释，外头又催上菜，她先应了一声，带着空盘走了。 # beat:sr_twelve_days_12 # scene:sr_quanzhou # cast:sr_innkeeper # speaker:narrator
+  罗天海。阿罗真也是我，别把旧名那份药另算一个人。 # beat:sr_twelve_days_12 # scene:sr_quanzhou # cast:sr_innkeeper # speaker:you
+  那我记同一页。多写个名字，不多算一碗汤。 # beat:sr_twelve_days_13 # scene:sr_quanzhou # cast:sr_innkeeper # speaker:sr_innkeeper # mood:sr_innkeeper=amused
+  她把两名并排，药包押在纸角。你还想解释，外头又催上菜，她先应了一声，带着空盘走了。 # beat:sr_twelve_days_14 # scene:sr_quanzhou # cast:sr_innkeeper # speaker:narrator
   -> name
 
 === name ===
@@ -234,13 +264,19 @@ VAR sr_legacy = 0
 江南八府会，有人在南榜末段人物面前起哄，西海罗天海敢不敢问南榜。 # beat:sr_name_2 # scene:sr_mainlandyard # cast:sr_guest # speaker:narrator
 很强？ # beat:sr_name_3 # scene:sr_mainlandyard # cast:sr_guest # speaker:you
 场中有人笑。对手却先让开一处能站的坪，手里的来招也没有跟那阵笑一同变轻。 # beat:sr_name_4 # scene:sr_mainlandyard # cast:sr_guest # speaker:narrator
+{
+- sr_name_first:
+阿罗真三个字你到底写在了前头。后来榜录写罗天海，你从不让旧名从纸上消失——两个名字，一个是你来的地方，一个是你走出来的地方。 # beat:sr_name_5 # scene:sr_mainlandyard # cast:sr_guest # speaker:narrator
+- else:
+罗天海在前，阿罗真也在。中原的榜自此只记新名，你自己记账，仍旧一页两名。 # beat:sr_name_6 # scene:sr_mainlandyard # cast:sr_guest # speaker:narrator
+}
 * [先认他一步能进到哪里，接住第一轮真招，再把自己的问递过去。 # cid:sr_answer_with_distance]
   ~ sr_first_mainland = 1
-  你没追笑声，眼睛一直在他的肩与脚。第一下比地方榜快，第二下却给你看清了一处转路；等他换回来，你已经跟到那一边。 # beat:sr_name_5 # scene:sr_mainlandyard # cast:sr_guest # speaker:narrator
+  你没追笑声，眼睛一直在他的肩与脚。第一下比地方榜快，第二下却给你看清了一处转路；等他换回来，你已经跟到那一边。 # beat:sr_name_7 # scene:sr_mainlandyard # cast:sr_guest # speaker:narrator
   -> two_ten
 * [主动换一次远近，看对方肯不肯随你走，不在自己熟的一圈里把两百招重打一遍。 # cid:sr_test_full_ground]
   ~ sr_first_mainland = 2
-  你把距离放开又贴回，对手没有被一个新口音的人气得抢招。你得一次次换，到真能从他身侧续出的那一手才敢压过去。 # beat:sr_name_6 # scene:sr_mainlandyard # cast:sr_guest # speaker:narrator
+  你把距离放开又贴回，对手没有被一个新口音的人气得抢招。你得一次次换，到真能从他身侧续出的那一手才敢压过去。 # beat:sr_name_8 # scene:sr_mainlandyard # cast:sr_guest # speaker:narrator
   -> two_ten
 
 === two_ten ===
@@ -249,13 +285,19 @@ VAR sr_legacy = 0
 前十是不是更强？ # beat:sr_two_ten_3 # scene:sr_mainlandyard # cast:sr_guest # speaker:you
 当然。差多少，自己去看。 # beat:sr_two_ten_4 # scene:sr_mainlandyard # cast:sr_guest # speaker:sr_guest # mood:sr_guest=amused
 你并非总赢。后来胜过南榜三十余位与北榜末段，平过南榜中段，两百七十余招胜北榜二十余位；真正遇前位输下来，却仍只想知道再往上是哪一层。 # beat:sr_two_ten_5 # scene:sr_mainlandyard # cast:sr_guest # speaker:narrator
+{
+- sr_first_mainland == 1:
+先接住再问——这法子后来你用了一辈子。连太极山上那位老人，也是先看你接得住，才肯反过来问你一句。 # beat:sr_two_ten_6 # scene:sr_mainlandyard # cast:sr_guest # speaker:narrator
+- else:
+肯把距离换开再贴回，这一手你后来教给学生。能随你换的人不多，肯随的，后来都成了值得再去的门。 # beat:sr_two_ten_7 # scene:sr_mainlandyard # cast:sr_guest # speaker:narrator
+}
 * [照对方指的地方继续找，不拿一场胜当所有中原武人的同一种答复。 # cid:sr_go_find_more]
   ~ sr_more_questions = true
-  你去了，吃过败，也遇过打完肯讲两句的人。走回住处时，脚下反而比来前快，怕明日又错过能见一个人的时辰。 # beat:sr_two_ten_6 # scene:sr_mainlandyard # cast:sr_guest # speaker:narrator
+  你去了，吃过败，也遇过打完肯讲两句的人。走回住处时，脚下反而比来前快，怕明日又错过能见一个人的时辰。 # beat:sr_two_ten_8 # scene:sr_mainlandyard # cast:sr_guest # speaker:narrator
   -> forty_eight
 * [先回头重试自己没接明的一手，再往前，肯承认同一个人也值得再问。 # cid:sr_return_to_test]
   ~ sr_more_questions = false
-  你多留几日，把那一下不肯完全懂的来路又试了。再走出去，旧对手没有因为你已赢过南榜便自动成了只配被略过的一页。 # beat:sr_two_ten_7 # scene:sr_mainlandyard # cast:sr_guest # speaker:narrator
+  你多留几日，把那一下不肯完全懂的来路又试了。再走出去，旧对手没有因为你已赢过南榜便自动成了只配被略过的一页。 # beat:sr_two_ten_9 # scene:sr_mainlandyard # cast:sr_guest # speaker:narrator
   -> forty_eight
 
 === forty_eight ===
@@ -263,16 +305,22 @@ VAR sr_legacy = 0
 还要问前面？ # beat:sr_forty_eight_2 # scene:sr_mainlandyard # cast:sr_oldfriend # speaker:sr_oldfriend # mood:sr_oldfriend=intent
 要。 # beat:sr_forty_eight_3 # scene:sr_mainlandyard # cast:sr_oldfriend # speaker:you
 五十一，对总谱中后段败；五十二再来，仍败；五十四第三次，才打成平手。那个人没有因见你第三次便少走自己真正会的路。 # beat:sr_forty_eight_4 # scene:sr_mainlandyard # cast:sr_oldfriend # speaker:narrator
+{
+- sr_more_questions:
+照人指的地方一路找下去，你吃过败，也带回过肯讲两句的对手。这场三百余招的胜，头一个该谢的，是那些没把你当口音的院子。 # beat:sr_forty_eight_5 # scene:sr_mainlandyard # cast:sr_oldfriend # speaker:narrator
+- else:
+多留几日重试没接明的那一手，你把这习惯也带了回来。旧对手今天还在变，你便还在他身上有得问。 # beat:sr_forty_eight_6 # scene:sr_mainlandyard # cast:sr_oldfriend # speaker:narrator
+}
 * [把两次败里同一处没接住的变化再摆出来，不拿后来一平擦掉以前。 # cid:sr_admit_repeat]
   ~ sr_repeat_plain = true
-  第二次我以为已经改了，其实只多换一门。 # beat:sr_forty_eight_5 # scene:sr_mainlandyard # cast:sr_oldfriend # speaker:you
-  第三次才没忙着给我认你的门。 # beat:sr_forty_eight_6 # scene:sr_mainlandyard # cast:sr_oldfriend # speaker:sr_oldfriend # mood:sr_oldfriend=amused
-  他在你肘外一碰，你才笑着让开，想请他再来。对方却收了手，指指天色：饭过了两顿，先吃。 # beat:sr_forty_eight_7 # scene:sr_mainlandyard # cast:sr_oldfriend # speaker:narrator
+  第二次我以为已经改了，其实只多换一门。 # beat:sr_forty_eight_7 # scene:sr_mainlandyard # cast:sr_oldfriend # speaker:you
+  第三次才没忙着给我认你的门。 # beat:sr_forty_eight_8 # scene:sr_mainlandyard # cast:sr_oldfriend # speaker:sr_oldfriend # mood:sr_oldfriend=amused
+  他在你肘外一碰，你才笑着让开，想请他再来。对方却收了手，指指天色：饭过了两顿，先吃。 # beat:sr_forty_eight_9 # scene:sr_mainlandyard # cast:sr_oldfriend # speaker:narrator
   -> wudang
 * [再接他今日改过的一手，承认老对手也还在变。 # cid:sr_ask_present]
   ~ sr_repeat_plain = false
-  你原想重走上回的位置，他却换了进路。你跟着退半步，第三次的平也没能替第四次先备好答案。 # beat:sr_forty_eight_8 # scene:sr_mainlandyard # cast:sr_oldfriend # speaker:narrator
-  下回来，别只带一张三年前的我。 # beat:sr_forty_eight_9 # scene:sr_mainlandyard # cast:sr_oldfriend # speaker:sr_oldfriend # mood:sr_oldfriend=intent
+  你原想重走上回的位置，他却换了进路。你跟着退半步，第三次的平也没能替第四次先备好答案。 # beat:sr_forty_eight_10 # scene:sr_mainlandyard # cast:sr_oldfriend # speaker:narrator
+  下回来，别只带一张三年前的我。 # beat:sr_forty_eight_11 # scene:sr_mainlandyard # cast:sr_oldfriend # speaker:sr_oldfriend # mood:sr_oldfriend=intent
   -> wudang
 
 === wudang ===
@@ -280,13 +328,19 @@ VAR sr_legacy = 0
 武当很深。 # beat:sr_wudang_2 # scene:sr_mountainyard # cast:sr_xuanmen # speaker:you
 下山先歇歇腿。后面那几级石阶，雨刚停，比院里滑。 # beat:sr_wudang_3 # scene:sr_mountainyard # cast:sr_xuanmen # speaker:sr_xuanmen # mood:sr_xuanmen=neutral
 少林也去过，没有公开战绩可拿来补一串胜名。五十五岁，江湖有人告诉你，太极山上赵无极还在。他百余岁，早退江湖，既非当代掌门，也不在现今总谱里。 # beat:sr_wudang_4 # scene:sr_mountainyard # cast:sr_xuanmen # speaker:narrator
+{
+- sr_repeat_plain:
+两次败里同一处没接住，你当面摆过，没有拿第三次那场平盖过去。武当停手时你想起这件事——老人不问你的平，问的还是你输的样子。 # beat:sr_wudang_5 # scene:sr_mountainyard # cast:sr_xuanmen # speaker:narrator
+- else:
+老对手也在变——这一课你带上了武当。百余招你自己先停，因为你看见他的脚，正往你原来想逼去的位置外多走半寸。 # beat:sr_wudang_6 # scene:sr_mountainyard # cast:sr_xuanmen # speaker:narrator
+}
 * [照老人的住处上山，请问手，也请问自己的路。 # cid:sr_seek_zhao_plain]
   ~ sr_zhao_request = 1
-  你上山时还以为，只要他够强，自己便能再学一门。过门第一眼却看见老人搬石头，一块一块，放到他要的地方。 # beat:sr_wudang_5 # scene:sr_mountainyard # cast:sr_xuanmen # speaker:narrator
+  你上山时还以为，只要他够强，自己便能再学一门。过门第一眼却看见老人搬石头，一块一块，放到他要的地方。 # beat:sr_wudang_7 # scene:sr_mountainyard # cast:sr_xuanmen # speaker:narrator
   -> five_visits
 * [先看看这位退居老人每日做什么，再开口，不把他的退隐当一座等你攻的榜。 # cid:sr_watch_zhao_work]
   ~ sr_zhao_request = 2
-  老人正在搬石头。你看了半日，没看出一套暗藏的拳；石头确实从这边搬到了那边，院里空出一块能走的地。 # beat:sr_wudang_6 # scene:sr_mountainyard # cast:sr_xuanmen # speaker:narrator
+  老人正在搬石头。你看了半日，没看出一套暗藏的拳；石头确实从这边搬到了那边，院里空出一块能走的地。 # beat:sr_wudang_8 # scene:sr_mountainyard # cast:sr_xuanmen # speaker:narrator
   -> five_visits
 
 === five_visits ===
@@ -296,17 +350,23 @@ VAR sr_legacy = 0
 什么都练。 # beat:sr_five_visits_4 # scene:sr_zhaoyard # cast:sr_zhao # speaker:sr_zhao # mood:sr_zhao=amused
 你问能不能学，他不收。第一日如此，第二日如此，连着五日，都没因你能报出多少场战绩便改口。第五日，他终于反过来问。 # beat:sr_five_visits_5 # scene:sr_zhaoyard # cast:sr_zhao # speaker:narrator
 你为什么要跟我学？ # beat:sr_five_visits_6 # scene:sr_zhaoyard # cast:sr_zhao # speaker:sr_zhao # mood:sr_zhao=intent
+{
+- sr_zhao_request == 1:
+上山那日你直接请问手，也问自己的路。老人不收，五日不改口——你后来才懂，他把这两问当一问：答不出第二句，第一句便不算数。 # beat:sr_five_visits_7 # scene:sr_zhaoyard # cast:sr_zhao # speaker:narrator
+- else:
+你先看了半日他搬石头。第五日他反过来问你要什么时，你答得出他每日做什么——这半日，比二十几场胜更先让他抬头。 # beat:sr_five_visits_8 # scene:sr_zhaoyard # cast:sr_zhao # speaker:narrator
+}
 * [实说因为他比自己强，愿意从这里学起。 # cid:sr_zhao_stronger]
   ~ sr_zhao_honest = true
-  因为你强，所以我想学。 # beat:sr_five_visits_7 # scene:sr_zhaoyard # cast:sr_zhao # speaker:you
-  你学了这么多，哪一家是你的？ # beat:sr_five_visits_8 # scene:sr_zhaoyard # cast:sr_zhao # speaker:sr_zhao # mood:sr_zhao=neutral
-  天都门。 # beat:sr_five_visits_9 # scene:sr_zhaoyard # cast:sr_zhao # speaker:you
-  那是陆玄都的，是你师父的，是蓬莱和中原许多人的。你的呢？ # beat:sr_five_visits_10 # scene:sr_zhaoyard # cast:sr_zhao # speaker:sr_zhao # mood:sr_zhao=neutral
+  因为你强，所以我想学。 # beat:sr_five_visits_9 # scene:sr_zhaoyard # cast:sr_zhao # speaker:you
+  你学了这么多，哪一家是你的？ # beat:sr_five_visits_10 # scene:sr_zhaoyard # cast:sr_zhao # speaker:sr_zhao # mood:sr_zhao=neutral
+  天都门。 # beat:sr_five_visits_11 # scene:sr_zhaoyard # cast:sr_zhao # speaker:you
+  那是陆玄都的，是你师父的，是蓬莱和中原许多人的。你的呢？ # beat:sr_five_visits_12 # scene:sr_zhaoyard # cast:sr_zhao # speaker:sr_zhao # mood:sr_zhao=neutral
   -> whose_road
 * [说自己每次遇到难处又换所学，却仍不知道哪里算自己的。 # cid:sr_zhao_lost]
   ~ sr_zhao_honest = false
-  我从前以为学得够多，就总能再换一条。现在说不出哪一条是我。 # beat:sr_five_visits_11 # scene:sr_zhaoyard # cast:sr_zhao # speaker:you
-  总算说到这里。天都是陆玄都和你师父的，你在蓬莱、中原又学了别人的。你的呢？ # beat:sr_five_visits_12 # scene:sr_zhaoyard # cast:sr_zhao # speaker:sr_zhao # mood:sr_zhao=neutral
+  我从前以为学得够多，就总能再换一条。现在说不出哪一条是我。 # beat:sr_five_visits_13 # scene:sr_zhaoyard # cast:sr_zhao # speaker:you
+  总算说到这里。天都是陆玄都和你师父的，你在蓬莱、中原又学了别人的。你的呢？ # beat:sr_five_visits_14 # scene:sr_zhaoyard # cast:sr_zhao # speaker:sr_zhao # mood:sr_zhao=neutral
   -> whose_road
 
 === whose_road ===
@@ -316,14 +376,20 @@ VAR sr_legacy = 0
 你直接说对的不行？ # beat:sr_whose_road_4 # scene:sr_zhaoyard # cast:sr_zhao # speaker:you
 我要知道，我就能替你返真？ # beat:sr_whose_road_5 # scene:sr_zhaoyard # cast:sr_zhao # speaker:sr_zhao # mood:sr_zhao=amused
 你气得伸手去取棍，碰到晾布，又停下。赵无极已经把湿布移到另一头，回头仍在等你的答复。 # beat:sr_whose_road_6 # scene:sr_zhaoyard # cast:sr_zhao # speaker:narrator
+{
+- sr_zhao_honest:
+因为他强——这一句你说出口便没收回。赵无极留你半年，不是被这句话打动，是这句里没有一个替自己遮的名字。 # beat:sr_whose_road_7 # scene:sr_zhaoyard # cast:sr_zhao # speaker:narrator
+- else:
+说不出哪一条是我。这句话你不肯换个体面的说法，半年里他也不再替你换。 # beat:sr_whose_road_8 # scene:sr_zhaoyard # cast:sr_zhao # speaker:narrator
+}
 * [下山后开个小馆，让普通学生把每天真能做的练习带回来，先听他们怎样用。 # cid:sr_teach_daily]
   ~ sr_teaching_daily = true
-  你原本会让人多站半个时辰。第一个学徒说，站完还得去扛料；你看他回去举木，才知道自己说的松肩，在他的日子里到底卡在哪里。 # beat:sr_whose_road_7 # scene:sr_school # cast:none # speaker:narrator
-  你把时辰拆短，叫他明日带着自己的难处再来。改课的工夫比你原想得长。 # beat:sr_whose_road_8 # scene:sr_school # cast:none # speaker:narrator
+  你原本会让人多站半个时辰。第一个学徒说，站完还得去扛料；你看他回去举木，才知道自己说的松肩，在他的日子里到底卡在哪里。 # beat:sr_whose_road_9 # scene:sr_school # cast:none # speaker:narrator
+  你把时辰拆短，叫他明日带着自己的难处再来。改课的工夫比你原想得长。 # beat:sr_whose_road_10 # scene:sr_school # cast:none # speaker:narrator
   -> twelve_students
 * [下山后开个小馆，让学生两两接住对方的步，教他们能指出彼此真正站错的地方。 # cid:sr_teach_pair]
   ~ sr_teaching_daily = false
-  你把一次练习停在两人之间，没替较慢的那人迈完。他们先互说哪里难，再请你看。收工迟的学生只能另约一班，课得分成两次，能跟上的人却开始自己接着练。 # beat:sr_whose_road_9 # scene:sr_school # cast:none # speaker:narrator
+  你把一次练习停在两人之间，没替较慢的那人迈完。他们先互说哪里难，再请你看。收工迟的学生只能另约一班，课得分成两次，能跟上的人却开始自己接着练。 # beat:sr_whose_road_11 # scene:sr_school # cast:none # speaker:narrator
   -> twelve_students
 
 === twelve_students ===
@@ -400,6 +466,12 @@ VAR sr_legacy = 0
 我怎么知道。刚才只剩你一个。 # beat:sr_own_hand_5 # scene:sr_mainlandyard # cast:sr_oldfriend # speaker:sr_oldfriend # mood:sr_oldfriend=amused
 六十一，返真。你还站在原处，旧对手先走到水缸边，拿走了你本来伸手要取的那只碗。 # beat:sr_own_hand_6 # scene:sr_mainlandyard # cast:sr_oldfriend # speaker:narrator
 都这岁数了，你这回连什么时候进去的都要问我。 # beat:sr_own_hand_7 # scene:sr_mainlandyard # cast:sr_oldfriend # speaker:sr_oldfriend # mood:sr_oldfriend=amused
+{
+- sr_own_answer == 1:
+不追名字，先接眼前的人。后来立门分三条主传，你说这便是那天的第二层：接人，不是接谱。 # beat:sr_own_hand_8 # scene:sr_mainlandyard # cast:sr_oldfriend # speaker:narrator
+- else:
+各家的名字过去了，脚下那一步留下了。你后来说学我者，不得终于我——那一掌停在后颈之前，就是终了你自己的地方。 # beat:sr_own_hand_9 # scene:sr_mainlandyard # cast:sr_oldfriend # speaker:narrator
+}
 -> new_gate
 
 === new_gate ===
@@ -429,31 +501,43 @@ VAR sr_legacy = 0
 - else:
 旧馆两人接得住的课，在新门还接着。可分班时的缺口也一同带来，你给晚班留了固定时辰，不因新客来问就总挪。卖鱼人愿意代看早班，却说清赶集日不能来，你得另找肯接的人。 # beat:sr_gate_rule_4 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:narrator
 }
+{
+- sr_rule_demonstrate:
+开门先让两人各走各的一步——门规头一条便是这么来的。学我者，不得终于我，写的不是客气，是那天你轮流接手时量出的两段不同距离。 # beat:sr_gate_rule_5 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:narrator
+- else:
+哪一种教法还跟不上，第一日就有人当众答了。门规写在改完的课表后头，所以它一挂上去，就有人能照着走。 # beat:sr_gate_rule_6 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:narrator
+}
 * [有人要称第七大派时，说新门还太年轻，留给后人来证明。 # cid:sr_admit_young_gate]
   ~ sr_gate_answer = 1
-  因为我还没死。等我死一百年，它还站着，再谈。 # beat:sr_gate_rule_5 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:you
-  那这匾先不替你多添一字。饭总不能等一百年，里头那桌先吃。 # beat:sr_gate_rule_6 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:sr_seller # mood:sr_seller=amused
+  因为我还没死。等我死一百年，它还站着，再谈。 # beat:sr_gate_rule_7 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:you
+  那这匾先不替你多添一字。饭总不能等一百年，里头那桌先吃。 # beat:sr_gate_rule_8 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:sr_seller # mood:sr_seller=amused
   -> seventh
 * [有人要称第七大派时，先问自己不在以后谁还能继续教。 # cid:sr_ask_next_teacher]
   ~ sr_gate_answer = 2
-  我还活着，哪里就算到头了。等我死一百年，你再看它还站不站着。 # beat:sr_gate_rule_7 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:you
-  那先叫后边那班进来，别把一百年的人都堵在今天门外。 # beat:sr_gate_rule_8 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:sr_carpenter # mood:sr_carpenter=amused
+  我还活着，哪里就算到头了。等我死一百年，你再看它还站不站着。 # beat:sr_gate_rule_9 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:you
+  那先叫后边那班进来，别把一百年的人都堵在今天门外。 # beat:sr_gate_rule_10 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:sr_carpenter # mood:sr_carpenter=amused
   -> seventh
 
 === seventh ===
 你笑着把来客带进门，没把江湖抬来的大称呼用来压住眼前这些还要吃饭、赶集、交班的人。 # beat:sr_seventh_1 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:narrator
 往后的岁月，你到返真中段附近，并未走到后段。年长后，排行的帖子渐渐少接；真有人远来，你常指向院里，让他先找徒弟。 # beat:sr_seventh_2 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:narrator
+{
+- sr_gate_answer == 1:
+太年轻，留给后人——这句话后来常被引。引的人多半不知道，你说时心里想的是祖堂那两幅旧图：没有一幅占满整面墙。 # beat:sr_seventh_3 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:narrator
+- else:
+你先问了自己不在以后谁教。门人追问下一代还能不能接住，你没有替尚未发生的事许诺，只叫他明日来接一班课，自己留下看他怎样教。 # beat:sr_seventh_4 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:narrator
+}
 * [晚年少接远行，把能教的日子留在院中，亲眼看别人怎样不再照你走。 # cid:sr_late_teach]
   ~ sr_legacy = 1
-  先找我徒弟。找完觉得我教得不对，再来问我。 # beat:sr_seventh_3 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:you
-  年轻时总想多打一场，今日你把一张请帖翻过来，记下明早院里谁还要来。 # beat:sr_seventh_4 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:narrator
-  推掉这一次，就少见一个也许值得见的人。你没有把留下说成天下所有路都已看完。 # beat:sr_seventh_5 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:narrator
+  先找我徒弟。找完觉得我教得不对，再来问我。 # beat:sr_seventh_5 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:you
+  年轻时总想多打一场，今日你把一张请帖翻过来，记下明早院里谁还要来。 # beat:sr_seventh_6 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:narrator
+  推掉这一次，就少见一个也许值得见的人。你没有把留下说成天下所有路都已看完。 # beat:sr_seventh_7 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:narrator
   -> late_choice
 * [晚年把自己走过的海路讲给后来的出行人，让他们问清自己的下一程。 # cid:sr_late_sea]
   ~ sr_legacy = 2
-  你少去一班自己还想看的课，坐到来信人与年轻弟子之间，讲怎样转船、怎样问一个陌生人真正肯说的话。 # beat:sr_seventh_6 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:narrator
-  我走过的只够把你送到那里。到了以后，别拿我这封信当所有人都欠你的请帖。 # beat:sr_seventh_7 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:you
-  弟子把下一班接起来，你得忍住不每隔一刻便回头改他的手。 # beat:sr_seventh_8 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:narrator
+  你少去一班自己还想看的课，坐到来信人与年轻弟子之间，讲怎样转船、怎样问一个陌生人真正肯说的话。 # beat:sr_seventh_8 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:narrator
+  我走过的只够把你送到那里。到了以后，别拿我这封信当所有人都欠你的请帖。 # beat:sr_seventh_9 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:you
+  弟子把下一班接起来，你得忍住不每隔一刻便回头改他的手。 # beat:sr_seventh_10 # scene:sr_newhall # cast:sr_carpenter,sr_seller # speaker:narrator
   -> late_choice
 
 === late_choice ===
@@ -479,15 +563,21 @@ VAR sr_legacy = 0
 祖师，我没给你丢人。 # beat:sr_old_pages_3 # scene:sr_lateyard # cast:sr_successor # speaker:you
 这卷要放在最前面么？ # beat:sr_old_pages_4 # scene:sr_lateyard # cast:sr_successor # speaker:sr_successor # mood:sr_successor=intent
 年轻人抱着那几十页，等你一句。你看见他手上仍带今早练过的薄灰。 # beat:sr_old_pages_5 # scene:sr_lateyard # cast:sr_successor # speaker:narrator
+{
+- sr_old_visit:
+那一夜留旧友多坐的一阵，谁也没少记谁接错的一步。后来残卷到你手里，你先想起的也是这个：真话都在没急着散的桌上说过。 # beat:sr_old_pages_6 # scene:sr_lateyard # cast:sr_successor # speaker:narrator
+- else:
+旧友看了半日后辈接课才走，临别说你院里的人不像你。你答本来就不该像——这句你后来也用来回那句学我者，不得终于我。 # beat:sr_old_pages_7 # scene:sr_lateyard # cast:sr_successor # speaker:narrator
+}
 * [让他把来历与疑处一并留下，卷可以读，不能替祖师编一个已经证明的终局。 # cid:sr_pages_as_question]
   ~ sr_pages_plain = true
-  疑处也写进去。我走过的，你能问我；我没见过的，不替我说见过。 # beat:sr_old_pages_6 # scene:sr_lateyard # cast:sr_successor # speaker:you
-  他取一张旁注，记下转交来路。写到成卷年月，笔尖停住，抬头看你；你摇头，他便把那一格空下。 # beat:sr_old_pages_7 # scene:sr_lateyard # cast:sr_successor # speaker:narrator
+  疑处也写进去。我走过的，你能问我；我没见过的，不替我说见过。 # beat:sr_old_pages_8 # scene:sr_lateyard # cast:sr_successor # speaker:you
+  他取一张旁注，记下转交来路。写到成卷年月，笔尖停住，抬头看你；你摇头，他便把那一格空下。 # beat:sr_old_pages_9 # scene:sr_lateyard # cast:sr_successor # speaker:narrator
   -> last_room
 * [把残卷同后来人的新路记放在一处，注明据说，不让后来的脚步全停在一个旧名下。 # cid:sr_pages_beside_routes]
   ~ sr_pages_plain = false
-  注明据说。再把你们新走的那几条也放来，别叫这一叠把后面的都压住。 # beat:sr_old_pages_8 # scene:sr_lateyard # cast:sr_successor # speaker:you
-  他把旧卷轻轻放平，旁边留出能再添纸的地方。你看了一会，叫他明早照常去练，别为摆卷误了自己的脚。 # beat:sr_old_pages_9 # scene:sr_lateyard # cast:sr_successor # speaker:narrator
+  注明据说。再把你们新走的那几条也放来，别叫这一叠把后面的都压住。 # beat:sr_old_pages_10 # scene:sr_lateyard # cast:sr_successor # speaker:you
+  他把旧卷轻轻放平，旁边留出能再添纸的地方。你看了一会，叫他明早照常去练，别为摆卷误了自己的脚。 # beat:sr_old_pages_11 # scene:sr_lateyard # cast:sr_successor # speaker:narrator
   -> last_room
 
 === last_room ===

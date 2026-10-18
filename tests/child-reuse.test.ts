@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -5,13 +6,14 @@ import {createHash} from 'node:crypto';
 import {VNRuntime,restoreVN} from '../src/vn-runtime.ts';
 import {resolvePortrait,characters} from '../src/catalog.ts';
 import content from '../src/generated/sea-tide.json' with {type:'json'};
+import contentArchive from '../src/generated/sea-tide-after-child.json' with {type:'json'};
 import previousContent from '../src/generated/sea-tide-before-child.json' with {type:'json'};
 import archive from '../src/generated/sea-tide-v1.json' with {type:'json'};
-const version='sea-tide-2.0.0',edition={content,previousContent,version};
+const version='sea-tide-2.0.0',edition={content,previousContent,version},freezeEdition={content:contentArchive,previousContent,version};
 function at(data:Record<string,unknown>,id:string,v=version){const s=new VNRuntime(data,v);while(s.frame.id!==id){assert.ok(!s.frame.ending,id);s.frame.choices.length?s.choose(s.frame.choices[0].id):s.advance()}return s}
 
 test('Child portrait changes only trusted childhood presentations; both full old V2 paths retain every word, choice, world and restorable snapshot',()=>{
- const rows=[];for(const side of [0,1]){const a=new VNRuntime(previousContent,version),b=new VNRuntime(content,version),changed=[];while(true){assert.equal(a.frame.id,b.frame.id);assert.equal(a.frame.text,b.frame.text);assert.deepEqual(a.frame.choices,b.frame.choices);const old=a.save(),fresh=b.save();assert.deepEqual(JSON.parse(old.runtime).variablesState,JSON.parse(fresh.runtime).variablesState);const delta=old.runtime!==fresh.runtime||JSON.stringify(old.presentation)!==JSON.stringify(fresh.presentation);const restored=restoreVN(JSON.stringify(old),edition);if(delta){assert.match(a.frame.id,/^st_(trial|four_tests)_\d+$/);assert.equal(restored.migration,'illustration-staging');assert.equal(restored.save.savedAt,old.savedAt);assert.equal(restored.save.presentation.stage.looks?.st_an,'childV2');changed.push(a.frame.id)}else assert.ok(!restored.migrated);assert.deepEqual(restored.save.presentation,fresh.presentation);if(a.frame.ending)break;a.frame.choices.length?(a.choose(a.frame.choices[side].id),b.choose(b.frame.choices[side].id)):(a.advance(),b.advance())}assert.ok(changed.length>5);assert.deepEqual(a.commands,b.commands);rows.push({side,changed,ending:b.frame.ending,wordsAndCommandsIdentical:true})}writeFileSync('docs/evidence/v6/child-reuse-delta.json',JSON.stringify(rows,null,2)+'\n');
+ const rows=[];for(const side of [0,1]){const a=new VNRuntime(previousContent,version),b=new VNRuntime(contentArchive,version),changed=[];while(true){assert.equal(a.frame.id,b.frame.id);assert.equal(a.frame.text,b.frame.text);assert.deepEqual(a.frame.choices,b.frame.choices);const old=a.save(),fresh=b.save();assert.deepEqual(JSON.parse(old.runtime).variablesState,JSON.parse(fresh.runtime).variablesState);const delta=old.runtime!==fresh.runtime||JSON.stringify(old.presentation)!==JSON.stringify(fresh.presentation);const restored=restoreVN(JSON.stringify(old),freezeEdition);if(delta){assert.match(a.frame.id,/^st_(trial|four_tests)_\d+$/);assert.equal(restored.migration,'illustration-staging');assert.equal(restored.save.savedAt,old.savedAt);assert.equal(restored.save.presentation.stage.looks?.st_an,'childV2');changed.push(a.frame.id)}else assert.ok(!restored.migrated);assert.deepEqual(restored.save.presentation,fresh.presentation);if(a.frame.ending)break;a.frame.choices.length?(a.choose(a.frame.choices[side].id),b.choose(b.frame.choices[side].id)):(a.advance(),b.advance())}assert.ok(changed.length>5);assert.deepEqual(a.commands,b.commands);rows.push({side,changed,ending:b.frame.ending,wordsAndCommandsIdentical:true})}writeFileSync(evidencePath('docs/evidence/v6/child-reuse-delta.json'),JSON.stringify(rows,null,2)+'\n');
 });
 
 test('Child update cannot accept forged stage, world, commands, wrong edition or missing frozen authority',()=>{

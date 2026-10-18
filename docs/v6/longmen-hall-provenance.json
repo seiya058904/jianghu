@@ -1,7 +1,7 @@
 {
   "tool": "built-in image_gen",
-  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-fe2f481a-d805-4f70-9713-095d4bd93342.png",
+  "source": "[author-local-path]",
   "prompt": "Use case: historical-scene. Production illustrated environment background for Jianghu Chinese wuxia visual novel. Wide landscape3:2. Interior of a modest local martial school in a northern Chinese riverside market town. Worn timber columns, one plain central practice post, racks of simple wooden dao training sabers along the back wall, a low bench with a water bowl and old cloth wrist wraps, open double doors framing a glimpse of distant quiet riverbank poplars. Warm late afternoon light. Functional local school rather than a grand monastery. Empty central foreground. Fine muted naturalistic watercolor and ink illustration, historically grounded timber and stone, tactile understated brushwork, atmospheric depth, coherent restrained Jianghu visual world. Bottom foreground visually quiet for HTML dialogue. No people, no silhouettes, no text, no logos, no UI, no watermark, no magical effects.",
-  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/longmen-hall.webp",
+  "output": "./public/art/v6/longmen-hall.webp",
   "review": "Reviewed native image: coherent timber/stone or lake working space, empty foreground, no named figure or text. Mapped to matching chronicle scenes. Fair uses one image for several related scenes and is counted once."
 }

@@ -84,11 +84,11 @@ function markEnding() {
   });
 }
 function start() {
-  // Back up before touching the auto slot. If storage fails, keep the old game.
+  // A failed backup leaves the existing game intact; a fresh game can run in memory.
   preserveAuto();
   const next = new Session();
-  persist(next);
   session = next; savedScroll=0; mode='read'; location.hash='read'; render(true);
+  saveCurrent();
 }
 function confirmNew() {
   if(session || read('auto')) {

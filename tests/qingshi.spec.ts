@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import {test,expect} from '@playwright/test';
 import {writeFileSync} from 'node:fs';
 import {VNRuntime} from '../src/vn-runtime.ts';
@@ -14,17 +15,17 @@ for(const route of [0,1])test(`Qingshi actual complete life route ${route}: expl
   if(!scenes.has(s.frame.stage.scene)){
    scenes.add(s.frame.stage.scene);
    if(['qs_yard17','qs_wall32','qs_wei46','qs_home70','qs_wall92','qs_after'].includes(s.frame.stage.scene)){
-    await page.screenshot({path:`docs/evidence/v6/qingshi-editorial-archive-v1-${s.frame.stage.scene}-${route}.png`});
+    await page.screenshot({path:evidencePath(`docs/evidence/v6/qingshi-editorial-archive-v1-${s.frame.stage.scene}-${route}.png`)});
    }
    if(s.frame.stage.scene==='qs_wall92')await expect(page.locator('#scene-time')).toContainText('九十二岁');
   }
   if(s.frame.choices.length){const id=s.frame.choices[route].id;await page.locator(`[data-choice="${id}"]`).click();s.choose(id);choices++}else{await page.locator('#advance-button').click();s.advance()}
  }
  await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(choices).toBe(29);await expect(page.locator('#ending-actions')).toContainText(route?'下一道门':'五个人的旧录');
- expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:`docs/evidence/v6/qingshi-editorial-archive-v1-ending-${route}.png`});
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:evidencePath(`docs/evidence/v6/qingshi-editorial-archive-v1-ending-${route}.png`)});
  await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);
  expect(await page.evaluate(()=>localStorage.getItem('jianghu:campaign:tide:v1:sentinel'))).toBe('v5-kept');expect(await page.evaluate(()=>localStorage.getItem('jianghu:chronicle:kuhe:v1:sentinel'))).toBe('kuhe-kept');expect(errors).toEqual([]);
- writeFileSync(`docs/evidence/v6/qingshi-editorial-archive-v1-browser-${route}.json`,JSON.stringify({actualBrowserInputs:true,externalHuman:false,beats:s.frames.length,choices,ending:s.frame.ending,scenes:[...scenes],errors},null,2));
+ writeFileSync(evidencePath(`docs/evidence/v6/qingshi-editorial-archive-v1-browser-${route}.json`),JSON.stringify({actualBrowserInputs:true,externalHuman:false,beats:s.frames.length,choices,ending:s.frame.ending,scenes:[...scenes],errors},null,2));
 });
 test('Qingshi work download retains an unvisited late chapter offline on root and subpath',async({browser})=>{
  for(const root of ['http://127.0.0.1:4173/','http://127.0.0.1:4175/Jianghu/']){
@@ -46,7 +47,7 @@ test('Qingshi age phases and empty frontier gate render at seven sizes; deceased
    const boxes=await page.locator('#dialogue-panel,#choices-panel:not([hidden])').evaluateAll(nodes=>nodes.map(n=>{const r=n.getBoundingClientRect();return{x:r.x,right:r.right,y:r.y,bottom:r.bottom}}));
    expect(boxes.every(r=>r.x>=0&&r.right<=width+1&&r.y>=0&&r.bottom<=height+1)).toBe(true);if(boxes.length===2)expect(boxes[0].bottom).toBeLessThanOrEqual(boxes[1].y+1);
    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
-   if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/qingshi-editorial-archive-v1-ages-${target}-${width}.png`});
+   if([360,800,1440].includes(width))await page.screenshot({path:evidencePath(`docs/evidence/v6/qingshi-editorial-archive-v1-ages-${target}-${width}.png`)});
   }
   await context.close();
  }

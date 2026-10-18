@@ -46,18 +46,24 @@ VAR lm_future = 0
 别急着找一样。你没走过我的路，也不用替我再撞一次柱。 # beat:lm_old_blade_4 # scene:lm_hall # cast:lm_xu # speaker:lm_xu # mood:lm_xu=amused
 他是伏河刀宋九川的再传。你听过镇河门护盐船、走镖路，却第一次见他说起少年时，笑得这样不留面子。 # beat:lm_old_blade_5 # scene:lm_hall # cast:lm_xu # speaker:narrator
 二十六岁霍岭口，我第四十二刀撞脱彭四海兵刃。名号留下了，左肩也留下了。 # beat:lm_old_blade_6 # scene:lm_hall # cast:lm_xu # speaker:lm_xu # mood:lm_xu=neutral
+{
+- lm_asked:
+你举过刀，才知道落完没有地方接。此刻听他讲少年时撞柱的旧事，你听得比谁都仔细——同一处亏，不必再吃第二回。 # beat:lm_old_blade_7 # scene:lm_hall # cast:lm_xu # speaker:narrator
+- else:
+柱子今日替你省了一场输。此刻他讲少年时撞脱别人兵刃的旧事，你先想的是自己方才那几下撞得像不像。 # beat:lm_old_blade_8 # scene:lm_hall # cast:lm_xu # speaker:narrator
+}
 * [问旧伤现在怎样影响他，不把战绩当没受过伤。 # cid:lm_ask_wound]
   ~ lm_wound_known = true
-  您刚才按刀，左脚先让了半寸，也是因为肩？ # beat:lm_old_blade_7 # scene:lm_hall # cast:lm_xu # speaker:you
-  肩与脚不是两件无关的东西。但看出半寸，不等于你知道怎样改。 # beat:lm_old_blade_8 # scene:lm_hall # cast:lm_xu # speaker:lm_xu # mood:lm_xu=intent
-  那我先别替您扶。 # beat:lm_old_blade_9 # scene:lm_hall # cast:lm_xu # speaker:you
-  该扶的时候会叫你。 # beat:lm_old_blade_10 # scene:lm_hall # cast:lm_xu # speaker:lm_xu # mood:lm_xu=neutral
+  您刚才按刀，左脚先让了半寸，也是因为肩？ # beat:lm_old_blade_9 # scene:lm_hall # cast:lm_xu # speaker:you
+  肩与脚不是两件无关的东西。但看出半寸，不等于你知道怎样改。 # beat:lm_old_blade_10 # scene:lm_hall # cast:lm_xu # speaker:lm_xu # mood:lm_xu=intent
+  那我先别替您扶。 # beat:lm_old_blade_11 # scene:lm_hall # cast:lm_xu # speaker:you
+  该扶的时候会叫你。 # beat:lm_old_blade_12 # scene:lm_hall # cast:lm_xu # speaker:lm_xu # mood:lm_xu=neutral
   -> qinghe
 * [问四十岁左手换刀，为何没从此每回都换。 # cid:lm_ask_left]
   ~ lm_wound_known = false
-  第六十一合胜杜平川那一下，我想学。 # beat:lm_old_blade_11 # scene:lm_hall # cast:lm_xu # speaker:you
-  你想学换左手，还是想学临时还能怎么走？ # beat:lm_old_blade_12 # scene:lm_hall # cast:lm_xu # speaker:lm_xu # mood:lm_xu=sharp
-  他把木刀交到你左手。你连第一刀都走不顺，那一下胜场忽然离得很远。 # beat:lm_old_blade_13 # scene:lm_hall # cast:lm_xu # speaker:narrator
+  第六十一合胜杜平川那一下，我想学。 # beat:lm_old_blade_13 # scene:lm_hall # cast:lm_xu # speaker:you
+  你想学换左手，还是想学临时还能怎么走？ # beat:lm_old_blade_14 # scene:lm_hall # cast:lm_xu # speaker:lm_xu # mood:lm_xu=sharp
+  他把木刀交到你左手。你连第一刀都走不顺，那一下胜场忽然离得很远。 # beat:lm_old_blade_15 # scene:lm_hall # cast:lm_xu # speaker:narrator
   -> qinghe
 
 === qinghe ===
@@ -65,15 +71,21 @@ VAR lm_future = 0
 他特地来问刀？ # beat:lm_qinghe_2 # scene:lm_hall # cast:lm_xu # speaker:you
 他先问宋老晚年还使不使刀。我说七十八以后，几乎只教弟子。 # beat:lm_qinghe_3 # scene:lm_hall # cast:lm_xu # speaker:lm_xu # mood:lm_xu=neutral
 许重山把木刀搁在膝上。那一回与他交手的，不是宋老，也不是今日的你。 # beat:lm_qinghe_4 # scene:lm_hall # cast:lm_xu # speaker:narrator
+{
+- lm_wound_known:
+肩与脚不是两件无关的东西——这句话你记住了。听他回述清和看破左脚那半寸，你先想的不是名字，是那半寸怎样带了一辈子。 # beat:lm_qinghe_5 # scene:lm_hall # cast:lm_xu # speaker:narrator
+- else:
+换左手为何没每回都换——他自己答过你。旧事里这一刀走的仍是右手，你如今听得出：那不是没改，是改过以后还要活着打。 # beat:lm_qinghe_6 # scene:lm_hall # cast:lm_xu # speaker:narrator
+}
 * [先问一个武当道人为何还认得宋老的旧刀。 # cid:lm_ask_qinghe_friend]
-  他认得这刀，是以前也到过镇河门？ # beat:lm_qinghe_5 # scene:lm_hall # cast:lm_xu # speaker:you
-  四十余年前，宋老护药过伏牛山，和他一位师兄同行。清和这趟先访旧，才碰见我这把没放稳的刀。 # beat:lm_qinghe_6 # scene:lm_hall # cast:lm_xu # speaker:lm_xu # mood:lm_xu=calm
-  他说到护药时，先把刀鞘边一块旧皮扶平，没有先报老人排第几。 # beat:lm_qinghe_7 # scene:lm_hall # cast:lm_xu # speaker:narrator
+  他认得这刀，是以前也到过镇河门？ # beat:lm_qinghe_7 # scene:lm_hall # cast:lm_xu # speaker:you
+  四十余年前，宋老护药过伏牛山，和他一位师兄同行。清和这趟先访旧，才碰见我这把没放稳的刀。 # beat:lm_qinghe_8 # scene:lm_hall # cast:lm_xu # speaker:lm_xu # mood:lm_xu=calm
+  他说到护药时，先把刀鞘边一块旧皮扶平，没有先报老人排第几。 # beat:lm_qinghe_9 # scene:lm_hall # cast:lm_xu # speaker:narrator
   -> qinghe_yard
 * [问玄门九席第九，为什么连贺老也不能拿来直接比。 # cid:lm_ask_qinghe_ninth]
-  第九和河中第一，总不是一张纸上两个数？ # beat:lm_qinghe_8 # scene:lm_hall # cast:lm_xu # speaker:you
-  不是。我拿木刀，他只取藤条；我那时只想接住，哪先知道差多少。 # beat:lm_qinghe_9 # scene:lm_hall # cast:lm_xu # speaker:lm_xu # mood:lm_xu=intent
-  他转过木刀。你要听的是他亲自接过的三下。 # beat:lm_qinghe_10 # scene:lm_hall # cast:lm_xu # speaker:narrator
+  第九和河中第一，总不是一张纸上两个数？ # beat:lm_qinghe_10 # scene:lm_hall # cast:lm_xu # speaker:you
+  不是。我拿木刀，他只取藤条；我那时只想接住，哪先知道差多少。 # beat:lm_qinghe_11 # scene:lm_hall # cast:lm_xu # speaker:lm_xu # mood:lm_xu=intent
+  他转过木刀。你要听的是他亲自接过的三下。 # beat:lm_qinghe_12 # scene:lm_hall # cast:lm_xu # speaker:narrator
   -> qinghe_yard
 
 === qinghe_yard ===
@@ -98,17 +110,23 @@ VAR lm_future = 0
 第一刀，藤条搭在刀侧，没有把木刀震飞。许重山的右肘忽然无处可落。 # beat:lm_qinghe_first_1 # scene:lm_qingheyard # cast:lm_xu,lm_qinghe # speaker:narrator # action:第一刀 · 右肘无处落
 我把他留在刀外，自己的肘却没地方收。 # beat:lm_qinghe_first_2 # scene:lm_qingheyard # cast:lm_xu,lm_qinghe # speaker:you
 清和并不等他解释完。藤条沿刀背一滑，第二刀走到一半，胸前已空。 # beat:lm_qinghe_first_3 # scene:lm_qingheyard # cast:lm_xu,lm_qinghe # speaker:narrator
+{
+- lm_memory_foot:
+左脚压回旧谱位置、肩跟着绷紧——这一换的代价，许重山自己付过。清和的藤条等它起势，等的就是这一寸换来的紧。 # beat:lm_qinghe_first_4 # scene:lm_qingheyard # cast:lm_xu,lm_qinghe # speaker:narrator
+- else:
+先走自己惯熟的刀——藤条搭来时他才发现肘无处落。不是脚下错了，是熟路走到一半，人才问出下一处。 # beat:lm_qinghe_first_5 # scene:lm_qingheyard # cast:lm_xu,lm_qinghe # speaker:narrator
+}
 * [先收右肘，不强追先前定好的刀头。 # cid:lm_old_close_elbow]
   ~ lm_memory_elbow = true
-  他把肘收回来，原先想追的地方便到不了。清和的藤条却仍没离开那一道空门。 # beat:lm_qinghe_first_4 # scene:lm_qingheyard # cast:lm_xu,lm_qinghe # speaker:narrator
-  你想改这一刀的末尾？ # beat:lm_qinghe_first_5 # scene:lm_qingheyard # cast:lm_xu,lm_qinghe # speaker:lm_qinghe # mood:lm_qinghe=neutral
-  是。可是前半截已经走出去了。 # beat:lm_qinghe_first_6 # scene:lm_qingheyard # cast:lm_xu,lm_qinghe # speaker:you
+  他把肘收回来，原先想追的地方便到不了。清和的藤条却仍没离开那一道空门。 # beat:lm_qinghe_first_6 # scene:lm_qingheyard # cast:lm_xu,lm_qinghe # speaker:narrator
+  你想改这一刀的末尾？ # beat:lm_qinghe_first_7 # scene:lm_qingheyard # cast:lm_xu,lm_qinghe # speaker:lm_qinghe # mood:lm_qinghe=neutral
+  是。可是前半截已经走出去了。 # beat:lm_qinghe_first_8 # scene:lm_qingheyard # cast:lm_xu,lm_qinghe # speaker:you
   -> qinghe_third
 * [仍把第二刀送到原定处，亲自试这条路是否真走死。 # cid:lm_old_press_end]
   ~ lm_memory_elbow = false
-  木刀继续向原来定好的地方走。胸前空着，清和不必追刀，只把藤条留在那里。 # beat:lm_qinghe_first_7 # scene:lm_qingheyard # cast:lm_xu,lm_qinghe # speaker:narrator
-  我若补第三刀…… # beat:lm_qinghe_first_8 # scene:lm_qingheyard # cast:lm_xu,lm_qinghe # speaker:you
-  请。 # beat:lm_qinghe_first_9 # scene:lm_qingheyard # cast:lm_xu,lm_qinghe # speaker:lm_qinghe # mood:lm_qinghe=neutral
+  木刀继续向原来定好的地方走。胸前空着，清和不必追刀，只把藤条留在那里。 # beat:lm_qinghe_first_9 # scene:lm_qingheyard # cast:lm_xu,lm_qinghe # speaker:narrator
+  我若补第三刀…… # beat:lm_qinghe_first_10 # scene:lm_qingheyard # cast:lm_xu,lm_qinghe # speaker:you
+  请。 # beat:lm_qinghe_first_11 # scene:lm_qingheyard # cast:lm_xu,lm_qinghe # speaker:lm_qinghe # mood:lm_qinghe=neutral
   -> qinghe_third
 
 === qinghe_third ===
@@ -230,17 +248,23 @@ VAR lm_future = 0
 我慢了半分。 # beat:lm_xu_bout_3 # scene:lm_challenge # cast:lm_xu,lm_shi # speaker:lm_xu # mood:lm_xu=calm
 只有半分。 # beat:lm_xu_bout_4 # scene:lm_challenge # cast:lm_xu,lm_shi # speaker:lm_shi # mood:lm_shi=neutral
 许先收刀。你站在棚外，最想听见的那声胜没有来，他却比你稳得多。 # beat:lm_xu_bout_5 # scene:lm_challenge # cast:lm_xu,lm_shi # speaker:narrator
+{
+- lm_courtesy:
+他若输了也照样行礼——这一句石惊川记下了。到许重山这一场，两人收招时都是先按礼，再论那半分。 # beat:lm_xu_bout_6 # scene:lm_challenge # cast:lm_xu,lm_shi # speaker:narrator
+- else:
+你只把场地让开，没有替谁圆过一句。笑声停了以后人该站的地方，此刻就摆在眼前。 # beat:lm_xu_bout_7 # scene:lm_challenge # cast:lm_xu,lm_shi # speaker:narrator
+}
 * [照实报一百一十九合，不拿旧伤替许解释。 # cid:lm_name_loss]
   ~ lm_record_true = true
-  许先生慢半分。记这一场。 # beat:lm_xu_bout_6 # scene:lm_challenge # cast:lm_xu,lm_shi # speaker:you
-  嗯。我的肩没拦着我出来，就别等输了才忽然替它说话。 # beat:lm_xu_bout_7 # scene:lm_challenge # cast:lm_xu,lm_shi # speaker:lm_xu # mood:lm_xu=calm
-  他的后手我有几回没看清。也记着。 # beat:lm_xu_bout_8 # scene:lm_challenge # cast:lm_xu,lm_shi # speaker:lm_shi # mood:lm_shi=intent
+  许先生慢半分。记这一场。 # beat:lm_xu_bout_8 # scene:lm_challenge # cast:lm_xu,lm_shi # speaker:you
+  嗯。我的肩没拦着我出来，就别等输了才忽然替它说话。 # beat:lm_xu_bout_9 # scene:lm_challenge # cast:lm_xu,lm_shi # speaker:lm_xu # mood:lm_xu=calm
+  他的后手我有几回没看清。也记着。 # beat:lm_xu_bout_10 # scene:lm_challenge # cast:lm_xu,lm_shi # speaker:lm_shi # mood:lm_shi=intent
   -> sore
 * [先不在众人前评说，问许是否要水和座位。 # cid:lm_ask_private]
   ~ lm_record_true = false
-  水在这里。您要坐，我搬过来；不要我就放边上。 # beat:lm_xu_bout_9 # scene:lm_challenge # cast:lm_xu,lm_shi # speaker:you
-  放边上。你脸倒比我白。 # beat:lm_xu_bout_10 # scene:lm_challenge # cast:lm_xu,lm_shi # speaker:lm_xu # mood:lm_xu=amused
-  他没有让你改记录。你也没把没说出口的旧伤当成众人该默认的理由。 # beat:lm_xu_bout_11 # scene:lm_challenge # cast:lm_xu,lm_shi # speaker:narrator
+  水在这里。您要坐，我搬过来；不要我就放边上。 # beat:lm_xu_bout_11 # scene:lm_challenge # cast:lm_xu,lm_shi # speaker:you
+  放边上。你脸倒比我白。 # beat:lm_xu_bout_12 # scene:lm_challenge # cast:lm_xu,lm_shi # speaker:lm_xu # mood:lm_xu=amused
+  他没有让你改记录。你也没把没说出口的旧伤当成众人该默认的理由。 # beat:lm_xu_bout_13 # scene:lm_challenge # cast:lm_xu,lm_shi # speaker:narrator
   -> sore
 
 === sore ===
@@ -250,40 +274,46 @@ VAR lm_future = 0
 你刀改过以后，我有时也不知道。问我的工夫，先把自己那只肩放下。 # beat:lm_sore_4 # scene:lm_hall # cast:lm_xu,lm_luo # speaker:lm_luo # mood:lm_luo=amused
 你要将院里的重木架搬到混元门。木刀练过的手一握绳，就知道今日还有没有余力。 # beat:lm_sore_5 # scene:lm_hall # cast:lm_xu,lm_luo # speaker:narrator
 {
+- lm_record_true:
+一百一十九合照实记了，没拿旧伤垫一句。后来罗天庆记贺老的十九、三十二、四十一，也都这样一招一合记着。 # beat:lm_sore_6 # scene:lm_hall # cast:lm_xu,lm_luo # speaker:narrator
+- else:
+水放在边上，记录一个字没改。此后你在场边只做两件事：递水，和等本人自己开口。 # beat:lm_sore_7 # scene:lm_hall # cast:lm_xu,lm_luo # speaker:narrator
+}
+{
 - lm_early_route == 1:
 {
 - lm_early_practice:
-你早先带着走过退线的新门人已站到侧门，先让后排的人退一步，再转身给抬架的留道。 # beat:lm_sore_6 # scene:lm_hall # cast:lm_xu # speaker:narrator
-刚才那一步你还记得？ # beat:lm_sore_7 # scene:lm_hall # cast:lm_xu # speaker:you
-他真走过，不是背出了纸。你去接架，他能守这一小段。 # beat:lm_sore_8 # scene:lm_hall # cast:lm_xu # speaker:lm_xu # mood:lm_xu=calm
+你早先带着走过退线的新门人已站到侧门，先让后排的人退一步，再转身给抬架的留道。 # beat:lm_sore_8 # scene:lm_hall # cast:lm_xu # speaker:narrator
+刚才那一步你还记得？ # beat:lm_sore_9 # scene:lm_hall # cast:lm_xu # speaker:you
+他真走过，不是背出了纸。你去接架，他能守这一小段。 # beat:lm_sore_10 # scene:lm_hall # cast:lm_xu # speaker:lm_xu # mood:lm_xu=calm
 - else:
-新门人拿着早饭后那张图，脚仍挤在门边。他没真走过，纸没能替他把人群让开。 # beat:lm_sore_9 # scene:lm_hall # cast:lm_xu # speaker:narrator
-先跟我走。今日答应回来试，得从现在抽出工夫。 # beat:lm_sore_10 # scene:lm_hall # cast:lm_xu # speaker:you
-你先陪他走过侧门，抬架那头的同门多等了一会。 # beat:lm_sore_11 # scene:lm_hall # cast:lm_xu # speaker:narrator
+新门人拿着早饭后那张图，脚仍挤在门边。他没真走过，纸没能替他把人群让开。 # beat:lm_sore_11 # scene:lm_hall # cast:lm_xu # speaker:narrator
+先跟我走。今日答应回来试，得从现在抽出工夫。 # beat:lm_sore_12 # scene:lm_hall # cast:lm_xu # speaker:you
+你先陪他走过侧门，抬架那头的同门多等了一会。 # beat:lm_sore_13 # scene:lm_hall # cast:lm_xu # speaker:narrator
 }
 - else:
 {
 - lm_early_practice:
-下一封帖，也请你送。看见我输这一回，还肯照原话递么？ # beat:lm_sore_12 # scene:lm_challenge # cast:lm_shi # speaker:lm_shi # mood:lm_shi=intent
-照字递。没人答，我就回来说没人答。 # beat:lm_sore_13 # scene:lm_challenge # cast:lm_shi # speaker:you
-他把未封的下一帖放到你面前，仍写愿请第一赐教。你亲眼看见那句话在一场险胜、一场平局以后没有被划掉。 # beat:lm_sore_14 # scene:lm_challenge # cast:lm_shi # speaker:narrator
+下一封帖，也请你送。看见我输这一回，还肯照原话递么？ # beat:lm_sore_14 # scene:lm_challenge # cast:lm_shi # speaker:lm_shi # mood:lm_shi=intent
+照字递。没人答，我就回来说没人答。 # beat:lm_sore_15 # scene:lm_challenge # cast:lm_shi # speaker:you
+他把未封的下一帖放到你面前，仍写愿请第一赐教。你亲眼看见那句话在一场险胜、一场平局以后没有被划掉。 # beat:lm_sore_16 # scene:lm_challenge # cast:lm_shi # speaker:narrator
 - else:
-下一封帖已由石惊川亲手封好。他问了馆里的老门人去混元门的路，没再请你替他递。 # beat:lm_sore_15 # scene:lm_challenge # cast:lm_shi # speaker:narrator
-你不必替我把问第一改成随便试手。今日这场也不替我说轻。 # beat:lm_sore_16 # scene:lm_challenge # cast:lm_shi # speaker:lm_shi # mood:lm_shi=calm
-你替他把门让开，没有去拆那封已不交给你的帖。 # beat:lm_sore_17 # scene:lm_challenge # cast:lm_shi # speaker:narrator
+下一封帖已由石惊川亲手封好。他问了馆里的老门人去混元门的路，没再请你替他递。 # beat:lm_sore_17 # scene:lm_challenge # cast:lm_shi # speaker:narrator
+你不必替我把问第一改成随便试手。今日这场也不替我说轻。 # beat:lm_sore_18 # scene:lm_challenge # cast:lm_shi # speaker:lm_shi # mood:lm_shi=calm
+你替他把门让开，没有去拆那封已不交给你的帖。 # beat:lm_sore_19 # scene:lm_challenge # cast:lm_shi # speaker:narrator
 }
 }
 * [请同门分抬，自己只接绳的一头。 # cid:lm_share_frame]
   ~ lm_share_load = true
-  这头我来。另一头请个人，不拿一个人抬完证明我刀练得好。 # beat:lm_sore_18 # scene:lm_hall # cast:lm_xu,lm_luo # speaker:you
-  知道还要搬东西，练刀也能早停一回。 # beat:lm_sore_19 # scene:lm_hall # cast:lm_xu,lm_luo # speaker:lm_xu # mood:lm_xu=neutral
-  你没有反驳，换了不酸的那一只手。 # beat:lm_sore_20 # scene:lm_hall # cast:lm_xu,lm_luo # speaker:narrator
+  这头我来。另一头请个人，不拿一个人抬完证明我刀练得好。 # beat:lm_sore_20 # scene:lm_hall # cast:lm_xu,lm_luo # speaker:you
+  知道还要搬东西，练刀也能早停一回。 # beat:lm_sore_21 # scene:lm_hall # cast:lm_xu,lm_luo # speaker:lm_xu # mood:lm_xu=neutral
+  你没有反驳，换了不酸的那一只手。 # beat:lm_sore_22 # scene:lm_hall # cast:lm_xu,lm_luo # speaker:narrator
   -> he_gate
 * [坚持自己抬到门口，过后承认肩臂已经疼。 # cid:lm_take_frame]
   ~ lm_share_load = false
-  我送到门口，再请人接。 # beat:lm_sore_21 # scene:lm_hall # cast:lm_xu,lm_luo # speaker:you
-  路不长，重架却把酸处一点点压出来。到门口你才叫人，许重山接过时皱了眉。 # beat:lm_sore_22 # scene:lm_hall # cast:lm_xu,lm_luo # speaker:narrator
-  以后你说到门口，我得先问多远。 # beat:lm_sore_23 # scene:lm_hall # cast:lm_xu,lm_luo # speaker:lm_xu # mood:lm_xu=sharp
+  我送到门口，再请人接。 # beat:lm_sore_23 # scene:lm_hall # cast:lm_xu,lm_luo # speaker:you
+  路不长，重架却把酸处一点点压出来。到门口你才叫人，许重山接过时皱了眉。 # beat:lm_sore_24 # scene:lm_hall # cast:lm_xu,lm_luo # speaker:narrator
+  以后你说到门口，我得先问多远。 # beat:lm_sore_25 # scene:lm_hall # cast:lm_xu,lm_luo # speaker:lm_xu # mood:lm_xu=sharp
   -> he_gate
 
 === he_gate ===
@@ -313,18 +343,24 @@ VAR lm_future = 0
 我三十一问他，十九招；四十六，三十二；六十，四十一。你今日知道的，我也没少问。 # beat:lm_fortyseven_5 # scene:lm_backyard # cast:lm_he,lm_shi,lm_luo # speaker:lm_luo # mood:lm_luo=calm
 你记得倒清楚。下回带笔，别让旁人替你少报。 # beat:lm_fortyseven_6 # scene:lm_backyard # cast:lm_he,lm_shi,lm_luo # speaker:lm_he # mood:lm_he=amused
 罗没有说等他老了便好。你替石把剑捡回，剑柄还带着掌心的热。 # beat:lm_fortyseven_7 # scene:lm_backyard # cast:lm_he,lm_shi,lm_luo # speaker:narrator # fact:lm_count
+{
+- lm_guarded:
+你守住了白线，错过的那几招也没再从别人嘴里补全。贺老那一下怎样越过去，与你没看清的地方，都各自留着。 # beat:lm_fortyseven_8 # scene:lm_backyard # cast:lm_he,lm_shi,lm_luo # speaker:narrator
+- else:
+罗先生替你挡住侧门那一声，你还记得。所以此刻剑柄上的热，是你在看得见的地方捡回来的，不是挤进去换的。 # beat:lm_fortyseven_9 # scene:lm_backyard # cast:lm_he,lm_shi,lm_luo # speaker:narrator
+}
 * [把剑原样递还，不先说败得光荣之类宽慰。 # cid:lm_return_sword]
   ~ lm_sword_respect = true
-  您的剑。 # beat:lm_fortyseven_8 # scene:lm_backyard # cast:lm_he,lm_shi,lm_luo # speaker:you
-  多谢。刚才那一下，我得自己再想。 # beat:lm_fortyseven_9 # scene:lm_backyard # cast:lm_he,lm_shi,lm_luo # speaker:lm_shi # mood:lm_shi=calm
-  有要搬的物件叫我，不懂剑的地方我先不说。 # beat:lm_fortyseven_10 # scene:lm_backyard # cast:lm_he,lm_shi,lm_luo # speaker:you
-  他点头，把剑收进鞘里，没有请你替他说懂了。 # beat:lm_fortyseven_11 # scene:lm_backyard # cast:lm_he,lm_shi,lm_luo # speaker:narrator
+  您的剑。 # beat:lm_fortyseven_10 # scene:lm_backyard # cast:lm_he,lm_shi,lm_luo # speaker:you
+  多谢。刚才那一下，我得自己再想。 # beat:lm_fortyseven_11 # scene:lm_backyard # cast:lm_he,lm_shi,lm_luo # speaker:lm_shi # mood:lm_shi=calm
+  有要搬的物件叫我，不懂剑的地方我先不说。 # beat:lm_fortyseven_12 # scene:lm_backyard # cast:lm_he,lm_shi,lm_luo # speaker:you
+  他点头，把剑收进鞘里，没有请你替他说懂了。 # beat:lm_fortyseven_13 # scene:lm_backyard # cast:lm_he,lm_shi,lm_luo # speaker:narrator
   -> autumn
 * [先问有没有磕坏，想看清木架上能留下什么痕。 # cid:lm_ask_sword]
   ~ lm_sword_respect = false
-  剑口可有损？我没敢拿布乱擦。 # beat:lm_fortyseven_12 # scene:lm_backyard # cast:lm_he,lm_shi,lm_luo # speaker:you
-  没有。这一场不是把我的剑打坏，是人没接住。 # beat:lm_fortyseven_13 # scene:lm_backyard # cast:lm_he,lm_shi,lm_luo # speaker:lm_shi # mood:lm_shi=intent
-  你把布收起，没再从兵刃上替人找一个容易改的缺口。 # beat:lm_fortyseven_14 # scene:lm_backyard # cast:lm_he,lm_shi,lm_luo # speaker:narrator
+  剑口可有损？我没敢拿布乱擦。 # beat:lm_fortyseven_14 # scene:lm_backyard # cast:lm_he,lm_shi,lm_luo # speaker:you
+  没有。这一场不是把我的剑打坏，是人没接住。 # beat:lm_fortyseven_15 # scene:lm_backyard # cast:lm_he,lm_shi,lm_luo # speaker:lm_shi # mood:lm_shi=intent
+  你把布收起，没再从兵刃上替人找一个容易改的缺口。 # beat:lm_fortyseven_16 # scene:lm_backyard # cast:lm_he,lm_shi,lm_luo # speaker:narrator
   -> autumn
 
 === autumn ===
@@ -353,18 +389,24 @@ VAR lm_future = 0
 轮到沈长庚与贺景庭，四十二合沈自行罢手，回来一句话便把凑近的人都逗笑了。 # beat:lm_fan_bout_4 # scene:lm_autumn # cast:lm_fan,lm_shi,lm_shenchang # speaker:narrator
 四十年没打，还是这副鬼样子！ # beat:lm_fan_bout_5 # scene:lm_autumn # cast:lm_fan,lm_shi,lm_shenchang # speaker:lm_shenchang # mood:lm_shenchang=sharp
 骂的是贺，认输的也是他。贺在那头笑，没有请人替自己维护榜首体面。 # beat:lm_fan_bout_6 # scene:lm_autumn # cast:lm_fan,lm_shi,lm_shenchang # speaker:narrator
+{
+- lm_read_careful:
+南榜第三十六照实读出，没人再拿末席两个字开笑。樊承业的刀架稳了，沈长庚的茶也照淡。 # beat:lm_fan_bout_7 # scene:lm_autumn # cast:lm_fan,lm_shi,lm_shenchang # speaker:narrator
+- else:
+你先认名字、排座位，没有替传闻添话。两场下来，末席与第三十六的分别，倒由场上自己打分明了。 # beat:lm_fan_bout_8 # scene:lm_autumn # cast:lm_fan,lm_shi,lm_shenchang # speaker:narrator
+}
 * [把水给刚下场的两位，各问一次要不要帮忙。 # cid:lm_offer_water]
   ~ lm_attended = true
-  樊先生，沈先生，水都在这里。需要就叫，不需要我先不围着。 # beat:lm_fan_bout_7 # scene:lm_autumn # cast:lm_fan,lm_shi,lm_shenchang # speaker:you
-  放下。你这小刀借来了，倒一直没去试。 # beat:lm_fan_bout_8 # scene:lm_autumn # cast:lm_fan,lm_shi,lm_shenchang # speaker:lm_fan # mood:lm_fan=calm
-  我先守这边。外围那回还没试，等交清这里的事再去问。 # beat:lm_fan_bout_9 # scene:lm_autumn # cast:lm_fan,lm_shi,lm_shenchang # speaker:you
-  沈长庚端过碗，嫌的还是茶淡，不是你没替他夸四十二合。 # beat:lm_fan_bout_10 # scene:lm_autumn # cast:lm_fan,lm_shi,lm_shenchang # speaker:narrator
+  樊先生，沈先生，水都在这里。需要就叫，不需要我先不围着。 # beat:lm_fan_bout_9 # scene:lm_autumn # cast:lm_fan,lm_shi,lm_shenchang # speaker:you
+  放下。你这小刀借来了，倒一直没去试。 # beat:lm_fan_bout_10 # scene:lm_autumn # cast:lm_fan,lm_shi,lm_shenchang # speaker:lm_fan # mood:lm_fan=calm
+  我先守这边。外围那回还没试，等交清这里的事再去问。 # beat:lm_fan_bout_11 # scene:lm_autumn # cast:lm_fan,lm_shi,lm_shenchang # speaker:you
+  沈长庚端过碗，嫌的还是茶淡，不是你没替他夸四十二合。 # beat:lm_fan_bout_12 # scene:lm_autumn # cast:lm_fan,lm_shi,lm_shenchang # speaker:narrator
   -> wooden
 * [空下来便去外围试借来的木刀，承认自己也想上场。 # cid:lm_try_own]
   ~ lm_attended = false
-  我去外围找同辈试一回，不占这边正式场。 # beat:lm_fan_bout_11 # scene:lm_autumn # cast:lm_fan,lm_shi,lm_shenchang # speaker:you
-  去。别因为看见我们输，就觉得自己那一手不值得问。 # beat:lm_fan_bout_12 # scene:lm_autumn # cast:lm_fan,lm_shi,lm_shenchang # speaker:lm_fan # mood:lm_fan=intent
-  你只练到自己还能停住的地方。没有人给这场记正式榜次，却有人认真指出你脚下挤了。 # beat:lm_fan_bout_13 # scene:lm_autumn # cast:lm_fan,lm_shi,lm_shenchang # speaker:narrator
+  我去外围找同辈试一回，不占这边正式场。 # beat:lm_fan_bout_13 # scene:lm_autumn # cast:lm_fan,lm_shi,lm_shenchang # speaker:you
+  去。别因为看见我们输，就觉得自己那一手不值得问。 # beat:lm_fan_bout_14 # scene:lm_autumn # cast:lm_fan,lm_shi,lm_shenchang # speaker:lm_fan # mood:lm_fan=intent
+  你只练到自己还能停住的地方。没有人给这场记正式榜次，却有人认真指出你脚下挤了。 # beat:lm_fan_bout_15 # scene:lm_autumn # cast:lm_fan,lm_shi,lm_shenchang # speaker:narrator
   -> wooden
 
 === wooden ===
@@ -373,17 +415,23 @@ VAR lm_future = 0
 好。 # beat:lm_wooden_3 # scene:lm_nine # cast:lm_zhang_v2,lm_shi,lm_fan # speaker:lm_shi # mood:lm_shi=intent
 木剑没有锋，真剑有。你在白线外知道两件兵刃不一样，却不能因此预先说谁让到哪里。 # beat:lm_wooden_4 # scene:lm_nine # cast:lm_zhang_v2,lm_shi,lm_fan # speaker:narrator
 第一剑，石的剑尖像追上一条已经过去的路。你刚要往前，旁边一位小弟子抱着剑鞘踉跄了一下。 # beat:lm_wooden_5 # scene:lm_nine # cast:lm_zhang_v2,lm_shi,lm_fan # speaker:narrator # cg:woodenInquiry # action:木剑与真剑
+{
+- lm_attended:
+两碗水都问过，两位都自己端。此刻白线外，你守的还是这一套：不打扰，也不走远。 # beat:lm_wooden_6 # scene:lm_nine # cast:lm_zhang_v2,lm_shi,lm_fan # speaker:narrator # cg:none
+- else:
+外围那一试你自己也去了。此刻看章复生与石惊川，你知道站在线外的人手痒是什么滋味，也不催他们。 # beat:lm_wooden_7 # scene:lm_nine # cast:lm_zhang_v2,lm_shi,lm_fan # speaker:narrator
+}
 * [先接住弟子和剑鞘，错过后几剑也不挤回去。 # cid:lm_help_sheath]
   ~ lm_nine_help = true
-  先站稳，鞘口朝下。别一摔把后面的人也戳着。 # beat:lm_wooden_6 # scene:lm_nine # cast:lm_zhang_v2,lm_shi,lm_fan # speaker:you # cg:none
-  你把剑鞘接住，转回头时已听见石惊川认输。 # beat:lm_wooden_7 # scene:lm_nine # cast:lm_zhang_v2,lm_shi,lm_fan # speaker:narrator
-  你看见第一剑，没有看全后八剑。后来不能替自己说成九剑全懂。 # beat:lm_wooden_8 # scene:lm_nine # cast:lm_zhang_v2,lm_shi,lm_fan # speaker:narrator
+  先站稳，鞘口朝下。别一摔把后面的人也戳着。 # beat:lm_wooden_8 # scene:lm_nine # cast:lm_zhang_v2,lm_shi,lm_fan # speaker:you
+  你把剑鞘接住，转回头时已听见石惊川认输。 # beat:lm_wooden_9 # scene:lm_nine # cast:lm_zhang_v2,lm_shi,lm_fan # speaker:narrator # cg:none
+  你看见第一剑，没有看全后八剑。后来不能替自己说成九剑全懂。 # beat:lm_wooden_10 # scene:lm_nine # cast:lm_zhang_v2,lm_shi,lm_fan # speaker:narrator
   -> nine
 * [请身后同门照应，自己留在白线外看完九剑。 # cid:lm_keep_view]
   ~ lm_nine_help = false
-  后面接一下。别让他靠到线里。 # beat:lm_wooden_9 # scene:lm_nine # cast:lm_zhang_v2,lm_shi,lm_fan # speaker:you # cg:none
-  身后有人应了，你才回头。第二剑到第九剑，石仍在找同一个地方，章手里木剑没有急着往前抢。 # beat:lm_wooden_10 # scene:lm_nine # cast:lm_zhang_v2,lm_shi,lm_fan # speaker:narrator
-  九剑，你都看见了。问起为何第一剑便错，你仍没有一句能站得住的解。 # beat:lm_wooden_11 # scene:lm_nine # cast:lm_zhang_v2,lm_shi,lm_fan # speaker:narrator
+  后面接一下。别让他靠到线里。 # beat:lm_wooden_11 # scene:lm_nine # cast:lm_zhang_v2,lm_shi,lm_fan # speaker:you
+  身后有人应了，你才回头。第二剑到第九剑，石仍在找同一个地方，章手里木剑没有急着往前抢。 # beat:lm_wooden_12 # scene:lm_nine # cast:lm_zhang_v2,lm_shi,lm_fan # speaker:narrator
+  九剑，你都看见了。问起为何第一剑便错，你仍没有一句能站得住的解。 # beat:lm_wooden_13 # scene:lm_nine # cast:lm_zhang_v2,lm_shi,lm_fan # speaker:narrator
   -> nine
 
 === nine ===
@@ -538,23 +586,35 @@ VAR lm_future = 0
 馆里缺人教起手，我也缺个人试新刀。你留下，不是要替我守住输不起的门面。 # beat:lm_where_3 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:lm_xu # mood:lm_xu=neutral
 这会倒像还有一场。你选完别叫我们判胜负。 # beat:lm_where_4 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:lm_fan # mood:lm_fan=amused
 {
-- not lm_stopped and not lm_share_load:
-你抬包时肩臂一痛。练刀和搬架的两回逞强，没在九剑之后忽然变成懂事。 # beat:lm_where_5 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:narrator
-这几日别出力试手。去哪条路，也先认这只手。 # beat:lm_where_6 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:lm_xu # mood:lm_xu=sharp
+- lm_linked:
+门里那根柱与第一剑是两场不同的手——许重山这样说，还是让你回了馆再试一次。此刻分路，你仍带着那一问。 # beat:lm_where_5 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:narrator
 - else:
-你把行囊从肩头换到手里，先试了一下重量。路和练刀都不必一次把力花尽。 # beat:lm_where_7 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:narrator
+不懂的留着，你没把九剑讲成秘法。此刻分路，你带走的不是答案，是那句还没能说清的话。 # beat:lm_where_6 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:narrator
+}
+{
+- lm_he_night:
+那夜内院灯下的话无人向你复述。你只记得次日清晨，贺老照旧一招一掌走得认真，像还想再走许多年。 # beat:lm_where_7 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:narrator
+- else:
+那夜内院灯下的话无人向你复述。你后来只听说，有人替下一位问路的人留了一句实话。 # beat:lm_where_8 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:narrator
+}
+{
+- not lm_stopped and not lm_share_load:
+你抬包时肩臂一痛。练刀和搬架的两回逞强，没在九剑之后忽然变成懂事。 # beat:lm_where_9 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:narrator
+这几日别出力试手。去哪条路，也先认这只手。 # beat:lm_where_10 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:lm_xu # mood:lm_xu=sharp
+- else:
+你把行囊从肩头换到手里，先试了一下重量。路和练刀都不必一次把力花尽。 # beat:lm_where_11 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:narrator
 }
 * [还刀，办完门里的交代，再随石惊川走一段。 # cid:lm_travel_choice]
   ~ lm_future = 1
-  我先还刀，交清借的物件和这月的事。能走哪段，今夜写明，不写追随一生。 # beat:lm_where_8 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:you
-  好。我也不是走到哪里都能替你安排一场胜。 # beat:lm_where_9 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:lm_shi # mood:lm_shi=calm
-  能这样想，倒不怕你把门里的门匾背出去。 # beat:lm_where_10 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:lm_xu # mood:lm_xu=amused
+  我先还刀，交清借的物件和这月的事。能走哪段，今夜写明，不写追随一生。 # beat:lm_where_12 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:you
+  好。我也不是走到哪里都能替你安排一场胜。 # beat:lm_where_13 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:lm_shi # mood:lm_shi=calm
+  能这样想，倒不怕你把门里的门匾背出去。 # beat:lm_where_14 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:lm_xu # mood:lm_xu=amused
   -> leave
 * [留馆试新刀，也照顾比自己更晚来的门人。 # cid:lm_home_choice]
   ~ lm_future = 2
-  我留下。借刀时问不出的那一句，先练到能自己说清。 # beat:lm_where_11 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:you
-  那明日开门。你教起手，我看你教，不许把学生当不会走的柱。 # beat:lm_where_12 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:lm_xu # mood:lm_xu=intent
-  路过河中，我再来问。不是问你现在该到哪个榜。 # beat:lm_where_13 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:lm_shi # mood:lm_shi=neutral
+  我留下。借刀时问不出的那一句，先练到能自己说清。 # beat:lm_where_15 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:you
+  那明日开门。你教起手，我看你教，不许把学生当不会走的柱。 # beat:lm_where_16 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:lm_xu # mood:lm_xu=intent
+  路过河中，我再来问。不是问你现在该到哪个榜。 # beat:lm_where_17 # scene:lm_road # cast:lm_xu,lm_shi,lm_fan # speaker:lm_shi # mood:lm_shi=neutral
   -> leave
 
 === leave ===

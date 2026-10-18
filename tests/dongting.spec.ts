@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import {test,expect} from '@playwright/test';
 import {writeFileSync} from 'node:fs';
 import {VNRuntime} from '../src/vn-runtime.ts';
@@ -11,11 +12,11 @@ for(const cargo of [false,true])test(`Dongting full actual browser ${cargo?'carg
  const s=new VNRuntime(content,'dongting-1.0.0');let choices=0;
  while(!s.frame.ending){
   await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);
-  if(s.frame.choices.length){const selected=(cargo?s.frame.choices.find(c=>c.id==='dt_save_cargo'):undefined)??s.frame.choices[0];const button=page.locator(`[data-choice="${selected.id}"]`);await expect(button).toBeEnabled();if(selected.id.startsWith('dt_save_'))await page.screenshot({path:`docs/evidence/v6/dongting-choice-${cargo}.png`});await button.click();s.choose(selected.id);choices++}
+  if(s.frame.choices.length){const selected=(cargo?s.frame.choices.find(c=>c.id==='dt_save_cargo'):undefined)??s.frame.choices[0];const button=page.locator(`[data-choice="${selected.id}"]`);await expect(button).toBeEnabled();if(selected.id.startsWith('dt_save_'))await page.screenshot({path:evidencePath(`docs/evidence/v6/dongting-choice-${cargo}.png`)});await button.click();s.choose(selected.id);choices++}
   else{const next=page.locator('#advance-button');await expect(next).toBeEnabled();await next.click();s.advance()}
  }
  await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);expect(s.frame.ending).toBe(cargo?'dt_cargo':'dt_company');
  await page.reload();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await expect(page.locator('#scene-time')).toContainText('三年后');
- expect(errors).toEqual([]);await page.screenshot({path:`docs/evidence/v6/dongting-ending-${cargo}.png`});
- writeFileSync(`docs/evidence/v6/dongting-browser-${cargo}.json`,JSON.stringify({actualInputs:true,humanPlaytest:false,ending:s.frame.ending,beats:s.frames.length,choices,errors},null,2));
+ expect(errors).toEqual([]);await page.screenshot({path:evidencePath(`docs/evidence/v6/dongting-ending-${cargo}.png`)});
+ writeFileSync(evidencePath(`docs/evidence/v6/dongting-browser-${cargo}.json`),JSON.stringify({actualInputs:true,humanPlaytest:false,ending:s.frame.ending,beats:s.frames.length,choices,errors},null,2));
 });

@@ -1,0 +1,498 @@
+{
+ "generatedBy": "node --experimental-strip-types scripts/audit-v7-narration-runs.mjs",
+ "samplesPerEdition": 120,
+ "rows": [
+  {
+   "slug": "bamboo",
+   "title": "竹院夜论",
+   "version": "bamboo-1.0.0",
+   "samples": 120,
+   "longestNarrationRun": 3,
+   "longestAt": "bb_waist_next_day_2",
+   "longestRunBeats": [
+    "bb_north_south_17",
+    "bb_waist_next_day_1",
+    "bb_waist_next_day_2"
+   ],
+   "runEndsAtStep": 56,
+   "approxTotalSteps": 76,
+   "openingNarrationRun": 2,
+   "runPosition": 0.737,
+   "narrationIds": 3
+  },
+  {
+   "slug": "beyond-ranking",
+   "title": "榜纸之外·宁无极旧录",
+   "version": "beyond-ranking-1.0.0",
+   "samples": 120,
+   "longestNarrationRun": 3,
+   "longestAt": "br_yellow_page_3",
+   "longestRunBeats": [
+    "br_yellow_page_1",
+    "br_yellow_page_2",
+    "br_yellow_page_3"
+   ],
+   "runEndsAtStep": 4,
+   "approxTotalSteps": 93,
+   "openingNarrationRun": 3,
+   "runPosition": 0.043,
+   "narrationIds": 3
+  },
+  {
+   "slug": "dead-ranking",
+   "title": "死人争榜",
+   "version": "dead-ranking-1.0.0",
+   "samples": 120,
+   "longestNarrationRun": 9,
+   "longestAt": "dr_two_years_4",
+   "longestRunBeats": [
+    "dr_old_entry_4",
+    "dr_old_entry_5",
+    "dr_old_entry_6",
+    "dr_old_entry_7",
+    "dr_old_entry_10",
+    "dr_two_years_1",
+    "dr_two_years_2",
+    "dr_two_years_3",
+    "dr_two_years_4"
+   ],
+   "runEndsAtStep": 235,
+   "approxTotalSteps": 290,
+   "openingNarrationRun": 2,
+   "runPosition": 0.81,
+   "narrationIds": 9
+  },
+  {
+   "slug": "dongting",
+   "title": "照水刀 · 问席",
+   "version": "dongting-1.0.0",
+   "samples": 120,
+   "longestNarrationRun": 4,
+   "longestAt": "dt_raid_return_8",
+   "longestRunBeats": [
+    "dt_raid_19",
+    "dt_raid_return_1",
+    "dt_raid_return_2",
+    "dt_raid_return_8"
+   ],
+   "runEndsAtStep": 82,
+   "approxTotalSteps": 113,
+   "openingNarrationRun": 1,
+   "runPosition": 0.726,
+   "narrationIds": 4
+  },
+  {
+   "slug": "jade",
+   "title": "山河璧 · 十三文",
+   "version": "jade-2.0.0",
+   "samples": 120,
+   "longestNarrationRun": 6,
+   "longestAt": "jd_later_records_4",
+   "longestRunBeats": [
+    "jd_sima_late_7",
+    "jd_sima_late_8",
+    "jd_later_records_1",
+    "jd_later_records_2",
+    "jd_later_records_3",
+    "jd_later_records_4"
+   ],
+   "runEndsAtStep": 210,
+   "approxTotalSteps": 215,
+   "openingNarrationRun": 0,
+   "runPosition": 0.977,
+   "narrationIds": 6
+  },
+  {
+   "slug": "jade-thieves",
+   "title": "山河璧 · 密库双贼",
+   "version": "jade-thieves-2.0.0",
+   "samples": 120,
+   "longestNarrationRun": 8,
+   "longestAt": "jt_not_fighting_14",
+   "longestRunBeats": [
+    "jt_revealed_22",
+    "jt_revealed_23",
+    "jt_revealed_24",
+    "jt_not_fighting_1",
+    "jt_not_fighting_8",
+    "jt_not_fighting_9",
+    "jt_not_fighting_10",
+    "jt_not_fighting_14"
+   ],
+   "runEndsAtStep": 106,
+   "approxTotalSteps": 191,
+   "openingNarrationRun": 6,
+   "runPosition": 0.555,
+   "narrationIds": 8
+  },
+  {
+   "slug": "kuhe",
+   "title": "枯河谷 · 门后有人",
+   "version": "kuhe-3.0.0",
+   "samples": 120,
+   "longestNarrationRun": 5,
+   "longestAt": "kh_sixty_4",
+   "longestRunBeats": [
+    "kh_masters_12",
+    "kh_sixty_1",
+    "kh_sixty_2",
+    "kh_sixty_3",
+    "kh_sixty_4"
+   ],
+   "runEndsAtStep": 107,
+   "approxTotalSteps": 222,
+   "openingNarrationRun": 1,
+   "runPosition": 0.482,
+   "narrationIds": 5
+  },
+  {
+   "slug": "longmen",
+   "title": "龙门问刀",
+   "version": "longmen-3.0.0",
+   "samples": 120,
+   "longestNarrationRun": 7,
+   "longestAt": "lm_fiveyears_1",
+   "longestRunBeats": [
+    "lm_leave_22",
+    "lm_leave_23",
+    "lm_leave_24",
+    "lm_leave_26",
+    "lm_leave_27",
+    "lm_leave_32",
+    "lm_fiveyears_1"
+   ],
+   "runEndsAtStep": 211,
+   "approxTotalSteps": 224,
+   "openingNarrationRun": 2,
+   "runPosition": 0.942,
+   "narrationIds": 7
+  },
+  {
+   "slug": "luhua",
+   "title": "照水刀 · 芦花渡",
+   "version": "luhua-1.0.0",
+   "samples": 120,
+   "longestNarrationRun": 11,
+   "longestAt": "lh_thirteen_years_3",
+   "longestRunBeats": [
+    "lh_tang_slow_blade_8",
+    "lh_tang_slow_blade_9",
+    "lh_two_bowls_1",
+    "lh_two_bowls_2",
+    "lh_two_bowls_3",
+    "lh_two_bowls_5",
+    "lh_two_bowls_6",
+    "lh_two_bowls_8",
+    "lh_thirteen_years_1",
+    "lh_thirteen_years_2",
+    "lh_thirteen_years_3"
+   ],
+   "runEndsAtStep": 201,
+   "approxTotalSteps": 230,
+   "openingNarrationRun": 2,
+   "runPosition": 0.874,
+   "narrationIds": 11
+  },
+  {
+   "slug": "luoyang",
+   "title": "洛阳龙虎风云会",
+   "version": "luoyang-1.0.0",
+   "samples": 120,
+   "longestNarrationRun": 3,
+   "longestAt": "ly_ten_li_3",
+   "longestRunBeats": [
+    "ly_ten_li_1",
+    "ly_ten_li_2",
+    "ly_ten_li_3"
+   ],
+   "runEndsAtStep": 4,
+   "approxTotalSteps": 68,
+   "openingNarrationRun": 3,
+   "runPosition": 0.059,
+   "narrationIds": 3
+  },
+  {
+   "slug": "north",
+   "title": "北枪与乾坤 · 三师一枪",
+   "version": "north-3.0.0",
+   "samples": 120,
+   "longestNarrationRun": 6,
+   "longestAt": "nq_one_thirty_two_4",
+   "longestRunBeats": [
+    "nq_han_gate_5",
+    "nq_han_gate_6",
+    "nq_one_thirty_two_1",
+    "nq_one_thirty_two_2",
+    "nq_one_thirty_two_3",
+    "nq_one_thirty_two_4"
+   ],
+   "runEndsAtStep": 192,
+   "approxTotalSteps": 265,
+   "openingNarrationRun": 2,
+   "runPosition": 0.725,
+   "narrationIds": 6
+  },
+  {
+   "slug": "north-notes",
+   "title": "北枪与乾坤 · 师门夜话",
+   "version": "north-notes-1.0.0",
+   "samples": 120,
+   "longestNarrationRun": 4,
+   "longestAt": "nn_notes_remain_4",
+   "longestRunBeats": [
+    "nn_sima_person_7",
+    "nn_notes_remain_1",
+    "nn_notes_remain_2",
+    "nn_notes_remain_4"
+   ],
+   "runEndsAtStep": 53,
+   "approxTotalSteps": 53,
+   "openingNarrationRun": 4,
+   "runPosition": 1,
+   "narrationIds": 4
+  },
+  {
+   "slug": "qian-kun",
+   "title": "北枪与乾坤 · 不会算账",
+   "version": "qian-kun-3.0.0",
+   "samples": 120,
+   "longestNarrationRun": 4,
+   "longestAt": "qk_eighteen_3",
+   "longestRunBeats": [
+    "qk_forgot_letter_9",
+    "qk_eighteen_1",
+    "qk_eighteen_2",
+    "qk_eighteen_3"
+   ],
+   "runEndsAtStep": 30,
+   "approxTotalSteps": 249,
+   "openingNarrationRun": 2,
+   "runPosition": 0.12,
+   "narrationIds": 4
+  },
+  {
+   "slug": "qingshi",
+   "title": "青石五友 · 守一天",
+   "version": "qingshi-3.0.0",
+   "samples": 120,
+   "longestNarrationRun": 9,
+   "longestAt": "qs_wake_1",
+   "longestRunBeats": [
+    "qs_road32_3",
+    "qs_road32_4",
+    "qs_road32_5",
+    "qs_road32_6",
+    "qs_road32_7",
+    "qs_road32_8",
+    "qs_road32_9",
+    "qs_road32_10",
+    "qs_wake_1"
+   ],
+   "runEndsAtStep": 106,
+   "approxTotalSteps": 318,
+   "openingNarrationRun": 1,
+   "runPosition": 0.333,
+   "narrationIds": 9
+  },
+  {
+   "slug": "sea",
+   "title": "海路两世 · 中原以外",
+   "version": "sea-2.0.0",
+   "samples": 120,
+   "longestNarrationRun": 8,
+   "longestAt": "sr_two_centuries_3",
+   "longestRunBeats": [
+    "sr_beyond_map_6",
+    "sr_seven_years_1",
+    "sr_seven_years_2",
+    "sr_seven_years_3",
+    "sr_seven_years_4",
+    "sr_two_centuries_1",
+    "sr_two_centuries_2",
+    "sr_two_centuries_3"
+   ],
+   "runEndsAtStep": 25,
+   "approxTotalSteps": 196,
+   "openingNarrationRun": 3,
+   "runPosition": 0.128,
+   "narrationIds": 8
+  },
+  {
+   "slug": "sea-tide",
+   "title": "海路两世 · 归潮岛",
+   "version": "sea-tide-2.0.0",
+   "samples": 120,
+   "longestNarrationRun": 5,
+   "longestAt": "st_three_steps_3",
+   "longestRunBeats": [
+    "st_broken_mast_8",
+    "st_broken_mast_9",
+    "st_three_steps_1",
+    "st_three_steps_2",
+    "st_three_steps_3"
+   ],
+   "runEndsAtStep": 56,
+   "approxTotalSteps": 173,
+   "openingNarrationRun": 2,
+   "runPosition": 0.324,
+   "narrationIds": 5
+  },
+  {
+   "slug": "seven-questions",
+   "title": "一剑两脉 · 门外七问",
+   "version": "seven-questions-2.0.0",
+   "samples": 120,
+   "longestNarrationRun": 6,
+   "longestAt": "sq_afterwards_7",
+   "longestRunBeats": [
+    "sq_at_the_door_14",
+    "sq_afterwards_1",
+    "sq_afterwards_2",
+    "sq_afterwards_3",
+    "sq_afterwards_5",
+    "sq_afterwards_7"
+   ],
+   "runEndsAtStep": 239,
+   "approxTotalSteps": 241,
+   "openingNarrationRun": 0,
+   "runPosition": 0.992,
+   "narrationIds": 6
+  },
+  {
+   "slug": "taihua",
+   "title": "太华试序 · 三年之约",
+   "version": "taihua-3.0.0",
+   "samples": 120,
+   "longestNarrationRun": 5,
+   "longestAt": "th_first_morning_3",
+   "longestRunBeats": [
+    "th_packing_14",
+    "th_packing_15",
+    "th_first_morning_1",
+    "th_first_morning_2",
+    "th_first_morning_3"
+   ],
+   "runEndsAtStep": 27,
+   "approxTotalSteps": 313,
+   "openingNarrationRun": 2,
+   "runPosition": 0.086,
+   "narrationIds": 5
+  },
+  {
+   "slug": "twelfth",
+   "title": "第十二席",
+   "version": "twelfth-1.0.0",
+   "samples": 120,
+   "longestNarrationRun": 4,
+   "longestAt": "qw_stone52_2",
+   "longestRunBeats": [
+    "qw_return52_12",
+    "qw_return52_13",
+    "qw_stone52_1",
+    "qw_stone52_2"
+   ],
+   "runEndsAtStep": 81,
+   "approxTotalSteps": 168,
+   "openingNarrationRun": 1,
+   "runPosition": 0.482,
+   "narrationIds": 4
+  },
+  {
+   "slug": "twelfth-life",
+   "title": "第十二席 · 赵承晏",
+   "version": "twelfth-life-3.0.0",
+   "samples": 120,
+   "longestNarrationRun": 6,
+   "longestAt": "rl_old_book_4",
+   "longestRunBeats": [
+    "rl_later_letters_13",
+    "rl_later_letters_14",
+    "rl_old_book_1",
+    "rl_old_book_2",
+    "rl_old_book_3",
+    "rl_old_book_4"
+   ],
+   "runEndsAtStep": 319,
+   "approxTotalSteps": 324,
+   "openingNarrationRun": 1,
+   "runPosition": 0.985,
+   "narrationIds": 6
+  },
+  {
+   "slug": "two-swords",
+   "title": "一剑两脉 · 旧本归还",
+   "version": "two-swords-2.0.0",
+   "samples": 120,
+   "longestNarrationRun": 8,
+   "longestAt": "ss_afterwards_7",
+   "longestRunBeats": [
+    "ss_guihong_trial_14",
+    "ss_guihong_trial_15",
+    "ss_guihong_trial_16",
+    "ss_afterwards_1",
+    "ss_afterwards_3",
+    "ss_afterwards_5",
+    "ss_afterwards_6",
+    "ss_afterwards_7"
+   ],
+   "runEndsAtStep": 226,
+   "approxTotalSteps": 227,
+   "openingNarrationRun": 0,
+   "runPosition": 0.996,
+   "narrationIds": 8
+  },
+  {
+   "slug": "white-stone",
+   "title": "白石谷外",
+   "version": "white-stone-1.0.0",
+   "samples": 120,
+   "longestNarrationRun": 7,
+   "longestAt": "ws_six_students_6",
+   "longestRunBeats": [
+    "ws_two_old_swords_15",
+    "ws_six_students_1",
+    "ws_six_students_2",
+    "ws_six_students_3",
+    "ws_six_students_4",
+    "ws_six_students_5",
+    "ws_six_students_6"
+   ],
+   "runEndsAtStep": 77,
+   "approxTotalSteps": 129,
+   "openingNarrationRun": 3,
+   "runPosition": 0.597,
+   "narrationIds": 7
+  },
+  {
+   "slug": "xuanmen",
+   "title": "玄门旧史·九席与返真不绝",
+   "version": "xuanmen-1.0.0",
+   "samples": 120,
+   "longestNarrationRun": 8,
+   "longestAt": "xm_empty_seat_10",
+   "longestRunBeats": [
+    "xm_empty_seat_3",
+    "xm_empty_seat_4",
+    "xm_empty_seat_5",
+    "xm_empty_seat_6",
+    "xm_empty_seat_7",
+    "xm_empty_seat_8",
+    "xm_empty_seat_9",
+    "xm_empty_seat_10"
+   ],
+   "runEndsAtStep": 95,
+   "approxTotalSteps": 107,
+   "openingNarrationRun": 2,
+   "runPosition": 0.888,
+   "narrationIds": 8
+  }
+ ],
+ "summary": {
+  "editions": 23,
+  "maxLongestRun": 11,
+  "maxLongestRunAt": "luhua",
+  "worstOpening": "jade-thieves",
+  "maxOpeningRun": 6,
+  "overTwentyBeatRuns": []
+ }
+}

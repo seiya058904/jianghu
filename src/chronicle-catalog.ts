@@ -172,7 +172,7 @@ export const chronicleScenes:Record<string,{name:string;time:string;art:string}>
  dt_after:{name:'洞庭西岸 · 议席之后',time:'议席后 · 各认各的数',art:'v6/dongting-dock.webp'},
  dt_three:{name:'洞庭水会 · 再见',time:'三年后 · 陈震入第十五',art:'v6/dongting-dock.webp'},
  qw_private:{name:'青溪 · 王庄练场',time:'赵承晏四十四岁 · 私下问手',art:'v6/longmen-backyard.webp'},
- qw_public:{name:'青溪 · 公开较艺场',time:'四十多岁 · 公开身份以后',art:'v5/arena.webp'},
+ qw_public:{name:'青溪 · 公开较艺场',time:'四十多岁 · 公开身份以后',art:'v6/rl-public.webp'},
  qw_veranda:{name:'王府 · 廊下',time:'同一阶段 · 胜负之后',art:'v6/qingxi-veranda.webp'},
  qw_return:{name:'青溪 · 重练场',time:'赵承晏五十二岁 · 候看',art:'v6/longmen-backyard.webp'},
  qw_wound:{name:'青溪 · 再问石横',time:'赵承晏五十五岁 · 两件事都记',art:'v5/arena.webp'},

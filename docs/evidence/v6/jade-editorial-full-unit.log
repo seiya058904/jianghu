@@ -354,7 +354,7 @@ test at tests\default-entry.test.ts:18:1
   - 'jade-1.0.0'
           ^
 
-      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/default-entry.test.ts:25:54)
+      at TestContext.<anonymous> (file:///[author-local-path]
       at async Test.run (node:internal/test_runner/test:1208:7)
       at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
     generatedMessage: true,

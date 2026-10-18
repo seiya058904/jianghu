@@ -1,0 +1,121 @@
+{
+ "work": "luoyang+bamboo",
+ "rounds": [
+  {
+   "round": 1,
+   "focus": "戏剧结构、因果与节奏（两篇连审）",
+   "records": [
+    {
+     "round": 1,
+     "file": "story/luoyang-author.mjs",
+     "beat": "ly_ten_li_3",
+     "originalLineOrAction": "北榜穆刚二十四、窦长春二十一、魏子衡十八、袁定山十二；南榜伍绍清二十四、叶秋娘十八、郑海十二、谢青云第七，陆续有人相迎。",
+     "diagnosis": "开场名录一口气报 8 个名字+8 个名次，是资料面板式倾倒；玩家此刻需要的是'两张榜同场'的分量，不是全名单",
+     "changedLineOrAction": "保留穆刚/伍绍清（双二十四对照）与谢青云第七（bamboo 座上宾桥梁），删去其余五个仅出现于此的名字",
+     "whyItIsBetter": "双榜并列的对照更清晰，八个陌生名字不再稀释开场注意力",
+     "choicePayoffBefore": "无",
+     "choicePayoffAfter": "无",
+     "sourceCanonRange": "宋世江湖.md 6058-6076",
+     "testEvidence": "tests/luoyang-bamboo.test.ts 4/4 PASS（transcript 锚不含被删名）",
+     "unresolvedIssue": "无"
+    },
+    {
+     "round": 1,
+     "file": "story/luoyang-author.mjs + story/bamboo-author.mjs",
+     "beat": "跨篇连贯性",
+     "originalLineOrAction": "luoyang：'柳说你左臂废半年'；bamboo 开场：'左腕没有废半年'",
+     "diagnosis": "同一伤处两篇不一致（臂/腕），跨篇对读即穿帮",
+     "changedLineOrAction": "bamboo 统一为'左臂'",
+     "whyItIsBetter": "白日场（luoyang）与夜谈（bamboo）的伤口记忆一致",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "6128-6162",
+     "testEvidence": "4/4 PASS",
+     "unresolvedIssue": "无"
+    },
+    {
+     "round": 1,
+     "file": "story/bamboo-author.mjs",
+     "beat": "全篇结构复核",
+     "originalLineOrAction": "闭门夜谈→柳三段旧事→韩世雄标尺→南北榜首→返真两例→茶盏",
+     "diagnosis": "复核确认：'资料性质'篇章的处理方式成立——所有榜谱/境界信息都挂在真实人物问答上（宁追问'为何我更重'、罗'到后面都在求少？'、谢'如今仍按七年前说？'），柳每答都有'这是我所见'的来源限定；玩家是严仲山（有旧账、有那一掌）而非旁听生",
+     "changedLineOrAction": "无（保留）",
+     "whyItIsBetter": "—",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "6166-6361",
+     "testEvidence": "7 decisions、双结局、readingLock 越权锁全过",
+     "unresolvedIssue": "无"
+    }
+   ]
+  },
+  {
+   "round": 2,
+   "focus": "NPC 声线",
+   "records": [
+    {
+     "round": 2,
+     "file": "story/luoyang-author.mjs + story/bamboo-author.mjs",
+     "beat": "声线盲测（去名 6 句）",
+     "originalLineOrAction": "'别老看我。这里第一前面还得问哪张榜。'（罗）/'观战也得有地方坐。你们别全站在我前头。'（柳）/'止。'（主事）/'松手。收扇。'（柳）/'有人当面问韩，他说谁说只差一步。那些人又不是他。'（柳转述）/'到后面，都在求少？'（罗）",
+     "diagnosis": "柳成章白日观战与夜谈讲武两种语域同属一人但场合分明；罗继祖的短问、主事的一声'止'、宁的'为何我更重'均可辨认；无'名宿统一讲道理'同质化",
+     "changedLineOrAction": "无（保留）",
+     "whyItIsBetter": "—",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "—",
+     "testEvidence": "人工抽检",
+     "unresolvedIssue": "无"
+    },
+    {
+     "round": 2,
+     "file": "story/luoyang-author.mjs",
+     "beat": "玩家台词覆盖复核",
+     "originalLineOrAction": "V7 精修头注所述修复（玩家九问皆为原话）",
+     "diagnosis": "复核：9 次决断全部是玩家开口的台词（「…」体），另有 8 处当场发问；非语气三选一",
+     "changedLineOrAction": "无（保留）",
+     "whyItIsBetter": "—",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "—",
+     "testEvidence": "transcript 抽查",
+     "unresolvedIssue": "无"
+    }
+   ]
+  },
+  {
+   "round": 3,
+   "focus": "原典复测与演出",
+   "records": [
+    {
+     "round": 3,
+     "file": "story/luoyang-author.mjs",
+     "beat": "canon 数字核对",
+     "originalLineOrAction": "五年后/沈长庚57/邢夏94合/石陆137合半剑胜/'此人，可以看'/柳 南3总谱27/郭洪北14双鞭/叶观澜海天内院第四/第59与第106合/严宁81招23年旧账/平字了结",
+     "diagnosis": "逐项对照 6058-6165 全部吻合",
+     "changedLineOrAction": "无",
+     "whyItIsBetter": "—",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "6058-6165",
+     "testEvidence": "transcript 断言清单全过",
+     "unresolvedIssue": "无"
+    },
+    {
+     "round": 3,
+     "file": "story/bamboo-author.mjs",
+     "beat": "canon 数字核对",
+     "originalLineOrAction": "韩世雄89岁总谱36/30岁河洛11/61胜末席/68胜北22/71胜北15/12场8胜2平2负/薛云山240余平/陆清泉190余负/柳109招胜/70前后入化/17招/能确定两个/十三年",
+     "diagnosis": "逐项对照 6166-6361 全部吻合；'入化/返真罕见且不是游戏等级'的红线保持（茶盏一场不给出可复制法门）",
+     "changedLineOrAction": "无",
+     "whyItIsBetter": "—",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "6166-6361",
+     "testEvidence": "transcript 断言清单全过",
+     "unresolvedIssue": "无"
+    }
+   ]
+  }
+ ]
+}

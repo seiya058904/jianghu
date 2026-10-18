@@ -1,0 +1,263 @@
+[
+  {
+    "slug": "dead-ranking",
+    "overrides": [
+      "dr_ask_what_she_knows"
+    ],
+    "frames": 312,
+    "structure_unchanged": true,
+    "old_json_sha256": "1626b38af67215696383187321ba37e29953f7feead8131b151ee056a5174809",
+    "final_json_sha256": "0cba7ac64b2e068757855c8bfcaa609b93c362d60951f07819eb6efb0222d6cc",
+    "shared_structure_sha256": "56d2a935d43856263802febaff5ec69471a5d53dffe64922b4c42910375b4031"
+  },
+  {
+    "slug": "dead-ranking",
+    "overrides": [
+      "dr_face_all_together"
+    ],
+    "frames": 311,
+    "structure_unchanged": true,
+    "old_json_sha256": "1626b38af67215696383187321ba37e29953f7feead8131b151ee056a5174809",
+    "final_json_sha256": "0cba7ac64b2e068757855c8bfcaa609b93c362d60951f07819eb6efb0222d6cc",
+    "shared_structure_sha256": "5990d906ae06391e3e8e81b30aa3a1e2ee64cd6ce765566eadbf9b4102a53bc8"
+  },
+  {
+    "slug": "dead-ranking",
+    "overrides": [],
+    "frames": 311,
+    "structure_unchanged": true,
+    "old_json_sha256": "1626b38af67215696383187321ba37e29953f7feead8131b151ee056a5174809",
+    "final_json_sha256": "0cba7ac64b2e068757855c8bfcaa609b93c362d60951f07819eb6efb0222d6cc",
+    "shared_structure_sha256": "a69c4fe5b4036a99b3e43ea1c9bb634a761e008d5c39a5b4c93b862a51cd9604"
+  },
+  {
+    "slug": "jade",
+    "overrides": [],
+    "frames": 234,
+    "structure_unchanged": true,
+    "old_json_sha256": "85f6bd38192e80f02ef675fea9c6685bf38a8a038a15d52057e105df5acb16b0",
+    "final_json_sha256": "15286916bf700681b252fc9ccf2411e22312853913f6e4f999cd40c4342bf63f",
+    "shared_structure_sha256": "3a22437b64656a748bd0632d5c77515300b8f2cb9cab40f77015d76a122dd7af"
+  },
+  {
+    "slug": "twelfth",
+    "overrides": [],
+    "frames": 178,
+    "structure_unchanged": true,
+    "old_json_sha256": "6be09fe05fc2df85fced816bc68dba68761c0c3d9c20189c5fdbc637661afb2e",
+    "final_json_sha256": "d47717346b56a8c02ccd557ed89c4587223400a2a3a169a955a09fe4eb08c6a0",
+    "shared_structure_sha256": "7f585534c8af26780b8387d2048cc892646d5d7df0acd9cbac0ebe278978e3fc"
+  },
+  {
+    "slug": "twelfth-life",
+    "overrides": [],
+    "frames": 342,
+    "structure_unchanged": true,
+    "old_json_sha256": "631b74e3fc8c80883769c37f6ce6bfb7c2a2ed80e77f99b4160932b5caeaf57a",
+    "final_json_sha256": "88b09a5bac7d009de7ffd9fd51aee5811b69338657247f3d79254ba4f565ce9f",
+    "shared_structure_sha256": "7aa154763b997ba751b0a489a48beb4a8c12c015a14c139644cf9a9878c3f7ca"
+  },
+  {
+    "slug": "qian-kun",
+    "overrides": [
+      "qk_show_half_year"
+    ],
+    "frames": 256,
+    "structure_unchanged": true,
+    "old_json_sha256": "b9f7218723b6c7ab3c43d5b020bfc84aecb34b0f1efdd764f68efd072dfa3beb",
+    "final_json_sha256": "2241a5b2f6eb8fa579338322330200a5520be554f147774d1eaf8dc667e188a3",
+    "shared_structure_sha256": "5f187946aabcf0bfea362126805c5894a42bca34b5d0b6c4fb8590e2582cce8a"
+  },
+  {
+    "slug": "luhua",
+    "overrides": [
+      "lh_follow_plain_turns"
+    ],
+    "frames": 232,
+    "structure_unchanged": true,
+    "old_json_sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099",
+    "final_json_sha256": "da48471815a1a8cab070524de762f917288669759f6ad35320172d1f62444b2a",
+    "shared_structure_sha256": "8afca77d18b49e3625340b8ab9e2831cc454394aadbaee42891624ad84cfad56"
+  },
+  {
+    "slug": "luhua",
+    "overrides": [
+      "lh_return_wounded_first"
+    ],
+    "frames": 232,
+    "structure_unchanged": true,
+    "old_json_sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099",
+    "final_json_sha256": "da48471815a1a8cab070524de762f917288669759f6ad35320172d1f62444b2a",
+    "shared_structure_sha256": "dfc935e8fc5c767b7f7c06952a33c1eb91c1aac9ac347825293323aa4495b458"
+  },
+  {
+    "slug": "luhua",
+    "overrides": [
+      "lh_ask_gap_later"
+    ],
+    "frames": 232,
+    "structure_unchanged": true,
+    "old_json_sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099",
+    "final_json_sha256": "da48471815a1a8cab070524de762f917288669759f6ad35320172d1f62444b2a",
+    "shared_structure_sha256": "030d1fdab0961d76cb8a45d9dc4a03072d62f11f9c07af216458f3739bff17b6"
+  },
+  {
+    "slug": "luhua",
+    "overrides": [
+      "lh_wait_full_record"
+    ],
+    "frames": 231,
+    "structure_unchanged": true,
+    "old_json_sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099",
+    "final_json_sha256": "da48471815a1a8cab070524de762f917288669759f6ad35320172d1f62444b2a",
+    "shared_structure_sha256": "10e3585b8adefaeea5768c69f4eb939aae413c13964f8884b1f4121515c94f45"
+  },
+  {
+    "slug": "luhua",
+    "overrides": [
+      "lh_share_road_first"
+    ],
+    "frames": 232,
+    "structure_unchanged": true,
+    "old_json_sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099",
+    "final_json_sha256": "da48471815a1a8cab070524de762f917288669759f6ad35320172d1f62444b2a",
+    "shared_structure_sha256": "daf8904ccc2e4258c6664685a1b55ab264bf0b59d451abb50b6f216e6bfcc92e"
+  },
+  {
+    "slug": "luhua",
+    "overrides": [
+      "lh_thank_other_school"
+    ],
+    "frames": 233,
+    "structure_unchanged": true,
+    "old_json_sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099",
+    "final_json_sha256": "da48471815a1a8cab070524de762f917288669759f6ad35320172d1f62444b2a",
+    "shared_structure_sha256": "fda7f37d67485b1e08670ae4a1274727e6483acfa12e7ed2488628d8b51bc04e"
+  },
+  {
+    "slug": "luhua",
+    "overrides": [],
+    "frames": 232,
+    "structure_unchanged": true,
+    "old_json_sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099",
+    "final_json_sha256": "da48471815a1a8cab070524de762f917288669759f6ad35320172d1f62444b2a",
+    "shared_structure_sha256": "deef64edcf60ecabb20a28d148f1c97cf971a3ad8fe20cb8794631f34b6b3703"
+  },
+  {
+    "slug": "luhua",
+    "overrides": [
+      "lh_keep_both_results"
+    ],
+    "frames": 231,
+    "structure_unchanged": true,
+    "old_json_sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099",
+    "final_json_sha256": "da48471815a1a8cab070524de762f917288669759f6ad35320172d1f62444b2a",
+    "shared_structure_sha256": "2830e2c6666902f5b07cd6a20b674711864ac1cfd3ee0405eb1f0bc723e2d247"
+  },
+  {
+    "slug": "luhua",
+    "overrides": [
+      "lh_walk_raft_again"
+    ],
+    "frames": 232,
+    "structure_unchanged": true,
+    "old_json_sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099",
+    "final_json_sha256": "da48471815a1a8cab070524de762f917288669759f6ad35320172d1f62444b2a",
+    "shared_structure_sha256": "b184e4b9e01523b6087d49f9406d2ee3f5295b9f456a7404e795068a2c8238d9"
+  },
+  {
+    "slug": "north",
+    "overrides": [],
+    "frames": 281,
+    "structure_unchanged": true,
+    "old_json_sha256": "c1ea622badd0efa7517cd646238d996ebc77255773a3b3292bc937ec58d22d48",
+    "final_json_sha256": "5e10d2b73529ad78558e0c8c29661e4a15c1f6a74cf22cf7ea3d631e93782350",
+    "shared_structure_sha256": "aa5b2b0936f65fd13975c5829925c0e4a57883e4f925b0f5084f71d318745c02"
+  },
+  {
+    "slug": "luhua",
+    "overrides": [],
+    "frames": 232,
+    "structure_unchanged": true,
+    "old_json_sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099",
+    "final_json_sha256": "da48471815a1a8cab070524de762f917288669759f6ad35320172d1f62444b2a",
+    "shared_structure_sha256": "deef64edcf60ecabb20a28d148f1c97cf971a3ad8fe20cb8794631f34b6b3703"
+  },
+  {
+    "slug": "luhua",
+    "overrides": [
+      "lh_ask_why_only_once"
+    ],
+    "frames": 233,
+    "structure_unchanged": true,
+    "old_json_sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099",
+    "final_json_sha256": "da48471815a1a8cab070524de762f917288669759f6ad35320172d1f62444b2a",
+    "shared_structure_sha256": "1364d6b7902411f9d7e2742fa7576debcc98bc6bfe30a2068ea8c09ebb644ed0"
+  },
+  {
+    "slug": "dongting",
+    "overrides": [
+      "dt_set_people"
+    ],
+    "frames": 112,
+    "structure_unchanged": true,
+    "old_json_sha256": "62fd8a2c1c3e7ae25715598eec8baec8e65d8356529dcfc112ba42dc694318ab",
+    "final_json_sha256": "a91a3d86a60a3838a933a1bb71db48ba91e910b9a7f53ffc6bc8d8cf345bc368",
+    "shared_structure_sha256": "88de07758091b03b68396bfe8e0480a7f26457dcc0f7f6f4ca5ee8260f873275"
+  },
+  {
+    "slug": "dead-ranking",
+    "overrides": [
+      "dr_career_visit"
+    ],
+    "frames": 313,
+    "structure_unchanged": true,
+    "old_json_sha256": "1626b38af67215696383187321ba37e29953f7feead8131b151ee056a5174809",
+    "final_json_sha256": "0cba7ac64b2e068757855c8bfcaa609b93c362d60951f07819eb6efb0222d6cc",
+    "shared_structure_sha256": "792f31d81c69927e081d55095a6408860365ad01c710f18d15b587f5c24f82c3"
+  },
+  {
+    "slug": "dead-ranking",
+    "overrides": [
+      "dr_ask_in_front_of_heirs"
+    ],
+    "frames": 311,
+    "structure_unchanged": true,
+    "old_json_sha256": "1626b38af67215696383187321ba37e29953f7feead8131b151ee056a5174809",
+    "final_json_sha256": "0cba7ac64b2e068757855c8bfcaa609b93c362d60951f07819eb6efb0222d6cc",
+    "shared_structure_sha256": "8fe85d2957c06d2e3a2dba57ecfd4f60ec56822799222d6b2c1efae7f9c7c8d3"
+  },
+  {
+    "slug": "dead-ranking",
+    "overrides": [
+      "dr_leave_false_opening"
+    ],
+    "frames": 311,
+    "structure_unchanged": true,
+    "old_json_sha256": "1626b38af67215696383187321ba37e29953f7feead8131b151ee056a5174809",
+    "final_json_sha256": "0cba7ac64b2e068757855c8bfcaa609b93c362d60951f07819eb6efb0222d6cc",
+    "shared_structure_sha256": "1de689df14a03beb1157bc3ec0185374665089c9ae027acd38a68d3175c71cea"
+  },
+  {
+    "slug": "luhua",
+    "overrides": [
+      "lh_finish_box_then_return"
+    ],
+    "frames": 233,
+    "structure_unchanged": true,
+    "old_json_sha256": "11378619287b3c4d7e9effa4c2e2e541fd33879b5cbbe59309bbd453ed081099",
+    "final_json_sha256": "da48471815a1a8cab070524de762f917288669759f6ad35320172d1f62444b2a",
+    "shared_structure_sha256": "d779962f48b0f8997cb31532035b3a3fbf8ff1c7021a8447e81d42e373464a4c"
+  },
+  {
+    "slug": "dongting",
+    "overrides": [
+      "dt_go_report"
+    ],
+    "frames": 112,
+    "structure_unchanged": true,
+    "old_json_sha256": "62fd8a2c1c3e7ae25715598eec8baec8e65d8356529dcfc112ba42dc694318ab",
+    "final_json_sha256": "a91a3d86a60a3838a933a1bb71db48ba91e910b9a7f53ffc6bc8d8cf345bc368",
+    "shared_structure_sha256": "0c6361676cf7eb0e55493499bb4f343bba77abab44e1b5bcca1fdf4411679bd5"
+  }
+]

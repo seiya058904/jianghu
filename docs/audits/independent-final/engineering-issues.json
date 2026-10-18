@@ -1,0 +1,82 @@
+{
+  "scope": "Engineering current source audit",
+  "baseline": "7a2c22f74c46d74f07af8bd1a45893ec15daa49b",
+  "issues": [
+    {
+      "id": "ENG-01",
+      "severity": "P1",
+      "status": "FIXED_PENDING_BROWSER_RECHECK",
+      "files": [
+        "src/player.ts",
+        "src/storage.ts",
+        "src/main.ts",
+        "src/legacy-main.ts",
+        "src/works-registry.ts"
+      ],
+      "problem": "Storage denied or quota exceeded blocks new game; denied getItem crashes library and saves/export panel.",
+      "rootCause": "Uncaught synchronous getItem/enumeration and initial setItem before assigning live session.",
+      "fix": "Safe read/enumeration, render fresh in-memory session then attempt persist, continue refusing restart when existing auto backup cannot be written.",
+      "tests": [
+        "tests/storage-failure.spec.ts",
+        "tests/storage-reliability.test.ts",
+        "tests/library.test.ts"
+      ],
+      "evidence": "engineering-targeted-tests.log; engineering-typecheck.log"
+    },
+    {
+      "id": "ENG-02",
+      "severity": "P1",
+      "status": "FIXED_PENDING_BROWSER_RECHECK",
+      "files": [
+        "src/player.ts",
+        "src/storage.ts"
+      ],
+      "problem": "An older tab overwrites another tab auto save during advance or pagehide.",
+      "rootCause": "Unconditional localStorage last-write-wins.",
+      "fix": "Compare raw auto to last observed/written snapshot before implicit persist. Conflict preserves stored raw and leaves in-memory export. Explicit load/restart first backs up actual current raw.",
+      "tests": [
+        "tests/storage-failure.spec.ts",
+        "tests/storage-reliability.test.ts"
+      ],
+      "limitations": "Synchronous compare/write prevents ordinary stale-tab overwrite, not a transactional lock across exactly simultaneous writers."
+    },
+    {
+      "id": "ENG-03",
+      "severity": "P1",
+      "status": "FIXED_PENDING_REAL_SW_UPDATE_RECHECK",
+      "files": [
+        "public/sw.js"
+      ],
+      "problem": "Downloading a work refreshes root HTML but not current hashed library JS/CSS. A previously installed unchanged worker may leave offline library blank after release.",
+      "rootCause": "Per-work download only adds work manifest and root/index HTML; current shell manifest ignored.",
+      "fix": "Fetch current shell manifest with no-store, validate same-origin scoped relative paths, add full shell with work missing entries, retain other cached works, fail closed on HTTP/manifest/cache errors.",
+      "tests": [
+        "tests/service-worker-update.test.ts",
+        "tests/offline-work-gate.test.ts"
+      ],
+      "evidence": "engineering-targeted-tests.log",
+      "limitations": "VM verifies worker message logic. Root/subpath browser update and offline reload are parent integration responsibility."
+    }
+  ],
+  "p0Confirmed": 0,
+  "tests": {
+    "command": "node --experimental-strip-types --test tests/library.test.ts tests/service-worker-update.test.ts tests/storage-reliability.test.ts",
+    "exit": 0,
+    "passed": 13,
+    "failed": 0,
+    "typecheckExit": 0
+  },
+  "fileCount": 57,
+  "followup": {
+    "testSourceFilesAdditional": 144,
+    "testSourceFilesPreviouslyReviewed": 14,
+    "canonOwnerFilesExcluded": 2,
+    "offlineReadyTimeout": "FIXED_PENDING_BROWSER_RECHECK",
+    "privateOmissionAllowlist": "FIXED_POLICY_TEST_EXIT_0",
+    "historicalProtection": "7 strict mapped binary Git exports;17 existing ledgers unchanged;64 targeted tests pass",
+    "historicalTestsExit": 0,
+    "historicalTestsPassed": 64,
+    "historicalTypecheckExit": 0,
+    "publicColdCheckout": "PARENT_INTEGRATION_REQUIRED"
+  }
+}

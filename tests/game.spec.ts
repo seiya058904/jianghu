@@ -1,6 +1,7 @@
+import {evidencePath} from './evidence-path.ts';
 import {test,expect,type Page} from '@playwright/test';
 import {routes} from './routes';
-const shot=(name:string)=>`docs/evidence/legacy-${name}.png`;
+const shot=(name:string)=>evidencePath(`docs/evidence/legacy-${name}.png`);
 async function start(page:Page){await page.goto('/legacy.html');await page.getByRole('button',{name:'开始故事',exact:true}).click();await expect(page.locator('#scene-title')).toHaveText('雨夜来信');}
 async function choose(page:Page,id:string){await page.locator(`[data-choice="${id}"]`).click();await expect(page.locator('#scene-title')).toBeVisible();}
 for(const [ending,path] of Object.entries(routes))test(`complete ${ending} from cover, save reload, ending prose`,async({page})=>{

@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -23,7 +24,7 @@ test('complete routes, native Ink save/load at every choice, unique consequences
     if(name==='quiet')assert.match(s.frame.paragraphs.join(''),/手腕在雨天会酸/);
     if(name==='common')assert.match(s.frame.paragraphs.join(''),/先伸向他/);
   }
-  writeFileSync('docs/evidence/reading-metrics.json',JSON.stringify(metrics,null,2));
+  writeFileSync(evidencePath('docs/evidence/reading-metrics.json'),JSON.stringify(metrics,null,2));
 });
 
 test('schema, size, unsafe state, impossible choices rejected without altering existing session',()=>{
@@ -77,5 +78,5 @@ test('all reachable state combinations terminate; conditions and all declared no
   assert.deepEqual([...ids].sort(),declaredIds.sort());
   assert.deepEqual([...ends.keys()].sort(),[...ENDINGS].sort());
   const report={states:visited.size,edges,scenes:scenes.size,choiceIds:ids.size,endings:Object.fromEntries(ends)};
-  writeFileSync('docs/evidence/graph-coverage.json',JSON.stringify(report,null,2));console.log(report);
+  writeFileSync(evidencePath('docs/evidence/graph-coverage.json'),JSON.stringify(report,null,2));console.log(report);
 });

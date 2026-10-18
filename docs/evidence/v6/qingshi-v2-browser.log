@@ -47,7 +47,7 @@ Running 15 tests using 1 worker
       12 |   await page.locator('.scene-background,.portrait').evaluateAll(async ns=>{for(const n of ns)for(const m of getComputedStyle(n).backgroundImage.matchAll(/url\(["']?([^"')]+)["']?\)/g)){const im=new Image();im.src=m[1];await im.decode();if(im.naturalWidth<100)throw Error(im.src)}});
       13 |   if(id==='qs_oldknife_6'){await expect(page.locator('.actor:visible')).toHaveCount(1);const box=await page.locator('.actor:visible').boundingBox();expect(box!.width).toBeGreaterThanOrEqual(Math.min(width*.6,600))}
       14 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\qingshi-v2.spec.ts:11:76
+        at .\tests\qingshi-v2.spec.ts:11:76
 
     Error Context: test-results\qingshi-v2-Qingshi-old-kni-d0362--and-restore-at-seven-sizes\error-context.md
 

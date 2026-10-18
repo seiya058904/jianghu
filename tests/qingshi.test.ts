@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -17,7 +18,7 @@ test('Qingshi complete canonical life and two personal aftermaths retain four de
   const death=r.s.frames.findIndex(f=>f.id==='qs_after_1');assert.ok(death>0);
   assert.ok(!r.s.frames.slice(death).some(f=>f.speaker==='you'&&f.stage.scene!=='qs_after'),'dead Xu cannot issue new world-changing commands');
   for(const f of r.s.frames.filter(f=>f.id.startsWith('qs_road32_')))assert.ok(!f.stage.cast.some(id=>['qs_chen','qs_zhao','qs_han','qs_song'].includes(id)),'fallen friends are not left as standing sprites');
-  writeFileSync(`docs/evidence/v6/qingshi-${r.s.frame.ending}-transcript.txt`,r.text);
+  writeFileSync(evidencePath(`docs/evidence/v6/qingshi-${r.s.frame.ending}-transcript.txt`),r.text);
  }
 });
 test('Qingshi a single early retreat drill changes later carriage cost and an unnamed defending squad’s lives',()=>{
@@ -38,7 +39,7 @@ test('Qingshi sampled alternatives cover authored nodes with bounded reading gap
  const visited=new Set<string>(),choices=new Set<string>(),endings=new Set<string>();let longest=0;
  for(let seed=1;seed<=512;seed++){let state=Math.imul(seed,2654435761)>>>0;const r=run(ids=>{state=(Math.imul(state,1664525)+1013904223)>>>0;return ids[state>>>31]});for(const f of r.s.frames){visited.add(f.id);f.choices.forEach(c=>choices.add(c.id));assert.ok(f.stage.cast.length<=3)}endings.add(r.s.frame.ending!);longest=Math.max(longest,r.longest)}
  const source=readFileSync('story/qingshi-v1.ink','utf8'),declared=[...source.matchAll(/# beat:(\S+)/g)].map(m=>m[1]);assert.deepEqual([...visited].sort(),declared.sort());assert.equal(choices.size,58);assert.equal(endings.size,2);
- writeFileSync('docs/evidence/v6/qingshi-content-audit.json',JSON.stringify({status:'PRODUCTION_DRAFT_NOT_FINAL',sourceBeats:declared.length,visited:visited.size,choiceOptions:choices.size,decisionsPerRoute:29,sampledPaths:512,exhaustive:false,longestPassiveGap:longest,limits:'CG, combat-state staging and full three editorial rounds remain incomplete; no external human reading-time or aesthetic claim. Technical reach is not final literary acceptance.'},null,2));
+ writeFileSync(evidencePath('docs/evidence/v6/qingshi-content-audit.json'),JSON.stringify({status:'PRODUCTION_DRAFT_NOT_FINAL',sourceBeats:declared.length,visited:visited.size,choiceOptions:choices.size,decisionsPerRoute:29,sampledPaths:512,exhaustive:false,longestPassiveGap:longest,limits:'CG, combat-state staging and full three editorial rounds remain incomplete; no external human reading-time or aesthetic claim. Technical reach is not final literary acceptance.'},null,2));
  assert.ok(longest<=18,`longest passive gap ${longest}`);
 });
 test('Qingshi protagonist uses three actual age files only at matching years and leaves all posthumous stages',()=>{

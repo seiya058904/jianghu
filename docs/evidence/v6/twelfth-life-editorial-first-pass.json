@@ -8,8 +8,8 @@
     "src/generated/twelfth-life.json": "5be356f88c363df1cb7fb84bd397aa9a4210a7ba951519ef47762bf4cc55d528",
     "story/twelfth-life-v1.ink": "363bc235c070c05163f3f75dcbd7d1b4d43171b503eca44390c7324221f745d8",
     "src/generated/twelfth-life-v1.json": "718d15fbcd9e54cb6d69ce67faaf1f926eb7183f39ae0f5593c2878c546d31ff",
-    "story/twelfth.ink": "80cdf0c9c232a84bec22ba1e015e26b41a990bb240d5718abc69e12e7a27440c",
-    "src/generated/twelfth.json": "56da5b5ecc124fc65866c17b4f0082f77f1279bbde37f01a180899d997047e4b",
+    "story/twelfth.ink": "a2d37f61c06837d9764166c7f16dc304761557bcd2fbcd663bada87c46e0c6d3",
+    "src/generated/twelfth.json": "6be09fe05fc2df85fced816bc68dba68761c0c3d9c20189c5fdbc637661afb2e",
     "story/twelfth-life-author.mjs": "400175dc31468f509e4a76230f8481467b44ecb895dd90331c10bb336a4ca4ca",
     "story/twelfth-life-youth.mjs": "5b33088838f44923632d2d0ae7ce0036229a595d896e2baaf21fee2d6ae96969",
     "story/twelfth-life-names.mjs": "825c5c6a7ddbb1fdda9335661503d50b8e95a88965c3180a7441c09d2e044179",
@@ -134,5 +134,6 @@
     "Draft author imports existing writer two levels above; output only own draft Ink."
   ],
   "newOrEditedArtFiles": 0,
-  "limits": "CurrentV2/V1 and companion remain unchanged; character/rhythm and alternate-route rounds plus versioned browser delivery remain open."
+  "limits": "CurrentV2/V1 and companion remain unchanged; character/rhythm and alternate-route rounds plus versioned browser delivery remain open.",
+  "note": " | ROUND5: story/twelfth.ink and src/generated/twelfth.json advanced intentionally by V7 round-5 orphan-variable wiring; hashes re-recorded."
 }

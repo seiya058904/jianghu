@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -31,8 +32,8 @@ test('Taihua two actual endings replay choices, preserve canon, and fulfil diffe
  }
  assert.match(together.text,/院里有人笑/);assert.doesNotMatch(letter.text,/院里有人笑/);
  assert.match(letter.text,/你确实错过了/);assert.doesNotMatch(together.text,/你确实错过了/);
- writeFileSync('docs/evidence/v6/taihua-v2-company-transcript.txt',together.text);
- writeFileSync('docs/evidence/v6/taihua-v2-letter-transcript.txt',letter.text);
+ writeFileSync(evidencePath('docs/evidence/v6/taihua-v2-company-transcript.txt'),together.text);
+ writeFileSync(evidencePath('docs/evidence/v6/taihua-v2-letter-transcript.txt'),letter.text);
 });
 test('Taihua seeded branch sample reaches all authored beats without loops or missing actors',()=>{
  const beats=new Set<string>(),choices=new Set<string>(),people=new Set<string>();const endings=new Set<string>();let maxGap=0;
@@ -46,7 +47,7 @@ test('Taihua seeded branch sample reaches all authored beats without loops or mi
  assert.deepEqual([...beats].sort(),declared.sort());assert.equal(choices.size,61);assert.equal(endings.size,3);
  assert.equal(people.size,18);
  const dedicated=[...people].filter(id=>chronicleCharacters[id].portrait.kind==='dedicated');
- writeFileSync('docs/evidence/v6/taihua-v2-content-audit.json',JSON.stringify({status:'DRAFT_IMPLEMENTED_NOT_FINAL_ACCEPTANCE',sampledPaths:512,exhaustive:false,reachableBeats:beats.size,choiceOptions:choices.size,decisionPoints:30,cast:[...people],endings:[...endings],longestPassiveGap:maxGap,dedicatedNewPortraits:dedicated,notes:'Remaining temporary portraits explicitly marked templates. Statistical content reach is not editorial or visual acceptance.'},null,2));
+ writeFileSync(evidencePath('docs/evidence/v6/taihua-v2-content-audit.json'),JSON.stringify({status:'DRAFT_IMPLEMENTED_NOT_FINAL_ACCEPTANCE',sampledPaths:512,exhaustive:false,reachableBeats:beats.size,choiceOptions:choices.size,decisionPoints:30,cast:[...people],endings:[...endings],longestPassiveGap:maxGap,dedicatedNewPortraits:dedicated,notes:'Remaining temporary portraits explicitly marked templates. Statistical content reach is not editorial or visual acceptance.'},null,2));
 });
 test('early physical overreach plus late heavy lifting carries a delayed cost; prior private agreement changes the actual practice partner',()=>{
  const rough=run(ids=>ids.find(id=>['th_rush','th_force','th_carry','th_together'].includes(id))??ids[0]);
@@ -74,7 +75,7 @@ test('Taihua concrete observation and three-layer escalation preserve each actua
 });
 
 test('Taihua third outcome receives limited actual instruction, misses peers and respects earlier unasked questions',()=>{
- const guidance=run(ids=>ids.find(id=>id==='th_guidance')??ids[0],true);assert.equal(guidance.session.frame.ending,'th_guidance');assert.match(guidance.text,/一炷香，张没问你第五/);assert.match(guidance.text,/先前真站过的半步/);assert.match(guidance.text,/没有从这一炷香拿回一场同辈复手/);assert.match(guidance.text,/霍要的那页也寄出/);assert.match(guidance.text,/沈没说无妨/);assert.ok(guidance.session.frames.some(f=>f.stage.scene==='th_guidanceyard'&&f.stage.cast.includes('th_zhang')));assert.ok(guidance.session.frames.every(f=>f.stage.scene!=='th_leavepractice'));assert.deepEqual(restoreVN(JSON.stringify(guidance.session.save()),edition).session.frames,guidance.session.frames);writeFileSync('docs/evidence/v6/taihua-v2-guidance-transcript.txt',guidance.text);
+ const guidance=run(ids=>ids.find(id=>id==='th_guidance')??ids[0],true);assert.equal(guidance.session.frame.ending,'th_guidance');assert.match(guidance.text,/一炷香，张没问你第五/);assert.match(guidance.text,/先前真站过的半步/);assert.match(guidance.text,/没有从这一炷香拿回一场同辈复手/);assert.match(guidance.text,/霍要的那页也寄出/);assert.match(guidance.text,/沈没说无妨/);assert.ok(guidance.session.frames.some(f=>f.stage.scene==='th_guidanceyard'&&f.stage.cast.includes('th_zhang')));assert.ok(guidance.session.frames.every(f=>f.stage.scene!=='th_leavepractice'));assert.deepEqual(restoreVN(JSON.stringify(guidance.session.save()),edition).session.frames,guidance.session.frames);writeFileSync(evidencePath('docs/evidence/v6/taihua-v2-guidance-transcript.txt'),guidance.text);
  const noEarlierQuestion=run(ids=>ids.find(id=>['th_note_stop','th_guidance'].includes(id))??ids[0]);assert.match(noEarlierQuestion.text,/没在第六十四手后当场试过/);assert.doesNotMatch(noEarlierQuestion.text,/正式场后你向他比过三处/);
  const missed=run(ids=>ids.find(id=>['th_keep_mu_blank','th_guidance'].includes(id))??ids[0]);assert.notEqual(missed.session.frame.ending,'th_guidance');assert.ok(missed.session.frames.every(f=>f.choices.every(c=>c.id!=='th_guidance')));assert.match(missed.text,/错过的指点不影响青序第五/);
  const injury=run(ids=>ids.find(id=>['th_rush','th_force','th_carry','th_guidance'].includes(id))??ids[0]);assert.match(injury.text,/有一个月不能抬剑/);assert.equal(injury.session.frame.ending,'th_guidance');

@@ -23,7 +23,7 @@ test at tests\jade-thieves-editorial-draft.test.ts:33:1
 
   22 !== 21
 
-      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/jade-thieves-editorial-draft.test.ts:34:247)
+      at TestContext.<anonymous> (file:///[author-local-path]
       at Test.runInAsyncScope (node:async_hooks:227:14)
       at Test.run (node:internal/test_runner/test:1201:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
@@ -44,7 +44,7 @@ test at tests\jade-thieves-editorial-draft.test.ts:37:1
 
   45 !== 43
 
-      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/jade-thieves-editorial-draft.test.ts:40:129)
+      at TestContext.<anonymous> (file:///[author-local-path]
       at Test.runInAsyncScope (node:async_hooks:227:14)
       at Test.run (node:internal/test_runner/test:1201:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:831:18)

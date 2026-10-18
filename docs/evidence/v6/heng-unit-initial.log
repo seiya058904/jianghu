@@ -249,8 +249,8 @@ Ink beyond-ranking: 14443 source characters; 0 warnings
 test at tests\heng-art.test.ts:35:1
 ✖ Both plain tea CGs last two frames and every focused camera clears on the next frame (58.6711ms)
   Error: 此处需要明确选择，不能跳过。
-      at VNRuntime.advance (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/src/vn-runtime.ts:88:55)
-      at TestContext.<anonymous> (file:///D:/xia%20zai/AI%20project/Project%20in%20Iteration/Jianghu/tests/heng-art.test.ts:36:504)
+      at VNRuntime.advance (file:///[author-local-path]
+      at TestContext.<anonymous> (file:///[author-local-path]
       at Test.runInAsyncScope (node:async_hooks:227:14)
       at Test.run (node:internal/test_runner/test:1201:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:831:18)

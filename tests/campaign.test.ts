@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -20,7 +21,7 @@ test('eight distinct complete endings, both middle routes and genuine later call
   if(ending==='captain'){assert.ok(scenes.has('rainboat'));assert.ok(!scenes.has('bridge'))}else{assert.ok(scenes.has('bridge'));assert.ok(!scenes.has('rainboat'))}
   report[ending]={beats:s.frames.length,decisions,characters:s.frames.reduce((n,b)=>n+b.text.length,0),people:cast.size,scenes:scenes.size,commands:s.commands};
  }
- writeFileSync('docs/evidence/v5-route-metrics.json',JSON.stringify({routes:report,people:[...totalPeople],scenes:[...totalScenes],interpretation:'automated route replay, not human play-time or player approval'},null,2));
+ writeFileSync(evidencePath('docs/evidence/v5-route-metrics.json'),JSON.stringify({routes:report,people:[...totalPeople],scenes:[...totalScenes],interpretation:'automated route replay, not human play-time or player approval'},null,2));
  assert.equal(totalScenes.size,Object.keys(campaignScenes).length);
  assert.ok(totalPeople.size>=28);
  assert.equal(Object.keys(campaignEndings).length,8);
@@ -44,6 +45,6 @@ test('seeded route variations terminate with legal stages; report measured sourc
  }
  const source=readFileSync('story/campaign.ink','utf8');const declared=[...source.matchAll(/# beat:([a-z0-9_]+)/g)].map(m=>m[1]);
  const unvisited=declared.filter(x=>!beats.has(x));
- writeFileSync('docs/evidence/v5-sampled-coverage.json',JSON.stringify({seed:71,runs:120,sourceBeats:declared.length,visitedBeats:beats.size,choices:choices.size,endings:[...endings],unvisited,exhaustive:false},null,2));
+ writeFileSync(evidencePath('docs/evidence/v5-sampled-coverage.json'),JSON.stringify({seed:71,runs:120,sourceBeats:declared.length,visitedBeats:beats.size,choices:choices.size,endings:[...endings],unvisited,exhaustive:false},null,2));
  assert.ok(beats.size>800);assert.ok(choices.size>100);assert.equal(Object.keys(campaignCharacters).length,32);
 });

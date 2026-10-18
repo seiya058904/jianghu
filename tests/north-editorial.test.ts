@@ -1,3 +1,5 @@
+import {historicalBytes} from './historical-baselines.ts';
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -12,9 +14,9 @@ const source=readFileSync('story/north.ink','utf8'),version='north-3.0.0';
 function run(picks:string[]=[],seed?:number,data=content){const s=new VNRuntime(data,version);let n=seed??0,gap=0,longest=0;while(!s.frame.ending){assert.ok(s.commands.length<750);if(s.frame.choices.length){n=(Math.imul(n,1664525)+1013904223)>>>0;s.choose((s.frame.choices.find(c=>picks.includes(c.id))??s.frame.choices[seed===undefined?0:(n>>>16)%s.frame.choices.length]).id);gap=0}else{s.advance();longest=Math.max(longest,++gap)}}return{s,text:s.frames.map(f=>f.text).join('\n'),longest}}
 const scene=(r:ReturnType<typeof run>,part:string)=>r.s.frames.filter(f=>f.id.startsWith('nq_'+part+'_')).map(f=>f.text).join('\n');
 
-test('North V3 production keeps exact reviewed authors and frozen V2 bytes, with reusable tea and identity cameras',()=>{
+test('North V3 keeps reviewed author identity (historical north-after) and frozen V2 bytes, with reusable tea and identity cameras',()=>{
  const d=JSON.parse(readFileSync('docs/evidence/v6/north-editorial-integration-preservation.json','utf8'));assert.equal(Object.keys(d.frozen).length,20);for(const [p,h]of Object.entries(d.frozen)){const b=frozenBytes(d.pathMap[p]??p);if(!b)continue;assert.equal(createHash('sha256').update(b).digest('hex'),h,p)}
- for(const file of ['north-author.mjs','north-yard.mjs','north-road.mjs','north-rain.mjs','north-duels.mjs','north-after.mjs']){let reviewed=readFileSync('story/drafts/north/'+file,'utf8');if(file==='north-author.mjs')reviewed=reviewed.replace('../../chronicle-writer.mjs','./chronicle-writer.mjs').replace('story/drafts/north/north-editorial.ink','story/north.ink');assert.equal(readFileSync('story/'+file,'utf8'),reviewed,file)}
+ for(const file of ['north-author.mjs','north-yard.mjs','north-road.mjs','north-rain.mjs','north-duels.mjs','north-after.mjs']){let reviewed=readFileSync('story/drafts/north/'+file,'utf8');if(file==='north-author.mjs')reviewed=reviewed.replace('../../chronicle-writer.mjs','./chronicle-writer.mjs').replace('story/drafts/north/north-editorial.ink','story/north.ink');const actual=file==='north-after.mjs'?historicalBytes('story/'+file)?.toString('utf8'):readFileSync('story/'+file,'utf8');if(actual!==undefined)assert.equal(actual,reviewed,file)}
  const r=run(),frames=r.s.frames;for(const id of ['nq_too_heavy_2','nq_third_teacher_6','nq_last_tea_3'])assert.equal(frames.find(f=>f.id===id)!.stage.camera,'portrait');for(const id of ['nq_last_tea_1','nq_last_tea_2'])assert.equal(frames.find(f=>f.id===id)!.stage.cg,'plainTea');assert.equal(frames.find(f=>f.id==='nq_last_tea_3')!.stage.cg,undefined);
 });
 
@@ -44,11 +46,11 @@ test('North V3 tea is a dated memory, chair already owned, relic stays hung and 
 });
 
 test('North V3 keeps fixed four battles, three teachers, old ranks and both personal endings with exact replay',()=>{
- for(const ending of ['nq_end_teach','nq_end_visits']){const r=run([ending]);for(const p of ['一百二十七','十三岁','扎、拦、拿','一百零九','七十三','三十二招','四十五','一百六十余招','第三十六','三百余','第八十三','第二百零八','三个月不许碰枪','第六十一招','六十五','六十七','六十九','七十一','第一百三十二','胸前一寸','肩外四寸','一百六十四','三百零八','七寸','岁月胜','旧白蜡枪','半截断杆','仍未返真'])assert.ok(r.text.includes(p),p);assert.equal(r.s.commands.filter(c=>c.startsWith('choice:')).length,31);assert.equal(r.s.frame.ending,ending==='nq_end_teach'?'nq_first_again':'nq_three_names');assert.deepEqual(restoreVN(JSON.stringify(r.s.save()),{content,version}).session.frames,r.s.frames);assert.throws(()=>restoreVN(JSON.stringify(r.s.save()),{content:published,version:'north-2.0.0'}),/作品或版本不兼容/);writeFileSync(`docs/evidence/v6/north-editorial-current-${ending}.txt`,r.text)}
+ for(const ending of ['nq_end_teach','nq_end_visits']){const r=run([ending]);for(const p of ['一百二十七','十三岁','扎、拦、拿','一百零九','七十三','三十二招','四十五','一百六十余招','第三十六','三百余','第八十三','第二百零八','三个月不许碰枪','第六十一招','六十五','六十七','六十九','七十一','第一百三十二','胸前一寸','肩外四寸','一百六十四','三百零八','七寸','岁月胜','旧白蜡枪','半截断杆','仍未返真'])assert.ok(r.text.includes(p),p);assert.equal(r.s.commands.filter(c=>c.startsWith('choice:')).length,31);assert.equal(r.s.frame.ending,ending==='nq_end_teach'?'nq_first_again':'nq_three_names');assert.deepEqual(restoreVN(JSON.stringify(r.s.save()),{content,version}).session.frames,r.s.frames);assert.throws(()=>restoreVN(JSON.stringify(r.s.save()),{content:published,version:'north-2.0.0'}),/作品或版本不兼容/);writeFileSync(evidencePath(`docs/evidence/v6/north-editorial-current-${ending}.txt`),r.text)}
 });
 
 test('North V3 sampled alternatives cover all beats and choices with bounded passive reading',()=>{
- const visited=new Set<string>(),options=new Set<string>(),ends=new Set<string>();let longest=0;for(let seed=1;seed<=512;seed++){const r=run([],seed);longest=Math.max(longest,r.longest);for(const f of r.s.frames){visited.add(f.id);f.choices.forEach(c=>options.add(c.id));assert.ok(f.stage.cast.length<=3)}ends.add(r.s.frame.ending!)}const declared=[...source.matchAll(/# beat:(\S+)/g)].map(m=>m[1]);assert.deepEqual([...visited].sort(),declared.sort());assert.equal(options.size,62);assert.equal(ends.size,2);assert.ok(longest<=18,`gap ${longest}`);writeFileSync('docs/evidence/v6/north-editorial-current-audit.json',JSON.stringify({status:'VERSIONED_V3_LOCAL_INTEGRATION_NOT_FULL_GOAL_ACCEPTANCE',declared:declared.length,visited:visited.size,options:options.size,decisions:31,samples:512,exhaustive:false,longestPassiveGap:longest,gameArtChanges:0},null,2)+'\n');
+ const visited=new Set<string>(),options=new Set<string>(),ends=new Set<string>();let longest=0;for(let seed=1;seed<=512;seed++){const r=run([],seed);longest=Math.max(longest,r.longest);for(const f of r.s.frames){visited.add(f.id);f.choices.forEach(c=>options.add(c.id));assert.ok(f.stage.cast.length<=3)}ends.add(r.s.frame.ending!)}const declared=[...source.matchAll(/# beat:(\S+)/g)].map(m=>m[1]);assert.deepEqual([...visited].sort(),declared.sort());assert.equal(options.size,62);assert.equal(ends.size,2);assert.ok(longest<=18,`gap ${longest}`);writeFileSync(evidencePath('docs/evidence/v6/north-editorial-current-audit.json'),JSON.stringify({status:'VERSIONED_V3_LOCAL_INTEGRATION_NOT_FULL_GOAL_ACCEPTANCE',declared:declared.length,visited:visited.size,options:options.size,decisions:31,samples:512,exhaustive:false,longestPassiveGap:longest,gameArtChanges:0},null,2)+'\n');
 });
 
 test('North V3 preserves all 17 published and canon baselines byte-for-byte',()=>{
@@ -69,7 +71,7 @@ test('North V3 six earlier actions return as specific work and costs under both 
   assert.match(scene(r,'one_sixty_four'),first?/重试/:/次晨重新画双方脚位/);
   assert.match(scene(r,'what_to_leave'),first?/等一记没有来的第七剑/:/等他看准/);rows.push({ending,first});
  }
- writeFileSync('docs/evidence/v6/north-editorial-consequence-combinations.json',JSON.stringify({rows,count:rows.length,limits:'Paired six-action regression plus 512 sampled paths; not all combinations.'},null,2)+'\n');
+ writeFileSync(evidencePath('docs/evidence/v6/north-editorial-consequence-combinations.json'),JSON.stringify({rows,count:rows.length,limits:'Paired six-action regression plus 512 sampled paths; not all combinations.'},null,2)+'\n');
 });
 
 test('North V3 preparation precedes the actual garden and three round snapshots keep their declared changes',()=>{

@@ -35,11 +35,12 @@
     "宋世江湖.md": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393",
     "story/twelfth-life-v1.ink": "363bc235c070c05163f3f75dcbd7d1b4d43171b503eca44390c7324221f745d8",
     "src/generated/twelfth-life-v1.json": "718d15fbcd9e54cb6d69ce67faaf1f926eb7183f39ae0f5593c2878c546d31ff",
-    "story/twelfth.ink": "80cdf0c9c232a84bec22ba1e015e26b41a990bb240d5718abc69e12e7a27440c",
-    "src/generated/twelfth.json": "56da5b5ecc124fc65866c17b4f0082f77f1279bbde37f01a180899d997047e4b",
+    "story/twelfth.ink": "a2d37f61c06837d9764166c7f16dc304761557bcd2fbcd663bada87c46e0c6d3",
+    "src/generated/twelfth.json": "6be09fe05fc2df85fced816bc68dba68761c0c3d9c20189c5fdbc637661afb2e",
     "story/twelfth-life-before-cg.ink": "d9a53866cf1913c03ba1f2e4b49560051ec333276794774d344e7a37fa28bca7",
     "src/generated/twelfth-life-before-cg.json": "f12fef9efa1ceb27d3162608bfd3247c020def3f4d54bf7c2c9bffc978607987"
   },
   "narrowMigration": "before-cg stays at V2 archive only; V3 has changed dialogue/commands and uses new namespace.",
-  "newOrEditedArtFiles": 0
+  "newOrEditedArtFiles": 0,
+  "note": " | ROUND5: story/twelfth.ink and src/generated/twelfth.json advanced intentionally by V7 round-5 orphan-variable wiring; hashes re-recorded."
 }

@@ -164,18 +164,24 @@ VAR jd_kept_breaks = false
 我家前人造的工，如今由我家后人来刮。你看着这角，舍得？ # beat:jd_gold_2 # scene:jd_council # cast:jd_attendant,jd_craftheir # speaker:jd_craftheir # mood:jd_craftheir=uneasy
 宗室老亲王说先朝御物不可轻毁，户部问灾区缺多少粮，武将问旧军械若尚存、一玉算什么；另有人怕库早空，玉又先坏。 # beat:jd_gold_3 # scene:jd_council # cast:jd_attendant,jd_craftheir # speaker:narrator
 你一直坐末席，直到皇帝问你觉得呢。你喉间干得很，最后答，它本来就是拿来找库的。上面点头：刮。 # beat:jd_gold_4 # scene:jd_council # cast:jd_attendant,jd_craftheir # speaker:narrator
+{
+- jd_admitted_pickle:
+压过缸的。动手时我记着这句——这玉没享过福，刮它不冤。 # beat:jd_gold_5 # scene:jd_council # cast:jd_attendant,jd_craftheir # speaker:jd_craftheir # mood:jd_craftheir=neutral
+- else:
+你说它压过缸、有盐渍。工匠后人下手时轻了些，像在给一件干过活的东西对账。 # beat:jd_gold_6 # scene:jd_council # cast:jd_attendant,jd_craftheir # speaker:narrator
+}
 * [先描现存表层再刮，花三日与自己的纸料钱，留下可对读的旧线。 # cid:jd_keep_surface]
   ~ jd_surface = true
-  请准三日，先把还在的这一层描下，再按命剥。纸料我想法子，过三日不再请拖。 # beat:jd_gold_5 # scene:jd_council # cast:jd_attendant,jd_craftheir # speaker:you
-  那就别画成你希望它完整的样子。断的也断着，补的也补着。 # beat:jd_gold_6 # scene:jd_council # cast:jd_attendant,jd_craftheir # speaker:jd_craftheir # mood:jd_craftheir=intent
-  上面准了三日。到时原面仍要剥，别拿画了一半又来求情。 # beat:jd_gold_7 # scene:jd_council # cast:jd_attendant,jd_craftheir # speaker:jd_attendant # mood:jd_attendant=intent
-  三日里你少睡，自己垫掉一笔纸钱。表层不是保住了，真剥去时仍会少；你留到的是它曾怎样接在另一半册上的线。 # beat:jd_gold_8 # scene:jd_council # cast:jd_attendant,jd_craftheir # speaker:narrator
+  请准三日，先把还在的这一层描下，再按命剥。纸料我想法子，过三日不再请拖。 # beat:jd_gold_7 # scene:jd_council # cast:jd_attendant,jd_craftheir # speaker:you
+  那就别画成你希望它完整的样子。断的也断着，补的也补着。 # beat:jd_gold_8 # scene:jd_council # cast:jd_attendant,jd_craftheir # speaker:jd_craftheir # mood:jd_craftheir=intent
+  上面准了三日。到时原面仍要剥，别拿画了一半又来求情。 # beat:jd_gold_9 # scene:jd_council # cast:jd_attendant,jd_craftheir # speaker:jd_attendant # mood:jd_attendant=intent
+  三日里你少睡，自己垫掉一笔纸钱。表层不是保住了，真剥去时仍会少；你留到的是它曾怎样接在另一半册上的线。 # beat:jd_gold_10 # scene:jd_council # cast:jd_attendant,jd_craftheir # speaker:narrator
   -> first_cut
 * [先开暗刻，赶上首批勘队；表层旧注有缺，后面愿离队补核。 # cid:jd_read_dark_first]
   ~ jd_surface = false
-  先看暗刻。我随首批去，遇上旧注对不出的，回来补，不拦着等画全。 # beat:jd_gold_9 # scene:jd_council # cast:jd_attendant,jd_craftheir # speaker:you
-  这层刮了便不能再照原面描。以后回档房，也得承认少过这一份。 # beat:jd_gold_10 # scene:jd_council # cast:jd_attendant,jd_craftheir # speaker:jd_craftheir # mood:jd_craftheir=intent
-  细刃先下，暗刻更早露出。你拿到第一批对读页，也欠下一段可能要折回旧档的路。 # beat:jd_gold_11 # scene:jd_council # cast:jd_attendant,jd_craftheir # speaker:narrator
+  先看暗刻。我随首批去，遇上旧注对不出的，回来补，不拦着等画全。 # beat:jd_gold_11 # scene:jd_council # cast:jd_attendant,jd_craftheir # speaker:you
+  这层刮了便不能再照原面描。以后回档房，也得承认少过这一份。 # beat:jd_gold_12 # scene:jd_council # cast:jd_attendant,jd_craftheir # speaker:jd_craftheir # mood:jd_craftheir=intent
+  细刃先下，暗刻更早露出。你拿到第一批对读页，也欠下一段可能要折回旧档的路。 # beat:jd_gold_13 # scene:jd_council # cast:jd_attendant,jd_craftheir # speaker:narrator
   -> first_cut
 
 === first_cut ===
@@ -185,15 +191,21 @@ VAR jd_kept_breaks = false
 什么？ # beat:jd_first_cut_4 # scene:jd_cutting # cast:jd_craftheir,jd_attendant # speaker:jd_attendant # mood:jd_attendant=surprised
 没什么。 # beat:jd_first_cut_5 # scene:jd_cutting # cast:jd_craftheir,jd_attendant # speaker:you
 几个时辰，九处与转运路线明了。金线不能贴回原来的样子，没有哪一道暗纹忽然让你握笔的手多出内力。 # beat:jd_first_cut_6 # scene:jd_cutting # cast:jd_craftheir,jd_attendant # speaker:narrator
+{
+- jd_asked_origin:
+你先问它压了多久，才出价买它。这份来历，倒比外面那些齐全的还真。 # beat:jd_first_cut_7 # scene:jd_cutting # cast:jd_craftheir,jd_attendant # speaker:jd_craftheir # mood:jd_craftheir=uneasy
+- else:
+你当初先问的是价。后来补问的来路，只到当铺旧桌一层——这个空，你一直没敢替它填满。 # beat:jd_first_cut_8 # scene:jd_cutting # cast:jd_craftheir,jd_attendant # speaker:narrator
+}
 * [先同勘队对旧河与今日道路，把能看清的标给带路人，不把地图当山河自己搬回来。 # cid:jd_match_route]
   ~ jd_route_check = true
-  一处旧河早改，册中要按验点重认。带路人把你指的水线推回半寸，问你真走过没有，你说没有，明日一起走。 # beat:jd_first_cut_7 # scene:jd_cutting # cast:jd_craftheir,jd_attendant # speaker:narrator
-  外面已传九库有金有神兵。你们背走的是尺、绳、灯，不是一套等着出土的绝学。 # beat:jd_first_cut_8 # scene:jd_cutting # cast:jd_craftheir,jd_attendant # speaker:narrator
+  一处旧河早改，册中要按验点重认。带路人把你指的水线推回半寸，问你真走过没有，你说没有，明日一起走。 # beat:jd_first_cut_9 # scene:jd_cutting # cast:jd_craftheir,jd_attendant # speaker:narrator
+  外面已传九库有金有神兵。你们背走的是尺、绳、灯，不是一套等着出土的绝学。 # beat:jd_first_cut_10 # scene:jd_cutting # cast:jd_craftheir,jd_attendant # speaker:narrator
   -> first_three
 * [先问能存什么、怎样验能不能用，跟勘队带空筐和试验器物，不按藏宝传闻准备金匣。 # cid:jd_match_supplies]
   ~ jd_route_check = false
-  灾务官让人加了验粮的小筛，军中要看弓材与弦，不要描金的宝函。你发现真问到该怎样用，自己原来准备的纸反倒少了一摞。 # beat:jd_first_cut_9 # scene:jd_cutting # cast:jd_craftheir,jd_attendant # speaker:narrator
-  街上仍有人恭喜你要见到先朝黄金，筐担在旁边，轻得很。 # beat:jd_first_cut_10 # scene:jd_cutting # cast:jd_craftheir,jd_attendant # speaker:narrator
+  灾务官让人加了验粮的小筛，军中要看弓材与弦，不要描金的宝函。你发现真问到该怎样用，自己原来准备的纸反倒少了一摞。 # beat:jd_first_cut_11 # scene:jd_cutting # cast:jd_craftheir,jd_attendant # speaker:narrator
+  街上仍有人恭喜你要见到先朝黄金，筐担在旁边，轻得很。 # beat:jd_first_cut_12 # scene:jd_cutting # cast:jd_craftheir,jd_attendant # speaker:narrator
   -> first_three
 
 === first_three ===
@@ -203,17 +215,23 @@ VAR jd_kept_breaks = false
 第三库进水，仓里一层黑泥，原来的粮已烂。你在门边站太久，闻见一点气味就想吐。 # beat:jd_first_three_4 # scene:jd_first # cast:jd_fieldclerk # speaker:narrator
 出来。不是站得久些，底下就能长回粮。 # beat:jd_first_three_5 # scene:jd_first # cast:jd_fieldclerk # speaker:jd_fieldclerk # mood:jd_fieldclerk=uneasy
 皇家被骗、真璧仍假的话传到耳边。你夜里发冷，差点病倒，十三文的笑话这一次也没能先说出来。 # beat:jd_first_three_6 # scene:jd_first # cast:jd_fieldclerk # speaker:narrator
+{
+- jd_route_check:
+你先对过旧河改道，头三处才没算白走。骂图的人少一句，你心里那句自己没验过的，也少一句。 # beat:jd_first_three_7 # scene:jd_first # cast:jd_fieldclerk # speaker:jd_fieldclerk # mood:jd_fieldclerk=intent
+- else:
+头三处你带的是空筐与验器。挖开的却是塌方与酒窖——筐没用上，你倒庆幸没抬金匣来丢人。 # beat:jd_first_three_8 # scene:jd_first # cast:jd_fieldclerk # speaker:narrator
+}
 * [把前三处实况报回，愿认自己认出了索引、没有许过库仍满，不替任何一边编好消息。 # cid:jd_tell_empty]
   ~ jd_report_empty = true
-  塌、酒窖、黑泥，就按这三处报。还能找的在后面，不在我一句这回一定有。 # beat:jd_first_three_7 # scene:jd_first # cast:jd_fieldclerk # speaker:you
-  我也具名。泥是我先下去看的，别只让朝里看见一个书生捧着错图。 # beat:jd_first_three_8 # scene:jd_first # cast:jd_fieldclerk # speaker:jd_fieldclerk # mood:jd_fieldclerk=intent
-  你们等来继续两字，夜里多喝下一碗热水，次晨仍要出发。 # beat:jd_first_three_9 # scene:jd_first # cast:jd_fieldclerk # speaker:narrator
+  塌、酒窖、黑泥，就按这三处报。还能找的在后面，不在我一句这回一定有。 # beat:jd_first_three_9 # scene:jd_first # cast:jd_fieldclerk # speaker:you
+  我也具名。泥是我先下去看的，别只让朝里看见一个书生捧着错图。 # beat:jd_first_three_10 # scene:jd_first # cast:jd_fieldclerk # speaker:jd_fieldclerk # mood:jd_fieldclerk=intent
+  你们等来继续两字，夜里多喝下一碗热水，次晨仍要出发。 # beat:jd_first_three_11 # scene:jd_first # cast:jd_fieldclerk # speaker:narrator
   -> fourth_route
 * [请亲入库的带路人共同说明，自己把不懂的土层和改道交给真懂的人答。 # cid:jd_take_witness]
   ~ jd_report_empty = false
-  路没假，库却真坏了。请他一起答，我不能替他把什么时候渗水说全。 # beat:jd_first_three_10 # scene:jd_first # cast:jd_fieldclerk # speaker:you
-  那你也别自己先认成活该毁了玉。旧库还剩几处，查完再说。 # beat:jd_first_three_11 # scene:jd_first # cast:jd_fieldclerk # speaker:jd_fieldclerk # mood:jd_fieldclerk=intent
-  报回去仍有人骂，带路人的话也一同到了。继续的命令没有附上一句保证下一处一定是金山。 # beat:jd_first_three_12 # scene:jd_first # cast:jd_fieldclerk # speaker:narrator
+  路没假，库却真坏了。请他一起答，我不能替他把什么时候渗水说全。 # beat:jd_first_three_12 # scene:jd_first # cast:jd_fieldclerk # speaker:you
+  那你也别自己先认成活该毁了玉。旧库还剩几处，查完再说。 # beat:jd_first_three_13 # scene:jd_first # cast:jd_fieldclerk # speaker:jd_fieldclerk # mood:jd_fieldclerk=intent
+  报回去仍有人骂，带路人的话也一同到了。继续的命令没有附上一句保证下一处一定是金山。 # beat:jd_first_three_14 # scene:jd_first # cast:jd_fieldclerk # speaker:narrator
   -> fourth_route
 
 === fourth_route ===
@@ -254,28 +272,34 @@ VAR jd_kept_breaks = false
 那就先把今天能转的转出来。空车轴也未必一根没用。 # beat:jd_sixth_4 # scene:jd_sixth # cast:jd_relief # speaker:jd_relief # mood:jd_relief=neutral
 他叫你帮记还能验过的那几件，自己去问马和路。还没到第七库，队里已没有人只等着你抬出一个漂亮答案。 # beat:jd_sixth_5 # scene:jd_sixth # cast:jd_relief # speaker:narrator
 {
+- jd_report_empty:
+前三处空库照实报的那份，灾务这边都传看过。没人再等你翻本，只等车。 # beat:jd_sixth_6 # scene:jd_sixth # cast:jd_relief # speaker:jd_relief # mood:jd_relief=neutral
+- else:
+带路人同你一起具名那段，底下人记得。报实情的官，问路才有人肯答。 # beat:jd_sixth_7 # scene:jd_sixth # cast:jd_relief # speaker:jd_relief # mood:jd_relief=neutral
+}
+{
 - jd_surface:
 {
 - jd_later_work == 1:
-第五库记过的通风口尺寸还在纸角，灾务官拿去同这几箱车具的防潮盖对。你得留下补一幅小图，少睡的一段没因已经过五库就还回来。 # beat:jd_sixth_6 # scene:jd_sixth # cast:jd_relief # speaker:narrator
+第五库记过的通风口尺寸还在纸角，灾务官拿去同这几箱车具的防潮盖对。你得留下补一幅小图，少睡的一段没因已经过五库就还回来。 # beat:jd_sixth_8 # scene:jd_sixth # cast:jd_relief # speaker:narrator
 - else:
-第五库替验药人腾路时用坏的空筐得补。你同车夫在第六库多找一圈，才找出还能修的一只，不把帮忙过就算器物没有耗。 # beat:jd_sixth_7 # scene:jd_sixth # cast:jd_relief # speaker:narrator
+第五库替验药人腾路时用坏的空筐得补。你同车夫在第六库多找一圈，才找出还能修的一只，不把帮忙过就算器物没有耗。 # beat:jd_sixth_9 # scene:jd_sixth # cast:jd_relief # speaker:narrator
 }
 - else:
 {
 - jd_later_work == 1:
-你付回程钱赶上这班，行囊已薄。第六库外那一夜少买一份热食，县吏把自己的水碗挪来，叫你别再站着硬等。 # beat:jd_sixth_8 # scene:jd_sixth # cast:jd_relief # speaker:narrator
+你付回程钱赶上这班，行囊已薄。第六库外那一夜少买一份热食，县吏把自己的水碗挪来，叫你别再站着硬等。 # beat:jd_sixth_10 # scene:jd_sixth # cast:jd_relief # speaker:narrator
 - else:
-核对页先到，你自己晚一日追来，县吏已接走第一班车。你改接次班，把堂兄交清的两册收好，没有把晚来的这班也写成自己先到。 # beat:jd_sixth_9 # scene:jd_sixth # cast:jd_relief # speaker:narrator
+核对页先到，你自己晚一日追来，县吏已接走第一班车。你改接次班，把堂兄交清的两册收好，没有把晚来的这班也写成自己先到。 # beat:jd_sixth_11 # scene:jd_sixth # cast:jd_relief # speaker:narrator
 }
 }
 * [随粮务这一路继续开库，已经没东西可夸也亲去，不把余下三处只交给别人等好消息。 # cid:jd_take_duty]
   ~ jd_next_with_relief = true
-  你接了一份今晚的转报，走完再睡。灾务官把验粮小筛带上，没叫你先承诺明日一进门就能翻身。 # beat:jd_sixth_10 # scene:jd_sixth # cast:jd_relief # speaker:narrator
+  你接了一份今晚的转报，走完再睡。灾务官把验粮小筛带上，没叫你先承诺明日一进门就能翻身。 # beat:jd_sixth_12 # scene:jd_sixth # cast:jd_relief # speaker:narrator
   -> seventh
 * [先把六处实况送全，再赶第七开门前的班，亲见与听报各保留来处。 # cid:jd_send_plain_report]
   ~ jd_next_with_relief = false
-  你把六处各由谁亲入、自己哪些能答写清，报给值房。下一班赶上，第七库的石门还埋在旧河边深土里，你手里不再只有那一张让人来恭喜的买玉故事。 # beat:jd_sixth_11 # scene:jd_sixth # cast:jd_relief # speaker:narrator
+  你把六处各由谁亲入、自己哪些能答写清，报给值房。下一班赶上，第七库的石门还埋在旧河边深土里，你手里不再只有那一张让人来恭喜的买玉故事。 # beat:jd_sixth_13 # scene:jd_sixth # cast:jd_relief # speaker:narrator
   -> seventh
 
 === seventh ===
@@ -284,16 +308,22 @@ VAR jd_kept_breaks = false
 灾务官站了很久，转身眼睛是红的。他没看玉，只说开仓。 # beat:jd_seventh_3 # scene:jd_seventh # cast:jd_relief # speaker:narrator
 验一批，出一批。坏的别混，路上会下雨，棚布先搭。 # beat:jd_seventh_4 # scene:jd_seventh # cast:jd_relief # speaker:jd_relief # mood:jd_relief=intent # cg:none # camera:portrait # action:灾务官 · 开仓
 一辆、十辆、百辆，粮车沿灾区分送。路边来领粥的人不认识你，也不知道玉在哪里，先问今日能不能给一家人都盛上。 # beat:jd_seventh_5 # scene:jd_seventh # cast:jd_relief # speaker:narrator
+{
+- jd_next_with_relief:
+你随粮务这一路走到第七库。灾务官那句别先承诺明日翻身，你记着进门。 # beat:jd_seventh_6 # scene:jd_seventh # cast:jd_relief # speaker:narrator
+- else:
+你赶在第七库开门前到班。六处实况已先送全，进门的不是一句盼着翻本的运气。 # beat:jd_seventh_7 # scene:jd_seventh # cast:jd_relief # speaker:narrator
+}
 * [先接近处人，问一碗粥怎样送到没来的那口人手里，发粥请另一班接锅。 # cid:jd_receive_people]
   ~ jd_family_list = true
-  你把锅交给已到的伙计，自己蹲到端空碗的母女旁。母亲阿荞说父亲手麻，走得慢，先在上游木亭等；孩子怕你以为他不来便不算一口。 # beat:jd_seventh_6 # scene:jd_seventh # cast:jd_relief # speaker:narrator
-  哪座木亭？你来回多远？ # beat:jd_seventh_7 # scene:jd_seventh # cast:jd_relief # speaker:you
-  她指给你看，你在交班木牌边另标这一家去处，交阿荞自己核。少发的一轮由你稍后补班，不白叫锅边人替你多站。 # beat:jd_seventh_8 # scene:jd_seventh # cast:jd_relief # speaker:narrator
+  你把锅交给已到的伙计，自己蹲到端空碗的母女旁。母亲阿荞说父亲手麻，走得慢，先在上游木亭等；孩子怕你以为他不来便不算一口。 # beat:jd_seventh_8 # scene:jd_seventh # cast:jd_relief # speaker:narrator
+  哪座木亭？你来回多远？ # beat:jd_seventh_9 # scene:jd_seventh # cast:jd_relief # speaker:you
+  她指给你看，你在交班木牌边另标这一家去处，交阿荞自己核。少发的一轮由你稍后补班，不白叫锅边人替你多站。 # beat:jd_seventh_10 # scene:jd_seventh # cast:jd_relief # speaker:narrator
   -> porridge
 * [先把热粥发过雨前这一班，阿荞一家由后班再问，承认自己还没认全不在场的人。 # cid:jd_keep_porridge_hot]
   ~ jd_family_list = false
-  雨要落，你先帮锅边人一碗碗送。阿荞问能否给父亲带一份，你答能，让她先拿热的走；他在哪里、谁还同等，要请下一班再问。 # beat:jd_seventh_9 # scene:jd_seventh # cast:jd_relief # speaker:narrator
-  她带孩子走了。你多发完一轮热粥，木牌上仍没她父亲那处木亭，空的这一项并没有因为眼前人少了就补上。 # beat:jd_seventh_10 # scene:jd_seventh # cast:jd_relief # speaker:narrator
+  雨要落，你先帮锅边人一碗碗送。阿荞问能否给父亲带一份，你答能，让她先拿热的走；他在哪里、谁还同等，要请下一班再问。 # beat:jd_seventh_11 # scene:jd_seventh # cast:jd_relief # speaker:narrator
+  她带孩子走了。你多发完一轮热粥，木牌上仍没她父亲那处木亭，空的这一项并没有因为眼前人少了就补上。 # beat:jd_seventh_12 # scene:jd_seventh # cast:jd_relief # speaker:narrator
   -> porridge
 
 === porridge ===
@@ -462,13 +492,25 @@ VAR jd_kept_breaks = false
 还有旧账？ # beat:jd_grain_held_3 # scene:jd_grainnight # cast:jd_relief,jd_red,jd_kite # speaker:jd_kite # mood:jd_kite=amused
 两人望一眼，没再说。并肩不等于去年那道伤没了，今夜却真没有把另一个当自己该先打倒的人。 # beat:jd_grain_held_4 # scene:jd_grainnight # cast:jd_relief,jd_red,jd_kite # speaker:narrator
 第九库有火讯。把这里已守住报过去，别叫那边还以为粮一车没出。 # beat:jd_grain_held_5 # scene:jd_grainnight # cast:jd_relief,jd_red,jd_kite # speaker:jd_relief # mood:jd_relief=neutral
+{
+- jd_grain_work == 1:
+你让开的墙边，这一刻正好走水担。守车口的手没停，火却没近人。 # beat:jd_grain_held_6 # scene:jd_grainnight # cast:jd_relief,jd_red,jd_kite # speaker:narrator
+- else:
+你那两担水没白接。湿布压下去时，掌心的麻还在，火却先灭在人前。 # beat:jd_grain_held_7 # scene:jd_grainnight # cast:jd_relief,jd_red,jd_kite # speaker:narrator
+}
+{
+- jd_clans_plain:
+西口东口，白天就喊应了。夜里换手时，两边报的都是说好的那几处。 # beat:jd_grain_held_8 # scene:jd_grainnight # cast:jd_relief,jd_red,jd_kite # speaker:narrator
+- else:
+车轴白天挪开的地方，夜里正好走人。两家自己报的守位，没有一处要你替他们再对一遍。 # beat:jd_grain_held_9 # scene:jd_grainnight # cast:jd_relief,jd_red,jd_kite # speaker:narrator
+}
 * [先送粮路实况与未到的车次，自己留到这班交完，不报全线都已无事。 # cid:jd_send_grain_status]
   ~ jd_grain_after = 1
-  快脚带走的是第七库已守住、哪班仍在路上。你守在外廊，等最后一辆慢车到，才把自己的这班交出去。 # beat:jd_grain_held_6 # scene:jd_grainnight # cast:jd_relief,jd_red,jd_kite # speaker:narrator
+  快脚带走的是第七库已守住、哪班仍在路上。你守在外廊，等最后一辆慢车到，才把自己的这班交出去。 # beat:jd_grain_held_10 # scene:jd_grainnight # cast:jd_relief,jd_red,jd_kite # speaker:narrator
   -> night_reports
 * [先同近处民众认人、认车，回报交给本来负责的快脚，不让每一件小事都等自己。 # cid:jd_check_displaced]
   ~ jd_grain_after = 2
-  你走到灶棚边找阿荞，先看到她女儿抱着空碗。母亲没有先问你玉怎么样，张口问的是她爹被送到哪一边。 # beat:jd_grain_held_7 # scene:jd_grainnight # cast:jd_relief,jd_red,jd_kite # speaker:narrator
+  你走到灶棚边找阿荞，先看到她女儿抱着空碗。母亲没有先问你玉怎么样，张口问的是她爹被送到哪一边。 # beat:jd_grain_held_11 # scene:jd_grainnight # cast:jd_relief,jd_red,jd_kite # speaker:narrator
   -> night_reports
 
 === night_reports ===
@@ -489,11 +531,23 @@ VAR jd_kept_breaks = false
 你别叫我先放心。我得先知道他在哪儿。 # beat:jd_night_reports_8 # scene:jd_grainafter # cast:jd_qiao # speaker:jd_qiao # mood:jd_qiao=uneasy
 你把两班已走的地方逐个问出。阿荞带孩子去接报处等下一程消息，今晚仍未找到父亲；护病车往北，粮车往南，两边都得请真到的人接问。 # beat:jd_night_reports_9 # scene:jd_grainafter # cast:jd_qiao # speaker:narrator
 }
+{
+- jd_people_lane:
+转车时人走人路、车走车道，白夜分开的那两处还管用。没有人被挤进车轮边上。 # beat:jd_night_reports_10 # scene:jd_grainafter # cast:jd_qiao # speaker:narrator
+- else:
+转车这一程，你把卸半担的空地也让了出来。慢的人有处站，车有处拐。 # beat:jd_night_reports_11 # scene:jd_grainafter # cast:jd_qiao # speaker:narrator
+}
+{
+- jd_grain_after == 1:
+快脚带走的报里，最后一辆慢车的时辰也在。你守到交完班才离，没叫下一班猜。 # beat:jd_night_reports_12 # scene:jd_grainafter # cast:jd_qiao # speaker:narrator
+- else:
+灶棚认人认车那一项，你交给了本来负责的人。今早核名，一个没漏。 # beat:jd_night_reports_13 # scene:jd_grainafter # cast:jd_qiao # speaker:narrator
+}
 * [交清仍未认到的人，不拿库守住便说每个家庭都同样完整，后面再接第九库报。 # cid:jd_close_local_shift]
-  你把这班交完。报捷的纸没有抹掉旁边那一份未认到的名字，大家能把门守住，仍有人得替走散的一家多问几处。 # beat:jd_night_reports_10 # scene:jd_grainafter # cast:jd_qiao # speaker:narrator
+  你把这班交完。报捷的纸没有抹掉旁边那一份未认到的名字，大家能把门守住，仍有人得替走散的一家多问几处。 # beat:jd_night_reports_14 # scene:jd_grainafter # cast:jd_qiao # speaker:narrator
   -> rejoin
 * [先找真往返两库的人问火讯，自己的未交事项请当值者认接后再走。 # cid:jd_go_to_witness]
-  当值者接下了你手里的最后两问，你才去见第九库回来的快脚。那一夜别处的刀与碎裂，到此还是他的亲见，不是你的。 # beat:jd_night_reports_11 # scene:jd_grainafter # cast:jd_qiao # speaker:narrator
+  当值者接下了你手里的最后两问，你才去见第九库回来的快脚。那一夜别处的刀与碎裂，到此还是他的亲见，不是你的。 # beat:jd_night_reports_15 # scene:jd_grainafter # cast:jd_qiao # speaker:narrator
   -> rejoin
 
 === records_night ===
@@ -501,13 +555,19 @@ VAR jd_kept_breaks = false
 低下！ # beat:jd_records_night_2 # scene:jd_recordsnight # cast:jd_fieldclerk # speaker:jd_fieldclerk # mood:jd_fieldclerk=sharp
 一支燃箭落在空筐，侍卫扑开近处火。你抱起正在核的册，旁边一名刺客已从另一侧抢到真玉，转身要出。 # beat:jd_records_night_3 # scene:jd_recordsnight # cast:jd_fieldclerk # speaker:narrator
 你认出旧银补，却没有因此变得比刀快。侍卫去截，刀锋到近处，逼得持玉者先向石阶退。 # beat:jd_records_night_4 # scene:jd_recordsnight # cast:jd_fieldclerk # speaker:narrator
+{
+- jd_use_record:
+你抄的用途与维护条目还在怀里。火光里先护的倒是它旁边那页路线——路改过没有，接仓的人明天就要问。 # beat:jd_records_night_5 # scene:jd_recordsnight # cast:jd_fieldclerk # speaker:narrator
+- else:
+你认出旧档上几层不同的手。火光里那几处添注的位置，你闭眼都记得，比记金线清楚。 # beat:jd_records_night_6 # scene:jd_recordsnight # cast:jd_fieldclerk # speaker:narrator
+}
 * [压湿帘护住档案出口，把仍能走的人带向已经有人接的外廊。 # cid:jd_wet_screen]
   ~ jd_records_work = 1
-  湿帘浇到你袖口，你仍先试外廊有没有人应。县吏把开着的匣推给你，门内的刀由侍卫接，你不为看一块旧物便站到两人中间。 # beat:jd_records_night_5 # scene:jd_recordsnight # cast:jd_fieldclerk # speaker:narrator
+  湿帘浇到你袖口，你仍先试外廊有没有人应。县吏把开着的匣推给你，门内的刀由侍卫接，你不为看一块旧物便站到两人中间。 # beat:jd_records_night_7 # scene:jd_recordsnight # cast:jd_fieldclerk # speaker:narrator
   -> three_impacts
 * [先挪开堵门的书箱，让护卫与抱档人有退步处，自己不追那只持玉手。 # cid:jd_clear_stack]
   ~ jd_records_work = 2
-  你同县吏抬箱，肩顶到架脚，终于挪出一人能过的口。身后兵器一碰，玉落声比你想得更闷，你仍得先接住眼前这只箱。 # beat:jd_records_night_6 # scene:jd_recordsnight # cast:jd_fieldclerk # speaker:narrator
+  你同县吏抬箱，肩顶到架脚，终于挪出一人能过的口。身后兵器一碰，玉落声比你想得更闷，你仍得先接住眼前这只箱。 # beat:jd_records_night_8 # scene:jd_recordsnight # cast:jd_fieldclerk # speaker:narrator
   -> three_impacts
 
 === three_impacts ===
@@ -531,13 +591,19 @@ VAR jd_kept_breaks = false
 粮那边怎样？ # beat:jd_ninth_out_3 # scene:jd_ninthafter # cast:jd_fieldclerk # speaker:you
 回报还没到。别让我猜你最想听的那句。 # beat:jd_ninth_out_4 # scene:jd_ninthafter # cast:jd_fieldclerk # speaker:jd_fieldclerk # mood:jd_fieldclerk=neutral
 你把衣袖浸湿，坐下等，第一次很想有人立刻给一个好消息，却只能让那一程路真有人跑完。 # beat:jd_ninth_out_5 # scene:jd_ninthafter # cast:jd_fieldclerk # speaker:narrator
+{
+- jd_records_work == 1:
+湿帘那道口，后来又过了一批人。你袖口的水痕干了，帘还挂着。 # beat:jd_ninth_out_6 # scene:jd_ninthafter # cast:jd_fieldclerk # speaker:narrator
+- else:
+你挪开的门侧，抬匣的人正从那里出去。那只箱硌过的肩，此刻才想起来疼。 # beat:jd_ninth_out_7 # scene:jd_ninthafter # cast:jd_fieldclerk # speaker:narrator
+}
 * [先报第九库档与图已出、真玉碎，伤者另列，不拿原片在便说玉完整无失。 # cid:jd_send_records_status]
   ~ jd_records_after = 1
-  回信一份份送。你报的是亲手交到外廊的人与物，不补第七库今夜怎样；给别人一个能继续问的收件处，胜过替没见的那头先报平安。 # beat:jd_ninth_out_6 # scene:jd_ninthafter # cast:jd_fieldclerk # speaker:narrator
+  回信一份份送。你报的是亲手交到外廊的人与物，不补第七库今夜怎样；给别人一个能继续问的收件处，胜过替没见的那头先报平安。 # beat:jd_ninth_out_8 # scene:jd_ninthafter # cast:jd_fieldclerk # speaker:narrator
   -> seventh_report
 * [帮院外等讯的人找当值者，自己的稿或伤先交一份真实说明，不让大家围着一块残片猜。 # cid:jd_help_waiting]
   ~ jd_records_after = 2
-  你把人带到接报处。有位抱着旧匣的守者问该不该先修角，你还没答，第七库的快脚终于到了。 # beat:jd_ninth_out_7 # scene:jd_ninthafter # cast:jd_fieldclerk # speaker:narrator
+  你把人带到接报处。有位抱着旧匣的守者问该不该先修角，你还没答，第七库的快脚终于到了。 # beat:jd_ninth_out_9 # scene:jd_ninthafter # cast:jd_fieldclerk # speaker:narrator
   -> seventh_report
 
 === seventh_report ===
@@ -569,13 +635,19 @@ VAR jd_kept_breaks = false
 - else:
 你把第九库自己所见交出，粮路那一份由灾务官与守口的人核。有人来夸你一夜两处都保全，你只得先把这句拆开，告诉他自己没站过第七库的刀口。 # beat:jd_rejoin_5 # scene:jd_return # cast:jd_relief,jd_fieldclerk # speaker:narrator
 }
+{
+- jd_tools_check:
+第八库那批能上路的数，是你一格一格减出来的。转运线上没因多报十架废弩白跑一趟。 # beat:jd_rejoin_6 # scene:jd_return # cast:jd_relief,jd_fieldclerk # speaker:jd_fieldclerk # mood:jd_fieldclerk=neutral
+- else:
+那只补住的轮，后来真到了边地。你核装车那一晚，替一辆车省了半路。 # beat:jd_rejoin_7 # scene:jd_return # cast:jd_relief,jd_fieldclerk # speaker:jd_fieldclerk # mood:jd_fieldclerk=neutral
+}
 * [两地各留真接手的人，自己能核的核，不让上报只剩陆文简三个字。 # cid:jd_keep_two_witnesses]
   ~ jd_credit_shared = true
-  县吏、粮务、守口与接民的各报一段。你依次让开笔的位置，手里仍有自己的职责，不因愿意交出名字便自动做完未交的活。 # beat:jd_rejoin_6 # scene:jd_return # cast:jd_relief,jd_fieldclerk # speaker:narrator
+  县吏、粮务、守口与接民的各报一段。你依次让开笔的位置，手里仍有自己的职责，不因愿意交出名字便自动做完未交的活。 # beat:jd_rejoin_8 # scene:jd_return # cast:jd_relief,jd_fieldclerk # speaker:narrator
   -> family_return
 * [先补交没到的物、没问清的人，合报交当值者，自己不留在残片匣前等恭喜。 # cid:jd_finish_unreturned]
   ~ jd_credit_shared = false
-  你离开装残片的匣，去找走散人的回信与尚未到的车。晚一日交完，回报里你那一段短了，未了的却真少了几件。 # beat:jd_rejoin_7 # scene:jd_return # cast:jd_relief,jd_fieldclerk # speaker:narrator
+  你离开装残片的匣，去找走散人的回信与尚未到的车。晚一日交完，回报里你那一段短了，未了的却真少了几件。 # beat:jd_rejoin_9 # scene:jd_return # cast:jd_relief,jd_fieldclerk # speaker:narrator
   -> family_return
 
 === family_return ===
@@ -588,14 +660,26 @@ VAR jd_kept_breaks = false
 二十日后父女才重逢。找人的路费和投宿都在，这回冬粮得少一截。我收你的补差，但不是收你一句从此都好。 # beat:jd_family_return_4 # scene:jd_roadside # cast:jd_qiao # speaker:jd_qiao # mood:jd_qiao=uneasy
 你把此刻能拿出的路费先补找人那一段，未够的记明，等下一份酬钱实领再给，没把承诺当已经结清。另给真能上车的去处让她自己选。她认自己那一家的数，不肯替所有走散的人说已安顿。 # beat:jd_family_return_5 # scene:jd_roadside # cast:jd_qiao # speaker:narrator
 }
+{
+- jd_paid_shift:
+那晚你补完班才走。我记得——所以这回也先问你哪班能真接。 # beat:jd_family_return_6 # scene:jd_roadside # cast:jd_qiao # speaker:jd_qiao # mood:jd_qiao=neutral
+- else:
+那晚你把接的人先寻好才走。我找活也学这个：先问清谁来接，再应工。 # beat:jd_family_return_7 # scene:jd_roadside # cast:jd_qiao # speaker:jd_qiao # mood:jd_qiao=neutral
+}
+{
+- jd_records_after == 1:
+你们合报那册，各段都留着名字。我爹那段也有——不是只有陆先生的。 # beat:jd_family_return_8 # scene:jd_roadside # cast:jd_qiao # speaker:jd_qiao # mood:jd_qiao=neutral
+- else:
+{jd_post == 2:你帮院外那些人找到接报处，后来他们都记得去哪儿问。比围着一块碎片猜强。|{jd_grain_after == 1:你先去核粮路上没到的慢车，院外的人才有个能追问的去处。|你把灶棚里认人接手的事交给当值的人，没让下一班只围着碎片猜。}} # beat:jd_family_return_9 # scene:jd_roadside # cast:jd_qiao # speaker:jd_qiao # mood:jd_qiao=neutral
+}
 * [给她可选的有酬班和能回家的时辰，缺的差自己补，不把受过救济当终身人情。 # cid:jd_offer_paid_shift]
   ~ jd_qiao_work = true
-  她选了半日，你把另半日交别班。女儿替祖父拿着那块布，不再只在排队时攥住母亲的衣角。 # beat:jd_family_return_6 # scene:jd_roadside # cast:jd_qiao # speaker:narrator
-  下回来，你若只夸我爹认得字，他照样拿不了滚烫的碗。记得先把布给他。 # beat:jd_family_return_7 # scene:jd_roadside # cast:jd_qiao # speaker:jd_qiao # mood:jd_qiao=amused
+  她选了半日，你把另半日交别班。女儿替祖父拿着那块布，不再只在排队时攥住母亲的衣角。 # beat:jd_family_return_10 # scene:jd_roadside # cast:jd_qiao # speaker:narrator
+  下回来，你若只夸我爹认得字，他照样拿不了滚烫的碗。记得先把布给他。 # beat:jd_family_return_11 # scene:jd_roadside # cast:jd_qiao # speaker:jd_qiao # mood:jd_qiao=amused
   -> palace_fragments
 * [先把下一车与接工的人当面介绍，自己留确能问到的官署，不许永远由自己来。 # cid:jd_leave_real_contact]
   ~ jd_qiao_work = false
-  你让两人当面说定，不隔着一句陆先生准了。阿荞指明哪天不能来，接工人换一班，活才真正落在她能过的日子里。 # beat:jd_family_return_8 # scene:jd_roadside # cast:jd_qiao # speaker:narrator
+  你让两人当面说定，不隔着一句陆先生准了。阿荞指明哪天不能来，接工人换一班，活才真正落在她能过的日子里。 # beat:jd_family_return_12 # scene:jd_roadside # cast:jd_qiao # speaker:narrator
   -> palace_fragments
 
 === palace_fragments ===
@@ -632,13 +716,25 @@ VAR jd_kept_breaks = false
 - jd_post == 2 and not jd_notes_kept:
 火里丢的几页私稿没有又在箱底奇迹般找到。你拿原档与同行人的那份重核，重写到哪儿记不清，便把没记全的留下，没人因此又少吃一碗已经运出的粮。 # beat:jd_next_work_5 # scene:jd_work # cast:none # speaker:narrator
 }
+{
+- jd_credit_shared:
+有功的报上，县吏、粮务、守口与接民各占一段。后来问起，你只需答自己那一小段。 # beat:jd_next_work_6 # scene:jd_work # cast:none # speaker:narrator
+- else:
+你先补交没到的东西才合报。后来论功，你那一段最短，未了的却真少了。 # beat:jd_next_work_7 # scene:jd_work # cast:none # speaker:narrator
+}
+{
+- jd_qiao_work:
+阿荞选的半日工做满了季。领酬那天她自己到官署，没再等你转一道手。 # beat:jd_next_work_8 # scene:jd_work # cast:none # speaker:narrator
+- else:
+接工的人与下一车当面认过，那半日班到今日没断过。你没有留在中间做那道必须经过的门。 # beat:jd_next_work_9 # scene:jd_work # cast:none # speaker:narrator
+}
 * [把何家婚书底稿收好，走访旧识时不只给他们讲自己如今管什么。 # cid:jd_return_wedding_copy]
   ~ jd_wedding_kept = true
-  你把那一页铺平，想起当日何老板只说字写好点。自己原来怕的许多质问里，竟是这句最早真答上了。 # beat:jd_next_work_6 # scene:jd_work # cast:none # speaker:narrator
+  你把那一页铺平，想起当日何老板只说字写好点。自己原来怕的许多质问里，竟是这句最早真答上了。 # beat:jd_next_work_10 # scene:jd_work # cast:none # speaker:narrator
   -> he_late
 * [按原欠过的饭菜旧情去何家，带普通礼，不拿一份宝物来历替当年十三文补成豪富。 # cid:jd_visit_without_treasure]
   ~ jd_wedding_kept = false
-  你带一包寻常干货，没把旧玉今日身价折作一份送不出去的大礼。何家还在开门做生意，来的人先得让出称菜的位置。 # beat:jd_next_work_7 # scene:jd_work # cast:none # speaker:narrator
+  你带一包寻常干货，没把旧玉今日身价折作一份送不出去的大礼。何家还在开门做生意，来的人先得让出称菜的位置。 # beat:jd_next_work_11 # scene:jd_work # cast:none # speaker:narrator
   -> he_late
 
 === he_late ===
@@ -678,14 +774,20 @@ VAR jd_kept_breaks = false
 来人一下高兴，追问所以真的有？ # beat:jd_sima_late_4 # scene:jd_inner_late # cast:jd_sima # speaker:narrator
 你怎么又绕回去了？ # beat:jd_sima_late_5 # scene:jd_inner_late # cast:jd_sima # speaker:jd_sima # mood:jd_sima=sharp
 司马把残片推回匣里，问来人那套剑练过没有。来人正要答听谁说过，你低头抿住一声笑，想起那股洗三日仍没去净的酱味。 # beat:jd_sima_late_6 # scene:jd_inner_late # cast:jd_sima # speaker:narrator
+{
+- jd_sima_archive:
+那年你先递的是册，不是传说。今日他们问的还是传说。你替他把匣推回去。 # beat:jd_sima_late_7 # scene:jd_inner_late # cast:jd_sima # speaker:jd_sima # mood:jd_sima=neutral
+- else:
+你想起当年自己先指图不对的地方。这一回你没有抢答，等他自己把残片推回匣里。 # beat:jd_sima_late_8 # scene:jd_inner_late # cast:jd_sima # speaker:narrator
+}
 * [在旧记录保留剥金、脱补、碎裂与各自发生处，不把有用过的真物重新画成完整宝璧。 # cid:jd_keep_old_breaks]
   ~ jd_kept_breaks = true
-  第七守住粮，第九碎的是玉。这两处别画成同一扇门。银补脱掉，也别因旧图好看便再补上。 # beat:jd_sima_late_7 # scene:jd_inner_late # cast:jd_sima # speaker:you
-  画者重看两地路程，终于留两幅不同的图，不拿你一句话就说自己已画懂一百年。 # beat:jd_sima_late_8 # scene:jd_inner_late # cast:jd_sima # speaker:narrator
+  第七守住粮，第九碎的是玉。这两处别画成同一扇门。银补脱掉，也别因旧图好看便再补上。 # beat:jd_sima_late_9 # scene:jd_inner_late # cast:jd_sima # speaker:you
+  画者重看两地路程，终于留两幅不同的图，不拿你一句话就说自己已画懂一百年。 # beat:jd_sima_late_10 # scene:jd_inner_late # cast:jd_sima # speaker:narrator
   -> later_records
 * [把后来维护与交接接着写，不用一块残片的传奇替代真正还在用的常仓。 # cid:jd_keep_maintenance]
   ~ jd_kept_breaks = false
-  你找来新接手的人，问今年路改没改、仓验没验。讲古的人等你讲玉的结局，你先把这一季的粮数听完。 # beat:jd_sima_late_9 # scene:jd_inner_late # cast:jd_sima # speaker:narrator
+  你找来新接手的人，问今年路改没改、仓验没验。讲古的人等你讲玉的结局，你先把这一季的粮数听完。 # beat:jd_sima_late_11 # scene:jd_inner_late # cast:jd_sima # speaker:narrator
   -> later_records
 
 === later_records ===
@@ -694,10 +796,22 @@ VAR jd_kept_breaks = false
 二十余年后的另一处地下拍卖，黑青完整金线的璧又被举起。有人问真货不是碎了么，卖家说当年碎的是皇家赝品；问证据，他笑着反问没证据怎敢拿来。 # beat:jd_later_records_3 # scene:jd_after # cast:none # speaker:narrator
 竞价仍起。连钱九真的赝品也成有历史的假宝，酱香旧本又添一重价。真正残片没有修成那样新，图与仓也早不必等谁重新抢回唯一完整的一块。 # beat:jd_later_records_4 # scene:jd_after # cast:none # speaker:narrator
 {
+- jd_best_letter:
+有人又问那婚书，你仍答字真不错。问的人笑了，说你这辈子最像句人话的得意。 # beat:jd_later_records_5 # scene:jd_after # cast:none # speaker:narrator
+- else:
+何家婚书原件后来配了框。你说功分真能核过的名字，框里那两个字是他们自家的。 # beat:jd_later_records_6 # scene:jd_after # cast:none # speaker:narrator
+}
+{
+- jd_kept_breaks:
+画者留了两幅不同的图，第七库那幅上，粮车走的路还画着当日喊应的口。 # beat:jd_later_records_7 # scene:jd_after # cast:none # speaker:narrator
+- else:
+新接手的人今年又核了一遍仓。讲古的图挂在墙上，验粮的册子放在手边。 # beat:jd_later_records_8 # scene:jd_after # cast:none # speaker:narrator
+}
+{
 - jd_career == 1:
-你这一路，后来还要回到仓门前，查一辆车的轴、问一户没到场的人、把能用的粮交给真接手者。别人夸十三文，你仍记得何老板的婚书。所谓宝物到谁手里才算宝，今晨先问的，是下一车给谁吃。 # beat:jd_later_records_5 # scene:jd_after # cast:none # speaker:narrator # ending:jd_storework
+你这一路，后来还要回到仓门前，查一辆车的轴、问一户没到场的人、把能用的粮交给真接手者。别人夸十三文，你仍记得何老板的婚书。所谓宝物到谁手里才算宝，今晨先问的，是下一车给谁吃。 # beat:jd_later_records_9 # scene:jd_after # cast:none # speaker:narrator # ending:jd_storework
 -> END
 - else:
-你这一路，后来仍会坐回普通档桌。册能重抄，未核的字要问人，图不再锁在一块新玉里。窗外有人来请写婚书，你洗手另取一张好纸，问清两家姓名；这一份，也得写得真不错。 # beat:jd_later_records_6 # scene:jd_after # cast:none # speaker:narrator # ending:jd_archivework
+你这一路，后来仍会坐回普通档桌。册能重抄，未核的字要问人，图不再锁在一块新玉里。窗外有人来请写婚书，你洗手另取一张好纸，问清两家姓名；这一份，也得写得真不错。 # beat:jd_later_records_10 # scene:jd_after # cast:none # speaker:narrator # ending:jd_archivework
 -> END
 }

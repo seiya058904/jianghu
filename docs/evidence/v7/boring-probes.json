@@ -1,0 +1,2154 @@
+{
+ "generatedBy": "node --experimental-strip-types scripts/audit-v7-boring-probes.mjs",
+ "samplesPerEdition": 120,
+ "rows": [
+  {
+   "slug": "bamboo",
+   "title": "竹院夜论",
+   "version": "bamboo-1.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [],
+   "repeatedCount": 0,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "bb_ask_how_confirm",
+     "taken": 66
+    },
+    {
+     "cid": "bb_return_own_palm",
+     "taken": 63
+    },
+    {
+     "cid": "bb_ask_liu_weaker",
+     "taken": 63
+    },
+    {
+     "cid": "bb_challenge_old_story",
+     "taken": 58
+    },
+    {
+     "cid": "bb_ask_han_rumor",
+     "taken": 57
+    },
+    {
+     "cid": "bb_ask_ro_habit",
+     "taken": 56
+    }
+   ],
+   "silentCount": 6
+  },
+  {
+   "slug": "beyond-ranking",
+   "title": "榜纸之外·宁无极旧录",
+   "version": "beyond-ranking-1.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [],
+   "repeatedCount": 0,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "br_ask_reliable",
+     "taken": 68
+    },
+    {
+     "cid": "br_ask_meng_dates",
+     "taken": 63
+    },
+    {
+     "cid": "br_ask_gun_words",
+     "taken": 62
+    },
+    {
+     "cid": "br_ask_public",
+     "taken": 62
+    },
+    {
+     "cid": "br_ask_late_sword",
+     "taken": 61
+    },
+    {
+     "cid": "br_ask_once",
+     "taken": 58
+    },
+    {
+     "cid": "br_ask_two_crowns",
+     "taken": 56
+    },
+    {
+     "cid": "br_read_whole",
+     "taken": 56
+    }
+   ],
+   "silentCount": 8
+  },
+  {
+   "slug": "dead-ranking",
+   "title": "死人争榜",
+   "version": "dead-ranking-1.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [
+    {
+     "ids": [
+      "dr_gu_silence_5",
+      "dr_case_read_6"
+     ],
+     "count": 2,
+     "text": "怕丢人。"
+    }
+   ],
+   "repeatedCount": 1,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "dr_ask_what_she_knows",
+     "taken": 69
+    },
+    {
+     "cid": "dr_ask_in_front_of_heirs",
+     "taken": 69
+    },
+    {
+     "cid": "dr_put_old_case_back",
+     "taken": 67
+    },
+    {
+     "cid": "dr_ask_yan_du",
+     "taken": 66
+    },
+    {
+     "cid": "dr_tell_challenged_first",
+     "taken": 66
+    },
+    {
+     "cid": "dr_ask_night_first",
+     "taken": 65
+    },
+    {
+     "cid": "dr_name_fair_meeting",
+     "taken": 65
+    },
+    {
+     "cid": "dr_ask_old_visit",
+     "taken": 64
+    },
+    {
+     "cid": "dr_show_old_loss",
+     "taken": 64
+    },
+    {
+     "cid": "dr_liang_open",
+     "taken": 64
+    },
+    {
+     "cid": "dr_check_other_places",
+     "taken": 63
+    },
+    {
+     "cid": "dr_let_each_answer",
+     "taken": 63
+    },
+    {
+     "cid": "dr_ask_next_name",
+     "taken": 62
+    },
+    {
+     "cid": "dr_ask_how_keep_letter",
+     "taken": 61
+    },
+    {
+     "cid": "dr_ask_opponent_knows",
+     "taken": 60
+    },
+    {
+     "cid": "dr_ask_all_together",
+     "taken": 60
+    },
+    {
+     "cid": "dr_face_keep_askers_out",
+     "taken": 59
+    },
+    {
+     "cid": "dr_ask_what_needed",
+     "taken": 58
+    },
+    {
+     "cid": "dr_face_all_together",
+     "taken": 58
+    },
+    {
+     "cid": "dr_face_write_plain",
+     "taken": 57
+    },
+    {
+     "cid": "dr_walk_departure",
+     "taken": 57
+    },
+    {
+     "cid": "dr_tell_three_in_person",
+     "taken": 55
+    },
+    {
+     "cid": "dr_ask_missing_whole",
+     "taken": 55
+    },
+    {
+     "cid": "dr_ask_road_changes",
+     "taken": 53
+    },
+    {
+     "cid": "dr_ask_delay",
+     "taken": 53
+    }
+   ],
+   "silentCount": 25
+  },
+  {
+   "slug": "dongting",
+   "title": "照水刀 · 问席",
+   "version": "dongting-1.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [],
+   "repeatedCount": 0,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "dt_keep_channel",
+     "taken": 67
+    },
+    {
+     "cid": "dt_check_boat",
+     "taken": 64
+    },
+    {
+     "cid": "dt_set_people",
+     "taken": 63
+    },
+    {
+     "cid": "dt_count_people",
+     "taken": 60
+    },
+    {
+     "cid": "dt_hurry_rope",
+     "taken": 60
+    },
+    {
+     "cid": "dt_split_accounts",
+     "taken": 59
+    },
+    {
+     "cid": "dt_keep_recusal",
+     "taken": 56
+    },
+    {
+     "cid": "dt_go_report",
+     "taken": 54
+    },
+    {
+     "cid": "dt_cargo_tight",
+     "taken": 53
+    },
+    {
+     "cid": "dt_make_cargo",
+     "taken": 52
+    }
+   ],
+   "silentCount": 10
+  },
+  {
+   "slug": "jade",
+   "title": "山河璧 · 十三文",
+   "version": "jade-2.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [],
+   "repeatedCount": 0,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "jd_help_signal",
+     "taken": 68
+    },
+    {
+     "cid": "jd_confirm_names",
+     "taken": 66
+    },
+    {
+     "cid": "jd_show_best_work",
+     "taken": 65
+    },
+    {
+     "cid": "jd_take_witness",
+     "taken": 63
+    },
+    {
+     "cid": "jd_offer_price",
+     "taken": 62
+    },
+    {
+     "cid": "jd_show_salt",
+     "taken": 61
+    },
+    {
+     "cid": "jd_match_supplies",
+     "taken": 61
+    },
+    {
+     "cid": "jd_copy_origin",
+     "taken": 61
+    },
+    {
+     "cid": "jd_leave_real_contact",
+     "taken": 61
+    },
+    {
+     "cid": "jd_move_cart",
+     "taken": 61
+    },
+    {
+     "cid": "jd_say_map_wrong",
+     "taken": 58
+    },
+    {
+     "cid": "jd_visit_without_treasure",
+     "taken": 58
+    },
+    {
+     "cid": "jd_read_dark_first",
+     "taken": 57
+    },
+    {
+     "cid": "jd_take_verified_copy",
+     "taken": 56
+    },
+    {
+     "cid": "jd_note_transfer",
+     "taken": 55
+    },
+    {
+     "cid": "jd_keep_porridge_hot",
+     "taken": 55
+    },
+    {
+     "cid": "jd_find_next_team",
+     "taken": 55
+    },
+    {
+     "cid": "jd_send_plain_report",
+     "taken": 51
+    },
+    {
+     "cid": "jd_follow_repair",
+     "taken": 48
+    },
+    {
+     "cid": "jd_finish_unreturned",
+     "taken": 48
+    },
+    {
+     "cid": "jd_keep_maintenance",
+     "taken": 47
+    },
+    {
+     "cid": "jd_close_local_shift",
+     "taken": 37
+    },
+    {
+     "cid": "jd_follow_missing_family",
+     "taken": 31
+    },
+    {
+     "cid": "jd_take_mixed_report",
+     "taken": 28
+    },
+    {
+     "cid": "jd_keep_grain_lane",
+     "taken": 25
+    },
+    {
+     "cid": "jd_go_to_witness",
+     "taken": 24
+    },
+    {
+     "cid": "jd_leave_private_notes",
+     "taken": 24
+    }
+   ],
+   "silentCount": 27
+  },
+  {
+   "slug": "jade-thieves",
+   "title": "山河璧 · 密库双贼",
+   "version": "jade-thieves-2.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [],
+   "repeatedCount": 0,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "jt_clear_person",
+     "taken": 71
+    },
+    {
+     "cid": "jt_move_to_bank",
+     "taken": 65
+    },
+    {
+     "cid": "jt_read_box",
+     "taken": 65
+    },
+    {
+     "cid": "jt_change_path",
+     "taken": 64
+    },
+    {
+     "cid": "jt_send_meeting",
+     "taken": 63
+    },
+    {
+     "cid": "jt_send_apprentice",
+     "taken": 63
+    },
+    {
+     "cid": "jt_finish_debts",
+     "taken": 62
+    },
+    {
+     "cid": "jt_leave_silence",
+     "taken": 61
+    },
+    {
+     "cid": "jt_count_cost",
+     "taken": 60
+    },
+    {
+     "cid": "jt_keep_spare",
+     "taken": 58
+    },
+    {
+     "cid": "jt_ask_way",
+     "taken": 57
+    },
+    {
+     "cid": "jt_hear_buyers",
+     "taken": 57
+    },
+    {
+     "cid": "jt_go_by_oldmark",
+     "taken": 56
+    },
+    {
+     "cid": "jt_finish_old_account",
+     "taken": 55
+    }
+   ],
+   "silentCount": 14
+  },
+  {
+   "slug": "kuhe",
+   "title": "枯河谷 · 门后有人",
+   "version": "kuhe-3.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [
+    {
+     "ids": [
+      "kh_years_9",
+      "kh_future_11"
+     ],
+     "count": 2,
+     "text": "在。"
+    }
+   ],
+   "repeatedCount": 1,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "kh_watch_hands",
+     "taken": 70
+    },
+    {
+     "cid": "kh_hide_short",
+     "taken": 69
+    },
+    {
+     "cid": "kh_make_strap",
+     "taken": 66
+    },
+    {
+     "cid": "kh_first_names",
+     "taken": 66
+    },
+    {
+     "cid": "kh_push_courage",
+     "taken": 64
+    },
+    {
+     "cid": "kh_take_alone",
+     "taken": 64
+    },
+    {
+     "cid": "kh_ask_title",
+     "taken": 63
+    },
+    {
+     "cid": "kh_offer_run",
+     "taken": 63
+    },
+    {
+     "cid": "kh_answer_hope",
+     "taken": 62
+    },
+    {
+     "cid": "kh_leave_choice",
+     "taken": 61
+    },
+    {
+     "cid": "kh_say_loud",
+     "taken": 60
+    },
+    {
+     "cid": "kh_ask_breath",
+     "taken": 58
+    },
+    {
+     "cid": "kh_hold_patient",
+     "taken": 57
+    },
+    {
+     "cid": "kh_save_pages",
+     "taken": 57
+    },
+    {
+     "cid": "kh_more_stretchers",
+     "taken": 56
+    },
+    {
+     "cid": "kh_show_wrist",
+     "taken": 55
+    },
+    {
+     "cid": "kh_ask_route",
+     "taken": 52
+    },
+    {
+     "cid": "kh_send_record",
+     "taken": 52
+    }
+   ],
+   "silentCount": 18
+  },
+  {
+   "slug": "longmen",
+   "title": "龙门问刀",
+   "version": "longmen-3.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [],
+   "repeatedCount": 0,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "lm_mark_not_yet",
+     "taken": 67
+    },
+    {
+     "cid": "lm_old_ask_twenty",
+     "taken": 66
+    },
+    {
+     "cid": "lm_ask_qinghe_ninth",
+     "taken": 66
+    },
+    {
+     "cid": "lm_old_press_end",
+     "taken": 65
+    },
+    {
+     "cid": "lm_keep_record",
+     "taken": 64
+    },
+    {
+     "cid": "lm_try_own",
+     "taken": 62
+    },
+    {
+     "cid": "lm_take_frame",
+     "taken": 62
+    },
+    {
+     "cid": "lm_he_ask_next_people",
+     "taken": 60
+    },
+    {
+     "cid": "lm_ask_sword",
+     "taken": 59
+    },
+    {
+     "cid": "lm_offer_seat",
+     "taken": 59
+    },
+    {
+     "cid": "lm_try_first",
+     "taken": 58
+    },
+    {
+     "cid": "lm_watch_only",
+     "taken": 57
+    },
+    {
+     "cid": "lm_leave_blank",
+     "taken": 57
+    },
+    {
+     "cid": "lm_ask_left",
+     "taken": 57
+    },
+    {
+     "cid": "lm_ask_next",
+     "taken": 56
+    },
+    {
+     "cid": "lm_call_help",
+     "taken": 55
+    },
+    {
+     "cid": "lm_ask_qinghe_friend",
+     "taken": 54
+    },
+    {
+     "cid": "lm_old_try_words",
+     "taken": 54
+    },
+    {
+     "cid": "lm_ask_private",
+     "taken": 54
+    },
+    {
+     "cid": "lm_keep_view",
+     "taken": 53
+    },
+    {
+     "cid": "lm_old_finish_blade",
+     "taken": 51
+    },
+    {
+     "cid": "lm_practice_more",
+     "taken": 51
+    },
+    {
+     "cid": "lm_smooth_post",
+     "taken": 32
+    },
+    {
+     "cid": "lm_copy_lane",
+     "taken": 29
+    }
+   ],
+   "silentCount": 24
+  },
+  {
+   "slug": "luhua",
+   "title": "照水刀 · 芦花渡",
+   "version": "luhua-1.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [],
+   "repeatedCount": 0,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "lh_test_han_zhuo",
+     "taken": 69
+    },
+    {
+     "cid": "lh_open_route_first",
+     "taken": 68
+    },
+    {
+     "cid": "lh_follow_plain_turns",
+     "taken": 68
+    },
+    {
+     "cid": "lh_take_bow_supply",
+     "taken": 67
+    },
+    {
+     "cid": "lh_return_wounded_first",
+     "taken": 66
+    },
+    {
+     "cid": "lh_finish_box_then_return",
+     "taken": 66
+    },
+    {
+     "cid": "lh_answer_one_more",
+     "taken": 66
+    },
+    {
+     "cid": "lh_ask_gap_later",
+     "taken": 65
+    },
+    {
+     "cid": "lh_wait_full_record",
+     "taken": 65
+    },
+    {
+     "cid": "lh_thank_other_school",
+     "taken": 65
+    },
+    {
+     "cid": "lh_share_road_first",
+     "taken": 62
+    },
+    {
+     "cid": "lh_ask_why_only_once",
+     "taken": 62
+    },
+    {
+     "cid": "lh_keep_both_results",
+     "taken": 60
+    },
+    {
+     "cid": "lh_keep_appointed_day",
+     "taken": 60
+    },
+    {
+     "cid": "lh_walk_raft_again",
+     "taken": 60
+    },
+    {
+     "cid": "lh_show_stance",
+     "taken": 59
+    },
+    {
+     "cid": "lh_check_live_boats",
+     "taken": 58
+    },
+    {
+     "cid": "lh_walk_to_shop",
+     "taken": 58
+    },
+    {
+     "cid": "lh_hold_without_show",
+     "taken": 58
+    },
+    {
+     "cid": "lh_say_what_waits",
+     "taken": 57
+    },
+    {
+     "cid": "lh_clear_boat_tail",
+     "taken": 53
+    },
+    {
+     "cid": "lh_hold_danger_first",
+     "taken": 53
+    },
+    {
+     "cid": "lh_try_after_water",
+     "taken": 53
+    },
+    {
+     "cid": "lh_ask_new_opponents",
+     "taken": 53
+    }
+   ],
+   "silentCount": 24
+  },
+  {
+   "slug": "luoyang",
+   "title": "洛阳龙虎风云会",
+   "version": "luoyang-1.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [],
+   "repeatedCount": 0,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "ly_watch_guo_return",
+     "taken": 72
+    },
+    {
+     "cid": "ly_ask_shi_future",
+     "taken": 67
+    },
+    {
+     "cid": "ly_ask_no_bout",
+     "taken": 65
+    },
+    {
+     "cid": "ly_compare_with_shi",
+     "taken": 62
+    },
+    {
+     "cid": "ly_ask_xing_next",
+     "taken": 62
+    },
+    {
+     "cid": "ly_ask_ye_sea",
+     "taken": 58
+    },
+    {
+     "cid": "ly_look_for_zhang",
+     "taken": 52
+    },
+    {
+     "cid": "ly_recognize_harm",
+     "taken": 47
+    }
+   ],
+   "silentCount": 8
+  },
+  {
+   "slug": "north",
+   "title": "北枪与乾坤 · 三师一枪",
+   "version": "north-3.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [],
+   "repeatedCount": 0,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "nq_help_chair_space",
+     "taken": 74
+    },
+    {
+     "cid": "nq_ask_loosened_hand",
+     "taken": 73
+    },
+    {
+     "cid": "nq_compare_thirteen",
+     "taken": 68
+    },
+    {
+     "cid": "nq_save_whole_again",
+     "taken": 68
+    },
+    {
+     "cid": "nq_follow_opponent",
+     "taken": 67
+    },
+    {
+     "cid": "nq_admit_not_understood",
+     "taken": 66
+    },
+    {
+     "cid": "nq_admit_three_spears",
+     "taken": 65
+    },
+    {
+     "cid": "nq_let_gu_explain",
+     "taken": 65
+    },
+    {
+     "cid": "nq_ask_shoulder",
+     "taken": 65
+    },
+    {
+     "cid": "nq_keep_old_visit",
+     "taken": 64
+    },
+    {
+     "cid": "nq_ask_test",
+     "taken": 63
+    },
+    {
+     "cid": "nq_try_once_again",
+     "taken": 62
+    },
+    {
+     "cid": "nq_watch_next_timing",
+     "taken": 62
+    },
+    {
+     "cid": "nq_name_real_edge",
+     "taken": 61
+    },
+    {
+     "cid": "nq_record_change",
+     "taken": 61
+    },
+    {
+     "cid": "nq_ask_keep_visit",
+     "taken": 60
+    },
+    {
+     "cid": "nq_depart_with_letter",
+     "taken": 60
+    },
+    {
+     "cid": "nq_write_safe_only",
+     "taken": 58
+    },
+    {
+     "cid": "nq_try_with_liu",
+     "taken": 58
+    },
+    {
+     "cid": "nq_visit_yuan_class",
+     "taken": 57
+    },
+    {
+     "cid": "nq_meet_class_together",
+     "taken": 57
+    },
+    {
+     "cid": "nq_show_less_gun",
+     "taken": 57
+    },
+    {
+     "cid": "nq_ask_inside_later",
+     "taken": 57
+    },
+    {
+     "cid": "nq_send_trial_first",
+     "taken": 55
+    },
+    {
+     "cid": "nq_finish_small_set",
+     "taken": 53
+    },
+    {
+     "cid": "nq_keep_ordinary_words",
+     "taken": 52
+    }
+   ],
+   "silentCount": 26
+  },
+  {
+   "slug": "north-notes",
+   "title": "北枪与乾坤 · 师门夜话",
+   "version": "north-notes-1.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [],
+   "repeatedCount": 0,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "nn_ask_palm",
+     "taken": 71
+    },
+    {
+     "cid": "nn_show_first_page",
+     "taken": 66
+    },
+    {
+     "cid": "nn_ask_same_teacher",
+     "taken": 65
+    },
+    {
+     "cid": "nn_keep_example",
+     "taken": 65
+    },
+    {
+     "cid": "nn_ask_outside",
+     "taken": 61
+    }
+   ],
+   "silentCount": 5
+  },
+  {
+   "slug": "qian-kun",
+   "title": "北枪与乾坤 · 不会算账",
+   "version": "qian-kun-3.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [],
+   "repeatedCount": 0,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "qk_name_real_position",
+     "taken": 67
+    },
+    {
+     "cid": "qk_return_to_hand",
+     "taken": 66
+    },
+    {
+     "cid": "qk_swim_clear_of_side",
+     "taken": 66
+    },
+    {
+     "cid": "qk_offer_real_time",
+     "taken": 65
+    },
+    {
+     "cid": "qk_ask_first_sea",
+     "taken": 65
+    },
+    {
+     "cid": "qk_retrace_own_entry",
+     "taken": 62
+    },
+    {
+     "cid": "qk_trust_own_memory",
+     "taken": 62
+    },
+    {
+     "cid": "qk_try_balance",
+     "taken": 61
+    },
+    {
+     "cid": "qk_ask_what_finished",
+     "taken": 57
+    },
+    {
+     "cid": "qk_ask_real_hand",
+     "taken": 57
+    },
+    {
+     "cid": "qk_ask_what_known",
+     "taken": 57
+    },
+    {
+     "cid": "qk_try_fewer_answers",
+     "taken": 57
+    },
+    {
+     "cid": "qk_test_same_step",
+     "taken": 56
+    },
+    {
+     "cid": "qk_tell_real_joy",
+     "taken": 56
+    },
+    {
+     "cid": "qk_send_route_back",
+     "taken": 54
+    },
+    {
+     "cid": "qk_ask_old_master",
+     "taken": 54
+    },
+    {
+     "cid": "qk_name_what_seeking",
+     "taken": 53
+    },
+    {
+     "cid": "qk_plan_real_visit",
+     "taken": 53
+    },
+    {
+     "cid": "qk_show_half_year",
+     "taken": 52
+    },
+    {
+     "cid": "qk_keep_teaching_promise",
+     "taken": 51
+    },
+    {
+     "cid": "qk_admit_before_class",
+     "taken": 46
+    },
+    {
+     "cid": "qk_ask_next_path",
+     "taken": 45
+    }
+   ],
+   "silentCount": 22
+  },
+  {
+   "slug": "qingshi",
+   "title": "青石五友 · 守一天",
+   "version": "qingshi-3.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [
+    {
+     "ids": [
+      "qs_constable_4",
+      "qs_cut_3"
+     ],
+     "count": 2,
+     "text": "都能用。"
+    }
+   ],
+   "repeatedCount": 1,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "qs_call_oldman",
+     "taken": 69
+    },
+    {
+     "cid": "qs_hide_ribs",
+     "taken": 66
+    },
+    {
+     "cid": "qs_trust_five",
+     "taken": 66
+    },
+    {
+     "cid": "qs_runner_message",
+     "taken": 66
+    },
+    {
+     "cid": "qs_watch_du",
+     "taken": 65
+    },
+    {
+     "cid": "qs_ask_meng_rest",
+     "taken": 65
+    },
+    {
+     "cid": "qs_cut_show",
+     "taken": 65
+    },
+    {
+     "cid": "qs_leave_lessons",
+     "taken": 65
+    },
+    {
+     "cid": "qs_patch_wall",
+     "taken": 65
+    },
+    {
+     "cid": "qs_mock_list",
+     "taken": 65
+    },
+    {
+     "cid": "qs_drill_weapons",
+     "taken": 65
+    },
+    {
+     "cid": "qs_ask_stand",
+     "taken": 64
+    },
+    {
+     "cid": "qs_send_items",
+     "taken": 63
+    },
+    {
+     "cid": "qs_ask_tomorrow",
+     "taken": 62
+    },
+    {
+     "cid": "qs_rehearse_grab",
+     "taken": 62
+    },
+    {
+     "cid": "qs_epilogue_escort",
+     "taken": 62
+    },
+    {
+     "cid": "qs_keep_brave",
+     "taken": 62
+    },
+    {
+     "cid": "qs_go_master",
+     "taken": 61
+    },
+    {
+     "cid": "qs_plan_attack",
+     "taken": 61
+    },
+    {
+     "cid": "qs_ask_real_list",
+     "taken": 60
+    },
+    {
+     "cid": "qs_ask_next_power",
+     "taken": 60
+    },
+    {
+     "cid": "qs_report_king",
+     "taken": 59
+    },
+    {
+     "cid": "qs_hold_breath",
+     "taken": 58
+    },
+    {
+     "cid": "qs_ask_branch",
+     "taken": 56
+    },
+    {
+     "cid": "qs_ask_young_wei",
+     "taken": 55
+    },
+    {
+     "cid": "qs_push_leg",
+     "taken": 54
+    },
+    {
+     "cid": "qs_first_report",
+     "taken": 52
+    },
+    {
+     "cid": "qs_hold_followers",
+     "taken": 51
+    }
+   ],
+   "silentCount": 28
+  },
+  {
+   "slug": "sea",
+   "title": "海路两世 · 中原以外",
+   "version": "sea-2.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [
+    {
+     "ids": [
+      "sr_forty_three_2",
+      "sr_five_visits_9"
+     ],
+     "count": 2,
+     "text": "天都门。"
+    }
+   ],
+   "repeatedCount": 1,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "sr_rule_ask",
+     "taken": 73
+    },
+    {
+     "cid": "sr_ask_present",
+     "taken": 67
+    },
+    {
+     "cid": "sr_pages_beside_routes",
+     "taken": 67
+    },
+    {
+     "cid": "sr_try_without_sword",
+     "taken": 65
+    },
+    {
+     "cid": "sr_zhao_lost",
+     "taken": 64
+    },
+    {
+     "cid": "sr_leave_closed_map",
+     "taken": 63
+    },
+    {
+     "cid": "sr_leave_short_work",
+     "taken": 62
+    },
+    {
+     "cid": "sr_teach_pair",
+     "taken": 62
+    },
+    {
+     "cid": "sr_test_old_record",
+     "taken": 61
+    },
+    {
+     "cid": "sr_return_to_test",
+     "taken": 60
+    },
+    {
+     "cid": "sr_show_next_class",
+     "taken": 60
+    },
+    {
+     "cid": "sr_take_open_ground",
+     "taken": 59
+    },
+    {
+     "cid": "sr_take_open_route",
+     "taken": 57
+    },
+    {
+     "cid": "sr_choose_han_name",
+     "taken": 57
+    },
+    {
+     "cid": "sr_settle_ship_first",
+     "taken": 56
+    },
+    {
+     "cid": "sr_watch_tide",
+     "taken": 51
+    },
+    {
+     "cid": "sr_hold_line",
+     "taken": 51
+    }
+   ],
+   "silentCount": 17
+  },
+  {
+   "slug": "sea-tide",
+   "title": "海路两世 · 归潮岛",
+   "version": "sea-tide-2.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [],
+   "repeatedCount": 0,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "st_compare_live_step",
+     "taken": 75
+    },
+    {
+     "cid": "st_practice_alone",
+     "taken": 71
+    },
+    {
+     "cid": "st_wait_wave",
+     "taken": 68
+    },
+    {
+     "cid": "st_try_after_stop",
+     "taken": 68
+    },
+    {
+     "cid": "st_repair_work",
+     "taken": 66
+    },
+    {
+     "cid": "st_trace_next_step",
+     "taken": 66
+    },
+    {
+     "cid": "st_learn_fast_knot",
+     "taken": 64
+    },
+    {
+     "cid": "st_clear_landing",
+     "taken": 64
+    },
+    {
+     "cid": "st_prepare_fast_post",
+     "taken": 62
+    },
+    {
+     "cid": "st_ask_earlier",
+     "taken": 60
+    },
+    {
+     "cid": "st_ask_duty_here",
+     "taken": 60
+    },
+    {
+     "cid": "st_ask_ground",
+     "taken": 59
+    },
+    {
+     "cid": "st_point_next_work",
+     "taken": 59
+    },
+    {
+     "cid": "st_rehearse_handoff",
+     "taken": 58
+    },
+    {
+     "cid": "st_swim_line",
+     "taken": 58
+    },
+    {
+     "cid": "st_send_nearest_people",
+     "taken": 57
+    },
+    {
+     "cid": "st_ask_missing_work",
+     "taken": 57
+    },
+    {
+     "cid": "st_show_child_place",
+     "taken": 56
+    },
+    {
+     "cid": "st_release_fixed",
+     "taken": 56
+    },
+    {
+     "cid": "st_watch_own_choice",
+     "taken": 54
+    }
+   ],
+   "silentCount": 20
+  },
+  {
+   "slug": "seven-questions",
+   "title": "一剑两脉 · 门外七问",
+   "version": "seven-questions-2.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [],
+   "repeatedCount": 0,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "sq_ask_ordinary",
+     "taken": 69
+    },
+    {
+     "cid": "sq_first_owner",
+     "taken": 67
+    },
+    {
+     "cid": "sq_receive_later",
+     "taken": 65
+    },
+    {
+     "cid": "sq_help_bereaved",
+     "taken": 64
+    },
+    {
+     "cid": "sq_check_injured",
+     "taken": 64
+    },
+    {
+     "cid": "sq_check_shipping",
+     "taken": 64
+    },
+    {
+     "cid": "sq_call_clear",
+     "taken": 64
+    },
+    {
+     "cid": "sq_keep_testimony",
+     "taken": 63
+    },
+    {
+     "cid": "sq_copy_rumor",
+     "taken": 62
+    },
+    {
+     "cid": "sq_clear_door",
+     "taken": 62
+    },
+    {
+     "cid": "sq_ask_receiver",
+     "taken": 60
+    },
+    {
+     "cid": "sq_send_urgent",
+     "taken": 59
+    },
+    {
+     "cid": "sq_first_missing",
+     "taken": 59
+    },
+    {
+     "cid": "sq_prepare_readers",
+     "taken": 59
+    },
+    {
+     "cid": "sq_ask_margin",
+     "taken": 57
+    },
+    {
+     "cid": "sq_deliver_sources",
+     "taken": 55
+    },
+    {
+     "cid": "sq_keep_distance",
+     "taken": 55
+    },
+    {
+     "cid": "sq_pay_next_shift",
+     "taken": 54
+    },
+    {
+     "cid": "sq_set_relay",
+     "taken": 51
+    },
+    {
+     "cid": "sq_return_receipt",
+     "taken": 51
+    },
+    {
+     "cid": "sq_pair_arrivals",
+     "taken": 41
+    },
+    {
+     "cid": "sq_hold_seals",
+     "taken": 41
+    },
+    {
+     "cid": "sq_watch_margin",
+     "taken": 30
+    },
+    {
+     "cid": "sq_report_seen_court",
+     "taken": 30
+    },
+    {
+     "cid": "sq_block_return",
+     "taken": 26
+    },
+    {
+     "cid": "sq_split_carriers",
+     "taken": 25
+    },
+    {
+     "cid": "sq_report_seen_valley",
+     "taken": 24
+    },
+    {
+     "cid": "sq_last_bank",
+     "taken": 23
+    },
+    {
+     "cid": "sq_handover_tree",
+     "taken": 14
+    }
+   ],
+   "silentCount": 29
+  },
+  {
+   "slug": "taihua",
+   "title": "太华试序 · 三年之约",
+   "version": "taihua-3.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [
+    {
+     "ids": [
+      "th_centre_3",
+      "th_left_thirteen_3"
+     ],
+     "count": 2,
+     "text": "你先。"
+    }
+   ],
+   "repeatedCount": 1,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "th_predict_wait",
+     "taken": 73
+    },
+    {
+     "cid": "th_watch_after_bow",
+     "taken": 72
+    },
+    {
+     "cid": "th_force",
+     "taken": 71
+    },
+    {
+     "cid": "th_tomorrow",
+     "taken": 70
+    },
+    {
+     "cid": "th_ask_ming_one",
+     "taken": 67
+    },
+    {
+     "cid": "th_ask_ming",
+     "taken": 66
+    },
+    {
+     "cid": "th_bow",
+     "taken": 65
+    },
+    {
+     "cid": "th_sulk",
+     "taken": 65
+    },
+    {
+     "cid": "th_quiet",
+     "taken": 64
+    },
+    {
+     "cid": "th_admit_eye_only",
+     "taken": 64
+    },
+    {
+     "cid": "th_note_stop",
+     "taken": 64
+    },
+    {
+     "cid": "th_ask_xie_later",
+     "taken": 63
+    },
+    {
+     "cid": "th_challenge",
+     "taken": 63
+    },
+    {
+     "cid": "th_keep_both_swords",
+     "taken": 63
+    },
+    {
+     "cid": "th_hold",
+     "taken": 62
+    },
+    {
+     "cid": "th_watch",
+     "taken": 61
+    },
+    {
+     "cid": "th_watch_can_move",
+     "taken": 60
+    },
+    {
+     "cid": "th_watch_last_distance",
+     "taken": 59
+    },
+    {
+     "cid": "th_shield",
+     "taken": 59
+    },
+    {
+     "cid": "th_compare",
+     "taken": 58
+    },
+    {
+     "cid": "th_share_load",
+     "taken": 58
+    },
+    {
+     "cid": "th_keep_mu_blank",
+     "taken": 58
+    },
+    {
+     "cid": "th_watch_next",
+     "taken": 57
+    },
+    {
+     "cid": "th_leave_meal_joke",
+     "taken": 55
+    },
+    {
+     "cid": "th_private_question",
+     "taken": 55
+    },
+    {
+     "cid": "th_read_next_sword",
+     "taken": 55
+    },
+    {
+     "cid": "th_ask",
+     "taken": 51
+    },
+    {
+     "cid": "th_ownwork",
+     "taken": 51
+    },
+    {
+     "cid": "th_limit",
+     "taken": 51
+    },
+    {
+     "cid": "th_guidance_mark",
+     "taken": 10
+    }
+   ],
+   "silentCount": 30
+  },
+  {
+   "slug": "twelfth",
+   "title": "第十二席",
+   "version": "twelfth-1.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [],
+   "repeatedCount": 0,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "qw_contract_trial",
+     "taken": 66
+    },
+    {
+     "cid": "qw_name_only",
+     "taken": 64
+    },
+    {
+     "cid": "qw_go_support",
+     "taken": 64
+    },
+    {
+     "cid": "qw_person_first",
+     "taken": 63
+    },
+    {
+     "cid": "qw_ask_next_work",
+     "taken": 63
+    },
+    {
+     "cid": "qw_mourn_work",
+     "taken": 62
+    },
+    {
+     "cid": "qw_submit_sourced",
+     "taken": 60
+    },
+    {
+     "cid": "qw_keep_silence",
+     "taken": 60
+    },
+    {
+     "cid": "qw_ask_teacher",
+     "taken": 60
+    },
+    {
+     "cid": "qw_mourn_plain",
+     "taken": 58
+    },
+    {
+     "cid": "qw_guard_palace",
+     "taken": 57
+    },
+    {
+     "cid": "qw_keep_work",
+     "taken": 57
+    },
+    {
+     "cid": "qw_offer_water",
+     "taken": 57
+    },
+    {
+     "cid": "qw_prince_guard",
+     "taken": 57
+    },
+    {
+     "cid": "qw_space_after",
+     "taken": 56
+    },
+    {
+     "cid": "qw_test_steady",
+     "taken": 56
+    },
+    {
+     "cid": "qw_return_request",
+     "taken": 54
+    },
+    {
+     "cid": "qw_personal_note",
+     "taken": 53
+    },
+    {
+     "cid": "qw_keep_door",
+     "taken": 50
+    },
+    {
+     "cid": "qw_ask_prince_decide",
+     "taken": 48
+    }
+   ],
+   "silentCount": 20
+  },
+  {
+   "slug": "twelfth-life",
+   "title": "第十二席 · 赵承晏",
+   "version": "twelfth-life-3.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [],
+   "repeatedCount": 0,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "rl_ask_one_base",
+     "taken": 75
+    },
+    {
+     "cid": "rl_offer_true_account",
+     "taken": 74
+    },
+    {
+     "cid": "rl_ask_rest_and_return",
+     "taken": 70
+    },
+    {
+     "cid": "rl_offer_show_step",
+     "taken": 70
+    },
+    {
+     "cid": "rl_ask_his_pupils",
+     "taken": 69
+    },
+    {
+     "cid": "rl_reset_xue_line",
+     "taken": 67
+    },
+    {
+     "cid": "rl_stop_question",
+     "taken": 66
+    },
+    {
+     "cid": "rl_walk_both_versions",
+     "taken": 66
+    },
+    {
+     "cid": "rl_ask_without_alias",
+     "taken": 62
+    },
+    {
+     "cid": "rl_wait_independent_check",
+     "taken": 62
+    },
+    {
+     "cid": "rl_send_with_no_summons",
+     "taken": 62
+    },
+    {
+     "cid": "rl_return_to_practice",
+     "taken": 62
+    },
+    {
+     "cid": "rl_keep_short_practice",
+     "taken": 61
+    },
+    {
+     "cid": "rl_finish_plain_thanks",
+     "taken": 61
+    },
+    {
+     "cid": "rl_show_collection",
+     "taken": 61
+    },
+    {
+     "cid": "rl_ask_name_secret",
+     "taken": 61
+    },
+    {
+     "cid": "rl_show_all_soreness",
+     "taken": 61
+    },
+    {
+     "cid": "rl_share_true_losses",
+     "taken": 61
+    },
+    {
+     "cid": "rl_tax_public_process",
+     "taken": 61
+    },
+    {
+     "cid": "rl_tell_brother_thorn",
+     "taken": 60
+    },
+    {
+     "cid": "rl_leave_his_answer",
+     "taken": 60
+    },
+    {
+     "cid": "rl_compare_new_routes",
+     "taken": 60
+    },
+    {
+     "cid": "rl_ask_next_match",
+     "taken": 58
+    },
+    {
+     "cid": "rl_tell_chen_pupils",
+     "taken": 58
+    },
+    {
+     "cid": "rl_stop_helpers_gifts",
+     "taken": 58
+    },
+    {
+     "cid": "rl_keep_fake_name",
+     "taken": 58
+    },
+    {
+     "cid": "rl_repeat_without_praise",
+     "taken": 57
+    },
+    {
+     "cid": "rl_ask_sun_now",
+     "taken": 56
+    },
+    {
+     "cid": "rl_stop_congratulations",
+     "taken": 54
+    },
+    {
+     "cid": "rl_tell_one_plain_day",
+     "taken": 54
+    },
+    {
+     "cid": "rl_write_whole_mishap",
+     "taken": 52
+    },
+    {
+     "cid": "rl_seal_at_once",
+     "taken": 52
+    },
+    {
+     "cid": "rl_walk_next_handoff",
+     "taken": 51
+    }
+   ],
+   "silentCount": 33
+  },
+  {
+   "slug": "two-swords",
+   "title": "一剑两脉 · 旧本归还",
+   "version": "two-swords-2.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [],
+   "repeatedCount": 0,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "ss_ask_book_leave",
+     "taken": 67
+    },
+    {
+     "cid": "ss_new_order_first",
+     "taken": 66
+    },
+    {
+     "cid": "ss_receive_old",
+     "taken": 65
+    },
+    {
+     "cid": "ss_help_copyist",
+     "taken": 65
+    },
+    {
+     "cid": "ss_question_after",
+     "taken": 64
+    },
+    {
+     "cid": "ss_ask_records",
+     "taken": 64
+    },
+    {
+     "cid": "ss_make_next",
+     "taken": 63
+    },
+    {
+     "cid": "ss_finish_wetlist",
+     "taken": 63
+    },
+    {
+     "cid": "ss_ask_branch",
+     "taken": 63
+    },
+    {
+     "cid": "ss_test_before",
+     "taken": 63
+    },
+    {
+     "cid": "ss_no_name",
+     "taken": 62
+    },
+    {
+     "cid": "ss_return_direct",
+     "taken": 62
+    },
+    {
+     "cid": "ss_show_slope",
+     "taken": 61
+    },
+    {
+     "cid": "ss_clear_stone",
+     "taken": 60
+    },
+    {
+     "cid": "ss_walk_again",
+     "taken": 58
+    },
+    {
+     "cid": "ss_finish_class",
+     "taken": 58
+    },
+    {
+     "cid": "ss_first_shelter",
+     "taken": 57
+    },
+    {
+     "cid": "ss_keep_after",
+     "taken": 57
+    },
+    {
+     "cid": "ss_ask_copy_work",
+     "taken": 57
+    },
+    {
+     "cid": "ss_ask_teacher",
+     "taken": 56
+    },
+    {
+     "cid": "ss_keep_lesson",
+     "taken": 56
+    },
+    {
+     "cid": "ss_try_newstudent",
+     "taken": 56
+    },
+    {
+     "cid": "ss_show_change",
+     "taken": 55
+    },
+    {
+     "cid": "ss_stay_one_bout",
+     "taken": 55
+    },
+    {
+     "cid": "ss_explain_leave",
+     "taken": 53
+    },
+    {
+     "cid": "ss_train_new_ground",
+     "taken": 52
+    }
+   ],
+   "silentCount": 26
+  },
+  {
+   "slug": "white-stone",
+   "title": "白石谷外",
+   "version": "white-stone-1.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [],
+   "repeatedCount": 0,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "ws_show_failure",
+     "taken": 72
+    },
+    {
+     "cid": "ws_note_shape",
+     "taken": 71
+    },
+    {
+     "cid": "ws_ask_deep_years",
+     "taken": 69
+    },
+    {
+     "cid": "ws_deliver_first",
+     "taken": 65
+    },
+    {
+     "cid": "ws_keep_privacy",
+     "taken": 63
+    },
+    {
+     "cid": "ws_rest_water",
+     "taken": 63
+    },
+    {
+     "cid": "ws_keep_second",
+     "taken": 62
+    },
+    {
+     "cid": "ws_keep_two_people",
+     "taken": 61
+    },
+    {
+     "cid": "ws_record_next",
+     "taken": 60
+    },
+    {
+     "cid": "ws_ask_own_road",
+     "taken": 59
+    },
+    {
+     "cid": "ws_bring_witness",
+     "taken": 53
+    },
+    {
+     "cid": "ws_ask_own_fear",
+     "taken": 51
+    }
+   ],
+   "silentCount": 12
+  },
+  {
+   "slug": "xuanmen",
+   "title": "玄门旧史·九席与返真不绝",
+   "version": "xuanmen-1.0.0",
+   "samples": 120,
+   "repeatedBeatTexts": [],
+   "repeatedCount": 0,
+   "flatChoiceGroups": [],
+   "flatCount": 0,
+   "alwaysSilentChoices": [
+    {
+     "cid": "xm_watch_company",
+     "taken": 75
+    },
+    {
+     "cid": "xm_keep_request",
+     "taken": 65
+    },
+    {
+     "cid": "xm_help_books",
+     "taken": 63
+    },
+    {
+     "cid": "xm_send_strongest",
+     "taken": 61
+    },
+    {
+     "cid": "xm_ask_his_mud",
+     "taken": 60
+    },
+    {
+     "cid": "xm_ask_oldest",
+     "taken": 58
+    },
+    {
+     "cid": "xm_try_first",
+     "taken": 54
+    },
+    {
+     "cid": "xm_send_students",
+     "taken": 52
+    },
+    {
+     "cid": "xm_leave_lamp",
+     "taken": 49
+    },
+    {
+     "cid": "xm_take_verbal",
+     "taken": 48
+    }
+   ],
+   "silentCount": 10
+  }
+ ],
+ "summary": {
+  "editions": 23,
+  "worksWithRepeatedText": [
+   "dead-ranking:1",
+   "kuhe:1",
+   "qingshi:1",
+   "sea:1",
+   "taihua:1"
+  ],
+  "worksWithFlatChoices": [],
+  "worksWithSilentChoices": [
+   "bamboo:6",
+   "beyond-ranking:8",
+   "dead-ranking:25",
+   "dongting:10",
+   "jade:27",
+   "jade-thieves:14",
+   "kuhe:18",
+   "longmen:24",
+   "luhua:24",
+   "luoyang:8",
+   "north:26",
+   "north-notes:5",
+   "qian-kun:22",
+   "qingshi:28",
+   "sea:17",
+   "sea-tide:20",
+   "seven-questions:29",
+   "taihua:30",
+   "twelfth:20",
+   "twelfth-life:33",
+   "two-swords:26",
+   "white-stone:12",
+   "xuanmen:10"
+  ]
+ }
+}

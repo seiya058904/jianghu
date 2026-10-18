@@ -86,7 +86,7 @@ Running 50 tests using 1 worker
       15 |  await page.getByRole('button',{name:'设置',exact:true}).click();await page.getByRole('button',{name:`下载《${work.title}》离线资源`,exact:true}).click();await expect(page.getByRole('dialog')).toContainText('离线资源已备好');await page.keyboard.press('Escape');for(const name of expected)expect(await page.evaluate(async url=>Boolean(await caches.match(url)),new URL('assets/'+name,root).href),`${slug}: requested data chunk is absent`).toBe(true);
       16 |  const cdp=await context.newCDPSession(page);await cdp.send('Network.clearBrowserCache');await cdp.detach();const fresh=await context.newPage();await fresh.addInitScript(prefix=>localStorage.setItem(prefix+'settings',JSON.stringify({speed:0,reduced:true})),work.prefix);await page.close();await context.setOffline(true);await fresh.goto(root+work.file);await fresh.getByRole('button',{name:work.start,exact:true}).click();const data=JSON.parse(readFileSync('src/generated/'+source+'.json','utf8')),s=new VNRuntime(data,work.version);await expect(fresh.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await expect(fresh.locator('#dialogue-visible')).toHaveText(s.frame.text);if(s.frame.choices.length){await fresh.locator(`[data-choice="${s.frame.choices[0].id}"]`).click();s.choose(s.frame.choices[0].id)}else{await fresh.locator('#advance-button').click();s.advance()}await expect(fresh.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await context.close();
       17 | });
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\offline-work-pack.spec.ts:14:160
+        at .\tests\offline-work-pack.spec.ts:14:160
 
     Error Context: test-results-royal-editorial-extra\offline-work-pack-download-e7dd0-uncached-story-data-on-root\error-context.md
 
@@ -107,7 +107,7 @@ Running 50 tests using 1 worker
       15 |  await page.getByRole('button',{name:'设置',exact:true}).click();await page.getByRole('button',{name:`下载《${work.title}》离线资源`,exact:true}).click();await expect(page.getByRole('dialog')).toContainText('离线资源已备好');await page.keyboard.press('Escape');for(const name of expected)expect(await page.evaluate(async url=>Boolean(await caches.match(url)),new URL('assets/'+name,root).href),`${slug}: requested data chunk is absent`).toBe(true);
       16 |  const cdp=await context.newCDPSession(page);await cdp.send('Network.clearBrowserCache');await cdp.detach();const fresh=await context.newPage();await fresh.addInitScript(prefix=>localStorage.setItem(prefix+'settings',JSON.stringify({speed:0,reduced:true})),work.prefix);await page.close();await context.setOffline(true);await fresh.goto(root+work.file);await fresh.getByRole('button',{name:work.start,exact:true}).click();const data=JSON.parse(readFileSync('src/generated/'+source+'.json','utf8')),s=new VNRuntime(data,work.version);await expect(fresh.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await expect(fresh.locator('#dialogue-visible')).toHaveText(s.frame.text);if(s.frame.choices.length){await fresh.locator(`[data-choice="${s.frame.choices[0].id}"]`).click();s.choose(s.frame.choices[0].id)}else{await fresh.locator('#advance-button').click();s.advance()}await expect(fresh.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await context.close();
       17 | });
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\offline-work-pack.spec.ts:14:160
+        at .\tests\offline-work-pack.spec.ts:14:160
 
     Error Context: test-results-royal-editorial-extra\offline-work-pack-download-325fb-ached-story-data-on-subpath\error-context.md
 
@@ -128,7 +128,7 @@ Running 50 tests using 1 worker
       15 |  await page.getByRole('button',{name:'设置',exact:true}).click();await page.getByRole('button',{name:`下载《${work.title}》离线资源`,exact:true}).click();await expect(page.getByRole('dialog')).toContainText('离线资源已备好');await page.keyboard.press('Escape');for(const name of expected)expect(await page.evaluate(async url=>Boolean(await caches.match(url)),new URL('assets/'+name,root).href),`${slug}: requested data chunk is absent`).toBe(true);
       16 |  const cdp=await context.newCDPSession(page);await cdp.send('Network.clearBrowserCache');await cdp.detach();const fresh=await context.newPage();await fresh.addInitScript(prefix=>localStorage.setItem(prefix+'settings',JSON.stringify({speed:0,reduced:true})),work.prefix);await page.close();await context.setOffline(true);await fresh.goto(root+work.file);await fresh.getByRole('button',{name:work.start,exact:true}).click();const data=JSON.parse(readFileSync('src/generated/'+source+'.json','utf8')),s=new VNRuntime(data,work.version);await expect(fresh.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await expect(fresh.locator('#dialogue-visible')).toHaveText(s.frame.text);if(s.frame.choices.length){await fresh.locator(`[data-choice="${s.frame.choices[0].id}"]`).click();s.choose(s.frame.choices[0].id)}else{await fresh.locator('#advance-button').click();s.advance()}await expect(fresh.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await context.close();
       17 | });
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\offline-work-pack.spec.ts:14:160
+        at .\tests\offline-work-pack.spec.ts:14:160
 
     Error Context: test-results-royal-editorial-extra\offline-work-pack-download-5fa28-uncached-story-data-on-root\error-context.md
 
@@ -149,7 +149,7 @@ Running 50 tests using 1 worker
       15 |  await page.getByRole('button',{name:'设置',exact:true}).click();await page.getByRole('button',{name:`下载《${work.title}》离线资源`,exact:true}).click();await expect(page.getByRole('dialog')).toContainText('离线资源已备好');await page.keyboard.press('Escape');for(const name of expected)expect(await page.evaluate(async url=>Boolean(await caches.match(url)),new URL('assets/'+name,root).href),`${slug}: requested data chunk is absent`).toBe(true);
       16 |  const cdp=await context.newCDPSession(page);await cdp.send('Network.clearBrowserCache');await cdp.detach();const fresh=await context.newPage();await fresh.addInitScript(prefix=>localStorage.setItem(prefix+'settings',JSON.stringify({speed:0,reduced:true})),work.prefix);await page.close();await context.setOffline(true);await fresh.goto(root+work.file);await fresh.getByRole('button',{name:work.start,exact:true}).click();const data=JSON.parse(readFileSync('src/generated/'+source+'.json','utf8')),s=new VNRuntime(data,work.version);await expect(fresh.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await expect(fresh.locator('#dialogue-visible')).toHaveText(s.frame.text);if(s.frame.choices.length){await fresh.locator(`[data-choice="${s.frame.choices[0].id}"]`).click();s.choose(s.frame.choices[0].id)}else{await fresh.locator('#advance-button').click();s.advance()}await expect(fresh.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await context.close();
       17 | });
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\offline-work-pack.spec.ts:14:160
+        at .\tests\offline-work-pack.spec.ts:14:160
 
     Error Context: test-results-royal-editorial-extra\offline-work-pack-download-b354c-ached-story-data-on-subpath\error-context.md
 
@@ -169,7 +169,7 @@ Running 50 tests using 1 worker
       16 |  const cdp=await context.newCDPSession(page);await cdp.send('Network.clearBrowserCache');await cdp.detach();const fresh=await context.newPage();await fresh.addInitScript(prefix=>localStorage.setItem(prefix+'settings',JSON.stringify({speed:0,reduced:true})),work.prefix);await page.close();await context.setOffline(true);await fresh.goto(root+work.file);await fresh.getByRole('button',{name:work.start,exact:true}).click();const data=JSON.parse(readFileSync('src/generated/'+source+'.json','utf8')),s=new VNRuntime(data,work.version);await expect(fresh.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await expect(fresh.locator('#dialogue-visible')).toHaveText(s.frame.text);if(s.frame.choices.length){await fresh.locator(`[data-choice="${s.frame.choices[0].id}"]`).click();s.choose(s.frame.choices[0].id)}else{await fresh.locator('#advance-button').click();s.advance()}await expect(fresh.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await context.close();
       17 | });
       18 |
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\offline-work-pack.spec.ts:15:421
+        at .\tests\offline-work-pack.spec.ts:15:421
 
     Error Context: test-results-royal-editorial-extra\offline-work-pack-download-12789-uncached-story-data-on-root\error-context.md
 
@@ -189,7 +189,7 @@ Running 50 tests using 1 worker
       16 |  const cdp=await context.newCDPSession(page);await cdp.send('Network.clearBrowserCache');await cdp.detach();const fresh=await context.newPage();await fresh.addInitScript(prefix=>localStorage.setItem(prefix+'settings',JSON.stringify({speed:0,reduced:true})),work.prefix);await page.close();await context.setOffline(true);await fresh.goto(root+work.file);await fresh.getByRole('button',{name:work.start,exact:true}).click();const data=JSON.parse(readFileSync('src/generated/'+source+'.json','utf8')),s=new VNRuntime(data,work.version);await expect(fresh.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await expect(fresh.locator('#dialogue-visible')).toHaveText(s.frame.text);if(s.frame.choices.length){await fresh.locator(`[data-choice="${s.frame.choices[0].id}"]`).click();s.choose(s.frame.choices[0].id)}else{await fresh.locator('#advance-button').click();s.advance()}await expect(fresh.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await context.close();
       17 | });
       18 |
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\offline-work-pack.spec.ts:15:421
+        at .\tests\offline-work-pack.spec.ts:15:421
 
     Error Context: test-results-royal-editorial-extra\offline-work-pack-download-0a77a-ached-story-data-on-subpath\error-context.md
 
@@ -205,7 +205,7 @@ Running 50 tests using 1 worker
          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^
       11 | });
       12 |
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\twelfth-life-editorial-cold-offline.spec.ts:10:1011
+        at .\tests\twelfth-life-editorial-cold-offline.spec.ts:10:1011
 
     Error Context: test-results-royal-editorial-extra\twelfth-life-editorial-col-e0976--and-V3-at-root-and-subpath\error-context.md
 
@@ -219,7 +219,7 @@ Running 50 tests using 1 worker
         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^
       7 | });
       8 |
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\twelfth-life-editorial-stage.spec.ts:6:1401
+        at .\tests\twelfth-life-editorial-stage.spec.ts:6:1401
 
     Error Context: test-results-royal-editorial-extra\twelfth-life-editorial-sta-76fe4-ain-readable-in-three-sizes\error-context.md
 

@@ -1,8 +1,8 @@
 {
   "tool": "built-in image_gen",
-  "target": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-3ae9fa38-fd67-4d7f-9660-b86e23d4496b.png",
-  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-6c58e979-a976-4a58-b8dd-2e51553533d1.png",
+  "target": "[author-local-path]",
+  "source": "[author-local-path]",
   "prompt": "Use case: identity-preserve. Edit target is the supplied production sprite. Preserve this exact man's identity, hairstyle, facial hair except requested aging, all costume details except requested treated bandage, watercolor ink illustration style, warm neutral lighting, centered full head to mid thighs framing and true transparent alpha. Change only the requested expression, gesture, or age: A warm restrained amused smile, cheeks lift, corners of the eyes crinkle, mouth slightly open as if joking with a respected rival. Preserve the exact full body pose and the sheathed saber. No scenery, no ground shadow, no text, no frame, no logo, no particles, no additional figures.",
-  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/dt-liang-amused.webp",
+  "output": "./public/art/v6/dt-liang-amused.webp",
   "review": "Pending visual review and story mapping"
 }

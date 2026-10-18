@@ -4,7 +4,7 @@
     {
       "file": "public/art/v6/heng-earlier.webp",
       "prompt": "Use case: illustration-story. A new dedicated reusable character portrait for Sima Heng in Jianghu, a grounded Song-era Chinese wuxia visual novel. This is his earlier elderly appearance around his seventies, before his much older later years. Chinese man, tall spare build, distinctive long angular face, broad high forehead, slightly asymmetric arched eyebrows, gently hooked nose, deep-set dark eyes with a patient dry humour, prominent cheekbones, narrow mouth. Grey hair with darker streaks tied in a small plain topknot, short sparse grey moustache and close short pointed beard. Plain faded indigo-grey crossed-collar robe over warm ivory inner collar, muted dark rust cloth sash, simple worn cloth cuffs. No head ornament. Calm neutral attentive face, closed mouth; shoulders relaxed, forearms loosely gathered with empty hands at lower waist. Three-quarter-length from complete hair top to mid thigh, front-facing torso with head turned only slightly toward viewer's right. Entire silhouette and both elbows in frame with ample transparent margin. TRUE transparent background. Naturalistic hand-painted ink and watercolour game portrait, finely modelled readable face, restrained brushwork and cloth folds; no photographic skin, no anime, no armour, no sword, staff, tea, chair, book, background, floor, shadow rectangle, writing, aura, halo or magic. He is an ordinary-looking old teacher before anyone learns his martial stature. Identity, clothing and anatomy must be clear enough to reuse across teaching, travel and ordinary conversation, not an action-specific scene. 1024x1536 vertical composition.",
-      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-ef174111-ad7a-4285-9bb1-cfaa790205bc.png",
+      "source": "[author-local-path]",
       "processing": "Resize from1024x1536 to512x768 and WebP format conversion only; alpha preserved, original PNG retained.",
       "sourceAlphaRange": [
         0,
@@ -21,9 +21,9 @@
       "file": "public/art/v6/heng-later.webp",
       "prompt": "Edit the supplied portrait into the SAME Sima Heng in his much older, naturally aged later appearance, used for his hundred-plus years in the story. Preserve his recognizable long angular face, high forehead, eyebrow asymmetry, hooked nose, cheekbone structure, plain indigo-grey robe, rust sash, empty gathered hands, pose, framing and exact scale. Hair becomes thin fully white with a smaller looser white topknot; sparse moustache and short beard become white. Show clearly older skin with deeper fine wrinkles, age spots, looser jaw and neck, slightly more hollow cheeks and a gentle stoop, while keeping alert dark eyes and healthy believable anatomy. He must visibly differ from the earlier elderly portrait, without becoming a corpse or fantasy immortal. Neutral patient closed-mouth expression. No special props, aura, spiritual effects or new costume. Keep the entire silhouette and TRUE transparent background, with no painted background vignette or rectangle. 1024x1536 vertical. Restrained naturalistic ink-and-watercolour game portrait. This remains a reusable ordinary teacher portrait, not a frailty, death or enlightenment event image.",
       "references": [
-        "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-ef174111-ad7a-4285-9bb1-cfaa790205bc.png"
+        "[author-local-path]"
       ],
-      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-21e8f3db-77be-4c4a-b00b-d709ace36931.png",
+      "source": "[author-local-path]",
       "processing": "Resize from1024x1536 to512x768 and WebP format conversion only; alpha preserved, original PNG retained.",
       "sourceAlphaRange": [
         0,
@@ -40,10 +40,10 @@
       "file": "public/art/v6/heng-earlier-intent-v2.webp",
       "prompt": "Remove the background from this exact Sima Heng portrait. This is a precise transparency repair, not a character redesign. Preserve the man, his focused facial expression, age, hair, beard, blue-grey robe, sash, hands, pose, scale and framing pixel-faithfully. Delete ALL black, grey, glowing, cloudy or vignette-like material outside the actual hair/clothing/body silhouette. Every area outside the person's natural silhouette must be fully transparent alpha0, including both upper corners and the spaces beside the hair and shoulders. No background shadow, black triangles, halo, matte rectangle, floor or new props. Keep softly antialiased edges only immediately against the silhouette; do not feather a broad grey cloud behind him. TRUE transparent RGBA cutout at1024x1536.",
       "references": [
-        "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-513226ba-8d45-47c2-bc5e-a91ef1bc95cc.png"
+        "[author-local-path]"
       ],
       "supersedes": "public/art/v6/heng-earlier-intent.webp",
-      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-625fb243-c312-4b60-8a95-d3124bab3cd6.png",
+      "source": "[author-local-path]",
       "processing": "Built-in alpha repair; resize1024x1536 to512x768 and WebP conversion only. Original and rejected PNGs retained.",
       "sourceAlphaRange": [
         0,
@@ -66,10 +66,10 @@
       "file": "public/art/v6/heng-earlier-amused-v2.webp",
       "prompt": "Repair transparency ONLY for this exact portrait of earlier-elderly Sima Heng smiling slightly. Keep his face identity, small closed-mouth amused smile, grey hair with dark streaks, short beard, blue-grey robe, rust sash, hands, pose, scale and framing unchanged. Remove ALL black or grey painted material, halo, shadow-cloud and vignette outside the real person. Outside the natural hair, body and clothing silhouette, alpha must be0 including both upper corners and all empty spaces beside his head and shoulders. No background matte or black triangular patches. Only a narrow naturally antialiased silhouette edge. No new detail, props, action, altered costume or scene. TRUE transparent RGBA cutout,1024x1536. Preserve the existing naturalistic painted style without adding new patterns or changing the cloth texture.",
       "references": [
-        "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-502aaa37-f43c-4a51-91aa-3f6db46838cf.png"
+        "[author-local-path]"
       ],
       "supersedes": "public/art/v6/heng-earlier-amused.webp",
-      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-6217fccd-a07a-49f5-bce8-9cc1d91e6886.png",
+      "source": "[author-local-path]",
       "processing": "Built-in alpha repair; resize1024x1536 to512x768 and WebP conversion only. Original and rejected PNGs retained.",
       "sourceAlphaRange": [
         0,
@@ -92,9 +92,9 @@
       "file": "public/art/v6/heng-later-intent.webp",
       "prompt": "Edit ONLY the expression of this SAME much-older Sima Heng portrait to a focused attentive teaching expression. Preserve his very old age, thin fully white hair, white short beard, long angular face, deep wrinkles and loose neck, plain indigo-grey robe and rust sash, empty gathered hands, pose, framing and scale exactly. Gently knit eyebrows, intent alert eyes, closed firm mouth, patient concentration rather than anger. No younger skin or thicker darker hair. No props, action, scene, aura or background. TRUE transparent background and1024x1536 ink/watercolour game portrait. Broadly reusable ordinary attention, not a named revelation or battle.",
       "references": [
-        "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-21e8f3db-77be-4c4a-b00b-d709ace36931.png"
+        "[author-local-path]"
       ],
-      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-139f7b38-f962-4ed1-9849-731a8ae3e30a.png",
+      "source": "[author-local-path]",
       "processing": "Resize from1024x1536 to512x768 and WebP format conversion only; alpha preserved, original PNG retained.",
       "sourceAlphaRange": [
         0,
@@ -111,9 +111,9 @@
       "file": "public/art/v6/heng-later-amused.webp",
       "prompt": "Edit ONLY the facial expression of this SAME very old Sima Heng portrait into a small warm dry amused smile: lips closed, one corner lifted, smiling fine creases at the eyes and a subtly raised eyebrow. Preserve his thin white hair and white short beard, advanced age with deep wrinkles and loose neck, exact long face identity, indigo-grey robe/rust sash, empty gathered hands, body pose, silhouette, framing and scale. No younger skin, no teeth or broad laughter. No objects, action, symbols, glow or background. TRUE transparent background,1024x1536 naturalistic ink/watercolour game portrait. A reusable conversational smile suitable for an old teacher, not an event-specific emotion.",
       "references": [
-        "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-21e8f3db-77be-4c4a-b00b-d709ace36931.png"
+        "[author-local-path]"
       ],
-      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-e16829cb-24c4-4dc6-9f3d-e30baf879990.png",
+      "source": "[author-local-path]",
       "processing": "Resize from1024x1536 to512x768 and WebP format conversion only; alpha preserved, original PNG retained.",
       "sourceAlphaRange": [
         0,
@@ -129,7 +129,7 @@
     {
       "file": "public/art/v6/cg-plain-tea.webp",
       "prompt": "Use case: illustration-story. One reusable intimate still-life CG for Jianghu, a grounded Chinese Song-era wuxia visual novel. A small plain grey-green ceramic teapot and two ordinary matching handleless tea bowls resting naturally on a worn wooden table. Some ordinary amber tea visible in the bowls, no precise fill-level comparison, no hand pouring and no visible steam. Plain undyed folded cloth beside them. No writing, decoration, motifs or signature shapes. Gentle neutral reflected daylight, softly receding unobtrusive grey-brown backdrop with no visible window, building, garden or geography. Naturalistic hand-painted ink and watercolour game art, restrained matte ceramics and timber texture, quiet warm/cool grey palette. Main tea shapes in central upper half; bottom30percent quiet timber for external dialogue.1536x1024 opaque landscape. No people, hands, swords, books, coins, chairs, flowers, symbols, magical glow, emotional weather, injury, smoke, dramatic light or UI. Reusable for ordinary drinking, waiting, lessons, a shared table or any future revised conversation. The image must not encode farewell, reconciliation, death, a specific teacher, revelation or victory.",
-      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-9edbee8f-f1d2-4554-83a4-4f2e188cb58b.png",
+      "source": "[author-local-path]",
       "processing": "WebP format conversion only; original PNG retained.",
       "sourceAlphaRange": [
         255,
@@ -155,9 +155,9 @@
     {
       "prompt": "Edit only the facial expression of this SAME earlier-elderly Sima Heng portrait into focused attentive teaching: brows gently drawn together, eyes intent on the person speaking, mouth closed and firm without anger. Preserve exact age, identity, nose and cheek structure, hair and beard, robe, sash, empty gathered hands, body pose, silhouette, scale and canvas. No props, action, background or symbol. Maintain TRUE transparency and hand-painted ink/watercolour detail,1024x1536. A reusable ordinary concentrating expression, not combat or a singular revelation.",
       "references": [
-        "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-ef174111-ad7a-4285-9bb1-cfaa790205bc.png"
+        "[author-local-path]"
       ],
-      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-513226ba-8d45-47c2-bc5e-a91ef1bc95cc.png",
+      "source": "[author-local-path]",
       "processing": "Resize from1024x1536 to512x768 and WebP format conversion only; alpha preserved, original PNG retained.",
       "sourceAlphaRange": [
         0,
@@ -176,9 +176,9 @@
     {
       "prompt": "Edit ONLY the expression of this SAME earlier-elderly Sima Heng portrait to a small dry amused smile: one mouth corner gently lifted, lips still closed, fine smiling creases beside the eyes, a slightly raised asymmetric eyebrow. Friendly restrained wit, not laughter or mockery. Preserve exact age, face identity, hair and beard, robe and sash, empty hands, body pose, silhouette, framing and scale. No props, story action, symbols or background. Maintain TRUE transparency,1024x1536 and naturalistic ink/watercolour game rendering. An ordinary broadly reusable conversational expression.",
       "references": [
-        "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-ef174111-ad7a-4285-9bb1-cfaa790205bc.png"
+        "[author-local-path]"
       ],
-      "source": "C:/Users/admin/.codex/generated_images/01a13dbb-83a2-7381-8e97-354cd12afc88/exec-502aaa37-f43c-4a51-91aa-3f6db46838cf.png",
+      "source": "[author-local-path]",
       "processing": "Resize from1024x1536 to512x768 and WebP format conversion only; alpha preserved, original PNG retained.",
       "sourceAlphaRange": [
         0,

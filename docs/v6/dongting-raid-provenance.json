@@ -1,7 +1,7 @@
 {
   "tool": "built-in image_gen",
-  "source": "C:\\Users\\admin\\.codex\\generated_images\\01a13dbb-83a2-7381-8e97-354cd12afc88\\exec-7b133925-79ad-4faa-9997-e3faadee3354.png",
+  "source": "[author-local-path]",
   "prompt": "Use case: historical-scene. Production illustrated environment background for Jianghu Chinese wuxia visual novel. Wide landscape3:2. Two ordinary wooden inland lake cargo boats have collided and drifted slightly apart during a boat raid. Thick snapped mooring ropes across wet deck planks, broken short railing, a sagging pale cloth canopy, a few cargo crates and rice sacks near a cracked gunwale, unsettled gray-blue lake and distant low reed shore. Eye-level view across a generous foreground deck with clear ropes and retreat route; urgent and damaged but physically believable, no towering waves, no hurricane, no ships exploding. No people or weapons flying. A shallow lake encounter rather than an ocean disaster. Fine muted naturalistic watercolor and ink illustration, historically grounded timber and stone, tactile understated brushwork, atmospheric depth, coherent restrained Jianghu visual world. Bottom foreground visually quiet for HTML dialogue. No people, no silhouettes, no text, no logos, no UI, no watermark, no magical effects.",
-  "output": "D:/xia zai/AI project/Project in Iteration/Jianghu/public/art/v6/dongting-raid.webp",
+  "output": "./public/art/v6/dongting-raid.webp",
   "review": "Reviewed native image: coherent timber/stone or lake working space, empty foreground, no named figure or text. Mapped to matching chronicle scenes. Fair uses one image for several related scenes and is counted once."
 }

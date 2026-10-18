@@ -61,7 +61,7 @@ Running 27 tests using 2 workers
       21 | });
       22 | test('Royal illustration night and failure fallback remain readable and controllable',async({browser})=>{
       23 |  for(const broken of [false,true]){const context=await browser.newContext(),page=await context.newPage(),s=at(content,'rl_fair_seat_3');await page.setViewportSize({width:390,height:844});if(broken)await page.route('**/art/v6/cg-royal-letters.webp',route=>route.abort());await page.addInitScript(({raw,prefix})=>{localStorage.setItem(prefix+'auto',raw);localStorage.setItem(prefix+'settings',JSON.stringify({speed:0,reduced:true,size:24,dark:true}))},{raw:JSON.stringify(s.save()),prefix});await page.goto('/twelfth-life.html#play');await expect(page.locator('html')).toHaveAttribute('data-theme','dark');await expect(page.locator('#dialogue-visible')).toHaveText(s.frame.text);if(!broken){await decoded(page);await page.screenshot({path:'docs/evidence/v6/royal-cg-night-390.png'})}else expect(await page.locator('.scene-background').getAttribute('style')).toContain('reusable-study.webp');await page.locator('#advance-button').click();s.advance();await expect(page.locator('#app')).toHaveAttribute('data-beat',s.frame.id);await context.close()}
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\royal-letters-cg.spec.ts:20:632
+        at .\tests\royal-letters-cg.spec.ts:20:632
 
     Error Context: test-results\royal-letters-cg-Royal-old-a1251-ithout-consuming-a-response\error-context.md
 

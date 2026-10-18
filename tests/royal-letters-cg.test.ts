@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -21,5 +22,5 @@ test('CG compatibility does not accept forged raw data or an unrelated edition a
 });
 test('512 sampled lives keep all beats, choices and the actual illustration reachable',()=>{
  const beats=new Set<string>(),choices=new Set<string>(),cgBeats=new Set<string>();for(let seed=1;seed<=512;seed++){let r=Math.imul(seed,2654435761)>>>0;const s=new VNRuntime(content,version);while(true){const f=s.frame;beats.add(f.id);f.choices.forEach(c=>choices.add(c.id));if(f.stage.cg==='royalLetters')cgBeats.add(f.id);if(f.ending)break;if(f.choices.length){r=(Math.imul(r,1664525)+1013904223)>>>0;s.choose(f.choices[r>>>31].id)}else s.advance()}}
- assert.deepEqual([...beats].sort(),[...readFileSync('story/twelfth-life-v2.ink','utf8').matchAll(/# beat:(\S+)/g)].map(m=>m[1]).sort());assert.equal(choices.size,66);assert.deepEqual([...cgBeats].sort(),['rl_fair_seat_3','rl_fair_seat_4']);writeFileSync('docs/evidence/v6/royal-cg-content-audit.json',JSON.stringify({status:'CG_INCREMENT_NOT_FULL_ACCEPTANCE',beats:beats.size,choiceOptions:choices.size,sampledPaths:512,exhaustive:false,newRasterFiles:1,CG:'royalLetters',CGBeats:[...cgBeats],migrationBeats:['rl_fair_seat_3','rl_fair_seat_4','rl_fair_seat_5'],versionUnchanged:version,limits:'Protagonist/other principal identities, full three editorial rounds and final acceptance remain.'},null,2));
+ assert.deepEqual([...beats].sort(),[...readFileSync('story/twelfth-life-v2.ink','utf8').matchAll(/# beat:(\S+)/g)].map(m=>m[1]).sort());assert.equal(choices.size,66);assert.deepEqual([...cgBeats].sort(),['rl_fair_seat_3','rl_fair_seat_4']);writeFileSync(evidencePath('docs/evidence/v6/royal-cg-content-audit.json'),JSON.stringify({status:'CG_INCREMENT_NOT_FULL_ACCEPTANCE',beats:beats.size,choiceOptions:choices.size,sampledPaths:512,exhaustive:false,newRasterFiles:1,CG:'royalLetters',CGBeats:[...cgBeats],migrationBeats:['rl_fair_seat_3','rl_fair_seat_4','rl_fair_seat_5'],versionUnchanged:version,limits:'Protagonist/other principal identities, full three editorial rounds and final acceptance remain.'},null,2));
 });

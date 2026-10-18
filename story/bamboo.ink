@@ -9,7 +9,7 @@ VAR bb_final = 0
 -> closed_gate
 
 === closed_gate ===
-此刻你是严仲山。龙虎会当夜，洛阳南郊旧园关门，无帖子，也无年轻弟子。今日你和宁的旧账已记平，左腕没有废半年，回想那第八十一招时却仍有些凉。 # beat:bb_closed_gate_1 # scene:bb_gate # cast:ly_liu,ly_ning,bb_ro # speaker:narrator
+此刻你是严仲山。龙虎会当夜，洛阳南郊旧园关门，无帖子，也无年轻弟子。今日你和宁的旧账已记平，左臂没有废半年，回想那第八十一招时却仍有些凉。 # beat:bb_closed_gate_1 # scene:bb_gate # cast:ly_liu,ly_ning,bb_ro # speaker:narrator
 罗继祖、吴成海、宁文昭、沈元声、谢青云、周敬之，另有一南一北两位前十名宿都在。座中人能来，不是因为替谁递过一封帖。 # beat:bb_closed_gate_2 # scene:bb_gate # cast:ly_liu,ly_ning,bb_ro # speaker:narrator
 柳老若晚一步，我右肩就更久？ # beat:bb_closed_gate_3 # scene:bb_gate # cast:ly_liu,ly_ning,bb_ro # speaker:ly_ning # mood:ly_ning=sharp
 你还记得比我更久。 # beat:bb_closed_gate_4 # scene:bb_gate # cast:ly_liu,ly_ning,bb_ro # speaker:you
@@ -35,17 +35,25 @@ VAR bb_final = 0
 到后面，都在求少？ # beat:bb_three_steps_3 # scene:bb_table # cast:ly_liu,bb_ro,ly_ning # speaker:bb_ro # mood:bb_ro=intent
 不练到多，怎知道什么能少？年轻人十路枪只会三路，叫不会。练五十年、千招见过，才剩三路，才是少。 # beat:bb_three_steps_4 # scene:bb_table # cast:ly_liu,bb_ro,ly_ning # speaker:ly_liu # mood:ly_liu=neutral
 你低头看掌，不准备今夜便删去只因难练而还没练成的东西。宁手里十二骨扇，也没为听懂一句少就当场折掉三根。 # beat:bb_three_steps_5 # scene:bb_table # cast:ly_liu,bb_ro,ly_ning # speaker:narrator
+{
+- bb_own_place:
+你问的是那一掌本身。肯把错处放到自己身上看，今夜便不算白坐。 # beat:bb_three_steps_6 # scene:bb_table # cast:ly_liu,bb_ro,ly_ning # speaker:ly_liu # mood:ly_liu=intent
+席上没人替他把这一问改成一个境界的名字。 # beat:bb_three_steps_7 # scene:bb_table # cast:ly_liu,bb_ro,ly_ning # speaker:narrator
+- else:
+要一段我真不明白的，行。可你得先受得住：听完了仍旧不明白。 # beat:bb_three_steps_8 # scene:bb_table # cast:ly_liu,bb_ro,ly_ning # speaker:ly_liu # mood:ly_liu=amused
+罗笑了一声。柳没有顺势把这段旧事说成一条谁都走得通的路。 # beat:bb_three_steps_9 # scene:bb_table # cast:ly_liu,bb_ro,ly_ning # speaker:narrator
+}
 * [追问怎样分少与不会，把自己仍不敢用的一掌也算进去，不拿今夜一句话替自己省功。 # cid:bb_ask_which_less]
   ~ bb_less_question = true
-  若我嫌一掌碍事，却其实还没练到能用，删了也不能算少。 # beat:bb_three_steps_6 # scene:bb_table # cast:ly_liu,bb_ro,ly_ning # speaker:you
-  那先问自己为什么用不出。别借我的话替你把没做过的事改了名字。 # beat:bb_three_steps_7 # scene:bb_table # cast:ly_liu,bb_ro,ly_ning # speaker:ly_liu # mood:ly_liu=intent
-  罗伸手在桌边比了自己惯用的一式，停一停，没有接着演成一整路。 # beat:bb_three_steps_8 # scene:bb_table # cast:ly_liu,bb_ro,ly_ning # speaker:narrator
+  若我嫌一掌碍事，却其实还没练到能用，删了也不能算少。 # beat:bb_three_steps_10 # scene:bb_table # cast:ly_liu,bb_ro,ly_ning # speaker:you
+  那先问自己为什么用不出。别借我的话替你把没做过的事改了名字。 # beat:bb_three_steps_11 # scene:bb_table # cast:ly_liu,bb_ro,ly_ning # speaker:ly_liu # mood:ly_liu=intent
+  罗伸手在桌边比了自己惯用的一式，停一停，没有接着演成一整路。 # beat:bb_three_steps_12 # scene:bb_table # cast:ly_liu,bb_ro,ly_ning # speaker:narrator
   -> thirty_six
 * [请罗说他哪些枪还留着只因教了多年，让少先落到一个人手里，不只当境界口号。 # cid:bb_ask_ro_habit]
   ~ bb_less_question = false
-  有些教顺嘴，自己一用，反而得先替它找地方。 # beat:bb_three_steps_9 # scene:bb_table # cast:ly_liu,bb_ro,ly_ning # speaker:bb_ro # mood:bb_ro=uneasy
-  我也有。 # beat:bb_three_steps_10 # scene:bb_table # cast:ly_liu,bb_ro,ly_ning # speaker:you
-  你没把这一句当作已经找齐所有多余，柳也没替罗当场点出该删哪十一式。 # beat:bb_three_steps_11 # scene:bb_table # cast:ly_liu,bb_ro,ly_ning # speaker:narrator
+  有些教顺嘴，自己一用，反而得先替它找地方。 # beat:bb_three_steps_13 # scene:bb_table # cast:ly_liu,bb_ro,ly_ning # speaker:bb_ro # mood:bb_ro=uneasy
+  我也有。 # beat:bb_three_steps_14 # scene:bb_table # cast:ly_liu,bb_ro,ly_ning # speaker:you
+  你没把这一句当作已经找齐所有多余，柳也没替罗当场点出该删哪十一式。 # beat:bb_three_steps_15 # scene:bb_table # cast:ly_liu,bb_ro,ly_ning # speaker:narrator
   -> thirty_six
 
 === thirty_six ===
@@ -54,17 +62,25 @@ VAR bb_final = 0
 门外能留在最后，谁？ # beat:bb_thirty_six_3 # scene:bb_table # cast:ly_liu,ly_ning # speaker:you
 虎啸金刀，韩世雄。河洛韩氏，八十九。 # beat:bb_thirty_six_4 # scene:bb_table # cast:ly_liu,ly_ning # speaker:ly_liu # mood:ly_liu=neutral
 三十还只是河洛十一，六十地方第一；六十一胜南北末席、六十八胜北二十二、七十一胜当时北十五。后来总谱重校，没经过南北榜，直接列三十六。 # beat:bb_thirty_six_5 # scene:bb_table # cast:ly_liu,ly_ning # speaker:narrator # fact:bb_paper
+{
+- bb_less_question:
+你先去找用不出的原因，再谈删不删。这一步没有旁人能替你做。 # beat:bb_thirty_six_6 # scene:bb_table # cast:ly_liu,ly_ning # speaker:ly_liu # mood:ly_liu=intent
+你因此没有把"难练"当成"多余"，今夜也少删一掌。 # beat:bb_thirty_six_7 # scene:bb_table # cast:ly_liu,ly_ning # speaker:narrator
+- else:
+罗自己留着哪几式，你听进去了。什么时候轮到你说自己的，我等着听。 # beat:bb_thirty_six_8 # scene:bb_table # cast:ly_liu,ly_ning # speaker:ly_liu # mood:ly_liu=neutral
+罗在桌边又比了半式，停住，没有接着演成一整路枪。 # beat:bb_thirty_six_9 # scene:bb_table # cast:ly_liu,ly_ning # speaker:narrator
+}
 * [问那张纸以外真正打过什么，不把未入化便列总谱当一条谁都可走的捷径。 # cid:bb_ask_han_record]
   ~ bb_han_record = true
-  只叫门前一人，仍不知道旁人怎样知道他站在那里。 # beat:bb_thirty_six_6 # scene:bb_table # cast:ly_liu,ly_ning # speaker:you
-  二十年，够分量十二场。八胜两平两负，两负的对手都坐实入化。 # beat:bb_thirty_six_7 # scene:bb_table # cast:ly_liu,ly_ning # speaker:ly_liu # mood:ly_liu=neutral
-  你没有替另外八胜补成八位入化，也没有把未遇过的人一并写成他必胜。 # beat:bb_thirty_six_8 # scene:bb_table # cast:ly_liu,ly_ning # speaker:narrator
+  只叫门前一人，仍不知道旁人怎样知道他站在那里。 # beat:bb_thirty_six_10 # scene:bb_table # cast:ly_liu,ly_ning # speaker:you
+  二十年，够分量十二场。八胜两平两负，两负的对手都坐实入化。 # beat:bb_thirty_six_11 # scene:bb_table # cast:ly_liu,ly_ning # speaker:ly_liu # mood:ly_liu=neutral
+  你没有替另外八胜补成八位入化，也没有把未遇过的人一并写成他必胜。 # beat:bb_thirty_six_12 # scene:bb_table # cast:ly_liu,ly_ning # speaker:narrator
   -> han_twelve
 * [质疑不入化莫问韩刀是否太满，要求分清亲见战绩与江湖替他说的话。 # cid:bb_ask_han_rumor]
   ~ bb_han_record = false
-  无人正面赢过，不等于所有没来的人都已输。 # beat:bb_thirty_six_9 # scene:bb_table # cast:ly_liu,ly_ning # speaker:you
-  是。到今日，尚未坐实入化的人，没有在公平正面赢过他的实据；别替没见过的战添结局。 # beat:bb_thirty_six_10 # scene:bb_table # cast:ly_liu,ly_ning # speaker:ly_liu # mood:ly_liu=intent
-  他仍将二十年十二场八胜两平两负说清，两败都归真正门里的人。 # beat:bb_thirty_six_11 # scene:bb_table # cast:ly_liu,ly_ning # speaker:narrator
+  无人正面赢过，不等于所有没来的人都已输。 # beat:bb_thirty_six_13 # scene:bb_table # cast:ly_liu,ly_ning # speaker:you
+  是。到今日，尚未坐实入化的人，没有在公平正面赢过他的实据；别替没见过的战添结局。 # beat:bb_thirty_six_14 # scene:bb_table # cast:ly_liu,ly_ning # speaker:ly_liu # mood:ly_liu=intent
+  他仍将二十年十二场八胜两平两负说清，两败都归真正门里的人。 # beat:bb_thirty_six_15 # scene:bb_table # cast:ly_liu,ly_ning # speaker:narrator
   -> han_twelve
 
 === han_twelve ===
@@ -74,15 +90,23 @@ VAR bb_final = 0
 可能明日，可能此生到不了，韩说完仍磨刀。今夜韩不在园里，你听的是柳所说的见闻，不是替韩又认了一场输。 # beat:bb_han_twelve_4 # scene:bb_table # cast:ly_liu,bb_ro # speaker:narrator
 那一步，也不能由听的人替他量好。 # beat:bb_han_twelve_5 # scene:bb_table # cast:ly_liu,bb_ro # speaker:you
 你自己的，也一样。 # beat:bb_han_twelve_6 # scene:bb_table # cast:ly_liu,bb_ro # speaker:ly_liu # mood:ly_liu=neutral # fact:bb_han
+{
+- bb_han_record:
+你要的是那十二场本身，不是一条谁都能走的捷径。好，我把年份一处处数给你。 # beat:bb_han_twelve_7 # scene:bb_table # cast:ly_liu,bb_ro # speaker:ly_liu # mood:ly_liu=intent
+你没有替另外八胜补成八位入化，也没把未遇过的人写成他必胜。 # beat:bb_han_twelve_8 # scene:bb_table # cast:ly_liu,bb_ro # speaker:narrator
+- else:
+你把亲见战绩和江湖替他说的话分开了。这一分，比多知道一场胜负要紧。 # beat:bb_han_twelve_9 # scene:bb_table # cast:ly_liu,bb_ro # speaker:ly_liu # mood:ly_liu=sharp
+尚未坐实入化的人，仍没有公平正面赢过他的实据；这张纸没有替他多写一胜。 # beat:bb_han_twelve_10 # scene:bb_table # cast:ly_liu,bb_ro # speaker:narrator
+}
 * [问秦与顾各是什么样的高，不强索一句谁必胜谁。 # cid:bb_ask_both_heads]
   ~ bb_compare = true
-  两个榜首，若只想问排在谁前，恐怕又少听一半。 # beat:bb_han_twelve_7 # scene:bb_table # cast:ly_liu,bb_ro # speaker:you
-  秦更整，顾更空。这是我的所见，不是一场他们刚打完的判词。 # beat:bb_han_twelve_8 # scene:bb_table # cast:ly_liu,bb_ro # speaker:ly_liu # mood:ly_liu=intent
+  两个榜首，若只想问排在谁前，恐怕又少听一半。 # beat:bb_han_twelve_11 # scene:bb_table # cast:ly_liu,bb_ro # speaker:you
+  秦更整，顾更空。这是我的所见，不是一场他们刚打完的判词。 # beat:bb_han_twelve_12 # scene:bb_table # cast:ly_liu,bb_ro # speaker:ly_liu # mood:ly_liu=intent
   -> north_south
 * [问柳肯认顾比自己强的根据，不让前十席上的客气替代真比较。 # cid:bb_ask_liu_weaker]
   ~ bb_compare = false
-  同是能坐进总谱的人，柳老为何肯说他强过自己？ # beat:bb_han_twelve_9 # scene:bb_table # cast:ly_liu,bb_ro # speaker:you
-  他剑早年漂亮，二十年前还看得出哪剑最好，十年前渐看不出。如今先看人，不只看剑。 # beat:bb_han_twelve_10 # scene:bb_table # cast:ly_liu,bb_ro # speaker:ly_liu # mood:ly_liu=neutral
+  同是能坐进总谱的人，柳老为何肯说他强过自己？ # beat:bb_han_twelve_13 # scene:bb_table # cast:ly_liu,bb_ro # speaker:you
+  他剑早年漂亮，二十年前还看得出哪剑最好，十年前渐看不出。如今先看人，不只看剑。 # beat:bb_han_twelve_14 # scene:bb_table # cast:ly_liu,bb_ro # speaker:ly_liu # mood:ly_liu=neutral
   -> north_south
 
 === north_south ===
@@ -94,16 +118,24 @@ VAR bb_final = 0
 那我们这两掌一扇？ # beat:bb_north_south_6 # scene:bb_tea # cast:ly_liu,bb_xie,ly_ning # speaker:ly_ning # mood:ly_ning=amused
 看你们自己。 # beat:bb_north_south_7 # scene:bb_tea # cast:ly_liu,bb_xie,ly_ning # speaker:ly_liu # mood:ly_liu=neutral
 你没从这句话讨出一个柳没说过的境界，宁也没能替自己讨到今日本该先赢。 # beat:bb_north_south_8 # scene:bb_tea # cast:ly_liu,bb_xie,ly_ning # speaker:narrator # fact:bb_seen
+{
+- bb_compare:
+你问的是他们各自什么样的高。这么问，我才答得下去。 # beat:bb_north_south_9 # scene:bb_tea # cast:ly_liu,bb_xie,ly_ning # speaker:ly_liu # mood:ly_liu=intent
+席上没有第二个人接一句谁必胜谁；柳所说的仍是他自己看见的。 # beat:bb_north_south_10 # scene:bb_tea # cast:ly_liu,bb_xie,ly_ning # speaker:narrator
+- else:
+你问我凭什么肯认他强过自己。这一句我认，因为我看得见。 # beat:bb_north_south_11 # scene:bb_tea # cast:ly_liu,bb_xie,ly_ning # speaker:ly_liu # mood:ly_liu=neutral
+前十席上的客气没有被你当成凭证，也没有人替你把它变成一场还没打的比试。 # beat:bb_north_south_12 # scene:bb_tea # cast:ly_liu,bb_xie,ly_ning # speaker:narrator
+}
 * [追问柳为何不替七年未见的人留一个大概，听他愿意把不知道放在席间。 # cid:bb_press_unseen]
   ~ bb_unseen = true
-  我留个大概，你们出去就有人说我已看过。他若变了，是我替他停在七年前。 # beat:bb_north_south_9 # scene:bb_tea # cast:ly_liu,bb_xie,ly_ning # speaker:ly_liu # mood:ly_liu=neutral
-  谢把原想问的如今二字收住，改问七年前哪一处还满。柳这回能答。 # beat:bb_north_south_10 # scene:bb_tea # cast:ly_liu,bb_xie,ly_ning # speaker:narrator
+  我留个大概，你们出去就有人说我已看过。他若变了，是我替他停在七年前。 # beat:bb_north_south_13 # scene:bb_tea # cast:ly_liu,bb_xie,ly_ning # speaker:ly_liu # mood:ly_liu=neutral
+  谢把原想问的如今二字收住，改问七年前哪一处还满。柳这回能答。 # beat:bb_north_south_14 # scene:bb_tea # cast:ly_liu,bb_xie,ly_ning # speaker:narrator
   -> waist_next_day
 * [回到自己的第八十一招，问明知会伤为何仍拿输赢当必须接的手，不借别人的榜位躲开。 # cid:bb_return_own_palm]
   ~ bb_unseen = false
-  我知道那一手严与宁是谁，也知道会伤。知道得这样多，还是没肯收。 # beat:bb_north_south_11 # scene:bb_tea # cast:ly_liu,bb_xie,ly_ning # speaker:you
-  我也没有。 # beat:bb_north_south_12 # scene:bb_tea # cast:ly_liu,bb_xie,ly_ning # speaker:ly_ning # mood:ly_ning=uneasy
-  柳没在两人之间再判谁错得更多，只等你们将各自那一截说完。 # beat:bb_north_south_13 # scene:bb_tea # cast:ly_liu,bb_xie,ly_ning # speaker:narrator
+  我知道那一手严与宁是谁，也知道会伤。知道得这样多，还是没肯收。 # beat:bb_north_south_15 # scene:bb_tea # cast:ly_liu,bb_xie,ly_ning # speaker:you
+  我也没有。 # beat:bb_north_south_16 # scene:bb_tea # cast:ly_liu,bb_xie,ly_ning # speaker:ly_ning # mood:ly_ning=uneasy
+  柳没在两人之间再判谁错得更多，只等你们将各自那一截说完。 # beat:bb_north_south_17 # scene:bb_tea # cast:ly_liu,bb_xie,ly_ning # speaker:narrator
   -> waist_next_day
 
 === waist_next_day ===
@@ -111,15 +143,23 @@ VAR bb_final = 0
 真正变处，是三十年前百余招难分的旧敌再来，十七招便败。肩动知人去哪，脚落知下一步，不是硬猜，也不是只练得更快。 # beat:bb_waist_next_day_2 # scene:bb_tea # cast:ly_liu,bb_ro # speaker:narrator
 真正返真的，见过么？ # beat:bb_waist_next_day_3 # scene:bb_tea # cast:ly_liu,bb_ro # speaker:bb_ro # mood:bb_ro=neutral
 柳沉默很久，只认能确定两个。席上无人追姓名，你也没把那阵安静当作他已默许哪个传说。 # beat:bb_waist_next_day_4 # scene:bb_tea # cast:ly_liu,bb_ro # speaker:narrator
+{
+- bb_unseen:
+你问我为何不替他留一个大概。留了，你们出去就说我看过；他若变了，是我把他按在七年前。 # beat:bb_waist_next_day_5 # scene:bb_tea # cast:ly_liu,bb_ro # speaker:ly_liu # mood:ly_liu=neutral
+谢把原想问的"如今"收住，改问七年前哪一处还满。柳这回能答。 # beat:bb_waist_next_day_6 # scene:bb_tea # cast:ly_liu,bb_ro # speaker:narrator
+- else:
+你绕回自己那一掌了。今晚最难问的一句，往往是自己那一下。 # beat:bb_waist_next_day_7 # scene:bb_tea # cast:ly_liu,bb_ro # speaker:bb_ro # mood:bb_ro=intent
+柳没有在两人之间再判谁错得更多，只等各人把那一截说完。 # beat:bb_waist_next_day_8 # scene:bb_tea # cast:ly_liu,bb_ro # speaker:narrator
+}
 * [问是否交手；肯接受他不以挑战过才准承认所见。 # cid:bb_ask_if_fought]
   ~ bb_fought = true
-  你会跑到悬崖下，问山能不能同你打一架？ # beat:bb_waist_next_day_5 # scene:bb_tea # cast:ly_liu,bb_ro # speaker:ly_liu # mood:ly_liu=amused
-  你想起自己今日还想在两掌之间抢一个先。笑过，没再追着问能撑几招才算真见。 # beat:bb_waist_next_day_6 # scene:bb_tea # cast:ly_liu,bb_ro # speaker:narrator
+  你会跑到悬崖下，问山能不能同你打一架？ # beat:bb_waist_next_day_9 # scene:bb_tea # cast:ly_liu,bb_ro # speaker:ly_liu # mood:ly_liu=amused
+  你想起自己今日还想在两掌之间抢一个先。笑过，没再追着问能撑几招才算真见。 # beat:bb_waist_next_day_10 # scene:bb_tea # cast:ly_liu,bb_ro # speaker:narrator
   -> tea_cup
 * [问如何只敢说能确定两个，而不逼他报姓名作一张更大的榜。 # cid:bb_ask_how_confirm]
   ~ bb_fought = false
-  入化的人，还能看出身法剑掌高在哪儿。有些人，却连为何这样做也未必看明白。 # beat:bb_waist_next_day_7 # scene:bb_tea # cast:ly_liu,bb_ro # speaker:ly_liu # mood:ly_liu=intent
-  他没有拿未看懂的每个人都称返真，只讲其中一回。 # beat:bb_waist_next_day_8 # scene:bb_tea # cast:ly_liu,bb_ro # speaker:narrator
+  入化的人，还能看出身法剑掌高在哪儿。有些人，却连为何这样做也未必看明白。 # beat:bb_waist_next_day_11 # scene:bb_tea # cast:ly_liu,bb_ro # speaker:ly_liu # mood:ly_liu=intent
+  他没有拿未看懂的每个人都称返真，只讲其中一回。 # beat:bb_waist_next_day_12 # scene:bb_tea # cast:ly_liu,bb_ro # speaker:narrator
   -> tea_cup
 
 === tea_cup ===
@@ -128,17 +168,25 @@ VAR bb_final = 0
 那一点？ # beat:bb_tea_cup_3 # scene:bb_recollection # cast:ly_liu # speaker:you
 柳没说。你也没从杯沿替他猜出一套谁照做便入化的法。 # beat:bb_tea_cup_4 # scene:bb_recollection # cast:ly_liu # speaker:narrator
 茶是今夜的茶，故事里那个人与总谱前十未具名，也没有被请进这座园替你再走一遍。 # beat:bb_tea_cup_5 # scene:bb_recollection # cast:ly_liu # speaker:narrator # fact:bb_cup
+{
+- bb_fought:
+你问我有没有跟山打过一架。问完自己先笑了——这一笑比答话实在。 # beat:bb_tea_cup_6 # scene:bb_recollection # cast:ly_liu # speaker:ly_liu # mood:ly_liu=amused
+你想起自己今日还想在两掌之间抢一个先，便没有再追着问撑几招才算真见。 # beat:bb_tea_cup_7 # scene:bb_recollection # cast:ly_liu # speaker:narrator
+- else:
+你问的是我怎么敢只说能确定两个。名字添上去容易，添错了收不回。 # beat:bb_tea_cup_8 # scene:bb_recollection # cast:ly_liu # speaker:ly_liu # mood:ly_liu=intent
+他没有把没看懂的每一个人都称作返真，只讲其中一回，也没被逼成一张更大的榜。 # beat:bb_tea_cup_9 # scene:bb_recollection # cast:ly_liu # speaker:narrator
+}
 * [不再追名字，将没得到的那一问留着，明日先真试自己还多出的掌。 # cid:bb_leave_question_open]
   ~ bb_final = 1
-  我先试自己的。杯边那一处，我今夜没明白。 # beat:bb_tea_cup_6 # scene:bb_recollection # cast:ly_liu # speaker:you
-  不明白，先不替它添一个响名字。 # beat:bb_tea_cup_7 # scene:bb_recollection # cast:ly_liu # speaker:ly_liu # mood:ly_liu=neutral
-  你将掌收回膝上，宁的扇也合起。今晚没有谁被教成另一个柳成章。 # beat:bb_tea_cup_8 # scene:bb_recollection # cast:ly_liu # speaker:narrator
+  我先试自己的。杯边那一处，我今夜没明白。 # beat:bb_tea_cup_10 # scene:bb_recollection # cast:ly_liu # speaker:you
+  不明白，先不替它添一个响名字。 # beat:bb_tea_cup_11 # scene:bb_recollection # cast:ly_liu # speaker:ly_liu # mood:ly_liu=neutral
+  你将掌收回膝上，宁的扇也合起。今晚没有谁被教成另一个柳成章。 # beat:bb_tea_cup_12 # scene:bb_recollection # cast:ly_liu # speaker:narrator
   -> night_ends
 * [先同宁约明日说清那一个平，别急着把仍想赢的手改称已经超脱。 # cid:bb_talk_ning_after]
   ~ bb_final = 2
-  说可以。不趁柳老不在，又接第八十二招。 # beat:bb_tea_cup_9 # scene:bb_recollection # cast:ly_ning,ly_liu # speaker:ly_ning # mood:ly_ning=intent
-  我还想赢。正因为还想，先不拿这一句藏着再试。 # beat:bb_tea_cup_10 # scene:bb_recollection # cast:ly_ning,ly_liu # speaker:you
-  宁点头。这不是下一场约斗，至少明日两个人都知道该来谈什么。 # beat:bb_tea_cup_11 # scene:bb_recollection # cast:ly_ning,ly_liu # speaker:narrator
+  说可以。不趁柳老不在，又接第八十二招。 # beat:bb_tea_cup_13 # scene:bb_recollection # cast:ly_ning,ly_liu # speaker:ly_ning # mood:ly_ning=intent
+  我还想赢。正因为还想，先不拿这一句藏着再试。 # beat:bb_tea_cup_14 # scene:bb_recollection # cast:ly_ning,ly_liu # speaker:you
+  宁点头。这不是下一场约斗，至少明日两个人都知道该来谈什么。 # beat:bb_tea_cup_15 # scene:bb_recollection # cast:ly_ning,ly_liu # speaker:narrator
   -> night_ends
 
 === night_ends ===

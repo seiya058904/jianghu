@@ -27,8 +27,8 @@ Running 3 tests using 1 worker
       86 |     this.history.push(clone(this.frame));
       87 |     this.commands.push('next');
       88 |     this.frame = this.read();
-        at VNRuntime.advance (D:\xia zai\AI project\Project in Iteration\Jianghu\src\vn-runtime.ts:85:55)
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\jade-thieves.spec.ts:26:188
+        at VNRuntime.advance (.\src\vn-runtime.ts:85:55)
+        at .\tests\jade-thieves.spec.ts:26:188
 
     Error Context: test-results\jade-thieves-Jade-both-vie-1bc22-arrying-other-era-variables\error-context.md
 
@@ -55,7 +55,7 @@ Running 3 tests using 1 worker
       34 |    if(target==='escape'){for(const c of s.frame.choices){const b=page.locator(`[data-choice="${c.id}"]`);await b.focus();await b.scrollIntoViewIfNeeded();const box=await b.boundingBox();expect(box&&box.x>=0&&box.y>=0&&box.x+box.width<=width+1&&box.y+box.height<=height+1).toBeTruthy()}await page.screenshot({path:`docs/evidence/v6/jade-thieves-choice-${width}.png`});await page.locator('[data-choice="jt_fake_quarrel"]').click();await expect(page.locator('#app')).not.toHaveAttribute('data-beat',s.frame.id)}else{await expect(page.locator('[data-character="jt_jiang"]')).toHaveCount(0);const b=await page.locator('#advance-button').boundingBox();expect(b&&b.y+b.height<=height+1).toBeTruthy();if([360,800,1440].includes(width))await page.screenshot({path:`docs/evidence/v6/jade-thieves-death-${width}.png`})}
       35 |   }await context.close();
       36 |  }
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\jade-thieves.spec.ts:33:228
+        at .\tests\jade-thieves.spec.ts:33:228
 
     Error Context: test-results\jade-thieves-Jade-three-ch-32a53--sizes-dead-Jiang-is-absent\error-context.md
 

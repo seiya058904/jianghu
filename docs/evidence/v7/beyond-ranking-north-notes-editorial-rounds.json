@@ -1,0 +1,107 @@
+{
+ "work": "beyond-ranking+north-notes",
+ "rounds": [
+  {
+   "round": 1,
+   "focus": "戏剧结构（文献/师承配篇）",
+   "records": [
+    {
+     "round": 1,
+     "file": "story/beyond-ranking-author.mjs",
+     "beat": "全篇结构复核",
+     "originalLineOrAction": "黄页→十人两两分场→the_order 拒绝定胜负→closed_book/after_copy",
+     "diagnosis": "复核确认：'不能当官方总谱'的制度红线落在具体场面（'你们的总谱，什么时候归我写了？'）；十人生死未明处全部留白不补；九次决断全部是侍读门人的真问题",
+     "changedLineOrAction": "无（保留）",
+     "whyItIsBetter": "—",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "宋世江湖.md 35058-35315",
+     "testEvidence": "tests/beyond-ranking.test.ts 2/2 PASS（十名次序断言）",
+     "unresolvedIssue": "无"
+    },
+    {
+     "round": 1,
+     "file": "story/north-notes-author.mjs",
+     "beat": "全篇结构复核",
+     "originalLineOrAction": "终南观里→六合馆→太极院→装订",
+     "diagnosis": "复核确认：三位老师（周定川/楚怀锋/司马衡）的阶段与'三件旧物'由秦天岳亲口回照；'张守一终未返真而徒弟先成'为 xuanmen 主线，本篇只做师承侧写不抢线；双结局为装订方式的分歧而非境界差异",
+     "changedLineOrAction": "无（保留）",
+     "whyItIsBetter": "—",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "34013-34835（组20 交叉）",
+     "testEvidence": "heng-art 256 路径 beat 全覆盖 PASS",
+     "unresolvedIssue": "无"
+    },
+    {
+     "round": 1,
+     "file": "story/north-notes-author.mjs",
+     "beat": "nn_qin_names_1",
+     "originalLineOrAction": "他没有把枪房扶手取下烧掉，也不肯把它说成暗藏太极一脉的信物。",
+     "diagnosis": "'烧掉'凭空出现（前文无人提议烧），指代'扶手'与后文'那截椅扶手'不同名",
+     "changedLineOrAction": "'他没有把那截椅扶手取下，也不肯把它说成暗藏太极一脉的信物。'",
+     "whyItIsBetter": "三件旧物之一的指代统一，防读者找'谁要烧'",
+     "choicePayoffBefore": "无",
+     "choicePayoffAfter": "无",
+     "sourceCanonRange": "34723 附近（三件旧物）",
+     "testEvidence": "heng-art 2/2+7/7 PASS",
+     "unresolvedIssue": "无"
+    }
+   ]
+  },
+  {
+   "round": 2,
+   "focus": "NPC 声线",
+   "records": [
+    {
+     "round": 2,
+     "file": "story/beyond-ranking-author.mjs",
+     "beat": "br_first_two",
+     "originalLineOrAction": "br_peer~uneasy|咳。我这张纸，原是打算照图画的。",
+     "diagnosis": "'照图画'意图含混（抄榜为何配图？）",
+     "changedLineOrAction": "'咳。我原想着这四个字旁边，还能添一张照图描的剑式。'",
+     "whyItIsBetter": "同门想'把私评变成可传播的图文册'的动机清晰，正好被宁的'剑已无剑'堵死——笑点与教训都更准",
+     "choicePayoffBefore": "无",
+     "choicePayoffAfter": "无",
+     "sourceCanonRange": "35128-35138",
+     "testEvidence": "2/2 PASS",
+     "unresolvedIssue": "无"
+    },
+    {
+     "round": 2,
+     "file": "story/*.mjs",
+     "beat": "声线盲测（去名 5 句）",
+     "originalLineOrAction": "'发怵的是你，不是他们。'（宁）/'你又想省成两个字。'（司马衡）/'先把今日这一枪走明白。'（秦）/'你没有见过的，怎么会知道他怎么到那里。'语义（公孙无我段旁白）/`nn_sima~amused|那就好。`",
+     "diagnosis": "宁无极的利、司马衡的俭、秦天岳的实、司马天岳的自嘲四种年长声口互不混同",
+     "changedLineOrAction": "无（保留）",
+     "whyItIsBetter": "—",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "—",
+     "testEvidence": "人工抽检",
+     "unresolvedIssue": "无"
+    }
+   ]
+  },
+  {
+   "round": 3,
+   "focus": "原典复测",
+   "records": [
+    {
+     "round": 3,
+     "file": "story/*.mjs",
+     "beat": "canon 核对",
+     "originalLineOrAction": "beyond-ranking：十人称号与次序（混元武祖周道玄→…→乾坤一圣孟沧海，35112-35268）、'剑已无剑'、宁晚年私评非官榜、生死未明者留白；north-notes：周定川第一位（34723）、楚怀锋二十余年、司马衡共师、六十一离枪",
+     "diagnosis": "逐项吻合；'天外使剑人三剑'标为传闻（nn keep==1 选项'我没见三剑'）符合组22'传闻不落实'要求",
+     "changedLineOrAction": "无",
+     "whyItIsBetter": "—",
+     "choicePayoffBefore": "—",
+     "choicePayoffAfter": "—",
+     "sourceCanonRange": "35058-35315 / 34013-34835",
+     "testEvidence": "全部断言过",
+     "unresolvedIssue": "无"
+    }
+   ]
+  }
+ ]
+}

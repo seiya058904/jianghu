@@ -48,7 +48,7 @@ Running 14 tests using 2 workers
       25 |  }
       26 | });
       27 | test('Swords art night reading and failed CG loading retain the actual text and advance',async({browser})=>{
-        at D:\xia zai\AI project\Project in Iteration\Jianghu\tests\swords-art.spec.ts:24:229
+        at .\tests\swords-art.spec.ts:24:229
 
     Error Context: test-results\swords-art-Swords-art-CGs--b4e4a-ith-usable-reading-controls\error-context.md
 

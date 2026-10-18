@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import { test, expect, type Page } from '@playwright/test';
 import { writeFileSync } from 'node:fs';
 import { vnRoutes } from './vn-routes';
@@ -5,7 +6,7 @@ import { Session as LegacySession } from '../src/runtime';
 import { VNRuntime } from '../src/vn-runtime';
 import draft from '../src/generated/duel-1.0.0.json' with { type: 'json' };
 const PREFIX = 'jianghu:vn:v2:';
-const shot = (name: string) => `docs/evidence/vn-${name}.png`;
+const shot = (name: string) => evidencePath(`docs/evidence/vn-${name}.png`);
 test.beforeEach(async ({page}) => {
   await page.addInitScript(() => localStorage.setItem('jianghu:vn:v2:settings', JSON.stringify({size:20,dark:false,speed:0,reduced:true})));
   await page.emulateMedia({reducedMotion:'reduce'});
@@ -61,7 +62,7 @@ for (const [ending, ids] of Object.entries(vnRoutes)) test(`new story completes 
   await expect(page.locator('#app')).toHaveAttribute('data-beat',`ending_${ending}`);
   await expect(page.getByText('此篇已完',{exact:true})).toBeVisible();
   await page.screenshot({path:shot(`ending-${ending}`),animations:'disabled'});
-  writeFileSync(`docs/evidence/vn-feedback-${ending}.json`,JSON.stringify({viewport:page.viewportSize(),reply:ids[0],reaction,firstChoiceMs,measurement:'automated interaction with immediate text; not human reading time',errors},null,2));
+  writeFileSync(evidencePath(`docs/evidence/vn-feedback-${ending}.json`),JSON.stringify({viewport:page.viewportSize(),reply:ids[0],reaction,firstChoiceMs,measurement:'automated interaction with immediate text; not human reading time',errors},null,2));
   expect(errors).toEqual([]);
 });
 

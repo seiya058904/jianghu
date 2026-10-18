@@ -60,16 +60,22 @@ VAR st_life = 0
 第二关攀崖，第三关认风。到第四关，才有人推你们三次，看谁少摔两跤。你仍摔得满手砂，抬起来，教头先看你指节还能不能动。 # beat:st_four_tests_1 # scene:st_trialshore # cast:st_coach,st_an # speaker:narrator
 会打，可以慢慢学。海上先看你会不会活。 # beat:st_four_tests_2 # scene:st_trialshore # cast:st_coach,st_an # speaker:st_coach # mood:st_coach=neutral
 四十七个孩子最后留下十六个，你和阿岑都在其中。没有人因游得快便免掉攀崖，也没人因最后站稳一次就不再学水。 # beat:st_four_tests_3 # scene:st_trialshore # cast:st_coach,st_an # speaker:narrator
+{
+- st_trial_breath:
+换足一口气再游——这个习惯从试门那日起没丢过。后来教新人，头一件也是先问气还够不够，不先问快不快。 # beat:st_four_tests_4 # scene:st_trialshore # cast:st_coach,st_an # speaker:narrator
+- else:
+绕开回流那一眼，后来你教给每一个新人。认过一回的水，不能当下回还在原处——教头这句话你也一并带走了。 # beat:st_four_tests_5 # scene:st_trialshore # cast:st_coach,st_an # speaker:narrator
+}
 * [把自己绑的扣交给阿岑，让他解一次。 # cid:st_learn_shared_knot]
   ~ st_shared_knot = true
-  他扯半晌解不开，索性拿膝顶住绳圈。你笑他，又看他真急了，只得凑过去同他拆开；轮到他绑，倒也卡住了你的指头。 # beat:st_four_tests_4 # scene:st_trialshore # cast:st_coach,st_an # speaker:narrator
-  别怪我手笨。你下回掉水里，绳也不能只认你的手。 # beat:st_four_tests_5 # scene:st_trialshore # cast:st_coach,st_an # speaker:st_an # mood:st_an=amused
+  他扯半晌解不开，索性拿膝顶住绳圈。你笑他，又看他真急了，只得凑过去同他拆开；轮到他绑，倒也卡住了你的指头。 # beat:st_four_tests_6 # scene:st_trialshore # cast:st_coach,st_an # speaker:narrator
+  别怪我手笨。你下回掉水里，绳也不能只认你的手。 # beat:st_four_tests_7 # scene:st_trialshore # cast:st_coach,st_an # speaker:st_an # mood:st_an=amused
   -> outer_years
 * [先练湿手快解，再同阿岑换一回。 # cid:st_learn_fast_knot]
   ~ st_shared_knot = false
-  你练到手指发热，自己解扣越来越快。阿岑拿来却还打不开，木刀那边已经叫人，你答应明早再同他换。 # beat:st_four_tests_6 # scene:st_trialshore # cast:st_coach,st_an # speaker:narrator
-  那你明早叫我。我不替你占前面那柄刀。 # beat:st_four_tests_7 # scene:st_trialshore # cast:st_coach,st_an # speaker:st_an # mood:st_an=uneasy
-  你说好，先跑去排队。他把这扣留下，没肯让你替他解。 # beat:st_four_tests_8 # scene:st_trialshore # cast:st_coach,st_an # speaker:narrator
+  你练到手指发热，自己解扣越来越快。阿岑拿来却还打不开，木刀那边已经叫人，你答应明早再同他换。 # beat:st_four_tests_8 # scene:st_trialshore # cast:st_coach,st_an # speaker:narrator
+  那你明早叫我。我不替你占前面那柄刀。 # beat:st_four_tests_9 # scene:st_trialshore # cast:st_coach,st_an # speaker:st_an # mood:st_an=uneasy
+  你说好，先跑去排队。他把这扣留下，没肯让你替他解。 # beat:st_four_tests_10 # scene:st_trialshore # cast:st_coach,st_an # speaker:narrator
   -> outer_years
 
 === outer_years ===
@@ -167,37 +173,49 @@ VAR st_life = 0
 那是你第一次真正见叶孤舟，内院第六席。你才张嘴，他又回身去接后面的人。 # beat:st_three_steps_3 # scene:st_mast # cast:st_ye # speaker:narrator
 那边腾一处！别把孩子挤在舷口！ # beat:st_three_steps_4 # scene:st_mast # cast:st_ye # speaker:st_ye # mood:st_ye=sharp
 等再没有人朝这头伸手，他才跟着最后一拨人回来。最后一个离船的人，也是他。 # beat:st_three_steps_5 # scene:st_mast # cast:st_ye # speaker:narrator
+{
+- st_call_gap:
+梁压住我，你别来——分两次喊完的那句话，后来真救了两个人：你和继续接人的阿岑。 # beat:st_three_steps_6 # scene:st_mast # cast:st_ye # speaker:narrator
+- else:
+你用眼与下颌指了孩子那一眼。此后你教人：话喊不出时，先指最要紧的那一处，不让慌把每一句都堵住。 # beat:st_three_steps_7 # scene:st_mast # cast:st_ye # speaker:narrator
+}
 * [缓过一口气，蹲下接递来的那只手。 # cid:st_take_next_carry]
   ~ st_after_carry = true
-  腿仍抖，你就蹲着接递来的手。你没有成为最后离船的人，只把眼前能送到舱内的这一位真送过去。 # beat:st_three_steps_6 # scene:st_mast # cast:st_ye # speaker:narrator
-  这里接住，别把刚腾开的路又挡了。 # beat:st_three_steps_7 # scene:st_mast # cast:st_ye # speaker:st_ye # mood:st_ye=intent
+  腿仍抖，你就蹲着接递来的手。你没有成为最后离船的人，只把眼前能送到舱内的这一位真送过去。 # beat:st_three_steps_8 # scene:st_mast # cast:st_ye # speaker:narrator
+  这里接住，别把刚腾开的路又挡了。 # beat:st_three_steps_9 # scene:st_mast # cast:st_ye # speaker:st_ye # mood:st_ye=intent
   -> after_storm
 * [把船头的人往里送，给下一人留落脚处。 # cid:st_clear_landing]
   ~ st_after_carry = false
-  你扶一个人往里退，近处的人才跟着让路。风里那道能落脚的空处，比你再喊一遍我能跳更有用。 # beat:st_three_steps_8 # scene:st_mast # cast:st_ye # speaker:narrator
-  对，再退一个位置。 # beat:st_three_steps_9 # scene:st_mast # cast:st_ye # speaker:st_ye # mood:st_ye=intent
+  你扶一个人往里退，近处的人才跟着让路。风里那道能落脚的空处，比你再喊一遍我能跳更有用。 # beat:st_three_steps_10 # scene:st_mast # cast:st_ye # speaker:narrator
+  对，再退一个位置。 # beat:st_three_steps_11 # scene:st_mast # cast:st_ye # speaker:st_ye # mood:st_ye=intent
   -> after_storm
 
 === after_storm ===
 大风过去，三艘撞礁船的木料还堆在岸上。阿岑要回白螺屿报平安，你先陪他等这趟工钱。他捋湿袖时，你问能不能自己拿那只行包，没急着先替他接过来。 # beat:st_after_storm_1 # scene:st_workshore # cast:st_an # speaker:narrator
 {
-- st_exchange_drill:
-他的手没被那回接绳抽伤，隔几日便能照常做活。你们把换手那一轮教给这次接位的人，来回多练两晚，没把一次接对说成永远不会再乱。 # beat:st_after_storm_2 # scene:st_workshore # cast:st_an # speaker:narrator
-别再一学会就全抢回去。你在下面压着的时候，绳也没空等你。 # beat:st_after_storm_3 # scene:st_workshore # cast:st_an # speaker:st_an # mood:st_an=amused
+- st_after_carry:
+蹲着接递来的那只手——你后来对每个新人都讲这一下：接应不是站到最前，是让路一直有下一只手。 # beat:st_after_storm_2 # scene:st_workshore # cast:st_an # speaker:narrator
 - else:
-他腕上的伤养了两个月，重活做不得，少了两趟船钱。你接他能让出的班，自己少练了几个夜里；替班的钱有了，痛和错过的船并没被一句对不起抹掉。 # beat:st_after_storm_4 # scene:st_workshore # cast:st_an # speaker:narrator
-先替我这一趟。等我好了，教会我再走，别下回还只有你会。 # beat:st_after_storm_5 # scene:st_workshore # cast:st_an # speaker:st_an # mood:st_an=intent
+把船头的人往里送、留出落脚处——那一晚你学会的接应，是先让开一步，不是再喊一声我能跳。 # beat:st_after_storm_3 # scene:st_workshore # cast:st_an # speaker:narrator
+}
+{
+- st_exchange_drill:
+他的手没被那回接绳抽伤，隔几日便能照常做活。你们把换手那一轮教给这次接位的人，来回多练两晚，没把一次接对说成永远不会再乱。 # beat:st_after_storm_4 # scene:st_workshore # cast:st_an # speaker:narrator
+别再一学会就全抢回去。你在下面压着的时候，绳也没空等你。 # beat:st_after_storm_5 # scene:st_workshore # cast:st_an # speaker:st_an # mood:st_an=amused
+- else:
+他腕上的伤养了两个月，重活做不得，少了两趟船钱。你接他能让出的班，自己少练了几个夜里；替班的钱有了，痛和错过的船并没被一句对不起抹掉。 # beat:st_after_storm_6 # scene:st_workshore # cast:st_an # speaker:narrator
+先替我这一趟。等我好了，教会我再走，别下回还只有你会。 # beat:st_after_storm_7 # scene:st_workshore # cast:st_an # speaker:st_an # mood:st_an=intent
 }
 * [向来问话的叶孤舟说清自己漏看断桅，不用救人的本意遮过去。 # cid:st_admit_rush]
   ~ st_rush_plain = true
-  我看见要去的人，却没再看脚下会断的地方。 # beat:st_after_storm_6 # scene:st_workshore # cast:st_an # speaker:you
-  他说知道，没再逼你把懊悔说得更响。下一回之前，他叫你先能把接应的那个人也讲清楚。 # beat:st_after_storm_7 # scene:st_workshore # cast:st_an # speaker:narrator
+  我看见要去的人，却没再看脚下会断的地方。 # beat:st_after_storm_8 # scene:st_workshore # cast:st_an # speaker:you
+  他说知道，没再逼你把懊悔说得更响。下一回之前，他叫你先能把接应的那个人也讲清楚。 # beat:st_after_storm_9 # scene:st_workshore # cast:st_an # speaker:narrator
   -> inner_court
 * [把落脚到被压的一段重走给叶孤舟看，找出自己何处已没有下一步。 # cid:st_trace_next_step]
   ~ st_rush_plain = false
-  你在岸上走到那一步，脚便停住。没有风，仍能看见自己当时只盯着要到的地方。 # beat:st_after_storm_8 # scene:st_workshore # cast:st_an # speaker:narrator
-  我想过去，没有想过去以后怎么回。 # beat:st_after_storm_9 # scene:st_workshore # cast:st_an # speaker:you
-  他让你把这一段重新走完。 # beat:st_after_storm_10 # scene:st_workshore # cast:st_an # speaker:narrator
+  你在岸上走到那一步，脚便停住。没有风，仍能看见自己当时只盯着要到的地方。 # beat:st_after_storm_10 # scene:st_workshore # cast:st_an # speaker:narrator
+  我想过去，没有想过去以后怎么回。 # beat:st_after_storm_11 # scene:st_workshore # cast:st_an # speaker:you
+  他让你把这一段重新走完。 # beat:st_after_storm_12 # scene:st_workshore # cast:st_an # speaker:narrator
   -> inner_court
 
 === inner_court ===
@@ -206,22 +224,28 @@ VAR st_life = 0
 这才值得教。 # beat:st_inner_court_3 # scene:st_inner # cast:st_ye # speaker:st_ye # mood:st_ye=amused
 内院人少，得能独当一面。其上九席，门主统摄全门；退位门主、前代高席和百岁仍留岛的老人，多住镇海院。你听见九席，最先想的仍是谁更能打。 # beat:st_inner_court_4 # scene:st_inner # cast:st_ye # speaker:narrator
 {
-- st_transfer_line:
-那天你叫阿岑留绳，他真留住了。你自己跳前，却少看了一眼桅。 # beat:st_inner_court_5 # scene:st_inner # cast:st_ye # speaker:st_ye # mood:st_ye=intent
-你还想答已说过了，叶孤舟让你把下次谁留岸上再报一遍，直到名字也说清。 # beat:st_inner_court_6 # scene:st_inner # cast:st_ye # speaker:narrator
+- st_rush_plain:
+我看见要去的人，却没再看脚下会断的地方——这话说给叶孤舟时你没遮。半年后他肯把你调进内院，先看的就是这句不遮。 # beat:st_inner_court_5 # scene:st_inner # cast:st_ye # speaker:narrator
 - else:
-你先送能动的人，没错。你跳过去以后，那头谁留绳？ # beat:st_inner_court_7 # scene:st_inner # cast:st_ye # speaker:st_ye # mood:st_ye=intent
-你报了阿岑，话到一半，又想起他还在往里送人。你得再找一个肯留下的，不能只把同一个名字报两次。 # beat:st_inner_court_8 # scene:st_inner # cast:st_ye # speaker:narrator
+你把落脚到被压那一段重走过。所以半年后叶孤舟问还跳不跳，你答得出：跳，但不会那样跳了。 # beat:st_inner_court_6 # scene:st_inner # cast:st_ye # speaker:narrator
+}
+{
+- st_transfer_line:
+那天你叫阿岑留绳，他真留住了。你自己跳前，却少看了一眼桅。 # beat:st_inner_court_7 # scene:st_inner # cast:st_ye # speaker:st_ye # mood:st_ye=intent
+你还想答已说过了，叶孤舟让你把下次谁留岸上再报一遍，直到名字也说清。 # beat:st_inner_court_8 # scene:st_inner # cast:st_ye # speaker:narrator
+- else:
+你先送能动的人，没错。你跳过去以后，那头谁留绳？ # beat:st_inner_court_9 # scene:st_inner # cast:st_ye # speaker:st_ye # mood:st_ye=intent
+你报了阿岑，话到一半，又想起他还在往里送人。你得再找一个肯留下的，不能只把同一个名字报两次。 # beat:st_inner_court_10 # scene:st_inner # cast:st_ye # speaker:narrator
 }
 * [直接问第四与第六到底相当于中原第几，不假装自己已经懂。 # cid:st_ask_rank]
   ~ st_rank_question = true
-  叶观澜师兄第四，您第六，放中原算第几？ # beat:st_inner_court_9 # scene:st_inner # cast:st_ye # speaker:you
-  你等见过我们在哪儿做什么，再来问同一句。 # beat:st_inner_court_10 # scene:st_inner # cast:st_ye # speaker:st_ye # mood:st_ye=amused
+  叶观澜师兄第四，您第六，放中原算第几？ # beat:st_inner_court_11 # scene:st_inner # cast:st_ye # speaker:you
+  你等见过我们在哪儿做什么，再来问同一句。 # beat:st_inner_court_12 # scene:st_inner # cast:st_ye # speaker:st_ye # mood:st_ye=amused
   -> four_six
 * [先问为什么同一人上岸与上船不同，试着从那三步里找自己的问题。 # cid:st_ask_ground]
   ~ st_rank_question = false
-  若换成平地，那三步还能这样走？ # beat:st_inner_court_11 # scene:st_inner # cast:st_ye # speaker:you
-  平地又没有那根桅。你先去看观澜的脚，别拿我这一下替所有地方作数。 # beat:st_inner_court_12 # scene:st_inner # cast:st_ye # speaker:st_ye # mood:st_ye=intent
+  若换成平地，那三步还能这样走？ # beat:st_inner_court_13 # scene:st_inner # cast:st_ye # speaker:you
+  平地又没有那根桅。你先去看观澜的脚，别拿我这一下替所有地方作数。 # beat:st_inner_court_14 # scene:st_inner # cast:st_ye # speaker:st_ye # mood:st_ye=intent
   -> four_six
 
 === four_six ===
@@ -246,6 +270,12 @@ VAR st_life = 0
 没有然后？ # beat:st_report_from_mainland_4 # scene:st_inner # cast:st_oldtutor # speaker:you
 换个人、换地方、换一年，都要变。 # beat:st_report_from_mainland_5 # scene:st_inner # cast:st_oldtutor # speaker:st_oldtutor # mood:st_oldtutor=intent
 你还想问怎样把这句话换成一张总不会改的座次。直到四十多岁，叶孤舟自外海归来，去找第一席谢观海。 # beat:st_report_from_mainland_6 # scene:st_inner # cast:st_oldtutor # speaker:narrator
+{
+- st_flat_practice:
+平地上放掉预想那阵浪，才找到还能退转的一点。后来你教人认潮，头一句也是：先把脚下这块真实的石面看清楚。 # beat:st_report_from_mainland_7 # scene:st_inner # cast:st_oldtutor # speaker:narrator
+- else:
+同一来招两人续法不同——你亲站进去接过后才懂。此后再听人报座次，你先问自己在哪一块地上站过。 # beat:st_report_from_mainland_8 # scene:st_inner # cast:st_oldtutor # speaker:narrator
+}
 -> borrow_hand
 
 === borrow_hand ===
@@ -269,19 +299,25 @@ VAR st_life = 0
 还来么？ # beat:st_two_hands_3 # scene:st_teacourt # cast:st_ye,st_xie # speaker:st_xie # mood:st_xie=neutral
 不用了。 # beat:st_two_hands_4 # scene:st_teacourt # cast:st_ye,st_xie # speaker:st_ye # mood:st_ye=intent
 谢坐回去喝茶，呼吸没变多少。叶把短棍横在膝上，食指沿着方才被碰的位置摸了一下。你看那只手，又看谢的茶碗，迟迟没问出口。 # beat:st_two_hands_5 # scene:st_teacourt # cast:st_ye,st_xie # speaker:narrator
+{
+- st_watch_space:
+每次进以后还剩哪里能走——你照这个看法跟到第九招。叶孤舟每少一块地方，你都看见了他下一次只好去的地方。 # beat:st_two_hands_6 # scene:st_teacourt # cast:st_ye,st_xie # speaker:narrator
+- else:
+你先看每一招他想做什么，到第五招才看出不对。此后你看高手过招，再不敢拿名头提前替谁认输，也不敢替谁叫好。 # beat:st_two_hands_7 # scene:st_teacourt # cast:st_ye,st_xie # speaker:narrator
+}
 * [问他是不是那日状态不好，听他亲口说这并不是理由。 # cid:st_ask_condition]
   ~ st_condition_excuse = true
-  您是不是状态不好？ # beat:st_two_hands_6 # scene:st_teacourt # cast:st_ye,st_xie # speaker:you
-  我状态很好。 # beat:st_two_hands_7 # scene:st_teacourt # cast:st_ye,st_xie # speaker:st_ye # mood:st_ye=intent
-  那九招…… # beat:st_two_hands_8 # scene:st_teacourt # cast:st_ye,st_xie # speaker:you
-  九招够了。 # beat:st_two_hands_9 # scene:st_teacourt # cast:st_ye,st_xie # speaker:st_ye # mood:st_ye=neutral
-  他把棍收好，抬眼等你。你那句还想问的话卡在嘴里，想了一遍，又慢慢咽回去。 # beat:st_two_hands_10 # scene:st_teacourt # cast:st_ye,st_xie # speaker:narrator
+  您是不是状态不好？ # beat:st_two_hands_8 # scene:st_teacourt # cast:st_ye,st_xie # speaker:you
+  我状态很好。 # beat:st_two_hands_9 # scene:st_teacourt # cast:st_ye,st_xie # speaker:st_ye # mood:st_ye=intent
+  那九招…… # beat:st_two_hands_10 # scene:st_teacourt # cast:st_ye,st_xie # speaker:you
+  九招够了。 # beat:st_two_hands_11 # scene:st_teacourt # cast:st_ye,st_xie # speaker:st_ye # mood:st_ye=neutral
+  他把棍收好，抬眼等你。你那句还想问的话卡在嘴里，想了一遍，又慢慢咽回去。 # beat:st_two_hands_12 # scene:st_teacourt # cast:st_ye,st_xie # speaker:narrator
   -> nine_enough
 * [问同一手为什么自己看着对、下一步却已经少了路。 # cid:st_ask_earlier]
   ~ st_condition_excuse = false
-  你每一手都知道自己在做什么，为什么还会那样？ # beat:st_two_hands_11 # scene:st_teacourt # cast:st_ye,st_xie # speaker:you
-  你摸摸棍侧这一处。 # beat:st_two_hands_12 # scene:st_teacourt # cast:st_ye,st_xie # speaker:st_ye # mood:st_ye=intent
-  他把棍横过来，你照着第二招封住的方向试，刚伸手，自己也先挪了脚。 # beat:st_two_hands_13 # scene:st_teacourt # cast:st_ye,st_xie # speaker:narrator
+  你每一手都知道自己在做什么，为什么还会那样？ # beat:st_two_hands_13 # scene:st_teacourt # cast:st_ye,st_xie # speaker:you
+  你摸摸棍侧这一处。 # beat:st_two_hands_14 # scene:st_teacourt # cast:st_ye,st_xie # speaker:st_ye # mood:st_ye=intent
+  他把棍横过来，你照着第二招封住的方向试，刚伸手，自己也先挪了脚。 # beat:st_two_hands_15 # scene:st_teacourt # cast:st_ye,st_xie # speaker:narrator
   -> nine_enough
 
 === nine_enough ===
@@ -368,22 +404,28 @@ VAR st_life = 0
 周望海九条。你比他会打。他那几年，比你更适合坐那个位置。 # beat:st_better_seat_3 # scene:st_inner # cast:st_ye # speaker:st_ye # mood:st_ye=neutral
 你不再有话，并不等于第二日见周就忽然心里全无不平。九席大体前位更重，却有传功、巡海、外务、守岛；不能哪天胜过第八，便自动升第八。 # beat:st_better_seat_4 # scene:st_inner # cast:st_ye # speaker:narrator
 {
-- st_rank_question:
-当年你追问第四、第六相当于中原第几，如今又在叶孤舟面前报自己赢过周。说到一半，你把那个名次咽回去，先问白沙屿今日谁在那里。 # beat:st_better_seat_5 # scene:st_inner # cast:st_ye # speaker:narrator
+- st_listen_seat:
+七年没再动——你把这句话完整听完了。那七个年头此后一直摆在你眼前，提醒你打服与接住中间差着什么。 # beat:st_better_seat_5 # scene:st_inner # cast:st_ye # speaker:narrator
 - else:
-你曾问平地与船上为何不同。今日坐在这间屋里，脚下又没有石坪；你把原先想报的那一场收住，改问谁接明日的巡船。 # beat:st_better_seat_6 # scene:st_inner # cast:st_ye # speaker:narrator
+你问自己打完漏了什么。叶孤舟没给你一句能马上学会的，只让你把那七年看进去——你后来真的看了。 # beat:st_better_seat_6 # scene:st_inner # cast:st_ye # speaker:narrator
+}
+{
+- st_rank_question:
+当年你追问第四、第六相当于中原第几，如今又在叶孤舟面前报自己赢过周。说到一半，你把那个名次咽回去，先问白沙屿今日谁在那里。 # beat:st_better_seat_7 # scene:st_inner # cast:st_ye # speaker:narrator
+- else:
+你曾问平地与船上为何不同。今日坐在这间屋里，脚下又没有石坪；你把原先想报的那一场收住，改问谁接明日的巡船。 # beat:st_better_seat_8 # scene:st_inner # cast:st_ye # speaker:narrator
 }
 * [先向周把三个月没肯说完的话补上，不求他先夸自己大度。 # cid:st_repair_talk]
   ~ st_zhou_talk = true
-  你交过来的差，我接。但下回你说谁接哪一头，我会听完。 # beat:st_better_seat_7 # scene:st_inner # cast:st_ye # speaker:you
-  周把当日去处讲清，没拿这份难得的开口换一声早就该懂了。 # beat:st_better_seat_8 # scene:st_inner # cast:st_ye # speaker:narrator
-  那先去看他们明早怎么出港。不是去听我讲自己做得好。 # beat:st_better_seat_9 # scene:st_inner # cast:st_zhou,st_ye # speaker:st_zhou # mood:st_zhou=intent
+  你交过来的差，我接。但下回你说谁接哪一头，我会听完。 # beat:st_better_seat_9 # scene:st_inner # cast:st_ye # speaker:you
+  周把当日去处讲清，没拿这份难得的开口换一声早就该懂了。 # beat:st_better_seat_10 # scene:st_inner # cast:st_ye # speaker:narrator
+  那先去看他们明早怎么出港。不是去听我讲自己做得好。 # beat:st_better_seat_11 # scene:st_inner # cast:st_zhou,st_ye # speaker:st_zhou # mood:st_zhou=intent
   -> fourteen_years
 * [先随周去看白沙屿如何过今天，不把赔一句话当已补上漏掉的活。 # cid:st_repair_work]
   ~ st_zhou_talk = false
-  你到白沙屿，没让两边再摆一场拳。今日争的是谁先用修船地，你得听他们把能过明日的办法说完。 # beat:st_better_seat_10 # scene:st_inner # cast:st_zhou,st_ye # speaker:narrator
-  回程你向周认自己三个月话难听，他没免你这句，也没叫你把每件事都当面认输给他。 # beat:st_better_seat_11 # scene:st_inner # cast:st_zhou,st_ye # speaker:narrator
-  明日我有别处。你来接这里。 # beat:st_better_seat_12 # scene:st_inner # cast:st_zhou,st_ye # speaker:st_zhou # mood:st_zhou=neutral
+  你到白沙屿，没让两边再摆一场拳。今日争的是谁先用修船地，你得听他们把能过明日的办法说完。 # beat:st_better_seat_12 # scene:st_inner # cast:st_zhou,st_ye # speaker:narrator
+  回程你向周认自己三个月话难听，他没免你这句，也没叫你把每件事都当面认输给他。 # beat:st_better_seat_13 # scene:st_inner # cast:st_zhou,st_ye # speaker:narrator
+  明日我有别处。你来接这里。 # beat:st_better_seat_14 # scene:st_inner # cast:st_zhou,st_ye # speaker:st_zhou # mood:st_zhou=neutral
   -> fourteen_years
 
 === fourteen_years ===
@@ -434,17 +476,23 @@ VAR st_life = 0
 这么年轻？ # beat:st_dry_fish_4 # scene:st_oldyard # cast:st_ye,st_fishelder # speaker:st_fishelder # mood:st_fishelder=amused
 你六十三，头回听人这样说。他叫你打一手，你把后脚收了半寸，刚摆架，胸口已被一根手指点住。你还没想好该不该再来，他已转身去翻鱼了。 # beat:st_dry_fish_5 # scene:st_oldyard # cast:st_ye,st_fishelder # speaker:narrator
 还行。 # beat:st_dry_fish_6 # scene:st_oldyard # cast:st_ye,st_fishelder # speaker:st_fishelder # mood:st_fishelder=neutral
+{
+- st_enter_plain:
+名次放在门外，你先闻见晒鱼的咸味。此后每次进生地方，你都先找有活气的地方站。 # beat:st_dry_fish_7 # scene:st_oldyard # cast:st_ye,st_fishelder # speaker:narrator
+- else:
+带着能听见答复的问题进去——竹匾那一声轻响替你把长串问题删短了。此后你进门先听，再问。 # beat:st_dry_fish_8 # scene:st_oldyard # cast:st_ye,st_fishelder # speaker:narrator
+}
 * [问刚才自己哪里先被看见，不要老人为一声还行再打一场给你认榜。 # cid:st_ask_again_small]
   ~ st_fish_question = true
-  我刚才脚还没走。 # beat:st_dry_fish_7 # scene:st_oldyard # cast:st_ye,st_fishelder # speaker:you
-  手也还没走？ # beat:st_dry_fish_8 # scene:st_oldyard # cast:st_ye,st_fishelder # speaker:st_fishelder # mood:st_fishelder=amused
-  你低头看自己举起的那只手，老人已把另一面鱼翻过来。你得自己把刚才那一下再试，不是再问三遍他到底排第几。 # beat:st_dry_fish_9 # scene:st_oldyard # cast:st_ye,st_fishelder # speaker:narrator
+  我刚才脚还没走。 # beat:st_dry_fish_9 # scene:st_oldyard # cast:st_ye,st_fishelder # speaker:you
+  手也还没走？ # beat:st_dry_fish_10 # scene:st_oldyard # cast:st_ye,st_fishelder # speaker:st_fishelder # mood:st_fishelder=amused
+  你低头看自己举起的那只手，老人已把另一面鱼翻过来。你得自己把刚才那一下再试，不是再问三遍他到底排第几。 # beat:st_dry_fish_11 # scene:st_oldyard # cast:st_ye,st_fishelder # speaker:narrator
   -> old_depth
 * [先收架，让他晒完这一面，自己在旁重走一遍，不急着求再一指。 # cid:st_try_after_stop]
   ~ st_fish_question = false
-  你才动，便想起刚才肩上那点先紧。老人没抬头替你判对错，只叫你往旁边半步，别挡太阳。 # beat:st_dry_fish_10 # scene:st_oldyard # cast:st_ye,st_fishelder # speaker:narrator
-  好。 # beat:st_dry_fish_11 # scene:st_oldyard # cast:st_ye,st_fishelder # speaker:you
-  你真的让开，没把自己的问武当整座院子都该先停的事。 # beat:st_dry_fish_12 # scene:st_oldyard # cast:st_ye,st_fishelder # speaker:narrator
+  你才动，便想起刚才肩上那点先紧。老人没抬头替你判对错，只叫你往旁边半步，别挡太阳。 # beat:st_dry_fish_12 # scene:st_oldyard # cast:st_ye,st_fishelder # speaker:narrator
+  好。 # beat:st_dry_fish_13 # scene:st_oldyard # cast:st_ye,st_fishelder # speaker:you
+  你真的让开，没把自己的问武当整座院子都该先停的事。 # beat:st_dry_fish_14 # scene:st_oldyard # cast:st_ye,st_fishelder # speaker:narrator
   -> old_depth
 
 === old_depth ===
@@ -453,21 +501,27 @@ VAR st_life = 0
 出去还有你的差。别看见院后有老人，就当外头可以不接。 # beat:st_old_depth_3 # scene:st_oldyard # cast:st_ye # speaker:st_ye # mood:st_ye=intent
 如今门主叶沧溟列总谱第三，也不能由此证明他便是全门最强。一个后来的弟子在楼下等你，问到这里，眼睛还等着一个比第三更响的数字。 # beat:st_old_depth_4 # scene:st_oldyard # cast:st_ye # speaker:narrator
 {
-- st_condition_excuse:
-当年问叶孤舟是不是状态不好，话一出口，自己都觉得该有别的解释。如今胸口那一指还在，你先把想问老人是不是趁你没备好的话压住。 # beat:st_old_depth_5 # scene:st_oldyard # cast:st_ye # speaker:narrator
+- st_fish_question:
+手也还没走——老人一句话让你把那一下自己重试。此后你问人，先问自己哪里先被看见，不问他还排第几。 # beat:st_old_depth_5 # scene:st_oldyard # cast:st_ye # speaker:narrator
 - else:
-当年问他每手既知道为何还输，如今这一指，也没给你多出一手的工夫。你把方才准备进的那一步在心里重走，仍没问出晒鱼老人的确切境界。 # beat:st_old_depth_6 # scene:st_oldyard # cast:st_ye # speaker:narrator
+先收架、让他晒完那一面——你真让开了半步。此后你见仍在做活的前辈，先站到不挡太阳的地方。 # beat:st_old_depth_6 # scene:st_oldyard # cast:st_ye # speaker:narrator
+}
+{
+- st_condition_excuse:
+当年问叶孤舟是不是状态不好，话一出口，自己都觉得该有别的解释。如今胸口那一指还在，你先把想问老人是不是趁你没备好的话压住。 # beat:st_old_depth_7 # scene:st_oldyard # cast:st_ye # speaker:narrator
+- else:
+当年问他每手既知道为何还输，如今这一指，也没给你多出一手的工夫。你把方才准备进的那一步在心里重走，仍没问出晒鱼老人的确切境界。 # beat:st_old_depth_8 # scene:st_oldyard # cast:st_ye # speaker:narrator
 }
 * [直说不知道，把自己看见与没看见的都留清。 # cid:st_say_unknown]
   ~ st_last_unknown = true
-  不知道。 # beat:st_old_depth_7 # scene:st_oldyard # cast:st_ye # speaker:you
-  这句倒可以说得响一点。 # beat:st_old_depth_8 # scene:st_oldyard # cast:st_ye # speaker:st_ye # mood:st_ye=amused
-  你笑起来。叶孤舟让开门边，你这才看见候在外面的弟子还拿着出港单，方才一直不敢催。 # beat:st_old_depth_9 # scene:st_oldyard # cast:st_ye # speaker:narrator
+  不知道。 # beat:st_old_depth_9 # scene:st_oldyard # cast:st_ye # speaker:you
+  这句倒可以说得响一点。 # beat:st_old_depth_10 # scene:st_oldyard # cast:st_ye # speaker:st_ye # mood:st_ye=amused
+  你笑起来。叶孤舟让开门边，你这才看见候在外面的弟子还拿着出港单，方才一直不敢催。 # beat:st_old_depth_11 # scene:st_oldyard # cast:st_ye # speaker:narrator
   -> last_look
 * [说明总谱第三是能核的名次，最强却不能替院里没出手的人答，再带后来人去接差。 # cid:st_point_next_work]
   ~ st_last_unknown = false
-  第三是现今总谱写的。是不是全门最强，我不知道。 # beat:st_old_depth_10 # scene:st_oldyard # cast:st_ye # speaker:you
-  弟子还想问，出港单的纸角已经被他捏皱。你先问哪条船，他低头找了一回，又翻到背面，把来接班的人名报给你。 # beat:st_old_depth_11 # scene:st_oldyard # cast:st_ye # speaker:narrator
+  第三是现今总谱写的。是不是全门最强，我不知道。 # beat:st_old_depth_12 # scene:st_oldyard # cast:st_ye # speaker:you
+  弟子还想问，出港单的纸角已经被他捏皱。你先问哪条船，他低头找了一回，又翻到背面，把来接班的人名报给你。 # beat:st_old_depth_13 # scene:st_oldyard # cast:st_ye # speaker:narrator
   -> last_look
 
 === last_look ===
@@ -476,36 +530,42 @@ VAR st_life = 0
 先看你这回哪只手来接绳。 # beat:st_last_look_3 # scene:st_tower # cast:st_an # speaker:you
 阿岑也老了，笑时仍先看泊位，不让回忆把别人的船挡在外头。 # beat:st_last_look_4 # scene:st_tower # cast:st_an # speaker:narrator
 {
-- st_exchange_drill:
-早年一起换手练的习惯，他又教给后来人。有人解得比他慢，他等那一下，没因自己一直做得到便替旁人的手一把全做完。 # beat:st_last_look_5 # scene:st_tower # cast:st_an # speaker:narrator
+- st_last_unknown:
+不知道——你说得响了些。后来整理口述的人记下这句时，也记下了你当时让开门边的样子。 # beat:st_last_look_5 # scene:st_tower # cast:st_an # speaker:narrator
 - else:
-旧腕阴天仍会酸，他不再拿伤替别人换一声勇敢。新人来接，他把那一扣教到对方真能解，再把绳松过去；你少赶那一班夜课，同他等到最后一轮试完。 # beat:st_last_look_6 # scene:st_tower # cast:st_an # speaker:narrator
+第三是能核的名次，最强不能替没出手的人答——后来人把这句也带去问了下一座岛。 # beat:st_last_look_6 # scene:st_tower # cast:st_an # speaker:narrator
+}
+{
+- st_exchange_drill:
+早年一起换手练的习惯，他又教给后来人。有人解得比他慢，他等那一下，没因自己一直做得到便替旁人的手一把全做完。 # beat:st_last_look_7 # scene:st_tower # cast:st_an # speaker:narrator
+- else:
+旧腕阴天仍会酸，他不再拿伤替别人换一声勇敢。新人来接，他把那一扣教到对方真能解，再把绳松过去；你少赶那一班夜课，同他等到最后一轮试完。 # beat:st_last_look_8 # scene:st_tower # cast:st_an # speaker:narrator
 }
 {
 - st_life == 1:
-今日你带新人回小船。船一晃，他先想钉住自己，你在旁边问下一步。远港的信到门里，你没亲去，先读给接了那趟的人听，再回头等学生自己从不稳里走出来。 # beat:st_last_look_7 # scene:st_latepier # cast:st_an # speaker:narrator
-这一回不把整条船都替他站了？ # beat:st_last_look_8 # scene:st_latepier # cast:st_an # speaker:st_an # mood:st_an=amused
-他得有地方走。 # beat:st_last_look_9 # scene:st_latepier # cast:st_an # speaker:you
+今日你带新人回小船。船一晃，他先想钉住自己，你在旁边问下一步。远港的信到门里，你没亲去，先读给接了那趟的人听，再回头等学生自己从不稳里走出来。 # beat:st_last_look_9 # scene:st_latepier # cast:st_an # speaker:narrator
+这一回不把整条船都替他站了？ # beat:st_last_look_10 # scene:st_latepier # cast:st_an # speaker:st_an # mood:st_an=amused
+他得有地方走。 # beat:st_last_look_11 # scene:st_latepier # cast:st_an # speaker:you
 - else:
-今日你随新人候潮。他问还要不要先记中原第几，你让他先认这一港谁接、下一港能问谁。岸上那班课已交给同门，你想回头看看，终究等船先把这一程走完。 # beat:st_last_look_10 # scene:st_latepier # cast:st_an # speaker:narrator
-回来别替他们把课也全重教一遍。 # beat:st_last_look_11 # scene:st_latepier # cast:st_an # speaker:st_an # mood:st_an=amused
-那回来先听他们讲。 # beat:st_last_look_12 # scene:st_latepier # cast:st_an # speaker:you
+今日你随新人候潮。他问还要不要先记中原第几，你让他先认这一港谁接、下一港能问谁。岸上那班课已交给同门，你想回头看看，终究等船先把这一程走完。 # beat:st_last_look_12 # scene:st_latepier # cast:st_an # speaker:narrator
+回来别替他们把课也全重教一遍。 # beat:st_last_look_13 # scene:st_latepier # cast:st_an # speaker:st_an # mood:st_an=amused
+那回来先听他们讲。 # beat:st_last_look_14 # scene:st_latepier # cast:st_an # speaker:you
 }
 {
 - st_life == 1 and st_first_rail:
-学生把栏抓得指节发白，像十二岁那回的你。你把自己的手放在旁边，让他先握着，又等他肯松开一指，才把船再晃一下。 # beat:st_last_look_13 # scene:st_latepier # cast:st_an # speaker:narrator
+学生把栏抓得指节发白，像十二岁那回的你。你把自己的手放在旁边，让他先握着，又等他肯松开一指，才把船再晃一下。 # beat:st_last_look_15 # scene:st_latepier # cast:st_an # speaker:narrator
 }
 {
 - st_life == 1 and not st_first_rail:
-学生坐在船边等浪过去，你也同他坐一会。十二岁时那位老人挪开空桶等过你；这回你先把学生脚边的杂物挪开。 # beat:st_last_look_14 # scene:st_latepier # cast:st_an # speaker:narrator
+学生坐在船边等浪过去，你也同他坐一会。十二岁时那位老人挪开空桶等过你；这回你先把学生脚边的杂物挪开。 # beat:st_last_look_16 # scene:st_latepier # cast:st_an # speaker:narrator
 }
 {
 - st_life == 2 and st_first_rail:
-新人伸手抓栏，你记得十二岁沾过的那一点湿木屑，把还没收好的绳往里理了理。等他站好，才叫岸上把这一头松开。 # beat:st_last_look_15 # scene:st_latepier # cast:st_an # speaker:narrator
+新人伸手抓栏，你记得十二岁沾过的那一点湿木屑，把还没收好的绳往里理了理。等他站好，才叫岸上把这一头松开。 # beat:st_last_look_17 # scene:st_latepier # cast:st_an # speaker:narrator
 }
 {
 - st_life == 2 and not st_first_rail:
-新人催着出港，你却请他等过眼前这一波。十二岁时你等船回落才站，今日等的是岸上那只手真正松开，少等一口气都不行。 # beat:st_last_look_16 # scene:st_latepier # cast:st_an # speaker:narrator
+新人催着出港，你却请他等过眼前这一波。十二岁时你等船回落才站，今日等的是岸上那只手真正松开，少等一口气都不行。 # beat:st_last_look_18 # scene:st_latepier # cast:st_an # speaker:narrator
 }
 -> beyond_sea
 

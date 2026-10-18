@@ -1,7 +1,7 @@
 {
   "status": "SECOND_BOOK_V2_INTERNAL_EDITORIAL_NOT_FINAL_ACCEPTANCE",
-  "sourceBeats": 382,
-  "visited": 382,
+  "sourceBeats": 416,
+  "visited": 416,
   "choiceOptions": 62,
   "decisionsByRoute": {
     "valley": 27,
@@ -9,6 +9,6 @@
   },
   "sampledPaths": 512,
   "exhaustive": false,
-  "longestPassiveGap": 13,
+  "longestPassiveGap": 14,
   "limits": "Three internal editorial purposes recorded in SEVEN_QUESTIONS_V2_EDITORIAL.md. Fire, injury and fourteen-chair visual staging, dedicated identities, special action/CG, first-book editorial work and external acceptance remain incomplete. No human playtime claim."
 }

@@ -1,11 +1,11 @@
 {
   "status": "VERSIONED_V3_LOCAL_INTEGRATION_NOT_FULL_GOAL_ACCEPTANCE",
-  "declared": 342,
-  "visited": 342,
+  "declared": 384,
+  "visited": 384,
   "options": 62,
   "decisions": 31,
   "samples": 512,
   "exhaustive": false,
-  "longestPassiveGap": 13,
+  "longestPassiveGap": 14,
   "gameArtChanges": 0
 }

@@ -1,0 +1,196 @@
+{
+ "generatedBy": "node --experimental-strip-types scripts/audit-v7-passive-run.mjs",
+ "samplesPerEdition": 240,
+ "rows": [
+  {
+   "slug": "bamboo",
+   "samples": 240,
+   "maxPassiveRun": 11,
+   "medianPassiveRun": 11,
+   "maxAt": "bb_north_south_10"
+  },
+  {
+   "slug": "beyond-ranking",
+   "samples": 240,
+   "maxPassiveRun": 12,
+   "medianPassiveRun": 12,
+   "maxAt": "br_seventh_eighth_11"
+  },
+  {
+   "slug": "dead-ranking",
+   "samples": 240,
+   "maxPassiveRun": 15,
+   "medianPassiveRun": 14,
+   "maxAt": "dr_last_page_10"
+  },
+  {
+   "slug": "dongting",
+   "samples": 240,
+   "maxPassiveRun": 13,
+   "medianPassiveRun": 13,
+   "maxAt": "dt_dock_5"
+  },
+  {
+   "slug": "jade",
+   "samples": 240,
+   "maxPassiveRun": 9,
+   "medianPassiveRun": 9,
+   "maxAt": "jd_sima_7"
+  },
+  {
+   "slug": "jade-thieves",
+   "samples": 240,
+   "maxPassiveRun": 16,
+   "medianPassiveRun": 15,
+   "maxAt": "jt_first_order_16"
+  },
+  {
+   "slug": "kuhe",
+   "samples": 240,
+   "maxPassiveRun": 15,
+   "medianPassiveRun": 15,
+   "maxAt": "kh_bell_13"
+  },
+  {
+   "slug": "longmen",
+   "samples": 240,
+   "maxPassiveRun": 20,
+   "medianPassiveRun": 15,
+   "maxAt": "lm_fiveyears_5"
+  },
+  {
+   "slug": "luhua",
+   "samples": 240,
+   "maxPassiveRun": 18,
+   "medianPassiveRun": 18,
+   "maxAt": "lh_late_after_26"
+  },
+  {
+   "slug": "luoyang",
+   "samples": 240,
+   "maxPassiveRun": 8,
+   "medianPassiveRun": 8,
+   "maxAt": "ly_both_hands_8"
+  },
+  {
+   "slug": "north",
+   "samples": 240,
+   "maxPassiveRun": 13,
+   "medianPassiveRun": 12,
+   "maxAt": "nq_last_chu_7"
+  },
+  {
+   "slug": "north-notes",
+   "samples": 240,
+   "maxPassiveRun": 13,
+   "medianPassiveRun": 13,
+   "maxAt": "nn_sima_visit_8"
+  },
+  {
+   "slug": "qian-kun",
+   "samples": 240,
+   "maxPassiveRun": 17,
+   "medianPassiveRun": 17,
+   "maxAt": "qk_best_no_end_4"
+  },
+  {
+   "slug": "qingshi",
+   "samples": 240,
+   "maxPassiveRun": 16,
+   "medianPassiveRun": 15,
+   "maxAt": "qs_casualty_review_9"
+  },
+  {
+   "slug": "sea",
+   "samples": 240,
+   "maxPassiveRun": 14,
+   "medianPassiveRun": 14,
+   "maxAt": "sr_sixty_one_4"
+  },
+  {
+   "slug": "sea-tide",
+   "samples": 240,
+   "maxPassiveRun": 14,
+   "medianPassiveRun": 13,
+   "maxAt": "st_beyond_sea_3"
+  },
+  {
+   "slug": "seven-questions",
+   "samples": 240,
+   "maxPassiveRun": 13,
+   "medianPassiveRun": 13,
+   "maxAt": "sq_middle_chairs_10"
+  },
+  {
+   "slug": "taihua",
+   "samples": 240,
+   "maxPassiveRun": 17,
+   "medianPassiveRun": 16,
+   "maxAt": "th_ending_24"
+  },
+  {
+   "slug": "twelfth",
+   "samples": 240,
+   "maxPassiveRun": 10,
+   "medianPassiveRun": 10,
+   "maxAt": "qw_public_bout_7"
+  },
+  {
+   "slug": "twelfth-life",
+   "samples": 240,
+   "maxPassiveRun": 17,
+   "medianPassiveRun": 17,
+   "maxAt": "rl_old_book_6"
+  },
+  {
+   "slug": "two-swords",
+   "samples": 240,
+   "maxPassiveRun": 15,
+   "medianPassiveRun": 15,
+   "maxAt": "ss_rain_work_6"
+  },
+  {
+   "slug": "white-stone",
+   "samples": 240,
+   "maxPassiveRun": 13,
+   "medianPassiveRun": 13,
+   "maxAt": "ws_second_crown_15"
+  },
+  {
+   "slug": "xuanmen",
+   "samples": 240,
+   "maxPassiveRun": 14,
+   "medianPassiveRun": 14,
+   "maxAt": "xm_another_court_21"
+  }
+ ],
+ "summary": {
+  "maxPassiveRunOverall": 20,
+  "withinTwentyBeats": [
+   "bamboo",
+   "beyond-ranking",
+   "dead-ranking",
+   "dongting",
+   "jade",
+   "jade-thieves",
+   "kuhe",
+   "longmen",
+   "luhua",
+   "luoyang",
+   "north",
+   "north-notes",
+   "qian-kun",
+   "qingshi",
+   "sea",
+   "sea-tide",
+   "seven-questions",
+   "taihua",
+   "twelfth",
+   "twelfth-life",
+   "two-swords",
+   "white-stone",
+   "xuanmen"
+  ],
+  "overTwentyBeats": []
+ }
+}

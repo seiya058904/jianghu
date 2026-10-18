@@ -8,8 +8,8 @@ const orderedWorks=[...works].sort((a,b)=>b.source.length-a.source.length);
 const bundles=Object.fromEntries(works.map(work=>[work.slug,['./'+work.file]]));
 function scan(path){for(const e of readdirSync('dist/'+path,{withFileTypes:true})){const relative=path+e.name;if(e.isDirectory()){scan(relative+'/');continue}if(relative.startsWith('art/v6/'))continue;const work=relative.startsWith('assets/jade-before-cg-')?orderedWorks.find(work=>work.slug==='jade-v1'):relative.startsWith('assets/jade-thieves-before-cg-')?orderedWorks.find(work=>work.slug==='jade-thieves-v1'):relative.startsWith('assets/twelfth-life-before-cg-')?orderedWorks.find(work=>work.slug==='twelfth-life-v2'):relative.startsWith('assets/sea-tide-before-rigging-')?orderedWorks.find(work=>work.slug==='sea-tide-v1'):relative.startsWith('assets/sea-before-rigging-')?orderedWorks.find(work=>work.slug==='sea-v1'):relative.startsWith('assets/two-swords-before-art-')?orderedWorks.find(work=>work.slug==='two-swords-v1'):orderedWorks.find(work=>relative===work.file||(relative.startsWith('assets/'+work.source+'-')&&relative.endsWith('.js')));if(work)bundles[work.slug].push('./'+relative);else if(!relative.endsWith('.json')&&!relative.endsWith('.png')&&relative!=='sw.js')files.push('./'+relative);else if(relative==='art/ferry.png')files.push('./'+relative)}}
 scan('');
-// Default root and explicit index share the same V6 work package as the retained URL.
-bundles['tide-v6'].push('./','./index.html');
+// V7: `/` and `/index.html` are the works collection and belong to the shared
+// shell; the story package keeps its own explicit URL only.
 writeFileSync('dist/offline-manifest.json',JSON.stringify(files));
 for(const {slug:work,source:sourceFile} of works){
  const source=readFileSync(`story/${sourceFile}.ink`,'utf8');const bundle=bundles[work];

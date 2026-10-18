@@ -1,0 +1,94 @@
+{
+ "generatedAt": "2026-10-17T11:30+08:00",
+ "head": "6135b0f4f6bf2d26b742939df604f9d5ca3ff821",
+ "headPrev": "15a81428643bbc0bb71f1243349ba16be29b0c44",
+ "ancestorsConfirmed": [
+  "15a8142",
+  "6135b0f"
+ ],
+ "worktreeClean": true,
+ "canonSha256": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393",
+ "canonBytes": 579299,
+ "canonNewlineCount": 35314,
+ "canonLineNote": "wc -l = 35314 (newline count); AGENTS 口径 35,315 行按末行无换行计，内容一致，旧行号引用仍有效",
+ "registeredEditions": 43,
+ "auditRerun": {
+  "varTotal": 465,
+  "orphanTotal": 198,
+  "worst": [
+   [
+    "twelfth-life",
+    23,
+    34
+   ],
+   [
+    "north",
+    21,
+    31
+   ],
+   [
+    "jade",
+    19,
+    31
+   ],
+   [
+    "seven-questions",
+    16,
+    26
+   ],
+   [
+    "dead-ranking",
+    15,
+    33
+   ],
+   [
+    "sea",
+    15,
+    22
+   ],
+   [
+    "qian-kun",
+    13,
+    25
+   ],
+   [
+    "jade-thieves",
+    2,
+    22
+   ]
+  ],
+  "dialogueShareCurrent": {
+   "beyond-ranking": "68.6%",
+   "twelfth": "64.8%",
+   "taihua": "58.5%",
+   "dongting": "58.7%",
+   "qingshi": "55.3%",
+   "longmen": "56.7%",
+   "kuhe": "53.7%",
+   "sea": "46.7%",
+   "jade": "40.1%",
+   "north": "40.1%",
+   "luhua": "40.8%",
+   "dead-ranking": "41.3%",
+   "twelfth-life": "43.5%",
+   "xuanmen": "37.3%",
+   "white-stone": "36.3%"
+  },
+  "narrationMaxRun": 11,
+  "openingMaxRun": 6,
+  "passiveRunMaxRealPath": 20,
+  "endings": "47/47 reached (600 walks each)",
+  "repeatedTexts": [
+   "dead-ranking:1",
+   "kuhe:1",
+   "qingshi:1",
+   "sea:1",
+   "taihua:1"
+  ]
+ },
+ "round4E2Efixes": {
+  "swShellRefresh": "public/sw.js 在工作树确认存在（3126B, 10-17 01:55）",
+  "unitTests": "297/297（第四轮记录，本轮尚未复跑）"
+ },
+ "p0Status": "PASS 6 / PARTIAL 7 / FAIL 2 / BLOCKED 2 = INCOMPLETE"
+}

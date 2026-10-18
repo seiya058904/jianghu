@@ -1,3 +1,4 @@
+import {evidencePath} from './evidence-path.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
@@ -21,7 +22,7 @@ test('Every affected ending beat in nine complete routes migrates only presentat
   }
   assert.deepEqual(current.commands,old.commands);rows.push({route,ending:current.frame.ending,affectedBeatsChecked:affected,finalStage:current.frame.stage});
  }
- writeFileSync('docs/evidence/v6/main-ending-staging-content-audit.json',JSON.stringify({status:'DIRECTION_AND_MIGRATION_NOT_FULL_ACCEPTANCE',contentSHA256:createHash('sha256').update(readFileSync('src/generated/campaign-v6.json')).digest('hex'),previousSHA256:createHash('sha256').update(readFileSync('src/generated/campaign-v6-before-ending-staging.json')).digest('hex'),newGeneratedRasterFiles:0,actualNodeCompleteRoutes:rows.length,migratedEndingSnapshots:migrated,wordsOptionsCommandsUnchanged:true,routes:rows},null,2));
+ writeFileSync(evidencePath('docs/evidence/v6/main-ending-staging-content-audit.json'),JSON.stringify({status:'DIRECTION_AND_MIGRATION_NOT_FULL_ACCEPTANCE',contentSHA256:createHash('sha256').update(readFileSync('src/generated/campaign-v6.json')).digest('hex'),previousSHA256:createHash('sha256').update(readFileSync('src/generated/campaign-v6-before-ending-staging.json')).digest('hex'),newGeneratedRasterFiles:0,actualNodeCompleteRoutes:rows.length,migratedEndingSnapshots:migrated,wordsOptionsCommandsUnchanged:true,routes:rows},null,2));
 });
 test('Frozen validation rejects forged stage/runtime/commands, wrong versions and non-cosmetic changes',()=>{
  const old=ending(previousContent),save=old.save();const attempts=[{...save,presentation:{...save.presentation,stage:{...save.presentation.stage,cast:[]}}},{...save,runtime:JSON.stringify({...JSON.parse(save.runtime),variablesState:{...JSON.parse(save.runtime).variablesState,wound:99}})},{...save,commands:save.commands.slice(0,-1)},{...save,storyContentVersion:'tide-promise-1.0.0'}];

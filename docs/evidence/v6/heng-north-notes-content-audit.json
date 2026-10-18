@@ -1,11 +1,11 @@
 {
   "status": "COMPATIBLE_ADDITION_DRAFT_NOT_CANON_TRANSCRIPT",
-  "sourceBeats": 69,
-  "visited": 69,
+  "sourceBeats": 77,
+  "visited": 77,
   "choices": 12,
   "decisionsPerRoute": 6,
   "choiceMasks": 64,
   "readingNotes": 4,
-  "longestPassiveGap": 11,
+  "longestPassiveGap": 13,
   "limits": "New interview dialogue is compatible authored material, not a claim of verbatim original text. UI progress gate tested separately."
 }
