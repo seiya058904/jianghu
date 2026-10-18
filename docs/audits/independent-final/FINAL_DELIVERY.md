@@ -1,10 +1,10 @@
 # Jianghu / 宋世江湖 · 独立全面审计与交付
 
-**总状态：INCOMPLETE（交付初稿，尚未发布）。**
+**总状态：本地验收通过；新云端发布待完成，F18 PARTIAL／F24 BLOCKED。**
 
-本稿依据委托 §17 整理。当前冻结验收RC为 `a04d36a665416f45297a5c2a0191863bd0f44316`，仅新增测试侧真实SW写入屏障与13个cold-cache前置修订；产品与dist字节保持fcef368不变。作者单测474/474、编辑80/80子集、player＋新迁移24/24、13个fixture spec定向85/85已有通过证据。a04单次完整492项E2E已492/492通过，0失败／跳过／flaky／重试、exit0、36.5分钟，4 workers、原断言／次数／超时不变，结束后五类文件指纹逐项未变。旧ec53完整491通过／1失败、fcef中止286通过／1失败均保留各自失败记录，不当作当前RC仍失败，也不拼入当前通过数。
+本稿依据委托 §17 整理。当前冻结验收RC为 `d62f99f09f71bf895e63dc93757df45fa033200d`：仅修测试中GITHUB_ACTIONS输出通道的预期，产品与dist逐字节保持a04／fcef不变。新RC构建exit0，`GITHUB_ACTIONS=true` 下作者单测474/474、编辑80/80子集均exit0。新完整492项E2E已单run通过：492/492、0失败／跳过／flaky／重试、exit0、19.0分钟，8 workers；原断言／次数／超时保留，五类逐文件指纹运行后全部未变（`rc-ci-e2e-summary.json`）。a04单次完整492/492、0失败／跳过／flaky／重试、exit0、36.5分钟、4 workers保留为历史证据，不与新RC结果累加。旧ec53完整491通过／1失败、fcef中止286通过／1失败亦分别保留，不拼接通过数。
 
-主代理收尾时须统一替换本稿的最终作者／公共SHA、完整E2E结果、体积与矩阵统计，并补发布回执。此前检查保留其各自输入证据；本稿的新RC结果来自本次新日志，不从旧RC自动转移。
+本地证据已绑定d62f完整回归；最终作者／公共SHA、体积和云端检查／部署回执按实际收尾同步。此前检查保留各自输入，不能由本地通过推出云端或设备通过。
 
 ## 一、原典改编与可玩性
 
@@ -20,7 +20,7 @@
 |《龙门问刀》`lm_sore_14`|尚未负贺之前，送帖对话已说“看见我输这一回”|改为“看见我只同罗先生打平”，不改选择、胜负、ID或变量；真旧compiled反例先失败，修后专项66/66，双尺寸从头走到罗平→新句→贺门认输。|
 |《海路两世》中原以外后记|罗天海死后仍由本人回答第三代的事|切到当代学生交班与明确身后叙述，不复活祖师，不把两百余年压成同一代；early原典回源与回归支持。|
 
-当前RC运行时采样600次／篇，声明结局 **47/47**、已写拍 **6,707/6,707** 可达；观察996个CID，981对后续其余CID完全相同，15对仅能以同一首选策略比较，口径分列。它们证明存在合法路径及已观察后果，**不是所有变量组合穷举，也不是浏览器逐结局真人通关**。首个选择均在8拍内，最长真实无选择段20拍。
+本轮已记录产品运行时采样600次／篇，声明结局 **47/47**、已写拍 **6,707/6,707** 可达；观察996个CID，981对后续其余CID完全相同，15对仅能以同一首选策略比较，口径分列。它们证明存在合法路径及已观察后果，**不是所有变量组合穷举，也不是浏览器逐结局真人通关**。首个选择均在8拍内，最长真实无选择段20拍。
 
 独立《死人争榜》《芦花渡》6条完整浏览器路径共1,714拍、1,526次next、182次choice；实际逐拍DOM对oracle、逐次点击，截图中22张页面及庞原画实际目视复核。证据绑定其已记录产品指纹，不冒作后续工程新RC每帧都重看。选择中仍有观看焦点、轻口吻、即时互认等较轻互动；模板人物、部分静态动作、较密旁白及审美分歧均保留具体P2，不用“变量有读取”夸成宏观分支。见 [STORY_EDITORIAL_REVIEW.md](STORY_EDITORIAL_REVIEW.md)、[CHARACTER_ARCS.md](CHARACTER_ARCS.md)、[browser-late-review.md](browser-late-review.md)。
 
@@ -30,21 +30,22 @@
 
 已修与复核的工程问题包括禁读／满额存储降级、旧标签页覆盖、备份失败顺序、按篇下载遗漏新shell依赖、SW ready等待范围、公共缺基线的严格白名单、发布快照边界与当前版立绘残留背景。已有专项日志不替代最终完整回归。
 
-同版本编辑订正导致旧Ink存档runtime整串不等的缺陷，使用13份逐字节等于7a Git blob的真实旧JSON限定迁移；旧runtime＋presentation整体验真，新旧逐拍除正文外结构与变量相等，返回新重放会话，失败先保留原raw。独立94命令龙门探针成功，7类伪造拒绝；工程22项、原画面迁移26项、浏览器7项通过。旧ec53完整suite另发现HalfStep首次写回契约退化；fcef368已仅将首次render写回限定于previousContent或editorialContent，HalfStep延迟至原推进／保存链写回。fcef产品的player原契约与7迁移专项合计24/24通过；独立源审确认三个分支均保留。其后North删缓存前置出现后台put回填竞态：helper只等待真实fetch waitUntil原promise，不替换缓存／Response、不改产品。全部13个同型spec源审确认原断言／超时／次数不变，定向85/85；当前a04完整492已单run全部通过。
+同版本编辑订正导致旧Ink存档runtime整串不等的缺陷，使用13份逐字节等于7a Git blob的真实旧JSON限定迁移；旧runtime＋presentation整体验真，新旧逐拍除正文外结构与变量相等，返回新重放会话，失败先保留原raw。独立94命令龙门探针成功，7类伪造拒绝；工程22项、原画面迁移26项、浏览器7项通过。旧ec53完整suite另发现HalfStep首次写回契约退化；fcef368已仅将首次render写回限定于previousContent或editorialContent，HalfStep延迟至原推进／保存链写回。fcef产品的player原契约与7迁移专项合计24/24通过；独立源审确认三个分支均保留。其后North删缓存前置出现后台put回填竞态：helper只等待真实fetch waitUntil原promise，不替换缓存／Response、不改产品。全部13个同型spec源审确认原断言／超时／次数不变，定向85/85；a04完整492单run通过属于上一RC记录。首次公共CI又暴露测试把GHA有意输出stdout错当stderr的夹具问题；工程以GITHUB_ACTIONS=true复现原失败，只改一个单测文件47行，原6种模式分别覆盖两个环境并核精确通道及missing report，两环境定向各1/1通过。产品输出行为未改；新RC完整492已通过，首次云端失败记录仍保留。
 
 |已记录输入／检查|真实结果|当前能支持的结论|
 |---|---|---|
-|a04 `npm run build`，rc-acceptance-build.log|BUILD_EXIT=0|本次重建通过，产品与351个dist文件保持已冻结字节。|
-|当前作者单测 `npm test`，rc-acceptance-tests.log|474 passed，0失败／跳过，UNIT_EXIT=0|含80个编辑草稿契约，不能加成554个独特测试。|
-|当前作者编辑子集 `npm run test:editorial`，rc-acceptance-editorial.log|80/80，EDITORIAL_EXIT=0|上述子集独立再执行。|
+|d62f `npm run build`，rc-ci-build.log|BUILD_EXIT=0|新RC重建通过，产品与351个dist文件保持a04冻结字节。|
+|新RC作者单测，rc-ci-tests.log，GITHUB_ACTIONS=true|474 passed，0失败，UNIT_EXIT=0|含80个编辑草稿契约，不能加成554个独特测试。|
+|新RC编辑子集，rc-ci-editorial.log，GITHUB_ACTIONS=true|80/80，EDITORIAL_EXIT=0|上述子集独立再执行。|
 |原典专项／真实旧档迁移／既有迁移|66/66、22/22、26/26|各自有限反例通过，见原日志。|
 |迁移浏览器／shell更新／演员可见|7/7、2/2、2/2，均exit0|备份故障、真实下载字节、root与子路径冷离线等指定场景有证据。|
 |fcef368 player整spec＋新迁移，rc-release-targeted.log|24/24，BROWSER_EXIT=0|原player:153断言未改通过，7新迁移与备份故障保护均通过。|
 |旧ec53完整E2E|491通过／1失败，完整结束并保留|首次写回契约回归的真实失败历史；已修，不列作当前RC失败。|
 |旧fcef完整E2E尝试，rc-release-e2e.log|286通过／1失败后中止|North cold-cache删除前后台put竞态已保留；不是完整492通过。|
 |13个fixture spec，fixture-cache-all-browser.log|85/85，BROWSER_EXIT=0|真实原promise屏障；原cold delete/false/UI下载/true/离线断言不变，不与首批58项相加。|
-|a04完整E2E，rc-acceptance-e2e.log|492/492，0失败/跳过/flaky/重试，exit0|单run36.5分钟；原断言／次数／超时不变，五类指纹运行后逐项一致。|
-|新隔离公共本地9885dfed冷检出|npm ci/build/test均exit0，474/474|351个dist文件逐hash与作者相同，隐私扫描0命中；公共缺私档warning与作者完整字节验证分开。尚未push。|
+|历史a04完整E2E，rc-acceptance-e2e.log|492/492，0失败/跳过/flaky/重试，exit0|单run36.5分钟；原断言／次数／超时不变，五类指纹运行后逐项一致。|
+|首次公共f1d4b377推送及云端检查|普通push成功；Verify39101353779、Pages39101353730均FAILED|Pages测试473/474，GHA通道预期错误；没有部署，新RC本地已通过，公共同步与云端重验待完成。|
+|d62f完整E2E，rc-ci-e2e.log／rc-ci-e2e-summary.json|492/492，0失败／跳过／flaky／重试，exit0，19.0分钟|单run、8 workers；原断言／次数／超时保留，五类逐文件指纹运行后全部不变。|
 
 图像183个栅格解码／alpha、27条catalog立绘、23篇双尺寸开局和重点真实舞台已核；699个候选资源绑定不等于699次可见触发，有CG遮挡及override记录。移动尺寸、焦点／键盘／确认流程有浏览器证据，物理移动设备与读屏器另列未验证。
 
@@ -67,23 +68,23 @@
 
 完整历史bundle为项目外 `../Jianghu-independent-20261018/jianghu-author-before-slim.bundle`，1,118,742,731字节，独立复核SHA-256 `1a52a555021588f4134237aaa5dfc3c926de00b7021cc84842dfc49e1088e9d7`，`git bundle verify` 确认complete history及6 refs，见 [git-bundle-verify.log](git-bundle-verify.log)。完整Git维护副本与6655对象／refs的逐项记录见 [git-maintenance-backup.json](git-maintenance-backup.json)；refs SHA `4e7f0a3bd6ea5f7e94936eaa5d4f14a9d58cc602e2602d06f4337f3689c83e53`，对象清单SHA `19bbab566261aba178802f6e724774a483efe84b1b46dc37d056e90d9d017ca2`。恢复应先在项目外新目录clone完整bundle、核refs，再按PNG清单复制并验SHA；不要直接覆盖当前作者库。
 
-当前本地公共9885dfed快照中间预审为2,250文件／73,556,666字节，最大文件 `docs/art/ASSET_MANIFEST_V6.json` 4,221,144字节（文本JSON）；既有公开 `ferry.png` 2,701,831字节按原hash精确保留。它们**不是最终发布HEAD的计量**；最终文档同步后须重新写真实数。
+首次推送前公共9885dfed快照的中间预审为2,250文件／73,556,666字节，最大文件 `docs/art/ASSET_MANIFEST_V6.json` 4,221,144字节（文本JSON）；既有公开 `ferry.png` 2,701,831字节按原hash精确保留。这些**不是首次公共f1d4b377或最终发布HEAD的计量**；最终文档同步后须重新写真实数。
 
 小于1GiB目标尚未完成。普通无过期repack已在隔离副本和作者库完成；作者库维护前后6655对象/refs/fsck核同，节省25,627,219 bytes。该步骤仍不足以达标，未重写历史。**仅若最终需要替换作者库／每日库或重写既有历史，才需另行明确批准该动作。** 这项阻断不撤销已经授权的正常公共main快进发布，也不要求对普通发布重复确认。
 
 ## 四、Git／发布
 
-作者基线 `master@7a2c22f74c46d74f07af8bd1a45893ec15daa49b`；当前冻结验收RC为 `a04d36a665416f45297a5c2a0191863bd0f44316`，产品仍为fcef368已构建字节。最终作者HEAD及工作区干净状态待主代理收尾记录。公共隔离检出的当前本地提交为 `9885dfed`，已冷ci/build/test474通过，351个dist文件与作者逐hash一致、隐私扫描0命中；它还不是已推送公共main。
+作者基线 `master@7a2c22f74c46d74f07af8bd1a45893ec15daa49b`；当前冻结验收RC为 `d62f99f09f71bf895e63dc93757df45fa033200d`，产品仍为fcef368已构建字节。首次公共提交 `f1d4b377ec317e964c4a4ff79ae74aa826aa9642` 已普通推送成功，但其Verify和Pages均失败；修复后的新RC完整492本地通过，公共重验尚待完成。旧9885dfed隔离冷ci/build/test474、351个dist逐hash一致及隐私0命中只支持当时输入，最终作者HEAD／干净状态及新公共SHA由主代理收尾记录。
 
 公共main基线 `a6e5d5947ce2d06c6c2ab83e1cfd515c95191959`，与作者历史无共同祖先。公开快照在隔离clone上沿真实main作**普通增量／快进推送**；原典全文、私档、候选原图、env/key、巨量历史证据不公开。未改冻结预期哈希，未强推、未新增LICENSE；已授权的普通FF发布可在门禁完成后继续，无需再问一次。
 
-**本稿时点尚未push，未宣称上线。** 公共前后最终SHA、Verify与Pages精确run链接／结论、部署artifact与线上逐字节比较、深链／交互／旧SW原地更新／离线复查均待 [RELEASE_VALIDATION.md](RELEASE_VALIDATION.md) 的最终回执。Actions started不等于成功，本地commit不等于推送。公开快照边界及冷检出见 [PUBLIC_SNAPSHOT_MANIFEST.md](PUBLIC_SNAPSHOT_MANIFEST.md)。
+**首次普通push已成功，云端检查失败，未发生本轮部署。** [Verify run39101353779](https://github.com/seiya058904/jianghu/actions/runs/39101353779) 与 [Pages run39101353730](https://github.com/seiya058904/jianghu/actions/runs/39101353730) 均FAILED；Pages单测473/474，原因是历史基线policy测试通道预期，不是产品改动。新RC最终公共SHA、重跑精确run链接／结论、部署artifact与线上逐字节比较、深链／交互／旧SW原地更新／离线复查均待 [RELEASE_VALIDATION.md](RELEASE_VALIDATION.md) 的最终回执。修复本地绿不等于云端通过，push成功不等于已部署。公开快照边界及冷检出见 [PUBLIC_SNAPSHOT_MANIFEST.md](PUBLIC_SNAPSHOT_MANIFEST.md)。
 
 正式URL：[作品库](https://seiya058904.github.io/jianghu/)。待发布后核验深链包括 [龙门](https://seiya058904.github.io/jianghu/longmen.html)、[死人争榜](https://seiya058904.github.io/jianghu/dead-ranking.html)、[山河璧](https://seiya058904.github.io/jianghu/jade.html)、[芦花渡](https://seiya058904.github.io/jianghu/luhua.html)。这些链接此处是发布后核验清单；基线真实浏览器只证当时HTTP200和旧门面，**不代表新产品已在这些线上链接验收通过**。
 
 ## 五、最终验收矩阵
 
-单一状态表为 [FINAL_ACCEPTANCE.md](FINAL_ACCEPTANCE.md)。最终 **PASS n / PARTIAL n / FAIL n / BLOCKED n 待主代理同步**。旧表快照的统计不作为最终结论复制。当前HalfStep契约修复已由原断言与24项定向重验通过，13个cold-cache fixture源审及85项定向通过；F20／F21已由a04完整492通过关闭，不能把旧ec53或fcef失败继续记作当前失败。F24仍BLOCKED，F18仍PARTIAL；发布相关项未完成，不得宣称30/30或FULLY VERIFIED & DEPLOYED。
+单一状态表为 [FINAL_ACCEPTANCE.md](FINAL_ACCEPTANCE.md)。最终分类数以该表实际收敛为准。HalfStep原断言与24项定向、13个cold-cache fixture源审及85项定向、a04单次完整492均有各自通过记录；新d62f单次完整492/492、exit0已关闭本地完整回归待定项；该证据不与a04历史通过拼接。首次公共Verify／Pages失败已记录，新RC本地CI环境单测通过不等于发布项关闭。F24仍BLOCKED，F18仍PARTIAL；不得宣称30/30或FULLY VERIFIED & DEPLOYED。
 
 外部项一律 **EXTERNAL NOT VERIFIED**：真人试读、真人阅读耗时、真人审美／愿意投入时长、Android真机、Safari、Firefox、读屏器。自动化、代理实际看图与真人试玩不是同一证据等级。
 
@@ -92,9 +93,9 @@
 - 总结与验收：[本报告](FINAL_DELIVERY.md)、[最终QA](FINAL_QA.md)、[30项矩阵](FINAL_ACCEPTANCE.md)、[问题台账](ISSUE_LEDGER.md)、[发布回执](RELEASE_VALIDATION.md)。
 - 编剧与原典：[22组映射](CANON_22_STORIES.md)、[全篇文学终审](STORY_EDITORIAL_REVIEW.md)、[人物弧](CHARACTER_ARCS.md)、[前半原始review](canon-early-review.md)、[后半原始review](canon-late-review.md)、[历史late清单](canon-historical-late-files.csv)。源改动在当前author.mjs入口，未用生成物替代作者源修改；原典全文不随公开交付。
 - 工程与素材：[文件审计索引](FILE_AUDIT_INDEX.csv)、[工程安全性能](CODE_SECURITY_PERFORMANCE.md)、[独立反审](engineering-final-counterreview.md)、[迁移反审](editorial-migration-counterreview.md)、[cold-cache夹具反审](fixture-cache-counterreview.md)、[视觉与真实通关](VISUAL_PLAYTHROUGH.md)、[原图独立复核](visual-independent-review.md)、[资源触发台账](ART_USAGE_TRACE.json)。
-- 原始检查：当前证据为同目录 `rc-acceptance-build.log`、`rc-acceptance-tests.log`、`rc-acceptance-editorial.log`、`rc-release-targeted.log`、`fixture-cache-all-browser.log`、`rc-acceptance-e2e.log` 及相应逐文件manifest；早期 `rc-final-*`、中止批次与失败attempt保留，不拼成最终通过。当前a04测试聚合指纹 `ffb43acf8fa0fd7bc19cc7e2c787dd473c38c1b882f87cda6ee772ae758c285c`，产品聚合指纹 `f6c49035c6ea5a20855e49bf76a930feabc30518eabcda760e4a2a4f3c84621d`、dist指纹 `15f4a874aa50d0bb3d72cececd2bec2c18e033e3b8f30c207577c93c0705d2c2`；最终完整结果492/492、E2E_EXIT0与五类指纹见rc-acceptance-e2e-summary.json。
+- 原始检查：新RC证据为同目录 `rc-ci-build.log`、`rc-ci-tests.log`、`rc-ci-editorial.log`、`rc-ci-e2e.log`／`rc-ci-e2e-summary.json` 及相应manifest；历史a04 `rc-acceptance-*`、`rc-release-targeted.log`、`fixture-cache-all-browser.log`、早期失败／中止attempt各自保留，不拼成新RC通过。新RC测试聚合指纹 `4790e10bd9e49525262eb1ba94556f6f371be96d2e85b3366085a698b215d403`，869部署源码指纹 `34a178b90f0abdff609fc4ce6b9eb0f0c2b232a689a5d3ca1219b1b4c32fab49`，918审计路径指纹 `93a1f7e4d4400bb88fca32edd42b23a6a14b7aed8400ac05e8f59d9def1498ca`；产品 `f6c49035c6ea5a20855e49bf76a930feabc30518eabcda760e4a2a4f3c84621d`、dist `15f4a874aa50d0bb3d72cececd2bec2c18e033e3b8f30c207577c93c0705d2c2` 与a04相同。新 `rc-ci-e2e-summary.json` 绑定d62f的492/492、E2E_EXIT0及全部五类运行后指纹不变；历史 `rc-acceptance-e2e-summary.json` 只绑定a04。
 - 恢复依据：BEFORE／AFTER逐文件清单、PNG恢复清单与完整bundle验证；全尺寸原图和完整浏览器JSON／截图保存在项目外 `../Jianghu-independent-20261018/`，库内只留≤800px精选WebP与纯文本索引。路径及哈希是恢复凭据，不是删除候选素材或改写历史的授权。
 
-本稿不会以交付文档齐全替代产品验收。新RC完整492复验已通过；最后需要关闭的是正常公开发布和线上回执，并对仍未达的体积／设备边界如实说明。
+本稿不会以交付文档齐全替代产品验收。新RC本地完整492已通过；重新公共发布／云端检查／部署／线上回执仍待完成。a04历史通过与首次公共失败均保留，体积与设备边界仍未关闭。
 
-私有提案完整性补证：除原Git追踪TREE外，另复制458项原ignored文件，共55787329bytes（109历史源码、118其它私档、原始交付ZIP、本机元数据与历史证据）。源/副本逐项SHA一致、原文件未改、Git tracking/ignored状态不变；当时917条审读路径已在提案逐hash一致；新helper加入后的918条及提案最终同步数量由主代理复核。见daily-ignored-preservation.json。259MB旧测量早于此补全，不能当最终候选体积；最终文档同步与重测后再收敛。当前作者根未替换，公开镜像未包含这些私档。
+私有提案完整性补证：最新已验证候选来源 `be56235d07d776694263bcf613843225bcd8eb15`，候选HEAD `ada1ecf218716c6f96b309506f4cd5091f8aea0f`、TREE `90e70443cc72294ded0ebf900978916d84fb3783`；2,527个追踪路径字节／mode精确一致，918条审读路径核同，478项私有附加文件共56,019,899字节（覆盖原根目录用户资料）。冷ci／build／unit474均exit0、私档缺席warning0；候选测量329,656,131逻辑字节、338,310,184 allocation、.git49,834,415字节。见 [daily-candidate-validation.json](daily-candidate-validation.json)。这些是最终云端回执文档同步前的候选快照，当前作者根**未替换**，提案无remote，公共镜像不含私档；原259MB／458项／917路径等旧提案数字不作为当前计量。新RC和最终文档仍须同步及外置复验，候选低于1GiB不表示作者根F24达标，也不构成切库授权。

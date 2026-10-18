@@ -2,9 +2,11 @@
 
 本报告聚合实际源码审阅与已存在的运行证据。源文件索引见 `FILE_AUDIT_INDEX.csv`；它逐文件记录当前SHA256、实际审阅者、行范围、证据及精确副本关系。生成Ink/JSON和依赖锁单列，不计为手写源码审阅。审阅覆盖不等于每个历史程序仍可发布，也不等于所有路径和设备均被执行。
 
-当前验收测试RC：`a04d36a665416f45297a5c2a0191863bd0f44316`。已直接读到 `rc-acceptance-build.log` BUILD_EXIT=0、unit474/474 UNIT_EXIT=0、编辑80/80 EDITORIAL_EXIT=0；13项cold fixture改动此前已完整85/85定向通过。`rc-acceptance-e2e.log` 明确为本SHA、492 tests、4 workers，已492/492、0失败/跳过/flaky/重试、E2E_EXIT0结束。产品669项与dist351项保持fcef的字节指纹不变（rc-acceptance-product-equivalence.json）。源码审读manifest共918路径，与FILE索引逐项SHA匹配，fingerprint=`19a37b5e9b8d29582e76bf35afe66f8101ef67bed8e318f0ef2d007ed084231c`。
+当前验收RC：`d62f99f09f71bf895e63dc93757df45fa033200d`。`rc-ci-build.log` BUILD_EXIT=0，`rc-ci-tests.log` 474/474 UNIT_EXIT=0（父以GITHUB_ACTIONS=true执行，含80编辑契约），`rc-ci-editorial.log` 80/80 EDITORIAL_EXIT=0；474与80不可相加。当前 `rc-ci-e2e.log` 与 `rc-ci-e2e-summary.json` 绑定此SHA：同一完整492/492 PASS，8 workers，0失败/跳过/flaky/重试，E2E_EXIT=0，19.0分钟，13:54:04 +08启动、14:13:22 +08核定。已独立核原始JSON全部492个test各恰一次passed结果，原JSON/log SHA与摘要相同；不是拼批。
 
-历史批次单列：ec53完整491/1失败保留；fcef旧测试RC在286 passed/1 failed partial退出1（rc-release-aborted.json），均不能算当前完整验收。fcef产品的player+7迁移24/24通过，包含未改旧half-step保存时机断言。其公开冷检出ci/build/test474均exit0，351dist逐hash零差异；这是旧测试快照的复现证据，不冒充a04的公开完整门禁。发布/线上状态由父最终收敛，本报告尚未验证push/线上。
+产品669与dist351保持a04/fcef字节指纹；此次唯一已变审读源为47行历史基线policy测试。五类rc-ci清单均已逐实际bytes/SHA和compact JSON聚合重新核同，完整审读918（715手写+203生成，含109 ignored私档）与索引一致。当前tests指纹 `4790e10bd9e49525262eb1ba94556f6f371be96d2e85b3366085a698b215d403`、部署源869指纹 `34a178b90f0abdff609fc4ce6b9eb0f0c2b232a689a5d3ca1219b1b4c32fab49`、完整审读源918指纹 `93a1f7e4d4400bb88fca32edd42b23a6a14b7aed8400ac05e8f59d9def1498ca`；产品/dist原指纹不变，详rc-ci-input-equivalence.json及五manifest。
+
+历史a04完整492/492、4workers、E2E_EXIT0已通过，仍是历史精确测试输入结果。随后公开f1d4b377ec317e964c4a4ff79ae74aa826aa9642普通push成功，但Verify/Pages均失败473/474，未部署。新公开本地67eb150348013c06bdf328a95589395b3c987aa0同步d62测试修复；2388允许文件/85238633bytes隐私扫描零命中。新公开CI=true/GITHUB_ACTIONS=true冷检出已由父收敛PASS：ci/build/unit退出0、474/474，2388 plan文件无漂移、869源和351dist均与当前冻结RC核同；[receipt](public-ci-cold-validation.json)、[install](public-ci-install.log)、[build](public-ci-build.log)、[tests](public-ci-tests.log)。public HEAD67eb1503仍未push，40个缺私档告警的归档完整性仍PARTIAL。
 
 ## 审阅口径与补漏
 
@@ -32,7 +34,7 @@ Graph coverage对本轮100个补读路径、222个私档源/配置路径及新�
 | 当前修订与历史身份混淆 | 授权修改现行文本后，旧审计把现行同伴全文也当冻结对象。7份真实旧字节从7a2c22f二进制导出，严格路径/commit/hash/长度映射；要求当前路径存在，缺私档明确PARTIAL，绝不用当前活文件冒旧。17份原preservation/first-pass JSON完整未变，原hash/数量/旧restore断言保留。 | historical-baselines-policy.test；engineering-preservation-proof.json；engineering-historical-tests-fixed.log |
 | ENG-04 同版本正文订正拒读真旧档 | 真旧7a存档的Ink outputStream/控制位置与新compiled不同，runtime整串不等；不能只用CID/VAR不变宣称兼容。13个明确现行version按篇加载真旧compiled，当前strict失败后，对旧runtime+presentation完整验真，再逐步比较新旧除正文text外全部Beat结构及每步变量，输出新重放save。自动/手动/导入的原raw先备份，失败不得覆盖；保留既有画面迁移。 | editorial-baselines.ts；editorial-save-migration.test；editorial-migration-counterreview.md；外部editorial-save-migration.log22/22；editorial-migration-browser.log7/7 |
 
-未发现需新增修复的P0。ENG-01/02/03曾确认P1，已修复并有父真实浏览器证据；ENG-04是在最终兼容反证新发现的P1，源码、22项真旧档专项、最终构建、7项真实浏览器恢复/备份/冷离线回归均已证；最终全量E2E已由主代理单run492/492退出0完成；不能由此把精确同时写入的localStorage竞态说成事务安全。旧独立子报告中的PENDING状态是历史阶段，须结合此报告与最终RC证据理解。
+未发现需新增修复的P0。ENG-01/02/03曾确认P1，已修复并有父真实浏览器证据；ENG-04是在最终兼容反证新发现的P1，源码、22项真旧档专项、最终构建、7项真实浏览器恢复/备份/冷离线回归均已证；a04历史全量E2E由主代理单run492/492退出0完成；当前d62测试RC完整重验492/492、E2E_EXIT0已通过；不能由此把精确同时写入的localStorage竞态说成事务安全。旧独立子报告中的PENDING状态是历史阶段，须结合此报告与最终RC证据理解。
 
 ## 真旧存档兼容的新增反证
 
@@ -42,7 +44,7 @@ Graph coverage对本轮100个补读路径、222个私档源/配置路径及新�
 
 旧自动档启动时pending raw先keepDraft，写失败保留pending与auto；手动槽及导入先备份上传真raw再备份当前auto再替换，会话在写成功后才换。手动覆盖仅当既有槽能验真且实际需要迁移时先备份其原raw；当前strict槽沿用玩家显式覆盖语义，不不断新增draft。备份行可导出原始字节，提示明确正文订正。当前仍保持strict优先，不能因为需要兼容就忽略用户runtime或把旧LoadJson喂给新compiled。按篇动态baseline不会要求作品库预装全部旧故事；父最终构建已通过；7项真实浏览器含根/子路径冷离线恢复，验证选篇旧chunk能够归包取回。
 
-## ec53全量发现的旧样章写回时机回归（FIXED_PENDING_NEW_FULL_SUITE）
+## ec53全量发现的旧样章写回时机回归（a04全量已证，d62完整复验通过）
 
 `rc-final-e2e.log` 第260例 `tests/player.spec.ts:153` 失败。该既有契约要求：真旧half-step-1.0.0存档恢复到 `bold_react` 后，自动档仍逐字节等于原raw；首次advance到 `xie_enter` 才写half-step-1.0.1，同时保留手动槽与可导出的旧raw。新增render条件把原先受previousContent约束的立即persist扩大到全部pending迁移，提前重写自动档。原raw已备份不等于保存时机契约满足，7项正文迁移专项不能覆盖这个旧样章回归。
 
@@ -58,7 +60,7 @@ Graph coverage对本轮100个补读路径、222个私档源/配置路径及新�
 
 公开快照从指定commit的git archive取追踪内容，使用scope/扩展名allowlist并排除原典、私档、候选图、env/key等，拒绝链接/特殊对象。destination须为独立干净Git顶层，plan在两个检出之外；写/删目标逐个resolve校验边界。最新大图例外仅 `public/art/ferry.png`，必须同时匹配固定原hash、旧public文件存在且逐字节相同；其他新/换大图仍阻断。它是保留既有公开原图，不是通用大文件豁免。机器路径提取regex已去固定用户名，只用于旧美术记录解析；源码diff已读，未改原资产或期望hash。文件类型allowlist仍不等于内容秘密识别器，具体发布plan/内容扫描属于父发布证据。
 
-## North cold前置缓存竞态（夹具已修，85定向通过，待新RC全量）
+## North cold前置缓存竞态（85定向及a04全量通过，d62完整复验通过）
 
 当前fcef368全量第172项 `tests/north-editorial-cold-offline.spec.ts:8` 失败：删除目标north-v1 chunk后立即cache.match仍true。error-context显示north-v1封面、尚未点击按篇下载；subpath随后通过。源码中SW fetch返回网络Response前，仅用event.waitUntil异步安排caches.open/cache.put，页面reload的load不等待这个写入。context间CacheStorage隔离，不能把它解释为其它全量worker替这页写cache；本context自身两个导航请求的后台写可晚于evict。具体失败瞬间未安装探针，不冒称捕获了那一刻的pending promise。
 
@@ -73,6 +75,14 @@ Graph coverage对本轮100个补读路径、222个私档源/配置路径及新�
 canon_late独立逐项归一化验证13/13原spec：去新增import、将observer安装还原为旧ready、去新增设置可见/drain后，与HEAD旧全文相同（只规范行尾）。原delete、false、UI下载、true、清HTTP缓存、新页冷离线、次数和超时全部保留。其独立反审在fixture-cache-counterreview.md。源码/脚本/生成物/dist未变；工程逐hash复核rc-release-product-manifest的669项与dist-manifest的351项均全等。只有测试夹具新增源文件，case总数仍492。
 
 实际执行 `npx tsc --noEmit` 退出0（tsconfig原范围src，未冒称这一步检查了tests的类型）；首3文件4workers真实浏览器58/58、31.5秒、BROWSER_EXIT=0，保留workspace/cache-drain-browser.log；扩展13文件4workers完整85/85、44.4秒、BROWSER_EXIT=0，日志workspace/cache-drain-all-browser.log，输出cache-drain-all-results/evidence，未覆盖首批。命令为 `npx playwright test` 显式列出上述13spec、`--workers=4`和外部`--output`，没有build或storycompile。新helper本身不新增case；父已以a04新测试RC完成完整492/492退出0。当前证据确认夹具竞态修法及定向通过；原失败现场未观测到pending，独立可控反证证明机制，不能伪称自然36次中也复现，更未出现下载已报ok却缺目标chunk的产品反例。
+
+## 首次公开CI失败及本次测试修复
+
+公开f1d4b377普通push后，Pages run39101353730及Verify run39101353779均失败，Pages门禁473/474；部署未发生。cloud-first-pages-failed.log与cloud-first-failure.json保存完整原始云端失败，不能写成成功发布。根因是historical-baselines-policy.test.ts无条件检查child stderr；生产report在GITHUB_ACTIONS为真时刻意将::warning注解写stdout，本地才写stderr，child本身仍退出0且null断言已通过。
+
+新d62只改该policy测试：两种明确child环境（GITHUB_ACTIONS缺席/true）各执行原六tamper/missing模式，原status0/null/throws不变，精确核各自stdout/stderr完整消息和缺席report的唯一原路径；单test仍1项，完整unit总数474不变。47行LF、SHA8284c7e736ee539a374526be53a9d066157970193f185c3ebd09e25f4a90d3df。没有改生产helper、CI流程、SW或依赖来绕过失败，也未把两流拼接为宽松匹配。
+
+修前本地GITHUB_ACTIONS=true原测试退出1，ci-warning-original-actions.log保留；修后父环境缺席/true各定向1/1退出0，每次都实际执行12个child场景，ci-warning-fixed-local.log及ci-warning-fixed-actions.log保留。当前root CI=true完整474及80专项已通过，新公开冷检出已PASS；新492已完整通过；后续新云端发布/验证仍待父终态，不复用a04输入指纹冒作d62全通过。详细源审见ci-warning-channel-review.md。
 
 ## 性能与测量边界
 
@@ -112,15 +122,23 @@ canon_late独立逐项归一化验证13/13原spec：去新增import、将observe
 | 外部workspace/cache-drain-browser.log | 58/58，31.5秒，BROWSER_EXIT=0 | 工程首3cold fixture定向，4workers |
 | 外部workspace/cache-drain-all-browser.log | 85/85，44.4秒，BROWSER_EXIT=0 | 工程全部13受影响spec定向，4workers；原case/断言/timeout保持 |
 | 外部workspace/cache-drain-typecheck.log | exit0 | 工程最后npx tsc --noEmit，按原src include |
-| rc-acceptance-build.log | BUILD_EXIT=0 | 父a04当前验收RC构建 |
+| rc-acceptance-build.log | BUILD_EXIT=0 | 父a04历史验收RC构建 |
 | rc-acceptance-tests.log | 474/474，UNIT_EXIT=0 | 父a04 unit/契约 |
 | rc-acceptance-editorial.log | 80/80，EDITORIAL_EXIT=0 | 父a04编辑专项，与474重叠不相加 |
 | rc-acceptance-audited-source-manifest.json | 918路径SHA与FILE索引逐项相同 | a04审读源fingerprint=19a37b5e9b8d29582e76bf35afe66f8101ef67bed8e318f0ef2d007ed084231c |
 | rc-acceptance-e2e.log | 492/492，4 workers，E2E_EXIT0，0失败/跳过/flaky/重试 | 父a04完整单run，五类指纹运行后未变 |
+| cloud-first-pages-failed.log / cloud-first-failure.json | 首次公开Verify/Pages失败473/474，未部署 | f1d4b377普通push成功不等于门禁成功 |
+| 外部ci-warning-original-actions.log | 原测试GITHUB_ACTIONS=true退出1 | 复现云端stderr为空的测试夹具失败 |
+| 外部ci-warning-fixed-local.log / ci-warning-fixed-actions.log | 各1/1退出0；各12child场景 | 新测试精确双环境/双通道，不新增test case |
+| rc-ci-build.log / rc-ci-tests.log / rc-ci-editorial.log | BUILD_EXIT0 / 474 UNIT_EXIT0 / 80 EDITORIAL_EXIT0 | d62当前root门禁；80是474子集 |
+| rc-ci-input-equivalence.json及五manifest | 669产品/351dist相同；165/869/918新指纹核同 | 仅historical-baselines-policy.test.ts改变 |
+| [rc-ci-e2e.log](rc-ci-e2e.log) / [summary](rc-ci-e2e-summary.json) | 492/492，8workers，19.0分钟，E2E_EXIT0；0失败/跳过/flaky/重试 | d62同一完整run；原始JSON逐result及五类运行后指纹独立核同 |
+| [public-privacy-ci-code.json](public-privacy-ci-code.json) | 2388文件/85238633bytes，hash/禁路径/模式零命中 | d62→本地67eb1503；不是部署成功证明 |
+| [public-ci-cold-validation.json](public-ci-cold-validation.json)及[install](public-ci-install.log)/[build](public-ci-build.log)/[tests](public-ci-tests.log) | CI=true、GITHUB_ACTIONS=true；0/0/0，474/474 | 2388 plan/869源/351dist全同；40私档PARTIAL；本地67eb未push |
 
 本工程追加实际执行命令为 `node --experimental-strip-types --test tests/editorial-save-migration.test.ts`（退出0，22/22）；`node --experimental-strip-types --test tests/campaign-v6-ending-staging.test.ts tests/child-reuse.test.ts tests/jade-reusable.test.ts tests/royal-letters-cg.test.ts tests/sea-rigging.test.ts tests/swords-art.test.ts`（退出0，26/26）；`npx tsc --noEmit`（最后slot备份收窄后退出0）。定向测试没有执行author。`git diff --check` 对本轮3原模块及两聚合交付的Git可见差异退出0。
 
-原全量485 E2E批次因新发现ENG-04已停止。父已完成新RC构建及迁移专项；ec53冻结后的492 E2E完整结束：491 passed/1 failed，36.6分钟，E2E_EXIT=1，唯一tests/player.spec.ts:153。该RC未通过；旧样章时机guard随后已修，新RC构建和24项定向通过，fcef全492随后在286/1 partial停止，13夹具修复后新测试RC全量待父。不得复用旧批结果。本工程追加轮只运行上述授权定向unit/typecheck，没有编译或生成故事。外部真人阅读耗时、真人审美、Android硬件、Safari/Firefox、屏幕阅读器均NOT VERIFIED。
+原全量485 E2E批次因新发现ENG-04已停止。父已完成新RC构建及迁移专项；ec53冻结后的492 E2E完整结束：491 passed/1 failed，36.6分钟，E2E_EXIT=1，唯一tests/player.spec.ts:153。该RC未通过；旧样章时机guard随后已修，新RC构建和24项定向通过，fcef全492随后在286/1 partial停止，13夹具修复后a04完整492通过，当前d62 CI通道测试修复后的同一492重验也已退出0全部通过。不得复用旧批结果。本工程追加轮只运行上述授权定向unit/typecheck，没有编译或生成故事。外部真人阅读耗时、真人审美、Android硬件、Safari/Firefox、屏幕阅读器均NOT VERIFIED。
 
 最新early/late原典helper已断言每个请求CID实际命中；CL23显式三CID且逐foot/eye/hand正断言（含全first摘要），CL25双true也核约定报告两句，这三处前份报告中的P2已关闭。仍有20个反例和若干分支以禁止旧错句为主，不能单独证明修后每个事件的全部前因。原始失败反例、完整已选序列、修后成对运行时与逐源对照能补充具体证据，但仍不冒充全状态组合穷尽。龙门另新增真实guest/deliver前因正断言：先见与罗天庆打平，再核“只同罗先生打平”的回忆，消除提前自称已败。此前RC因新P1停止，不能把旧门禁当作最后修订验证。
 
@@ -132,6 +150,13 @@ canon_late独立逐项归一化验证13/13原spec：去新增import、将observe
 主代理于2026-10-18对a04冻结锁文件执行 `npm audit --json`，退出0，已知advisory total/high/critical均0，完整返回及lock SHA见 `npm-audit-final.json`。没有安装或升级依赖。这个结果仅覆盖查询时registry已知公告，不能证明不存在未公开漏洞，也不改变F18目标设备性能的PARTIAL边界。
 
 
-## 主代理完整验收收尾（2026-10-18 13:36 +08）
+## 历史a04完整验收收尾（2026-10-18 13:36 +08）
 
-a04完整单run492/492通过，0失败/跳过/flaky/重试，E2E_EXIT0，36.5分钟。运行后669产品/165测试/869部署源/918审读源/351dist逐SHA全同。此结论只更新本轮终态，不回写独立审阅者在其早先时点的pending记录，详rc-acceptance-e2e-summary.json。F18性能边界仍PARTIAL，公开推送与云端/线上尚待执行。
+a04完整单run492/492通过，0失败/跳过/flaky/重试，E2E_EXIT0，36.5分钟。运行后669产品/165测试/869部署源/918审读源/351dist逐SHA全同。此结论只更新本轮终态，不回写独立审阅者在其早先时点的pending记录，详rc-acceptance-e2e-summary.json。F18性能边界仍PARTIAL。后续首次f1d4b377普通push确已发生，但云门禁473/474失败、未部署；当前以d62重新验收，后续发布/线上终态由父收敛。
+
+
+## 当前d62完整验收终态（2026-10-18 14:13 +08）
+
+d62同一492/8workers完整批次已PASS，19.0分钟，exit0，无失败/跳过/flaky/重试。原始JSON SHA=bfbc0a551775106aa074d49c3609ced5b54ba28f06bd9d6c477e0948c294f8b7；log SHA=2393e85a87fadaa83a62beedcf44fc1955323a9332bb1035695829ee38cc73cc，均与摘要一致。结束后产品669、tests165、部署源869、审读源918、dist351每个实际文件仍匹配当前manifest；不是只检查摘要布尔值。
+
+作者本地build/CI=true unit474/编辑80、当前完整492及公开本地CI冷检出均已通过。a04完整通过与首次f1云Verify/Pages失败仍各保留原时点结果；新普通推送、云端Verify/Pages及线上精确构建核验尚待父执行，不能预写通过。F18与外部设备/真人边界不变。

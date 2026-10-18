@@ -1,0 +1,3977 @@
+{
+  "base": "http://127.0.0.1:14502/Jianghu/",
+  "fixture": "Actual frozen SW policy in real Chrome; isolated synthetic old/new HTML/modules, max-age86400 only HTML; original source unchanged",
+  "results": [
+    {
+      "base": "http://127.0.0.1:14502/",
+      "variant": "original",
+      "before": {
+        "root": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>",
+        "index": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>"
+      },
+      "afterInstall": {
+        "root": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>",
+        "index": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>"
+      },
+      "reply": {
+        "ok": true,
+        "count": 2
+      },
+      "afterDownload": {
+        "root": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>",
+        "index": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>"
+      },
+      "newIndexHTTPRequests": [],
+      "actual": {
+        "html": "old",
+        "error": "Failed to fetch dynamically imported module: http://127.0.0.1:14502/assets/campaign-v6-Ct-yMjRt.js",
+        "cards": 0
+      },
+      "errors": [
+        "Failed to fetch dynamically imported module: http://127.0.0.1:14502/assets/campaign-v6-Ct-yMjRt.js"
+      ],
+      "afterOffline": {
+        "root": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>",
+        "index": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>"
+      }
+    },
+    {
+      "base": "http://127.0.0.1:14502/",
+      "variant": "addAll-no-store",
+      "before": {
+        "root": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>",
+        "index": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>"
+      },
+      "afterInstall": {
+        "root": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>",
+        "index": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>"
+      },
+      "reply": {
+        "ok": true,
+        "count": 2
+      },
+      "afterDownload": {
+        "root": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>",
+        "index": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>"
+      },
+      "newIndexHTTPRequests": [
+        {
+          "variant": "addAll-no-store",
+          "phase": "new",
+          "path": "/",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304727145
+        },
+        {
+          "variant": "addAll-no-store",
+          "phase": "new",
+          "path": "/index.html",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304727146
+        },
+        {
+          "variant": "addAll-no-store",
+          "phase": "new",
+          "path": "/",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304728176
+        },
+        {
+          "variant": "addAll-no-store",
+          "phase": "new",
+          "path": "/index.html",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304728176
+        }
+      ],
+      "actual": {
+        "html": "old",
+        "error": "Failed to fetch dynamically imported module: http://127.0.0.1:14502/assets/campaign-v6-Ct-yMjRt.js",
+        "cards": 0
+      },
+      "errors": [
+        "Failed to fetch dynamically imported module: http://127.0.0.1:14502/assets/campaign-v6-Ct-yMjRt.js"
+      ],
+      "afterOffline": {
+        "root": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>",
+        "index": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>"
+      }
+    },
+    {
+      "base": "http://127.0.0.1:14502/",
+      "variant": "adds-and-navigation-no-store",
+      "before": {
+        "root": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>",
+        "index": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>"
+      },
+      "afterInstall": {
+        "root": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>",
+        "index": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>"
+      },
+      "reply": {
+        "ok": true,
+        "count": 2
+      },
+      "afterDownload": {
+        "root": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>",
+        "index": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>"
+      },
+      "newIndexHTTPRequests": [
+        {
+          "variant": "adds-and-navigation-no-store",
+          "phase": "new",
+          "path": "/",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304728350
+        },
+        {
+          "variant": "adds-and-navigation-no-store",
+          "phase": "new",
+          "path": "/index.html",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304728351
+        },
+        {
+          "variant": "adds-and-navigation-no-store",
+          "phase": "new",
+          "path": "/",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304729376
+        },
+        {
+          "variant": "adds-and-navigation-no-store",
+          "phase": "new",
+          "path": "/index.html",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304729376
+        }
+      ],
+      "actual": {
+        "html": "new",
+        "root": "new",
+        "cards": 16
+      },
+      "errors": [],
+      "afterOffline": {
+        "root": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>",
+        "index": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>"
+      }
+    },
+    {
+      "base": "http://127.0.0.1:14502/",
+      "variant": "adds-and-fetch-no-store",
+      "before": {
+        "root": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>",
+        "index": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>"
+      },
+      "afterInstall": {
+        "root": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>",
+        "index": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>"
+      },
+      "reply": {
+        "ok": true,
+        "count": 2
+      },
+      "afterDownload": {
+        "root": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>",
+        "index": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>"
+      },
+      "newIndexHTTPRequests": [
+        {
+          "variant": "adds-and-fetch-no-store",
+          "phase": "new",
+          "path": "/",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304729538
+        },
+        {
+          "variant": "adds-and-fetch-no-store",
+          "phase": "new",
+          "path": "/index.html",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304729539
+        },
+        {
+          "variant": "adds-and-fetch-no-store",
+          "phase": "new",
+          "path": "/",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304730557
+        },
+        {
+          "variant": "adds-and-fetch-no-store",
+          "phase": "new",
+          "path": "/index.html",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304730557
+        }
+      ],
+      "actual": {
+        "html": "new",
+        "root": "new",
+        "cards": 16
+      },
+      "errors": [],
+      "afterOffline": {
+        "root": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>",
+        "index": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>"
+      }
+    },
+    {
+      "base": "http://127.0.0.1:14502/Jianghu/",
+      "variant": "original",
+      "before": {
+        "root": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>",
+        "index": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>"
+      },
+      "afterInstall": {
+        "root": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>",
+        "index": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>"
+      },
+      "reply": {
+        "ok": true,
+        "count": 2
+      },
+      "afterDownload": {
+        "root": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>",
+        "index": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>"
+      },
+      "newIndexHTTPRequests": [],
+      "actual": {
+        "html": "old",
+        "error": "Failed to fetch dynamically imported module: http://127.0.0.1:14502/Jianghu/assets/campaign-v6-Ct-yMjRt.js",
+        "cards": 0
+      },
+      "errors": [
+        "Failed to fetch dynamically imported module: http://127.0.0.1:14502/Jianghu/assets/campaign-v6-Ct-yMjRt.js"
+      ],
+      "afterOffline": {
+        "root": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>",
+        "index": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>"
+      }
+    },
+    {
+      "base": "http://127.0.0.1:14502/Jianghu/",
+      "variant": "addAll-no-store",
+      "before": {
+        "root": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>",
+        "index": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>"
+      },
+      "afterInstall": {
+        "root": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>",
+        "index": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>"
+      },
+      "reply": {
+        "ok": true,
+        "count": 2
+      },
+      "afterDownload": {
+        "root": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>",
+        "index": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>"
+      },
+      "newIndexHTTPRequests": [
+        {
+          "variant": "addAll-no-store",
+          "phase": "new",
+          "path": "/",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304731909
+        },
+        {
+          "variant": "addAll-no-store",
+          "phase": "new",
+          "path": "/index.html",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304731910
+        },
+        {
+          "variant": "addAll-no-store",
+          "phase": "new",
+          "path": "/",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304732940
+        },
+        {
+          "variant": "addAll-no-store",
+          "phase": "new",
+          "path": "/index.html",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304732940
+        }
+      ],
+      "actual": {
+        "html": "old",
+        "error": "Failed to fetch dynamically imported module: http://127.0.0.1:14502/Jianghu/assets/campaign-v6-Ct-yMjRt.js",
+        "cards": 0
+      },
+      "errors": [
+        "Failed to fetch dynamically imported module: http://127.0.0.1:14502/Jianghu/assets/campaign-v6-Ct-yMjRt.js"
+      ],
+      "afterOffline": {
+        "root": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>",
+        "index": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>"
+      }
+    },
+    {
+      "base": "http://127.0.0.1:14502/Jianghu/",
+      "variant": "adds-and-navigation-no-store",
+      "before": {
+        "root": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>",
+        "index": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>"
+      },
+      "afterInstall": {
+        "root": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>",
+        "index": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>"
+      },
+      "reply": {
+        "ok": true,
+        "count": 2
+      },
+      "afterDownload": {
+        "root": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>",
+        "index": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>"
+      },
+      "newIndexHTTPRequests": [
+        {
+          "variant": "adds-and-navigation-no-store",
+          "phase": "new",
+          "path": "/",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304733118
+        },
+        {
+          "variant": "adds-and-navigation-no-store",
+          "phase": "new",
+          "path": "/index.html",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304733118
+        },
+        {
+          "variant": "adds-and-navigation-no-store",
+          "phase": "new",
+          "path": "/",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304734149
+        },
+        {
+          "variant": "adds-and-navigation-no-store",
+          "phase": "new",
+          "path": "/index.html",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304734149
+        }
+      ],
+      "actual": {
+        "html": "new",
+        "root": "new",
+        "cards": 16
+      },
+      "errors": [],
+      "afterOffline": {
+        "root": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>",
+        "index": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>"
+      }
+    },
+    {
+      "base": "http://127.0.0.1:14502/Jianghu/",
+      "variant": "adds-and-fetch-no-store",
+      "before": {
+        "root": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>",
+        "index": "<!doctype html><title>old root</title><body data-html=\"old\"><script type=\"module\" src=\"./assets/old-shell.js\"></script></body>"
+      },
+      "afterInstall": {
+        "root": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>",
+        "index": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>"
+      },
+      "reply": {
+        "ok": true,
+        "count": 2
+      },
+      "afterDownload": {
+        "root": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>",
+        "index": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>"
+      },
+      "newIndexHTTPRequests": [
+        {
+          "variant": "adds-and-fetch-no-store",
+          "phase": "new",
+          "path": "/",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304734343
+        },
+        {
+          "variant": "adds-and-fetch-no-store",
+          "phase": "new",
+          "path": "/index.html",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304734344
+        },
+        {
+          "variant": "adds-and-fetch-no-store",
+          "phase": "new",
+          "path": "/",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304735365
+        },
+        {
+          "variant": "adds-and-fetch-no-store",
+          "phase": "new",
+          "path": "/index.html",
+          "headers": {
+            "host": "127.0.0.1:14502",
+            "connection": "keep-alive",
+            "pragma": "no-cache",
+            "cache-control": "no-cache",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+            "accept": "*/*",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-dest": "empty",
+            "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "zh-CN,zh;q=0.9"
+          },
+          "time": 1792304735365
+        }
+      ],
+      "actual": {
+        "html": "new",
+        "root": "new",
+        "cards": 16
+      },
+      "errors": [],
+      "afterOffline": {
+        "root": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>",
+        "index": "<!doctype html><title>new root</title><body data-html=\"new\"><script type=\"module\" src=\"./assets/new-shell.js\"></script></body>"
+      }
+    }
+  ],
+  "requests": [
+    {
+      "variant": "original",
+      "phase": "old",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "sec-fetch-site": "none",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-user": "?1",
+        "sec-fetch-dest": "document",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304723932
+    },
+    {
+      "variant": "original",
+      "phase": "old",
+      "path": "/favicon.ico",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "image/jxl,image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "no-cors",
+        "sec-fetch-dest": "image",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304723947
+    },
+    {
+      "variant": "original",
+      "phase": "old",
+      "path": "/",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304723950
+    },
+    {
+      "variant": "original",
+      "phase": "old",
+      "path": "/index.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304723951
+    },
+    {
+      "variant": "original",
+      "phase": "old",
+      "path": "/sw.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "cache-control": "max-age=0",
+        "accept": "*/*",
+        "service-worker": "script",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "same-origin",
+        "sec-fetch-dest": "serviceworker",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304723954
+    },
+    {
+      "variant": "original",
+      "phase": "old",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304723961
+    },
+    {
+      "variant": "original",
+      "phase": "old",
+      "path": "/assets/old-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304723962
+    },
+    {
+      "variant": "original",
+      "phase": "new",
+      "path": "/sw.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "cache-control": "max-age=0",
+        "accept": "*/*",
+        "service-worker": "script",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "same-origin",
+        "sec-fetch-dest": "serviceworker",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304725945
+    },
+    {
+      "variant": "original",
+      "phase": "new",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304725950
+    },
+    {
+      "variant": "original",
+      "phase": "new",
+      "path": "/assets/new-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304725953
+    },
+    {
+      "variant": "original",
+      "phase": "new",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "cache-control": "max-age=0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "upgrade-insecure-requests": "1",
+        "sec-ch-ua-mobile": "?0",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-dest": "empty",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304726960
+    },
+    {
+      "variant": "original",
+      "phase": "new",
+      "path": "/favicon.ico",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "image/jxl,image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "no-cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304726970
+    },
+    {
+      "variant": "original",
+      "phase": "new",
+      "path": "/offline-longmen.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304726972
+    },
+    {
+      "variant": "original",
+      "phase": "new",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304726973
+    },
+    {
+      "variant": "original",
+      "phase": "new",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304726974
+    },
+    {
+      "variant": "original",
+      "phase": "new",
+      "path": "/assets/work-new.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304726975
+    },
+    {
+      "variant": "original",
+      "phase": "new",
+      "path": "/assets/new-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304726975
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "old",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "sec-fetch-site": "none",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-user": "?1",
+        "sec-fetch-dest": "document",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304727108
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "old",
+      "path": "/",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304727121
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "old",
+      "path": "/favicon.ico",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "image/jxl,image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "no-cors",
+        "sec-fetch-dest": "image",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304727122
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "old",
+      "path": "/index.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304727123
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "old",
+      "path": "/sw.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "cache-control": "max-age=0",
+        "accept": "*/*",
+        "service-worker": "script",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "same-origin",
+        "sec-fetch-dest": "serviceworker",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304727126
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "old",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304727131
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "old",
+      "path": "/assets/old-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304727132
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/sw.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "cache-control": "max-age=0",
+        "accept": "*/*",
+        "service-worker": "script",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "same-origin",
+        "sec-fetch-dest": "serviceworker",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304727138
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304727142
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304727145
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/index.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304727146
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/assets/new-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304727146
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "cache-control": "max-age=0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "upgrade-insecure-requests": "1",
+        "sec-ch-ua-mobile": "?0",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-dest": "empty",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304728163
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/favicon.ico",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "image/jxl,image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "no-cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304728173
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/offline-longmen.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304728174
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304728175
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304728176
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/assets/work-new.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304728176
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304728176
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/index.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304728176
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/assets/new-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304728176
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "old",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "sec-fetch-site": "none",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-user": "?1",
+        "sec-fetch-dest": "document",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304728308
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "old",
+      "path": "/favicon.ico",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "image/jxl,image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "no-cors",
+        "sec-fetch-dest": "image",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304728324
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "old",
+      "path": "/",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304728324
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "old",
+      "path": "/index.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304728325
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "old",
+      "path": "/sw.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "cache-control": "max-age=0",
+        "accept": "*/*",
+        "service-worker": "script",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "same-origin",
+        "sec-fetch-dest": "serviceworker",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304728328
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "old",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304728333
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "old",
+      "path": "/assets/old-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304728335
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/sw.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "cache-control": "max-age=0",
+        "accept": "*/*",
+        "service-worker": "script",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "same-origin",
+        "sec-fetch-dest": "serviceworker",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304728341
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304728347
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304728350
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/index.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304728351
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/assets/new-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304728351
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "upgrade-insecure-requests": "1",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "same-origin",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304729365
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/favicon.ico",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "image/jxl,image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "no-cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304729372
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/offline-longmen.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304729374
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304729375
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304729376
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/assets/work-new.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304729376
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304729376
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/index.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304729376
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/assets/new-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304729376
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "old",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "sec-fetch-site": "none",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-user": "?1",
+        "sec-fetch-dest": "document",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304729502
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "old",
+      "path": "/favicon.ico",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "image/jxl,image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "no-cors",
+        "sec-fetch-dest": "image",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304729515
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "old",
+      "path": "/",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304729515
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "old",
+      "path": "/index.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304729516
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "old",
+      "path": "/sw.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "cache-control": "max-age=0",
+        "accept": "*/*",
+        "service-worker": "script",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "same-origin",
+        "sec-fetch-dest": "serviceworker",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304729519
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "old",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304729523
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "old",
+      "path": "/assets/old-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304729525
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/sw.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "cache-control": "max-age=0",
+        "accept": "*/*",
+        "service-worker": "script",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "same-origin",
+        "sec-fetch-dest": "serviceworker",
+        "referer": "http://127.0.0.1:14502/longmen.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304729531
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304729536
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304729538
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/index.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304729539
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/assets/new-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304729539
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "upgrade-insecure-requests": "1",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "same-origin",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304730545
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/favicon.ico",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "image/jxl,image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "no-cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304730553
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/offline-longmen.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304730555
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304730556
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304730557
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/assets/work-new.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304730557
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304730557
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/index.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304730557
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/assets/new-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304730557
+    },
+    {
+      "variant": "original",
+      "phase": "old",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "sec-fetch-site": "none",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-user": "?1",
+        "sec-fetch-dest": "document",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304730680
+    },
+    {
+      "variant": "original",
+      "phase": "old",
+      "path": "/favicon.ico",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "image/jxl,image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "no-cors",
+        "sec-fetch-dest": "image",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304730692
+    },
+    {
+      "variant": "original",
+      "phase": "old",
+      "path": "/",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304730693
+    },
+    {
+      "variant": "original",
+      "phase": "old",
+      "path": "/index.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304730694
+    },
+    {
+      "variant": "original",
+      "phase": "old",
+      "path": "/sw.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "cache-control": "max-age=0",
+        "accept": "*/*",
+        "service-worker": "script",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "same-origin",
+        "sec-fetch-dest": "serviceworker",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304730696
+    },
+    {
+      "variant": "original",
+      "phase": "old",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304730700
+    },
+    {
+      "variant": "original",
+      "phase": "old",
+      "path": "/assets/old-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304730702
+    },
+    {
+      "variant": "original",
+      "phase": "new",
+      "path": "/sw.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "cache-control": "max-age=0",
+        "accept": "*/*",
+        "service-worker": "script",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "same-origin",
+        "sec-fetch-dest": "serviceworker",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304730708
+    },
+    {
+      "variant": "original",
+      "phase": "new",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304730713
+    },
+    {
+      "variant": "original",
+      "phase": "new",
+      "path": "/assets/new-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304730716
+    },
+    {
+      "variant": "original",
+      "phase": "new",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "cache-control": "max-age=0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "upgrade-insecure-requests": "1",
+        "sec-ch-ua-mobile": "?0",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-dest": "empty",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304731728
+    },
+    {
+      "variant": "original",
+      "phase": "new",
+      "path": "/favicon.ico",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "image/jxl,image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "no-cors",
+        "sec-fetch-dest": "image",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304731737
+    },
+    {
+      "variant": "original",
+      "phase": "new",
+      "path": "/offline-longmen.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304731738
+    },
+    {
+      "variant": "original",
+      "phase": "new",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304731738
+    },
+    {
+      "variant": "original",
+      "phase": "new",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304731739
+    },
+    {
+      "variant": "original",
+      "phase": "new",
+      "path": "/assets/work-new.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304731740
+    },
+    {
+      "variant": "original",
+      "phase": "new",
+      "path": "/assets/new-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304731740
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "old",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "sec-fetch-site": "none",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-user": "?1",
+        "sec-fetch-dest": "document",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304731871
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "old",
+      "path": "/favicon.ico",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "image/jxl,image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "no-cors",
+        "sec-fetch-dest": "image",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304731885
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "old",
+      "path": "/",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304731885
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "old",
+      "path": "/index.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304731886
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "old",
+      "path": "/sw.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "cache-control": "max-age=0",
+        "accept": "*/*",
+        "service-worker": "script",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "same-origin",
+        "sec-fetch-dest": "serviceworker",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304731888
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "old",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304731893
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "old",
+      "path": "/assets/old-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304731895
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/sw.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "cache-control": "max-age=0",
+        "accept": "*/*",
+        "service-worker": "script",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "same-origin",
+        "sec-fetch-dest": "serviceworker",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304731901
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304731907
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304731909
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/index.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304731910
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/assets/new-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304731910
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "cache-control": "max-age=0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "upgrade-insecure-requests": "1",
+        "sec-ch-ua-mobile": "?0",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-dest": "empty",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304732927
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/favicon.ico",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "image/jxl,image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "no-cors",
+        "sec-fetch-dest": "image",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304732935
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/offline-longmen.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304732938
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304732939
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304732940
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/assets/work-new.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304732940
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304732940
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/index.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304732940
+    },
+    {
+      "variant": "addAll-no-store",
+      "phase": "new",
+      "path": "/assets/new-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304732941
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "old",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "sec-fetch-site": "none",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-user": "?1",
+        "sec-fetch-dest": "document",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304733079
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "old",
+      "path": "/favicon.ico",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "image/jxl,image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "no-cors",
+        "sec-fetch-dest": "image",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304733092
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "old",
+      "path": "/",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304733093
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "old",
+      "path": "/index.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304733094
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "old",
+      "path": "/sw.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "cache-control": "max-age=0",
+        "accept": "*/*",
+        "service-worker": "script",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "same-origin",
+        "sec-fetch-dest": "serviceworker",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304733096
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "old",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304733101
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "old",
+      "path": "/assets/old-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304733103
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/sw.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "cache-control": "max-age=0",
+        "accept": "*/*",
+        "service-worker": "script",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "same-origin",
+        "sec-fetch-dest": "serviceworker",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304733109
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304733115
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304733118
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/index.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304733118
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/assets/new-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304733119
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "upgrade-insecure-requests": "1",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "same-origin",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304734137
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/favicon.ico",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "image/jxl,image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "no-cors",
+        "sec-fetch-dest": "image",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304734145
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/offline-longmen.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304734146
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304734147
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304734148
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/assets/work-new.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304734148
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304734149
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/index.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304734149
+    },
+    {
+      "variant": "adds-and-navigation-no-store",
+      "phase": "new",
+      "path": "/assets/new-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304734149
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "old",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "sec-fetch-site": "none",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-user": "?1",
+        "sec-fetch-dest": "document",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304734285
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "old",
+      "path": "/favicon.ico",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "image/jxl,image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "no-cors",
+        "sec-fetch-dest": "image",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304734301
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "old",
+      "path": "/",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304734309
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "old",
+      "path": "/index.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304734310
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "old",
+      "path": "/sw.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "cache-control": "max-age=0",
+        "accept": "*/*",
+        "service-worker": "script",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "same-origin",
+        "sec-fetch-dest": "serviceworker",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304734314
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "old",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304734322
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "old",
+      "path": "/assets/old-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304734325
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/sw.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "cache-control": "max-age=0",
+        "accept": "*/*",
+        "service-worker": "script",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "same-origin",
+        "sec-fetch-dest": "serviceworker",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304734333
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304734341
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304734343
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/index.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304734344
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/assets/new-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304734344
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "upgrade-insecure-requests": "1",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "same-origin",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304735352
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/favicon.ico",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "image/jxl,image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "no-cors",
+        "sec-fetch-dest": "image",
+        "referer": "http://127.0.0.1:14502/Jianghu/longmen.html",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304735361
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/offline-longmen.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304735363
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/offline-manifest.json",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304735363
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/longmen.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304735364
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/assets/work-new.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304735365
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304735365
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/index.html",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304735365
+    },
+    {
+      "variant": "adds-and-fetch-no-store",
+      "phase": "new",
+      "path": "/assets/new-shell.js",
+      "headers": {
+        "host": "127.0.0.1:14502",
+        "connection": "keep-alive",
+        "pragma": "no-cache",
+        "cache-control": "no-cache",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:14502/Jianghu/sw.js",
+        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-language": "zh-CN,zh;q=0.9"
+      },
+      "time": 1792304735365
+    }
+  ]
+}

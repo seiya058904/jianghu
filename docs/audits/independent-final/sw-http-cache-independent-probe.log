@@ -1,0 +1,138 @@
+[
+  {
+    "base": "http://127.0.0.1:14502/",
+    "variant": "original",
+    "reply": {
+      "ok": true,
+      "count": 2
+    },
+    "newIndexHTTPRequests": 0,
+    "cachedAfterDownload": "old",
+    "actual": {
+      "html": "old",
+      "error": "Failed to fetch dynamically imported module: http://127.0.0.1:14502/assets/campaign-v6-Ct-yMjRt.js",
+      "cards": 0
+    },
+    "errors": [
+      "Failed to fetch dynamically imported module: http://127.0.0.1:14502/assets/campaign-v6-Ct-yMjRt.js"
+    ]
+  },
+  {
+    "base": "http://127.0.0.1:14502/",
+    "variant": "addAll-no-store",
+    "reply": {
+      "ok": true,
+      "count": 2
+    },
+    "newIndexHTTPRequests": 4,
+    "cachedAfterDownload": "new",
+    "actual": {
+      "html": "old",
+      "error": "Failed to fetch dynamically imported module: http://127.0.0.1:14502/assets/campaign-v6-Ct-yMjRt.js",
+      "cards": 0
+    },
+    "errors": [
+      "Failed to fetch dynamically imported module: http://127.0.0.1:14502/assets/campaign-v6-Ct-yMjRt.js"
+    ]
+  },
+  {
+    "base": "http://127.0.0.1:14502/",
+    "variant": "adds-and-navigation-no-store",
+    "reply": {
+      "ok": true,
+      "count": 2
+    },
+    "newIndexHTTPRequests": 4,
+    "cachedAfterDownload": "new",
+    "actual": {
+      "html": "new",
+      "root": "new",
+      "cards": 16
+    },
+    "errors": []
+  },
+  {
+    "base": "http://127.0.0.1:14502/",
+    "variant": "adds-and-fetch-no-store",
+    "reply": {
+      "ok": true,
+      "count": 2
+    },
+    "newIndexHTTPRequests": 4,
+    "cachedAfterDownload": "new",
+    "actual": {
+      "html": "new",
+      "root": "new",
+      "cards": 16
+    },
+    "errors": []
+  },
+  {
+    "base": "http://127.0.0.1:14502/Jianghu/",
+    "variant": "original",
+    "reply": {
+      "ok": true,
+      "count": 2
+    },
+    "newIndexHTTPRequests": 0,
+    "cachedAfterDownload": "old",
+    "actual": {
+      "html": "old",
+      "error": "Failed to fetch dynamically imported module: http://127.0.0.1:14502/Jianghu/assets/campaign-v6-Ct-yMjRt.js",
+      "cards": 0
+    },
+    "errors": [
+      "Failed to fetch dynamically imported module: http://127.0.0.1:14502/Jianghu/assets/campaign-v6-Ct-yMjRt.js"
+    ]
+  },
+  {
+    "base": "http://127.0.0.1:14502/Jianghu/",
+    "variant": "addAll-no-store",
+    "reply": {
+      "ok": true,
+      "count": 2
+    },
+    "newIndexHTTPRequests": 4,
+    "cachedAfterDownload": "new",
+    "actual": {
+      "html": "old",
+      "error": "Failed to fetch dynamically imported module: http://127.0.0.1:14502/Jianghu/assets/campaign-v6-Ct-yMjRt.js",
+      "cards": 0
+    },
+    "errors": [
+      "Failed to fetch dynamically imported module: http://127.0.0.1:14502/Jianghu/assets/campaign-v6-Ct-yMjRt.js"
+    ]
+  },
+  {
+    "base": "http://127.0.0.1:14502/Jianghu/",
+    "variant": "adds-and-navigation-no-store",
+    "reply": {
+      "ok": true,
+      "count": 2
+    },
+    "newIndexHTTPRequests": 4,
+    "cachedAfterDownload": "new",
+    "actual": {
+      "html": "new",
+      "root": "new",
+      "cards": 16
+    },
+    "errors": []
+  },
+  {
+    "base": "http://127.0.0.1:14502/Jianghu/",
+    "variant": "adds-and-fetch-no-store",
+    "reply": {
+      "ok": true,
+      "count": 2
+    },
+    "newIndexHTTPRequests": 4,
+    "cachedAfterDownload": "new",
+    "actual": {
+      "html": "new",
+      "root": "new",
+      "cards": 16
+    },
+    "errors": []
+  }
+]

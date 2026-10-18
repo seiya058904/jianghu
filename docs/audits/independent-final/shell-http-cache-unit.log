@@ -1,0 +1,15 @@
+✔ Every registered work can complete the actual service-worker download message at root and subpath; unknown work is ignored (55.2193ms)
+✔ work download refreshes the complete shell and keeps other works at https://example.test/ (13.8506ms)
+✔ work download refreshes the complete shell and keeps other works at https://example.test/jianghu/ (0.8725ms)
+✔ shell download http failure cannot report success (0.646ms)
+✔ shell download unsafe failure cannot report success (0.5051ms)
+✔ shell download cache failure cannot report success (0.6638ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 149.1665
+UNIT_EXIT=0

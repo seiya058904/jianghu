@@ -6,6 +6,8 @@ import {evidencePath} from './evidence-path.ts';
 
 // A real SW with unchanged bytes must download the new hashed library module
 // when a reader explicitly refreshes a story's offline resources.
+// The previous HTML remains fresh in HTTP cache, as it can during a deployment.
+// Cache Storage refresh must fetch the new entry rather than copy that old HTML.
 for(const prefix of ['/','/jianghu/'])test(`new shell dependencies survive a per-work offline update at ${prefix}`,async({browser})=>{
  const root=resolve('dist');let updated=false;
  const oldIndex=readFileSync(resolve(root,'index.html'),'utf8');
@@ -24,7 +26,7 @@ for(const prefix of ['/','/jianghu/'])test(`new shell dependencies survive a per
    else if(updated&&local===newScript)data=readFileSync(resolve(root,oldScript),'utf8')+'\nwindow.__independentShellVersion=2;';
    else data=readFileSync(file);
    const mime=({'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css','.json':'application/json','.webp':'image/webp','.svg':'image/svg+xml'} as Record<string,string>)[extname(local)]??'application/octet-stream';
-   res.writeHead(200,{'Content-Type':mime,'Cache-Control':'no-store'}).end(data);
+   res.writeHead(200,{'Content-Type':mime,'Cache-Control':local==='index.html'?'public, max-age=3600':'no-store'}).end(data);
   }catch{res.writeHead(404).end()}
  });
  await new Promise<void>(done=>server.listen(0,'127.0.0.1',done));

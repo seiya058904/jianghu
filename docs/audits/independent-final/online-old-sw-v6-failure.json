@@ -1,0 +1,29 @@
+{
+  "base": "https://seiya058904.github.io/jianghu/",
+  "oldPreparedAt": "2026-10-18T04:48:24.123Z",
+  "publicCommit": "67eb150348013c06bdf328a95589395b3c987aa0",
+  "errors": [
+    {
+      "stage": "offline",
+      "message": "Failed to fetch dynamically imported module: https://seiya058904.github.io/jianghu/assets/campaign-v6-Ct-yMjRt.js"
+    }
+  ],
+  "http": [],
+  "oldVersion": "longmen-3.0.0",
+  "oldScripts": [
+    "https://seiya058904.github.io/jianghu/assets/modulepreload-polyfill-P2Xu9kJm.js",
+    "https://seiya058904.github.io/jianghu/assets/catalog-CSCNxaHp.js",
+    "https://seiya058904.github.io/jianghu/assets/ink-DJNFVVIJ.js",
+    "https://seiya058904.github.io/jianghu/assets/player-ChTy8uCu.js"
+  ],
+  "updatedScripts": [
+    "https://seiya058904.github.io/jianghu/assets/modulepreload-polyfill-P2Xu9kJm.js",
+    "https://seiya058904.github.io/jianghu/assets/chronicle-catalog-56xv3GiH.js",
+    "https://seiya058904.github.io/jianghu/assets/catalog-BtET8AA6.js",
+    "https://seiya058904.github.io/jianghu/assets/work-index-BmvMq2vW.js",
+    "https://seiya058904.github.io/jianghu/assets/ink-DJNFVVIJ.js",
+    "https://seiya058904.github.io/jianghu/assets/player-z58nGABJ.js"
+  ],
+  "status": "FAIL",
+  "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.lib-card').first() to be visible\u001b[22m\n\n    at ../Jianghu-independent-20261018\\live-update-longwait.mjs:32:42"
+}

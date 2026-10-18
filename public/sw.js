@@ -3,7 +3,7 @@ self.addEventListener('install', event => {event.waitUntil((async()=>{
   const response=await fetch('./offline-manifest.json',{cache:'no-store'});
   if(!response.ok)throw new Error('Offline manifest unavailable');
   const files=await response.json();const cache=await caches.open(CACHE);
-  await cache.addAll(files);await self.skipWaiting();
+  await cache.addAll(files.map(file=>new Request(file,{cache:'no-store'})));await self.skipWaiting();
 })());});
 self.addEventListener('activate', event => event.waitUntil(self.clients.claim()));
 self.addEventListener('message',event=>{
@@ -26,7 +26,7 @@ self.addEventListener('message',event=>{
       // Shell entries are shared by every work. Per-work manifests do not list
       // them, so a stale or corrupted front page would otherwise survive any
       // number of per-work downloads. Refresh them with the same batch.
-      await cache.addAll([...new Set([...missing,...shell,'./','./index.html'])]);
+      await cache.addAll([...new Set([...missing,...shell,'./','./index.html'])].map(file=>new Request(file,{cache:'no-store'})));
       event.ports[0].postMessage({ok:true,count:files.length});
     }catch{event.ports[0].postMessage({ok:false})}
   })());
@@ -34,5 +34,7 @@ self.addEventListener('message',event=>{
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
   if(event.request.method !== 'GET' || url.origin !== self.location.origin || !url.pathname.startsWith(new URL(self.registration.scope).pathname))return;
-  event.respondWith(fetch(event.request).then(response=>{if(response.ok){const copy=response.clone();event.waitUntil(caches.open(CACHE).then(cache=>cache.put(event.request,copy)));}return response;}).catch(async()=>{const cache=await caches.open(CACHE);const hit=await cache.match(event.request);return hit || (event.request.mode==='navigate'?await cache.match('./index.html'):null) || Response.error();}));
+  // Navigation must reach the network or our refreshed Cache Storage; the HTTP
+  // cache can still contain an earlier deployment's HTML while it is offline.
+  event.respondWith(fetch(event.request,event.request.mode==='navigate'?{cache:'no-store'}:undefined).then(response=>{if(response.ok){const copy=response.clone();event.waitUntil(caches.open(CACHE).then(cache=>cache.put(event.request,copy)));}return response;}).catch(async()=>{const cache=await caches.open(CACHE);const hit=await cache.match(event.request);return hit || (event.request.mode==='navigate'?await cache.match('./index.html'):null) || Response.error();}));
 });

@@ -1,0 +1,18 @@
+{
+  "verifiedAt": "2026-10-18T06:00:15.379326+00:00",
+  "sourceCommit": "d62f99f09f71bf895e63dc93757df45fa033200d",
+  "publicCommit": "67eb150348013c06bdf328a95589395b3c987aa0",
+  "GITHUB_ACTIONS": true,
+  "CI": true,
+  "coldInstallExit": 0,
+  "buildExit": 0,
+  "unitPassed": 474,
+  "unitFailed": 0,
+  "unitExit": 0,
+  "allPlanFilesUnchanged": 2388,
+  "all869SourceHashesMatchFrozenRC": true,
+  "all351DistHashesMatchFrozenRC": true,
+  "missingPrivateBaselinePaths": 40,
+  "privateArchiveIntegrity": "PARTIAL: explicitly excluded canon/docs archives warn, not asserted in public; author full baselines remain asserted.",
+  "publicHeadPushed": false
+}

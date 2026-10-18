@@ -1,0 +1,100 @@
+{
+  "verifiedAt": "2026-10-18T05:44:33.252518+00:00",
+  "sourceCommit": "be56235d07d776694263bcf613843225bcd8eb15",
+  "sourceTree": "90e70443cc72294ded0ebf900978916d84fb3783",
+  "proposalHead": "ada1ecf218716c6f96b309506f4cd5091f8aea0f",
+  "trackedPaths": 2527,
+  "trackedBytesAndModesExact": true,
+  "npmCiExit": 0,
+  "buildExit": 0,
+  "unitPassed": 474,
+  "unitFailed": 0,
+  "unitExit": 0,
+  "missingPrivateBaselineWarnings": 0,
+  "sourcePins": 918,
+  "privateExtras": 478,
+  "privateExtraBytes": 56019899,
+  "canonSHA256": "2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393",
+  "candidateFiles": 11,
+  "measurement": {
+    "head": "ada1ecf218716c6f96b309506f4cd5091f8aea0f",
+    "all_bytes": 329656131,
+    "allocated_bytes": 338310184,
+    "git_bytes": 49834415,
+    "worktree_bytes": 279821716,
+    "all_GiB": 0.30701619666069746,
+    "all_GB_decimal": 0.329656131,
+    "under_1GiB": true,
+    "files": 4906,
+    "groups": {
+      "(root)": {
+        "files": 77,
+        "logical_bytes": 24611858,
+        "allocated_bytes": 24685936
+      },
+      ".git": {
+        "files": 207,
+        "logical_bytes": 49834415,
+        "allocated_bytes": 50188832
+      },
+      ".github": {
+        "files": 2,
+        "logical_bytes": 5259,
+        "allocated_bytes": 8192
+      },
+      ".impeccable": {
+        "files": 7,
+        "logical_bytes": 3448762,
+        "allocated_bytes": 3461120
+      },
+      ".workbuddy": {
+        "files": 3,
+        "logical_bytes": 32583,
+        "allocated_bytes": 40960
+      },
+      "dist": {
+        "files": 351,
+        "logical_bytes": 37008232,
+        "allocated_bytes": 37802496
+      },
+      "docs": {
+        "files": 2105,
+        "logical_bytes": 76470086,
+        "allocated_bytes": 79999176
+      },
+      "node_modules": {
+        "files": 1343,
+        "logical_bytes": 92095984,
+        "allocated_bytes": 94307952
+      },
+      "public": {
+        "files": 177,
+        "logical_bytes": 29524607,
+        "allocated_bytes": 29872360
+      },
+      "scripts": {
+        "files": 30,
+        "logical_bytes": 125273,
+        "allocated_bytes": 180224
+      },
+      "src": {
+        "files": 123,
+        "logical_bytes": 7622881,
+        "allocated_bytes": 7865368
+      },
+      "story": {
+        "files": 317,
+        "logical_bytes": 7787555,
+        "allocated_bytes": 8462336
+      },
+      "tests": {
+        "files": 164,
+        "logical_bytes": 1088636,
+        "allocated_bytes": 1435232
+      }
+    },
+    "allocation_method": "FILE_STANDARD_INFO.AllocationSize, excludes directory metadata and shared-object deduplication"
+  },
+  "fullPrivateProof": "../Jianghu-independent-20261018/daily-final-verify.json",
+  "boundary": "Verified candidate snapshot before final cloud-receipt document sync; author repository NOT switched, proposal has NO remote. Final source/HEAD/tree and size are bound by final external verification after all document commits."
+}

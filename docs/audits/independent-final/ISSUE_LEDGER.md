@@ -45,3 +45,12 @@ North root在导航返回后删除缓存，原SW fetch的event.waitUntil(cache.p
 ## 当前最终本地关闭（2026-10-18 13:36 +08）
 
 a04单次完整492/492、0失败/跳过/flaky/重试、E2E_EXIT0。原HalfStep:153与North root/subpath前置、所有13同型spec均在本次整run通过。五类指纹结束后未变，确认P0/P1已关闭；保留旧失败日志与P2/性能/设备/F24边界。完整证明rc-acceptance-e2e-summary.json，发布仍须RELEASE_VALIDATION实证。
+
+
+## QA-03 / P2：GitHub告警通道的单测假设
+
+第一普通推送f1d4b37的Pages473/474，Verify同失败，未部署。historical-baselines-policy只在stderr找缺席告警，但frozen-baselines在GITHUB_ACTIONS环境按设计写stdout的::warning注解；子进程exit0且null行为已通过。修订只限unit harness，显式测试GITHUB_ACTIONS缺席和true两种通道，保留全部六种拒篡改/缺失场景，不改产品helper/告警/CI。实际修复及重验后再关闭，不用本地原绿假称CI通过。
+
+## 新冻结d62完整本地关闭（2026-10-18 14:13 +08）
+
+仅CI通道unit测试47行修订；显式两环境×原六模式及CI模式全474、80编辑子集均exit0。新完整492/492单run、8workers、19.0分钟、零失败/跳过/flaky/重试、E2E_EXIT0；rc-ci-e2e-summary.json独立核JSON与五类全部运行后文件hash。QA03本地根因与回归关闭；首次公共473/474及无部署事实保留，云端正式发布仍须新SHA实际Verify/Pages与线上验收。

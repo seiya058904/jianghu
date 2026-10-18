@@ -1,0 +1,17 @@
+{
+  "base": "https://seiya058904.github.io/jianghu/",
+  "oldPreparedAt": "2026-10-18T03:53:34.785Z",
+  "publicCommit": null,
+  "errors": [],
+  "http": [],
+  "oldVersion": "longmen-3.0.0",
+  "oldScripts": [
+    "https://seiya058904.github.io/jianghu/assets/modulepreload-polyfill-P2Xu9kJm.js",
+    "https://seiya058904.github.io/jianghu/assets/catalog-CSCNxaHp.js",
+    "https://seiya058904.github.io/jianghu/assets/ink-DJNFVVIJ.js",
+    "https://seiya058904.github.io/jianghu/assets/player-ChTy8uCu.js"
+  ],
+  "status": "FAIL",
+  "error": "Error: Deployment signal timeout\n    at file:///[author-local-path]",
+  "auditBoundary": "Original 2h deployment-signal window expired while CI failed; no deployment flag was sent and no new SW update was attempted. This is an expired waiting probe, not evidence of a failed product SW update. The independently earlier prepared long-window context is reserved for actual successful deployment."
+}

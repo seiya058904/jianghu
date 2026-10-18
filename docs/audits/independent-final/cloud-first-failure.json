@@ -1,0 +1,15 @@
+{
+  "publicCommit": "f1d4b377ec317e964c4a4ff79ae74aa826aa9642",
+  "normalPush": true,
+  "pagesRun": "https://github.com/seiya058904/jianghu/actions/runs/39101353730",
+  "verifyRun": "https://github.com/seiya058904/jianghu/actions/runs/39101353779",
+  "bothConclusions": "failure",
+  "pagesUnitPassed": 473,
+  "pagesUnitFailed": 1,
+  "pagesUnitTotal": 474,
+  "failedTest": "tests/historical-baselines-policy.test.ts:28",
+  "observed": "Child process exit0; missing-archive result null succeeds, but stderr empty under GITHUB_ACTIONS because report intentionally writes ::warning to stdout. Test assumed stderr.",
+  "deploymentOccurred": false,
+  "fixScope": "Unit-policy harness only; preserve six original tamper/missing modes and test both explicit GitHub/stdout and local/stderr environments; product and full browser inputs unchanged.",
+  "nextGate": "Freeze repaired test RC; full474 plus original full492 again, no skipping/timeout changes."
+}

@@ -1,6 +1,6 @@
 # 公共策展快照与正常增量历史
 
-作者基线 `7a2c22f74c46d74f07af8bd1a45893ec15daa49b`，远端main基线 `a6e5d5947ce2d06c6c2ab83e1cfd515c95191959`，两者无共同祖先。最终产品RC为 `a04d36a665416f45297a5c2a0191863bd0f44316`。隔离公共克隆从真实main继续；未切作者orphan、未改远端、未force。
+作者基线 `7a2c22f74c46d74f07af8bd1a45893ec15daa49b`，远端main基线 `a6e5d5947ce2d06c6c2ab83e1cfd515c95191959`，两者无共同祖先。当前冻结RC为 `d62f99f09f71bf895e63dc93757df45fa033200d`，CI环境474/80子集与完整492单run均exit0；产品/351dist与a04相同。隔离公共克隆从真实main继续；未切作者orphan、未改远端、未force。
 
 ## 明确来源与边界
 
@@ -12,7 +12,7 @@
 
 ## 实际预审
 
-最终产品RC预审：2,250允许文件，73,556,666 bytes；最大文件 `docs/art/ASSET_MANIFEST_V6.json` 4,221,144 bytes（文字JSON）。只保留既有公开ferry.png大图，2,701,831 bytes，与远端原文件精确同hash。最终文档/精选证据加入后的完整数量见最终同步JSON与[发布回执](RELEASE_VALIDATION.md)，不能将这次中间值当最终HEAD体积。
+a04早期代码预审（历史中间快照）：2,250允许文件，73,556,666 bytes；最大文件 `docs/art/ASSET_MANIFEST_V6.json` 4,221,144 bytes（文字JSON）。只保留既有公开ferry.png大图，2,701,831 bytes，与远端原文件精确同hash。最终文档/精选证据加入后的完整数量见最终同步JSON与[发布回执](RELEASE_VALIDATION.md)，不能将这次中间值当最终HEAD体积。
 
 `public-privacy-acceptance-code.json`：逐文件hash差异0，禁入路径0，秘密/私有绝对路径模式命中0；原典去空白512字符窗口/128步长样本在允许文本中无命中。该采样不是对所有编码/转述的数学保密证明。现有与新增运行素材已实际图像复核；未执行OCR，不用“未做OCR”虚称全图文字不存在。没有新增LICENSE。
 
@@ -29,3 +29,5 @@
 发布回执属于文档。若随后仅同步完成回执，会生成新的公共SHA；必须再次等待其CI/Pages并核线上资产。作者私有侧最终回执记录最后公共SHA；公开侧保留上一已完成产品回执及最新Actions链接，避免把文档自身的SHA写入自身而造成无穷提交。部署相关869文件指纹（docs目录排除）在所有文档提交间必须不变。当前推送/云端状态见RELEASE_VALIDATION，未完成不得报成功。
 
 公开复现边界补充：docs目录中的三份历史阶段辅助.mjs不在公开扩展名白名单（plan excluded可逐项看到）；当前回归反例及运行时审计入口保留在tests/scripts，不能把公开镜像称作包含作者全部私有审阅材料。109份ignored私档历史源码只在作者审计及每日库额外保全清单中，不进入Git archive或公开发布。
+
+当前d62代码同步：隔离公共67eb150348013c06bdf328a95589395b3c987aa0、2388文件/85238633B，冷CI环境npm ci/build/474均0，869源与351dist同冻结RC；public-ci-cold-validation.json支持当前输入。首次普通f1推送成功但两workflow失败未部署；最终文档同步/正常追加/云端/在线回执另据RELEASE_VALIDATION，不能以中间快照称最终公开HEAD。

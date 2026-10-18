@@ -101,3 +101,8 @@ git -C $recovery fsck --full
 ## 当前快照与最终外置收尾
 
 当前AFTER与RISK CSV分别是测量和刷新时点的真实文件，不逆改原BEFORE。原作者库未被替换、未改写历史。发布后新增文档/对象与最终作者HEAD的实际占用，以外置closing-author-measure/SIZE_INVENTORY_AFTER.csv及size-after.json为最终目录数字；原始算法仅固定root/output位置，Windows AllocationSize算法未改。外置 daily-final-verify.json另绑定最终候选HEAD/TREE、全追踪字节/918源/原典/候选/ignored保全及候选实测；在其真正生成前不把旧259MB当最终提案。
+
+
+## 最新已测候选（不是作者根目录）
+
+候选ada1ecf与作者be56235的2527追踪路径/TREE精确一致，另478私档/日志、918审计源、11候选与原典双根字节核同；冷ci/build/474单测均0、缺基线warning0。实测329,656,131逻辑B /338,310,184 allocation B/.git49,834,415B，含依赖及构建，见daily-candidate-validation.json。最终云端文档同步后再以外置daily-final-verify.json绑定最终HEAD/TREE及大小；旧259MB不得当最新数字。原作者目录仍未交换，F24仍BLOCKED。
