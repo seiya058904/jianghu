@@ -80,3 +80,12 @@ playwright/.cache/
 /docs/audits/**/*.jpg
 /docs/audits/**/*.jpeg
 /docs/audits/**/trace*/
+
+# Operating-system litter, local build caches and browser authentication state.
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.tsbuildinfo
+.vite/
+.cache/
+/playwright/.auth/
