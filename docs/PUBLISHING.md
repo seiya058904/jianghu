@@ -63,7 +63,7 @@ scripts/publish-public.ps1 -Publish         # 明确授权的真实发布（普�
 
 fail-closed 规则：
 
-- **未分类路径 = BLOCKED**：新增顶层目录、未知扩展名、未知根文件都停在计划阶段，必须先审阅并更新策略。
+- **未分类路径 = BLOCKED**：新增顶层目录、未知扩展名、未知根文件都停在计划阶段，必须先审阅并更新策略。`docs/audits/` 下**新增**且文件名带 journal／manifest／private／backup／switch／cleanup／recovery／recycle／inventory／preservation／adoption 的运维记录同样阻断，私有回执应显式加入排除表。
 - 文档类文件（`md/txt/log/csv` 与 `docs/` 下 `json`）里的本机绝对路径会被脱敏；源码、Ink、生成物、运行资产、测试和脚本**从不自动改写**，出现机器路径即阻断。
 - 新引入私有记录标识（清理／回滚日志、私档清单、切换 journal、旧谱系目录名等）阻断，防止把新的私有操作记录混进镜像。
 - 符号链接／特殊文件、路径逃逸、大小写重复、压缩私档、密钥模式、`>1MB` 未登记二进制一律阻断。

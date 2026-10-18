@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
   Fail-closed one-click public snapshot publishing for the private Jianghu repository.
 
@@ -165,6 +165,14 @@ try {
     Stop-With ('-Publish requires the source commit to be HEAD; got ' + $sourceSha.Substring(0,7)) 7
   }
 
+  $privateMarkers = @('docs/archives', 'docs/audits/independent-final/2026-10-18-cleanup', '宋世江湖.md')
+  $isPrivateRepo = $false
+  foreach ($marker in $privateMarkers) {
+    if (Test-Path -LiteralPath (Join-Path $RepoRoot $marker)) { $isPrivateRepo = $true; break }
+  }
+  if (-not $isPrivateRepo) {
+    Stop-With 'This entry point only runs in the private daily repository (private sources absent). Do not publish from the public mirror.' 2
+  }
   $canonPath = Join-Path $RepoRoot '宋世江湖.md'
   if (Test-Path -LiteralPath $canonPath) {
     $canonHash = (Get-FileHash -LiteralPath $canonPath -Algorithm SHA256).Hash
@@ -173,6 +181,8 @@ try {
       Stop-With ('Private canon changed (SHA ' + $canonHash + ', ' + $canonBytes + ' bytes). Review canon integrity before publishing.') 2
     }
     Write-Step ('Private canon verified: ' + $canonBytes + ' bytes, SHA-256 matches the recorded value')
+  } else {
+    Write-Host 'NOTE: canon text absent in this checkout; private marker matched through archived evidence directories.'
   }
 
   $remotes = @(((Invoke-Native 'git' @('-C', $RepoRoot, 'remote')).Text -split [Environment]::NewLine) | Where-Object { $_.Trim().Length -gt 0 })
@@ -221,6 +231,7 @@ try {
   $planExit = $planRun.Code
   if (-not (Test-Path -LiteralPath $planPath)) { Stop-With 'Snapshot script produced no plan file.' 2 }
   $plan = Get-Content -LiteralPath $planPath -Raw -Encoding UTF8 | ConvertFrom-Json
+  $planSha = (Get-FileHash -LiteralPath $planPath -Algorithm SHA256).Hash.ToLower()
   Write-Host ''
   Write-Host ('Plan status      : ' + $plan.status + '  (policy v' + $plan.policyVersion + ')')
   Write-Host ('Source commit    : ' + $plan.sourceCommit)
@@ -296,7 +307,7 @@ try {
   Write-Step 'Committing the curated snapshot on top of the current public main'
   Invoke-Git $publicClone @('add', '-A') | Out-Null
   $commitMessage = 'public snapshot: ' + $headShort + ' (policy v' + $plan.policyVersion + ')'
-  $commitBody = 'source ' + $sourceSha + [Environment]::NewLine + 'public before ' + $plan.publicBefore + [Environment]::NewLine + 'policy v' + $plan.policyVersion + [Environment]::NewLine + 'plan sha256 ' + $plan.planSha256
+  $commitBody = 'source ' + $sourceSha + [Environment]::NewLine + 'public before ' + $plan.publicBefore + [Environment]::NewLine + 'policy v' + $plan.policyVersion + [Environment]::NewLine + 'plan sha256 ' + $planSha
   if ($plan.removed.Count -gt 0) { $commitBody += [Environment]::NewLine + 'removed public-only paths: ' + ($plan.removed -join ', ') }
   Invoke-Git $publicClone @('commit', '--quiet', '-m', $commitMessage, '-m', $commitBody) | Out-Null
   $newSha = Invoke-Git $publicClone @('rev-parse', 'HEAD')
@@ -332,7 +343,12 @@ try {
       $runList = Invoke-Native $gh.Source @('run', 'list', '--repo', 'seiya058904/jianghu', '--commit', $newSha, '--limit', '40', '--json', 'name,status,conclusion,url')
       $runs = @()
       if ($runList.Code -eq 0 -and $runList.Text.Length -gt 0) {
-        try { $runs = @($runList.Text | ConvertFrom-Json) } catch { $runs = @() }
+        # Windows PowerShell's ConvertFrom-Json returns a JSON array as ONE object;
+        # enumerate explicitly so per-run filtering is never applied to the array itself.
+        try {
+          $parsedRuns = $runList.Text | ConvertFrom-Json
+          foreach ($item in $parsedRuns) { $runs += $item }
+        } catch { $runs = @() }
       }
       $verify = $runs | Where-Object { $_.name -eq 'Verify' } | Select-Object -First 1
       $pages = $runs | Where-Object { $_.name -eq 'Deploy site to GitHub Pages' } | Select-Object -First 1
@@ -353,7 +369,9 @@ try {
       Stop-With 'Verify or Pages did not succeed; report the failure, do not claim the release is live.' 6
     }
     $pagesApi = Invoke-Native $gh.Source @('api', 'repos/seiya058904/jianghu/pages', '--jq', '.status')
-    Write-Host ('Pages API status: ' + $pagesApi.Text)
+    $pagesApiText = $pagesApi.Text
+    if (-not $pagesApiText) { $pagesApiText = 'n/a (workflow build type)' }
+    Write-Host ('Pages API status: ' + $pagesApiText)
   }
 
   Write-Host ''
@@ -361,7 +379,7 @@ try {
   Write-Host ('  private source : ' + $sourceSha)
   Write-Host ('  public before  : ' + $plan.publicBefore)
   Write-Host ('  public after   : ' + $newSha)
-  Write-Host ('  plan sha256    : ' + $plan.planSha256)
+  Write-Host ('  plan sha256    : ' + $planSha)
   Write-Host ('  changed/removed: ' + $plan.changed.Count + '/' + $plan.removed.Count)
   Write-Host 'Browser and Pages artifact acceptance still has to be performed and recorded separately (see docs/PUBLISHING.md section 6).'
   exit 0
