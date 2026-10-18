@@ -24,7 +24,7 @@ const readBeats = new Set<string>();
 const entryLock=()=>workReadingLock(chronicle?.slug??'',key=>localStorage.getItem(key));
 try {
   const raw = read('auto');
-  if (raw && !entryLock()) { const restored = restoreVN(raw, isCampaign ? campaignEdition : undefined); session = restored.session; if (restored.migrated) { pendingDraftBackup = raw; startupError = restored.migration?'旧进度已兼容读入，画面已更新；原始存档保留。':'旧样章已兼容读入，人物名已订正；剧情进度保留。'; } }
+  if (raw && !entryLock()) { const restored = restoreVN(raw, isCampaign ? campaignEdition : undefined); session = restored.session; if (restored.migrated) { pendingDraftBackup = raw; startupError = restored.migration==='editorial-text'?'旧进度已兼容读入，正文已订正；原始存档保留。':restored.migration?'旧进度已兼容读入，画面已更新；原始存档保留。':'旧样章已兼容读入，人物名已订正；剧情进度保留。'; } }
 }
 catch (error) { startupError = (error as Error).message; }
 try {
@@ -64,7 +64,7 @@ function render(complete = true) {
   document.body.dataset.edition = isChronicle?'chronicle':isCampaign?'campaign':'halfstep';
   document.body.dataset.contentVersion = isCampaign?campaignEdition.version:'';
   dialog().addEventListener('close', () => { inputUntil = 0; dialogReturn?.isConnected ? dialogReturn.focus() : document.querySelector<HTMLElement>('[data-action="saves"]')?.focus(); syncControls(); });
-  if (mode === 'play') { present(complete); if(pendingDraftBackup&&campaignEdition.previousContent&&!persist())startupError=''; }
+  if (mode === 'play') { present(complete); if(pendingDraftBackup&&!persist())startupError=''; }
 }
 function persist() {
   if (!session) return false;
@@ -194,7 +194,7 @@ function saves() {
   const rows = keys.map((key, i) => {
     const raw = read(key); let text = '尚无存档', valid = false;
     if (raw) { try { const { session: s, save } = restoreVN(raw, isCampaign ? campaignEdition : undefined); text = `${scenes[s.frame.stage.scene].name} · ${s.frame.choices.length ? '等待回复' : s.frame.ending ? '此篇已完' : '对白途中'} · ${new Date(save.savedAt).toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })}`; valid = true; } catch { text = '数据损坏或版本不兼容 · 原始数据保留'; } }
-    return `<section class="save-row"><h3>${i < 5 ? ['自动存档', '手动存档一', '手动存档二', '手动存档三', '上一程备份'][i] : campaignEdition.previousContent?'画面调整前原始备份':'兼容前样章原始备份'}</h3><p>${escape(text)}</p><div class="row-actions">${i > 0 && i < 4 && session ? button('保存到此处', 'slot-save', '', `data-slot="${key}"`) : ''}${valid ? button('读取', 'slot-load', '', `data-slot="${key}"`) : ''}${raw ? button('导出原始数据', 'slot-export', '', `data-slot="${key}"`) : ''}</div></section>`;
+    return `<section class="save-row"><h3>${i < 5 ? ['自动存档', '手动存档一', '手动存档二', '手动存档三', '上一程备份'][i] : campaignEdition.editorialContent?'正文订正前原始备份':campaignEdition.previousContent?'画面调整前原始备份':'兼容前样章原始备份'}</h3><p>${escape(text)}</p><div class="row-actions">${i > 0 && i < 4 && session ? button('保存到此处', 'slot-save', '', `data-slot="${key}"`) : ''}${valid ? button('读取', 'slot-load', '', `data-slot="${key}"`) : ''}${raw ? button('导出原始数据', 'slot-export', '', `data-slot="${key}"`) : ''}</div></section>`;
   }).join('');
   const oldRows = baseKeys.filter(key => read(key, LEGACY) !== null).map(key => `<p class="legacy-save">${escape(({ auto: '旧篇自动档', previous: '旧篇上一程', slot1: '旧篇手动一', slot2: '旧篇手动二', slot3: '旧篇手动三' } as Record<string, string>)[key])}${button('导出旧篇原始数据', 'legacy-export', '', `data-slot="${key}"`)}</p>`).join('');
   const ended = unlocked();
@@ -205,7 +205,7 @@ function saves() {
     try { load(await file.text()); } catch (error) { notify((error as Error).message); }
   });
 }
-function saveSlot(key: string) { if (session) { write(key, JSON.stringify(session.save())); saves(); notify('手动存档已保存。'); } }
+function saveSlot(key: string) { if (session) { if (pendingDraftBackup) { keepDraft(pendingDraftBackup); pendingDraftBackup = null; } const existing = read(key); let needsBackup = false; if (existing) { try { needsBackup = Boolean(restoreVN(existing, isCampaign ? campaignEdition : undefined).migrated); } catch { /* Explicit overwrite keeps its original semantics for unreadable slots. */ } } if (needsBackup) keepDraft(existing!); write(key, JSON.stringify(session.save())); saves(); notify('手动存档已保存。'); } }
 function showSettings() {
   openDialog('演出设置', `<fieldset><legend>对白字号</legend><div class="setting-options">${[18, 20, 22, 24].map(n => button(`${n} 字号`, 'size', '', `data-value="${n}" aria-pressed="${settings.size === n}"`)).join('')}</div></fieldset><fieldset><legend>纸与夜色</legend>${button('纸本', 'paper', '', `aria-pressed="${!settings.dark}"`)}${button('夜读', 'dark', '', `aria-pressed="${settings.dark}"`)}</fieldset><fieldset><legend>文字出现速度</legend>${[[18, '正常'], [36, '舒缓'], [0, '立即显示']].map(([n, text]) => button(String(text), 'speed', '', `data-value="${n}" aria-pressed="${settings.speed === n}"`)).join('')}</fieldset><fieldset><legend>动作与转场</legend>${button('减弱动态效果', 'motion', '', `aria-pressed="${settings.reduced}"`)}</fieldset><p class="preview-text">先看他落脚，再决定你出哪一剑。</p><p>点击对白或按 Enter / 空格推进；文字出现时先显示全文。Tab 切换按钮，Esc 关闭面板。自动与已读快进在回复处停止；系统减弱动态效果时立即显示全文。无需声音即可完整游玩。</p>`);
   if(edition.offlineWork)el('dialog-body').insertAdjacentHTML('beforeend',`<section class="entry"><h3>本篇离线游玩</h3><p>下载本篇所有场景和画像，断网后也能走尚未游玩的分支。其他作品按需下载。</p>${button(`下载《${edition.title}》离线资源`,'offline','secondary')}</section>`);

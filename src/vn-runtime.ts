@@ -1,3 +1,4 @@
+import {editorialBaselineManifest} from './editorial-baselines.ts';
 import { Story } from 'inkjs';
 import content from './generated/duel.json' with { type: 'json' };
 import draftContent from './generated/duel-1.0.0.json' with { type: 'json' };
@@ -105,7 +106,7 @@ export class VNRuntime {
   }
 }
 
-export function restoreVN(raw: string, edition?: {content: Record<string,unknown>; version:string;previousContent?:Record<string,unknown>}): { session: VNRuntime; save: VNSave; migrated?: boolean;migration?:'ending-staging'|'illustration-staging' } {
+export function restoreVN(raw: string, edition?: {content: Record<string,unknown>; version:string;previousContent?:Record<string,unknown>;editorialContent?:Record<string,unknown>}): { session: VNRuntime; save: VNSave; migrated?: boolean;migration?:'ending-staging'|'illustration-staging'|'editorial-text' } {
   if (raw.length > 1_000_000) throw new Error('存档超过 1 MB，原文件保留。');
   let save: VNSave;
   try { save = JSON.parse(raw); } catch { throw new Error('不是有效的 JSON 存档。原数据保留。'); }
@@ -118,6 +119,25 @@ export function restoreVN(raw: string, edition?: {content: Record<string,unknown
     for (const command of save.commands) command === 'next' ? session.advance() : session.choose(command.slice(7));
     const expected = session.save();
     if (expected.runtime !== save.runtime || JSON.stringify(expected.presentation) !== JSON.stringify(save.presentation)) {
+      if (edition?.editorialContent && editorialBaselineManifest.some(row => row.version === edition.version)) {
+        // Validate the complete submitted snapshot against trusted old bytes.
+        // Replay the new story independently; never LoadJson old state into it.
+        const previous = new VNRuntime(edition.editorialContent, edition.version);
+        const current = new VNRuntime(edition.content, edition.version);
+        const structure = ({text: _text, ...frame}: Beat) => frame;
+        const sameCheckpoint = () => JSON.stringify(structure(previous.frame)) === JSON.stringify(structure(current.frame))
+          && JSON.stringify(JSON.parse(previous.story.state.ToJson()).variablesState) === JSON.stringify(JSON.parse(current.story.state.ToJson()).variablesState);
+        let compatible = sameCheckpoint();
+        for (const command of save.commands) {
+          if (command === 'next') { previous.advance(); current.advance(); }
+          else { previous.choose(command.slice(7)); current.choose(command.slice(7)); }
+          compatible = sameCheckpoint() && compatible;
+        }
+        const frozen = previous.save();
+        if (frozen.runtime === save.runtime && JSON.stringify(frozen.presentation) === JSON.stringify(save.presentation) && compatible) {
+          return {session, save: {...expected, savedAt: save.savedAt}, migrated: true, migration: 'editorial-text'};
+        }
+      }
       const endingMigration=edition?.version==='tide-promise-2.0.0'&&/^c_ending_(harbor|name|together5|teacher|captain|apart|scar|lost)_\d+$/.test(save.presentation.beatId);
       const illustrationMigration=(edition?.version==='jade-thieves-1.0.0'&&/^jt_(empty_box_[1-7]|revealed_(8|9|1[3-8]))$/.test(save.presentation.beatId))||(edition?.version==='jade-1.0.0'&&/^jd_seventh_[2-5]$/.test(save.presentation.beatId))||(edition?.version==='twelfth-life-2.0.0'&&/^rl_fair_seat_[3-5]$/.test(save.presentation.beatId))||(edition?.version==='two-swords-1.0.0'&&/^ss_(token_[4-8]|open_boxes_[1-7])$/.test(save.presentation.beatId))||(edition?.version==='seven-questions-2.0.0'&&/^sq_(eighty_one_[8-9]|three_volumes_[1-5])$/.test(save.presentation.beatId))||(edition?.version==='sea-1.0.0'&&/^sr_(two_centuries_[3-5]|ninety_seven_(12|13|15|16))$/.test(save.presentation.beatId))||(edition?.version==='sea-tide-1.0.0'&&/^st_outer_years_[1-7]$/.test(save.presentation.beatId))||(edition?.version==='sea-tide-2.0.0'&&/^st_(trial|four_tests)_\d+$/.test(save.presentation.beatId));
       if(!edition?.previousContent||(!endingMigration&&!illustrationMigration))throw new Error('mismatch');

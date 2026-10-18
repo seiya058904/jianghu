@@ -80,7 +80,7 @@ for path,file,index in markdown_records:
     # Source filenames are attached only from the named asset's existing log.
     raw_names=re.findall(r'exec-[0-9a-f-]+\.png',s)
     source=raw_names[index] if path.endswith('LONGMEN_V2_ADAPTATION_BRIEF.md') else (raw_names[0] if raw_names else None)
-    dirs=re.findall(r'C:/Users/admin/\.codex/generated_images/[0-9a-f-]+/',s)
+    dirs=re.findall(r'[A-Za-z]:/(?:[^/\r\n]+/)*\.codex/generated_images/[0-9a-f-]+/',s)
     add(file,{'prompt':prompts[index],'source':source,'rawDirectory':dirs[0] if dirs else None,'tool':'built-in image_gen','processing':'See existing source log; no new image processing in manifest audit.'},path,pointer=f'blockquote-{index+1}')
 for p in sorted(ART.glob('*.webp.json')):
     path=p.relative_to(ROOT).as_posix();provenance_inputs[path]=sha(p)

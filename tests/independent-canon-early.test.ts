@@ -47,3 +47,10 @@ test('伏牛路线不由未走的嵩阳交班变量生成事实',()=>{
  assert.doesNotMatch(text,/接了你交接的那一班已歇下/);
  assert.match(text,/你随慢队回到院时/);
 });
+
+test('石惊川在贺门之前只经历胜平，不得提前回忆自己已败',()=>{
+ const text=run('longmen',['lm_route_guest','lm_deliver_exact']);
+ assert.match(text,/与罗天庆百余合后同时收招，记平/);
+ assert.match(text,/看见我只同罗先生打平，还肯照原话递么/);
+ assert.doesNotMatch(text,/看见我输这一回，还肯照原话递么/);
+});

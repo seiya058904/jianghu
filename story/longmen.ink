@@ -294,7 +294,7 @@ VAR lm_future = 0
 - else:
 {
 - lm_early_practice:
-下一封帖，也请你送。看见我输这一回，还肯照原话递么？ # beat:lm_sore_14 # scene:lm_challenge # cast:lm_shi # speaker:lm_shi # mood:lm_shi=intent
+下一封帖，也请你送。看见我只同罗先生打平，还肯照原话递么？ # beat:lm_sore_14 # scene:lm_challenge # cast:lm_shi # speaker:lm_shi # mood:lm_shi=intent
 照字递。没人答，我就回来说没人答。 # beat:lm_sore_15 # scene:lm_challenge # cast:lm_shi # speaker:you
 他把未封的下一帖放到你面前，仍写愿请第一赐教。你亲眼看见那句话在一场险胜、一场平局以后没有被划掉。 # beat:lm_sore_16 # scene:lm_challenge # cast:lm_shi # speaker:narrator
 - else:
