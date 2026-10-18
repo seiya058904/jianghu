@@ -4,7 +4,7 @@
 
 [在线作品库](https://seiya058904.github.io/jianghu/) · [文档导航](docs/README.md) · [独立终审基线](docs/audits/independent-final/BASELINE.md) · [独立终审验收](docs/audits/independent-final/FINAL_ACCEPTANCE.md) · [本地体验审计](docs/audits/experience-2026-10-18/EXPERIENCE_AUDIT.md)
 
-2026-10-18 后续本地体验精修：产品候选 `808954f12b16d443dc4e1bf964de9bfc565f79bc`，23个现行入口完成真实浏览器从头到结局，七个重点版本另走相反选择倾向；修复横屏人物、选择回扣、私谈视角、离线图更新及键盘焦点。完整结果见[体验审计与验证](docs/audits/experience-2026-10-18/FINAL_VALIDATION.md)。本轮修改尚未公开发布。
+2026-10-18 后续本地体验精修：产品候选 `808954f12b16d443dc4e1bf964de9bfc565f79bc`，23个现行入口完成真实浏览器从头到结局，七个重点版本另走相反选择倾向；修复横屏人物、选择回扣、私谈视角、离线图更新及键盘焦点。完整结果见[体验审计与验证](docs/audits/experience-2026-10-18/FINAL_VALIDATION.md)。该轮产品已发布至公共提交 `a17525548915d4f8e3022260bc1db205d29adb58`，对应 Verify 与 Pages 均成功；上述完整 E2E 是该轮历史产品证据，不是本次 Git 迁移的新测试。
 
 此前2026-10-18独立审查后的产品已正式发布：公共提交 `f48614493ec4340355602f77d64b19c02220781e` 的 [Verify](https://github.com/seiya058904/jianghu/actions/runs/39105624826) 与 [Pages](https://github.com/seiya058904/jianghu/actions/runs/39105624823) 均成功。对应产品 RC `1138723` 构建退出0、单测474/474、编辑80/80（单测子集），单次完整浏览器492/492通过；351个正式文件与CI artifact逐字节相同，鲜Chrome双档26入口及真实旧67eb窗口升级后的离线作品库／龙门推进通过。详见[发布回执](docs/audits/independent-final/RELEASE_VALIDATION.md)与[本轮验收](docs/audits/independent-final/FINAL_ACCEPTANCE.md)。后续纯文档提交尚未发布，不预写其云端结果；旧版“17/17”保留于 [V7 历史矩阵](docs/v7/V7_ACCEPTANCE_MATRIX.md)，不替代本轮结论。
 
@@ -65,17 +65,23 @@ E2E 前清空可能影响 localhost 就绪探测的 HTTP/HTTPS/ALL 代理。构�
 
 先读 [AGENTS.md](AGENTS.md)、[原典硬约束](docs/lore/CANON_RULES.md)与[迁移规则](CONTENT_MIGRATION.md)。不改原典既定生死、胜负、年龄、门派或榜次；山河璧不是增功、疗伤或延寿道具。
 
-### 公开快照说明
+### 普通 Git 开发与发布
 
-作者历史与公开 main 是不同谱系。公共镜像从已验证提交取明确允许的追踪文件，排除原典全文、私档、候选原图、海量原始截图、个人配置和备份；在当前远端 main 上普通增量提交与快进推送。[安全发布规程](docs/PUBLISHING.md)。
+本地 `main` 跟踪 GitHub `origin/main`，共享同一套公开提交历史。日常在当前 Jianghu 目录操作：
 
-公开缺少原典和私有冻结字节时，对应条目为明确 warning / 部分验证；源码或运行资源意外缺失必须失败。作者本机仍核对完整字节。本轮未新增 LICENSE，公开可读不构成额外再许可。
+```bash
+git pull --ff-only
+# 修改并验证后
+git add -A
+git diff --cached --stat
+git diff --cached
+git commit -m "描述本次改动"
+git push origin main
+```
 
-### 私有日用开发与隔离公开发布（2026-10-18 起）
+推送 main 自动触发 `.github/workflows/verify.yml` 与 `deploy-pages.yml`。不再使用隔离检出或策展发布脚本。[发布与本机文件规则](docs/PUBLISHING.md)。
 
-本机 `Jianghu` 是**独立私有 Git 谱系**，不配置可写公开远端：远端只用于查看（`github-public`，fetch-only，推送路径已禁用并加 pre-push 拦截）。日常仍在原文件夹开发；公开发布只从隔离的公共检出、经策展快照与冷构建复验后普通快进完成，不合并两套历史、不强推。
-
-一键命令（默认干运行，不写远端）：`scripts/publish-public.ps1 -DryRun`；真实发布加 `-Publish`（需明确授权）。计划审阅、隐私边界、排除规则与线上验收要求见 [安全发布规程](docs/PUBLISHING.md)。私有侧拓扑与清理回执只保存在私有审计目录，不随公开镜像发布。
+原典全文、历史私档、清理/恢复回执、候选原图和本机配置继续留在本地，以 `.gitignore` / `.git/info/exclude` 排除。公开克隆缺少这些冻结材料时，仅对应档案字节完整性为部分验证；源码或运行资源缺失仍须失败。迁移前的报告是历史证据，不是当前发布指令。本轮未新增 LICENSE，公开可读不构成额外再许可。
 
 ## 已知边界
 

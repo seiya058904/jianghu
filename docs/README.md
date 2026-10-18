@@ -1,12 +1,14 @@
 # 文档导航
 
-**2026-10-18 本地体验精修：[玩家体验审计](audits/experience-2026-10-18/EXPERIENCE_AUDIT.md) · [实玩矩阵](audits/experience-2026-10-18/PLAYTHROUGH_MATRIX.csv) · [问题台账](audits/experience-2026-10-18/ISSUE_LEDGER.md) · [视觉复验](audits/experience-2026-10-18/VISUAL_REVIEW.md) · [最终验证](audits/experience-2026-10-18/FINAL_VALIDATION.md)。本轮尚未公开发布。**
+当前开发与发布使用普通 Git，见 [PUBLISHING.md](PUBLISHING.md)。审计文档中关于双谱系、策展镜像和隔离发布的描述均属已停用的历史方案，不是日常操作要求。
+
+**2026-10-18 本地体验精修：[玩家体验审计](audits/experience-2026-10-18/EXPERIENCE_AUDIT.md) · [实玩矩阵](audits/experience-2026-10-18/PLAYTHROUGH_MATRIX.csv) · [问题台账](audits/experience-2026-10-18/ISSUE_LEDGER.md) · [视觉复验](audits/experience-2026-10-18/VISUAL_REVIEW.md) · [最终验证](audits/experience-2026-10-18/FINAL_VALIDATION.md)。该轮已发布至公共 `a1752554`，对应 Verify 与 Pages 成功；历史审计数字不冒充本次 Git 迁移验证。**
 
 **此前独立终审：[独立终审基线](audits/independent-final/BASELINE.md) · [问题台账](audits/independent-final/ISSUE_LEDGER.md) · [最终QA](audits/independent-final/FINAL_QA.md) · [F01–F30验收](audits/independent-final/FINAL_ACCEPTANCE.md) · [发布验证](audits/independent-final/RELEASE_VALIDATION.md)。** 下方V7/V6为历史迭代材料，不将旧状态与数字当成本轮实测。
 
 本目录是项目全部文档与证据的根。**第一次来请先读仓库根的 [README.md](../README.md) 与 [AGENTS.md](../AGENTS.md)**，本页只负责告诉你去哪找。
 
-导航速查：**`v7/` 是当前世代**（原典纪事集）· `lore/` 讲原典与改编边界 · `v6/` 是上一世代工作文档（历史，口径不可与 V7 混用）· `art/` 是素材清单 · `evidence/` 是原始证据 · 本目录根 `docs/*.md` 是 V5 世代存档 · [PUBLISHING.md](PUBLISHING.md) 讲公开快照怎么生成。
+导航速查：**`v7/` 是当前世代**（原典纪事集）· `lore/` 讲原典与改编边界 · `v6/` 是上一世代工作文档（历史，口径不可与 V7 混用）· `art/` 是素材清单 · `evidence/` 是原始证据 · 本目录根 `docs/*.md` 是 V5 世代存档 · [PUBLISHING.md](PUBLISHING.md) 讲 main → origin/main 的普通 Git 发布与本机文件规则。
 
 ---
 
@@ -135,9 +137,9 @@
 
 `ARCHITECTURE_REVIEW.md` · `DESIGN.md` · `NARRATIVE_DESIGN.md` · `DIALOGUE_AUTHORING_GUIDE.md` · `CHARACTER_ROSTER.md` · `BRANCH_MATRIX.md` · `CONSEQUENCE_LEDGER.md` · `CONTENT_MIGRATION.md` · `ART_ASSET_MANIFEST.md` · `ART_DIRECTION.md` · `LORE_BIBLE.md` · `CANON_AND_ADAPTATION.md` · `INTERACTION_QA.md` · `QA.md` · `PRODUCT.md` · `DEPENDENCIES.md` · `ASSETS.md`
 
-## 九、发布与公开快照
+## 九、普通 Git 发布与历史公开快照
 
-- [PUBLISHING.md](PUBLISHING.md) —— 公开快照的生成步骤、排除策略、发布后配置与更新方式
+- [PUBLISHING.md](PUBLISHING.md) —— 普通 Git 工作流、本机文件排除与发布后验证
 - [evidence/README.md](evidence/README.md) —— 证据索引，含截图未随快照发布的说明
 
 ## 十、阅读本目录的注意事项

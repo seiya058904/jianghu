@@ -8,9 +8,9 @@
 - 原创《潮生有约》仅在 tide-v6.html；V5、半步、渡口与各篇V1/V2为历史入口，不能重新混入推荐门面。
 - 当前独立审计位于 docs/audits/independent-final/：BASELINE、ISSUE_LEDGER、FINAL_QA、FINAL_ACCEPTANCE、RELEASE_VALIDATION。文件缺席或尚未执行不得判PASS。
 - docs/v7、docs/v6保留历史轮次与追加段。旧297/80/471/56不是本轮结果，引用数字须注明代际、方法与输入版本。
-- 私有原典宋世江湖.md：579299 bytes，SHA256 2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393。本轮splitlines/换行计数35314。不得改写或公开全文。
+- 本机作者材料宋世江湖.md：579299 bytes，SHA256 2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393。本轮splitlines/换行计数35314。不得改写；本次未授权新增公开全文。
 
-**发布边界（2026-10-18 起）**：`Jianghu` 是独立私有 Git 谱系，**不配置可写公开远端**；远端只能以只读方式查看（`github-public`，fetch-only，push URL 已禁用并有 pre-push 拦截）。公开发布只在**隔离公共检出**里经策展快照完成，一键入口为 `scripts/publish-public.ps1`（默认干运行，`-Publish` 才真实发布），流程见 `docs/PUBLISHING.md`。私有侧的本机拓扑、采用回执、清理与恢复记录留在私有审计目录，不随公开快照发布；日用根含 .git 实测 336,030,358 B，F24 为 PASS。
+**Git 工作流**：原路径是 GitHub `seiya058904/jianghu` 的普通克隆，`main` 跟踪 `origin/main`。正常 `git pull --ff-only`、`git add -A`、`git commit`、`git push origin main`；main 推送触发 Verify 与 Pages。旧双谱系、隔离策展发布流程已停用，详见 docs/PUBLISHING.md。本机原典、历史私档、恢复回执和原始证据通过 .gitignore / .git/info/exclude 保留，不进入公开索引。
 
 ## 文件地图与作者入口
 
@@ -25,7 +25,7 @@
 |离线|public/sw.js、scripts/offline-manifest.mjs|
 |原典边界|docs/lore/CANON_RULES.md、CANON_MASTER_INDEX.md|
 |迁移/保护|CONTENT_MIGRATION.md、tests/frozen-baselines.ts、historical-baselines.ts|
-|发布|docs/PUBLISHING.md、scripts/public-snapshot.py、.github/workflows/|
+|发布|docs/PUBLISHING.md、.github/workflows/|
 
 不要手改生成Ink/JSON冒充作者源修复。插句会改变动态beat编号，必须检查CID/VAR、look/camera/action、存档与恢复。变量被读取不等于选择有意义。
 
@@ -80,9 +80,7 @@ Playwright根4173、子路径4175。代理会影响localhost就绪探测；运�
 
 ## Git、体积、公开发布
 
-作者历史与公共main是不同谱系，不把作者历史直接推公开库。公共快照仅取已验证RC允许的追踪文件，排除原典/私档/候选原图/海量截图/个人配置/备份。
-
-在隔离公共检出的当前main祖先上普通增量提交和快进推送，不默认“孤儿历史只能强推”。推送、合并、部署、发布、依赖更新、远端配置等外部变更仍需用户明确授权；历史任务授权不永久延伸。
+本地 main 与 origin/main 共享公开历史，使用普通提交与快进推送，不再维护第二套发布检出。日常以 `git pull --ff-only` 开始；提交前检查 `git diff --cached`，确认忽略的本机材料未进入索引。推送、合并、部署、发布、依赖更新、远端配置等外部变更仍需用户明确授权；历史任务授权不永久延伸。
 
 不强推、不擅自重写历史、不删objects/reflog、不清回收站、不新增LICENSE。瘦身先精确盘点与可校验备份；历史改写或替换作者仓库需单独授权。
 
