@@ -1,88 +1,208 @@
-# Jianghu · 宋世江湖
+<h1 align="center">⚔️ JIANGHU</h1>
 
-以作者原典《宋世江湖》改编的互动武侠纪事集：**16 部作品、23 个现行版本**。观察、问话、较艺与合作，在固定的历史胜负之间决定自己怎样参与。每篇独立存档，无声音也能完整游玩。
+<p align="center">
+  <strong>The great battles are part of history. Your place in them is not.</strong>
+</p>
 
-[在线作品库](https://seiya058904.github.io/jianghu/) · [文档导航](docs/README.md) · [独立终审基线](docs/audits/independent-final/BASELINE.md) · [独立终审验收](docs/audits/independent-final/FINAL_ACCEPTANCE.md) · [本地体验审计](docs/audits/experience-2026-10-18/EXPERIENCE_AUDIT.md)
+<p align="center">
+  《宋世江湖》——根据作者原典改编的互动武侠纪事集。<br />
+  见证胜负，回应人物，在不能随意改写的江湖历史里，决定自己如何参与。
+</p>
 
-2026-10-18 后续本地体验精修：产品候选 `808954f12b16d443dc4e1bf964de9bfc565f79bc`，23个现行入口完成真实浏览器从头到结局，七个重点版本另走相反选择倾向；修复横屏人物、选择回扣、私谈视角、离线图更新及键盘焦点。完整结果见[体验审计与验证](docs/audits/experience-2026-10-18/FINAL_VALIDATION.md)。该轮产品已发布至公共提交 `a17525548915d4f8e3022260bc1db205d29adb58`，对应 Verify 与 Pages 均成功；上述完整 E2E 是该轮历史产品证据，不是本次 Git 迁移的新测试。
+<p align="center">
+  <a href="https://seiya058904.github.io/jianghu/"><strong>▶ 进入江湖</strong></a>
+  &nbsp;·&nbsp;
+  <a href="#choose-your-story">📖 选择篇目</a>
+  &nbsp;·&nbsp;
+  <a href="#the-experience">🎭 游玩体验</a>
+  &nbsp;·&nbsp;
+  <a href="#run-locally">⚙️ 本地运行</a>
+</p>
 
-此前2026-10-18独立审查后的产品已正式发布：公共提交 `f48614493ec4340355602f77d64b19c02220781e` 的 [Verify](https://github.com/seiya058904/jianghu/actions/runs/39105624826) 与 [Pages](https://github.com/seiya058904/jianghu/actions/runs/39105624823) 均成功。对应产品 RC `1138723` 构建退出0、单测474/474、编辑80/80（单测子集），单次完整浏览器492/492通过；351个正式文件与CI artifact逐字节相同，鲜Chrome双档26入口及真实旧67eb窗口升级后的离线作品库／龙门推进通过。详见[发布回执](docs/audits/independent-final/RELEASE_VALIDATION.md)与[本轮验收](docs/audits/independent-final/FINAL_ACCEPTANCE.md)。后续纯文档提交尚未发布，不预写其云端结果；旧版“17/17”保留于 [V7 历史矩阵](docs/v7/V7_ACCEPTANCE_MATRIX.md)，不替代本轮结论。
+<p align="center">
+  <sub>16 部作品 &nbsp;·&nbsp; 23 个现行篇章入口 &nbsp;·&nbsp; 分篇独立存档 &nbsp;·&nbsp; 中文互动叙事</sub>
+</p>
 
-## 从哪里开始
+<p align="center">
+  <a href="https://github.com/seiya058904/jianghu/actions/workflows/verify.yml">
+    <img src="https://github.com/seiya058904/jianghu/actions/workflows/verify.yml/badge.svg" alt="Verify workflow status" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/seiya058904/jianghu/actions/workflows/deploy-pages.yml">
+    <img src="https://github.com/seiya058904/jianghu/actions/workflows/deploy-pages.yml/badge.svg" alt="GitHub Pages deployment status" />
+  </a>
+</p>
 
-| 推荐篇目 | 入口 | 你面对的事 |
-|---|---|---|
-| 太华试序 | [开始](https://seiya058904.github.io/jianghu/taihua.html) | 替同门赴六门旧会，经历真胜与真败 |
-| 龙门问刀 | [开始](https://seiya058904.github.io/jianghu/longmen.html) | 第七刀、藤条三手与木剑九剑 |
-| 第十二席 | [开始](https://seiya058904.github.io/jianghu/twelfth-life.html) | 找肯教自己、也肯真赢自己的人 |
-| 青石五友 | [开始](https://seiya058904.github.io/jianghu/qingshi.html) | 五个少年的去处，一个普通人的一生 |
-| 山河璧 | [密库双贼](https://seiya058904.github.io/jianghu/jade-thieves.html) → [十三文](https://seiya058904.github.io/jianghu/jade.html) | 真假旧物、临场合作与守粮的代价 |
-| 死人争榜 | [开始](https://seiya058904.github.io/jianghu/dead-ranking.html) | 三场真胜与一个死去十八年的名字 |
+<p align="center">
+  <img src="public/art/v6/cg-taihua-six.webp" width="820" alt="Jianghu 游戏内《太华试序》篇章插画：六门问剑的江湖场景" />
+  <br />
+  <sub>《太华试序》 · 项目内实际使用的篇章美术</sub>
+</p>
 
-作品库另含《照水刀》《北枪与乾坤》《一剑两脉》《海路两世》《玄门旧史》《白石谷外》等作品及配篇。《榜纸之外》须先读两部前置篇。年代不同的宗师与年轻人不属于同一批对手。
+---
 
-原创《潮生有约》已退出默认门面。V5/V6、各篇 V1/V2 和旧存档仍可从[历史版本与旧存档](https://seiya058904.github.io/jianghu/index.html#archive)进入；不要把历史入口当成现行作品。
+> **江湖不只有天下第一，也有那些注定无法成为天下第一的人。**
+>
+> 你可能是临时补位的武当弟子、跟随师门赴会的年轻门人、被让过招的王府少年，或是一名只想把朋友带回家的普通人。原典里的生死与重要胜负有自己的重量；你的观察、问话、选择和回应，决定你如何走过这一段故事。
 
-## 本机运行与验证
+<a id="the-experience"></a>
+## 🎭 Stories You Step Into · 不是旁观的武侠故事
 
-需要 Node.js 24；依赖精确锁定于 package-lock.json。
+<p align="center"><code>ENTER A SCENE → READ &amp; RESPOND → MAKE A CHOICE → LIVE WITH THE ECHO</code></p>
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>📚 多部独立纪事</h3>
+      <p>16 部作品组织为不同主题与年代，包含 23 个现行篇章入口。可以从单篇开始，也可以沿相关人物与事件继续阅读。</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>⚖️ 选择改变参与方式</h3>
+      <p>问什么、帮谁、如何回话，都可能带来后续反应；但选择不是用来推翻原典已经确定的重要生死、胜负和人物关系。</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🎨 有人物的文字舞台</h3>
+      <p>对白、人物立绘与分层场景共同组织叙事。阅读器让你进入当下的冲突，而不是只翻阅静态资料集。</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>💾 能继续的长篇阅读</h3>
+      <p>逐句自动保存、三个手动槽、JSON 导入导出与历史版本隔离。每一篇都有自己的进度，不用一次读完。</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🌙 纸本与夜读</h3>
+      <p>可选字号、文字速度、夜读模式与减少动态效果；支持键盘操作，也为较窄视口准备了独立布局。</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📦 按篇离线阅读</h3>
+      <p>已下载并缓存完整的作品可离线继续。历史旧稿放在独立入口中，不会与当前主目录混作同一版本。</p>
+    </td>
+  </tr>
+</table>
+
+<a id="choose-your-story"></a>
+## 📖 Choose Your Story · 从哪一篇开始？
+
+**第一次进入，推荐先读《太华试序》《龙门问刀》或《第十二席》。** 三篇分别偏向比武、师门见闻与人物一生。
+
+| 篇目 | 你的身份与眼前的事 | 开始阅读 |
+| :--- | :--- | :--- |
+| **太华试序** | 作为武当替补弟子参加六门旧会，面对真实的胜负与差距 | [进入篇章 →](https://seiya058904.github.io/jianghu/taihua.html) |
+| **龙门问刀** | 随镇河门赴秋会，看人问刀、试剑，再决定自己要往哪里去 | [进入篇章 →](https://seiya058904.github.io/jianghu/longmen.html) |
+| **第十二席** | 从一位王府少年的不甘心开始，追问什么才算一场没有让招的较艺 | [进入篇章 →](https://seiya058904.github.io/jianghu/twelfth-life.html) |
+| **青石五友** | 从少年同伴走到垂暮之年，理解能力、友情与留下的代价 | [进入篇章 →](https://seiya058904.github.io/jianghu/qingshi.html) |
+| **山河璧** | 从两名撞进同一间密库的盗玉人，到十三文牵出的粮库谜事 | [密库双贼 →](https://seiya058904.github.io/jianghu/jade-thieves.html) · [十三文 →](https://seiya058904.github.io/jianghu/jade.html) |
+| **死人争榜** | 一个死去十八年的名字正在争回榜次；你要分清谁在赢、谁该记名 | [进入篇章 →](https://seiya058904.github.io/jianghu/dead-ranking.html) |
+
+作品库还收录《照水刀》《北枪与乾坤》《一剑两脉》《海路两世》《玄门旧史》《白石谷外》等故事及其关联篇目；部分配篇需要完成前置阅读。不同年代的人物不会被当成同一批对手。
+
+**[浏览全部作品、现行篇章与历史旧稿 →](https://seiya058904.github.io/jianghu/)**
+
+## 🖼️ From the Library to the Stage · 游戏实景
+
+以下为仓库保留的浏览器验收截图，用于展示作品库与对话舞台；它们是**历史验收画面**，不代表每个最新版本都与截图逐像素相同。
+
+<table>
+  <tr>
+    <td width="55%" align="center" valign="top">
+      <img src="docs/evidence/independent-final/online-67eb-library-1440.webp" alt="Jianghu 浏览器截图：作品库桌面布局" />
+      <br />
+      <sub>作品库 · 从不同作品与年代中选择入口</sub>
+    </td>
+    <td width="45%" align="center" valign="top">
+      <img src="docs/evidence/independent-final/browser-longmen-1440-fixed-line.webp" alt="Jianghu 浏览器截图：《龙门问刀》对白与人物舞台" />
+      <br />
+      <sub>对话舞台 · 人物、场景与文字选择</sub>
+    </td>
+  </tr>
+</table>
+
+<a id="play-and-controls"></a>
+## 🎮 Read Your Way · 操作与阅读
+
+- **推进对白：**点击舞台或对白，也可以按 Enter / 空格；打字演出期间的首次点击会先补全文字。
+- **由你决定回复：**选择出现时，需要玩家亲自作答；自动播放与已读快进不会替你选。
+- **调整阅读环境：**提供 18 / 20 / 22 / 24 字号、纸本／夜读、文字速度与减少动态效果；Tab 导航控件，Esc 关闭面板。
+- **保存与带走进度：**每句自动保存，另有三个手动存档槽、上一程和 JSON 导出／导入。不同作品与版本的存档彼此区分。
+
+> [!IMPORTANT]
+> **存档不是云同步。** 进度保存在浏览器环境中；不同设备、浏览器与网站来源不会自动共享。清理网站数据前请先导出存档。离线首开仅对已经下载并缓存的作品有效。
+
+<a id="run-locally"></a>
+## 🚀 Play Online or Run Locally
+
+### 🌐 直接在浏览器阅读
+
+**[打开 Jianghu 作品库 →](https://seiya058904.github.io/jianghu/)**
+
+由 GitHub Pages 托管，无需安装客户端。正式部署进度可查看上方 GitHub Actions 状态徽章。
+
+### 💻 从源码运行
+
+需要 **Node.js 24** 与 npm。在项目根目录执行：
 
 ```bash
 npm ci
-npm run build       # 作者源 → Ink → JSON → TypeScript → Vite → 离线清单
-npm start           # http://127.0.0.1:4173/
-npm test            # 自动发现全部 *.test.ts，含编辑草稿与保护契约
-npm run test:editorial
-npm run test:e2e    # 根路径4173 / 子路径4175，默认单worker
-npm run audit:v7
-npm run audit:independent  # 运行时与资源追溯；图片扫描需要 Python + Pillow
+npm run build
+npm start
 ```
 
-E2E 前清空可能影响 localhost 就绪探测的 HTTP/HTTPS/ALL 代理。构建会清空 dist；本机守卫若限制批量删除，先校验精确路径，将 dist 移到项目外再构建。确认服务读取当前构建。
+随后访问 **http://127.0.0.1:4173/**。构建会编译故事、检查 TypeScript、生成网页及离线资源清单。
 
-新测试证据输出到 JIANGHU_EVIDENCE_DIR，默认系统临时目录的 jianghu-evidence，不覆盖历史证据。每个正式 RC 指定独立项目外目录；只精选宽≤800px 的 WebP 入库。[历史 PNG 归档与恢复](docs/evidence/README.md)。
-
-运行时采样不是全状态穷举，资产可解码不是审美通过，自动化阅读不是真人试读。最长被动段按真实运行路径计算，不能把 Ink 互斥分支线性相加。
-
-## 操作与存档
-
-点击舞台/对白，或 Enter、空格推进；打字时首次点击补全文。回复由玩家选择，自动与已读快进不会代答。Tab 切换控件、Esc 关闭面板。设置支持 18/20/22/24 字、纸本/夜读、文字速度与减弱动态；短横屏允许区域内部滚动。
-
-每句自动保存，另有三个手动槽、上一程、JSON 导出/导入。各篇各版命名空间隔离。损坏或不兼容存档拒绝导入并保留原始数据。存储不可用时仍可游玩并导出；旧标签检测到其他标签更新后停止覆盖自动档。显式重新开始前若备份失败，会保留原档并阻止替换。
-
-本轮订正涉及的同版本旧存档，会先对真实旧剧本验真，再重放原选择进入订正正文；原始字节另存可导出的备份。备份失败不会替换原档，普通手动保存仍沿用原来的确认覆盖流程。
-
-按篇下载同时刷新作品和当前首页依赖，保留其他已缓存作品；未下载的故事不能承诺离线首开。
-
-## 作者入口与公开边界
-
-- story/*-author.mjs 及辅助模块是一手作者源；story/*.ink、src/generated/*.json 为生成物。
-- src/player.ts / vn-runtime.ts / vn-ui.ts：阅读器、存档与舞台。
-- src/library.ts / library.css / work-index.ts / works-registry.ts：作品库与版本分区。
-- src/*-catalog.ts / public/art/：人物、年龄、场景与独立图层。
-- public/sw.js / scripts/offline-manifest.mjs：离线更新。
-- tests/：运行时、存档、叙事契约与浏览器验证；历史基线缺席会明确告警。
-
-先读 [AGENTS.md](AGENTS.md)、[原典硬约束](docs/lore/CANON_RULES.md)与[迁移规则](CONTENT_MIGRATION.md)。不改原典既定生死、胜负、年龄、门派或榜次；山河璧不是增功、疗伤或延寿道具。
-
-### 普通 Git 开发与发布
-
-本地 `main` 跟踪 GitHub `origin/main`，共享同一套公开提交历史。日常在当前 Jianghu 目录操作：
+<details>
+<summary><strong>测试命令与完整开发入口</strong></summary>
 
 ```bash
-git pull --ff-only
-# 修改并验证后
-git add -A
-git diff --cached --stat
-git diff --cached
-git commit -m "描述本次改动"
-git push origin main
+npm run dev               # Vite 开发服务器
+npm test                  # 自动发现的运行时、存档与叙事测试
+npm run test:editorial    # 编辑稿约束测试
+npx playwright install chromium
+npm run test:e2e          # 浏览器交互与离线验证
+npm run audit:v7          # V7 故事节奏与覆盖审计
+npm run audit:independent # 独立运行时与素材审计（图片扫描需 Python + Pillow）
 ```
 
-推送 main 自动触发 `.github/workflows/verify.yml` 与 `deploy-pages.yml`。不再使用隔离检出或策展发布脚本。[发布与本机文件规则](docs/PUBLISHING.md)。
+本项目使用 **TypeScript · Vite · Ink / inkjs · Playwright**。文书与对话来自作者编写的内容，不使用在线 AI 动态生成剧情。
 
-原典全文、历史私档、清理/恢复回执、候选原图和本机配置继续留在本地，以 `.gitignore` / `.git/info/exclude` 排除。公开克隆缺少这些冻结材料时，仅对应档案字节完整性为部分验证；源码或运行资源缺失仍须失败。迁移前的报告是历史证据，不是当前发布指令。本轮未新增 LICENSE，公开可读不构成额外再许可。
+</details>
 
-## 已知边界
+## 🛠️ Under the Hood · 仓库地图
 
-真人试读、阅读耗时、Android 真机、Safari、Firefox、读屏器未被本机 Chrome 自动化替代。冻结原创旧篇仍有记录在案的 P2 文字问题。陆清婉现行中年含笑状态暂用同年龄干净中性立绘，保留文字语气；没有把回退称为新表情素材。文学与美术的定性边界仍为 PARTIAL；性能 F18 为 PARTIAL。作者目录含 .git 的 1GiB 目标 F24 在 2026-10-18 交换后转为 **PASS**：日用根实测 336,030,358 B 逻辑 / 345,100,448 B AllocationSize（含 .git、依赖与构建）；旧作者历史库 1.33 GiB 有意保留，不计入日用目标。
+```text
+story/                作者源、Ink 故事与编译流程
+src/generated/        生成的剧情数据
+src/player.ts         阅读器入口与运行逻辑
+src/vn-runtime.ts     叙事状态与场景运行时
+src/vn-ui.ts          舞台界面与交互
+src/library.ts        作品库
+src/works-registry.ts 作品分组、现行篇章与历史版本
+public/art/           人物、背景与篇章插画
+scripts/              剧本构建、离线清单与审计
+tests/                叙事、存档、页面与兼容性回归
+docs/                 原典约束、创作记录、验证证据
+```
+
+想了解作品编排、继续创作或提交修改，可以从这些资料开始：
+
+- [作品与版本](docs/v7/WORKS_AND_VERSIONS.md) · [文档索引](docs/README.md)
+- [原典不可变更约束](docs/lore/CANON_RULES.md) · [内容迁移规则](CONTENT_MIGRATION.md) · [AI / 开发协作约定](AGENTS.md)
+- [独立终审验收](docs/audits/independent-final/FINAL_ACCEPTANCE.md) · [后续体验验证](docs/audits/experience-2026-10-18/FINAL_VALIDATION.md)
+- [发布与本机文件边界](docs/PUBLISHING.md) · [原始证据索引](docs/evidence/README.md)
+
+最新代码与发布状态应以 `main` 和 [Actions](https://github.com/seiya058904/jianghu/actions) 为准。历史审核文件保留其当时的时间、版本和结论，不用于替代现行验证。
+
+## 📜 Canon & Rights · 原典与使用边界
+
+《宋世江湖》是有固定历史、人物与力量层次的作者原典。改编应尊重已经确定的生死、胜负、年龄、门派、榜次及相关事实；玩家选择不能随意重写原典。
+
+本仓库**没有附带统一的开源许可证**。公开可见不等于授予原典文本、角色、美术或代码的再分发与改编权利。相关素材记录和工程约束请参见仓库文档。
+
+---
+
+<p align="center">
+  <sub>NOT EVERY SWORD BECOMES A LEGEND. EVERY PERSON HAS A STORY.</sub><br />
+  <sub>《宋世江湖》 · 在胜负之外，走进人的一生。</sub>
+</p>
