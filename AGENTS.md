@@ -93,3 +93,9 @@ Playwright根4173、子路径4175。代理会影响localhost就绪探测；运�
 同步README、导航和对应验收行。本轮必要文字证据在审计目录，.log若忽略则定向force-add；不纳海量中间噪声。不贴原典全文。
 
 真人试读、阅读耗时、Android真机、Safari/Firefox/读屏器未经实测统一EXTERNAL NOT VERIFIED。保留能独立复核的命令、版本、路径、失败与未核边界。
+
+## 浏览器测试依赖（固定版本）
+
+- Playwright 固定 1.64.1：@playwright/test 已在 package.json 里精确锁定（不要写 ^、~ 或 latest），配套 chromium build 1248 位于 %LOCALAPPDATA%\ms-playwright。
+- 不要升级、降级或另装第二个 Playwright 版本，也不要把浏览器下载到别的目录或自行构建 Chromium。
+- 确需换版本时，先与其他使用 Playwright 的仓库统一到同一版本，再改本仓库并跑一次浏览器测试。
