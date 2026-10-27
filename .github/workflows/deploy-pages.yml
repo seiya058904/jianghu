@@ -7,6 +7,11 @@ name: Deploy site to GitHub Pages
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'README.md'
+      - 'AGENTS.md'
+      - 'CLAUDE.md'
+      - '**/readme-*'
   workflow_dispatch:
 
 permissions:
