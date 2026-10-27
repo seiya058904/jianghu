@@ -136,6 +136,10 @@ These are real browser-test captures preserved in the repository. They show an e
 > [!IMPORTANT]
 > **Your saves are local, not cloud-synchronized.** Different browsers, devices, profiles, and site origins do not automatically share progress. Export a backup before clearing browser data. A story must be downloaded and cached before it can be opened offline for the first time.
 
+## 📋 Status and Verification
+
+The library is playable, but the historical independent acceptance was **not complete across every criterion**. Its final public audit recorded a partial performance assessment (F18) and a blocked author-history size target (F24); a later note records that the separately adopted daily-use directory met its size target without changing the historical author's archive result. Human reading and timing, physical Android devices, Safari, Firefox, and screen readers were not verified in that audit. See the dated [acceptance record](docs/audits/independent-final/FINAL_ACCEPTANCE.md) for the evidence and boundaries. These results apply to the audited revisions, not automatically to the current `main`.
+
 <a id="play-or-run-locally"></a>
 ## 🚀 Play or Run Locally
 
@@ -195,6 +199,8 @@ scripts/               Build tools, offline assets, and audits
 tests/                 Narrative, persistence, and browser regression tests
 docs/                  Canon, editorial records, and verification evidence
 ~~~
+
+The root-level `*-v1.html` and `*-v2.html` files are retained historical build entries, including paths used for older editions and saves. Their locations are part of the site's compatibility surface; see the [works and editions guide](docs/v7/WORKS_AND_VERSIONS.md) and [documentation index](docs/README.md) when navigating the repository.
 
 Useful starting points:
 
