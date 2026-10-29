@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/readme-cover.svg" width="1200" alt="Jianghu: ink mountains, a red sun and a lone traveler crossing a bridge" />
+</p>
+
 <h1 align="center">⚔️ JIANGHU</h1>
 
 <p align="center">
