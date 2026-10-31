@@ -30,6 +30,8 @@ concurrency:
 
 jobs:
   unit:
+    # Main pushes run these same gates in the Pages deployment workflow.
+    if: github.event_name != 'push'
     name: Build and unit suite
     runs-on: ubuntu-24.04
     timeout-minutes: 25
