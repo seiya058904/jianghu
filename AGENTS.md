@@ -10,7 +10,7 @@
 - docs/v7、docs/v6保留历史轮次与追加段。旧297/80/471/56不是本轮结果，引用数字须注明代际、方法与输入版本。
 - 本机作者材料宋世江湖.md：579299 bytes，SHA256 2e2b665657543e81c6b06c121307c9f13685d2c535f762a5b921949aaa8af393。本轮splitlines/换行计数35314。不得改写；本次未授权新增公开全文。
 
-**Git 工作流**：原路径是 GitHub `seiya058904/jianghu` 的普通克隆，`main` 跟踪 `origin/main`。正常 `git pull --ff-only`、`git add -A`、`git commit`、`git push origin main`；main 推送触发 Verify 与 Pages。旧双谱系、隔离策展发布流程已停用，详见 docs/PUBLISHING.md。本机原典、历史私档、恢复回执和原始证据通过 .gitignore / .git/info/exclude 保留，不进入公开索引。
+**Git 工作流**：原路径是 GitHub `seiya058904/jianghu` 的普通克隆，`main` 跟踪 `origin/main`。先核工作区与授权，仅暂存本次明确路径并检查暂存差异；pull、合并、推送和发布按用户本次授权执行。main 推送触发 Verify 与 Pages。旧双谱系、隔离策展发布流程已停用，详见 docs/PUBLISHING.md。本机原典、历史私档、恢复回执和原始证据通过 .gitignore / .git/info/exclude 保留，不进入公开索引。
 
 ## 文件地图与作者入口
 
@@ -33,7 +33,7 @@
 
 先核Git根、分支、HEAD、状态、远端、stash/worktree。保护用户已有修改。非简单改动先明确成功标准、重现、最小修复、定向回归、冻结验证；不得删除失败测试、降低断言或用旧日志冒充新通过。
 
-结构发现使用codebase-memory技能，对依赖路径check_index_coverage。陈旧/缺覆盖须回读当前源码，不从图缺项推导不存在或全覆盖。
+结构发现直接检查当前源码及相关调用路径；历史文档和旧结论不能代替当前实现。
 
 多代理仅在用户明确授权时使用。共享作者源、生成物、证据、SW禁止并发修改，明确所有权，不撤销他人工作。
 
@@ -80,7 +80,7 @@ Playwright根4173、子路径4175。代理会影响localhost就绪探测；运�
 
 ## Git、体积、公开发布
 
-本地 main 与 origin/main 共享公开历史，使用普通提交与快进推送，不再维护第二套发布检出。日常以 `git pull --ff-only` 开始；提交前检查 `git diff --cached`，确认忽略的本机材料未进入索引。推送、合并、部署、发布、依赖更新、远端配置等外部变更仍需用户明确授权；历史任务授权不永久延伸。
+本地 main 与 origin/main 共享公开历史，使用普通提交与快进推送，不再维护第二套发布检出。先只读检查状态；仅在用户授权同步且确认可安全快进时执行 `git pull --ff-only`。提交前检查 `git diff --cached`，确认忽略的本机材料未进入索引。推送、合并、部署、发布、依赖更新、远端配置等外部变更仍需用户明确授权；历史任务授权不永久延伸。
 
 不强推、不擅自重写历史、不删objects/reflog、不清回收站、不新增LICENSE。瘦身先精确盘点与可校验备份；历史改写或替换作者仓库需单独授权。
 
@@ -98,4 +98,9 @@ Playwright根4173、子路径4175。代理会影响localhost就绪探测；运�
 
 - Playwright 固定 1.64.1：@playwright/test 已在 package.json 里精确锁定（不要写 ^、~ 或 latest），配套 chromium build 1248 位于 %LOCALAPPDATA%\ms-playwright。
 - 不要升级、降级或另装第二个 Playwright 版本，也不要把浏览器下载到别的目录或自行构建 Chromium。
-- 确需换版本时，先与其他使用 Playwright 的仓库统一到同一版本，再改本仓库并跑一次浏览器测试。
+- 确需换版本时，先取得依赖更新授权，核对本仓库兼容性与浏览器配置，并运行相应浏览器回归；其他仓库各自按其范围和授权处理。
+
+## Browser tool selection
+
+- Prefer Ego Browser for exploratory navigation, visual review and interactive checks when available. Use Playwright for repeatable regression, CI, isolation, request interception or other automation requiring its APIs; combine tools when useful. If Ego is unavailable, use a suitable existing browser tool.
+- Keep this repository's required browser commands, versions, profiles and safety boundaries; an exploratory check does not replace required automated tests. Do not alter real user data or production state for testing. Report the tools, coverage and any untested paths.
