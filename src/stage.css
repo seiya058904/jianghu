@@ -127,3 +127,4 @@ body[data-content-version="sea-tide-2.0.0"] .actor[data-character="st2_boatkeepe
 .cover-copy h1 .cover-title-dot{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .cover-copy h1 .cover-title-sub{font-size:.4em;font-weight:400;letter-spacing:.34em;line-height:1.5;margin-top:.3em;color:var(--cinnabar)}
 :root[data-theme=dark] .cover-copy h1 .cover-title-sub{color:var(--cinnabar-night)}
+.nw{white-space:nowrap}
