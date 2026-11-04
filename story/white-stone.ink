@@ -62,7 +62,7 @@ VAR ws_after = 0
 那一处空着，屋里便没有人敢说已经接完；后来的抄本上也就留着这道缺口。 # beat:ws_white_council_8 # scene:ws_court # cast:ws_swordelder # speaker:narrator
 - else:
 你说带了当日同来的人。那我只问他一句：老人最后那一下，是不是也没做完。 # beat:ws_white_council_9 # scene:ws_court # cast:ws_swordelder # speaker:ws_swordelder # mood:ws_swordelder=sharp
-他答不上来。于是没有人再提"多收人自然传得下去"。 # beat:ws_white_council_10 # scene:ws_court # cast:ws_swordelder # speaker:narrator
+他答不上来。于是没有人再提“多收人自然传得下去”。 # beat:ws_white_council_10 # scene:ws_court # cast:ws_swordelder # speaker:narrator
 }
 * [先为一脉找第二个能理解的人，向老人讲明并非叫人照抄全部秘谱。 # cid:ws_find_second]
   ~ ws_second = true
@@ -258,7 +258,7 @@ VAR ws_after = 0
 {
 - ws_gu_notes:
 你留下的是当年怎么硬凑，不是你的删法。这两样，后来人分得清。 # beat:ws_forbidden_copy_4 # scene:ws_room # cast:ws_qi # speaker:ws_qi # mood:ws_qi=neutral
-遗录旁边多了一句"怕不像"，你没有叫后人照着害怕。 # beat:ws_forbidden_copy_5 # scene:ws_room # cast:ws_qi # speaker:narrator
+遗录旁边多了一句“怕不像”，你没有叫后人照着害怕。 # beat:ws_forbidden_copy_5 # scene:ws_room # cast:ws_qi # speaker:narrator
 - else:
 你又请另一脉来看你重新起步的地方。看一回，你就得再拆一回。 # beat:ws_forbidden_copy_6 # scene:ws_room # cast:ws_qi # speaker:ws_qi # mood:ws_qi=neutral
 对方只说见到什么，不能替你回到二十年前；听不听得进去，是你自己的事。 # beat:ws_forbidden_copy_7 # scene:ws_room # cast:ws_qi # speaker:narrator

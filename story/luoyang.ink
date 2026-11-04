@@ -54,9 +54,9 @@ VAR ly_after = 0
 夏没把他的枪说成坏，邢也没有扔下去换一门南榜刀。 # beat:ly_gun_and_knife_6 # scene:ly_smallground # cast:ly_xing,ly_xia # speaker:narrator
 {
 - ly_watch_gamble:
-你把那句"出去还能回来"也记下。看一场问艺，先得认出从哪一下起，人已是把自己押了上去。 # beat:ly_gun_and_knife_7 # scene:ly_smallground # cast:ly_xing,ly_xia # speaker:narrator
+你把那句“出去还能回来”也记下。看一场问艺，先得认出从哪一下起，人已是把自己押了上去。 # beat:ly_gun_and_knife_7 # scene:ly_smallground # cast:ly_xing,ly_xia # speaker:narrator
 - else:
-史把头四十说得平常。你才留意到，敢把"还没到赌的时候"说出口的人，后头才真有后头。 # beat:ly_gun_and_knife_8 # scene:ly_smallground # cast:ly_xing,ly_xia # speaker:narrator
+史把头四十说得平常。你才留意到，敢把“还没到赌的时候”说出口的人，后头才真有后头。 # beat:ly_gun_and_knife_8 # scene:ly_smallground # cast:ly_xing,ly_xia # speaker:narrator
 }
 * [「只想看的那五十合，您怎么担险？」 # cid:ly_ask_cost_of_wait]
   ~ ly_wait_risk = true
@@ -78,9 +78,9 @@ VAR ly_after = 0
 你若回武陵报信，就报这五个字。多一字，也别算我说的。 # beat:ly_shi_half_sword_6 # scene:ly_records # cast:lm_shi,ly_lu # speaker:lm_shi # mood:lm_shi=amused
 {
 - ly_wait_risk:
-"看也白看"四个字你没忘。往后看人接枪，你先看他站的地方，再看他的眼睛。 # beat:ly_shi_half_sword_7 # scene:ly_records # cast:lm_shi,ly_lu # speaker:narrator
+“看也白看”四个字你没忘。往后看人接枪，你先看他站的地方，再看他的眼睛。 # beat:ly_shi_half_sword_7 # scene:ly_records # cast:lm_shi,ly_lu # speaker:narrator
 - else:
-你在册上把邢那句"先把今日五十以后想清"抄全。想清，原来也是问艺的一部分。 # beat:ly_shi_half_sword_8 # scene:ly_records # cast:lm_shi,ly_lu # speaker:narrator
+你在册上把邢那句“先把今日五十以后想清”抄全。想清，原来也是问艺的一部分。 # beat:ly_shi_half_sword_8 # scene:ly_records # cast:lm_shi,ly_lu # speaker:narrator
 }
 * [「这五个字，是要看什么？」 # cid:ly_ask_see_what]
   ~ ly_record_plain = true
@@ -102,7 +102,7 @@ VAR ly_after = 0
 一群本已很高的名字，忽然又有了自己行礼的方向。你退一步，发觉柳的眼睛已越过名牌，看向刚收势的手。 # beat:ly_grey_robe_6 # scene:ly_sideseat # cast:ly_liu,lm_xu # speaker:narrator
 {
 - ly_record_plain:
-"可以看"三个字不含褒贬。你记路的方式从这日起也改了：先记看见了什么，再记该报什么。 # beat:ly_grey_robe_7 # scene:ly_sideseat # cast:ly_liu,lm_xu # speaker:narrator
+“可以看”三个字不含褒贬。你记路的方式从这日起也改了：先记看见了什么，再记该报什么。 # beat:ly_grey_robe_7 # scene:ly_sideseat # cast:ly_liu,lm_xu # speaker:narrator
 - else:
 回帖由本人写。你把这一条也用在自己身上：替人记路可以，替人定终点不行。 # beat:ly_grey_robe_8 # scene:ly_sideseat # cast:ly_liu,lm_xu # speaker:narrator
 }

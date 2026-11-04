@@ -65,7 +65,7 @@ VAR br_after = 0
 陆天行四个字，也没有变成谁都能领走的一套招。 # beat:br_first_two_10 # scene:br_room # cast:br_ning,br_peer # speaker:br_peer # mood:br_peer=neutral # fact:br_first_two
 {
 - br_alive:
-"无确讯"三个字留了空。你后来抄别的册，也先分清写不出与没有写。 # beat:br_first_two_11 # scene:br_room # cast:br_ning,br_peer # speaker:narrator
+“无确讯”三个字留了空。你后来抄别的册，也先分清写不出与没有写。 # beat:br_first_two_11 # scene:br_room # cast:br_ning,br_peer # speaker:narrator
 - else:
 问题留在页后，纸上没添一个假字。留白原来也是一种回答。 # beat:br_first_two_12 # scene:br_room # cast:br_ning,br_peer # speaker:narrator
 }
@@ -93,7 +93,7 @@ VAR br_after = 0
 - br_missing_hand:
 前两手没记，你没替它编。页边推字划掉那一处，此后一直空着。 # beat:br_third_fourth_9 # scene:br_room # cast:br_ning,br_peer # speaker:narrator
 - else:
-你保留了"百岁以后"。几个字比一柄好画的剑难抄，却经得起问。 # beat:br_third_fourth_10 # scene:br_room # cast:br_ning,br_peer # speaker:narrator
+你保留了“百岁以后”。几个字比一柄好画的剑难抄，却经得起问。 # beat:br_third_fourth_10 # scene:br_room # cast:br_ning,br_peer # speaker:narrator
 }
 * [请同门改回两掌后止，把第三掌若出，仍写成师祖的判断。 # cid:br_correct_third]
   ~ br_correct = true
@@ -164,9 +164,9 @@ VAR br_after = 0
 十个名字都过了一遍，茶凉了。宁没有将第十划走，让你们把全盛的自己添进去。 # beat:br_ninth_tenth_6 # scene:br_room # cast:br_ning # speaker:narrator # fact:br_last_two
 {
 - br_palm:
-"该删"两个字你没有多解。别人练过什么，只有本人有资格说删过什么。 # beat:br_ninth_tenth_7 # scene:br_room # cast:br_ning # speaker:narrator
+“该删”两个字你没有多解。别人练过什么，只有本人有资格说删过什么。 # beat:br_ninth_tenth_7 # scene:br_room # cast:br_ning # speaker:narrator
 - else:
-那杆枪你终究没见着。纸上便只留"不太像在用枪"七个字，一个也没添。 # beat:br_ninth_tenth_8 # scene:br_room # cast:br_ning # speaker:narrator
+那杆枪你终究没见着。纸上便只留“不太像在用枪”七个字，一个也没添。 # beat:br_ninth_tenth_8 # scene:br_room # cast:br_ning # speaker:narrator
 }
 * [赫连重返以后，何处让师祖没有胜算？ # cid:br_ask_hl_years]
   ~ br_return = true
@@ -191,7 +191,7 @@ VAR br_after = 0
 - br_return:
 两行之间隔着三十余年。你后来见人写传记，也先看他把空白放在哪一行。 # beat:br_the_order_8 # scene:br_room # cast:br_ning,br_peer # speaker:narrator
 - else:
-"后来"两个字被你拆成了具体年份。宁看了那页一眼，没有改。 # beat:br_the_order_9 # scene:br_room # cast:br_ning,br_peer # speaker:narrator
+“后来”两个字被你拆成了具体年份。宁看了那页一眼，没有改。 # beat:br_the_order_9 # scene:br_room # cast:br_ning,br_peer # speaker:narrator
 }
 {
 - br_source_first:

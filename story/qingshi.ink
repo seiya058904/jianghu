@@ -256,7 +256,7 @@ VAR qs_home_lesson = 0
 赵大春为拖延上去，中路护得很稳，第三步对方滑到肩侧，掌落后背，人再没起来。 # beat:qs_road32_6 # scene:qs_road32 # cast:qs_du # speaker:narrator
 {
 - qs_wait_word:
-拦在前头时，你把"先拖、等官差"那句又低声说了一遍。后面的事没有照这句话走，但你确实说过。 # beat:qs_road32_7 # scene:qs_road32 # cast:qs_du # speaker:narrator
+拦在前头时，你把“先拖、等官差”那句又低声说了一遍。后面的事没有照这句话走，但你确实说过。 # beat:qs_road32_7 # scene:qs_road32 # cast:qs_du # speaker:narrator
 - else:
 五个人，你到那一刻仍信有办法。这个念头，后来你用在公门里，再没敢用在荒路上。 # beat:qs_road32_8 # scene:qs_road32 # cast:qs_du # speaker:narrator
 }
@@ -314,7 +314,7 @@ VAR qs_home_lesson = 0
 - qs_returned:
 那几家门你都亲自走过。后来在公门问案，你先问家属想听谁说——这个习惯，是从那些沉默里带出来的。 # beat:qs_constable_7 # scene:qs_office # cast:qs_meng # speaker:narrator
 - else:
-物件送到了，话没送到。你把"次日出来见"登记在册时才明白，代办省下的路，最后都得自己补走。 # beat:qs_constable_8 # scene:qs_office # cast:qs_meng # speaker:narrator
+物件送到了，话没送到。你把“次日出来见”登记在册时才明白，代办省下的路，最后都得自己补走。 # beat:qs_constable_8 # scene:qs_office # cast:qs_meng # speaker:narrator
 }
 * [先让同僚把两条退路走一遍，再上手。 # cid:qs_rehearse_exit]
   ~ qs_exit_drill = true
@@ -354,7 +354,7 @@ VAR qs_home_lesson = 0
 不是三招就倒了，也不是复仇成功。地上死伤几十人，半年的网仍没留住他。远处却传来一声驴叫。 # beat:qs_net_break_4 # scene:qs_road44 # cast:qs_meng,qs_du # speaker:narrator
 {
 - qs_shield_gap:
-盾手退那一步你没让它白退。后来带人排阵，"前面是自己人"这五个字，你总要单独讲一遍。 # beat:qs_net_break_5 # scene:qs_road44 # cast:qs_meng,qs_du # speaker:narrator
+盾手退那一步你没让它白退。后来带人排阵，“前面是自己人”这五个字，你总要单独讲一遍。 # beat:qs_net_break_5 # scene:qs_road44 # cast:qs_meng,qs_du # speaker:narrator
 - else:
 你盯着他那条中箭的腿，盯来的却是自己人倒下。从那日起，你看阵先看自家盾后，再看对手的慢。 # beat:qs_net_break_6 # scene:qs_road44 # cast:qs_meng,qs_du # speaker:narrator
 }

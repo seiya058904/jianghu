@@ -50,7 +50,7 @@ VAR kh_future = 0
 - kh_gentle:
 水凉了你换了一盆。没有口供的日子，药照配，名册照点——有些话等人自己长出来。 # beat:kh_message_6 # scene:kh_shelter # cast:kh_healer # speaker:narrator
 - else:
-"西边"两个字你也记下了。没问完的话留在门外，比逼出来的一整句经得住核。 # beat:kh_message_7 # scene:kh_shelter # cast:kh_healer # speaker:narrator
+“西边”两个字你也记下了。没问完的话留在门外，比逼出来的一整句经得住核。 # beat:kh_message_7 # scene:kh_shelter # cast:kh_healer # speaker:narrator
 }
 * [先送药，托同行者把未核实的消息另交门房。 # cid:kh_send_medicine]
   ~ kh_supply = true
@@ -297,7 +297,7 @@ VAR kh_future = 0
 - kh_saw_space:
 纸上那三个点后来被你画进撤路图。位置不是招式，却是你能记下、也能照做的东西。 # beat:kh_sixty_8 # scene:kh_valley # cast:kh_peer,kh_hui,kh_meng # speaker:narrator
 - else:
-那个问号一直在纸上。后来你带人，也先教一句"我看不清"，再教怎么看清。 # beat:kh_sixty_9 # scene:kh_valley # cast:kh_peer,kh_hui,kh_meng # speaker:narrator
+那个问号一直在纸上。后来你带人，也先教一句“我看不清”，再教怎么看清。 # beat:kh_sixty_9 # scene:kh_valley # cast:kh_peer,kh_hui,kh_meng # speaker:narrator
 }
 * [把已收起的布重新铺好，给三位各留一处，不先喊赢。 # cid:kh_hold_beds]
   ~ kh_beds = true
@@ -351,7 +351,7 @@ VAR kh_future = 0
 谷里许多人不认得他们。身旁最老的几位却站起来，叫出空劫、司马玄极、孟归藏三个名字。 # beat:kh_bell_13 # scene:kh_valley # cast:kh_meng,kh2_gui # speaker:narrator # cg:oldPillars # action:三位旧人 · 来路仍空着
 {
 - kh_restraint:
-"等消息"三个字你没有改口。钟响之后，这两字比任何一句准话都难说，也都更真。 # beat:kh_bell_14 # scene:kh_valley # cast:kh_meng,kh2_gui # speaker:narrator # cg:none
+“等消息”三个字你没有改口。钟响之后，这两字比任何一句准话都难说，也都更真。 # beat:kh_bell_14 # scene:kh_valley # cast:kh_meng,kh2_gui # speaker:narrator # cg:none
 - else:
 咽回去的那半句，你记在纸边。此后报信，你只写听见的事，不写盼着的事。 # beat:kh_bell_15 # scene:kh_valley # cast:kh_meng,kh2_gui # speaker:narrator
 }

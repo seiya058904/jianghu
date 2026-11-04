@@ -65,7 +65,7 @@ VAR bb_final = 0
 {
 - bb_less_question:
 你先去找用不出的原因，再谈删不删。这一步没有旁人能替你做。 # beat:bb_thirty_six_6 # scene:bb_table # cast:ly_liu,ly_ning # speaker:ly_liu # mood:ly_liu=intent
-你因此没有把"难练"当成"多余"，今夜也少删一掌。 # beat:bb_thirty_six_7 # scene:bb_table # cast:ly_liu,ly_ning # speaker:narrator
+你因此没有把“难练”当成“多余”，今夜也少删一掌。 # beat:bb_thirty_six_7 # scene:bb_table # cast:ly_liu,ly_ning # speaker:narrator
 - else:
 罗自己留着哪几式，你听进去了。什么时候轮到你说自己的，我等着听。 # beat:bb_thirty_six_8 # scene:bb_table # cast:ly_liu,ly_ning # speaker:ly_liu # mood:ly_liu=neutral
 罗在桌边又比了半式，停住，没有接着演成一整路枪。 # beat:bb_thirty_six_9 # scene:bb_table # cast:ly_liu,ly_ning # speaker:narrator
@@ -146,7 +146,7 @@ VAR bb_final = 0
 {
 - bb_unseen:
 你问我为何不替他留一个大概。留了，你们出去就说我看过；他若变了，是我把他按在七年前。 # beat:bb_waist_next_day_5 # scene:bb_tea # cast:ly_liu,bb_ro # speaker:ly_liu # mood:ly_liu=neutral
-谢把原想问的"如今"收住，改问七年前哪一处还满。柳这回能答。 # beat:bb_waist_next_day_6 # scene:bb_tea # cast:ly_liu,bb_ro # speaker:narrator
+谢把原想问的“如今”收住，改问七年前哪一处还满。柳这回能答。 # beat:bb_waist_next_day_6 # scene:bb_tea # cast:ly_liu,bb_ro # speaker:narrator
 - else:
 你绕回自己那一掌了。今晚最难问的一句，往往是自己那一下。 # beat:bb_waist_next_day_7 # scene:bb_tea # cast:ly_liu,bb_ro # speaker:bb_ro # mood:bb_ro=intent
 柳没有在两人之间再判谁错得更多，只等各人把那一截说完。 # beat:bb_waist_next_day_8 # scene:bb_tea # cast:ly_liu,bb_ro # speaker:narrator
