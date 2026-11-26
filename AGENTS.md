@@ -23,6 +23,7 @@
 ## 构建、测试与按需 Skills
 - Node 24（锁死 `package.json`）；Playwright 固定 `1.64.1`（Chromium build `1248`，`%LOCALAPPDATA%\ms-playwright`），未经依赖授权严禁升降级或另装。
 - 命令：`npm ci` / `npm run build` / `npm test` / `npm run test:editorial` / `npm run test:e2e` / `npm run audit:independent`（需 Python/Pillow）。
+- 不得删除失败测试、降低断言或用旧日志冒充新通过；不得拼接不同构建的定向通过结果冒称最终全量通过。
 - Playwright 端口根 `4173`、子路径 `4175`；运行前清 `HTTP/HTTPS/ALL` 代理并确认服务读取当前 `dist`。完整 E2E 期间不得改 `story`/`generated`/`runtime`/`assets`/`dist`，否则本轮作废。按真实分支路径测被动段，不线性串互斥分支。
 - **独立审计、美术/Alpha、外置证据与诚实边界**：加载 `.agents/skills/jianghu-audit-evidence/SKILL.md`。
 - **1GiB 体积控制、安全删 `dist` 与 Pages 发布核验**：加载 `.agents/skills/jianghu-release/SKILL.md`。
