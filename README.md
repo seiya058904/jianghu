@@ -209,7 +209,7 @@ The root-level `*-v1.html` and `*-v2.html` files are retained historical build e
 Useful starting points:
 
 - [Works and editions](docs/v7/WORKS_AND_VERSIONS.md) · [Documentation index](docs/README.md)
-- [Canonical constraints](docs/lore/CANON_RULES.md) · [Content migration rules](CONTENT_MIGRATION.md) · [Contributor guidance](AGENTS.md)
+- [Canonical constraints](docs/lore/CANON_RULES.md) · [Content migration rules](docs/archive/legacy-v5-v6/CONTENT_MIGRATION.md) · [Contributor guidance](AGENTS.md)
 - [Independent acceptance audit](docs/audits/independent-final/FINAL_ACCEPTANCE.md) · [Follow-up experience validation](docs/audits/experience-2026-10-18/FINAL_VALIDATION.md)
 - [Publishing and local-file rules](docs/PUBLISHING.md) · [Evidence index](docs/evidence/README.md)
 

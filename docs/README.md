@@ -8,7 +8,7 @@
 
 本目录是项目全部文档与证据的根。**第一次来请先读仓库根的 [README.md](../README.md) 与 [AGENTS.md](../AGENTS.md)**，本页只负责告诉你去哪找。
 
-导航速查：**`v7/` 是当前世代**（原典纪事集）· `lore/` 讲原典与改编边界 · `v6/` 是上一世代工作文档（历史，口径不可与 V7 混用）· `art/` 是素材清单 · `evidence/` 是原始证据 · 本目录根 `docs/*.md` 是 V5 世代存档 · [PUBLISHING.md](PUBLISHING.md) 讲 main → origin/main 的普通 Git 发布与本机文件规则。
+导航速查：**`v7/` 是当前世代**（原典纪事集）· `lore/` 讲原典与改编边界 · `v6/` 是上一世代工作文档（历史，口径不可与 V7 混用）· `art/` 是素材清单 · `evidence/` 是原始证据 · 本目录根 `docs/*.md` 与 `archive/legacy-v5-v6/` 是 V5/V6 世代存档 · [PUBLISHING.md](PUBLISHING.md) 讲 main → origin/main 的普通 Git 发布与本机文件规则。
 
 ---
 
@@ -119,8 +119,8 @@
 
 ## 六、原始证据（`evidence/`）
 
-- **`evidence/v7/*.json` + `e2e-full.log`** —— V7 审计原始输出（见上 §二）
-- `evidence/v6/*.log` —— 构建 / 单元 / 浏览器 / 离线测试日志
+- **`evidence/v7/*.json`** —— V7 审计原始输出（见上 §二；`.log` 日志按 `.gitignore` 不入库）
+- `evidence/v6/*.json` —— 构建 / 单元 / 浏览器 / 离线测试结构化证据（原始 `.log` 按 `.gitignore` 仅本地保留、不入库）
 - `evidence/v6/*summary*.json` —— 28 份各篇统计汇总
 - `evidence/v6/qian-kun-editorial-integration-preservation.json` —— 28 个冻结保护路径的字节校验清单
 - `evidence/v6/offline-bundle-ownership-audit.json` —— 离线包归属审计
@@ -133,9 +133,9 @@
 - [V5_WORKLOG.md](V5_WORKLOG.md) —— V5 工作日志
 - [CANON_ADAPTATION_MAP.md](CANON_ADAPTATION_MAP.md) —— 早期原典对照表
 
-## 八、仓库根的设计文档
+## 八、已归档的 V5/V6 设计文档（`docs/archive/legacy-v5-v6/`）
 
-`ARCHITECTURE_REVIEW.md` · `DESIGN.md` · `NARRATIVE_DESIGN.md` · `DIALOGUE_AUTHORING_GUIDE.md` · `CHARACTER_ROSTER.md` · `BRANCH_MATRIX.md` · `CONSEQUENCE_LEDGER.md` · `CONTENT_MIGRATION.md` · `ART_ASSET_MANIFEST.md` · `ART_DIRECTION.md` · `LORE_BIBLE.md` · `CANON_AND_ADAPTATION.md` · `INTERACTION_QA.md` · `QA.md` · `PRODUCT.md` · `DEPENDENCIES.md` · `ASSETS.md`
+[ARCHITECTURE_REVIEW.md](archive/legacy-v5-v6/ARCHITECTURE_REVIEW.md) · [DESIGN.md](archive/legacy-v5-v6/DESIGN.md) · [NARRATIVE_DESIGN.md](archive/legacy-v5-v6/NARRATIVE_DESIGN.md) · [DIALOGUE_AUTHORING_GUIDE.md](archive/legacy-v5-v6/DIALOGUE_AUTHORING_GUIDE.md) · [CHARACTER_ROSTER.md](archive/legacy-v5-v6/CHARACTER_ROSTER.md) · [BRANCH_MATRIX.md](archive/legacy-v5-v6/BRANCH_MATRIX.md) · [CONSEQUENCE_LEDGER.md](archive/legacy-v5-v6/CONSEQUENCE_LEDGER.md) · [CONTENT_MIGRATION.md](archive/legacy-v5-v6/CONTENT_MIGRATION.md) · [ART_ASSET_MANIFEST.md](archive/legacy-v5-v6/ART_ASSET_MANIFEST.md) · [ART_DIRECTION.md](archive/legacy-v5-v6/ART_DIRECTION.md) · [LORE_BIBLE.md](archive/legacy-v5-v6/LORE_BIBLE.md) · [CANON_AND_ADAPTATION.md](archive/legacy-v5-v6/CANON_AND_ADAPTATION.md) · [INTERACTION_QA.md](archive/legacy-v5-v6/INTERACTION_QA.md) · [QA.md](archive/legacy-v5-v6/QA.md) · [PRODUCT.md](archive/legacy-v5-v6/PRODUCT.md) · [DEPENDENCIES.md](archive/legacy-v5-v6/DEPENDENCIES.md) · [ASSETS.md](archive/legacy-v5-v6/ASSETS.md)
 
 ## 九、普通 Git 发布与历史公开快照
 
